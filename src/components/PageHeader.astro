@@ -44,7 +44,7 @@ const hasAside = Astro.slots.has("aside");
       {subtitle && <p class="mt-4 max-w-2xl text-[16px] leading-[1.6] text-purple-200 sm:text-[18px]">{subtitle}</p>}
       <slot name="meta" />
     </div>
-    {image && <img src={image} alt="" class="w-full rounded-2xl" width="640" height="360" loading="eager" />}
+    {image && <img src={image} alt="" class="ml-auto max-h-[195px] w-full rounded-2xl object-cover" width="640" height="360" loading="eager" />}
     {hasAside && <slot name="aside" />}
   </div>
 </div>

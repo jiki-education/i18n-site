@@ -60,7 +60,7 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
       )
     }
 
-    <div class="max-w-2xl rounded-2xl border border-gray-200 bg-gray-50 p-6">
+    <div class="mb-5 max-w-2xl rounded-2xl border border-gray-200 bg-gray-50 p-6">
       <h2 class="text-[19px] font-bold text-gray-900">Review this {contentTypeSingular(type)}</h2>
       <p class="mt-2 text-[15px] text-gray-600">
         You're reading in {meta.name}. Tell us anything that sounds off, however small. If it's a <strong class="font-semibold text-gray-800">single word</strong>, correct it in <a href={`/${lang}/glossary`} class="font-semibold text-blue-600 hover:text-blue-700">the glossary</a> and it gets fixed everywhere at once. If it's <strong class="font-semibold text-gray-800">phrasing</strong>, tell us on <a href={forumUrl} class="font-semibold text-blue-600 hover:text-blue-700">the forum</a>. If you can't explain why, that's ok - tell us anyway!

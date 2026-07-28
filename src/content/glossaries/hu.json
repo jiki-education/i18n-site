@@ -2,7 +2,8 @@
   "lang": "hu",
   "name": "Hungarian",
   "family": null,
-  "governance_sha": "0349487",
+  "governance_sha": "404ba25",
+  "content_version": "2f0dea66da6e",
   "published_at": "2026-07-28",
   "sections": [
     {

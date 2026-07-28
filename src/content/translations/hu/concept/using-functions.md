@@ -7,7 +7,8 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "0349487"
+governance_sha: "404ba25"
+content_version: "9baa9805ec7a"
 published_at: "2026-07-28"
 forum_topic_id: 289
 ---

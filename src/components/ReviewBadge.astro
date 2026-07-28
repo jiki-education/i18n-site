@@ -1,0 +1,38 @@
+---
+/**
+ * The status pill on a list row: "Ready to review" until the reader marks it
+ * reviewed, then "Reviewed".
+ *
+ * Rendered as "Ready to review" and upgraded client-side, so the static HTML
+ * stays cacheable and a reader with no localStorage still sees something true.
+ */
+
+interface Props {
+  itemId: string;
+  version: string;
+}
+
+const { itemId, version } = Astro.props;
+---
+
+<span class="review-badge shrink-0 rounded-full bg-emerald-50 px-2.5 py-1 text-[12px] font-semibold text-emerald-700 aria-pressed:bg-emerald-600 aria-pressed:text-white" data-review-id={itemId} data-review-version={version} aria-pressed="false"> Ready to review </span>
+
+<script>
+  import { REVIEWED_STORAGE_KEY } from "../lib/reviewed";
+
+  let state: Record<string, string> = {};
+  try {
+    const raw = localStorage.getItem(REVIEWED_STORAGE_KEY);
+    state = raw ? JSON.parse(raw) : {};
+  } catch {
+    state = {};
+  }
+
+  for (const badge of document.querySelectorAll<HTMLElement>(".review-badge")) {
+    const id = badge.dataset.reviewId;
+    const version = badge.dataset.reviewVersion;
+    if (!id || !version || state[id] !== version) continue;
+    badge.setAttribute("aria-pressed", "true");
+    badge.textContent = "Reviewed";
+  }
+</script>

@@ -3,7 +3,9 @@ import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import PageHeader from "../../components/PageHeader.astro";
+import ReviewToggle from "../../components/ReviewToggle.astro";
 import { forumCategoryUrl, languageMeta } from "../../lib/languages";
+import { reviewItemId } from "../../lib/reviewed";
 
 export const getStaticPaths = (async () => {
   const glossaries = await getCollection("glossaries");
@@ -16,7 +18,7 @@ export const getStaticPaths = (async () => {
 const { glossary } = Astro.props;
 const lang = glossary.data.lang;
 const meta = languageMeta(lang);
-const { sections, family, governance_sha, published_at, forum_topic_id } = glossary.data;
+const { sections, family, governance_sha, content_version, published_at, forum_topic_id } = glossary.data;
 
 const termCount = sections.reduce((total, section) => total + section.terms.length, 0);
 const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : forumCategoryUrl(lang);
@@ -107,7 +109,8 @@ const contents = sections.map((section) => ({
           }
         </ul>
 
-        <div class="mt-5 border-t border-gray-100 pt-4">
+        <div class="mt-5 space-y-3 border-t border-gray-100 pt-4">
+          <ReviewToggle itemId={reviewItemId(lang, "glossary")} version={content_version ?? governance_sha} class="w-full justify-center" />
           <a href={forumUrl} class="block rounded-lg bg-purple-600 px-4 py-2.5 text-center text-[15px] font-semibold text-white transition hover:bg-purple-700"> Discuss on the Forum </a>
         </div>
       </section>

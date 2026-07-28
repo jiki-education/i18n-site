@@ -3,7 +3,9 @@ import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import PageHeader from "../../components/PageHeader.astro";
+import ReviewBadge from "../../components/ReviewBadge.astro";
 import { contentTypeLabel, forumCategoryUrl, languageMeta } from "../../lib/languages";
+import { reviewItemId } from "../../lib/reviewed";
 
 export const getStaticPaths = (async () => {
   const glossaries = await getCollection("glossaries");
@@ -78,17 +80,19 @@ for (const item of translations) {
                   <span class="block font-semibold text-gray-900">Glossary</span>
                   <span class="mt-0.5 block text-[13px] text-gray-500">The {termCount} agreed terms every translation is built on</span>
                 </span>
-                <span class="shrink-0 rounded-full bg-emerald-50 px-2.5 py-1 text-[12px] font-semibold text-emerald-700">Ready to review</span>
+                <ReviewBadge itemId={reviewItemId(lang, "glossary")} version={glossary.data.content_version ?? glossary.data.governance_sha} />
               </a>
             </li>
-            <li class="flex items-center justify-between gap-4 rounded-xl border border-dashed border-gray-300 bg-gray-50 px-5 py-4">
-              <span class="min-w-0">
-                <span class="block font-semibold text-gray-500">Video player</span>
-                <span class="mt-0.5 block text-[13px] text-gray-400">Not ready yet</span>
-              </span>
-              <span class="shrink-0 rounded-full bg-white px-2.5 py-1 text-[12px] font-semibold text-gray-500" lang={lang} dir={meta.dir}>
-                {meta.comingSoon}
-              </span>
+            <li>
+              <a href={`/${lang}/video-player`} class="flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 transition hover:-translate-y-0.5 hover:border-purple-300 hover:shadow-md">
+                <span class="min-w-0">
+                  <span class="block font-semibold text-gray-900">Video player</span>
+                  <span class="mt-0.5 block text-[13px] text-gray-500">The controls and captions wrapped around every video</span>
+                </span>
+                <span class="shrink-0 rounded-full bg-gray-100 px-2.5 py-1 text-[12px] font-semibold text-gray-500" lang={lang} dir={meta.dir}>
+                  {meta.comingSoon}
+                </span>
+              </a>
             </li>
           </ul>
         </section>
@@ -108,7 +112,7 @@ for (const item of translations) {
                           </span>
                           <span class="mt-0.5 block text-[13px] text-gray-500">{item.data.slug}</span>
                         </span>
-                        <span class="shrink-0 rounded-full bg-emerald-50 px-2.5 py-1 text-[12px] font-semibold text-emerald-700">Ready to review</span>
+                        <ReviewBadge itemId={reviewItemId(lang, item.data.type, item.data.slug)} version={item.data.content_version ?? item.data.en_md5 ?? "unknown"} />
                       </a>
                     </li>
                   ) : (

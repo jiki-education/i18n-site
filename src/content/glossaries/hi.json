@@ -2,7 +2,8 @@
   "lang": "hi",
   "name": "Hindi",
   "family": null,
-  "governance_sha": "0349487",
+  "governance_sha": "404ba25",
+  "content_version": "8ea003538f31",
   "published_at": "2026-07-28",
   "sections": [
     {

@@ -34,6 +34,10 @@ const translations = defineCollection({
     en_md5: z.string().optional(),
     /** translator-repo SHA whose guide + glossary this was built against. */
     governance_sha: z.string().optional(),
+    /** Hash of the translated text. Readers' "reviewed" marks are keyed on it,
+     *  so republishing changed content clears them and a no-op republish
+     *  doesn't. */
+    content_version: z.string().optional(),
     published_at: z.string().optional(),
     /** Discourse topic where this translation is discussed. */
     forum_topic_id: z.number().optional()
@@ -84,6 +88,8 @@ const glossaries = defineCollection({
     lang: z.string(),
     family: z.string().nullable().optional(),
     governance_sha: z.string(),
+    /** Hash of the terms. See the note on the translations collection. */
+    content_version: z.string().optional(),
     published_at: z.string(),
     sections: z.array(glossarySection),
     /** Discourse topic for glossary discussion, from forum-tracking.json. */

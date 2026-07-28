@@ -3,8 +3,10 @@ import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import PageHeader from "../../../components/PageHeader.astro";
+import ReviewToggle from "../../../components/ReviewToggle.astro";
 import { alignBlocks, renderBlock, splitBlocks } from "../../../lib/markdown";
 import { contentTypeLabel, forumCategoryUrl, languageMeta } from "../../../lib/languages";
+import { reviewItemId } from "../../../lib/reviewed";
 
 export const getStaticPaths = (async () => {
   const translations = await getCollection("translations");
@@ -22,7 +24,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { translation, source } = Astro.props;
-const { lang, type, slug, title, en_md5, published_at, governance_sha, forum_topic_id } = translation.data;
+const { lang, type, slug, title, en_md5, content_version, published_at, governance_sha, forum_topic_id } = translation.data;
 const meta = languageMeta(lang);
 
 /** The English source moved on after this was translated. */
@@ -126,7 +128,10 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
       <p class="mt-2 max-w-2xl text-[15px] text-gray-600">
         You don't need to explain why. "This sounds off" is genuinely useful. If it's a single word we've used everywhere, correct it in <a href={`/${lang}/glossary`} class="font-semibold text-blue-600 hover:text-blue-700">the glossary</a> instead, and it gets fixed everywhere at once.
       </p>
-      <a href={forumUrl} class="mt-4 inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Comment on the forum </a>
+      <div class="mt-4 flex flex-wrap items-center gap-3">
+        <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Comment on the forum </a>
+        <ReviewToggle itemId={reviewItemId(lang, type, slug)} version={content_version ?? en_md5 ?? "unknown"} />
+      </div>
     </div>
   </div>
 </Layout>

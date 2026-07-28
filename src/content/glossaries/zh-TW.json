@@ -2,7 +2,8 @@
   "lang": "zh-TW",
   "name": "Traditional Chinese",
   "family": "zh",
-  "governance_sha": "0349487",
+  "governance_sha": "404ba25",
+  "content_version": "e56d52437d90",
   "published_at": "2026-07-28",
   "sections": [
     {

@@ -1,0 +1,75 @@
+---
+/**
+ * A checkbox-looking toggle recording that you've reviewed this thing.
+ * State and invalidation rules live in src/lib/reviewed.ts.
+ */
+
+interface Props {
+  /** Stable id for the thing being reviewed, e.g. hu/glossary. */
+  itemId: string;
+  /** Its content hash. Changing it sends the item back to unreviewed. */
+  version: string;
+  class?: string;
+}
+
+const { itemId, version, class: className = "" } = Astro.props;
+---
+
+<button type="button" class={`review-toggle group inline-flex items-center gap-2.5 rounded-lg border border-gray-300 bg-white px-3.5 py-2 text-[14px] font-semibold text-gray-600 transition hover:border-purple-300 hover:bg-purple-50 aria-pressed:border-emerald-300 aria-pressed:bg-emerald-50 aria-pressed:text-emerald-800 ${className}`} data-review-id={itemId} data-review-version={version} aria-pressed="false">
+  <span class="grid h-[18px] w-[18px] shrink-0 place-items-center rounded-[4px] border-2 border-gray-300 transition group-aria-pressed:border-emerald-600 group-aria-pressed:bg-emerald-600" aria-hidden="true">
+    <svg class="h-3 w-3 text-white opacity-0 transition group-aria-pressed:opacity-100" viewBox="0 0 12 12" fill="none">
+      <path d="M2 6.2 4.6 8.8 10 3.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </span>
+  <span data-review-label>Mark as reviewed</span>
+</button>
+
+<script>
+  import { REVIEWED_STORAGE_KEY } from "../lib/reviewed";
+
+  type Reviewed = Record<string, string>;
+
+  /** Safari private mode throws on localStorage, so every access is guarded. */
+  function read(): Reviewed {
+    try {
+      const raw = localStorage.getItem(REVIEWED_STORAGE_KEY);
+      return raw ? (JSON.parse(raw) as Reviewed) : {};
+    } catch {
+      return {};
+    }
+  }
+
+  function write(state: Reviewed) {
+    try {
+      localStorage.setItem(REVIEWED_STORAGE_KEY, JSON.stringify(state));
+    } catch {
+      // Storage unavailable or full. The toggle still works for this pageview.
+    }
+  }
+
+  function paint(button: HTMLButtonElement, on: boolean) {
+    button.setAttribute("aria-pressed", String(on));
+    const label = button.querySelector("[data-review-label]");
+    if (label) label.textContent = on ? "Reviewed" : "Mark as reviewed";
+  }
+
+  for (const button of document.querySelectorAll<HTMLButtonElement>(".review-toggle")) {
+    const id = button.dataset.reviewId;
+    const version = button.dataset.reviewVersion;
+    if (!id || !version) continue;
+
+    paint(button, read()[id] === version);
+
+    button.addEventListener("click", () => {
+      const state = read();
+      const wasOn = state[id] === version;
+      if (wasOn) {
+        delete state[id];
+      } else {
+        state[id] = version;
+      }
+      write(state);
+      paint(button, !wasOn);
+    });
+  }
+</script>

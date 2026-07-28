@@ -33,22 +33,10 @@ const contents = sections.map((section) => ({
 }));
 ---
 
-<Layout
-  title={`${meta.name} glossary`}
-  description={`The ${termCount} agreed terms behind every Jiki translation into ${meta.name}. This is the live version: link a row and tell us if it's wrong.`}
->
-  <PageHeader
-    title={`${meta.name} glossary`}
-    subtitle={`The ${termCount} terms we've agreed to use consistently in every ${meta.name} translation. This page is the live version. If one of these is wrong, everything downstream of it is wrong too, so it's the highest-value thing you can correct.`}
-    crumbs={[{ label: "Languages", href: "/" }, { label: meta.name, href: `/${lang}` }, { label: "Glossary" }]}
-  >
+<Layout title={`${meta.name} glossary`} description={`The ${termCount} agreed terms behind every Jiki translation into ${meta.name}. This is the live version: link a row and tell us if it's wrong.`}>
+  <PageHeader title={`${meta.name} glossary`} subtitle={`The ${termCount} terms we've agreed to use consistently in every ${meta.name} translation. This page is the live version. If one of these is wrong, everything downstream of it is wrong too, so it's the highest-value thing you can correct.`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name, href: `/${lang}` }, { label: "Glossary" }]}>
     <div slot="meta" class="mt-6 flex flex-wrap items-center gap-3">
-      <a
-        href={forumUrl}
-        class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"
-      >
-        Discuss these terms
-      </a>
+      <a href={forumUrl} class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"> Discuss these terms </a>
       <span class="text-[13px] text-purple-300">
         Updated {published_at} &middot; built from <code class="font-mono">{governance_sha}</code>
       </span>
@@ -58,23 +46,16 @@ const contents = sections.map((section) => ({
   <div class="lg-container grid gap-10 py-10 lg:grid-cols-[1fr_350px] lg:gap-[7%]">
     <div class="min-w-0">
       <div class="textual-content">
-        <p>
-          Every term here has been agreed and is binding: translations use it exactly, with no synonyms and no mixing
-          within a document. Terms that haven't been agreed yet simply aren't here.
-        </p>
+        <p>Every term here has been agreed and is binding: translations use it exactly, with no synonyms and no mixing within a document. Terms that haven't been agreed yet simply aren't here.</p>
         {
           family && (
             <p>
-              Rows marked <strong>shared</strong> come from the {family.toUpperCase()} family glossary and apply to
-              every {family.toUpperCase()} locale. The rest are specific to {meta.name}. A term lives in exactly one of
-              the two, never both.
+              Rows marked <strong>shared</strong> come from the {family.toUpperCase()} family glossary and apply to every {family.toUpperCase()} locale. The rest are specific to {meta.name}. A term lives in exactly one of the two, never both.
             </p>
           )
         }
         <p>
-          Every row has its own link. Click the <span class="font-mono text-purple-600">#</span> next to a term to grab a
-          link straight to it, then paste that into the forum with what's wrong. That way we know precisely which decision
-          you're objecting to.
+          Every row has its own link. Click the <span class="font-mono text-purple-600">#</span> next to a term to grab a link straight to it, then paste that into the forum with what's wrong. That way we know precisely which decision you're objecting to.
         </p>
       </div>
 
@@ -85,16 +66,8 @@ const contents = sections.map((section) => ({
             return (
               <section id={anchor} class="scroll-mt-24">
                 <div class="flex flex-wrap items-baseline gap-3">
-                  {section.level <= 2 ? (
-                    <h2 class="text-[24px] font-bold text-gray-900">{section.title}</h2>
-                  ) : (
-                    <h3 class="text-[19px] font-semibold text-gray-900">{section.title}</h3>
-                  )}
-                  {section.scope === "family" && (
-                    <span class="rounded-full bg-blue-50 px-2.5 py-0.5 text-[12px] font-semibold text-blue-700">
-                      shared across {family?.toUpperCase()}
-                    </span>
-                  )}
+                  {section.level <= 2 ? <h2 class="text-[24px] font-bold text-gray-900">{section.title}</h2> : <h3 class="text-[19px] font-semibold text-gray-900">{section.title}</h3>}
+                  {section.scope === "family" && <span class="rounded-full bg-blue-50 px-2.5 py-0.5 text-[12px] font-semibold text-blue-700">shared across {family?.toUpperCase()}</span>}
                 </div>
                 {section.intro && <p class="mt-2 text-[15px] text-gray-500">{section.intro}</p>}
 
@@ -104,23 +77,11 @@ const contents = sections.map((section) => ({
                       <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                         <span class="text-[15px] text-gray-500">{term.en}</span>
                         <span class="text-gray-300">&rarr;</span>
-                        <span
-                          class="text-[17px] font-semibold text-gray-900"
-                          lang={term.use === "en" ? "en" : lang}
-                          dir={term.use === "en" ? "ltr" : meta.dir}
-                        >
+                        <span class="text-[17px] font-semibold text-gray-900" lang={term.use === "en" ? "en" : lang} dir={term.use === "en" ? "ltr" : meta.dir}>
                           {term.target}
                         </span>
-                        {term.use === "en" && (
-                          <span class="rounded-full bg-gray-100 px-2 py-0.5 text-[11px] font-semibold text-gray-500">
-                            kept in English
-                          </span>
-                        )}
-                        <a
-                          href={`#${term.anchor}`}
-                          class="ml-auto font-mono text-[13px] text-gray-300 transition group-hover:text-purple-600"
-                          aria-label={`Link to the term "${term.en}"`}
-                        >
+                        {term.use === "en" && <span class="rounded-full bg-gray-100 px-2 py-0.5 text-[11px] font-semibold text-gray-500">kept in English</span>}
+                        <a href={`#${term.anchor}`} class="ml-auto font-mono text-[13px] text-gray-300 transition group-hover:text-purple-600" aria-label={`Link to the term "${term.en}"`}>
                           #
                         </a>
                       </div>
@@ -142,12 +103,7 @@ const contents = sections.map((section) => ({
           {
             contents.map((entry) => (
               <li>
-                <a
-                  href={`#${entry.anchor}`}
-                  class={`-mx-2 flex items-baseline justify-between gap-2 rounded-lg px-2 py-1.5 text-[14px] transition hover:bg-purple-50 ${
-                    entry.level <= 2 ? "font-semibold text-gray-900" : "pl-5 text-gray-600"
-                  }`}
-                >
+                <a href={`#${entry.anchor}`} class={`-mx-2 flex items-baseline justify-between gap-2 rounded-lg px-2 py-1.5 text-[14px] transition hover:bg-purple-50 ${entry.level <= 2 ? "font-semibold text-gray-900" : "pl-5 text-gray-600"}`}>
                   <span class="min-w-0 truncate">{entry.title}</span>
                   <span class="shrink-0 text-[12px] text-gray-400">{entry.count}</span>
                 </a>
@@ -157,12 +113,7 @@ const contents = sections.map((section) => ({
         </ul>
 
         <div class="mt-5 border-t border-gray-100 pt-4">
-          <a
-            href={forumUrl}
-            class="block rounded-lg bg-purple-600 px-4 py-2.5 text-center text-[15px] font-semibold text-white transition hover:bg-purple-700"
-          >
-            Something's wrong here
-          </a>
+          <a href={forumUrl} class="block rounded-lg bg-purple-600 px-4 py-2.5 text-center text-[15px] font-semibold text-white transition hover:bg-purple-700"> Something's wrong here </a>
           <p class="mt-2 text-center text-[13px] text-gray-500">Tell us on the forum</p>
         </div>
       </section>

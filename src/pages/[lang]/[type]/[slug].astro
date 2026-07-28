@@ -13,9 +13,7 @@ export const getStaticPaths = (async () => {
   return translations
     .filter((t) => t.data.status === "published")
     .map((translation) => {
-      const source = english.find(
-        (e) => e.data.type === translation.data.type && e.data.slug === translation.data.slug
-      );
+      const source = english.find((e) => e.data.type === translation.data.type && e.data.slug === translation.data.slug);
       return {
         params: { lang: translation.data.lang, type: translation.data.type, slug: translation.data.slug },
         props: { translation, source }
@@ -39,32 +37,11 @@ const targetOnly = splitBlocks(targetBody).map(renderBlock);
 const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : forumCategoryUrl(lang);
 ---
 
-<Layout
-  title={title ?? slug}
-  description={`${contentTypeLabel(type)}: ${slug}, translated into ${meta.name}. Read it against the English and tell us what sounds wrong.`}
->
-  <PageHeader
-    title={title ?? slug}
-    titleLang={lang}
-    titleDir={meta.dir}
-    subtitle={`${contentTypeLabel(type)} · ${meta.name}. This is a draft translation, shown against the English it came from.`}
-    crumbs={[
-      { label: "Languages", href: "/" },
-      { label: meta.name, href: `/${lang}` },
-      { label: contentTypeLabel(type) }
-    ]}
-  >
+<Layout title={title ?? slug} description={`${contentTypeLabel(type)}: ${slug}, translated into ${meta.name}. Read it against the English and tell us what sounds wrong.`}>
+  <PageHeader title={title ?? slug} titleLang={lang} titleDir={meta.dir} subtitle={`${contentTypeLabel(type)} · ${meta.name}. This is a draft translation, shown against the English it came from.`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name, href: `/${lang}` }, { label: contentTypeLabel(type) }]}>
     <div slot="meta" class="mt-6 flex flex-wrap items-center gap-3">
-      <a
-        href={forumUrl}
-        class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"
-      >
-        Discuss on the forum
-      </a>
-      <a
-        href={`/${lang}/glossary`}
-        class="rounded-lg border border-purple-400 px-4 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-800"
-      >
+      <a href={forumUrl} class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"> Discuss on the forum </a>
+      <a href={`/${lang}/glossary`} class="rounded-lg border border-purple-400 px-4 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-800">
         {meta.name} glossary
       </a>
       <span class="text-[13px] text-purple-300">
@@ -86,14 +63,12 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
         <div class="mb-6 space-y-3">
           {stale && (
             <p class="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3.5 text-[14px] text-amber-900">
-              <strong>The English has changed since this was translated.</strong> The two columns below are still worth
-              reading against each other, but expect some drift. A fresh translation is queued.
+              <strong>The English has changed since this was translated.</strong> The two columns below are still worth reading against each other, but expect some drift. A fresh translation is queued.
             </p>
           )}
           {aligned?.mismatch && (
             <p class="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3.5 text-[14px] text-amber-900">
-              <strong>The two versions don't have the same number of paragraphs.</strong> Translations are meant to keep
-              the structure of the original, so this is itself a bug worth reporting. Rows below may not line up.
+              <strong>The two versions don't have the same number of paragraphs.</strong> Translations are meant to keep the structure of the original, so this is itself a bug worth reporting. Rows below may not line up.
             </p>
           )}
         </div>
@@ -106,24 +81,11 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
       </p>
       {
         aligned && (
-          <div
-            class="inline-flex rounded-lg border border-gray-200 bg-gray-50 p-1 text-[14px] font-semibold"
-            role="group"
-          >
-            <button
-              type="button"
-              data-view="side-by-side"
-              class="view-toggle rounded-md px-3 py-1.5 text-gray-500 transition"
-              aria-pressed="true"
-            >
+          <div class="inline-flex rounded-lg border border-gray-200 bg-gray-50 p-1 text-[14px] font-semibold" role="group">
+            <button type="button" data-view="side-by-side" class="view-toggle rounded-md px-3 py-1.5 text-gray-500 transition" aria-pressed="true">
               Side by side
             </button>
-            <button
-              type="button"
-              data-view="target-only"
-              class="view-toggle rounded-md px-3 py-1.5 text-gray-500 transition"
-              aria-pressed="false"
-            >
+            <button type="button" data-view="target-only" class="view-toggle rounded-md px-3 py-1.5 text-gray-500 transition" aria-pressed="false">
               {meta.name} only
             </button>
           </div>
@@ -142,19 +104,9 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
           <div class="divide-y divide-gray-100">
             {aligned.rows.map((row) => (
               <div class="grid gap-4 py-5 lg:grid-cols-2 lg:gap-8">
-                <div class="textual-content text-[15px] text-gray-500">
-                  {row.english ? (
-                    <Fragment set:html={row.english} />
-                  ) : (
-                    <p class="text-[13px] italic">Nothing in the English here.</p>
-                  )}
-                </div>
+                <div class="textual-content text-[15px] text-gray-500">{row.english ? <Fragment set:html={row.english} /> : <p class="text-[13px] italic">Nothing in the English here.</p>}</div>
                 <div class="textual-content" lang={lang} dir={meta.dir}>
-                  {row.target ? (
-                    <Fragment set:html={row.target} />
-                  ) : (
-                    <p class="text-[13px] text-amber-700 italic">Missing from the translation.</p>
-                  )}
+                  {row.target ? <Fragment set:html={row.target} /> : <p class="text-[13px] text-amber-700 italic">Missing from the translation.</p>}
                 </div>
               </div>
             ))}
@@ -172,18 +124,9 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
     <div class="mt-12 rounded-2xl border border-gray-200 bg-gray-50 p-6">
       <h2 class="text-[19px] font-bold text-gray-900">Spotted something wrong?</h2>
       <p class="mt-2 max-w-2xl text-[15px] text-gray-600">
-        You don't need to explain why. "This sounds off" is genuinely useful. If it's a single word we've used
-        everywhere, correct it in <a href={`/${lang}/glossary`} class="font-semibold text-blue-600 hover:text-blue-700"
-          >the glossary</a
-        >
-        instead, and it gets fixed everywhere at once.
+        You don't need to explain why. "This sounds off" is genuinely useful. If it's a single word we've used everywhere, correct it in <a href={`/${lang}/glossary`} class="font-semibold text-blue-600 hover:text-blue-700">the glossary</a> instead, and it gets fixed everywhere at once.
       </p>
-      <a
-        href={forumUrl}
-        class="mt-4 inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"
-      >
-        Comment on the forum
-      </a>
+      <a href={forumUrl} class="mt-4 inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Comment on the forum </a>
     </div>
   </div>
 </Layout>

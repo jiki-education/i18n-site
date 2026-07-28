@@ -19,8 +19,6 @@ const languages = glossaries
   })
   .sort((a, b) => a.meta.name.localeCompare(b.meta.name));
 
-const totalPublished = languages.reduce((total, l) => total + l.published, 0);
-
 const QUICK_LINKS = [
   {
     label: "Kickoff live stream",
@@ -116,9 +114,6 @@ const QUICK_LINKS = [
         <h2 class="text-[13px] font-bold tracking-[0.08em] text-gray-500 uppercase">
           Languages <span class="text-gray-400">({languages.length})</span>
         </h2>
-        <p class="mt-2 text-[13px] text-gray-500">
-          {totalPublished > 0 ? `${totalPublished} translation${totalPublished === 1 ? "" : "s"} published so far.` : "Glossaries are up. Translations start landing on Friday."}
-        </p>
         <ul class="mt-3 divide-y divide-gray-100">
           {
             languages.map(({ lang, meta, termCount, published }) => (

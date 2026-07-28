@@ -117,3 +117,49 @@ const CONTENT_TYPE_SINGULARS: Record<string, string> = {
 export function contentTypeSingular(type: string): string {
   return CONTENT_TYPE_SINGULARS[type] ?? type;
 }
+
+/**
+ * The flag shown for each language, mirroring the emoji on its Discourse
+ * category so the site and the forum agree.
+ *
+ * These are read off the live forum (`/site.json`, `categories[].emoji`), not
+ * chosen here: several are not the obvious guess. Arabic and Latin American
+ * Spanish use globes rather than any one country's flag, Urdu uses Pakistan,
+ * Swahili uses Tanzania, Catalan uses Andorra (Catalonia has no Unicode flag),
+ * and Turkish uses Türkiye. If a category's emoji changes on the forum, change
+ * it here too.
+ */
+const FLAGS: Record<string, string> = {
+  ar: "🌍",
+  bn: "🇧🇩",
+  ca: "🇦🇩",
+  de: "🇩🇪",
+  el: "🇬🇷",
+  "es-419": "🌎",
+  "es-ES": "🇪🇸",
+  fa: "🇮🇷",
+  fr: "🇫🇷",
+  hi: "🇮🇳",
+  hu: "🇭🇺",
+  id: "🇮🇩",
+  it: "🇮🇹",
+  ja: "🇯🇵",
+  ko: "🇰🇷",
+  nl: "🇳🇱",
+  pl: "🇵🇱",
+  "pt-BR": "🇧🇷",
+  "pt-pt": "🇵🇹",
+  ru: "🇷🇺",
+  sr: "🇷🇸",
+  sw: "🇹🇿",
+  tr: "🇹🇷",
+  uk: "🇺🇦",
+  ur: "🇵🇰",
+  vi: "🇻🇳",
+  "zh-CN": "🇨🇳",
+  "zh-TW": "🇹🇼"
+};
+
+export function languageFlag(lang: string): string {
+  return FLAGS[lang] ?? "🌐";
+}

@@ -40,7 +40,7 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
 ---
 
 <Layout title={title ?? slug} description={`${contentTypeLabel(type)}: ${slug}, translated into ${meta.name}. Read it against the English and tell us what sounds wrong.`}>
-  <PageHeader title={title ?? slug} titleLang={lang} titleDir={meta.dir} subtitle={`This is a draft translation of the "${source?.data.title ?? slug}" ${contentTypeSingular(type)}.`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name, href: `/${lang}` }, { label: contentTypeLabel(type) }]} />
+  <PageHeader title={title ?? slug} titleLang={lang} titleDir={meta.dir} subtitle={`This is a draft translation of the "${source?.data.title ?? slug}" ${contentTypeSingular(type)}.`} crumbs={[{ label: "Home", href: "/" }, { label: "Languages", href: "/languages" }, { label: meta.name, href: `/${lang}` }, { label: contentTypeLabel(type) }]} />
 
   <div class="lg-container py-8">
     {

@@ -34,7 +34,7 @@ for (const item of translations) {
 ---
 
 <Layout title={`${meta.name} (${lang})`} description={`Jiki and Exercism translated into ${meta.name}: ${termCount} agreed terms and ${published.length} published translations, all open for comment.`}>
-  <PageHeader title={meta.name} subtitle={`Jiki and Exercism in ${meta.name}. Everything here is a draft, and all of it is open for comment.`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name }]}>
+  <PageHeader title={meta.name} subtitle={`Jiki and Exercism in ${meta.name}. Everything here is a draft, and all of it is open for comment.`} crumbs={[{ label: "Home", href: "/" }, { label: "Languages", href: "/languages" }, { label: meta.name }]}>
     <div slot="meta" class="mt-6 flex flex-wrap gap-3">
       <a href={forumCategoryUrl(lang)} class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"> Discuss on the forum </a>
     </div>
@@ -161,7 +161,7 @@ for (const item of translations) {
             </a>
           </li>
           <li>
-            <a href="/" class="-mx-2 block rounded-lg px-2 py-2 transition hover:bg-purple-50">
+            <a href="/languages" class="-mx-2 block rounded-lg px-2 py-2 transition hover:bg-purple-50">
               <span class="block text-[15px] font-semibold text-blue-600">All languages</span>
               <span class="block text-[13px] text-gray-500">Back to the full list</span>
             </a>

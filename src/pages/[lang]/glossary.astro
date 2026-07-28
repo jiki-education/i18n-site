@@ -36,7 +36,7 @@ const contents = sections.map((section) => ({
 ---
 
 <Layout title={`${meta.name} glossary`} description={`The ${termCount} agreed terms behind every Jiki translation into ${meta.name}. This is the live version: link a row and tell us if it's wrong.`}>
-  <PageHeader title={`${meta.name} glossary`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name, href: `/${lang}` }, { label: "Glossary" }]} />
+  <PageHeader title={`${meta.name} glossary`} crumbs={[{ label: "Home", href: "/" }, { label: "Languages", href: "/languages" }, { label: meta.name, href: `/${lang}` }, { label: "Glossary" }]} />
 
   <div class="lg-container grid gap-10 py-10 lg:grid-cols-[1fr_350px] lg:gap-[7%]">
     <div class="min-w-0">

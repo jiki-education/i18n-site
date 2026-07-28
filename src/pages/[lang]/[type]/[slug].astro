@@ -24,7 +24,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { translation, source } = Astro.props;
-const { lang, type, slug, title, en_md5, content_version, published_at, governance_sha, forum_topic_id } = translation.data;
+const { lang, type, slug, title, en_md5, content_version, forum_topic_id } = translation.data;
 const meta = languageMeta(lang);
 
 /** The English source moved on after this was translated. */
@@ -40,24 +40,7 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
 ---
 
 <Layout title={title ?? slug} description={`${contentTypeLabel(type)}: ${slug}, translated into ${meta.name}. Read it against the English and tell us what sounds wrong.`}>
-  <PageHeader title={title ?? slug} titleLang={lang} titleDir={meta.dir} subtitle={`This is a draft translation of the ${source?.data.title ?? slug} ${contentTypeSingular(type)} in ${meta.name}, shown against the English it has been translated from.`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name, href: `/${lang}` }, { label: contentTypeLabel(type) }]}>
-    <div slot="meta" class="mt-6 flex flex-wrap items-center gap-3">
-      <a href={forumUrl} class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"> Discuss on the forum </a>
-      <a href={`/${lang}/glossary`} class="rounded-lg border border-purple-400 px-4 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-800">
-        {meta.name} glossary
-      </a>
-      <span class="text-[13px] text-purple-300">
-        Published {published_at}{
-          governance_sha && (
-            <>
-              {" "}
-              &middot; glossary <code class="font-mono">{governance_sha}</code>
-            </>
-          )
-        }
-      </span>
-    </div>
-  </PageHeader>
+  <PageHeader title={title ?? slug} titleLang={lang} titleDir={meta.dir} subtitle={`This is a draft translation of the "${source?.data.title ?? slug}" ${contentTypeSingular(type)}.`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name, href: `/${lang}` }, { label: contentTypeLabel(type) }]} />
 
   <div class="lg-container py-8">
     {
@@ -83,7 +66,7 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
         You're reading in {meta.name}. Tell us anything that sounds off, however small. If it's a <strong class="font-semibold text-gray-800">single word</strong>, correct it in <a href={`/${lang}/glossary`} class="font-semibold text-blue-600 hover:text-blue-700">the glossary</a> and it gets fixed everywhere at once. If it's <strong class="font-semibold text-gray-800">phrasing</strong>, tell us on <a href={forumUrl} class="font-semibold text-blue-600 hover:text-blue-700">the forum</a>. If you can't explain why, that's ok - tell us anyway!
       </p>
       <div class="mt-5 flex flex-wrap items-center gap-3">
-        <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Comment on the forum </a>
+        <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Discuss on the Forum </a>
         <ReviewToggle itemId={reviewItemId(lang, type, slug)} version={content_version ?? en_md5 ?? "unknown"} class="ml-5" />
       </div>
     </div>

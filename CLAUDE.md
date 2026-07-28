@@ -61,7 +61,7 @@ Two deliberate choices worth not undoing:
 
 ```bash
 ./bin/dev     # install + dev server, the usual entry point
-pnpm dev      # http://local.jiki.io:3066
+pnpm dev      # http://local.jiki.io:3068
 pnpm build    # static output to dist/
 pnpm preview  # wrangler dev, serving dist/ the way Cloudflare will
 pnpm deploy   # astro build && wrangler deploy (CI does this; rarely run by hand)

@@ -9,7 +9,7 @@ what's wrong on [the forum](https://forum.jiki.io/c/i18n/67).
 ## Running it
 
 ```bash
-./bin/dev     # http://local.jiki.io:3066
+./bin/dev     # http://local.jiki.io:3068
 ```
 
 ## Where the content comes from

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 pnpm install
 
-# Start the Astro dev server on http://local.jiki.io:3066
+# Start the Astro dev server on http://local.jiki.io:3068
 # (host and port come from astro.config.mjs)
 pnpm dev

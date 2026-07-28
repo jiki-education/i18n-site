@@ -71,30 +71,21 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
       </div>
     </div>
 
-    <div class="mt-8 mb-5 flex flex-wrap items-center justify-end gap-4">
-      {
-        aligned && (
-          <div class="inline-flex rounded-lg border border-gray-200 bg-gray-50 p-1 text-[14px] font-semibold" role="group">
-            <button type="button" data-view="side-by-side" class="view-toggle rounded-md px-3 py-1.5 text-gray-500 transition" aria-pressed="true">
-              Side by side
-            </button>
-            <button type="button" data-view="target-only" class="view-toggle rounded-md px-3 py-1.5 text-gray-500 transition" aria-pressed="false">
-              {meta.name} only
-            </button>
-          </div>
-        )
-      }
-    </div>
-
     {
       aligned && (
-        <div data-panel="side-by-side">
+        <div>
           <div class="sticky top-[57px] z-10 hidden gap-8 border-b border-gray-200 bg-white/95 py-2.5 backdrop-blur lg:grid lg:grid-cols-2">
             <span class="text-[12px] font-bold tracking-[0.08em] text-gray-400 uppercase">English</span>
             <span class="text-[12px] font-bold tracking-[0.08em] text-gray-400 uppercase">{meta.name}</span>
           </div>
 
           <div class="divide-y divide-gray-100">
+            <div class="grid gap-4 py-5 lg:grid-cols-2 lg:gap-8">
+              <h2 class="text-[24px] leading-[1.25] font-bold text-gray-500">{source?.data.title ?? slug}</h2>
+              <h2 class="text-[24px] leading-[1.25] font-bold text-gray-900" lang={lang} dir={meta.dir}>
+                {title ?? slug}
+              </h2>
+            </div>
             {aligned.rows.map((row) => (
               <div class="grid gap-4 py-5 lg:grid-cols-2 lg:gap-8">
                 <div class="textual-content text-[17px] text-gray-500">{row.english ? <Fragment set:html={row.english} /> : <p class="text-[13px] italic">Nothing in the English here.</p>}</div>
@@ -108,36 +99,15 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
       )
     }
 
-    <div data-panel="target-only" class={aligned ? "hidden" : ""}>
-      <div class="textual-content md-container !px-0 text-[18px]" lang={lang} dir={meta.dir}>
-        {targetOnly.map((html) => <Fragment set:html={html} />)}
-      </div>
-    </div>
+    {
+      !aligned && (
+        <div class="textual-content md-container !px-0 text-[18px]" lang={lang} dir={meta.dir}>
+          <h2 class="mb-5 text-[28px] leading-[1.25] font-bold text-gray-900">{title ?? slug}</h2>
+          {targetOnly.map((html) => (
+            <Fragment set:html={html} />
+          ))}
+        </div>
+      )
+    }
   </div>
 </Layout>
-
-<script>
-  // Progressive enhancement: without JS the side-by-side view is what you get.
-  const buttons = document.querySelectorAll<HTMLButtonElement>(".view-toggle");
-  const panels = document.querySelectorAll<HTMLElement>("[data-panel]");
-
-  const ACTIVE = ["bg-white", "text-gray-900", "shadow-sm"];
-
-  function select(view: string) {
-    for (const panel of panels) {
-      panel.classList.toggle("hidden", panel.dataset.panel !== view);
-    }
-    for (const button of buttons) {
-      const on = button.dataset.view === view;
-      button.setAttribute("aria-pressed", String(on));
-      button.classList.toggle("text-gray-500", !on);
-      for (const cls of ACTIVE) button.classList.toggle(cls, on);
-    }
-  }
-
-  for (const button of buttons) {
-    button.addEventListener("click", () => select(button.dataset.view!));
-  }
-
-  if (buttons.length > 0) select("side-by-side");
-</script>

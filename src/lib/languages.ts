@@ -102,3 +102,18 @@ export const CONTENT_TYPE_LABELS: Record<string, string> = {
 export function contentTypeLabel(type: string): string {
   return CONTENT_TYPE_LABELS[type] ?? type;
 }
+
+/** Singular form, for talking about one item: "Review this concept". */
+const CONTENT_TYPE_SINGULARS: Record<string, string> = {
+  concept: "concept",
+  article: "article",
+  "blog-post": "blog post",
+  exercise: "exercise",
+  "video-subtitles": "video's subtitles",
+  "website-copy": "website copy",
+  interpreters: "interpreter messages"
+};
+
+export function contentTypeSingular(type: string): string {
+  return CONTENT_TYPE_SINGULARS[type] ?? type;
+}

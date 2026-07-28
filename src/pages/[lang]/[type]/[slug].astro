@@ -5,7 +5,7 @@ import Layout from "../../../layouts/Layout.astro";
 import PageHeader from "../../../components/PageHeader.astro";
 import ReviewToggle from "../../../components/ReviewToggle.astro";
 import { alignBlocks, renderBlock, splitBlocks } from "../../../lib/markdown";
-import { contentTypeLabel, forumCategoryUrl, languageMeta } from "../../../lib/languages";
+import { contentTypeLabel, contentTypeSingular, forumCategoryUrl, languageMeta } from "../../../lib/languages";
 import { reviewItemId } from "../../../lib/reviewed";
 
 export const getStaticPaths = (async () => {
@@ -77,14 +77,17 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
       )
     }
 
-    <div class="rounded-2xl border border-gray-200 bg-gray-50 p-6">
-      <h2 class="text-[19px] font-bold text-gray-900">Spotted something wrong?</h2>
-      <p class="mt-2 max-w-2xl text-[15px] text-gray-600">
-        You're reading in {meta.name}. Tell us anything that sounds off, however small. You don't need to explain why: "this sounds off" is genuinely useful. If it's a single word we've used everywhere, correct it in <a href={`/${lang}/glossary`} class="font-semibold text-blue-600 hover:text-blue-700">the glossary</a> instead, and it gets fixed everywhere at once.
-      </p>
-      <div class="mt-4 flex flex-wrap items-center gap-3">
+    <div class="max-w-2xl rounded-2xl border border-gray-200 bg-gray-50 p-6">
+      <h2 class="text-[19px] font-bold text-gray-900">Review this {contentTypeSingular(type)}</h2>
+      <p class="mt-2 text-[15px] text-gray-600">You're reading in {meta.name}. Tell us anything that sounds off, however small.</p>
+      <ul class="mt-3 space-y-1.5 text-[15px] text-gray-600">
+        <li>If it's a <strong class="font-semibold text-gray-800">single word</strong>, correct it in the glossary and it gets fixed everywhere at once.</li>
+        <li>If it's <strong class="font-semibold text-gray-800">phrasing</strong>, tell us on the forum. If you can't explain why, that's ok - tell us anyway!</li>
+      </ul>
+      <div class="mt-5 flex flex-wrap items-center gap-3">
         <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Comment on the forum </a>
-        <ReviewToggle itemId={reviewItemId(lang, type, slug)} version={content_version ?? en_md5 ?? "unknown"} />
+        <a href={`/${lang}/glossary`} class="inline-block rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-[15px] font-semibold text-gray-700 transition hover:border-purple-300 hover:bg-purple-50"> Edit the glossary </a>
+        <ReviewToggle itemId={reviewItemId(lang, type, slug)} version={content_version ?? en_md5 ?? "unknown"} class="ml-5" />
       </div>
     </div>
 

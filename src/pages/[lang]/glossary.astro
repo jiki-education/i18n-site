@@ -34,28 +34,23 @@ const contents = sections.map((section) => ({
 ---
 
 <Layout title={`${meta.name} glossary`} description={`The ${termCount} agreed terms behind every Jiki translation into ${meta.name}. This is the live version: link a row and tell us if it's wrong.`}>
-  <PageHeader title={`${meta.name} glossary`} subtitle={`The ${termCount} terms we've agreed to use consistently in every ${meta.name} translation. This page is the live version. If one of these is wrong, everything downstream of it is wrong too, so it's the highest-value thing you can correct.`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name, href: `/${lang}` }, { label: "Glossary" }]}>
-    <div slot="meta" class="mt-6 flex flex-wrap items-center gap-3">
-      <a href={forumUrl} class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"> Discuss these terms </a>
-      <span class="text-[13px] text-purple-300">
-        Updated {published_at} &middot; built from <code class="font-mono">{governance_sha}</code>
-      </span>
-    </div>
-  </PageHeader>
+  <PageHeader title={`${meta.name} glossary`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name, href: `/${lang}` }, { label: "Glossary" }]} />
 
   <div class="lg-container grid gap-10 py-10 lg:grid-cols-[1fr_350px] lg:gap-[7%]">
     <div class="min-w-0">
-      <div class="textual-content">
-        <p>Every term here has been agreed and is binding: translations use it exactly, with no synonyms and no mixing within a document. Terms that haven't been agreed yet simply aren't here.</p>
+      <div class="rounded-xl border border-purple-200 bg-purple-50 p-5">
+        <p class="text-[15px] leading-[1.7] text-gray-700">
+          The {termCount} terms we've agreed to use consistently in every {meta.name} translation. This page is the live version. If one of these is wrong, everything downstream of it is wrong too, so it's the highest-value thing you can correct.
+        </p>
         {
           family && (
-            <p>
-              Rows marked <strong>shared</strong> come from the {family.toUpperCase()} family glossary and apply to every {family.toUpperCase()} locale. The rest are specific to {meta.name}. A term lives in exactly one of the two, never both.
+            <p class="mt-3 text-[15px] leading-[1.7] text-gray-700">
+              Rows marked <strong class="font-semibold">shared</strong> come from the {family.toUpperCase()} family glossary and apply to every {family.toUpperCase()} locale. The rest are specific to {meta.name}.
             </p>
           )
         }
-        <p>
-          Every row has its own link. Click the <span class="font-mono text-purple-600">#</span> next to a term to grab a link straight to it, then paste that into the forum with what's wrong. That way we know precisely which decision you're objecting to.
+        <p class="mt-3 text-[13px] text-gray-500">
+          Updated {published_at} &middot; built from <code class="font-mono">{governance_sha}</code>
         </p>
       </div>
 
@@ -113,8 +108,8 @@ const contents = sections.map((section) => ({
         </ul>
 
         <div class="mt-5 border-t border-gray-100 pt-4">
-          <a href={forumUrl} class="block rounded-lg bg-purple-600 px-4 py-2.5 text-center text-[15px] font-semibold text-white transition hover:bg-purple-700"> Something's wrong here </a>
-          <p class="mt-2 text-center text-[13px] text-gray-500">Tell us on the forum</p>
+          <a href={forumUrl} class="block rounded-lg bg-purple-600 px-4 py-2.5 text-center text-[15px] font-semibold text-white transition hover:bg-purple-700"> Discuss on the Forum </a>
+          <p class="mt-2 text-center text-[13px] text-gray-500">Tell us what's wrong</p>
         </div>
       </section>
     </aside>

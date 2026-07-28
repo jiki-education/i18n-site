@@ -21,8 +21,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.1.5",
     "marked": "^18.0.7",
-    "tailwindcss": "^4.3.3",
-    "video.js": "github:videojs/video.js#main"
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
     "prettier": "^3.9.6",

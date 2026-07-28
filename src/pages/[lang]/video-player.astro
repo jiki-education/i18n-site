@@ -4,8 +4,10 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import ReviewToggle from "../../components/ReviewToggle.astro";
+import VideoPlayer from "../../components/VideoPlayer.astro";
 import { forumCategoryUrl, languageMeta } from "../../lib/languages";
 import { reviewItemId } from "../../lib/reviewed";
+import { playerLocale } from "../../lib/videojs";
 
 export const getStaticPaths = (async () => {
   const glossaries = await getCollection("glossaries");
@@ -20,25 +22,66 @@ const lang = glossary.data.lang;
 const meta = languageMeta(lang);
 const forumUrl = glossary.data.forum_topic_id ? `https://forum.jiki.io/t/${glossary.data.forum_topic_id}` : forumCategoryUrl(lang);
 
-// Nothing to review until the translated player lands. The version is bumped by
-// hand when it does, which sends everyone's "reviewed" mark back to unreviewed.
-const version = "pending";
+const locale = playerLocale(lang);
+
+const VIDEOJS_ISSUES_URL = "https://github.com/videojs/v10/issues";
+
+// What is under review here is Video.js's build, not ours, so the version tracks
+// the locale pack the player will load. Taking a newer Video.js that changes which
+// pack this page resolves to sends everyone back to unreviewed, which is exactly
+// when another look is worth asking for.
+const version = `videojs-v10-${locale.tag}-${locale.translatedCount}`;
 ---
 
-<Layout title={`${meta.name} video player`} description={`The Jiki video player in ${meta.name}. Coming soon, and open for comment when it lands.`}>
+<Layout title={`${meta.name} video player`} description={`The Jiki video player in ${meta.name}: its controls, its menus and its tooltips, open for comment.`}>
   <PageHeader title={`${meta.name} video player`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name, href: `/${lang}` }, { label: "Video player" }]} />
 
   <div class="lg-container grid gap-10 py-10 lg:grid-cols-[1fr_350px] lg:gap-[7%]">
     <div class="min-w-0">
       <div class="rounded-xl border border-purple-200 bg-purple-50 p-5">
-        <p class="text-[15px] leading-[1.7] text-gray-700">The player wrapped around every Jiki video: its controls, its captions, and everything else you read while watching. Getting this right matters as much as the videos themselves, because it's on screen for every lesson.</p>
+        <h2 class="text-[19px] font-bold text-gray-900">Review this video player</h2>
+        <p class="mt-2 text-[15px] leading-[1.7] text-gray-700">The player wrapped around every Jiki video: its controls, its captions, and everything else you read while watching. Getting this right matters as much as the videos themselves, because it's on screen for every lesson. Please read the information below the video carefully to understand how to test and how to report issues.</p>
+        <div class="mt-5 flex flex-wrap items-center gap-3">
+          <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Discuss on the Forum </a>
+          <ReviewToggle itemId={reviewItemId(lang, "video-player")} version={version} />
+        </div>
       </div>
 
-      <div class="mt-8 rounded-2xl border border-dashed border-gray-300 bg-gray-50 px-6 py-12 text-center">
-        <p class="text-[17px] font-semibold text-gray-700" lang={lang} dir={meta.dir}>{meta.comingSoon}</p>
-        <p class="mx-auto mt-2 max-w-md text-[15px] text-gray-500">
-          Nothing to review here yet. It'll appear on this page once the {meta.name} player is generated, and you'll be able to pull it apart the same way as everything else.
-        </p>
+      <div class="mt-8">
+        <VideoPlayer lang={lang} />
+      </div>
+
+      {
+        !locale.translated && (
+          <p class="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-5 py-3.5 text-[14px] leading-[1.7] text-amber-900">
+            <strong class="font-semibold">Video.js has no {meta.name} translation.</strong> The player above has fallen back to English, so there is nothing to review here yet. That gap is itself worth reporting, and it is a contained, finishable job: it is {locale.totalCount} short strings, contributed once, upstream to Video.js.
+          </p>
+        )
+      }
+
+      {
+        locale.translated && locale.broadened && (
+          <p class="mt-4 rounded-xl border border-blue-200 bg-blue-50 px-5 py-3.5 text-[14px] leading-[1.7] text-blue-900">
+            <strong class="font-semibold">Video.js has no separate {meta.name} translation.</strong> It is serving its <code class="font-mono text-[13px]">{locale.tag}</code> one instead, so anything that reads as the wrong variety of the language is worth flagging as exactly that.
+          </p>
+        )
+      }
+
+      <div class="mt-8 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+        <h2 class="text-[19px] font-bold text-gray-900">What to look at</h2>
+        <p class="mt-2 text-[15px] leading-[1.7] text-gray-600">Most of the wording is hidden until you go and find it. Open the settings menu and every submenu inside it, quality, audio, speed and captions. Hover each button long enough for its tooltip to appear. Press play, mute, go fullscreen, and skip forwards and back.</p>
+        <p class="mt-3 text-[15px] leading-[1.7] text-gray-600">These are brand new translations that almost nobody has read yet, which is why they are here. You are very likely the first native speaker to see some of these strings.</p>
+        <p class="mt-3 text-[15px] leading-[1.7] text-gray-600">The clip itself is a stand-in with placeholder English captions, and is not Jiki teaching content. Ignore it. It is only there to give the controls something to control.</p>
+      </div>
+
+      <div class="mt-6 rounded-2xl border border-gray-200 bg-white p-6">
+        <h2 class="text-[19px] font-bold text-gray-900">How to report something</h2>
+        <p class="mt-2 text-[15px] leading-[1.7] text-gray-600">The language in the video player comes from Video.js, the open-source player Jiki uses, so they are not in our glossary and we cannot fix them in a Jiki file. Post on the forum anyway and we pass it to the Video.js team, or open an issue with them yourself.</p>
+        <p class="mt-3 text-[15px] leading-[1.7] text-gray-600">Whichever route you take, three things make a report actionable, and without them it usually stalls. Say which language it is (this page is <code class="font-mono text-[13px]">{locale.tag}</code>), quote the wrong wording and what it should say instead, and attach a screenshot. A screenshot matters more than usual here, because half of these strings only appear inside a menu and are hard to describe from memory.</p>
+        <div class="mt-5 flex flex-wrap items-center gap-3">
+          <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Report it on the Forum </a>
+          <a href={VIDEOJS_ISSUES_URL} class="inline-block rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-[15px] font-semibold text-gray-600 transition hover:border-purple-300 hover:bg-purple-50"> Open a Video.js issue </a>
+        </div>
       </div>
     </div>
 
@@ -55,15 +98,10 @@ const version = "pending";
           <li>
             <a href={`/${lang}/glossary`} class="-mx-2 block rounded-lg px-2 py-2 transition hover:bg-purple-50">
               <span class="block text-[15px] font-semibold text-blue-600">The {meta.name} glossary</span>
-              <span class="block text-[13px] text-gray-500">The terms this will be built on</span>
+              <span class="block text-[13px] text-gray-500">The terms Jiki's own copy is built on</span>
             </a>
           </li>
         </ul>
-
-        <div class="mt-5 space-y-3 border-t border-gray-100 pt-4">
-          <ReviewToggle itemId={reviewItemId(lang, "video-player")} version={version} class="w-full justify-center" />
-          <a href={forumUrl} class="block rounded-lg bg-purple-600 px-4 py-2.5 text-center text-[15px] font-semibold text-white transition hover:bg-purple-700"> Discuss on the Forum </a>
-        </div>
       </section>
     </aside>
   </div>

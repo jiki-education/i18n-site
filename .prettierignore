@@ -2,3 +2,9 @@ dist/
 .astro/
 src/content/
 pnpm-lock.yaml
+
+# Video.js build output, vendored verbatim from an upstream build. Reformatting it
+# would make it impossible to diff against what bin/build-videojs produces.
+vendor/
+public/media/
+public/videojs/

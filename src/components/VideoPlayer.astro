@@ -1,0 +1,121 @@
+---
+/**
+ * The Jiki video player, rendered in one language.
+ *
+ * This is Video.js v10 (github.com/videojs/v10), built from source and served from
+ * our own origin by bin/build-videojs. See that script's header for why there is no
+ * npm dependency behind it.
+ *
+ * Localisation is not wired up by hand. v10 reads the nearest `lang` attribute and
+ * lazily fetches the matching locale pack, so setting `lang` on <video-player> is
+ * the whole integration. src/lib/videojs.ts predicts what it will resolve to, but
+ * only so the page can be honest about it: it does not drive the player.
+ */
+import { playerLocale } from "../lib/videojs";
+import { languageMeta } from "../lib/languages";
+
+interface Props {
+  /** Our locale code, e.g. pt-pt. Passed straight to the player as `lang`. */
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const locale = playerLocale(lang);
+const meta = languageMeta(lang);
+---
+
+{
+  /* No `dir` here on purpose, including for Arabic, Persian and Urdu. Video.js's
+    guidance is that right-to-left applies to copy, not to player chrome: the
+    controls keep their order and the play button keeps pointing right, which is
+    the convention every major player follows. v10 ships no RTL rules of its own,
+    so leaving it alone is also what upstream renders. The translated copy inside
+    the menus and tooltips still reads right-to-left, because the bidirectional
+    algorithm handles that from the text itself. */
+}
+<div class="jiki-player" data-player-root data-locale={locale.tag}>
+  <media-i18n lang={lang}>
+    <video-player>
+      <video-skin>
+        <video src="/media/sample.mp4" playsinline preload="metadata">
+          <track kind="captions" src={`/media/subtitles/${lang}.vtt`} srclang={lang} label={meta.nativeName} />
+          <track kind="captions" src="/media/subtitles/en.vtt" srclang="en" label="English" />
+          <track kind="chapters" src="/media/chapters.en.vtt" srclang="en" label="English" />
+          <track kind="descriptions" src="/media/descriptions.en.vtt" srclang="en" label="English" />
+        </video>
+        <img slot="poster" src="/media/sample-poster.jpg" alt="" />
+      </video-skin>
+    </video-player>
+  </media-i18n>
+</div>
+
+<script is:inline type="module" src="/videojs/player.js"></script>
+
+<script>
+  // The skin's own type is Inter, hard-coded inside its shadow root rather than
+  // exposed as a custom property, so it cannot be reached from a stylesheet out
+  // here. Appending a sheet to the shadow root is the supported way in, and it is
+  // worth doing: a reviewer should be reading these strings in the same face the
+  // rest of the site renders them in, not in a face nothing else on the page uses.
+  const FONT_CSS = ".media-default-skin { font-family: var(--font-sans); }";
+
+  function applyFont(skin: Element): void {
+    const root = skin.shadowRoot;
+    if (!root || typeof CSSStyleSheet === "undefined") return;
+    try {
+      const sheet = new CSSStyleSheet();
+      sheet.replaceSync(FONT_CSS);
+      root.adoptedStyleSheets = [...root.adoptedStyleSheets, sheet];
+    } catch {
+      // Constructable stylesheets are everywhere we care about, but a player in
+      // upstream's own type is a cosmetic loss, not a broken page.
+    }
+  }
+
+  const skin = document.querySelector("video-skin");
+  if (skin) {
+    customElements.whenDefined("video-skin").then(() => applyFont(skin));
+  }
+</script>
+
+<style is:global>
+  /* v10's skin lives in a shadow root and is themed through custom properties,
+     which inherit across the boundary. So the Jiki palette goes on the host and
+     the skin picks it up, rather than being fought with descendant selectors. */
+  .jiki-player {
+    /* Sets `color` on the control bar, so it drives the icons and the time
+       labels. White, as upstream defaults it: these sit on a dark bar over
+       video, and they should not compete with the text being reviewed. */
+    --media-color-primary: #fff;
+    /* Purple earns its place on the filled part of the sliders, and nowhere else. */
+    --media-slider-fill: var(--color-purple-400);
+    --media-progress-fill: var(--color-purple-400);
+    --media-border-radius: 16px;
+    --media-video-border-radius: 16px;
+
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid var(--color-gray-200);
+    background: var(--color-purple-950);
+  }
+
+  /* <media-i18n> is a behaviour-only element with no layout of its own, so it gets
+     out of the way rather than becoming a box between the frame and the player. */
+  .jiki-player media-i18n {
+    display: contents;
+  }
+
+  /* The player fills its box, and the box is the video's shape. Without this the
+     custom elements have no intrinsic size and collapse before the media loads. */
+  .jiki-player video-player {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .jiki-player video-skin {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>

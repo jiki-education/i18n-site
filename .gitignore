@@ -5,3 +5,7 @@ dist/
 .DS_Store
 .env
 .env.production
+
+# Video.js v10 is built from a git checkout by bin/build-videojs. The checkout is
+# disposable; the build output it produces (vendor/videojs) is committed.
+vendor/videojs-v10-git/

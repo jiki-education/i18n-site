@@ -1,0 +1,91 @@
+#!/usr/bin/env bash
+#
+# Build the self-hosted Video.js v10 player, from source, from GitHub.
+#
+# Why this exists, and why there is no `video.js` entry in package.json:
+#
+# The i18n work we care about is in videojs/v10, which is a pnpm monorepo of
+# workspace packages (@videojs/html, @videojs/core, ...) that are deliberately not
+# published to npm yet. Its root package is the monorepo itself: it has no build
+# output, is not importable, and installing it as a git dependency would give us a
+# package with nothing usable in it. So there is nothing to `pnpm add`, and the
+# commit is pinned here instead.
+#
+# What it does is the "Bundle a single file" path from Video.js's own
+# "Self-host the player" guide, run from inside the checkout so the workspace
+# packages resolve. esbuild is given bin/videojs/player.js and code-splits it, which
+# keeps v10's lazily-imported locale packs as separate chunks. So a page downloads
+# exactly one locale, its own, and never touches a CDN.
+#
+# Output:
+#   public/videojs/player.js       - the player, served from our own origin
+#   public/videojs/chunks/*.js     - shared chunks and one per locale, lazy-loaded
+#   vendor/videojs/locales.json    - which locales exist, and how complete each is
+#   vendor/videojs/SOURCE.json     - what was built and from which commit
+#
+# All of that is committed, so a normal `pnpm build` needs none of this.
+#
+set -euo pipefail
+
+# Pinned so the build is reproducible. Bump deliberately, re-run, and re-review the
+# page: v10 is beta, and its locale packs are new enough to still be moving.
+COMMIT="12ae97ddba743fb6a8b4e09108f0928b2611e820"
+REPO="https://github.com/videojs/v10.git"
+
+cd "$(dirname "$0")/.."
+ROOT="$PWD"
+CHECKOUT="$ROOT/vendor/videojs-v10-git"
+BUNDLE_OUT="$ROOT/public/videojs"
+VENDOR_OUT="$ROOT/vendor/videojs"
+
+echo "Building Video.js v10 at $COMMIT"
+
+if [ ! -d "$CHECKOUT/.git" ]; then
+  rm -rf "$CHECKOUT"
+  git clone --quiet "$REPO" "$CHECKOUT"
+fi
+
+git -C "$CHECKOUT" fetch --quiet origin
+git -C "$CHECKOUT" checkout --quiet "$COMMIT"
+
+# v10 pins a newer pnpm than this repo uses, so prefer corepack when it is available
+# and fall back to whatever pnpm is on PATH.
+PNPM="pnpm"
+if command -v corepack >/dev/null 2>&1; then
+  PNPM="corepack pnpm"
+fi
+
+(cd "$CHECKOUT" && $PNPM install --frozen-lockfile)
+(cd "$CHECKOUT" && $PNPM run build:packages)
+
+rm -rf "$BUNDLE_OUT"
+(cd "$CHECKOUT" && npx esbuild "$ROOT/bin/videojs/player.js" \
+  --bundle \
+  --splitting \
+  --format=esm \
+  --minify \
+  --outdir="$BUNDLE_OUT" \
+  --entry-names='[name]' \
+  --chunk-names='chunks/[name]-[hash]')
+
+rm -rf "$VENDOR_OUT"
+mkdir -p "$VENDOR_OUT"
+(cd "$CHECKOUT" && npx tsx "$ROOT/bin/videojs/emit-locales.ts" "$CHECKOUT" "$VENDOR_OUT/locales.json")
+
+VERSION="$(node -p "require('$CHECKOUT/packages/html/package.json').version")"
+COMMITTED_AT="$(git -C "$CHECKOUT" log -1 --format=%cI "$COMMIT")"
+cat >"$VENDOR_OUT/SOURCE.json" <<JSON
+{
+  "repo": "https://github.com/videojs/v10",
+  "ref": "main",
+  "commit": "$COMMIT",
+  "commitDate": "$COMMITTED_AT",
+  "package": "@videojs/html",
+  "version": "$VERSION",
+  "builtAt": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+  "builtBy": "bin/build-videojs",
+  "note": "Built from a git checkout of the v10 monorepo. These packages are not on npm yet, so there is no registry version this could have come from; see the header of bin/build-videojs."
+}
+JSON
+
+echo "Wrote $BUNDLE_OUT and $VENDOR_OUT (@videojs/html $VERSION @ ${COMMIT:0:12})"

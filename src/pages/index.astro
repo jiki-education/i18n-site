@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
+import PageHeader from "../components/PageHeader.astro";
 import { languageMeta } from "../lib/languages";
 
 const glossaries = await getCollection("glossaries");
@@ -44,11 +45,16 @@ const QUICK_LINKS = [
 ---
 
 <Layout title="Jiki Translations" description="The Big Jiki & Exercism Translatathon: read the translations as they land, check the agreed glossaries, and tell us what sounds wrong.">
+  <PageHeader title="The Big Jiki & Exercism Translatathon" subtitle="Translating both platforms into as many languages as we can, over the weekend of July 31st - August 2nd.">
+    <div slot="meta" class="mt-5 flex flex-wrap gap-3">
+      <a href="https://discord.gg/JFty3vbqRZ" class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"> Join us on Discord </a>
+      <a href="https://forum.jiki.io/c/i18n/67" class="rounded-lg border border-purple-400 px-4 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-800"> Discuss on the Forum </a>
+    </div>
+  </PageHeader>
+
   <div class="lg-container grid gap-10 py-10 lg:grid-cols-[1fr_350px] lg:gap-[7%]">
     <article class="min-w-0">
       <div class="textual-content">
-        <h1 class="mb-8 text-[32px] leading-[1.2] font-extrabold text-gray-900 sm:text-[40px]">The Big Jiki &amp; Exercism Translatathon</h1>
-
         <h2>What is this?</h2>
 
         <p>

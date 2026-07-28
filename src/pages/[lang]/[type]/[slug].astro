@@ -84,7 +84,6 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
       </p>
       <div class="mt-5 flex flex-wrap items-center gap-3">
         <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Comment on the forum </a>
-        <a href={`/${lang}/glossary`} class="inline-block rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-[15px] font-semibold text-gray-700 transition hover:border-purple-300 hover:bg-purple-50"> Edit the glossary </a>
         <ReviewToggle itemId={reviewItemId(lang, type, slug)} version={content_version ?? en_md5 ?? "unknown"} class="ml-5" />
       </div>
     </div>

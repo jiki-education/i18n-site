@@ -18,7 +18,7 @@ export const getStaticPaths = (async () => {
 const { glossary } = Astro.props;
 const lang = glossary.data.lang;
 const meta = languageMeta(lang);
-const { sections, family, governance_sha, content_version, published_at, forum_topic_id } = glossary.data;
+const { sections, family, governance_sha, content_version, forum_topic_id } = glossary.data;
 
 const termCount = sections.reduce((total, section) => total + section.terms.length, 0);
 const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : forumCategoryUrl(lang);
@@ -51,9 +51,10 @@ const contents = sections.map((section) => ({
             </p>
           )
         }
-        <p class="mt-3 text-[13px] text-gray-500">
-          Updated {published_at} &middot; built from <code class="font-mono">{governance_sha}</code>
-        </p>
+        <div class="mt-5 flex flex-wrap items-center gap-3">
+          <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Discuss on the Forum </a>
+          <ReviewToggle itemId={reviewItemId(lang, "glossary")} version={content_version ?? governance_sha} class="ml-5" />
+        </div>
       </div>
 
       <div class="mt-10 space-y-10">
@@ -108,11 +109,6 @@ const contents = sections.map((section) => ({
             ))
           }
         </ul>
-
-        <div class="mt-5 space-y-3 border-t border-gray-100 pt-4">
-          <ReviewToggle itemId={reviewItemId(lang, "glossary")} version={content_version ?? governance_sha} class="w-full justify-center" />
-          <a href={forumUrl} class="block rounded-lg bg-purple-600 px-4 py-2.5 text-center text-[15px] font-semibold text-white transition hover:bg-purple-700"> Discuss on the Forum </a>
-        </div>
       </section>
     </aside>
   </div>

@@ -53,7 +53,7 @@ const contents = sections.map((section) => ({
         }
         <div class="mt-5 flex flex-wrap items-center gap-3">
           <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Discuss on the Forum </a>
-          <ReviewToggle itemId={reviewItemId(lang, "glossary")} version={content_version ?? governance_sha} class="ml-5" />
+          <ReviewToggle itemId={reviewItemId(lang, "glossary")} version={content_version ?? governance_sha} />
         </div>
       </div>
 

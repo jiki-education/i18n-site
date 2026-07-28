@@ -82,6 +82,35 @@ Requires `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` as repo secrets.
 The publish → announce order matters and is not automated on purpose: **deploy first, then
 post to the forum**, or the announcement links 404.
 
+## ⚠️ Pushing is publishing
+
+There is no staging environment and no review step. `git push` to `main` puts the change in
+front of the public within a couple of minutes, and the audience is a live community being
+actively invited to read it. Treat a push as the outward-facing action it is:
+
+- **Commit freely, push on request.** Committing locally costs nothing and is always fine.
+  Pushing needs the operator to have asked for it, or to have given standing permission for
+  the session. Approval to push once is not approval to push for the rest of the day.
+- **Build before pushing.** `pnpm build` must be clean. A broken build means the previous
+  deploy stays live, so the failure is quiet: the site simply stops updating.
+- **Work on `main`.** No feature branches; this is a two-week disposable site and branches
+  would just add ceremony. That makes the "push on request" rule the only safety net.
+- **Never `git add -A` while a subagent is working in this repo.** It sweeps their
+  half-finished work into your commit. Stage the specific files you changed.
+- **Never force-push.** Nothing here is worth rewriting published history for.
+
+If a push has gone out wrong, the fix is a follow-up commit, not a revert of history.
+
+## Running commands here
+
+The dev server is `./bin/dev` (http://local.jiki.io:3068). Note that Astro's CLI feeds
+`server.host` into `new URL()`, so it must stay `host: true` in `astro.config.mjs` with
+`local.jiki.io` in Vite's `allowedHosts` — naming the host directly crashes the dev server
+on startup.
+
+Verify against `dist/` after `pnpm build` when a dev server isn't available: every page is
+static, so the built HTML is the whole truth.
+
 ## Styling
 
 Design tokens (purple palette, gray scale, Poppins, Source Code Pro) are copied from the
@@ -93,6 +122,31 @@ renders on the product. There is no shared package: if the product's palette mov
 Every language page must survive its own script. Content is rendered with `lang` and `dir`
 set from `src/lib/languages.ts`, so Arabic, Persian and Urdu lay out right-to-left, and the
 font stack falls through to Noto/CJK families that Poppins doesn't cover.
+
+### ⚠️ Astro eats whitespace next to inline tags
+
+A line break between text and an inline element drops the space entirely, in **both**
+directions: `foo\n<strong>bar</strong>` renders as `foobar`, and so does
+`<strong>bar</strong>\nfoo`. This is the Astro compiler, not Prettier.
+
+So a prose paragraph containing `<a>`, `<strong>` or `<code>` must sit on **one source
+line**. `.astro` files carry a deliberately huge `printWidth` in `.prettierrc` for exactly
+this reason — do not lower it, or Prettier will re-wrap the prose and silently break the
+spacing on every page it touches.
+
+Do **not** reach for `<!-- prettier-ignore -->`: prettier-plugin-astro corrupts the markup
+that follows it (it ate the `<` off a `<p>` tag). After any prose change, sweep the built
+HTML for `[A-Za-z0-9]<(strong|a|em|code)` and the closing equivalent; it should find zero.
+
+### Browser translation
+
+The material under review carries `translate="no"`, so a reviewer with Chrome's translation
+on doesn't end up reading a machine translation of a machine translation and reporting
+faults that aren't ours. Anything showing translated content or its English source must be
+marked. The **chrome is deliberately left translatable**: it's all in English and most
+reviewers aren't English speakers, so some of them are translating the page on purpose.
+`TranslationNotice.astro` warns when translation is detected, worded as advice for the same
+reason.
 
 ## Scope
 

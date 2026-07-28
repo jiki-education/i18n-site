@@ -1,0 +1,57 @@
+---
+/**
+ * Warns when the browser is machine-translating the page.
+ *
+ * This matters more here than on a normal site: a reviewer whose browser has
+ * translation on would be reading a machine translation *of* a machine
+ * translation, and reporting faults that aren't ours. The material under review
+ * carries translate="no" so it survives regardless, but the warning is worth
+ * showing because the failure is invisible otherwise.
+ *
+ * Deliberately worded as advice, not an instruction. Our chrome is all in
+ * English and most of our reviewers aren't English speakers, so some of them are
+ * translating the page on purpose and are right to.
+ */
+---
+
+<div id="translation-notice" class="hidden border-b border-amber-200 bg-amber-50" role="status">
+  <div class="lg-container flex items-start justify-between gap-4 py-3">
+    <p class="text-[14px] text-amber-900">This page is being translated by your browser. If you can read English, we recommend disabling this.</p>
+    <button type="button" id="translation-notice-dismiss" class="shrink-0 rounded-md px-2 py-1 text-[13px] font-semibold text-amber-900 transition hover:bg-amber-100" aria-label="Dismiss"> Dismiss </button>
+  </div>
+</div>
+
+<span id="translation-sentinel" aria-hidden="true" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Translation check</span>
+
+<script>
+  const notice = document.getElementById("translation-notice");
+  const sentinel = document.getElementById("translation-sentinel");
+  const dismiss = document.getElementById("translation-notice-dismiss");
+  if (notice && sentinel) {
+    const SENTINEL_TEXT = sentinel.textContent;
+    let dismissed = false;
+
+    // Chrome and Edge stamp translated-ltr/translated-rtl on <html>. Safari and
+    // Firefox don't, hence the sentinel: a hidden line of known English that
+    // only changes if something rewrote the page.
+    function translating() {
+      const root = document.documentElement;
+      return root.classList.contains("translated-ltr") || root.classList.contains("translated-rtl") || sentinel!.textContent !== SENTINEL_TEXT || Boolean(document.querySelector("font[_msttexthash], .goog-te-banner-frame"));
+    }
+
+    function check() {
+      if (dismissed) return;
+      notice!.classList.toggle("hidden", !translating());
+    }
+
+    dismiss?.addEventListener("click", () => {
+      dismissed = true;
+      notice!.classList.add("hidden");
+    });
+
+    // Translation can be switched on at any point, not just at load.
+    new MutationObserver(check).observe(document.documentElement, { attributes: true, attributeFilter: ["class", "lang"] });
+    new MutationObserver(check).observe(sentinel, { childList: true, characterData: true, subtree: true });
+    check();
+  }
+</script>

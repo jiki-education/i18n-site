@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import TranslationNotice from "../components/TranslationNotice.astro";
 
 interface Props {
   title: string;
@@ -31,6 +32,7 @@ const linkClass = "font-semibold text-blue-600 hover:text-blue-700";
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@400;600&display=swap" />
   </head>
   <body class="grid min-h-screen grid-rows-[auto_1fr_auto]">
+    <TranslationNotice />
     <header class="sticky top-0 z-20 border-b border-gray-200 bg-white/95 backdrop-blur">
       <div class="lg-container flex items-center justify-between gap-4 py-3.5">
         <a href="/" class="flex items-baseline gap-2 text-[17px] font-bold text-gray-900">

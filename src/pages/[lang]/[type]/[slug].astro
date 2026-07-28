@@ -81,15 +81,19 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
 
           <div class="divide-y divide-gray-100">
             <div class="grid gap-4 py-5 lg:grid-cols-2 lg:gap-8">
-              <h2 class="text-[24px] leading-[1.25] font-bold text-gray-500">{source?.data.title ?? slug}</h2>
-              <h2 class="text-[24px] leading-[1.25] font-bold text-gray-900" lang={lang} dir={meta.dir}>
+              <h2 class="notranslate text-[24px] leading-[1.25] font-bold text-gray-500" translate="no">
+                {source?.data.title ?? slug}
+              </h2>
+              <h2 class="notranslate text-[24px] leading-[1.25] font-bold text-gray-900" translate="no" lang={lang} dir={meta.dir}>
                 {title ?? slug}
               </h2>
             </div>
             {aligned.rows.map((row) => (
               <div class="grid gap-4 py-5 lg:grid-cols-2 lg:gap-8">
-                <div class="textual-content text-[17px] text-gray-500">{row.english ? <Fragment set:html={row.english} /> : <p class="text-[13px] italic">Nothing in the English here.</p>}</div>
-                <div class="textual-content text-[18px]" lang={lang} dir={meta.dir}>
+                <div class="notranslate textual-content text-[17px] text-gray-500" translate="no">
+                  {row.english ? <Fragment set:html={row.english} /> : <p class="text-[13px] italic">Nothing in the English here.</p>}
+                </div>
+                <div class="notranslate textual-content text-[18px]" translate="no" lang={lang} dir={meta.dir}>
                   {row.target ? <Fragment set:html={row.target} /> : <p class="text-[13px] text-amber-700 italic">Missing from the translation.</p>}
                 </div>
               </div>
@@ -101,7 +105,7 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
 
     {
       !aligned && (
-        <div class="textual-content md-container !px-0 text-[18px]" lang={lang} dir={meta.dir}>
+        <div class="notranslate textual-content md-container !px-0 text-[18px]" translate="no" lang={lang} dir={meta.dir}>
           <h2 class="mb-5 text-[28px] leading-[1.25] font-bold text-gray-900">{title ?? slug}</h2>
           {targetOnly.map((html) => (
             <Fragment set:html={html} />

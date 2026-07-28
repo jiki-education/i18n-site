@@ -12,10 +12,13 @@ interface Props {
 }
 
 const { title, subtitle, image, crumbs = [], titleLang, titleDir } = Astro.props;
+
+// A page can put a summary panel in the right-hand column instead of an image.
+const hasAside = Astro.slots.has("aside");
 ---
 
 <div class="article-header py-12 sm:py-15">
-  <div class={`lg-container ${image ? "grid items-center gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-15" : ""}`}>
+  <div class={`lg-container ${image || hasAside ? "grid items-center gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-15" : ""}`}>
     <div>
       {
         crumbs.length > 0 && (
@@ -42,5 +45,6 @@ const { title, subtitle, image, crumbs = [], titleLang, titleDir } = Astro.props
       <slot name="meta" />
     </div>
     {image && <img src={image} alt="" class="w-full rounded-2xl" width="640" height="360" loading="eager" />}
+    {hasAside && <slot name="aside" />}
   </div>
 </div>

@@ -40,7 +40,7 @@ const version = `videojs-v10-${locale.tag}-${locale.translatedCount}`;
     <div class="min-w-0">
       <div class="rounded-xl border border-purple-200 bg-purple-50 p-5">
         <h2 class="text-[19px] font-bold text-gray-900">Review this video player</h2>
-        <p class="mt-2 text-[15px] leading-[1.7] text-gray-700">The player wrapped around every Jiki video: its controls, its captions, and everything else you read while watching. Getting this right matters as much as the videos themselves, because it's on screen for every lesson. Please read the information below the video carefully to understand how to test and how to report issues.</p>
+        <p class="mt-2 text-[15px] leading-[1.7] text-gray-700">The player wrapped around every Jiki video: its controls, its captions, and everything else you read while watching. Getting this right matters as much as the videos themselves, because it's on screen for every lesson. <strong class="font-semibold text-gray-900">Please read the information below the video carefully to understand how to test and how to report issues.</strong></p>
         <div class="mt-5 flex flex-wrap items-center gap-3">
           <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Discuss on the Forum </a>
           <ReviewToggle itemId={reviewItemId(lang, "video-player")} version={version} />
@@ -76,11 +76,11 @@ const version = `videojs-v10-${locale.tag}-${locale.translatedCount}`;
 
       <div class="mt-6 rounded-2xl border border-gray-200 bg-white p-6">
         <h2 class="text-[19px] font-bold text-gray-900">How to report something</h2>
-        <p class="mt-2 text-[15px] leading-[1.7] text-gray-600">The language in the video player comes from Video.js, the open-source player Jiki uses, so they are not in our glossary and we cannot fix them in a Jiki file. Post on the forum anyway and we pass it to the Video.js team, or open an issue with them yourself.</p>
+        <p class="mt-2 text-[15px] leading-[1.7] text-gray-600">The language in the video player comes from our friends at Video.js, the open-source player Jiki uses, so they are not in our glossary and we cannot fix them in a Jiki file. <strong class="font-semibold text-gray-800">If you are confident with GitHub</strong>, <a href={VIDEOJS_ISSUES_URL} class="font-semibold text-blue-600 hover:text-blue-700">open an issue</a> for them with details. Otherwise, please post on the forum with details, and we will open the issue for you.</p>
         <p class="mt-3 text-[15px] leading-[1.7] text-gray-600">Whichever route you take, three things make a report actionable, and without them it usually stalls. Say which language it is (this page is <code class="font-mono text-[13px]">{locale.tag}</code>), quote the wrong wording and what it should say instead, and attach a screenshot. A screenshot matters more than usual here, because half of these strings only appear inside a menu and are hard to describe from memory.</p>
         <div class="mt-5 flex flex-wrap items-center gap-3">
-          <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Report it on the Forum </a>
-          <a href={VIDEOJS_ISSUES_URL} class="inline-block rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-[15px] font-semibold text-gray-600 transition hover:border-purple-300 hover:bg-purple-50"> Open a Video.js issue </a>
+          <a href={VIDEOJS_ISSUES_URL} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Open a Video.js issue </a>
+          <a href={forumUrl} class="inline-block rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-[15px] font-semibold text-gray-600 transition hover:border-purple-300 hover:bg-purple-50"> Report it on the Forum </a>
         </div>
       </div>
     </div>

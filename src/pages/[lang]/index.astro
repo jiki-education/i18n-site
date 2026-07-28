@@ -34,7 +34,7 @@ for (const item of translations) {
 ---
 
 <Layout title={`${meta.name} (${lang})`} description={`Jiki and Exercism translated into ${meta.name}: ${termCount} agreed terms and ${published.length} published translations, all open for comment.`}>
-  <PageHeader title={meta.nativeName} titleLang={lang} titleDir={meta.dir} subtitle={`Jiki and Exercism in ${meta.name}. Everything here is a draft, and all of it is open for comment.`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name }]}>
+  <PageHeader title={meta.name} subtitle={`Jiki and Exercism in ${meta.name}. Everything here is a draft, and all of it is open for comment.`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name }]}>
     <div slot="meta" class="mt-6 flex flex-wrap gap-3">
       <a href={forumCategoryUrl(lang)} class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"> Discuss on the forum </a>
     </div>

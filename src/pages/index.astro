@@ -120,11 +120,12 @@ const QUICK_LINKS = [
               <li>
                 <a href={`/${lang}`} class="-mx-2 flex items-center gap-3 rounded-lg px-2 py-2 transition hover:bg-purple-50">
                   <span class="min-w-0 flex-1">
-                    <span class="block truncate text-[15px] font-semibold text-gray-900" lang={lang} dir={meta.dir}>
-                      {meta.nativeName}
-                    </span>
+                    <span class="block truncate text-[15px] font-semibold text-gray-900">{meta.name}</span>
                     <span class="block text-[12px] text-gray-500">
-                      {meta.name} &middot; {termCount} terms
+                      <span lang={lang} dir={meta.dir}>
+                        {meta.nativeName}
+                      </span>{" "}
+                      &middot; {termCount} terms
                     </span>
                   </span>
                   {published > 0 && <span class="shrink-0 rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-semibold text-emerald-700">{published}</span>}

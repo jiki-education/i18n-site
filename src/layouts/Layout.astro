@@ -8,6 +8,10 @@ interface Props {
 
 const { title, description } = Astro.props;
 const fullTitle = title === "Jiki Translations" ? title : `${title} · Jiki Translations`;
+
+const BLOG_POST_URL = "https://jiki.io/blog/translatathon";
+const FORUM_URL = "https://forum.jiki.io/c/i18n/67";
+const linkClass = "font-semibold text-blue-600 hover:text-blue-700";
 ---
 
 <!doctype html>
@@ -29,7 +33,7 @@ const fullTitle = title === "Jiki Translations" ? title : `${title} · Jiki Tran
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@400;600&display=swap"
     />
   </head>
-  <body class="flex min-h-screen flex-col">
+  <body class="grid min-h-screen grid-rows-[auto_1fr_auto]">
     <header class="sticky top-0 z-20 border-b border-gray-200 bg-white/95 backdrop-blur">
       <div class="lg-container flex items-center justify-between gap-4 py-3.5">
         <a href="/" class="flex items-baseline gap-2 text-[17px] font-bold text-gray-900">
@@ -52,19 +56,22 @@ const fullTitle = title === "Jiki Translations" ? title : `${title} · Jiki Tran
       </div>
     </header>
 
-    <main class="flex-1">
+    <main>
       <slot />
     </main>
 
     <footer class="mt-16 border-t border-gray-200 bg-gray-50">
       <div class="lg-container py-8 text-sm text-gray-500">
+        {
+          /* Spaces around the links are explicit: Prettier reflows long lines and
+            eats the whitespace that would otherwise separate them from the prose. */
+        }
         <p class="max-w-3xl">
-          Everything on this site is a work in progress, machine-translated and awaiting human review. Read more in
-          <a href="https://jiki.io/blog/translatathon" class="font-semibold text-blue-600 hover:text-blue-700"
-            >the Translatathon blog post</a
-          >, or come and tell us what's wrong on
-          <a href="https://forum.jiki.io/c/i18n/67" class="font-semibold text-blue-600 hover:text-blue-700">the forum</a
-          >.
+          Everything on this site is a work in progress, machine-translated and awaiting human review. Read more in{" "}
+          <a href={BLOG_POST_URL} class={linkClass}>the Translatathon blog post</a>, or come and tell us what's wrong on{
+            " "
+          }
+          <a href={FORUM_URL} class={linkClass}>the forum</a>.
         </p>
       </div>
     </footer>

@@ -1,0 +1,500 @@
+{
+  "lang": "sw",
+  "name": "Swahili",
+  "family": null,
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "kupanga programu (verb) / programu (the software itself)",
+          "use": "sw",
+          "notes": "`programu` also serves as the noun for \"program/software\"; use `kupanga programu` for the activity of programming. Medium confidence; institutional sources disagree on a single preferred verb form.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "developer",
+          "target": "msanidi programu",
+          "use": "sw",
+          "notes": "Well attested across dictionary and community sources.",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "tech industry",
+          "target": "sekta ya teknolojia",
+          "use": "sw",
+          "notes": "Compositional (`sekta` = sector, `teknolojia` = nativized loanword \"technology\"); not independently sourced as a fixed phrase but low ambiguity risk.",
+          "anchor": "term-tech-industry"
+        },
+        {
+          "en": "streak",
+          "target": "mfululizo",
+          "use": "sw",
+          "notes": "Ordinary word for \"a series/succession, in a row\"; not CS-specific but a natural fit for a daily-use streak.",
+          "anchor": "term-streak"
+        },
+        {
+          "en": "pitfall",
+          "target": "mtego",
+          "use": "sw",
+          "notes": "Ordinary word (\"trap\"); natural extension.",
+          "anchor": "term-pitfall"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "thamani",
+          "use": "sw",
+          "notes": "Ordinary word; medium confidence, sourced from Kilinux terminology project.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "number",
+          "target": "namba",
+          "use": "sw",
+          "notes": "Very well established across all sources. `nambari` is an accepted variant.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "integer",
+          "target": "namba kamili",
+          "use": "sw",
+          "notes": "Compositional (`kamili` = whole/complete); confirmed in math-education Swahili, extended to CS by analogy. Medium confidence.",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "float / decimal",
+          "target": "desimali",
+          "use": "sw",
+          "notes": "Nativized loanword; confirmed only in math-education sources, not CS-specific. Medium confidence.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "character",
+          "target": "herufi",
+          "use": "sw",
+          "notes": "Ordinary word for \"letter/character\". Medium confidence.",
+          "anchor": "term-character"
+        },
+        {
+          "en": "true / false",
+          "target": "kweli / sikweli",
+          "use": "sw",
+          "notes": "Low-medium confidence: sourced from two independent hobbyist Swahili-keyword programming languages (Nuru, Jenga on GitHub), not an institutional source. Flag for native-speaker review.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "array / list",
+          "target": "orodha",
+          "use": "sw",
+          "notes": "Ordinary word for \"list\". Medium confidence.",
+          "anchor": "term-array-list"
+        },
+        {
+          "en": "dictionary (data structure)",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "No credible CS-specific source found, and real risk of collision with `kamusi` (a literal dictionary/reference book). Give the gloss \"kama kamusi, inaunganisha funguo na thamani\" (like a dictionary, links keys to values) where the source `<define>`s it. Open question for native-speaker review.",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "element",
+          "target": "kipengele",
+          "use": "sw",
+          "notes": "Sourced from a Swahili Wikipedia OOP article. Medium confidence. Note: reserved for the data-structure sense; platform \"feature\" uses a different word (`huduma`) to avoid collision.",
+          "anchor": "term-element"
+        },
+        {
+          "en": "index",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "No credible source found. Gloss as \"nafasi ya kipengele katika orodha\" (the position of an element in a list) where the source `<define>`s it. Low confidence / open question.",
+          "anchor": "term-index"
+        },
+        {
+          "en": "string",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "No credible CS-specific source found; `mfuatano` (\"sequence\") surfaced only as an unconfirmed candidate. Gloss as \"mfuatano wa herufi\" (a sequence of characters) where the source `<define>`s it, then use `string`.",
+          "anchor": "term-string"
+        },
+        {
+          "en": "Boolean",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "Gloss as \"aina ya data yenye thamani mbili tu: kweli au sikweli\" (a data type with only two values: true or false) where the source `<define>`s it, then use `Boolean`.",
+          "anchor": "term-boolean"
+        },
+        {
+          "en": "data type",
+          "target": "aina ya data",
+          "use": "sw",
+          "notes": "Compositional, sourced from a Swahili Wikipedia Python article. Medium confidence.",
+          "anchor": "term-data-type"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "kauli ya masharti",
+          "use": "sw",
+          "notes": "Compositional (`kauli` = statement, `masharti` = conditions). The `if` keyword itself always stays English in code, per global rules. Low-medium confidence, not directly sourced.",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "sharti / masharti",
+          "use": "sw",
+          "notes": "Ordinary word.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "ulinganisho",
+          "use": "sw",
+          "notes": "Ordinary word, from the verb `kulinganisha` (to compare). Extrapolated, not CS-source-confirmed, but low ambiguity risk.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "usemi",
+          "use": "sw",
+          "notes": "Ordinary word (\"utterance/expression\"). Extrapolated.",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "Candidates (`mwendeshaji`, `kiendeshi`) found only in low-confidence crowd dictionaries. Gloss as \"kiendeshi, k.m. `+`, `-`\" (an operator, e.g. `+`, `-`) where the source `<define>`s it, then use `operator`.",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "amri",
+          "use": "sw",
+          "notes": "The imperative sense: a line of code that does something and gets executed. Chosen distinct from `kauli` (below) to avoid the collision `global/terms.md` flags between the two senses of \"statement\". Low-medium confidence.",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "kauli",
+          "use": "sw",
+          "notes": "The proposition sense: a claim that is true or false. Ordinary word.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "function",
+          "target": "kazi",
+          "use": "sw",
+          "notes": "Also the ordinary word for \"work/job\"; always clarify where the source `<define>`s it to avoid ambiguity. The `function` keyword in code stays English; the concept in prose is `kazi`. Medium confidence, sourced from a Swahili Wikipedia Python article.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "kuita",
+          "use": "sw",
+          "notes": "Ordinary verb (\"to call/summon\"), natural extension: `kuita kazi` = to call a function.",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "kuunda",
+          "use": "sw",
+          "notes": "\"To create/construct\". Low confidence, not directly sourced.",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "parameter",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "The candidate `kigezo` is contested (also used loosely for \"criterion\" and, unresolved, for \"variable\"). Gloss as \"jina la thamani inayotarajiwa na kazi\" (the name of the value a function expects) where the source `<define>`s it, then use `parameter`.",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "No credible source found; kept distinct from `parameter` per `global/terms.md`. Gloss as \"thamani halisi inayotolewa wakati wa kuita kazi\" (the actual value given when calling a function) where the source `<define>`s it.",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "ingizo",
+          "use": "sw",
+          "notes": "Native coinage from `kuingiza` (to insert). Medium confidence, sourced from a UDSM thesis (Malagira 2010).",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "matokeo",
+          "use": "sw",
+          "notes": "Ordinary word (\"results/outcomes\"). Low-medium confidence.",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "kurejesha",
+          "use": "sw",
+          "notes": "Ordinary, transparent verb (\"to return/give back\").",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "thamani inayorejeshwa",
+          "use": "sw",
+          "notes": "Compositional (\"the value that is returned\"), kept distinct from the verb above. Low confidence, but transparent.",
+          "anchor": "term-return-value"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "No credible source found. Gloss as \"neno muhimu la lugha ya programu\" (an important word of the programming language) where the source `<define>`s it.",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "The single biggest gap found in research: the candidate `kigezo` appears only in math-education sources and also ordinarily means \"criterion\", causing real ambiguity risk. Gloss as \"kigezo\" where the source `<define>`s it with the explanation \"mahali panapohifadhi thamani\" (a place that stores a value), then use `variable`. Flag for native-speaker review; this may become a settled Swahili term once confirmed.",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment / to assign",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "Risk of collision with `kugawa` (\"to divide/allocate\"). Gloss as \"kuweka thamani kwenye variable\" (to put a value into a variable) where the source `<define>`s it, then use `assignment` / `to assign`.",
+          "anchor": "term-assignment-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "kizuizi cha msimbo",
+          "use": "sw",
+          "notes": "Compositional (`msimbo` = code, sourced medium confidence; `kizuizi` = block/barrier). Low-medium confidence, not directly sourced as a fixed phrase.",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "hitilafu",
+          "use": "sw",
+          "notes": "Well attested across multiple sources. `kosa` is an accepted variant.",
+          "anchor": "term-error"
+        },
+        {
+          "en": "nested",
+          "target": "(descriptive phrase, not a fixed term)",
+          "use": "sw",
+          "notes": "Use \"uliowekwa ndani ya\" (placed inside), e.g. `kitanzi kilichowekwa ndani ya kitanzi kingine` = nested loop. No single-word coinage confirmed; a descriptive phrase is more reliable than forcing one.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "marudio",
+          "use": "sw",
+          "notes": "From `kurudia` (to repeat). Low-medium confidence, not CS-source-confirmed.",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "kuendesha",
+          "use": "sw",
+          "notes": "Ordinary verb (\"to run/drive\"). Extrapolated but low ambiguity risk.",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "kitanzi",
+          "use": "sw",
+          "notes": "Low-medium confidence: converges across three independent crowd dictionaries, but no institutional source confirmed it as the CS term. Flag for native-speaker review.",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "for kitanzi",
+          "use": "sw",
+          "notes": "Keep `for` in backticks (real keyword) + `kitanzi`.",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "while kitanzi",
+          "use": "sw",
+          "notes": "As above, with `while`.",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "loop body",
+          "target": "mwili wa kitanzi",
+          "use": "sw",
+          "notes": "Compositional (\"body of the loop\"). Low confidence, transparent.",
+          "anchor": "term-loop-body"
+        },
+        {
+          "en": "scope",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "Gloss as \"wigo\" (range/scope, ordinary word) where the source `<define>`s it, then use `scope`. Mirrors the \"keep English\" treatment other languages give this term.",
+          "anchor": "term-scope"
+        },
+        {
+          "en": "class",
+          "target": "darasa",
+          "use": "sw",
+          "notes": "Ordinarily means \"classroom/school class\"; always clarify where the source `<define>`s it to avoid ambiguity. Medium confidence, sourced from a Swahili Wikipedia Python article.",
+          "anchor": "term-class"
+        },
+        {
+          "en": "method",
+          "target": "metodu",
+          "use": "sw",
+          "notes": "Nativized loanword, transparently recognizable; no clarification needed. Medium confidence.",
+          "anchor": "term-method"
+        },
+        {
+          "en": "property",
+          "target": "sifa",
+          "use": "sw",
+          "notes": "Ordinarily means \"quality/attribute/praise\"; clarify where the source `<define>`s it. Medium confidence.",
+          "anchor": "term-property"
+        },
+        {
+          "en": "object",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "Two independent Swahili Wikipedia CS articles give conflicting terms (`kiumbile` vs `mfano`), a bad sign for confidence in this cluster. Gloss as \"kitu\" (thing, generic) where the source `<define>`s it, then use `object`. Flag for native-speaker review.",
+          "anchor": "term-object"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "workflow",
+          "target": "mtiririko wa kazi",
+          "use": "sw",
+          "notes": "Compositional (\"flow of work\"). Low-medium confidence, not directly sourced.",
+          "anchor": "term-workflow"
+        },
+        {
+          "en": "deploy",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "Research pattern (SUMAIT 2022 paper) shows newer/web-era terms like this are commonly left bare in real Swahili tech usage. Gloss as \"kuweka programu tayari kutumika\" (to put a program ready for use) where the source `<define>`s it, then use `deploy`.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "tool / tooling",
+          "target": "kifaa / vifaa",
+          "use": "sw",
+          "notes": "Ordinary word (\"tool/instrument\"), extrapolated but low ambiguity risk.",
+          "anchor": "term-tool-tooling"
+        },
+        {
+          "en": "module",
+          "target": "moduli",
+          "use": "sw",
+          "notes": "Nativized loanword, pattern-consistent with `metodu`/`akaunti`/`adapta`, but not independently confirmed for this specific term. Low confidence.",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "kanuni",
+          "use": "sw",
+          "notes": "Also ordinarily means \"rule/law/principle\"; always clarify where the source `<define>`s it to avoid ambiguity. Medium confidence.",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "API",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "Research found conflicting coinages (a heavy native-coinage version on Swahili Wikipedia vs a looser, likely machine-translated paraphrase elsewhere). Explain the concept in Swahili where the source `<define>`s it rather than just glossing the acronym, per `global/rules.md`: \"njia ambayo programu mbili zinawasiliana\" (a way two programs communicate with each other), then use `API`.",
+          "anchor": "term-api"
+        },
+        {
+          "en": "framework",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "The candidate `mfumo` is generic (\"system/structure\") with real ambiguity risk. Gloss as \"mfumo\" where the source `<define>`s it, then use `framework`.",
+          "anchor": "term-framework"
+        },
+        {
+          "en": "CLI (the concept)",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "Only weakly sourced (`kiolesura cha amri`, single source). Explain the concept where the source `<define>`s it: \"njia ya kutumia kompyuta kwa kuandika amri\" (a way of using a computer by typing commands), then use `CLI`.",
+          "anchor": "term-cli"
+        },
+        {
+          "en": "component",
+          "target": "(kept English)",
+          "use": "en",
+          "notes": "Gloss as \"sehemu\" (part/component, ordinary word) where the source `<define>`s it, then use `component`.",
+          "anchor": "term-component"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 500
+}

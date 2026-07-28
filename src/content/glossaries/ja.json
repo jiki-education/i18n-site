@@ -1,0 +1,688 @@
+{
+  "lang": "ja",
+  "name": "Japanese",
+  "family": null,
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "プログラミング",
+          "use": "ja",
+          "notes": "Use プログラミング consistently. 「コーディング」only when the source specifically stresses the casual act of writing code. Never mix both in one document.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "developer",
+          "target": "エンジニア",
+          "use": "ja",
+          "notes": "The common Japanese self-identifier. 「開発者」is a more literal alternative; do not mix both in one document.",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "streak",
+          "target": "連続学習日数",
+          "use": "ja",
+          "notes": "The \"consecutive days practised\" sense. 「ストリーク」is understood but 連続学習日数 is clearer for beginners.",
+          "anchor": "term-streak"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "IT業界",
+          "use": "ja",
+          "notes": "The natural Japanese term. 「テック業界」is emerging but less settled.",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "pitfall",
+          "target": "落とし穴",
+          "use": "ja",
+          "notes": "Ordinary word; stands alone. Natural Japanese idiom.",
+          "anchor": "term-pitfall"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "値",
+          "use": "ja",
+          "notes": "Ordinary word (atai).",
+          "anchor": "term-value"
+        },
+        {
+          "en": "number",
+          "target": "数値",
+          "use": "ja",
+          "notes": "数値 in a programming context; 「数」in casual mention.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "integer",
+          "target": "整数",
+          "use": "ja",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "float / decimal",
+          "target": "小数",
+          "use": "ja",
+          "notes": "「浮動小数点数」when the floating-point nature specifically matters.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "character",
+          "target": "文字",
+          "use": "ja",
+          "notes": "A single text character.",
+          "anchor": "term-character"
+        },
+        {
+          "en": "true / false",
+          "target": "true / false",
+          "use": "ja",
+          "notes": "Keep the literals in code font (Jikiscript tokens). Described conceptually as 真偽; not rewritten to 真/偽 in prose.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "array / list",
+          "target": "配列",
+          "use": "ja",
+          "notes": "Exercise prose sometimes says \"list\" informally for the same concept; render both with 配列, do not introduce a second word.",
+          "anchor": "term-array-list"
+        },
+        {
+          "en": "dictionary",
+          "target": "辞書",
+          "use": "ja",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "element",
+          "target": "要素",
+          "use": "ja",
+          "notes": "Array element = 配列の要素.",
+          "anchor": "term-element"
+        },
+        {
+          "en": "index",
+          "target": "インデックス",
+          "use": "ja",
+          "notes": "Katakana; no gloss needed. 「添字」is a native alternative; do not mix both in one document.",
+          "anchor": "term-index"
+        },
+        {
+          "en": "key-value pair",
+          "target": "キーと値のペア",
+          "use": "ja",
+          "notes": "The key itself is「キー」(an ordinary word once introduced).",
+          "anchor": "term-key-value-pair"
+        },
+        {
+          "en": "template literal",
+          "target": "テンプレートリテラル",
+          "use": "ja",
+          "anchor": "term-template-literal"
+        },
+        {
+          "en": "Boolean",
+          "target": "真偽値",
+          "use": "ja",
+          "notes": "**Localized to Japanese, not kept in English** (unlike Hungarian/Ukrainian). 「ブール値」is an alternative; do not mix both in one document.",
+          "anchor": "term-boolean"
+        },
+        {
+          "en": "string",
+          "target": "文字列",
+          "use": "ja",
+          "notes": "**Localized to Japanese, not kept in English** (unlike Hungarian/Ukrainian): Japanese has a strong, universal native term.",
+          "anchor": "term-string"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "if文",
+          "use": "ja",
+          "notes": "Keep `if` in code font + 文. Standard Japanese pattern: keyword + 文.",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "条件",
+          "use": "ja",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "比較",
+          "use": "ja",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "式",
+          "use": "ja",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "演算子",
+          "use": "ja",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "NOT operator / logical negation",
+          "target": "否定",
+          "use": "ja",
+          "notes": "「NOT演算子」when the operator itself is meant.",
+          "anchor": "term-not-operator-logical-negation"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "文",
+          "use": "ja",
+          "notes": "The imperative sense: a line of code that executes, e.g. `if` 文、代入文.",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "命題",
+          "use": "ja",
+          "notes": "The proposition sense: a claim that is true or false. Pick by meaning, not by the English word.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "function",
+          "target": "関数",
+          "use": "ja",
+          "notes": "The *keyword* `function` in code stays English; the concept in prose is 関数.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "呼び出す",
+          "use": "ja",
+          "notes": "関数を呼び出す。",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "定義する",
+          "use": "ja",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "parameter",
+          "target": "仮引数",
+          "use": "ja",
+          "notes": "The declaration-site name. Rarely surfaced; Jiki prose favours 入力.",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "引数",
+          "use": "ja",
+          "notes": "The call-site value.",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "入力",
+          "use": "ja",
+          "notes": "Jiki prefers this over parameter/argument in prose.",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "出力",
+          "use": "ja",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "返す",
+          "use": "ja",
+          "notes": "値を返す。",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "戻り値",
+          "use": "ja",
+          "notes": "Noun form; distinct from the verb \"to return\". 「返り値」is a common alternative; we standardise on 戻り値.",
+          "anchor": "term-return-value"
+        },
+        {
+          "en": "pure function",
+          "target": "純粋関数",
+          "use": "ja",
+          "anchor": "term-pure-function"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "キーワード",
+          "use": "ja",
+          "notes": "「予約語」is a more precise alternative; do not mix.",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "変数",
+          "use": "ja",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "代入",
+          "use": "ja",
+          "notes": "Noun.",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "代入する",
+          "use": "ja",
+          "notes": "Matches 代入.",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "ブロック",
+          "use": "ja",
+          "notes": "「コードブロック」acceptable. Keep distinct from スコープ (scope).",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "エラー",
+          "use": "ja",
+          "anchor": "term-error"
+        },
+        {
+          "en": "nested",
+          "target": "入れ子",
+          "use": "ja",
+          "notes": "入れ子のループ = nested loop. 「ネスト」also used; do not mix both in one document.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "繰り返し",
+          "use": "ja",
+          "notes": "「反復」/「イテレーション」are alternatives.",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "実行する",
+          "use": "ja",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "ループ",
+          "use": "ja",
+          "notes": "「繰り返し」for the verbal \"repeat\" sense.",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "forループ",
+          "use": "ja",
+          "notes": "Keep `for` as the real keyword in code font + ループ.",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "whileループ",
+          "use": "ja",
+          "notes": "As above.",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "for-of loop",
+          "target": "for-ofループ",
+          "use": "ja",
+          "notes": "As above.",
+          "anchor": "term-for-of-loop"
+        },
+        {
+          "en": "loop body",
+          "target": "ループの本体",
+          "use": "ja",
+          "anchor": "term-loop-body"
+        },
+        {
+          "en": "break (loop control)",
+          "target": "抜ける",
+          "use": "ja",
+          "notes": "ループを抜ける。 The keyword `break` in code stays English; this is the prose verb for the concept.",
+          "anchor": "term-break"
+        },
+        {
+          "en": "increment",
+          "target": "インクリメント",
+          "use": "ja",
+          "notes": "「1 ずつ増やす」also natural in a fuller explanation.",
+          "anchor": "term-increment"
+        },
+        {
+          "en": "modulo / remainder operator",
+          "target": "余り",
+          "use": "ja",
+          "notes": "The `%` operator. 「剰余」is the technical alternative.",
+          "anchor": "term-modulo-remainder-operator"
+        },
+        {
+          "en": "concatenation / to concatenate",
+          "target": "連結",
+          "use": "ja",
+          "notes": "文字列連結 = string concatenation;「つなげる」also natural as a verb.",
+          "anchor": "term-concatenation-to-concatenate"
+        },
+        {
+          "en": "toggle",
+          "target": "切り替える",
+          "use": "ja",
+          "anchor": "term-toggle"
+        },
+        {
+          "en": "state / stateful",
+          "target": "状態",
+          "use": "ja",
+          "anchor": "term-state-stateful"
+        },
+        {
+          "en": "scope",
+          "target": "スコープ",
+          "use": "ja",
+          "notes": "Standard katakana; no gloss needed. Keep distinct from ブロック (code block).",
+          "anchor": "term-scope"
+        },
+        {
+          "en": "class",
+          "target": "クラス",
+          "use": "ja",
+          "anchor": "term-class"
+        },
+        {
+          "en": "method",
+          "target": "メソッド",
+          "use": "ja",
+          "anchor": "term-method"
+        },
+        {
+          "en": "property",
+          "target": "プロパティ",
+          "use": "ja",
+          "anchor": "term-property"
+        },
+        {
+          "en": "object",
+          "target": "オブジェクト",
+          "use": "ja",
+          "anchor": "term-object"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "workflow",
+          "target": "ワークフロー",
+          "use": "ja",
+          "notes": "The software-engineering sense (a sequence of dev tasks).",
+          "anchor": "term-workflow"
+        },
+        {
+          "en": "auth (authentication / authorization)",
+          "target": "認証 / 認可",
+          "use": "ja",
+          "notes": "Pick by meaning: 認証 = authentication, 認可 = authorization.",
+          "anchor": "term-auth"
+        },
+        {
+          "en": "deploy (verb: to deploy)",
+          "target": "デプロイ",
+          "use": "ja",
+          "notes": "Standard Japanese dev term. 「デプロイする」for the verb.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "tool / tooling",
+          "target": "ツール",
+          "use": "ja",
+          "anchor": "term-tool-tooling"
+        },
+        {
+          "en": "module",
+          "target": "モジュール",
+          "use": "ja",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "アルゴリズム",
+          "use": "ja",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "edge case",
+          "target": "エッジケース",
+          "use": "ja",
+          "notes": "「例外的なケース」in a fuller explanation.",
+          "anchor": "term-edge-case"
+        },
+        {
+          "en": "backwards compatibility",
+          "target": "後方互換性",
+          "use": "ja",
+          "notes": "Standard, well-established term.",
+          "anchor": "term-backwards-compatibility"
+        },
+        {
+          "en": "comment (code)",
+          "target": "コメント",
+          "use": "ja",
+          "anchor": "term-comment"
+        },
+        {
+          "en": "indentation",
+          "target": "インデント",
+          "use": "ja",
+          "anchor": "term-indentation"
+        },
+        {
+          "en": "framework",
+          "target": "フレームワーク",
+          "use": "ja",
+          "notes": "Where the source `<define>`s it, explain that it means a reusable structure (再利用できる骨組み); otherwise use フレームワーク bare. Katakana loanword, well-attested.",
+          "anchor": "term-framework"
+        },
+        {
+          "en": "component",
+          "target": "コンポーネント",
+          "use": "ja",
+          "notes": "Where the source `<define>`s it, explain it; otherwise use コンポーネント freely. Established Japanese tech vocabulary.",
+          "anchor": "term-component"
+        }
+      ]
+    },
+    {
+      "title": "Platform & curriculum vocabulary",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "feature (platform capability)",
+          "target": "機能",
+          "use": "ja",
+          "notes": "Different word from 関数 (function); no collision. Never use 関数 for a product feature.",
+          "anchor": "term-feature"
+        },
+        {
+          "en": "lesson",
+          "target": "レッスン",
+          "use": "ja",
+          "anchor": "term-lesson"
+        },
+        {
+          "en": "exercise",
+          "target": "演習",
+          "use": "ja",
+          "notes": "「エクササイズ」is an alternative; do not mix both in one document.",
+          "anchor": "term-exercise"
+        },
+        {
+          "en": "scenario",
+          "target": "シナリオ",
+          "use": "ja",
+          "notes": "Jiki-specific: a structured variant within an exercise.",
+          "anchor": "term-scenario"
+        },
+        {
+          "en": "curriculum",
+          "target": "カリキュラム",
+          "use": "ja",
+          "anchor": "term-curriculum"
+        },
+        {
+          "en": "level",
+          "target": "レベル",
+          "use": "ja",
+          "notes": "The curriculum's structural unit.",
+          "anchor": "term-level"
+        },
+        {
+          "en": "milestone",
+          "target": "マイルストーン",
+          "use": "ja",
+          "notes": "「節目」is a native alternative.",
+          "anchor": "term-milestone"
+        },
+        {
+          "en": "pathway",
+          "target": "学習パス",
+          "use": "ja",
+          "notes": "A structured learning sequence; near-synonym of \"track\".",
+          "anchor": "term-pathway"
+        },
+        {
+          "en": "bootcamp",
+          "target": "ブートキャンプ",
+          "use": "ja",
+          "anchor": "term-bootcamp"
+        },
+        {
+          "en": "syllabus",
+          "target": "シラバス",
+          "use": "ja",
+          "anchor": "term-syllabus"
+        },
+        {
+          "en": "mentor / mentoring",
+          "target": "メンター",
+          "use": "ja",
+          "notes": "「メンタリング」for the activity.",
+          "anchor": "term-mentor-mentoring"
+        },
+        {
+          "en": "track (curriculum path)",
+          "target": "トラック",
+          "use": "ja",
+          "anchor": "term-track"
+        },
+        {
+          "en": "tutorial",
+          "target": "チュートリアル",
+          "use": "ja",
+          "anchor": "term-tutorial"
+        },
+        {
+          "en": "solution (learner's submission)",
+          "target": "解答",
+          "use": "ja",
+          "notes": "The code the learner writes for an exercise. Avoid 「ソリューション」, which reads as enterprise sales language for this sense.",
+          "anchor": "term-solution"
+        },
+        {
+          "en": "foot-gun",
+          "target": "(descriptive)",
+          "use": "ja",
+          "notes": "No clean Japanese equivalent; use a descriptive phrase such as「自滅の元になりやすい機能」rather than forcing a fixed term.",
+          "anchor": "term-foot-gun"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 311
+}

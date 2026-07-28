@@ -1,0 +1,646 @@
+{
+  "lang": "fr",
+  "name": "French",
+  "family": null,
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "programmation",
+          "use": "fr",
+          "notes": "Standard, unambiguous.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "developer",
+          "target": "développeur / développeuse",
+          "use": "fr",
+          "notes": "Standard French equivalent.",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "secteur technologique",
+          "use": "fr",
+          "notes": "Natural in French tech media; \"industrie technologique\" is heavier.",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "streak",
+          "target": "série",
+          "use": "fr",
+          "notes": "A run of consecutive days, as in the learning-platform sense.",
+          "anchor": "term-streak"
+        },
+        {
+          "en": "pitfall",
+          "target": "piège",
+          "use": "fr",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-pitfall"
+        },
+        {
+          "en": "foot-gun",
+          "target": "piège involontaire",
+          "use": "fr",
+          "notes": "Idiomatic English term with no clean one-word French equivalent; use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`.",
+          "anchor": "term-foot-gun"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "valeur",
+          "use": "fr",
+          "notes": "Ordinary word.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "number",
+          "target": "nombre",
+          "use": "fr",
+          "notes": "Ordinary word.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "true / false",
+          "target": "vrai / faux",
+          "use": "fr",
+          "notes": "Not capitalised in prose. Keywords `true`/`false` stay English in code.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "character",
+          "target": "caractère",
+          "use": "fr",
+          "notes": "Ordinary word.",
+          "anchor": "term-character"
+        },
+        {
+          "en": "integer",
+          "target": "nombre entier",
+          "use": "fr",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "float / decimal",
+          "target": "nombre décimal",
+          "use": "fr",
+          "notes": "Use _nombre à virgule flottante_ only when the IEEE-754 floating-point nature specifically matters.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "array / list",
+          "target": "tableau",
+          "use": "fr",
+          "notes": "Exercise prose sometimes says \"list\" informally for the same concept; render both as _tableau_, do not introduce a separate word.",
+          "anchor": "term-array-list"
+        },
+        {
+          "en": "dictionary",
+          "target": "dictionnaire",
+          "use": "fr",
+          "notes": "In JS-specific prose this is usually an _objet_ or a `Map`; use the concept word _dictionnaire_ only when teaching the general idea.",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "element",
+          "target": "élément",
+          "use": "fr",
+          "notes": "Array element = _élément du tableau_.",
+          "anchor": "term-element"
+        },
+        {
+          "en": "index",
+          "target": "indice",
+          "use": "fr",
+          "notes": "Not \"index\", which carries a book/database sense in French. \"par son indice\".",
+          "anchor": "term-index"
+        },
+        {
+          "en": "key-value pair",
+          "target": "paire clé-valeur",
+          "use": "fr",
+          "notes": "The key itself is _clé_ (an ordinary word).",
+          "anchor": "term-key-value-pair"
+        },
+        {
+          "en": "Boolean",
+          "target": "booléen",
+          "use": "fr",
+          "notes": "The code type name `Boolean` stays as-is in code.",
+          "anchor": "term-boolean"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "instruction if",
+          "use": "fr",
+          "notes": "Keep `if` as the real keyword.",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "condition",
+          "use": "fr",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "comparaison",
+          "use": "fr",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "expression",
+          "use": "fr",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "opérateur",
+          "use": "fr",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "NOT operator / logical negation",
+          "target": "opérateur NON / négation logique",
+          "use": "fr",
+          "notes": "The `!` symbol stays as-is in code.",
+          "anchor": "term-not-operator-logical-negation"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "instruction",
+          "use": "fr",
+          "notes": "The imperative sense: a line of code that does something and gets executed.",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "assertion",
+          "use": "fr",
+          "notes": "The proposition sense: a claim that is true or false; also a test assertion. Deliberately distinct from _instruction_ above.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "function",
+          "target": "fonction",
+          "use": "fr",
+          "notes": "The *keyword* `function` in code stays English; the concept in prose is _fonction_.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "appeler (une fonction)",
+          "use": "fr",
+          "notes": "_appeler une fonction_.",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "définir (une fonction)",
+          "use": "fr",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "parameter",
+          "target": "paramètre",
+          "use": "fr",
+          "notes": "Declaration-site name.",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "argument",
+          "use": "fr",
+          "notes": "Call-site value.",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "entrée",
+          "use": "fr",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "sortie",
+          "use": "fr",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "renvoyer",
+          "use": "fr",
+          "notes": "\"La fonction renvoie 30.\" Not \"retourner\", which is a widespread but less idiomatic variant.",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "valeur de retour",
+          "use": "fr",
+          "notes": "Noun form; keep distinct from the verb _renvoyer_ above.",
+          "anchor": "term-return-value"
+        },
+        {
+          "en": "pure function",
+          "target": "fonction pure",
+          "use": "fr",
+          "anchor": "term-pure-function"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "mot-clé",
+          "use": "fr",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "variable",
+          "use": "fr",
+          "notes": "Gender: _la variable_.",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "affectation",
+          "use": "fr",
+          "notes": "Not \"assignation\", which is a flagged anglicism in French.",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "affecter",
+          "use": "fr",
+          "notes": "Matches _affectation_ above: \"affecter une valeur à une variable.\"",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "bloc d'instructions",
+          "use": "fr",
+          "notes": "Deliberately distinct from _portée_ (scope) below.",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "erreur",
+          "use": "fr",
+          "anchor": "term-error"
+        },
+        {
+          "en": "nested",
+          "target": "imbriqué(e)",
+          "use": "fr",
+          "notes": "e.g. _boucle imbriquée_ = nested loop.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "itération",
+          "use": "fr",
+          "notes": "Verb: _itérer_; \"parcourir\" also natural for iterating over a collection.",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "exécuter",
+          "use": "fr",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "boucle",
+          "use": "fr",
+          "notes": "Gender: _la boucle_.",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "boucle for",
+          "use": "fr",
+          "notes": "Keep `for` as the real keyword + _boucle_.",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "boucle while",
+          "use": "fr",
+          "notes": "As above, with `while`.",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "for-of loop",
+          "target": "boucle for-of",
+          "use": "fr",
+          "notes": "As above, with `for-of`.",
+          "anchor": "term-for-of-loop"
+        },
+        {
+          "en": "loop body",
+          "target": "corps de la boucle",
+          "use": "fr",
+          "anchor": "term-loop-body"
+        },
+        {
+          "en": "break (loop control)",
+          "target": "instruction break",
+          "use": "fr",
+          "notes": "The keyword `break` in code stays English; this is the prose concept of breaking out of a loop.",
+          "anchor": "term-break"
+        },
+        {
+          "en": "increment",
+          "target": "incrément",
+          "use": "fr",
+          "notes": "Verb: _incrémenter_.",
+          "anchor": "term-increment"
+        },
+        {
+          "en": "modulo / remainder operator",
+          "target": "modulo (opérateur) / le reste (valeur)",
+          "use": "fr",
+          "notes": "_modulo_ for the `%` operator; _le reste (de la division)_ for the resulting value.",
+          "anchor": "term-modulo-remainder-operator"
+        },
+        {
+          "en": "concatenation / to concatenate",
+          "target": "concaténation / concaténer",
+          "use": "fr",
+          "anchor": "term-concatenation-to-concatenate"
+        },
+        {
+          "en": "toggle",
+          "target": "basculer",
+          "use": "fr",
+          "notes": "Verb; no crisp noun exists in French. \"basculer une valeur booléenne.\"",
+          "anchor": "term-toggle"
+        },
+        {
+          "en": "state / stateful",
+          "target": "état / à état",
+          "use": "fr",
+          "notes": "\"à état\" or \"avec état\" for \"stateful\".",
+          "anchor": "term-state-stateful"
+        },
+        {
+          "en": "scope",
+          "target": "portée",
+          "use": "fr",
+          "notes": "Deliberately distinct from _bloc d'instructions_ (code block) above.",
+          "anchor": "term-scope"
+        },
+        {
+          "en": "class",
+          "target": "classe",
+          "use": "fr",
+          "anchor": "term-class"
+        },
+        {
+          "en": "method",
+          "target": "méthode",
+          "use": "fr",
+          "anchor": "term-method"
+        },
+        {
+          "en": "property",
+          "target": "propriété",
+          "use": "fr",
+          "anchor": "term-property"
+        },
+        {
+          "en": "object",
+          "target": "objet",
+          "use": "fr",
+          "anchor": "term-object"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "auth (authentication / authorization)",
+          "target": "authentification / autorisation",
+          "use": "fr",
+          "notes": "Pick by meaning; both are standard, unambiguous.",
+          "anchor": "term-auth"
+        },
+        {
+          "en": "deploy (verb / noun)",
+          "target": "déployer / déploiement",
+          "use": "fr",
+          "notes": "Standard, no loanword competition.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "tool / tooling",
+          "target": "outil / outillage",
+          "use": "fr",
+          "notes": "_outils_ reads more naturally than _outillage_ in most prose; _outillage_ for the collective sense (\"toolchain\" = _chaîne d'outils_).",
+          "anchor": "term-tool-tooling"
+        },
+        {
+          "en": "module",
+          "target": "module",
+          "use": "fr",
+          "notes": "Identical form in French.",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "algorithme",
+          "use": "fr",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "edge case",
+          "target": "cas limite",
+          "use": "fr",
+          "notes": "No official ruling exists; flagged for native-speaker confirmation.",
+          "anchor": "term-edge-case"
+        },
+        {
+          "en": "backwards compatibility",
+          "target": "rétrocompatibilité",
+          "use": "fr",
+          "notes": "Unambiguous, unlike \"compatibilité descendante\" which requires knowing which direction \"descendante\" means.",
+          "anchor": "term-backwards-compatibility"
+        },
+        {
+          "en": "component",
+          "target": "composant",
+          "use": "fr",
+          "notes": "Native term, not a loanword, unlike in some other languages.",
+          "anchor": "term-component"
+        }
+      ]
+    },
+    {
+      "title": "Platform & curriculum vocabulary",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "feature (platform capability)",
+          "target": "fonctionnalité",
+          "use": "fr",
+          "notes": "Deliberately distinct from _fonction_ (function) to avoid collision.",
+          "anchor": "term-feature"
+        },
+        {
+          "en": "lesson",
+          "target": "leçon",
+          "use": "fr",
+          "anchor": "term-lesson"
+        },
+        {
+          "en": "exercise",
+          "target": "exercice",
+          "use": "fr",
+          "anchor": "term-exercise"
+        },
+        {
+          "en": "scenario",
+          "target": "scénario",
+          "use": "fr",
+          "notes": "Jiki-specific structured variant within an exercise.",
+          "anchor": "term-scenario"
+        },
+        {
+          "en": "curriculum",
+          "target": "programme",
+          "use": "fr",
+          "notes": "Avoid the false friend \"curriculum\", which in French means a CV/résumé.",
+          "anchor": "term-curriculum"
+        },
+        {
+          "en": "level",
+          "target": "niveau",
+          "use": "fr",
+          "notes": "The curriculum's structural unit.",
+          "anchor": "term-level"
+        },
+        {
+          "en": "milestone",
+          "target": "jalon",
+          "use": "fr",
+          "notes": "A progression checkpoint.",
+          "anchor": "term-milestone"
+        },
+        {
+          "en": "pathway",
+          "target": "parcours",
+          "use": "fr",
+          "notes": "A structured learning sequence. Deliberately distinct from _filière_ (track) below.",
+          "anchor": "term-pathway"
+        },
+        {
+          "en": "track (curriculum path)",
+          "target": "filière",
+          "use": "fr",
+          "notes": "Deliberately distinct from _parcours_ (pathway) above.",
+          "anchor": "term-track"
+        },
+        {
+          "en": "syllabus",
+          "target": "programme (du cours)",
+          "use": "fr",
+          "notes": "Note the deliberate overlap with _curriculum → programme_; disambiguate with \"du cours\" when both appear in the same context.",
+          "anchor": "term-syllabus"
+        },
+        {
+          "en": "mentor / mentoring",
+          "target": "mentor / mentorat",
+          "use": "fr",
+          "anchor": "term-mentor-mentoring"
+        },
+        {
+          "en": "tutorial",
+          "target": "tutoriel",
+          "use": "fr",
+          "anchor": "term-tutorial"
+        },
+        {
+          "en": "solution (learner's submission)",
+          "target": "solution",
+          "use": "fr",
+          "anchor": "term-solution"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 314
+}

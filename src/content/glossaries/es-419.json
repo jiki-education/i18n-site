@@ -1,0 +1,732 @@
+{
+  "lang": "es-419",
+  "name": "Latin American Spanish",
+  "family": "es",
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "programación",
+          "use": "es",
+          "notes": "Use `programación` consistently. `codificación` exists for the narrow act of writing code but is not natural in the warm register; avoid.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "streak",
+          "target": "racha",
+          "use": "es",
+          "notes": "The gamification streak of consecutive days.",
+          "anchor": "term-streak"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "valor",
+          "use": "es",
+          "notes": "Ordinary word.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "number",
+          "target": "número",
+          "use": "es",
+          "notes": "Ordinary word.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "integer",
+          "target": "número entero",
+          "use": "es",
+          "notes": "_entero_ is an acceptable shorter form.",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "character",
+          "target": "carácter",
+          "use": "es",
+          "notes": "Singular _carácter_, plural _caracteres_. Not \"sign/mark/letra\".",
+          "anchor": "term-character"
+        },
+        {
+          "en": "true / false",
+          "target": "verdadero / falso",
+          "use": "es",
+          "notes": "Lowercase in prose.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "dictionary",
+          "target": "diccionario",
+          "use": "es",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "key-value pair",
+          "target": "par clave-valor",
+          "use": "es",
+          "notes": "The key itself is _clave_ (an ordinary word once introduced).",
+          "anchor": "term-key-value-pair"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement / conditional",
+          "target": "condicional",
+          "use": "es",
+          "notes": "Plural: _condicionales_. The full form _la sentencia condicional_ is available when it reads better.",
+          "anchor": "term-if-statement-conditional"
+        },
+        {
+          "en": "condition",
+          "target": "condición",
+          "use": "es",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "comparación",
+          "use": "es",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "expresión",
+          "use": "es",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "operador",
+          "use": "es",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "NOT operator / logical negation",
+          "target": "negación (lógica)",
+          "use": "es",
+          "anchor": "term-not-operator-logical-negation"
+        },
+        {
+          "en": "function",
+          "target": "función",
+          "use": "es",
+          "notes": "The *keyword* `function` in code stays English; the concept in prose is _función_.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "llamar (a una función)",
+          "use": "es",
+          "notes": "Keep the personal _a_: _llamar a una función_. _invocar_ is an acceptable synonym in a fuller explanation.",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "definir (una función)",
+          "use": "es",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "parameter",
+          "target": "parámetro",
+          "use": "es",
+          "notes": "Declaration-site name.",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "argumento",
+          "use": "es",
+          "notes": "Call-site value.",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "entrada",
+          "use": "es",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "salida",
+          "use": "es",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "devolver",
+          "use": "es",
+          "notes": "Preferred over _retornar_. \"La función devuelve un valor.\"",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "pure function",
+          "target": "función pura",
+          "use": "es",
+          "anchor": "term-pure-function"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "palabra clave",
+          "use": "es",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "variable",
+          "use": "es",
+          "notes": "Gender: _la variable_.",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "asignación",
+          "use": "es",
+          "notes": "Noun.",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "asignar",
+          "use": "es",
+          "notes": "Verb; matches _asignación_ above.",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "bloque de código",
+          "use": "es",
+          "notes": "Deliberately distinct from _ámbito_ (scope).",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "error",
+          "use": "es",
+          "anchor": "term-error"
+        },
+        {
+          "en": "nested",
+          "target": "anidado",
+          "use": "es",
+          "notes": "e.g. _bucle anidado_ = nested loop.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "iteración",
+          "use": "es",
+          "notes": "Verb: _iterar_; _recorrer_ also natural.",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "ejecutar",
+          "use": "es",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "bucle",
+          "use": "es",
+          "notes": "Gender: _el bucle_. Not _ciclo_ (a common alternative not used here).",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "bucle for",
+          "use": "es",
+          "notes": "Keep `for` in code font (real keyword) + _bucle_.",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "bucle while",
+          "use": "es",
+          "notes": "As above. (The curriculum currently has no `while` loops, only `repeat`, `for`, `for-of`.)",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "for-of loop",
+          "target": "bucle for-of",
+          "use": "es",
+          "notes": "As above.",
+          "anchor": "term-for-of-loop"
+        },
+        {
+          "en": "loop body",
+          "target": "cuerpo del bucle",
+          "use": "es",
+          "anchor": "term-loop-body"
+        },
+        {
+          "en": "increment",
+          "target": "incremento",
+          "use": "es",
+          "notes": "Verb: _incrementar_.",
+          "anchor": "term-increment"
+        },
+        {
+          "en": "modulo / remainder operator",
+          "target": "resto (de la división)",
+          "use": "es",
+          "notes": "The `%` operator; _módulo_ names the operator, _resto_ names the result.",
+          "anchor": "term-modulo-remainder-operator"
+        },
+        {
+          "en": "concatenation / to concatenate",
+          "target": "concatenación / concatenar",
+          "use": "es",
+          "anchor": "term-concatenation-to-concatenate"
+        },
+        {
+          "en": "toggle",
+          "target": "alternar",
+          "use": "es",
+          "notes": "Verb; _conmutar_ also correct but heavier.",
+          "anchor": "term-toggle"
+        },
+        {
+          "en": "state / stateful",
+          "target": "estado",
+          "use": "es",
+          "anchor": "term-state-stateful"
+        },
+        {
+          "en": "class",
+          "target": "clase",
+          "use": "es",
+          "anchor": "term-class"
+        },
+        {
+          "en": "method",
+          "target": "método",
+          "use": "es",
+          "anchor": "term-method"
+        },
+        {
+          "en": "property",
+          "target": "propiedad",
+          "use": "es",
+          "anchor": "term-property"
+        },
+        {
+          "en": "object",
+          "target": "objeto",
+          "use": "es",
+          "anchor": "term-object"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "workflow",
+          "target": "flujo de trabajo",
+          "use": "es",
+          "notes": "The software-engineering sense.",
+          "anchor": "term-workflow"
+        },
+        {
+          "en": "auth (authentication / authorization)",
+          "target": "autenticación / autorización",
+          "use": "es",
+          "notes": "Pick by meaning; both are standard, direct cognates.",
+          "anchor": "term-auth"
+        },
+        {
+          "en": "tool / tooling",
+          "target": "herramienta / herramientas",
+          "use": "es",
+          "anchor": "term-tool-tooling"
+        },
+        {
+          "en": "module",
+          "target": "módulo",
+          "use": "es",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "algoritmo",
+          "use": "es",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "edge case",
+          "target": "caso límite",
+          "use": "es",
+          "notes": "\"caso extremo\" is an accepted alternative; do not mix both in one document.",
+          "anchor": "term-edge-case"
+        }
+      ]
+    },
+    {
+      "title": "Platform & curriculum vocabulary",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "feature (platform capability)",
+          "target": "funcionalidad",
+          "use": "es",
+          "notes": "Deliberately distinct from _función_ (function) to avoid collision; see `guide.md` § Style notes. Never use _función_ for a product feature.",
+          "anchor": "term-feature"
+        },
+        {
+          "en": "lesson",
+          "target": "lección",
+          "use": "es",
+          "anchor": "term-lesson"
+        },
+        {
+          "en": "exercise",
+          "target": "ejercicio",
+          "use": "es",
+          "anchor": "term-exercise"
+        },
+        {
+          "en": "scenario",
+          "target": "escenario",
+          "use": "es",
+          "notes": "Jiki-specific: a structured variant within an exercise.",
+          "anchor": "term-scenario"
+        },
+        {
+          "en": "curriculum",
+          "target": "plan de estudios",
+          "use": "es",
+          "notes": "\"currículo\" is an accepted alternative; do not mix both in one document.",
+          "anchor": "term-curriculum"
+        },
+        {
+          "en": "level",
+          "target": "nivel",
+          "use": "es",
+          "anchor": "term-level"
+        },
+        {
+          "en": "milestone",
+          "target": "hito",
+          "use": "es",
+          "anchor": "term-milestone"
+        },
+        {
+          "en": "syllabus",
+          "target": "temario",
+          "use": "es",
+          "notes": "The list of topics; distinct from _plan de estudios_ (curriculum). \"programa del curso\" also natural.",
+          "anchor": "term-syllabus"
+        },
+        {
+          "en": "tutorial",
+          "target": "tutorial",
+          "use": "es",
+          "notes": "Loanword, standard in Spanish-language tech writing.",
+          "anchor": "term-tutorial"
+        },
+        {
+          "en": "bootcamp",
+          "target": "bootcamp",
+          "use": "es",
+          "notes": "Loanword, standard in Spanish-language tech-education discourse.",
+          "anchor": "term-bootcamp"
+        },
+        {
+          "en": "solution (learner's submission)",
+          "target": "solución",
+          "use": "es",
+          "anchor": "term-solution"
+        }
+      ]
+    },
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "developer",
+          "target": "desarrollador",
+          "use": "es-419",
+          "notes": "Standard term. Prefer gender-neutral rephrasing where practical; see guide § Gender-neutral phrasing.",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "tech / el sector tech",
+          "use": "es-419",
+          "notes": "\"tech\" kept as-is (established in LatAm dev culture); \"el sector tech\" or \"el mundo tech\" for the industry.",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "pitfall",
+          "target": "trampa",
+          "use": "es-419",
+          "notes": "Ordinary word; stands alone. \"Error común\" also natural in a fuller phrase.",
+          "anchor": "term-pitfall"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "float / decimal",
+          "target": "número de punto flotante",
+          "use": "es-419",
+          "notes": "Use _punto flotante_ (the es-419 form, not the Spain \"coma flotante\"). Use _decimal_ when the floating-point nature does not matter.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "element",
+          "target": "elemento",
+          "use": "es-419",
+          "notes": "Array element = _elemento del arreglo_.",
+          "anchor": "term-element"
+        },
+        {
+          "en": "index",
+          "target": "índice",
+          "use": "es-419",
+          "notes": "Direct cognate. Where the source says \"position\" (Jiki's usual word), use _posición_; both point at the same numeric place.",
+          "anchor": "term-index"
+        },
+        {
+          "en": "template literal",
+          "target": "plantilla literal",
+          "use": "es-419",
+          "notes": "MDN-español term for JS backtick strings.",
+          "anchor": "term-template-literal"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "statement (executable)",
+          "target": "sentencia",
+          "use": "es-419",
+          "notes": "The imperative sense: a line of code that does something and gets executed. Standard LatAm CS term; deliberately distinct from _operador_.",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "afirmación",
+          "use": "es-419",
+          "notes": "The proposition sense: a claim that is true or false. Pick by meaning, not by the English word.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "return value",
+          "target": "valor de retorno",
+          "use": "es-419",
+          "notes": "Noun form; distinct from the verb \"to return\".",
+          "anchor": "term-return-value"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "break (loop control)",
+          "target": "salir (del bucle)",
+          "use": "es-419",
+          "notes": "The keyword `break` in code stays English; this is the prose verb for the concept. \"interrumpir el bucle\" also natural.",
+          "anchor": "term-break"
+        },
+        {
+          "en": "scope",
+          "target": "ámbito",
+          "use": "es-419",
+          "notes": "Standard Spanish term (MDN/Microsoft use _ámbito_). Deliberately distinct from _bloque de código_ (code block). Used as the ongoing Spanish term throughout, unlike es-ES; see that locale's glossary for the contrast.",
+          "anchor": "term-scope"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "deploy (verb: to deploy)",
+          "target": "desplegar / publicar",
+          "use": "es-419",
+          "notes": "_desplegar_ is the standard term; prefer _publicar_ in beginner-facing text where \"go live\" is the point.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "backwards compatibility",
+          "target": "compatibilidad con versiones anteriores",
+          "use": "es-419",
+          "notes": "\"retrocompatibilidad\" is a shorter accepted alternative.",
+          "anchor": "term-backwards-compatibility"
+        }
+      ]
+    },
+    {
+      "title": "Platform & curriculum vocabulary",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "pathway",
+          "target": "ruta de aprendizaje",
+          "use": "es-419",
+          "anchor": "term-pathway"
+        },
+        {
+          "en": "track (curriculum path)",
+          "target": "ruta",
+          "use": "es-419",
+          "notes": "Rendered the same as _pathway_; they are near-synonyms, do not introduce a second word.",
+          "anchor": "term-track"
+        },
+        {
+          "en": "mentor / mentoring",
+          "target": "mentor / mentoría",
+          "use": "es-419",
+          "notes": "Prefer gender-neutral rephrasing where practical; see guide § Gender-neutral phrasing.",
+          "anchor": "term-mentor-mentoring"
+        },
+        {
+          "en": "canvas (graphics exercises)",
+          "target": "lienzo",
+          "use": "es-419",
+          "notes": "The drawing surface in creative-coding exercises; _lienzo_ is the term used by p5.js in Spanish.",
+          "anchor": "term-canvas"
+        },
+        {
+          "en": "foot-gun",
+          "target": "(descriptive, no fixed term)",
+          "use": "es-419",
+          "notes": "Idiomatic; render descriptively, e.g. \"algo con lo que es fácil dispararte en el pie\". Do not force a fixed term.",
+          "anchor": "term-foot-gun"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 312
+}

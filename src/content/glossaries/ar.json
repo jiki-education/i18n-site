@@ -1,0 +1,513 @@
+{
+  "lang": "ar",
+  "name": "Arabic",
+  "family": null,
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "برمجة",
+          "use": "ar",
+          "notes": "Standard, single established term.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "streak",
+          "target": "سلسلة الأيام",
+          "use": "ar",
+          "notes": "Always qualified; never shorten to bare سلسلة. See guide § \"The سلسلة collision.\"",
+          "anchor": "term-streak"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "التقنية",
+          "use": "ar",
+          "notes": "e.g. `شركات التقنية` (tech companies). Established in Arabic tech media.",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "developer",
+          "target": "مطوّر",
+          "use": "ar",
+          "notes": "Standard Arabic equivalent.",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "pitfall",
+          "target": "فخ (شائع)",
+          "use": "ar",
+          "notes": "\"Common trap\", concrete and natural; matches the informal register.",
+          "anchor": "term-pitfall"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "قيمة",
+          "use": "ar",
+          "notes": "Ordinary word.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "number",
+          "target": "عدد",
+          "use": "ar",
+          "notes": "`عدد` for the data-type sense (`عدد صحيح`, `عدد عشري`); `رقم` is reserved for \"digit/numeral\", not this term.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "true / false",
+          "target": "صحيح / خطأ",
+          "use": "ar",
+          "notes": "Not capitalised in prose. The literal code keywords `True`/`False` stay in English inside code, per `global/rules.md`.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "character",
+          "target": "حرف",
+          "use": "ar",
+          "anchor": "term-character"
+        },
+        {
+          "en": "integer",
+          "target": "عدد صحيح",
+          "use": "ar",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "float / decimal",
+          "target": "عدد عشري",
+          "use": "ar",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "array / list",
+          "target": "مصفوفة",
+          "use": "ar",
+          "notes": "Exercise prose that informally says \"list\" for the same concept as \"array\" also uses `مصفوفة`; see `global/terms.md`. Distinct from the \"chain\" physical metaphor, see below.",
+          "anchor": "term-array-list"
+        },
+        {
+          "en": "dictionary",
+          "target": "قاموس",
+          "use": "ar",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "element",
+          "target": "عنصر",
+          "use": "ar",
+          "notes": "e.g. `عناصر المصفوفة` (array elements).",
+          "anchor": "term-element"
+        },
+        {
+          "en": "index",
+          "target": "فهرس",
+          "use": "ar",
+          "notes": "Distinct from `مؤشر` (pointer); do not confuse the two.",
+          "anchor": "term-index"
+        },
+        {
+          "en": "key-value pair",
+          "target": "زوج (مفتاح - قيمة)",
+          "use": "ar",
+          "anchor": "term-key-value-pair"
+        },
+        {
+          "en": "string",
+          "target": "سلسلة نصية",
+          "use": "ar",
+          "notes": "Always the full qualified compound; never shortened to bare `سلسلة`. See guide § \"The سلسلة collision.\"",
+          "anchor": "term-string"
+        },
+        {
+          "en": "Boolean",
+          "target": "قيمة منطقية",
+          "use": "ar",
+          "notes": "Translated fully, unlike some other Jiki languages that keep \"Boolean\" in English; see guide § \"Loanword policy.\"",
+          "anchor": "term-boolean"
+        },
+        {
+          "en": "data type",
+          "target": "نوع البيانات",
+          "use": "ar",
+          "anchor": "term-data-type"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "جملة شرطية",
+          "use": "ar",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "شرط",
+          "use": "ar",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "مقارنة",
+          "use": "ar",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "تعبير",
+          "use": "ar",
+          "notes": "Distinct from \"statement\" below; an expression evaluates to a value.",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "عامل",
+          "use": "ar",
+          "notes": "e.g. `عوامل المقارنة` (comparison operators). Distinct from `معامل` (parameter); do not confuse the two despite the visual similarity.",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "NOT operator / logical negation",
+          "target": "عامل النفي",
+          "use": "ar",
+          "anchor": "term-not-operator-logical-negation"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "عبارة",
+          "use": "ar",
+          "notes": "The imperative sense: a line of code that does something and gets executed. Kept distinct from `جملة شرطية` (if statement) and from `تعبير` (expression).",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "قضية",
+          "use": "ar",
+          "notes": "The proposition sense: a claim that is true or false. Pick by meaning, not by the English word; kept distinct from `عبارة` above.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "function",
+          "target": "دالة",
+          "use": "ar",
+          "notes": "The *keyword* `function` in code stays English; the concept in prose is `دالة`.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "يستدعي (استدعاء)",
+          "use": "ar",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "يُعرّف (تعريف)",
+          "use": "ar",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "parameter",
+          "target": "معامل",
+          "use": "ar",
+          "notes": "The declaration-site name. Distinct from `عامل` (operator); do not confuse the two.",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "وسيط",
+          "use": "ar",
+          "notes": "The call-site value.",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "مدخل / مدخلات",
+          "use": "ar",
+          "notes": "Plural `مدخلات` is the natural form in prose.",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "مخرج / مخرجات",
+          "use": "ar",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "يُرجع",
+          "use": "ar",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "القيمة المرجعة",
+          "use": "ar",
+          "notes": "Kept distinct from the verb above.",
+          "anchor": "term-return-value"
+        },
+        {
+          "en": "pure function",
+          "target": "دالة نقية",
+          "use": "ar",
+          "anchor": "term-pure-function"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "كلمة مفتاحية",
+          "use": "ar",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "متغير",
+          "use": "ar",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "إسناد",
+          "use": "ar",
+          "notes": "More established in Arabic CS-specific usage than the near-synonym `تعيين`; use `إسناد` consistently.",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "يُسند",
+          "use": "ar",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "كتلة برمجية",
+          "use": "ar",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "خطأ",
+          "use": "ar",
+          "anchor": "term-error"
+        },
+        {
+          "en": "exception",
+          "target": "استثناء",
+          "use": "ar",
+          "notes": "Kept distinct from `خطأ` (error); an exception is the specific catchable runtime event.",
+          "anchor": "term-exception"
+        },
+        {
+          "en": "nested",
+          "target": "متداخل",
+          "use": "ar",
+          "notes": "e.g. `حلقة متداخلة` = nested loop.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "تكرار",
+          "use": "ar",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "يُنفّذ (تنفيذ)",
+          "use": "ar",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "حلقة",
+          "use": "ar",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "for حلقة",
+          "use": "ar",
+          "notes": "Keep `for` in backticks (real keyword) + `حلقة`.",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "while حلقة",
+          "use": "ar",
+          "notes": "As above.",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "for-of loop",
+          "target": "for-of حلقة",
+          "use": "ar",
+          "notes": "As above.",
+          "anchor": "term-for-of-loop"
+        },
+        {
+          "en": "loop body",
+          "target": "جسم الحلقة",
+          "use": "ar",
+          "anchor": "term-loop-body"
+        },
+        {
+          "en": "scope",
+          "target": "نطاق",
+          "use": "ar",
+          "notes": "Translated fully, unlike Hungarian's \"keep in English\" approach for the same term.",
+          "anchor": "term-scope"
+        },
+        {
+          "en": "class",
+          "target": "صنف",
+          "use": "ar",
+          "notes": "`فئة` is used interchangeably in some sources; standardise on `صنف` for consistency (matches Arabic Wikipedia's CS-article title).",
+          "anchor": "term-class"
+        },
+        {
+          "en": "object",
+          "target": "كائن",
+          "use": "ar",
+          "anchor": "term-object"
+        },
+        {
+          "en": "property",
+          "target": "خاصية",
+          "use": "ar",
+          "anchor": "term-property"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "workflow",
+          "target": "سير العمل",
+          "use": "ar",
+          "anchor": "term-workflow"
+        },
+        {
+          "en": "deploy (verb: to deploy)",
+          "target": "يَنشر (نشر)",
+          "use": "ar",
+          "notes": "`انشر` for imperative; `نشر` as noun.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "module",
+          "target": "وحدة",
+          "use": "ar",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "خوارزمية",
+          "use": "ar",
+          "notes": "Well established in general vocabulary (from al-Khwarizmi), not just CS jargon; no gloss needed.",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "edge case",
+          "target": "حالة حدّية",
+          "use": "ar",
+          "anchor": "term-edge-case"
+        },
+        {
+          "en": "backwards compatibility",
+          "target": "التوافق مع الإصدارات السابقة",
+          "use": "ar",
+          "notes": "Descriptive phrase, standard rendering.",
+          "anchor": "term-backwards-compatibility"
+        },
+        {
+          "en": "framework",
+          "target": "إطار عمل",
+          "use": "ar",
+          "anchor": "term-framework"
+        },
+        {
+          "en": "tool / tooling",
+          "target": "أداة / أدوات",
+          "use": "ar",
+          "notes": "Used bare in Arabic technical prose; no English gloss needed.",
+          "anchor": "term-tool-tooling"
+        },
+        {
+          "en": "component",
+          "target": "مكوّن",
+          "use": "ar",
+          "anchor": "term-component"
+        },
+        {
+          "en": "CLI (the concept)",
+          "target": "واجهة سطر الأوامر",
+          "use": "ar",
+          "notes": "Where the source `<define>`s it, explain as `واجهة سطر الأوامر (command-line interface)`; may shorten to `سطر الأوامر` after.",
+          "anchor": "term-cli"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 470
+}

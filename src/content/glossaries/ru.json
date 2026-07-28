@@ -1,0 +1,460 @@
+{
+  "lang": "ru",
+  "name": "Russian",
+  "family": null,
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "программирование",
+          "use": "ru",
+          "notes": "\"Кодинг\" is a casual synonym; use `программирование` consistently and don't mix both in one document.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "developer",
+          "target": "разработчик",
+          "use": "ru",
+          "notes": "Standard.",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "IT-индустрия",
+          "use": "ru",
+          "notes": "Everyday loanword register for \"tech industry.\"",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "pitfall",
+          "target": "подводный камень",
+          "use": "ru",
+          "notes": "Idiomatic (\"hidden reef/rock\"), well attested in Russian technical writing.",
+          "anchor": "term-pitfall"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "значение",
+          "use": "ru",
+          "notes": "Ordinary word.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "number",
+          "target": "число",
+          "use": "ru",
+          "notes": "Ordinary word.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "integer",
+          "target": "целое число",
+          "use": "ru",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "float / decimal",
+          "target": "дробное число",
+          "use": "ru",
+          "notes": "Use _число с плавающей точкой_ only when the floating-point behavior specifically matters.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "character",
+          "target": "символ",
+          "use": "ru",
+          "anchor": "term-character"
+        },
+        {
+          "en": "true / false",
+          "target": "true / false (keep English)",
+          "use": "en",
+          "notes": "These are the literal keywords learners type; _истина/ложь_ reads archaic and philosophical for this audience.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "array / list",
+          "target": "массив",
+          "use": "ru",
+          "notes": "Exercise prose that says \"list\" informally still renders as _массив_.",
+          "anchor": "term-array-list"
+        },
+        {
+          "en": "dictionary",
+          "target": "словарь",
+          "use": "ru",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "element",
+          "target": "элемент",
+          "use": "ru",
+          "notes": "Array element = _элемент массива_.",
+          "anchor": "term-element"
+        },
+        {
+          "en": "index",
+          "target": "индекс",
+          "use": "ru",
+          "notes": "Same word; no clarification parens needed.",
+          "anchor": "term-index"
+        },
+        {
+          "en": "key-value pair",
+          "target": "пара «ключ-значение»",
+          "use": "ru",
+          "notes": "Standard phrasing.",
+          "anchor": "term-key-value-pair"
+        },
+        {
+          "en": "string",
+          "target": "строка",
+          "use": "ru",
+          "notes": "Fully native term; unlike Hungarian/Serbian, Russian does **not** keep \"string\" in English.",
+          "anchor": "term-string"
+        },
+        {
+          "en": "Boolean",
+          "target": "логическое значение",
+          "use": "ru",
+          "notes": "Beginner-friendly native rendering. _Булево значение_ is a common dev-community alternative; do not mix the two within a document.",
+          "anchor": "term-boolean"
+        },
+        {
+          "en": "data type",
+          "target": "тип данных",
+          "use": "ru",
+          "anchor": "term-data-type"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "условная конструкция",
+          "use": "ru",
+          "notes": "Avoid \"оператор\" here, it's reserved for the operator sense below.",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "условие",
+          "use": "ru",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "сравнение",
+          "use": "ru",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "выражение",
+          "use": "ru",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "оператор",
+          "use": "ru",
+          "notes": "Reserve exclusively for the symbol sense (`+`, `===`); never use for \"statement.\"",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "инструкция",
+          "use": "ru",
+          "notes": "The imperative sense: a line of code that does something. Deliberately distinct from `оператор` to avoid the classic RU CS collision (older sources like GOST 28397-89 use \"оператор\" for both senses; Jiki keeps them separate).",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "утверждение",
+          "use": "ru",
+          "notes": "The proposition sense: a claim that is true or false; also a test assertion.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "function",
+          "target": "функция",
+          "use": "ru",
+          "notes": "The *keyword* `function` in code stays English; the concept in prose is _функция_.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "вызвать (функцию)",
+          "use": "ru",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "определить (функцию)",
+          "use": "ru",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "вход / входные данные",
+          "use": "ru",
+          "notes": "Pairs with the `машина`/`автомат` metaphor family below.",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "выход / выходные данные",
+          "use": "ru",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "вернуть (значение)",
+          "use": "ru",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "возвращаемое значение",
+          "use": "ru",
+          "anchor": "term-return-value"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "ключевое слово",
+          "use": "ru",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "переменная",
+          "use": "ru",
+          "notes": "Feminine gender: _новая переменная_, _переменная была объявлена_.",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "присваивание",
+          "use": "ru",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "присвоить",
+          "use": "ru",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "блок кода",
+          "use": "ru",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "ошибка",
+          "use": "ru",
+          "anchor": "term-error"
+        },
+        {
+          "en": "exception",
+          "target": "исключение",
+          "use": "ru",
+          "notes": "Distinct from the general term \"error\" above; the catchable-error-object sense.",
+          "anchor": "term-exception"
+        },
+        {
+          "en": "nested",
+          "target": "вложенный",
+          "use": "ru",
+          "notes": "e.g. _вложенный цикл_ = nested loop.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "итерация",
+          "use": "ru",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "выполнить (код)",
+          "use": "ru",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "цикл",
+          "use": "ru",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "цикл for",
+          "use": "ru",
+          "notes": "Keep `for` in code font.",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "цикл while",
+          "use": "ru",
+          "notes": "As above.",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "loop body",
+          "target": "тело цикла",
+          "use": "ru",
+          "anchor": "term-loop-body"
+        },
+        {
+          "en": "scope",
+          "target": "область видимости",
+          "use": "ru",
+          "notes": "Fully native; unlike Hungarian/Serbian, Russian does not keep \"scope\" in English.",
+          "anchor": "term-scope"
+        },
+        {
+          "en": "class",
+          "target": "класс",
+          "use": "ru",
+          "anchor": "term-class"
+        },
+        {
+          "en": "method",
+          "target": "метод",
+          "use": "ru",
+          "anchor": "term-method"
+        },
+        {
+          "en": "property",
+          "target": "свойство",
+          "use": "ru",
+          "anchor": "term-property"
+        },
+        {
+          "en": "object",
+          "target": "объект",
+          "use": "ru",
+          "notes": "Masculine gender: _новый объект_.",
+          "anchor": "term-object"
+        },
+        {
+          "en": "encapsulation",
+          "target": "инкапсуляция",
+          "use": "ru",
+          "notes": "Established loanword in Russian CS vocabulary.",
+          "anchor": "term-encapsulation"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "workflow",
+          "target": "рабочий процесс",
+          "use": "ru",
+          "anchor": "term-workflow"
+        },
+        {
+          "en": "auth (authentication / authorization)",
+          "target": "аутентификация / авторизация",
+          "use": "ru",
+          "notes": "Pick by meaning; both are standard, established Russian loanwords.",
+          "anchor": "term-auth"
+        },
+        {
+          "en": "deploy (verb: to deploy)",
+          "target": "развернуть",
+          "use": "ru",
+          "notes": "\"Деплой\"/\"задеплоить\" is common dev slang; prefer _развернуть_ for beginner-facing Jiki content.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "module",
+          "target": "модуль",
+          "use": "ru",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "алгоритм",
+          "use": "ru",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "edge case",
+          "target": "граничный случай",
+          "use": "ru",
+          "anchor": "term-edge-case"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 467
+}

@@ -1,0 +1,50 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  /** Optional image for the right-hand side of the band, as on the Jiki blog. */
+  image?: string;
+  /** Breadcrumb-ish links shown above the title. */
+  crumbs?: { label: string; href?: string }[];
+  /** Language of the title, so a translated title renders in the right script. */
+  titleLang?: string;
+  titleDir?: "ltr" | "rtl";
+}
+
+const { title, subtitle, image, crumbs = [], titleLang, titleDir } = Astro.props;
+---
+
+<div class="article-header py-12 sm:py-15">
+  <div class={`lg-container ${image ? "grid items-center gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-15" : ""}`}>
+    <div>
+      {
+        crumbs.length > 0 && (
+          <nav class="mb-4 flex flex-wrap items-center gap-2 text-sm font-medium text-purple-300">
+            {crumbs.map((crumb, i) => (
+              <>
+                {i > 0 && <span class="text-purple-500">/</span>}
+                {crumb.href ? (
+                  <a href={crumb.href} class="transition hover:text-white">
+                    {crumb.label}
+                  </a>
+                ) : (
+                  <span>{crumb.label}</span>
+                )}
+              </>
+            ))}
+          </nav>
+        )
+      }
+      <h1
+        class="text-[28px] leading-[1.2] font-extrabold text-white sm:text-[36px] lg:text-[48px]"
+        lang={titleLang}
+        dir={titleDir}
+      >
+        {title}
+      </h1>
+      {subtitle && <p class="mt-4 max-w-2xl text-[16px] leading-[1.6] text-purple-200 sm:text-[18px]">{subtitle}</p>}
+      <slot name="meta" />
+    </div>
+    {image && <img src={image} alt="" class="w-full rounded-2xl" width="640" height="360" loading="eager" />}
+  </div>
+</div>

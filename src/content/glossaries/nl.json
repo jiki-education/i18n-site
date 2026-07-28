@@ -1,0 +1,239 @@
+{
+  "lang": "nl",
+  "name": "Dutch",
+  "family": null,
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "waarde",
+          "use": "nl",
+          "notes": "Ordinary word; _de waarde_.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "true / false",
+          "target": "waar / onwaar",
+          "use": "nl",
+          "notes": "Not capitalised in prose. Use _onwaar_, not _vals_.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "integer",
+          "target": "geheel getal",
+          "use": "nl",
+          "notes": "_het gehele getal_.",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "float / decimal",
+          "target": "reëel getal",
+          "use": "nl",
+          "notes": "_kommagetal_ is an acceptable plainer alternative when the decimal point is the focus.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "character",
+          "target": "teken",
+          "use": "nl",
+          "notes": "A single text character. _teken_ alone can read as \"sign\", so the English gloss is worth showing where the source `<define>`s it.",
+          "anchor": "term-character"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "function",
+          "target": "functie",
+          "use": "nl",
+          "notes": "_de functie_. The *keyword* `function` in code stays English; the concept in prose is _functie_.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "condition",
+          "target": "voorwaarde",
+          "use": "nl",
+          "notes": "Ordinary word; stands alone. _de voorwaarde_.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "vergelijking",
+          "use": "nl",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "expressie",
+          "use": "nl",
+          "notes": "_uitdrukking_ is an acceptable synonym; pick one per document.",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "operator",
+          "use": "nl",
+          "notes": "Same word; _de operator_.",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "aanroepen",
+          "use": "nl",
+          "notes": "Separable verb: \"je _roept_ de functie _aan_\". nl-NL (BE: _oproepen_).",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "teruggeven",
+          "use": "nl",
+          "notes": "Separable verb: \"de functie _geeft_ 30 _terug_\".",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "retourwaarde",
+          "use": "nl",
+          "notes": "One word; _de retourwaarde_.",
+          "anchor": "term-return-value"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "invoer",
+          "use": "nl",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "uitvoer",
+          "use": "nl",
+          "anchor": "term-output"
+        },
+        {
+          "en": "parameter",
+          "target": "parameter",
+          "use": "nl",
+          "notes": "Same word; _de parameter_. The declaration-site name.",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "argument",
+          "use": "nl",
+          "notes": "Same word; _het argument_. The call-site value.",
+          "anchor": "term-argument"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "sleutelwoord",
+          "use": "nl",
+          "notes": "_het sleutelwoord_.",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "variabele",
+          "use": "nl",
+          "notes": "_de variabele_.",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "loop",
+          "target": "lus",
+          "use": "nl",
+          "notes": "Established Dutch term, not _loop_. _de lus_. `for` loop = _for-lus_, `while` loop = _while-lus_ (keep the keyword in backticks/hyphenated).",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "assignment",
+          "target": "toewijzing",
+          "use": "nl",
+          "notes": "_de toewijzing_.",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "toewijzen",
+          "use": "nl",
+          "notes": "Separable verb: \"je _wijst_ de waarde _toe_\".",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "iteration",
+          "target": "iteratie",
+          "use": "nl",
+          "notes": "_de iteratie_.",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "nested",
+          "target": "genest",
+          "use": "nl",
+          "notes": "Adjective inflects: _een geneste lus_, _het geneste object_.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "error",
+          "target": "fout",
+          "use": "nl",
+          "notes": "Ordinary word; _de fout_. The `Error` token in code stays English.",
+          "anchor": "term-error"
+        },
+        {
+          "en": "method",
+          "target": "methode",
+          "use": "nl",
+          "notes": "_de methode_.",
+          "anchor": "term-method"
+        },
+        {
+          "en": "object",
+          "target": "object",
+          "use": "nl",
+          "notes": "_het object_.",
+          "anchor": "term-object"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 339
+}

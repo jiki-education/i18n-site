@@ -1,0 +1,53 @@
+name: Deploy Cloudflare Workers
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-i18n-site:
+    runs-on: ubuntu-latest
+    name: Deploy i18n Site
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: ".nvmrc"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Validate required environment variables
+        run: |
+          missing_vars=()
+
+          if [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ]; then
+            missing_vars+=("CLOUDFLARE_API_TOKEN")
+          fi
+
+          if [ -z "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ]; then
+            missing_vars+=("CLOUDFLARE_ACCOUNT_ID")
+          fi
+
+          if [ ${#missing_vars[@]} -ne 0 ]; then
+            echo "❌ Error: The following required secrets are not set:"
+            printf '  - %s\n' "${missing_vars[@]}"
+            exit 1
+          fi
+
+          echo "✅ All required environment variables are set"
+
+      - name: Deploy to Cloudflare Workers
+        run: pnpm run deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

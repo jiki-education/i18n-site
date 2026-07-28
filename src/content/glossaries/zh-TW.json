@@ -1,0 +1,539 @@
+{
+  "lang": "zh-TW",
+  "name": "Traditional Chinese",
+  "family": "zh",
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "值",
+          "use": "zh",
+          "notes": "Ordinary word. Identical in both scripts.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "true / false",
+          "target": "真 / 假",
+          "use": "zh",
+          "notes": "Lowercase-equivalent in prose; code literals stay English. Identical in both scripts.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "dictionary",
+          "target": "字典",
+          "use": "zh",
+          "notes": "Identical in both scripts.",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "element",
+          "target": "元素",
+          "use": "zh",
+          "notes": "Array element. Identical in both scripts.",
+          "anchor": "term-element"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "method",
+          "target": "方法",
+          "use": "zh",
+          "notes": "Identical in both scripts.",
+          "anchor": "term-method"
+        },
+        {
+          "en": "workflow",
+          "target": "工作流程",
+          "use": "zh",
+          "notes": "The software-engineering sense. Identical in both scripts.",
+          "anchor": "term-workflow"
+        },
+        {
+          "en": "deploy",
+          "target": "部署",
+          "use": "zh",
+          "notes": "Identical in both scripts.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "framework",
+          "target": "框架",
+          "use": "zh",
+          "notes": "Fully translated (see § Loanword policy in `guide.md`); not kept as an English loanword. Identical in both scripts.",
+          "anchor": "term-framework"
+        }
+      ]
+    },
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "程式設計 (formal noun) / 寫程式 (casual verb phrase)",
+          "use": "zh-TW",
+          "notes": "Pick by register; do not mix both in one document.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "developer",
+          "target": "開發者 / 工程師",
+          "use": "zh-TW",
+          "notes": "Near-synonyms; 工程師 leans toward \"engineer\" in a job-title sense.",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "streak",
+          "target": "連續學習天數",
+          "use": "zh-TW",
+          "notes": "Deliberately not Duolingo-derived: the zh-TW Duolingo app was found to contain Simplified-character contamination and Mainland-register phrasing, so it is not a trustworthy source for this locale. Plain descriptive term.",
+          "anchor": "term-streak"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "科技業 / 科技產業",
+          "use": "zh-TW",
+          "notes": "Near-synonyms for \"the tech industry\"; pick either, do not mix both in one document.",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "pitfall",
+          "target": "陷阱",
+          "use": "zh-TW",
+          "anchor": "term-pitfall"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "number",
+          "target": "數字",
+          "use": "zh-TW",
+          "notes": "Ordinary word.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "integer",
+          "target": "整數",
+          "use": "zh-TW",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "float / decimal",
+          "target": "浮點數 (technical) / 小數 (plain)",
+          "use": "zh-TW",
+          "notes": "Use 小數 where the floating-point nature doesn't matter.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "character",
+          "target": "字元",
+          "use": "zh-TW",
+          "notes": "A single text character.",
+          "anchor": "term-character"
+        },
+        {
+          "en": "array / list",
+          "target": "陣列",
+          "use": "zh-TW",
+          "notes": "Exercise prose that says \"list\" informally is the same concept; render it with 陣列, do not introduce a second word.",
+          "anchor": "term-array-list"
+        },
+        {
+          "en": "index",
+          "target": "索引",
+          "use": "zh-TW",
+          "notes": "Taiwan usage does not distinguish a separate \"position\" term the way `zh-CN`'s 下标 does; use 索引 for both the array-position sense and the general concept.",
+          "anchor": "term-index"
+        },
+        {
+          "en": "string",
+          "target": "字串",
+          "use": "zh-TW",
+          "notes": "Fully localized per the loanword policy in `../zh/guide.md`; not kept in English.",
+          "anchor": "term-string"
+        },
+        {
+          "en": "Boolean",
+          "target": "布林 / 布林值",
+          "use": "zh-TW",
+          "notes": "Fully localized; not kept in English.",
+          "anchor": "term-boolean"
+        },
+        {
+          "en": "data type",
+          "target": "資料型態 / 型別 (dev-community casual)",
+          "use": "zh-TW",
+          "notes": "The general concept, distinct from any specific type name.",
+          "anchor": "term-data-type"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "條件式 / if 敘述",
+          "use": "zh-TW",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "條件",
+          "use": "zh-TW",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "比較",
+          "use": "zh-TW",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "運算式",
+          "use": "zh-TW",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "運算子",
+          "use": "zh-TW",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "敘述",
+          "use": "zh-TW",
+          "notes": "The imperative sense: a line of code that does something and gets executed.",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "function",
+          "target": "函式",
+          "use": "zh-TW",
+          "notes": "Primary and only term; 函數 is not used, for consistency. The *keyword* `function` in code stays English; the concept in prose is 函式.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "呼叫",
+          "use": "zh-TW",
+          "notes": "呼叫一個函式.",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "定義",
+          "use": "zh-TW",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "parameter",
+          "target": "參數",
+          "use": "zh-TW",
+          "notes": "Declaration-site name.",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "引數",
+          "use": "zh-TW",
+          "notes": "Call-site value; distinguishes it from 參數 (parameter).",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "輸入",
+          "use": "zh-TW",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "輸出",
+          "use": "zh-TW",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "回傳",
+          "use": "zh-TW",
+          "notes": "\"回傳一個值。\" Deliberately different from `zh-CN`'s 返回.",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "回傳值",
+          "use": "zh-TW",
+          "notes": "Noun form; distinct from the verb 回傳.",
+          "anchor": "term-return-value"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "關鍵字",
+          "use": "zh-TW",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "變數",
+          "use": "zh-TW",
+          "notes": "Deliberately different from `zh-CN`'s 变量.",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "賦值 / 指定",
+          "use": "zh-TW",
+          "notes": "Noun.",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "指定 / 賦予",
+          "use": "zh-TW",
+          "notes": "Verb.",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "程式區塊",
+          "use": "zh-TW",
+          "notes": "Deliberately distinct from 作用域/範圍 (scope).",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "錯誤",
+          "use": "zh-TW",
+          "anchor": "term-error"
+        },
+        {
+          "en": "nested",
+          "target": "巢狀",
+          "use": "zh-TW",
+          "notes": "e.g. 巢狀迴圈 = nested loop.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "疊代",
+          "use": "zh-TW",
+          "notes": "Distinct from `zh-CN`'s 迭代; not a script variant, a genuinely different word.",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "執行",
+          "use": "zh-TW",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "迴圈",
+          "use": "zh-TW",
+          "notes": "Deliberately different from `zh-CN`'s 循环.",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "for 迴圈",
+          "use": "zh-TW",
+          "notes": "Keep `for` in code font (real keyword) + 迴圈.",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "while 迴圈",
+          "use": "zh-TW",
+          "notes": "As above.",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "scope",
+          "target": "作用域 / 範圍",
+          "use": "zh-TW",
+          "notes": "Fully translated, not kept in English. `zh-CN` uses only 作用域 as its single term; this locale allows either, so the term is kept separate per locale rather than merged even though the primary word matches.",
+          "anchor": "term-scope"
+        },
+        {
+          "en": "object",
+          "target": "物件",
+          "use": "zh-TW",
+          "notes": "Deliberately different from `zh-CN`'s 对象.",
+          "anchor": "term-object"
+        },
+        {
+          "en": "class",
+          "target": "類別",
+          "use": "zh-TW",
+          "notes": "Deliberately different from `zh-CN`'s 类.",
+          "anchor": "term-class"
+        },
+        {
+          "en": "property",
+          "target": "屬性",
+          "use": "zh-TW",
+          "anchor": "term-property"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "module",
+          "target": "模組",
+          "use": "zh-TW",
+          "notes": "Deliberately different from `zh-CN`'s 模块.",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "演算法",
+          "use": "zh-TW",
+          "notes": "Deliberately different from `zh-CN`'s 算法.",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "database",
+          "target": "資料庫",
+          "use": "zh-TW",
+          "anchor": "term-database"
+        }
+      ]
+    },
+    {
+      "title": "Platform & curriculum vocabulary",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "lesson",
+          "target": "課程",
+          "use": "zh-TW",
+          "anchor": "term-lesson"
+        },
+        {
+          "en": "exercise",
+          "target": "練習",
+          "use": "zh-TW",
+          "anchor": "term-exercise"
+        },
+        {
+          "en": "curriculum",
+          "target": "課程大綱 / 課綱",
+          "use": "zh-TW",
+          "notes": "Low-medium confidence: may read as overly \"school system\" for Jiki's warmer tone. Flag for native-speaker review via `/action-forum-post`.",
+          "anchor": "term-curriculum"
+        },
+        {
+          "en": "level",
+          "target": "關卡 (preferred, gamified) / 等級",
+          "use": "zh-TW",
+          "notes": "關卡 fits Jiki's tone better; use 等級 only where a plain ranking sense is meant.",
+          "anchor": "term-level"
+        },
+        {
+          "en": "track (curriculum path)",
+          "target": "學習路徑",
+          "use": "zh-TW",
+          "anchor": "term-track"
+        },
+        {
+          "en": "mentor / mentoring",
+          "target": "導師 / 引導",
+          "use": "zh-TW",
+          "anchor": "term-mentor-mentoring"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 414
+}

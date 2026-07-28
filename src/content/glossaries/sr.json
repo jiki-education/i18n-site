@@ -1,0 +1,669 @@
+{
+  "lang": "sr",
+  "name": "Serbian",
+  "family": null,
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "programiranje",
+          "use": "sr",
+          "notes": "Use consistently; standard, undisputed term.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "streak",
+          "target": "serija",
+          "use": "sr",
+          "notes": "E.g. \"serija od 7 dana\". Deliberately not \"niz\" (which is reserved for the array/CS term) to avoid a collision.",
+          "anchor": "term-streak"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "IT industrija",
+          "use": "sr",
+          "notes": "\"IT\" is well established in Serbian as the name of the sector; use \"tehnologija\" for the general adjective sense (\"tech company\" = \"tech kompanija\" / \"IT kompanija\").",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "developer",
+          "target": "programer",
+          "use": "sr",
+          "notes": "Standard, general Serbian word for someone who writes code.",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "pitfall",
+          "target": "zamka",
+          "use": "sr",
+          "notes": "Ordinary word (\"trap\"); stands alone.",
+          "anchor": "term-pitfall"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "vrednost",
+          "use": "sr",
+          "notes": "Ordinary word.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "number",
+          "target": "broj",
+          "use": "sr",
+          "notes": "Ordinary word.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "true / false",
+          "target": "tačno / netačno",
+          "use": "sr",
+          "notes": "Not capitalised in prose.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "character",
+          "target": "karakter",
+          "use": "sr",
+          "notes": "Loanword; established in Serbian beginner CS material (Petlja).",
+          "anchor": "term-character"
+        },
+        {
+          "en": "integer",
+          "target": "ceo broj",
+          "use": "sr",
+          "notes": "Also \"celobrojni tip\" for the type name specifically.",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "float / decimal",
+          "target": "broj sa pokretnim zarezom",
+          "use": "sr",
+          "notes": "Or \"realni tip\" when the type name (not the value) is meant.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "array / list",
+          "target": "niz",
+          "use": "sr",
+          "notes": "The established CS term; see also \"chain\" under Jiki physical metaphors for the teaching metaphor used alongside it.",
+          "anchor": "term-array-list"
+        },
+        {
+          "en": "dictionary",
+          "target": "mapa",
+          "use": "sr",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "element",
+          "target": "element",
+          "use": "sr",
+          "notes": "\"element niza\" = array element.",
+          "anchor": "term-element"
+        },
+        {
+          "en": "index",
+          "target": "indeks",
+          "use": "sr",
+          "notes": "Transparent cognate; stands alone.",
+          "anchor": "term-index"
+        },
+        {
+          "en": "data type",
+          "target": "tip podataka",
+          "use": "sr",
+          "notes": "Transparent compound once introduced.",
+          "anchor": "term-data-type"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "if naredba",
+          "use": "sr",
+          "notes": "Keep `if` in backticks/inline code as the real keyword; \"grananje\" (branching) is the natural word to use in prose when talking about the general concept of conditional branching, not the specific statement.",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "uslov",
+          "use": "sr",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "poređenje",
+          "use": "sr",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "izraz",
+          "use": "sr",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "operator",
+          "use": "sr",
+          "notes": "Loanword, fully naturalized.",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "naredba",
+          "use": "sr",
+          "notes": "The imperative sense: a line of code that does something and gets executed.",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "iskaz",
+          "use": "sr",
+          "notes": "The proposition sense: a claim that is true or false. Keep distinct from \"naredba\" above; pick by meaning, not by the English word.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "function",
+          "target": "funkcija",
+          "use": "sr",
+          "notes": "The *keyword* `function` in code stays English; the concept in prose is \"funkcija\".",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "pozvati (funkciju)",
+          "use": "sr",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "definisati",
+          "use": "sr",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "ulaz",
+          "use": "sr",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "izlaz",
+          "use": "sr",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "vratiti (vrednost)",
+          "use": "sr",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "povratna vrednost",
+          "use": "sr",
+          "anchor": "term-return-value"
+        },
+        {
+          "en": "parameter",
+          "target": "parametar",
+          "use": "sr",
+          "notes": "The declaration-site name.",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "argument",
+          "use": "sr",
+          "notes": "The call-site value; used somewhat interchangeably with \"parametar\" in casual Serbian dev speech, but keep them distinct per the glossary discipline.",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "pure function",
+          "target": "čista funkcija",
+          "use": "sr",
+          "notes": "Transparent compound once \"funkcija\" is clarified.",
+          "anchor": "term-pure-function"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "ključna reč",
+          "use": "sr",
+          "notes": "Transparent compound, but still worth clarifying once.",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "promenljiva",
+          "use": "sr",
+          "notes": "Feminine gender; \"nova promenljiva\", \"promenljiva je definisana\".",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "dodela (vrednosti)",
+          "use": "sr",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "dodeliti",
+          "use": "sr",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "blok (koda)",
+          "use": "sr",
+          "notes": "\"blok\" is itself a loanword; \"telo funkcije\" for the function-body sense specifically.",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "greška",
+          "use": "sr",
+          "anchor": "term-error"
+        },
+        {
+          "en": "exception",
+          "target": "izuzetak",
+          "use": "sr",
+          "notes": "Distinct from the general \"greška\"; the catchable-error-object sense.",
+          "anchor": "term-exception"
+        },
+        {
+          "en": "nested",
+          "target": "ugnežden(i)",
+          "use": "sr",
+          "notes": "Native metaphor (from \"gnezdo\" = nest), already the standard term, e.g. \"ugnežđene petlje\" (nested loops).",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "iteracija",
+          "use": "sr",
+          "notes": "Loanword.",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "izvršiti / pokrenuti (kod)",
+          "use": "sr",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "petlja",
+          "use": "sr",
+          "notes": "Also the name of Serbia's national CS-education platform (Petlja.org), so it's well-established and iconic, not just a textbook coinage.",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "for petlja",
+          "use": "sr",
+          "notes": "Keep `for` in backticks (real keyword) + \"petlja\".",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "while petlja",
+          "use": "sr",
+          "notes": "As above.",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "for-of loop",
+          "target": "for-of petlja",
+          "use": "sr",
+          "notes": "As above.",
+          "anchor": "term-for-of-loop"
+        },
+        {
+          "en": "loop body",
+          "target": "telo petlje",
+          "use": "sr",
+          "anchor": "term-loop-body"
+        },
+        {
+          "en": "break (loop control)",
+          "target": "prekid (petlje)",
+          "use": "sr",
+          "notes": "The keyword `break` itself always stays English in code; this is the prose concept.",
+          "anchor": "term-break"
+        },
+        {
+          "en": "increment",
+          "target": "uvećanje",
+          "use": "sr",
+          "notes": "Native, transparent (\"increase\"); \"inkrement\" is also used in more academic registers but \"uvećanje\" reads better for a beginner audience.",
+          "anchor": "term-increment"
+        },
+        {
+          "en": "modulo / remainder operator",
+          "target": "ostatak (deljenja)",
+          "use": "sr",
+          "notes": "\"The remainder of division\"; transparent, no clarify needed.",
+          "anchor": "term-modulo-remainder-operator"
+        },
+        {
+          "en": "concatenation / to concatenate",
+          "target": "spajanje (nizova)",
+          "use": "sr",
+          "anchor": "term-concatenation-to-concatenate"
+        },
+        {
+          "en": "toggle",
+          "target": "preklopiti",
+          "use": "sr",
+          "notes": "To flip a value between two states.",
+          "anchor": "term-toggle"
+        },
+        {
+          "en": "state / stateful",
+          "target": "stanje",
+          "use": "sr",
+          "anchor": "term-state-stateful"
+        },
+        {
+          "en": "scope",
+          "target": "doseg",
+          "use": "sr",
+          "notes": "Keep distinct from \"blok\" (code block) above.",
+          "anchor": "term-scope"
+        },
+        {
+          "en": "class",
+          "target": "klasa",
+          "use": "sr",
+          "notes": "Loanword.",
+          "anchor": "term-class"
+        },
+        {
+          "en": "method",
+          "target": "metod",
+          "use": "sr",
+          "notes": "Masculine (\"metod\", not \"metoda\"); some Serbian sources use the feminine \"metoda\" instead, but pick \"metod\" and use it consistently.",
+          "anchor": "term-method"
+        },
+        {
+          "en": "property",
+          "target": "svojstvo",
+          "use": "sr",
+          "notes": "Ordinary Serbian word for a characteristic/attribute; stands alone.",
+          "anchor": "term-property"
+        },
+        {
+          "en": "object",
+          "target": "objekat",
+          "use": "sr",
+          "notes": "Loanword, fully naturalized; masculine.",
+          "anchor": "term-object"
+        },
+        {
+          "en": "encapsulation",
+          "target": "enkapsulacija",
+          "use": "sr",
+          "notes": "Standard OOP loanword. Real Serbian course material sometimes frames the concept with a \"cocooned data\" image (\"učaurena podaci\", from \"čaura\" = cocoon/casing); that's a nice explanatory aside but \"enkapsulacija\" is the term to use consistently.",
+          "anchor": "term-encapsulation"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "workflow",
+          "target": "radni tok",
+          "use": "sr",
+          "notes": "The software-engineering sense (a sequence of dev tasks), distinct from \"curriculum\" below.",
+          "anchor": "term-workflow"
+        },
+        {
+          "en": "auth: authentication",
+          "target": "autentifikacija",
+          "use": "sr",
+          "notes": "Verifying identity.",
+          "anchor": "term-auth-authentication"
+        },
+        {
+          "en": "auth: authorization",
+          "target": "autorizacija",
+          "use": "sr",
+          "notes": "Verifying permissions; keep distinct from authentication above.",
+          "anchor": "term-auth-authorization"
+        },
+        {
+          "en": "deploy",
+          "target": "deploj",
+          "use": "sr",
+          "notes": "Colloquially verbed as \"deplojovati\" in Serbian dev speech; low-confidence, worth a native developer's sanity check.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "tool / tooling",
+          "target": "alat",
+          "use": "sr",
+          "notes": "Ordinary, transparent word.",
+          "anchor": "term-tool-tooling"
+        },
+        {
+          "en": "module",
+          "target": "modul",
+          "use": "sr",
+          "notes": "Loanword.",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "algoritam",
+          "use": "sr",
+          "notes": "Long-established loanword, but still worth clarifying for a first-time beginner reader.",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "edge case",
+          "target": "granični slučaj",
+          "use": "sr",
+          "notes": "Transparent native compound (\"border/edge case\").",
+          "anchor": "term-edge-case"
+        },
+        {
+          "en": "backwards compatibility",
+          "target": "unazadna kompatibilnost",
+          "use": "sr",
+          "anchor": "term-backwards-compatibility"
+        }
+      ]
+    },
+    {
+      "title": "Platform & curriculum vocabulary",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "feature (platform capability)",
+          "target": "mogućnost",
+          "use": "sr",
+          "notes": "Deliberately not \"funkcija\" — that word is reserved for the CS \"function\" concept; using it for \"feature\" too would create exactly the kind of collision `global/terms.md` warns about.",
+          "anchor": "term-feature"
+        },
+        {
+          "en": "lesson",
+          "target": "lekcija",
+          "use": "sr",
+          "anchor": "term-lesson"
+        },
+        {
+          "en": "exercise",
+          "target": "vežba",
+          "use": "sr",
+          "anchor": "term-exercise"
+        },
+        {
+          "en": "scenario",
+          "target": "scenario",
+          "use": "sr",
+          "anchor": "term-scenario"
+        },
+        {
+          "en": "curriculum",
+          "target": "kurikulum",
+          "use": "sr",
+          "notes": "Distinct from \"radni tok\" (workflow) above; this is the curriculum-structure sense.",
+          "anchor": "term-curriculum"
+        },
+        {
+          "en": "level",
+          "target": "nivo",
+          "use": "sr",
+          "anchor": "term-level"
+        },
+        {
+          "en": "milestone",
+          "target": "prekretnica",
+          "use": "sr",
+          "notes": "Native, transparent (\"turning point\").",
+          "anchor": "term-milestone"
+        },
+        {
+          "en": "pathway",
+          "target": "putanja",
+          "use": "sr",
+          "notes": "Keep distinct from \"staza\" (track) below; both mean \"path\" but are assigned to different concepts.",
+          "anchor": "term-pathway"
+        },
+        {
+          "en": "bootcamp",
+          "target": "bootkamp",
+          "use": "sr",
+          "notes": "Phonetically adapted loanword.",
+          "anchor": "term-bootcamp"
+        },
+        {
+          "en": "syllabus",
+          "target": "silabus",
+          "use": "sr",
+          "notes": "Established loanword in Serbian academic usage.",
+          "anchor": "term-syllabus"
+        },
+        {
+          "en": "mentor / mentoring",
+          "target": "mentor / mentorstvo",
+          "use": "sr",
+          "notes": "Established loanword, fully naturalized.",
+          "anchor": "term-mentor-mentoring"
+        },
+        {
+          "en": "track (curriculum path)",
+          "target": "staza",
+          "use": "sr",
+          "notes": "Keep distinct from \"putanja\" (pathway) above.",
+          "anchor": "term-track"
+        },
+        {
+          "en": "tutorial",
+          "target": "tutorijal",
+          "use": "sr",
+          "notes": "Loanword.",
+          "anchor": "term-tutorial"
+        },
+        {
+          "en": "solution (learner's submission)",
+          "target": "rešenje",
+          "use": "sr",
+          "notes": "Ordinary word.",
+          "anchor": "term-solution"
+        },
+        {
+          "en": "canvas (graphics exercises)",
+          "target": "platno",
+          "use": "sr",
+          "notes": "The drawing-surface sense specifically.",
+          "anchor": "term-canvas"
+        },
+        {
+          "en": "foot-gun",
+          "target": "opasna prečica",
+          "use": "sr",
+          "notes": "Descriptive phrase, not a fixed idiom; no clean one-word Serbian equivalent was found. Flagged for native-speaker review; Serbian does have the idiom \"pucati sebi u nogu\" (to shoot yourself in the foot) which may be worth workshopping into a punchier term later.",
+          "anchor": "term-foot-gun"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 402
+}

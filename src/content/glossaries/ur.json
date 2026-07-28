@@ -1,0 +1,584 @@
+{
+  "lang": "ur",
+  "name": "Urdu",
+  "family": null,
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "پروگرامنگ",
+          "use": "ur",
+          "notes": "Transliterated loanword; this is how real Urdu tutorial/explainer content writes it, not a native coinage.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "developer",
+          "target": "پروگرامر",
+          "use": "ur",
+          "notes": "Transliterated \"programmer\"; more transparent to a beginner than \"ڈویلپر\" (developer).",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "ٹیکنالوجی کی صنعت",
+          "use": "ur",
+          "notes": "\"ٹیکنالوجی\" (technology, established loanword) + \"صنعت\" (industry, native word).",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "streak",
+          "target": "لگاتار دن",
+          "use": "ur",
+          "notes": "Descriptive phrase (\"consecutive days\"); no single settled Urdu word found for the learning-platform streak concept. Low confidence, flag for native-speaker review.",
+          "anchor": "term-streak"
+        },
+        {
+          "en": "pitfall",
+          "target": "عام غلطی",
+          "use": "ur",
+          "notes": "Descriptive phrase (\"common mistake\"); Urdu has no single settled word matching the English \"pitfall\" idiom. Low confidence, flag for native-speaker review.",
+          "anchor": "term-pitfall"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "قدر",
+          "use": "ur",
+          "notes": "Ordinary, well-established Urdu word for \"value.\"",
+          "anchor": "term-value"
+        },
+        {
+          "en": "number",
+          "target": "عدد",
+          "use": "ur",
+          "notes": "The classical Urdu word for \"number,\" standard in school maths.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "true / false",
+          "target": "صحیح / غلط",
+          "use": "ur",
+          "notes": "Ordinary Urdu words for \"correct\" / \"incorrect\"; natural fit for the Boolean literals in prose.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "character",
+          "target": "حرف",
+          "use": "ur",
+          "notes": "Ordinary Urdu word for a single letter/character.",
+          "anchor": "term-character"
+        },
+        {
+          "en": "integer",
+          "target": "عدد صحیح",
+          "use": "ur",
+          "notes": "Literally \"whole number\"; standard school-maths term.",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "float / decimal",
+          "target": "اعشاریہ",
+          "use": "ur",
+          "notes": "Standard Urdu word for \"decimal,\" used in school maths for decimal numbers.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "string",
+          "target": "سٹرنگ",
+          "use": "ur",
+          "notes": "Transliterated loanword.",
+          "anchor": "term-string"
+        },
+        {
+          "en": "Boolean",
+          "target": "بولین",
+          "use": "ur",
+          "notes": "Transliterated loanword.",
+          "anchor": "term-boolean"
+        },
+        {
+          "en": "array / list",
+          "target": "زنجیر",
+          "use": "ur",
+          "notes": "Renders via the Jiki chain metaphor; see Jiki physical metaphors below. Use consistently for both \"array\" and informal \"list\" per `global/terms.md`.",
+          "anchor": "term-array-list"
+        },
+        {
+          "en": "dictionary",
+          "target": "لغت",
+          "use": "ur",
+          "notes": "The actual Urdu word for \"dictionary.\" The metaphor (word-definition pairs) carries over directly, so no gloss is needed.",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "element",
+          "target": "عنصر",
+          "use": "ur",
+          "notes": "Standard word for \"element\" in a collection. Array element = \"زنجیر کا عنصر\".",
+          "anchor": "term-element"
+        },
+        {
+          "en": "index",
+          "target": "اشاریہ",
+          "use": "ur",
+          "notes": "The standard Urdu word for a book's index; extends naturally to a collection index.",
+          "anchor": "term-index"
+        },
+        {
+          "en": "key-value pair",
+          "target": "کلید اور قدر کا جوڑا",
+          "use": "ur",
+          "notes": "\"کلید\" (key) + \"قدر\" (value, agreed above) + \"جوڑا\" (pair).",
+          "anchor": "term-key-value-pair"
+        },
+        {
+          "en": "data type",
+          "target": "ڈیٹا ٹائپ",
+          "use": "ur",
+          "notes": "Transliterated; no settled single native word covers the general concept distinctly from a specific type name.",
+          "anchor": "term-data-type"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "شرطیہ بیان",
+          "use": "ur",
+          "notes": "\"Conditional statement.\" The keyword `if` itself always stays English in code; this is the prose concept.",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "شرط",
+          "use": "ur",
+          "notes": "Ordinary Urdu word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "موازنہ",
+          "use": "ur",
+          "notes": "Ordinary Urdu word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "اظہاریہ",
+          "use": "ur",
+          "notes": "Standard Urdu maths term for \"expression\" (e.g. \"الجبری اظہاریہ\" = algebraic expression).",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "عامل",
+          "use": "ur",
+          "notes": "Standard Urdu maths term for \"operator\" (e.g. \"حسابی عامل\" = arithmetic operator).",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "بیان",
+          "use": "ur",
+          "notes": "The imperative sense: a line of code that does something. Ordinary word; keep distinct from the logical-claim sense below by context.",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "دعویٰ",
+          "use": "ur",
+          "notes": "The proposition sense: a claim that is true or false. Pick by meaning, not by the English word, same as the Hungarian precedent.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "function",
+          "target": "فنکشن",
+          "use": "ur",
+          "notes": "Settled transliterated loanword; see guide's jargon policy for why no gloss is needed. The keyword `function` in code stays English.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "کال کرنا",
+          "use": "ur",
+          "notes": "\"فنکشن کال کرنا.\" Transliterated light verb; standard in Pakistani CS teaching.",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "تعریف کرنا",
+          "use": "ur",
+          "notes": "Light verb: \"تعریف\" (definition, native word) + \"کرنا\" (to do).",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "parameter",
+          "target": "پیرامیٹر",
+          "use": "ur",
+          "notes": "Transliterated loanword, kept distinct from \"argument\" below (a real collision risk; keep them separate consistently).",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "آرگیومنٹ",
+          "use": "ur",
+          "notes": "Transliterated loanword, the call-site value, kept distinct from \"پیرامیٹر\" above.",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "ان پٹ",
+          "use": "ur",
+          "notes": "Transliterated loanword.",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "آؤٹ پٹ",
+          "use": "ur",
+          "notes": "Transliterated loanword, paired with \"ان پٹ\" above.",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "واپس کرنا",
+          "use": "ur",
+          "notes": "Light verb: \"قدر واپس کرنا\" (to return a value).",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "واپسی کی قدر",
+          "use": "ur",
+          "notes": "Noun form, distinct from the verb above.",
+          "anchor": "term-return-value"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "کلیدی لفظ",
+          "use": "ur",
+          "notes": "Literally \"key word\"; native compound.",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "متغیر",
+          "use": "ur",
+          "notes": "The standard term taught in Pakistani computer-science curricula, not just a Wikipedia-only coinage.",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "تفویض",
+          "use": "ur",
+          "notes": "Native word meaning \"assignment/delegation,\" used for the concept of giving a variable its value.",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "تفویض کرنا",
+          "use": "ur",
+          "notes": "Light verb built from the noun above.",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "کوڈ بلاک",
+          "use": "ur",
+          "notes": "\"کوڈ\" (code, never translated) + \"بلاک\" (transliterated \"block\"). Self-explanatory once both halves are known.",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "غلطی",
+          "use": "ur",
+          "notes": "Ordinary Urdu word for \"mistake/error.\" Matches Jiki's non-blaming tone well.",
+          "anchor": "term-error"
+        },
+        {
+          "en": "nested",
+          "target": "تہہ در تہہ",
+          "use": "ur",
+          "notes": "Native descriptive phrase, \"layer within layer.\" e.g. \"تہہ در تہہ لوپ\" = nested loop.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "تکرار",
+          "use": "ur",
+          "notes": "Native word meaning \"repetition.\"",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "چلانا",
+          "use": "ur",
+          "notes": "Ordinary Urdu verb, \"to run/operate.\"",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "لوپ",
+          "use": "ur",
+          "notes": "Transliterated loanword, standard in Pakistani CS teaching.",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "for لوپ",
+          "use": "ur",
+          "notes": "Keep `for` in code font (real keyword) + transliterated \"لوپ\".",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "while لوپ",
+          "use": "ur",
+          "notes": "As above, with `while`.",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "loop body",
+          "target": "لوپ کا اندرونی حصہ",
+          "use": "ur",
+          "notes": "\"The loop's inner part,\" descriptive.",
+          "anchor": "term-loop-body"
+        },
+        {
+          "en": "scope",
+          "target": "دائرہ کار",
+          "use": "ur",
+          "notes": "Native compound meaning \"scope of work/jurisdiction,\" well established in formal Urdu. Keep distinct from \"کوڈ بلاک\" (code block) above, matching the distinction in `global/terms.md`.",
+          "anchor": "term-scope"
+        },
+        {
+          "en": "class",
+          "target": "کلاس",
+          "use": "ur",
+          "notes": "Transliterated loanword, standard in Pakistani CS teaching.",
+          "anchor": "term-class"
+        },
+        {
+          "en": "method",
+          "target": "میتھڈ",
+          "use": "ur",
+          "notes": "Transliterated loanword, kept distinct from the generic Urdu word for \"way/method\" to avoid ambiguity in technical prose.",
+          "anchor": "term-method"
+        },
+        {
+          "en": "property",
+          "target": "خاصیت",
+          "use": "ur",
+          "notes": "Native word meaning \"property/attribute/characteristic,\" well established. Keep distinct from \"خصوصیت\" (feature, platform sense) below; these are related but different words.",
+          "anchor": "term-property"
+        },
+        {
+          "en": "object",
+          "target": "آبجیکٹ",
+          "use": "ur",
+          "notes": "Transliterated loanword, standard in Pakistani CS teaching.",
+          "anchor": "term-object"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "deploy",
+          "target": "ڈیپلائے کرنا",
+          "use": "ur",
+          "notes": "Transliterated light verb; no settled native equivalent found in South Asian tech usage generally.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "module",
+          "target": "ماڈیول",
+          "use": "ur",
+          "notes": "Transliterated loanword.",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "الگورتھم",
+          "use": "ur",
+          "notes": "Transliterated loanword; universal across languages, no native Urdu equivalent in real use.",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "framework",
+          "target": "فریم ورک",
+          "use": "ur",
+          "notes": "Transliterated into Nastaliq (not kept Latin-script), per the Urdu-specific jargon policy.",
+          "anchor": "term-framework"
+        },
+        {
+          "en": "CLI (the concept)",
+          "target": "کمانڈ لائن",
+          "use": "ur",
+          "notes": "\"Command line,\" partially transliterated.",
+          "anchor": "term-cli"
+        },
+        {
+          "en": "component",
+          "target": "کمپوننٹ",
+          "use": "ur",
+          "notes": "Transliterated loanword.",
+          "anchor": "term-component"
+        }
+      ]
+    },
+    {
+      "title": "Platform & curriculum vocabulary",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "lesson",
+          "target": "سبق",
+          "use": "ur",
+          "notes": "Classic Urdu word for \"lesson,\" used in schools.",
+          "anchor": "term-lesson"
+        },
+        {
+          "en": "exercise",
+          "target": "مشق",
+          "use": "ur",
+          "notes": "Classic Urdu word for \"practice/exercise,\" used in schools.",
+          "anchor": "term-exercise"
+        },
+        {
+          "en": "curriculum",
+          "target": "نصاب",
+          "use": "ur",
+          "notes": "Standard Urdu word for \"curriculum,\" used in education.",
+          "anchor": "term-curriculum"
+        },
+        {
+          "en": "level",
+          "target": "درجہ",
+          "use": "ur",
+          "notes": "Ordinary Urdu word for \"level/rank.\"",
+          "anchor": "term-level"
+        },
+        {
+          "en": "milestone",
+          "target": "سنگ میل",
+          "use": "ur",
+          "notes": "Literal, well-established Urdu idiom for \"milestone\" (a milestone marker on a road); a natural existing match, not a coinage.",
+          "anchor": "term-milestone"
+        },
+        {
+          "en": "track / pathway",
+          "target": "راستہ",
+          "use": "ur",
+          "notes": "Ordinary word for \"path/way.\"",
+          "anchor": "term-track-pathway"
+        },
+        {
+          "en": "mentor / mentoring",
+          "target": "رہنما",
+          "use": "ur",
+          "notes": "Native word for \"guide,\" warm and well established for this role.",
+          "anchor": "term-mentor-mentoring"
+        },
+        {
+          "en": "tutorial",
+          "target": "ٹیوٹوریل",
+          "use": "ur",
+          "notes": "Transliterated, kept distinct from \"سبق\" (lesson) to avoid collision.",
+          "anchor": "term-tutorial"
+        },
+        {
+          "en": "solution (learner's submission)",
+          "target": "حل",
+          "use": "ur",
+          "notes": "Ordinary Urdu word for \"solution/answer.\"",
+          "anchor": "term-solution"
+        },
+        {
+          "en": "scenario",
+          "target": "منظرنامہ",
+          "use": "ur",
+          "notes": "Native word for \"scenario,\" well established in Urdu media and formal writing; Jiki's specific technical sense is a structured variant within an exercise.",
+          "anchor": "term-scenario"
+        },
+        {
+          "en": "canvas (graphics exercises)",
+          "target": "کینوس",
+          "use": "ur",
+          "notes": "Already an established Urdu loanword for a painting canvas; extends naturally to the graphics-exercise drawing surface.",
+          "anchor": "term-canvas"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 476
+}

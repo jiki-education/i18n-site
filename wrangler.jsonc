@@ -1,0 +1,14 @@
+{
+  "name": "jiki-i18n-site",
+  "compatibility_date": "2026-07-18",
+  "assets": {
+    "directory": "dist",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    {
+      "pattern": "i18n.jiki.io",
+      "custom_domain": true
+    }
+  ]
+}

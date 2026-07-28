@@ -1,0 +1,72 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+const fullTitle = title === "Jiki Translations" ? title : `${title} · Jiki Translations`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <meta property="og:title" content={fullTitle} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:image" content="https://jiki.io/static/images/blog/translatathon.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="https://jiki.io/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@400;600&display=swap"
+    />
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <header class="sticky top-0 z-20 border-b border-gray-200 bg-white/95 backdrop-blur">
+      <div class="lg-container flex items-center justify-between gap-4 py-3.5">
+        <a href="/" class="flex items-baseline gap-2 text-[17px] font-bold text-gray-900">
+          <span class="text-purple-600">Jiki</span>
+          <span>Translatathon</span>
+        </a>
+        <nav class="flex items-center gap-5 text-sm font-medium">
+          <a href="/" class="hidden text-gray-600 transition hover:text-purple-700 sm:inline">Languages</a>
+          <a
+            href="https://jiki.io/blog/translatathon"
+            class="hidden text-gray-600 transition hover:text-purple-700 sm:inline">The blog post</a
+          >
+          <a
+            href="https://forum.jiki.io/c/i18n/67"
+            class="rounded-lg bg-purple-600 px-3.5 py-2 font-semibold text-white transition hover:bg-purple-700"
+          >
+            Forum
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <footer class="mt-16 border-t border-gray-200 bg-gray-50">
+      <div class="lg-container py-8 text-sm text-gray-500">
+        <p class="max-w-3xl">
+          Everything on this site is a work in progress, machine-translated and awaiting human review. Read more in
+          <a href="https://jiki.io/blog/translatathon" class="font-semibold text-blue-600 hover:text-blue-700"
+            >the Translatathon blog post</a
+          >, or come and tell us what's wrong on
+          <a href="https://forum.jiki.io/c/i18n/67" class="font-semibold text-blue-600 hover:text-blue-700">the forum</a
+          >.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

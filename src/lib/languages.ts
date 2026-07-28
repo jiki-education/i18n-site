@@ -1,0 +1,104 @@
+/**
+ * Language metadata for the site chrome.
+ *
+ * This is presentation data only: how to label a language and which direction to
+ * lay it out in. The authoritative list of languages, and everything about how they
+ * are translated, lives in the translator repo. Adding a language here does not make
+ * it appear on the site; publishing its glossary does.
+ *
+ * `comingSoon` is UI chrome, not translated content. It has not been through a
+ * translation pass and is not glossary-governed. Corrections are welcome on each
+ * language's forum category.
+ */
+
+export interface LanguageMeta {
+  /** English name, matching languages/names.json in the translator repo. */
+  name: string;
+  /** Endonym, shown as the primary label. */
+  nativeName: string;
+  /** Writing direction for content in this language. */
+  dir: "ltr" | "rtl";
+  /** "Coming soon", in this language. Chrome only, unreviewed. */
+  comingSoon: string;
+  /** Family folder in the translator repo, when this locale belongs to one. */
+  family?: string;
+}
+
+export const LANGUAGES: Record<string, LanguageMeta> = {
+  ar: { name: "Arabic", nativeName: "العربية", dir: "rtl", comingSoon: "قريبًا" },
+  bn: { name: "Bengali", nativeName: "বাংলা", dir: "ltr", comingSoon: "শীঘ্রই আসছে" },
+  ca: { name: "Catalan", nativeName: "Català", dir: "ltr", comingSoon: "Properament" },
+  de: { name: "German", nativeName: "Deutsch", dir: "ltr", comingSoon: "Demnächst" },
+  el: { name: "Greek", nativeName: "Ελληνικά", dir: "ltr", comingSoon: "Προσεχώς" },
+  "es-419": {
+    name: "Latin American Spanish",
+    nativeName: "Español (Latinoamérica)",
+    dir: "ltr",
+    comingSoon: "Próximamente",
+    family: "es"
+  },
+  "es-ES": {
+    name: "European Spanish",
+    nativeName: "Español (España)",
+    dir: "ltr",
+    comingSoon: "Próximamente",
+    family: "es"
+  },
+  fa: { name: "Persian", nativeName: "فارسی", dir: "rtl", comingSoon: "به‌زودی" },
+  fr: { name: "French", nativeName: "Français", dir: "ltr", comingSoon: "Bientôt disponible" },
+  hi: { name: "Hindi", nativeName: "हिन्दी", dir: "ltr", comingSoon: "जल्द आ रहा है" },
+  hu: { name: "Hungarian", nativeName: "Magyar", dir: "ltr", comingSoon: "Hamarosan" },
+  id: { name: "Indonesian", nativeName: "Bahasa Indonesia", dir: "ltr", comingSoon: "Segera hadir" },
+  it: { name: "Italian", nativeName: "Italiano", dir: "ltr", comingSoon: "Prossimamente" },
+  ja: { name: "Japanese", nativeName: "日本語", dir: "ltr", comingSoon: "近日公開" },
+  ko: { name: "Korean", nativeName: "한국어", dir: "ltr", comingSoon: "곧 공개됩니다" },
+  nl: { name: "Dutch", nativeName: "Nederlands", dir: "ltr", comingSoon: "Binnenkort beschikbaar" },
+  pl: { name: "Polish", nativeName: "Polski", dir: "ltr", comingSoon: "Wkrótce" },
+  "pt-BR": {
+    name: "Brazilian Portuguese",
+    nativeName: "Português (Brasil)",
+    dir: "ltr",
+    comingSoon: "Em breve",
+    family: "pt"
+  },
+  "pt-pt": {
+    name: "European Portuguese",
+    nativeName: "Português (Portugal)",
+    dir: "ltr",
+    comingSoon: "Em breve",
+    family: "pt"
+  },
+  ru: { name: "Russian", nativeName: "Русский", dir: "ltr", comingSoon: "Скоро" },
+  sr: { name: "Serbian", nativeName: "Српски", dir: "ltr", comingSoon: "Ускоро" },
+  sw: { name: "Swahili", nativeName: "Kiswahili", dir: "ltr", comingSoon: "Inakuja hivi karibuni" },
+  tr: { name: "Turkish", nativeName: "Türkçe", dir: "ltr", comingSoon: "Yakında" },
+  uk: { name: "Ukrainian", nativeName: "Українська", dir: "ltr", comingSoon: "Незабаром" },
+  ur: { name: "Urdu", nativeName: "اردو", dir: "rtl", comingSoon: "جلد آ رہا ہے" },
+  vi: { name: "Vietnamese", nativeName: "Tiếng Việt", dir: "ltr", comingSoon: "Sắp ra mắt" },
+  "zh-CN": { name: "Simplified Chinese", nativeName: "简体中文", dir: "ltr", comingSoon: "敬请期待", family: "zh" },
+  "zh-TW": { name: "Traditional Chinese", nativeName: "繁體中文", dir: "ltr", comingSoon: "敬請期待", family: "zh" }
+};
+
+/** Falls back to a bare record so an unknown locale renders rather than crashing the build. */
+export function languageMeta(lang: string): LanguageMeta {
+  return LANGUAGES[lang] ?? { name: lang, nativeName: lang, dir: "ltr", comingSoon: "Coming soon" };
+}
+
+/** The Discourse category for a language, e.g. es-419 -> i18n-es-419. */
+export function forumCategoryUrl(lang: string): string {
+  return `https://forum.jiki.io/c/i18n-${lang.toLowerCase()}`;
+}
+
+export const CONTENT_TYPE_LABELS: Record<string, string> = {
+  concept: "Concepts",
+  article: "Articles",
+  "blog-post": "Blog posts",
+  exercise: "Exercises",
+  "video-subtitles": "Video subtitles",
+  "website-copy": "Website copy",
+  interpreters: "Interpreter messages"
+};
+
+export function contentTypeLabel(type: string): string {
+  return CONTENT_TYPE_LABELS[type] ?? type;
+}

@@ -1,0 +1,215 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import PageHeader from "../../../components/PageHeader.astro";
+import { alignBlocks, renderBlock, splitBlocks } from "../../../lib/markdown";
+import { contentTypeLabel, forumCategoryUrl, languageMeta } from "../../../lib/languages";
+
+export const getStaticPaths = (async () => {
+  const translations = await getCollection("translations");
+  const english = await getCollection("english");
+
+  return translations
+    .filter((t) => t.data.status === "published")
+    .map((translation) => {
+      const source = english.find(
+        (e) => e.data.type === translation.data.type && e.data.slug === translation.data.slug
+      );
+      return {
+        params: { lang: translation.data.lang, type: translation.data.type, slug: translation.data.slug },
+        props: { translation, source }
+      };
+    });
+}) satisfies GetStaticPaths;
+
+const { translation, source } = Astro.props;
+const { lang, type, slug, title, en_md5, published_at, governance_sha, forum_topic_id } = translation.data;
+const meta = languageMeta(lang);
+
+/** The English source moved on after this was translated. */
+const stale = Boolean(source && en_md5 && source.data.en_md5 !== en_md5);
+
+const targetBody = translation.body ?? "";
+const englishBody = source?.body ?? "";
+
+const aligned = englishBody ? alignBlocks(englishBody, targetBody) : null;
+const targetOnly = splitBlocks(targetBody).map(renderBlock);
+
+const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : forumCategoryUrl(lang);
+---
+
+<Layout
+  title={title ?? slug}
+  description={`${contentTypeLabel(type)}: ${slug}, translated into ${meta.name}. Read it against the English and tell us what sounds wrong.`}
+>
+  <PageHeader
+    title={title ?? slug}
+    titleLang={lang}
+    titleDir={meta.dir}
+    subtitle={`${contentTypeLabel(type)} · ${meta.name}. This is a draft translation, shown against the English it came from.`}
+    crumbs={[
+      { label: "Languages", href: "/" },
+      { label: meta.name, href: `/${lang}` },
+      { label: contentTypeLabel(type) }
+    ]}
+  >
+    <div slot="meta" class="mt-6 flex flex-wrap items-center gap-3">
+      <a
+        href={forumUrl}
+        class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"
+      >
+        Discuss on the forum
+      </a>
+      <a
+        href={`/${lang}/glossary`}
+        class="rounded-lg border border-purple-400 px-4 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-800"
+      >
+        {meta.name} glossary
+      </a>
+      <span class="text-[13px] text-purple-300">
+        Published {published_at}{
+          governance_sha && (
+            <>
+              {" "}
+              &middot; glossary <code class="font-mono">{governance_sha}</code>
+            </>
+          )
+        }
+      </span>
+    </div>
+  </PageHeader>
+
+  <div class="lg-container py-8">
+    {
+      (stale || aligned?.mismatch) && (
+        <div class="mb-6 space-y-3">
+          {stale && (
+            <p class="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3.5 text-[14px] text-amber-900">
+              <strong>The English has changed since this was translated.</strong> The two columns below are still worth
+              reading against each other, but expect some drift. A fresh translation is queued.
+            </p>
+          )}
+          {aligned?.mismatch && (
+            <p class="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3.5 text-[14px] text-amber-900">
+              <strong>The two versions don't have the same number of paragraphs.</strong> Translations are meant to keep
+              the structure of the original, so this is itself a bug worth reporting. Rows below may not line up.
+            </p>
+          )}
+        </div>
+      )
+    }
+
+    <div class="mb-5 flex flex-wrap items-center justify-between gap-4">
+      <p class="text-[14px] text-gray-500">
+        Reading in {meta.name}. Tell us anything that sounds off, however small.
+      </p>
+      {
+        aligned && (
+          <div
+            class="inline-flex rounded-lg border border-gray-200 bg-gray-50 p-1 text-[14px] font-semibold"
+            role="group"
+          >
+            <button
+              type="button"
+              data-view="side-by-side"
+              class="view-toggle rounded-md px-3 py-1.5 text-gray-500 transition"
+              aria-pressed="true"
+            >
+              Side by side
+            </button>
+            <button
+              type="button"
+              data-view="target-only"
+              class="view-toggle rounded-md px-3 py-1.5 text-gray-500 transition"
+              aria-pressed="false"
+            >
+              {meta.name} only
+            </button>
+          </div>
+        )
+      }
+    </div>
+
+    {
+      aligned && (
+        <div data-panel="side-by-side">
+          <div class="sticky top-[57px] z-10 hidden gap-8 border-b border-gray-200 bg-white/95 py-2.5 backdrop-blur lg:grid lg:grid-cols-2">
+            <span class="text-[12px] font-bold tracking-[0.08em] text-gray-400 uppercase">English</span>
+            <span class="text-[12px] font-bold tracking-[0.08em] text-gray-400 uppercase">{meta.name}</span>
+          </div>
+
+          <div class="divide-y divide-gray-100">
+            {aligned.rows.map((row) => (
+              <div class="grid gap-4 py-5 lg:grid-cols-2 lg:gap-8">
+                <div class="textual-content text-[15px] text-gray-500">
+                  {row.english ? (
+                    <Fragment set:html={row.english} />
+                  ) : (
+                    <p class="text-[13px] italic">Nothing in the English here.</p>
+                  )}
+                </div>
+                <div class="textual-content" lang={lang} dir={meta.dir}>
+                  {row.target ? (
+                    <Fragment set:html={row.target} />
+                  ) : (
+                    <p class="text-[13px] text-amber-700 italic">Missing from the translation.</p>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+    }
+
+    <div data-panel="target-only" class={aligned ? "hidden" : ""}>
+      <div class="textual-content md-container !px-0" lang={lang} dir={meta.dir}>
+        {targetOnly.map((html) => <Fragment set:html={html} />)}
+      </div>
+    </div>
+
+    <div class="mt-12 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+      <h2 class="text-[19px] font-bold text-gray-900">Spotted something wrong?</h2>
+      <p class="mt-2 max-w-2xl text-[15px] text-gray-600">
+        You don't need to explain why. "This sounds off" is genuinely useful. If it's a single word we've used
+        everywhere, correct it in <a href={`/${lang}/glossary`} class="font-semibold text-blue-600 hover:text-blue-700"
+          >the glossary</a
+        >
+        instead, and it gets fixed everywhere at once.
+      </p>
+      <a
+        href={forumUrl}
+        class="mt-4 inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"
+      >
+        Comment on the forum
+      </a>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // Progressive enhancement: without JS the side-by-side view is what you get.
+  const buttons = document.querySelectorAll<HTMLButtonElement>(".view-toggle");
+  const panels = document.querySelectorAll<HTMLElement>("[data-panel]");
+
+  const ACTIVE = ["bg-white", "text-gray-900", "shadow-sm"];
+
+  function select(view: string) {
+    for (const panel of panels) {
+      panel.classList.toggle("hidden", panel.dataset.panel !== view);
+    }
+    for (const button of buttons) {
+      const on = button.dataset.view === view;
+      button.setAttribute("aria-pressed", String(on));
+      button.classList.toggle("text-gray-500", !on);
+      for (const cls of ACTIVE) button.classList.toggle(cls, on);
+    }
+  }
+
+  for (const button of buttons) {
+    button.addEventListener("click", () => select(button.dataset.view!));
+  }
+
+  if (buttons.length > 0) select("side-by-side");
+</script>

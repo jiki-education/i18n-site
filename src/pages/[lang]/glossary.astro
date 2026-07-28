@@ -1,0 +1,171 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import { forumCategoryUrl, languageMeta } from "../../lib/languages";
+
+export const getStaticPaths = (async () => {
+  const glossaries = await getCollection("glossaries");
+  return glossaries.map((glossary) => ({
+    params: { lang: glossary.data.lang },
+    props: { glossary }
+  }));
+}) satisfies GetStaticPaths;
+
+const { glossary } = Astro.props;
+const lang = glossary.data.lang;
+const meta = languageMeta(lang);
+const { sections, family, governance_sha, published_at, forum_topic_id } = glossary.data;
+
+const termCount = sections.reduce((total, section) => total + section.terms.length, 0);
+const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : forumCategoryUrl(lang);
+
+/** Section headings, for the contents list in the sidebar. */
+const contents = sections.map((section) => ({
+  title: section.title,
+  level: section.level,
+  anchor: `section-${section.title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")}`,
+  count: section.terms.length
+}));
+---
+
+<Layout
+  title={`${meta.name} glossary`}
+  description={`The ${termCount} agreed terms behind every Jiki translation into ${meta.name}. This is the live version: link a row and tell us if it's wrong.`}
+>
+  <PageHeader
+    title={`${meta.name} glossary`}
+    subtitle={`The ${termCount} terms we've agreed to use consistently in every ${meta.name} translation. This page is the live version. If one of these is wrong, everything downstream of it is wrong too, so it's the highest-value thing you can correct.`}
+    crumbs={[{ label: "Languages", href: "/" }, { label: meta.name, href: `/${lang}` }, { label: "Glossary" }]}
+  >
+    <div slot="meta" class="mt-6 flex flex-wrap items-center gap-3">
+      <a
+        href={forumUrl}
+        class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"
+      >
+        Discuss these terms
+      </a>
+      <span class="text-[13px] text-purple-300">
+        Updated {published_at} &middot; built from <code class="font-mono">{governance_sha}</code>
+      </span>
+    </div>
+  </PageHeader>
+
+  <div class="lg-container grid gap-10 py-10 lg:grid-cols-[1fr_350px] lg:gap-[7%]">
+    <div class="min-w-0">
+      <div class="textual-content">
+        <p>
+          Every term here has been agreed and is binding: translations use it exactly, with no synonyms and no mixing
+          within a document. Terms that haven't been agreed yet simply aren't here.
+        </p>
+        {
+          family && (
+            <p>
+              Rows marked <strong>shared</strong> come from the {family.toUpperCase()} family glossary and apply to
+              every {family.toUpperCase()} locale. The rest are specific to {meta.name}. A term lives in exactly one of
+              the two, never both.
+            </p>
+          )
+        }
+        <p>
+          Every row has its own link. Click the <span class="font-mono text-purple-600">#</span> next to a term to grab a
+          link straight to it, then paste that into the forum with what's wrong. That way we know precisely which decision
+          you're objecting to.
+        </p>
+      </div>
+
+      <div class="mt-10 space-y-10">
+        {
+          sections.map((section) => {
+            const anchor = contents.find((c) => c.title === section.title)?.anchor;
+            return (
+              <section id={anchor} class="scroll-mt-24">
+                <div class="flex flex-wrap items-baseline gap-3">
+                  {section.level <= 2 ? (
+                    <h2 class="text-[24px] font-bold text-gray-900">{section.title}</h2>
+                  ) : (
+                    <h3 class="text-[19px] font-semibold text-gray-900">{section.title}</h3>
+                  )}
+                  {section.scope === "family" && (
+                    <span class="rounded-full bg-blue-50 px-2.5 py-0.5 text-[12px] font-semibold text-blue-700">
+                      shared across {family?.toUpperCase()}
+                    </span>
+                  )}
+                </div>
+                {section.intro && <p class="mt-2 text-[15px] text-gray-500">{section.intro}</p>}
+
+                <ul class="mt-4 divide-y divide-gray-100 overflow-hidden rounded-xl border border-gray-200">
+                  {section.terms.map((term) => (
+                    <li id={term.anchor} class="group scroll-mt-24 bg-white p-4 target:bg-purple-50 sm:p-5">
+                      <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                        <span class="text-[15px] text-gray-500">{term.en}</span>
+                        <span class="text-gray-300">&rarr;</span>
+                        <span
+                          class="text-[17px] font-semibold text-gray-900"
+                          lang={term.use === "en" ? "en" : lang}
+                          dir={term.use === "en" ? "ltr" : meta.dir}
+                        >
+                          {term.target}
+                        </span>
+                        {term.use === "en" && (
+                          <span class="rounded-full bg-gray-100 px-2 py-0.5 text-[11px] font-semibold text-gray-500">
+                            kept in English
+                          </span>
+                        )}
+                        <a
+                          href={`#${term.anchor}`}
+                          class="ml-auto font-mono text-[13px] text-gray-300 transition group-hover:text-purple-600"
+                          aria-label={`Link to the term "${term.en}"`}
+                        >
+                          #
+                        </a>
+                      </div>
+                      {term.notes && <p class="mt-1.5 text-[14px] leading-[1.6] text-gray-500">{term.notes}</p>}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            );
+          })
+        }
+      </div>
+    </div>
+
+    <aside class="min-w-0 space-y-6">
+      <section class="rounded-2xl border border-gray-200 bg-white p-5 lg:sticky lg:top-24">
+        <h2 class="text-[13px] font-bold tracking-[0.08em] text-gray-500 uppercase">Contents</h2>
+        <ul class="mt-3 space-y-0.5">
+          {
+            contents.map((entry) => (
+              <li>
+                <a
+                  href={`#${entry.anchor}`}
+                  class={`-mx-2 flex items-baseline justify-between gap-2 rounded-lg px-2 py-1.5 text-[14px] transition hover:bg-purple-50 ${
+                    entry.level <= 2 ? "font-semibold text-gray-900" : "pl-5 text-gray-600"
+                  }`}
+                >
+                  <span class="min-w-0 truncate">{entry.title}</span>
+                  <span class="shrink-0 text-[12px] text-gray-400">{entry.count}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+
+        <div class="mt-5 border-t border-gray-100 pt-4">
+          <a
+            href={forumUrl}
+            class="block rounded-lg bg-purple-600 px-4 py-2.5 text-center text-[15px] font-semibold text-white transition hover:bg-purple-700"
+          >
+            Something's wrong here
+          </a>
+          <p class="mt-2 text-center text-[13px] text-gray-500">Tell us on the forum</p>
+        </div>
+      </section>
+    </aside>
+  </div>
+</Layout>

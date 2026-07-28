@@ -1,0 +1,621 @@
+{
+  "lang": "uk",
+  "name": "Ukrainian",
+  "family": null,
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "програмування",
+          "use": "uk",
+          "notes": "Standard, unambiguous.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "developer",
+          "target": "розробник",
+          "use": "uk",
+          "notes": "Standard Ukrainian equivalent.",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "tech-індустрія",
+          "use": "uk",
+          "notes": "Hybrid, mirroring the Hungarian/Portuguese pattern.",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "streak",
+          "target": "серія (днів)",
+          "use": "uk",
+          "anchor": "term-streak"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "значення",
+          "use": "uk",
+          "notes": "Ordinary word.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "number",
+          "target": "число",
+          "use": "uk",
+          "notes": "Ordinary word.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "character",
+          "target": "символ",
+          "use": "uk",
+          "notes": "Correction from an earlier community proposal (\"знак\"); _символ_ is the term used throughout php.org.ua's string-function docs.",
+          "anchor": "term-character"
+        },
+        {
+          "en": "integer",
+          "target": "ціле число",
+          "use": "uk",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "true / false",
+          "target": "правда / неправда",
+          "use": "uk",
+          "notes": "_Істина/хиба_ (a more formal-logic register) is an accepted alternative; do not mix both in one document. Not capitalised in prose.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "float / decimal",
+          "target": "число з плаваючою комою / десяткове число",
+          "use": "uk",
+          "notes": "Use the first form when the floating-point nature matters, the second for the simpler beginner sense.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "array / list",
+          "target": "масив",
+          "use": "uk",
+          "notes": "Exercise prose sometimes says \"list\" informally for the same concept; render both with _масив_, do not introduce a second word.",
+          "anchor": "term-array-list"
+        },
+        {
+          "en": "dictionary",
+          "target": "словник",
+          "use": "uk",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "element",
+          "target": "елемент",
+          "use": "uk",
+          "notes": "Array element = _елемент масиву_.",
+          "anchor": "term-element"
+        },
+        {
+          "en": "index",
+          "target": "індекс",
+          "use": "uk",
+          "notes": "Direct cognate; no clarification parens needed.",
+          "anchor": "term-index"
+        },
+        {
+          "en": "key-value pair",
+          "target": "пара ключ-значення",
+          "use": "uk",
+          "notes": "The key itself is _ключ_ (ordinary word once introduced).",
+          "anchor": "term-key-value-pair"
+        },
+        {
+          "en": "template literal",
+          "target": "шаблонний рядок",
+          "use": "uk",
+          "anchor": "term-template-literal"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "умовна конструкція / умовний оператор",
+          "use": "uk",
+          "notes": "Correction from an earlier community proposal (\"умовне твердження\"), which collided with the \"statement (logical claim)\" term.",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "умова",
+          "use": "uk",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "порівняння",
+          "use": "uk",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "вираз",
+          "use": "uk",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "оператор",
+          "use": "uk",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "NOT operator / logical negation",
+          "target": "заперечення (логічне)",
+          "use": "uk",
+          "anchor": "term-not-operator-logical-negation"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "інструкція",
+          "use": "uk",
+          "notes": "The imperative sense: a line of code that does something and gets executed. Deliberately distinct from _оператор_ (operator) to avoid collision.",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "твердження",
+          "use": "uk",
+          "notes": "The proposition sense: a claim that is true or false. Pick by meaning, not by the English word.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "function",
+          "target": "функція",
+          "use": "uk",
+          "notes": "The *keyword* `function` in code stays English; the concept in prose is _функція_.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "викликати (функцію)",
+          "use": "uk",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "визначати (функцію)",
+          "use": "uk",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "parameter",
+          "target": "параметр",
+          "use": "uk",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "аргумент",
+          "use": "uk",
+          "notes": "Call-site value sense.",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "вхідні дані",
+          "use": "uk",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "вихідні дані",
+          "use": "uk",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "повернути (значення)",
+          "use": "uk",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "повернене значення",
+          "use": "uk",
+          "notes": "Noun form; distinct from the verb \"to return.\"",
+          "anchor": "term-return-value"
+        },
+        {
+          "en": "pure function",
+          "target": "чиста функція",
+          "use": "uk",
+          "anchor": "term-pure-function"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "ключове слово",
+          "use": "uk",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "змінна",
+          "use": "uk",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "присвоєння",
+          "use": "uk",
+          "notes": "Correction from an earlier community proposal (\"надавання\"); _присвоєння_ is the term used on php.org.ua.",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "присвоювати (значення)",
+          "use": "uk",
+          "notes": "Matches _присвоєння_ above.",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "блок коду",
+          "use": "uk",
+          "notes": "Correction from an earlier community proposal (\"блок програми\"), which collided with the term for \"scope.\"",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "помилка",
+          "use": "uk",
+          "anchor": "term-error"
+        },
+        {
+          "en": "nested",
+          "target": "вкладений",
+          "use": "uk",
+          "notes": "e.g. _вкладений цикл_ = nested loop",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "ітерація",
+          "use": "uk",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "запустити / виконати",
+          "use": "uk",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "цикл",
+          "use": "uk",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "for-цикл",
+          "use": "uk",
+          "notes": "Keep `for` as the real keyword + _цикл_.",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "while-цикл",
+          "use": "uk",
+          "notes": "As above.",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "for-of loop",
+          "target": "for-of-цикл",
+          "use": "uk",
+          "notes": "As above.",
+          "anchor": "term-for-of-loop"
+        },
+        {
+          "en": "loop body",
+          "target": "тіло циклу",
+          "use": "uk",
+          "anchor": "term-loop-body"
+        },
+        {
+          "en": "break (loop control)",
+          "target": "перервати (цикл)",
+          "use": "uk",
+          "notes": "The keyword `break` in code stays English; this is the prose verb for the concept.",
+          "anchor": "term-break"
+        },
+        {
+          "en": "increment",
+          "target": "інкремент",
+          "use": "uk",
+          "notes": "\"збільшення на одиницю\" also natural in a fuller explanation.",
+          "anchor": "term-increment"
+        },
+        {
+          "en": "modulo / remainder operator",
+          "target": "остача (від ділення)",
+          "use": "uk",
+          "notes": "Standard mathematical term.",
+          "anchor": "term-modulo-remainder-operator"
+        },
+        {
+          "en": "concatenation / to concatenate",
+          "target": "конкатенація / з'єднати (рядки)",
+          "use": "uk",
+          "anchor": "term-concatenation-to-concatenate"
+        },
+        {
+          "en": "toggle",
+          "target": "перемикати",
+          "use": "uk",
+          "anchor": "term-toggle"
+        },
+        {
+          "en": "state / stateful",
+          "target": "стан",
+          "use": "uk",
+          "anchor": "term-state-stateful"
+        },
+        {
+          "en": "scope",
+          "target": "область видимості",
+          "use": "uk",
+          "notes": "Correction from an earlier community proposal (\"блок програми\"), which collided with \"code block.\" Confirmed against Ukrainian Wikipedia's dedicated article and php.org.ua's manual, which both use this exact term.",
+          "anchor": "term-scope"
+        },
+        {
+          "en": "class",
+          "target": "клас",
+          "use": "uk",
+          "anchor": "term-class"
+        },
+        {
+          "en": "method",
+          "target": "метод",
+          "use": "uk",
+          "notes": "Corrects a typo in an earlier community proposal (\"метд\").",
+          "anchor": "term-method"
+        },
+        {
+          "en": "property",
+          "target": "властивість",
+          "use": "uk",
+          "anchor": "term-property"
+        },
+        {
+          "en": "object",
+          "target": "об'єкт",
+          "use": "uk",
+          "notes": "Use the modifier letter apostrophe ʼ (U+02BC); see guide § Orthography.",
+          "anchor": "term-object"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "deploy (verb: to deploy)",
+          "target": "розгортання / розгорнути",
+          "use": "uk",
+          "notes": "Correction from an earlier community proposal (\"розмістити\"); _розгортання/розгорнути_ is the term used in Ukrainian Wikipedia's \"Розгортання програмного забезпечення\" article.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "auth (authentication / authorization)",
+          "target": "автентифікація / авторизація",
+          "use": "uk",
+          "notes": "Pick by meaning; both are standard, direct cognates.",
+          "anchor": "term-auth"
+        },
+        {
+          "en": "module",
+          "target": "модуль",
+          "use": "uk",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "алгоритм",
+          "use": "uk",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "edge case",
+          "target": "крайній випадок",
+          "use": "uk",
+          "anchor": "term-edge-case"
+        },
+        {
+          "en": "backwards compatibility",
+          "target": "зворотна сумісність",
+          "use": "uk",
+          "notes": "Standard, well-established term.",
+          "anchor": "term-backwards-compatibility"
+        },
+        {
+          "en": "tool / tooling",
+          "target": "інструмент / інструментарій",
+          "use": "uk",
+          "anchor": "term-tool-tooling"
+        },
+        {
+          "en": "pitfall",
+          "target": "пастка",
+          "use": "uk",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-pitfall"
+        }
+      ]
+    },
+    {
+      "title": "Platform & curriculum vocabulary",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "feature (platform capability)",
+          "target": "можливість",
+          "use": "uk",
+          "notes": "Deliberately distinct from _функція_ (function) to avoid collision; see guide § Style notes.",
+          "anchor": "term-feature"
+        },
+        {
+          "en": "lesson",
+          "target": "урок",
+          "use": "uk",
+          "anchor": "term-lesson"
+        },
+        {
+          "en": "exercise",
+          "target": "вправа",
+          "use": "uk",
+          "anchor": "term-exercise"
+        },
+        {
+          "en": "scenario",
+          "target": "сценарій",
+          "use": "uk",
+          "anchor": "term-scenario"
+        },
+        {
+          "en": "curriculum",
+          "target": "навчальна програма",
+          "use": "uk",
+          "anchor": "term-curriculum"
+        },
+        {
+          "en": "level",
+          "target": "рівень",
+          "use": "uk",
+          "anchor": "term-level"
+        },
+        {
+          "en": "milestone",
+          "target": "віха / етап",
+          "use": "uk",
+          "anchor": "term-milestone"
+        },
+        {
+          "en": "pathway",
+          "target": "шлях навчання",
+          "use": "uk",
+          "anchor": "term-pathway"
+        },
+        {
+          "en": "bootcamp",
+          "target": "буткемп",
+          "use": "uk",
+          "notes": "Loanword, common in Ukrainian tech-education discourse.",
+          "anchor": "term-bootcamp"
+        },
+        {
+          "en": "syllabus",
+          "target": "силабус",
+          "use": "uk",
+          "notes": "Loanword used in Ukrainian higher education.",
+          "anchor": "term-syllabus"
+        },
+        {
+          "en": "mentor",
+          "target": "ментор",
+          "use": "uk",
+          "notes": "_Наставник_ (more native) is an accepted alternative; do not mix both in one document.",
+          "anchor": "term-mentor"
+        },
+        {
+          "en": "track (curriculum path)",
+          "target": "трек (курсу)",
+          "use": "uk",
+          "anchor": "term-track"
+        },
+        {
+          "en": "tutorial",
+          "target": "туторіал / посібник",
+          "use": "uk",
+          "anchor": "term-tutorial"
+        },
+        {
+          "en": "solution (learner's submission)",
+          "target": "рішення",
+          "use": "uk",
+          "anchor": "term-solution"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 308
+}

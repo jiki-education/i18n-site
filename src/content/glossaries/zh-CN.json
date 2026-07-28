@@ -1,0 +1,719 @@
+{
+  "lang": "zh-CN",
+  "name": "Simplified Chinese",
+  "family": "zh",
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "值",
+          "use": "zh",
+          "notes": "Ordinary word. Identical in both scripts.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "true / false",
+          "target": "真 / 假",
+          "use": "zh",
+          "notes": "Lowercase-equivalent in prose; code literals stay English. Identical in both scripts.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "dictionary",
+          "target": "字典",
+          "use": "zh",
+          "notes": "Identical in both scripts.",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "element",
+          "target": "元素",
+          "use": "zh",
+          "notes": "Array element. Identical in both scripts.",
+          "anchor": "term-element"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "method",
+          "target": "方法",
+          "use": "zh",
+          "notes": "Identical in both scripts.",
+          "anchor": "term-method"
+        },
+        {
+          "en": "workflow",
+          "target": "工作流程",
+          "use": "zh",
+          "notes": "The software-engineering sense. Identical in both scripts.",
+          "anchor": "term-workflow"
+        },
+        {
+          "en": "deploy",
+          "target": "部署",
+          "use": "zh",
+          "notes": "Identical in both scripts.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "framework",
+          "target": "框架",
+          "use": "zh",
+          "notes": "Fully translated (see § Loanword policy in `guide.md`); not kept as an English loanword. Identical in both scripts.",
+          "anchor": "term-framework"
+        }
+      ]
+    },
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "编程",
+          "use": "zh-CN",
+          "notes": "Use consistently.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "developer",
+          "target": "开发者",
+          "use": "zh-CN",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "streak",
+          "target": "连续学习天数",
+          "use": "zh-CN",
+          "notes": "Deliberately not Duolingo-derived; the Duolingo zh-CN string could not be confirmed live during research. Plain descriptive term.",
+          "anchor": "term-streak"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "科技 / 科技行业",
+          "use": "zh-CN",
+          "notes": "科技 for the general adjective/noun sense, 科技行业 for \"the tech industry\" specifically.",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "pitfall",
+          "target": "坑 (preferred, informal) / 陷阱 (formal)",
+          "use": "zh-CN",
+          "notes": "坑 fits Jiki's warm, informal register; use 陷阱 only where a more formal register is genuinely called for. Do not mix both in one document.",
+          "anchor": "term-pitfall"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "number",
+          "target": "数字",
+          "use": "zh-CN",
+          "notes": "Ordinary word.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "integer",
+          "target": "整数",
+          "use": "zh-CN",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "float / decimal",
+          "target": "浮点数 (technical) / 小数 (plain)",
+          "use": "zh-CN",
+          "notes": "Use 小数 where the floating-point nature doesn't matter.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "character",
+          "target": "字符",
+          "use": "zh-CN",
+          "notes": "A single text character.",
+          "anchor": "term-character"
+        },
+        {
+          "en": "array / list",
+          "target": "数组",
+          "use": "zh-CN",
+          "notes": "Exercise prose that says \"list\" informally is the same concept; render it with 数组, do not introduce a second word.",
+          "anchor": "term-array-list"
+        },
+        {
+          "en": "index",
+          "target": "下标 (primary, array/list indexing) / 索引 (general concept, e.g. database index)",
+          "use": "zh-CN",
+          "notes": "Keep the two senses distinct: 下标 for a position inside an array/list, 索引 for the broader concept.",
+          "anchor": "term-index"
+        },
+        {
+          "en": "key-value pair",
+          "target": "键值对",
+          "use": "zh-CN",
+          "notes": "The key itself is 键 (ordinary word once introduced).",
+          "anchor": "term-key-value-pair"
+        },
+        {
+          "en": "string",
+          "target": "字符串",
+          "use": "zh-CN",
+          "notes": "Fully localized per the loanword policy in `../zh/guide.md`; not kept in English.",
+          "anchor": "term-string"
+        },
+        {
+          "en": "Boolean",
+          "target": "布尔 / 布尔值",
+          "use": "zh-CN",
+          "notes": "Fully localized; not kept in English.",
+          "anchor": "term-boolean"
+        },
+        {
+          "en": "data type",
+          "target": "数据类型",
+          "use": "zh-CN",
+          "notes": "The general concept, distinct from any specific type name.",
+          "anchor": "term-data-type"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "if 语句 (primary) / 条件语句",
+          "use": "zh-CN",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "条件",
+          "use": "zh-CN",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "比较",
+          "use": "zh-CN",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "表达式",
+          "use": "zh-CN",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "运算符",
+          "use": "zh-CN",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "语句",
+          "use": "zh-CN",
+          "notes": "The imperative sense: a line of code that does something and gets executed.",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "断言",
+          "use": "zh-CN",
+          "notes": "The proposition/assertion sense: a claim that is true or false. Pick by meaning, not by the English word.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "function",
+          "target": "函数",
+          "use": "zh-CN",
+          "notes": "The *keyword* `function` in code stays English; the concept in prose is 函数.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "调用",
+          "use": "zh-CN",
+          "notes": "调用一个函数.",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "定义",
+          "use": "zh-CN",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "parameter",
+          "target": "形参",
+          "use": "zh-CN",
+          "notes": "Declaration-site name. Keep distinct from 实参 (argument), see below.",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "实参",
+          "use": "zh-CN",
+          "notes": "Call-site value. Keep distinct from 形参 (parameter).",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "输入",
+          "use": "zh-CN",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "输出",
+          "use": "zh-CN",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "返回",
+          "use": "zh-CN",
+          "notes": "\"返回一个值。\"",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "返回值",
+          "use": "zh-CN",
+          "notes": "Noun form; distinct from the verb 返回.",
+          "anchor": "term-return-value"
+        },
+        {
+          "en": "pure function",
+          "target": "纯函数",
+          "use": "zh-CN",
+          "anchor": "term-pure-function"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "关键字",
+          "use": "zh-CN",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "变量",
+          "use": "zh-CN",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "赋值",
+          "use": "zh-CN",
+          "notes": "Noun.",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "赋值 / 赋值给",
+          "use": "zh-CN",
+          "notes": "Verb; matches 赋值 above.",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "代码块",
+          "use": "zh-CN",
+          "notes": "Deliberately distinct from 作用域 (scope).",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "错误",
+          "use": "zh-CN",
+          "anchor": "term-error"
+        },
+        {
+          "en": "exception",
+          "target": "异常",
+          "use": "zh-CN",
+          "notes": "The catchable-error-object sense, distinct from 错误 (error) as a general term.",
+          "anchor": "term-exception"
+        },
+        {
+          "en": "nested",
+          "target": "嵌套",
+          "use": "zh-CN",
+          "notes": "e.g. 嵌套循环 = nested loop.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "迭代",
+          "use": "zh-CN",
+          "notes": "Distinct from `zh-TW`'s 疊代; not a script variant, a genuinely different word.",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "运行 (default, casual) / 执行 (formal)",
+          "use": "zh-CN",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "循环",
+          "use": "zh-CN",
+          "notes": "Deliberately different from `zh-TW`'s 迴圈.",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "for 循环",
+          "use": "zh-CN",
+          "notes": "Keep `for` in code font (real keyword) + 循环.",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "while 循环",
+          "use": "zh-CN",
+          "notes": "As above.",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "for-of loop",
+          "target": "for-of 循环",
+          "use": "zh-CN",
+          "notes": "As above.",
+          "anchor": "term-for-of-loop"
+        },
+        {
+          "en": "loop body",
+          "target": "循环体",
+          "use": "zh-CN",
+          "anchor": "term-loop-body"
+        },
+        {
+          "en": "break (loop control)",
+          "target": "跳出循环",
+          "use": "zh-CN",
+          "notes": "The keyword `break` in code stays English; this is the prose concept of breaking out of a loop.",
+          "anchor": "term-break"
+        },
+        {
+          "en": "increment",
+          "target": "自增",
+          "use": "zh-CN",
+          "anchor": "term-increment"
+        },
+        {
+          "en": "modulo / remainder operator",
+          "target": "取模 (primary) / 求余",
+          "use": "zh-CN",
+          "notes": "The `%` operator.",
+          "anchor": "term-modulo-remainder-operator"
+        },
+        {
+          "en": "concatenation / to concatenate",
+          "target": "拼接",
+          "use": "zh-CN",
+          "anchor": "term-concatenation-to-concatenate"
+        },
+        {
+          "en": "toggle",
+          "target": "切换",
+          "use": "zh-CN",
+          "anchor": "term-toggle"
+        },
+        {
+          "en": "state / stateful",
+          "target": "状态 / 有状态的",
+          "use": "zh-CN",
+          "anchor": "term-state-stateful"
+        },
+        {
+          "en": "scope",
+          "target": "作用域",
+          "use": "zh-CN",
+          "notes": "Fully translated, not kept in English. Deliberately distinct from 代码块 (code block). Note: `zh-TW` also offers 範圍 as an alternative rendering; this locale uses only 作用域, so the term is kept separate per locale rather than merged.",
+          "anchor": "term-scope"
+        },
+        {
+          "en": "class",
+          "target": "类",
+          "use": "zh-CN",
+          "notes": "Deliberately different from `zh-TW`'s 類別.",
+          "anchor": "term-class"
+        },
+        {
+          "en": "property",
+          "target": "属性",
+          "use": "zh-CN",
+          "anchor": "term-property"
+        },
+        {
+          "en": "object",
+          "target": "对象",
+          "use": "zh-CN",
+          "notes": "Deliberately different from `zh-TW`'s 物件.",
+          "anchor": "term-object"
+        },
+        {
+          "en": "encapsulation",
+          "target": "封装",
+          "use": "zh-CN",
+          "notes": "The OOP concept of bundling data with the methods that operate on it and hiding internals.",
+          "anchor": "term-encapsulation"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "auth (authentication)",
+          "target": "身份验证",
+          "use": "zh-CN",
+          "anchor": "term-auth"
+        },
+        {
+          "en": "auth (authorization)",
+          "target": "授权",
+          "use": "zh-CN",
+          "notes": "Keep distinct from 身份验证 (authentication); pick by meaning.",
+          "anchor": "term-auth-2"
+        },
+        {
+          "en": "tool / tooling",
+          "target": "工具",
+          "use": "zh-CN",
+          "anchor": "term-tool-tooling"
+        },
+        {
+          "en": "module",
+          "target": "模块",
+          "use": "zh-CN",
+          "notes": "Deliberately different from `zh-TW`'s 模組.",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "算法",
+          "use": "zh-CN",
+          "notes": "Deliberately different from `zh-TW`'s 演算法.",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "edge case",
+          "target": "边界情况",
+          "use": "zh-CN",
+          "notes": "More established than 边缘情况; do not mix both in one document.",
+          "anchor": "term-edge-case"
+        },
+        {
+          "en": "backwards compatibility",
+          "target": "向后兼容",
+          "use": "zh-CN",
+          "anchor": "term-backwards-compatibility"
+        },
+        {
+          "en": "component",
+          "target": "组件",
+          "use": "zh-CN",
+          "notes": "Fully localized, not kept in English.",
+          "anchor": "term-component"
+        }
+      ]
+    },
+    {
+      "title": "Platform & curriculum vocabulary",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "feature (platform capability)",
+          "target": "功能",
+          "use": "zh-CN",
+          "notes": "Deliberately distinct from 函数 (function); see `guide.md` § Style notes. Never use 函数 for a product feature.",
+          "anchor": "term-feature"
+        },
+        {
+          "en": "lesson",
+          "target": "课程",
+          "use": "zh-CN",
+          "anchor": "term-lesson"
+        },
+        {
+          "en": "exercise",
+          "target": "练习",
+          "use": "zh-CN",
+          "anchor": "term-exercise"
+        },
+        {
+          "en": "scenario",
+          "target": "场景",
+          "use": "zh-CN",
+          "notes": "Jiki-specific: a structured variant within an exercise.",
+          "anchor": "term-scenario"
+        },
+        {
+          "en": "curriculum",
+          "target": "课程体系",
+          "use": "zh-CN",
+          "anchor": "term-curriculum"
+        },
+        {
+          "en": "level",
+          "target": "关卡",
+          "use": "zh-CN",
+          "notes": "The gamified sense; fits Jiki's tone.",
+          "anchor": "term-level"
+        },
+        {
+          "en": "milestone",
+          "target": "里程碑",
+          "use": "zh-CN",
+          "anchor": "term-milestone"
+        },
+        {
+          "en": "pathway",
+          "target": "学习路径",
+          "use": "zh-CN",
+          "anchor": "term-pathway"
+        },
+        {
+          "en": "bootcamp",
+          "target": "训练营",
+          "use": "zh-CN",
+          "anchor": "term-bootcamp"
+        },
+        {
+          "en": "syllabus",
+          "target": "教学大纲",
+          "use": "zh-CN",
+          "anchor": "term-syllabus"
+        },
+        {
+          "en": "mentor / mentoring",
+          "target": "导师 / 指导",
+          "use": "zh-CN",
+          "anchor": "term-mentor-mentoring"
+        },
+        {
+          "en": "track (curriculum path)",
+          "target": "学习路线",
+          "use": "zh-CN",
+          "anchor": "term-track"
+        },
+        {
+          "en": "tutorial",
+          "target": "教程",
+          "use": "zh-CN",
+          "anchor": "term-tutorial"
+        },
+        {
+          "en": "solution (learner's submission)",
+          "target": "提交的解答",
+          "use": "zh-CN",
+          "anchor": "term-solution"
+        },
+        {
+          "en": "canvas (graphics exercises)",
+          "target": "画布",
+          "use": "zh-CN",
+          "notes": "The drawing surface in creative-coding exercises.",
+          "anchor": "term-canvas"
+        },
+        {
+          "en": "foot-gun",
+          "target": "(descriptive, no fixed term)",
+          "use": "zh-CN",
+          "notes": "Idiomatic; render descriptively per context, e.g. 容易误用的功能. Do not force a glossary row.",
+          "anchor": "term-foot-gun"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 413
+}

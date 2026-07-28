@@ -1,0 +1,446 @@
+{
+  "lang": "pt-pt",
+  "name": "European Portuguese",
+  "family": "pt",
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "streak",
+          "target": "sequência",
+          "use": "pt",
+          "anchor": "term-streak"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "valor",
+          "use": "pt",
+          "notes": "Ordinary word.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "number",
+          "target": "número",
+          "use": "pt",
+          "notes": "Ordinary word.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "true / false",
+          "target": "verdadeiro / falso",
+          "use": "pt",
+          "notes": "Lowercase in prose.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "integer",
+          "target": "número inteiro",
+          "use": "pt",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "index",
+          "target": "índice",
+          "use": "pt",
+          "anchor": "term-index"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "condicional",
+          "use": "pt",
+          "notes": "Plural: _condicionais_. Corroborated for pt-pt via Univ. Évora course material.",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "condição",
+          "use": "pt",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "comparação",
+          "use": "pt",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "expressão",
+          "use": "pt",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "operador",
+          "use": "pt",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "instrução",
+          "use": "pt",
+          "notes": "The imperative sense: a line of code that does something and gets executed. Corroborated for pt-pt via Univ. Évora course material.",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "afirmação",
+          "use": "pt",
+          "notes": "The proposition / true-or-false sense. Pick by meaning, not by the English word.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "function",
+          "target": "função",
+          "use": "pt",
+          "notes": "The keyword `function` in code stays English; the concept in prose is _função_.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "chamar",
+          "use": "pt",
+          "notes": "_chamar uma função_",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "definir",
+          "use": "pt",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "parameter",
+          "target": "parâmetro",
+          "use": "pt",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "argumento",
+          "use": "pt",
+          "notes": "Call-site value sense.",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "entrada",
+          "use": "pt",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "saída",
+          "use": "pt",
+          "anchor": "term-output"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "palavra-chave",
+          "use": "pt",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "variável",
+          "use": "pt",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "atribuição",
+          "use": "pt",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "atribuir",
+          "use": "pt",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "bloco de código",
+          "use": "pt",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "erro",
+          "use": "pt",
+          "anchor": "term-error"
+        },
+        {
+          "en": "nested",
+          "target": "aninhado",
+          "use": "pt",
+          "notes": "Combines with each locale's own word for \"loop\" to mean nested loop; see the locale glossary's `loop` entry.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "element",
+          "target": "elemento",
+          "use": "pt",
+          "notes": "Array element = _elemento do array_.",
+          "anchor": "term-element"
+        },
+        {
+          "en": "object",
+          "target": "objeto",
+          "use": "pt",
+          "anchor": "term-object"
+        },
+        {
+          "en": "method",
+          "target": "método",
+          "use": "pt",
+          "anchor": "term-method"
+        },
+        {
+          "en": "property",
+          "target": "propriedade",
+          "use": "pt",
+          "anchor": "term-property"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "family",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "workflow",
+          "target": "fluxo de trabalho",
+          "use": "pt",
+          "anchor": "term-workflow"
+        },
+        {
+          "en": "pitfall",
+          "target": "armadilha",
+          "use": "pt",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-pitfall"
+        }
+      ]
+    },
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "programação",
+          "use": "pt-pt",
+          "notes": "Use `programação` consistently.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "setor tecnológico",
+          "use": "pt-pt",
+          "notes": "More restrained register than pt-BR's \"mercado de tech\"; loanword \"tech\" alone reads too casual for European Portuguese written prose.",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "developer",
+          "target": "programador(a)",
+          "use": "pt-pt",
+          "notes": "\"Desenvolvedor\" is a Brazilian-leaning form; \"programador(a)\" is the natural European Portuguese equivalent.",
+          "anchor": "term-developer"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "character",
+          "target": "caráter (pl. carateres)",
+          "use": "pt-pt",
+          "notes": "Post-1990 spelling: European Portuguese silences the `c`, giving \"carateres\" (Brazilian keeps it: \"caractere/caracteres\").",
+          "anchor": "term-character"
+        },
+        {
+          "en": "float / decimal",
+          "target": "número de vírgula flutuante",
+          "use": "pt-pt",
+          "notes": "European Portuguese says \"vírgula flutuante\" (decimal comma); Brazilian says \"ponto flutuante\" (decimal point). Use \"decimal\" alone when the floating-point nature does not matter.",
+          "anchor": "term-float-decimal"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "to return (a value)",
+          "target": "devolver",
+          "use": "pt-pt",
+          "notes": "\"A função devolve um valor.\" European Portuguese idiom, confirmed against Univ. Évora course material (\"Devolve o valor...\"); deliberately diverges from Brazilian \"retornar\".",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "valor devolvido",
+          "use": "pt-pt",
+          "notes": "Follows the verb `devolver` above.",
+          "anchor": "term-return-value"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "iteration",
+          "target": "iteração",
+          "use": "pt-pt",
+          "notes": "Verb: _iterar_; \"percorrer cada elemento\" also natural.",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "executar / correr",
+          "use": "pt-pt",
+          "notes": "`correr` in warm/casual register (\"experimenta correr este código\"); `executar` in formal or procedural steps. Deliberately diverges from Brazilian \"rodar\", which is not natural European Portuguese usage.",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "ciclo",
+          "use": "pt-pt",
+          "notes": "Deliberately diverges from Brazilian \"laço\". Source: Univ. Évora, FEUP course descriptions. `for`/`while` keywords stay English.",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "scope",
+          "target": "âmbito",
+          "use": "pt-pt",
+          "notes": "Deliberately diverges from Brazilian \"escopo\".",
+          "anchor": "term-scope"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "deploy (verb: to deploy)",
+          "target": "publicar",
+          "use": "pt-pt",
+          "notes": "\"Publica o código\" for go-live, beginner-facing (tu-imperative, matches `tu` formality). \"Fazer deploy\" appears in professional dev prose but is avoided here.",
+          "anchor": "term-deploy"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 341
+}

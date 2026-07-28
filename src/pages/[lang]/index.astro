@@ -1,0 +1,199 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import { contentTypeLabel, forumCategoryUrl, languageMeta } from "../../lib/languages";
+
+export const getStaticPaths = (async () => {
+  const glossaries = await getCollection("glossaries");
+  return glossaries.map((glossary) => ({
+    params: { lang: glossary.data.lang },
+    props: { glossary }
+  }));
+}) satisfies GetStaticPaths;
+
+const { glossary } = Astro.props;
+const lang = glossary.data.lang;
+const meta = languageMeta(lang);
+
+const translations = (await getCollection("translations"))
+  .filter((t) => t.data.lang === lang)
+  .sort((a, b) => a.data.slug.localeCompare(b.data.slug));
+
+const published = translations.filter((t) => t.data.status === "published");
+const planned = translations.filter((t) => t.data.status === "planned");
+const termCount = glossary.data.sections.reduce((total, section) => total + section.terms.length, 0);
+
+const byType = new Map<string, typeof translations>();
+for (const item of translations) {
+  const list = byType.get(item.data.type) ?? [];
+  list.push(item);
+  byType.set(item.data.type, list);
+}
+---
+
+<Layout
+  title={`${meta.name} (${lang})`}
+  description={`Jiki translated into ${meta.name}: ${termCount} agreed terms and ${published.length} published translations, all open for comment.`}
+>
+  <PageHeader
+    title={meta.nativeName}
+    titleLang={lang}
+    titleDir={meta.dir}
+    subtitle={`Jiki in ${meta.name}. ${termCount} agreed terms, ${published.length} published translation${published.length === 1 ? "" : "s"}. Everything here is a draft, and all of it is open for comment.`}
+    crumbs={[{ label: "Languages", href: "/" }, { label: meta.name }]}
+  >
+    <div slot="meta" class="mt-6 flex flex-wrap gap-3">
+      <a
+        href={`/${lang}/glossary`}
+        class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"
+      >
+        Read the glossary
+      </a>
+      <a
+        href={forumCategoryUrl(lang)}
+        class="rounded-lg border border-purple-400 px-4 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-800"
+      >
+        Discuss on the forum
+      </a>
+    </div>
+  </PageHeader>
+
+  <div class="lg-container grid gap-10 py-10 lg:grid-cols-[1fr_350px] lg:gap-[7%]">
+    <div class="min-w-0">
+      <div class="textual-content">
+        <h2>Translations</h2>
+        {
+          published.length === 0 && (
+            <p>
+              Nothing published in {meta.name} yet. The glossary is agreed first, then translations start appearing here
+              for you to pull apart. The items below are queued.
+            </p>
+          )
+        }
+      </div>
+
+      <div class="mt-6 space-y-8">
+        {
+          [...byType.entries()].map(([type, items]) => (
+            <section>
+              <h3 class="text-[13px] font-bold tracking-[0.08em] text-gray-500 uppercase">{contentTypeLabel(type)}</h3>
+              <ul class="mt-3 space-y-2">
+                {items.map((item) =>
+                  item.data.status === "published" ? (
+                    <li>
+                      <a
+                        href={`/${lang}/${item.data.type}/${item.data.slug}`}
+                        class="flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 transition hover:-translate-y-0.5 hover:border-purple-300 hover:shadow-md"
+                      >
+                        <span class="min-w-0">
+                          <span class="block font-semibold text-gray-900" lang={lang} dir={meta.dir}>
+                            {item.data.title ?? item.data.slug}
+                          </span>
+                          <span class="mt-0.5 block text-[13px] text-gray-500">{item.data.slug}</span>
+                        </span>
+                        <span class="shrink-0 rounded-full bg-emerald-50 px-2.5 py-1 text-[12px] font-semibold text-emerald-700">
+                          Ready to review
+                        </span>
+                      </a>
+                    </li>
+                  ) : (
+                    <li class="flex items-center justify-between gap-4 rounded-xl border border-dashed border-gray-300 bg-gray-50 px-5 py-4">
+                      <span class="min-w-0">
+                        <span class="block font-semibold text-gray-500">{item.data.slug}</span>
+                        <span class="mt-0.5 block text-[13px] text-gray-400">Not translated yet</span>
+                      </span>
+                      <span
+                        class="shrink-0 rounded-full bg-white px-2.5 py-1 text-[12px] font-semibold text-gray-500"
+                        lang={lang}
+                        dir={meta.dir}
+                      >
+                        {meta.comingSoon}
+                      </span>
+                    </li>
+                  )
+                )}
+              </ul>
+            </section>
+          ))
+        }
+      </div>
+
+      <div class="textual-content mt-10">
+        <h2>How to help</h2>
+        <p>
+          Read anything above in {meta.name} and tell us where it sounds wrong. You don't need to explain why, and you don't
+          need to be technical. Post it in
+          <a href={forumCategoryUrl(lang)}>the {meta.name} forum category</a>, because that's what we feed back into the
+          translations.
+        </p>
+        <p>
+          If a term itself is wrong (not just this sentence, but the word we use everywhere), take it to
+          <a href={`/${lang}/glossary`}>the glossary</a> instead. Fixing it there fixes it everywhere at once.
+        </p>
+      </div>
+    </div>
+
+    <aside class="min-w-0 space-y-6">
+      <section class="rounded-2xl border border-gray-200 bg-white p-5">
+        <h2 class="text-[13px] font-bold tracking-[0.08em] text-gray-500 uppercase">This language</h2>
+        <dl class="mt-3 space-y-3 text-[14px]">
+          <div class="flex items-baseline justify-between gap-3">
+            <dt class="text-gray-500">Agreed terms</dt>
+            <dd class="font-semibold text-gray-900">{termCount}</dd>
+          </div>
+          <div class="flex items-baseline justify-between gap-3">
+            <dt class="text-gray-500">Published</dt>
+            <dd class="font-semibold text-gray-900">{published.length}</dd>
+          </div>
+          <div class="flex items-baseline justify-between gap-3">
+            <dt class="text-gray-500">Queued</dt>
+            <dd class="font-semibold text-gray-900">{planned.length}</dd>
+          </div>
+          {
+            glossary.data.family && (
+              <div class="flex items-baseline justify-between gap-3">
+                <dt class="text-gray-500">Shares terms with</dt>
+                <dd class="font-semibold text-gray-900">{glossary.data.family.toUpperCase()} family</dd>
+              </div>
+            )
+          }
+        </dl>
+      </section>
+
+      <section class="rounded-2xl border border-gray-200 bg-white p-5">
+        <h2 class="text-[13px] font-bold tracking-[0.08em] text-gray-500 uppercase">Quick links</h2>
+        <ul class="mt-3 space-y-1">
+          <li>
+            <a href={`/${lang}/glossary`} class="-mx-2 block rounded-lg px-2 py-2 transition hover:bg-purple-50">
+              <span class="block text-[15px] font-semibold text-blue-600">The {meta.name} glossary</span>
+              <span class="block text-[13px] text-gray-500">Every agreed term, linkable row by row</span>
+            </a>
+          </li>
+          <li>
+            <a href={forumCategoryUrl(lang)} class="-mx-2 block rounded-lg px-2 py-2 transition hover:bg-purple-50">
+              <span class="block text-[15px] font-semibold text-blue-600">{meta.name} on the forum</span>
+              <span class="block text-[13px] text-gray-500">Where this language gets decided</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://discord.gg/JFty3vbqRZ"
+              class="-mx-2 block rounded-lg px-2 py-2 transition hover:bg-purple-50"
+            >
+              <span class="block text-[15px] font-semibold text-blue-600">Discord</span>
+              <span class="block text-[13px] text-gray-500">Work with other speakers in real time</span>
+            </a>
+          </li>
+          <li>
+            <a href="/" class="-mx-2 block rounded-lg px-2 py-2 transition hover:bg-purple-50">
+              <span class="block text-[15px] font-semibold text-blue-600">All languages</span>
+              <span class="block text-[13px] text-gray-500">Back to the full list</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+</Layout>

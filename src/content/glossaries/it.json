@@ -1,0 +1,651 @@
+{
+  "lang": "it",
+  "name": "Italian",
+  "family": null,
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming / coding",
+          "target": "programmazione",
+          "use": "it",
+          "notes": "Standard, unambiguous.",
+          "anchor": "term-programming-coding"
+        },
+        {
+          "en": "developer",
+          "target": "sviluppatore / sviluppatrice",
+          "use": "it",
+          "notes": "Agree gender with the referent; use the masculine as the generic/plural default.",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "settore tech",
+          "use": "it",
+          "notes": "Natural in Italian tech media; \"industria tecnologica\" is heavier.",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "streak",
+          "target": "serie",
+          "use": "it",
+          "notes": "A run of consecutive days, as in the learning-platform sense. Flagged low-confidence: real Italian products (e.g. Duolingo IT) render this inconsistently; confirm on first real use.",
+          "anchor": "term-streak"
+        },
+        {
+          "en": "pitfall",
+          "target": "insidia",
+          "use": "it",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-pitfall"
+        },
+        {
+          "en": "foot-gun",
+          "target": "trappola involontaria",
+          "use": "it",
+          "notes": "Idiomatic English term with no clean one-word Italian equivalent; use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`.",
+          "anchor": "term-foot-gun"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "valore",
+          "use": "it",
+          "notes": "Ordinary word.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "number",
+          "target": "numero",
+          "use": "it",
+          "notes": "Ordinary word.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "true / false",
+          "target": "vero / falso",
+          "use": "it",
+          "notes": "Not capitalised in prose. Literals `true`/`false` stay English in code.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "character",
+          "target": "carattere",
+          "use": "it",
+          "notes": "Ordinary word.",
+          "anchor": "term-character"
+        },
+        {
+          "en": "integer",
+          "target": "numero intero",
+          "use": "it",
+          "notes": "The type keyword (`int`) stays as-is in code.",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "float / decimal",
+          "target": "numero in virgola mobile",
+          "use": "it",
+          "notes": "This is the standard Italian idiom for floating-point; use _numero decimale_ only for the plain \"has a decimal point\" sense, not the technical float type.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "array / list",
+          "target": "array",
+          "use": "it",
+          "notes": "A bare _array (array)_ gloss is unnecessary; where the source `<define>`s it, gloss with a one-line explanation of the concept instead, since the word itself is already English. Plural is invariant: _gli array_. \"vettore\" is a legitimate but linear-algebra-flavoured alternative; do not mix the two in one document. Never use \"matrice\" (means 2D matrix). Exercise prose sometimes says \"list\" informally for the same concept; render both as _array_.",
+          "anchor": "term-array-list"
+        },
+        {
+          "en": "dictionary",
+          "target": "dizionario",
+          "use": "it",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "element",
+          "target": "elemento",
+          "use": "it",
+          "notes": "Array element = _elemento dell'array_.",
+          "anchor": "term-element"
+        },
+        {
+          "en": "index",
+          "target": "indice",
+          "use": "it",
+          "notes": "Ordinary word. Plural: _indici_.",
+          "anchor": "term-index"
+        },
+        {
+          "en": "key-value pair",
+          "target": "coppia chiave-valore",
+          "use": "it",
+          "notes": "The key itself is _chiave_ (an ordinary word).",
+          "anchor": "term-key-value-pair"
+        },
+        {
+          "en": "string",
+          "target": "stringa",
+          "use": "it",
+          "notes": "Unlike some other languages, \"stringa\" is fully native Italian vocabulary, so it is localized rather than kept English.",
+          "anchor": "term-string"
+        },
+        {
+          "en": "Boolean",
+          "target": "booleano",
+          "use": "it",
+          "notes": "Adjective agrees: _booleano/booleana_. The code type name `Boolean` stays as-is in code.",
+          "anchor": "term-boolean"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "istruzione if",
+          "use": "it",
+          "notes": "Keep `if` as the real keyword.",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "condizione",
+          "use": "it",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "confronto",
+          "use": "it",
+          "notes": "Ordinary word; stands alone. Avoid \"comparazione\", which is rarer and heavier.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "espressione",
+          "use": "it",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "operatore",
+          "use": "it",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "NOT operator / logical negation",
+          "target": "negazione logica",
+          "use": "it",
+          "notes": "The `!` symbol and `NOT` keyword stay as-is in code.",
+          "anchor": "term-not-operator-logical-negation"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "istruzione",
+          "use": "it",
+          "notes": "The imperative sense: a line of code that does something and gets executed.",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "proposizione",
+          "use": "it",
+          "notes": "The proposition sense: a claim that is true or false; also a test assertion. Deliberately distinct from _istruzione_ above; never cross-use.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "function",
+          "target": "funzione",
+          "use": "it",
+          "notes": "The *keyword* `function` in code stays English; the concept in prose is _funzione_.",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "chiamare (una funzione)",
+          "use": "it",
+          "notes": "Plainer and more beginner-friendly than the equally-correct \"invocare\"; use _chiamare_ consistently.",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "definire (una funzione)",
+          "use": "it",
+          "notes": "Distinct from _dichiarare_ (declare), which is not used for this concept here.",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "parameter",
+          "target": "parametro",
+          "use": "it",
+          "notes": "Declaration-site name.",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "argomento",
+          "use": "it",
+          "notes": "Call-site value. Deliberately distinct from _parametro_ above.",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "input",
+          "use": "en",
+          "notes": "Kept English in the software sense; _ingresso_ is reserved for hardware/circuit contexts, not used here.",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "output",
+          "use": "en",
+          "notes": "As above; _uscita_ not used here.",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "restituire",
+          "use": "it",
+          "notes": "\"La funzione restituisce 30.\" Not \"ritornare\", which used transitively is a common but linguistically criticized anglicism (standard Italian \"ritornare\" is intransitive).",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "valore restituito",
+          "use": "it",
+          "notes": "Noun form; matches the verb _restituire_ above for consistency.",
+          "anchor": "term-return-value"
+        },
+        {
+          "en": "pure function",
+          "target": "funzione pura",
+          "use": "it",
+          "anchor": "term-pure-function"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "parola chiave",
+          "use": "it",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "variabile",
+          "use": "it",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "assegnazione",
+          "use": "it",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "assegnare",
+          "use": "it",
+          "notes": "Matches _assegnazione_ above: \"assegnare un valore a una variabile.\"",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "blocco di codice",
+          "use": "it",
+          "notes": "Deliberately distinct from _scope_ below.",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "errore",
+          "use": "it",
+          "anchor": "term-error"
+        },
+        {
+          "en": "nested",
+          "target": "annidato",
+          "use": "it",
+          "notes": "e.g. _ciclo annidato_ = nested loop. Prefer over \"nidificato\", which survives mainly in database/query contexts.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "iterazione",
+          "use": "it",
+          "notes": "Verb: _iterare_.",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "eseguire",
+          "use": "it",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "ciclo",
+          "use": "it",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "ciclo for",
+          "use": "it",
+          "notes": "Keep `for` as the real keyword + _ciclo_.",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "ciclo while",
+          "use": "it",
+          "notes": "As above, with `while`.",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "for-of loop",
+          "target": "ciclo for...of",
+          "use": "it",
+          "notes": "As above, with `for...of`.",
+          "anchor": "term-for-of-loop"
+        },
+        {
+          "en": "loop body",
+          "target": "corpo del ciclo",
+          "use": "it",
+          "anchor": "term-loop-body"
+        },
+        {
+          "en": "break (loop control)",
+          "target": "istruzione break",
+          "use": "it",
+          "notes": "The keyword `break` in code stays English; this is the prose concept of breaking out of a loop.",
+          "anchor": "term-break"
+        },
+        {
+          "en": "increment",
+          "target": "incremento",
+          "use": "it",
+          "notes": "Verb: _incrementare_.",
+          "anchor": "term-increment"
+        },
+        {
+          "en": "modulo / remainder operator",
+          "target": "operatore modulo (operator) / resto (value)",
+          "use": "it",
+          "notes": "Use _operatore modulo_ for the `%` operator; _resto_ for the resulting value.",
+          "anchor": "term-modulo-remainder-operator"
+        },
+        {
+          "en": "concatenation / to concatenate",
+          "target": "concatenazione / concatenare",
+          "use": "it",
+          "anchor": "term-concatenation-to-concatenate"
+        },
+        {
+          "en": "toggle",
+          "target": "alternare",
+          "use": "it",
+          "notes": "Verb; a plain, natural Italian word, no need to borrow \"toggle\".",
+          "anchor": "term-toggle"
+        },
+        {
+          "en": "state / stateful",
+          "target": "stato",
+          "use": "it",
+          "notes": "\"con stato\" for \"stateful\".",
+          "anchor": "term-state-stateful"
+        },
+        {
+          "en": "scope",
+          "target": "scope",
+          "use": "en",
+          "notes": "Kept English, matching the pattern used for Hungarian and French. Where the source `<define>`s it, gloss as _ambito (di visibilità)_, then use _scope_.",
+          "anchor": "term-scope"
+        },
+        {
+          "en": "class",
+          "target": "classe",
+          "use": "it",
+          "anchor": "term-class"
+        },
+        {
+          "en": "method",
+          "target": "metodo",
+          "use": "it",
+          "anchor": "term-method"
+        },
+        {
+          "en": "property",
+          "target": "proprietà",
+          "use": "it",
+          "anchor": "term-property"
+        },
+        {
+          "en": "object",
+          "target": "oggetto",
+          "use": "it",
+          "anchor": "term-object"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "workflow",
+          "target": "flusso di lavoro",
+          "use": "it",
+          "notes": "The software-engineering sense (a sequence of dev tasks).",
+          "anchor": "term-workflow"
+        },
+        {
+          "en": "auth (authentication / authorization)",
+          "target": "autenticazione / autorizzazione",
+          "use": "it",
+          "notes": "Pick by meaning; both are standard, unambiguous.",
+          "anchor": "term-auth"
+        },
+        {
+          "en": "deploy (verb / noun)",
+          "target": "rilascio / rilasciare",
+          "use": "it",
+          "notes": "Low-confidence pick: developer speech commonly keeps \"deploy\" in Italy, but _rilascio/rilasciare_ is chosen for consistency with how Hungarian and French both localize this term, and reads more naturally in beginner-facing prose. Flag for native-speaker confirmation via `/action-forum-post`.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "tool / tooling",
+          "target": "strumento",
+          "use": "it",
+          "notes": "Covers \"tool\"; bare \"tooling\" as a collective noun is left undecided (no authoritative source found), do not use it yet.",
+          "anchor": "term-tool-tooling"
+        },
+        {
+          "en": "module",
+          "target": "modulo",
+          "use": "it",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "algoritmo",
+          "use": "it",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "edge case",
+          "target": "caso limite",
+          "use": "it",
+          "notes": "No official ruling exists; flagged for native-speaker confirmation.",
+          "anchor": "term-edge-case"
+        },
+        {
+          "en": "backwards compatibility",
+          "target": "retrocompatibilità",
+          "use": "it",
+          "anchor": "term-backwards-compatibility"
+        },
+        {
+          "en": "component",
+          "target": "componente",
+          "use": "it",
+          "anchor": "term-component"
+        }
+      ]
+    },
+    {
+      "title": "Platform & curriculum vocabulary",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "feature (platform capability)",
+          "target": "funzionalità",
+          "use": "it",
+          "notes": "Deliberately distinct from _funzione_ (function) to avoid collision.",
+          "anchor": "term-feature"
+        },
+        {
+          "en": "lesson",
+          "target": "lezione",
+          "use": "it",
+          "anchor": "term-lesson"
+        },
+        {
+          "en": "exercise",
+          "target": "esercizio",
+          "use": "it",
+          "anchor": "term-exercise"
+        },
+        {
+          "en": "scenario",
+          "target": "scenario",
+          "use": "it",
+          "notes": "Jiki-specific structured variant within an exercise.",
+          "anchor": "term-scenario"
+        },
+        {
+          "en": "curriculum",
+          "target": "percorso",
+          "use": "it",
+          "notes": "Never bare \"curriculum\": in Italian it means a CV/résumé, a false friend. Use _percorso_ for the learning-curriculum sense.",
+          "anchor": "term-curriculum"
+        },
+        {
+          "en": "level",
+          "target": "livello",
+          "use": "it",
+          "notes": "The curriculum's structural unit.",
+          "anchor": "term-level"
+        },
+        {
+          "en": "pathway",
+          "target": "percorso",
+          "use": "it",
+          "notes": "A structured learning sequence. Same word as _curriculum_ above; the two senses rarely appear together in one document.",
+          "anchor": "term-pathway"
+        },
+        {
+          "en": "track (curriculum path)",
+          "target": "indirizzo",
+          "use": "it",
+          "notes": "Low-confidence pick: no established Italian pair mirrors the pathway/track distinction. \"Indirizzo\" is a real Italian school term for a curricular specialization, chosen to stay distinct from _percorso_ (pathway). Flag for native-speaker confirmation.",
+          "anchor": "term-track"
+        },
+        {
+          "en": "syllabus",
+          "target": "programma del corso",
+          "use": "it",
+          "anchor": "term-syllabus"
+        },
+        {
+          "en": "mentor / mentoring",
+          "target": "mentore / mentoring",
+          "use": "it",
+          "notes": "\"Mentoring\" is used as-is; \"mentore\" is the native word for the person.",
+          "anchor": "term-mentor-mentoring"
+        },
+        {
+          "en": "tutorial",
+          "target": "tutorial",
+          "use": "en",
+          "notes": "Established as-is in Italian tech/education writing.",
+          "anchor": "term-tutorial"
+        },
+        {
+          "en": "solution (learner's submission)",
+          "target": "soluzione",
+          "use": "it",
+          "anchor": "term-solution"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 319
+}

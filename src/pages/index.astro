@@ -1,0 +1,195 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import PageHeader from "../components/PageHeader.astro";
+import { languageMeta } from "../lib/languages";
+
+const glossaries = await getCollection("glossaries");
+const translations = await getCollection("translations");
+
+const languages = glossaries
+  .map((glossary) => {
+    const lang = glossary.data.lang;
+    const items = translations.filter((t) => t.data.lang === lang);
+    return {
+      lang,
+      meta: languageMeta(lang),
+      termCount: glossary.data.sections.reduce((total, section) => total + section.terms.length, 0),
+      published: items.filter((t) => t.data.status === "published").length
+    };
+  })
+  .sort((a, b) => a.meta.name.localeCompare(b.meta.name));
+
+const totalPublished = languages.reduce((total, l) => total + l.published, 0);
+
+const QUICK_LINKS = [
+  {
+    label: "Kickoff live stream",
+    detail: "Friday 1pm UTC, YouTube",
+    href: "https://youtube.com/live/UAxC5J4H2n0"
+  },
+  {
+    label: "Discord",
+    detail: "The #translation channel, where we work",
+    href: "https://discord.gg/JFty3vbqRZ"
+  },
+  {
+    label: "The forum",
+    detail: "Where decisions get recorded",
+    href: "https://forum.jiki.io/c/i18n/67"
+  },
+  {
+    label: "The blog post",
+    detail: "The full story of the Translatathon",
+    href: "https://jiki.io/blog/translatathon"
+  }
+];
+---
+
+<Layout
+  title="Jiki Translations"
+  description="The Big Jiki & Exercism Translatathon: read the translations as they land, check the agreed glossaries, and tell us what sounds wrong."
+>
+  <PageHeader
+    title="The Big Jiki & Exercism Translatathon"
+    subtitle="Over the weekend of July 31st - August 2nd, we're translating Jiki and Exercism into as many languages as we can, together. This site is where the translations land for you to read and pull apart."
+    image="/images/translatathon.webp"
+  />
+
+  <div class="lg-container grid gap-10 py-10 lg:grid-cols-[1fr_350px] lg:gap-[7%]">
+    <article class="min-w-0">
+      <div class="textual-content">
+        <p class="rounded-xl border border-purple-200 bg-purple-50 p-5 text-[15px] italic">
+          <strong>TL;DR</strong> We're translating Jiki and Exercism into as many languages as we can, over the weekend of
+          <strong>Friday July 31st - Sunday August 2nd</strong>. Want to help? Join the
+          <a href="https://youtube.com/live/UAxC5J4H2n0">kickoff live stream</a> at 1pm UTC on the Friday, or get stuck in
+          on <a href="https://discord.gg/JFty3vbqRZ">Discord</a> and
+          <a href="https://forum.jiki.io/c/i18n/67">the forum</a> any time over the weekend. Everyone who contributes gets
+          an exclusive one-off Translatathon badge on both Jiki and Exercism!
+        </p>
+
+        <h2>What is this?</h2>
+
+        <p>
+          Most people in the world don't speak English, but most coding resources are only in English. So we're
+          translating the whole of Jiki: the UI, the videos, the exercises, even the <strong>error messages</strong> you get
+          from the programming language itself. And it's not just Jiki. Exercism is being translated too, using the same process
+          and the same glossaries.
+        </p>
+
+        <p>
+          We're using LLMs to do the translating, but using strict guides and glossaries that we create together. We run
+          a loop: we translate, <strong>get human feedback</strong>, update the guides, and go again, until we're happy.
+        </p>
+
+        <p>
+          <strong>This site is step two of that loop.</strong> Every translation we generate gets published here next to its
+          English source, so you can see exactly what it says and exactly what it was meant to say. The
+          <strong>glossary</strong> behind each language is published here too, so you can argue with the decisions rather
+          than just the wording.
+        </p>
+
+        <p>
+          Nothing here is final. That's the point. If it reads like a robot wrote it, we want to know before it ships.
+        </p>
+
+        <h2>What do I do?</h2>
+
+        <p>
+          <strong>Read something in your language and tell us when it sounds weird.</strong> That's genuinely it. You don't
+          need to be technical, and you don't need to explain why. "This just sounds off" is really useful feedback. Some
+          coding experience helps with the technical terms, but it isn't required.
+        </p>
+
+        <ol>
+          <li>
+            <strong>Pick your language</strong> from the list, and read its glossary. These are the technical terms we'll
+            use consistently everywhere: what do we call a "function" or a "variable" in your language?
+          </li>
+          <li>
+            <strong>Read the translations</strong> as they appear. Each one sits side by side with the English so you can
+            see what it was translating.
+          </li>
+          <li>
+            <strong>Tell us what's wrong</strong> on the forum. This word sounds weird. Nobody actually says it that way.
+            This sentence is too formal.
+          </li>
+          <li>
+            <strong>We fix it and post a fresh version</strong>, and we repeat until everything reads naturally.
+          </li>
+        </ol>
+
+        <p>
+          Discussion happens on <a href="https://discord.gg/JFty3vbqRZ">Discord</a> over the weekend, but anything you agree
+          needs to end up on <a href="https://forum.jiki.io/c/i18n/67">the forum</a>, because the forum is what the AI
+          actually learns from.
+        </p>
+
+        <h3>What if my language isn't listed yet?</h3>
+
+        <p>
+          Post in <a href="https://forum.jiki.io/c/i18n/67">the forum</a> and we'll bootstrap it: a forum section for your
+          language and a starting glossary to discuss. And if you know other native speakers who'd help out, get them to post
+          too. The more people working on a language, the better it'll be.
+        </p>
+      </div>
+    </article>
+
+    <aside class="min-w-0 space-y-6">
+      <section class="rounded-2xl border border-gray-200 bg-white p-5">
+        <h2 class="text-[13px] font-bold tracking-[0.08em] text-gray-500 uppercase">Quick links</h2>
+        <ul class="mt-3 space-y-1">
+          {
+            QUICK_LINKS.map((link) => (
+              <li>
+                <a href={link.href} class="-mx-2 block rounded-lg px-2 py-2 transition hover:bg-purple-50">
+                  <span class="block text-[15px] font-semibold text-blue-600">{link.label}</span>
+                  <span class="block text-[13px] text-gray-500">{link.detail}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section class="rounded-2xl border border-gray-200 bg-white p-5">
+        <h2 class="text-[13px] font-bold tracking-[0.08em] text-gray-500 uppercase">
+          Languages <span class="text-gray-400">({languages.length})</span>
+        </h2>
+        <p class="mt-2 text-[13px] text-gray-500">
+          {
+            totalPublished > 0
+              ? `${totalPublished} translation${totalPublished === 1 ? "" : "s"} published so far.`
+              : "Glossaries are up. Translations start landing on Friday."
+          }
+        </p>
+        <ul class="mt-3 divide-y divide-gray-100">
+          {
+            languages.map(({ lang, meta, termCount, published }) => (
+              <li>
+                <a
+                  href={`/${lang}`}
+                  class="-mx-2 flex items-center gap-3 rounded-lg px-2 py-2 transition hover:bg-purple-50"
+                >
+                  <span class="min-w-0 flex-1">
+                    <span class="block truncate text-[15px] font-semibold text-gray-900" lang={lang} dir={meta.dir}>
+                      {meta.nativeName}
+                    </span>
+                    <span class="block text-[12px] text-gray-500">
+                      {meta.name} &middot; {termCount} terms
+                    </span>
+                  </span>
+                  {published > 0 && (
+                    <span class="shrink-0 rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-semibold text-emerald-700">
+                      {published}
+                    </span>
+                  )}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </aside>
+  </div>
+</Layout>

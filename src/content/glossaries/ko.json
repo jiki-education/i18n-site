@@ -1,0 +1,604 @@
+{
+  "lang": "ko",
+  "name": "Korean",
+  "family": null,
+  "governance_sha": "0349487",
+  "published_at": "2026-07-28",
+  "sections": [
+    {
+      "title": "Core decisions",
+      "level": 2,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "programming (the discipline)",
+          "target": "프로그래밍",
+          "use": "ko",
+          "notes": "Default term for the general craft/discipline: \"프로그래밍을 배우다\" (learn programming).",
+          "anchor": "term-programming"
+        },
+        {
+          "en": "coding (the casual act of writing code)",
+          "target": "코딩",
+          "use": "ko",
+          "notes": "Use only when the source specifically stresses the casual, hands-on act of writing code (matches how Korean coding-education brands like Codeit and 생활코딩 use it in marketing). Never mix both terms for the same reference within one document.",
+          "anchor": "term-coding"
+        },
+        {
+          "en": "developer",
+          "target": "개발자",
+          "use": "ko",
+          "notes": "Standard, universal.",
+          "anchor": "term-developer"
+        },
+        {
+          "en": "tech / tech industry",
+          "target": "IT (업계)",
+          "use": "ko",
+          "notes": "Korean overwhelmingly says \"IT\" for the tech industry (\"IT기업\", \"IT업계\"), not \"테크\". Use \"IT 업계\" for \"the tech industry\" and \"IT\" as the adjective (\"IT 분야\").",
+          "anchor": "term-tech-tech-industry"
+        },
+        {
+          "en": "streak",
+          "target": "스트릭",
+          "use": "ko",
+          "notes": "Loanword; matches how Korean learning-app users refer to a daily-use streak.",
+          "anchor": "term-streak"
+        },
+        {
+          "en": "pitfall",
+          "target": "함정",
+          "use": "ko",
+          "notes": "Ordinary word, \"trap/pitfall\"; stands alone.",
+          "anchor": "term-pitfall"
+        }
+      ]
+    },
+    {
+      "title": "Values & data types",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "value",
+          "target": "값",
+          "use": "ko",
+          "notes": "Ordinary word.",
+          "anchor": "term-value"
+        },
+        {
+          "en": "number",
+          "target": "숫자",
+          "use": "ko",
+          "notes": "Ordinary word.",
+          "anchor": "term-number"
+        },
+        {
+          "en": "integer",
+          "target": "정수",
+          "use": "ko",
+          "anchor": "term-integer"
+        },
+        {
+          "en": "float / decimal",
+          "target": "실수",
+          "use": "ko",
+          "notes": "\"실수\" (real number) is the standard beginner-level term; use \"부동소수점\" only where the IEEE floating-point representation itself is the point.",
+          "anchor": "term-float-decimal"
+        },
+        {
+          "en": "character",
+          "target": "문자",
+          "use": "ko",
+          "notes": "Ordinary word.",
+          "anchor": "term-character"
+        },
+        {
+          "en": "true / false",
+          "target": "참 / 거짓",
+          "use": "ko",
+          "notes": "Not capitalised in prose; the code literals `true`/`false` stay as-is in code.",
+          "anchor": "term-true-false"
+        },
+        {
+          "en": "array / list",
+          "target": "배열",
+          "use": "ko",
+          "notes": "Standard term for both senses; do not introduce a second word for informal \"list\" prose, use 배열 consistently.",
+          "anchor": "term-array-list"
+        },
+        {
+          "en": "dictionary",
+          "target": "딕셔너리",
+          "use": "ko",
+          "notes": "Loanword; the standard term in Korean beginner material (not \"사전\", which is only used descriptively, never as the type name).",
+          "anchor": "term-dictionary"
+        },
+        {
+          "en": "element",
+          "target": "원소",
+          "use": "ko",
+          "notes": "Standard in array/data-structure context (생활코딩, 위키백과). Kept distinct from a UI/DOM \"element\", which does not appear in this content.",
+          "anchor": "term-element"
+        },
+        {
+          "en": "index",
+          "target": "인덱스",
+          "use": "ko",
+          "notes": "Loanword; the practical everyday term (over the more textbook-formal \"색인\"/\"첨자\").",
+          "anchor": "term-index"
+        },
+        {
+          "en": "key-value pair",
+          "target": "키-값 쌍",
+          "use": "ko",
+          "anchor": "term-key-value-pair"
+        },
+        {
+          "en": "template literal",
+          "target": "템플릿 리터럴",
+          "use": "ko",
+          "notes": "Loanword, standard JS terminology.",
+          "anchor": "term-template-literal"
+        },
+        {
+          "en": "string",
+          "target": "문자열",
+          "use": "ko",
+          "notes": "**Translated, not kept as a loanword.** MDN Korean and Python Korean docs both render `string` as 문자열, never \"스트링\".",
+          "anchor": "term-string"
+        },
+        {
+          "en": "Boolean",
+          "target": "불리언",
+          "use": "ko",
+          "notes": "Loanword (also seen as \"불린\"; use \"불리언\" consistently).",
+          "anchor": "term-boolean"
+        },
+        {
+          "en": "data type",
+          "target": "자료형",
+          "use": "ko",
+          "notes": "Standard general term (\"문자열은 자료형의 하나예요\" = a string is a data type).",
+          "anchor": "term-data-type"
+        }
+      ]
+    },
+    {
+      "title": "Functions & control flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "if statement",
+          "target": "조건문",
+          "use": "ko",
+          "notes": "The code keyword `if` stays English.",
+          "anchor": "term-if-statement"
+        },
+        {
+          "en": "condition",
+          "target": "조건",
+          "use": "ko",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-condition"
+        },
+        {
+          "en": "comparison",
+          "target": "비교",
+          "use": "ko",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-comparison"
+        },
+        {
+          "en": "expression",
+          "target": "표현식",
+          "use": "ko",
+          "anchor": "term-expression"
+        },
+        {
+          "en": "operator",
+          "target": "연산자",
+          "use": "ko",
+          "anchor": "term-operator"
+        },
+        {
+          "en": "NOT operator / logical negation",
+          "target": "NOT 연산자 / 논리 부정",
+          "use": "ko",
+          "notes": "Keep the keyword `NOT` in code font when referring to the actual operator token; use \"논리 부정\" when explaining the general concept in prose.",
+          "anchor": "term-not-operator-logical-negation"
+        },
+        {
+          "en": "statement (executable)",
+          "target": "문장",
+          "use": "ko",
+          "notes": "The imperative sense: a line of code that does something and gets executed. Ordinary word in this sense; stands alone.",
+          "anchor": "term-statement"
+        },
+        {
+          "en": "statement (logical claim)",
+          "target": "명제",
+          "use": "ko",
+          "notes": "The proposition sense: a claim that is true or false. Keep distinct from \"문장\" above; pick by meaning, not by the English word.",
+          "anchor": "term-statement-2"
+        },
+        {
+          "en": "function",
+          "target": "함수",
+          "use": "ko",
+          "notes": "The *keyword* `function` in code stays English; the concept in prose is \"함수\".",
+          "anchor": "term-function"
+        },
+        {
+          "en": "to call (a function)",
+          "target": "호출하다",
+          "use": "ko",
+          "notes": "\"함수를 호출해요.\"",
+          "anchor": "term-to-call"
+        },
+        {
+          "en": "to define (a function)",
+          "target": "정의하다",
+          "use": "ko",
+          "notes": "\"함수를 정의해요.\"",
+          "anchor": "term-to-define"
+        },
+        {
+          "en": "parameter",
+          "target": "매개변수",
+          "use": "ko",
+          "notes": "The declaration-site name.",
+          "anchor": "term-parameter"
+        },
+        {
+          "en": "argument",
+          "target": "인자",
+          "use": "ko",
+          "notes": "The call-site value; kept distinct from \"매개변수\" above.",
+          "anchor": "term-argument"
+        },
+        {
+          "en": "input (to a function)",
+          "target": "입력",
+          "use": "ko",
+          "anchor": "term-input"
+        },
+        {
+          "en": "output",
+          "target": "출력",
+          "use": "ko",
+          "anchor": "term-output"
+        },
+        {
+          "en": "to return (a value)",
+          "target": "반환하다",
+          "use": "ko",
+          "notes": "\"30을 반환해요.\" Written/educational default; colloquial \"리턴하다\" exists but is not used in Jiki prose, to keep one consistent term.",
+          "anchor": "term-to-return"
+        },
+        {
+          "en": "return value",
+          "target": "반환값",
+          "use": "ko",
+          "anchor": "term-return-value"
+        },
+        {
+          "en": "pure function",
+          "target": "순수 함수",
+          "use": "ko",
+          "anchor": "term-pure-function"
+        }
+      ]
+    },
+    {
+      "title": "Loops, state & program flow",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "keyword",
+          "target": "키워드",
+          "use": "ko",
+          "anchor": "term-keyword"
+        },
+        {
+          "en": "variable",
+          "target": "변수",
+          "use": "ko",
+          "anchor": "term-variable"
+        },
+        {
+          "en": "assignment",
+          "target": "대입",
+          "use": "ko",
+          "notes": "The noun. \"대입 연산자\" (assignment operator) is the standard textbook pairing.",
+          "anchor": "term-assignment"
+        },
+        {
+          "en": "to assign",
+          "target": "대입하다",
+          "use": "ko",
+          "notes": "\"값을 변수에 대입해요.\"",
+          "anchor": "term-to-assign"
+        },
+        {
+          "en": "code block",
+          "target": "코드 블록",
+          "use": "ko",
+          "anchor": "term-code-block"
+        },
+        {
+          "en": "error",
+          "target": "오류",
+          "use": "ko",
+          "notes": "Ordinary word in written/educational Korean (docs and formal writing favor \"오류\"; colloquial speech often says \"에러\", not used in Jiki prose to keep one consistent term).",
+          "anchor": "term-error"
+        },
+        {
+          "en": "exception",
+          "target": "예외",
+          "use": "ko",
+          "notes": "The catchable-error-object sense, distinct from \"오류\" (error) as a general term.",
+          "anchor": "term-exception"
+        },
+        {
+          "en": "nested",
+          "target": "중첩된",
+          "use": "ko",
+          "notes": "e.g. \"중첩된 반복문\" = nested loop.",
+          "anchor": "term-nested"
+        },
+        {
+          "en": "iteration",
+          "target": "반복",
+          "use": "ko",
+          "notes": "Ordinary word; stands alone. Verb: \"반복하다\".",
+          "anchor": "term-iteration"
+        },
+        {
+          "en": "to run / execute (code)",
+          "target": "실행하다",
+          "use": "ko",
+          "notes": "\"코드를 실행해요.\"",
+          "anchor": "term-to-run-execute"
+        },
+        {
+          "en": "loop",
+          "target": "루프",
+          "use": "ko",
+          "notes": "The general concept of repeated execution (\"무한 루프\" = infinite loop). Kept distinct from \"반복문\" below, which names the concrete statement.",
+          "anchor": "term-loop"
+        },
+        {
+          "en": "for loop",
+          "target": "for문",
+          "use": "ko",
+          "notes": "Keep `for` in backticks (the real keyword) directly followed by \"문\"; this compound is the universal Korean form, no space.",
+          "anchor": "term-for-loop"
+        },
+        {
+          "en": "while loop",
+          "target": "while문",
+          "use": "ko",
+          "notes": "As above, with `while`.",
+          "anchor": "term-while-loop"
+        },
+        {
+          "en": "for-of loop",
+          "target": "for...of문",
+          "use": "ko",
+          "notes": "As above.",
+          "anchor": "term-for-of-loop"
+        },
+        {
+          "en": "loop body",
+          "target": "반복문 본문",
+          "use": "ko",
+          "anchor": "term-loop-body"
+        },
+        {
+          "en": "break (loop control)",
+          "target": "중단하다",
+          "use": "ko",
+          "notes": "The keyword `break` itself always stays English in code; this is the prose concept of breaking out of a loop.",
+          "anchor": "term-break"
+        },
+        {
+          "en": "increment",
+          "target": "증가시키다",
+          "use": "ko",
+          "notes": "\"값을 1씩 증가시켜요.\"",
+          "anchor": "term-increment"
+        },
+        {
+          "en": "modulo / remainder operator",
+          "target": "나머지 연산자",
+          "use": "ko",
+          "notes": "The `%` operator.",
+          "anchor": "term-modulo-remainder-operator"
+        },
+        {
+          "en": "concatenation / to concatenate",
+          "target": "연결하다",
+          "use": "ko",
+          "notes": "\"문자열을 연결해요.\" (joining strings)",
+          "anchor": "term-concatenation-to-concatenate"
+        },
+        {
+          "en": "toggle",
+          "target": "전환하다",
+          "use": "ko",
+          "anchor": "term-toggle"
+        },
+        {
+          "en": "state / stateful",
+          "target": "상태",
+          "use": "ko",
+          "anchor": "term-state-stateful"
+        },
+        {
+          "en": "scope",
+          "target": "스코프",
+          "use": "ko",
+          "notes": "Loanword; dominant in Korean developer speech over the more formal-document \"범위\". Kept distinct from \"코드 블록\" (code block) above.",
+          "anchor": "term-scope"
+        },
+        {
+          "en": "class",
+          "target": "클래스",
+          "use": "ko",
+          "anchor": "term-class"
+        },
+        {
+          "en": "method",
+          "target": "메서드",
+          "use": "ko",
+          "notes": "Use \"메서드\", not the older spelling \"메소드\".",
+          "anchor": "term-method"
+        },
+        {
+          "en": "property",
+          "target": "속성",
+          "use": "ko",
+          "anchor": "term-property"
+        },
+        {
+          "en": "object",
+          "target": "객체",
+          "use": "ko",
+          "anchor": "term-object"
+        },
+        {
+          "en": "encapsulation",
+          "target": "캡슐화",
+          "use": "ko",
+          "anchor": "term-encapsulation"
+        }
+      ]
+    },
+    {
+      "title": "Tooling & engineering",
+      "level": 3,
+      "scope": "locale",
+      "intro": "",
+      "columns": {
+        "en": 0,
+        "target": 1,
+        "use": 2,
+        "notes": 3
+      },
+      "terms": [
+        {
+          "en": "workflow",
+          "target": "워크플로우",
+          "use": "ko",
+          "notes": "Loanword, standard in Korean dev writing.",
+          "anchor": "term-workflow"
+        },
+        {
+          "en": "auth (authentication / authorization)",
+          "target": "인증",
+          "use": "ko",
+          "notes": "Standard Korean term for authentication; use \"인가\" only where authorization specifically (not authentication) is the point.",
+          "anchor": "term-auth"
+        },
+        {
+          "en": "deploy",
+          "target": "배포하다",
+          "use": "ko",
+          "notes": "\"배포\" as the noun, \"배포하다\" as the verb; standard DevOps term.",
+          "anchor": "term-deploy"
+        },
+        {
+          "en": "tool / tooling",
+          "target": "도구",
+          "use": "ko",
+          "notes": "Ordinary word; stands alone.",
+          "anchor": "term-tool-tooling"
+        },
+        {
+          "en": "module",
+          "target": "모듈",
+          "use": "ko",
+          "anchor": "term-module"
+        },
+        {
+          "en": "algorithm",
+          "target": "알고리즘",
+          "use": "ko",
+          "anchor": "term-algorithm"
+        },
+        {
+          "en": "edge case",
+          "target": "엣지 케이스",
+          "use": "ko",
+          "notes": "Loanword; no established native equivalent in Korean dev writing.",
+          "anchor": "term-edge-case"
+        },
+        {
+          "en": "backwards compatibility",
+          "target": "하위 호환성",
+          "use": "ko",
+          "anchor": "term-backwards-compatibility"
+        },
+        {
+          "en": "API",
+          "target": "API",
+          "use": "en",
+          "notes": "Universally kept in raw Latin script, never transliterated (\"아피\" does not exist as a form). Where the source `<define>`s it, explain the concept in Korean for a beginner, not just gloss the acronym.",
+          "anchor": "term-api"
+        },
+        {
+          "en": "framework",
+          "target": "프레임워크",
+          "use": "ko",
+          "notes": "Loanword; the standard term (a literal \"뼈대\" gloss appears only as an explanatory aside in some sources, never as the working term).",
+          "anchor": "term-framework"
+        },
+        {
+          "en": "CLI",
+          "target": "CLI",
+          "use": "en",
+          "notes": "Kept in raw Latin script like API. Where the source `<define>`s it, gloss the concept in Korean: \"CLI (명령줄 인터페이스)\".",
+          "anchor": "term-cli"
+        },
+        {
+          "en": "component",
+          "target": "컴포넌트",
+          "use": "ko",
+          "anchor": "term-component"
+        }
+      ]
+    }
+  ],
+  "forum_topic_id": 479
+}

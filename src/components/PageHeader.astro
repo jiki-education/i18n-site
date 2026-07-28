@@ -17,7 +17,7 @@ const { title, subtitle, image, crumbs = [], titleLang, titleDir } = Astro.props
 const hasAside = Astro.slots.has("aside");
 ---
 
-<div class="article-header py-12 sm:py-15">
+<div class="article-header py-6 sm:py-7.5">
   <div class={`lg-container ${image || hasAside ? "grid items-center gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-15" : ""}`}>
     <div>
       {

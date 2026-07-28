@@ -31,11 +31,10 @@ for (const item of translations) {
 }
 ---
 
-<Layout title={`${meta.name} (${lang})`} description={`Jiki translated into ${meta.name}: ${termCount} agreed terms and ${published.length} published translations, all open for comment.`}>
-  <PageHeader title={meta.nativeName} titleLang={lang} titleDir={meta.dir} subtitle={`Jiki in ${meta.name}. Everything here is a draft, and all of it is open for comment.`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name }]}>
+<Layout title={`${meta.name} (${lang})`} description={`Jiki and Exercism translated into ${meta.name}: ${termCount} agreed terms and ${published.length} published translations, all open for comment.`}>
+  <PageHeader title={meta.nativeName} titleLang={lang} titleDir={meta.dir} subtitle={`Jiki and Exercism in ${meta.name}. Everything here is a draft, and all of it is open for comment.`} crumbs={[{ label: "Languages", href: "/" }, { label: meta.name }]}>
     <div slot="meta" class="mt-6 flex flex-wrap gap-3">
       <a href={forumCategoryUrl(lang)} class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"> Discuss on the forum </a>
-      <a href={`/${lang}/glossary`} class="rounded-lg border border-purple-400 px-4 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-800"> Read the glossary </a>
     </div>
 
     <dl slot="aside" class="space-y-3 rounded-2xl border border-purple-700 bg-purple-950/40 p-5 text-[14px]">

@@ -77,10 +77,18 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
       )
     }
 
-    <div class="mb-5 flex flex-wrap items-center justify-between gap-4">
-      <p class="text-[14px] text-gray-500">
-        Reading in {meta.name}. Tell us anything that sounds off, however small.
+    <div class="rounded-2xl border border-gray-200 bg-gray-50 p-6">
+      <h2 class="text-[19px] font-bold text-gray-900">Spotted something wrong?</h2>
+      <p class="mt-2 max-w-2xl text-[15px] text-gray-600">
+        You're reading in {meta.name}. Tell us anything that sounds off, however small. You don't need to explain why: "this sounds off" is genuinely useful. If it's a single word we've used everywhere, correct it in <a href={`/${lang}/glossary`} class="font-semibold text-blue-600 hover:text-blue-700">the glossary</a> instead, and it gets fixed everywhere at once.
       </p>
+      <div class="mt-4 flex flex-wrap items-center gap-3">
+        <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Comment on the forum </a>
+        <ReviewToggle itemId={reviewItemId(lang, type, slug)} version={content_version ?? en_md5 ?? "unknown"} />
+      </div>
+    </div>
+
+    <div class="mt-8 mb-5 flex flex-wrap items-center justify-end gap-4">
       {
         aligned && (
           <div class="inline-flex rounded-lg border border-gray-200 bg-gray-50 p-1 text-[14px] font-semibold" role="group">
@@ -106,8 +114,8 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
           <div class="divide-y divide-gray-100">
             {aligned.rows.map((row) => (
               <div class="grid gap-4 py-5 lg:grid-cols-2 lg:gap-8">
-                <div class="textual-content text-[15px] text-gray-500">{row.english ? <Fragment set:html={row.english} /> : <p class="text-[13px] italic">Nothing in the English here.</p>}</div>
-                <div class="textual-content" lang={lang} dir={meta.dir}>
+                <div class="textual-content text-[17px] text-gray-500">{row.english ? <Fragment set:html={row.english} /> : <p class="text-[13px] italic">Nothing in the English here.</p>}</div>
+                <div class="textual-content text-[18px]" lang={lang} dir={meta.dir}>
                   {row.target ? <Fragment set:html={row.target} /> : <p class="text-[13px] text-amber-700 italic">Missing from the translation.</p>}
                 </div>
               </div>
@@ -118,19 +126,8 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
     }
 
     <div data-panel="target-only" class={aligned ? "hidden" : ""}>
-      <div class="textual-content md-container !px-0" lang={lang} dir={meta.dir}>
+      <div class="textual-content md-container !px-0 text-[18px]" lang={lang} dir={meta.dir}>
         {targetOnly.map((html) => <Fragment set:html={html} />)}
-      </div>
-    </div>
-
-    <div class="mt-12 rounded-2xl border border-gray-200 bg-gray-50 p-6">
-      <h2 class="text-[19px] font-bold text-gray-900">Spotted something wrong?</h2>
-      <p class="mt-2 max-w-2xl text-[15px] text-gray-600">
-        You don't need to explain why. "This sounds off" is genuinely useful. If it's a single word we've used everywhere, correct it in <a href={`/${lang}/glossary`} class="font-semibold text-blue-600 hover:text-blue-700">the glossary</a> instead, and it gets fixed everywhere at once.
-      </p>
-      <div class="mt-4 flex flex-wrap items-center gap-3">
-        <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Comment on the forum </a>
-        <ReviewToggle itemId={reviewItemId(lang, type, slug)} version={content_version ?? en_md5 ?? "unknown"} />
       </div>
     </div>
   </div>

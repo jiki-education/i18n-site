@@ -18,6 +18,7 @@
  * exactly why they are worth putting in front of the Translatathon.
  */
 import localeData from "../../vendor/videojs/locales.json";
+import source from "../../vendor/videojs/SOURCE.json";
 
 /** Video.js's locale tags, lower-cased, mapped to their original casing. */
 const AVAILABLE = new Map<string, string>(Object.keys(localeData.locales).map((tag) => [tag.toLowerCase(), tag]));
@@ -76,4 +77,17 @@ export function playerLocale(lang: string): PlayerLocale {
 /** Every locale Video.js v10 ships, for the "what's covered" summary. */
 export function availableLocales(): string[] {
   return Object.keys(localeData.locales);
+}
+
+/**
+ * The version a reader's "reviewed" mark is keyed on for the player.
+ *
+ * Built from the pinned v10 commit and the locale this page resolves to, so
+ * rebuilding against a newer v10 sends every player page back to unreviewed.
+ * That is the behaviour we want: v10 is beta and its locale packs are new, so a
+ * bump can change the very strings someone signed off. The locale tag is in there
+ * too, so a page that starts resolving to a different pack also resets.
+ */
+export function playerReviewVersion(lang: string): string {
+  return `videojs-${source.commit.slice(0, 12)}-${playerLocale(lang).tag}`;
 }

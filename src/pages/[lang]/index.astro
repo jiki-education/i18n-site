@@ -6,6 +6,7 @@ import PageHeader from "../../components/PageHeader.astro";
 import ReviewBadge from "../../components/ReviewBadge.astro";
 import { contentTypeLabel, forumCategoryUrl, languageMeta } from "../../lib/languages";
 import { reviewItemId } from "../../lib/reviewed";
+import { playerReviewVersion } from "../../lib/videojs";
 
 export const getStaticPaths = (async () => {
   const glossaries = await getCollection("glossaries");
@@ -89,9 +90,7 @@ for (const item of translations) {
                   <span class="block font-semibold text-gray-900">Video player</span>
                   <span class="mt-0.5 block text-[13px] text-gray-500">The controls and captions wrapped around every video</span>
                 </span>
-                <span class="shrink-0 rounded-full bg-gray-100 px-2.5 py-1 text-[12px] font-semibold text-gray-500" lang={lang} dir={meta.dir}>
-                  {meta.comingSoon}
-                </span>
+                <ReviewBadge itemId={reviewItemId(lang, "video-player")} version={playerReviewVersion(lang)} />
               </a>
             </li>
           </ul>

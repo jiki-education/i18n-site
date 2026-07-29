@@ -7,7 +7,7 @@ import ReviewToggle from "../../components/ReviewToggle.astro";
 import VideoPlayer from "../../components/VideoPlayer.astro";
 import { forumCategoryUrl, languageMeta } from "../../lib/languages";
 import { reviewItemId } from "../../lib/reviewed";
-import { playerLocale } from "../../lib/videojs";
+import { playerLocale, playerReviewVersion } from "../../lib/videojs";
 
 export const getStaticPaths = (async () => {
   const glossaries = await getCollection("glossaries");
@@ -30,7 +30,7 @@ const VIDEOJS_ISSUES_URL = "https://github.com/videojs/v10/issues";
 // the locale pack the player will load. Taking a newer Video.js that changes which
 // pack this page resolves to sends everyone back to unreviewed, which is exactly
 // when another look is worth asking for.
-const version = `videojs-v10-${locale.tag}-${locale.translatedCount}`;
+const version = playerReviewVersion(lang);
 ---
 
 <Layout title={`${meta.name} video player`} description={`The Jiki video player in ${meta.name}: its controls, its menus and its tooltips, open for comment.`}>

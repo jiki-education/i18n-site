@@ -89,8 +89,13 @@ front of the public within a couple of minutes, and the audience is a live commu
 actively invited to read it. Treat a push as the outward-facing action it is:
 
 - **Commit freely, push on request.** Committing locally costs nothing and is always fine.
-  Pushing needs the operator to have asked for it, or to have given standing permission for
-  the session. Approval to push once is not approval to push for the rest of the day.
+  Pushing needs the operator to have asked for it. Approval to push once is not approval to
+  push for the rest of the day.
+- **One standing exception:** a translation or glossary pass run from the `translator` repo
+  pushes its own staged output as the last step of the pass, without asking. Publishing is
+  what makes a translation reviewable, so withholding it defeats the point. Only the
+  top-level pass pushes, once, after a clean build; its fanned-out workers stage and never
+  touch git. See "Publishing to the review site" in `translator/global/workflow.md`.
 - **Build before pushing.** `pnpm build` must be clean. A broken build means the previous
   deploy stays live, so the failure is quiet: the site simply stops updating.
 - **Work on `main`.** No feature branches; this is a two-week disposable site and branches

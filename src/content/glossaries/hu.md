@@ -2,7 +2,7 @@
 lang: "hu"
 name: "Hungarian"
 family: null
-governance_sha: "bb77cbf"
+governance_sha: "b05a910"
 content_version: "7c084172c5ce"
 published_at: "2026-07-30"
 term_count: 146

@@ -2,8 +2,8 @@
 lang: "hu"
 name: "Hungarian"
 family: null
-governance_sha: "a14ad4c"
-content_version: "754f110da9bb"
+governance_sha: "435fd77"
+content_version: "df710e91a2dd"
 published_at: "2026-07-30"
 term_count: 146
 forum_topic_id: 289
@@ -247,21 +247,13 @@ is pure cost.
 The file is append-only and newest first. Never edit or delete an existing entry; to revise
 a decision, add a new entry above that says so.
 
+**Only decisions about the language belong here.** Every entry must be something a future
+translator needs in order to use a term correctly or to judge whether it may change one.
+Changes to how this repo works, to file formats, or to tooling are not decisions about
+Hungarian, and are noise to everyone who reads this later. They belong in the commit that
+made them.
+
 ---
-
-## 2026-07-30: Provenance moves from a column into this file
-
-**Decided by:** owner (iHiD). **Terms affected:** none.
-
-The `Agreed by` column added earlier today is removed from every table. It was the wrong
-shape for what it was trying to do: about 2,400 cells across all languages, of which five
-said anything other than `agent`, and one cell can hold a value but not a reason. Its only
-structured consumer was the `publish-glossary` parser, which was deleted the same afternoon
-(glossaries now publish as Markdown, verbatim). A translation pass loads `glossary.md` on
-every run and does not care who agreed a term; it needs the term.
-
-This file replaces it, and carries far more than a cell could: what changed, why, who, and
-where. Rules 1 and 2 above are what the column was reaching for.
 
 ## 2026-07-30: Owner decisions from the 28-language using-functions pass
 

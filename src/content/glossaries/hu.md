@@ -2,8 +2,8 @@
 lang: "hu"
 name: "Hungarian"
 family: null
-governance_sha: "a258cf8"
-content_version: "557cbc681833"
+governance_sha: "79710a7"
+content_version: "5618090e14e7"
 published_at: "2026-07-30"
 term_count: 146
 forum_topic_id: 289
@@ -322,5 +322,3 @@ renderings:
   rows now say so instead of looking like a collision.
 - `interpreter`, `string template` and `course / track` had empty notes, so nothing
   recorded why they were chosen or what they cover.
-
-**Nothing above has been checked by a Hungarian speaker.**

@@ -2,8 +2,8 @@
 lang: "pl"
 name: "Polish"
 family: null
-governance_sha: "1d91ad4"
-content_version: "278ec63178c0"
+governance_sha: "bb77cbf"
+content_version: "5575af08cc43"
 published_at: "2026-07-30"
 term_count: 100
 forum_topic_id: 417
@@ -11,24 +11,19 @@ forum_topic_id: 417
 
 # Polish (pl) glossary
 
-The agreed term list for Polish. Every term here has been agreed and is binding: use it exactly, with no synonyms and no mixing within a document.
-
-## How this file changes
-
-Nothing is written here without prior agreement. A translation pass never edits this file; it surfaces new terms it had to decide on as proposals in its output (a "glossary delta"). Those proposals are discussed, and only once agreed are they written in (by a human or by Claude). So everything in this file is, by definition, already agreed. Terms that have not been agreed simply are not here yet.
-
-Writes are **additive**: rows get appended, an `agent` row may be corrected (with the old value reported), and a `human` row is never changed unilaterally. The `Agreed by` column records who decided each row, per "The provenance column" in `global/workflow.md`.
+The agreed term list for Polish. Why each term was chosen, and who chose it, is in the
+decision log (`glossary-notes.md`).
 
 ## Core decisions
 
-| English | Polish | Use (pl/en) | Notes | Agreed by |
-|---------|--------|----------|-------|-----------|
-| programming | programowanie | pl | Default, neutral term. Use consistently. | agent |
-| coding (informal) | kodowanie | pl | Use only when the source specifically stresses the casual, hands-on act of writing code. Never mix both in one document. | agent |
-| tech / tech industry | branża IT | pl | Standard in Polish tech writing. | agent |
-| developer | programista | pl | Standard, gender-neutral-reading term. Do not use `deweloper`, which in general Polish usage means a real-estate developer. | agent |
-| streak | seria | pl | Confirmed via Duolingo's own Polish product terminology (a comparable gamified daily-habit-learning product). | agent |
-| pitfall | pułapka | pl | Ordinary, idiomatic word; used this way in Polish IT writing. | agent |
+| English | Polish | Use (pl/en) | Notes |
+|---------|--------|----------|-------|
+| programming | programowanie | pl | Use consistently. |
+| coding (informal) | kodowanie | pl | Use only when the source specifically stresses the casual, hands-on act of writing code. Never mix both in one document. |
+| tech / tech industry | branża IT | pl | |
+| developer | programista | pl | Do not use `deweloper`, which in general Polish usage means a real-estate developer. |
+| streak | seria | pl | |
+| pitfall | pułapka | pl | |
 
 ## Localize (use the Polish term)
 
@@ -36,118 +31,116 @@ These are terms where the Polish is used in prose, so the "Use (pl/en)" column i
 
 ### Values & data types
 
-| English | Polish | Use (pl/en) | Notes | Agreed by |
-|---------|--------|----------|-------|-----------|
-| value | wartość | pl | Ordinary word. | agent |
-| number | liczba | pl | Ordinary word. | agent |
-| integer | liczba całkowita | pl | The keyword `int` in code stays English. | agent |
-| float / decimal | liczba zmiennoprzecinkowa | pl | The keywords `float`/`double` in code stay English. | agent |
-| character | znak | pl | The keyword `char` in code stays English. | agent |
-| true / false | prawda / fałsz | pl | Not capitalised in prose. The keywords `true`/`false` in code stay English. | agent |
-| array / list | tablica | pl | The unrivalled Polish CS term; do not use `łańcuch` for this. Because it owns _tablica_, no metaphor term may use that word (see the board row under "Jiki physical metaphors"). | agent |
-| dictionary | słownik | pl | | agent |
-| element | element | pl | Direct cognate. | agent |
-| index | indeks | pl | Direct cognate. | agent |
-| string | ciąg znaków | pl | Deliberately not `łańcuch`, to keep it distinct from the "chain" array metaphor below. | agent |
-| data type | typ danych | pl | The general concept. | agent |
+| English | Polish | Use (pl/en) | Notes |
+|---------|--------|----------|-------|
+| value | wartość | pl | |
+| number | liczba | pl | |
+| integer | liczba całkowita | pl | The keyword `int` in code stays English. |
+| float / decimal | liczba zmiennoprzecinkowa | pl | The keywords `float`/`double` in code stay English. |
+| character | znak | pl | The keyword `char` in code stays English. |
+| true / false | prawda / fałsz | pl | Not capitalised in prose. The keywords `true`/`false` in code stay English. |
+| array / list | tablica | pl | Do not use `łańcuch` for this. Because it owns _tablica_, no metaphor term may use that word (see the board row under "Jiki physical metaphors"). |
+| dictionary | słownik | pl | |
+| element | element | pl | |
+| index | indeks | pl | |
+| string | ciąg znaków | pl | Deliberately not `łańcuch`, to keep it distinct from the "chain" array metaphor below. |
+| data type | typ danych | pl | The general concept. |
 
 ### Functions & control flow
 
-| English | Polish | Use (pl/en) | Notes | Agreed by |
-|---------|--------|----------|-------|-----------|
-| if statement | instrukcja warunkowa | pl | The keyword `if` stays English in code. | agent |
-| condition | warunek | pl | Ordinary word; stands alone. | agent |
-| comparison | porównanie | pl | Ordinary word; stands alone. | agent |
-| expression | wyrażenie | pl | Distinct from _instrukcja_ (a statement); an expression always evaluates to a value. | agent |
-| operator | operator | pl | Direct cognate. | agent |
-| statement (executable) | instrukcja | pl | The imperative sense: a line of code that does something and gets executed. Keep distinct from _wyrażenie_ (expression) and from the logical-claim sense below. Same word as the "instruction given to Jiki" row below, which is the same everyday noun. | agent |
-| statement (logical claim) | zdanie / zdanie logiczne | pl | The proposition sense: a claim that is true or false. Pick by meaning, not by the English word; never conflate with _instrukcja_. | agent |
-| function | funkcja | pl | The keyword `function` in code stays English; the concept in prose is _funkcja_. | agent |
-| to call (a function) | wywoływać / wywołać | pl | | agent |
-| to define (a function) | definiować / zdefiniować | pl | | agent |
-| parameter | parametr | pl | The declaration-site name. Keep distinct from _argument_ even though Polish developers sometimes conflate the two informally; Jiki's own writing keeps the textbook-correct distinction. | agent |
-| argument | argument | pl | The call-site value. See note on _parametr_ above. | agent |
-| input (to a function) | dane wejściowe | pl | | agent |
-| output | dane wyjściowe | pl | Where the specific value returned is meant, use _wynik_ or _wartość zwracana_ (see below) instead. | agent |
-| to return (a value) | zwracać / zwrócić | pl | The verb; keep distinct from the noun below. | agent |
-| return value | wartość zwracana | pl | The noun; fixed standard phrase. | agent |
-| brackets (the two after a function name) | nawiasy | pl | The `()` pair written after a function name to call it: _te dwa nawiasy_. Plain _nawiasy_ is enough here, because the round pair is the default; name the type only when disambiguating (see "Brackets" below). | agent |
-| pure function | funkcja czysta | pl | | agent |
+| English | Polish | Use (pl/en) | Notes |
+|---------|--------|----------|-------|
+| if statement | instrukcja warunkowa | pl | The keyword `if` stays English in code. |
+| condition | warunek | pl | Stands alone; no gloss needed. |
+| comparison | porównanie | pl | Stands alone; no gloss needed. |
+| expression | wyrażenie | pl | Distinct from _instrukcja_ (a statement); an expression always evaluates to a value. |
+| operator | operator | pl | |
+| statement (executable) | instrukcja | pl | The imperative sense: a line of code that does something and gets executed. Keep distinct from _wyrażenie_ (expression) and from the logical-claim sense below. Same word as the "instruction given to Jiki" row below. |
+| statement (logical claim) | zdanie / zdanie logiczne | pl | The proposition sense: a claim that is true or false. Pick by meaning, not by the English word; never conflate with _instrukcja_. |
+| function | funkcja | pl | The keyword `function` in code stays English; the concept in prose is _funkcja_. |
+| to call (a function) | wywoływać / wywołać | pl | |
+| to define (a function) | definiować / zdefiniować | pl | |
+| parameter | parametr | pl | The declaration-site name. Keep distinct from _argument_ even though Polish developers sometimes conflate the two informally. |
+| argument | argument | pl | The call-site value. See note on _parametr_ above. |
+| input (to a function) | dane wejściowe | pl | |
+| output | dane wyjściowe | pl | Where the specific value returned is meant, use _wynik_ or _wartość zwracana_ (see below) instead. |
+| to return (a value) | zwracać / zwrócić | pl | The verb; keep distinct from the noun below. |
+| return value | wartość zwracana | pl | The noun; fixed standard phrase. |
+| brackets (the two after a function name) | nawiasy | pl | The `()` pair written after a function name to call it: _te dwa nawiasy_. Plain _nawiasy_ is enough here, because the round pair is the default; name the type only when disambiguating (see "Brackets" below). |
+| pure function | funkcja czysta | pl | |
 
 ### Loops, state & program flow
 
-| English | Polish | Use (pl/en) | Notes | Agreed by |
-|---------|--------|----------|-------|-----------|
-| keyword | słowo kluczowe | pl | | agent |
-| interpreter | interpreter | pl | "The one who interprets", a person doing a job: on concept pages Jiki *is* the interpreter. _interpreter_ is the ordinary word in Polish dev writing and is an `-er` agent noun, so it can name a person; never substitute a program-only paraphrase such as _program interpretujący_. Polish-spelled loanword, so it declines normally: _interpretera_, _interpreterem_, _interpreterowi_. Same-script loanword, so it takes no bracketed English gloss (see `guide.md`). | agent |
-| instruction (given to Jiki) | instrukcja | pl | The everyday noun, the same word as "statement (executable)" above: an instruction the learner gives Jiki. Not a formal/legal-register word such as _polecenie służbowe_ or _zarządzenie_. Plural _instrukcje_. | agent |
-| mental model | model mentalny | pl | The standard Polish rendering, used in Polish psychology and UX writing; keep it, do not paraphrase as _wyobrażenie_. | agent |
-| (programming) language | język (programowania) | pl | Ordinary Polish word, known to every beginner; never the English borrowing. Use full _język programowania_ where the source names the category, plain _język_ for the "a language a computer understands" framing. | agent |
-| variable | zmienna | pl | | agent |
-| assignment | przypisanie | pl | The noun; keep distinct from the verb below. | agent |
-| to assign | przypisać / przypisywać | pl | The verb. | agent |
-| code block | blok kodu | pl | Keep distinct from _zakres_ (scope) below; they are related but not the same thing. | agent |
-| scope | zakres | pl | Keep distinct from _blok kodu_ (code block); a block establishes a scope, it is not the same as one. | agent |
-| error | błąd | pl | General error. Keep distinct from _wyjątek_ (exception) below. | agent |
-| exception | wyjątek | pl | The specific catchable-error-object sense, distinct from _błąd_ (a general error). | agent |
-| nested | zagnieżdżony / zagnieżdżona / zagnieżdżone | pl | Agrees in gender/number with the noun it modifies, e.g. _zagnieżdżona pętla_ = nested loop. | agent |
-| iteration | iteracja | pl | | agent |
-| to run / execute (code) | uruchomić / uruchamiać | pl | Use for launching a program. | agent |
-| element | zob. "Values & data types" | pl | | agent |
-| loop | pętla | pl | | agent |
-| for loop | pętla `for` | pl | Keep `for` in backticks (real keyword) + _pętla_. | agent |
-| while loop | pętla `while` | pl | As above. | agent |
-| for-of loop | pętla `for...of` | pl | As above; no independent Polish name exists for this construct. | agent |
-| loop body | ciało pętli | pl | | agent |
+| English | Polish | Use (pl/en) | Notes |
+|---------|--------|----------|-------|
+| keyword | słowo kluczowe | pl | |
+| interpreter | interpreter | pl | "The one who interprets", a person doing a job: on concept pages Jiki *is* the interpreter. Never substitute a program-only paraphrase such as _program interpretujący_. Polish-spelled loanword, so it declines normally: _interpretera_, _interpreterem_, _interpreterowi_. Same-script loanword, so it takes no bracketed English gloss (see `guide.md`). |
+| instruction (given to Jiki) | instrukcja | pl | The everyday noun: an instruction the learner gives Jiki. Not a formal/legal-register word such as _polecenie służbowe_ or _zarządzenie_. Plural _instrukcje_. Same word as "statement (executable)" above. |
+| mental model | model mentalny | pl | Keep it; do not paraphrase as _wyobrażenie_. |
+| (programming) language | język (programowania) | pl | Never the English borrowing. Use full _język programowania_ where the source names the category, plain _język_ for the "a language a computer understands" framing. |
+| variable | zmienna | pl | |
+| assignment | przypisanie | pl | The noun; keep distinct from the verb below. |
+| to assign | przypisać / przypisywać | pl | The verb. |
+| code block | blok kodu | pl | Keep distinct from _zakres_ (scope) below; they are related but not the same thing. |
+| scope | zakres | pl | Keep distinct from _blok kodu_ (code block); a block establishes a scope, it is not the same as one. |
+| error | błąd | pl | General error. Keep distinct from _wyjątek_ (exception) below. |
+| exception | wyjątek | pl | The specific catchable-error-object sense, distinct from _błąd_ (a general error). |
+| nested | zagnieżdżony / zagnieżdżona / zagnieżdżone | pl | Agrees in gender/number with the noun it modifies, e.g. _zagnieżdżona pętla_ = nested loop. |
+| iteration | iteracja | pl | |
+| to run / execute (code) | uruchomić / uruchamiać | pl | Use for launching a program. |
+| element | zob. "Values & data types" | pl | |
+| loop | pętla | pl | |
+| for loop | pętla `for` | pl | Keep `for` in backticks (real keyword) + _pętla_. |
+| while loop | pętla `while` | pl | As above. |
+| for-of loop | pętla `for...of` | pl | As above. |
+| loop body | ciało pętli | pl | |
 
 ### Tooling & engineering
 
-| English | Polish | Use (pl/en) | Notes | Agreed by |
-|---------|--------|----------|-------|-----------|
-| increment | inkrementacja (noun) / inkrementować (verb) | pl | | agent |
-| modulo / remainder operator | modulo | pl | The `%` operator; _modulo_ is a normal loanword in Polish too, not a code-switch. The result itself, in plain language, is _reszta z dzielenia_. | agent |
-| concatenation | konkatenacja (noun) / konkatenować, łączyć (verb) | pl | Plain alternative: _łączenie ciągów znaków_. | agent |
-| toggle | przełączać / przełączenie (verb/noun), przełącznik (control) | pl | Matches current Microsoft Polish UI terminology. | agent |
-| state / stateful | stan (noun) / stanowy, bezstanowy (adjective) | pl | | agent |
-| class | klasa | pl | Direct cognate. | agent |
-| method | metoda | pl | Direct cognate. | agent |
-| property | właściwość | pl | Use _pole_ or _atrybut_ instead for a raw Java field, if that distinction matters in context. | agent |
-| object | obiekt | pl | Direct cognate. | agent |
-| encapsulation | hermetyzacja | pl | The word Polish teaching material and Polish Wikipedia actually use for the OOP concept; _enkapsulacja_ is also current but less common outside direct translations. | agent |
-| workflow | *(kept English)* | en | See "Keep in English" below. | agent |
-| auth (authentication / authorization) | uwierzytelnianie (authentication) / autoryzacja (authorization) | pl | Pick by meaning; the two concepts render differently in Polish. | agent |
-| deploy (verb: to deploy) | wdrożyć / wdrożenie, wdrażanie | pl | | agent |
-| tool / tooling | narzędzie / narzędzia | pl | "Tooling" as an abstract collective renders descriptively (e.g. _ekosystem narzędzi_) rather than as one fixed word. | agent |
-| module | moduł | pl | Direct cognate. | agent |
-| algorithm | algorytm | pl | Direct cognate. | agent |
-| edge case | przypadek brzegowy | pl | | agent |
-| backwards compatibility | kompatybilność wsteczna | pl | | agent |
-| component | komponent | pl | Naturalised spelling, used consistently in general software writing and in frontend/React contexts. | agent |
+| English | Polish | Use (pl/en) | Notes |
+|---------|--------|----------|-------|
+| increment | inkrementacja (noun) / inkrementować (verb) | pl | |
+| modulo / remainder operator | modulo | pl | The `%` operator. The result itself, in plain language, is _reszta z dzielenia_. |
+| concatenation | konkatenacja (noun) / konkatenować, łączyć (verb) | pl | Plain alternative: _łączenie ciągów znaków_. |
+| toggle | przełączać / przełączenie (verb/noun), przełącznik (control) | pl | |
+| state / stateful | stan (noun) / stanowy, bezstanowy (adjective) | pl | |
+| class | klasa | pl | |
+| method | metoda | pl | |
+| property | właściwość | pl | Use _pole_ or _atrybut_ instead for a raw Java field, if that distinction matters in context. |
+| object | obiekt | pl | |
+| encapsulation | hermetyzacja | pl | |
+| workflow | *(kept English)* | en | See "Keep in English" below. |
+| auth (authentication / authorization) | uwierzytelnianie (authentication) / autoryzacja (authorization) | pl | Pick by meaning; the two concepts render differently in Polish. |
+| deploy (verb: to deploy) | wdrożyć / wdrożenie, wdrażanie | pl | |
+| tool / tooling | narzędzie / narzędzia | pl | "Tooling" as an abstract collective renders descriptively (e.g. _ekosystem narzędzi_) rather than as one fixed word. |
+| module | moduł | pl | |
+| algorithm | algorytm | pl | |
+| edge case | przypadek brzegowy | pl | |
+| backwards compatibility | kompatybilność wsteczna | pl | |
+| component | komponent | pl | |
 
 ### Platform & curriculum
 
-| English | Polish | Use (pl/en) | Notes | Agreed by |
-|---------|--------|----------|-------|-----------|
-| course | kurs | pl | The whole Jiki course the learner is taking. Keep distinct from _lekcja_ (lesson) and _program nauczania_ (curriculum). | agent |
+| English | Polish | Use (pl/en) | Notes |
+|---------|--------|----------|-------|
+| course | kurs | pl | The whole Jiki course the learner is taking. Keep distinct from _lekcja_ (lesson) and _program nauczania_ (curriculum). |
 
 ## Keep in English
 
-These stay in English in prose. Where the source `<define>`s one of these terms, use the
-Polish gloss column below (per the format in `global/voice.md`); with no `<define>`, use the
-English bare, with no gloss.
+These stay in English in Polish prose, with the Polish gloss to use for each.
 
-| Term | Polish gloss (on `<define>`) | Notes | Agreed by |
-|------|-------------------------------|-------|-----------|
-| framework | _framework_ has no established Polish equivalent; used as-is | No gloss needed beyond noting it is a framework/library ecosystem if the context doesn't make it obvious. | agent |
-| API | _interfejs programowania aplikacji_ | Not a term a beginner knows; where the source `<define>`s it, explain the concept in Polish, not just gloss the acronym. | agent |
-| workflow | _przebieg pracy_ (descriptive gloss only, not a fixed term) | Confirmed by Poland's own language authority (PWN) as having no settled Polish rendering for the dev/CI-CD sense; used as-is after a one-time descriptive gloss. | agent |
-| CLI (naming a specific tool) | _interfejs wiersza poleceń_ | When explaining the general concept, translate fully as _interfejs wiersza poleceń_ / _wiersz poleceń_; when naming a specific tool (e.g. "the Jiki CLI"), keep _CLI_. | agent |
-| JavaScript, Python, React | (no gloss) | Product/language names. | agent |
-| Debug, Test | (no gloss) | As keywords/technical tokens. | agent |
-| Code, Bug, Frontend, Backend | (no gloss) | | agent |
-| Variable and function names | (no gloss) | Never translated. | agent |
-| CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. | agent |
-| Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. | agent |
+| Term | Polish gloss (on `<define>`) | Notes |
+|------|-------------------------------|-------|
+| framework | _framework_ has no established Polish equivalent; used as-is | No gloss needed beyond noting it is a framework/library ecosystem if the context doesn't make it obvious. |
+| API | _interfejs programowania aplikacji_ | Where the source `<define>`s it, explain the concept in Polish, not just gloss the acronym. |
+| workflow | _przebieg pracy_ (descriptive gloss only, not a fixed term) | Used as-is after a one-time descriptive gloss. |
+| CLI (naming a specific tool) | _interfejs wiersza poleceń_ | When explaining the general concept, translate fully as _interfejs wiersza poleceń_ / _wiersz poleceń_; when naming a specific tool (e.g. "the Jiki CLI"), keep _CLI_. |
+| JavaScript, Python, React | (no gloss) | Product/language names. |
+| Debug, Test | (no gloss) | As keywords/technical tokens. |
+| Code, Bug, Frontend, Backend | (no gloss) | |
+| Variable and function names | (no gloss) | Never translated. |
+| CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. |
+| Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
 
 Naturalised loanwords that are spelled and declined as Polish words (_interpreter_,
 _komponent_, _moduł_, _operator_) are **not** in this table: they are Polish rows above, and
@@ -157,25 +150,153 @@ they take no English gloss because the gloss would restate the same word (see `g
 
 Load-bearing teaching terms. Use exactly the agreed rendering; never substitute dry technical language.
 
-| English metaphor | Polish rendering | Notes | Agreed by |
-|-------------------|-------------------|-------|-----------|
-| box (value container) | pudełko | Plain Polish word for "box"; direct and concrete. Neuter. | agent |
-| chain (array metaphor) | łańcuch | Where the source `<define>`s it, pair it with _tablica_ (the technical term for array), e.g. „tablica działa jak łańcuch (`tablica`)", so it doesn't get read as a synonym for _ciąg znaków_ (string), which some informal Polish programming material loosely calls "a chain of characters". Masculine. | agent |
-| machine (function metaphor) | maszyna | Feminine. | agent |
-| input slot | otwór wejściowy | No established Polish pedagogical precedent for this compound; a considered coinage, never validated by a native speaker. Flag for native-speaker review via `/action-forum-post`. | agent |
-| return chute | zsyp zwrotny | _zsyp_ (a chute an object drops through, e.g. a laundry/garbage chute) fits a returned value better than _zjeżdżalnia_ (a slide, which implies a person riding it). Coinage, never validated by a native speaker; flag for review. | agent |
-| shelves (storage) | półki | Feminine. | agent |
-| crank (machine crank) | korba | Ordinary Polish word for a hand crank. Feminine. The action is _zakręcić korbą_ (perfective, one-off). | agent |
-| warehouse (Jiki's warehouse) | magazyn | Ordinary word for a storeroom/warehouse; the shelves stand in it. Masculine. | agent |
-| board / whiteboard | notatnik | **One object, one word**, for both the board the learner puts instructions on and the board a function keeps its own instructions and notes on. Not _tablica_, the literal word for a board: _tablica_ is the agreed term for _array_, and reusing it would collide directly. _notatnik_ keeps the concrete "surface you write instructions on that someone else then reads" image without that collision. Masculine. Do not reuse _notatnik_ for the dictionary spiral-notepad metaphor; that needs its own distinct rendering. | agent |
+| English metaphor | Polish rendering | Notes |
+|-------------------|-------------------|-------|
+| box (value container) | pudełko | Neuter. |
+| chain (array metaphor) | łańcuch | Where the source `<define>`s it, pair it with _tablica_ (the technical term for array), e.g. „tablica działa jak łańcuch (`tablica`)", so it doesn't get read as a synonym for _ciąg znaków_ (string), which some informal Polish programming material loosely calls "a chain of characters". Masculine. |
+| machine (function metaphor) | maszyna | Feminine. |
+| input slot | otwór wejściowy | Considered coinage, never validated by a native speaker. Flag for native-speaker review via `/action-forum-post`. |
+| return chute | zsyp zwrotny | Coinage, never validated by a native speaker. Flag for native-speaker review. |
+| shelves (storage) | półki | Feminine. |
+| crank (machine crank) | korba | Feminine. The action is _zakręcić korbą_ (perfective, one-off). |
+| warehouse (Jiki's warehouse) | magazyn | Masculine. |
+| board / whiteboard | notatnik | **One object, one word**: the board the learner writes instructions on for Jiki, and the board a function keeps its own instructions and notes on, are the same word. Masculine. Do not reuse `notatnik` for the future dictionary spiral-notepad metaphor. See `glossary-notes.md` for why `tablica` was rejected. |
 
 ## Brackets
 
 Default to plain **nawias**. When a specific bracket type matters, name it and show the glyph in a code tag immediately after: _nawias kwadratowy (`[]`)_.
 
-| Glyph | Polish | Notes | Agreed by |
-|-------|--------|-------|-----------|
-| `()` | nawias · nawias okrągły | Plain _nawias_ by default; add _okrągły_ + glyph only when disambiguating. | agent |
-| `[]` | nawias kwadratowy | | agent |
-| `{}` | nawias klamrowy | | agent |
-| `<>` | nawias ostrokątny (or _nawias trójkątny_) | | agent |
+| Glyph | Polish | Notes |
+|-------|--------|-------|
+| `()` | nawias · nawias okrągły | Plain _nawias_ by default; add _okrągły_ + glyph only when disambiguating. |
+| `[]` | nawias kwadratowy | |
+| `{}` | nawias klamrowy | |
+| `<>` | nawias ostrokątny (or _nawias trójkątny_) | |
+
+---
+
+## Decision log
+
+### 2026-07-30: Owner decisions from the 28-language using-functions pass
+
+**Decided by:** owner (iHiD), from the results of the concept-page pass across all 28
+languages. Commit `1d91ad4`, following `946293c`.
+**Terms affected:** `board / whiteboard`, `interpreter`, and, as a principle, every row.
+
+Two decisions came out of that pass that bind Polish, plus a general principle:
+
+- **`board / whiteboard` is one object, so one word.** The board the learner writes
+  instructions on for Jiki to follow, and the board a function keeps its own instructions
+  and notes on, are the same visual metaphor. **Polish is the hardest case of all 28**: it
+  has exactly one everyday word for a physical writing board, `tablica`, and `tablica` is
+  already the agreed term for `array`. Rather than collide the two, the merged term took
+  **`notatnik`** instead, which keeps the "surface you write instructions on that someone
+  else then reads and follows" idea, at the cost of losing the board image itself.
+  Recorded honestly: a native speaker reviewing this may well prefer to accept the
+  collision and use `tablica` for both senses, letting context disambiguate, over losing
+  the board picture. That question is open and should go to a native speaker via
+  `/action-forum-post`. Whichever way it resolves, the future dictionary spiral-notepad
+  metaphor must not reuse `notatnik`, since this decision has already spent it on the
+  board/whiteboard sense.
+- **`interpreter` means the one who interprets, a person doing a job, not a program.** On
+  concept pages Jiki *is* the interpreter, so the word has to be able to name a character.
+  Polish did not change rendering: the loanword `interpreter` was kept, because it is an
+  `-er` agent noun that Polish developer writing genuinely uses for a person, unlike a
+  program-only paraphrase such as `program interpretujący`. What changed is that the row
+  now says so, and rules that paraphrase out explicitly.
+- **Default to the ordinary, common word**, whatever its etymology (now in
+  `global/voice.md`). Where a language's own developer writing uses the English word, the
+  English word is the ordinary word and the right choice; where it does not, the native
+  word is. The test is what the reader already says, never where the word came from. This
+  is what keeps `interpreter` as a loanword above while other terms stay native Polish.
+
+### 2026-07-30: Agent's own drafting in the same pass
+
+**Decided by:** agent, in the same pass. **Status: unconfirmed drafts**, except where the
+entry above governs.
+
+**Rows added**, for the terms the using-functions concept page needed: `instruction (given
+to Jiki)`, `mental model`, `(programming) language`, `brackets (the two after a function
+name)`, `course` (a new "Platform & curriculum" section), and the metaphor rows `crank` and
+`warehouse`.
+
+**One rendering corrected.** `encapsulation` changed from `enkapsulacja` to
+**`hermetyzacja`**. The old row justified `enkapsulacja` only by consistency with how other
+cognate CS loanwords are handled in this glossary, not by what Polish teaching material
+actually says. `hermetyzacja` is the word Polish teaching material and Polish Wikipedia
+actually use for the OOP concept; `enkapsulacja` is also current but less common outside
+direct translations.
+
+**Two coinages remain open questions, never validated by a native speaker**: `otwór
+wejściowy` (input slot) and `zsyp zwrotny` (return chute). Both are flagged in the glossary
+for native-speaker review via `/action-forum-post`; neither has been confirmed.
+
+### Term rationale
+
+Why individual rows read the way they do, for the reasoning that is not a dated decision
+above. Ordered by the glossary's own sections, not by date, because most of it dates from
+the language bootstrap rather than from any one decision. A term whose reasoning is already
+covered by a dated entry above (`board / whiteboard`, `interpreter`, `encapsulation`) is not
+repeated here.
+
+#### Core decisions
+
+| Term | Why |
+|------|-----|
+| programming | The default, neutral term for programming. |
+| tech / tech industry | Standard term in Polish tech writing. |
+| developer | Standard, gender-neutral-reading term. |
+| streak | Confirmed via Duolingo's own Polish product terminology, a comparable gamified daily-habit-learning product. |
+| pitfall | Ordinary, idiomatic word; used this way in Polish IT writing. |
+
+#### Values & data types
+
+| Term | Why |
+|------|-----|
+| value, number | Ordinary words. |
+| array / list | The unrivalled Polish CS term for array. |
+| element, index | Direct cognates. |
+
+#### Functions & control flow
+
+| Term | Why |
+|------|-----|
+| condition, comparison | Ordinary words, so they stand alone. |
+| operator | Direct cognate. |
+| statement (executable) | `instrukcja` is the standard Polish CS term for an executable statement. |
+| parameter | Jiki's own writing keeps the textbook-correct distinction between parameter and argument, even though Polish developers sometimes conflate the two informally. |
+
+#### Loops, state & program flow
+
+| Term | Why |
+|------|-----|
+| instruction (given to Jiki) | Polish has one ordinary word for this and for "statement (executable)", and coining a second would read worse. |
+| mental model | The standard Polish rendering, used in Polish psychology and UX writing. |
+| (programming) language | Ordinary Polish word, known to every beginner. |
+| for-of loop | No independent Polish name exists for this construct. |
+
+#### Tooling & engineering
+
+| Term | Why |
+|------|-----|
+| modulo | `modulo` is a normal loanword in Polish too, not a code-switch. |
+| toggle | Matches current Microsoft Polish UI terminology. |
+| class, method, object, module, algorithm | Direct cognates. |
+| component | Naturalised spelling, used consistently in general software writing and in frontend/React contexts. |
+
+#### Keep in English
+
+| Term | Why |
+|------|-----|
+| API | Not a term a beginner knows, so the concept has to be explained, not just the acronym expanded. |
+| workflow | Confirmed by Poland's own language authority (PWN) as having no settled Polish rendering for the dev/CI-CD sense. |
+
+#### Jiki physical metaphors
+
+| Term | Why |
+|------|-----|
+| box | Plain Polish word for "box"; direct and concrete. |
+| crank | Ordinary Polish word for a hand crank. |
+| warehouse | Ordinary word for a storeroom/warehouse; the shelves stand in it. |
+| input slot | No established Polish pedagogical precedent for this compound. |
+| return chute | `zsyp` (a chute an object drops through, e.g. a laundry/garbage chute) fits a returned value better than `zjeżdżalnia` (a slide, which implies a person riding it). |

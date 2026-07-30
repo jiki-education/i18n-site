@@ -2,8 +2,8 @@
 lang: "de"
 name: "German"
 family: null
-governance_sha: "1d91ad4"
-content_version: "9f2ab4f3f978"
+governance_sha: "bb77cbf"
+content_version: "77ecbbe90891"
 published_at: "2026-07-30"
 term_count: 86
 forum_topic_id: 340
@@ -11,32 +11,18 @@ forum_topic_id: 340
 
 # German (de) glossary
 
-The agreed term list for German. Every term here has been agreed and is binding: use it
-exactly, with no synonyms and no mixing within a document.
-
-## How this file changes
-
-Nothing is written here without prior agreement. A translation pass never edits this file;
-it surfaces new terms it had to decide on as proposals in its output (a "glossary delta").
-Those proposals are discussed, and only once agreed are they written in (by a human or by
-Claude). So everything in this file is, by definition, already agreed. Terms that have not
-been agreed simply are not here yet.
-
-Writes are **additive** (see "Glossary writes are additive" in `global/workflow.md`): a
-pass appends rows and may correct an `agent` row (reporting the old value), but never
-silently changes a `human` row. The final **`Agreed by`** column records who decided each
-row: `agent` for an unconfirmed agent draft, `human (t/<topic>)` for a rendering a native
-speaker settled on the forum.
+The agreed term list for German. Why each term was chosen, and who chose it, is in the
+decision log (`glossary-notes.md`).
 
 ## Core decisions
 
-| English | German | Use (de/en) | Notes | Agreed by |
-|---------|--------|-------------|-------|-----------|
-| programming / coding | **Programmieren** | de | Standard. | agent |
-| streak | Streak | en | Loanword; Duolingo's own German app uses "Streak" verbatim, and German learning platforms follow suit. | agent |
-| tech / tech industry | Tech-Branche | de | Hybrid (English "Tech" + German "Branche"), established in German tech media. | agent |
-| developer | Entwickler(in) | de | Standard German equivalent. | agent |
-| pitfall | Falle | de | Ordinary word; stands alone. | agent |
+| English | German | Use (de/en) | Notes |
+|---------|--------|-------------|-------|
+| programming / coding | **Programmieren** | de | |
+| streak | Streak | en | |
+| tech / tech industry | Tech-Branche | de | |
+| developer | Entwickler(in) | de | |
+| pitfall | Falle | de | Stands alone. |
 
 ## Localize (use the German term unless the row says `en`)
 
@@ -47,92 +33,92 @@ themselves actually use, so the English word is the ordinary German word there.
 
 ### Values & data types
 
-| English | German | Use (de/en) | Notes | Agreed by |
-|---------|--------|-------------|-------|-----------|
-| value | Wert | de | Ordinary word. | agent |
-| number | Zahl | de | Ordinary word. | agent |
-| integer | Ganzzahl | de | The type keyword `int` in code stays English. | agent |
-| float / decimal | Gleitkommazahl | de | **Settled on the forum; do not change.** Objected to as unfamiliar and countered in detail (Duden's definition, German MATLAB docs), then the objector accepted the counter-argument. Do **not** fall back on "Dezimalzahl": it names the base-10 system, not this data type, so it is not a synonym here. "Fließkommazahl" is also rejected as an anglicism. | human (t/340) |
-| character | Zeichen | de | | agent |
-| true / false | wahr / falsch | de | Not capitalized in prose. | agent |
-| array | Array | en | Dominant in modern German teaching material over the older, theory-flavored "Feld". No gloss needed, "Array" is standard vocabulary now. | agent |
-| dictionary | Wörterbuch | de | General prose term. Python-specific material may say "Dictionary"/"dict" instead; do not mix within one document. | agent |
-| element | Element | de | Fully naturalized. | agent |
-| index | Index | de | Learned plural: "Indizes". | agent |
-| string | String | en | Where the source `<define>`s it, gloss as "String (Zeichenkette)", then use "String" throughout. Exception: in the string concept itself, lean more on "Zeichenkette" if it aids teaching. | agent |
-| Boolean | boolescher Wert | de | Standard textbook/prose form. The type keyword `bool`/`Boolean` in code stays English. | agent |
-| data type | Datentyp | de | | agent |
+| English | German | Use (de/en) | Notes |
+|---------|--------|-------------|-------|
+| value | Wert | de | |
+| number | Zahl | de | |
+| integer | Ganzzahl | de | The type keyword `int` in code stays English. |
+| float / decimal | Gleitkommazahl | de | **Settled on the forum; do not change** (see `glossary-notes.md`). Do **not** fall back on "Dezimalzahl": it names the base-10 system, not this data type, so it is not a synonym here. "Fließkommazahl" is also rejected as an anglicism. |
+| character | Zeichen | de | |
+| true / false | wahr / falsch | de | Not capitalized in prose. |
+| array | Array | en | No gloss needed, "Array" is standard vocabulary now. |
+| dictionary | Wörterbuch | de | General prose term. Python-specific material may say "Dictionary"/"dict" instead; do not mix within one document. |
+| element | Element | de | |
+| index | Index | de | Learned plural: "Indizes". |
+| string | String | en | Where the source `<define>`s it, gloss as "String (Zeichenkette)", then use "String" throughout. Exception: in the string concept itself, lean more on "Zeichenkette" if it aids teaching. |
+| Boolean | boolescher Wert | de | The type keyword `bool`/`Boolean` in code stays English. |
+| data type | Datentyp | de | |
 
 ### Functions & control flow
 
-| English | German | Use (de/en) | Notes | Agreed by |
-|---------|--------|-------------|-------|-----------|
-| if statement | if-Anweisung | de | The `if` keyword stays English in code and in this compound; "Anweisung" is translated. | agent |
-| condition | Bedingung | de | Ordinary word; stands alone. | agent |
-| comparison | Vergleich | de | Ordinary word; stands alone. | agent |
-| expression | Ausdruck | de | Distinct from "Anweisung" (statement). | agent |
-| operator | Operator | de | | agent |
-| statement (executable) | Anweisung | de | The imperative sense: a line of code that does something and gets executed. Keep distinct from "Befehl" (instruction given to Jiki). | agent |
-| statement (logical claim) | Aussage | de | The proposition sense: a claim that is true or false. Keep distinct from "Anweisung". | agent |
-| function | Funktion | de | The *keyword* `function` in code stays English; the concept in prose is "Funktion". | agent |
-| to call (a function) | aufrufen | de | Separable verb: "ruft die Funktion auf". | agent |
-| to define (a function) | definieren | de | | agent |
-| parameter | Parameter | de | Declaration-site name. Masculine, unchanged plural: "der Parameter, die Parameter". | agent |
-| argument | Argument | de | Call-site value. Neuter, distinct gender from "Parameter": "das Argument, die Argumente". | agent |
-| input (to a function) | Eingabewert | de | Distinct from general "Eingabe" (user input). | agent |
-| output | Ausgabe | de | The function's result specifically is "Rückgabewert"; "Ausgabe" is the general/printed sense. | agent |
-| to return (a value) | zurückgeben | de | Separable verb: "gibt den Wert zurück". | agent |
-| return value | Rückgabewert | de | Keep distinct from the verb above. | agent |
-| brackets (the two after a function name) | runde Klammern | de | German distinguishes shapes, so name them on first mention in a page: "zwei runde Klammern". Plain "Klammern" is fine for later mentions in the same page. Square brackets are "eckige Klammern". | agent |
+| English | German | Use (de/en) | Notes |
+|---------|--------|-------------|-------|
+| if statement | if-Anweisung | de | The `if` keyword stays English in code and in this compound; "Anweisung" is translated. |
+| condition | Bedingung | de | Stands alone. |
+| comparison | Vergleich | de | Stands alone. |
+| expression | Ausdruck | de | Distinct from "Anweisung" (statement). |
+| operator | Operator | de | |
+| statement (executable) | Anweisung | de | The imperative sense: a line of code that does something and gets executed. Keep distinct from "Befehl" (instruction given to Jiki). |
+| statement (logical claim) | Aussage | de | The proposition sense: a claim that is true or false. Keep distinct from "Anweisung". |
+| function | Funktion | de | The *keyword* `function` in code stays English; the concept in prose is "Funktion". |
+| to call (a function) | aufrufen | de | Separable verb: "ruft die Funktion auf". |
+| to define (a function) | definieren | de | |
+| parameter | Parameter | de | Declaration-site name. Masculine, unchanged plural: "der Parameter, die Parameter". |
+| argument | Argument | de | Call-site value. Neuter, distinct gender from "Parameter": "das Argument, die Argumente". |
+| input (to a function) | Eingabewert | de | Distinct from general "Eingabe" (user input). |
+| output | Ausgabe | de | The function's result specifically is "Rückgabewert"; "Ausgabe" is the general/printed sense. |
+| to return (a value) | zurückgeben | de | Separable verb: "gibt den Wert zurück". |
+| return value | Rückgabewert | de | Keep distinct from the verb above. |
+| brackets (the two after a function name) | runde Klammern | de | German distinguishes shapes, so name them on first mention in a page: "zwei runde Klammern". Plain "Klammern" is fine for later mentions in the same page. Square brackets are "eckige Klammern". |
 
 ### Loops, state & program flow
 
-| English | German | Use (de/en) | Notes | Agreed by |
-|---------|--------|-------------|-------|-----------|
-| keyword | Schlüsselwort | de | | agent |
-| interpreter | Interpreter | de | **A person doing a job, not a program: Jiki is the interpreter.** Naturalized as a German noun and inflected as one ("der Interpreter, dein Interpreter"), and the transparent agent noun to the everyday verb "interpretieren", which the surrounding prose uses ("Seine Aufgabe ist es, den Code zu interpretieren"), so it reads as an agent, not a device. No gloss on `<define>`: the German form is the same word in the same script, so the parenthetical would teach nothing (see the skip-gloss rule in `guide.md`). Never "Übersetzer" (that is a compiler) or "Dolmetscher" (spoken-language interpreting). | agent |
-| instruction (given to Jiki) | Befehl | de | A single thing the learner tells Jiki to do. Everyday word in German beginner programming material (Scratch and school material talk about "Befehle"), and the established German rendering of a machine instruction ("Befehlszeile", "Befehlssatz"). Pairs with "befolgen": "Befehle auf eine Tafel schreiben, und Jiki befolgt sie." Kept distinct from "Anweisung" (statement), which is reserved for a line of code. | agent |
-| mental model | Denkmodell | de | The picture-in-your-head framing. Ordinary word; "mentales Modell" is the stiffer academic calque. | agent |
-| (programming) language | Programmiersprache | de | Also the "a language a computer understands" framing, where the bare "Sprache" is right. Fully native; never the English "Language". | agent |
-| variable | Variable | de | Feminine noun: "die Variable, die Variablen". | agent |
-| assignment | Zuweisung | de | The noun. | agent |
-| to assign | zuweisen | de | Takes a dative object: "Der Wert wird der Variablen zugewiesen." | agent |
-| code block | Block | de | Keep distinct from "scope" (Gültigkeitsbereich) below; do not conflate. | agent |
-| error | Fehler | de | | agent |
-| nested | verschachtelt | de | e.g. "verschachtelte Schleife" = nested loop. | agent |
-| iteration | Iteration | de | "Durchlauf" is a friendlier beginner gloss for a single pass through a loop. | agent |
-| to run / execute (code) | ausführen | de | Separable verb: "führt das Programm aus". | agent |
-| loop | Schleife | de | English "loop" is never used in prose. | agent |
-| for loop | for-Schleife | de | Keep the `for` keyword in code font; translate only "Schleife". | agent |
-| while loop | while-Schleife | de | As above, with `while`. | agent |
-| loop body | Schleifenrumpf | de | **Open native objection (t/340), awaiting an owner decision; the rendering here is unconfirmed.** Two native speakers reject it: one prefers "Schleifenkörper", the other rejects both as bodily and old-fashioned and proposes "Schleifenblock" ("Schleife" + "Block", with a real-world usage citation). They have not converged. Until the owner rules, use "Schleifenrumpf" and stay consistent within a document. | agent |
-| increment | erhöhen | de | The verb. Reads more naturally for beginners than the loanword "inkrementieren". | agent |
-| scope | Gültigkeitsbereich | de | Keep distinct from "Block" (code block) above. | agent |
-| class | Klasse | de | | agent |
-| method | Methode | de | | agent |
-| property | Eigenschaft | de | More intuitive for beginners than the formal OOP term "Attribut". | agent |
-| object | Objekt | de | | agent |
+| English | German | Use (de/en) | Notes |
+|---------|--------|-------------|-------|
+| keyword | Schlüsselwort | de | |
+| interpreter | Interpreter | de | **A person doing a job, not a program: Jiki is the interpreter.** No gloss on `<define>`: the German form is the same word in the same script, so the parenthetical would teach nothing (see the skip-gloss rule in `guide.md`). Never "Übersetzer" (that is a compiler) or "Dolmetscher" (spoken-language interpreting). |
+| instruction (given to Jiki) | Befehl | de | A single thing the learner tells Jiki to do. Pairs with "befolgen": "Befehle auf eine Tafel schreiben, und Jiki befolgt sie." Kept distinct from "Anweisung" (statement), which is reserved for a line of code. |
+| mental model | Denkmodell | de | The picture-in-your-head framing. |
+| (programming) language | Programmiersprache | de | Also the "a language a computer understands" framing, where the bare "Sprache" is right. Never the English "Language". |
+| variable | Variable | de | Feminine noun: "die Variable, die Variablen". |
+| assignment | Zuweisung | de | The noun. |
+| to assign | zuweisen | de | Takes a dative object: "Der Wert wird der Variablen zugewiesen." |
+| code block | Block | de | Keep distinct from "scope" (Gültigkeitsbereich) below; do not conflate. |
+| error | Fehler | de | |
+| nested | verschachtelt | de | e.g. "verschachtelte Schleife" = nested loop. |
+| iteration | Iteration | de | "Durchlauf" is a friendlier beginner gloss for a single pass through a loop. |
+| to run / execute (code) | ausführen | de | Separable verb: "führt das Programm aus". |
+| loop | Schleife | de | English "loop" is never used in prose. |
+| for loop | for-Schleife | de | Keep the `for` keyword in code font; translate only "Schleife". |
+| while loop | while-Schleife | de | As above, with `while`. |
+| loop body | Schleifenrumpf | de | **Open native objection, awaiting an owner decision; the rendering here is unconfirmed** (see `glossary-notes.md`). Until the owner rules, use "Schleifenrumpf" and stay consistent within a document. |
+| increment | erhöhen | de | The verb. |
+| scope | Gültigkeitsbereich | de | Keep distinct from "Block" (code block) above. |
+| class | Klasse | de | |
+| method | Methode | de | |
+| property | Eigenschaft | de | |
+| object | Objekt | de | |
 
 ### Tooling & engineering
 
-| English | German | Use (de/en) | Notes | Agreed by |
-|---------|--------|-------------|-------|-----------|
-| workflow | Workflow | en | Duden-recognized loanword; distinct from the curriculum sense. | agent |
-| deploy | ausrollen | de | The verb, more natural for beginners than the loanword "deployen". Noun form: "Deployment". | agent |
-| tool / tooling | Tool | en | Shorter and what developers actually say; "Werkzeug" is a legitimate native alternative but not the default here. | agent |
-| module | Modul | de | Fully naturalized. | agent |
-| algorithm | Algorithmus | de | Irregular Latin plural: "die Algorithmen". | agent |
-| edge case | Randfall | de | Where the source `<define>`s it, gloss as "Randfall (Edge Case)". Keep distinct from "Grenzfall" (a boundary value) and "Sonderfall" (a special/exceptional case), which are not synonyms. | agent |
-| component | Komponente | de | "Komponente" is the ordinary German word and what German front-end writing says ("React-Komponente"); use it directly, no loanword form. | agent |
-| CLI (the concept) | Kommandozeile | de | The working term itself, not the bare acronym. "CLI-Tool" is acceptable as a compound where the acronym is part of a product name. | agent |
+| English | German | Use (de/en) | Notes |
+|---------|--------|-------------|-------|
+| workflow | Workflow | en | Distinct from the curriculum sense. |
+| deploy | ausrollen | de | The verb. Noun form: "Deployment". |
+| tool / tooling | Tool | en | |
+| module | Modul | de | |
+| algorithm | Algorithmus | de | Irregular Latin plural: "die Algorithmen". |
+| edge case | Randfall | de | Where the source `<define>`s it, gloss as "Randfall (Edge Case)". Keep distinct from "Grenzfall" (a boundary value) and "Sonderfall" (a special/exceptional case), which are not synonyms. |
+| component | Komponente | de | Use it directly, no loanword form. |
+| CLI (the concept) | Kommandozeile | de | The working term itself, not the bare acronym. "CLI-Tool" is acceptable as a compound where the acronym is part of a product name. |
 
 ### Platform & curriculum vocabulary
 
-| English | German | Use (de/en) | Notes | Agreed by |
-|---------|--------|-------------|-------|-----------|
-| exercise | Übung | de | The platform unit the learner works through: "Bei jeder Übung...". Kept distinct from "Aufgabe" (a task inside it). | agent |
-| task (within an exercise) | Aufgabe | de | A sub-step of an exercise. Never "Übung". The everyday sense of "Aufgabe" ("Seine Aufgabe ist es, ..." = it is his job to) is ordinary prose and unaffected. | agent |
-| course | Kurs | de | The whole Jiki course: "In diesem Kurs ist Jiki dein Interpreter." Keep distinct from "Lektion" (lesson) and "Lehrplan" (curriculum). | agent |
+| English | German | Use (de/en) | Notes |
+|---------|--------|-------------|-------|
+| exercise | Übung | de | The platform unit the learner works through: "Bei jeder Übung...". Kept distinct from "Aufgabe" (a task inside it). |
+| task (within an exercise) | Aufgabe | de | A sub-step of an exercise. Never "Übung". The everyday sense of "Aufgabe" ("Seine Aufgabe ist es, ...") is ordinary prose and unaffected. |
+| course | Kurs | de | The whole Jiki course: "In diesem Kurs ist Jiki dein Interpreter." Keep distinct from "Lektion" (lesson) and "Lehrplan" (curriculum). |
 
 ## Keep in English
 
@@ -140,29 +126,177 @@ These stay in English in prose. Where the source `<define>`s one of these terms,
 German in the gloss column below (per the format in `global/voice.md`); with no
 `<define>`, use the English bare, with no gloss.
 
-| Term | German gloss (on `<define>`) | Notes | Agreed by |
-|------|------------------------------|-------|-----------|
-| API | _Programmierschnittstelle_ | Not a word a beginner knows; where defined, explain the concept in German, not just gloss the acronym. | agent |
-| framework | _Grundgerüst, auf dem man ein Programm aufbaut_ | Explain the idea where the source defines it, then use "Framework" freely. Do not gloss with "Rahmenwerk": it is a purist coinage nobody uses. | agent |
-| JavaScript, Python, React | (no gloss) | Product/language names. | agent |
-| Debug, Test | (no gloss) | As keywords/technical tokens. | agent |
-| Code, Bug, Frontend, Backend | (no gloss) | | agent |
-| Variable and function names | (no gloss) | Never translated. | agent |
-| CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. | agent |
-| Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. | agent |
+| Term | German gloss (on `<define>`) | Notes |
+|------|------------------------------|-------|
+| API | _Programmierschnittstelle_ | Not a word a beginner knows; where defined, explain the concept in German, not just gloss the acronym. |
+| framework | _Grundgerüst, auf dem man ein Programm aufbaut_ | Explain the idea where the source defines it, then use "Framework" freely. Do not gloss with "Rahmenwerk". |
+| JavaScript, Python, React | (no gloss) | Product/language names. |
+| Debug, Test | (no gloss) | As keywords/technical tokens. |
+| Code, Bug, Frontend, Backend | (no gloss) | |
+| Variable and function names | (no gloss) | Never translated. |
+| CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. |
+| Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
 
 ## Jiki physical metaphors
 
 Load-bearing teaching terms. Use exactly the agreed rendering; never substitute dry technical language.
 
-| English metaphor | German rendering | Notes | Agreed by |
-|-------------------|-------------------|-------|-----------|
-| box (value container) | Box | Direct, concrete; fully naturalized loanword. | agent |
-| chain (array metaphor) | Kette | Standard German for a physical chain; link = "Kettenglied". | agent |
-| input slot | Eingabeschlitz | **Open native objection (t/340), awaiting an owner decision; the rendering here is unconfirmed.** A native speaker explains the size scale: "Schlitz" is a slit too narrow for a finger (a coin slot is a "Münzschlitz"), "Schacht" is a shaft for larger things. Since Jiki's slot takes paper, coins and a chain of things, they recommend **"Trichter"** (hopper), what a German would actually say, confirmed after re-watching the video that the input slots really are hoppers, with **"Eingabefach"** as the alternative if the hopper association is unwanted. | agent |
-| return chute | Ausgaberutsche | "Ausgabe" (output, agreed term above) + "Rutsche" (a slide/chute, the same word used for a playground slide). | agent |
-| machine (function metaphor) | Maschine | Direct, concrete. | agent |
-| shelves (storage) | Regale | The shelves where variables and functions are stored; singular "Regal". | agent |
-| board / whiteboard | Tafel | **One object, one word.** The board the learner writes Befehle on for Jiki to follow, and the board a function keeps its own notes on, are the same object and take the same word everywhere. "Tafel" is the everyday German word for a writing board in a room, and idiomatic with the verbs the metaphor needs ("etwas auf die Tafel schreiben"). It does not collide with "Array" (the older German word for that is "Feld"). Never "Whiteboard" as a second word for the same object. | agent |
-| warehouse (Jiki's warehouse) | Lagerhalle | The place where Jiki hangs out and keeps his machine shelf. Concrete and everyday; "Lager" alone is vaguer, "Warenhaus" means a department store. | agent |
-| crank (machine crank) | Kurbel | The handle Jiki turns to start a machine: "die Kurbel drehen". | agent |
+| English metaphor | German rendering | Notes |
+|-------------------|-------------------|-------|
+| box (value container) | Box | |
+| chain (array metaphor) | Kette | Link = "Kettenglied". |
+| input slot | Eingabeschlitz | **Open native objection, awaiting an owner decision; the rendering here is unconfirmed** (see `glossary-notes.md`). |
+| return chute | Ausgaberutsche | |
+| machine (function metaphor) | Maschine | |
+| shelves (storage) | Regale | The shelves where variables and functions are stored; singular "Regal". |
+| board / whiteboard | Tafel | **One object, one word.** The board the learner writes Befehle on for Jiki to follow, and the board a function keeps its own notes on, are the same object and take the same word everywhere. Never "Whiteboard" as a second word for the same object. |
+| warehouse (Jiki's warehouse) | Lagerhalle | The place where Jiki hangs out and keeps his machine shelf. Never "Warenhaus" (that means a department store). |
+| crank (machine crank) | Kurbel | The handle Jiki turns to start a machine: "die Kurbel drehen". |
+
+---
+
+## Decision log
+
+### 2026-07-30: Owner decisions from the 28-language using-functions pass
+
+**Decided by:** owner (iHiD), from the results of the concept-page pass across all 28
+languages. Commit `1d91ad4`, following `946293c`.
+**Terms affected:** `board / whiteboard`, `interpreter`, and, as a principle, every row.
+
+Three decisions came out of that pass that bind German:
+
+- **`board / whiteboard` is one object, so one word.** The board the learner writes
+  instructions on for Jiki to follow, and the board a function keeps its own instructions
+  and notes on, are the same visual metaphor. The previous instruction to keep them
+  distinct was forcing languages to invent a distinction the course does not have, and
+  several collided with their own word for `array` trying. German renders both as
+  **Tafel**: the everyday word for a writing board in a room, idiomatic with the verbs the
+  metaphor needs ("etwas auf die Tafel schreiben"), and it does not collide with `Array`
+  (the older German word for that is `Feld`).
+- **`interpreter` means the one who interprets, a person doing a job, not a program.** On
+  concept pages Jiki *is* the interpreter, so the word has to be able to name a character.
+  Several languages had reached for their term for interpreter *software*, which cannot.
+  German renders it as **Interpreter**, naturalized as a German noun and inflected as one
+  ("der Interpreter, dein Interpreter"), and the transparent agent noun to the everyday
+  verb "interpretieren", which the surrounding prose uses ("Seine Aufgabe ist es, den Code
+  zu interpretieren"), so it reads as an agent, not a device. Never "Übersetzer" (that is a
+  compiler) or "Dolmetscher" (spoken-language interpreting).
+- **Default to the ordinary, common word**, whatever its etymology (now in
+  `global/voice.md`). Where a language's own developer writing uses the English word, the
+  English word is the ordinary word and the right choice; where it does not, the native
+  word is.
+
+### 2026-07-12: `float / decimal` = `Gleitkommazahl` settled on the forum
+
+**Decided by:** native speakers `elzda` and `neillana`, forum topic
+[t/340](https://forum.jiki.io/t/340).
+**Terms affected:** `float / decimal`.
+
+`elzda` objected to `Gleitkommazahl` as a word they had never heard, and proposed
+`Dezimalzahl` instead ("'Dezimalzahl' seems more fitting... In general, 'Dezimalzahl' means
+the exact same as decimal number, but is often used for numbers with decimal places").
+
+`neillana` answered with the Duden definition and German MATLAB documentation, arguing
+`Gleitkommazahl` is the standard, technically precise term for the data type, while
+`Dezimalzahl` is a Duden-defined term for the base-10 number system rather than for this
+data type ("A float like pi would be an 'irrationale Dezimalzahl' as you can't write it in
+fractional. But no one would talk about rational and irrational decimals in daily life."),
+quoting the German MATLAB help center: "p = pi gibt die Gleitkommazahl zurück, die dem Wert
+von π in doppelter Genauigkeit nach IEEE entspricht." `neillana` also rejected
+`Fließkommazahl` as a likely anglicism, since English "floating" maps more accurately to
+"gleitend" than to "fließend".
+
+`elzda` conceded: "That sounds reasonable, even though some people may not have learned it
+in school, after your explanation, it seems like the right choice!"
+
+`Gleitkommazahl` is settled and must not be changed without fresh agreement raised on that
+same thread.
+
+### Open objections (unresolved): `loop body` and `input slot`
+
+**Raised by:** native speakers `elzda` and `neillana`, forum topic
+[t/340](https://forum.jiki.io/t/340), 2026-07-11 to 2026-07-13. **Not decided.** The owner
+has not ruled on either, so the current glossary renderings stand unconfirmed and must not
+be changed on this basis alone.
+
+- **`loop body` (currently `Schleifenrumpf`).** `elzda`: "For loop body I'd really use
+  'Schleifenkörper', 'Schleifenrumpf' sounds really unnatural." `neillana` rejected both
+  established terms as bodily and old-fashioned ("it makes me think of cut off human body
+  parts") and proposed `Schleifenblock` instead, citing real-world usage
+  (docs.outboundconsole.com's German blocks documentation: "Der Schleifenblock ist ein
+  Container, der Blöcke wiederholt ausführt..."). The two native speakers did not converge
+  on a single alternative between themselves.
+- **`input slot` (currently `Eingabeschlitz`).** `neillana` explained that `Eingabeschlitz`
+  denotes something narrow (a coin slot, `Münzschlitz`), while `Eingabeschacht` denotes
+  something larger (a shaft, for something like a sheet of paper). Asked by the owner what
+  fits an input that takes paper, coins, and a chain of things, `neillana` proposed
+  **`Trichter`** (hopper): "If you think about the thing Jiki puts the stuff into to get it
+  into the machine, it is simply 'Trichter'... I just watched it again and the input slots
+  actually are hoppers," with **`Eingabefach`** offered as an alternative "if you don't want
+  the association with hoppers."
+
+Neither exchange produced an owner ruling, so both stay exactly as currently rendered
+(`Schleifenrumpf`, `Eingabeschlitz`) until one does.
+
+### Term rationale
+
+Why individual rows read the way they do, for the reasoning that is not a dated decision
+above. Ordered by the glossary's own sections, not by date, because most of it dates from
+the language bootstrap rather than from any one decision. A term whose reasoning is already
+covered by a dated entry above (`board / whiteboard`, `interpreter`, `float / decimal`,
+`loop body`, `input slot`) is not repeated here.
+
+#### Core decisions
+
+| Term | Why |
+|------|-----|
+| programming / coding | Standard. |
+| streak | Loanword; Duolingo's own German app uses "Streak" verbatim, and German learning platforms follow suit. |
+| tech / tech industry | Hybrid (English "Tech" + German "Branche"), established in German tech media. |
+| developer | Standard German equivalent. |
+| pitfall | Ordinary word. |
+
+#### Values & data types
+
+| Term | Why |
+|------|-----|
+| value, number | Ordinary words. |
+| array | Dominant in modern German teaching material over the older, theory-flavored "Feld". |
+| element | Fully naturalized. |
+| Boolean | Standard textbook/prose form. |
+
+#### Loops, state & program flow
+
+| Term | Why |
+|------|-----|
+| instruction (given to Jiki) | Everyday word in German beginner programming material (Scratch and school material talk about "Befehle"), and the established German rendering of a machine instruction ("Befehlszeile", "Befehlssatz"). |
+| mental model | Ordinary word; "mentales Modell" is the stiffer academic calque. |
+| (programming) language | Fully native. |
+| increment | Reads more naturally for beginners than the loanword "inkrementieren". |
+| property | More intuitive for beginners than the formal OOP term "Attribut". |
+
+#### Tooling & engineering
+
+| Term | Why |
+|------|-----|
+| workflow | Duden-recognized loanword. |
+| deploy | More natural for beginners than the loanword "deployen". |
+| tool / tooling | Shorter and what developers actually say; "Werkzeug" is a legitimate native alternative but not the default here. |
+| module | Fully naturalized. |
+| component | "Komponente" is the ordinary German word and what German front-end writing says ("React-Komponente"). |
+
+#### Keep in English
+
+| Term | Why |
+|------|-----|
+| framework | "Rahmenwerk" is a purist coinage nobody uses. |
+
+#### Jiki physical metaphors
+
+| Term | Why |
+|------|-----|
+| box | Direct, concrete; fully naturalized loanword. |
+| chain | Standard German for a physical chain. |
+| return chute | "Ausgabe" (output, agreed term above) + "Rutsche" (a slide/chute, the same word used for a playground slide). |
+| machine | Direct, concrete. |
+| warehouse | Concrete and everyday; "Lager" alone is vaguer. |

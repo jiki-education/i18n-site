@@ -2,8 +2,8 @@
 lang: "pt-pt"
 name: "European Portuguese"
 family: "pt"
-governance_sha: "1d91ad4"
-content_version: "acb80d55f637"
+governance_sha: "bb77cbf"
+content_version: "32b2eae23c62"
 published_at: "2026-07-30"
 term_count: 77
 forum_topic_id: 341
@@ -141,23 +141,20 @@ The agreed term list for what is distinct about European Portuguese. Read
 file holds only the terms that diverge between the two locales, plus terms that exist only
 for European Portuguese. A term lives in **exactly one** glossary file, this one or the
 family's, **never both**. A locale's effective glossary is `../pt/glossary.md`'s rows plus
-this file's rows, read together. Every term here has been agreed and is binding: use it
-exactly, with no synonyms and no mixing within a document.
+this file's rows, read together. Why each term was chosen, and who chose it, is in the
+decision log (`glossary-notes.md`).
 
-Nothing is written here without prior agreement; see `../pt/glossary.md` § "How this file
-changes" for how proposals get agreed; that explainer applies equally to this file and is
-not repeated here. Each term's "Use (pt-pt/en)" column records which language is primary in
-prose: `pt-pt` when Portuguese is primary, `en` when English is kept primary; see
-`global/voice.md` § "Direction comes from the glossary". The `Agreed by` column records who
-decided each row; see `global/workflow.md` § "The provenance column".
+Each term's "Use (pt-pt/en)" column records which language is primary in prose: `pt-pt` when
+Portuguese is primary, `en` when English is kept primary; see `global/voice.md` §
+"Direction comes from the glossary".
 
 ## Core decisions
 
-| English | Portuguese | Use (pt-pt/en) | Notes | Agreed by |
-|---------|------------|-----------------|-------|-----------|
-| programming / coding | **programação** | pt-pt | Use `programação` consistently. | agent |
-| tech / tech industry | setor tecnológico | pt-pt | More restrained register than pt-BR's "mercado de tech"; loanword "tech" alone reads too casual for European Portuguese written prose. | agent |
-| developer | programador(a) | pt-pt | "Desenvolvedor" is a Brazilian-leaning form; "programador(a)" is the natural European Portuguese equivalent. | agent |
+| English | Portuguese | Use (pt-pt/en) | Notes |
+|---------|------------|-----------------|-------|
+| programming / coding | **programação** | pt-pt | Use `programação` consistently. |
+| tech / tech industry | setor tecnológico | pt-pt | Loanword "tech" alone reads too casual for European Portuguese written prose; use `setor tecnológico`. |
+| developer | programador(a) | pt-pt | Not `desenvolvedor`, which is a Brazilian-leaning form. |
 
 ## Localize (use the Portuguese term)
 
@@ -165,68 +162,66 @@ Terms below diverge from `../pt/glossary.md` or exist only for European Portugue
 
 ### Values & data types
 
-| English | Portuguese | Use (pt-pt/en) | Notes | Agreed by |
-|---------|------------|-----------------|-------|-----------|
-| character | caráter (pl. carateres) | pt-pt | Post-1990 spelling: European Portuguese silences the `c`, giving "carateres" (Brazilian keeps it: "caractere/caracteres"). | agent |
-| float / decimal | número de vírgula flutuante | pt-pt | European Portuguese says "vírgula flutuante" (decimal comma); Brazilian says "ponto flutuante" (decimal point). Use "decimal" alone when the floating-point nature does not matter. | agent |
+| English | Portuguese | Use (pt-pt/en) | Notes |
+|---------|------------|-----------------|-------|
+| character | caráter (pl. carateres) | pt-pt | Post-1990 spelling: European Portuguese silences the `c`, giving "carateres" (Brazilian keeps it: "caractere/caracteres"). |
+| float / decimal | número de vírgula flutuante | pt-pt | Use "decimal" alone when the floating-point nature does not matter. |
 
 ### Functions & control flow
 
-| English | Portuguese | Use (pt-pt/en) | Notes | Agreed by |
-|---------|------------|-----------------|-------|-----------|
-| to return (a value) | devolver | pt-pt | "A função devolve um valor." European Portuguese idiom, confirmed against Univ. Évora course material ("Devolve o valor..."); deliberately diverges from Brazilian "retornar". | agent |
-| return value | valor devolvido | pt-pt | Follows the verb `devolver` above. | agent |
-| brackets (the two after a function name) | parênteses | pt-pt | The prose rendering of "those two brackets" written after a function name: _os parênteses_, or _dois parênteses_ on first mention. The glyph naming convention (and when to disambiguate `()` as _parênteses curvos_) is in § Brackets below. | agent |
+| English | Portuguese | Use (pt-pt/en) | Notes |
+|---------|------------|-----------------|-------|
+| to return (a value) | devolver | pt-pt | "A função devolve um valor." Deliberately diverges from Brazilian `retornar`; never mix the two. |
+| return value | valor devolvido | pt-pt | Follows the verb `devolver` above. |
+| brackets (the two after a function name) | parênteses | pt-pt | The prose rendering of "those two brackets" written after a function name: _os parênteses_, or _dois parênteses_ on first mention. The glyph naming convention (and when to disambiguate `()` as _parênteses curvos_) is in § Brackets below. |
 
 ### Loops, state & program flow
 
-| English | Portuguese | Use (pt-pt/en) | Notes | Agreed by |
-|---------|------------|-----------------|-------|-----------|
-| interpreter | intérprete | pt-pt | The one who interprets, a person doing a job: on concept pages Jiki **is** the interpreter. _Intérprete_ is the ordinary Portuguese word for a person who interprets, so it is the only candidate that can name Jiki. Do not use _interpretador_, which names a piece of software and cannot describe a character. Plural: _intérpretes_. | agent |
-| instruction (given to Jiki) | instrução | pt-pt | Everyday register, not the legal/administrative sense of _instrução_. Plural _instruções_: "escrever instruções num quadro". Deliberately the same word as `statement (executable)` in `../pt/glossary.md`: they are the same idea (a thing you tell the interpreter to do), and beginners meet the metaphor first. | agent |
-| mental model | modelo mental | pt-pt | The standard Portuguese phrase; it reads naturally in beginner prose. | agent |
-| (programming) language | linguagem (de programação) | pt-pt | Always _linguagem_, never the English borrowing. _Língua_ is for human languages; a programming language is a _linguagem_. Shorten to _linguagem_ once the context is established ("numa linguagem que o computador entende"). | agent |
-| iteration | iteração | pt-pt | Verb: _iterar_; "percorrer cada elemento" also natural. | agent |
-| to run / execute (code) | executar / correr | pt-pt | `correr` in warm/casual register ("experimenta correr este código"); `executar` in formal or procedural steps. Deliberately diverges from Brazilian "rodar", which is not natural European Portuguese usage. | agent |
-| loop | ciclo | pt-pt | Deliberately diverges from Brazilian "laço". Source: Univ. Évora, FEUP course descriptions. `for`/`while` keywords stay English. | agent |
-| scope | âmbito | pt-pt | Deliberately diverges from Brazilian "escopo". | agent |
+| English | Portuguese | Use (pt-pt/en) | Notes |
+|---------|------------|-----------------|-------|
+| interpreter | intérprete | pt-pt | Never use _interpretador_, which names a piece of software, not a person. Plural: _intérpretes_. |
+| instruction (given to Jiki) | instrução | pt-pt | Everyday register, not the legal/administrative sense of _instrução_. Plural _instruções_: "escrever instruções num quadro". |
+| mental model | modelo mental | pt-pt | |
+| (programming) language | linguagem (de programação) | pt-pt | Always _linguagem_, never the English borrowing. _Língua_ is for human languages; a programming language is a _linguagem_. Shorten to _linguagem_ once the context is established ("numa linguagem que o computador entende"). |
+| iteration | iteração | pt-pt | Verb: _iterar_; "percorrer cada elemento" also natural. |
+| to run / execute (code) | executar / correr | pt-pt | `correr` in warm/casual register ("experimenta correr este código"); `executar` in formal or procedural steps. Deliberately diverges from Brazilian "rodar", which is not natural European Portuguese usage. |
+| loop | ciclo | pt-pt | Deliberately diverges from Brazilian `laço`. `for`/`while` keywords stay English. |
+| scope | âmbito | pt-pt | Deliberately diverges from Brazilian `escopo`. |
 
 ### Tooling & engineering
 
-| English | Portuguese | Use (pt-pt/en) | Notes | Agreed by |
-|---------|------------|-----------------|-------|-----------|
-| deploy (verb: to deploy) | publicar | pt-pt | "Publica o código" for go-live, beginner-facing (tu-imperative, matches `tu` formality). "Fazer deploy" appears in professional dev prose but is avoided here. | agent |
+| English | Portuguese | Use (pt-pt/en) | Notes |
+|---------|------------|-----------------|-------|
+| deploy (verb: to deploy) | publicar | pt-pt | "Publica o código" for go-live, beginner-facing (tu-imperative, matches `tu` formality). Avoid "fazer deploy" here, though it appears in professional dev prose. |
 
 ### Platform & curriculum vocabulary
 
-| English | Portuguese | Use (pt-pt/en) | Notes | Agreed by |
-|---------|------------|-----------------|-------|-----------|
-| course | curso | pt-pt | The whole Jiki course ("Neste curso, o teu intérprete é o Jiki"). Keep distinct from _aula_ (lesson) and _currículo_ (curriculum). | agent |
+| English | Portuguese | Use (pt-pt/en) | Notes |
+|---------|------------|-----------------|-------|
+| course | curso | pt-pt | The whole Jiki course ("Neste curso, o teu intérprete é o Jiki"). Keep distinct from _aula_ (lesson) and _currículo_ (curriculum). |
 
 ## Keep in English
 
 Terms below diverge from `../pt/glossary.md` or exist only for European Portuguese. These
-stay in English in prose; where the source `<define>`s one, use the Portuguese in the gloss
-column below (per the format in `global/voice.md`), and with no `<define>`, use the English
-bare, with no gloss.
+stay in English in prose.
 
-| Term | Portuguese gloss (on `<define>`) | Notes | Agreed by |
-|------|----------------------------------|-------|-----------|
-| framework | _estrutura de trabalho_ | The native term is understood but rarely forced in practice; explain where the source `<define>`s it, then use _framework_ freely. Diverges from pt-BR, which glosses simply as _framework_. | agent |
-| CLI (the concept) | interface de linha de comandos | Explain CLI as _interface de linha de comandos_ (plural "comandos") where the source `<define>`s it. Diverges from pt-BR's singular "comando". | agent |
+| Term | Portuguese gloss (on `<define>`) | Notes |
+|------|----------------------------------|-------|
+| framework | _estrutura de trabalho_ | Explain where the source `<define>`s it, then use `framework` freely. |
+| CLI (the concept) | interface de linha de comandos | Explain CLI as _interface de linha de comandos_ (plural "comandos") where the source `<define>`s it. Diverges from pt-BR's singular "comando". |
 
 ## Jiki physical metaphors
 
 Terms below diverge from `../pt/glossary.md` or exist only for European Portuguese.
 
-| English metaphor | Portuguese rendering | Notes | Agreed by |
-|-----------------|---------------------|-------|-----------|
-| chain (array metaphor) | corrente | Physical chain of links; links = _elos_. Keep the context physical to avoid collision with "cadeia" (used for _cadeia de caracteres_, the string gloss). (pt-BR's equivalent entry warns of a different collision risk, with electric current; both are valid for their own locale.) | agent |
-| machine (function metaphor) | máquina | Direct, concrete. Not currently used in pt-BR material. | agent |
-| shelves (storage) | prateleiras | The shelves where variables and functions are stored. Singular _prateleira_ for Jiki's one shelf of machines. | agent |
-| board / whiteboard | quadro | **One object, one word.** The board the learner puts instructions on for Jiki to follow, and the board a function keeps its own instructions on, are the same object: always _quadro_. _Quadro_ is the everyday Portuguese word for a board in a room, and it is what a Portuguese reader pictures. Never _quadro branco_ (over-specific, and it split one metaphor into two words) and never _painel_ (a control panel or a signboard, not something you write on). | agent |
-| warehouse (Jiki's warehouse) | armazém | Where Jiki hangs out and keeps his shelf of machines. Ordinary word for a storage building. | agent |
-| crank (machine crank) | manivela | The handle Jiki turns to power a machine up. Verb phrase: _rodar a manivela_. | agent |
+| English metaphor | Portuguese rendering | Notes |
+|-----------------|---------------------|-------|
+| chain (array metaphor) | corrente | Physical chain of links; links = _elos_. Keep the context physical to avoid collision with "cadeia" (used for _cadeia de caracteres_, the string gloss). |
+| machine (function metaphor) | máquina | |
+| shelves (storage) | prateleiras | The shelves where variables and functions are stored. Singular _prateleira_ for Jiki's one shelf of machines. |
+| board / whiteboard | quadro | **One object, one word.** Always _quadro_. Never _quadro branco_ or _painel_. |
+| warehouse (Jiki's warehouse) | armazém | Where Jiki hangs out and keeps his shelf of machines. |
+| crank (machine crank) | manivela | The handle Jiki turns to power a machine up. Verb phrase: _rodar a manivela_. |
 
 ## Brackets
 
@@ -236,11 +231,110 @@ after; for `()` itself, add _parênteses curvos_ + glyph only when disambiguatin
 uses "parênteses redondos" instead). This locale's `[]`, `{}`, `<>` renderings diverge from
 pt-BR's and are given below.
 
-| Glyph | Portuguese | Notes | Agreed by |
-|-------|-----------|-------|-----------|
-| `[]` | parênteses retos | Diverges from pt-BR's "colchetes". | agent |
-| `{}` | chavetas | Diverges from pt-BR's "chaves". | agent |
-| `<>` | sinais de menor e maior | Diverges from pt-BR's "sinais de maior e menor" (reversed order). | agent |
+| Glyph | Portuguese | Notes |
+|-------|-----------|-------|
+| `[]` | parênteses retos | Diverges from pt-BR's "colchetes". |
+| `{}` | chavetas | Diverges from pt-BR's "chaves". |
+| `<>` | sinais de menor e maior | Diverges from pt-BR's "sinais de maior e menor" (reversed order). |
 
 Example: _para chamar uma função, escreve o nome dela seguido de parênteses de abertura e
 fecho (`()`)._
+
+---
+
+## Decision log
+
+### 2026-07-30: Owner decisions from the 28-language using-functions pass
+
+**Decided by:** owner (iHiD), from the results of the concept-page pass across all 28
+languages. Commit `1d91ad4`, following `946293c`.
+**Terms affected:** `interpreter`, `board / whiteboard`, and, as a principle, every row.
+
+Three decisions came out of that pass that bind European Portuguese:
+
+- **`interpreter` means the one who interprets, a person doing a job, not a program.** On
+  concept pages Jiki *is* the interpreter ("It's his job to interpret the code that you
+  write"), so the word has to be able to name a character. **European Portuguese changed**:
+  earlier translation work had deliberately avoided _intérprete_ because it "reads as a
+  human interpreter", and that reasoning inverted once Jiki is understood as a character
+  whose job is interpreting: a human interpreter is exactly what the word needs to name.
+  The row now reads **intérprete**, and rules out _interpretador_, which names interpreter
+  software and cannot describe a character.
+- **`board / whiteboard` is one object, so one word.** The board the learner writes
+  instructions on for Jiki to follow, and the board a function keeps its own instructions
+  and notes on, are the same visual metaphor. The previous instruction to keep them
+  distinct was forcing languages to invent a distinction the course does not have.
+  European Portuguese merged both onto **quadro**, rejecting _quadro branco_ as
+  over-specific (it split one metaphor into two words) and _painel_ as a control panel or a
+  signboard, not something you write on.
+- **Default to the ordinary, common word**, whatever its etymology (now in
+  `global/voice.md`). Where a language's own developer writing uses the English word, the
+  English word is the ordinary word and the right choice; where it does not, the native
+  word is. The test is what the reader already says, never where the word came from.
+
+### 2026-07-30: European Portuguese glossary filled out and a guide contradiction fixed
+
+**Decided by:** agent, in the same pass. **Status: unconfirmed drafts**, except where the
+entry above governs.
+
+**Rows added** for the terms the using-functions concept page needed: `interpreter`,
+`instruction (given to Jiki)`, `mental model`, `(programming) language`, `brackets (the two
+after a function name)`, `course`, and the metaphor rows `board / whiteboard`, `warehouse`,
+`crank`. None of these change an existing decision; they fill gaps the page hit.
+
+**One guide contradiction fixed.** The formality section stated that the `tu` form takes
+"escreves" and not "escreve" with no qualification, while the guide's own worked examples
+correctly used the bare `escreve` as a tu-imperative ("Escreve o nome da função"). Since the
+tu-imperative of most verbs is spelled identically to the `você` present indicative, an
+unqualified "always escreves" rule would have told a translator to write the wrong form in
+every imperative sentence: a live mistranslation risk, not just a wording nit. The
+formality section now scopes "escreves (not escreve)" to the indicative, and adds a
+separate bullet ("Watch the imperative, which looks like the `você` indicative") covering
+the imperative case explicitly.
+
+### Term rationale
+
+Why individual rows read the way they do, for the reasoning that is not a dated decision
+above. Ordered by the glossary's own sections, not by date, because most of it dates from
+the language bootstrap rather than from any one decision. A term whose reasoning is already
+covered by a dated entry above (`interpreter`, `board / whiteboard`) is not repeated here.
+
+#### Core decisions
+
+| Term | Why |
+|------|-----|
+| tech / tech industry | More restrained register than pt-BR's "mercado de tech". |
+| developer | The natural European Portuguese equivalent; `desenvolvedor` leans Brazilian. |
+
+#### Values & data types
+
+| Term | Why |
+|------|-----|
+| float / decimal | European Portuguese says "vírgula flutuante" (decimal comma); Brazilian says "ponto flutuante" (decimal point). |
+
+#### Functions & control flow
+
+| Term | Why |
+|------|-----|
+| to return (a value) | European Portuguese idiom, confirmed against Univ. Évora course material ("Devolve o valor..."). |
+
+#### Loops, state & program flow
+
+| Term | Why |
+|------|-----|
+| mental model | The standard Portuguese phrase; it reads naturally in beginner prose. |
+| loop | Source: Univ. Évora, FEUP course descriptions. |
+
+#### Keep in English
+
+| Term | Why |
+|------|-----|
+| framework | The native term is understood but rarely forced in practice, so European Portuguese keeps the English word in running prose after a single gloss; diverges from pt-BR, which glosses simply as `framework`. |
+
+#### Jiki physical metaphors
+
+| Term | Why |
+|------|-----|
+| chain | pt-BR's equivalent entry warns of a different collision risk, with electric current; both renderings are valid for their own locale. |
+| machine | Direct, concrete word; not currently used in pt-BR material. |
+| warehouse | Ordinary word for a storage building. |

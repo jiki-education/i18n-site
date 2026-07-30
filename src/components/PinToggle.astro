@@ -1,0 +1,62 @@
+---
+/**
+ * "Pin this language" — a secondary button on the language hero that floats this
+ * language to a Pinned block atop the homepage list. State lives in localStorage;
+ * see src/lib/pinned.ts. Rendered unpinned and corrected client-side, so the
+ * static HTML stays cacheable.
+ */
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+---
+
+<button type="button" class="pin-toggle group inline-flex cursor-pointer items-center gap-2 rounded-lg border border-purple-400 px-4 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-800 aria-pressed:border-emerald-200 aria-pressed:bg-emerald-100 aria-pressed:text-emerald-800" data-pin-lang={lang} aria-pressed="false">
+  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M11.48 3.5a.56.56 0 011.04 0l2.13 5.11a.56.56 0 00.47.35l5.52.44c.5.04.7.66.32.99l-4.2 3.6a.56.56 0 00-.19.56l1.29 5.38a.56.56 0 01-.84.61l-4.72-2.88a.56.56 0 00-.59 0l-4.72 2.88a.56.56 0 01-.84-.61l1.29-5.38a.56.56 0 00-.19-.56l-4.2-3.6a.56.56 0 01.32-.99l5.52-.44a.56.56 0 00.47-.35L11.48 3.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" class="group-aria-pressed:fill-emerald-600 group-aria-pressed:stroke-emerald-600"></path>
+  </svg>
+  <span data-pin-label>Pin this language</span>
+</button>
+
+<script>
+  import { PINNED_STORAGE_KEY } from "../lib/pinned";
+
+  function read(): string[] {
+    try {
+      const raw = localStorage.getItem(PINNED_STORAGE_KEY);
+      const parsed = raw ? JSON.parse(raw) : [];
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function write(langs: string[]) {
+    try {
+      localStorage.setItem(PINNED_STORAGE_KEY, JSON.stringify(langs));
+    } catch {
+      // Storage unavailable or full. The toggle still works for this pageview.
+    }
+  }
+
+  function paint(button: HTMLButtonElement, on: boolean) {
+    button.setAttribute("aria-pressed", String(on));
+    const label = button.querySelector("[data-pin-label]");
+    if (label) label.textContent = on ? "Pinned" : "Pin this language";
+  }
+
+  for (const button of document.querySelectorAll<HTMLButtonElement>(".pin-toggle")) {
+    const lang = button.dataset.pinLang;
+    if (!lang) continue;
+
+    paint(button, read().includes(lang));
+
+    button.addEventListener("click", () => {
+      const langs = read();
+      const on = langs.includes(lang);
+      write(on ? langs.filter((l) => l !== lang) : [...langs, lang]);
+      paint(button, !on);
+    });
+  }
+</script>

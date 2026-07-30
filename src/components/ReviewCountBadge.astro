@@ -1,0 +1,33 @@
+---
+/**
+ * A pill on a language row showing how many of that language's items are still
+ * unreviewed. Server-renders the full total (a fresh reader has reviewed nothing,
+ * so the static HTML is true), then the script below subtracts what's marked
+ * reviewed in localStorage and removes the pill entirely once nothing is left.
+ *
+ * `format: "number"` renders just the count (the compact homepage sidebar);
+ * `format: "phrase"` renders "N to review" (the roomier /languages grid).
+ */
+import type { ReviewTarget } from "../lib/review-targets";
+
+interface Props {
+  targets: ReviewTarget[];
+  format?: "number" | "phrase";
+  class?: string;
+}
+
+const { targets, format = "number", class: className = "" } = Astro.props;
+const total = targets.length;
+const encoded = JSON.stringify(targets.map((t) => [t.id, t.version]));
+---
+
+<span class:list={["review-count-badge", className]} data-review-targets={encoded} data-review-format={format}>{format === "phrase" ? `${total} to review` : total}</span>
+
+<script>
+  import { readReviewed, applyReviewCount } from "../lib/review-counts";
+
+  const reviewed = readReviewed();
+  for (const badge of document.querySelectorAll<HTMLElement>(".review-count-badge")) {
+    applyReviewCount(badge, reviewed);
+  }
+</script>

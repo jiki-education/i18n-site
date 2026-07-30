@@ -15,7 +15,7 @@ interface Props {
 const { itemId, version, class: className = "" } = Astro.props;
 ---
 
-<button type="button" class={`review-toggle group inline-flex items-center gap-2.5 rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-[15px] font-semibold text-gray-600 transition hover:border-purple-300 hover:bg-purple-50 aria-pressed:border-emerald-300 aria-pressed:bg-emerald-50 aria-pressed:text-emerald-800 ${className}`} data-review-id={itemId} data-review-version={version} aria-pressed="false">
+<button type="button" class={`review-toggle group inline-flex cursor-pointer items-center gap-2.5 rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-[15px] font-semibold text-gray-600 transition hover:border-purple-300 hover:bg-purple-50 aria-pressed:border-emerald-300 aria-pressed:bg-emerald-50 aria-pressed:text-emerald-800 ${className}`} data-review-id={itemId} data-review-version={version} aria-pressed="false">
   <span class="grid h-[18px] w-[18px] shrink-0 place-items-center rounded-[4px] border-2 border-gray-300 transition group-aria-pressed:border-emerald-600 group-aria-pressed:bg-emerald-600" aria-hidden="true">
     <svg class="h-3 w-3 text-white opacity-0 transition group-aria-pressed:opacity-100" viewBox="0 0 12 12" fill="none">
       <path d="M2 6.2 4.6 8.8 10 3.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>

@@ -1,0 +1,18 @@
+# Cloudflare Workers static-asset headers. Astro copies public/ into dist/, and
+# the Workers assets runtime reads _headers from the asset directory.
+#
+# Pages are never cached. This site exists so native speakers can check what we
+# have published, and a reviewer reading a stale glossary reports faults we have
+# already fixed, or misses the change we asked them to look at. Freshness is
+# worth far more here than the bandwidth: the audience is small, the content is
+# a few hundred KB of HTML, and the whole site is deleted after the
+# Translatathon.
+#
+# Rules apply in order and later ones win, so the hashed build assets below
+# opt back in to caching. Their filenames change whenever their contents do, so
+# they can never go stale.
+/*
+  Cache-Control: no-store
+
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable

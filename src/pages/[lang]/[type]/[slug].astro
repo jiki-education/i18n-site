@@ -24,7 +24,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { translation, source } = Astro.props;
-const { lang, type, slug, title, en_md5, content_version, forum_topic_id } = translation.data;
+const { lang, type, slug, title, en_md5, content_version, forum_topic_id, messages } = translation.data;
 const meta = languageMeta(lang);
 
 /** The English source moved on after this was translated. */
@@ -112,6 +112,49 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
           ))}
         </div>
       )
+    }
+
+    {
+      messages?.map((group) => (
+        <section class="mt-10 border-t border-gray-200 pt-8">
+          <h2 class="text-[24px] leading-[1.25] font-bold text-gray-900">{group.heading}</h2>
+          {group.note && <p class="mt-2 max-w-2xl text-[15px] text-gray-600">{group.note}</p>}
+
+          {group.namespaces.map((namespace) => (
+            <div class="mt-6">
+              <h3 class="notranslate text-[13px] font-bold tracking-[0.08em] text-gray-400 uppercase" translate="no">
+                {namespace.name}
+              </h3>
+              <div class="mt-2 overflow-x-auto">
+                <table class="w-full min-w-[42rem] border-collapse text-left">
+                  <thead>
+                    <tr class="border-b border-gray-200">
+                      <th class="py-2 pr-4 align-bottom text-[12px] font-bold tracking-[0.08em] text-gray-400 uppercase">Key</th>
+                      <th class="py-2 pr-4 align-bottom text-[12px] font-bold tracking-[0.08em] text-gray-400 uppercase">English</th>
+                      <th class="py-2 align-bottom text-[12px] font-bold tracking-[0.08em] text-gray-400 uppercase">{meta.name}</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-100">
+                    {namespace.rows.map((row) => (
+                      <tr class="align-top">
+                        <td class="notranslate w-[1%] py-3 pr-4 whitespace-nowrap" translate="no">
+                          <code class="rounded bg-purple-50 px-1.5 py-0.5 text-[13px] text-purple-700">{row.key}</code>
+                        </td>
+                        <td class="notranslate w-1/2 py-3 pr-4 text-[16px] whitespace-pre-wrap text-gray-500" translate="no">
+                          {row.english ?? <span class="text-[13px] italic">Not in the English.</span>}
+                        </td>
+                        <td class="notranslate w-1/2 py-3 text-[17px] whitespace-pre-wrap text-gray-900" translate="no" lang={lang} dir={meta.dir}>
+                          {row.target ?? <span class="text-[13px] text-amber-700 italic">Missing from the translation.</span>}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ))}
+        </section>
+      ))
     }
   </div>
 </Layout>

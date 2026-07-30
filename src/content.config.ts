@@ -40,7 +40,32 @@ const translations = defineCollection({
     content_version: z.string().optional(),
     published_at: z.string().optional(),
     /** Discourse topic where this translation is discussed. */
-    forum_topic_id: z.number().optional()
+    forum_topic_id: z.number().optional(),
+    /** Exercises only: the i18next message catalogs, English and target side by
+     *  side on one row. Data rather than body prose so the page can render them
+     *  as one full-width table per namespace instead of pushing them through the
+     *  two-column prose layout, which would print every key twice. A `null` cell
+     *  means the key is missing from that side. */
+    messages: z
+      .array(
+        z.object({
+          heading: z.string(),
+          note: z.string().optional(),
+          namespaces: z.array(
+            z.object({
+              name: z.string(),
+              rows: z.array(
+                z.object({
+                  key: z.string(),
+                  english: z.string().nullable(),
+                  target: z.string().nullable()
+                })
+              )
+            })
+          )
+        })
+      )
+      .optional()
   })
 });
 

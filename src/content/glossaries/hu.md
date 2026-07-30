@@ -2,8 +2,8 @@
 lang: "hu"
 name: "Hungarian"
 family: null
-governance_sha: "79710a7"
-content_version: "5618090e14e7"
+governance_sha: "e62d0d8"
+content_version: "98a5fff72372"
 published_at: "2026-07-30"
 term_count: 146
 forum_topic_id: 289
@@ -231,31 +231,6 @@ How to phrase a bracket in running prose is in `guide.md`.
 
 ## Decision log
 
-The decision log behind `glossary.md`. Each entry records what changed, why, who decided
-it, and where. The glossary itself holds only the terms; this file holds the reasoning, so
-a later pass can tell a settled decision from an unconfirmed draft.
-
-**Rule 1: read this before changing an existing row.** If an entry below records a human
-deciding a term, that term is settled and changing it needs fresh agreement from a human,
-raised where it was settled. If nothing below mentions the term, it is an unconfirmed
-draft: a pass may correct it, and must append an entry saying what it changed and why.
-
-**Rule 2: a translation pass never loads this file.** A translation needs the term, not the
-argument that produced it. This is history, and reading it on every run, in every language,
-is pure cost.
-
-The file is append-only and newest first. Never edit or delete an existing entry; to revise
-a decision, add a new entry above that says so.
-
-**Only decisions about the language belong here.** Every entry must be something a future
-translator needs in order to use a term correctly or to judge whether it may change one.
-Changes to how this repo works, to file formats, or to tooling are not decisions about
-Hungarian, and are noise to everyone who reads this later. They belong in the commit that
-made them. Nor is the absence of a decision worth an entry: if no entry mentions a term,
-Rule 1 already says it is an unconfirmed draft, so writing that down adds nothing.
-
----
-
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 
 **Decided by:** owner (iHiD), from the results of the concept-page pass across all 28
@@ -284,8 +259,8 @@ Three decisions came out of that pass that bind Hungarian:
 
 ### 2026-07-30: Hungarian glossary filled out and its self-contradictions fixed
 
-**Decided by:** agent, in the same pass. **Status: unconfirmed drafts**, correctable by a
-later pass under Rule 1, except where the entry above governs.
+**Decided by:** agent, in the same pass. **Status: unconfirmed drafts**, except where the
+entry above governs.
 
 **One rendering changed.** `tool` moved from "Keep in English" to **eszköz**, applying the
 ordinary-word principle above: _eszköz_ is the everyday Hungarian word and Hungarian prose

@@ -2,8 +2,8 @@
 lang: "hu"
 name: "Hungarian"
 family: null
-governance_sha: "435fd77"
-content_version: "df710e91a2dd"
+governance_sha: "359d0fc"
+content_version: "5b5786a7459c"
 published_at: "2026-07-30"
 term_count: 146
 forum_topic_id: 289
@@ -251,7 +251,8 @@ a decision, add a new entry above that says so.
 translator needs in order to use a term correctly or to judge whether it may change one.
 Changes to how this repo works, to file formats, or to tooling are not decisions about
 Hungarian, and are noise to everyone who reads this later. They belong in the commit that
-made them.
+made them. Nor is the absence of a decision worth an entry: if no entry mentions a term,
+Rule 1 already says it is an unconfirmed draft, so writing that down adds nothing.
 
 ---
 
@@ -323,18 +324,3 @@ renderings:
   recorded why they were chosen or what they cover.
 
 **Nothing above has been checked by a Hungarian speaker.**
-
-## 2026-07-11: Forum state, for the record
-
-**No Hungarian term has been confirmed by a Hungarian speaker.**
-
-Verified against the forum: the pinned glossary topic
-([t/289](https://forum.jiki.io/t/289)) has two posts, both authored by `system`, and zero
-replies. The only human post anywhere in the `i18n-hu` category is a volunteer
-introduction from **vinetu** (János, a Computer Science student at ELTE in Budapest, native
-Hungarian, self-assessed B2 English) in [t/275](https://forum.jiki.io/t/275), on
-2026-07-11. No terms were discussed. The category description in t/265 is the owner's.
-
-So every row in `glossary.md` today is an unconfirmed agent draft, and Rule 1's second
-branch applies to all of them. Record the first Hungarian speaker's confirmation here when
-it arrives, with the topic and post it came from.

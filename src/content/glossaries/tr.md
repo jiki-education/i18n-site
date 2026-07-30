@@ -2,10 +2,10 @@
 lang: "tr"
 name: "Turkish"
 family: null
-governance_sha: "bb77cbf"
-content_version: "de8fb9dc3a1a"
+governance_sha: "437b15b"
+content_version: "e0dbf145ddf3"
 published_at: "2026-07-30"
-term_count: 103
+term_count: 53
 forum_topic_id: 328
 ---
 
@@ -18,11 +18,6 @@ decision log (`glossary-notes.md`).
 
 | English | Turkish | Use (tr/en) | Notes |
 |---------|---------|-------------|-------|
-| programming / coding | programlama | tr | |
-| developer | geliştirici | tr | |
-| tech / tech industry | teknoloji sektörü | tr | |
-| streak | seri | tr | A run of consecutive days, as in the learning-platform sense. |
-| pitfall | tuzak | tr | Stands alone; no gloss needed. |
 | foot-gun | (descriptive phrase, no fixed term) | tr | Use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`. |
 
 ## Localize (use the Turkish term)
@@ -33,17 +28,10 @@ These are terms where the Turkish is used in prose, so the "Use (tr/en)" column 
 
 | English | Turkish | Use (tr/en) | Notes |
 |---------|---------|-------------|-------|
-| value | değer | tr | |
-| number | sayı | tr | |
 | true / false | doğru / yanlış | tr | Not capitalised in prose. Keywords `true`/`false` stay English in code. |
-| character | karakter | tr | |
-| integer | tam sayı | tr | |
 | float / decimal | ondalıklı sayı | tr | Use _kayan noktalı sayı_ only when the IEEE-754 floating-point nature specifically matters. |
 | array / list | dizi | tr | Exercise prose sometimes says "list" informally for the same concept; render both as _dizi_, do not introduce a separate word. |
-| dictionary | sözlük | tr | |
-| element | eleman | tr | Array element = _dizinin elemanı_. |
 | index | indeks | tr | Deliberately not _dizin_, which means "directory" in filesystem contexts and would collide. |
-| key-value pair | anahtar-değer çifti | tr | The key itself is _anahtar_ (ordinary word once introduced). |
 | string | karakter dizisi | tr | Real Turkish code and docs also show raw "string"; the glossary term is for prose. |
 | data type | veri tipi | tr | |
 
@@ -52,69 +40,38 @@ These are terms where the Turkish is used in prose, so the "Use (tr/en)" column 
 | English | Turkish | Use (tr/en) | Notes |
 |---------|---------|-------------|-------|
 | if statement | `if` deyimi | tr | Keep `if` as the real keyword. |
-| condition | koşul | tr | Stands alone; no gloss needed. |
-| comparison | karşılaştırma | tr | Stands alone; no gloss needed. |
-| expression | ifade | tr | |
 | operator | operatör | tr | |
 | NOT operator / logical negation | değilleme | tr | In code context, the concept is "`!` operatörü"; the `!` symbol stays as-is in code. |
 | statement (executable) | deyim | tr | The imperative sense: a line of code that does something and gets executed. |
 | statement (logical claim) | önerme | tr | The proposition sense: a claim that is true or false; also a test assertion. Deliberately distinct from _deyim_ above. |
 | function | fonksiyon | tr | The *keyword* `function` in code stays English; the concept in prose is _fonksiyon_. |
-| to call (a function) | çağırmak | tr | _fonksiyonu çağırmak_. |
-| to define (a function) | tanımlamak | tr | |
 | parameter | parametre | tr | Declaration-site name. |
 | argument | argüman | tr | Call-site value. |
-| input (to a function) | girdi | tr | |
-| output | çıktı | tr | |
-| to return (a value) | döndürmek | tr | "Bir değer döndürür." |
-| return value | dönüş değeri | tr | Noun form; keep distinct from the verb _döndürmek_ above. |
-| pure function | saf fonksiyon | tr | |
 | brackets (the two after a function name) | parantez | tr | Bare _parantez_ already means round brackets in Turkish, so it needs no qualifier here; square brackets are _köşeli parantez_ and curly ones _süslü parantez_, so use the qualified form whenever those are meant. Plural: _parantezler_ ("o iki parantez"). |
 
 ### Loops, state & program flow
 
 | English | Turkish | Use (tr/en) | Notes |
 |---------|---------|-------------|-------|
-| keyword | anahtar kelime | tr | |
 | interpreter | yorumlayıcı | tr | The one who interprets, a **person** doing a job (Jiki himself), not a program. Never _çevirmen_/_tercüman_, which mean a person who translates between human languages; never _yorumcu_, which in everyday Turkish is a commentator or critic. |
 | instruction (given to Jiki) | talimat | tr | Deliberately not _komut_, which is the word for a CLI command and would collide, nor _yönerge_, which is genuinely bureaucratic. |
-| mental model | zihinsel model | tr | |
 | (programming) language | dil / programlama dili | tr | Never the English borrowing. Use full _programlama dili_ on first mention or where ambiguity is possible, and bare _dil_ thereafter, including for the "a language a computer understands" framing (_bilgisayarın anladığı bir dil_). |
-| variable | değişken | tr | |
-| assignment | atama | tr | |
-| to assign | atamak | tr | Matches _atama_ above: "bir değeri değişkene atamak." |
-| code block | kod bloğu | tr | |
-| error | hata | tr | |
-| nested | iç içe | tr | e.g. _iç içe döngü_ = nested loop. |
-| iteration | yineleme | tr | Verb: _yinelemek_. |
 | to run / execute (code) | çalıştırmak | tr | Avoid the colloquial "run etmek" in written prose. |
-| loop | döngü | tr | |
 | for loop | `for` döngüsü | tr | Keep `for` as the real keyword + _döngü_. |
 | while loop | `while` döngüsü | tr | As above, with `while`. |
 | for-of loop | `for-of` döngüsü | tr | As above, with `for-of`. |
-| loop body | döngü gövdesi | tr | |
 | break (loop control) | `break` deyimi | tr | The keyword `break` in code stays English; this is the prose concept of breaking out of a loop. |
-| increment | artırma | tr | Verb: _artırmak_. |
 | modulo / remainder operator | kalan | tr | The resulting value of the `%` operator. Prose register; avoid the colloquial "mod". |
-| concatenation / to concatenate | birleştirme / birleştirmek | tr | |
 | state / stateful | durum | tr | The noun is settled; for the adjective "stateful" use a descriptive phrase ("durum tutan") rather than a fixed coinage. |
-| scope | kapsam | tr | |
-| class | sınıf | tr | |
 | method | metot | tr | |
 | property | özellik | tr | Watch for collision with "feature" (platform capability) below, which shares the same Turkish word; disambiguate with context if both appear in the same document. |
-| object | nesne | tr | |
 
 ### Tooling & engineering
 
 | English | Turkish | Use (tr/en) | Notes |
 |---------|---------|-------------|-------|
-| workflow | iş akışı | tr | The software-engineering sense (a sequence of dev tasks). |
 | auth (authentication / authorization) | kimlik doğrulama / yetkilendirme | tr | Pick by meaning. |
 | deploy | dağıtım | tr | Formal-prose noun. The colloquial verb "deploy etmek" exists in developer speech but is not used in written prose. |
-| tool / tooling | araç | tr | |
-| module | modül | tr | |
-| algorithm | algoritma | tr | |
-| backwards compatibility | geriye dönük uyumluluk | tr | |
 
 ### Platform & curriculum vocabulary
 
@@ -122,15 +79,8 @@ These are terms where the Turkish is used in prose, so the "Use (tr/en)" column 
 |---------|---------|-------------|-------|
 | feature (platform capability) | özellik | tr | Shares its Turkish word with "property" above; disambiguate with context, do not introduce a separate coinage. |
 | course | kurs | tr | The whole Jiki course ("Bu kursta..."). Keep distinct from _ders_ (lesson) and _müfredat_ (curriculum); deliberately not _kur_, which in Turkish primarily means an exchange rate. |
-| concept (learning unit) | kavram | tr | A Jiki concept page, and also the "one of the fundamental concepts in programming" framing; no separate coinage for the platform sense. |
-| lesson | ders | tr | |
-| exercise | alıştırma | tr | |
-| scenario | senaryo | tr | Jiki-specific: a structured variant within an exercise. |
 | curriculum | müfredat | tr | |
-| level | seviye | tr | |
-| milestone | kilometre taşı | tr | A progression checkpoint. |
 | mentor / mentoring | mentor / mentorluk | en | |
-| solution (learner's submission) | çözüm | tr | |
 
 ## Keep in English
 
@@ -168,6 +118,21 @@ Load-bearing teaching terms.
 ---
 
 ## Decision log
+
+### 2026-07-31: Glossary pruned of ordinary vocabulary
+
+**Decided by:** agent, authorised by owner (iHiD). Removed 50 rows whose Turkish rendering
+was the one obvious dictionary word with nothing to decide (e.g. `value`, `number`,
+`variable`, `class`, `lesson`, `exercise`, `milestone`). Kept every row settling a live
+öztürkçe-vs-loanword or register choice (`operator`, `function`, `method`, `data type`,
+`(programming) language`, `to run / execute`, `deploy`, `modulo`), a collision or sense
+distinction (`index`, `property`/`feature`, `parameter`/`argument`, the two `statement`
+rows, `course`), a rejected coinage (`foot-gun`, `state / stateful`), an English-keyword
+suffixing pattern (`if statement`, `for`/`while`/`for-of loop`, `break`), and the whole
+"Keep in English" and "Jiki physical metaphors" sections untouched. A reviewer querying any
+single cut should check `concept (learning unit)`, `exercise`, and `scenario`: their notes
+gave context rather than a rejected alternative, so they read as settled vocabulary rather
+than open decisions.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

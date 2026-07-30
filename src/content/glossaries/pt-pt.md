@@ -2,10 +2,10 @@
 lang: "pt-pt"
 name: "European Portuguese"
 family: "pt"
-governance_sha: "bb77cbf"
-content_version: "32b2eae23c62"
+governance_sha: "437b15b"
+content_version: "dfb7d26e8250"
 published_at: "2026-07-30"
-term_count: 77
+term_count: 53
 forum_topic_id: 341
 ---
 
@@ -44,53 +44,29 @@ These are terms where the Portuguese is used in prose, so the "Use (pt/en)" colu
 
 | English | Portuguese | Use (pt/en) | Notes |
 |---------|------------|-------------|-------|
-| value | valor | pt | Ordinary word. |
-| number | número | pt | Ordinary word. |
 | true / false | verdadeiro / falso | pt | Lowercase in prose. |
-| integer | número inteiro | pt | |
-| index | índice | pt | |
 
 ### Functions & control flow
 
 | English | Portuguese | Use (pt/en) | Notes |
 |---------|------------|-------------|-------|
 | if statement | condicional | pt | Plural: _condicionais_. Corroborated for pt-pt via Univ. Évora course material. |
-| condition | condição | pt | Ordinary word; stands alone. |
-| comparison | comparação | pt | Ordinary word; stands alone. |
-| expression | expressão | pt | |
-| operator | operador | pt | |
 | statement (executable) | instrução | pt | The imperative sense: a line of code that does something and gets executed. Corroborated for pt-pt via Univ. Évora course material. |
 | statement (logical claim) | afirmação | pt | The proposition / true-or-false sense. Pick by meaning, not by the English word. |
 | function | função | pt | The keyword `function` in code stays English; the concept in prose is _função_. |
-| to call (a function) | chamar | pt | _chamar uma função_ |
-| to define (a function) | definir | pt | |
-| parameter | parâmetro | pt | |
 | argument | argumento | pt | Call-site value sense. |
-| input (to a function) | entrada | pt | |
-| output | saída | pt | |
 
 ### Loops, state & program flow
 
 | English | Portuguese | Use (pt/en) | Notes |
 |---------|------------|-------------|-------|
-| keyword | palavra-chave | pt | |
-| variable | variável | pt | |
-| assignment | atribuição | pt | |
-| to assign | atribuir | pt | |
-| code block | bloco de código | pt | |
-| error | erro | pt | |
 | nested | aninhado | pt | Combines with each locale's own word for "loop" to mean nested loop; see the locale glossary's `loop` entry. |
-| element | elemento | pt | Array element = _elemento do array_. |
-| object | objeto | pt | |
-| method | método | pt | |
-| property | propriedade | pt | |
 
 ### Tooling & engineering
 
 | English | Portuguese | Use (pt/en) | Notes |
 |---------|------------|-------------|-------|
 | workflow | fluxo de trabalho | pt | |
-| pitfall | armadilha | pt | Ordinary word; stands alone. |
 
 ## Keep in English
 

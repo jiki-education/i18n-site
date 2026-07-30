@@ -2,10 +2,10 @@
 lang: "ar"
 name: "Arabic"
 family: null
-governance_sha: "bb77cbf"
-content_version: "4a0532a609b1"
+governance_sha: "437b15b"
+content_version: "316e06f06cdf"
 published_at: "2026-07-30"
-term_count: 94
+term_count: 48
 forum_topic_id: 470
 ---
 
@@ -18,10 +18,7 @@ decision log (`glossary-notes.md`).
 
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
-| programming / coding | **برمجة** | ar | |
 | streak | **سلسلة الأيام** | ar | Always qualified; never shorten to bare سلسلة. See guide § "The سلسلة collision." |
-| tech / tech industry | **التقنية** | ar | e.g. `شركات التقنية` (tech companies). |
-| developer | **مطوّر** | ar | |
 | pitfall | **فخ (شائع)** | ar | |
 | code | **الكود** | ar | Use `الكود` in prose. The Latin form stays only inside code and for the `Debug`/`Test` tokens. |
 
@@ -33,86 +30,44 @@ These are terms where the Arabic is used in prose, so the "Use (ar/en)" column i
 
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
-| value | قيمة | ar | |
 | number | عدد | ar | `عدد` for the data-type sense (`عدد صحيح`, `عدد عشري`); `رقم` is reserved for "digit/numeral", not this term. |
 | true / false | صحيح / خطأ | ar | Not capitalised in prose. The literal code keywords `True`/`False` stay in English inside code, per `global/rules.md`. |
-| character | حرف | ar | |
-| integer | عدد صحيح | ar | |
-| float / decimal | عدد عشري | ar | |
 | array / list | مصفوفة | ar | Exercise prose that informally says "list" for the same concept as "array" also uses `مصفوفة`; see `global/terms.md`. Distinct from the "chain" physical metaphor, see below. |
-| dictionary | قاموس | ar | |
-| element | عنصر | ar | e.g. `عناصر المصفوفة` (array elements). |
 | index | فهرس | ar | Distinct from `مؤشر` (pointer); do not confuse the two. |
-| key-value pair | زوج (مفتاح - قيمة) | ar | |
 | string | سلسلة نصية | ar | Always the full qualified compound; never shortened to bare `سلسلة`. See guide § "The سلسلة collision." |
 | Boolean | قيمة منطقية | ar | Translated fully; see guide § "Loanword policy." |
-| data type | نوع البيانات | ar | |
 
 ### Functions & control flow
 
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
 | if statement | جملة شرطية | ar | |
-| condition | شرط | ar | Stands alone; no gloss needed. |
-| comparison | مقارنة | ar | Stands alone; no gloss needed. |
 | expression | تعبير | ar | Distinct from "statement" below; an expression evaluates to a value. |
 | operator | عامل | ar | e.g. `عوامل المقارنة` (comparison operators). Distinct from `معامل` (parameter); do not confuse the two despite the visual similarity. |
-| NOT operator / logical negation | عامل النفي | ar | |
 | statement (executable) | عبارة | ar | The imperative sense: a line of code that does something and gets executed. Kept distinct from `جملة شرطية` (if statement) and from `تعبير` (expression). |
 | statement (logical claim) | قضية | ar | The proposition sense: a claim that is true or false. Pick by meaning, not by the English word; kept distinct from `عبارة` above. |
 | function | دالة | ar | The *keyword* `function` in code stays English; the concept in prose is `دالة`. |
-| to call (a function) | يستدعي (استدعاء) | ar | |
-| to define (a function) | يُعرّف (تعريف) | ar | |
 | parameter | معامل | ar | The declaration-site name. Distinct from `عامل` (operator); do not confuse the two. |
 | argument | وسيط | ar | The call-site value. |
-| input (to a function) | مدخل / مدخلات | ar | Plural `مدخلات` is the natural form in prose. |
-| output | مخرج / مخرجات | ar | |
-| to return (a value) | يُرجع | ar | |
-| return value | القيمة المرجعة | ar | Kept distinct from the verb above. |
-| pure function | دالة نقية | ar | |
 | brackets (the two after a function name) | القوسان (القوسين) | ar | The round pair `()` written after a function name to call it. Arabic has a dual, so use it: nominative `القوسان`, oblique `القوسين` ("كتبت `move` ثم القوسين"). No need to say "round" here; the plain `قوس` of the Brackets table below already means the round kind. |
 
 ### Loops, state & program flow
 
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
-| keyword | كلمة مفتاحية | ar | |
 | interpreter | مفسّر | ar | **A person doing a job, not a program**: Jiki *is* the interpreter ("مهمته أن يفسّر الكود"). Plural `مفسّرات`; possessive `مفسّرك` (your interpreter). Related verb `يفسّر`. |
 | instruction (given to Jiki) | تعليمة / تعليمات | ar | Plural `تعليمات` is the natural form in prose ("إعطاء المفسّر التعليمات الصحيحة"). Everyday word; do not use the formal/legal-register `أمر` or `توجيه`. |
-| mental model | النموذج الذهني | ar | Used for the picture-in-your-head framing. |
 | (programming) language | لغة (البرمجة) | ar | Used both for "programming language" (`لغات البرمجة`) and for the "language a computer understands" framing (`بلغة يفهمها الحاسوب`). Never the transliteration. |
-| variable | متغير | ar | |
 | assignment | إسناد | ar | Use `إسناد` consistently, not the near-synonym `تعيين`. |
-| to assign | يُسند | ar | |
-| code block | كتلة برمجية | ar | |
-| error | خطأ | ar | |
 | exception | استثناء | ar | Kept distinct from `خطأ` (error); an exception is the specific catchable runtime event. |
-| nested | متداخل | ar | e.g. `حلقة متداخلة` = nested loop. |
-| iteration | تكرار | ar | |
-| to run / execute (code) | يُنفّذ (تنفيذ) | ar | |
-| loop | حلقة | ar | |
 | for loop | `for` حلقة | ar | Keep `for` in backticks (real keyword) + `حلقة`. |
-| while loop | `while` حلقة | ar | As above. |
-| for-of loop | `for-of` حلقة | ar | As above. |
-| loop body | جسم الحلقة | ar | |
 | scope | نطاق | ar | Translated fully. |
 | class | صنف | ar | Standardise on `صنف`; do not use the near-synonym `فئة`. |
-| object | كائن | ar | |
-| property | خاصية | ar | |
 
 ### Tooling & engineering
 
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
-| workflow | سير العمل | ar | |
-| deploy (verb: to deploy) | يَنشر (نشر) | ar | `انشر` for imperative; `نشر` as noun. |
-| module | وحدة | ar | |
-| algorithm | خوارزمية | ar | No gloss needed. |
-| edge case | حالة حدّية | ar | |
-| backwards compatibility | التوافق مع الإصدارات السابقة | ar | |
-| framework | إطار عمل | ar | |
-| tool / tooling | أداة / أدوات | ar | No English gloss needed. |
-| component | مكوّن | ar | |
 | CLI (the concept) | واجهة سطر الأوامر | ar | Where the source `<define>`s it, explain as `واجهة سطر الأوامر (command-line interface)`; may shorten to `سطر الأوامر` after. |
 
 ### Platform & curriculum vocabulary
@@ -120,7 +75,6 @@ These are terms where the Arabic is used in prose, so the "Use (ar/en)" column i
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
 | course | دورة | ar | The whole Jiki course the learner is taking ("في هذه الدورة، مفسّرك هو Jiki"). Keep distinct from `درس` (lesson) and `منهج` (curriculum). |
-| exercise | تمرين | ar | Plural `تمارين`. |
 
 ## Keep in English
 
@@ -170,6 +124,17 @@ Default to plain **قوس** (bracket/parenthesis, plural أقواس). When a spe
 ---
 
 ## Decision log
+
+### 2026-07-31: Pruned of ordinary vocabulary
+
+**Decided by:** agent, per the pruning test in `global/translating.md` step 6. Removed 45
+rows whose Arabic rendering was the one obvious dictionary word with nothing to decide
+(e.g. `value`, `variable`, `error`, `loop`, `object`, `workflow`, `algorithm`), including
+`while loop` and `for-of loop` as mechanical repeats of the `for loop` backtick convention.
+Rows kept where two renderings were live, a collision or register distinction was recorded,
+or the row was part of the Jiki metaphor set; a reviewer might query cutting `while loop`
+and `for-of loop` (mechanical repeats of `for loop`'s stated convention), `deploy`, and
+`mental model`, all removed as having no independent decision.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

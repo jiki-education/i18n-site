@@ -2,10 +2,10 @@
 lang: "fr"
 name: "French"
 family: null
-governance_sha: "bb77cbf"
-content_version: "8c53f743059a"
+governance_sha: "437b15b"
+content_version: "d2eac771dc0d"
 published_at: "2026-07-30"
-term_count: 114
+term_count: 66
 forum_topic_id: 314
 ---
 
@@ -19,11 +19,7 @@ the decision log (`glossary-notes.md`).
 
 | English | French | Use (fr/en) | Notes |
 |---------|--------|-------------|-------|
-| programming / coding | programmation | fr | |
-| developer | développeur / développeuse | fr | |
-| tech / tech industry | secteur technologique | fr | |
 | streak | série | fr | A run of consecutive days, as in the learning-platform sense. |
-| pitfall | piège | fr | Stands alone; no gloss needed. |
 | foot-gun | piège involontaire | fr | Use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`. |
 
 ## Localize (use the French term)
@@ -34,17 +30,11 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 
 | English | French | Use (fr/en) | Notes |
 |---------|--------|-------------|-------|
-| value | valeur | fr | |
-| number | nombre | fr | |
 | true / false | vrai / faux | fr | Not capitalised in prose. Keywords `true`/`false` stay English in code. |
-| character | caractère | fr | |
-| integer | nombre entier | fr | |
 | float / decimal | nombre décimal | fr | Use _nombre à virgule flottante_ only when the IEEE-754 floating-point nature specifically matters. |
 | array / list | tableau | fr | Exercise prose sometimes says "list" informally for the same concept; render both as _tableau_, do not introduce a separate word. |
 | dictionary | dictionnaire | fr | In JS-specific prose this is usually an _objet_ or a `Map`; use the concept word _dictionnaire_ only when teaching the general idea. |
-| element | élément | fr | Array element = _élément du tableau_. |
 | index | indice | fr | Not "index", which carries a book/database sense in French. "par son indice". |
-| key-value pair | paire clé-valeur | fr | The key itself is _clé_. |
 | Boolean | booléen | fr | The code type name `Boolean` stays as-is in code. |
 
 ### Functions & control flow
@@ -52,71 +42,41 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | English | French | Use (fr/en) | Notes |
 |---------|--------|-------------|-------|
 | if statement | instruction `if` | fr | Keep `if` as the real keyword. |
-| condition | condition | fr | Stands alone; no gloss needed. |
-| comparison | comparaison | fr | Stands alone; no gloss needed. |
-| expression | expression | fr | |
-| operator | opérateur | fr | |
 | NOT operator / logical negation | opérateur NON / négation logique | fr | The `!` symbol stays as-is in code. |
 | statement (executable) | instruction | fr | The imperative sense: a line of code that does something and gets executed. Deliberate overlap with _instruction_ (given to Jiki) below: the contexts never compete on a page. |
 | statement (logical claim) | assertion | fr | The proposition sense: a claim that is true or false; also a test assertion. Deliberately distinct from _instruction_ above. |
 | function | fonction | fr | The *keyword* `function` in code stays English; the concept in prose is _fonction_. |
-| to call (a function) | appeler (une fonction) | fr | _appeler une fonction_. |
-| to define (a function) | définir (une fonction) | fr | |
 | parameter | paramètre | fr | Declaration-site name. |
 | argument | argument | fr | Call-site value. |
-| input (to a function) | entrée | fr | |
-| output | sortie | fr | |
 | to return (a value) | renvoyer | fr | "La fonction renvoie 30." Not "retourner". |
 | return value | valeur de retour | fr | Noun form; keep distinct from the verb _renvoyer_ above. |
-| pure function | fonction pure | fr | |
 | brackets (the two after a function name) | parenthèses | fr | The `()` pair written after a function name to call it: _écris son nom, puis ces parenthèses_. French names the bracket type, so always say which; see the Brackets section below. |
 
 ### Loops, state & program flow
 
 | English | French | Use (fr/en) | Notes |
 |---------|--------|-------------|-------|
-| keyword | mot-clé | fr | |
 | interpreter | interprète | fr | **The person who interprets, not a piece of software.** On concept pages Jiki *is* the interpreter ("son travail consiste à interpréter le code que tu écris"). Not _interpréteur_, which in French only ever names the program. |
 | instruction (given to Jiki) | instruction | fr | A single thing the learner tells Jiki to do: _donner à Jiki les bonnes instructions_, _écrire des instructions sur le tableau blanc_. Everyday word, not a formal/legal register one. See the note on _statement (executable)_ above about the shared word. |
-| mental model | modèle mental | fr | The picture-in-your-head framing: _c'est ce modèle mental que je me suis construit_. |
 | (programming) language | langage (de programmation) | fr | _langage_ for a programming language (_langage de programmation_ on first mention, then _langage_). Use _langue_ only for the human-language framing ("une langue que l'ordinateur comprend"), which is what French actually distinguishes; never mix the two words for the same sense on one page. |
-| variable | variable | fr | Gender: _la variable_. |
 | assignment | affectation | fr | Not "assignation", which is a flagged anglicism in French. |
 | to assign | affecter | fr | Matches _affectation_ above: "affecter une valeur à une variable." |
 | code block | bloc d'instructions | fr | Deliberately distinct from _portée_ (scope) below. |
-| error | erreur | fr | |
-| nested | imbriqué(e) | fr | e.g. _boucle imbriquée_ = nested loop. |
 | iteration | itération | fr | Verb: _itérer_; "parcourir" also natural for iterating over a collection. |
-| to run / execute (code) | exécuter | fr | |
-| loop | boucle | fr | Gender: _la boucle_. |
-| for loop | boucle `for` | fr | Keep `for` as the real keyword + _boucle_. |
-| while loop | boucle `while` | fr | As above, with `while`. |
-| for-of loop | boucle `for-of` | fr | As above, with `for-of`. |
-| loop body | corps de la boucle | fr | |
 | break (loop control) | instruction `break` | fr | The keyword `break` in code stays English; this is the prose concept of breaking out of a loop. |
-| increment | incrément | fr | Verb: _incrémenter_. |
 | modulo / remainder operator | modulo (opérateur) / le reste (valeur) | fr | _modulo_ for the `%` operator; _le reste (de la division)_ for the resulting value. |
-| concatenation / to concatenate | concaténation / concaténer | fr | |
 | toggle | basculer | fr | Verb only; no crisp noun exists. "basculer une valeur booléenne." |
 | state / stateful | état / à état | fr | "à état" or "avec état" for "stateful". |
 | scope | portée | fr | Deliberately distinct from _bloc d'instructions_ (code block) above. |
-| class | classe | fr | |
-| method | méthode | fr | |
-| property | propriété | fr | |
-| object | objet | fr | |
 
 ### Tooling & engineering
 
 | English | French | Use (fr/en) | Notes |
 |---------|--------|-------------|-------|
 | auth (authentication / authorization) | authentification / autorisation | fr | Pick by meaning. |
-| deploy (verb / noun) | déployer / déploiement | fr | |
 | tool / tooling | outil / outillage | fr | _outils_ reads more naturally than _outillage_ in most prose; _outillage_ for the collective sense ("toolchain" = _chaîne d'outils_). |
-| module | module | fr | |
-| algorithm | algorithme | fr | |
 | edge case | cas limite | fr | No official ruling exists; flagged for native-speaker confirmation. |
 | backwards compatibility | rétrocompatibilité | fr | Not "compatibilité descendante". |
-| component | composant | fr | |
 
 ### Platform & curriculum vocabulary
 
@@ -124,18 +84,10 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 |---------|--------|-------------|-------|
 | feature (platform capability) | fonctionnalité | fr | Deliberately distinct from _fonction_ (function) to avoid collision. |
 | course | cours | fr | The whole Jiki course the learner is taking: _dans ce cours_. Keep distinct from _leçon_ (lesson) and _programme_ (curriculum). |
-| lesson | leçon | fr | |
-| exercise | exercice | fr | |
-| scenario | scénario | fr | Jiki-specific structured variant within an exercise. |
 | curriculum | programme | fr | Avoid the false friend "curriculum", which in French means a CV/résumé. |
-| level | niveau | fr | The curriculum's structural unit. |
-| milestone | jalon | fr | A progression checkpoint. |
 | pathway | parcours | fr | A structured learning sequence. Deliberately distinct from _filière_ (track) below. |
 | track (curriculum path) | filière | fr | Deliberately distinct from _parcours_ (pathway) above. |
 | syllabus | programme (du cours) | fr | Note the deliberate overlap with _curriculum → programme_; disambiguate with "du cours" when both appear in the same context. |
-| mentor / mentoring | mentor / mentorat | fr | |
-| tutorial | tutoriel | fr | |
-| solution (learner's submission) | solution | fr | |
 
 ## Keep in English
 
@@ -192,6 +144,20 @@ Example: _pour appeler une fonction, écris son identifiant, puis une paire de p
 ---
 
 ## Decision log
+
+### 2026-07-31: Pruned ordinary vocabulary
+
+Removed 47 rows whose French rendering was the plain dictionary word with nothing to
+decide (`programming`, `developer`, `tech industry`, `pitfall`, `value`, `number`,
+`character`, `integer`, `element`, `key-value pair`, `condition`, `comparison`,
+`expression`, `operator`, `to call`, `to define`, `input`, `output`, `pure function`,
+`keyword`, `mental model`, `variable`, `error`, `nested`, `to run/execute`, `loop`, `for
+loop`, `while loop`, `for-of loop`, `increment`, `concatenation/to concatenate`, `class`,
+`method`, `property`, `object`, `deploy`, `module`, `algorithm`, `component`, `lesson`,
+`exercise`, `scenario`, `level`, `milestone`, `mentor/mentoring`, `tutorial`, `solution`).
+A reviewer might query cutting `for loop`/`while loop`/`for-of loop` and `variable`/`loop`
+despite their gender or keyword notes: those notes were mechanical (keep the code keyword;
+grammatical gender), not a translation choice, so the rows carried nothing worth keeping.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

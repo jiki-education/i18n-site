@@ -2,10 +2,10 @@
 lang: "de"
 name: "German"
 family: null
-governance_sha: "bb77cbf"
-content_version: "77ecbbe90891"
+governance_sha: "437b15b"
+content_version: "9eb1ee520dbc"
 published_at: "2026-07-30"
-term_count: 86
+term_count: 57
 forum_topic_id: 340
 ---
 
@@ -18,11 +18,7 @@ decision log (`glossary-notes.md`).
 
 | English | German | Use (de/en) | Notes |
 |---------|--------|-------------|-------|
-| programming / coding | **Programmieren** | de | |
 | streak | Streak | en | |
-| tech / tech industry | Tech-Branche | de | |
-| developer | Entwickler(in) | de | |
-| pitfall | Falle | de | Stands alone. |
 
 ## Localize (use the German term unless the row says `en`)
 
@@ -35,39 +31,27 @@ themselves actually use, so the English word is the ordinary German word there.
 
 | English | German | Use (de/en) | Notes |
 |---------|--------|-------------|-------|
-| value | Wert | de | |
-| number | Zahl | de | |
 | integer | Ganzzahl | de | The type keyword `int` in code stays English. |
 | float / decimal | Gleitkommazahl | de | **Settled on the forum; do not change** (see `glossary-notes.md`). Do **not** fall back on "Dezimalzahl": it names the base-10 system, not this data type, so it is not a synonym here. "Fließkommazahl" is also rejected as an anglicism. |
-| character | Zeichen | de | |
 | true / false | wahr / falsch | de | Not capitalized in prose. |
 | array | Array | en | No gloss needed, "Array" is standard vocabulary now. |
 | dictionary | Wörterbuch | de | General prose term. Python-specific material may say "Dictionary"/"dict" instead; do not mix within one document. |
-| element | Element | de | |
-| index | Index | de | Learned plural: "Indizes". |
 | string | String | en | Where the source `<define>`s it, gloss as "String (Zeichenkette)", then use "String" throughout. Exception: in the string concept itself, lean more on "Zeichenkette" if it aids teaching. |
 | Boolean | boolescher Wert | de | The type keyword `bool`/`Boolean` in code stays English. |
-| data type | Datentyp | de | |
 
 ### Functions & control flow
 
 | English | German | Use (de/en) | Notes |
 |---------|--------|-------------|-------|
 | if statement | if-Anweisung | de | The `if` keyword stays English in code and in this compound; "Anweisung" is translated. |
-| condition | Bedingung | de | Stands alone. |
-| comparison | Vergleich | de | Stands alone. |
 | expression | Ausdruck | de | Distinct from "Anweisung" (statement). |
-| operator | Operator | de | |
 | statement (executable) | Anweisung | de | The imperative sense: a line of code that does something and gets executed. Keep distinct from "Befehl" (instruction given to Jiki). |
 | statement (logical claim) | Aussage | de | The proposition sense: a claim that is true or false. Keep distinct from "Anweisung". |
 | function | Funktion | de | The *keyword* `function` in code stays English; the concept in prose is "Funktion". |
-| to call (a function) | aufrufen | de | Separable verb: "ruft die Funktion auf". |
-| to define (a function) | definieren | de | |
 | parameter | Parameter | de | Declaration-site name. Masculine, unchanged plural: "der Parameter, die Parameter". |
 | argument | Argument | de | Call-site value. Neuter, distinct gender from "Parameter": "das Argument, die Argumente". |
 | input (to a function) | Eingabewert | de | Distinct from general "Eingabe" (user input). |
 | output | Ausgabe | de | The function's result specifically is "Rückgabewert"; "Ausgabe" is the general/printed sense. |
-| to return (a value) | zurückgeben | de | Separable verb: "gibt den Wert zurück". |
 | return value | Rückgabewert | de | Keep distinct from the verb above. |
 | brackets (the two after a function name) | runde Klammern | de | German distinguishes shapes, so name them on first mention in a page: "zwei runde Klammern". Plain "Klammern" is fine for later mentions in the same page. Square brackets are "eckige Klammern". |
 
@@ -75,29 +59,19 @@ themselves actually use, so the English word is the ordinary German word there.
 
 | English | German | Use (de/en) | Notes |
 |---------|--------|-------------|-------|
-| keyword | Schlüsselwort | de | |
 | interpreter | Interpreter | de | **A person doing a job, not a program: Jiki is the interpreter.** No gloss on `<define>`: the German form is the same word in the same script, so the parenthetical would teach nothing (see the skip-gloss rule in `guide.md`). Never "Übersetzer" (that is a compiler) or "Dolmetscher" (spoken-language interpreting). |
 | instruction (given to Jiki) | Befehl | de | A single thing the learner tells Jiki to do. Pairs with "befolgen": "Befehle auf eine Tafel schreiben, und Jiki befolgt sie." Kept distinct from "Anweisung" (statement), which is reserved for a line of code. |
 | mental model | Denkmodell | de | The picture-in-your-head framing. |
 | (programming) language | Programmiersprache | de | Also the "a language a computer understands" framing, where the bare "Sprache" is right. Never the English "Language". |
-| variable | Variable | de | Feminine noun: "die Variable, die Variablen". |
-| assignment | Zuweisung | de | The noun. |
-| to assign | zuweisen | de | Takes a dative object: "Der Wert wird der Variablen zugewiesen." |
 | code block | Block | de | Keep distinct from "scope" (Gültigkeitsbereich) below; do not conflate. |
-| error | Fehler | de | |
-| nested | verschachtelt | de | e.g. "verschachtelte Schleife" = nested loop. |
 | iteration | Iteration | de | "Durchlauf" is a friendlier beginner gloss for a single pass through a loop. |
-| to run / execute (code) | ausführen | de | Separable verb: "führt das Programm aus". |
 | loop | Schleife | de | English "loop" is never used in prose. |
 | for loop | for-Schleife | de | Keep the `for` keyword in code font; translate only "Schleife". |
 | while loop | while-Schleife | de | As above, with `while`. |
 | loop body | Schleifenrumpf | de | **Open native objection, awaiting an owner decision; the rendering here is unconfirmed** (see `glossary-notes.md`). Until the owner rules, use "Schleifenrumpf" and stay consistent within a document. |
 | increment | erhöhen | de | The verb. |
 | scope | Gültigkeitsbereich | de | Keep distinct from "Block" (code block) above. |
-| class | Klasse | de | |
-| method | Methode | de | |
 | property | Eigenschaft | de | |
-| object | Objekt | de | |
 
 ### Tooling & engineering
 
@@ -106,10 +80,7 @@ themselves actually use, so the English word is the ordinary German word there.
 | workflow | Workflow | en | Distinct from the curriculum sense. |
 | deploy | ausrollen | de | The verb. Noun form: "Deployment". |
 | tool / tooling | Tool | en | |
-| module | Modul | de | |
-| algorithm | Algorithmus | de | Irregular Latin plural: "die Algorithmen". |
 | edge case | Randfall | de | Where the source `<define>`s it, gloss as "Randfall (Edge Case)". Keep distinct from "Grenzfall" (a boundary value) and "Sonderfall" (a special/exceptional case), which are not synonyms. |
-| component | Komponente | de | Use it directly, no loanword form. |
 | CLI (the concept) | Kommandozeile | de | The working term itself, not the bare acronym. "CLI-Tool" is acceptable as a compound where the acronym is part of a product name. |
 
 ### Platform & curriculum vocabulary
@@ -156,6 +127,19 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-07-31: Pruned settled ordinary vocabulary
+
+Removed 29 rows whose English term has one obvious canonical German rendering with nothing
+to decide (empty or purely grammatical notes, no rejected alternative, no collision with
+another agreed term): `programming / coding`, `tech / tech industry`, `developer`, `pitfall`,
+`value`, `number`, `character`, `element`, `index`, `data type`, `condition`, `comparison`,
+`operator`, `to call (a function)`, `to define (a function)`, `to return (a value)`,
+`keyword`, `variable`, `assignment`, `to assign`, `error`, `nested`, `to run / execute
+(code)`, `class`, `method`, `object`, `module`, `algorithm`, `component`. Anything with a
+rejected alternative, a collision note, an open forum objection, or part of the Jiki
+metaphor set was left untouched; a reviewer querying `component` or `class`/`method`/`object`
+(direct, uncontested cognates) is the most likely challenge.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

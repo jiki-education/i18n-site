@@ -2,10 +2,10 @@
 lang: "ca"
 name: "Catalan"
 family: null
-governance_sha: "bb77cbf"
-content_version: "47273f7bd5af"
+governance_sha: "437b15b"
+content_version: "8270ae26e7b2"
 published_at: "2026-07-30"
-term_count: 107
+term_count: 49
 forum_topic_id: 536
 ---
 
@@ -18,11 +18,8 @@ decision log (`glossary-notes.md`).
 
 | English | Catalan | Use (ca/en) | Notes |
 |---------|---------|----------|-------|
-| programming / coding | **programació** | ca | |
 | developer | **desenvolupador** | ca | Masculine generic default in flowing prose; see guide § Style notes. |
-| streak | **ratxa** | ca | |
 | tech / tech industry | **sector tecnològic** | ca | Prose form; use plain "tecnologia" for the general field. |
-| pitfall | **parany** | ca | |
 
 ## Localize (use the Catalan term)
 
@@ -32,108 +29,53 @@ These are terms where the Catalan is used in prose. Split by theme for readabili
 
 | English | Catalan | Use (ca/en) | Notes |
 |---------|---------|----------|-------|
-| value | valor | ca | |
-| number | nombre | ca | |
-| true / false | cert / fals | ca | |
-| character | caràcter | ca | |
-| integer | nombre enter | ca | |
 | float / decimal | nombre decimal | ca | Use the simpler _decimal_ form for learner-facing prose. |
-| data type | tipus de dades | ca | |
 | array / list | llista | ca | _Llista_ is Jiki's single array/list term; keep it distinct from _matriu_ (2-D matrix, a different concept). |
-| string | cadena de caràcters | ca | Use the full form where the source `<define>`s it, then _cadena_ alone. |
 | Boolean | booleà | ca | Fully localized; do not keep "Boolean" in English. |
 
 ### Functions & control flow
 
 | English | Catalan | Use (ca/en) | Notes |
 |---------|---------|----------|-------|
-| if statement | condicional | ca | |
-| condition | condició | ca | Stands alone; no gloss needed. |
-| comparison | comparació | ca | Stands alone; no gloss needed. |
-| expression | expressió | ca | |
-| operator | operador | ca | |
-| NOT operator / logical negation | negació lògica | ca | |
 | statement (executable) | sentència | ca | The imperative sense: a line of code that does something and gets executed. |
 | statement (logical claim) | afirmació | ca | The proposition sense: a claim that is true or false. Keep distinct from _sentència_ above; pick by meaning, not by the English word. |
 | function | funció | ca | The *keyword* `function` in code stays English; the concept in prose is _funció_. |
-| to call (a function) | cridar | ca | _cridar la funció_. |
-| to define (a function) | definir | ca | |
 | parameter | paràmetre | ca | The declaration-site name. |
 | argument | argument | ca | The call-site value. |
-| input (to a function) | entrada | ca | |
-| output | sortida | ca | |
-| to return (a value) | retornar | ca | "La funció retorna un valor." |
-| return value | valor de retorn | ca | |
 | brackets (the two after a function name) | parèntesis | ca | The `()` pair. Catalan names the shapes separately, so the word has to say which: _parèntesis_ are round, _claudàtors_ are square, _claus_ are curly. In running prose: "escriu-ne el nom i, tot seguit, els dos parèntesis". |
-| pure function | funció pura | ca | |
 
 ### Loops, state & program flow
 
 | English | Catalan | Use (ca/en) | Notes |
 |---------|---------|----------|-------|
-| keyword | paraula clau | ca | |
 | interpreter | intèrpret | ca | **A person doing a job, not a program.** On concept pages Jiki *is* the intèrpret, so the word has to be able to name a character. Never a machine-forming coinage (_interpretador_, _programa intèrpret_): those name a tool and cannot name Jiki. |
 | instruction (given to Jiki) | instrucció | ca | Everyday word, as in "donar les instruccions correctes al Jiki". Not a formal or legal register word (_ordre_, _directiva_). |
 | mental model | model mental | ca | Use it verbatim, not a paraphrase like _manera de pensar_. |
 | (programming) language | llenguatge (de programació) | ca | _Llenguatge_ for both senses on a page: the programming language, and "a language a computer understands". Never _idioma_, which is a natural human language. |
-| variable | variable | ca | |
-| assignment | assignació | ca | |
-| to assign | assignar | ca | |
-| code block | bloc de codi | ca | |
 | error | error | ca | |
 | exception | excepció | ca | Keep distinct from _error_ above (the catchable-error-object sense). |
-| nested | niat | ca | e.g. _bucle niat_ = nested loop. |
-| iteration | iteració | ca | Verb: _iterar_. |
-| to run / execute (code) | executar | ca | |
 | loop | bucle | ca | Not _llaç_. |
 | for loop | `for` bucle | ca | Keep `for` in backticks (real keyword) + _bucle_. |
 | while loop | `while` bucle | ca | As above. |
 | for-of loop | `for...of` bucle | ca | As above. |
-| loop body | cos del bucle | ca | |
 | break (loop control) | sortir del bucle | ca | The keyword `break` itself always stays English in code; this is the prose concept of breaking out of a loop. |
-| increment | incrementar | ca | |
-| modulo / remainder operator | operador de mòdul | ca | The `%` operator. |
-| concatenation / to concatenate | concatenació / concatenar | ca | |
-| toggle | alternar | ca | |
-| state / stateful | estat / amb estat | ca | |
-| scope | àmbit | ca | |
-| class | classe | ca | |
-| method | mètode | ca | |
-| property | propietat | ca | |
-| object | objecte | ca | |
 | encapsulation | encapsulament | ca | Abstract OOP concept; gloss even though the word is a transparent cognate. |
 
 ### Tooling & engineering
 
 | English | Catalan | Use (ca/en) | Notes |
 |---------|---------|----------|-------|
-| workflow | flux de treball | ca | |
 | auth (authentication / authorization) | autenticació / autorització | ca | Pick by meaning; the two concepts render differently in Catalan. |
-| deploy (verb: to deploy) | desplegar | ca | |
-| tool / tooling | eina / eines | ca | Stands alone; no gloss needed. |
-| module | mòdul | ca | |
 | algorithm | algorisme | ca | Also spelled _algoritme_; prefer _algorisme_ for consistency. |
-| edge case | cas límit | ca | |
-| backwards compatibility | compatibilitat amb versions anteriors | ca | |
 
 ## Platform & curriculum vocabulary
 
 | English | Catalan | Use (ca/en) | Notes |
 |---------|---------|----------|-------|
 | feature (platform capability) | funcionalitat | ca | Kept distinct from _funció_ (function) to avoid collision, per `global/terms.md`. |
-| lesson | lliçó | ca | |
-| exercise | exercici | ca | |
-| scenario | escenari | ca | |
-| curriculum | currículum | ca | |
 | course | curs | ca | The whole Jiki course the learner is taking ("En aquest curs, el teu intèrpret és el Jiki"). Keep distinct from _lliçó_ (lesson) and _currículum_ (curriculum). |
-| level | nivell | ca | |
-| milestone | fita | ca | |
 | pathway | itinerari | ca | |
-| syllabus | temari | ca | |
-| mentor / mentoring | mentor / mentoria | ca | |
 | track (curriculum path) | recorregut | ca | Kept distinct from _itinerari_ (pathway) even though they're near-synonyms in English too. |
-| tutorial | tutorial | ca | |
-| solution (learner's submission) | solució | ca | |
 | canvas (graphics exercises) | llenç | ca | |
 
 ## Keep in English
@@ -173,6 +115,21 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-07-31: Glossary pruned of ordinary vocabulary
+
+**Decided by:** agent, per the pruning test in `global/translating.md` step 6. Removed 58
+rows across every section (Core decisions, Values & data types, Functions & control flow,
+Loops/state & program flow, Tooling & engineering, Platform & curriculum vocabulary) where
+the English term has one obvious Catalan rendering and nothing was left to decide: mostly
+transparent cognates (`variable`, `object`, `error`'s neighbours like `class`/`method`/
+`property`) and ordinary dictionary words (`streak`, `pitfall`, `value`, `lesson`,
+`exercise`). Nothing in the "Keep in English" or "Jiki physical metaphors" sections was
+touched, and no row this file records as an owner decision (`board / whiteboard`,
+`interpreter`) was removed. A reviewer might query cutting `if statement` (condicional) and
+`string` (cadena de caràcters): both were dropped because their Notes column carried no
+recorded alternative or collision, even though the renderings aren't literal word-for-word
+translations.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

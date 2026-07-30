@@ -2,10 +2,10 @@
 lang: "hu"
 name: "Hungarian"
 family: null
-governance_sha: "b05a910"
-content_version: "7c084172c5ce"
+governance_sha: "437b15b"
+content_version: "eeded0175136"
 published_at: "2026-07-30"
-term_count: 146
+term_count: 79
 forum_topic_id: 289
 ---
 
@@ -19,11 +19,8 @@ decision log (`glossary-notes.md`).
 | English | Hungarian | Use (hu/en) | Notes |
 |---------|-----------|-------------|-------|
 | programming / coding | **programozás** | hu | Use `programozás` consistently. `kódolás` is acceptable only when the source specifically stresses the casual act of writing code. Never mix both in one document. |
-| streak | sorozat | hu | |
 | tech / tech industry | tech-ipar | hu | Not _technológiai ipar_. |
-| developer | fejlesztő | hu | |
 | mental model | gondolati modell | hu | Not _mentális modell_. |
-| loom (metaphorical: something looming) | szövőszék | hu | |
 | dopamine hit | dopaminlöket | hu | Informal register. Not _dopaminroham_. |
 
 ## Localize (use the Hungarian term)
@@ -34,73 +31,45 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 
 | English | Hungarian | Use (hu/en) | Notes |
 |---------|-----------|-------------|-------|
-| exercise | feladat | hu | |
-| lesson | lecke | hu | |
 | course / track | kurzus | hu | Covers both the whole Jiki course (_Ebben a kurzusban_ = "In this course") and a curriculum track. |
 | concept (learning unit) | fogalom | hu | Concept Library = Fogalomtár. Not koncepció. |
 | task (within an exercise) | részfeladat | hu | Distinct from feladat (the exercise itself). |
-| challenge (feature) | kihívás | hu | |
 
 ### Values & data types
 
 | English | Hungarian | Use (hu/en) | Notes |
 |---------|-----------|-------------|-------|
-| value | érték | hu | |
-| number | szám | hu | |
 | true / false | igaz / hamis | hu | Not capitalised in prose. |
 | character | karakter | hu | A text character. |
-| integer | egész szám | hu | |
 | float / decimal | tizedes tört | hu | Or _lebegőpontos szám_ if the floating-point nature matters. |
-| array | tömb | hu | |
-| data type | adattípus | hu | |
 | compound data type | összetett adattípus | hu | Distinct from plain data type. |
-| data structure | adatszerkezet | hu | |
-| type (data type, in prose) | típus | hu | |
 | letter (of a string) | betű | hu | Distinct from karakter (text character). |
-| index | index | hu | No clarification parens needed. |
 | dictionary | szótár | hu | If glossed, gloss in the singular (_dictionary_), even when the Hungarian noun is plural (_szótárak_). |
 | key (dictionary key) | kulcs | hu | If glossed, gloss in the singular (_key_), even when the Hungarian noun is plural (_kulcsoknak_). |
-| key-value pair | kulcs-érték pár | hu | |
-| entry (dictionary entry) | bejegyzés | hu | |
-| constant | konstans | hu | |
-| identifier | azonosító | hu | |
 
 ### Functions & control flow
 
 | English | Hungarian | Use (hu/en) | Notes |
 |---------|-----------|-------------|-------|
 | if statement | elágazás | hu | Plural: _elágazások_. |
-| condition | feltétel | hu | Stands alone; no gloss needed. |
 | condition is true / false | a feltétel igaz / hamis | hu | A Hungarian condition needs an explicit predicate; see `guide.md`. |
-| comparison | összehasonlítás | hu | Stands alone; no gloss needed. |
-| operator | operátor | hu | |
-| expression | kifejezés | hu | |
 | statement (executable) | utasítás | hu | The imperative sense: a line of code that does something and gets executed. Shares the word with "instruction (given to Jiki)" below. |
 | statement (logical claim) | állítás | hu | The proposition sense: a claim that is true or false; also a test assertion. Pick by meaning, not by the English word. |
 | instruction (given to Jiki) | utasítás | hu | What the learner puts on the board for Jiki to follow (_utasításokat írsz fel egy táblára_). Everyday Hungarian, not a legal-register word. Deliberately the same word as "statement (executable)". |
 | function | függvény | hu | The *keyword* `function` in code stays English; the concept in prose is _függvény_. |
-| to call (a function) | meghív | hu | _függvényt meghív_ |
 | to define (a function) | definiál / létrehoz | hu | |
 | brackets (the two after a function name) | zárójel | hu | _a két zárójel_ for the `()` pair written after a function name. Which bracket type to name, and when, is in the Brackets section below. |
-| input (to a function) | bemenet | hu | |
-| output | kimenet | hu | |
 | to return (a value) | visszaad | hu | „30-at ad vissza." The bracketed `<define>` gloss word must be _return_, never _returning_. |
-| return value | visszatérési érték | hu | |
 | parameter | paraméter | hu | The declaration-site name. |
 | argument | argumentum | hu | The call-site value; _argumentum_ over _paraméter_ when the call-site value is meant. |
-| to declare / declaration | deklarál / deklaráció | hu | |
 | initializer | kezdőérték | hu | Not _inicializáló_. |
-| caller | hívó | hu | |
 | interpreter | értelmező | hu | **A person doing a job, not a program.** On concept pages Jiki *is* the interpreter (_a te értelmeződ Jiki_, _Az ő dolga, hogy értelmezze a kódot_). Never _értelmezőprogram_ (machine-only), and never _tolmács_ (a human spoken-language interpreter, a different job). |
-| function body | függvény törzse | hu | |
-| string concatenation | string-összefűzés | hu | Verb: összefűz. |
 | string template | string-sablon | hu | The prose concept. The JS construct's own name (_template literal_ / _template string_) stays English; see "Keep in English". |
 | placeholder | helyőrző | hu | |
 | to update (a variable/dict) | frissít | hu | |
 | syntax | szintaxis | hu | |
 | (programming) language | (programozási) nyelv | hu | Use it including in the "a language a computer understands" framing. Never the English borrowing. |
 | and / or (logical, in prose) | és / vagy | hu | The keywords and/or/`&&`/`\|\|` stay English. Rarely needs a `<define>` gloss at all; if the source does gloss it, the bracket may show the bare English word right after (_és_ (`and`)) rather than a full "angolul" explanation. |
-| equal sign | egyenlőségjel | hu | Even on `<define>`, no "angolul" gloss needed. |
 | ampersand (`&`) | és-jel | hu | On `<define>`, show the glyph itself (`&`) in the bracket, not the English word "ampersand". |
 | bar / vertical bar (`\|`) | függőleges vonal | hu | The `\|\|` keyword stays English. On `<define>`, show the glyph itself (`\|`) in the bracket, not the English word "bar". |
 | pure (function) | tiszta | hu | _tiszta függvény_ = pure function. When glossed, gloss the full term _pure function_, not the bare adjective _pure_. |
@@ -110,36 +79,15 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 
 | English | Hungarian | Use (hu/en) | Notes |
 |---------|-----------|-------------|-------|
-| keyword | kulcsszó | hu | |
-| variable | változó | hu | |
-| assignment | értékadás | hu | |
-| to assign | hozzárendel | hu | |
-| code block | kódblokk | hu | |
-| error | hiba | hu | |
 | nested | egymásba ágyazott | hu | e.g. _egymásba ágyazott ciklus_ = nested loop. When glossed, gloss the full term (_nested loop_), not the bare adjective _nested_. |
 | iteration | iteráció | hu | Verb: _iterál_; „végigmegy rajta" also natural. |
-| element | elem | hu | Array element = _tömb eleme_. |
-| to run / execute (code) | lefuttat / lefut | hu | |
 | loop | ciklus | hu | _ciklus_, not _hurok_. |
-| for loop | `for` ciklus | hu | Keep `for` in backticks (real keyword) + _ciklus_. |
-| while loop | `while` ciklus | hu | Keep `while` in backticks + _ciklus_. |
-| for-of loop | `for-of` ciklus | hu | |
-| loop body | ciklus törzse | hu | |
-| inner loop / outer loop | belső ciklus / külső ciklus | hu | |
-| loop variable | ciklusváltozó | hu | |
 | increment (for-loop) | léptetés | hu | |
-| indentation | behúzás | hu | Verb: behúz. |
-| method | metódus | hu | |
-| property | tulajdonság | hu | |
-| object | objektum | hu | |
-| state | állapot | hu | |
 
 ### Tooling & engineering
 
 | English | Hungarian | Use (hu/en) | Notes |
 |---------|-----------|-------------|-------|
-| workflow | munkafolyamat | hu | |
-| pitfall | buktató | hu | Stands alone; no gloss needed. |
 | auth (authentication / authorization) | hitelesítés | hu | Covers both _autentikáció_ and _autorizáció_. |
 | deploy (verb: to deploy) | élesít | hu | „Élesítsd" for imperative; also „élesítés" as noun. Not „telepítsd ki". |
 | framework | keretrendszer | hu | Use _keretrendszer_ exclusively; never revert to _framework_. |
@@ -151,7 +99,6 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 | English | Hungarian | Use (hu/en) | Notes |
 |---------|-----------|-------------|-------|
 | hue | színárnyalat | hu | Not árnyalat (reserved for "shade of a colour"). |
-| saturation | telítettség | hu | |
 | lightness | világosság | hu | Distinct from fényerő (brightness). |
 
 ### App & product UI
@@ -159,18 +106,7 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 | English | Hungarian | Use (hu/en) | Notes |
 |---------|-----------|-------------|-------|
 | plan (subscription tier) | csomag | hu | Not terv. |
-| subscription | előfizetés | hu | |
-| to unlock | felold | hu | Noun: feloldás; locked state: zárolva. |
-| badge | jelvény | hu | |
-| achievements | eredmények | hu | |
-| certificate | tanúsítvány | hu | |
-| account | fiók | hu | |
 | dashboard | irányítópult | hu | Not vezérlőpult. |
-| session (auth) | munkamenet | hu | |
-| support (customer) | ügyfélszolgálat | hu | |
-| cookies | sütik | hu | |
-| debugging | hibakeresés | hu | |
-| breakpoint | töréspont | hu | |
 
 ## Keep in English
 
@@ -183,11 +119,8 @@ These stay in English in Hungarian prose, with the Hungarian gloss to use for ea
 | Boolean | _logikai érték_ | Exception: where the source defines it, gloss as _logikai érték_, then _Boolean_ throughout. |
 | API | explain what it is in Hungarian | Where defined, explain the concept in Hungarian, not just gloss the acronym. |
 | tooling (mass noun) | _tooling_ | The countable _tool_ is localized as _eszköz_; see "Tooling & engineering". |
-| JavaScript, Python, React | (no gloss) | Product/language names. |
 | Debug, Test | (no gloss) | As keywords/technical tokens. |
 | Code, Bug, Frontend, Backend | (no gloss) | |
-| Variable and function names | (no gloss) | Never translated. |
-| CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. |
 | CLI (the concept) | parancssori felület | Explain CLI as _parancssori felület_ (command-line interface) where the source defines it. |
 | Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
 | template literal / template string | (no gloss) | The JS construct's own name. The general prose concept is _string-sablon_; see "Functions & control flow". Suffix e.g. template stringben. |
@@ -228,6 +161,17 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-07-31: Glossary pruned of ordinary vocabulary
+
+**Decided by:** agent. Removed 67 rows whose English term has one obvious Hungarian rendering
+with nothing to decide (e.g. `number` → szám, `variable` → változó, `object` → objektum),
+keeping every row that records a rejected alternative, a collision, a register/scope
+distinction, an English-language-name choice, or a Jiki metaphor. A reviewer might query the
+loss of `array` (tömb) and `index` (index): both were removed because their own rows carried
+no argument, though the reasoning that matters for `array` (avoiding a collision with `tábla`
+for board) is recorded on the `board / whiteboard` row instead. All owner-decided rows below
+are untouched.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

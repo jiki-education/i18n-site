@@ -2,10 +2,10 @@
 lang: "es-ES"
 name: "European Spanish"
 family: "es"
-governance_sha: "bb77cbf"
-content_version: "53ef5f144404"
+governance_sha: "437b15b"
+content_version: "97c378c9138a"
 published_at: "2026-07-30"
-term_count: 114
+term_count: 60
 forum_topic_id: 310
 ---
 
@@ -35,7 +35,6 @@ file; it has not necessarily gone unagreed, it may simply diverge by locale.
 | English | Spanish | Use (es/en) | Notes |
 |---------|---------|-------------|-------|
 | programming / coding | **programación** | es | Use `programación` consistently. `codificación` exists for the narrow act of writing code but is not natural in the warm register; avoid. |
-| streak | racha | es | The gamification streak of consecutive days. |
 
 ## Localize (use the Spanish term)
 
@@ -45,71 +44,33 @@ These are terms where the Spanish is used in prose, so the "Use (es/en)" column 
 
 | English | Spanish | Use (es/en) | Notes |
 |---------|---------|-------------|-------|
-| value | valor | es | Ordinary word. |
-| number | número | es | Ordinary word. |
-| integer | número entero | es | _entero_ is an acceptable shorter form. |
 | character | carácter | es | Singular _carácter_, plural _caracteres_. Not "sign/mark/letra". |
-| true / false | verdadero / falso | es | Lowercase in prose. |
-| dictionary | diccionario | es | |
-| key-value pair | par clave-valor | es | The key itself is _clave_ (an ordinary word once introduced). |
 
 ### Functions & control flow
 
 | English | Spanish | Use (es/en) | Notes |
 |---------|---------|-------------|-------|
 | if statement / conditional | condicional | es | Plural: _condicionales_. The full form _la sentencia condicional_ is available when it reads better. |
-| condition | condición | es | Ordinary word; stands alone. |
-| comparison | comparación | es | Ordinary word; stands alone. |
-| expression | expresión | es | |
-| operator | operador | es | |
-| NOT operator / logical negation | negación (lógica) | es | |
 | function | función | es | The *keyword* `function` in code stays English; the concept in prose is _función_. |
 | to call (a function) | llamar (a una función) | es | Keep the personal _a_: _llamar a una función_. _invocar_ is an acceptable synonym in a fuller explanation. |
-| to define (a function) | definir (una función) | es | |
 | parameter | parámetro | es | Declaration-site name. |
 | argument | argumento | es | Call-site value. |
-| input (to a function) | entrada | es | |
-| output | salida | es | |
 | to return (a value) | devolver | es | Preferred over _retornar_. "La función devuelve un valor." |
-| pure function | función pura | es | |
 
 ### Loops, state & program flow
 
 | English | Spanish | Use (es/en) | Notes |
 |---------|---------|-------------|-------|
-| keyword | palabra clave | es | |
-| variable | variable | es | Gender: _la variable_. |
-| assignment | asignación | es | Noun. |
-| to assign | asignar | es | Verb; matches _asignación_ above. |
 | code block | bloque de código | es | Deliberately distinct from _ámbito_ (scope). |
-| error | error | es | |
-| nested | anidado | es | e.g. _bucle anidado_ = nested loop. |
-| iteration | iteración | es | Verb: _iterar_; _recorrer_ also natural. |
-| to run / execute (code) | ejecutar | es | |
 | loop | bucle | es | Gender: _el bucle_. Not _ciclo_ (a common alternative not used here). |
-| for loop | bucle `for` | es | Keep `for` in code font (real keyword) + _bucle_. |
-| while loop | bucle `while` | es | As above. (The curriculum currently has no `while` loops, only `repeat`, `for`, `for-of`.) |
-| for-of loop | bucle `for-of` | es | As above. |
-| loop body | cuerpo del bucle | es | |
-| increment | incremento | es | Verb: _incrementar_. |
+| for loop | bucle `for` | es | Keep `for` in code font (real keyword) + _bucle_. (The curriculum currently has no `while` loops, only `repeat`, `for`, `for-of`, all following this same pattern.) |
 | modulo / remainder operator | resto (de la división) | es | The `%` operator; _módulo_ names the operator, _resto_ names the result. |
-| concatenation / to concatenate | concatenación / concatenar | es | |
 | toggle | alternar | es | Verb; _conmutar_ also correct but heavier. |
-| state / stateful | estado | es | |
-| class | clase | es | |
-| method | método | es | |
-| property | propiedad | es | |
-| object | objeto | es | |
 
 ### Tooling & engineering
 
 | English | Spanish | Use (es/en) | Notes |
 |---------|---------|-------------|-------|
-| workflow | flujo de trabajo | es | The software-engineering sense. |
-| auth (authentication / authorization) | autenticación / autorización | es | Pick by meaning; both are standard, direct cognates. |
-| tool / tooling | herramienta / herramientas | es | |
-| module | módulo | es | |
-| algorithm | algoritmo | es | |
 | edge case | caso límite | es | "caso extremo" is an accepted alternative; do not mix both in one document. |
 
 ### Platform & curriculum vocabulary
@@ -117,16 +78,9 @@ These are terms where the Spanish is used in prose, so the "Use (es/en)" column 
 | English | Spanish | Use (es/en) | Notes |
 |---------|---------|-------------|-------|
 | feature (platform capability) | funcionalidad | es | Deliberately distinct from _función_ (function) to avoid collision; see `guide.md` § Style notes. Never use _función_ for a product feature. |
-| lesson | lección | es | |
-| exercise | ejercicio | es | |
 | scenario | escenario | es | Jiki-specific: a structured variant within an exercise. |
 | curriculum | plan de estudios | es | "currículo" is an accepted alternative; do not mix both in one document. |
-| level | nivel | es | |
-| milestone | hito | es | |
 | syllabus | temario | es | The list of topics; distinct from _plan de estudios_ (curriculum). "programa del curso" also natural. |
-| tutorial | tutorial | es | Loanword, standard in Spanish-language tech writing. |
-| bootcamp | bootcamp | es | Loanword, standard in Spanish-language tech-education discourse. |
-| solution (learner's submission) | solución | es | |
 
 ## Keep in English
 
@@ -182,8 +136,6 @@ read together. Why each term was chosen is in the decision log (`glossary-notes.
 | English | es-ES | Use (es-ES/en) | Notes |
 |---------|-------|-----------------|-------|
 | developer | desarrollador/a | es-ES | _Programador/a_ is an accepted synonym; do not mix both in one document. |
-| tech / tech industry | sector tecnológico | es-ES | |
-| pitfall | escollo | es-ES | Ordinary word; stands alone. _Trampa_ also works in context. |
 
 ## Localize (use the Spanish term)
 
@@ -194,9 +146,6 @@ These are terms where the Spanish is used in prose, so the "Use (es-ES/en)" colu
 | English | es-ES | Use (es-ES/en) | Notes |
 |---------|-------|-----------------|-------|
 | float / decimal | número decimal / número de coma flotante | es-ES | Use _decimal_ for the simple beginner sense, _de coma flotante_ (Spain, not _punto flotante_) when the floating-point nature matters. |
-| element | elemento | es-ES | Array element = _elemento del array_. |
-| index | índice | es-ES | Keep the tilde. No clarification parens needed. |
-| template literal | literal de plantilla | es-ES | |
 | identifier | nombre / identificador | es-ES | In beginner-facing prose the ordinary word is _nombre_ ("escribe su nombre"). Use _identificador_ only where the source itself says "identifier" and the formal sense is meant. |
 
 ### Functions & control flow
@@ -215,14 +164,12 @@ These are terms where the Spanish is used in prose, so the "Use (es-ES/en)" colu
 | break (loop control) | salir (del bucle) | es-ES | The keyword `break` in code stays English; this is the prose verb for the concept. _Romper el bucle_ also natural. |
 | interpreter | intérprete | es-ES | A **person noun**: someone who interprets, exactly as a human interpreter of languages, because Jiki *is* the interpreter ("tu intérprete es Jiki", "su trabajo es interpretar el código"). Never _interpretador_ or any program/device-flavoured coinage: those name a piece of software and cannot name Jiki. |
 | instruction (given to Jiki) | instrucción | es-ES | Everyday word, not a formal or legal register. Plural _instrucciones_. Verb: _darle instrucciones a Jiki_. |
-| mental model | modelo mental | es-ES | |
 | (programming) language | lenguaje (de programación) | es-ES | _Lenguaje_, never _idioma_, for a programming language and for "a language a computer understands". Say _lenguaje de programación_ on the explicit mention and plain _lenguaje_ thereafter; do not mix in the English word. |
 
 ### Tooling & engineering
 
 | English | es-ES | Use (es-ES/en) | Notes |
 |---------|-------|-----------------|-------|
-| deploy (verb / noun) | desplegar / despliegue | es-ES | |
 | backwards compatibility | retrocompatibilidad | es-ES | _Compatibilidad con versiones anteriores_ is the fuller form. |
 
 ### Platform & curriculum vocabulary
@@ -231,7 +178,6 @@ These are terms where the Spanish is used in prose, so the "Use (es-ES/en)" colu
 |---------|-------|-----------------|-------|
 | pathway | itinerario | es-ES | _Itinerario formativo_ is the fuller form. Near-synonym of _track_. |
 | track (curriculum path) | ruta (de aprendizaje) | es-ES | |
-| mentor / mentoring | mentor / mentoría | es-ES | |
 | course | curso | es-ES | The whole Jiki course ("en este curso, tu intérprete es Jiki"). Distinct from _lección_ (lesson) and _plan de estudios_ (curriculum). |
 
 ## Keep in English
@@ -276,6 +222,14 @@ paréntesis (`()`)._
 ---
 
 ## Decision log
+
+### 2026-07-31: Pruned ordinary vocabulary
+
+Removed 8 rows that had one obvious canonical rendering with nothing to decide: `tech /
+tech industry`, `pitfall`, `element`, `index`, `template literal`, `mental model`, `deploy
+(verb / noun)`, `mentor / mentoring`. A reviewer may want to double-check `pitfall`
+(_escollo_) and `deploy` (_desplegar / despliegue_), since both had a secondary alternative
+noted, but neither alternative amounted to a real fork a translator would need guidance on.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

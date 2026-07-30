@@ -2,7 +2,7 @@
 lang: "sw"
 name: "Swahili"
 family: null
-governance_sha: "bb77cbf"
+governance_sha: "437b15b"
 content_version: "656f97b19689"
 published_at: "2026-07-30"
 term_count: 100

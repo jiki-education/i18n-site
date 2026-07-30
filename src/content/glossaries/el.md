@@ -2,10 +2,10 @@
 lang: "el"
 name: "Greek"
 family: null
-governance_sha: "bb77cbf"
-content_version: "63ed35e72c85"
+governance_sha: "437b15b"
+content_version: "5abb3f4c9a75"
 published_at: "2026-07-30"
-term_count: 86
+term_count: 52
 forum_topic_id: 497
 ---
 
@@ -29,40 +29,22 @@ These are terms where the Greek is used in prose, so the "Use (el/en)" column is
 
 | English | Greek | Use (el/en) | Notes |
 |---------|-------|-------------|-------|
-| value | τιμή | el | Also embedded in `λογική τιμή` and `τιμή επιστροφής` below. |
-| number | αριθμός | el | |
 | true / false | αληθής / ψευδής | el | Not capitalised in prose. |
-| character | χαρακτήρας | el | |
-| integer | ακέραιος (αριθμός) | el | |
-| float / decimal | δεκαδικός (αριθμός) | el | |
 | string | συμβολοσειρά | el | Not the school curriculum's `αλφαριθμητικό`. |
-| Boolean | λογική τιμή | el | |
 | array | πίνακας | el | **Never confuse with `board / whiteboard` in the metaphors table below**, which is always `ασπροπίνακας`, never bare `πίνακας`. |
 | list | λίστα | el | Used where the source itself distinguishes "list" from "array". |
-| dictionary | λεξικό | el | |
-| element | στοιχείο | el | Array element = `στοιχείο του πίνακα`. |
 | index | θέση | el | Not `δείκτης`, which is reserved for "pointer", a different concept in Greek CS. |
-| key-value pair | ζεύγος κλειδιού-τιμής | el | |
 
 ### Functions & control flow
 
 | English | Greek | Use (el/en) | Notes |
 |---------|-------|-------------|-------|
 | if statement | εντολή `if` | el | Keep `if` in backticks (real keyword) + `εντολή`, matching `for` βρόχος below. Not the school-curriculum term `δομή επιλογής`. |
-| condition | συνθήκη | el | Stands alone; no gloss needed. |
-| comparison | σύγκριση | el | Stands alone; no gloss needed. |
-| expression | έκφραση | el | |
-| operator | τελεστής | el | e.g. `τελεστές σύγκρισης` (comparison operators). |
 | statement (executable) | εντολή | el | The imperative sense: a line of code that does something and gets executed. Shares the word with `instruction (given to Jiki)` below. |
 | statement (logical claim) | πρόταση | el | The proposition sense: a claim that is true or false. Pick by meaning, not by the English word. |
 | function | συνάρτηση | el | The *keyword* `function` in code stays English; the concept in prose is `συνάρτηση`. |
-| to call (a function) | καλεί | el | `καλεί μια συνάρτηση` |
-| to define (a function) | ορίζει | el | |
 | parameter | παράμετρος | el | The declaration-site name. |
 | argument | όρισμα | el | The call-site value. |
-| input (to a function) | είσοδος | el | |
-| output | έξοδος | el | |
-| to return (a value) | επιστρέφει | el | |
 | return value | τιμή επιστροφής | el | Keep distinct from the verb above. |
 | brackets (the two after a function name) | παρενθέσεις | el | Greek names each bracket shape separately (see the Brackets table), so the rendering must say which: the pair written after a function name is always `παρενθέσεις`, e.g. `αυτές τις δύο παρενθέσεις`. Never the generic `αγκύλες`, which is `[]`. |
 
@@ -73,26 +55,14 @@ These are terms where the Greek is used in prose, so the "Use (el/en)" column is
 | keyword | λέξη-κλειδί | el | Not `δεσμευμένη λέξη`. |
 | interpreter | διερμηνευτής | el | A **person** who interprets, which is what the term means here (Jiki is the interpreter, and it is "his job to interpret"). Never `διερμηνευτικό πρόγραμμα` or any `-πρόγραμμα`/device compound: those name a tool, so they cannot name Jiki. |
 | instruction (given to Jiki) | εντολή | el | The everyday Greek word for something you tell someone to do; the same word as `statement (executable)` above. |
-| mental model | νοητικό μοντέλο | el | |
 | (programming) language | γλώσσα προγραμματισμού | el | Shorten to bare `γλώσσα` once context is established, including in the "a language a computer understands" framing. Never the English "language". |
-| variable | μεταβλητή | el | |
-| assignment | ανάθεση | el | `εντολή ανάθεσης` = assignment statement. |
-| to assign | αναθέτει | el | |
 | code block | μπλοκ κώδικα | el | |
-| error | σφάλμα | el | |
 | exception | εξαίρεση | el | Keep distinct from `σφάλμα` (error), the general term. |
-| nested | εμφωλευμένος | el | e.g. `εμφωλευμένος βρόχος` = nested loop. |
 | iteration | επανάληψη | el | Same word covers "loop" as a general concept; context disambiguates. |
-| to run / execute (code) | εκτελεί | el | |
 | loop | βρόχος | el | The general "repetition" concept is `επανάληψη`; keep `βρόχος` for the loop construct itself. |
 | for loop | `for` βρόχος | el | Keep `for` in backticks (real keyword) + `βρόχος`. |
 | while loop | `while` βρόχος | el | As above. |
-| loop body | σώμα του βρόχου | el | |
-| scope | εμβέλεια | el | `τοπική εμβέλεια` = local scope, `καθολική εμβέλεια` = global scope. |
 | class | κλάση | el | Not the older, more generic `τάξη`. |
-| method | μέθοδος | el | |
-| property | ιδιότητα | el | |
-| object | αντικείμενο | el | |
 
 ### Platform & curriculum
 
@@ -100,15 +70,11 @@ These are terms where the Greek is used in prose, so the "Use (el/en)" column is
 |---------|-------|-------------|-------|
 | course | μάθημα | el | The whole Jiki course (e.g. "σε αυτό το μάθημα"). Not `σειρά μαθημάτων`. See `lesson` below for the collision this avoids. |
 | lesson | ενότητα | el | One lesson inside the course. Not `μάθημα`, which is `course` above. |
-| exercise | άσκηση | el | |
 
 ### Tooling & engineering
 
 | English | Greek | Use (el/en) | Notes |
 |---------|-------|-------------|-------|
-| workflow | ροή εργασίας | el | |
-| module | άρθρωμα | el | |
-| algorithm | αλγόριθμος | el | |
 | CLI (the concept) | γραμμή εντολών | el | Where the source `<define>`s it, explain the concept, not just gloss the term. `τερματικό` (terminal) is the common colloquial synonym once the concept is established. |
 
 ## Keep in English
@@ -159,6 +125,24 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-07-31: Glossary pruned of ordinary vocabulary
+
+**Decided by:** agent, per the standing rule in `global/translating.md` step 6 that a
+glossary only earns a row where a real choice exists. 34 rows removed: `value`, `number`,
+`Boolean`, `character`, `integer`, `float / decimal`, `dictionary`, `element`,
+`key-value pair`, `condition`, `comparison`, `expression`, `operator`,
+`to call (a function)`, `to define (a function)`, `input (to a function)`, `output`,
+`to return (a value)`, `mental model`, `variable`, `assignment`, `to assign`, `error`,
+`nested`, `to run / execute (code)`, `loop body`, `scope`, `method`, `property`, `object`,
+`exercise`, `workflow`, `module`, `algorithm`. Each had either an empty Notes cell or one
+that only glossed the ordinary dictionary word; anything documenting a rejected
+alternative, a collision, a register distinction, or a native-speaker/owner decision
+(e.g. `interpreter`, `board / whiteboard`, `if statement`, `class`, `index`, `keyword`)
+was left in place. A reviewer checking this pass might most want to query `Boolean` and
+`module`: both had a rationale note in this log explaining the choice, but the main
+glossary row itself carried no decision (no rejected alternative, no collision), so they
+were cut along with the rest.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

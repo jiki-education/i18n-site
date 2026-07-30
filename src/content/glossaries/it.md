@@ -2,10 +2,10 @@
 lang: "it"
 name: "Italian"
 family: null
-governance_sha: "bb77cbf"
-content_version: "9e107353afcb"
+governance_sha: "437b15b"
+content_version: "053a601ff528"
 published_at: "2026-07-30"
-term_count: 113
+term_count: 56
 forum_topic_id: 319
 ---
 
@@ -18,11 +18,9 @@ decision log (`glossary-notes.md`).
 
 | English | Italian | Use (it/en) | Notes |
 |---------|---------|-------------|-------|
-| programming / coding | programmazione | it | |
 | developer | sviluppatore / sviluppatrice | it | Agree gender with the referent; use the masculine as the generic/plural default. |
 | tech / tech industry | settore tech | it | Not _industria tecnologica_. |
 | streak | serie | it | A run of consecutive days, as in the learning-platform sense. Flagged low-confidence: confirm on first real use. |
-| pitfall | insidia | it | Stands alone; no gloss needed. |
 | foot-gun | trappola involontaria | it | Use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`. |
 
 ## Localize (use the Italian term)
@@ -33,33 +31,17 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 
 | English | Italian | Use (it/en) | Notes |
 |---------|---------|-------------|-------|
-| value | valore | it | |
-| number | numero | it | |
-| true / false | vero / falso | it | Not capitalised in prose. Literals `true`/`false` stay English in code. |
-| character | carattere | it | |
-| integer | numero intero | it | The type keyword (`int`) stays as-is in code. |
 | float / decimal | numero in virgola mobile | it | Use _numero decimale_ only for the plain "has a decimal point" sense, not the technical float type. |
 | array / list | array | it | A bare _array (array)_ gloss is unnecessary; where the source `<define>`s it, gloss with a one-line explanation of the concept instead, since the word itself is already English. Plural is invariant: _gli array_. Do not mix in "vettore" within one document. Never use "matrice" (means 2D matrix). Exercise prose sometimes says "list" informally for the same concept; render both as _array_. |
-| dictionary | dizionario | it | |
-| element | elemento | it | Array element = _elemento dell'array_. |
-| index | indice | it | Plural: _indici_. |
-| key-value pair | coppia chiave-valore | it | The key itself is _chiave_. |
 | string | stringa | it | Never left bare in English. |
-| Boolean | booleano | it | Adjective agrees: _booleano/booleana_. The code type name `Boolean` stays as-is in code. |
 
 ### Functions & control flow
 
 | English | Italian | Use (it/en) | Notes |
 |---------|---------|-------------|-------|
-| if statement | istruzione `if` | it | Keep `if` as the real keyword. |
-| condition | condizione | it | Stands alone. |
 | comparison | confronto | it | Stands alone. Avoid "comparazione". |
-| expression | espressione | it | |
-| operator | operatore | it | |
-| NOT operator / logical negation | negazione logica | it | The `!` symbol and `NOT` keyword stay as-is in code. |
 | statement (executable) | istruzione | it | The imperative sense: a line of code that does something and gets executed. |
 | statement (logical claim) | proposizione | it | The proposition sense: a claim that is true or false; also a test assertion. Deliberately distinct from _istruzione_ above; never cross-use. |
-| function | funzione | it | The *keyword* `function` in code stays English; the concept in prose is _funzione_. |
 | to call (a function) | chiamare (una funzione) | it | Use _chiamare_ consistently (not "invocare"). |
 | to define (a function) | definire (una funzione) | it | Distinct from _dichiarare_ (declare), which is not used for this concept here. |
 | parameter | parametro | it | Declaration-site name. |
@@ -68,56 +50,28 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 | output | output | en | Not _uscita_. |
 | to return (a value) | restituire | it | "La funzione restituisce 30." Not "ritornare". |
 | return value | valore restituito | it | Noun form; matches the verb _restituire_ above for consistency. |
-| pure function | funzione pura | it | |
 | brackets (the two after a function name) | parentesi | it | The `()` pair written after a function name to call it: _parentesi tonde (`()`)_ where the type matters, plain _parentesi_ once the round pair is established in context. See the Brackets table below for the glyph names. |
 
 ### Loops, state & program flow
 
 | English | Italian | Use (it/en) | Notes |
 |---------|---------|-------------|-------|
-| keyword | parola chiave | it | |
 | interpreter | interprete | it | **A person doing a job, not a program.** Jiki *is* the interprete ("il tuo interprete è Jiki", "l'interprete amichevole"). Never "interpretatore" or a device-flavoured coinage. Masculine/feminine invariant in form: _l'interprete_. |
 | instruction (given to Jiki) | istruzione | it | A single thing the learner tells Jiki to do. Everyday word, not a legal/formal register one. Deliberately the same word as _statement (executable)_ above: in Italian these are one concept and splitting them would invent a distinction the language does not make. |
-| mental model | modello mentale | it | |
 | (programming) language | linguaggio (di programmazione) | it | _linguaggio_, never _lingua_ (which means a natural human language). Also used for the "language a computer understands" framing: _un linguaggio che il computer capisce_. |
-| variable | variabile | it | |
-| assignment | assegnazione | it | |
-| to assign | assegnare | it | Matches _assegnazione_ above: "assegnare un valore a una variabile." |
 | code block | blocco di codice | it | Deliberately distinct from _scope_ below. |
-| error | errore | it | |
 | nested | annidato | it | e.g. _ciclo annidato_ = nested loop. Prefer over "nidificato". |
-| iteration | iterazione | it | Verb: _iterare_. |
-| to run / execute (code) | eseguire | it | |
-| loop | ciclo | it | |
-| for loop | ciclo `for` | it | Keep `for` as the real keyword + _ciclo_. |
-| while loop | ciclo `while` | it | As above, with `while`. |
-| for-of loop | ciclo `for...of` | it | As above, with `for...of`. |
-| loop body | corpo del ciclo | it | |
-| break (loop control) | istruzione `break` | it | The keyword `break` in code stays English; this is the prose concept of breaking out of a loop. |
-| increment | incremento | it | Verb: _incrementare_. |
 | modulo / remainder operator | operatore modulo (operator) / resto (value) | it | Use _operatore modulo_ for the `%` operator; _resto_ for the resulting value. |
-| concatenation / to concatenate | concatenazione / concatenare | it | |
 | toggle | alternare | it | Verb. |
-| state / stateful | stato | it | "con stato" for "stateful". |
 | scope | scope | en | Where the source `<define>`s it, gloss as _ambito (di visibilità)_, then use _scope_. |
-| class | classe | it | |
-| method | metodo | it | |
-| property | proprietà | it | |
-| object | oggetto | it | |
 
 ### Tooling & engineering
 
 | English | Italian | Use (it/en) | Notes |
 |---------|---------|-------------|-------|
-| workflow | flusso di lavoro | it | The software-engineering sense (a sequence of dev tasks). |
-| auth (authentication / authorization) | autenticazione / autorizzazione | it | Pick by meaning. |
 | deploy (verb / noun) | rilascio / rilasciare | it | Low-confidence pick. Flag for native-speaker confirmation via `/action-forum-post`. |
 | tool / tooling | strumento | it | Covers "tool"; bare "tooling" as a collective noun is left undecided, do not use it yet. |
-| module | modulo | it | |
-| algorithm | algoritmo | it | |
 | edge case | caso limite | it | No official ruling exists; flagged for native-speaker confirmation. |
-| backwards compatibility | retrocompatibilità | it | |
-| component | componente | it | |
 
 ### Platform & curriculum vocabulary
 
@@ -125,17 +79,11 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 |---------|---------|-------------|-------|
 | feature (platform capability) | funzionalità | it | Deliberately distinct from _funzione_ (function) to avoid collision. |
 | course | corso | it | The whole Jiki course the learner is taking: _in questo corso_. Distinct from _lezione_ (lesson) and _percorso_ (curriculum). |
-| lesson | lezione | it | |
-| exercise | esercizio | it | |
-| scenario | scenario | it | Jiki-specific structured variant within an exercise. |
 | curriculum | percorso | it | Never bare "curriculum": in Italian it means a CV/résumé, a false friend. Use _percorso_ for the learning-curriculum sense. |
-| level | livello | it | The curriculum's structural unit. |
 | pathway | percorso | it | A structured learning sequence. Same word as _curriculum_ above; the two senses rarely appear together in one document. |
 | track (curriculum path) | indirizzo | it | Low-confidence pick. Flag for native-speaker confirmation. |
-| syllabus | programma del corso | it | |
 | mentor / mentoring | mentore / mentoring | it | "Mentoring" is used as-is; "mentore" is the native word for the person. |
 | tutorial | tutorial | en | Established as-is in Italian tech/education writing. |
-| solution (learner's submission) | soluzione | it | |
 
 ## Keep in English
 
@@ -148,11 +96,6 @@ These stay in English in Italian prose, with the Italian gloss to use for each.
 | CLI (the concept) | _interfaccia a riga di comando_ | Where the source `<define>`s it, explain CLI as _interfaccia a riga di comando_ (command-line interface). |
 | template literal | _stringa con espressioni incorporate_ | Where the source `<define>`s it, explain it as a _stringa con espressioni incorporate_ (a string built with embedded expressions), then use _template literal_. Low-confidence: flag for native-speaker confirmation. |
 | canvas (graphics exercises) | _area di disegno_ | The drawing surface in creative-coding exercises. Where the source `<define>`s it, explain it as the _area di disegno_ (the `canvas` element), then use _canvas_. |
-| JavaScript, Python, React | (no gloss) | Product/language names. |
-| Debug, Test | (no gloss) | As keywords/technical tokens. |
-| Code, Bug, Frontend, Backend | (no gloss) | |
-| Variable and function names | (no gloss) | Never translated. |
-| CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. |
 | Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
 
 ## Jiki physical metaphors
@@ -185,6 +128,16 @@ Naming convention and worked example are in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-07-31: Pruned ordinary vocabulary
+
+**Decided by:** agent, per the pruning test in `global/translating.md` step 6. Removed 56
+rows whose Italian rendering was the single obvious dictionary word with nothing to decide
+(e.g. `value`, `number`, `variable`, `loop`, `class`, `object`, `error`, `module`, `exercise`,
+plus the trivial "no gloss" rows for product names and code tokens). Kept everything with a
+live alternative, a rejected alternative, a collision, a register/scope distinction, or a
+protected native-speaker decision, including `interpreter` and `board / whiteboard` from the
+entry below, `array / list`, `(programming) language`, `curriculum`/`pathway`, and `deploy`.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

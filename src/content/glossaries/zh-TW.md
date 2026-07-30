@@ -2,7 +2,7 @@
 lang: "zh-TW"
 name: "Traditional Chinese"
 family: "zh"
-governance_sha: "bb77cbf"
+governance_sha: "437b15b"
 content_version: "3bab23c78d8a"
 published_at: "2026-07-30"
 term_count: 88

@@ -2,10 +2,10 @@
 lang: "ko"
 name: "Korean"
 family: null
-governance_sha: "bb77cbf"
-content_version: "caea09b03ac3"
+governance_sha: "437b15b"
+content_version: "7f89335d44f6"
 published_at: "2026-07-30"
-term_count: 102
+term_count: 51
 forum_topic_id: 479
 ---
 
@@ -20,10 +20,7 @@ decision log (`glossary-notes.md`).
 |---------|--------|-------------|-------|
 | programming (the discipline) | **프로그래밍** | ko | The general craft/discipline: "프로그래밍 언어", "프로그래밍의 기본 개념". |
 | coding (the casual act of writing code) | **코딩** | ko | The hands-on act of writing code, including "learn to code" → "코딩을 배우다" and "coding journey" → "코딩 여정". Both words are ordinary Korean, so a page containing both does not read as mixing: pick by the English word actually used, and never render the same English word two ways in one document. |
-| developer | 개발자 | ko | |
 | tech / tech industry | IT (업계) | ko | Use "IT 업계" for "the tech industry" and "IT" as the adjective ("IT 분야"). |
-| streak | 스트릭 | ko | |
-| pitfall | 함정 | ko | Stands alone; no gloss needed. |
 
 ## Localize (use the Korean term)
 
@@ -33,98 +30,50 @@ These are terms where Korean uses a Hangul term (native Sino-Korean coinage or a
 
 | English | Korean | Use (ko/en) | Notes |
 |---------|--------|-------------|-------|
-| value | 값 | ko | |
-| number | 숫자 | ko | |
-| integer | 정수 | ko | |
 | float / decimal | 실수 | ko | Use "부동소수점" only where the IEEE floating-point representation itself is the point. |
-| character | 문자 | ko | |
-| true / false | 참 / 거짓 | ko | Not capitalised in prose; the code literals `true`/`false` stay as-is in code. |
 | array / list | 배열 | ko | Do not introduce a second word for informal "list" prose; use 배열 consistently. |
 | dictionary | 딕셔너리 | ko | Never "사전", which is only used descriptively, never as the type name. |
 | element | 원소 | ko | Kept distinct from a UI/DOM "element", which does not appear in this content. |
-| index | 인덱스 | ko | |
-| key-value pair | 키-값 쌍 | ko | |
-| template literal | 템플릿 리터럴 | ko | |
 | string | 문자열 | ko | **Translated, not kept as a loanword.** Never "스트링". |
 | Boolean | 불리언 | ko | Use "불리언" consistently, not "불린". |
-| data type | 자료형 | ko | Standard general term ("문자열은 자료형의 하나예요" = a string is a data type). |
 
 ### Functions & control flow
 
 | English | Korean | Use (ko/en) | Notes |
 |---------|--------|-------------|-------|
-| if statement | 조건문 | ko | The code keyword `if` stays English. |
-| condition | 조건 | ko | Stands alone; no gloss needed. |
-| comparison | 비교 | ko | Stands alone; no gloss needed. |
-| expression | 표현식 | ko | |
-| operator | 연산자 | ko | |
 | NOT operator / logical negation | NOT 연산자 / 논리 부정 | ko | Keep the keyword `NOT` in code font when referring to the actual operator token; use "논리 부정" when explaining the general concept in prose. |
 | statement (executable) | 문장 | ko | The imperative sense: a line of code that does something and gets executed. Stands alone; no gloss needed. |
 | statement (logical claim) | 명제 | ko | The proposition sense: a claim that is true or false. Keep distinct from "문장" above; pick by meaning, not by the English word. |
-| function | 함수 | ko | The *keyword* `function` in code stays English; the concept in prose is "함수". |
-| to call (a function) | 호출하다 | ko | "함수를 호출해요." |
-| to define (a function) | 정의하다 | ko | "함수를 정의해요." |
 | parameter | 매개변수 | ko | The declaration-site name. |
 | argument | 인자 | ko | The call-site value; kept distinct from "매개변수" above. |
-| input (to a function) | 입력 | ko | |
-| output | 출력 | ko | |
 | to return (a value) | 반환하다 | ko | "30을 반환해요." Written/educational default; colloquial "리턴하다" exists but is not used in Jiki prose, to keep one consistent term. |
-| return value | 반환값 | ko | |
-| pure function | 순수 함수 | ko | |
 | brackets (the two after a function name) | 괄호 | ko | The `()` pair written after a function name to call it: "이름을 쓰고 뒤에 괄호 두 개를 붙여요". 괄호 is the everyday generic word and needs no qualifier while the code is on screen; use 소괄호 (round) against 대괄호 (square) only where the two genuinely have to be contrasted. Count with the 개 counter ("괄호 두 개"). |
 
 ### Loops, state & program flow
 
 | English | Korean | Use (ko/en) | Notes |
 |---------|--------|-------------|-------|
-| keyword | 키워드 | ko | |
 | interpreter | 인터프리터 | ko | **The one who interprets: a person doing a job, not a program.** On concept pages Jiki *is* the interpreter ("이 강의에서 인터프리터 역할은 Jiki가 맡아요"; "이 강의를 안내해 줄 친절한 인터프리터, Jiki"). Never 해석기. Never 통역사. Where a bare apposition reads oddly, 인터프리터 역할 ("the interpreter role") carries it. |
 | instruction (given to Jiki) | 지시 | ko | Everyday word: "알맞은 지시를 내려요". Use 지시 사항 for the instructions taken as a set ("지시 사항을 칠판에 적어요"). Not 명령, which is a command from a superior and is also the CS "command" term. |
 | mental model | 멘탈 모델 | ko | Prose may still describe the thing plainly where that reads better ("제 머릿속에는..."), but the named term is 멘탈 모델. |
 | (programming) language | (프로그래밍) 언어 | ko | Covers both senses: "프로그래밍 언어" and "컴퓨터가 알아듣는 언어". Never 랭귀지. |
-| variable | 변수 | ko | |
-| assignment | 대입 | ko | The noun. "대입 연산자" (assignment operator) is the standard textbook pairing. |
-| to assign | 대입하다 | ko | "값을 변수에 대입해요." |
-| code block | 코드 블록 | ko | |
 | error | 오류 | ko | Docs and formal writing favor "오류"; colloquial speech often says "에러", not used in Jiki prose to keep one consistent term. |
 | exception | 예외 | ko | The catchable-error-object sense, distinct from "오류" (error) as a general term. |
-| nested | 중첩된 | ko | e.g. "중첩된 반복문" = nested loop. |
-| iteration | 반복 | ko | Stands alone. Verb: "반복하다". |
-| to run / execute (code) | 실행하다 | ko | "코드를 실행해요." |
 | loop | 루프 | ko | The general concept of repeated execution ("무한 루프" = infinite loop). Kept distinct from "반복문" below, which names the concrete statement. |
 | for loop | `for`문 | ko | Keep `for` in backticks (the real keyword) directly followed by "문"; this compound is the universal Korean form, no space. |
 | while loop | `while`문 | ko | As above, with `while`. |
 | for-of loop | `for...of`문 | ko | As above. |
-| loop body | 반복문 본문 | ko | |
-| break (loop control) | 중단하다 | ko | The keyword `break` itself always stays English in code; this is the prose concept of breaking out of a loop. |
-| increment | 증가시키다 | ko | "값을 1씩 증가시켜요." |
-| modulo / remainder operator | 나머지 연산자 | ko | The `%` operator. |
-| concatenation / to concatenate | 연결하다 | ko | "문자열을 연결해요." (joining strings) |
-| toggle | 전환하다 | ko | |
-| state / stateful | 상태 | ko | |
 | scope | 스코프 | ko | Kept distinct from "코드 블록" (code block) above. |
-| class | 클래스 | ko | |
 | method | 메서드 | ko | Use "메서드", not the older spelling "메소드". |
-| property | 속성 | ko | |
-| object | 객체 | ko | |
-| encapsulation | 캡슐화 | ko | |
 
 ### Tooling & engineering
 
 | English | Korean | Use (ko/en) | Notes |
 |---------|--------|-------------|-------|
-| workflow | 워크플로우 | ko | |
 | auth (authentication / authorization) | 인증 | ko | Use "인가" only where authorization specifically (not authentication) is the point. |
-| deploy | 배포하다 | ko | "배포" as the noun, "배포하다" as the verb. |
-| tool / tooling | 도구 | ko | Stands alone; no gloss needed. |
-| module | 모듈 | ko | |
-| algorithm | 알고리즘 | ko | |
-| edge case | 엣지 케이스 | ko | |
-| backwards compatibility | 하위 호환성 | ko | |
 | API | API | en | Never transliterated ("아피" does not exist as a form). Where the source `<define>`s it, explain the concept in Korean for a beginner, not just gloss the acronym. |
 | framework | 프레임워크 | ko | A literal "뼈대" gloss appears only as an explanatory aside in some sources, never as the working term. |
 | CLI | CLI | en | Kept in raw Latin script like API. Where the source `<define>`s it, gloss the concept in Korean: "CLI (명령줄 인터페이스)". |
-| component | 컴포넌트 | ko | |
 
 ### Platform & curriculum vocabulary
 
@@ -167,6 +116,19 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-07-31: Glossary pruned of ordinary vocabulary
+
+**Decided by:** agent, applying the pruning test in `global/translating.md` step 6. Removed
+51 rows that had one obvious canonical rendering with nothing to decide (e.g. `developer`,
+`value`, `variable`, `class`, `object`, `deploy`, `module`, `algorithm`), keeping only rows
+that settle a real choice, record a rejected alternative, distinguish a collision, or belong
+to the protected/metaphor sets. Closest calls, kept out on reflection: `assignment` / `to
+assign` (대입 vs a plausible 할당 alternative, but no rejection recorded) and `true` / `false`
+(a capitalization note that does no real work in a script with no capitals). A reviewer
+querying the cut list should look first at `break (loop control)`, `if statement`, and
+`function`, whose notes were judged to restate the general "keywords stay English" rule
+already covered under "Keep in English" rather than to record a Korean-specific decision.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

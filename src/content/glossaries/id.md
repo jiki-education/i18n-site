@@ -2,10 +2,10 @@
 lang: "id"
 name: "Indonesian"
 family: null
-governance_sha: "bb77cbf"
-content_version: "4bfcb551144a"
+governance_sha: "437b15b"
+content_version: "bd9104af75ba"
 published_at: "2026-07-30"
-term_count: 94
+term_count: 63
 forum_topic_id: 325
 ---
 
@@ -29,74 +29,48 @@ These are terms where the Indonesian is used in prose by default; the "Use (id/e
 
 | English | Indonesian | Use (id/en) | Notes |
 |---------|-----------|----------|-------|
-| value | nilai | id | |
 | number | angka | id | Use `angka` for the general sense; `bilangan` also appears in the wild. |
-| character | karakter | id | |
 | true / false | benar / salah | id | Used when explaining the concept; the literals `True`/`False` in code stay as code. |
-| integer | bilangan bulat | id | The keyword `int` in code stays English; the concept in prose is _bilangan bulat_. |
 | float / decimal | bilangan pecahan | id | Or _bilangan riil_ if the real-number nature matters more than the fractional one. Pick one per document and stay consistent. |
-| element | elemen | id | |
 | index | indeks | id | Use the `indeks` spelling (the Indonesian-orthography form); `index` is also seen. |
-| key-value pair | pasangan kunci-nilai | id | |
 
 ### Functions & control flow
 
 | English | Indonesian | Use (id/en) | Notes |
 |---------|-----------|----------|-------|
-| condition | kondisi | id | Stands alone. |
-| comparison | perbandingan | id | Stands alone. |
-| expression | ekspresi | id | |
-| operator | operator | id | |
 | statement (executable) | pernyataan | id | The imperative sense: a line of code that does something and gets executed. |
 | statement (logical claim) | pernyataan | id | The proposition sense: a claim that is true or false. Same Indonesian word as the executable sense above; pick by context. |
 | if statement | percabangan `if` | id | Keep the `if` keyword in code font; translate only "percabangan". |
-| function | fungsi | id | The *keyword* `function` in code stays English; the concept in prose is _fungsi_. |
-| to call (a function) | memanggil (fungsi) | id | |
 | to define (a function) | mendefinisikan / membuat (fungsi) | id | Either is natural; stay consistent within a document. |
 | parameter | parameter | id | Only worth glossing where the source `<define>`s it alongside `argumen`; otherwise self-explanatory. |
 | argument | argumen | id | Distinguish from `parameter` where the two are introduced together. |
 | input (to a function) | input | en | Where the source `<define>`s it, gloss _masukan_, then use `input`. |
 | output | output | en | Where the source `<define>`s it, gloss _keluaran_, then use `output`. |
-| to return (a value) | mengembalikan | id | "Fungsi ini mengembalikan sebuah nilai." |
-| return value | nilai kembalian | id | Keep distinct from the verb above. |
 | brackets (the two after a function name) | tanda kurung | id | `tanda kurung` unmodified is the round pair `()`; never expand it to `tanda kurung biasa` here. Square and curly brackets take their own modifiers (see "Brackets" below). |
 
 ### Loops, state & program flow
 
 | English | Indonesian | Use (id/en) | Notes |
 |---------|-----------|----------|-------|
-| keyword | kata kunci | id | Stands alone. |
 | interpreter | interpreter | en | Where the source `<define>`s it, gloss _penerjemah_, then use `interpreter`. Not _juru bahasa_ (specifically spoken-language interpreting between people). |
 | instruction (given to Jiki) | instruksi | id | Not _perintah_ (reads as "command/order", a harder register than the board metaphor wants) and not _petunjuk_ ("directions/hints"). |
-| mental model | model mental | id | |
 | (programming) language | bahasa pemrograman | id | Full form on introduction; plain `bahasa` afterwards, including for "a language a computer understands" (_bahasa yang dimengerti komputer_). Never the English `language` in prose. |
 | variable | variabel | id | Use `variabel`, not the official/academic coinage `peubah`. |
 | assignment | assignment | en | `memberikan nilai` as a paraphrase is also fine for the verb (see below). Where the source `<define>`s the noun, gloss _pengisian nilai_. |
 | to assign | memberikan nilai / menginisialisasi | id | Verb form; prefer this over a bare loanword. |
-| code block | blok kode | id | |
 | error | error | en | Kept in code/debugging contexts; use _kesalahan_ when explaining the general concept in plain prose. Do not use _galat_. |
-| nested | bersarang | id | e.g. _perulangan bersarang_ = nested loop. |
-| iteration | iterasi | id | Verb form _mengiterasi_ is used but less common than just describing the loop. |
-| to run / execute (code) | menjalankan | id | |
 | loop | perulangan | id | Use `perulangan`, not the official coinage `gelung`. |
-| for loop | perulangan `for` | id | Keep the `for` keyword in code font; translate only "perulangan." |
-| while loop | perulangan `while` | id | As above, with `while`. |
 | scope | scope | en | Where the source `<define>`s it, gloss _cakupan_, then use `scope`. |
 | class | kelas | id | The `class` keyword in code stays English. |
 | method | method | en | Kept English in dev prose. |
-| property | properti | id | |
 | object | objek | id | Use the `objek` spelling (the Indonesian-orthography default); `object` is also seen. |
 
 ### Tooling & engineering
 
 | English | Indonesian | Use (id/en) | Notes |
 |---------|-----------|----------|-------|
-| workflow | alur kerja | id | |
-| algorithm | algoritma | id | |
-| module | modul | id | |
 | auth (authentication / authorization) | autentikasi | id | Covers the login/identity sense; use _otorisasi_ only when the permissions sense specifically is meant. |
 | deploy | deploy | en | Where the source `<define>`s it, gloss _menerapkan_. |
-| tool / tooling | alat | id | |
 
 ## Keep in English
 
@@ -114,12 +88,8 @@ These stay in English in Indonesian prose, with the Indonesian gloss to use for 
 | framework | (no gloss) | Keep as-is throughout. |
 | CLI | _antarmuka baris perintah_ | Explain CLI as _antarmuka baris perintah_ (command-line interface) where the source `<define>`s it. |
 | library | _pustaka_ | Where the source `<define>`s it, gloss _pustaka_, then use `library`. |
-| JavaScript, Python, React | (no gloss) | Product/language names. |
 | Debug, Test | (no gloss) | As keywords/technical tokens. |
 | Code, Bug, Frontend, Backend | (no gloss) | |
-| Variable and function names | (no gloss) | Never translated. |
-| CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. |
-| Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
 
 ## Platform & curriculum vocabulary
 
@@ -132,7 +102,6 @@ These stay in English in Indonesian prose, with the Indonesian gloss to use for 
 | syllabus | silabus | id | A single course's outline, distinct from `kurikulum`. |
 | level | level | en | `tingkat` is an acceptable native alternative if a document leans more formal. |
 | mentor / mentoring | mentor | en | `pembimbing` is a workable native alternative but `mentor` is preferred. |
-| track (curriculum path) | jalur | id | e.g. _jalur belajar_ (learning path/track). |
 | tutorial | tutorial | en | Kept English for an interactive, step-by-step lesson; use `panduan` only for a static written guide, not an interactive tutorial. |
 | solution (learner's submission) | solusi / penyelesaian / jawaban | id | Context-dependent: `solusi` in general, `penyelesaian` for a worked solution, `jawaban` for a quiz answer. Pick the right one per context; do not force a single word everywhere. |
 
@@ -166,6 +135,20 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-07-31: Glossary pruned of ordinary vocabulary
+
+**Decided by:** agent, per the pruning pass over `glossary.md` (see `global/translating.md`
+step 6's test: only keep rows where a real decision exists). Removed 31 rows that had one
+obvious canonical rendering with nothing to decide, e.g. `value`, `character`, `element`,
+`condition`, `comparison`, `expression`, `operator`, `function`, `keyword`, `code block`,
+`algorithm`, `module`, `workflow`, `property`, and the "for loop"/"while loop"/"to return (a
+value)" rows that were mechanical restatements of already-established words. A reviewer
+might query the removal of `function` and `to call (a function)`/`to return (a value)`:
+these were cut because `fungsi`/`memanggil`/`mengembalikan` have no competing rendering on
+record, not because the terms are unimportant. Rows recording a genuine choice, a rejected
+alternative, a collision, a register distinction, an English-loanword decision, or the Jiki
+metaphor set were all left untouched.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

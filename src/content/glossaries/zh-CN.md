@@ -2,7 +2,7 @@
 lang: "zh-CN"
 name: "Simplified Chinese"
 family: "zh"
-governance_sha: "bb77cbf"
+governance_sha: "437b15b"
 content_version: "6162e1c04362"
 published_at: "2026-07-30"
 term_count: 116

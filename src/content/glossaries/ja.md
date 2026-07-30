@@ -2,10 +2,10 @@
 lang: "ja"
 name: "Japanese"
 family: null
-governance_sha: "bb77cbf"
-content_version: "b08fb812214c"
+governance_sha: "437b15b"
+content_version: "8b64437b0edc"
 published_at: "2026-07-30"
-term_count: 118
+term_count: 65
 forum_topic_id: 311
 ---
 
@@ -23,7 +23,6 @@ who chose it, is in the decision log (`glossary-notes.md`).
 | developer | エンジニア | ja | 「開発者」is a more literal alternative; do not mix both in one document. |
 | streak | 連続学習日数 | ja | The "consecutive days practised" sense. |
 | tech / tech industry | IT業界 | ja | Do not switch to 「テック業界」mid-document. |
-| pitfall | 落とし穴 | ja | Stands alone; no gloss needed. |
 
 ## Localize (use the Japanese term)
 
@@ -33,43 +32,25 @@ These are terms where the Japanese is used in prose, so the "Use (ja/en)" column
 
 | English | Japanese | Use (ja/en) | Notes |
 |---------|----------|-------------|-------|
-| value | 値 | ja | |
 | number | 数値 | ja | 数値 in a programming context; 「数」in casual mention. |
-| integer | 整数 | ja | |
 | float / decimal | 小数 | ja | 「浮動小数点数」when the floating-point nature specifically matters. |
-| character | 文字 | ja | A single text character. |
 | true / false | `true` / `false` | ja | Keep the literals in code font (Jikiscript tokens). Described conceptually as 真偽; not rewritten to 真/偽 in prose. |
 | array / list | 配列 | ja | Exercise prose sometimes says "list" informally for the same concept; render both with 配列, do not introduce a second word. |
-| dictionary | 辞書 | ja | |
-| element | 要素 | ja | Array element = 配列の要素. |
 | index | インデックス | ja | No gloss needed. 「添字」is a native alternative; do not mix both in one document. |
-| key-value pair | キーと値のペア | ja | The key itself is「キー」(an ordinary word once introduced). |
-| template literal | テンプレートリテラル | ja | |
 | Boolean | 真偽値 | ja | 「ブール値」is an alternative; do not mix both in one document. |
-| string | 文字列 | ja | |
 
 ### Functions & control flow
 
 | English | Japanese | Use (ja/en) | Notes |
 |---------|----------|-------------|-------|
 | if statement | `if`文 | ja | Keep `if` in code font + 文. |
-| condition | 条件 | ja | Stands alone; no gloss needed. |
-| comparison | 比較 | ja | Stands alone; no gloss needed. |
-| expression | 式 | ja | |
-| operator | 演算子 | ja | |
 | NOT operator / logical negation | 否定 | ja | 「NOT演算子」when the operator itself is meant. |
 | statement (executable) | 文 | ja | The imperative sense: a line of code that executes, e.g. `if` 文、代入文. |
 | statement (logical claim) | 命題 | ja | The proposition sense: a claim that is true or false. Pick by meaning, not by the English word. |
 | function | 関数 | ja | The *keyword* `function` in code stays English; the concept in prose is 関数. |
-| to call (a function) | 呼び出す | ja | 関数を呼び出す。 |
-| to define (a function) | 定義する | ja | |
 | parameter | 仮引数 | ja | The declaration-site name. Rarely surfaced; Jiki prose favours 入力. |
-| argument | 引数 | ja | The call-site value. |
 | input (to a function) | 入力 | ja | Jiki prefers this over parameter/argument in prose. |
-| output | 出力 | ja | |
-| to return (a value) | 返す | ja | 値を返す。 |
 | return value | 戻り値 | ja | Noun form; distinct from the verb "to return". 「返り値」is a common alternative; use 戻り値, not 返り値. |
-| pure function | 純粋関数 | ja | |
 | brackets (the two after a function name) | 括弧 | ja | Plain 括弧, not 丸括弧, for the `()` pair written after a function name. Show the glyph on the first mention in a page, 「括弧（`()`）」, then bare 括弧 after that. Do not render "two brackets" as 「2 つの括弧」. See the Brackets section below. |
 
 ### Loops, state & program flow
@@ -81,66 +62,32 @@ These are terms where the Japanese is used in prose, so the "Use (ja/en)" column
 | instruction (given to Jiki) | 指示 | ja | Do not use 命令, which reads as a command in the military/legal register (and as a CPU instruction). |
 | mental model | イメージ | ja | 「頭の中のイメージ」when the "in your head" part needs saying. Do not use メンタルモデル and do not drift to 考え方 mid-page: one word per document. |
 | (programming) language | プログラミング言語 | ja | The technical compound is プログラミング言語. For the "a language the computer understands" framing, use the ordinary 言葉 (「コンピューターにわかる言葉」). These are the two senses the source itself distinguishes, not two words for one thing; never reach for a katakana ランゲージ. |
-| variable | 変数 | ja | |
-| assignment | 代入 | ja | Noun. |
-| to assign | 代入する | ja | Matches 代入. |
 | code block | ブロック | ja | 「コードブロック」acceptable. Keep distinct from スコープ (scope). |
-| error | エラー | ja | |
 | nested | 入れ子 | ja | 入れ子のループ = nested loop. 「ネスト」also used; do not mix both in one document. |
 | iteration | 繰り返し | ja | 「反復」/「イテレーション」are alternatives. |
-| to run / execute (code) | 実行する | ja | |
-| loop | ループ | ja | 「繰り返し」for the verbal "repeat" sense. |
 | for loop | `for`ループ | ja | Keep `for` as the real keyword in code font + ループ. |
 | while loop | `while`ループ | ja | As above. |
 | for-of loop | `for-of`ループ | ja | As above. |
-| loop body | ループの本体 | ja | |
 | break (loop control) | 抜ける | ja | ループを抜ける。 The keyword `break` in code stays English; this is the prose verb for the concept. |
-| increment | インクリメント | ja | 「1 ずつ増やす」also natural in a fuller explanation. |
 | modulo / remainder operator | 余り | ja | The `%` operator. 「剰余」is the technical alternative. |
-| concatenation / to concatenate | 連結 | ja | 文字列連結 = string concatenation;「つなげる」also natural as a verb. |
-| toggle | 切り替える | ja | |
-| state / stateful | 状態 | ja | |
 | scope | スコープ | ja | No gloss needed. Keep distinct from ブロック (code block). |
-| class | クラス | ja | |
-| method | メソッド | ja | |
-| property | プロパティ | ja | |
-| object | オブジェクト | ja | |
 
 ### Tooling & engineering
 
 | English | Japanese | Use (ja/en) | Notes |
 |---------|----------|-------------|-------|
-| workflow | ワークフロー | ja | The software-engineering sense (a sequence of dev tasks). |
 | auth (authentication / authorization) | 認証 / 認可 | ja | Pick by meaning: 認証 = authentication, 認可 = authorization. |
-| deploy (verb: to deploy) | デプロイ | ja | 「デプロイする」for the verb. |
-| tool / tooling | ツール | ja | |
-| module | モジュール | ja | |
-| algorithm | アルゴリズム | ja | |
-| edge case | エッジケース | ja | 「例外的なケース」in a fuller explanation. |
-| backwards compatibility | 後方互換性 | ja | |
-| comment (code) | コメント | ja | |
-| indentation | インデント | ja | |
 | framework | フレームワーク | ja | Where the source `<define>`s it, explain that it means a reusable structure (再利用できる骨組み); otherwise use フレームワーク bare. |
-| component | コンポーネント | ja | Where the source `<define>`s it, explain it; otherwise use コンポーネント freely. |
 
 ### Platform & curriculum vocabulary
 
 | English | Japanese | Use (ja/en) | Notes |
 |---------|----------|-------------|-------|
 | feature (platform capability) | 機能 | ja | Different word from 関数 (function); no collision. Never use 関数 for a product feature. |
-| lesson | レッスン | ja | |
 | exercise | 演習 | ja | 「エクササイズ」is an alternative; do not mix both in one document. |
-| scenario | シナリオ | ja | Jiki-specific: a structured variant within an exercise. |
-| curriculum | カリキュラム | ja | |
 | course | コース | ja | The whole Jiki course the learner is taking (「このコースでの通訳は Jiki です」). Keep distinct from レッスン (lesson) and カリキュラム (curriculum); do not use 講座. |
-| level | レベル | ja | The curriculum's structural unit. |
 | milestone | マイルストーン | ja | 「節目」is a native alternative. |
 | pathway | 学習パス | ja | A structured learning sequence; near-synonym of "track". |
-| bootcamp | ブートキャンプ | ja | |
-| syllabus | シラバス | ja | |
-| mentor / mentoring | メンター | ja | 「メンタリング」for the activity. |
-| track (curriculum path) | トラック | ja | |
-| tutorial | チュートリアル | ja | |
 | solution (learner's submission) | 解答 | ja | The code the learner writes for an exercise. Avoid 「ソリューション」. |
 | foot-gun | (descriptive) | ja | Use a descriptive phrase such as「自滅の元になりやすい機能」rather than forcing a fixed term. |
 
@@ -207,6 +154,15 @@ Example: 「関数を呼び出すには、関数名のあとに括弧（`()`）�
 ---
 
 ## Decision log
+
+### 2026-07-31: Pruned ordinary vocabulary
+
+53 rows with one obvious canonical rendering and nothing to decide were removed (e.g.
+`value`, `error`, `variable`, `class`, `object`, `lesson`, `curriculum`, `to return (a
+value)`, `pure function`; full list in the commit diff). A reviewer might query `track
+(curriculum path)`: it was cut even though `pathway` (kept) calls it a near-synonym, since
+`track` itself carries no distinguishing note of its own. `interpreter` and `board /
+whiteboard`, protected as owner decisions above, were untouched.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

@@ -2,10 +2,10 @@
 lang: "hi"
 name: "Hindi"
 family: null
-governance_sha: "bb77cbf"
-content_version: "fdc30cf4985a"
+governance_sha: "437b15b"
+content_version: "10f56a807bd4"
 published_at: "2026-07-30"
-term_count: 114
+term_count: 93
 forum_topic_id: 482
 ---
 
@@ -20,12 +20,9 @@ policy this glossary applies.
 
 | English | Hindi | Use (hi/en) | Notes |
 |---------|-------|-------------|-------|
-| programming | प्रोग्रामिंग | hi | |
 | coding | कोडिंग | hi | Follow the source: render "programming" as प्रोग्रामिंग and "coding" as कोडिंग in the same document, exactly where the English uses each. |
 | code (the noun, in prose) | कोड | hi | Devanagari, not bare Latin. Distinct from the literal UI label / token `Code`, which stays English (see "Keep in English"). |
-| developer | डेवलपर | hi | |
 | streak | स्ट्रीक | hi | Lower confidence: not directly source-verified. Flag for native-speaker confirmation on first real use. |
-| tech / tech industry | टेक इंडस्ट्री | hi | |
 | pitfall | आम गलती | hi | Medium confidence: flag for native-speaker review. |
 
 ## Localize (use the Devanagari term)
@@ -39,9 +36,6 @@ theme for readability; every table below follows the same columns.
 
 | English | Hindi | Use (hi/en) | Notes |
 |---------|-------|-------------|-------|
-| number | संख्या | hi | |
-| integer | पूर्णांक | hi | |
-| float / decimal | दशमलव | hi | |
 | character | अक्षर | hi | |
 | true / false | सही / गलत | hi | Not capitalised in prose. Distinct from the literal code values `true`/`false`, which stay as-is in code. |
 
@@ -49,8 +43,6 @@ theme for readability; every table below follows the same columns.
 
 | English | Hindi | Use (hi/en) | Notes |
 |---------|-------|-------------|-------|
-| condition | शर्त | hi | Stands alone; no gloss needed. |
-| comparison | तुलना | hi | Stands alone; no gloss needed. |
 | to define (a function) | बनाना | hi | "To create/make", e.g. "आप एक function बनाते हैं". |
 | to return (a value) | रिटर्न करना | hi | e.g. "यह value रिटर्न करता है." |
 | statement (logical claim) | दावा | hi | The proposition sense: a claim that is true or false. Kept distinct from the executable sense (`statement`, kept English) below. |
@@ -63,39 +55,21 @@ theme for readability; every table below follows the same columns.
 | English | Hindi | Use (hi/en) | Notes |
 |---------|-------|-------------|-------|
 | to assign | असाइन करना | hi | |
-| error | एरर | hi | |
 | to run / execute (code) | चलाना | hi | रन करना is an accepted alternative. |
 | increment | बढ़ाना | hi | इंक्रीमेंट is the technical alternative, glossed only where the source `<define>`s it. |
-| modulo / remainder operator | शेषफल | hi | |
-| concatenation / to concatenate | जोड़ना | hi | e.g. "strings को जोड़ना." |
 | interpreter | इंटरप्रेटर | hi | A **person** doing a job, not a program: Jiki is the interpreter. Never gloss it as a प्रोग्राम or a सॉफ़्टवेयर; it sits with the other person-role loanwords (डेवलपर, मेंटर). दुभाषिया is the native word for a human interpreter (a different job): flag for native-speaker review. |
 | instruction (given to Jiki) | इंस्ट्रक्शन | hi | e.g. "आप Jiki को बहुत तरह के इंस्ट्रक्शन दे सकते हैं". निर्देश is avoided: it reads as an official notice, the wrong register. Flag for native-speaker review. |
 | mental model | सोचने का तरीका | hi | e.g. "यह सोचने का एक ताक़तवर तरीका है". Not मेंटल मॉडल, which is jargon a beginner has not met. Flag for native-speaker review. |
 | (programming) language | भाषा | hi | Used both for a programming language and for "a language the computer understands". Use it throughout a page; do not mix in लैंग्वेज. |
 
-### Tooling & engineering
-
-| English | Hindi | Use (hi/en) | Notes |
-|---------|-------|-------------|-------|
-| deploy (verb) | डिप्लॉय करना | hi | |
-| algorithm | एल्गोरिदम | hi | |
-
 ### Platform & curriculum vocabulary
 
 | English | Hindi | Use (hi/en) | Notes |
 |---------|-------|-------------|-------|
-| lesson | पाठ | hi | |
-| exercise | अभ्यास | hi | |
 | course | कोर्स | hi | The whole Jiki course, e.g. "इस कोर्स में आपका इंटरप्रेटर Jiki है". Kept distinct from पाठ (lesson) and पाठ्यक्रम (curriculum). |
 | curriculum | पाठ्यक्रम | hi | |
 | syllabus | सिलेबस | hi | Kept distinct from पाठ्यक्रम (curriculum) per `global/terms.md`. |
-| level | लेवल | hi | |
 | milestone | पड़ाव | hi | "A stop/stage on a journey." Medium confidence: flag for native-speaker review. |
-| pathway | रास्ता | hi | |
-| mentor / mentoring | मेंटर | hi | |
-| track (curriculum path) | ट्रैक | hi | |
-| tutorial | ट्यूटोरियल | hi | |
-| solution (learner's submission) | हल | hi | |
 
 ## Keep in English
 
@@ -186,6 +160,18 @@ technical language.
 ---
 
 ## Decision log
+
+### 2026-07-31: Glossary pruned of ordinary vocabulary
+
+Removed 21 rows whose Hindi rendering had one obvious canonical form and nothing to decide:
+`programming`, `developer`, `tech / tech industry`, `number`, `integer`, `float / decimal`,
+`condition`, `comparison`, `error`, `modulo / remainder operator`, `concatenation / to
+concatenate`, `deploy (verb)`, `algorithm`, `lesson`, `exercise`, `level`, `pathway`, `mentor
+/ mentoring`, `track (curriculum path)`, `tutorial`, `solution (learner's submission)`. The
+now-empty "Tooling & engineering" section (deploy, algorithm) was removed along with it. A
+reviewer may want to double-check `solution (learner's submission)`: हल was kept over the
+loanword सॉल्यूशन for warmth, but that reasoning lived only in rationale, not a Notes-column
+flag, so it read as closer to a live register choice than the other cuts.
 
 ### 2026-07-30: Native speaker rewords "edge case" (t/482)
 

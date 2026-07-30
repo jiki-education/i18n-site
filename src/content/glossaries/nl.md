@@ -2,10 +2,10 @@
 lang: "nl"
 name: "Dutch"
 family: null
-governance_sha: "bb77cbf"
-content_version: "66ac1282fd70"
+governance_sha: "437b15b"
+content_version: "e55c9d76b88c"
 published_at: "2026-07-30"
-term_count: 61
+term_count: 34
 forum_topic_id: 339
 ---
 
@@ -24,9 +24,7 @@ throughout. Split by theme for readability; every table below follows the same c
 
 | English | Dutch | Use (nl/en) | Notes |
 |---------|-------|-------------|-------|
-| value | waarde | nl | _de waarde_. |
 | true / false | waar / onwaar | nl | Not capitalised in prose. Use _onwaar_, not _vals_. |
-| integer | geheel getal | nl | _het gehele getal_. |
 | float / decimal | reëel getal | nl | _kommagetal_ is an acceptable plainer alternative when the decimal point is the focus. |
 | character | teken | nl | A single text character. Show the English gloss where the source `<define>`s it. |
 
@@ -35,15 +33,9 @@ throughout. Split by theme for readability; every table below follows the same c
 | English | Dutch | Use (nl/en) | Notes |
 |---------|-------|-------------|-------|
 | function | functie | nl | _de functie_. The *keyword* `function` in code stays English; the concept in prose is _functie_. |
-| condition | voorwaarde | nl | Stands alone; no gloss needed. _de voorwaarde_. |
-| comparison | vergelijking | nl | Stands alone; no gloss needed. |
 | expression | expressie | nl | _uitdrukking_ is an acceptable synonym; pick one per document. |
-| operator | operator | nl | _de operator_. |
 | to call (a function) | aanroepen | nl | Separable verb: "je _roept_ de functie _aan_". nl-NL (BE: _oproepen_). |
-| to return (a value) | teruggeven | nl | Separable verb: "de functie _geeft_ 30 _terug_". |
 | return value | retourwaarde | nl | One word; _de retourwaarde_. |
-| input (to a function) | invoer | nl | |
-| output | uitvoer | nl | |
 | parameter | parameter | nl | _de parameter_. The declaration-site name. |
 | argument | argument | nl | _het argument_. The call-site value. |
 | brackets (the two after a function name) | haakjes | nl | The `()` pair written after a function name: _die twee haakjes_. Plain _haakjes_ by default; see the Brackets section below for when to name the type. |
@@ -52,18 +44,8 @@ throughout. Split by theme for readability; every table below follows the same c
 
 | English | Dutch | Use (nl/en) | Notes |
 |---------|-------|-------------|-------|
-| keyword | sleutelwoord | nl | _het sleutelwoord_. |
-| variable | variabele | nl | _de variabele_. |
 | loop | lus | nl | Not _loop_. _de lus_. `for` loop = _for-lus_, `while` loop = _while-lus_ (keep the keyword in backticks/hyphenated). |
-| assignment | toewijzing | nl | _de toewijzing_. |
-| to assign | toewijzen | nl | Separable verb: "je _wijst_ de waarde _toe_". |
-| iteration | iteratie | nl | _de iteratie_. |
-| nested | genest | nl | Adjective inflects: _een geneste lus_, _het geneste object_. |
-| error | fout | nl | _de fout_. The `Error` token in code stays English. |
-| method | methode | nl | _de methode_. |
-| object | object | nl | _het object_. |
 | instruction (given to Jiki) | instructie | nl | _de instructie_. "je _geeft_ Jiki _instructies_", "instructies op een whiteboard schrijven". Not the formal _voorschrift_ or _aanwijzing_. Distinct from _statement_ (see Keep in English). |
-| mental model | mentaal model | nl | _het mentale model_ (definite, so the adjective takes -e). Do not use the English _mental model_. |
 | (programming) language | taal · programmeertaal | nl | _de taal_, _de programmeertaal_ (closed compound). Use plain _taal_ where the context is already programming ("een taal die een computer begrijpt"); the full _programmeertaal_ where it needs saying. Never the English _language_. |
 
 ### Platform & curriculum vocabulary
@@ -88,12 +70,6 @@ Dutch in the gloss column below; with no `<define>`, use the English bare, no gl
 | interpreter | _tolk_ | **A person doing a job, not a program.** On concept pages Jiki *is* the interpreter. Never _vertaler_ (translator/compiler, a different job). Where the source `<define>`s it, gloss as _tolk_, then use _interpreter_ throughout. |
 | statement (executable) | _uitvoerbare instructie_ | Dutch technical writing keeps _statement_ (e.g. _if-statement_, _break-statement_). Glossed with the qualifier so it stays distinct from _instruction_ (an instruction given to Jiki), which is plain _instructie_. |
 | if statement | (no separate gloss) | Written _if-statement_ (hyphenated, `if` kept). Follows the _statement_ decision above. |
-| JavaScript, Python, React | (no gloss) | Product/language names. |
-| Debug, Test | (no gloss) | As keywords/technical tokens. |
-| Code, Bug, Frontend, Backend | (no gloss) | |
-| Variable and function names | (no gloss) | Never translated. |
-| CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. |
-| Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
 
 ## Jiki physical metaphors
 
@@ -119,15 +95,23 @@ Default to plain **haakjes**. When a specific bracket type matters, name it and 
 | Glyph | Dutch | Notes |
 |-------|-------|-------|
 | `()` | haakjes · ronde haakjes | Plain _haakjes_ by default; add _ronde_ + glyph only when disambiguating. |
-| `[]` | vierkante haakjes | |
-| `{}` | accolades | |
-| `<>` | punthaken | |
 
 Example: _om een functie aan te roepen, schrijf je de naam van de functie en daarachter die twee haakjes (`()`)._
 
 ---
 
 ## Decision log
+
+### 2026-07-31: Pruned ordinary vocabulary
+
+**Decided by:** agent, per the pruning test in `global/translating.md` step 6. Removed 27
+rows that had one obvious canonical Dutch rendering with nothing to decide (e.g. `value`,
+`condition`, `keyword`, `variable`, `error`, `object`, and the "no gloss" catalogue of
+product names and keywords). Kept every row recording a rejected alternative, a collision,
+a register/scope distinction, or Jiki metaphor-set membership. A reviewer may want to
+double check the removal of `parameter`/`argument`'s sibling rows `input`/`output`, and of
+the individual bracket-glyph rows (`[]`, `{}`, `<>`), since those sat in otherwise-kept
+tables.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

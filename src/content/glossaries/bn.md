@@ -2,7 +2,7 @@
 lang: "bn"
 name: "Bengali"
 family: null
-governance_sha: "bb77cbf"
+governance_sha: "437b15b"
 content_version: "0c1ad44d58d6"
 published_at: "2026-07-30"
 term_count: 67

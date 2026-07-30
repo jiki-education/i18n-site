@@ -2,10 +2,10 @@
 lang: "fa"
 name: "Persian"
 family: null
-governance_sha: "bb77cbf"
-content_version: "32118c2ed5d4"
+governance_sha: "437b15b"
+content_version: "34ab66042519"
 published_at: "2026-07-30"
-term_count: 42
+term_count: 30
 forum_topic_id: 683
 ---
 
@@ -19,29 +19,17 @@ decision log (`glossary-notes.md`).
 These are terms where the Persian is used in prose, so the "Use (fa/en)" column is `fa`
 throughout. Split by theme for readability; every table below follows the same columns.
 
-### Core / brand voice terms
-
-| English | Persian | Use (fa/en) | Notes |
-|---------|---------|-------------|-------|
-| programming / coding | برنامه‌نویسی | fa | The single ordinary Persian word for both; "coding" has no separate rendering. |
-| (programming) language | زبان برنامه‌نویسی | fa | Also the "a language a computer understands" framing: زبانی که کامپیوتر می‌فهمد. Use the native زبان throughout a page; never mix in the English word. |
-
 ### Values & data types
 
 | English | Persian | Use (fa/en) | Notes |
 |---------|---------|-------------|-------|
-| array | آرایه | fa | |
-| index (array index) | اندیس | fa | |
-| string | رشته | fa | |
 | Boolean | بولی | fa | Not treated as a foreign/English word needing italics. «مقدار منطقی» (logical value) is an acceptable descriptive alternative when introducing the concept, but بولی is the term used consistently afterward. |
-| data type | نوع داده | fa | |
 
 ### Functions & control flow
 
 | English | Persian | Use (fa/en) | Notes |
 |---------|---------|-------------|-------|
 | function | تابع | fa | The *keyword* `function` in code stays English; the concept in prose is تابع. Plural توابع. |
-| if statement | دستور شرطی | fa | |
 | condition | شرط | fa | «دستور شرطی» (if statement) and «شرط» (condition) are distinct, related terms; do not conflate them. |
 | brackets (the two after a function name) | پرانتز | fa | The round-bracket pair written after a function name: "دو پرانتز" (two brackets), "پرانتزها" (the brackets). Persian distinguishes bracket kinds, so پرانتز (round) is the required word here; never کروشه (square) or آکولاد (curly). |
 
@@ -49,20 +37,15 @@ throughout. Split by theme for readability; every table below follows the same c
 
 | English | Persian | Use (fa/en) | Notes |
 |---------|---------|-------------|-------|
-| variable | متغیر | fa | |
 | loop | حلقه | fa | **Never use this word for an individual link of the "chain" array metaphor** (see the metaphors table below); the two would collide. |
-| nested | تو در تو | fa | e.g. «حلقه‌ی تو در تو» = nested loop. |
 | interpreter | مفسر | fa | **A person doing a job, not a program**: in the course Jiki *is* the interpreter (کار او این است که کد را تفسیر کند). Never use مفسر with a program word attached (برنامه‌ی مفسر) or a machine-suffixed coinage. The verb is تفسیر کردن. |
 | instruction (given to Jiki) | دستور | fa | Plural دستورها. Not a formal/legal register word (never دستورالعمل, which reads as an official manual). Note the deliberate overlap with دستور شرطی (if statement): دستور is the ordinary word in both and that is fine. |
-| error | خطا | fa | |
-| mental model | مدل ذهنی | fa | |
 
 ### Platform & curriculum vocabulary
 
 | English | Persian | Use (fa/en) | Notes |
 |---------|---------|-------------|-------|
 | course | دوره | fa | The whole Jiki course ("در این دوره"). Keep distinct from درس (lesson) and برنامه‌ی درسی (curriculum). |
-| exercise | تمرین | fa | One exercise the learner solves; plural تمرین‌ها. |
 
 ## Keep in English
 
@@ -108,6 +91,16 @@ review.
 ---
 
 ## Decision log
+
+### 2026-07-31: Pruned ordinary vocabulary
+
+Removed 12 rows that had one obvious canonical Persian rendering and nothing to decide:
+programming/coding, (programming) language, array, index (array index), string, data type,
+if statement, variable, nested, error, mental model, exercise. A reviewer might query "if
+statement" (دستور شرطی), cut because its own Notes were empty; the collision it guards
+against is still recorded on the surviving `condition` and `instruction` rows. No protected
+or dated-decision row (board/whiteboard, interpreter, Boolean, Keep in English, the
+metaphors) was touched.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

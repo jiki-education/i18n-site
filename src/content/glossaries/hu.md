@@ -2,8 +2,8 @@
 lang: "hu"
 name: "Hungarian"
 family: null
-governance_sha: "359d0fc"
-content_version: "5b5786a7459c"
+governance_sha: "a258cf8"
+content_version: "557cbc681833"
 published_at: "2026-07-30"
 term_count: 146
 forum_topic_id: 289
@@ -256,7 +256,7 @@ Rule 1 already says it is an unconfirmed draft, so writing that down adds nothin
 
 ---
 
-## 2026-07-30: Owner decisions from the 28-language using-functions pass
+### 2026-07-30: Owner decisions from the 28-language using-functions pass
 
 **Decided by:** owner (iHiD), from the results of the concept-page pass across all 28
 languages. Commit `1d91ad4`, following `946293c`.
@@ -282,7 +282,7 @@ Three decisions came out of that pass that bind Hungarian:
   English word is the ordinary word and the right choice; where it does not, the native
   word is. The test is what the reader already says, never where the word came from.
 
-## 2026-07-30: Hungarian glossary filled out and its self-contradictions fixed
+### 2026-07-30: Hungarian glossary filled out and its self-contradictions fixed
 
 **Decided by:** agent, in the same pass. **Status: unconfirmed drafts**, correctable by a
 later pass under Rule 1, except where the entry above governs.

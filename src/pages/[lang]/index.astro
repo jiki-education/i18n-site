@@ -24,7 +24,7 @@ const translations = (await getCollection("translations")).filter((t) => t.data.
 
 const published = translations.filter((t) => t.data.status === "published");
 const planned = translations.filter((t) => t.data.status === "planned");
-const termCount = glossary.data.sections.reduce((total, section) => total + section.terms.length, 0);
+const termCount = glossary.data.term_count ?? 0;
 
 const byType = new Map<string, typeof translations>();
 for (const item of translations) {

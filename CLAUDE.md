@@ -34,7 +34,7 @@ here is ever copied back into it.
 | -------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | `translations` | `src/content/translations/<lang>/<type>/<slug>.md` | A translated item. `status: planned` is a "coming soon" stub with no body; `status: published` has one. |
 | `english`      | `src/content/english/<type>/<slug>.md`             | The English source, **frozen** at the moment a translation was published.                               |
-| `glossaries`   | `src/content/glossaries/<lang>.json`               | A language's agreed terms, parsed out of its `glossary.md`.                                             |
+| `glossaries`   | `src/content/glossaries/<lang>.md`                 | A language's agreed terms: its `glossary.md`, published verbatim and rendered as written.               |
 
 Two deliberate choices worth not undoing:
 
@@ -51,9 +51,13 @@ Two deliberate choices worth not undoing:
 - `/` - the Translatathon pitch (copy from `jiki.io/blog/translatathon`), quick links, and
   the full language list in the right-hand sidebar.
 - `/<lang>` - what's translated, what's queued, how to help.
-- `/<lang>/glossary` - every agreed term, one anchor per row (`#term-loop`) so a forum
-  comment can link a single decision. Family locales (`es-419`, `pt-BR`, `zh-CN`) show
-  shared rows badged separately from their own.
+- `/<lang>/glossary` - the language's `glossary.md`, rendered as Markdown. Nothing here
+  interprets its tables, deliberately: a parser that only recognised one table layout used
+  to drop about a quarter of every glossary in silence. Do not reintroduce one, and do not
+  ask the translator repo to reshape a glossary to suit this page. Family locales
+  (`es-419`, `pt-BR`, `zh-CN`) get the family glossary first, then their own, separated by
+  a rule. Headings are the link targets a forum comment quotes against; there are no
+  per-row anchors.
 - `/<lang>/<type>/<slug>` - the translation side by side with the English, with a
   target-only toggle.
 
@@ -88,14 +92,15 @@ There is no staging environment and no review step. `git push` to `main` puts th
 front of the public within a couple of minutes, and the audience is a live community being
 actively invited to read it. Treat a push as the outward-facing action it is:
 
+- **Only the orchestrator runs git here.** Nothing invoked as a command or skill commits,
+  pushes, or touches the index, in this repo or any other. A publish script writes files
+  into `src/content/`; getting them in front of anyone is the orchestrator's, done
+  directly rather than through a command. A pass cannot tell whether it is the top-level
+  one, so the rule cannot depend on it knowing. Defined once, in "Git belongs to the
+  orchestrator" in `translator/global/workflow.md`.
 - **Commit freely, push on request.** Committing locally costs nothing and is always fine.
   Pushing needs the operator to have asked for it. Approval to push once is not approval to
   push for the rest of the day.
-- **One standing exception:** a translation or glossary pass run from the `translator` repo
-  pushes its own staged output as the last step of the pass, without asking. Publishing is
-  what makes a translation reviewable, so withholding it defeats the point. Only the
-  top-level pass pushes, once, after a clean build; its fanned-out workers stage and never
-  touch git. See "Publishing to the review site" in `translator/global/workflow.md`.
 - **Build before pushing.** `pnpm build` must be clean. A broken build means the previous
   deploy stays live, so the failure is quiet: the site simply stops updating.
 - **Work on `main`.** No feature branches; this is a two-week disposable site and branches

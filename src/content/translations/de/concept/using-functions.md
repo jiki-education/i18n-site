@@ -7,8 +7,8 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "c25ebca"
-content_version: "5de5ea4e0f42"
+governance_sha: "1d91ad4"
+content_version: "b95c2cc33e40"
 published_at: "2026-07-30"
 forum_topic_id: 340
 ---
@@ -23,11 +23,11 @@ Wenn du Code schreibst, teilst du eigentlich nur mit, was passieren soll, und zw
   height="400"
 />
 
-Beim Programmieren geht es genau darum, dem Interpreter, in diesem Fall Jiki, die richtigen Anweisungen zu geben. Und du kannst Jiki viele verschiedene Anweisungen geben, er versteht eine ganze Menge. Er kann Dinge zusammenkleben, er kann etwas ganz oft hintereinander machen, und er kann sagen: „Wenn das passiert, dann muss ich das tun." Er kann sich Dinge merken und sie später wieder verwenden. Und wenn etwas nicht stimmt, kann er dir einen Fehler (_error_ auf Englisch) melden. All diese Dinge schauen wir uns in diesem Kurs an. Das Wichtigste aber ist: Alles, was du machen wirst, besteht darin, Anweisungen auf eine Tafel zu schreiben, und Jiki kommt vorbei und befolgt sie.
+Beim Programmieren geht es genau darum, dem Interpreter, in diesem Fall Jiki, die richtigen Befehle zu geben. Und du kannst Jiki viele verschiedene Befehle geben, er versteht eine ganze Menge. Er kann Dinge zusammenkleben, er kann etwas ganz oft hintereinander machen, und er kann sagen: „Wenn das passiert, dann muss ich das tun." Er kann sich Dinge merken und sie später wieder verwenden. Und wenn etwas nicht stimmt, kann er dir einen Fehler (_error_ auf Englisch) melden. All diese Dinge schauen wir uns in diesem Kurs an. Das Wichtigste aber ist: Alles, was du machen wirst, besteht darin, Befehle auf eine Tafel zu schreiben, und Jiki kommt vorbei und befolgt sie.
 
 Als ich vor 34 Jahren programmieren gelernt habe, habe ich mir genau dieses Denkmodell aufgebaut, und ich habe es heute noch. Ich verstehe, wie Computer funktionieren, bis hinunter zu den Einsen und Nullen, aber ehrlich gesagt denke ich nie daran. In meinem Kopf lebt ein kleiner Mann im Computer, und ich sage ihm, was er tun soll. Also lass dich einfach darauf ein. Das ist ein starkes Denkmodell, das du dir aufbauen kannst. Wenn du anfängst, so bildlich darüber nachzudenken, was die Person im Computer gerade tut, wird dir das beim Lernen sehr gute Dienste leisten.
 
-Fangen wir also mit einem der grundlegendsten Konzepte beim Programmieren an: den Funktionen (_functions_ auf Englisch). Funktionen sind wie kleine Maschinen, die Jiki auf deine Anweisung hin benutzt. Und wenn wir in Jikis Lagerhalle schauen, da hält er sich nämlich auf, dann siehst du: Er hat ein Regal mit drei verschiedenen Maschinen darauf, `move` (bewegen), `turnLeft` (nach links drehen) und `turnRight` (nach rechts drehen).
+Fangen wir also mit einem der grundlegendsten Konzepte beim Programmieren an: den Funktionen (_functions_ auf Englisch). Funktionen sind wie kleine Maschinen, die Jiki auf deinen Befehl hin benutzt. Und wenn wir in Jikis Lagerhalle schauen, da hält er sich nämlich auf, dann siehst du: Er hat ein Regal mit drei verschiedenen Maschinen darauf, `move` (bewegen), `turnLeft` (nach links drehen) und `turnRight` (nach rechts drehen).
 
 <img
   class="concept-image"
@@ -37,7 +37,7 @@ Fangen wir also mit einem der grundlegendsten Konzepte beim Programmieren an: de
   height="371"
 />
 
-Als du `move` und dann diese beiden Klammern geschrieben hast, hast du Jiki damit gesagt, dass er die `move`-Maschine vom Regal holen, die Kurbel drehen, sie anwerfen und benutzen soll.
+Als du `move` und dann diese beiden runden Klammern geschrieben hast, hast du Jiki damit gesagt, dass er die `move`-Maschine vom Regal holen, die Kurbel drehen, sie anwerfen und benutzen soll.
 
 <img
   class="concept-image"

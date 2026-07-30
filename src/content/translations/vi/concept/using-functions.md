@@ -7,23 +7,23 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "c25ebca"
-content_version: "5e4903cd3289"
+governance_sha: "1d91ad4"
+content_version: "91569abab5e2"
 published_at: "2026-07-30"
 forum_topic_id: 322
 ---
 
-Khi bạn viết code, thật ra bạn đang diễn đạt điều mình muốn xảy ra bằng một ngôn ngữ mà máy tính hiểu được. Có rất nhiều ngôn ngữ lập trình khác nhau, và cũng có rất nhiều trình thông dịch (tiếng Anh: _interpreters_) khác nhau. Chúng nhận những gì bạn viết rồi chuyển thành các số 0 và 1 mà máy tính hiểu được. Trong khóa học này, trình thông dịch của bạn là Jiki. Cả khóa học được đặt tên theo Jiki. Đây là Jiki. Jiki sẽ là người bạn đồng hành trên hành trình học lập trình này. Việc của cậu ấy là thông dịch đoạn code bạn viết và chuyển nó thành các số 0 và 1 mà máy tính thực sự làm việc được.
+Khi bạn viết code, thật ra bạn đang diễn đạt điều mình muốn xảy ra bằng một ngôn ngữ mà máy tính hiểu được. Có rất nhiều ngôn ngữ lập trình khác nhau, và cũng có rất nhiều thông dịch viên (tiếng Anh: _interpreters_) khác nhau. Chúng nhận những gì bạn viết rồi chuyển thành các số 0 và 1 mà máy tính hiểu được. Trong khóa học này, thông dịch viên của bạn là Jiki. Cả khóa học được đặt tên theo Jiki. Đây là Jiki. Jiki sẽ là người bạn đồng hành trên hành trình học lập trình này. Việc của cậu ấy là thông dịch đoạn code bạn viết và chuyển nó thành các số 0 và 1 mà máy tính thực sự làm việc được.
 
 <img
   class="concept-image"
   src="/static/images/concept-assets/using-functions/jiki-introduction.webp"
-  alt="Jiki, trình thông dịch thân thiện sẽ đồng hành cùng bạn suốt khóa học này"
+  alt="Jiki, thông dịch viên thân thiện sẽ đồng hành cùng bạn suốt khóa học này"
   width="421"
   height="400"
 />
 
-Mục đích của việc lập trình là đưa cho trình thông dịch, ở đây là Jiki, những chỉ dẫn đúng. Có rất nhiều chỉ dẫn khác nhau mà bạn có thể đưa cho Jiki, rất nhiều thứ cậu ấy hiểu được. Cậu ấy có thể ghép các thứ lại với nhau, có thể làm một việc gì đó thật nhiều lần, và có thể nói: “Nếu điều này xảy ra thì mình cần làm việc kia.” Cậu ấy có thể ghi nhớ mọi thứ rồi dùng lại sau đó. Cậu ấy cũng có thể báo cho bạn một lỗi (tiếng Anh: _error_) nếu có gì đó không ổn. Chúng ta sẽ tìm hiểu tất cả những điều này trong khóa học. Nhưng điều quan trọng nhất cần hiểu là: mọi việc bạn sắp làm đều là viết các chỉ dẫn lên một cái bảng, rồi Jiki đi tới và làm theo.
+Mục đích của việc lập trình là đưa cho thông dịch viên, ở đây là Jiki, những chỉ dẫn đúng. Có rất nhiều chỉ dẫn khác nhau mà bạn có thể đưa cho Jiki, rất nhiều thứ cậu ấy hiểu được. Cậu ấy có thể ghép các thứ lại với nhau, có thể làm một việc gì đó thật nhiều lần, và có thể nói: “Nếu điều này xảy ra thì mình cần làm việc kia.” Cậu ấy có thể ghi nhớ mọi thứ rồi dùng lại sau đó. Cậu ấy cũng có thể báo cho bạn một lỗi (tiếng Anh: _error_) nếu có gì đó không ổn. Chúng ta sẽ tìm hiểu tất cả những điều này trong khóa học. Nhưng điều quan trọng nhất cần hiểu là: mọi việc bạn sắp làm đều là viết các chỉ dẫn lên một cái bảng, rồi Jiki đi tới và làm theo.
 
 Hồi mình học lập trình 34 năm trước, đây chính là mô hình tư duy mà mình đã xây dựng, và tới hôm nay mình vẫn giữ nó. Mình hiểu máy tính hoạt động thế nào, xuống tới từng số 0 và số 1, nhưng thật lòng thì gần như chẳng bao giờ nghĩ tới chuyện đó. Trong đầu mình có một người tí hon sống trong máy tính, và mình bảo cậu ta làm gì. Nên bạn hãy thử nghĩ theo cách này cùng mình nhé. Đây là một mô hình tư duy rất mạnh mà bạn có thể tự xây dựng, và nếu bạn bắt đầu hình dung thật trực quan về việc người tí hon trong máy tính đang làm gì, điều đó sẽ giúp bạn rất nhiều trên đường học lập trình.
 
@@ -37,7 +37,7 @@ Vậy thì chúng ta cùng bắt đầu với một trong những khái niệm n
   height="371"
 />
 
-Khi bạn viết `move` rồi thêm hai dấu ngoặc đó, việc bạn làm là bảo Jiki đi lấy cái máy `move` xuống khỏi kệ, quay tay cầm, khởi động nó lên và dùng nó.
+Khi bạn viết `move` rồi thêm hai dấu ngoặc đơn đó, việc bạn làm là bảo Jiki đi lấy cái máy `move` xuống khỏi kệ, vặn tay quay, khởi động nó lên và dùng nó.
 
 <img
   class="concept-image"
@@ -47,7 +47,7 @@ Khi bạn viết `move` rồi thêm hai dấu ngoặc đó, việc bạn làm l�
   height="400"
 />
 
-Khi bạn viết `turnLeft` rồi thêm hai dấu ngoặc, bạn đang bảo Jiki lấy cái máy `turnLeft` xuống khỏi kệ và dùng nó. Đây chính là khuôn mẫu bạn sẽ dùng lại nhiều lần. Mỗi khi muốn dùng một cái máy, bạn viết tên của nó rồi thêm hai dấu ngoặc đó, thế là Jiki biết phải đi lấy máy ra và dùng:
+Khi bạn viết `turnLeft` rồi thêm hai dấu ngoặc đơn, bạn đang bảo Jiki lấy cái máy `turnLeft` xuống khỏi kệ và dùng nó. Đây chính là khuôn mẫu bạn sẽ dùng lại nhiều lần. Mỗi khi muốn dùng một cái máy, bạn viết tên của nó rồi thêm hai dấu ngoặc đơn đó, thế là Jiki biết phải đi lấy máy ra và dùng:
 
 ```javascript
 move()

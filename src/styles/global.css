@@ -221,3 +221,85 @@
 [dir="rtl"] {
   text-align: right;
 }
+
+/**
+ * A published glossary, rendered as the Markdown it is written in (see the
+ * glossaries collection in src/content.config.ts). It is almost entirely pipe
+ * tables, which .textual-content has no styling for because no other content
+ * type here uses them.
+ */
+.glossary-body {
+  /* Headings are link targets from the contents list, so keep them clear of the header. */
+  & :is(h1, h2, h3, h4) {
+    scroll-margin-top: 96px;
+  }
+
+  /*
+   * A glossary is bilingual by definition: English headings, notes and terms
+   * sitting next to the target language. The page is laid out in the target
+   * language's direction (so an RTL language reads its tables right to left),
+   * but each individual paragraph and cell takes its own direction from the text
+   * it actually contains. Without this, an English sentence inside an RTL page
+   * gets its full stop thrown to the front of the line.
+   */
+  & :is(p, li, h1, h2, h3, h4, th, td) {
+    unicode-bidi: plaintext;
+    /* Resolves against the direction `plaintext` detected, not the page's. */
+    text-align: start;
+  }
+
+  & h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-gray-900);
+    margin: 0 0 12px 0;
+    line-height: 130%;
+  }
+
+  & hr {
+    border: 0;
+    border-top: 1px solid var(--color-gray-300);
+    margin: 48px 0;
+  }
+
+  /*
+   * display:block makes each table its own horizontal scroller, so a wide table
+   * scrolls inside itself instead of pushing the page sideways. min-width keeps
+   * it filling the column when it is narrow enough to fit.
+   */
+  & table {
+    display: block;
+    width: max-content;
+    min-width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    margin: 20px 0 28px 0;
+    font-size: 15px;
+    line-height: 150%;
+  }
+
+  & th,
+  & td {
+    border: 1px solid var(--color-gray-200);
+    padding: 8px 12px;
+    text-align: start;
+    vertical-align: top;
+  }
+
+  & th {
+    background: var(--color-gray-100);
+    font-weight: 600;
+    color: var(--color-gray-800);
+    white-space: nowrap;
+  }
+
+  & tbody tr:nth-child(even) td {
+    background: var(--color-gray-50);
+  }
+
+  & td:nth-child(2) {
+    font-weight: 600;
+    color: var(--color-gray-900);
+  }
+}

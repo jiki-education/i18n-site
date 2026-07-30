@@ -17,7 +17,7 @@ const languages = glossaries
       lang,
       meta: languageMeta(lang),
       flag: languageFlag(lang),
-      termCount: glossary.data.sections.reduce((total, section) => total + section.terms.length, 0),
+      termCount: glossary.data.term_count ?? 0,
       published: items.filter((t) => t.data.status === "published").length
     };
   })

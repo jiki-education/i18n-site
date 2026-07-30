@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from "astro";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import ReviewToggle from "../../components/ReviewToggle.astro";
@@ -18,92 +18,63 @@ export const getStaticPaths = (async () => {
 const { glossary } = Astro.props;
 const lang = glossary.data.lang;
 const meta = languageMeta(lang);
-const { sections, family, governance_sha, content_version, forum_topic_id } = glossary.data;
+const { family, governance_sha, content_version, published_at, term_count, forum_topic_id } = glossary.data;
 
-const termCount = sections.reduce((total, section) => total + section.terms.length, 0);
+// The glossary is published as the Markdown it is written in, so this page just
+// renders it. Nothing here interprets the tables: that is what stops rows being
+// dropped, and it means a language can lay a table out however it needs to.
+// `headings` comes from Astro's Markdown renderer, which also puts the matching
+// ids on the headings, so the contents list below needs no parsing of our own.
+const { Content, headings } = await render(glossary);
+
+/**
+ * `#` through `###`; `####` is too fine for a list. A family locale's body is two
+ * documents, so its `#` headings stay in as group labels: without them the list
+ * shows "Core decisions" twice with nothing to say which is the shared one.
+ */
+const contents = headings.filter((heading) => heading.depth <= 3);
+
+const termCount = term_count ?? 0;
 const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : forumCategoryUrl(lang);
-
-/** Section headings, for the contents list in the sidebar. */
-const contents = sections.map((section) => ({
-  title: section.title,
-  level: section.level,
-  anchor: `section-${section.title
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "")}`,
-  count: section.terms.length
-}));
 ---
 
-<Layout title={`${meta.name} glossary`} description={`The ${termCount} agreed terms behind every Jiki translation into ${meta.name}. This is the live version: link a row and tell us if it's wrong.`}>
+<Layout title={`${meta.name} glossary`} description={`The ${termCount} agreed terms behind every Jiki translation into ${meta.name}. This is the live version: read it and tell us what's wrong.`}>
   <PageHeader title={`${meta.name} glossary`} crumbs={[{ label: "Home", href: "/" }, { label: "Languages", href: "/languages" }, { label: meta.name, href: `/${lang}` }, { label: "Glossary" }]} />
 
-  <div class="lg-container grid gap-10 py-10 lg:grid-cols-[1fr_350px] lg:gap-[7%]">
+  <div class="lg-container grid gap-10 py-10 lg:grid-cols-[1fr_300px] lg:gap-[6%]">
     <div class="min-w-0">
       <div class="rounded-xl border border-purple-200 bg-purple-50 p-5">
-        <p class="text-[15px] leading-[1.7] text-gray-700">
-          These are the {termCount} terms we use consistently in every {meta.name} translation. This page is the live version. If one of these is wrong, everything downstream of it is wrong too, so it's the highest-value thing you can correct.
-        </p>
+        <p class="text-[15px] leading-[1.7] text-gray-700">These are the {termCount} terms we use consistently in every {meta.name} translation. This page is the live version. If one of these is wrong, everything downstream of it is wrong too, so it's the highest-value thing you can correct.</p>
         {
           family && (
             <p class="mt-3 text-[15px] leading-[1.7] text-gray-700">
-              Rows marked <strong class="font-semibold">shared</strong> come from the {family.toUpperCase()} family glossary and apply to every {family.toUpperCase()} locale. The rest are specific to {meta.name}.
+              The first part of this page is the {family.toUpperCase()} family glossary, shared by every {family.toUpperCase()} locale. Below the dividing line are the terms specific to {meta.name}.
             </p>
           )
         }
+        <p class="mt-3 text-[15px] leading-[1.7] text-gray-700">The last column of each table records who agreed the row. <strong class="font-semibold">agent</strong> means a draft no native speaker has confirmed yet, so those rows are the ones most worth your attention. Quote a row on the forum and tell us what it should say.</p>
         <div class="mt-5 flex flex-wrap items-center gap-3">
           <a href={forumUrl} class="inline-block rounded-lg bg-purple-600 px-5 py-2.5 text-[15px] font-semibold text-white transition hover:bg-purple-700"> Discuss on the Forum </a>
           <ReviewToggle itemId={reviewItemId(lang, "glossary")} version={content_version ?? governance_sha} />
         </div>
       </div>
 
-      <div class="mt-10 space-y-10">
-        {
-          sections.map((section) => {
-            const anchor = contents.find((c) => c.title === section.title)?.anchor;
-            return (
-              <section id={anchor} class="scroll-mt-24">
-                <div class="flex flex-wrap items-baseline gap-3">
-                  {section.level <= 2 ? <h2 class="text-[24px] font-bold text-gray-900">{section.title}</h2> : <h3 class="text-[19px] font-semibold text-gray-900">{section.title}</h3>}
-                  {section.scope === "family" && <span class="rounded-full bg-blue-50 px-2.5 py-0.5 text-[12px] font-semibold text-blue-700">shared across {family?.toUpperCase()}</span>}
-                </div>
-                {section.intro && <p class="mt-2 text-[15px] text-gray-500">{section.intro}</p>}
-
-                <ul class="notranslate mt-4 divide-y divide-gray-100 overflow-hidden rounded-xl border border-gray-200" translate="no">
-                  {section.terms.map((term) => (
-                    <li id={term.anchor} class="group scroll-mt-24 bg-white p-4 target:bg-purple-50 sm:p-5">
-                      <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                        <span class="text-[15px] text-gray-500">{term.en}</span>
-                        <span class="text-gray-300">&rarr;</span>
-                        <span class="text-[17px] font-semibold text-gray-900" lang={term.use === "en" ? "en" : lang} dir={term.use === "en" ? "ltr" : meta.dir}>
-                          {term.target}
-                        </span>
-                        {term.use === "en" && <span class="rounded-full bg-gray-100 px-2 py-0.5 text-[11px] font-semibold text-gray-500">kept in English</span>}
-                        <a href={`#${term.anchor}`} class="ml-auto font-mono text-[13px] text-gray-300 transition group-hover:text-purple-600" aria-label={`Link to the term "${term.en}"`}>
-                          #
-                        </a>
-                      </div>
-                      {term.notes && <p class="mt-1.5 text-[14px] leading-[1.6] text-gray-500">{term.notes}</p>}
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            );
-          })
-        }
+      <div class="glossary-body textual-content notranslate mt-10 min-w-0" lang={lang} dir={meta.dir} translate="no">
+        <Content />
       </div>
+
+      <p class="mt-10 text-[13px] text-gray-400">Published {published_at} from translator@{governance_sha}.</p>
     </div>
 
-    <aside class="min-w-0 space-y-6">
+    <aside class="min-w-0">
       <section class="rounded-2xl border border-gray-200 bg-white p-5 lg:sticky lg:top-24">
         <h2 class="text-[13px] font-bold tracking-[0.08em] text-gray-500 uppercase">Contents</h2>
         <ul class="mt-3 space-y-0.5">
           {
-            contents.map((entry) => (
+            contents.map((heading) => (
               <li>
-                <a href={`#${entry.anchor}`} class={`-mx-2 flex items-baseline justify-between gap-2 rounded-lg px-2 py-1.5 text-[14px] transition hover:bg-purple-50 ${entry.level <= 2 ? "font-semibold text-gray-900" : "pl-5 text-gray-600"}`}>
-                  <span class="min-w-0 truncate">{entry.title}</span>
-                  <span class="shrink-0 text-[12px] text-gray-400">{entry.count}</span>
+                <a href={`#${heading.slug}`} class={`-mx-2 block truncate rounded-lg px-2 py-1.5 transition hover:bg-purple-50 ${heading.depth === 1 ? "mt-3 text-[12px] font-bold tracking-[0.06em] text-gray-400 uppercase first:mt-0" : heading.depth === 2 ? "text-[14px] font-semibold text-gray-900" : "pl-5 text-[14px] text-gray-600"}`}>
+                  {heading.text}
                 </a>
               </li>
             ))

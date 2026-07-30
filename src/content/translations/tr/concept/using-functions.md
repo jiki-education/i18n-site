@@ -7,8 +7,8 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "c25ebca"
-content_version: "cb20587bc8f0"
+governance_sha: "1d91ad4"
+content_version: "5ecade68cb3b"
 published_at: "2026-07-30"
 forum_topic_id: 328
 ---
@@ -23,7 +23,7 @@ Kod yazarken aslında yaptığınız şey, ne olmasını istediğinizi bilgisaya
   height="400"
 />
 
-Programlamanın bütün amacı, yorumlayıcıya, bu durumda Jiki'ye doğru talimatları vermektir. Jiki'ye verebileceğiniz pek çok farklı talimat var, anladığı çok şey var. Bir şeyleri birbirine ekleyebilir, bir şeyi defalarca yapabilir, “Bu olursa, o zaman şunu yapmam gerekir” diyebilir. Bir şeyleri hatırlayıp sonra tekrar kullanabilir. Bir şey yolunda değilse size bir hata (İngilizce: _error_) verebilir. Bu kursta bunların hepsini göreceğiz. Ama anlaşılması gereken en önemli şey şu: yapacağınız her şey, Jiki'nin gelip uygulaması için bir tahtaya talimatlar yazmaktan ibaret.
+Programlamanın bütün amacı, yorumlayıcıya, bu durumda Jiki'ye doğru talimatları vermektir. Jiki'ye verebileceğiniz pek çok farklı talimat var, anladığı çok şey var. Bir şeyleri birbirine ekleyebilir, bir şeyi defalarca yapabilir, “Bu olursa, o zaman şunu yapmam gerekir” diyebilir. Bir şeyleri hatırlayıp sonra tekrar kullanabilir. Bir şey yolunda değilse size bir hata (İngilizce: _error_) verebilir. Bu kursta bunların hepsini göreceğiz. Ama anlaşılması gereken en önemli şey şu: yapacağınız her şey, Jiki'nin gelip uygulaması için bir beyaz tahtaya talimatlar yazmaktan ibaret.
 
 34 yıl önce programlamayı öğrendiğimde kafamda kurduğum zihinsel model buydu ve bugün de hâlâ aynısını kullanıyorum. Bilgisayarların birlere ve sıfırlara kadar nasıl çalıştığını biliyorum, ama açıkçası bunu hiç düşünmüyorum. Kafamda, bilgisayarın içinde yaşayan küçük bir adam var ve ona ne yapacağını söylüyorum. O yüzden bu konuda bana katılın. Bu, kurabileceğiniz çok güçlü bir zihinsel model ve bilgisayarın içindeki kişinin ne yaptığını bu kadar görsel bir şekilde düşünmeye başlarsanız, programlamayı öğrenirken bu size çok yarar sağlayacak.
 

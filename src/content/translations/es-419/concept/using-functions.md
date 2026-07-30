@@ -7,8 +7,8 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "c25ebca"
-content_version: "bec5782ca4b3"
+governance_sha: "1d91ad4"
+content_version: "b7901b57cbbf"
 published_at: "2026-07-30"
 forum_topic_id: 312
 ---
@@ -23,7 +23,7 @@ Cuando escribes código, lo que en realidad haces es comunicar lo que quieres qu
   height="400"
 />
 
-Programar consiste en darle al intérprete, en este caso a Jiki, las instrucciones correctas. Y hay muchísimas instrucciones distintas que le puedes dar, muchas que él entiende. Puede pegar cosas entre sí, puede hacer algo muchas veces, puede decir: "Si pasa esto, entonces tengo que hacer esto otro". Puede recordar cosas y volver a usarlas más adelante. Y si algo no está bien, te puede dar un error. Vamos a ver todo esto a lo largo del curso. Pero lo más importante es entender que todo lo que vas a hacer es escribir instrucciones en un tablero, para que Jiki venga y las siga.
+Programar consiste en darle al intérprete, en este caso a Jiki, las instrucciones correctas. Y hay muchísimas instrucciones distintas que le puedes dar, muchas que él entiende. Puede pegar cosas entre sí, puede hacer algo muchas veces, puede decir: "Si pasa esto, entonces tengo que hacer esto otro". Puede recordar cosas y volver a usarlas más adelante. Y si algo no está bien, te puede dar un error. Vamos a ver todo esto a lo largo del curso. Pero lo más importante es entender que todo lo que vas a hacer es escribir instrucciones en un pizarrón, para que Jiki venga y las siga.
 
 Cuando aprendí a programar, hace 34 años, este fue el modelo mental que construí, y es el mismo que tengo hoy. Entiendo cómo funcionan las computadoras hasta el nivel de los unos y los ceros, pero, sinceramente, nunca pienso en eso. En mi cabeza hay un hombrecito que vive dentro de la computadora, y yo le digo qué hacer. Así que acompáñame en esta idea. Es un modelo mental poderoso, y si empiezas a pensar de esta forma tan visual en lo que hace esa personita dentro de la computadora, te va a servir muchísimo mientras aprendes a programar.
 

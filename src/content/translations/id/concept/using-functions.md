@@ -7,8 +7,8 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "c25ebca"
-content_version: "38d0583150c4"
+governance_sha: "1d91ad4"
+content_version: "955278468128"
 published_at: "2026-07-30"
 forum_topic_id: 325
 ---
@@ -23,7 +23,7 @@ Saat kamu menulis kode, yang sebenarnya kamu lakukan adalah menyampaikan apa yan
   height="400"
 />
 
-Inti dari pemrograman adalah memberikan instruksi yang tepat kepada interpreter, dalam hal ini Jiki. Ada banyak instruksi berbeda yang bisa kamu berikan ke Jiki, banyak hal yang dia pahami. Dia bisa menyambungkan berbagai hal, dia bisa melakukan sesuatu berulang kali, dan dia bisa berkata, “Kalau ini terjadi, maka aku harus melakukan ini.” Dia bisa mengingat sesuatu lalu memakainya lagi nanti. Dia juga bisa memberimu _error_ (kesalahan) kalau ada yang tidak benar. Semua hal ini akan kita bahas di kursus ini. Tapi yang paling penting untuk dipahami: semua yang akan kamu lakukan sebenarnya adalah menuliskan instruksi di sebuah papan, lalu Jiki datang dan mengikutinya.
+Inti dari pemrograman adalah memberikan instruksi yang tepat kepada interpreter, dalam hal ini Jiki. Ada banyak instruksi berbeda yang bisa kamu berikan ke Jiki, banyak hal yang dia pahami. Dia bisa menyambungkan berbagai hal, dia bisa melakukan sesuatu berulang kali, dan dia bisa berkata, “Kalau ini terjadi, maka aku harus melakukan ini.” Dia bisa mengingat sesuatu lalu memakainya lagi nanti. Dia juga bisa memberimu _error_ (kesalahan) kalau ada yang tidak benar. Semua hal ini akan kita bahas di kursus ini. Tapi yang paling penting untuk dipahami: semua yang akan kamu lakukan sebenarnya adalah menuliskan instruksi di sebuah papan tulis, lalu Jiki datang dan mengikutinya.
 
 Waktu saya belajar pemrograman 34 tahun lalu, ini model mental yang saya bangun, dan sampai hari ini model itulah yang masih saya pakai. Saya paham bagaimana komputer bekerja sampai ke level angka satu dan nol, tapi sejujurnya saya hampir tidak pernah memikirkan itu. Di kepala saya, ada orang kecil yang tinggal di dalam komputer, dan saya menyuruhnya melakukan sesuatu. Jadi, ikuti saja cara berpikir ini. Ini model mental yang kuat dan bisa kamu bangun juga, dan kalau kamu mulai membayangkan secara visual apa yang sedang dilakukan si orang di dalam komputer, itu akan sangat membantumu selama belajar pemrograman.
 

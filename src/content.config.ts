@@ -62,36 +62,31 @@ const english = defineCollection({
   })
 });
 
-const glossaryTerm = z.object({
-  en: z.string(),
-  target: z.string(),
-  /** The glossary's "Use (xx/en)" column: which language the term is written in. */
-  use: z.string().optional(),
-  notes: z.string().optional(),
-  /** Stable id so a forum comment can link one row: #term-loop */
-  anchor: z.string()
-});
-
-const glossarySection = z.object({
-  title: z.string(),
-  /** Heading level, so the page can nest ### under ##. */
-  level: z.number(),
-  /** Whether these rows come from the shared family file or this locale's own. */
-  scope: z.enum(["family", "locale"]),
-  intro: z.string().optional(),
-  terms: z.array(glossaryTerm)
-});
-
+/**
+ * A language's agreed glossary, published as the Markdown it is written in.
+ *
+ * Deliberately unparsed. The translator repo used to normalise glossary.md into
+ * sections and terms, and the normalisation silently dropped every table whose
+ * first column wasn't headed "English" (about a quarter of every glossary). The
+ * glossary is written for an LLM to read during a translation pass, so its
+ * Markdown is the right format and this site adapts to it, not the reverse.
+ * Nothing here interprets the tables, so nothing here can drop a row.
+ *
+ * For a family locale (es-419, pt-BR, zh-CN) the body is the family glossary
+ * followed by the locale's own, separated by a rule.
+ */
 const glossaries = defineCollection({
-  loader: glob({ pattern: "*.json", base: "./src/content/glossaries" }),
+  loader: glob({ pattern: "*.md", base: "./src/content/glossaries" }),
   schema: z.object({
     lang: z.string(),
+    name: z.string().optional(),
     family: z.string().nullable().optional(),
     governance_sha: z.string(),
-    /** Hash of the terms. See the note on the translations collection. */
+    /** Hash of the published Markdown. See the note on the translations collection. */
     content_version: z.string().optional(),
     published_at: z.string(),
-    sections: z.array(glossarySection),
+    /** Table rows in the body. A reported count for the chrome, nothing selects on it. */
+    term_count: z.number().optional(),
     /** Discourse topic for glossary discussion, from forum-tracking.json. */
     forum_topic_id: z.number().optional()
   })

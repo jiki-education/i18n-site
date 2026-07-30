@@ -7,23 +7,23 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "c25ebca"
-content_version: "4c46dbbbee14"
+governance_sha: "1d91ad4"
+content_version: "c6ecbbbec6c3"
 published_at: "2026-07-30"
 forum_topic_id: 341
 ---
 
-Quando escreves código, aquilo que estás realmente a fazer é comunicar o que queres que aconteça, numa linguagem que o computador entende. Existem muitas linguagens de programação diferentes e existem muitos interpretadores (_interpreters_ em inglês) diferentes, que pegam naquilo que escreves e o transformam nos uns e zeros que um computador consegue entender. Neste curso, o teu interpretador é o Jiki. O curso todo tem o nome dele. Este é o Jiki. O Jiki vai ser o teu amigo nesta viagem pela programação. O trabalho dele é interpretar o código que escreves e transformá-lo nos uns e zeros sobre os quais o computador consegue realmente agir.
+Quando escreves código, aquilo que estás realmente a fazer é comunicar o que queres que aconteça, numa linguagem que o computador entende. Existem muitas linguagens de programação diferentes e existem muitos intérpretes (_interpreters_ em inglês) diferentes, que pegam naquilo que escreves e o transformam nos uns e zeros que um computador consegue entender. Neste curso, o teu intérprete é o Jiki. O curso todo tem o nome dele. Este é o Jiki. O Jiki vai ser o teu amigo nesta viagem pela programação. O trabalho dele é interpretar o código que escreves e transformá-lo nos uns e zeros sobre os quais o computador consegue realmente agir.
 
 <img
   class="concept-image"
   src="/static/images/concept-assets/using-functions/jiki-introduction.webp"
-  alt="Jiki, o interpretador simpático que te vai acompanhar ao longo deste curso"
+  alt="Jiki, o intérprete simpático que te vai acompanhar ao longo deste curso"
   width="421"
   height="400"
 />
 
-O objetivo da programação é dar ao interpretador, neste caso o Jiki, as instruções certas. E há muitas instruções diferentes que lhe podes dar, muitas que ele entende. Ele consegue juntar coisas, consegue fazer algo muitas vezes, consegue dizer: «Se isto acontecer, então tenho de fazer aquilo.» Consegue guardar coisas e usá-las outra vez mais tarde. Consegue dar-te um erro (_error_ em inglês) se algo não estiver certo. Vamos ver tudo isto ao longo do curso. Mas o mais importante é entenderes que tudo o que vais fazer é escrever instruções num quadro, para o Jiki vir depois segui-las.
+O objetivo da programação é dar ao intérprete, neste caso o Jiki, as instruções certas. E há muitas instruções diferentes que lhe podes dar, muitas que ele entende. Ele consegue juntar coisas, consegue fazer algo muitas vezes, consegue dizer: «Se isto acontecer, então tenho de fazer aquilo.» Consegue guardar coisas e usá-las outra vez mais tarde. Consegue dar-te um erro (_error_ em inglês) se algo não estiver certo. Vamos ver tudo isto ao longo do curso. Mas o mais importante é entenderes que tudo o que vais fazer é escrever instruções num quadro, para o Jiki vir depois segui-las.
 
 Quando aprendi a programar, há 34 anos, foi este o modelo mental que construí, e é o que ainda tenho hoje. Entendo como os computadores funcionam até ao nível dos uns e dos zeros, mas, sinceramente, nunca penso nisso. Na minha cabeça, vive um homenzinho dentro do computador e eu digo-lhe o que fazer. Por isso, acompanha-me neste raciocínio. É um modelo mental poderoso, que também podes construir, e se começares a pensar de forma muito visual naquilo que a pessoa dentro do computador está a fazer, isso vai dar-te uma boa base enquanto aprendes a programar.
 

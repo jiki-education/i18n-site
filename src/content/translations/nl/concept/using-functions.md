@@ -7,13 +7,13 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "c25ebca"
-content_version: "6c2d360b3769"
+governance_sha: "1d91ad4"
+content_version: "04648d818a20"
 published_at: "2026-07-30"
 forum_topic_id: 339
 ---
 
-Als je code schrijft, vertel je eigenlijk in een taal die een computer begrijpt wat je wilt laten gebeuren. Er bestaan heel veel verschillende programmeertalen, en er zijn ook heel veel verschillende interpreters die omzetten wat jij schrijft naar de enen en nullen die een computer kan begrijpen. In deze cursus is jouw interpreter Jiki. De hele cursus is naar Jiki vernoemd. Dit is Jiki. Jiki wordt je vriend op deze programmeerreis. Het is zijn taak om de code die jij schrijft te interpreteren en om te zetten in de enen en nullen waar de computer echt iets mee kan doen.
+Als je code schrijft, vertel je eigenlijk in een taal die een computer begrijpt wat je wilt laten gebeuren. Er bestaan heel veel verschillende programmeertalen, en er zijn ook heel veel verschillende interpreters (_tolk_) die omzetten wat jij schrijft naar de enen en nullen die een computer kan begrijpen. In deze cursus is jouw interpreter Jiki. De hele cursus is naar Jiki vernoemd. Dit is Jiki. Jiki wordt je vriend op deze programmeerreis. Het is zijn taak om de code die jij schrijft te interpreteren en om te zetten in de enen en nullen waar de computer echt iets mee kan doen.
 
 <img
   class="concept-image"
@@ -23,7 +23,7 @@ Als je code schrijft, vertel je eigenlijk in een taal die een computer begrijpt 
   height="400"
 />
 
-Waar het bij programmeren om gaat, is dat je de interpreter, in dit geval Jiki, de juiste instructies geeft. En je kunt Jiki heel veel verschillende instructies geven, want hij begrijpt er heel veel. Hij kan dingen aan elkaar plakken, hij kan iets heel vaak achter elkaar doen, en hij kan zeggen: "Als dit gebeurt, dan moet ik dat doen." Hij kan dingen onthouden en ze later weer gebruiken. En als er iets niet klopt, kan hij je een fout (_error_ in het Engels) geven. Al die dingen komen in deze cursus aan bod. Maar het belangrijkste om te begrijpen is dit: alles wat je gaat doen, komt erop neer dat je instructies op een bord schrijft, waarna Jiki langskomt om ze te volgen.
+Waar het bij programmeren om gaat, is dat je de interpreter, in dit geval Jiki, de juiste instructies geeft. En je kunt Jiki heel veel verschillende instructies geven, want hij begrijpt er heel veel. Hij kan dingen aan elkaar plakken, hij kan iets heel vaak achter elkaar doen, en hij kan zeggen: "Als dit gebeurt, dan moet ik dat doen." Hij kan dingen onthouden en ze later weer gebruiken. En als er iets niet klopt, kan hij je een fout (_error_ in het Engels) geven. Al die dingen komen in deze cursus aan bod. Maar het belangrijkste om te begrijpen is dit: alles wat je gaat doen, komt erop neer dat je instructies op een whiteboard schrijft, waarna Jiki langskomt om ze te volgen.
 
 Toen ik 34 jaar geleden leerde programmeren, bouwde ik dit mentale model op, en het is nog steeds het model dat ik vandaag gebruik. Ik begrijp hoe computers werken, tot op het niveau van de enen en nullen, maar eerlijk gezegd denk ik daar nooit aan. In mijn hoofd woont er een klein mannetje in de computer, en ik vertel hem wat hij moet doen. Ga dus even met me mee. Het is een krachtig mentaal model dat je kunt opbouwen, en als je op deze heel visuele manier gaat nadenken over wat dat mannetje in de computer doet, dan heb je daar veel aan terwijl je leert programmeren.
 

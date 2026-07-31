@@ -1,9 +1,9 @@
 {
   "published_at": "2026-07-31",
-  "governance_sha": "1a67ffd",
-  "approved": 7,
+  "governance_sha": "4853eda",
+  "approved": 9,
   "disapproved": 1,
-  "total": 118,
+  "total": 123,
   "languages": [
     {
       "lang": "el",
@@ -12,7 +12,7 @@
       "category_slug": "i18n-el",
       "approved": 4,
       "disapproved": 0,
-      "total": 4,
+      "total": 9,
       "items": [
         {
           "key": "glossary",
@@ -33,6 +33,31 @@
           "key": "exercise/maze-solve-basic",
           "topic_id": 799,
           "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -94,6 +119,68 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 812,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "name": "Russian",
+      "stage": "setup",
+      "category_slug": "i18n-ru",
+      "approved": 1,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 467,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 776,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 777,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 813,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "uk",
+      "name": "Ukrainian",
+      "stage": "setup",
+      "category_slug": "i18n-uk",
+      "approved": 1,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 308,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 784,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 785,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 817,
           "status": "pending"
         }
       ]
@@ -595,37 +682,6 @@
       ]
     },
     {
-      "lang": "ru",
-      "name": "Russian",
-      "stage": "setup",
-      "category_slug": "i18n-ru",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 467,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 776,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 777,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 813,
-          "status": "pending"
-        }
-      ]
-    },
-    {
       "lang": "sr",
       "name": "Serbian",
       "stage": "setup",
@@ -776,37 +832,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 816,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "uk",
-      "name": "Ukrainian",
-      "stage": "setup",
-      "category_slug": "i18n-uk",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 308,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 784,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 785,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 817,
           "status": "pending"
         }
       ]

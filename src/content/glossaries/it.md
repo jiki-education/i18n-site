@@ -3,10 +3,10 @@ lang: "it"
 name: "Italian"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
-content_version: "053a601ff528"
+governance_sha: "e50cba2"
+content_version: "e27af0c6ec65"
 published_at: "2026-07-31"
-term_count: 56
+term_count: 57
 forum_topic_id: 319
 video_player_forum_topic_id: 763
 ---
@@ -62,6 +62,7 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 | instruction (given to Jiki) | istruzione | it | A single thing the learner tells Jiki to do. Everyday word, not a legal/formal register one. Deliberately the same word as _statement (executable)_ above: in Italian these are one concept and splitting them would invent a distinction the language does not make. |
 | (programming) language | linguaggio (di programmazione) | it | _linguaggio_, never _lingua_ (which means a natural human language). Also used for the "language a computer understands" framing: _un linguaggio che il computer capisce_. |
 | code block | blocco di codice | it | Deliberately distinct from _scope_ below. |
+| comment (in code) | commento | it | A `//` or `#` note in the source that the computer ignores. Masculine: _il commento_, plural _i commenti_. The word stands alone: qualify it as _commento nel codice_ only where the surrounding sentence could be read as a remark or a piece of feedback. Verb: _commentare_ ("aggiungere un commento"); for commenting a line out, say _trasformare in commento_, never "commentare fuori". |
 | nested | annidato | it | e.g. _ciclo annidato_ = nested loop. Prefer over "nidificato". |
 | modulo / remainder operator | operatore modulo (operator) / resto (value) | it | Use _operatore modulo_ for the `%` operator; _resto_ for the resulting value. |
 | toggle | alternare | it | Verb. |
@@ -130,6 +131,21 @@ Naming convention and worked example are in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-07-31: Added `comment (in code)`
+
+**Decided by:** owner (iHiD), on the proposal of native speaker giorgx12 on the pinned
+Italian glossary thread (https://forum.jiki.io/t/319/3). **Human-decided: settled.**
+**Terms affected:** `comment (in code)`.
+
+giorgx12 proposed adding "Comment" (the `//` kind) rendered as _Commento (nel codice)_.
+Added as **`commento`**, with "(in code)" kept on the English side of the row only. The
+parenthetical is disambiguation for us, not part of what a translator writes: _commento_ is
+the ordinary Italian word and carries the code sense unaided in programming prose, exactly
+as English "comment" does. Writing _commento nel codice_ every time would read as a
+permanent gloss. The row keeps the qualifier available for the rare sentence where the
+remark/feedback sense could be misread, and the notes column carries the gender, the plural
+and the verb form.
 
 ### 2026-07-31: Pruned ordinary vocabulary
 

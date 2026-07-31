@@ -3,10 +3,10 @@ lang: "sr"
 name: "Serbian"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
-content_version: "7dae9139b7ca"
+governance_sha: "e6fb600"
+content_version: "030e52f8e94e"
 published_at: "2026-07-31"
-term_count: 113
+term_count: 114
 forum_topic_id: 402
 video_player_forum_topic_id: 779
 ---
@@ -140,6 +140,7 @@ These are terms where the Serbian is used in prose, so the "Use (sr/en)" column 
 | tutorial | tutorijal | sr | |
 | solution (learner's submission) | rešenje | sr | |
 | canvas (graphics exercises) | platno | sr | The drawing-surface sense specifically. |
+| maze | lavirint | sr | Masculine; declines normally ("u lavirintu", "kroz lavirint", pl. "lavirinti"). Spelled with **v**, not "labirint": both are valid, but "lavirint" is what Serbian speakers actually say. |
 | foot-gun | opasna prečica | sr | Flagged for native-speaker review; Serbian has the idiom "pucati sebi u nogu" (to shoot yourself in the foot), which may be worth workshopping into a punchier term. |
 
 ## Keep in English
@@ -180,6 +181,23 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-07-31: `maze` is "lavirint", not "labirint"
+
+**Decided by:** owner (iHiD), on the correction of native speaker **aleksaelezovic** on the
+pinned Serbian glossary thread
+([post](https://forum.jiki.io/t/serbian-review-glossary/402/4)), raised against the "Solve
+the Maze" exercise ([topic 814](https://forum.jiki.io/t/serbian-review-exercise-solve-the-maze/814)).
+**Terms affected:** `maze`. **Status: human-decided, settled.**
+
+The exercise rendered "maze" as **"labirint"**. That form is not wrong, and it is the one a
+dictionary reaches for, but as aleksaelezovic put it, "it is pretty much always used as
+'lavirint' around here in Serbia and this is the way it sounds most natural to Serbian
+speakers". Serbian has both variants; the **v** form is the ordinary spoken one, so it is
+the one the course uses, per the "default to the ordinary, common word" principle below.
+
+A row was added for `maze` (there was none before, which is how the exercise came to pick a
+rendering on its own). The translated exercise files are being corrected to match.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

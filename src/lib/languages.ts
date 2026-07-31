@@ -213,8 +213,9 @@ export function contentTypeThreadLabel(type: string): string {
  * several threads can exist for the same page, which is fine: an empty thread per
  * item across 30 languages was thousands of topics nobody ever posted in.
  *
- * The page URL sits alone on its own line, which is what makes Discourse render
- * it as a card rather than a bare link.
+ * The body follows the standard review-post template: a "leave unedited"
+ * marker, the pointer sentence with the page link, the no-LLM warning, then an
+ * "add your comments here" marker for the reviewer to write below.
  */
 export function forumNewTopicUrl(opts: {
   lang: string;
@@ -226,7 +227,6 @@ export function forumNewTopicUrl(opts: {
   const { lang, type, slug, englishTitle } = opts;
   const languageName = languageMeta(lang).name;
   const pageUrl = `https://i18n.jiki.io/${lang}/${type}/${slug}/`;
-  const glossaryUrl = `https://i18n.jiki.io/${lang}/glossary/`;
 
   // The title stays in English even though the page it points at is not: the
   // prefix already says which language, and an English title keeps the same item
@@ -234,21 +234,15 @@ export function forumNewTopicUrl(opts: {
   const title = `[${languageName} Review] ${contentTypeThreadLabel(type)}: ${englishTitle}`;
 
   const body = [
-    `This is a thread for reviewing the ${languageName} translation of the ${contentTypeSingular(type)} "${englishTitle}".`,
+    "_[Please leave unedited]_",
     "",
-    "You can read it here, with the English alongside it:",
+    `This is a thread for reviewing the ${languageName} translation of the ${contentTypeSingular(type)} "${englishTitle}": ${pageUrl}`,
     "",
-    pageUrl,
+    "**Please do NOT use LLMs to generate suggestions and only use your own personal knowledge.**",
     "",
-    'Tell us anything that sounds wrong, however small, and tell us even if you cannot explain why: "no one would say that" is useful feedback on its own. Quote the sentence you mean so we know exactly which bit you are talking about.',
+    "----",
     "",
-    `One exception. If a **single term** is wrong (a word we use the same way everywhere, like the word for a function or a variable), it belongs on the glossary thread rather than here, because agreeing it [in the glossary](${glossaryUrl}) fixes it across every page at once.`,
-    "",
-    "**Please do NOT use LLMs to generate suggestions and only use your own personal knowledge**.",
-    "",
-    "---",
-    "",
-    "WRITE YOUR COMMENT HERE"
+    "_[Please add your comments here]_"
   ].join("\n");
 
   const params = [

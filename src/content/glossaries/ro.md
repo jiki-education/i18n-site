@@ -3,8 +3,8 @@ lang: "ro"
 name: "Romanian"
 family: null
 stage: "setup"
-governance_sha: "0bbbf95"
-content_version: "4346e1823853"
+governance_sha: "ee712c5"
+content_version: "4c2dc01f1512"
 published_at: "2026-07-31"
 term_count: 95
 forum_topic_id: 825
@@ -49,7 +49,7 @@ These are terms where the Romanian is used in prose, so the "Use (ro/en)" column
 
 | English | Romanian | Use (ro/en) | Notes |
 |---------|----------|-------------|-------|
-| if statement | instrucțiune `if` | ro | Keep `if` in backticks as the real keyword. `structură decizională` is textbook register and too heavy for this voice. |
+| if statement | condiție | ro | „condiția `if`" when the keyword itself is named; keep `if` in backticks as the real keyword, as with „bucla `for`". Not `instrucțiune`, which is reserved for "statement (executable)" below. |
 | statement (executable) | instrucțiune | ro | The imperative sense: a line of code that does something and gets executed. Shares the word with "instruction (given to Jiki)" below. |
 | statement (logical claim) | afirmație | ro | The proposition sense: a claim that is true or false. Keep distinct from `instrucțiune`; pick by meaning, not by the English word. |
 | instruction (given to Jiki) | instrucțiune | ro | What the learner puts on the board for Jiki to follow. Everyday Romanian, not a legal-register word. Deliberately the same word as "statement (executable)". |
@@ -173,6 +173,20 @@ The decision log behind `glossary.md`. Two rules bind every pass that reads it:
 1. **A pass that changes the glossary reads this file first, and appends an entry after.** If an entry below records a **human** deciding a term, it is settled: it changes only by fresh agreement with a human, raised where it was settled. If nothing here mentions the term, it is an **unconfirmed draft**, and a pass may correct it provided it appends an entry saying what it changed and why.
 2. **A translation pass never loads this file.** It loads `glossary.md` and needs the term, not the argument that produced it.
 
+### 2026-07-31: `if statement` is `condiție` (native speaker)
+
+**Decided by:** @florin-cuculeac (Florin Cuculeac), native speaker, on the pinned Romanian glossary thread ([post 4 of topic 825](https://forum.jiki.io/t/romanian-review-glossary/825/4)); approved for action by the owner (iHiD). **Status: human-decided, so this row is settled** and changes only by fresh agreement with a human, raised on that thread.
+
+**Terms affected:** `if statement` (previously `instrucțiune if`).
+
+Florin's words: „Not ok in Romanian, use instead 'condiție', the word 'instrucțiune' means more like statement in english." That is precisely the problem with the old rendering: this glossary already spends `instrucțiune` on "statement (executable)" and on "instruction (given to Jiki)", so using it for the `if` construct as well made one ordinary word carry three jobs. `condiție` names the thing a beginner actually meets, and it frees `instrucțiune` for the two rows that keep it. Those two rows are unchanged.
+
+The backticked-keyword convention survives the change: „condiția `if`" when the keyword itself is named, matching „bucla `for`" on the `loop` row.
+
+The old note rejected `structură decizională` as textbook register. That rejection stands (it is still the wrong voice) but it no longer needs saying in the glossary, because it was an argument against a register, and nobody proposing `condiție` is anywhere near it. It is recorded here instead.
+
+This supersedes the "Not actioned" line in the entry below, which recorded this objection as still under discussion.
+
 ### 2026-07-31: `array` is `matrice`, `list` is `listă` (native speaker)
 
 **Decided by:** @florin-cuculeac (Florin Cuculeac), native speaker, on the pinned Romanian glossary thread ([post 3 of topic 825](https://forum.jiki.io/t/romanian-review-glossary/825/3)); approved for action by the owner (iHiD). **Status: human-decided, so these rows are settled** and change only by fresh agreement with a human, raised on that thread.
@@ -257,7 +271,6 @@ Why individual rows read the way they do, where the reasoning is not already cov
 
 | Term | Why |
 |------|-----|
-| if statement | `structură decizională` is what textbooks say, and it is far too heavy for this voice. Keeping `if` in code font and calling it an `instrucțiune` matches how people actually talk. |
 | statement / instruction | Romanian has one ordinary word, `instrucțiune`, for both the executable statement and what the learner tells Jiki to do. Coining a second would read worse, so the two rows deliberately share it, exactly as Hungarian does. The logical-claim sense is a genuinely different word, `afirmație`. |
 | to return | `returnează` is attested in Romanian course material. `a întoarce` reads as physically turning something around. |
 | return value | `valoare de retur` belongs to finance. |

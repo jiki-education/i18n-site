@@ -45,6 +45,7 @@ export const LANGUAGES: Record<string, LanguageMeta> = {
     family: "es"
   },
   fa: { name: "Persian", nativeName: "فارسی", dir: "rtl", comingSoon: "به‌زودی" },
+  fi: { name: "Finnish", nativeName: "Suomi", dir: "ltr", comingSoon: "Tulossa pian" },
   fr: { name: "French", nativeName: "Français", dir: "ltr", comingSoon: "Bientôt disponible" },
   hi: { name: "Hindi", nativeName: "हिन्दी", dir: "ltr", comingSoon: "जल्द आ रहा है" },
   hu: { name: "Hungarian", nativeName: "Magyar", dir: "ltr", comingSoon: "Hamarosan" },
@@ -129,9 +130,14 @@ export function stageMeta(stage: string | undefined | null): StageMeta {
   return STAGES[(stage as Stage) ?? "setup"] ?? STAGES.setup;
 }
 
+/** The Discourse category slug for a language, e.g. es-419 -> i18n-es-419. */
+export function forumCategorySlug(lang: string): string {
+  return `i18n-${lang.toLowerCase().replace(/_/g, "-")}`;
+}
+
 /** The Discourse category for a language, e.g. es-419 -> i18n-es-419. */
 export function forumCategoryUrl(lang: string): string {
-  return `https://forum.jiki.io/c/i18n-${lang.toLowerCase()}`;
+  return `https://forum.jiki.io/c/${forumCategorySlug(lang)}`;
 }
 
 export const CONTENT_TYPE_LABELS: Record<string, string> = {
@@ -164,6 +170,82 @@ export function contentTypeSingular(type: string): string {
 }
 
 /**
+ * How a content type is named in a forum thread title, e.g.
+ * "[Polish Review] Concept page: Using Functions".
+ *
+ * The convention is recorded once in "Naming a review thread" in the translator
+ * repo's global/workflow.md; this mirrors it so the threads people open from the
+ * site sort alongside the ones we open ourselves.
+ */
+const CONTENT_TYPE_THREAD_LABELS: Record<string, string> = {
+  concept: "Concept page",
+  article: "Article",
+  "blog-post": "Blog post",
+  exercise: "Exercise",
+  "video-subtitles": "Video subtitles",
+  "website-copy": "Website copy",
+  interpreters: "Interpreter messages"
+};
+
+export function contentTypeThreadLabel(type: string): string {
+  return CONTENT_TYPE_THREAD_LABELS[type] ?? contentTypeLabel(type);
+}
+
+/**
+ * A Discourse "new topic" composer URL, prefilled with the title and body for
+ * reviewing one item in one language, and aimed at that language's category.
+ *
+ * The thread is opened by the reviewer at the moment they have something to say,
+ * rather than pre-created empty for every item in every language. That means
+ * several threads can exist for the same page, which is fine: an empty thread per
+ * item across 30 languages was thousands of topics nobody ever posted in.
+ *
+ * The page URL sits alone on its own line, which is what makes Discourse render
+ * it as a card rather than a bare link.
+ */
+export function forumNewTopicUrl(opts: {
+  lang: string;
+  type: string;
+  slug: string;
+  /** The English title, so the thread names the item the way the site does. */
+  englishTitle: string;
+}): string {
+  const { lang, type, slug, englishTitle } = opts;
+  const languageName = languageMeta(lang).name;
+  const pageUrl = `https://i18n.jiki.io/${lang}/${type}/${slug}/`;
+  const glossaryUrl = `https://i18n.jiki.io/${lang}/glossary/`;
+
+  // The title stays in English even though the page it points at is not: the
+  // prefix already says which language, and an English title keeps the same item
+  // findable across every category.
+  const title = `[${languageName} Review] ${contentTypeThreadLabel(type)}: ${englishTitle}`;
+
+  const body = [
+    `This is a thread for reviewing the ${languageName} translation of the ${contentTypeSingular(type)} "${englishTitle}".`,
+    "",
+    "You can read it here, with the English alongside it:",
+    "",
+    pageUrl,
+    "",
+    'Tell us anything that sounds wrong, however small, and tell us even if you cannot explain why: "no one would say that" is useful feedback on its own. Quote the sentence you mean so we know exactly which bit you are talking about.',
+    "",
+    `One exception. If a **single term** is wrong (a word we use the same way everywhere, like the word for a function or a variable), it belongs on the glossary thread rather than here, because agreeing it [in the glossary](${glossaryUrl}) fixes it across every page at once.`,
+    "",
+    "---",
+    "",
+    "**Please do NOT use LLMs to generate suggestions and only use your own personal knowledge**."
+  ].join("\n");
+
+  const params = [
+    `title=${encodeURIComponent(title)}`,
+    `body=${encodeURIComponent(body)}`,
+    `category=${encodeURIComponent(forumCategorySlug(lang))}`
+  ].join("&");
+
+  return `https://forum.jiki.io/new-topic?${params}`;
+}
+
+/**
  * The flag shown for each language, mirroring the emoji on its Discourse
  * category so the site and the forum agree.
  *
@@ -183,6 +265,7 @@ const FLAGS: Record<string, string> = {
   "es-419": "🌎",
   "es-ES": "🇪🇸",
   fa: "🇮🇷",
+  fi: "🇫🇮",
   fr: "🇫🇷",
   hi: "🇮🇳",
   hu: "🇭🇺",

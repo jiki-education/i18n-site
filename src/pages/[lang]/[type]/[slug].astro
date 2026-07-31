@@ -5,7 +5,7 @@ import Layout from "../../../layouts/Layout.astro";
 import PageHeader from "../../../components/PageHeader.astro";
 import ReviewToggle from "../../../components/ReviewToggle.astro";
 import { alignBlocks, renderBlock, splitBlocks } from "../../../lib/markdown";
-import { contentTypeLabel, contentTypeSingular, forumCategoryUrl, languageMeta } from "../../../lib/languages";
+import { contentTypeLabel, contentTypeSingular, forumNewTopicUrl, languageMeta } from "../../../lib/languages";
 import { reviewItemId } from "../../../lib/reviewed";
 
 export const getStaticPaths = (async () => {
@@ -24,7 +24,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { translation, source } = Astro.props;
-const { lang, type, slug, title, en_md5, content_version, forum_topic_id, messages } = translation.data;
+const { lang, type, slug, title, en_md5, content_version, messages } = translation.data;
 const meta = languageMeta(lang);
 
 /** The English source moved on after this was translated. */
@@ -36,7 +36,11 @@ const englishBody = source?.body ?? "";
 const aligned = englishBody ? alignBlocks(englishBody, targetBody) : null;
 const targetOnly = splitBlocks(targetBody).map(renderBlock);
 
-const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : forumCategoryUrl(lang);
+/**
+ * Always the prefilled Discourse composer rather than a pre-created thread: the
+ * reviewer opens the topic when they have something to say. See forumNewTopicUrl.
+ */
+const forumUrl = forumNewTopicUrl({ lang, type, slug, englishTitle: source?.data.title ?? title ?? slug });
 ---
 
 <Layout title={title ?? slug} description={`${contentTypeLabel(type)}: ${slug}, translated into ${meta.name}. Read it against the English and tell us what sounds wrong.`}>

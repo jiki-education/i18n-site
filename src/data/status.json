@@ -1,8 +1,8 @@
 {
   "published_at": "2026-07-31",
-  "governance_sha": "f33003b",
+  "governance_sha": "0e07a28",
   "approved": 5,
-  "total": 115,
+  "total": 118,
   "languages": [
     {
       "lang": "el",
@@ -848,13 +848,18 @@
       "lang": "fi",
       "name": "Finnish",
       "stage": "setup",
-      "category_slug": null,
+      "category_slug": "i18n-fi",
       "approved": 0,
-      "total": 1,
+      "total": 2,
       "items": [
         {
           "key": "glossary",
-          "topic_id": null,
+          "topic_id": 840,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 841,
           "approved": false
         }
       ]
@@ -865,11 +870,16 @@
       "stage": "setup",
       "category_slug": "i18n-ro",
       "approved": 0,
-      "total": 1,
+      "total": 2,
       "items": [
         {
           "key": "glossary",
           "topic_id": 825,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 842,
           "approved": false
         }
       ]
@@ -880,11 +890,16 @@
       "stage": "setup",
       "category_slug": "i18n-sv",
       "approved": 0,
-      "total": 1,
+      "total": 2,
       "items": [
         {
           "key": "glossary",
           "topic_id": 828,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 843,
           "approved": false
         }
       ]

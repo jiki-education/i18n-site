@@ -1,7 +1,7 @@
 {
   "published_at": "2026-07-31",
-  "governance_sha": "681a674",
-  "approved": 17,
+  "governance_sha": "ee73ef7",
+  "approved": 20,
   "disapproved": 0,
   "total": 128,
   "languages": [
@@ -92,17 +92,17 @@
         },
         {
           "key": "concept/repeat",
-          "topic_id": null,
+          "topic_id": 848,
           "status": "pending"
         },
         {
           "key": "concept/if",
-          "topic_id": null,
+          "topic_id": 847,
           "status": "pending"
         },
         {
           "key": "concept/variables",
-          "topic_id": null,
+          "topic_id": 849,
           "status": "pending"
         },
         {
@@ -112,7 +112,7 @@
         },
         {
           "key": "exercise/rainbow",
-          "topic_id": null,
+          "topic_id": 850,
           "status": "pending"
         }
       ]
@@ -122,7 +122,7 @@
       "name": "Brazilian Portuguese",
       "stage": "setup",
       "category_slug": "i18n-pt-br",
-      "approved": 2,
+      "approved": 3,
       "disapproved": 0,
       "total": 4,
       "items": [
@@ -139,7 +139,7 @@
         {
           "key": "video-player",
           "topic_id": 773,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/maze-solve-basic",
@@ -211,6 +211,37 @@
       ]
     },
     {
+      "lang": "pt-pt",
+      "name": "European Portuguese",
+      "stage": "setup",
+      "category_slug": "i18n-pt-pt",
+      "approved": 1,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 341,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 774,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 775,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 822,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "it",
       "name": "Italian",
       "stage": "setup",
@@ -269,6 +300,37 @@
           "key": "exercise/maze-solve-basic",
           "topic_id": 802,
           "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "sr",
+      "name": "Serbian",
+      "stage": "setup",
+      "category_slug": "i18n-sr",
+      "approved": 1,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 402,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 778,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 779,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 814,
+          "status": "approved"
         }
       ]
     },
@@ -413,37 +475,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 810,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "pt-pt",
-      "name": "European Portuguese",
-      "stage": "setup",
-      "category_slug": "i18n-pt-pt",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 341,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 774,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 775,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 822,
           "status": "pending"
         }
       ]
@@ -723,37 +754,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 800,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "sr",
-      "name": "Serbian",
-      "stage": "setup",
-      "category_slug": "i18n-sr",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 402,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 778,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 779,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 814,
           "status": "pending"
         }
       ]

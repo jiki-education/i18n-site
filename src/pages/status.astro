@@ -1,0 +1,190 @@
+---
+/**
+ * The sign-off leaderboard: every language, and how much of it a native speaker
+ * has actually approved.
+ *
+ * The data is `src/data/status.json`, written by `./scripts/publish-status` in
+ * the translator repo out of each language's `tracking.json`. Sign-off is
+ * recorded there by a human on the strength of a real native-speaker verdict; it
+ * is never inferred from a translation existing, and nothing on this page
+ * derives it. Rows arrive pre-sorted (most approved first) and are rendered in
+ * the order given.
+ *
+ * Each row is a `<details>`, not a table row, because a language ends up with
+ * dozens of items and listing them all inline stops being readable at about six.
+ * Collapsed, a row is a scannable leaderboard line (count plus bar); expanded,
+ * it is the full breakdown grouped by content type. Native disclosure rather
+ * than a script: no JS to load, keyboard and screen reader behaviour for free,
+ * and deep-linking still works because nothing is hidden from find-in-page in a
+ * way that matters here.
+ *
+ * Note this is a different question from the "N to review" pills elsewhere on
+ * the site. Those are per-browser localStorage: what *you* have looked at. This
+ * is the project's own record of what has been signed off, and is the same for
+ * everyone.
+ */
+import Layout from "../layouts/Layout.astro";
+import PageHeader from "../components/PageHeader.astro";
+import StageBadge from "../components/StageBadge.astro";
+import status from "../data/status.json";
+import { contentTypeLabel, languageFlag, languageMeta } from "../lib/languages";
+
+interface Item {
+  key: string;
+  topic_id: number | null;
+  approved: boolean;
+}
+
+/**
+ * Items that are not a `type/slug` content file. They are real sign-off targets
+ * with their own forum threads, so they group together rather than each becoming
+ * a group of one.
+ */
+const GENERAL_LABELS: Record<string, string> = {
+  glossary: "glossary",
+  "video-player": "video player"
+};
+
+/** A tracking.json item key as a short human label. Unknown keys fall through to themselves, so a new kind of item shows up the day it is added rather than silently going missing. */
+function itemLabel(key: string): string {
+  if (GENERAL_LABELS[key]) return GENERAL_LABELS[key];
+  const slug = key.split("/").slice(1).join("/");
+  return (slug || key).replace(/-/g, " ");
+}
+
+/** Group items by content type, general items first, then each type in the order it first appears. Returns [label, items] pairs so the template does no bookkeeping. */
+function groupItems(items: Item[]): [string, Item[]][] {
+  const groups = new Map<string, Item[]>();
+  for (const item of items) {
+    const label = GENERAL_LABELS[item.key] ? "Glossary & site" : contentTypeLabel(item.key.split("/")[0]);
+    const list = groups.get(label) ?? [];
+    list.push(item);
+    groups.set(label, list);
+  }
+  return [...groups.entries()];
+}
+
+const forumTopicUrl = (topicId: number | null) => (topicId ? `https://forum.jiki.io/t/${topicId}` : null);
+
+/**
+ * Standard competition ranking: languages level on approved count share a
+ * position, and the next position skips by however many shared it. So one
+ * language on 1 item is 1st and the thirty on zero are all joint 2nd, rather
+ * than being handed arbitrary places 2 to 31 by whatever the sort tiebreak was.
+ *
+ * Ranked on `approved` alone, not the sort order. The rows are also sorted by
+ * total as a tiebreak, and letting that leak into the position would claim a
+ * language with more items outranks one with fewer when neither has been signed
+ * off at all.
+ */
+function rankOf(index: number, approved: number, rows: { approved: number }[]): number {
+  let rank = index;
+  while (rank > 0 && rows[rank - 1].approved === approved) rank--;
+  return rank + 1;
+}
+
+const languages = status.languages.map((entry, index) => ({
+  ...entry,
+  meta: languageMeta(entry.lang),
+  groups: groupItems(entry.items as Item[]),
+  percent: entry.total > 0 ? Math.round((entry.approved / entry.total) * 100) : 0,
+  rank: rankOf(index, entry.approved, status.languages)
+}));
+
+const withAny = languages.filter((l) => l.approved > 0).length;
+---
+
+<Layout title="Sign-off status" description={`What native speakers have actually signed off across ${languages.length} languages: ${status.approved} of ${status.total} items so far.`}>
+  <PageHeader title="Sign-off status" subtitle="Every language, and what a native speaker has read and approved. A translation existing is not the same as someone vouching for it, so only the second is counted here." crumbs={[{ label: "Home", href: "/" }, { label: "Status" }]} />
+
+  <div class="lg-container py-10">
+    <div class="flex flex-wrap gap-4">
+      <div class="flex-1 rounded-2xl border border-gray-200 bg-white p-5">
+        <div class="text-[32px] leading-none font-extrabold text-purple-600">{status.approved}</div>
+        <div class="mt-1.5 text-[14px] text-gray-500">items signed off, of {status.total}</div>
+      </div>
+      <div class="flex-1 rounded-2xl border border-gray-200 bg-white p-5">
+        <div class="text-[32px] leading-none font-extrabold text-purple-600">{withAny}</div>
+        <div class="mt-1.5 text-[14px] text-gray-500">of {languages.length} languages off the mark</div>
+      </div>
+    </div>
+
+    <div class="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white">
+      <div class="hidden border-b border-gray-200 px-5 py-3 text-[12px] tracking-wide text-gray-500 uppercase sm:grid sm:grid-cols-[3rem_1fr_7rem_10rem] sm:gap-4">
+        <span class="font-semibold">#</span>
+        <span class="font-semibold">Language</span>
+        <span class="font-semibold">Stage</span>
+        <span class="font-semibold">Signed off</span>
+      </div>
+
+      {
+        languages.map((entry) => (
+          <details class="group border-b border-gray-100 last:border-0">
+            <summary class="grid cursor-pointer list-none grid-cols-1 gap-2 px-5 py-3.5 transition hover:bg-purple-50/60 sm:grid-cols-[3rem_1fr_7rem_10rem] sm:items-center sm:gap-4">
+              <span class="text-[20px] leading-none font-bold text-gray-400 tabular-nums">{entry.rank}.</span>
+              <span class="flex items-center gap-2.5 font-semibold text-gray-900">
+                <span class="text-[13px] text-gray-400 transition group-open:rotate-90" aria-hidden="true">
+                  ▶
+                </span>
+                <span class="text-[20px] leading-none" aria-hidden="true">
+                  {languageFlag(entry.lang)}
+                </span>
+                {entry.meta.name}
+              </span>
+              <span>
+                <StageBadge stage={entry.stage} />
+              </span>
+              <span class="flex items-center gap-2.5">
+                <span class="h-1.5 w-20 overflow-hidden rounded-full bg-gray-200">
+                  <span class="block h-full rounded-full bg-emerald-500" style={`width: ${entry.percent}%`} />
+                </span>
+                <span class={`text-[14px] whitespace-nowrap ${entry.approved > 0 ? "font-bold text-emerald-700" : "text-gray-400"}`}>
+                  {entry.approved} / {entry.total}
+                </span>
+              </span>
+            </summary>
+
+            <div class="border-t border-gray-100 bg-gray-50/70 px-5 py-4 pl-11">
+              <a href={`/${entry.lang}`} class="text-[13px] font-semibold text-blue-600 hover:underline">{`Open ${entry.meta.name} →`}</a>
+              {entry.groups.map(([label, items]) => (
+                <div class="mt-3">
+                  <div class="text-[11px] font-semibold tracking-wide text-gray-500 uppercase">
+                    {label} ({items.filter((i) => i.approved).length}/{items.length})
+                  </div>
+                  <div class="mt-1.5 flex flex-wrap gap-1.5 text-[12px]">
+                    {items.map((item) => {
+                      const url = forumTopicUrl(item.topic_id);
+                      const tone = item.approved ? "bg-emerald-50 font-semibold text-emerald-700" : "bg-white text-gray-500 border border-gray-200";
+                      const label = itemLabel(item.key);
+                      const body = item.approved ? `✓ ${label}` : label;
+                      const title = item.approved ? `${label}: signed off` : `${label}: not signed off yet`;
+                      return url ? (
+                        <a href={url} class={`rounded-full px-2 py-0.5 transition hover:brightness-95 ${tone}`} title={title}>
+                          {body}
+                        </a>
+                      ) : (
+                        <span class={`rounded-full px-2 py-0.5 ${tone}`} title={title}>
+                          {body}
+                        </span>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </details>
+        ))
+      }
+    </div>
+
+    <p class="mt-6 max-w-2xl text-[14px] text-gray-500">Open a language to see its items. Each one links to the forum thread where it's being reviewed, and if you speak the language, saying whether it sounds right is the single most useful thing you can do.</p>
+    <p class="mt-2 text-[13px] text-gray-400">Last updated {status.published_at}.</p>
+  </div>
+</Layout>
+
+<style>
+  /* Safari still paints the default disclosure triangle without this, which would sit next to the rotating caret. */
+  summary::-webkit-details-marker {
+    display: none;
+  }
+</style>

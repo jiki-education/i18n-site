@@ -1,0 +1,893 @@
+{
+  "published_at": "2026-07-31",
+  "governance_sha": "ee712c5",
+  "approved": 1,
+  "total": 115,
+  "languages": [
+    {
+      "lang": "el",
+      "name": "Greek",
+      "stage": "setup",
+      "category_slug": "i18n-el",
+      "approved": 1,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 497,
+          "approved": true
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 746,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 747,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 799,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "ar",
+      "name": "Arabic",
+      "stage": "setup",
+      "category_slug": "i18n-ar",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 470,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 740,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 741,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 795,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "bn",
+      "name": "Bengali",
+      "stage": "setup",
+      "category_slug": "i18n-bn",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 473,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 742,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 743,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 796,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Brazilian Portuguese",
+      "stage": "setup",
+      "category_slug": "i18n-pt-br",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 288,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 772,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 773,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 812,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "ca",
+      "name": "Catalan",
+      "stage": "setup",
+      "category_slug": "i18n-ca",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 536,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 744,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 745,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 797,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "nl",
+      "name": "Dutch",
+      "stage": "setup",
+      "category_slug": "i18n-nl",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 339,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 768,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 769,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 810,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "pt-pt",
+      "name": "European Portuguese",
+      "stage": "setup",
+      "category_slug": "i18n-pt-pt",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 341,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 774,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 775,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 822,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "es-ES",
+      "name": "European Spanish",
+      "stage": "setup",
+      "category_slug": "i18n-es-es",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 310,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 750,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 751,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 801,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "fr",
+      "name": "French",
+      "stage": "setup",
+      "category_slug": "i18n-fr",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 314,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 754,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 755,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 803,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "de",
+      "name": "German",
+      "stage": "setup",
+      "category_slug": "i18n-de",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 340,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 738,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 739,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 798,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "hi",
+      "name": "Hindi",
+      "stage": "setup",
+      "category_slug": "i18n-hi",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 482,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 756,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 757,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 804,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "hu",
+      "name": "Hungarian",
+      "stage": "setup",
+      "category_slug": "i18n-hu",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 289,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 758,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 759,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 805,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "id",
+      "name": "Indonesian",
+      "stage": "setup",
+      "category_slug": "i18n-id",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 325,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 760,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 761,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 806,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "it",
+      "name": "Italian",
+      "stage": "setup",
+      "category_slug": "i18n-it",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 319,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 762,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 763,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 807,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "ja",
+      "name": "Japanese",
+      "stage": "setup",
+      "category_slug": "i18n-ja",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 311,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 764,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 765,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 808,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "ko",
+      "name": "Korean",
+      "stage": "setup",
+      "category_slug": "i18n-ko",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 479,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 766,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 767,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 809,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "es-419",
+      "name": "Latin American Spanish",
+      "stage": "setup",
+      "category_slug": "i18n-es-419",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 312,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 748,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 749,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 800,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "fa",
+      "name": "Persian",
+      "stage": "setup",
+      "category_slug": "i18n-fa",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 683,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 752,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 753,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 802,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "pl",
+      "name": "Polish",
+      "stage": "setup",
+      "category_slug": "i18n-pl",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 417,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 770,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 771,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 811,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "name": "Russian",
+      "stage": "setup",
+      "category_slug": "i18n-ru",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 467,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 776,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 777,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 813,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "sr",
+      "name": "Serbian",
+      "stage": "setup",
+      "category_slug": "i18n-sr",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 402,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 778,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 779,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 814,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "zh-CN",
+      "name": "Simplified Chinese",
+      "stage": "setup",
+      "category_slug": "i18n-zh-cn",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 413,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 790,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 791,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 820,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "sw",
+      "name": "Swahili",
+      "stage": "setup",
+      "category_slug": "i18n-sw",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 500,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 780,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 781,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 815,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "zh-TW",
+      "name": "Traditional Chinese",
+      "stage": "setup",
+      "category_slug": "i18n-zh-tw",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 414,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 792,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 793,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 821,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "tr",
+      "name": "Turkish",
+      "stage": "setup",
+      "category_slug": "i18n-tr",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 328,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 782,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 783,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 816,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "uk",
+      "name": "Ukrainian",
+      "stage": "setup",
+      "category_slug": "i18n-uk",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 308,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 784,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 785,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 817,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "ur",
+      "name": "Urdu",
+      "stage": "setup",
+      "category_slug": "i18n-ur",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 476,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 786,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 787,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 818,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "vi",
+      "name": "Vietnamese",
+      "stage": "setup",
+      "category_slug": "i18n-vi",
+      "approved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 322,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 788,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 789,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 819,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "fi",
+      "name": "Finnish",
+      "stage": "setup",
+      "category_slug": null,
+      "approved": 0,
+      "total": 1,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": null,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "ro",
+      "name": "Romanian",
+      "stage": "setup",
+      "category_slug": "i18n-ro",
+      "approved": 0,
+      "total": 1,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 825,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "sv",
+      "name": "Swedish",
+      "stage": "setup",
+      "category_slug": "i18n-sv",
+      "approved": 0,
+      "total": 1,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 828,
+          "approved": false
+        }
+      ]
+    }
+  ]
+}

@@ -231,9 +231,11 @@ export function forumNewTopicUrl(opts: {
     "",
     `One exception. If a **single term** is wrong (a word we use the same way everywhere, like the word for a function or a variable), it belongs on the glossary thread rather than here, because agreeing it [in the glossary](${glossaryUrl}) fixes it across every page at once.`,
     "",
+    "**Please do NOT use LLMs to generate suggestions and only use your own personal knowledge**.",
+    "",
     "---",
     "",
-    "**Please do NOT use LLMs to generate suggestions and only use your own personal knowledge**."
+    "WRITE YOUR COMMENT HERE"
   ].join("\n");
 
   const params = [

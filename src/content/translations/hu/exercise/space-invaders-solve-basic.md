@@ -1,0 +1,31 @@
+---
+lang: "hu"
+type: "exercise"
+slug: "space-invaders-solve-basic"
+title: "Space Invaders"
+status: "published"
+source_repo: "front-end"
+source_path: "curriculum/src/exercises/space-invaders-solve-basic"
+en_md5: "832d47151ead209ebf0f931a8472ec30"
+governance_sha: "cdcbbb5"
+content_version: "261af164ecf5"
+published_at: "2026-07-31"
+forum_topic_id: 289
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"describers","rows":[{"key":"move","english":"moved the laser cannon to the right","target":"jobbra mozgatta a lézerágyút"}]},{"name":"checks","rows":[{"key":"notShotAllAliens","english":"You didn't shoot down all the aliens.","target":"Nem lőtted le az összes űrlényt."}]},{"name":"tasks","rows":[{"key":"shootTheAliens.name","english":"Shoot all the aliens","target":"Lődd le az összes űrlényt"},{"key":"shootTheAliens.description","english":"Move your laser cannon to the right and shoot each alien as you pass underneath it. Don't miss or move off the edge!","target":"Mozgasd jobbra a lézerágyúdat, és lődd le az űrlényeket, ahogy elhaladsz alattuk. Ne lőj mellé, és ne lépj le a pálya széléről!"}]},{"name":"scenarios","rows":[{"key":"shootTheAliens.name","english":"Shoot the Aliens","target":"Lődd le az űrlényeket"},{"key":"shootTheAliens.description","english":"Move right and shoot all the aliens","target":"Mozogj jobbra, és lődd le az összes űrlényt"}]},{"name":"hints","rows":[{"key":"whatDoINeedToDo.question","english":"What do I need to do?","target":"Mi a dolgom?"},{"key":"whatDoINeedToDo.answer","english":"Like the maze, you need to move your character (this time a laser, not a person). But you also need to shoot from the laser! Move the laser underneath an alien then shoot. Then move again until you're under the next alien, and shoot again. Continue until you've shot down the last alien!","target":"A labirintushoz hasonlóan itt is mozgatnod kell a figurádat (csak most nem ember, hanem egy lézer). De ezúttal lőnöd is kell vele! Vidd a lézert egy űrlény alá, aztán lőj. Utána mozogj tovább, amíg a következő űrlény alá nem érsz, és lőj újra. Így haladj, amíg az utolsó űrlényt is le nem lőtted!"},{"key":"cantWasteAmmo.question","english":"I get told I can't waste ammo.","target":"Azt írja ki, hogy nem pazarolhatok lőszert."},{"key":"cantWasteAmmo.answer","english":"You should only `shoot()` when you're directly below an alien. Try moving one step further (or maybe you've gone one too far?)","target":"Csak akkor használd a `shoot()`-ot, ha pontosan egy űrlény alatt állsz. Próbálj meg egy lépéssel tovább menni (vagy lehet, hogy eggyel túl messzire mentél?)"}]},{"name":"functions","rows":[{"key":"move.description","english":"Moves the laser cannon **one position to the right**. If you move off the right edge of the screen, you lose!","target":"**Egy pozícióval jobbra** mozgatja a lézerágyút. Ha lelépsz a képernyő jobb széléről, veszítesz!"},{"key":"move.category","english":"Movement","target":"Mozgás"},{"key":"shoot.description","english":"Shoots the laser upwards. **Only shoot when there's an alien above you**, or you lose the game!","target":"Felfelé lő a lézerrel. **Csak akkor lőj, ha van feletted űrlény**, különben elveszíted a játékot!"},{"key":"shoot.category","english":"Action","target":"Művelet"}]}]},{"heading":"Shared \"space-invaders\" messages","note":"Shared by every exercise in the space-invaders category, not just this one. A change here changes all of them.","namespaces":[{"name":"describers","rows":[{"key":"moveLeft","english":"moved the laser cannon to the left","target":"balra mozgatta a lézerágyút"},{"key":"moveRight","english":"moved the laser cannon to the right","target":"jobbra mozgatta a lézerágyút"},{"key":"shoot","english":"shot the laser upwards","target":"felfelé lőtt a lézerrel"},{"key":"isAlienAbove","english":"determined if there was an alien above the laser cannon","target":"megállapította, hogy volt-e űrlény a lézerágyú felett"},{"key":"getStartingAliensInRow","english":"retrieved the starting positions of row ${arg1} of aliens","target":"lekérte az űrlények ${arg1}. sorának kiinduló pozícióit"},{"key":"fireFireworks","english":"fired off celebratory fireworks","target":"ünnepi tűzijátékot lőtt ki"}]},{"name":"errors","rows":[{"key":"laserOverheated","english":"Oh no! Your laser cannon overheated from shooting too fast! You need to move before you can shoot a second time.","target":"Jaj ne! A lézerágyúd túlmelegedett, mert túl gyorsan lőttél! Mielőtt másodszor is lőnél, mozognod kell."},{"key":"missedShot","english":"Oh no, you missed. Wasting ammo is not allowed!","target":"Jaj ne, mellélőttél. Lőszert pazarolni tilos!"},{"key":"moveOffEdge","english":"Oh no, you tried to move off the edge!","target":"Jaj ne, megpróbáltál lelépni a pálya széléről!"},{"key":"rowNotNumber","english":"Oh no, the row input you provided is not a number.","target":"Jaj ne, a megadott sorérték nem szám."},{"key":"rowOutOfRange","english":"Oh no, you tried to access a row of aliens that doesn't exist. You asked for row {{row}}, but the rows are numbered 0 to {{max}}.","target":"Jaj ne, olyan űrlénysort kértél le, ami nem létezik. Ezt a sort kérted: {{row}}, de csak a 0 és {{max}} közötti sorok léteznek."},{"key":"notAllAliensDead","english":"You need to defeat all the aliens before you can celebrate!","target":"Előbb az összes űrlényt le kell győznöd, csak utána ünnepelhetsz!"}]}]}]
+---
+
+Üdvözlünk a második feladatodban: itt a Space Invaders! Ez egy klasszikus, 1970-es évekbeli arcade-játék, és az egyik legelső, amivel valaha játszottam. A következő hetekben egy teljesen automatizált lézert fogsz építeni, ami leszedi az űrlényeket. Egyelőre viszont csak annyi a dolgod, hogy kézzel lődd le mindet!
+
+Két függvényed van (_functions_ angolul):
+
+- a `move()` (mozogj) egy pozícióval jobbra mozgatja a lézerágyúdat
+- a `shoot()` (lőj) felfelé lő a lézerrel
+
+Az első `move()`-ot már leírtuk helyetted. **Nézd meg, hol vannak az űrlények**, aztán írj egy olyan `move()` és `shoot()` hívássorozatot, amivel mindet elpusztítod.
+
+Vigyázz:
+
+- Ha úgy lősz, hogy nincs feletted űrlény, hibát (_error_ angolul) kapsz. Lőszert pazarolni ugyanis tilos!
+- Ha lelépsz a képernyő jobb széléről, szintén hibát kapsz.
+
+Jó szórakozást!

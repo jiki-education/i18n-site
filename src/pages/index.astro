@@ -63,6 +63,29 @@ const QUICK_LINKS = [
 
   <div class="lg-container grid gap-10 py-10 lg:grid-cols-[1fr_350px] lg:gap-[7%]">
     <article class="min-w-0">
+      {/* Sits outside .textual-content so the prose rules don't restyle it. This
+          is the one block on the page that has to survive being skimmed. */}
+      <div class="mb-9 rounded-2xl border-2 border-purple-200 bg-purple-50 p-6">
+        <h2 class="text-[13px] font-bold tracking-[0.08em] text-purple-700 uppercase">TL;DR</h2>
+        <ol class="mt-4 space-y-3 text-[16px] leading-relaxed text-gray-800">
+          <li class="flex gap-3">
+            <span class="flex size-6 shrink-0 items-center justify-center rounded-full bg-purple-600 text-[13px] font-bold text-white">1</span>
+            <span>Choose your language.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex size-6 shrink-0 items-center justify-center rounded-full bg-purple-600 text-[13px] font-bold text-white">2</span>
+            <span>Click through its content pages: the glossary, the video player, the exercises and the concepts.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex size-6 shrink-0 items-center justify-center rounded-full bg-purple-600 text-[13px] font-bold text-white">3</span>
+            <span>For each one, <strong>post on the forum</strong>, either telling us it's good or telling us what needs to change.</span>
+          </li>
+        </ol>
+        <p class="mt-4 border-t border-purple-200 pt-4 text-[16px] leading-relaxed text-gray-800">
+          You can pin your language and mark things as reviewed, but those are just for you. <strong>I only see what you post on the forum.</strong> Thanks for helping!
+        </p>
+      </div>
+
       <div class="textual-content">
         <h2>What is this?</h2>
 

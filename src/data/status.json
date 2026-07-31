@@ -1,7 +1,7 @@
 {
   "published_at": "2026-07-31",
-  "governance_sha": "19727d3",
-  "approved": 6,
+  "governance_sha": "1a67ffd",
+  "approved": 7,
   "disapproved": 1,
   "total": 118,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Greek",
       "stage": "setup",
       "category_slug": "i18n-el",
-      "approved": 3,
+      "approved": 4,
       "disapproved": 0,
       "total": 4,
       "items": [
@@ -32,7 +32,7 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 799,
-          "status": "pending"
+          "status": "approved"
         }
       ]
     },

@@ -95,8 +95,8 @@ const languages = status.languages.map((entry, index) => ({
 const withAny = languages.filter((l) => l.approved > 0).length;
 ---
 
-<Layout title="Sign-off status" description={`What native speakers have actually signed off across ${languages.length} languages: ${status.approved} of ${status.total} items so far.`}>
-  <PageHeader title="Sign-off status" subtitle="Every language, and what a native speaker has read and approved. A translation existing is not the same as someone vouching for it, so only the second is counted here." crumbs={[{ label: "Home", href: "/" }, { label: "Status" }]} />
+<Layout title="Global Progress" description={`What native speakers have actually signed off across ${languages.length} languages: ${status.approved} of ${status.total} items so far.`}>
+  <PageHeader title="Global Progress" subtitle="Every language, and what a native speaker has read and approved. A translation existing is not the same as someone vouching for it, so only the second is counted here." crumbs={[{ label: "Home", href: "/" }, { label: "Status" }]} />
 
   <div class="lg-container py-10">
     <div class="flex flex-wrap gap-4">

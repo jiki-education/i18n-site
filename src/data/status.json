@@ -1,9 +1,9 @@
 {
   "published_at": "2026-07-31",
-  "governance_sha": "773e8e7",
+  "governance_sha": "efeaf7b",
   "approved": 20,
   "disapproved": 0,
-  "total": 133,
+  "total": 136,
   "languages": [
     {
       "lang": "el",
@@ -366,7 +366,7 @@
       "category_slug": "i18n-sv",
       "approved": 1,
       "disapproved": 0,
-      "total": 2,
+      "total": 3,
       "items": [
         {
           "key": "glossary",
@@ -376,6 +376,11 @@
         {
           "key": "video-player",
           "topic_id": 843,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": null,
           "status": "pending"
         }
       ]
@@ -976,7 +981,7 @@
       "category_slug": "i18n-fi",
       "approved": 0,
       "disapproved": 0,
-      "total": 2,
+      "total": 3,
       "items": [
         {
           "key": "glossary",
@@ -986,6 +991,11 @@
         {
           "key": "video-player",
           "topic_id": 841,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": null,
           "status": "pending"
         }
       ]
@@ -997,7 +1007,7 @@
       "category_slug": "i18n-ro",
       "approved": 0,
       "disapproved": 0,
-      "total": 2,
+      "total": 3,
       "items": [
         {
           "key": "glossary",
@@ -1007,6 +1017,11 @@
         {
           "key": "video-player",
           "topic_id": 842,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": null,
           "status": "pending"
         }
       ]

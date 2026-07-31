@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "959688f218cc"
-published_at: "2026-07-30"
-forum_topic_id: 414
+published_at: "2026-07-31"
+forum_topic_id: 792
 ---
 
 當你在寫程式的時候，其實你做的事情，就是用電腦聽得懂的語言，把你想要發生的事情告訴它。程式語言有很多種，而把你寫的東西轉換成電腦看得懂的 1 和 0 的翻譯員（英語：_interpreters_）也有很多種。在這門課程裡，你的翻譯員就是 Jiki。整門課程就是以 Jiki 命名的。這就是 Jiki。在這趟寫程式的旅程上，Jiki 會是你的好朋友。他的工作就是解讀你寫的程式碼，把它轉換成電腦真的能夠執行的 1 和 0。

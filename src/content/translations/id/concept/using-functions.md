@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "955278468128"
-published_at: "2026-07-30"
-forum_topic_id: 325
+published_at: "2026-07-31"
+forum_topic_id: 760
 ---
 
 Saat kamu menulis kode, yang sebenarnya kamu lakukan adalah menyampaikan apa yang kamu inginkan terjadi, dalam bahasa yang dimengerti komputer. Ada banyak sekali bahasa pemrograman, dan ada banyak sekali juga _interpreter_ (penerjemah) yang mengambil apa yang kamu tulis lalu mengubahnya menjadi angka satu dan nol yang bisa dipahami komputer. Di kursus ini, interpreter-mu adalah Jiki. Seluruh kursus ini dinamai dari Jiki. Inilah Jiki. Jiki akan menjadi temanmu dalam perjalanan belajar pemrograman ini. Tugasnya adalah menerjemahkan kode yang kamu tulis dan mengubahnya menjadi angka satu dan nol yang benar-benar bisa dijalankan komputer.

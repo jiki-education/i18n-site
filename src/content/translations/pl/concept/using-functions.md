@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "8d0a72cae1b4"
-published_at: "2026-07-30"
-forum_topic_id: 417
+published_at: "2026-07-31"
+forum_topic_id: 770
 ---
 
 Kiedy piszesz kod, w rzeczywistości mówisz w języku zrozumiałym dla komputera, co ma się stać. Istnieje wiele różnych języków programowania i wiele różnych interpreterów, które biorą to, co piszesz, i zamieniają na zera i jedynki zrozumiałe dla komputera. W tym kursie Twoim interpreterem jest Jiki. Cały kurs wziął nazwę od Jikiego. Oto Jiki. Jiki będzie Twoim przyjacielem w tej programistycznej podróży. Jego zadaniem jest interpretowanie kodu, który piszesz, i zamiana go na zera i jedynki, na które komputer potrafi już zareagować.

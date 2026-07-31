@@ -3,11 +3,12 @@ lang: "pl"
 name: "Polish"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "5575af08cc43"
 published_at: "2026-07-31"
 term_count: 100
 forum_topic_id: 417
+video_player_forum_topic_id: 771
 ---
 
 # Polish (pl) glossary

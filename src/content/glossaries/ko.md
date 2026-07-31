@@ -3,11 +3,12 @@ lang: "ko"
 name: "Korean"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "7f89335d44f6"
 published_at: "2026-07-31"
 term_count: 51
 forum_topic_id: 479
+video_player_forum_topic_id: 767
 ---
 
 # Korean (ko) glossary

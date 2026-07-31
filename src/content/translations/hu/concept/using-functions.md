@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "b05a910"
+governance_sha: "33fd2de"
 content_version: "9baa9805ec7a"
-published_at: "2026-07-30"
-forum_topic_id: 289
+published_at: "2026-07-31"
+forum_topic_id: 758
 ---
 
 Amikor kódot írsz, valójában azt mondod el egy olyan nyelven, amit a számítógép is megért, hogy mit szeretnél, hogy megtörténjen. Rengeteg különböző programozási nyelv létezik, és rengeteg különböző értelmező (_interpreters_ angolul) is, amely a leírt kódot olyan egyesekké és nullákká alakítja, amelyeket a számítógép megért. Ebben a kurzusban a te értelmeződ Jiki. Az egész kurzus róla kapta a nevét. Ő itt Jiki. Jiki lesz a barátod ezen a programozási utazáson. Az ő dolga, hogy értelmezze a kódot, amit írsz, és olyan egyesekké és nullákká alakítsa, amelyekkel a számítógép ténylegesen dolgozni tud.

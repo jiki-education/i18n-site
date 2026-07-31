@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "f0e6792a1ba2"
-published_at: "2026-07-30"
-forum_topic_id: 500
+published_at: "2026-07-31"
+forum_topic_id: 780
 ---
 
 Unapoandika msimbo, unachofanya kwa kweli ni kueleza unachotaka kitokee, kwa lugha ambayo kompyuta inaielewa. Sasa, kuna lugha nyingi tofauti za programu, na kuna wakalimani (_interpreter_ kwa Kiingereza) wengi tofauti wanaochukua kile unachoandika na kukibadilisha kuwa moja na sifuri ambazo kompyuta inaweza kuzielewa. Katika kozi hii, mkalimani wako ni Jiki. Kozi yote imepewa jina la Jiki. Huyu ni Jiki. Jiki atakuwa rafiki yako katika safari hii ya kujifunza kupanga programu. Kazi yake ni kufasiri msimbo unaoandika na kuubadilisha kuwa moja na sifuri ambazo kompyuta inaweza kuzitekeleza.

@@ -3,11 +3,12 @@ lang: "pt-BR"
 name: "Brazilian Portuguese"
 family: "pt"
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "41fef1bcf593"
 published_at: "2026-07-31"
 term_count: 60
 forum_topic_id: 288
+video_player_forum_topic_id: 773
 ---
 
 # Portuguese (pt) family glossary

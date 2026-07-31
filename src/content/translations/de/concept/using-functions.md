@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "b95c2cc33e40"
-published_at: "2026-07-30"
-forum_topic_id: 340
+published_at: "2026-07-31"
+forum_topic_id: 738
 ---
 
 Wenn du Code schreibst, teilst du eigentlich nur mit, was passieren soll, und zwar in einer Sprache, die ein Computer versteht. Es gibt viele verschiedene Programmiersprachen, und es gibt viele verschiedene Interpreter, die das nehmen, was du schreibst, und es in die Einsen und Nullen umwandeln, die ein Computer verstehen kann. In diesem Kurs ist Jiki dein Interpreter. Der ganze Kurs ist nach Jiki benannt. Das hier ist Jiki. Jiki wird dein Freund auf dieser Programmierreise sein. Seine Aufgabe ist es, den Code zu interpretieren, den du schreibst, und ihn in die Einsen und Nullen umzuwandeln, mit denen der Computer tatsächlich etwas anfangen kann.

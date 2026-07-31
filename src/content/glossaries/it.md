@@ -3,11 +3,12 @@ lang: "it"
 name: "Italian"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "053a601ff528"
 published_at: "2026-07-31"
 term_count: 56
 forum_topic_id: 319
+video_player_forum_topic_id: 763
 ---
 
 # Italian (it) glossary

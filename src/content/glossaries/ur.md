@@ -3,11 +3,12 @@ lang: "ur"
 name: "Urdu"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "93d59d65729a"
 published_at: "2026-07-31"
 term_count: 93
 forum_topic_id: 476
+video_player_forum_topic_id: 787
 ---
 
 # Urdu (ur) glossary

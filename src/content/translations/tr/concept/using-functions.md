@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "5ecade68cb3b"
-published_at: "2026-07-30"
-forum_topic_id: 328
+published_at: "2026-07-31"
+forum_topic_id: 782
 ---
 
 Kod yazarken aslında yaptığınız şey, ne olmasını istediğinizi bilgisayarın anladığı bir dilde anlatmaktır. Pek çok farklı programlama dili var ve yazdıklarınızı alıp bilgisayarın anlayabileceği birlere ve sıfırlara dönüştüren pek çok farklı yorumlayıcı (İngilizce: _interpreter_) var. Bu kursta yorumlayıcınız Jiki. Kursun adı da Jiki'den geliyor. İşte bu Jiki. Jiki, bu programlama yolculuğunda arkadaşınız olacak. Onun işi, yazdığınız kodu yorumlamak ve bilgisayarın gerçekten işleyebileceği birlere ve sıfırlara dönüştürmek.

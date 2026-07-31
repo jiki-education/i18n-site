@@ -3,11 +3,12 @@ lang: "tr"
 name: "Turkish"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "e0dbf145ddf3"
 published_at: "2026-07-31"
 term_count: 53
 forum_topic_id: 328
+video_player_forum_topic_id: 783
 ---
 
 # Turkish (tr) glossary

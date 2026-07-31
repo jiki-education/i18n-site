@@ -3,11 +3,12 @@ lang: "es-ES"
 name: "European Spanish"
 family: "es"
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "97c378c9138a"
 published_at: "2026-07-31"
 term_count: 60
 forum_topic_id: 310
+video_player_forum_topic_id: 751
 ---
 
 # Spanish (es) family glossary

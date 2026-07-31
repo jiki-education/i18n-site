@@ -3,11 +3,12 @@ lang: "pt-pt"
 name: "European Portuguese"
 family: "pt"
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "dfb7d26e8250"
 published_at: "2026-07-31"
 term_count: 53
 forum_topic_id: 341
+video_player_forum_topic_id: 775
 ---
 
 # Portuguese (pt) family glossary

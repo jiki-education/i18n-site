@@ -3,11 +3,12 @@ lang: "zh-CN"
 name: "Simplified Chinese"
 family: "zh"
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "6162e1c04362"
 published_at: "2026-07-31"
 term_count: 116
 forum_topic_id: 413
+video_player_forum_topic_id: 791
 ---
 
 # Chinese (zh) family glossary

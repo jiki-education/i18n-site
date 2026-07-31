@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "7d20c798c05c"
-published_at: "2026-07-30"
-forum_topic_id: 479
+published_at: "2026-07-31"
+forum_topic_id: 766
 ---
 
 코드를 쓴다는 건, 결국 컴퓨터가 알아듣는 언어로 어떤 일이 일어나길 바라는지 전하는 일이에요. 프로그래밍 언어는 아주 많고, 쓴 코드를 컴퓨터가 이해할 수 있는 1과 0으로 바꿔 주는 인터프리터(영어: _interpreters_)도 아주 많아요. 이 강의에서 인터프리터 역할은 Jiki가 맡아요. 강의 이름도 Jiki에서 온 거예요. 바로 이 친구가 Jiki예요. Jiki는 이 코딩 여정을 함께할 친구예요. 작성한 코드를 해석해서, 컴퓨터가 실제로 실행할 수 있는 1과 0으로 바꾸는 게 Jiki가 하는 일이에요.

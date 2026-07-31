@@ -3,11 +3,12 @@ lang: "uk"
 name: "Ukrainian"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "31f858a8d150"
 published_at: "2026-07-31"
 term_count: 112
 forum_topic_id: 308
+video_player_forum_topic_id: 785
 ---
 
 # Ukrainian (uk) glossary

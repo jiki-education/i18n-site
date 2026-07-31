@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "5592f7c54d82"
-published_at: "2026-07-30"
-forum_topic_id: 311
+published_at: "2026-07-31"
+forum_topic_id: 764
 ---
 
 コードを書くというのは、つまり「こうしてほしい」という内容を、コンピューターにわかる言葉で伝えることです。プログラミング言語にはいろいろな種類があり、書いたコードをコンピューターがわかる 1 と 0 に変換してくれる通訳（英: interpreter）も、いろいろなものがあります。このコースでの通訳は Jiki です。コースの名前も Jiki からとっています。これが Jiki です。Jiki は、これからのプログラミングの旅をいっしょに歩んでくれる友だちです。書かれたコードを解釈して、コンピューターが実際に動かせる 1 と 0 に変換するのが Jiki の仕事です。

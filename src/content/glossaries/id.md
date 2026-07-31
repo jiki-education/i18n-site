@@ -3,11 +3,12 @@ lang: "id"
 name: "Indonesian"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "bd9104af75ba"
 published_at: "2026-07-31"
 term_count: 63
 forum_topic_id: 325
+video_player_forum_topic_id: 761
 ---
 
 # Indonesian (id) glossary

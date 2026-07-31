@@ -3,11 +3,12 @@ lang: "hu"
 name: "Hungarian"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "eeded0175136"
 published_at: "2026-07-31"
 term_count: 79
 forum_topic_id: 289
+video_player_forum_topic_id: 759
 ---
 
 # Hungarian (hu) glossary

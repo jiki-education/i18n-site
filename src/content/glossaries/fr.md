@@ -3,11 +3,12 @@ lang: "fr"
 name: "French"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "d2eac771dc0d"
 published_at: "2026-07-31"
 term_count: 66
 forum_topic_id: 314
+video_player_forum_topic_id: 755
 ---
 
 # French (fr) glossary

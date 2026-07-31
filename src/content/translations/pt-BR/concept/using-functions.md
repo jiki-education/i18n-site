@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "52f110e048c0"
-published_at: "2026-07-30"
-forum_topic_id: 288
+published_at: "2026-07-31"
+forum_topic_id: 772
 ---
 
 Quando você escreve código, o que você está fazendo de verdade é comunicar o que você quer que aconteça, numa linguagem que o computador entende. Existem muitas linguagens de programação diferentes, e muitos intérpretes (_interpreters_ em inglês) diferentes que pegam o que você escreve e transformam nos uns e zeros que o computador consegue entender. Neste curso, o seu intérprete é o Jiki. O curso todo leva o nome dele. Este é o Jiki. Ele vai ser seu amigo nessa jornada de programação. O trabalho dele é interpretar o código que você escreve e transformar nos uns e zeros com os quais o computador realmente consegue trabalhar.

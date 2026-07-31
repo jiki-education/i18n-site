@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "8e95de04d533"
-published_at: "2026-07-30"
-forum_topic_id: 536
+published_at: "2026-07-31"
+forum_topic_id: 744
 ---
 
 Quan escrius codi, el que fas realment és comunicar què vols que passi en un llenguatge que l'ordinador entén. Hi ha molts llenguatges de programació diferents, i també molts intèrprets diferents que agafen el que escrius i ho converteixen en els uns i zeros que l'ordinador pot entendre. En aquest curs, el teu intèrpret és el Jiki. Tot el curs porta el seu nom. Aquest és el Jiki. El Jiki serà el teu amic en aquest viatge per la programació. La seva feina és interpretar el codi que escrius i convertir-lo en els uns i zeros amb què l'ordinador pot treballar de debò.

@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "eb32a3186726"
-published_at: "2026-07-30"
-forum_topic_id: 470
+published_at: "2026-07-31"
+forum_topic_id: 740
 ---
 
 عندما تكتب الكود، فإن ما تفعله في الحقيقة هو التعبير عمّا تريد أن يحدث، بلغة يفهمها الحاسوب. هناك الكثير من لغات البرمجة المختلفة، وهناك الكثير من المفسّرات المختلفة (‏*interpreters* بالإنجليزية) التي تأخذ ما تكتبه وتحوّله إلى الأصفار والواحدات التي يستطيع الحاسوب فهمها. في هذه الدورة، مفسّرك هو Jiki. الدورة بكاملها سُمّيت على اسمه. هذا هو Jiki. سيكون Jiki صديقك في رحلة البرمجة هذه. مهمته أن يفسّر الكود الذي تكتبه، وأن يحوّله إلى الأصفار والواحدات التي يستطيع الحاسوب التعامل معها فعلًا.

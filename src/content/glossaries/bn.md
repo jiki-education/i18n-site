@@ -3,11 +3,12 @@ lang: "bn"
 name: "Bengali"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "0c1ad44d58d6"
 published_at: "2026-07-31"
 term_count: 67
 forum_topic_id: 473
+video_player_forum_topic_id: 743
 ---
 
 # Bangla (bn) glossary

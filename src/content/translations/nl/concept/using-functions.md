@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "04648d818a20"
-published_at: "2026-07-30"
-forum_topic_id: 339
+published_at: "2026-07-31"
+forum_topic_id: 768
 ---
 
 Als je code schrijft, vertel je eigenlijk in een taal die een computer begrijpt wat je wilt laten gebeuren. Er bestaan heel veel verschillende programmeertalen, en er zijn ook heel veel verschillende interpreters (_tolk_) die omzetten wat jij schrijft naar de enen en nullen die een computer kan begrijpen. In deze cursus is jouw interpreter Jiki. De hele cursus is naar Jiki vernoemd. Dit is Jiki. Jiki wordt je vriend op deze programmeerreis. Het is zijn taak om de code die jij schrijft te interpreteren en om te zetten in de enen en nullen waar de computer echt iets mee kan doen.

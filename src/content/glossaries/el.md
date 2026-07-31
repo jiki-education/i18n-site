@@ -3,11 +3,12 @@ lang: "el"
 name: "Greek"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "5abb3f4c9a75"
 published_at: "2026-07-31"
 term_count: 52
 forum_topic_id: 497
+video_player_forum_topic_id: 747
 ---
 
 # Greek (el) glossary

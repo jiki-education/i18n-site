@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "91569abab5e2"
-published_at: "2026-07-30"
-forum_topic_id: 322
+published_at: "2026-07-31"
+forum_topic_id: 788
 ---
 
 Khi bạn viết code, thật ra bạn đang diễn đạt điều mình muốn xảy ra bằng một ngôn ngữ mà máy tính hiểu được. Có rất nhiều ngôn ngữ lập trình khác nhau, và cũng có rất nhiều thông dịch viên (tiếng Anh: _interpreters_) khác nhau. Chúng nhận những gì bạn viết rồi chuyển thành các số 0 và 1 mà máy tính hiểu được. Trong khóa học này, thông dịch viên của bạn là Jiki. Cả khóa học được đặt tên theo Jiki. Đây là Jiki. Jiki sẽ là người bạn đồng hành trên hành trình học lập trình này. Việc của cậu ấy là thông dịch đoạn code bạn viết và chuyển nó thành các số 0 và 1 mà máy tính thực sự làm việc được.

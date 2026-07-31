@@ -3,11 +3,12 @@ lang: "ar"
 name: "Arabic"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "316e06f06cdf"
 published_at: "2026-07-31"
 term_count: 48
 forum_topic_id: 470
+video_player_forum_topic_id: 741
 ---
 
 # Arabic (ar) glossary

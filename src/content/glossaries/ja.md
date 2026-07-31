@@ -3,11 +3,12 @@ lang: "ja"
 name: "Japanese"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "8b64437b0edc"
 published_at: "2026-07-31"
 term_count: 65
 forum_topic_id: 311
+video_player_forum_topic_id: 765
 ---
 
 # Japanese (ja) glossary

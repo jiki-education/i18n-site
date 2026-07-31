@@ -3,11 +3,12 @@ lang: "fa"
 name: "Persian"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "34ab66042519"
 published_at: "2026-07-31"
 term_count: 30
 forum_topic_id: 683
+video_player_forum_topic_id: 753
 ---
 
 # Persian / Farsi (fa) glossary

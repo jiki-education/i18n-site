@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "22f2e68796cf"
-published_at: "2026-07-30"
-forum_topic_id: 413
+published_at: "2026-07-31"
+forum_topic_id: 790
 ---
 
 写代码，其实就是用计算机能听懂的语言，把你想让它做的事情表达出来。编程语言有很多种，把你写的代码变成计算机能懂的 1 和 0 的翻译（英语：interpreter）也有很多种。在这门课里，你的翻译就是 Jiki。整门课的名字也来自 Jiki。这就是 Jiki。在这段编程旅程中，Jiki 会是你的朋友。他的工作就是翻译你写的代码，把它变成计算机真正能执行的 1 和 0。

@@ -3,11 +3,12 @@ lang: "vi"
 name: "Vietnamese"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "8750042c7d39"
 published_at: "2026-07-31"
 term_count: 99
 forum_topic_id: 322
+video_player_forum_topic_id: 789
 ---
 
 # Vietnamese (vi) glossary

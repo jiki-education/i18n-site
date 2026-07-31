@@ -7,10 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "1d91ad4"
+governance_sha: "33fd2de"
 content_version: "dd338e4ec52f"
-published_at: "2026-07-30"
-forum_topic_id: 402
+published_at: "2026-07-31"
+forum_topic_id: 778
 ---
 
 Kada pišeš kod, ono što u stvari radiš je da na jeziku koji računar razume saopštavaš šta želiš da se dogodi. Postoji mnogo različitih programskih jezika i mnogo različitih interpretera koji uzimaju ono što napišeš i pretvaraju ga u jedinice i nule koje računar razume. Na ovom kursu tvoj interpreter je Jiki. Ceo kurs je dobio ime po njemu. Ovo je Jiki. Jiki će ti biti prijatelj na ovom programerskom putovanju. Njegov posao je da interpretira kod koji pišeš i pretvori ga u jedinice i nule sa kojima računar zaista može da radi.

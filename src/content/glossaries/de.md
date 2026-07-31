@@ -3,11 +3,12 @@ lang: "de"
 name: "German"
 family: null
 stage: "setup"
-governance_sha: "91b6986"
+governance_sha: "33fd2de"
 content_version: "9eb1ee520dbc"
 published_at: "2026-07-31"
 term_count: 57
 forum_topic_id: 340
+video_player_forum_topic_id: 739
 ---
 
 # German (de) glossary

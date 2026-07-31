@@ -115,7 +115,11 @@ const glossaries = defineCollection({
     /** Table rows in the body. A reported count for the chrome, nothing selects on it. */
     term_count: z.number().optional(),
     /** Discourse topic for glossary discussion, from the language's tracking.json. */
-    forum_topic_id: z.number().optional()
+    forum_topic_id: z.number().optional(),
+    /** Discourse topic for the video player page, also from tracking.json. The
+     *  player has no translated file behind it (its wording is Video.js's, not
+     *  ours), so this language record is where the site keeps its thread. */
+    video_player_forum_topic_id: z.number().optional()
   })
 });
 

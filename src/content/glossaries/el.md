@@ -3,10 +3,10 @@ lang: "el"
 name: "Greek"
 family: null
 stage: "setup"
-governance_sha: "e6fb600"
-content_version: "1ddc38640204"
+governance_sha: "1012871"
+content_version: "e62b6484c433"
 published_at: "2026-07-31"
-term_count: 52
+term_count: 53
 forum_topic_id: 497
 video_player_forum_topic_id: 747
 ---
@@ -60,6 +60,7 @@ These are terms where the Greek is used in prose, so the "Use (el/en)" column is
 | (programming) language | γλώσσα προγραμματισμού | el | Shorten to bare `γλώσσα` once context is established, including in the "a language a computer understands" framing. Never the English "language". |
 | code block | μπλοκ κώδικα | el | |
 | exception | εξαίρεση | el | Keep distinct from `σφάλμα` (error), the general term. |
+| to throw / raise an error | **πετάει ένα σφάλμα** | el | Not `δίνει ένα σφάλμα` ("gives an error"), which is unidiomatic. `αναφέρει ένα σφάλμα` ("reports") is an acceptable alternative where the source itself says "reports". **Never `κάνει ένα σφάλμα`**, which is what a *person* does when they make a mistake, not what software does. |
 | iteration | επανάληψη | el | Same word covers "loop" as a general concept; context disambiguates. |
 | loop | βρόχος | el | The general "repetition" concept is `επανάληψη`; keep `βρόχος` for the loop construct itself. |
 | for loop | `for` βρόχος | el | Keep `for` in backticks (real keyword) + `βρόχος`. |
@@ -127,6 +128,26 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-07-31: An error is "πετάει ένα σφάλμα", not "δίνει"
+
+**Decided by:** owner (iHiD), on a native speaker's correction.
+**Raised by:** astyanax (native speaker) on the "Using Functions" concept review thread,
+https://forum.jiki.io/t/greek-review-concept-page-using-functions/746/2
+**Status:** human-decided, settled.
+**Terms affected:** `to throw / raise an error` (new row).
+
+The page rendered "Jiki will give an error" as _δώσει ένα σφάλμα_. Astyanax's verdict was
+that it "isn't wrong, but it doesn't sound too great": what Greek would typically say is
+_πετάει ένα σφάλμα_ ("throws") or _αναφέρει ένα σφάλμα_ ("reports"). He also ruled out the
+near-miss a translator is most likely to reach for: _κάνει ένα σφάλμα_ is what a **person**
+does when they make a mistake, so it cannot describe software.
+
+**One thing worth confirming with him.** He offered _πετάει_ and _αναφέρει_ as two options
+and did not rank them. Making _πετάει_ the primary rendering, with _αναφέρει_ kept for
+sources that themselves say "reports", was an editorial call taken here, not his. Worth a
+quick check if he is still active on the thread, but not blocking: both are renderings he
+volunteered, so neither can be wrong.
 
 ### 2026-07-31: `framework` glosses as "πλαίσιο εργασίας"
 

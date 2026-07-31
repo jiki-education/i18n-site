@@ -1,6 +1,6 @@
 {
   "published_at": "2026-07-31",
-  "governance_sha": "20406cd",
+  "governance_sha": "681a674",
   "approved": 17,
   "disapproved": 0,
   "total": 128,
@@ -46,7 +46,7 @@
         },
         {
           "key": "concept/repeat",
-          "topic_id": null,
+          "topic_id": 846,
           "status": "pending"
         },
         {

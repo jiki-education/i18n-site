@@ -6,11 +6,10 @@ title: "Korišćenje funkcija"
 status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
-en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "33fd2de"
-content_version: "dd338e4ec52f"
+en_md5: "fc671310093a081113a8f301b6ff53fe"
+governance_sha: "e4864f3"
+content_version: "a28bf148ff5a"
 published_at: "2026-07-31"
-forum_topic_id: 778
 ---
 
 Kada pišeš kod, ono što u stvari radiš je da na jeziku koji računar razume saopštavaš šta želiš da se dogodi. Postoji mnogo različitih programskih jezika i mnogo različitih interpretera koji uzimaju ono što napišeš i pretvaraju ga u jedinice i nule koje računar razume. Na ovom kursu tvoj interpreter je Jiki. Ceo kurs je dobio ime po njemu. Ovo je Jiki. Jiki će ti biti prijatelj na ovom programerskom putovanju. Njegov posao je da interpretira kod koji pišeš i pretvori ga u jedinice i nule sa kojima računar zaista može da radi.
@@ -23,9 +22,9 @@ Kada pišeš kod, ono što u stvari radiš je da na jeziku koji računar razume 
   height="400"
 />
 
-Suština programiranja je u tome da interpreteru, u ovom slučaju Jikiju, daš prave instrukcije, a postoji mnogo različitih instrukcija koje možeš da mu daš, mnogo onih koje on razume. Može da spaja stvari, može nešto da uradi mnogo puta, može da kaže: „Ako se ovo dogodi, onda treba da uradim ovo." Može da pamti stvari i da ih kasnije ponovo upotrebi. Može da ti prijavi grešku (engl. _error_) ako nešto nije u redu. Sve ovo ćemo obraditi na kursu. Ali najvažnije je da razumeš da se sve što ćeš raditi svodi na to da na tablu ispisuješ instrukcije, a Jiki dolazi i prati ih.
+Suština programiranja je u tome da interpreteru, u ovom slučaju Jikiju, daš prave instrukcije, a postoji mnogo različitih instrukcija koje možeš da mu daš, mnogo onih koje on razume. Može da spaja stvari, može nešto da uradi mnogo puta, može da kaže: „Ako se ovo dogodi, onda treba da uradim ovo." Može da pamti stvari i da ih kasnije ponovo upotrebi. Može da ti prijavi grešku ako nešto nije u redu. Sve ovo ćemo obraditi na kursu. Ali najvažnije je da razumeš da se sve što ćeš raditi svodi na to da na tablu ispisuješ instrukcije, a Jiki dolazi i prati ih.
 
-Kada sam pre 34 godine učio da programiram, ovo je mentalni model koji sam izgradio, i to je onaj koji i danas imam. Razumem kako računari rade, sve do jedinica i nula, ali iskreno, nikada ne razmišljam o tome. U mojoj glavi, u računaru živi mali čovek, a ja mu kažem šta da radi. Zato pođi sa mnom u ovome. To je snažan mentalni model koji možeš da izgradiš, i ako počneš da razmišljaš na ovaj vizualan način, o tome šta radi taj čovek u računaru, to će ti mnogo pomoći dok učiš da programiraš.
+Kada sam pre 34 godine učio da programiram, ovo je mentalni model koji sam izgradio, i to je onaj koji i danas imam. Razumem kako računari rade, sve do jedinica i nula, ali iskreno, nikada ne razmišljam o tome. U mojoj glavi, u računaru živi mali čovek, a ja mu kažem šta da radi. Zato pođi sa mnom u ovome. To je snažan mentalni model koji možeš da izgradiš, i ako počneš da razmišljaš na ovaj vizuelan način, o tome šta radi taj čovek u računaru, to će ti mnogo pomoći dok učiš da programiraš.
 
 Hajde da počnemo tako što ćemo pogledati jedan od osnovnih pojmova u programiranju, funkcije (engl. _functions_). Funkcije su kao male mašine koje možeš da kažeš Jikiju da upotrebi, i ako zavirimo u Jikijevo skladište, tu se on obično nalazi, videćeš da ima policu sa tri različite mašine: `move` (pomeri se), `turnLeft` (skreni levo) i `turnRight` (skreni desno).
 

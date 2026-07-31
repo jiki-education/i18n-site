@@ -3,8 +3,8 @@ lang: "it"
 name: "Italian"
 family: null
 stage: "setup"
-governance_sha: "e50cba2"
-content_version: "e27af0c6ec65"
+governance_sha: "29c1e7d"
+content_version: "abe5c79b26e2"
 published_at: "2026-07-31"
 term_count: 57
 forum_topic_id: 319
@@ -21,7 +21,7 @@ decision log (`glossary-notes.md`).
 | English | Italian | Use (it/en) | Notes |
 |---------|---------|-------------|-------|
 | developer | sviluppatore / sviluppatrice | it | Agree gender with the referent; use the masculine as the generic/plural default. |
-| tech / tech industry | settore tech | it | Not _industria tecnologica_. |
+| tech / tech industry | settore tech | it | Not _industria tecnologica_. _Settore tecnologico_ is real but much rarer in Italian tech writing; do not substitute it. |
 | streak | serie | it | A run of consecutive days, as in the learning-platform sense. Flagged low-confidence: confirm on first real use. |
 | foot-gun | trappola involontaria | it | Use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`. |
 
@@ -131,6 +131,24 @@ Naming convention and worked example are in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-07-31: Confirmed `tech / tech industry`
+
+**Decided by:** owner (iHiD), on the confirmation of native speaker kernelaklees on the
+pinned Italian glossary thread (https://forum.jiki.io/t/319/4). **Human-decided: settled.**
+**Terms affected:** `tech / tech industry`.
+
+kernelaklees reviewed the Core decisions and confirmed the existing rendering: "You can keep
+**settore tech**". She also confirmed the row's existing exclusion, that _industria
+tecnologica_ should not be used, because in Italian _industria_ refers to physical
+production (a factory). She noted _settore tecnologico_ also exists but is "much less
+common", rarely seen in newspapers, startup culture, LinkedIn posts, tech communication or
+digital communities, so it stays a rejected alternative rather than a permitted variant; the
+Notes column now says so.
+
+Nothing moved. The row was an unconfirmed agent draft and is now a native-speaker-confirmed
+decision, so it is protected: no later pass may change the target, the `Use` column or the
+meaning of the Notes without a fresh human agreement logged here.
 
 ### 2026-07-31: Added `comment (in code)`
 

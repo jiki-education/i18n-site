@@ -3,8 +3,8 @@ lang: "ko"
 name: "Korean"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
-content_version: "7f89335d44f6"
+governance_sha: "8ceb5b6"
+content_version: "26898b19b93a"
 published_at: "2026-07-31"
 term_count: 51
 forum_topic_id: 479
@@ -57,7 +57,7 @@ These are terms where Korean uses a Hangul term (native Sino-Korean coinage or a
 |---------|--------|-------------|-------|
 | interpreter | 인터프리터 | ko | **The one who interprets: a person doing a job, not a program.** On concept pages Jiki *is* the interpreter ("이 강의에서 인터프리터 역할은 Jiki가 맡아요"; "이 강의를 안내해 줄 친절한 인터프리터, Jiki"). Never 해석기. Never 통역사. Where a bare apposition reads oddly, 인터프리터 역할 ("the interpreter role") carries it. |
 | instruction (given to Jiki) | 지시 | ko | Everyday word: "알맞은 지시를 내려요". Use 지시 사항 for the instructions taken as a set ("지시 사항을 칠판에 적어요"). Not 명령, which is a command from a superior and is also the CS "command" term. |
-| mental model | 멘탈 모델 | ko | Prose may still describe the thing plainly where that reads better ("제 머릿속에는..."), but the named term is 멘탈 모델. |
+| mental model | 머릿속 모형 | ko | Ordinary Korean for "the model you picture in your head", and it reads as one on first sight. Not 멘탈 모델: a Korean reader reported having to stop and decode it. Note 모형 (a physical model of a thing), not 모델. Prose may still describe the thing plainly where that reads better ("제 머릿속에는..."), but the named term is 머릿속 모형. |
 | (programming) language | (프로그래밍) 언어 | ko | Covers both senses: "프로그래밍 언어" and "컴퓨터가 알아듣는 언어". Never 랭귀지. |
 | error | 오류 | ko | Docs and formal writing favor "오류"; colloquial speech often says "에러", not used in Jiki prose to keep one consistent term. |
 | exception | 예외 | ko | The catchable-error-object sense, distinct from "오류" (error) as a general term. |
@@ -119,7 +119,30 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 
 ## Decision log
 
-### 2026-07-31: Glossary pruned of ordinary vocabulary
+### 2026-07-31: `mental model` is 머릿속 모형, not 멘탈 모델
+
+**Decided by:** owner (iHiD), on a native speaker's correction from Dojany on the pinned
+Korean glossary thread: https://forum.jiki.io/t/korean-review-glossary/479/3
+**Status: human-decided, settled.** Protected: do not change it back without a further
+native-speaker decision on the forum.
+**Terms affected:** `mental model`.
+
+Dojany reported that 멘탈 모델 "feels like a term transferred directly from English", that
+it "did not immediately create a clear image in my mind", and that he "had to stop for a
+while to think about what it meant", where 머릿속 모형 "communicates the idea much more
+intuitively to a Korean reader". He also recalled the loanword being criticised as awkward
+in the Korean edition of a foreign self-help book.
+
+That is the exact failure the term exists to prevent, reported first-hand by the audience,
+so it outranks the earlier agent draft (which was unconfirmed, per the 2026-07-30 entry
+below). 머릿속 모형 is built from ordinary words: 머릿속 ("inside one's head") and 모형 (a
+model of a thing, the word for a scale model or a mock-up), so it names the picture in your
+head without asking the reader to translate anything.
+
+This is **not** the 머릿속 모델 the earlier draft considered and rejected as "a coinage no
+reader has met". That one was a hybrid, a native first half bolted to a loanword second
+half. Dojany's is 모형, an ordinary Korean noun, which makes the whole compound read as
+Korean rather than as a half-translation.
 
 **Decided by:** agent, applying the pruning test in `global/translating.md` step 6. Removed
 51 rows that had one obvious canonical rendering with nothing to decide (e.g. `developer`,
@@ -233,7 +256,7 @@ covered by a dated entry above (`board / whiteboard`, `interpreter`, `course`, `
 | Term | Why |
 |------|-----|
 | instruction (given to Jiki) | Everyday word ("알맞은 지시를 내려요"); 명령 was rejected as a command from a superior that also collides with the CS "command" term. |
-| mental model | 멘탈 모델 is the established Korean term for the picture-in-your-head framing, so it is the ordinary word despite the loanword shape. 머릿속 모델 was considered and rejected: it is a coinage no reader has met. |
+| mental model | 머릿속 모형, settled by the owner on a native speaker's report (see the 2026-07-31 entry above). Not 멘탈 모델, and not the earlier-rejected hybrid 머릿속 모델. |
 | (programming) language | 언어 is the ordinary word and covers both senses. |
 | error | Ordinary word in written/educational Korean; docs and formal writing favor "오류" over colloquial "에러". |
 | iteration | Ordinary word. |

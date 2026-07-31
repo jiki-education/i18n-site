@@ -3,8 +3,8 @@ lang: "pl"
 name: "Polish"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
-content_version: "5575af08cc43"
+governance_sha: "8ea70e1"
+content_version: "03e2097ebeb1"
 published_at: "2026-07-31"
 term_count: 100
 forum_topic_id: 417
@@ -158,7 +158,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | chain (array metaphor) | łańcuch | Where the source `<define>`s it, pair it with _tablica_ (the technical term for array), e.g. „tablica działa jak łańcuch (`tablica`)", so it doesn't get read as a synonym for _ciąg znaków_ (string), which some informal Polish programming material loosely calls "a chain of characters". Masculine. |
 | machine (function metaphor) | maszyna | Feminine. |
 | input slot | otwór wejściowy | Considered coinage, never validated by a native speaker. Flag for native-speaker review via `/action-forum-post`. |
-| return chute | zsyp zwrotny | Coinage, never validated by a native speaker. Flag for native-speaker review. |
+| return chute | kanał zwrotny | Masculine. Settled by a native speaker: never _zsyp_, which in ordinary Polish is a one-way disposal chute (rubbish, laundry) and so contradicts the idea of something coming back. |
 | shelves (storage) | półki | Feminine. |
 | crank (machine crank) | korba | Feminine. The action is _zakręcić korbą_ (perfective, one-off). |
 | warehouse (Jiki's warehouse) | magazyn | Masculine. |
@@ -178,6 +178,28 @@ Default to plain **nawias**. When a specific bracket type matters, name it and s
 ---
 
 ## Decision log
+
+### 2026-07-31: `return chute` is `kanał zwrotny`, settled by a native speaker
+
+**Decided by:** owner (iHiD), on the correction of native speaker **bavar** on the pinned
+Polish glossary thread: https://forum.jiki.io/t/polish-review-glossary/417/3
+**Terms affected:** `return chute` (and, by exclusion, `input slot`).
+
+`return chute` changes from **`zsyp zwrotny`** to **`kanał zwrotny`**. bavar's point is
+semantic, not stylistic: in ordinary Polish a _zsyp_ is a one-way disposal chute (the
+rubbish or laundry chute in a block of flats), something you throw things down and never
+get anything back from, which is the opposite of what the return chute does. `kanał
+zwrotny` is ordinary Polish and reads straightforwardly as the channel a value comes back
+along. The old rendering was an agent coinage that no native speaker had ever seen, so
+there was nothing to overrule.
+
+**This row is now human-decided and settled.** It changes only by fresh agreement with a
+human, raised on that thread.
+
+**`input slot` (`otwór wejściowy`) is untouched and still an unconfirmed coinage.** It was
+drafted alongside `zsyp zwrotny` in the same pass and nobody has checked it; bavar's post
+did not mention it. It still needs native-speaker input in its own right, and the fact that
+its pair has now been settled is not evidence for it.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

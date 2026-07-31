@@ -44,7 +44,7 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
   <div class="lg-container grid gap-10 py-10 lg:grid-cols-[1fr_300px] lg:gap-[6%]">
     <div class="min-w-0">
       <div class="rounded-xl border border-purple-200 bg-purple-50 p-5">
-        <p class="text-[15px] leading-[1.7] text-gray-700">These are the {termCount} terms we use consistently in every {meta.name} translation. This page is the live version. If one of these is wrong, everything downstream of it is wrong too, so it's the highest-value thing you can correct.</p>
+        <p class="text-[15px] leading-[1.7] text-gray-700">These are the {termCount} terms we use consistently in every {meta.name} translation. This page is the live version. If one of these is wrong, everything downstream of it is wrong too, so it's the highest-value thing you can correct. <strong class="font-semibold text-gray-900">Please post on the forum to tell us, even if nothing needs to change!</strong></p>
         {
           family && (
             <p class="mt-3 text-[15px] leading-[1.7] text-gray-700">

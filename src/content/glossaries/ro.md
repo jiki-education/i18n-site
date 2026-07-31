@@ -3,7 +3,7 @@ lang: "ro"
 name: "Romanian"
 family: null
 stage: "setup"
-governance_sha: "93bb263"
+governance_sha: "cdcbbb5"
 content_version: "e22655eec020"
 published_at: "2026-07-31"
 term_count: 94

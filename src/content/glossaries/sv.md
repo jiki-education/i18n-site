@@ -3,10 +3,11 @@ lang: "sv"
 name: "Swedish"
 family: null
 stage: "setup"
-governance_sha: "5109a4e"
+governance_sha: "cdcbbb5"
 content_version: "c0ab46e6b20b"
 published_at: "2026-07-31"
 term_count: 95
+forum_topic_id: 828
 ---
 
 # Swedish (sv) glossary

@@ -68,6 +68,7 @@ export const LANGUAGES: Record<string, LanguageMeta> = {
     comingSoon: "Em breve",
     family: "pt"
   },
+  ro: { name: "Romanian", nativeName: "Română", dir: "ltr", comingSoon: "În curând" },
   ru: { name: "Russian", nativeName: "Русский", dir: "ltr", comingSoon: "Скоро" },
   sr: { name: "Serbian", nativeName: "Српски", dir: "ltr", comingSoon: "Ускоро" },
   sv: { name: "Swedish", nativeName: "Svenska", dir: "ltr", comingSoon: "Kommer snart" },
@@ -193,6 +194,7 @@ const FLAGS: Record<string, string> = {
   pl: "🇵🇱",
   "pt-BR": "🇧🇷",
   "pt-pt": "🇵🇹",
+  ro: "🇷🇴",
   ru: "🇷🇺",
   sr: "🇷🇸",
   sv: "🇸🇪",

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-07-31",
-  "governance_sha": "a271b40",
-  "approved": 22,
+  "governance_sha": "7742494",
+  "approved": 23,
   "disapproved": 0,
   "total": 137,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Greek",
       "stage": "refining",
       "category_slug": "i18n-el",
-      "approved": 4,
+      "approved": 5,
       "disapproved": 0,
       "total": 9,
       "items": [
@@ -57,7 +57,7 @@
         {
           "key": "exercise/rainbow",
           "topic_id": 862,
-          "status": "pending"
+          "status": "approved"
         }
       ]
     },

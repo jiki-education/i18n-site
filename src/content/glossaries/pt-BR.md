@@ -2,11 +2,11 @@
 lang: "pt-BR"
 name: "Brazilian Portuguese"
 family: "pt"
-stage: "setup"
-governance_sha: "33fd2de"
-content_version: "41fef1bcf593"
+stage: "refining"
+governance_sha: "1e9b16b"
+content_version: "2603f068e6df"
 published_at: "2026-07-31"
-term_count: 60
+term_count: 61
 forum_topic_id: 288
 video_player_forum_topic_id: 773
 ---
@@ -97,7 +97,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | English metaphor | Portuguese rendering | Notes |
 |-----------------|---------------------|-------|
 | box (value container) | caixa | A box that holds a value. |
-| input slot | ranhura | The narrow slot you insert a coin into, like on a piggy bank. |
+| input slot | fenda | The narrow slot you insert a coin into, like on a piggy bank. Confirmed by multiple native speakers (oxe-b, alanprofeta) on the pt-BR glossary thread: _ranhura_ reads formal/dated, _fenda_ is the natural word for a piggy-bank-style coin slot specifically (as opposed to _entrada_ for a hardware slot, or _ficha_ for arcade tokens). Replaces the earlier draft, _ranhura_. |
 | return chute | calha de saída | A chute a value slides out of. Low-to-medium confidence; flag for native-speaker confirmation on first real use. |
 
 ## Brackets
@@ -174,6 +174,7 @@ column structure as the family file.
 | English | Portuguese | Use (pt-BR/en) | Notes |
 |---------|------------|-----------------|-------|
 | course | curso | pt-BR | The whole Jiki course: _neste curso, o seu intérprete é o Jiki_. Keep distinct from `lição` (lesson). |
+| cell (grid square, e.g. maze exercises) | casa | pt-BR | "Move the character forward one cell" → "avance uma casa" (like a square on a board game), not "uma célula", which reads as a biology/spreadsheet term and feels unnatural here. |
 
 ## Keep in English
 
@@ -317,3 +318,20 @@ by a dated entry above (`interpreter`, `board / whiteboard`) is not repeated her
 | Term | Why |
 |------|-----|
 | warehouse | `galpão` preferred over `armazém`, which reads commercial/industrial in Brazil. |
+
+### 2026-07-31: `cell` added from forum feedback on maze-solve-basic
+
+**Decided by:** native speaker (sorrizo), forum post
+https://forum.jiki.io/t/812/5. **Status: confirmed.**
+**Terms affected:** `cell (grid square, e.g. maze exercises)`.
+
+Reviewing the published `pt-BR` translation of `Solve the Maze`, sorrizo flagged "one cell"
+translated as "uma célula" (move() description) as not sounding natural: "célula" reads as
+a biology/spreadsheet term, not a board-game square. Suggested "uma casa" instead, which
+matches the board-game sense (as in a chess/checkers square) and is the ordinary word.
+Added to the glossary as a general term for a maze/grid square, since it will recur in any
+grid-based exercise, not just this one.
+
+The same post confirmed the existing "bonequinho" choice for the maze walker/character is
+fine as-is (flagged only as "not the most literal translation", not as wrong), so no
+glossary change there.

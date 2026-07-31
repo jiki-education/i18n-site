@@ -3,8 +3,8 @@ lang: "sr"
 name: "Serbian"
 family: null
 stage: "setup"
-governance_sha: "e6fb600"
-content_version: "030e52f8e94e"
+governance_sha: "8ea70e1"
+content_version: "6de69b4efe17"
 published_at: "2026-07-31"
 term_count: 114
 forum_topic_id: 402
@@ -124,7 +124,7 @@ These are terms where the Serbian is used in prose, so the "Use (sr/en)" column 
 
 | English | Serbian | Use (sr/en) | Notes |
 |---------|---------|-------------|-------|
-| feature (platform capability) | mogućnost | sr | Deliberately not "funkcija", because that word is reserved for the CS "function" concept; using it for "feature" too would create exactly the kind of collision `global/terms.md` warns about. |
+| feature (platform capability) | funkcionalnost | sr | The word Serbian developer and product writing actually uses ("nove funkcionalnosti"). Still never bare "funkcija", which is reserved for the CS "function" concept. "funkcionalnost" shares that root but is a separate, unambiguous word, so keep the two forms apart and never shorten one to the other. |
 | lesson | lekcija | sr | |
 | exercise | vežba | sr | |
 | scenario | scenario | sr | |
@@ -181,6 +181,32 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-07-31: `feature` is "funkcionalnost", not "mogućnost"
+
+**Decided by:** owner (iHiD), on the correction of native speaker **miroslav-inc** on the
+pinned Serbian glossary thread
+([post](https://forum.jiki.io/t/serbian-review-glossary/402/3)).
+**Terms affected:** `feature (platform capability)`. **Status: human-decided, settled.**
+
+The row read **"mogućnost"**, an agent draft that reached for "capability" in order to steer
+well clear of "funkcija" (the agreed CS term for `function`). miroslav-inc's correction is
+that **"funkcionalnost"** is the word Serbian software and product writing actually uses:
+"nove funkcionalnosti" is ordinary release-note Serbian in a way "nove mogućnosti" is not.
+That is the "default to the ordinary, common word" principle below, applied by someone who
+speaks the language.
+
+The old note's worry does not survive the change. "funkcionalnost" and "funkcija" share a
+root, but they are two distinct words that a Serbian reader does not confuse, and the
+collision `global/terms.md` warns about is one term doing two jobs, which is not what this
+is. The concern is kept in the row in the narrow form that still bites: never shorten
+"funkcionalnost" to "funkcija" for the feature sense, because that word is spoken for.
+
+**`milestone` is deliberately not actioned.** The same post proposed "dostignuće" in place of
+the current "prekretnica". That one is not a clean correction: "dostignuće" means
+*achievement*, which is a different concept from a milestone, and Jiki may well want that word
+for an achievements feature later. It stays as it is pending a follow-up question to native
+speakers on the same thread.
 
 ### 2026-07-31: `maze` is "lavirint", not "labirint"
 

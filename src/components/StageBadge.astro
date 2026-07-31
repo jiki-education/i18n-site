@@ -31,7 +31,7 @@ const tone = TONE[stage ?? "setup"] ?? TONE.setup;
   class={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-semibold ${tone} ${className}`}
   title={`Stage ${meta.number}: ${meta.label}. ${meta.blurb}`}
 >
-  <span class="opacity-60">{meta.number}</span>
   {meta.label}
+  <span class="opacity-60">({meta.number})</span>
 </span>
 {showBlurb && <span class="text-[13px] text-gray-500">{meta.blurb}</span>}

@@ -3,10 +3,11 @@ lang: "ro"
 name: "Romanian"
 family: null
 stage: "setup"
-governance_sha: "5109a4e"
-content_version: "bc6fcb2337fd"
+governance_sha: "93bb263"
+content_version: "e22655eec020"
 published_at: "2026-07-31"
-term_count: 89
+term_count: 94
+forum_topic_id: 825
 ---
 
 # Romanian (ro) glossary
@@ -22,6 +23,8 @@ The agreed term list for Romanian. Why each term was chosen, and who chose it, i
 | tech / tech industry | **industria IT** | ro | Use `tehnologic` for the general adjective sense ("tech company" = „companie de tehnologie" / „companie IT"). |
 | pitfall | **capcană** | ro | Stands alone; no gloss needed. |
 | mental model | **model mental** | ro | The picture-in-your-head framing. |
+| computer | **calculator** | ro | The ordinary everyday Romanian word. `computer` exists but is the loanword; use it nowhere in prose. |
+| pattern (a recurring shape you reuse) | **tipar** | ro | Deliberately not `model`, which collides with `model mental` above, and not `șablon`, which reads first as a stencil or boilerplate. |
 
 ## Localize (use the Romanian term)
 
@@ -39,6 +42,7 @@ These are terms where the Romanian is used in prose, so the "Use (ro/en)" column
 | float / decimal | număr zecimal | ro | Use `număr cu virgulă mobilă` only where the floating-point nature itself is the point. |
 | compound data type | tip de date compus | ro | Distinct from plain `tip de date`. |
 | random number | număr aleatoriu | ro | `aleatoriu`, not `aleator`. |
+| ones and zeros | 0 și 1 | ro | Written as digits. Romanian has no natural plural for „unu", so „unuri și zerouri" reads wrong; digits are what Romanian technical prose uses. |
 
 ### Functions & control flow
 
@@ -99,6 +103,7 @@ These are terms where the Romanian is used in prose, so the "Use (ro/en)" column
 | plan (subscription tier) | abonament | ro | Enables „abonamentul {tier}". Not `plan`, which reads as a schedule. |
 | dashboard | panou de control | ro | Deliberately **not** `tablou de bord`, which collides with `tablou` (array). |
 | canvas (graphics exercises) | pânză | ro | The drawing-surface sense specifically. |
+| Run Code (button) | Rulează codul | ro | The on-screen button. Exercise instructions and the website-copy catalog must say exactly the same thing, or the instructions name a button that is not on screen. Not left in English: the "Keep in English" row for `Code` covers the bare UI token, not this sentence-shaped label. |
 
 ## Keep in English
 
@@ -144,6 +149,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | label (on a box/machine) | etichetă | |
 | piece of paper (string metaphor) | foaie de hârtie | |
 | character (game/maze figure) | personaj | The on-screen figure the learner controls. Keep `caracter` for a text character; see "Values & data types". |
+| little person (maze figure) | omuleț | The maze exercises call the same figure both "the little person" and "the character". `omuleț` keeps the affectionate register of the former; `personaj` above covers the latter. |
 | mini-Jiki | mini-Jiki | Romanian takes the `mini-` prefix with a hyphen naturally. |
 
 ## Brackets
@@ -165,6 +171,21 @@ The decision log behind `glossary.md`. Two rules bind every pass that reads it:
 
 1. **A pass that changes the glossary reads this file first, and appends an entry after.** If an entry below records a **human** deciding a term, it is settled: it changes only by fresh agreement with a human, raised where it was settled. If nothing here mentions the term, it is an **unconfirmed draft**, and a pass may correct it provided it appends an entry saying what it changed and why.
 2. **A translation pass never loads this file.** It loads `glossary.md` and needs the term, not the argument that produced it.
+
+### 2026-07-31: Five rows added from the first two translations
+
+**Decided by:** agent, approved by the owner (iHiD). **Status: unconfirmed drafts**, like everything else in this glossary.
+
+**Terms affected:** `computer`, `pattern (a recurring shape you reuse)`, `ones and zeros`, `Run Code (button)`, `little person (maze figure)`.
+
+The first two Romanian translations (the `using-functions` concept page and the `maze-solve-basic` exercise) each proposed a delta. All five rows were added rather than left out, because each word is already in use in a translated file: leaving it unrecorded is the drift the glossary exists to prevent, and recording it as an unconfirmed draft is what flags it for a native speaker.
+
+Three were straightforward. **`computer` → `calculator`** is simply the ordinary Romanian word. **`ones and zeros` → `0 și 1`** is a formatting convention more than a term: Romanian has no natural plural for „unu", so the spelled-out form reads wrong. **`Run Code` → `Rulează codul`** has to be settled centrally because the exercise instructions and the website-copy catalog must name the same button; the "Keep in English" row for `Code` covers the bare UI token, not a sentence-shaped label.
+
+**Two are genuinely open and should be raised on the pinned thread:**
+
+- **`pattern` → `tipar`.** All of `tipar`, `model` and `șablon` are defensible. `model` was rejected because it collides with `model mental`, already in the glossary, and `șablon` reads first as a stencil or boilerplate. That reasoning is sound but it is an agent's, not a native speaker's.
+- **`little person` → `omuleț`.** The English source deliberately alternates "the little person" and "the character" for the same maze figure. Romanian could keep two words or collapse both to `personaj` and lose the warmth. Whether the distinction survives translation is a native-speaker call, not a lookup.
 
 ### 2026-07-31: Language bootstrapped
 

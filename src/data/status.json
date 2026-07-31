@@ -1,6 +1,6 @@
 {
   "published_at": "2026-07-31",
-  "governance_sha": "e4864f3",
+  "governance_sha": "20406cd",
   "approved": 17,
   "disapproved": 0,
   "total": 128,
@@ -8,7 +8,7 @@
     {
       "lang": "el",
       "name": "Greek",
-      "stage": "phase2",
+      "stage": "refining",
       "category_slug": "i18n-el",
       "approved": 4,
       "disapproved": 0,
@@ -64,7 +64,7 @@
     {
       "lang": "ru",
       "name": "Russian",
-      "stage": "phase2",
+      "stage": "refining",
       "category_slug": "i18n-ru",
       "approved": 4,
       "disapproved": 0,

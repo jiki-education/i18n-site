@@ -2,11 +2,11 @@
 lang: "el"
 name: "Greek"
 family: null
-stage: "setup"
-governance_sha: "1012871"
-content_version: "e62b6484c433"
+stage: "refining"
+governance_sha: "20406cd"
+content_version: "a43642d3bde0"
 published_at: "2026-07-31"
-term_count: 53
+term_count: 62
 forum_topic_id: 497
 video_player_forum_topic_id: 747
 ---
@@ -36,6 +36,9 @@ These are terms where the Greek is used in prose, so the "Use (el/en)" column is
 | array | πίνακας | el | **Never confuse with `board / whiteboard` in the metaphors table below**, which is always `ασπροπίνακας`, never bare `πίνακας`. |
 | list | λίστα | el | Used where the source itself distinguishes "list" from "array". |
 | index | θέση | el | Not `δείκτης`, which is reserved for "pointer", a different concept in Greek CS. |
+| variable | **μεταβλητή** (feminine) | el | Unconfirmed draft (agent, 2026-07-31). Central teaching concept; subject of the "box" metaphor. |
+| equal sign | **σύμβολο ίσον** | el | Unconfirmed draft (agent, 2026-07-31). Prose gloss for the `=` token when introduced conceptually. |
+| value (general sense) | **τιμή** / plural **τιμές** | el | Unconfirmed draft (agent, 2026-07-31). Distinct from `return value` → `τιμή επιστροφής` above: this row is the general, non-return sense. |
 
 ### Functions & control flow
 
@@ -80,6 +83,21 @@ These are terms where the Greek is used in prose, so the "Use (el/en)" column is
 |---------|-------|-------------|-------|
 | CLI (the concept) | γραμμή εντολών | el | Where the source `<define>`s it, explain the concept, not just gloss the term. `τερματικό` (terminal) is the common colloquial synonym once the concept is established. |
 
+### General vocabulary
+
+| English | Greek | Use (el/en) | Notes |
+|---------|-------|-------------|-------|
+| vs (versus, between two choices/scenarios) | **εναντίον** | el | Unconfirmed draft (agent, 2026-07-31). From the rock-paper-scissors exercise. |
+
+### Drawing & color (exercise family)
+
+| English | Greek | Use (el/en) | Notes |
+|---------|-------|-------------|-------|
+| hue | **απόχρωση** | el | Unconfirmed draft (agent, 2026-07-31). Color-model term; recurs across the "draw" exercise family. |
+| saturation | **κορεσμός** | el | Unconfirmed draft (agent, 2026-07-31). |
+| lightness | **φωτεινότητα** | el | Unconfirmed draft (agent, 2026-07-31). |
+| bar (vertical drawing unit, e.g. a rainbow bar) | **ράβδος** | el | Unconfirmed draft (agent, 2026-07-31). Chosen over `γραμμή` specifically to avoid collision with the existing `line()` shape/describer, which is already glossaried as `γραμμή`. |
+
 ## Keep in English
 
 These stay in English in prose: the English word is what Greek developers actually say, so
@@ -87,6 +105,7 @@ it is the ordinary word here.
 
 | Term | Greek gloss (on `<define>`) | Notes |
 |------|-----------------------------|-------|
+| Boolean | _λογική τιμή_ | Unconfirmed draft (agent, 2026-07-31). English "Boolean" stays primary in prose with the Greek gloss in brackets, mirroring how the Hungarian sibling page handles it. |
 | API | explain what it is in Greek (e.g. "Διεπαφή Προγραμματισμού Εφαρμογών") | Where defined, explain the concept, not just gloss the acronym. |
 | framework | _πλαίσιο εργασίας_ | |
 | component | _συστατικό_ | |
@@ -129,6 +148,43 @@ How to phrase a bracket in running prose is in `guide.md`.
 
 ## Decision log
 
+### 2026-07-31: Nine terms added as unconfirmed drafts from translation passes
+
+**Decided by:** agent, per the standing rule from the owner (iHiD) that translation-pass
+proposals are always added to the glossary as unconfirmed drafts rather than held back for
+review: the only way a native speaker gives feedback is by seeing the term on the published
+site.
+**Source:** the translation passes that proposed them (not a forum thread; not yet
+native-speaker-sourced).
+**Status:** unconfirmed drafts.
+**Terms affected:** `variable`, `equal sign`, `value (general sense)`, `Boolean`, `vs`,
+`hue`, `saturation`, `lightness`, `bar`.
+
+Nine rows added, one per term proposed by a recent translation pass, filed under the
+best-fit existing section (or a new section where none fit):
+
+- **From the concept/variables pass:** `variable` → `μεταβλητή` (feminine), the central
+  teaching concept and subject of the "box" metaphor; `equal sign` → `σύμβολο ίσον`, the
+  prose gloss for the `=` token when introduced conceptually; `value (general sense)` →
+  `τιμή` / `τιμές`, filed distinct from the already-agreed `return value` →
+  `τιμή επιστροφής`. All three added under "Values & data types".
+- **From the concept/if pass:** `Boolean` added under "Keep in English", English primary in
+  prose with a Greek gloss `λογική τιμή` in brackets, mirroring how the Hungarian sibling
+  page handles it.
+- **From the exercise/rock-paper-scissors pass:** `vs` (versus, between two choices/
+  scenarios) → `εναντίον`. No existing section fit, so a new "General vocabulary"
+  subsection was added under "Localize".
+- **From the exercise/rainbow pass:** `hue` → `απόχρωση`, `saturation` → `κορεσμός`,
+  `lightness` → `φωτεινότητα`, all color-model terms that recur across the "draw" exercise
+  family; `bar` (vertical drawing unit, e.g. a rainbow bar) → `ράβδος`, chosen over
+  `γραμμή` specifically to avoid colliding with the existing `line()` shape/describer,
+  which is already glossaried as `γραμμή`. A new "Drawing & color (exercise family)"
+  subsection was added under "Localize" to hold all four.
+
+None of these are forum- or native-speaker-sourced yet; they are agent proposals from live
+translation work, added immediately per the standing rule above so that publishing the
+glossary to i18n is what surfaces them for native-speaker review.
+
 ### 2026-07-31: An error is "πετάει ένα σφάλμα", not "δίνει"
 
 **Decided by:** owner (iHiD), on a native speaker's correction.
@@ -148,6 +204,24 @@ and did not rank them. Making _πετάει_ the primary rendering, with _ανα
 sources that themselves say "reports", was an editorial call taken here, not his. Worth a
 quick check if he is still active on the thread, but not blocking: both are renderings he
 volunteered, so neither can be wrong.
+
+### 2026-07-31: "Ones and zeros" reads better as "μηδενικά και άσσους" (zeros first)
+
+**Decided by:** owner (iHiD), on a native speaker's note.
+**Raised by:** astyanax (native speaker) on the "Using Functions" concept review thread,
+https://forum.jiki.io/t/greek-review-concept-page-using-functions/746/2
+**Status:** human-decided, settled. Added as a `guide.md` style note, not a glossary row
+(it is a phrasing/ordering preference, not a term choice).
+
+The published page uses "άσσους και μηδενικά" (ones before zeros). Astyanax said he agrees
+with using it, but flagged that official standard usage (citing a Hellenic Parliament
+document) puts the zeros first: "μηδενικά και άσσους". Neither order is wrong; the
+zeros-first order was adopted as the preferred rendering going forward since it matches the
+more standard/official phrasing he cited.
+
+The same post's other two points needed no new action here: the "δίνει" → "πετάει"
+correction is the entry directly below (already logged), and "Για τώρα" → "Για την ώρα" was
+already a `guide.md` note before this post.
 
 ### 2026-07-31: `framework` glosses as "πλαίσιο εργασίας"
 

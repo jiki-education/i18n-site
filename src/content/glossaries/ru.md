@@ -2,8 +2,8 @@
 lang: "ru"
 name: "Russian"
 family: null
-stage: "setup"
-governance_sha: "33fd2de"
+stage: "refining"
+governance_sha: "20406cd"
 content_version: "5d1832189b05"
 published_at: "2026-07-31"
 term_count: 39

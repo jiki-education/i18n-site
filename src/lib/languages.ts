@@ -71,7 +71,7 @@ export const LANGUAGES: Record<string, LanguageMeta> = {
   },
   ro: { name: "Romanian", nativeName: "Română", dir: "ltr", comingSoon: "În curând" },
   ru: { name: "Russian", nativeName: "Русский", dir: "ltr", comingSoon: "Скоро" },
-  sr: { name: "Serbian", nativeName: "Српски", dir: "ltr", comingSoon: "Ускоро" },
+  sr: { name: "Serbian", nativeName: "Srpski", dir: "ltr", comingSoon: "Uskoro" },
   sv: { name: "Swedish", nativeName: "Svenska", dir: "ltr", comingSoon: "Kommer snart" },
   sw: { name: "Swahili", nativeName: "Kiswahili", dir: "ltr", comingSoon: "Inakuja hivi karibuni" },
   tr: { name: "Turkish", nativeName: "Türkçe", dir: "ltr", comingSoon: "Yakında" },

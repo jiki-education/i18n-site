@@ -24,7 +24,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { translation, source } = Astro.props;
-const { lang, type, slug, title, en_md5, content_version, messages } = translation.data;
+const { lang, type, slug, title, en_md5, content_version, messages, forum_topic_id } = translation.data;
 const meta = languageMeta(lang);
 
 /** The English source moved on after this was translated. */
@@ -37,10 +37,13 @@ const aligned = englishBody ? alignBlocks(englishBody, targetBody) : null;
 const targetOnly = splitBlocks(targetBody).map(renderBlock);
 
 /**
- * Always the prefilled Discourse composer rather than a pre-created thread: the
- * reviewer opens the topic when they have something to say. See forumNewTopicUrl.
+ * The item's existing review thread when we know of one, so every reviewer of a
+ * given page lands in the same conversation. Only when no topic id is recorded
+ * do we send them to a prefilled composer to open one. See forumNewTopicUrl.
  */
-const forumUrl = forumNewTopicUrl({ lang, type, slug, englishTitle: source?.data.title ?? title ?? slug });
+const forumUrl = forum_topic_id
+  ? `https://forum.jiki.io/t/${forum_topic_id}`
+  : forumNewTopicUrl({ lang, type, slug, englishTitle: source?.data.title ?? title ?? slug });
 ---
 
 <Layout title={title ?? slug} description={`${contentTypeLabel(type)}: ${slug}, translated into ${meta.name}. Read it against the English and tell us what sounds wrong.`}>

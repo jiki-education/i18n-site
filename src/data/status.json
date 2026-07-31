@@ -1,9 +1,9 @@
 {
   "published_at": "2026-07-31",
-  "governance_sha": "e1667de",
-  "approved": 21,
+  "governance_sha": "a271b40",
+  "approved": 22,
   "disapproved": 0,
-  "total": 136,
+  "total": 137,
   "languages": [
     {
       "lang": "el",
@@ -36,7 +36,7 @@
         },
         {
           "key": "concept/variables",
-          "topic_id": null,
+          "topic_id": 861,
           "status": "pending"
         },
         {
@@ -56,7 +56,7 @@
         },
         {
           "key": "exercise/rainbow",
-          "topic_id": null,
+          "topic_id": 862,
           "status": "pending"
         }
       ]
@@ -267,6 +267,37 @@
       ]
     },
     {
+      "lang": "fr",
+      "name": "French",
+      "stage": "setup",
+      "category_slug": "i18n-fr",
+      "approved": 1,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 314,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 754,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 755,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 803,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "it",
       "name": "Italian",
       "stage": "setup",
@@ -411,6 +442,42 @@
         },
         {
           "key": "exercise/maze-solve-basic",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "hu",
+      "name": "Hungarian",
+      "stage": "setup",
+      "category_slug": "i18n-hu",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 5,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 289,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 758,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 759,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 805,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
           "topic_id": null,
           "status": "pending"
         }
@@ -572,37 +639,6 @@
       ]
     },
     {
-      "lang": "fr",
-      "name": "French",
-      "stage": "setup",
-      "category_slug": "i18n-fr",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 314,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 754,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 755,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 803,
-          "status": "pending"
-        }
-      ]
-    },
-    {
       "lang": "de",
       "name": "German",
       "stage": "setup",
@@ -660,37 +696,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 804,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "hu",
-      "name": "Hungarian",
-      "stage": "setup",
-      "category_slug": "i18n-hu",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 289,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 758,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 759,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 805,
           "status": "pending"
         }
       ]

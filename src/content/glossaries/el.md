@@ -3,8 +3,8 @@ lang: "el"
 name: "Greek"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
-content_version: "5abb3f4c9a75"
+governance_sha: "e6fb600"
+content_version: "1ddc38640204"
 published_at: "2026-07-31"
 term_count: 52
 forum_topic_id: 497
@@ -87,7 +87,7 @@ it is the ordinary word here.
 | Term | Greek gloss (on `<define>`) | Notes |
 |------|-----------------------------|-------|
 | API | explain what it is in Greek (e.g. "Διεπαφή Προγραμματισμού Εφαρμογών") | Where defined, explain the concept, not just gloss the acronym. |
-| framework | _πλαίσιο_ | |
+| framework | _πλαίσιο εργασίας_ | |
 | component | _συστατικό_ | |
 | deploy (verb) | explain as "ανάπτυξη σε παραγωγικό περιβάλλον" | The verb inflects around the English word ("κάνω deploy"). Low confidence; revisit with native-speaker feedback. |
 | JavaScript, Python, React | (no gloss) | Product/language names. |
@@ -127,6 +127,19 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-07-31: `framework` glosses as "πλαίσιο εργασίας"
+
+**Decided by:** owner (iHiD), adopting a native speaker's suggestion.
+**Suggested by:** astyanax (native speaker) on the pinned glossary thread,
+https://forum.jiki.io/t/greek-review-glossary/497
+**Status:** human-suggested, adopted.
+**Terms affected:** `framework`.
+
+The term still stays in English in prose; only its `<define>` gloss moved, from bare
+_πλαίσιο_ to _πλαίσιο εργασίας_. Bare _πλαίσιο_ can simply mean "frame", so on its own it
+does not tell a beginner what a software framework is; _πλαίσιο εργασίας_ is the precise
+and idiomatic Greek rendering for this sense.
 
 ### 2026-07-31: Glossary pruned of ordinary vocabulary
 

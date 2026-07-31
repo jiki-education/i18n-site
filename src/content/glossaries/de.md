@@ -3,8 +3,8 @@ lang: "de"
 name: "German"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
-content_version: "9eb1ee520dbc"
+governance_sha: "97625d5"
+content_version: "b531259d6149"
 published_at: "2026-07-31"
 term_count: 57
 forum_topic_id: 340
@@ -70,7 +70,7 @@ themselves actually use, so the English word is the ordinary German word there.
 | loop | Schleife | de | English "loop" is never used in prose. |
 | for loop | for-Schleife | de | Keep the `for` keyword in code font; translate only "Schleife". |
 | while loop | while-Schleife | de | As above, with `while`. |
-| loop body | Schleifenrumpf | de | **Open native objection, awaiting an owner decision; the rendering here is unconfirmed** (see `glossary-notes.md`). Until the owner rules, use "Schleifenrumpf" and stay consistent within a document. |
+| loop body | Schleifenblock | de | Masculine ("der Schleifenblock, des Schleifenblocks, die Schleifenblöcke"). Consistent with "Block" (code block) above: the body of a loop is the block it repeats. Never "Schleifenrumpf" or "Schleifenkörper". |
 | increment | erhöhen | de | The verb. |
 | scope | Gültigkeitsbereich | de | Keep distinct from "Block" (code block) above. |
 | property | Eigenschaft | de | |
@@ -118,8 +118,8 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 |-------------------|-------------------|-------|
 | box (value container) | Box | |
 | chain (array metaphor) | Kette | Link = "Kettenglied". |
-| input slot | Eingabeschlitz | **Open native objection, awaiting an owner decision; the rendering here is unconfirmed** (see `glossary-notes.md`). |
-| return chute | Ausgaberutsche | |
+| input slot | Trichter | Masculine: "der Trichter", plural "die Trichter". Use it bare, not "Eingabetrichter": it is the thing Jiki throws values into ("Jiki wirft es in den Trichter"). Never "Eingabeschlitz" or "Eingabeschacht". |
+| return chute | Ausgaberutsche | Feminine: "die Ausgaberutsche", plural "die Ausgaberutschen". The out half of the pair with "Trichter": things go in the Trichter and come out the Ausgaberutsche. |
 | machine (function metaphor) | Maschine | |
 | shelves (storage) | Regale | The shelves where variables and functions are stored; singular "Regal". |
 | board / whiteboard | Tafel | **One object, one word.** The board the learner writes Befehle on for Jiki to follow, and the board a function keeps its own notes on, are the same object and take the same word everywhere. Never "Whiteboard" as a second word for the same object. |
@@ -129,6 +129,51 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-07-31: `input slot` = `Trichter` (resolves the open objection)
+
+**Decided by:** owner (iHiD), on the proposal by native speaker `neillana`, forum topic
+[t/340](https://forum.jiki.io/t/german-review-glossary/340), posts
+[/340/6](https://forum.jiki.io/t/german-review-glossary/340/6),
+[/340/7](https://forum.jiki.io/t/german-review-glossary/340/7) and
+[/340/10](https://forum.jiki.io/t/german-review-glossary/340/10).
+**Terms affected:** `input slot`. **Supersedes** the `input slot` half of the "Open
+objections (unresolved)" entry below, which is now closed in full (its `loop body` half was
+already closed by the entry below this one).
+
+`Eingabeschlitz` is replaced by **`Trichter`**. `neillana` argued `Eingabeschlitz` denotes
+something narrow (a coin slot, `Münzschlitz`) and that both `Schlitz` and `Schacht` read as
+old-fashioned and overly technical. Asked by the owner what fits an opening that takes
+paper, coins and a chain of things, `neillana` answered that the Jiki animation's input
+slots literally are hoppers ("I just watched it again and the input slots actually are
+hoppers", "If you think about the thing Jiki puts the stuff into to get it into the machine,
+it is simply 'Trichter'"), and that `Trichter` is live, common vocabulary. `Eingabefach` was
+offered only as a fallback if we wanted to avoid the hopper association, and is not adopted.
+The owner adopted `Trichter`. It also keeps the in/out metaphor pair concrete beside
+`return chute` = `Ausgaberutsche`.
+
+`Trichter` is human-decided and settled, and must not be changed without fresh agreement
+raised on that same thread.
+
+### 2026-07-31: `loop body` = `Schleifenblock` (resolves the open objection)
+
+**Decided by:** owner (iHiD), on the objection raised by native speakers `elzda` and
+`neillana`, forum topic [t/340](https://forum.jiki.io/t/german-review-glossary/340), posts
+[/340/4](https://forum.jiki.io/t/german-review-glossary/340/4) and
+[/340/11](https://forum.jiki.io/t/german-review-glossary/340/11).
+**Terms affected:** `loop body`. **Supersedes** the `loop body` half of the "Open
+objections (unresolved)" entry below; the `input slot` half of that entry still stands.
+
+`Schleifenrumpf` is replaced by **`Schleifenblock`**. `elzda` called `Schleifenrumpf`
+"really unnatural" and proposed `Schleifenkörper`; `neillana` rejected both as bodily and
+old-fashioned ("it makes me think of cut off human body parts") and proposed
+`Schleifenblock`, citing German developer documentation using it ("Der Schleifenblock ist
+ein Container, der Blöcke wiederholt ausführt..."). The owner adopted `neillana`'s
+proposal. It also sits well beside the agreed `code block` = `Block`: the body of a loop is
+the block it repeats.
+
+`Schleifenblock` is human-decided and settled, and must not be changed without fresh
+agreement raised on that same thread.
 
 ### 2026-07-31: Pruned settled ordinary vocabulary
 

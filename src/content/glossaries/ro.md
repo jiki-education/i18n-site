@@ -3,10 +3,10 @@ lang: "ro"
 name: "Romanian"
 family: null
 stage: "setup"
-governance_sha: "cdcbbb5"
-content_version: "e22655eec020"
+governance_sha: "0bbbf95"
+content_version: "4346e1823853"
 published_at: "2026-07-31"
-term_count: 94
+term_count: 95
 forum_topic_id: 825
 ---
 
@@ -35,7 +35,8 @@ These are terms where the Romanian is used in prose, so the "Use (ro/en)" column
 | English | Romanian | Use (ro/en) | Notes |
 |---------|----------|-------------|-------|
 | true / false | adevărat / fals | ro | Not capitalised in prose. |
-| array / list | tablou | ro | Neuter: „un tablou", „două tablouri". See also "chain" under Jiki physical metaphors for the teaching metaphor used alongside it. Do not render `dashboard` as „tablou de bord", which collides with this word; see "Platform & curriculum vocabulary". |
+| array | matrice | ro | Feminine: „o matrice", „două matrice". Never `tablou`, which does not read as an array to a Romanian speaker. See also "chain" under Jiki physical metaphors for the teaching metaphor used alongside it. |
+| list | listă | ro | Feminine: „o listă", „două liste". Use where the source says "list"; use `matrice` where it says "array". |
 | index | indice | ro | Plural `indici`. Not `index`, which reads as the index of a book or a database. |
 | character (text) | caracter | ro | A single text character. Keep distinct from `personaj` (the on-screen game figure) under Jiki physical metaphors. |
 | letter (of a string) | literă | ro | Distinct from `caracter`. |
@@ -101,7 +102,7 @@ These are terms where the Romanian is used in prose, so the "Use (ro/en)" column
 | pathway | parcurs | ro | Keep distinct from `traseu` (track) above. |
 | solution (learner's submission) | soluție | ro | |
 | plan (subscription tier) | abonament | ro | Enables „abonamentul {tier}". Not `plan`, which reads as a schedule. |
-| dashboard | panou de control | ro | Deliberately **not** `tablou de bord`, which collides with `tablou` (array). |
+| dashboard | panou de control | ro | Deliberately **not** `tablou de bord`, which is the dashboard of a car. |
 | canvas (graphics exercises) | pânză | ro | The drawing-surface sense specifically. |
 | Run Code (button) | Rulează codul | ro | The on-screen button. Exercise instructions and the website-copy catalog must say exactly the same thing, or the instructions name a button that is not on screen. Not left in English: the "Keep in English" row for `Code` covers the bare UI token, not this sentence-shaped label. |
 
@@ -136,7 +137,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | English metaphor | Romanian rendering | Notes |
 |-------------------|---------------------|-------|
 | box (value container) | cutie | |
-| chain (array metaphor) | lanț | A single link is a `verigă`. Used as the teaching image alongside the technical term `tablou` for array. |
+| chain (array metaphor) | lanț | A single link is a `verigă`. Used as the teaching image alongside the technical term `matrice` for array. |
 | machine (function metaphor) | mașină | A function is one of Jiki's little machines, „una dintre mașinile lui Jiki". The bare word's commonest everyday sense is "car", so keep the machine context visible (slot, crank, shelf) on first use. Not `mașinărie`, which reads as a contraption. |
 | input slot | fantă de intrare | `fantă` is a narrow opening, the ordinary word for a coin slot. |
 | return chute | tobogan de ieșire | `tobogan` is the playground slide, and also the word for a chute used to move things between levels. Not `jgheab` (a gutter or trough, rustic). |
@@ -144,7 +145,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | shelves (storage) | raft (pl. rafturi) | Jiki's machines sit on a `raft`. |
 | warehouse (Jiki's warehouse) | depozit | Where Jiki hangs out and keeps his machine shelf („depozitul lui Jiki"). |
 | workshop (Jiki's workshop) | atelier | The room where Jiki works; the shelves live in it. |
-| board / whiteboard | tablă | **One object, one word.** The board the learner writes instructions on for Jiki to follow, and the board a function keeps its own instructions and notes on, are the same `tablă`. The ordinary word for a board in a room; no collision with `tablou` (array), which is a different word. |
+| board / whiteboard | tablă | **One object, one word.** The board the learner writes instructions on for Jiki to follow, and the board a function keeps its own instructions and notes on, are the same `tablă`. The ordinary word for a board in a room. |
 | coin (number metaphor) | monedă | |
 | label (on a box/machine) | etichetă | |
 | piece of paper (string metaphor) | foaie de hârtie | |
@@ -171,6 +172,22 @@ The decision log behind `glossary.md`. Two rules bind every pass that reads it:
 
 1. **A pass that changes the glossary reads this file first, and appends an entry after.** If an entry below records a **human** deciding a term, it is settled: it changes only by fresh agreement with a human, raised where it was settled. If nothing here mentions the term, it is an **unconfirmed draft**, and a pass may correct it provided it appends an entry saying what it changed and why.
 2. **A translation pass never loads this file.** It loads `glossary.md` and needs the term, not the argument that produced it.
+
+### 2026-07-31: `array` is `matrice`, `list` is `listă` (native speaker)
+
+**Decided by:** @florin-cuculeac (Florin Cuculeac), native speaker, on the pinned Romanian glossary thread ([post 3 of topic 825](https://forum.jiki.io/t/romanian-review-glossary/825/3)); approved for action by the owner (iHiD). **Status: human-decided, so these rows are settled** and change only by fresh agreement with a human, raised on that thread.
+
+**Terms affected:** `array`, `list` (previously one row, `array / list` → `tablou`), and the notes on `dashboard`, `chain (array metaphor)` and `board / whiteboard`, which referred to the old term.
+
+Florin's words on the old row: „This is not sound correct in Romanian, use instead 'matrice/listă'." That overturns the bootstrap's `tablou`, which was flagged in the entry below as one of the four rows most likely to draw exactly this objection. A native speaker's judgement on how a word lands outranks the school-textbook evidence the draft rested on.
+
+Because the two English terms now take different Romanian words, the single `array / list` row is **split into two**: `array` → `matrice`, `list` → `listă`. Both are feminine, so the plurals are „două matrice" and „două liste", not the neuter forms the old row taught.
+
+Three consequences elsewhere. The `dashboard` row keeps `panou de control`, but no longer because of a collision with `tablou`: the reason is now simply that `tablou de bord` is the dashboard of a car. The `chain` metaphor note points at `matrice` as the technical term it sits alongside. The `board / whiteboard` note drops its "no collision with `tablou`" aside, which is now about a word the glossary does not use.
+
+Note that `matrice` is also the Romanian word for a mathematical matrix. That is a real overlap, and if it causes trouble in a translation the place to raise it is the same thread, with Florin.
+
+**Not actioned:** his separate objection to `if statement` → `instrucțiune if` ([post 4](https://forum.jiki.io/t/romanian-review-glossary/825/4), proposing `condiție`) is still under discussion and that row is untouched.
 
 ### 2026-07-31: Five rows added from the first two translations
 
@@ -291,5 +308,5 @@ Why individual rows read the way they do, where the reasoning is not already cov
 | chain | `lanț` is the ordinary physical chain, and `verigă` gives a natural word for a single link. |
 | crank | `manivelă` is defined in DEX as the lever you turn to operate a mechanism, which is exactly the metaphor. |
 | return chute | `tobogan` is the playground slide and is also used for a chute that moves material between levels, so it is concrete and playful at once. `jgheab` is a gutter and reads rustic. |
-| board / whiteboard | `tablă` is the ordinary word for a board in a room. Romanian's array term (`tablou`) is a different word, so there is no collision to route around here. |
+| board / whiteboard | `tablă` is the ordinary word for a board in a room. |
 | mini-Jiki | Romanian takes the `mini-` prefix with a hyphen naturally, so the name needs no adaptation. |

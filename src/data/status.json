@@ -1,14 +1,14 @@
 {
   "published_at": "2026-07-31",
-  "governance_sha": "4853eda",
-  "approved": 15,
-  "disapproved": 1,
-  "total": 123,
+  "governance_sha": "e4864f3",
+  "approved": 17,
+  "disapproved": 0,
+  "total": 128,
   "languages": [
     {
       "lang": "el",
       "name": "Greek",
-      "stage": "setup",
+      "stage": "phase2",
       "category_slug": "i18n-el",
       "approved": 4,
       "disapproved": 0,
@@ -41,11 +41,67 @@
         },
         {
           "key": "concept/if",
-          "topic_id": null,
+          "topic_id": 845,
           "status": "pending"
         },
         {
           "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "name": "Russian",
+      "stage": "phase2",
+      "category_slug": "i18n-ru",
+      "approved": 4,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 467,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 776,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 777,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 813,
+          "status": "approved"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
           "topic_id": null,
           "status": "pending"
         },
@@ -124,37 +180,6 @@
       ]
     },
     {
-      "lang": "ru",
-      "name": "Russian",
-      "stage": "setup",
-      "category_slug": "i18n-ru",
-      "approved": 2,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 467,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 776,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 777,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 813,
-          "status": "approved"
-        }
-      ]
-    },
-    {
       "lang": "uk",
       "name": "Ukrainian",
       "stage": "setup",
@@ -222,7 +247,7 @@
       "stage": "setup",
       "category_slug": "i18n-fa",
       "approved": 1,
-      "disapproved": 1,
+      "disapproved": 0,
       "total": 4,
       "items": [
         {
@@ -233,7 +258,7 @@
         {
           "key": "concept/using-functions",
           "topic_id": 752,
-          "status": "disapproved"
+          "status": "pending"
         },
         {
           "key": "video-player",

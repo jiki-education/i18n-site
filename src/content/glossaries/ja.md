@@ -3,10 +3,11 @@ lang: "ja"
 name: "Japanese"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
+governance_sha: "8e3de87"
 content_version: "8b64437b0edc"
 published_at: "2026-07-31"
 term_count: 65
+category_id: 70
 forum_topic_id: 311
 video_player_forum_topic_id: 765
 ---

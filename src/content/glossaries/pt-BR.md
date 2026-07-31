@@ -3,10 +3,11 @@ lang: "pt-BR"
 name: "Brazilian Portuguese"
 family: "pt"
 stage: "refining"
-governance_sha: "1e9b16b"
+governance_sha: "8e3de87"
 content_version: "2603f068e6df"
 published_at: "2026-07-31"
 term_count: 61
+category_id: 74
 forum_topic_id: 288
 video_player_forum_topic_id: 773
 ---

@@ -3,10 +3,11 @@ lang: "tr"
 name: "Turkish"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
+governance_sha: "8e3de87"
 content_version: "e0dbf145ddf3"
 published_at: "2026-07-31"
 term_count: 53
+category_id: 136
 forum_topic_id: 328
 video_player_forum_topic_id: 783
 ---

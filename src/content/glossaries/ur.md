@@ -3,10 +3,11 @@ lang: "ur"
 name: "Urdu"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
+governance_sha: "8e3de87"
 content_version: "93d59d65729a"
 published_at: "2026-07-31"
 term_count: 93
+category_id: 235
 forum_topic_id: 476
 video_player_forum_topic_id: 787
 ---

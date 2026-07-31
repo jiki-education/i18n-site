@@ -18,7 +18,7 @@ export const getStaticPaths = (async () => {
 const { glossary } = Astro.props;
 const lang = glossary.data.lang;
 const meta = languageMeta(lang);
-const { family, governance_sha, content_version, published_at, term_count, forum_topic_id } = glossary.data;
+const { family, governance_sha, content_version, published_at, term_count, forum_topic_id, category_id } = glossary.data;
 
 // The glossary is published as the Markdown it is written in, so this page just
 // renders it. Nothing here interprets the tables: that is what stops rows being
@@ -35,7 +35,7 @@ const { Content, headings } = await render(glossary);
 const contents = headings.filter((heading) => heading.depth <= 3);
 
 const termCount = term_count ?? 0;
-const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : forumCategoryUrl(lang);
+const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : forumCategoryUrl(lang, category_id);
 ---
 
 <Layout title={`${meta.name} glossary`} description={`The ${termCount} agreed terms behind every Jiki translation into ${meta.name}. This is the live version: read it and tell us what's wrong.`}>

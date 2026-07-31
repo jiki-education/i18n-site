@@ -3,10 +3,11 @@ lang: "sr"
 name: "Serbian"
 family: null
 stage: "setup"
-governance_sha: "8ea70e1"
-content_version: "6de69b4efe17"
+governance_sha: "8e3de87"
+content_version: "499d0056eb4a"
 published_at: "2026-07-31"
 term_count: 114
+category_id: 166
 forum_topic_id: 402
 video_player_forum_topic_id: 779
 ---
@@ -99,9 +100,9 @@ These are terms where the Serbian is used in prose, so the "Use (sr/en)" column 
 | concatenation / to concatenate | spajanje (stringova) | sr | Joining strings. Not "spajanje nizova" (reads as joining arrays). |
 | toggle | preklopiti | sr | To flip a value between two states. |
 | state / stateful | stanje | sr | |
-| scope | doseg | sr | Keep distinct from "blok" (code block) above. |
+| scope | opseg | sr | Corrected from "doseg" per native-speaker feedback (see glossary-notes.md). Keep distinct from "blok" (code block) above. |
 | class | klasa | sr | |
-| method | metod | sr | Masculine ("metod", not "metoda"); some Serbian sources use the feminine "metoda" instead, but pick "metod" and use it consistently. |
+| method (a function that belongs to a class) | metoda | sr | Feminine ("metoda", with the -a ending). Corrected from "metod" per native-speaker feedback (see glossary-notes.md); "metod" is now reserved for the general, non-OOP sense of "method" only, not for class methods. |
 | property | svojstvo | sr | Stands alone. |
 | object | objekat | sr | Masculine. |
 | encapsulation | enkapsulacija | sr | Use "enkapsulacija" consistently. |
@@ -181,6 +182,34 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-07-31: `scope` is "opseg", not "doseg"; `method` (class sense) is "metoda", not "metod"
+
+**Decided by:** owner (iHiD), on the correction of native speaker **aleksaelezovic** on the
+pinned Serbian glossary thread
+([post 5](https://forum.jiki.io/t/402/5), [post 6](https://forum.jiki.io/t/402/6)).
+**Terms affected:** `scope`, `method (a function that belongs to a class)`. **Status:
+human-decided, settled.**
+
+The row read **"doseg"** for `scope`. aleksaelezovic's suggestion is "opseg" instead; no
+counter-argument or prior native-speaker sign-off is on record for "doseg", so the row is
+corrected as proposed.
+
+The row read **"metod"** (masculine) for `method`, with a note explicitly picking the
+masculine form over the feminine "metoda". aleksaelezovic's correction reverses that call for
+the OOP sense specifically: in programming, "metoda" (feminine, -a ending) is what a function
+belonging to a class is called, and "metod" is reserved for the general, non-programming
+sense of the word "method". Jiki's curriculum uses `method` in the class sense, so the row
+now reads "metoda" and the note records the "metod" vs "metoda" split so a future translator
+does not re-collapse it.
+
+The same post (6) also raised `deploy` ("deploj" reads as an awkward non-word; suggests
+"postavi na server" or rephrasing depending on context) and `return chute` ("izlazni žleb"
+uses an archaic word; suggests "izlazni otvor", "izlazni kanal", or "izlazna cev" instead).
+**Neither is actioned here**: both need a follow-up call between multiple plausible options
+rather than a single clean substitution, so they are flagged here for Jeremy's attention
+rather than resolved unilaterally. The same post also endorsed the existing renderings for
+`machine`, `shelves`, and `input slot` as correct; no change needed there.
 
 ### 2026-07-31: `feature` is "funkcionalnost", not "mogućnost"
 

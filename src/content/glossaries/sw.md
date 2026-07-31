@@ -3,10 +3,11 @@ lang: "sw"
 name: "Swahili"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
+governance_sha: "8e3de87"
 content_version: "656f97b19689"
 published_at: "2026-07-31"
 term_count: 100
+category_id: 266
 forum_topic_id: 500
 video_player_forum_topic_id: 781
 ---

@@ -3,10 +3,11 @@ lang: "pt-pt"
 name: "European Portuguese"
 family: "pt"
 stage: "setup"
-governance_sha: "33fd2de"
-content_version: "dfb7d26e8250"
+governance_sha: "8e3de87"
+content_version: "9147c6878292"
 published_at: "2026-07-31"
 term_count: 53
+category_id: 73
 forum_topic_id: 341
 video_player_forum_topic_id: 775
 ---
@@ -97,7 +98,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | English metaphor | Portuguese rendering | Notes |
 |-----------------|---------------------|-------|
 | box (value container) | caixa | A box that holds a value. |
-| input slot | ranhura | The narrow slot you insert a coin into, like on a piggy bank. |
+| input slot | fenda | The narrow slot you insert a coin into, like on a piggy bank. Confirmed by multiple native speakers (oxe-b, alanprofeta) on the pt-BR glossary thread: _ranhura_ reads formal/dated, _fenda_ is the natural word for a piggy-bank-style coin slot specifically (as opposed to _entrada_ for a hardware slot, or _ficha_ for arcade tokens). Replaces the earlier draft, _ranhura_. |
 | return chute | calha de saída | A chute a value slides out of. Low-to-medium confidence; flag for native-speaker confirmation on first real use. |
 
 ## Brackets

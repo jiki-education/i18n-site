@@ -3,10 +3,11 @@ lang: "uk"
 name: "Ukrainian"
 family: null
 stage: "setup"
-governance_sha: "8ceb5b6"
-content_version: "7b3963e1284f"
+governance_sha: "8e3de87"
+content_version: "bbd0c9985eb3"
 published_at: "2026-07-31"
 term_count: 112
+category_id: 100
 forum_topic_id: 308
 video_player_forum_topic_id: 785
 ---
@@ -188,6 +189,25 @@ glyph in a code tag immediately after: _квадратні дужки (`[]`)_.
 ---
 
 ## Decision log
+
+### 2026-07-31: `Test` confirmed staying in English
+
+**Decided by:** iternewo (native speaker), in
+[t/308 post 6](https://forum.jiki.io/t/ukrainian-review-glossary/308/6), answering the
+clarifying question asked in post 5 of the same thread.
+
+- In [post 4](https://forum.jiki.io/t/ukrainian-review-glossary/308/4) iternewo proposed
+  `Test` → _Тест_ alongside the `tech / tech industry` change above. Post 5 asked him to
+  clarify whether he meant the word in prose (a straightforward glossary row) or the literal
+  label on the editor's Test button (a UI-string decision affecting every language, not just
+  a glossary row).
+- In post 6 he clarified he was looking at the existing glossary row itself: `Debug, Test`
+  under "Keep in English", listed as keywords/technical tokens. He noted he wasn't sure why
+  `Test` is kept in English beyond familiarity with English IDEs, but said he is "happy to
+  let it stay Test if it makes sense."
+- No change to the row: `Test` stays in the "Keep in English" section exactly as it reads
+  today. This is now a **settled, native-speaker-confirmed** row, not just a bootstrap
+  guess: do not change it to _Тест_ without going back to him on the thread.
 
 ### 2026-07-31: `tech / tech industry` becomes IT-індустрія
 

@@ -112,6 +112,10 @@ const glossaries = defineCollection({
     published_at: z.string(),
     /** Table rows in the body. A reported count for the chrome, nothing selects on it. */
     term_count: z.number().optional(),
+    /** Discourse category id for this language, from the language's tracking.json.
+     *  Needed because the categories are subcategories of `i18n`, and a link built
+     *  from the slug alone doesn't resolve. See forumCategoryUrl in lib/languages.ts. */
+    category_id: z.number().optional(),
     /** Discourse topic for glossary discussion, from the language's tracking.json. */
     forum_topic_id: z.number().optional(),
     /** Discourse topic for the video player page, also from tracking.json. The

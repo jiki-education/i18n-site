@@ -39,7 +39,7 @@ for (const item of translations) {
 <Layout title={`${meta.name} (${lang})`} description={`Jiki and Exercism translated into ${meta.name}: ${termCount} agreed terms and ${published.length} published translations, all open for comment.`}>
   <PageHeader title={meta.name} subtitle={`Jiki and Exercism in ${meta.name}. Everything here is a draft, and all of it is open for comment.`} crumbs={[{ label: "Home", href: "/" }, { label: "Languages", href: "/languages" }, { label: meta.name }]}>
     <div slot="meta" class="mt-6 flex flex-wrap gap-3">
-      <a href={forumCategoryUrl(lang)} class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"> Discuss on the forum </a>
+      <a href={forumCategoryUrl(lang, glossary.data.category_id)} class="rounded-lg bg-white px-4 py-2.5 text-[15px] font-semibold text-purple-800 transition hover:bg-purple-100"> Discuss on the forum </a>
       <PinToggle lang={lang} />
     </div>
 
@@ -143,7 +143,7 @@ for (const item of translations) {
       <div class="textual-content mt-10">
         <h2>How to help</h2>
         <p>
-          Read anything above in {meta.name} and tell us where it sounds wrong. You don't need to explain why, and you don't need to be technical. Post it in <a href={forumCategoryUrl(lang)}>the {meta.name} forum category</a>, because that's what we feed back into the translations.
+          Read anything above in {meta.name} and tell us where it sounds wrong. You don't need to explain why, and you don't need to be technical. Post it in <a href={forumCategoryUrl(lang, glossary.data.category_id)}>the {meta.name} forum category</a>, because that's what we feed back into the translations.
         </p>
         <p>
           If a term itself is wrong (not just this sentence, but the word we use everywhere), take it to <a href={`/${lang}/glossary`}>the glossary</a> instead. Fixing it there fixes it everywhere at once.
@@ -156,7 +156,7 @@ for (const item of translations) {
         <h2 class="text-[13px] font-bold tracking-[0.08em] text-gray-500 uppercase">Quick links</h2>
         <ul class="mt-3 space-y-1">
           <li>
-            <a href={forumCategoryUrl(lang)} class="-mx-2 block rounded-lg px-2 py-2 transition hover:bg-purple-50">
+            <a href={forumCategoryUrl(lang, glossary.data.category_id)} class="-mx-2 block rounded-lg px-2 py-2 transition hover:bg-purple-50">
               <span class="block text-[15px] font-semibold text-blue-600">{meta.name} on the forum</span>
               <span class="block text-[13px] text-gray-500">Where this language gets decided</span>
             </a>

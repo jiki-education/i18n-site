@@ -3,10 +3,11 @@ lang: "de"
 name: "German"
 family: null
 stage: "setup"
-governance_sha: "97625d5"
+governance_sha: "8e3de87"
 content_version: "b531259d6149"
 published_at: "2026-07-31"
 term_count: 57
+category_id: 71
 forum_topic_id: 340
 video_player_forum_topic_id: 739
 ---

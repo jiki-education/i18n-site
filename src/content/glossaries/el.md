@@ -3,10 +3,11 @@ lang: "el"
 name: "Greek"
 family: null
 stage: "refining"
-governance_sha: "20406cd"
+governance_sha: "8e3de87"
 content_version: "a43642d3bde0"
 published_at: "2026-07-31"
 term_count: 62
+category_id: 265
 forum_topic_id: 497
 video_player_forum_topic_id: 747
 ---

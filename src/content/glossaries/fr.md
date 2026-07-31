@@ -3,10 +3,11 @@ lang: "fr"
 name: "French"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
+governance_sha: "8e3de87"
 content_version: "d2eac771dc0d"
 published_at: "2026-07-31"
 term_count: 66
+category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
 ---

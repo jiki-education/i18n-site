@@ -3,10 +3,11 @@ lang: "pl"
 name: "Polish"
 family: null
 stage: "setup"
-governance_sha: "8ea70e1"
+governance_sha: "8e3de87"
 content_version: "03e2097ebeb1"
 published_at: "2026-07-31"
 term_count: 100
+category_id: 201
 forum_topic_id: 417
 video_player_forum_topic_id: 771
 ---

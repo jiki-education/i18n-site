@@ -25,7 +25,7 @@ const meta = languageMeta(lang);
 // Video.js, and we report it upstream rather than fix it here), so a report lands
 // in the wrong conversation if it goes to the glossary thread.
 const forumTopicId = glossary.data.video_player_forum_topic_id ?? glossary.data.forum_topic_id;
-const forumUrl = forumTopicId ? `https://forum.jiki.io/t/${forumTopicId}` : forumCategoryUrl(lang);
+const forumUrl = forumTopicId ? `https://forum.jiki.io/t/${forumTopicId}` : forumCategoryUrl(lang, glossary.data.category_id);
 
 const locale = playerLocale(lang);
 

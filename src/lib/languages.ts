@@ -135,9 +135,22 @@ export function forumCategorySlug(lang: string): string {
   return `i18n-${lang.toLowerCase().replace(/_/g, "-")}`;
 }
 
-/** The Discourse category for a language, e.g. es-419 -> i18n-es-419. */
-export function forumCategoryUrl(lang: string): string {
-  return `https://forum.jiki.io/c/${forumCategorySlug(lang)}`;
+/**
+ * The Discourse category for a language, e.g. es-419 -> i18n-es-419.
+ *
+ * Every language category is a *subcategory* of the parent `i18n` category, and
+ * Discourse's bare /c/<slug> route only resolves for unambiguous top-level
+ * categories: /c/i18n-ru 404s, /c/i18n-ru/232 does not. So the numeric category
+ * id is required to link to a language. It is published into each glossary's
+ * frontmatter as `category_id`, from that language's tracking.json.
+ *
+ * Without an id we cannot build a working per-language link at all, so we send
+ * people to the parent `i18n` category (which is top-level, and does resolve)
+ * rather than to a URL we know is a 404.
+ */
+export function forumCategoryUrl(lang: string, categoryId?: number | null): string {
+  if (!categoryId) return "https://forum.jiki.io/c/i18n";
+  return `https://forum.jiki.io/c/${forumCategorySlug(lang)}/${categoryId}`;
 }
 
 export const CONTENT_TYPE_LABELS: Record<string, string> = {

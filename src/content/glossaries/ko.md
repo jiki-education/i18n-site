@@ -3,10 +3,11 @@ lang: "ko"
 name: "Korean"
 family: null
 stage: "setup"
-governance_sha: "8ceb5b6"
-content_version: "26898b19b93a"
+governance_sha: "8e3de87"
+content_version: "bcefba882992"
 published_at: "2026-07-31"
 term_count: 51
+category_id: 236
 forum_topic_id: 479
 video_player_forum_topic_id: 767
 ---
@@ -44,8 +45,8 @@ These are terms where Korean uses a Hangul term (native Sino-Korean coinage or a
 | English | Korean | Use (ko/en) | Notes |
 |---------|--------|-------------|-------|
 | NOT operator / logical negation | NOT 연산자 / 논리 부정 | ko | Keep the keyword `NOT` in code font when referring to the actual operator token; use "논리 부정" when explaining the general concept in prose. |
-| statement (executable) | 문장 | ko | The imperative sense: a line of code that does something and gets executed. Stands alone; no gloss needed. |
-| statement (logical claim) | 명제 | ko | The proposition sense: a claim that is true or false. Keep distinct from "문장" above; pick by meaning, not by the English word. |
+| statement (executable) | 문 | ko | The imperative sense: a line of code that does something and gets executed. Matches the existing `for`문/`while`문/`for...of`문 pattern below and how developer communities name a statement; not "문장" (an everyday sentence). |
+| statement (logical claim) | 명제 | ko | The proposition sense: a claim that is true or false. Keep distinct from "문" above; pick by meaning, not by the English word. |
 | parameter | 매개변수 | ko | The declaration-site name. |
 | argument | 인자 | ko | The call-site value; kept distinct from "매개변수" above. |
 | to return (a value) | 반환하다 | ko | "30을 반환해요." Written/educational default; colloquial "리턴하다" exists but is not used in Jiki prose, to keep one consistent term. |
@@ -155,6 +156,31 @@ querying the cut list should look first at `break (loop control)`, `if statement
 `function`, whose notes were judged to restate the general "keywords stay English" rule
 already covered under "Keep in English" rather than to record a Korean-specific decision.
 
+### 2026-07-31: `statement (executable)` is 문, not 문장
+
+**Decided by:** agent, applying the standing rule that a clean native-speaker-backed
+correction to an unconfirmed row is actioned directly. Source: borntobesso on the pinned
+Korean glossary thread, https://forum.jiki.io/t/479/4. No reply has followed that post as of
+this check (thread has 4 posts total; post 4 is the latest).
+
+**Terms affected:** `statement (executable)`.
+
+borntobesso reported that in developer communities '문' or '구문' is the standard term for
+an executable statement, and that '문장' (the row's prior rendering) means an everyday
+sentence, so it does not deliver the technical nuance of a standalone line of code that gets
+executed.
+
+Between the two alternatives borntobesso offered, 문 was picked over 구문 because it matches
+a pattern already established elsewhere in this glossary: `for`문, `while`문, and
+`for...of`문 already use the -문 suffix to name a concrete loop statement, and the `loop` row
+explicitly distinguishes 루프 (the general concept) from "반복문" (the concrete statement,
+also built on 문). Rendering `statement (executable)` as 문 keeps that convention consistent
+rather than introducing a second, unrelated word (구문) for the same concept.
+
+This row was previously unconfirmed (see the 2026-07-30 entry below and the Term rationale
+table), not a protected human-decided entry, so no conflict: this replaces the agent's
+earlier draft rather than overwriting a native speaker's prior call.
+
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 
 **Decided by:** owner (iHiD), from the results of the concept-page pass across all 28
@@ -249,7 +275,7 @@ covered by a dated entry above (`board / whiteboard`, `interpreter`, `course`, `
 | Term | Why |
 |------|-----|
 | condition, comparison | Ordinary Korean words, so they stand alone. |
-| statement (executable) | Ordinary word in this sense. |
+| statement (executable) | 문, matching the -문 pattern already used for `for`문/`while`문/`for...of`문/반복문. See the 2026-07-31 entry above; not 문장 (an everyday sentence). |
 
 #### Loops, state & program flow
 

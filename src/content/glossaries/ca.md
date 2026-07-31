@@ -3,10 +3,11 @@ lang: "ca"
 name: "Catalan"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
+governance_sha: "8e3de87"
 content_version: "8270ae26e7b2"
 published_at: "2026-07-31"
 term_count: 49
+category_id: 298
 forum_topic_id: 536
 video_player_forum_topic_id: 745
 ---

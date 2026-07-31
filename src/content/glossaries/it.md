@@ -3,10 +3,11 @@ lang: "it"
 name: "Italian"
 family: null
 stage: "setup"
-governance_sha: "29c1e7d"
-content_version: "abe5c79b26e2"
+governance_sha: "8e3de87"
+content_version: "dc142bc74538"
 published_at: "2026-07-31"
 term_count: 57
+category_id: 133
 forum_topic_id: 319
 video_player_forum_topic_id: 763
 ---
@@ -22,8 +23,8 @@ decision log (`glossary-notes.md`).
 |---------|---------|-------------|-------|
 | developer | sviluppatore / sviluppatrice | it | Agree gender with the referent; use the masculine as the generic/plural default. |
 | tech / tech industry | settore tech | it | Not _industria tecnologica_. _Settore tecnologico_ is real but much rarer in Italian tech writing; do not substitute it. |
-| streak | serie | it | A run of consecutive days, as in the learning-platform sense. Flagged low-confidence: confirm on first real use. |
-| foot-gun | trappola involontaria | it | Use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`. |
+| streak | slancio / giorni di slancio | it | A run of consecutive days, as in the learning-platform sense. Confirmed by a native speaker: works standalone as a UI label ("Slancio" above a number), and "uno slancio di 5 giorni" is grammatically correct (masculine noun). Replaces an earlier draft, _serie_, which doesn't carry the unbroken-run sense on its own. |
+| foot-gun | arma a doppio taglio | it | Use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`. Native speaker frasanga preferred this (double-edged weapon, for the object/code sense — "code that seems right but isn't and can cause harm") over an earlier draft, _trappola involontaria_; _darsi la zappa sui piedi_ (to hoe one's own feet) was offered as the action-sense alternative if a verb phrase is ever needed instead of a noun. |
 
 ## Localize (use the Italian term)
 
@@ -131,6 +132,20 @@ Naming convention and worked example are in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-07-31: Settled `streak` on `slancio` / `giorni di slancio`
+
+**Decided by:** owner (iHiD), on native speaker kernelaklees's confirmation on the pinned
+Italian glossary thread (https://forum.jiki.io/t/319/7). **Human-decided: settled.**
+**Terms affected:** `streak`.
+
+The row previously carried a low-confidence agent draft, _serie_, flagged for confirmation
+on first real use. iHiD asked in-thread whether "slancio" (raised via a Duolingo-terminology
+pointer from kernelaklees) works as a UI label on its own and whether "uno slancio di 5
+giorni" is grammatically sound. kernelaklees confirmed both: "slancio" reads fine bare above
+a number, and the phrase is correct (the noun is masculine). The row now reads _slancio /
+giorni di slancio_ and is protected: a native speaker has settled it, so no later pass may
+change the target without a fresh human agreement logged here.
 
 ### 2026-07-31: Confirmed `tech / tech industry`
 

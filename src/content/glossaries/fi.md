@@ -3,10 +3,13 @@ lang: "fi"
 name: "Finnish"
 family: null
 stage: "setup"
-governance_sha: "f33003b"
+governance_sha: "8e3de87"
 content_version: "b57550965a3e"
 published_at: "2026-07-31"
 term_count: 117
+category_id: 366
+forum_topic_id: 840
+video_player_forum_topic_id: 841
 ---
 
 # Finnish (fi) glossary

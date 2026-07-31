@@ -3,10 +3,11 @@ lang: "nl"
 name: "Dutch"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
+governance_sha: "8e3de87"
 content_version: "e55c9d76b88c"
 published_at: "2026-07-31"
 term_count: 34
+category_id: 69
 forum_topic_id: 339
 video_player_forum_topic_id: 769
 ---

@@ -3,10 +3,10 @@ lang: "fi"
 name: "Finnish"
 family: null
 stage: "setup"
-governance_sha: "0bbbf95"
-content_version: "2c14d0ed57db"
+governance_sha: "f33003b"
+content_version: "b57550965a3e"
 published_at: "2026-07-31"
-term_count: 112
+term_count: 117
 ---
 
 # Finnish (fi) glossary
@@ -72,6 +72,7 @@ These are terms where the Finnish is used in prose, so the "Use (fi/en)" column 
 | bar / vertical bar (`\|`) | pystyviiva | fi | The `\|\|` keyword stays English. On `<define>`, show the glyph (`\|`) in the bracket, not the English word "bar". |
 | bang (the `!` character) | huutomerkki | fi | Finnish has no equivalent of the English slang "bang". Render the source's aside as a remark about what the sign is called, never as a loan. |
 | NOT operator / logical negation | negaatio | fi | _negaatio_ for the concept, _ei_ when reading the operator aloud. The `!` keyword stays English. |
+| `move` (machine/identifier gloss) | liiku | fi | The one-time explanatory gloss when the `move` machine is introduced by name in prose. The code token `move()` itself stays English. Imperative, matching the guide's fixed _käänny vasemmalle_ (`turnLeft`) and _käänny oikealle_ (`turnRight`). |
 | (programming) language | ohjelmointikieli | fi | One word, always. Use it including in the "a language a computer understands" framing. |
 
 ### Loops, state & program flow
@@ -122,6 +123,8 @@ These are terms where the Finnish is used in prose, so the "Use (fi/en)" column 
 | certificate | todistus | fi | The learner-facing completion certificate. _sertifikaatti_ is a TLS certificate; keep them apart. |
 | plan (subscription tier) | paketti | fi | Enables „{tier}-paketti". Not _tilaus_, which is the subscription itself. |
 | subscription | tilaus | fi | Note _tilaus_ also means an order. |
+| "Run Code" (button label) | Suorita koodi | fi | There is no Finnish app UI copy yet (`app/messages/` has only `en` and `hu`), so this row sets the precedent rather than confirming an existing label. Both `hu` and `sv` already translate this label, in sentence case, matching this repo's house style. If Finnish app copy is ever produced, it must match this exactly, or exercise instructions will name a button that does not exist on screen. |
+| Dashboard (the page) | koontinäyttö | fi | Same situation: no fi app copy yet, so this sets the precedent and must match the app label exactly if one is ever written. _koontinäyttö_ is the standard Finnish rendering in major localized UIs. Not _kojelauta_ (a car dashboard) and not _hallintapaneeli_ (reads as admin tooling). _etusivu_ was considered and is worth revisiting once a native speaker weighs in. |
 
 ### Colours & graphics
 
@@ -172,7 +175,9 @@ Load-bearing teaching terms.
 | spiral notebook page (dictionary metaphor) | kierrevihkon sivu | The notebook itself is a _kierrevihko_. |
 | mini-Jiki | pikku-Jiki | _pikku-_ is the native, warm diminutive. The hyphen is required before a capitalised name, and only the second part inflects: _pikku-Jikin_. |
 | character (game/maze figure) | hahmo | _pelihahmo_ where it needs to be explicit. **Never _merkki_**, which is a text character (see "Values & data types"). |
+| little man (in the computer) | pieni mies | The figure the concept pages say lives inside the computer and does the work. Distinct from _pikku-Jiki_ (Jiki's own name) and from _hahmo_ (the on-screen game figure). Real alternatives exist (_pikku-ukko_, _pikkumies_) and the figure recurs across concept pages, so this row fixes one rendering. |
 | maze | sokkelo | A branching maze with dead ends. Not _labyrintti_, which is a single winding path. |
+| cell (grid square) | ruutu | One square of a maze or board grid. Shares _ruutu_ with the agreed `frame (animation)` row under "Colours & graphics"; different domains (grid square vs animation frame) and the collision looks harmless, but it is worth a human eye, because this is the first exercise-family term the precedent applies to (maze now, other grid-based families later). |
 
 ## Brackets
 
@@ -188,6 +193,21 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-07-31: Two UI-label terms ("Run Code", "Dashboard")
+
+**Decided by:** agent proposal, added on iHiD's instruction. **Status: unconfirmed drafts**, like every other row in this glossary, but with a *second* dependency beyond native-speaker review: there is no Finnish app UI copy at all yet (`app/messages/` holds only `en` and `hu`), so neither row can be checked against a real Finnish label. Both must be confirmed against actual Finnish app strings once those exist, not just read by a native speaker. If the app ever ships a different word, the glossary follows the app, because an exercise instruction that names a button the learner cannot see on screen is worse than an imperfect word.
+
+- **`"Run Code"` (the button label) is `Suorita koodi`.** Sentence case, matching this repo's house style and what `hu` and `sv` already do with the same label. It follows the already-agreed `to run / execute (code)` → _suorittaa_, so nothing new is being decided about the verb; the row exists only to fix the button's exact wording. This sets the precedent rather than confirming an existing label.
+- **`Dashboard` (the page) is `koontinäyttö`.** This supersedes the bootstrap entry below, which deliberately left `dashboard` unsettled. _koontinäyttö_ is the standard Finnish rendering used in major localized UIs, which is the agreement the bootstrap pass could not find at the time. _kojelauta_ is rejected (it reads as a car dashboard) and _hallintapaneeli_ is rejected (it reads as admin tooling). _etusivu_ is a genuine alternative, and is the first thing to revisit when a native speaker reviews this glossary.
+
+### 2026-07-31: Three terms from the first Finnish translation passes
+
+**Decided by:** agent translation passes (the `using-functions` concept page and the `maze` exercise-family message catalog), approved for addition by iHiD ("Add them. A human can always disagree."). **Status: unconfirmed drafts**, like every other row in this glossary. No native Finnish speaker has reviewed them.
+
+- **`little man (in the computer)` is `pieni mies`.** The mental-model figure the `using-functions` page puts inside the computer. It is not _pikku-Jiki_ (that is Jiki's own name) and not _hahmo_ (the on-screen game figure in exercises), so it needed its own row. _pikku-ukko_ and _pikkumies_ are genuine alternatives a reviewer may prefer; the row exists because the figure recurs across concept pages and one settled rendering is worth more than a per-page choice.
+- **`move` (the machine/identifier gloss) is `liiku`.** Only the one-time explanatory gloss when the machine is introduced by name in prose; the `move()` code token stays English. Imperative, so it matches the form the guide already fixed for its siblings `turnLeft` (_käänny vasemmalle_) and `turnRight` (_käänny oikealle_).
+- **`cell` (a grid square) is `ruutu`.** From the maze catalog. This collides with the already-agreed `frame (animation)` → _ruutu_. The domains do not meet (a maze square and a frame per second never appear in one passage), so it is very probably harmless, but it is flagged in the glossary row too because maze is the first exercise family to set this precedent and later grid-based families will follow it.
 
 ### 2026-07-31: Language bootstrapped
 

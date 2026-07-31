@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "maze-solve-basic"
 title: "Solve the Maze"
-en_md5: "6ed23a25576883e0f33304cffc408fe0"
+en_md5: "a12c370c8d1532022a89fdd74166be21"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/maze-solve-basic"
-captured_at: "2026-07-30"
+captured_at: "2026-07-31"
 ---
 
 Welcome to your first exercise!

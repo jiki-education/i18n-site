@@ -1,7 +1,7 @@
 {
   "published_at": "2026-07-31",
-  "governance_sha": "ee712c5",
-  "approved": 1,
+  "governance_sha": "f33003b",
+  "approved": 5,
   "total": 115,
   "languages": [
     {
@@ -9,7 +9,7 @@
       "name": "Greek",
       "stage": "setup",
       "category_slug": "i18n-el",
-      "approved": 1,
+      "approved": 2,
       "total": 4,
       "items": [
         {
@@ -25,11 +25,71 @@
         {
           "key": "video-player",
           "topic_id": 747,
-          "approved": false
+          "approved": true
         },
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 799,
+          "approved": false
+        }
+      ]
+    },
+    {
+      "lang": "pl",
+      "name": "Polish",
+      "stage": "setup",
+      "category_slug": "i18n-pl",
+      "approved": 2,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 417,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 770,
+          "approved": false
+        },
+        {
+          "key": "video-player",
+          "topic_id": 771,
+          "approved": true
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 811,
+          "approved": true
+        }
+      ]
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Brazilian Portuguese",
+      "stage": "setup",
+      "category_slug": "i18n-pt-br",
+      "approved": 1,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 288,
+          "approved": false
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 772,
+          "approved": true
+        },
+        {
+          "key": "video-player",
+          "topic_id": 773,
+          "approved": false
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 812,
           "approved": false
         }
       ]
@@ -90,36 +150,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 796,
-          "approved": false
-        }
-      ]
-    },
-    {
-      "lang": "pt-BR",
-      "name": "Brazilian Portuguese",
-      "stage": "setup",
-      "category_slug": "i18n-pt-br",
-      "approved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 288,
-          "approved": false
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 772,
-          "approved": false
-        },
-        {
-          "key": "video-player",
-          "topic_id": 773,
-          "approved": false
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 812,
           "approved": false
         }
       ]
@@ -540,36 +570,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 802,
-          "approved": false
-        }
-      ]
-    },
-    {
-      "lang": "pl",
-      "name": "Polish",
-      "stage": "setup",
-      "category_slug": "i18n-pl",
-      "approved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 417,
-          "approved": false
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 770,
-          "approved": false
-        },
-        {
-          "key": "video-player",
-          "topic_id": 771,
-          "approved": false
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 811,
           "approved": false
         }
       ]

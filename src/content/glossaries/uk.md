@@ -3,8 +3,8 @@ lang: "uk"
 name: "Ukrainian"
 family: null
 stage: "setup"
-governance_sha: "33fd2de"
-content_version: "31f858a8d150"
+governance_sha: "8ceb5b6"
+content_version: "7b3963e1284f"
 published_at: "2026-07-31"
 term_count: 112
 forum_topic_id: 308
@@ -22,7 +22,7 @@ decision log (`glossary-notes.md`).
 |---------|-----------|-------------|-------|
 | programming / coding | програмування | uk | |
 | developer | розробник | uk | |
-| tech / tech industry | tech-індустрія | uk | |
+| tech / tech industry | IT-індустрія | uk | Not _tech-індустрія_: keep the whole term in Ukrainian script. |
 | streak | серія (днів) | uk | |
 
 ## Localize (use the Ukrainian term)
@@ -188,6 +188,25 @@ glyph in a code tag immediately after: _квадратні дужки (`[]`)_.
 ---
 
 ## Decision log
+
+### 2026-07-31: `tech / tech industry` becomes IT-індустрія
+
+**Decided by:** iHiD (owner), on iternewo's (native speaker) proposal in
+[t/308 post 4](https://forum.jiki.io/t/ukrainian-review-glossary/308/4).
+**Terms affected:** `tech / tech industry`.
+
+- **`tech / tech industry`** now renders as **IT-індустрія**, replacing the bootstrap guess
+  _tech-індустрія_. The old form left a bare Latin token inside a Ukrainian word, which is
+  exactly the thing the rest of this glossary avoids; _IT_ is the initialism Ukrainian
+  actually uses for the sector. It also matches the pattern the pl, ro, sr, ko and ja
+  glossaries already landed on independently.
+- This is a human native speaker's decision and is **settled**: do not revert it to a
+  hybrid form without going back to him on the thread.
+
+Also proposed in the same post: `Test` → _Тест_. Not actioned. `Test` is currently listed
+under "Keep in English" as a technical token, and it is unclear whether he means the word
+in prose or the literal text of a UI button, which would be a UI-string decision rather
+than a glossary row. Asked for clarification on the thread; still open.
 
 ### 2026-07-12: Native-speaker corrections from forum topic t/308
 

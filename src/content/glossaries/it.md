@@ -2,9 +2,10 @@
 lang: "it"
 name: "Italian"
 family: null
-governance_sha: "437b15b"
+stage: "setup"
+governance_sha: "91b6986"
 content_version: "053a601ff528"
-published_at: "2026-07-30"
+published_at: "2026-07-31"
 term_count: 56
 forum_topic_id: 319
 ---

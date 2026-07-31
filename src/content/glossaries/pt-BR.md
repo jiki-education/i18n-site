@@ -2,9 +2,10 @@
 lang: "pt-BR"
 name: "Brazilian Portuguese"
 family: "pt"
-governance_sha: "437b15b"
+stage: "setup"
+governance_sha: "91b6986"
 content_version: "41fef1bcf593"
-published_at: "2026-07-30"
+published_at: "2026-07-31"
 term_count: 60
 forum_topic_id: 288
 ---

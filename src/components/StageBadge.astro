@@ -1,0 +1,37 @@
+---
+/**
+ * The review stage of a language, as a small pill.
+ *
+ * The stage is decided in the translator repo (each language's tracking.json) and
+ * published into the glossary frontmatter; this only renders it. Colour goes cool
+ * to warm as a language progresses: setup (slate) -> refining (amber) ->
+ * reviewing (emerald). Pass `showBlurb` to append the one-line explanation, for
+ * the language page where there's room; the list badge leaves it as a tooltip.
+ */
+import { stageMeta } from "../lib/languages";
+
+interface Props {
+  stage: string | undefined | null;
+  showBlurb?: boolean;
+  class?: string;
+}
+
+const { stage, showBlurb = false, class: className = "" } = Astro.props;
+const meta = stageMeta(stage);
+
+const TONE: Record<string, string> = {
+  setup: "bg-slate-100 text-slate-700",
+  refining: "bg-amber-100 text-amber-800",
+  reviewing: "bg-emerald-100 text-emerald-800"
+};
+const tone = TONE[stage ?? "setup"] ?? TONE.setup;
+---
+
+<span
+  class={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-semibold ${tone} ${className}`}
+  title={`Stage ${meta.number}: ${meta.label}. ${meta.blurb}`}
+>
+  <span class="opacity-60">{meta.number}</span>
+  {meta.label}
+</span>
+{showBlurb && <span class="text-[13px] text-gray-500">{meta.blurb}</span>}

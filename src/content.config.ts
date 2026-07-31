@@ -106,13 +106,15 @@ const glossaries = defineCollection({
     lang: z.string(),
     name: z.string().optional(),
     family: z.string().nullable().optional(),
+    /** Review stage: how far this language has progressed. See STAGES in lib/languages.ts. */
+    stage: z.enum(["setup", "refining", "reviewing"]).optional(),
     governance_sha: z.string(),
     /** Hash of the published Markdown. See the note on the translations collection. */
     content_version: z.string().optional(),
     published_at: z.string(),
     /** Table rows in the body. A reported count for the chrome, nothing selects on it. */
     term_count: z.number().optional(),
-    /** Discourse topic for glossary discussion, from forum-tracking.json. */
+    /** Discourse topic for glossary discussion, from the language's tracking.json. */
     forum_topic_id: z.number().optional()
   })
 });

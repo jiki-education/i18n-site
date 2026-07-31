@@ -2,9 +2,10 @@
 lang: "id"
 name: "Indonesian"
 family: null
-governance_sha: "437b15b"
+stage: "setup"
+governance_sha: "91b6986"
 content_version: "bd9104af75ba"
-published_at: "2026-07-30"
+published_at: "2026-07-31"
 term_count: 63
 forum_topic_id: 325
 ---

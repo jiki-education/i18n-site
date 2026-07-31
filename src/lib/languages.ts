@@ -84,6 +84,49 @@ export function languageMeta(lang: string): LanguageMeta {
   return LANGUAGES[lang] ?? { name: lang, nativeName: lang, dir: "ltr", comingSoon: "Coming soon" };
 }
 
+/**
+ * Review stage for a language: how far it has progressed through the pass.
+ *
+ * The stage is decided in the translator repo (each language's tracking.json) and
+ * stamped into the published glossary's frontmatter, so this is display metadata
+ * only. `number` is the human "Stage N"; `label` is the badge text; `blurb`
+ * explains it in a legend/tooltip.
+ *
+ * - setup:     glossary and one article being checked, to confirm we're in a sensible place.
+ * - refining:  translating one item at a time and iterating until it's in good shape.
+ * - reviewing: everything translated and published for people to review.
+ */
+export type Stage = "setup" | "refining" | "reviewing";
+
+export interface StageMeta {
+  number: number;
+  label: string;
+  blurb: string;
+}
+
+export const STAGES: Record<Stage, StageMeta> = {
+  setup: {
+    number: 1,
+    label: "Setup",
+    blurb: "Checking the glossary and a first article to confirm we're in a sensible place."
+  },
+  refining: {
+    number: 2,
+    label: "Refining",
+    blurb: "Translating one item at a time and iterating until it reads well."
+  },
+  reviewing: {
+    number: 3,
+    label: "Reviewing",
+    blurb: "Everything is translated and published for native speakers to review."
+  }
+};
+
+/** Falls back to `setup` for a missing or unknown stage value. */
+export function stageMeta(stage: string | undefined | null): StageMeta {
+  return STAGES[(stage as Stage) ?? "setup"] ?? STAGES.setup;
+}
+
 /** The Discourse category for a language, e.g. es-419 -> i18n-es-419. */
 export function forumCategoryUrl(lang: string): string {
   return `https://forum.jiki.io/c/i18n-${lang.toLowerCase()}`;

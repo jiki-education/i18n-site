@@ -2,9 +2,10 @@
 lang: "uk"
 name: "Ukrainian"
 family: null
-governance_sha: "437b15b"
+stage: "setup"
+governance_sha: "91b6986"
 content_version: "31f858a8d150"
-published_at: "2026-07-30"
+published_at: "2026-07-31"
 term_count: 112
 forum_topic_id: 308
 ---

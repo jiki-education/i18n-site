@@ -2,9 +2,10 @@
 lang: "ja"
 name: "Japanese"
 family: null
-governance_sha: "437b15b"
+stage: "setup"
+governance_sha: "91b6986"
 content_version: "8b64437b0edc"
-published_at: "2026-07-30"
+published_at: "2026-07-31"
 term_count: 65
 forum_topic_id: 311
 ---

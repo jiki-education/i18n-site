@@ -32,7 +32,7 @@ import { contentTypeLabel, languageFlag, languageMeta } from "../lib/languages";
 interface Item {
   key: string;
   topic_id: number | null;
-  approved: boolean;
+  status: "approved" | "disapproved" | "pending";
 }
 
 /**
@@ -92,6 +92,7 @@ const languages = status.languages.map((entry, index) => ({
 }));
 
 const withAny = languages.filter((l) => l.approved > 0).length;
+const anyDisapproved = status.disapproved > 0;
 ---
 
 <Layout title="Sign-off status" description={`What native speakers have actually signed off across ${languages.length} languages: ${status.approved} of ${status.total} items so far.`}>
@@ -107,6 +108,12 @@ const withAny = languages.filter((l) => l.approved > 0).length;
         <div class="text-[32px] leading-none font-extrabold text-purple-600">{withAny}</div>
         <div class="mt-1.5 text-[14px] text-gray-500">of {languages.length} languages off the mark</div>
       </div>
+      {anyDisapproved && (
+        <div class="flex-1 rounded-2xl border border-red-200 bg-red-50 p-5">
+          <div class="text-[32px] leading-none font-extrabold text-red-600">{status.disapproved}</div>
+          <div class="mt-1.5 text-[14px] text-red-700">items flagged as wrong by a native speaker</div>
+        </div>
+      )}
     </div>
 
     <div class="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white">
@@ -149,15 +156,20 @@ const withAny = languages.filter((l) => l.approved > 0).length;
               {entry.groups.map(([label, items]) => (
                 <div class="mt-3">
                   <div class="text-[11px] font-semibold tracking-wide text-gray-500 uppercase">
-                    {label} ({items.filter((i) => i.approved).length}/{items.length})
+                    {label} ({items.filter((i) => i.status === "approved").length}/{items.length})
                   </div>
                   <div class="mt-1.5 flex flex-wrap gap-1.5 text-[12px]">
                     {items.map((item) => {
                       const url = forumTopicUrl(item.topic_id);
-                      const tone = item.approved ? "bg-emerald-50 font-semibold text-emerald-700" : "bg-white text-gray-500 border border-gray-200";
+                      const tone =
+                        item.status === "approved"
+                          ? "bg-emerald-50 font-semibold text-emerald-700"
+                          : item.status === "disapproved"
+                            ? "bg-red-50 font-semibold text-red-700"
+                            : "bg-white text-gray-500 border border-gray-200";
                       const label = itemLabel(item.key);
-                      const body = item.approved ? `✓ ${label}` : label;
-                      const title = item.approved ? `${label}: signed off` : `${label}: not signed off yet`;
+                      const body = item.status === "approved" ? `✓ ${label}` : item.status === "disapproved" ? `✗ ${label}` : label;
+                      const title = item.status === "approved" ? `${label}: signed off` : item.status === "disapproved" ? `${label}: flagged as wrong` : `${label}: not signed off yet`;
                       return url ? (
                         <a href={url} class={`rounded-full px-2 py-0.5 transition hover:brightness-95 ${tone}`} title={title}>
                           {body}

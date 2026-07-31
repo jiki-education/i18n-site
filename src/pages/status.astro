@@ -88,11 +88,11 @@ const languages = status.languages.map((entry, index) => ({
   meta: languageMeta(entry.lang),
   groups: groupItems(entry.items as Item[]),
   percent: entry.total > 0 ? Math.round((entry.approved / entry.total) * 100) : 0,
+  disapprovedPercent: entry.total > 0 ? Math.round((entry.disapproved / entry.total) * 100) : 0,
   rank: rankOf(index, entry.approved, status.languages)
 }));
 
 const withAny = languages.filter((l) => l.approved > 0).length;
-const anyDisapproved = status.disapproved > 0;
 ---
 
 <Layout title="Sign-off status" description={`What native speakers have actually signed off across ${languages.length} languages: ${status.approved} of ${status.total} items so far.`}>
@@ -108,12 +108,6 @@ const anyDisapproved = status.disapproved > 0;
         <div class="text-[32px] leading-none font-extrabold text-purple-600">{withAny}</div>
         <div class="mt-1.5 text-[14px] text-gray-500">of {languages.length} languages off the mark</div>
       </div>
-      {anyDisapproved && (
-        <div class="flex-1 rounded-2xl border border-red-200 bg-red-50 p-5">
-          <div class="text-[32px] leading-none font-extrabold text-red-600">{status.disapproved}</div>
-          <div class="mt-1.5 text-[14px] text-red-700">items flagged as wrong by a native speaker</div>
-        </div>
-      )}
     </div>
 
     <div class="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white">
@@ -142,10 +136,11 @@ const anyDisapproved = status.disapproved > 0;
                 <StageBadge stage={entry.stage} />
               </span>
               <span class="flex items-center gap-2.5">
-                <span class="h-1.5 w-20 overflow-hidden rounded-full bg-gray-200">
-                  <span class="block h-full rounded-full bg-emerald-500" style={`width: ${entry.percent}%`} />
+                <span class="flex h-1.5 w-20 overflow-hidden rounded-full bg-gray-200">
+                  <span class="block h-full bg-emerald-500" style={`width: ${entry.percent}%`} />
+                  <span class="block h-full bg-red-500" style={`width: ${entry.disapprovedPercent}%`} />
                 </span>
-                <span class={`text-[14px] whitespace-nowrap ${entry.approved > 0 ? "font-bold text-emerald-700" : "text-gray-400"}`}>
+                <span class={`text-[14px] whitespace-nowrap ${entry.approved > 0 ? "font-bold text-emerald-700" : entry.disapproved > 0 ? "font-bold text-red-700" : "text-gray-400"}`}>
                   {entry.approved} / {entry.total}
                 </span>
               </span>

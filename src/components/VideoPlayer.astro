@@ -37,12 +37,30 @@ const meta = languageMeta(lang);
   <media-i18n lang={lang}>
     <video-player>
       <video-skin>
-        <video src="/media/sample.mp4" playsinline preload="metadata">
+        {
+          /* The clip is hosted on Mux and played as HLS rather than served from
+            public/ as an MP4. Not for the adaptive bitrate, which a 20-second
+            stand-in has no use for, but because Cloudflare's static-asset runtime
+            does not implement HTTP range requests: it answers a `Range:` header
+            with a plain 200 and the whole file. A browser reads that as
+            unseekable, `video.seekable` stays [0, 0], and every skip and every
+            drag of the progress bar snaps back to the start. That is fatal on this
+            page in particular, because skipping is one of the things we ask a
+            reviewer to do. Mux's CDN ranges properly, so the fix belongs in where
+            the file is served from, not in a Worker in front of our own origin.
+
+            Mux asset 76w7NiOhQuM4LtE7Tt5AfK02kZg5a2DtesiTD11XeOGs, playback id
+            below, public playback policy: this page has no auth, so the URL has to
+            be one any browser can simply fetch. <hlsjs-video> is Video.js's own
+            element (pulled in by bin/videojs/player.js) and slots in exactly where
+            a <video> would, tracks and all. */
+        }
+        <hlsjs-video src="https://stream.mux.com/DMCUBcZmiXmgIfMoWwchXfBvHcA7img4OPb6mwPYToM.m3u8" playsinline preload="metadata">
           <track kind="captions" src={`/media/subtitles/${lang}.vtt`} srclang={lang} label={meta.nativeName} />
           <track kind="captions" src="/media/subtitles/en.vtt" srclang="en" label="English" />
           <track kind="chapters" src="/media/chapters.en.vtt" srclang="en" label="English" />
           <track kind="descriptions" src="/media/descriptions.en.vtt" srclang="en" label="English" />
-        </video>
+        </hlsjs-video>
         <img slot="poster" src="/media/sample-poster.jpg" alt="" />
       </video-skin>
     </video-player>

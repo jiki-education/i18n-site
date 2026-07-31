@@ -5,7 +5,7 @@
   "commitDate": "2026-07-28T07:51:49-07:00",
   "package": "@videojs/html",
   "version": "10.0.0-beta.25",
-  "builtAt": "2026-07-28T22:28:52Z",
+  "builtAt": "2026-07-31T21:44:17Z",
   "builtBy": "bin/build-videojs",
   "note": "Built from a git checkout of the v10 monorepo. These packages are not on npm yet, so there is no registry version this could have come from; see the header of bin/build-videojs."
 }

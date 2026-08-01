@@ -1,8 +1,8 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "951f9da",
+  "governance_sha": "49eb924",
   "approved": 35,
-  "disapproved": 0,
+  "disapproved": 1,
   "total": 178,
   "languages": [
     {
@@ -388,7 +388,7 @@
       "stage": "refining",
       "category_slug": "i18n-fa",
       "approved": 2,
-      "disapproved": 0,
+      "disapproved": 1,
       "total": 9,
       "items": [
         {
@@ -399,7 +399,7 @@
         {
           "key": "concept/using-functions",
           "topic_id": 752,
-          "status": "pending"
+          "status": "disapproved"
         },
         {
           "key": "video-player",

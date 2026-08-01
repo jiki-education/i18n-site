@@ -3,8 +3,8 @@ lang: "fr"
 name: "French"
 family: null
 stage: "refining"
-governance_sha: "4d3b92c"
-content_version: "9d7fe10ade58"
+governance_sha: "26d3ce7"
+content_version: "2135755dbd9a"
 published_at: "2026-08-01"
 term_count: 67
 category_id: 72
@@ -107,7 +107,7 @@ in the gloss column below; with no `<define>`, use the English bare, no gloss.
 | framework | _cadre de développement_ | Where the source defines it, explain it means a reusable _cadre de développement_, then use _framework_ freely. |
 | workflow | _flux de travail_ | The software-engineering sense (a sequence of dev tasks). Where the source defines it, explain it means _flux de travail_, then use _workflow_. |
 | template literal | _littéral de gabarit_ | Where the source defines it, explain it as a _littéral de gabarit_ (the official term), then use _template literal_. |
-| CLI (the concept) | _interface en ligne de commande_ | Where the source defines it, explain CLI as _interface en ligne de commande_ (command-line interface). |
+| CLI (the concept) | _interface en ligne de commande_ | Where the source defines it, explain CLI as _interface en ligne de commande_ (command-line interface), then "la CLI". Gender: _la CLI_ (feminine). |
 | canvas (graphics exercises) | _zone de dessin_ | The drawing surface in creative-coding exercises. Where the source defines it, explain it as the _zone de dessin_ (the `canvas` element), then use _canvas_. |
 | JavaScript, Python, React | (no gloss) | Product/language names. |
 | Debug, Test | (no gloss) | As keywords/technical tokens. |
@@ -124,8 +124,8 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 |-------------------|-------------------|-------|
 | box (value container) | boîte | Gender: _la boîte_. |
 | chain (array metaphor) | chaîne | Link = _maillon_. Works cleanly because _string_ stays English above (its literal sense, _chaîne de caractères_, doesn't collide in prose). |
-| input slot | fente | **Under reconsideration**: flagged by native speakers as carrying an unwanted slang/anatomical connotation in informal French (see `glossary-notes.md` 2026-08-01). Do not propagate to new content until replaced. Gender: _la fente_. |
-| return chute | toboggan | Gender: _le toboggan_. Alternative _goulotte_ (a vending-machine delivery chute) is more mechanically precise if a future pass wants a stricter machine image. |
+| input slot | entonnoir | Replaces _fente_ (unwanted slang/anatomical connotation) and _Champ de saisie_/_Zone de saisie_ (too office-form-specific for the illustrated funnel). Gender: _l'entonnoir_. |
+| return chute | tapis roulant | Replaces _toboggan_ (read as unintelligible) and _canal de retour_/_rampe de retour_. Gender: _le tapis roulant_. |
 | machine (function metaphor) | machine | A function modelled as a machine, with an input slot and a return chute. Gender: _la machine_. |
 | crank (machine crank) | manivelle | The handle Jiki turns to start a machine: _tourner la manivelle_. Gender: _la manivelle_. |
 | shelves (storage) | étagères | The shelves where variables and functions are stored. Gender: _les étagères_ (plural), _une étagère_ (singular). |
@@ -149,9 +149,128 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 
 ## Decision log
 
+### 2026-08-01: `input slot` / `return chute` settled — entonnoir / tapis roulant
+
+**Decided by:** native speakers (myrtarazona, resu-xunil, williamapc), forum topic 314
+("[French Review] Glossary"), posts #16-21 (https://forum.jiki.io/t/314/16 onward).
+**Terms affected:** `input slot`, `return chute`.
+
+Long-running open item (see the earlier `fente`/`toboggan` entries below). After
+`fente` was flagged as carrying an unwanted slang connotation and several office-form
+alternatives (_Champ de saisie_/_Zone de saisie_ for input, _canal de retour_/_rampe de
+retour_ for return) were floated without full agreement, myrtarazona pointed out (post #19)
+that none of these actually matched Jiki's own illustration: the input slot is drawn as a
+**funnel** and the return chute as a **conveyor belt**. She proposed _entonnoir_ (funnel) and
+_tapis roulant_ (conveyor belt) instead. resu-xunil agreed immediately and strongly ("These
+are the words I was looking for!", post #20); williamapc's later reply (post #21) also reads
+as onboard once the machine metaphor was made explicit. `glossary.md` updated to
+`entonnoir`/`tapis roulant`.
+
+### 2026-08-01: Typography examples now carry the non-breaking spaces they mandate
+
+**Decided by:** agent, applying the guide's own imperative rules over its own examples.
+**Terms affected:** none.
+
+The Typography section requires U+00A0 before `:`, `;`, `!` and `?` and immediately inside
+each guillemet, but the guide contained no U+00A0 anywhere: every French example was written
+with an ordinary space ("C'est parti !", "À toi de jouer !", "« comme ceci »", "la syntaxe
+suivante :", "Tu es prêt ?", "Alors, à quoi ça ressemble ?"). A guide is loaded into the
+prompt for every French item in every pass, so examples that contradict the rule teach the
+wrong spacing. The rule wins: those six examples now use real non-breaking spaces. The
+deliberately-wrong counter-examples ("la syntaxe suivante:", "Tu es prêt?") keep their
+ordinary spacing, because that is the point of them.
+
+Also, house style: an em dash in the "Decided by" line of the open-question entry below was
+replaced with a comma, per the no-em-dash rule in `CLAUDE.md` and `global/rules.md`.
+
+### 2026-08-01: `guide.md` trimmed to rules only (rationale moved here)
+
+**Decided by:** owner (iHiD), as a repo-hygiene pass, not a term decision. **Terms
+affected:** none changed; `CLI` gained a gender note moved out of the guide.
+
+`languages/fr/guide.md` had drifted into recording the conversations that produced its
+rules. It is loaded into the prompt for every French item in every pass, so the rationale,
+provenance and duplication were being paid for thousands of times. Every behavioural
+instruction was kept; what came out is recorded below. No rule was reworded into a
+different rule, and no glossary row was changed except the `CLI` addition noted below.
+
+**Why "tu", and the tutorial-culture research behind it.** The guide justified the
+tutoiement choice with a survey of French online tutorial culture: OpenClassrooms,
+Grafikart and Pierre Giraud, the established French tutorial platforms, all use "vous",
+and Jiki deliberately breaks from that convention. The models for Jiki's French voice are
+Duolingo's French app and spoken YouTube coding content, both of which use "tu" for a
+young, informal, modern audience. The tone target was described as "closer in spirit to a
+modern app like Duolingo than to a classic reference manual", which is `global/voice.md`'s
+audience principle rather than anything French-specific. The rule itself ("use tu, never
+vous") survives in the guide; all of this justification came out.
+
+**Audience section removed entirely.** It said readers are primarily in France with a
+secondary audience across other Francophone regions, which is the same fact as the guide's
+opening instruction to write general international French and default to France's form
+where usage splits. The rest of the section was the tutorial-culture research above.
+
+**Native-speaker sourcing for two rules, previously cited inline in the guide.**
+
+- **"Partir" takes "de" before a starting location** ("qui part **d'**en haut à gauche").
+  Native-speaker feedback on https://forum.jiki.io/t/803/2. Also recorded as a bullet in
+  `languages/fr/exercise/maze-solve-basic.md`.
+- **French doesn't "solve" a maze.** Confirmed by two native speakers on the same thread
+  (https://forum.jiki.io/t/803/2 and /4): the concrete phrasing **"faire sortir le
+  personnage du labyrinthe"** (make the character exit the maze), naming the character as
+  the one exiting rather than treating the maze itself as an object being solved, reads
+  best. The guide keeps the rule and the preferred phrasing; the attribution and thread
+  links live here.
+
+**"digital" → _numérique_** was attributed in the guide to Académie française guidance.
+The rule stays; the attribution is here.
+
+**The U+00A0 rendering check.** The guide justified keeping standard French spacing before
+`; ! ?` with a rendering argument: translated content is rendered by the front-end app and
+mirrored to i18n-site, both via `marked`, which passes U+00A0 through as an ordinary
+Unicode character with no mangling, so there is no rendering reason to drop the
+typography. That is research into the pipeline, not an instruction, and it is only worth
+revisiting if the renderer changes.
+
+**Why "qui" rather than "ceux qui" after a parenthetical gloss.** The parenthetical is an
+aside, not a new sentence, so the relative clause should read as if it were never
+interrupted. The rule stays in the guide; the reasoning is here. Original source: the
+reviewer note in `languages/fr/concept/using-functions.md`.
+
+**Removed as duplication (rule already lives elsewhere, nothing lost):**
+
+- The `tableau` collision watch (reserve bare _tableau_ for the array, always write
+  _tableau blanc_ in full) duplicated the `array / list` and `board / whiteboard` glossary
+  rows, which both state it.
+- The em-dash bullet restated `global/rules.md`'s house-style ban. Only the French-specific
+  half survives in the guide: a hyphen is not an em-dash substitute in running prose.
+- The whole **Worked examples** section. Its title/headline and call-to-action examples
+  restated `global/voice.md` (plus the sentence-case rule already in the guide's typography
+  section); its acronym examples restated the `CLI` and `API` glossary rows; its "natural
+  phrasing" examples restated the formality section's tu-register and "on" framing; and its
+  "common EN→FR pitfalls" re-ran three anglicisms (supporter, adresser, définitivement)
+  already listed in the anglicisms section verbatim.
+- Pointer sentences saying that the general audience profile is in `global/voice.md`, that
+  the formality section realizes its "modern, informal address" principle, and that
+  glossary terms are binding (`global/rules.md` says so).
+- Emphasis-only framing on the sentence-rhythm section ("the single biggest quality lever,
+  and where machine-produced translations characteristically fail"); the heading still says
+  "(critical)".
+
+**One term detail moved into the glossary:** the guide's acronym example carried the gender
+of `CLI` (_la CLI_). That is a term fact, not a rule, so it moved verbatim into the `CLI`
+row's Notes, matching how the `API` row records _une API_. No other row was touched.
+
+**Gaps noticed and deliberately not filled** (they need native-speaker input, not an
+agent's guess): reader gender agreement (the guide never says what to do when an adjective
+or past participle has to agree with the reader, e.g. "tu es prêt(e)"); articles and
+plurals for terms kept in English (_le framework_ / _les frameworks_, _une API_ is recorded
+but the others are not); which apostrophe character to type (U+0027 vs U+2019) in elisions;
+and the thousands separator in prose, where the decimal-comma rule has a counterpart the
+guide does not state.
+
 ### 2026-08-01: `input slot` (_fente_) flagged as having an unwanted slang connotation
 
-**Decided by:** not yet decided — open question. Flagged by native speakers (williamapc,
+**Decided by:** not yet decided, open question. Flagged by native speakers (williamapc,
 resu-xunil) on the pinned French glossary thread, forum topic 314, post #9
 (https://forum.jiki.io/t/314/9). **Terms affected:** `input slot`.
 

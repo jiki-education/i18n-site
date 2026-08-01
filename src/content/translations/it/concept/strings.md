@@ -7,7 +7,7 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/strings/source.md"
 en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "7a404b3"
+governance_sha: "dfefa8a"
 content_version: "38ba0568f755"
 published_at: "2026-08-01"
 ---

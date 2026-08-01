@@ -2,11 +2,11 @@
 lang: "zh-TW"
 name: "Traditional Chinese"
 family: "zh"
-stage: "setup"
-governance_sha: "25595e6"
-content_version: "6cedf480b860"
+stage: "refining"
+governance_sha: "5758b7d"
+content_version: "a076816c9a0a"
 published_at: "2026-08-01"
-term_count: 89
+term_count: 90
 category_id: 200
 forum_topic_id: 414
 video_player_forum_topic_id: 793
@@ -33,7 +33,7 @@ These are terms whose Chinese rendering is confirmed identical, character for ch
 | value | 值 | zh | Ordinary word. Identical in both scripts. |
 | dictionary | 字典 | zh | Identical in both scripts. |
 | element | 元素 | zh | Array element. Identical in both scripts. |
-| character (maze figure / mental-model "little person") | 角色 | zh | The on-screen figure the learner controls in maze exercises, and the same figure imagined "inside the computer" in the mental-model metaphor. Not 小人 (reads as "a petty/mean person" or an old humble first-person pronoun in Chinese, not a friendly figure). Distinct from the text-character sense (字符 in zh-CN's glossary), so no collision. Identical in both scripts. |
+| character (maze/on-screen figure) | 角色 | zh | The on-screen figure the learner controls in maze exercises. Not 小人 (reads as "a petty/mean person" or an old humble first-person pronoun in Chinese, not a friendly figure). Distinct from the text-character sense (字符 in zh-CN's glossary), so no collision. Identical in both scripts. For the separate "little person imagined inside the computer" mental-model sense, see each locale's own glossary — the two senses may take different words. |
 
 ### Tooling & engineering
 
@@ -125,6 +125,7 @@ These are terms where the Chinese is used in prose, so the "Use (zh-TW/en)" colu
 | interpreter | 翻譯員 | zh-TW | **The person, not the program.** Jiki *is* the interpreter ("your interpreter is Jiki... It's his job to interpret the code that you write"), so the word has to describe a person doing a job. Never use 直譯器 for Jiki: the 器 suffix names a device, so it cannot name a character the reader is being introduced to as a friend. |
 | instruction (given to Jiki) | 指令 | zh-TW | Everyday word for something you tell Jiki to do; not a formal or legal register. Used with 給 (給 Jiki 指令), or as what gets written on the board. |
 | mental model | 心智模型 | zh-TW | |
+| character (mental-model "little person") | 小傢伙 | zh-TW | The imagined figure "living inside the computer" in the mental-model metaphor on the using-functions page. A more general, affectionate word (like "little guy") than 角色, which reads as a game/screen character and fits the maze figure instead — see `../zh/glossary.md`. The two senses take different words in this locale. |
 | (programming) language | 程式語言 (full) / 語言 (once context is clear) | zh-TW | Use 語言 alone for "a language a computer understands" where 程式語言 has already been established in the same passage. |
 | variable | 變數 | zh-TW | |
 | assignment | 賦值 / 指定 | zh-TW | Noun. |
@@ -195,22 +196,31 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 
 ## Decision log
 
-### 2026-08-01: `character` (maze figure / mental-model "little person") is `角色`, moved to the family file
+### 2026-08-01: Confirmed translation engine — Gemini Pro 3.1
 
-**Decided by:** native speaker (cherylli), forum topic 821, posts #2, #4, and #5
-(https://forum.jiki.io/t/821/2, /4, /5). **Terms affected:** `character` (the maze figure,
-also used for the "little man inside the computer" mental-model metaphor — same figure,
-same word).
+**Decided by:** native speaker (cherylli), forum topic 902 ("[Traditional Chinese Review]
+Alternative translation model"), comparing three versions of concept/using-functions: the
+currently published version, a first alternative, and a second alternative. cherylli judged
+the second alternative more natural overall. iHiD confirmed (post #5) that version is
+Gemini Pro 3.1. `zh-TW`'s `translation_engine` is now set to `gemini` (`gemini-pro-3.1`) in
+`tracking.json`.
 
-小人 was in use with no glossary row backing it. cherylli flagged it as reading like "a
-petty/mean person" or an old-fashioned humble first-person pronoun, not a friendly figure.
-Her first instinct (小矮人, "dwarf") she wasn't confident in; offered 小人偶/小傢伙 as
-alternatives, she picked 小傢伙 — but then noticed (post #5) that zh-CN's published content
-already uses **角色** for this exact figure, consistently, with no negative connotation, and
-suggested zh-TW just match it. Confirmed: zh-TW's own maze translation already uses 角色
-everywhere except the one 小人 instance she flagged, so 角色 was already the de facto
-answer. Settled on 角色 rather than 小傢伙, and since it's character-identical across both
-scripts, moved to `../zh/glossary.md` (the family file) instead of staying zh-TW-only.
+### 2026-08-01: `character` (mental-model "little person") is `小傢伙`, separate from the maze figure
+
+**Decided by:** native speaker (cherylli), forum topic 821 posts #2/#4/#5 and topic 792 post
+#3 (https://forum.jiki.io/t/821/2, /4, /5; https://forum.jiki.io/t/792/3).
+**Terms affected:** `character` (the "little man inside the computer" mental-model image on
+the using-functions page).
+
+小人 was in use with no glossary row backing it, flagged as reading like "a petty/mean
+person", not a friendly figure. First settled on 角色 for both this sense and the maze
+figure (since zh-CN's published content used 角色 for both, and it's character-identical
+across scripts — see `../zh/glossary.md`), moved to the family file. cherylli then
+reconsidered specifically for this sense (topic 792 post 3): 角色 reads as a game/screen
+character, which fits the maze but is a slightly wrong register for the more general,
+imagined "little person" of the mental model; she prefers 小傢伙 (a more general,
+affectionate word, like "little guy") here. Split back out: this locale's own row now
+covers the mental-model sense only; the maze/on-screen sense stays 角色 in the family file.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

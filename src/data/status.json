@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "bf378b2",
+  "governance_sha": "5758b7d",
   "approved": 31,
   "disapproved": 0,
   "total": 176,
@@ -232,7 +232,7 @@
     {
       "lang": "zh-TW",
       "name": "Traditional Chinese",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-zh-tw",
       "approved": 3,
       "disapproved": 0,

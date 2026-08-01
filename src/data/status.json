@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "16ec532",
+  "governance_sha": "36e0767",
   "approved": 43,
   "disapproved": 1,
-  "total": 194,
+  "total": 195,
   "languages": [
     {
       "lang": "el",
@@ -68,7 +68,7 @@
       "category_slug": "i18n-uk",
       "approved": 4,
       "disapproved": 0,
-      "total": 13,
+      "total": 14,
       "items": [
         {
           "key": "glossary",
@@ -132,6 +132,11 @@
         },
         {
           "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/weather-symbols",
           "topic_id": null,
           "status": "pending"
         }

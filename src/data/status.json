@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "2fbebc1",
+  "governance_sha": "0542cec",
   "approved": 24,
   "disapproved": 0,
-  "total": 142,
+  "total": 146,
   "languages": [
     {
       "lang": "el",
@@ -690,6 +690,37 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 798,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "he",
+      "name": "Hebrew",
+      "stage": "setup",
+      "category_slug": "i18n-he",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 883,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": null,
           "status": "pending"
         }
       ]

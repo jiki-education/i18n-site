@@ -3,9 +3,9 @@ lang: "sv"
 name: "Swedish"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "c0ab46e6b20b"
-published_at: "2026-07-31"
+governance_sha: "2195b8b"
+content_version: "b08339a204a0"
+published_at: "2026-08-01"
 term_count: 95
 category_id: 365
 forum_topic_id: 828
@@ -62,7 +62,7 @@ These are terms where the Swedish is used in prose, so the "Use (sv/en)" column 
 | brackets (the two after a function name) | parenteser | sv | _de två parenteserna_ for the `()` pair written after a function name. Which bracket type to name, and when, is in the Brackets section below. |
 | NOT operator / logical negation | negation | sv | _negation_ for the concept, _inte_ when reading the operator aloud. The `!` keyword stays English. |
 | bang (the `!` character) | utropstecken | sv | Swedish has no equivalent of the English slang "bang". Render the source's aside as a remark about what the sign is called, never as a loan. |
-| ampersand (`&`) | et-tecken | sv | On `<define>`, show the glyph itself (`&`) in the bracket, not the English word "ampersand". |
+| ampersand (`&`) | och-tecken | sv | On `<define>`, show the glyph itself (`&`) in the bracket, not the English word "ampersand". Not `et-tecken`, which a native speaker (developer) said they'd never seen or used. |
 | bar / vertical bar (`\|`) | lodstreck | sv | Not _vertikalstreck_ (dated). The `\|\|` keyword stays English. On `<define>`, show the glyph (`\|`) in the bracket, not the English word "bar". |
 | string template | strängmall | sv | The prose concept. The JS construct's own name (_template literal_ / _template string_) stays English; see "Keep in English". |
 | placeholder | platshållare | sv | |
@@ -174,6 +174,16 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-01: `ampersand` is `och-tecken`, not `et-tecken`
+
+**Decided by:** native speaker (estyrke, a working developer) on the pinned Swedish
+glossary thread, forum topic 828, post #6 (https://forum.jiki.io/t/828/6).
+**Terms affected:** `ampersand`.
+
+`et-tecken` was an unconfirmed agent draft. estyrke said they'd never seen or used it and
+proposed `och-tecken` instead, which is what they use themselves. No prior human decision
+existed on this row, so the correction is applied directly.
 
 ### 2026-07-31: Language bootstrapped
 

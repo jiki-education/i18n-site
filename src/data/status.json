@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "c49aa75",
+  "governance_sha": "7218ef4",
   "approved": 29,
   "disapproved": 0,
-  "total": 172,
+  "total": 176,
   "languages": [
     {
       "lang": "el",
@@ -671,7 +671,7 @@
       "category_slug": "i18n-nl",
       "approved": 0,
       "disapproved": 0,
-      "total": 5,
+      "total": 9,
       "items": [
         {
           "key": "glossary",
@@ -695,6 +695,26 @@
         },
         {
           "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
           "topic_id": null,
           "status": "pending"
         }

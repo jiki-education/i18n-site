@@ -7,7 +7,7 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/maze-solve-basic"
 en_md5: "a12c370c8d1532022a89fdd74166be21"
-governance_sha: "16ec532"
+governance_sha: "77fba11"
 content_version: "9bcd62aab1d2"
 published_at: "2026-08-01"
 forum_topic_id: 811

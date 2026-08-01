@@ -3,9 +3,9 @@ lang: "es-ES"
 name: "European Spanish"
 family: "es"
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "97c378c9138a"
-published_at: "2026-07-31"
+governance_sha: "2b9f5eb"
+content_version: "63e4b591a49c"
+published_at: "2026-08-01"
 term_count: 60
 category_id: 75
 forum_topic_id: 310
@@ -67,7 +67,7 @@ These are terms where the Spanish is used in prose, so the "Use (es/en)" column 
 | code block | bloque de código | es | Deliberately distinct from _ámbito_ (scope). |
 | loop | bucle | es | Gender: _el bucle_. Not _ciclo_ (a common alternative not used here). |
 | for loop | bucle `for` | es | Keep `for` in code font (real keyword) + _bucle_. (The curriculum currently has no `while` loops, only `repeat`, `for`, `for-of`, all following this same pattern.) |
-| modulo / remainder operator | resto (de la división) | es | The `%` operator; _módulo_ names the operator, _resto_ names the result. |
+| modulo / remainder operator | residuo (de la división) | es | The `%` operator; _módulo_ names the operator, _residuo_ names the result. Not _resto_, which reads as a subtraction result in a maths context. |
 | toggle | alternar | es | Verb; _conmutar_ also correct but heavier. |
 
 ### Tooling & engineering

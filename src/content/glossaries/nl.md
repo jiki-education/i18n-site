@@ -2,8 +2,8 @@
 lang: "nl"
 name: "Dutch"
 family: null
-stage: "setup"
-governance_sha: "6437a48"
+stage: "refining"
+governance_sha: "2a2cf12"
 content_version: "20ec19100f49"
 published_at: "2026-08-01"
 term_count: 35

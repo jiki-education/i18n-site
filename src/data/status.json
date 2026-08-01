@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "c45c34b",
-  "approved": 30,
+  "governance_sha": "bf378b2",
+  "approved": 31,
   "disapproved": 0,
   "total": 176,
   "languages": [
@@ -230,6 +230,37 @@
       ]
     },
     {
+      "lang": "zh-TW",
+      "name": "Traditional Chinese",
+      "stage": "setup",
+      "category_slug": "i18n-zh-tw",
+      "approved": 3,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 414,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 792,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 793,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 821,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "fr",
       "name": "French",
       "stage": "refining",
@@ -349,37 +380,6 @@
           "key": "exercise/maze-solve-basic",
           "topic_id": 811,
           "status": "approved"
-        }
-      ]
-    },
-    {
-      "lang": "zh-TW",
-      "name": "Traditional Chinese",
-      "stage": "setup",
-      "category_slug": "i18n-zh-tw",
-      "approved": 2,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 414,
-          "status": "approved"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 792,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 793,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 821,
-          "status": "pending"
         }
       ]
     },

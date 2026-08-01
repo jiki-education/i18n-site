@@ -3,8 +3,8 @@ lang: "fr"
 name: "French"
 family: null
 stage: "setup"
-governance_sha: "fcae9e1"
-content_version: "22114c2cec07"
+governance_sha: "9be2e3c"
+content_version: "9d7fe10ade58"
 published_at: "2026-08-01"
 term_count: 67
 category_id: 72
@@ -124,7 +124,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 |-------------------|-------------------|-------|
 | box (value container) | boîte | Gender: _la boîte_. |
 | chain (array metaphor) | chaîne | Link = _maillon_. Works cleanly because _string_ stays English above (its literal sense, _chaîne de caractères_, doesn't collide in prose). |
-| input slot | fente | Gender: _la fente_. |
+| input slot | fente | **Under reconsideration**: flagged by native speakers as carrying an unwanted slang/anatomical connotation in informal French (see `glossary-notes.md` 2026-08-01). Do not propagate to new content until replaced. Gender: _la fente_. |
 | return chute | toboggan | Gender: _le toboggan_. Alternative _goulotte_ (a vending-machine delivery chute) is more mechanically precise if a future pass wants a stricter machine image. |
 | machine (function metaphor) | machine | A function modelled as a machine, with an input slot and a return chute. Gender: _la machine_. |
 | crank (machine crank) | manivelle | The handle Jiki turns to start a machine: _tourner la manivelle_. Gender: _la manivelle_. |
@@ -148,6 +148,19 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-01: `input slot` (_fente_) flagged as having an unwanted slang connotation
+
+**Decided by:** not yet decided — open question. Flagged by native speakers (williamapc,
+resu-xunil) on the pinned French glossary thread, forum topic 314, post #9
+(https://forum.jiki.io/t/314/9). **Terms affected:** `input slot`.
+
+_fente_ was confirmed earlier today (see the entry below) on the strength of a different
+review, but a fresh point supersedes that: in informal/slang French, _fente_ can carry a
+sexual/anatomical connotation, which is not acceptable for a beginner-facing course. **Do
+not treat _fente_ as settled** despite the "confirmed" wording below; asked the reviewers
+for a replacement (candidates floated: _fente à monnaie_, _ouverture_) rather than picking
+one ourselves, since assessing slang risk needs a native ear, not a guess.
 
 ### 2026-08-01: Native-speaker review of the term list
 

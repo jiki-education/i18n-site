@@ -222,6 +222,18 @@
   text-align: right;
 }
 
+/*
+ * Code stays LTR inside RTL prose. Without `direction: ltr`, UAX #9 rule N0 has
+ * no strong character inside a pair like `move()` to resolve against, so the
+ * brackets fall through to the surrounding RTL direction and render as `()move`.
+ * `unicode-bidi: isolate` alone does not fix it; both declarations are needed.
+ */
+[dir="rtl"] :is(code, pre) {
+  direction: ltr;
+  unicode-bidi: isolate;
+  text-align: left;
+}
+
 /**
  * A published glossary, rendered as the Markdown it is written in (see the
  * glossaries collection in src/content.config.ts). It is almost entirely pipe

@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "177c689",
-  "approved": 32,
+  "governance_sha": "3a1371c",
+  "approved": 35,
   "disapproved": 0,
-  "total": 176,
+  "total": 178,
   "languages": [
     {
       "lang": "el",
@@ -236,7 +236,7 @@
       "category_slug": "i18n-zh-tw",
       "approved": 3,
       "disapproved": 0,
-      "total": 4,
+      "total": 6,
       "items": [
         {
           "key": "glossary",
@@ -256,6 +256,72 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 821,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "pt-pt",
+      "name": "European Portuguese",
+      "stage": "refining",
+      "category_slug": "i18n-pt-pt",
+      "approved": 2,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 341,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 774,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 775,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 822,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
           "status": "pending"
         }
       ]
@@ -373,6 +439,62 @@
       ]
     },
     {
+      "lang": "sr",
+      "name": "Serbian",
+      "stage": "refining",
+      "category_slug": "i18n-sr",
+      "approved": 2,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 402,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 778,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 779,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 814,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "hu",
       "name": "Hungarian",
       "stage": "setup",
@@ -440,46 +562,36 @@
       ]
     },
     {
-      "lang": "pt-pt",
-      "name": "European Portuguese",
+      "lang": "nl",
+      "name": "Dutch",
       "stage": "refining",
-      "category_slug": "i18n-pt-pt",
+      "category_slug": "i18n-nl",
       "approved": 1,
       "disapproved": 0,
       "total": 9,
       "items": [
         {
           "key": "glossary",
-          "topic_id": 341,
-          "status": "approved"
+          "topic_id": 339,
+          "status": "pending"
         },
         {
           "key": "concept/using-functions",
-          "topic_id": 774,
+          "topic_id": 768,
           "status": "pending"
         },
         {
           "key": "video-player",
-          "topic_id": 775,
-          "status": "pending"
+          "topic_id": 769,
+          "status": "approved"
         },
         {
           "key": "exercise/maze-solve-basic",
-          "topic_id": 822,
+          "topic_id": 810,
           "status": "pending"
         },
         {
           "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/if",
           "topic_id": null,
           "status": "pending"
         },
@@ -489,7 +601,17 @@
           "status": "pending"
         },
         {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
           "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
           "topic_id": null,
           "status": "pending"
         }
@@ -552,62 +674,6 @@
       ]
     },
     {
-      "lang": "sr",
-      "name": "Serbian",
-      "stage": "refining",
-      "category_slug": "i18n-sr",
-      "approved": 1,
-      "disapproved": 0,
-      "total": 9,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 402,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 778,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 779,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 814,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
       "lang": "es-419",
       "name": "Latin American Spanish",
       "stage": "setup",
@@ -659,62 +725,6 @@
         },
         {
           "key": "exercise/maze-solve-basic",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "nl",
-      "name": "Dutch",
-      "stage": "refining",
-      "category_slug": "i18n-nl",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 9,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 339,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 768,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 769,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 810,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
           "topic_id": null,
           "status": "pending"
         }

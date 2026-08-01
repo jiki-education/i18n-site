@@ -3,8 +3,8 @@ lang: "ko"
 name: "Korean"
 family: null
 stage: "setup"
-governance_sha: "e131080"
-content_version: "535711ead0c5"
+governance_sha: "f7167c4"
+content_version: "4d3652a92872"
 published_at: "2026-08-01"
 term_count: 51
 category_id: 236
@@ -56,7 +56,7 @@ These are terms where Korean uses a Hangul term (native Sino-Korean coinage or a
 
 | English | Korean | Use (ko/en) | Notes |
 |---------|--------|-------------|-------|
-| interpreter | 인터프리터 | ko | **The one who interprets: a person doing a job, not a program.** On concept pages Jiki *is* the interpreter ("이 강의에서 인터프리터 역할은 Jiki가 맡아요"; "이 강의를 안내해 줄 친절한 인터프리터, Jiki"). Never 해석기. Never 통역사. Where a bare apposition reads oddly, 인터프리터 역할 ("the interpreter role") carries it. |
+| interpreter | 인터프리터 | ko | **The one who interprets: a person doing a job, not a program.** On concept pages Jiki *is* the interpreter ("이 강의에서 인터프리터 역할은 Jiki가 맡아요"; "이 강의를 안내해 줄 친절한 인터프리터, Jiki"). Never 해석기. Never 통역사. Where a bare apposition reads oddly, 인터프리터 역할 ("the interpreter role") carries it. **On first appearance**, explain it via the translator analogy before using the bare term, e.g. "우리가 작성한 코드를 컴퓨터가 알아듣도록 옮겨 주는 번역기 같은 프로그램을 인터프리터라고 해요."; a complete beginner will not otherwise know what 인터프리터 means, and 번역기 alone (without naming 인터프리터) risks being mistaken for the actual technical term. |
 | instruction (given to Jiki) | 지시 | ko | Everyday word: "알맞은 지시를 내려요". Use 지시 사항 for the instructions taken as a set ("지시 사항을 칠판에 적어요"). Not 명령, which is a command from a superior and is also the CS "command" term. |
 | mental model | 머릿속 모형 | ko | Ordinary Korean for "the model you picture in your head", and it reads as one on first sight. Not 멘탈 모델: a Korean reader reported having to stop and decode it. Note 모형 (a physical model of a thing), not 모델. Prose may still describe the thing plainly where that reads better ("제 머릿속에는..."), but the named term is 머릿속 모형. |
 | (programming) language | (프로그래밍) 언어 | ko | Covers both senses: "프로그래밍 언어" and "컴퓨터가 알아듣는 언어". Never 랭귀지. |
@@ -119,6 +119,20 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-01: `interpreter` (인터프리터) needs a first-use explanation
+
+**Decided by:** native speaker (Dojany) on the pinned Korean glossary thread, forum topic
+479, post #7 (https://forum.jiki.io/t/479/7). **Terms affected:** `interpreter`.
+
+인터프리터 itself is unchanged and confirmed as the right term (standard in Korean
+programming education and developer communities). Dojany's point is narrower: a complete
+beginner won't know what it means on sight, since it's a transliteration rather than an
+ordinary Korean word. Tested this on a non-technical reader (his sister), who asked what an
+interpreter was. Fix: explain it via the translator analogy on first appearance ("우리가
+작성한 코드를... 인터프리터라고 해요"), then use 인터프리터 bare afterwards. Not 번역기 alone without
+naming 인터프리터, which would risk being read as the actual technical term rather than an
+explanatory analogy.
 
 ### 2026-08-01: `warehouse` is 작업실, not 창고
 

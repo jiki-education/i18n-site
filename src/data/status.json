@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "602fb01",
+  "governance_sha": "62411cd",
   "approved": 65,
   "disapproved": 1,
-  "total": 195,
+  "total": 196,
   "languages": [
     {
       "lang": "uk",
@@ -183,12 +183,12 @@
         },
         {
           "key": "exercise/rainbow",
-          "topic_id": null,
+          "topic_id": 951,
           "status": "pending"
         },
         {
           "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
+          "topic_id": 949,
           "status": "pending"
         },
         {
@@ -239,7 +239,7 @@
         },
         {
           "key": "exercise/rainbow",
-          "topic_id": null,
+          "topic_id": 952,
           "status": "pending"
         },
         {
@@ -249,7 +249,7 @@
         },
         {
           "key": "concept/repeat",
-          "topic_id": null,
+          "topic_id": 950,
           "status": "pending"
         }
       ]
@@ -356,7 +356,7 @@
         },
         {
           "key": "concept/variables",
-          "topic_id": null,
+          "topic_id": 941,
           "status": "pending"
         },
         {
@@ -852,6 +852,37 @@
       ]
     },
     {
+      "lang": "sv",
+      "name": "Swedish",
+      "stage": "setup",
+      "category_slug": "i18n-sv",
+      "approved": 1,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 828,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 831,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 843,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 879,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "tr",
       "name": "Turkish",
       "stage": "setup",
@@ -878,32 +909,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 816,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "sv",
-      "name": "Swedish",
-      "stage": "setup",
-      "category_slug": "i18n-sv",
-      "approved": 1,
-      "disapproved": 0,
-      "total": 3,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 828,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 843,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": null,
           "status": "pending"
         }
       ]

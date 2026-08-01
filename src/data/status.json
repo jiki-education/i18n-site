@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "29b07a3",
-  "approved": 25,
+  "governance_sha": "a5a5ec0",
+  "approved": 26,
   "disapproved": 0,
   "total": 146,
   "languages": [
@@ -261,6 +261,42 @@
       ]
     },
     {
+      "lang": "hu",
+      "name": "Hungarian",
+      "stage": "setup",
+      "category_slug": "i18n-hu",
+      "approved": 1,
+      "disapproved": 0,
+      "total": 5,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 289,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 758,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 759,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 805,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "pt-pt",
       "name": "European Portuguese",
       "stage": "setup",
@@ -467,42 +503,6 @@
         },
         {
           "key": "exercise/maze-solve-basic",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "hu",
-      "name": "Hungarian",
-      "stage": "setup",
-      "category_slug": "i18n-hu",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 5,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 289,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 758,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 759,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 805,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables",
           "topic_id": null,
           "status": "pending"
         }

@@ -2,11 +2,11 @@
 lang: "hu"
 name: "Hungarian"
 family: null
-stage: "setup"
-governance_sha: "8e3de87"
-content_version: "eeded0175136"
-published_at: "2026-07-31"
-term_count: 79
+stage: "refining"
+governance_sha: "5aee54f"
+content_version: "4c3df5d7d959"
+published_at: "2026-08-01"
+term_count: 84
 category_id: 68
 forum_topic_id: 289
 video_player_forum_topic_id: 759
@@ -25,6 +25,19 @@ decision log (`glossary-notes.md`).
 | tech / tech industry | tech-ipar | hu | Not _technológiai ipar_. |
 | mental model | gondolati modell | hu | Not _mentális modell_. |
 | dopamine hit | dopaminlöket | hu | Informal register. Not _dopaminroham_. |
+| PPP pricing | helyi vásárlóerőhöz igazított árazás | hu | Explain the acronym in Hungarian; never leave "PPP" bare or transliterate it. |
+| Q&A | kérdés-felelet / kérdések és válaszok | hu | Explain in Hungarian; do not leave "Q&A" bare. |
+
+## Product and strand names
+
+Owner decision: descriptive strand names are translated; coined or branded names stay
+English.
+
+| English | Hungarian | Use (hu/en) | Notes |
+|---------|-----------|-------------|-------|
+| Learn to Code (strand) | Tanulj meg programozni | hu | Descriptive strand name, so it is translated. |
+| Learn to Build (strand) | Tanulj fejleszteni | hu | Descriptive strand name, so it is translated. |
+| Ask Jiki, Deep Dive, Jiki Premium, Bootcamp, the game names | (unchanged) | en | Coined and branded names stay English. |
 
 ## Localize (use the Hungarian term)
 
@@ -62,7 +75,7 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 | function | függvény | hu | The *keyword* `function` in code stays English; the concept in prose is _függvény_. |
 | to define (a function) | definiál / létrehoz | hu | |
 | brackets (the two after a function name) | zárójel | hu | _a két zárójel_ for the `()` pair written after a function name. Which bracket type to name, and when, is in the Brackets section below. |
-| to return (a value) | visszaad | hu | „30-at ad vissza." The bracketed `<define>` gloss word must be _return_, never _returning_. |
+| to return (a value) | visszaad | hu | „30-at ad vissza.” The bracketed `<define>` gloss word must be _return_, never _returning_. |
 | parameter | paraméter | hu | The declaration-site name. |
 | argument | argumentum | hu | The call-site value; _argumentum_ over _paraméter_ when the call-site value is meant. |
 | initializer | kezdőérték | hu | Not _inicializáló_. |
@@ -83,7 +96,7 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 | English | Hungarian | Use (hu/en) | Notes |
 |---------|-----------|-------------|-------|
 | nested | egymásba ágyazott | hu | e.g. _egymásba ágyazott ciklus_ = nested loop. When glossed, gloss the full term (_nested loop_), not the bare adjective _nested_. |
-| iteration | iteráció | hu | Verb: _iterál_; „végigmegy rajta" also natural. |
+| iteration | iteráció | hu | Verb: _iterál_; „végigmegy rajta” also natural. |
 | loop | ciklus | hu | _ciklus_, not _hurok_. |
 | increment (for-loop) | léptetés | hu | |
 
@@ -92,7 +105,7 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 | English | Hungarian | Use (hu/en) | Notes |
 |---------|-----------|-------------|-------|
 | auth (authentication / authorization) | hitelesítés | hu | Covers both _autentikáció_ and _autorizáció_. |
-| deploy (verb: to deploy) | élesít | hu | „Élesítsd" for imperative; also „élesítés" as noun. Not „telepítsd ki". |
+| deploy (verb: to deploy) | élesít | hu | „Élesítsd” for imperative; also „élesítés” as noun. Not „telepítsd ki”. |
 | framework | keretrendszer | hu | Use _keretrendszer_ exclusively; never revert to _framework_. |
 | component | komponens | hu | No gloss needed. Use _komponens_, not _összetevő_. |
 | tool | eszköz | hu | Use it in prose. The mass noun _tooling_ stays English; see "Keep in English". |
@@ -164,6 +177,84 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-01: Closing quotation mark corrected, quotation rule written down
+
+**Decided by:** agent. Every quoted Hungarian example in `guide.md` opened with `„`
+(U+201E) and closed with an ASCII `"`, which is not the Hungarian closing mark. All 40
+closings in `guide.md` and 5 in `glossary.md` were changed to `”` (U+201D), and the
+Hungarian examples in the Formality and Grammar sections, which had used ASCII on both
+sides, were moved onto the same `„…”` pair. No wording, no decision and no glossary row
+changed; only the glyphs did. ASCII `"` is left in place where it delimits English text in
+this English-language guide (English source sentences, glosses, section names).
+
+A **Quotation marks** bullet was added to `## Style notes` stating the `„…”` pair and
+naming `»…«` as the inner pair for a quote inside a quote. This closes the gap recorded
+under the pruning entry below, which other guides already depended on: `languages/es-ES/
+guide.md` cites "the Hungarian `„ "` pattern" as its authority, and so was citing the
+broken pair.
+
+The outer `„…”` pair is standard Hungarian orthography. **The nested `»…«` pair was
+inferred, not confirmed by a native speaker**, and is worth checking on the forum; it is
+rare enough in Jiki content that nothing currently turns on it.
+
+### 2026-08-01: Guide pruned to rules only
+
+**Decided by:** agent. `guide.md` is loaded into the prompt for every Hungarian item in
+every pass, so anything in it that is not a rule a translator acts on is paid for every
+time. No behavioural instruction was dropped; what left the guide either moved to
+`glossary.md` verbatim or is recorded here.
+
+**Moved to `glossary.md` verbatim.** The "Product and strand names" section (an owner
+decision: descriptive strand names translated, `Tanulj meg programozni` /
+`Tanulj fejleszteni`; coined and branded names, Ask Jiki, Deep Dive, Jiki Premium,
+Bootcamp and the game names, kept English) is now its own glossary section, since the
+renderings are term mappings. The two acronym renderings from the guide's "Worked
+examples" tail, `PPP pricing` → _helyi vásárlóerőhöz igazított árazás_ and `Q&A` →
+_kérdés-felelet / kérdések és válaszok_, are now rows under "Core decisions".
+
+**Cut as restatements of `global/voice.md`.** The "Audience specifics" section (it said
+only that readers are in Hungary and then pointed at `voice.md`); the "Calls to action"
+block (`Kezdd el most!` / `Indulj el most!` / `Regisztrálj most!` / `Próbáld ki!` /
+`Tesztelj most ingyen!` versus the vague `Csatlakozz hozzánk!`), which was `voice.md`'s own
+"Start now!" vs "Join us!" example in Hungarian; and the "explain acronyms, don't
+transliterate" framing around the two rows moved above.
+
+**Cut as restatements of rules stated elsewhere in the guide.** The "Anti-patterns"
+subsection: its four bullets each restated a rule from the section immediately above it.
+The two that were not otherwise recoverable (a clause that starts with the verb, and a
+filler verb sitting in focus) are now folded into the focus rule itself. The "Natural
+phrasing" block, whose three examples restated Formality and Grammar: `Tanuljuk meg a
+Reactet`, `Először telepítsd a Node.js-t` (not `Telepítse a Node.js-t`) and `Próbáld ki
+ezt a kódot` (not `Futtassa le ezt a kódot`) are kept, moved next to the rules they
+illustrate.
+
+**Cut as one-off rewrites rather than rules.** Two of the three "Common EN→HU pitfalls":
+`nullától a magabiztos kezdőig` → `a nulláról kezdve, egészen a magabiztos tudásig`, and
+`falba ütköztek, mert hiányoztak az alapvető készségeik` → `az alapvető készségek hiánya
+miatt akadtak el`. Both were rewrites of one specific marketing sentence, not a general
+pattern; recorded here in case that copy is retranslated. The third, the `Keményen
+dolgoztunk` calque, is a general English-interference trap and stayed in the guide. One
+row was also dropped from the focus-position before/after table (`Ez utóbbi kicsit más` →
+`Ez viszont kicsit másképp működik`), as the remaining three rows teach the same point.
+
+**Consolidated, not changed.** The suffixing of Latin-script code identifiers, names and
+numerals was stated in three places (the agglutination bullet, the number-agreement
+bullet, and the em-dash style note). It is now one Grammar bullet holding all of the
+previous examples (`repeat`-et, Node.js-t, 30-at, 12-t, a Reacttel, template stringben,
+a Reactet). No new criterion was invented for when the hyphen is used; see the gap below.
+
+**Known gaps, deliberately not filled** (adding rules was out of scope for this pass):
+
+- The guide never states a quotation-mark rule, though every example in it, and the
+  Hungarian translations, consistently use `„ "`. Other guides already cite this as "the
+  Hungarian `„ "` pattern" (`languages/es-ES/guide.md`), so the convention is real but
+  unwritten here. **Closed the same day; see the entry below.**
+- The suffixing rule says a hyphen attaches suffixes to code spans, names and numerals,
+  and shows unhyphenated counter-examples (`a Reacttel`, `template stringben`), but never
+  says which stems take which form, nor which suffix vowel an English stem takes.
+  `global/translating.md` names wrong suffixing of English identifiers as a tidy-pass fix,
+  so this is the gap most worth closing.
 
 ### 2026-07-31: Glossary pruned of ordinary vocabulary
 

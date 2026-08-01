@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "738c30f",
+  "governance_sha": "5aee54f",
   "approved": 43,
   "disapproved": 1,
   "total": 178,
@@ -441,7 +441,7 @@
     {
       "lang": "hu",
       "name": "Hungarian",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-hu",
       "approved": 3,
       "disapproved": 0,

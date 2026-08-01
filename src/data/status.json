@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "339c026",
+  "governance_sha": "288846f",
   "approved": 29,
   "disapproved": 0,
-  "total": 171,
+  "total": 172,
   "languages": [
     {
       "lang": "el",
@@ -665,6 +665,42 @@
       ]
     },
     {
+      "lang": "nl",
+      "name": "Dutch",
+      "stage": "refining",
+      "category_slug": "i18n-nl",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 5,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 339,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 768,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 769,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 810,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "ar",
       "name": "Arabic",
       "stage": "setup",
@@ -753,37 +789,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 797,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "nl",
-      "name": "Dutch",
-      "stage": "refining",
-      "category_slug": "i18n-nl",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 339,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 768,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 769,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 810,
           "status": "pending"
         }
       ]

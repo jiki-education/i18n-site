@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "f2c4d2c",
+  "governance_sha": "8dd5ea7",
   "approved": 29,
   "disapproved": 0,
-  "total": 153,
+  "total": 154,
   "languages": [
     {
       "lang": "el",
@@ -334,7 +334,7 @@
       "category_slug": "i18n-fr",
       "approved": 1,
       "disapproved": 0,
-      "total": 8,
+      "total": 9,
       "items": [
         {
           "key": "glossary",
@@ -373,6 +373,11 @@
         },
         {
           "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
           "topic_id": null,
           "status": "pending"
         }

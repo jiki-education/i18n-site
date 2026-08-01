@@ -1,10 +1,91 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "77fba11",
-  "approved": 41,
+  "governance_sha": "2a62ca1",
+  "approved": 49,
   "disapproved": 1,
   "total": 195,
   "languages": [
+    {
+      "lang": "uk",
+      "name": "Ukrainian",
+      "stage": "refining",
+      "category_slug": "i18n-uk",
+      "approved": 9,
+      "disapproved": 0,
+      "total": 14,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 308,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 784,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 785,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 817,
+          "status": "approved"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": 880,
+          "status": "approved"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": 880,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": 880,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": 880,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": 880,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
     {
       "lang": "el",
       "name": "Greek",
@@ -62,32 +143,32 @@
       ]
     },
     {
-      "lang": "uk",
-      "name": "Ukrainian",
+      "lang": "fr",
+      "name": "French",
       "stage": "refining",
-      "category_slug": "i18n-uk",
-      "approved": 4,
+      "category_slug": "i18n-fr",
+      "approved": 5,
       "disapproved": 0,
-      "total": 14,
+      "total": 9,
       "items": [
         {
           "key": "glossary",
-          "topic_id": 308,
-          "status": "approved"
+          "topic_id": 314,
+          "status": "pending"
         },
         {
           "key": "concept/using-functions",
-          "topic_id": 784,
+          "topic_id": 754,
           "status": "approved"
         },
         {
           "key": "video-player",
-          "topic_id": 785,
+          "topic_id": 755,
           "status": "approved"
         },
         {
           "key": "exercise/maze-solve-basic",
-          "topic_id": 817,
+          "topic_id": 803,
           "status": "approved"
         },
         {
@@ -96,14 +177,9 @@
           "status": "pending"
         },
         {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "concept/variables",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 946,
+          "status": "approved"
         },
         {
           "key": "exercise/rainbow",
@@ -116,27 +192,63 @@
           "status": "pending"
         },
         {
-          "key": "exercise/two-fer",
+          "key": "concept/repeat",
+          "topic_id": 943,
+          "status": "approved"
+        }
+      ]
+    },
+    {
+      "lang": "it",
+      "name": "Italian",
+      "stage": "refining",
+      "category_slug": "i18n-it",
+      "approved": 4,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 319,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 762,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 763,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 807,
+          "status": "approved"
+        },
+        {
+          "key": "concept/if",
           "topic_id": null,
           "status": "pending"
         },
         {
-          "key": "concept/strings",
+          "key": "exercise/rock-paper-scissors",
           "topic_id": null,
           "status": "pending"
         },
         {
-          "key": "concept/arrays",
+          "key": "exercise/rainbow",
           "topic_id": null,
           "status": "pending"
         },
         {
-          "key": "exercise/digital-clock",
-          "topic_id": null,
-          "status": "pending"
+          "key": "concept/variables",
+          "topic_id": 947,
+          "status": "approved"
         },
         {
-          "key": "exercise/weather-symbols",
+          "key": "concept/repeat",
           "topic_id": null,
           "status": "pending"
         }
@@ -311,62 +423,6 @@
       ]
     },
     {
-      "lang": "fr",
-      "name": "French",
-      "stage": "refining",
-      "category_slug": "i18n-fr",
-      "approved": 3,
-      "disapproved": 0,
-      "total": 9,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 314,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 754,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 755,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 803,
-          "status": "approved"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
       "lang": "hu",
       "name": "Hungarian",
       "stage": "refining",
@@ -412,62 +468,6 @@
         },
         {
           "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "it",
-      "name": "Italian",
-      "stage": "refining",
-      "category_slug": "i18n-it",
-      "approved": 3,
-      "disapproved": 0,
-      "total": 9,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 319,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 762,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 763,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 807,
-          "status": "approved"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables",
           "topic_id": null,
           "status": "pending"
         },

@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "3a1371c",
+  "governance_sha": "951f9da",
   "approved": 35,
   "disapproved": 0,
   "total": 178,
@@ -399,7 +399,7 @@
         {
           "key": "concept/using-functions",
           "topic_id": 752,
-          "status": "approved"
+          "status": "pending"
         },
         {
           "key": "video-player",
@@ -409,7 +409,7 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 802,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/rainbow",

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "62411cd",
-  "approved": 65,
+  "governance_sha": "332733d",
+  "approved": 69,
   "disapproved": 1,
   "total": 196,
   "languages": [
@@ -87,6 +87,118 @@
       ]
     },
     {
+      "lang": "fr",
+      "name": "French",
+      "stage": "refining",
+      "category_slug": "i18n-fr",
+      "approved": 8,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 314,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 754,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 755,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 803,
+          "status": "approved"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": 926,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": 946,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": 951,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": 949,
+          "status": "approved"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": 943,
+          "status": "approved"
+        }
+      ]
+    },
+    {
+      "lang": "it",
+      "name": "Italian",
+      "stage": "refining",
+      "category_slug": "i18n-it",
+      "approved": 8,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 319,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 762,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 763,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 807,
+          "status": "approved"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": 948,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": 953,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": 952,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": 947,
+          "status": "approved"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": 950,
+          "status": "approved"
+        }
+      ]
+    },
+    {
       "lang": "el",
       "name": "Greek",
       "stage": "refining",
@@ -139,118 +251,6 @@
           "key": "exercise/rainbow",
           "topic_id": 862,
           "status": "approved"
-        }
-      ]
-    },
-    {
-      "lang": "fr",
-      "name": "French",
-      "stage": "refining",
-      "category_slug": "i18n-fr",
-      "approved": 6,
-      "disapproved": 0,
-      "total": 9,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 314,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 754,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 755,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 803,
-          "status": "approved"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": 926,
-          "status": "approved"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": 946,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": 951,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": 949,
-          "status": "pending"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": 943,
-          "status": "approved"
-        }
-      ]
-    },
-    {
-      "lang": "it",
-      "name": "Italian",
-      "stage": "refining",
-      "category_slug": "i18n-it",
-      "approved": 6,
-      "disapproved": 0,
-      "total": 9,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 319,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 762,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 763,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 807,
-          "status": "approved"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": 948,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": 953,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": 952,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": 947,
-          "status": "approved"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": 950,
-          "status": "pending"
         }
       ]
     },

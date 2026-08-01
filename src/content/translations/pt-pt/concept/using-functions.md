@@ -6,10 +6,10 @@ title: "Usar funções"
 status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
-en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "33fd2de"
-content_version: "c6ecbbbec6c3"
-published_at: "2026-07-31"
+en_md5: "fc671310093a081113a8f301b6ff53fe"
+governance_sha: "5d6460b"
+content_version: "c88258dea86b"
+published_at: "2026-08-01"
 forum_topic_id: 774
 ---
 
@@ -54,4 +54,4 @@ move()
 turnLeft()
 ```
 
-Agora, como é que a máquina funciona por dentro, o que acontece lá dentro dela, não precisamos de nos preocupar com isso por agora. Vamos ver isso com muito mais detalhe mais tarde. Na verdade, não vai demorar muito até conseguires construir as tuas próprias máquinas. Mas, por agora, não te preocupes com isso. Em cada exercício, vais saber quais são as máquinas que estão na prateleira do Jiki. Serão diferentes em cada exercício, e vais poder usá-las para resolver os exercícios.
+Agora, como a máquina funciona por dentro, o que acontece lá dentro, não precisamos de nos preocupar com isso por agora. Vamos ver isso com muito mais detalhe mais tarde. Na verdade, não vai demorar muito até conseguires construir as tuas próprias máquinas. Mas, por agora, não te preocupes com isso. Em cada exercício, vais saber quais são as máquinas que estão na prateleira do Jiki. Serão diferentes em cada exercício, e vais poder usá-las para resolver os exercícios.

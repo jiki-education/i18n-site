@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/variables/source.md"
 en_md5: "6fca9aed7a4f51de337288e739f8b44a"
-governance_sha: "90cbe4d"
-content_version: "1f6571048d58"
-published_at: "2026-07-31"
+governance_sha: "5d6460b"
+content_version: "24e10ca944a7"
+published_at: "2026-08-01"
+forum_topic_id: 877
 ---
 
 Az információ tárolására a változók (_variables_ angolul) szolgálnak. Programozás közben gyakran el kell tennünk egy számot vagy egy stringet későbbre, és pontosan erre valók a változók. Nézzük hát egy kicsit távolabbról Jiki raktárát! Látni fogod, hogy van benne egy másik polcsor is. Az elsőt már ismerjük: azon sorakoznak a függvények, ezek a kis gépek, mint a `move` vagy a `rectangle`. Ezen a második polcsoron viszont gépek helyett rengeteg dobozt látsz, és ezeket a dobozokat hívjuk változóknak. Jikinek bármit odaadhatsz, hogy tegye el egy ilyen dobozba, később pedig megkérheted, hogy vegye elő újra. Minden doboznak van neve, pontosan úgy, ahogy a függvényeknek is, és minden dobozban pontosan egy dolog van. Egyelőre egy szám vagy egy string, de a kurzus későbbi részében azt is megnézzük, hogyan tárolhatunk bennük összetettebb dolgokat.
@@ -38,7 +39,7 @@ let name = "Jeremy"
 
 Megkértük tehát, hogy készítsen egy dobozt, címkézze fel, és tegyen bele valamit, ő pedig felteszi a dobozt a polcra. A programod bármelyik későbbi pontján Jiki le tudja venni a dobozt a polcról, és megnézi, mi van benne. Kezdd el felépíteni magadban ezt a képet! Én ősidők óta programozok, és kódírás közben még ma is azt képzelem el, hogy beleteszek valamit egy dobozba, amit később majd kiveszek. Amikor meglátod a `let` kulcsszót, tényleg gondolj arra: „Rendben, ez azt jelenti, hogy új dobozt készítek."
 
-Néhány szó a változók nevéről, vagyis a dobozok címkéiről. Ezekre van pár szabályunk. Először is, a változónevekben nem lehet szóköz. Ha egy doboz címkéjéhez több szót szeretnél használni, a szavakat egyszerűen egymáshoz toljuk, és minden szó első betűjét nagybetűre cseréljük. Ezt hívjuk camel case-nek. Képzeld el, ahogy a teve púpjai minden új szó első betűjét nagybetűvé tolják fel. Ha tehát a my name címkét szeretnéd, két külön szó helyett egyetlen szót írunk, nagy N-nel: `myName`.
+Néhány szó a változók nevéről, vagyis a dobozok címkéiről. Ezekre van pár szabályunk. Először is, a változónevekben nem lehet szóköz. Ha egy doboz címkéjéhez több szót szeretnél használni, a szavakat egyszerűen egymáshoz fűzzük, és minden szó első betűjét nagybetűre cseréljük. Ezt hívjuk camel case-nek. Képzeld el, ahogy a teve púpjai minden új szó első betűjét nagybetűvé tolják fel. Ha tehát a my name címkét szeretnéd, két külön szó helyett egyetlen szót írunk, nagy N-nel: `myName`.
 
 Emellett minden változónévnek egyedinek kell lennie. Nem lehet két dobozod ugyanazzal a címkével, és egy változó nem kaphatja ugyanazt a nevet, mint egy függvény. Ha ez mégis megtörténik, Jiki összezavarodik, és hibaüzenetet ad.
 

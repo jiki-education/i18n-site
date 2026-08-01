@@ -6,10 +6,10 @@ title: "Usar funciones"
 status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
-en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "33fd2de"
-content_version: "b7901b57cbbf"
-published_at: "2026-07-31"
+en_md5: "fc671310093a081113a8f301b6ff53fe"
+governance_sha: "5d6460b"
+content_version: "d032b207006a"
+published_at: "2026-08-01"
 forum_topic_id: 748
 ---
 
@@ -25,7 +25,7 @@ Cuando escribes código, lo que en realidad haces es comunicar lo que quieres qu
 
 Programar consiste en darle al intérprete, en este caso a Jiki, las instrucciones correctas. Y hay muchísimas instrucciones distintas que le puedes dar, muchas que él entiende. Puede pegar cosas entre sí, puede hacer algo muchas veces, puede decir: "Si pasa esto, entonces tengo que hacer esto otro". Puede recordar cosas y volver a usarlas más adelante. Y si algo no está bien, te puede dar un error. Vamos a ver todo esto a lo largo del curso. Pero lo más importante es entender que todo lo que vas a hacer es escribir instrucciones en un pizarrón, para que Jiki venga y las siga.
 
-Cuando aprendí a programar, hace 34 años, este fue el modelo mental que construí, y es el mismo que tengo hoy. Entiendo cómo funcionan las computadoras hasta el nivel de los unos y los ceros, pero, sinceramente, nunca pienso en eso. En mi cabeza hay un hombrecito que vive dentro de la computadora, y yo le digo qué hacer. Así que acompáñame en esta idea. Es un modelo mental poderoso, y si empiezas a pensar de esta forma tan visual en lo que hace esa personita dentro de la computadora, te va a servir muchísimo mientras aprendes a programar.
+Cuando aprendí a programar, hace 34 años, este fue el modelo mental que construí, y es el mismo que tengo hoy. Entiendo cómo funcionan las computadoras hasta el nivel de los unos y los ceros, pero, sinceramente, nunca pienso en eso. En mi cabeza hay un hombrecito que vive dentro de la computadora, y yo le digo qué hacer. Así que acompáñame en esta idea. Este modelo mental es poderoso, y si empiezas a pensar de esta forma tan visual en que hace esa personita dentro de la computadora, te servirá mucho mientras aprendes a programar.
 
 Entonces, empecemos con uno de los conceptos fundamentales de la programación: las funciones (_functions_ en inglés). Las funciones son como pequeñas máquinas que le puedes pedir a Jiki que use. Y si miramos dentro del almacén de Jiki, que es donde él pasa el rato, vas a ver que tiene un estante con tres máquinas distintas: `move` (mover), `turnLeft` (girar a la izquierda) y `turnRight` (girar a la derecha).
 

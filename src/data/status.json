@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "a5a5ec0",
+  "governance_sha": "63b88af",
   "approved": 26,
   "disapproved": 0,
   "total": 146,
@@ -299,7 +299,7 @@
     {
       "lang": "pt-pt",
       "name": "European Portuguese",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-pt-pt",
       "approved": 1,
       "disapproved": 0,
@@ -454,7 +454,7 @@
     {
       "lang": "sr",
       "name": "Serbian",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-sr",
       "approved": 1,
       "disapproved": 0,

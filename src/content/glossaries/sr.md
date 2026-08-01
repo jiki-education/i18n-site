@@ -2,10 +2,10 @@
 lang: "sr"
 name: "Serbian"
 family: null
-stage: "setup"
-governance_sha: "8e3de87"
-content_version: "499d0056eb4a"
-published_at: "2026-07-31"
+stage: "refining"
+governance_sha: "63b88af"
+content_version: "11bc452902c8"
+published_at: "2026-08-01"
 term_count: 114
 category_id: 166
 forum_topic_id: 402
@@ -114,7 +114,7 @@ These are terms where the Serbian is used in prose, so the "Use (sr/en)" column 
 | workflow | radni tok | sr | The software-engineering sense (a sequence of dev tasks), distinct from "curriculum" below. |
 | auth: authentication | autentifikacija | sr | Verifying identity. |
 | auth: authorization | autorizacija | sr | Verifying permissions; keep distinct from authentication above. |
-| deploy | deploj | sr | Colloquially verbed as "deplojovati" in Serbian dev speech; worth a native developer's sanity check. |
+| deploy | postavi na server | sr | Corrected from "deploj" per native-speaker feedback (see glossary-notes.md): "deploj" reads unprofessional and anglicized. "postaviti" = "to put"; conjugate to fit the sentence (e.g. "postavljanje na server" as the noun/gerund). Context-dependent: where "postavi na server" reads awkwardly, rephrase around the specific action instead of forcing this exact phrase. |
 | tool / tooling | alat | sr | |
 | module | modul | sr | |
 | algorithm | algoritam | sr | Still worth clarifying for a first-time beginner reader. |
@@ -172,7 +172,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | box (value container) | kutija | |
 | chain (array metaphor) | lanac | Used as the explanatory teaching image alongside the technical term "niz" for array. |
 | input slot | ulazni otvor | No existing Serbian precedent found; flagged for a native-speaker check on first real use. |
-| return chute | izlazni žleb | No existing Serbian precedent found; flagged for a native-speaker check on first real use. |
+| return chute | izlazni otvor | Corrected from "izlazni žleb" per native-speaker feedback (see glossary-notes.md): "žleb" is archaic and rarely used. Mirrors "ulazni otvor" (input slot) above as the input/output pair. |
 | machine (function metaphor) | mašina | In real use on the published using-functions concept page; flagged as an open question for native-speaker review. |
 | shelves (storage) | police (sing. polica) | In real use on the published using-functions concept page; flagged as an open question for native-speaker review. |
 | warehouse (Jiki's warehouse) | skladište | The place Jiki hangs out and keeps his machine shelf. In real use on the using-functions concept page ("Jikijevo skladište"). |
@@ -182,6 +182,32 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-07-31: `deploy` is "postavi na server", not "deploj"; `return chute` is "izlazni otvor", not "izlazni žleb"
+
+**Decided by:** native speaker **aleksaelezovic** on the pinned Serbian glossary thread
+([post 6](https://forum.jiki.io/t/402/6)), actioned directly.
+**Terms affected:** `deploy`, `return chute` (Jiki physical metaphor). **Status: settled.**
+
+Both terms were raised in the same post as the `scope`/`method` correction above but were
+left unactioned there pending a follow-up call between multiple plausible options. This
+entry closes that out.
+
+The row read **"deploj"** for `deploy`, a phonetic respelling of the English word.
+aleksaelezovic flagged it as reading unprofessional and too anglicized, and suggested
+"postavi na server" ("postaviti" = "to put") as the natural Serbian phrasing, while noting
+it might need rephrasing depending on context rather than a single fixed term. The row now
+reads "postavi na server" with a note flagging it as context-dependent, so a translator
+rephrases around the specific action where the literal phrase does not fit.
+
+The row read **"izlazni žleb"** for `return chute`, one of three options aleksaelezovic
+offered for the archaic "žleb" ("otvor", "kanal", "cev"). "otvor" is picked because it
+mirrors the existing "ulazni otvor" (input slot) rendering, giving the input/output pair a
+consistent "otvor" base rather than mixing vocabulary between the two metaphors. The row now
+reads "izlazni otvor".
+
+The same post endorsed the existing renderings for `machine`, `shelves`, and `input slot` as
+correct; no change made there (already recorded in the entry above).
 
 ### 2026-07-31: `scope` is "opseg", not "doseg"; `method` (class sense) is "metoda", not "metod"
 

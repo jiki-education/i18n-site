@@ -2,10 +2,10 @@
 lang: "pt-pt"
 name: "European Portuguese"
 family: "pt"
-stage: "setup"
-governance_sha: "8e3de87"
+stage: "refining"
+governance_sha: "63b88af"
 content_version: "9147c6878292"
-published_at: "2026-07-31"
+published_at: "2026-08-01"
 term_count: 53
 category_id: 73
 forum_topic_id: 341

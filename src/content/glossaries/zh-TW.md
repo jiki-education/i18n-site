@@ -3,10 +3,10 @@ lang: "zh-TW"
 name: "Traditional Chinese"
 family: "zh"
 stage: "setup"
-governance_sha: "29b07a3"
-content_version: "67469323c0ab"
+governance_sha: "5cb9292"
+content_version: "88b990553788"
 published_at: "2026-08-01"
-term_count: 88
+term_count: 89
 category_id: 200
 forum_topic_id: 414
 video_player_forum_topic_id: 793
@@ -188,11 +188,26 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | machine (function metaphor) | 機器 | The machine a function is modelled as, with its input slot (投入口, shared) and return chute (出料口, shared). |
 | shelves (where things are stored) | 架子 / 置物架 | 架子 for the general shelving image, 置物架 when the whole storage unit is meant. |
 | warehouse (Jiki's warehouse) | 倉庫 | Where Jiki hangs out and keeps his machine shelf. |
+| character (maze figure / "the little person") | 小傢伙 | **Awaiting a second native-speaker confirmation.** Not 小人, which reads as "a petty/mean person" or an old humble first-person pronoun, not a friendly figure. Covers both the on-screen maze character and the "little man inside the computer" mental-model image on the using-functions page (same word, same figure). |
 | crank (machine crank) | 手把 (the handle) / 轉動手把 (to crank it) | Jiki turns the handle to power a machine up: 轉動手把、讓它通電. Not 曲柄, which is engineering vocabulary rather than the everyday word. |
 
 ---
 
 ## Decision log
+
+### 2026-08-01: `character` (maze figure / mental-model "little person") is `小傢伙`
+
+**Decided by:** native speaker (cherylli), forum topic 821, posts #2 and #4
+(https://forum.jiki.io/t/821/2, https://forum.jiki.io/t/821/4).
+**Terms affected:** `character` (the maze figure, also used for the "little man inside the
+computer" mental-model metaphor on the using-functions page — same figure, same word).
+**Status:** provisional, awaiting a second native speaker's confirmation (cherylli asked
+for one herself).
+
+小人 was in use with no glossary row backing it. cherylli flagged it as reading like "a
+petty/mean person" or an old-fashioned humble first-person pronoun, not a friendly figure,
+and wasn't confident in her own first suggestion (小矮人, "dwarf"). Offered alternatives
+(小人偶, 小傢伙); she picked 小傢伙.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

@@ -3,9 +3,9 @@ lang: "pl"
 name: "Polish"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "03e2097ebeb1"
-published_at: "2026-07-31"
+governance_sha: "1ecce68"
+content_version: "a02654a5b5db"
+published_at: "2026-08-01"
 term_count: 100
 category_id: 201
 forum_topic_id: 417
@@ -46,7 +46,6 @@ These are terms where the Polish is used in prose, so the "Use (pl/en)" column i
 | dictionary | słownik | pl | |
 | element | element | pl | |
 | index | indeks | pl | |
-| string | ciąg znaków | pl | Deliberately not `łańcuch`, to keep it distinct from the "chain" array metaphor below. |
 | data type | typ danych | pl | The general concept. |
 
 ### Functions & control flow
@@ -134,6 +133,7 @@ These stay in English in Polish prose, with the Polish gloss to use for each.
 
 | Term | Polish gloss (on `<define>`) | Notes |
 |------|-------------------------------|-------|
+| string | _ciąg znaków_ | Where the source `<define>`s it, explain the concept as _ciąg znaków_, then use _string_ freely afterwards; that's what Polish developers actually say day to day. Deliberately not `łańcuch`, to keep it distinct from the "chain" array metaphor below. |
 | framework | _framework_ has no established Polish equivalent; used as-is | No gloss needed beyond noting it is a framework/library ecosystem if the context doesn't make it obvious. |
 | API | _interfejs programowania aplikacji_ | Where the source `<define>`s it, explain the concept in Polish, not just gloss the acronym. |
 | workflow | _przebieg pracy_ (descriptive gloss only, not a fixed term) | Used as-is after a one-time descriptive gloss. |
@@ -179,6 +179,25 @@ Default to plain **nawias**. When a specific bracket type matters, name it and s
 ---
 
 ## Decision log
+
+### 2026-08-01: `string` moves to Keep in English, glossed as `ciąg znaków` on first mention
+
+**Decided by:** native speaker (siling) on the pinned Polish glossary thread, forum topic
+417, post #5 (https://forum.jiki.io/t/417/5). **Terms affected:** `string`.
+
+The row previously rendered `string` as `ciąg znaków` throughout prose. siling pointed out
+that real Polish programming conversation says "string", reaching for `ciąg znaków` only
+when actually defining the concept. This was an unconfirmed agent row (no prior
+native-speaker decision on it), so it moves straight to Keep in English: `ciąg znaków` on
+first `<define>`, `string` afterwards. `łańcuch` stays excluded, for the same reason as
+before: it would collide with the chain/array metaphor.
+
+Also raised in the same post, not actioned: whether `array` and `list` (both currently
+`tablica`) should split into two terms, matching Python's distinct `list`/`array` types.
+Held as-is: `global/terms.md` already treats "array / list" as one concept project-wide,
+because Jiki's own curriculum only has one such data structure and English prose sometimes
+calls it "list" informally, not because it introduces a second, Python-style type. Replied
+on the thread explaining this rather than changing the row.
 
 ### 2026-07-31: `return chute` is `kanał zwrotny`, settled by a native speaker
 

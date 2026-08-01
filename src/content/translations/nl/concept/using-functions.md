@@ -6,10 +6,10 @@ title: "Functies gebruiken"
 status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
-en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "33fd2de"
-content_version: "04648d818a20"
-published_at: "2026-07-31"
+en_md5: "fc671310093a081113a8f301b6ff53fe"
+governance_sha: "5d6460b"
+content_version: "b2ca88a9f5a6"
+published_at: "2026-08-01"
 forum_topic_id: 768
 ---
 
@@ -25,7 +25,7 @@ Als je code schrijft, vertel je eigenlijk in een taal die een computer begrijpt 
 
 Waar het bij programmeren om gaat, is dat je de interpreter, in dit geval Jiki, de juiste instructies geeft. En je kunt Jiki heel veel verschillende instructies geven, want hij begrijpt er heel veel. Hij kan dingen aan elkaar plakken, hij kan iets heel vaak achter elkaar doen, en hij kan zeggen: "Als dit gebeurt, dan moet ik dat doen." Hij kan dingen onthouden en ze later weer gebruiken. En als er iets niet klopt, kan hij je een fout (_error_ in het Engels) geven. Al die dingen komen in deze cursus aan bod. Maar het belangrijkste om te begrijpen is dit: alles wat je gaat doen, komt erop neer dat je instructies op een whiteboard schrijft, waarna Jiki langskomt om ze te volgen.
 
-Toen ik 34 jaar geleden leerde programmeren, bouwde ik dit mentale model op, en het is nog steeds het model dat ik vandaag gebruik. Ik begrijp hoe computers werken, tot op het niveau van de enen en nullen, maar eerlijk gezegd denk ik daar nooit aan. In mijn hoofd woont er een klein mannetje in de computer, en ik vertel hem wat hij moet doen. Ga dus even met me mee. Het is een krachtig mentaal model dat je kunt opbouwen, en als je op deze heel visuele manier gaat nadenken over wat dat mannetje in de computer doet, dan heb je daar veel aan terwijl je leert programmeren.
+Toen ik 34 jaar geleden leerde programmeren, bouwde ik dit mentale model op, en het is nog steeds het model dat ik vandaag gebruik. Ik begrijp hoe computers werken, tot op het niveau van de enen en nullen, maar eerlijk gezegd denk ik daar nooit aan. In mijn hoofd woont er een klein mannetje in de computer, en ik vertel hem wat hij moet doen. Ga dus even met mij mee. Het is een krachtig mentaal model dat je kunt opbouwen, en als je op deze heel visuele manier gaat nadenken over wat dat mannetje in de computer doet, dan heb je daar veel aan terwijl je leert programmeren.
 
 Laten we beginnen met een van de meest fundamentele begrippen in het programmeren: functies (_functions_ in het Engels). Functies zijn net kleine machines die je Jiki kunt laten gebruiken. En als we in Jiki's loods kijken, daar hangt hij namelijk rond, dan zie je dat hij een plank heeft met drie verschillende machines erop: `move` (beweeg), `turnLeft` (draai naar links) en `turnRight` (draai naar rechts).
 
@@ -47,7 +47,7 @@ Toen je `move` schreef en daarachter die twee haakjes, zei je daarmee tegen Jiki
   height="400"
 />
 
-Toen je `turnLeft` schreef en daarachter de haakjes, zei je tegen Jiki dat hij de `turnLeft`-machine van de plank moest pakken en moest gebruiken. En dit is het patroon dat je steeds opnieuw gaat gebruiken. Wil je een machine gebruiken, dan schrijf je de naam ervan en daarachter die haakjes, en daarmee zeg je tegen Jiki dat hij de machine moet halen en gebruiken:
+Toen je `turnLeft` schreef en daarachter de haakjes, zei je tegen Jiki dat hij de `turnLeft`-machine van de plank moest pakken en moest gebruiken. En dit is het patroon dat je steeds opnieuw gaat gebruiken. Wil je een machine gebruiken, dan schrijf je de naam ervan op en daarachter die haakjes, en daarmee zeg je tegen Jiki dat hij de machine moet halen en gebruiken:
 
 ```javascript
 move()

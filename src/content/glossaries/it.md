@@ -3,9 +3,9 @@ lang: "it"
 name: "Italian"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "dc142bc74538"
-published_at: "2026-07-31"
+governance_sha: "f2c4d2c"
+content_version: "0b402227837f"
+published_at: "2026-08-01"
 term_count: 57
 category_id: 133
 forum_topic_id: 319
@@ -66,7 +66,7 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 | comment (in code) | commento | it | A `//` or `#` note in the source that the computer ignores. Masculine: _il commento_, plural _i commenti_. The word stands alone: qualify it as _commento nel codice_ only where the surrounding sentence could be read as a remark or a piece of feedback. Verb: _commentare_ ("aggiungere un commento"); for commenting a line out, say _trasformare in commento_, never "commentare fuori". |
 | nested | annidato | it | e.g. _ciclo annidato_ = nested loop. Prefer over "nidificato". |
 | modulo / remainder operator | operatore modulo (operator) / resto (value) | it | Use _operatore modulo_ for the `%` operator; _resto_ for the resulting value. |
-| toggle | alternare | it | Verb. |
+| toggle | azionare | it | Verb. "Ian azionò l'interruttore e la luce si accese." Confirmed by two native speakers: a single plain verb, more natural than the earlier draft _alternare_, which invited an on/off two-word pairing. |
 | scope | scope | en | Where the source `<define>`s it, gloss as _ambito (di visibilità)_, then use _scope_. |
 
 ### Tooling & engineering
@@ -132,6 +132,25 @@ Naming convention and worked example are in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-01: Moved `toggle` from `alternare` to `azionare`
+
+**Decided by:** owner (iHiD), on the proposal of native speaker FraSanga and the agreement of
+native speaker giorgx12 on the pinned Italian glossary thread
+(https://forum.jiki.io/t/319/11, https://forum.jiki.io/t/319/12,
+https://forum.jiki.io/t/319/13). **Human-decided: settled.**
+**Terms affected:** `toggle`.
+
+The row carried _alternare_, drafted only because it was a plain, natural Italian word with
+no need to borrow "toggle", which is not a reason to prefer it over another plain word.
+FraSanga looked for synonyms and proposed **`azionare`**, with the example "Ian toggled the
+switch and the light came on." rendering as _Ian azionò l'interruttore e la luce si accese._,
+calling it much simpler than _alternare_ or than having to use two separate words to express
+the on/off pairing. giorgx12 independently agreed: "azionare is more natural". No reviewer
+argued for keeping _alternare_.
+
+The row now reads _azionare_ and is protected: two native speakers have settled it, so no
+later pass may change the target without a fresh human agreement logged here.
 
 ### 2026-07-31: Settled `streak` on `slancio` / `giorni di slancio`
 
@@ -276,7 +295,7 @@ covered by a dated entry above (`board / whiteboard`, `interpreter`) is not repe
 |------|-----|
 | mental model | The picture-in-your-head framing ("un ometto che vive nel computer"); standard Italian collocation. |
 | nested | "nidificato" survives mainly in database/query contexts. |
-| toggle | A plain, natural Italian word; no need to borrow "toggle". |
+| toggle | See the dated entry above. |
 | scope | The word Italian developer writing actually uses; kept English on that basis. |
 
 #### Tooling & engineering

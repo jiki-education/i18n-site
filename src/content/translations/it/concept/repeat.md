@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/repeat/source.md"
 en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "a57f4da"
-content_version: "32f3ce43c6db"
+governance_sha: "332733d"
+content_version: "5cfa1bf27b0c"
 published_at: "2026-08-01"
+forum_topic_id: 950
 ---
 
 Finora abbiamo scritto tutto in modo lineare: Jiki segue ogni istruzione in ordine, dall'alto verso il basso.
@@ -32,7 +33,7 @@ Per farlo nel codice, dobbiamo usare la nostra prima parola chiave (_keyword_ in
   height="400"
 />
 
-La parola chiave `repeat` fa esattamente quello che ho detto sopra. Dice a Jiki: "Ripeti questo numero di volte qualunque cosa io dica dopo." Dai un'occhiata a questo codice. Per prima cosa usiamo la parola chiave `repeat` per dire a Jiki che dovrà fare qualcosa più volte. Poi mettiamo tra parentesi tonde quante volte vogliamo che Jiki ripeta la cosa, e poi ci sono queste parentesi graffe, e dentro quelle graffe ci sono le cose che vogliamo che Jiki ripeta. Questo schema è incredibilmente comune nella programmazione. Scriviamo una parola chiave, di solito con qualche informazione, come in questo caso il numero di volte in cui fare qualcosa, e poi un blocco di codice tra parentesi graffe. Quindi, tornando al mondo del labirinto, invece di scrivere `move`, `move`, `move`, `move`, possiamo scrivere "ripeti quattro volte `move`".
+La parola chiave `repeat` fa esattamente quello che ho detto sopra. Dice a Jiki: "Ripeti questo numero di volte qualunque cosa io dica dopo." Dai un'occhiata a questo codice. Per prima cosa usiamo la parola chiave `repeat` per dire a Jiki che dovrà fare qualcosa più volte. Tra parentesi tonde indichiamo quante volte vogliamo che Jiki ripeta la cosa. Seguono poi le parentesi graffe: dentro di esse mettiamo le cose che vogliamo che Jiki ripeta. Questo schema è incredibilmente comune nella programmazione. Scriviamo una parola chiave, di solito con qualche informazione, come in questo caso il numero di volte in cui fare qualcosa, e poi un blocco di codice tra parentesi graffe. Quindi, tornando al mondo del labirinto, invece di scrivere `move`, `move`, `move`, `move`, possiamo scrivere "ripeti quattro volte `move`".
 
 ```javascript
 repeat(4) {
@@ -69,7 +70,7 @@ repeat(4) {
 
 Queste istruzioni di ripetizione si chiamano cicli (_loop_ in inglese), e ci sono tanti cicli diversi che possiamo usare, ognuno con un funzionamento un po' diverso.
 
-C'è un'ultima cosa da sapere: quando lavori con i cicli, tenere il codice in ordine diventa essenziale. Quando il tuo codice ha una buona struttura visiva, è molto facile vedere cosa sta succedendo. Ma se non ce l'ha, se dimentichi di indentare bene o fai confusione con l'indentazione, le cose diventano confuse molto in fretta. Per questo in questo corso abbiamo sempre una regola. Metti sempre la parentesi graffa di apertura sulla stessa riga dell'istruzione (_statement_ in inglese) `repeat`. Metti sempre la parentesi graffa di chiusura su una riga a sé dopo l'istruzione, e indenta sempre il codice tra le due di due spazi. Così tutto resterà davvero in ordine, e se te ne dimentichi o provi a seguire uno schema diverso, otterrai un errore.
+C'è un'ultima cosa da sapere: quando lavori con i cicli, tenere il codice in ordine diventa essenziale. Quando il tuo codice ha una buona struttura visiva, è molto facile vedere cosa sta succedendo. Ma se non ce l'ha, se dimentichi di indentare bene o fai confusione con l'indentazione, le cose diventano confuse molto in fretta. Per questo nel corso abbiamo sempre una regola. Metti sempre la parentesi graffa di apertura sulla stessa riga dell'istruzione (_statement_ in inglese) `repeat`. Metti sempre la parentesi graffa di chiusura su una riga a sé dopo l'istruzione, e indenta sempre di due spazi il codice compreso tra le due graffe. Così tutto resterà davvero in ordine, e se te ne dimentichi o provi a seguire uno schema diverso, otterrai un errore.
 
 <img
   class="concept-image"

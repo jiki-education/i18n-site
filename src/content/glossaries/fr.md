@@ -2,8 +2,8 @@
 lang: "fr"
 name: "French"
 family: null
-stage: "setup"
-governance_sha: "9be2e3c"
+stage: "refining"
+governance_sha: "4d3b92c"
 content_version: "9d7fe10ade58"
 published_at: "2026-08-01"
 term_count: 67

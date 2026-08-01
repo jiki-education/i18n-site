@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "6f2bc48",
+  "governance_sha": "4d3b92c",
   "approved": 29,
   "disapproved": 0,
   "total": 149,
@@ -407,7 +407,7 @@
     {
       "lang": "fr",
       "name": "French",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-fr",
       "approved": 1,
       "disapproved": 0,

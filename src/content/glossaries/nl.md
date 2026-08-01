@@ -3,10 +3,10 @@ lang: "nl"
 name: "Dutch"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "e55c9d76b88c"
-published_at: "2026-07-31"
-term_count: 34
+governance_sha: "6437a48"
+content_version: "20ec19100f49"
+published_at: "2026-08-01"
+term_count: 35
 category_id: 69
 forum_topic_id: 339
 video_player_forum_topic_id: 769
@@ -28,7 +28,8 @@ throughout. Split by theme for readability; every table below follows the same c
 | English | Dutch | Use (nl/en) | Notes |
 |---------|-------|-------------|-------|
 | true / false | waar / onwaar | nl | Not capitalised in prose. Use _onwaar_, not _vals_. |
-| float / decimal | reëel getal | nl | _kommagetal_ is an acceptable plainer alternative when the decimal point is the focus. |
+| decimal | kommagetal | nl | _decimaal getal_ is an acceptable, more formal alternative. Not _reëel getal_, which means "real number", a different concept. |
+| float | zwevendekommagetal | nl | Closed compound, the literal "floating point number". Distinct from _decimal_: not every decimal is a float, and floats are abstract enough for new learners that they should always get extra explanatory text, in English and in Dutch alike. |
 | character | teken | nl | A single text character. Show the English gloss where the source `<define>`s it. |
 
 ### Functions & control flow
@@ -36,9 +37,9 @@ throughout. Split by theme for readability; every table below follows the same c
 | English | Dutch | Use (nl/en) | Notes |
 |---------|-------|-------------|-------|
 | function | functie | nl | _de functie_. The *keyword* `function` in code stays English; the concept in prose is _functie_. |
-| expression | expressie | nl | _uitdrukking_ is an acceptable synonym; pick one per document. |
+| expression | expressie | nl | _uitdrukking_ is not an acceptable synonym in the programming sense: it reads as an everyday phrase or idiom, not code. |
 | to call (a function) | aanroepen | nl | Separable verb: "je _roept_ de functie _aan_". nl-NL (BE: _oproepen_). |
-| return value | retourwaarde | nl | One word; _de retourwaarde_. |
+| return value | returnwaarde | nl | One word; _de returnwaarde_. Keeps the English _return_, does not translate it to _retour_; "retourwaarde" is non-existent/non-sensical Dutch in this context. _resultaat_ is a common looser description of the same thing but is not the glossary term. |
 | parameter | parameter | nl | _de parameter_. The declaration-site name. |
 | argument | argument | nl | _het argument_. The call-site value. |
 | brackets (the two after a function name) | haakjes | nl | The `()` pair written after a function name: _die twee haakjes_. Plain _haakjes_ by default; see the Brackets section below for when to name the type. |
@@ -47,7 +48,7 @@ throughout. Split by theme for readability; every table below follows the same c
 
 | English | Dutch | Use (nl/en) | Notes |
 |---------|-------|-------------|-------|
-| loop | lus | nl | Not _loop_. _de lus_. `for` loop = _for-lus_, `while` loop = _while-lus_ (keep the keyword in backticks/hyphenated). |
+| loop | lus | nl | Not _loop_. _de lus_, for the generic concept. **Do not translate the named loop types**: `for` loop, `while` loop, `do while` loop stay _for-loop_, _while-loop_, _do while-loop_ (keyword in backticks/hyphenated) rather than becoming _for-lus_/_while-lus_; translating half a compound keyword reads worse than translating none of it. |
 | instruction (given to Jiki) | instructie | nl | _de instructie_. "je _geeft_ Jiki _instructies_", "instructies op een whiteboard schrijven". Not the formal _voorschrift_ or _aanwijzing_. Distinct from _statement_ (see Keep in English). |
 | (programming) language | taal · programmeertaal | nl | _de taal_, _de programmeertaal_ (closed compound). Use plain _taal_ where the context is already programming ("een taal die een computer begrijpt"); the full _programmeertaal_ where it needs saying. Never the English _language_. |
 
@@ -67,9 +68,9 @@ Dutch in the gloss column below; with no `<define>`, use the English bare, no gl
 | Term | Dutch gloss (on `<define>`) | Notes |
 |------|-----------------------------|-------|
 | string | _tekenreeks_ | Exception: the string concept itself uses _tekenreeks_ where the source defines it, then _string_ throughout. |
-| array | _rij_ | Where the source `<define>`s it, gloss as _rij_, then use _array_ throughout. Distinct from the "chain" teaching metaphor below. |
+| array | _reeks_ | Where the source `<define>`s it, gloss as _reeks_, then use _array_ throughout. Not _rij_, which reads as confusable with "row"; _array_ itself has entered Dutch and is the ordinary word. Distinct from the "chain" teaching metaphor below. |
 | boolean | _booleaanse waarde_ (or _waar/onwaar-waarde_) | Where the source `<define>`s it, explain it means a _waar/onwaar_ value, then use _boolean_ throughout. |
-| scope | _bereik_ (or _zichtbaarheid_) | Exception: the scope concept uses the Dutch where the source defines it, then _scope_ throughout. |
+| scope | _bereik_ (or _zichtbaarheid_) | Exception: the scope concept uses the Dutch where the source defines it, then _scope_ throughout. A bare one-word gloss risks reading as narrower than intended (_bereik_ alone suggests "reach"); prefer a short explanatory clause over the single word where there's room, e.g. "het deel van de broncode waarin dit symbool gedefinieerd is (het _bereik_, ook wel _scope_)". |
 | interpreter | _tolk_ | **A person doing a job, not a program.** On concept pages Jiki *is* the interpreter. Never _vertaler_ (translator/compiler, a different job). Where the source `<define>`s it, gloss as _tolk_, then use _interpreter_ throughout. |
 | statement (executable) | _uitvoerbare instructie_ | Dutch technical writing keeps _statement_ (e.g. _if-statement_, _break-statement_). Glossed with the qualifier so it stays distinct from _instruction_ (an instruction given to Jiki), which is plain _instructie_. |
 | if statement | (no separate gloss) | Written _if-statement_ (hyphenated, `if` kept). Follows the _statement_ decision above. |
@@ -83,8 +84,8 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | box (value container) | doos | _de doos_. |
 | chain (array metaphor) | ketting | Not the abstract _keten_. A single link = _schakel_. |
 | input slot | invoergleuf | |
-| return chute | retourglijbaan | |
-| machine (function metaphor) | machine | _de machine_ with an _invoergleuf_ and a _retourglijbaan_. |
+| return chute | resultaatglijbaan | Not _retourglijbaan_. |
+| machine (function metaphor) | machine | _de machine_ with an _invoergleuf_ and a _resultaatglijbaan_. |
 | crank (machine crank) | slinger | The action is "aan de slinger draaien" (turn the crank), and "hem aanzetten" for powering it up. |
 | shelves (storage) | planken | The shelves where variables and functions are stored. Singular _plank_. |
 | board / whiteboard | whiteboard | **One object, one word**, used for both jobs: what the learner puts instructions on for Jiki to follow, and where a function keeps its own instructions and notes. _het whiteboard_. See `glossary-notes.md`. |
@@ -104,6 +105,48 @@ Example: _om een functie aan te roepen, schrijf je de naam van de functie en daa
 ---
 
 ## Decision log
+
+### 2026-08-01: Native-speaker glossary review (forum topic 339 sub-threads)
+
+**Decided by:** native speaker (sleeplessbyte), forum topic 339 ("[Dutch Review] Glossary")
+post #2121, and its six linked sub-threads: topics 905, 906, 907, 908, 911, 912.
+**Terms affected:** `float`/`decimal`, `expression`, `return value`, `loop`, `array`,
+`scope`, `return chute`.
+
+- **`float` / `decimal` split into two separate terms** (topic 905). The single row
+  `reëel getal` was wrong on two counts: "reëel getal" means "real number", a different
+  mathematical concept, and English itself treats float and decimal as non-synonymous, so
+  one Dutch term for both loses a distinction learners need for floating-point
+  peculiarities. `decimal` is now **kommagetal** (_decimaal getal_ as an acceptable, more
+  formal alternative — the term used when discussing number systems, e.g. _decimaal
+  talstelsel_). `float` is now **zwevendekommagetal**, the literal "floating point
+  number"; the reviewer flagged _drijvendekommagetal_ as a seen-but-disliked alternative,
+  no citation for which is better, so it was not used.
+- **`expression`'s "uitdrukking is an acceptable synonym" note was backwards** (topic 906).
+  In the programming sense, _uitdrukking_ reads as an everyday phrase or idiom, not code;
+  the note now says the opposite of what it said before.
+- **`return value`: retourwaarde was reversed to `returnwaarde`** (topic 907). Dutch
+  programming usage (confirmed via the Dutch Wikipedia article, titled "Returnwaarde")
+  keeps the English word _return_ rather than translating it to _retour_; "retourwaarde"
+  is non-existent/non-sensical Dutch in this context. _resultaat_ is a common looser
+  description of the same concept in prose but is not the glossary term.
+- **`loop`: keep the named loop types in English, only translate the bare word** (topic
+  908). The existing row already had _lus_ right for the generic word, but rendered
+  `for`/`while` loop as _for-lus_/_while-lus_. The reviewer found references translating
+  the bare word as _lus_ but never translating the compound keyword names, and argued
+  translating only half a keyword-based compound is worse than translating none of it, so
+  `for loop`/`while loop`/`do while loop` now stay _for-loop_/_while-loop_/_do
+  while-loop_.
+- **`array`'s Keep-in-English gloss moved from `rij` to `reeks`** (topic 911). _rij_ reads
+  as confusable with "row"; the reviewer also noted _array_ has itself entered Dutch as an
+  ordinary word.
+- **`scope`'s Keep-in-English gloss gained a caution against a bare one-word rendering**
+  (topic 911). A single word (_bereik_ alone reads narrower, closer to "reach") risks
+  making the gloss harder to understand than no gloss at all; the note now recommends a
+  short explanatory clause where there's room, per the reviewer's suggested phrasing.
+- **`return chute`: retourglijbaan corrected to `resultaatglijbaan`** (topic 912), for the
+  same reason as `return value` above: keeping the "retour" framing was the wrong choice
+  of Dutch word for what is returned.
 
 ### 2026-07-31: Pruned ordinary vocabulary
 

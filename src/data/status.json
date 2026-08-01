@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "332733d",
+  "governance_sha": "7a404b3",
   "approved": 69,
   "disapproved": 1,
-  "total": 196,
+  "total": 204,
   "languages": [
     {
       "lang": "uk",
@@ -93,7 +93,7 @@
       "category_slug": "i18n-fr",
       "approved": 8,
       "disapproved": 0,
-      "total": 9,
+      "total": 14,
       "items": [
         {
           "key": "glossary",
@@ -139,6 +139,31 @@
           "key": "concept/repeat",
           "topic_id": 943,
           "status": "approved"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -149,7 +174,7 @@
       "category_slug": "i18n-it",
       "approved": 8,
       "disapproved": 0,
-      "total": 9,
+      "total": 12,
       "items": [
         {
           "key": "glossary",
@@ -195,6 +220,21 @@
           "key": "concept/repeat",
           "topic_id": 950,
           "status": "approved"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },

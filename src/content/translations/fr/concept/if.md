@@ -7,8 +7,8 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/if/source.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "8dd5ea7"
-content_version: "9daaa8148c4d"
+governance_sha: "01ec98c"
+content_version: "f00463f55ca5"
 published_at: "2026-08-01"
 ---
 
@@ -55,7 +55,7 @@ Pour écrire ces comparaisons, on utilise des symboles que tu connais sûrement 
 
 Tu peux aussi comparer des strings. Par exemple, `"hello"` est égal à `"hello"` : c'est vrai, les deux strings sont identiques. Mais fais bien attention ici, parce que Jiki compare un par un chaque caractère des deux strings, sur les deux morceaux de papier. Donc `"Hello"` avec un H majuscule n'est pas égal à `"hello"` avec un h minuscule : ce sont des strings différentes. Cette comparaison serait donc fausse, parce que le H majuscule et le h minuscule sont des caractères différents.
 
-Au fait, vrai et faux, on les appelle des booléens, et c'est encore un mot qui sonne technique. Mais c'est vraiment tout simple : c'est juste une façon formelle de dire que quelque chose est soit vrai, soit faux. Donc si tu croises le mot booléen, ça veut juste dire vrai ou faux. Voyons tout ça en action. Imagine qu'on construit ce videur robot pour une boîte de nuit, et qu'on décide que le videur ne doit ouvrir la porte que si la personne a 21 ans ou plus. On a une fonction `askAge` (demander l'âge), qu'on peut utiliser pour obtenir l'âge de quelqu'un, et on va enregistrer le résultat dans une variable appelée `age` (âge). Ensuite, on peut dire que si cet `age` est supérieur à 20, on ouvre la porte. Donc si `askAge` renvoie `30`, on ouvre la porte, et s'il renvoie `12`, on ne l'ouvre pas.
+Au fait, « vrai » et « faux », on les appelle des booléens, et c'est encore un mot qui sonne technique. Mais c'est vraiment tout simple : c'est juste une façon formelle de dire que quelque chose est soit « vrai », soit « faux ». Donc si tu croises le mot « booléen », ça veut juste dire « vrai » ou « faux ». Voyons tout ça en action. Imagine qu'on construit ce robot videur pour une boîte de nuit, et qu'on décide que le videur ne doit ouvrir la porte que si la personne a 21 ans ou plus. On a une fonction `askAge` (demander l'âge), qu'on peut utiliser pour obtenir l'âge de quelqu'un, et on va enregistrer le résultat dans une variable appelée `age` (âge). Ensuite, on peut dire que si cet `age` est supérieur à 20, on ouvre la porte. Donc si `askAge` renvoie `30`, on ouvre la porte, et s'il renvoie `12`, on ne l'ouvre pas.
 
 ```javascript
 let age = askAge()

@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "d2eac771dc0d"
-published_at: "2026-07-31"
-term_count: 66
+governance_sha: "fcae9e1"
+content_version: "22114c2cec07"
+published_at: "2026-08-01"
+term_count: 67
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -39,6 +39,7 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | dictionary | dictionnaire | fr | In JS-specific prose this is usually an _objet_ or a `Map`; use the concept word _dictionnaire_ only when teaching the general idea. |
 | index | indice | fr | Not "index", which carries a book/database sense in French. "par son indice". |
 | Boolean | booléen | fr | The code type name `Boolean` stays as-is in code. |
+| number / digit | nombre / chiffre | fr | _nombre_ for a number of any size (the value or the type); _chiffre_ only for a single digit symbol, as in _deux chiffres après la virgule_ (two digits after the decimal point). Both masculine. |
 
 ### Functions & control flow
 
@@ -78,7 +79,7 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 |---------|--------|-------------|-------|
 | auth (authentication / authorization) | authentification / autorisation | fr | Pick by meaning. |
 | tool / tooling | outil / outillage | fr | _outils_ reads more naturally than _outillage_ in most prose; _outillage_ for the collective sense ("toolchain" = _chaîne d'outils_). |
-| edge case | cas limite | fr | No official ruling exists; flagged for native-speaker confirmation. |
+| edge case | cas limite | fr | The agreed rendering; no official French ruling exists, so do not coin an alternative. |
 | backwards compatibility | rétrocompatibilité | fr | Not "compatibilité descendante". |
 
 ### Platform & curriculum vocabulary
@@ -102,7 +103,7 @@ in the gloss column below; with no `<define>`, use the English bare, no gloss.
 | Term | French gloss (on `<define>`) | Notes |
 |------|--------------------------------|-------|
 | string | _chaîne de caractères_ | Exception: in the string concept itself, use _chaîne de caractères_ where the source defines it, then use _string_ throughout. Keeping it English leaves _chaîne_ free for the array chain metaphor. Open question: French dev writing genuinely says "chaîne de caractères", so the ordinary-word principle points the other way; not yet revisited (see `glossary-notes.md`). |
-| API | explain what it is in French | Where the source defines it, explain the concept in French, not just gloss the acronym. |
+| API | explain what it is in French | Where the source defines it, explain the concept in French, not just gloss the acronym. Gender: _une API_ (feminine). |
 | framework | _cadre de développement_ | Where the source defines it, explain it means a reusable _cadre de développement_, then use _framework_ freely. |
 | workflow | _flux de travail_ | The software-engineering sense (a sequence of dev tasks). Where the source defines it, explain it means _flux de travail_, then use _workflow_. |
 | template literal | _littéral de gabarit_ | Where the source defines it, explain it as a _littéral de gabarit_ (the official term), then use _template literal_. |
@@ -137,16 +138,67 @@ Default to naming the bracket type. When a specific bracket type matters, name i
 
 | Glyph | French | Notes |
 |-------|--------|-------|
-| `()` | parenthèses | Default bracket word. |
+| `()` | parenthèses | Default bracket word. Gender: _une parenthèse_ (feminine). The plural already implies the pair, so write _des parenthèses_, never _une paire de parenthèses_. |
 | `[]` | crochets | |
 | `{}` | accolades | |
 | `<>` | chevrons | Or name the signs directly (_signes inférieur et supérieur_) when clearer. |
 
-Example: _pour appeler une fonction, écris son identifiant, puis une paire de parenthèses (`()`)._
+Example: _pour appeler une fonction, écris son identifiant, suivi de parenthèses (`()`)._
 
 ---
 
 ## Decision log
+
+### 2026-08-01: Native-speaker review of the term list
+
+**Decided by:** native speaker (myrtarazona) on the forum, topic 314, post 6.
+**Terms affected:** `edge case`, `(programming) language`, `backwards compatibility`,
+`chain`, `input slot`, `auth`, `API`, `()` (parentheses), and a new `number / digit` row.
+
+A compilation post going through the glossary section by section. Most of it confirms what
+is already there; three things changed.
+
+- **Confirmations (rendering unchanged, rows now protected).** `edge case` → _cas limite_,
+  called "the most appropriate"; its Notes no longer say it is awaiting confirmation.
+  `(programming) language` → _langage (de programmation)_, with the _langue_ (a human
+  language) / _langage_ (a programming language) split confirmed as the real French
+  distinction, which the 2026-07-30 entry had flagged as unreviewed. `backwards
+  compatibility` → _rétrocompatibilité_. The metaphor rows `chain` → _chaîne_ and `input
+  slot` → _fente_ (feminine), both including their gender. `auth`, split by meaning into
+  _authentification_ / _autorisation_, with the point that a beginner will not read a bare
+  "auth" as _autorisation_, so it is always expanded.
+- **`API` is feminine**, _une API_, added to its Notes. The row itself (kept English, the
+  concept explained rather than the acronym expanded) is unchanged.
+- **Never write _une paire de parenthèses_.** Technically correct but neither natural nor
+  concise: the French plural _parenthèses_ already implies the pair. The example under the
+  Brackets section used the "paire" phrasing and now reads _écris son identifiant, suivi de
+  parenthèses_. Gender (_une parenthèse_) recorded on the `()` row.
+- **New row `number / digit` → _nombre / chiffre_.** The reviewer raised the split as a
+  trap for translators, and it is one: English "number" covers both. The rule recorded is
+  the strict one, _chiffre_ for a single digit symbol and _nombre_ for a number of any size.
+  The reviewer framed it as 0 to 9 being _chiffre_ and anything above 9 being _nombre_,
+  which is the common informal shorthand rather than the actual distinction (5 is a _nombre_
+  as much as 500 is, and their own example, _deux chiffres après la virgule_, is "two
+  digits", not "two numbers"). **This wording of the row is not yet confirmed and should be
+  put back to the reviewer.** `number` had been pruned on 2026-07-31 as an ordinary word;
+  it earns a row again only because of the digit distinction, which is something to decide.
+- **No action, consistent with the prune.** `programming / coding` (_programmation /
+  codage_, and _développement (informatique)_ in everyday usage), `developer`
+  (_développeur_ / _développeuse_), `tech / tech industry` (_la tech_, _secteur
+  technologique_), `pitfall` (_piège_), `value` (_valeur_), `character` (_caractère_),
+  `condition`, `comparison` (_comparaison_), `mental model` (_modèle mental_), `deploy`
+  (_déployer_), `module`, `component` (_composant_). The reviewer's renderings match what
+  the 2026-07-31 prune recorded, so they are confirmed as correct but stay out of the
+  glossary as ordinary vocabulary with nothing to decide.
+- **Open, not actioned:** `template literal`. The reviewer accepts keeping the English term,
+  which is what the glossary does, but glosses it _littéral template_ / _template littéral_
+  where the row uses the official _littéral de gabarit_. The gloss only ever appears where
+  the source `<define>`s the term, so this is narrow, but it is a genuine difference and
+  needs the reviewer's view rather than a silent swap.
+
+The post also links https://blog.stephane-robert.info/glossaire/, a free French DevOps
+glossary (911 terms) worth consulting when a future term needs checking. It is a resource,
+not a term decision.
 
 ### 2026-07-31: Pruned ordinary vocabulary
 

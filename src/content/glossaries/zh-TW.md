@@ -3,9 +3,9 @@ lang: "zh-TW"
 name: "Traditional Chinese"
 family: "zh"
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "3bab23c78d8a"
-published_at: "2026-07-31"
+governance_sha: "a533838"
+content_version: "dd436f9526a8"
+published_at: "2026-08-01"
 term_count: 88
 category_id: 200
 forum_topic_id: 414
@@ -40,7 +40,7 @@ These are terms whose Chinese rendering is confirmed identical, character for ch
 | English | Chinese | Use (zh/en) | Notes |
 |---------|---------|-------------|-------|
 | method | 方法 | zh | Identical in both scripts. |
-| workflow | 工作流程 | zh | The software-engineering sense. Identical in both scripts. |
+| workflow | 工作流 | zh | The software-engineering sense. Identical in both scripts. |
 | deploy | 部署 | zh | Identical in both scripts. |
 | framework | 框架 | zh | Fully translated (see § Loanword policy in `guide.md`); not kept as an English loanword. Identical in both scripts. |
 

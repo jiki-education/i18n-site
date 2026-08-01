@@ -3,10 +3,10 @@ lang: "zh-CN"
 name: "Simplified Chinese"
 family: "zh"
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "6162e1c04362"
-published_at: "2026-07-31"
-term_count: 116
+governance_sha: "a533838"
+content_version: "b548820265f4"
+published_at: "2026-08-01"
+term_count: 117
 category_id: 199
 forum_topic_id: 413
 video_player_forum_topic_id: 791
@@ -40,7 +40,7 @@ These are terms whose Chinese rendering is confirmed identical, character for ch
 | English | Chinese | Use (zh/en) | Notes |
 |---------|---------|-------------|-------|
 | method | 方法 | zh | Identical in both scripts. |
-| workflow | 工作流程 | zh | The software-engineering sense. Identical in both scripts. |
+| workflow | 工作流 | zh | The software-engineering sense. Identical in both scripts. |
 | deploy | 部署 | zh | Identical in both scripts. |
 | framework | 框架 | zh | Fully translated (see § Loanword policy in `guide.md`); not kept as an English loanword. Identical in both scripts. |
 
@@ -96,7 +96,7 @@ These are terms where the Chinese is used in prose, so the "Use (zh-CN/en)" colu
 
 | English | Chinese | Use (zh-CN/en) | Notes |
 |---------|---------|----------|-------|
-| if statement | `if` 语句 (primary) / 条件语句 | zh-CN | |
+| if statement | `if` 语句 (primary) / 分支语句 | zh-CN | Do not write 条件语句: 条件 is the separate term for `condition` (see below). |
 | condition | 条件 | zh-CN | Stands alone; no gloss needed. |
 | comparison | 比较 | zh-CN | Stands alone; no gloss needed. |
 | expression | 表达式 | zh-CN | |
@@ -112,7 +112,7 @@ These are terms where the Chinese is used in prose, so the "Use (zh-CN/en)" colu
 | output | 输出 | zh-CN | |
 | to return (a value) | 返回 | zh-CN | "返回一个值。" |
 | return value | 返回值 | zh-CN | Noun form; distinct from the verb 返回. |
-| brackets (the two after a function name) | 括号 | zh-CN | The `()` pair written after a function name; "写下它的名字，后面加上那对括号". Bare 括号 reads as round brackets in Mainland usage, so no qualifier is needed; write 圆括号 only where the text contrasts them with 方括号 (square brackets). |
+| brackets (the two after a function name) | 括号 | zh-CN | The `()` pair written after a function name; "写下它的名字，后面加上那对括号". Bare 括号 reads as round brackets in Mainland usage, so no qualifier is needed; write 圆括号 (or 小括号) only where the text contrasts them with 方括号 / 中括号 (square brackets, `[]`) or 大括号 / 花括号 (curly braces, `{}`). Pick one name per pair and do not mix both within a document. |
 | pure function | 纯函数 | zh-CN | |
 
 ### Loops, state & program flow
@@ -140,10 +140,11 @@ These are terms where the Chinese is used in prose, so the "Use (zh-CN/en)" colu
 | loop body | 循环体 | zh-CN | |
 | break (loop control) | 跳出循环 | zh-CN | The keyword `break` in code stays English; this is the prose concept of breaking out of a loop. |
 | increment | 自增 | zh-CN | |
-| modulo / remainder operator | 取模 (primary) / 求余 | zh-CN | The `%` operator. |
+| modulo / remainder operator | 求模 (primary) / 求余 | zh-CN | The `%` operator. |
 | concatenation / to concatenate | 拼接 | zh-CN | |
 | toggle | 切换 | zh-CN | |
 | state / stateful | 状态 / 有状态的 | zh-CN | |
+| stateless | 无状态的 | zh-CN | The opposite of 有状态的 (stateful); use the pair consistently. |
 | scope | 作用域 | zh-CN | Fully translated, not kept in English. Deliberately distinct from 代码块 (code block). `zh-TW` also offers 範圍 as an alternative rendering; this locale uses only 作用域, so the term is kept separate per locale rather than merged. |
 | class | 类 | zh-CN | Deliberately different from `zh-TW`'s 類別. |
 | property | 属性 | zh-CN | |
@@ -160,7 +161,7 @@ These are terms where the Chinese is used in prose, so the "Use (zh-CN/en)" colu
 | module | 模块 | zh-CN | Deliberately different from `zh-TW`'s 模組. |
 | algorithm | 算法 | zh-CN | Deliberately different from `zh-TW`'s 演算法. |
 | edge case | 边界情况 | zh-CN | Do not mix with 边缘情况 in the same document. |
-| backwards compatibility | 向后兼容 | zh-CN | |
+| backwards compatibility | 向下兼容 | zh-CN | Do not write 向后兼容: bare 向后 can read as "towards the future" (cf. 后来 = "later"), which inverts the meaning. |
 | component | 组件 | zh-CN | Fully localized, not kept in English. |
 | bug (a defect, in prose) | bug | en | Keep it lower-case in prose; the UI label `Bug` stays capitalized. |
 | repository (git) | 代码仓库 | zh-CN | Always write the full 代码仓库 for the git sense, because bare 仓库 is the Jiki warehouse metaphor (see § Jiki physical metaphors). |
@@ -218,6 +219,46 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-01: Native-speaker review of the Mainland terms (forum topic 868)
+
+**Decided by:** native speaker taylorren, on forum topic 868 ("SC translations discussion and
+general view for consideration"), post 1. Applied by agent. Every row touched below was an
+unconfirmed agent draft before this entry.
+**Terms affected:** `if statement`, `modulo / remainder operator`, `backwards compatibility`,
+`stateless`, `brackets`, `streak`, and, as open questions, `statement (logical claim)` and
+`curriculum`.
+
+- **`if statement` secondary rendering moved from 条件语句 to 分支语句.** 分支 ("branch") is the
+  word Chinese programming books use for this construct, and 条件语句 blurred the row into
+  `condition` (条件), which is a separate glossary term. The primary `if` 语句 is unchanged.
+- **`modulo / remainder operator` moved from 取模 to 求模.** Native-speaker preference; it also
+  makes the row internally consistent with its own secondary 求余. 取模 is also idiomatic, so
+  this is a preference call rather than a correction of an error.
+- **`backwards compatibility` moved from 向后兼容 to 向下兼容.** 向后 is ambiguous in Chinese: it
+  can read as "towards the future" (cf. 后来, "later"), which inverts the intended meaning of
+  compatibility with *earlier* versions. 向下兼容 does not carry that reading.
+- **`stateless` added as its own row (无状态的).** The reviewer asked that the counterpart to
+  有状态的 (stateful) be documented too. Added as a new row rather than folded into the
+  `state / stateful` row, so no existing row's English term changes.
+- **`brackets` Notes extended with the full set of Mainland bracket names**: 小括号/圆括号 for
+  `()`, 中括号/方括号 for `[]`, 大括号/花括号 for `{}`. The rendering 括号 itself is unchanged;
+  this only gives a translator the names to use when a page actually names the other pairs.
+- **`streak` (连续学习天数) confirmed by a native speaker.** The reviewer floated 连续打卡天数
+  ("consecutive clock-in days") as sounding more in-tune, then explicitly said they are happy
+  with the current 连续学习天数. The rendering does not move, but the row is now a confirmed
+  decision rather than an unconfirmed draft, and it supersedes the "not Duolingo-derived" note
+  in the rationale section below as the reason it stands.
+- **`statement (logical claim)` (断言) left unchanged, pending a follow-up question.** The
+  reviewer said 断言 is "OK but maybe too formal" for very young users and offered 判定/判断
+  without choosing between them. Two un-chosen alternatives is not a decision, and there is a
+  third candidate (命题, the standard word for a logical proposition), so the row stands until
+  the reviewer picks one. Raise it on topic 868.
+- **`curriculum` (课程体系) left unchanged; the proposed 课程 cannot be applied.** The reviewer
+  suggested shortening 课程体系 to 课程, but 课程 is already this glossary's term for `course`
+  (the whole Jiki course), a collision the 2026-07-30 entry below deliberately resolved by
+  moving `lesson` to 课. Taking 课程 for `curriculum` would recreate exactly that clash. If
+  课程体系 reads too heavy, a different short form is needed; raise it on topic 868.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

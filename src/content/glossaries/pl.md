@@ -2,9 +2,9 @@
 lang: "pl"
 name: "Polish"
 family: null
-stage: "setup"
-governance_sha: "1ecce68"
-content_version: "a02654a5b5db"
+stage: "refining"
+governance_sha: "05d5a78"
+content_version: "14247b349d6f"
 published_at: "2026-08-01"
 term_count: 100
 category_id: 201
@@ -179,6 +179,58 @@ Default to plain **nawias**. When a specific bracket type matters, name it and s
 ---
 
 ## Decision log
+
+### 2026-08-01: `guide.md` trimmed to rules only; rationale moved here
+
+**Decided by:** owner (iHiD), as part of the cross-language guide-slimming pass.
+**Terms affected:** none (no glossary row changed).
+
+`languages/pl/guide.md` is loaded into the prompt for every Polish item in every pass, so
+everything in it that was research provenance, justification or a restatement of another
+file was removed. No behavioural instruction was dropped. What came out, and why it is
+kept here:
+
+- **Audience specifics section (removed).** It said only that readers are in Poland and
+  Polish-speaking regions (Polish has no dialect split the guide needs to arbitrate), plus
+  the research finding that the Polish online-education and IT-bootcamp market (e.g.
+  Kodilla) already writes to young adult beginners in a direct, informal register, so
+  Jiki's voice fits an established norm rather than having to invent one. That research is
+  the reason the "Ty" decision was easy; it is not an instruction.
+- **Provenance for the "Ty" register (removed from the guide).** The informal-Ty choice
+  follows established Polish programming-education sites and professional Polish
+  localization style guides for user-facing instructional content.
+- **Provenance for the future-tense rule (removed from the guide).** The rule against
+  „będziesz potrafić / potrafił / potrafiła budować", and the „nauczysz się budować"
+  rephrase in its place, came from a **native speaker** on the forum:
+  <https://forum.jiki.io/t/770/2>. The rule itself stays in the guide; this is a
+  native-speaker decision and must not be overturned without fresh agreement on that
+  thread.
+- **Justification for the impersonal/się register (removed).** Using się constructions for
+  conceptual explanation is not a contradiction of the informal register; it is how
+  informal Polish instructional prose actually distributes direct address.
+- **Acronym worked examples (removed).** The guide carried worked examples for `API` and
+  `CLI` that duplicated their `glossary.md` "Keep in English" rows. They also said the
+  expansion happens on "first use", which conflicts with `global/voice.md` (a gloss is
+  triggered only by a `<define>` tag, never by first occurrence). The glossary rows already
+  say "where the source `<define>`s it", so deleting the guide copies resolves the conflict
+  without changing any decision.
+- **Metaphor gender list (removed).** The guide listed _łańcuch_ masculine, _pudełko_
+  neuter, _maszyna_ and _półka_ feminine. Every one of those genders is already in the
+  glossary's metaphor table, which the guide now points at instead.
+- **`interpreter` rationale (removed).** The "person, not a program" reasoning and the ban
+  on _program interpretujący_ both live in the glossary row and in the 2026-07-30 entry
+  below. The guide keeps only the residual grammatical instruction: agree with the word as
+  a person („który", never „które").
+- **Word-order example (removed).** "The function returns a value." → „Funkcja zwraca
+  wartość." was a straightforward mapping needing no reordering, so it taught nothing the
+  rule did not.
+
+**One contradiction fixed.** The guide's quotation-mark rule named the Polish „…" pair,
+but every example in the file closed with a straight ASCII `"` instead of U+201D. The rule
+won: the closing glyph is now stated as U+201D explicitly and every example in the guide
+uses it. This is standard Polish orthography, not an open question, so it is a correction
+rather than a draft. Note that some examples inside `glossary.md` still close with a
+straight quote; the rows were left untouched rather than reworded.
 
 ### 2026-08-01: `string` moves to Keep in English, glossed as `ciąg znaków` on first mention
 

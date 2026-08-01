@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "c2a035f",
+  "governance_sha": "05d5a78",
   "approved": 43,
   "disapproved": 1,
   "total": 181,
@@ -492,7 +492,7 @@
     {
       "lang": "pl",
       "name": "Polish",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-pl",
       "approved": 3,
       "disapproved": 0,

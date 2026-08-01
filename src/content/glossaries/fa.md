@@ -3,10 +3,10 @@ lang: "fa"
 name: "Persian"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "34ab66042519"
-published_at: "2026-07-31"
-term_count: 30
+governance_sha: "0f18507"
+content_version: "aab9077860ac"
+published_at: "2026-08-01"
+term_count: 31
 category_id: 331
 forum_topic_id: 683
 video_player_forum_topic_id: 753
@@ -49,6 +49,7 @@ throughout. Split by theme for readability; every table below follows the same c
 | English | Persian | Use (fa/en) | Notes |
 |---------|---------|-------------|-------|
 | course | دوره | fa | The whole Jiki course ("در این دوره"). Keep distinct from درس (lesson) and برنامه‌ی درسی (curriculum). |
+| Jiki | جیکی | fa | The interpreter character and the course's name. Written in Persian script in all prose, unlike the product/language names in the "Keep in English" table (JavaScript, Python, React), which stay Latin. Ezāfe and possessives attach as to any Persian noun («انبار جیکی»). Consistent with «جیکی کوچولو» (mini-Jiki) below. Branded sub-product names (Ask Jiki, Jiki Premium) stay English per the guide. |
 
 ## Keep in English
 
@@ -94,6 +95,31 @@ review.
 ---
 
 ## Decision log
+
+### 2026-08-01: "Jiki" is written in Persian script (جیکی)
+
+**Decided by:** native speaker mominchezgi, actioned by the owner (iHiD).
+**Terms affected:** the new `Jiki` row, and the guide's Jiki-name handling section.
+**Protected: this is a native speaker's decision and is not to be reversed by an agent.**
+
+"Jiki" was previously kept as a Latin product name in Persian prose, on the general
+never-translate-product-names rule. mominchezgi asked for جیکی instead, plainly ("I prefer
+جیکی", https://forum.jiki.io/t/752/4) and then confirmed they would back it as the standard
+for every page (https://forum.jiki.io/t/752/6).
+
+The reason is specific and not the general bidi question the guide already answers: a
+single LTR Latin token dropped into RTL Persian running text breaks the reading flow, and
+"Jiki" is not an occasional token but a word that recurs several times per paragraph on
+almost every page. Code tokens are a different case, because inline-code styling marks them
+as foreign on purpose; a character's name carries no such signal and simply reads as an
+interruption. جیکی was also already in use in «جیکی کوچولو» (mini-Jiki), so keeping the
+bare name Latin was internally inconsistent as well.
+
+The guide had recorded this as an open question pending discussion on the pinned fa
+glossary thread (topic 683). That discussion never happened, so iHiD made the call directly
+on 2026-08-01 from the reviewer feedback already on record. The two files already using the
+Latin name (the using-functions concept page and the maze-solve-basic instructions
+description) were updated in the same pass.
 
 ### 2026-07-31: Pruned ordinary vocabulary
 

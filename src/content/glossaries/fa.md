@@ -2,8 +2,8 @@
 lang: "fa"
 name: "Persian"
 family: null
-stage: "setup"
-governance_sha: "0f18507"
+stage: "refining"
+governance_sha: "4033bc3"
 content_version: "aab9077860ac"
 published_at: "2026-08-01"
 term_count: 31

@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "8dd5ea7",
+  "governance_sha": "4033bc3",
   "approved": 29,
   "disapproved": 0,
   "total": 154,
@@ -525,7 +525,7 @@
     {
       "lang": "fa",
       "name": "Persian",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-fa",
       "approved": 1,
       "disapproved": 0,

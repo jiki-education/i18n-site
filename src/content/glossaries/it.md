@@ -3,8 +3,8 @@ lang: "it"
 name: "Italian"
 family: null
 stage: "setup"
-governance_sha: "f2c4d2c"
-content_version: "0b402227837f"
+governance_sha: "4033bc3"
+content_version: "36c852445582"
 published_at: "2026-08-01"
 term_count: 57
 category_id: 133
@@ -85,7 +85,7 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 | course | corso | it | The whole Jiki course the learner is taking: _in questo corso_. Distinct from _lezione_ (lesson) and _percorso_ (curriculum). |
 | curriculum | percorso | it | Never bare "curriculum": in Italian it means a CV/résumé, a false friend. Use _percorso_ for the learning-curriculum sense. |
 | pathway | percorso | it | A structured learning sequence. Same word as _curriculum_ above; the two senses rarely appear together in one document. |
-| track (curriculum path) | indirizzo | it | Low-confidence pick. Flag for native-speaker confirmation. |
+| track (curriculum path) | indirizzo | it | Confirmed by a native speaker: the standard Italian word for a course of study (secondary-school _indirizzo_, university track). Stays distinct from _percorso_ (pathway). |
 | mentor / mentoring | mentore / mentoring | it | "Mentoring" is used as-is; "mentore" is the native word for the person. |
 | tutorial | tutorial | en | Established as-is in Italian tech/education writing. |
 
@@ -132,6 +132,22 @@ Naming convention and worked example are in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-01: Confirmed `track (curriculum path)` on `indirizzo`
+
+**Decided by:** owner (iHiD), on native speaker FraSanga's confirmation on the pinned
+Italian glossary thread (https://forum.jiki.io/t/319/8). **Human-decided: settled.**
+**Terms affected:** `track (curriculum path)`.
+
+The row already read _indirizzo_ but carried an agent's low-confidence flag asking for
+native-speaker confirmation. FraSanga gave exactly that: _indirizzo_ "is a suitable
+translation", used in Italy when choosing a course of study at secondary school (general
+academic, music, technical) and at university to distinguish tracks such as cybersecurity
+and AI within one field. The flag was left in place after that reply and FraSanga noticed
+it was still there (https://forum.jiki.io/t/895/2). The Notes column now records the
+confirmation instead of requesting it, and the row is protected: a native speaker has
+settled it, so no later pass may change the target without a fresh human agreement logged
+here.
 
 ### 2026-08-01: Moved `toggle` from `alternare` to `azionare`
 

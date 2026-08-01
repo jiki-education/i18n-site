@@ -2,8 +2,8 @@
 lang: "it"
 name: "Italian"
 family: null
-stage: "setup"
-governance_sha: "4033bc3"
+stage: "refining"
+governance_sha: "b1bf6ce"
 content_version: "36c852445582"
 published_at: "2026-08-01"
 term_count: 57

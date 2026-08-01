@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "4033bc3",
+  "governance_sha": "b1bf6ce",
   "approved": 29,
   "disapproved": 0,
-  "total": 154,
+  "total": 155,
   "languages": [
     {
       "lang": "el",
@@ -384,6 +384,47 @@
       ]
     },
     {
+      "lang": "pt-pt",
+      "name": "European Portuguese",
+      "stage": "refining",
+      "category_slug": "i18n-pt-pt",
+      "approved": 1,
+      "disapproved": 0,
+      "total": 6,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 341,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 774,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 775,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 822,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "sr",
       "name": "Serbian",
       "stage": "refining",
@@ -425,45 +466,9 @@
       ]
     },
     {
-      "lang": "pt-pt",
-      "name": "European Portuguese",
-      "stage": "refining",
-      "category_slug": "i18n-pt-pt",
-      "approved": 1,
-      "disapproved": 0,
-      "total": 5,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 341,
-          "status": "approved"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 774,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 775,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 822,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
       "lang": "it",
       "name": "Italian",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-it",
       "approved": 1,
       "disapproved": 0,

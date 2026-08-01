@@ -3,8 +3,8 @@ lang: "sv"
 name: "Swedish"
 family: null
 stage: "setup"
-governance_sha: "2195b8b"
-content_version: "b08339a204a0"
+governance_sha: "593199c"
+content_version: "33c68d018a29"
 published_at: "2026-08-01"
 term_count: 95
 category_id: 365
@@ -40,8 +40,8 @@ These are terms where the Swedish is used in prose, so the "Use (sv/en)" column 
 | true / false | sant / falskt | sv | Neuter forms with _värde_ and _villkor_ (_villkoret är sant_). Common-gender _sann / falsk_ when agreeing with an en-word (_jämförelsen är sann_). Lowercase in prose. |
 | string | sträng | sv | Inflects as a Swedish noun: _strängen_, _strängar_. |
 | Boolean | boolesk | sv | _ett booleskt värde_. Gloss as _sanningsvärde_ where the source defines it. The type name in code stays `Boolean`. |
-| array / list | array | sv | _en array_, _arrayen_, _arrayer_. Not _fält_ (collides with "field"), not _vektor_ (reads as the maths object), not _lista_ (keep that for an everyday list). Also covers the source's informal "list" for the same concept. |
-| dictionary | ordbok | sv | Carries the look-up-a-word picture the source teaches. Not _lexikon_ and not English _dictionary_. |
+| array / list | array | sv | _en array_, _arrayen_, _arrayer_. Not _fält_ (collides with "field"), not _vektor_ (reads as the maths object), not _lista_ (keep that for an everyday list). Also covers the source's informal "list" for the same concept. Confirmed as an established loanword by a native-speaker developer. |
+| dictionary | uppslagstabell | sv | The data-structure sense (a lookup table). Not _ordbok_, which read like an invented word for the concept; not English _dictionary_, which isn't used as a loanword and is too long to say casually. |
 | compound data type | sammansatt datatyp | sv | Distinct from a plain _datatyp_. |
 | random number | slumptal | sv | One word. The adjective is _slumpmässig_ (_en slumpmässig position_). |
 
@@ -174,6 +174,24 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-01: `dictionary` is `uppslagstabell`, not `ordbok`; `array` confirmed as `array`
+
+**Decided by:** native speakers (sneakymallard flagging `array`, estyrke answering in detail,
+sneakymallard deferring to estyrke's developer judgement) on the pinned Swedish glossary
+thread, forum topic 828, posts #3, #5-8 (https://forum.jiki.io/t/828/7).
+**Terms affected:** `array`, `dictionary`.
+
+sneakymallard flagged `array` as unfamiliar; asked to clarify, estyrke (a working developer,
+Sweden-Swedish) confirmed `array` is genuinely established as a loanword in that context, so
+the row is unchanged, just confirmed. For `dictionary`, `ordbok` was an unconfirmed agent
+coinage that estyrke said sounds invented; English `dictionary` isn't used as a loanword
+either (too long to say casually). Of the alternatives estyrke listed, `uppslagstabell`
+("lookup table") is the one they used as a real proposal (pairing it with `lista` for
+`array` as an alternative labelling scheme, which we're not taking since `array` itself is
+confirmed), and it keeps the same "look something up" image the old row was going for while
+being technically accurate to the data structure. sneakymallard deferred to estyrke's
+developer usage explicitly.
 
 ### 2026-08-01: `ampersand` is `och-tecken`, not `et-tecken`
 

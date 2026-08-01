@@ -3,8 +3,8 @@ lang: "zh-TW"
 name: "Traditional Chinese"
 family: "zh"
 stage: "setup"
-governance_sha: "a533838"
-content_version: "dd436f9526a8"
+governance_sha: "29b07a3"
+content_version: "67469323c0ab"
 published_at: "2026-08-01"
 term_count: 88
 category_id: 200
@@ -31,7 +31,6 @@ These are terms whose Chinese rendering is confirmed identical, character for ch
 | English | Chinese | Use (zh/en) | Notes |
 |---------|---------|-------------|-------|
 | value | 值 | zh | Ordinary word. Identical in both scripts. |
-| true / false | 真 / 假 | zh | Lowercase-equivalent in prose; code literals stay English. Identical in both scripts. |
 | dictionary | 字典 | zh | Identical in both scripts. |
 | element | 元素 | zh | Array element. Identical in both scripts. |
 
@@ -43,6 +42,12 @@ These are terms whose Chinese rendering is confirmed identical, character for ch
 | workflow | 工作流 | zh | The software-engineering sense. Identical in both scripts. |
 | deploy | 部署 | zh | Identical in both scripts. |
 | framework | 框架 | zh | Fully translated (see § Loanword policy in `guide.md`); not kept as an English loanword. Identical in both scripts. |
+
+## Keep in English
+
+| English | Chinese gloss (on `<define>`) | Notes |
+|---------|-------------------------------|-------|
+| true / false | 真 / 假 | Real Chinese CS books use `true`/`false` untranslated in prose; keep it that way, only explaining it as 真/假 where the source `<define>`s it. Code literals stay English regardless. Identical in both scripts, so it lives here in the family file. |
 
 ## Jiki physical metaphors
 

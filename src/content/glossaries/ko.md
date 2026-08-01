@@ -3,9 +3,9 @@ lang: "ko"
 name: "Korean"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "bcefba882992"
-published_at: "2026-07-31"
+governance_sha: "e131080"
+content_version: "535711ead0c5"
+published_at: "2026-08-01"
 term_count: 51
 category_id: 236
 forum_topic_id: 479
@@ -113,12 +113,29 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | chain (array metaphor) | 사슬 | Lower confidence than 상자/기계; flagged for a native-speaker gut-check on first real use. |
 | shelves (storage) | 선반 | Untested in this specific teaching context; flagged for a native-speaker gut-check on first real use. |
 | board / whiteboard | 칠판 | **One object, one word.** The board the learner puts instructions on for Jiki to come along and follow, and the board a function keeps its own instructions and notes on, are the same 칠판; never use two words for it. Flagged for a native-speaker gut-check. |
-| warehouse (Jiki's warehouse) | 창고 | "Jiki가 지내는 창고를 들여다보면". |
+| warehouse (Jiki's warehouse) | 작업실 | The room where Jiki's machine shelf lives, not a storage space. Not 창고, which reads as a plain storage/logistics warehouse in Korean, not a place someone works with tools. If `workshop` (used separately on the scope concept page) is ever needed too, use a different word (e.g. 작업장) so the two don't collide. |
 | crank (machine crank) | 손잡이 (+ 돌리다) | Use the concrete handle-plus-turn phrasing: "손잡이를 돌려 전원을 켜요" (crank the handle and power it up). Keep the physical image; do not flatten it to 실행하다. |
 
 ---
 
 ## Decision log
+
+### 2026-08-01: `warehouse` is 작업실, not 창고
+
+**Decided by:** native speaker (Dojany) on the pinned Korean glossary thread, forum topic
+479, post #6 (https://forum.jiki.io/t/479/6). **Terms affected:** `warehouse`.
+
+창고 was an unconfirmed agent draft. Dojany's point: in Korean, 창고 reads as a plain
+storage space (a logistics warehouse or junk room), not somewhere a person works with
+tools, which is the intended image (Jiki's machine shelf lives there). Many Korean readers
+live in apartments, where private garages/sheds/workshop-style storage are unfamiliar, so
+창고 pulls even harder toward "storage" than it might for a Western reader. 작업실 (a room
+where someone works, builds, or uses tools) matches the illustration and the metaphor.
+
+**Flagged for future passes:** `workshop` is a separate metaphor (`global/terms.md`, used
+on the scope concept page) that ko has not translated yet. When it comes up, do not also
+render it 작업실; pick a different word (e.g. 작업장) so the two don't collide, the way
+Italian keeps `magazzino` (warehouse) distinct from `officina` (workshop).
 
 ### 2026-07-31: `mental model` is 머릿속 모형, not 멘탈 모델
 

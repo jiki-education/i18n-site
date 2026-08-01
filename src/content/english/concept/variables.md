@@ -2,10 +2,10 @@
 type: "concept"
 slug: "variables"
 title: "Creating and Using Variables"
-en_md5: "6fca9aed7a4f51de337288e739f8b44a"
+en_md5: "cc99d0320435124c96d2fed07dc28074"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/variables/source.md"
-captured_at: "2026-07-31"
+captured_at: "2026-08-01"
 ---
 
 <define>Variables</define> are what let us store information. When we're coding, we often need to store some number or some string to use later, and variables are how we do it. So let's zoom out a bit in Jiki's warehouse, and you'll see that he has another set of shelves. We're already familiar with the first set of shelves that have got the functions on, these little machines like `move` and `rectangle`. But on this second set of shelves, rather than machines, you can see lots of boxes, and these boxes are what we call variables. You can tell Jiki to store anything in these boxes, and then later on ask him to get it out again. Each box has a name, exactly the same as functions have a name, and each box contains just one thing. For now, either a number or a string. But we'll look at storing more complex things in them further in the course.
@@ -18,7 +18,7 @@ captured_at: "2026-07-31"
   height="173"
 />
 
-So how do we tell Jiki to make a box and put something in it? We use the <define>`let`</define> keyword. The `let` keyword tells Jiki that he needs to make a new box. You can imagine him unpacking a cardboard box from its wrapper, putting it all together, and then he looks at what comes after the word `let`, and that's the label that he puts on the box, in this case, <define>`name`</define>. So he gets out his pen, and he writes `name` on the label. Then he looks at what comes after the <define>equal sign</define>. In this case, it's my name, `"Jeremy"`, and because `"Jeremy"` is a string, he gets a piece of paper, and he writes `"Jeremy"` on it. It's just a string, exactly the same as the colors you've been working with, and then he puts that piece of paper into the box.
+So how do we tell Jiki to make a box and put something in it? We use the `let` keyword. The `let` keyword tells Jiki that he needs to make a new box. You can imagine him unpacking a cardboard box from its wrapper, putting it all together, and then he looks at what comes after the word `let`, and that's the label that he puts on the box, in this case, <define>`name`</define>. So he gets out his pen, and he writes `name` on the label. Then he looks at what comes after the <define>equal sign</define>. In this case, it's my name, `"Jeremy"`, and because `"Jeremy"` is a string, he gets a piece of paper, and he writes `"Jeremy"` on it. It's just a string, exactly the same as the colors you've been working with, and then he puts that piece of paper into the box.
 
 ```javascript
 let name = "Jeremy"
@@ -46,9 +46,9 @@ Also, every variable name must be unique. You can't have two boxes with the same
   height="400"
 />
 
-So let's look at where we might want to use a variable. Let's say we're drawing a sun in the sky. We know we can use the <define>`circle`</define> function and give it four inputs. Its <define>`left`</define>, <define>`top`</define>, <define>`radius`</define>, and <define>`color`</define>. But as we draw lots of things and have all of these numbers scattered throughout our code, it can be really hard to keep track of and read. So instead, we can create variables for each of the left, top, `radius`, and `color`, and then refer to those variables later. So our end goal here is to be able to use the `circle` function and specify nice, readable names of boxes, and when Jiki sees those names, he'll know to get the boxes from the shelves and use whatever is in them.
+So let's look at where we might want to use a variable. Let's say we're drawing a sun in the sky. We know we can use the <define>`circle`</define> function and give it four inputs. Its left, top, <define>`radius`</define>, and <define>`color`</define>. But as we draw lots of things and have all of these numbers scattered throughout our code, it can be really hard to keep track of and read. So instead, we can create variables for each of the left, top, `radius`, and `color`, and then refer to those variables later. So our end goal here is to be able to use the `circle` function and specify nice, readable names of boxes, and when Jiki sees those names, he'll know to get the boxes from the shelves and use whatever is in them.
 
-So let's create some variables for these. We start with the left position of the sun. We use the `let` keyword to tell Jiki to create a new box called <define>`leftPosition`</define>. Notice the camel case there with the capital P. And we tell Jiki what number goes in the box. He puts that on the shelves, then moves on to do the same for <define>`topPosition`</define>, `radius`, and `color`.
+So let's create some variables for these. We start with the left position of the sun. We use the `let` keyword to tell Jiki to create a new box called `leftPosition`. Notice the camel case there with the capital P. And we tell Jiki what number goes in the box. He puts that on the shelves, then moves on to do the same for `topPosition`, `radius`, and `color`.
 
 ```javascript
 let leftPosition = 10

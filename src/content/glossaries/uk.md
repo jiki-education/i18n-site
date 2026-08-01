@@ -2,11 +2,11 @@
 lang: "uk"
 name: "Ukrainian"
 family: null
-stage: "setup"
-governance_sha: "8e3de87"
-content_version: "bbd0c9985eb3"
-published_at: "2026-07-31"
-term_count: 112
+stage: "refining"
+governance_sha: "2fbebc1"
+content_version: "bdaf9b86611d"
+published_at: "2026-08-01"
+term_count: 122
 category_id: 100
 forum_topic_id: 308
 video_player_forum_topic_id: 785
@@ -129,6 +129,7 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | curriculum | навчальна програма | uk | |
 | course | курс | uk | The whole Jiki course the learner is taking: _у цьому курсі_. Distinct from _урок_ (lesson) and _навчальна програма_ (curriculum). |
 | level | рівень | uk | |
+| dashboard | панель керування | uk | Not bare _панель_ (reads badly in context, e.g. _поверніться на панель_). The learner's own landing screen after login (progress, streak, next steps), not an admin area. |
 | milestone | віха / етап | uk | |
 | pathway | шлях навчання | uk | |
 | bootcamp | буткемп | uk | |
@@ -137,6 +138,23 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | track (curriculum path) | трек (курсу) | uk | |
 | tutorial | туторіал / посібник | uk | |
 | solution (learner's submission) | рішення | uk | |
+
+### Drawing & colour (exercise family)
+
+| English | Ukrainian | Use (uk/en) | Notes |
+|---------|-----------|-------------|-------|
+| hue | відтінок | uk | Unconfirmed draft (agent, 2026-08-01). The 0-360 position on the colour wheel; recurs across the "draw" exercise family. |
+| lightness | світлість | uk | Unconfirmed draft (agent, 2026-08-01). Deliberately distinct from _яскравість_ (brightness); keep it stable across the whole draw family. |
+| canvas (drawing surface) | полотно | uk | Unconfirmed draft (agent, 2026-08-01). The surface drawn on, not the HTML element name. Do not mix with _канва_ / _канвас_ in one document. |
+| hex color / hex string | шістнадцятковий колір / шістнадцятковий код кольору | uk | Unconfirmed draft (agent, 2026-08-01). Use the first for the colour itself, the second for the `#rrggbb` string. Not _hex-код_: keep the whole term in Ukrainian script. |
+| radial width / radial height | радіальна ширина / радіальна висота | uk | Unconfirmed draft (agent, 2026-08-01), **low confidence**: an ellipse's `rx`/`ry`. Awaiting native-speaker confirmation on t/308; do not treat as settled. |
+
+### Characters & story vocabulary (exercise family)
+
+| English | Ukrainian | Use (uk/en) | Notes |
+|---------|-----------|-------------|-------|
+| bouncer (the robot bouncer character) | охоронець | uk | Unconfirmed draft (agent, 2026-08-01). Neutral register; not the crude colloquial _викидайло_. |
+| Yuki / Ando (rock-paper-scissors characters) | Юкі / Андо | uk | Unconfirmed draft (agent, 2026-08-01). **Prose only.** The sentinel strings the learner has to type stay Latin: `"Yuki"`, `"Ando"`, `"tie"`. |
 
 ## Keep in English
 
@@ -157,6 +175,7 @@ use the Ukrainian gloss shown below; with no `<define>`, use the English bare, w
 | Variable and function names | (no gloss) | Never translated. |
 | CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. |
 | Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
+| camel case | (no gloss) | Unconfirmed draft (agent, 2026-08-01). The naming convention: stays _camel case_, the form Ukrainian devs actually use. The camel image is carried by the surrounding explanation, so no Ukrainian coinage is introduced. |
 
 ## Jiki physical metaphors
 
@@ -165,6 +184,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | English metaphor | Ukrainian rendering | Notes |
 |-------------------|----------------------|-------|
 | box (value container) | коробка | Neutral default. _Скринька_ (a warmer, chest/mailbox-adjacent word) is an accepted alternative if a passage wants a softer tone; do not mix both in one document. |
+| label (on a variable box) | етикетка | Unconfirmed draft (agent, 2026-08-01). The name stuck on the outside of a _коробка_; part of the box metaphor set, so keep it stable rather than alternating with _підпис_ / _наліпка_ / _ярлик_. |
 | chain (array metaphor) | ланцюжок | Not _ланцюг_. |
 | input slot | щілина | |
 | return chute | лоток | |
@@ -189,6 +209,72 @@ glyph in a code tag immediately after: _квадратні дужки (`[]`)_.
 ---
 
 ## Decision log
+
+### 2026-08-01: Nine terms added as unconfirmed drafts from the Stage-2 batch-1 passes
+
+**Decided by:** agent, per the standing rule from the owner (iHiD) that translation-pass
+proposals are added to the glossary as unconfirmed drafts rather than held back for review:
+the only way a native speaker gives feedback is by seeing the term on the published site.
+**Source:** the five Stage-2 batch-1 translation passes (concept/variables, concept/if,
+concept/repeat, exercise/rock-paper-scissors, exercise/rainbow). Not a forum thread; not
+native-speaker-sourced.
+**Status:** unconfirmed drafts. None of these outrank a later native-speaker call.
+**Terms affected:** `bouncer`, `camel case`, `label`, `hue`, `lightness`, `canvas`,
+`hex color / hex string`, `radial width / radial height`, `Yuki / Ando`.
+
+Nine rows added, each filed under the best-fit existing section, with two new subsections
+under "Localize" for the groups that had no home:
+
+- **From the exercise/rock-paper-scissors pass:** `bouncer` (the recurring robot-bouncer
+  character) → **охоронець**, chosen for neutral register over the crude colloquial
+  _викидайло_, which is the word Ukrainian actually uses for a nightclub bouncer but is far
+  too coarse for a children's-course character. `Yuki / Ando` → **Юкі / Андо**, transliterated
+  in prose only: the sentinel strings the learner has to type (`"Yuki"`, `"Ando"`, `"tie"`)
+  stay Latin, because they are compared against literally and translating them would break
+  the exercise. Both went into a new "Characters & story vocabulary (exercise family)"
+  subsection.
+- **From the concept/variables pass:** `camel case` kept in English, added under "Keep in
+  English". Real Ukrainian alternatives exist, but the English form is what Ukrainian
+  developers actually say, and the camel image the concept page leans on is carried by the
+  surrounding explanation rather than by the term itself. `label` (the name stuck on the
+  outside of a variable box) → **етикетка**, added to "Jiki physical metaphors" because it
+  belongs to the recurring box-metaphor set alongside _коробка_. _Підпис_, _наліпка_ and
+  _ярлик_ are all defensible; the point of glossarying it is that this word recurs every
+  time variables come up, so it must not drift between pages.
+- **From the exercise/rainbow pass, plus the draw-family message catalogs:** `hue` →
+  **відтінок** and `lightness` → **світлість**, the two HSL terms. Both were already used
+  consistently by the workers across both catalogs. `lightness` is the one with a real
+  collision risk: _яскравість_ is "brightness", a different channel, so _світлість_ has to
+  stay stable family-wide. `canvas` → **полотно**, likewise already consistent across both
+  catalogs, with _канва_ and _канвас_ as the live alternatives. `hex color / hex string` →
+  **шістнадцятковий колір / шістнадцятковий код кольору**; _hex-код_ is common in Ukrainian
+  dev writing but leaves a bare Latin token inside a Ukrainian word, which this glossary
+  avoids elsewhere (see the `tech / tech industry` entry below). All filed under a new
+  "Drawing & colour (exercise family)" subsection.
+- **`radial width / radial height` → радіальна ширина / радіальна висота is low
+  confidence and explicitly needs a native-speaker check.** These render an ellipse's
+  `rx`/`ry`. The English is itself a coinage, and the Ukrainian is a literal calque of it,
+  so it may read as ambiguous or simply odd to a Ukrainian speaker (the alternative framings
+  are a semi-axis reading, or just "width/height of the ellipse"). Flag this one on the
+  pinned Ukrainian glossary thread, [t/308](https://forum.jiki.io/t/308), and treat the row
+  as provisional until it comes back.
+
+These are agent proposals from live translation work, added immediately per the standing
+rule above so that publishing the glossary to i18n is what surfaces them for review.
+
+### 2026-07-31: `dashboard` added as панель керування
+
+**Decided by:** iternewo (native speaker), in
+[t/817 posts 2 and 4](https://forum.jiki.io/t/817).
+**Terms affected:** `dashboard`.
+
+- iternewo flagged in post 2 that `dashboard` appears in the Solve the Maze exercise but was
+  missing from the glossary, and initially suggested _адмін-панель_. Asked to clarify in
+  post 3, since Jiki's dashboard is the learner's own landing screen (progress, streak, next
+  steps) and not an admin area. In post 4 he confirmed **панель керування** works, and
+  separately noted that bare _панель_ (as used in the exercise text, "поверніться на
+  панель") reads badly in this context.
+- New row: `dashboard` → **панель керування**.
 
 ### 2026-07-31: `Test` confirmed staying in English
 

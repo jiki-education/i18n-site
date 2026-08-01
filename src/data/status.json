@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "05d5a78",
+  "governance_sha": "9f00e97",
   "approved": 43,
   "disapproved": 1,
-  "total": 181,
+  "total": 188,
   "languages": [
     {
       "lang": "el",
@@ -342,6 +342,62 @@
       ]
     },
     {
+      "lang": "hu",
+      "name": "Hungarian",
+      "stage": "refining",
+      "category_slug": "i18n-hu",
+      "approved": 3,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 289,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 758,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 759,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 805,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": 877,
+          "status": "approved"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "it",
       "name": "Italian",
       "stage": "refining",
@@ -398,64 +454,13 @@
       ]
     },
     {
-      "lang": "hu",
-      "name": "Hungarian",
-      "stage": "refining",
-      "category_slug": "i18n-hu",
-      "approved": 3,
-      "disapproved": 0,
-      "total": 8,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 289,
-          "status": "approved"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 758,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 759,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 805,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": 877,
-          "status": "approved"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
       "lang": "zh-TW",
       "name": "Traditional Chinese",
       "stage": "refining",
       "category_slug": "i18n-zh-tw",
       "approved": 3,
       "disapproved": 0,
-      "total": 6,
+      "total": 9,
       "items": [
         {
           "key": "glossary",
@@ -486,6 +491,21 @@
           "key": "exercise/rainbow",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -496,7 +516,7 @@
       "category_slug": "i18n-pl",
       "approved": 3,
       "disapproved": 0,
-      "total": 4,
+      "total": 7,
       "items": [
         {
           "key": "glossary",
@@ -517,6 +537,21 @@
           "key": "exercise/maze-solve-basic",
           "topic_id": 811,
           "status": "approved"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },

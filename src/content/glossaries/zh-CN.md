@@ -3,8 +3,8 @@ lang: "zh-CN"
 name: "Simplified Chinese"
 family: "zh"
 stage: "setup"
-governance_sha: "29b07a3"
-content_version: "9127b24b36ec"
+governance_sha: "6dd1ba1"
+content_version: "1ad8c63e9ced"
 published_at: "2026-08-01"
 term_count: 117
 category_id: 199
@@ -107,7 +107,7 @@ These are terms where the Chinese is used in prose, so the "Use (zh-CN/en)" colu
 | expression | 表达式 | zh-CN | |
 | operator | 运算符 | zh-CN | |
 | statement (executable) | 语句 | zh-CN | The imperative sense: a line of code that does something and gets executed. |
-| statement (logical claim) | 断言 | zh-CN | The proposition/assertion sense: a claim that is true or false. Pick by meaning, not by the English word. |
+| statement (logical claim) | 判定 | zh-CN | The proposition/assertion sense: a claim that is true or false, determinable on the spot (e.g. `if (a > b)`). Not 断言 (too formal for young users), not 命题 (implies a full conjecture whose truth isn't yet known, not an immediately-checkable condition). Pick by meaning, not by the English word. |
 | function | 函数 | zh-CN | The *keyword* `function` in code stays English; the concept in prose is 函数. |
 | to call (a function) | 调用 | zh-CN | 调用一个函数. |
 | to define (a function) | 定义 | zh-CN | |
@@ -224,6 +224,18 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-01: `statement (logical claim)` is `判定`, not `断言`
+
+**Decided by:** native speaker taylorren, on forum topic 868, post #3
+(https://forum.jiki.io/t/868/3). **Terms affected:** `statement (logical claim)`.
+
+Follow-up to the entry below, which left this one an open question between 判定/判断 and
+命题. taylorren recommends 判定/判断 (interchangeable) and explicitly rules out 命题: a
+programming condition like `if (a > b)` is immediately checkable true/false, whereas 命题
+implies a fuller claim or conjecture whose truth isn't yet known (his example: "every even
+number greater than 4 is the sum of two primes"). Picked 判定 as the single settled row
+value since he said the two were interchangeable.
 
 ### 2026-08-01: Native-speaker review of the Mainland terms (forum topic 868)
 

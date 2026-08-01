@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "0211ef9",
-  "approved": 27,
+  "governance_sha": "6f2bc48",
+  "approved": 29,
   "disapproved": 0,
-  "total": 148,
+  "total": 149,
   "languages": [
     {
       "lang": "el",
@@ -297,6 +297,78 @@
       ]
     },
     {
+      "lang": "zh-TW",
+      "name": "Traditional Chinese",
+      "stage": "setup",
+      "category_slug": "i18n-zh-tw",
+      "approved": 2,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 414,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 792,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 793,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 821,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "sr",
+      "name": "Serbian",
+      "stage": "refining",
+      "category_slug": "i18n-sr",
+      "approved": 1,
+      "disapproved": 0,
+      "total": 6,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 402,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 778,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 779,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 814,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "pt-pt",
       "name": "European Portuguese",
       "stage": "refining",
@@ -324,42 +396,6 @@
           "key": "exercise/maze-solve-basic",
           "topic_id": 822,
           "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "sr",
-      "name": "Serbian",
-      "stage": "refining",
-      "category_slug": "i18n-sr",
-      "approved": 1,
-      "disapproved": 0,
-      "total": 5,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 402,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 778,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 779,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 814,
-          "status": "approved"
         },
         {
           "key": "exercise/rock-paper-scissors",
@@ -917,37 +953,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 815,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "zh-TW",
-      "name": "Traditional Chinese",
-      "stage": "setup",
-      "category_slug": "i18n-zh-tw",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 414,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 792,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 793,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 821,
           "status": "pending"
         }
       ]

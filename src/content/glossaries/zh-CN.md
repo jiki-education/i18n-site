@@ -3,10 +3,10 @@ lang: "zh-CN"
 name: "Simplified Chinese"
 family: "zh"
 stage: "setup"
-governance_sha: "6dd1ba1"
-content_version: "1ad8c63e9ced"
+governance_sha: "25595e6"
+content_version: "57f2343204ad"
 published_at: "2026-08-01"
-term_count: 117
+term_count: 118
 category_id: 199
 forum_topic_id: 413
 video_player_forum_topic_id: 791
@@ -33,6 +33,7 @@ These are terms whose Chinese rendering is confirmed identical, character for ch
 | value | 值 | zh | Ordinary word. Identical in both scripts. |
 | dictionary | 字典 | zh | Identical in both scripts. |
 | element | 元素 | zh | Array element. Identical in both scripts. |
+| character (maze figure / mental-model "little person") | 角色 | zh | The on-screen figure the learner controls in maze exercises, and the same figure imagined "inside the computer" in the mental-model metaphor. Not 小人 (reads as "a petty/mean person" or an old humble first-person pronoun in Chinese, not a friendly figure). Distinct from the text-character sense (字符 in zh-CN's glossary), so no collision. Identical in both scripts. |
 
 ### Tooling & engineering
 

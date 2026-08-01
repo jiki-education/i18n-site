@@ -3,8 +3,8 @@ lang: "zh-TW"
 name: "Traditional Chinese"
 family: "zh"
 stage: "setup"
-governance_sha: "5cb9292"
-content_version: "88b990553788"
+governance_sha: "25595e6"
+content_version: "6cedf480b860"
 published_at: "2026-08-01"
 term_count: 89
 category_id: 200
@@ -33,6 +33,7 @@ These are terms whose Chinese rendering is confirmed identical, character for ch
 | value | 值 | zh | Ordinary word. Identical in both scripts. |
 | dictionary | 字典 | zh | Identical in both scripts. |
 | element | 元素 | zh | Array element. Identical in both scripts. |
+| character (maze figure / mental-model "little person") | 角色 | zh | The on-screen figure the learner controls in maze exercises, and the same figure imagined "inside the computer" in the mental-model metaphor. Not 小人 (reads as "a petty/mean person" or an old humble first-person pronoun in Chinese, not a friendly figure). Distinct from the text-character sense (字符 in zh-CN's glossary), so no collision. Identical in both scripts. |
 
 ### Tooling & engineering
 
@@ -188,26 +189,28 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | machine (function metaphor) | 機器 | The machine a function is modelled as, with its input slot (投入口, shared) and return chute (出料口, shared). |
 | shelves (where things are stored) | 架子 / 置物架 | 架子 for the general shelving image, 置物架 when the whole storage unit is meant. |
 | warehouse (Jiki's warehouse) | 倉庫 | Where Jiki hangs out and keeps his machine shelf. |
-| character (maze figure / "the little person") | 小傢伙 | **Awaiting a second native-speaker confirmation.** Not 小人, which reads as "a petty/mean person" or an old humble first-person pronoun, not a friendly figure. Covers both the on-screen maze character and the "little man inside the computer" mental-model image on the using-functions page (same word, same figure). |
 | crank (machine crank) | 手把 (the handle) / 轉動手把 (to crank it) | Jiki turns the handle to power a machine up: 轉動手把、讓它通電. Not 曲柄, which is engineering vocabulary rather than the everyday word. |
 
 ---
 
 ## Decision log
 
-### 2026-08-01: `character` (maze figure / mental-model "little person") is `小傢伙`
+### 2026-08-01: `character` (maze figure / mental-model "little person") is `角色`, moved to the family file
 
-**Decided by:** native speaker (cherylli), forum topic 821, posts #2 and #4
-(https://forum.jiki.io/t/821/2, https://forum.jiki.io/t/821/4).
-**Terms affected:** `character` (the maze figure, also used for the "little man inside the
-computer" mental-model metaphor on the using-functions page — same figure, same word).
-**Status:** provisional, awaiting a second native speaker's confirmation (cherylli asked
-for one herself).
+**Decided by:** native speaker (cherylli), forum topic 821, posts #2, #4, and #5
+(https://forum.jiki.io/t/821/2, /4, /5). **Terms affected:** `character` (the maze figure,
+also used for the "little man inside the computer" mental-model metaphor — same figure,
+same word).
 
 小人 was in use with no glossary row backing it. cherylli flagged it as reading like "a
-petty/mean person" or an old-fashioned humble first-person pronoun, not a friendly figure,
-and wasn't confident in her own first suggestion (小矮人, "dwarf"). Offered alternatives
-(小人偶, 小傢伙); she picked 小傢伙.
+petty/mean person" or an old-fashioned humble first-person pronoun, not a friendly figure.
+Her first instinct (小矮人, "dwarf") she wasn't confident in; offered 小人偶/小傢伙 as
+alternatives, she picked 小傢伙 — but then noticed (post #5) that zh-CN's published content
+already uses **角色** for this exact figure, consistently, with no negative connotation, and
+suggested zh-TW just match it. Confirmed: zh-TW's own maze translation already uses 角色
+everywhere except the one 小人 instance she flagged, so 角色 was already the de facto
+answer. Settled on 角色 rather than 小傢伙, and since it's character-identical across both
+scripts, moved to `../zh/glossary.md` (the family file) instead of staying zh-TW-only.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

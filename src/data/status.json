@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-01",
-  "governance_sha": "b16a5e3",
+  "governance_sha": "16ec532",
   "approved": 43,
   "disapproved": 1,
-  "total": 189,
+  "total": 194,
   "languages": [
     {
       "lang": "el",
@@ -68,7 +68,7 @@
       "category_slug": "i18n-uk",
       "approved": 4,
       "disapproved": 0,
-      "total": 10,
+      "total": 13,
       "items": [
         {
           "key": "glossary",
@@ -117,6 +117,21 @@
         },
         {
           "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-clock",
           "topic_id": null,
           "status": "pending"
         }
@@ -459,6 +474,62 @@
       ]
     },
     {
+      "lang": "pl",
+      "name": "Polish",
+      "stage": "refining",
+      "category_slug": "i18n-pl",
+      "approved": 3,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 417,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 770,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 771,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 811,
+          "status": "approved"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "zh-TW",
       "name": "Traditional Chinese",
       "stage": "refining",
@@ -509,52 +580,6 @@
         },
         {
           "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "pl",
-      "name": "Polish",
-      "stage": "refining",
-      "category_slug": "i18n-pl",
-      "approved": 3,
-      "disapproved": 0,
-      "total": 7,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 417,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 770,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 771,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 811,
-          "status": "approved"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables",
           "topic_id": null,
           "status": "pending"
         }

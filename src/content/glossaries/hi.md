@@ -2,8 +2,8 @@
 lang: "hi"
 name: "Hindi"
 family: null
-stage: "setup"
-governance_sha: "42dbe24"
+stage: "refining"
+governance_sha: "f023aa1"
 content_version: "7a7fff390e5d"
 published_at: "2026-08-02"
 term_count: 120

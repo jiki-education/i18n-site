@@ -2,21 +2,21 @@
 lang: "hi"
 type: "exercise"
 slug: "maze-solve-basic"
-title: "भूलभुलैया हल कीजिए"
+title: "भूलभुलैया से बाहर निकलिए"
 status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/maze-solve-basic"
 en_md5: "a12c370c8d1532022a89fdd74166be21"
-governance_sha: "38591e4"
-content_version: "f9b4cdeba85d"
-published_at: "2026-08-01"
+governance_sha: "fbefb09"
+content_version: "d6e39ff063c3"
+published_at: "2026-08-02"
 forum_topic_id: 804
 messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"checks","rows":[{"key":"didNotReachEnd","english":"You didn't reach the end of the maze.","target":"आप भूलभुलैया के अंत तक नहीं पहुंचे।"}]},{"name":"tasks","rows":[{"key":"solveMaze.name","english":"Guide the person to the end of the maze","target":"पात्र को भूलभुलैया के अंत तक पहुंचाइए"},{"key":"solveMaze.description","english":"Navigate through the maze to reach the green target","target":"हरे निशान तक पहुंचने के लिए भूलभुलैया में से रास्ता निकालिए"}]},{"name":"scenarios","rows":[{"key":"maze1.name","english":"Guide the person to the end of the maze","target":"पात्र को भूलभुलैया के अंत तक पहुंचाइए"},{"key":"maze1.description","english":"Your job is to navigate your person through the maze to the green goal square.","target":"आपका काम है, अपने पात्र को भूलभुलैया में से निकालकर हरे रंग के लक्ष्य वाले खाने तक पहुंचाना।"}]},{"name":"hints","rows":[{"key":"whatAmIMoving.question","english":"What am I moving where?","target":"मुझे किसे कहां ले जाना है?"},{"key":"whatAmIMoving.answer","english":"You're moving the little person, who starts at the top-left, to the green circle at the bottom right, avoiding any red striped cells.","target":"आपको उस छोटे पात्र को, जो ऊपर बाईं तरफ से शुरू होता है, नीचे दाईं तरफ बने हरे गोले तक ले जाना है, और रास्ते में लाल धारियों वाले खानों से बचना है।"},{"key":"turnLeftTurnsRight.question","english":"When I turn left, the person turns right!","target":"मेरे बाएं मोड़ने पर पात्र दाएं मुड़ जाता है!"},{"key":"turnLeftTurnsRight.answer","english":"The person turns relative to the position they're facing. So if they are facing right, and turn left, the person will change to face up.","target":"पात्र उसी दिशा के हिसाब से मुड़ता है जिस तरफ वह इस समय देख रहा है। तो अगर पात्र दाईं तरफ देख रहा है और बाएं मुड़ता है, तो अब वह ऊपर की तरफ देखने लगेगा।"}]}]},{"heading":"Shared \"maze\" messages","note":"Shared by every exercise in the maze category, not just this one. A change here changes all of them.","namespaces":[{"name":"errors","rows":[{"key":"fellOffEdge","english":"Oh no - you tried to fall off the edge of the maze!","target":"अरे नहीं! आपने भूलभुलैया के किनारे से बाहर गिरने की कोशिश की!"},{"key":"hitWall","english":"Ouch - you walked into a wall!","target":"आउच! आप दीवार से टकरा गए!"},{"key":"walkedIntoFire","english":"Ouch! You walked into the fire!","target":"आउच! आप आग में चले गए!"},{"key":"walkedIntoPoop","english":"Ewww! You walked into the poop! 💩💩💩","target":"छी! आपने पॉटी पर पैर रख दिया! 💩💩💩"}]},{"name":"describers","rows":[{"key":"move","english":"Move the character forward one cell","target":"किरदार को एक खाना आगे ले जाता है"},{"key":"turnLeft","english":"Turn the character 90 degrees left","target":"किरदार को 90 डिग्री बाएं घुमाता है"},{"key":"turnRight","english":"Turn the character 90 degrees right","target":"किरदार को 90 डिग्री दाएं घुमाता है"}]}]}]
 ---
 
 आपके पहले अभ्यास में आपका स्वागत है!
 
-इस अभ्यास का उद्देश्य आपको यह परिचित कराना है कि सीखने का यह वातावरण (_learning environment_) कैसे काम करता है। आपका काम है, बाईं ओर दिख रही भूलभुलैया को उस छोटे पात्र को निर्देश देकर हल करना। आप वे सारे निर्देश लिखते हैं जिनका पात्र को पालन करना है, फिर **Run Code** पर क्लिक करते हैं ताकि वह उनका पालन करे।
+इस अभ्यास का उद्देश्य आपको यह परिचित कराना है कि सीखने का यह वातावरण (_learning environment_) कैसे काम करता है। आपका काम यह है कि बाईं ओर दिख रही भूलभुलैया में फंसे हुए छोटे पात्र को निर्देश देकर बाहर निकालना है। आप वे सारे निर्देश लिखते हैं जिनका पात्र को पालन करना है। फिर **Run Code** बटन पर क्लिक करने से वह पात्र उन निर्देशों का पालन करता है।
 
 आप ये तीन निर्देश इस्तेमाल कर सकते हैं:
 
@@ -28,4 +28,4 @@ messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"ch
 
 अपने कोड को बार-बार चलाकर देखना एक अच्छी आदत है!
 
-भूलभुलैया हल करने के बाद आप डैशबोर्ड पर वापस जाकर अगला पाठ शुरू कर सकते हैं।
+भूलभुलैया से बाहर निकलने के बाद आप डैशबोर्ड पर वापस जाकर अगला पाठ शुरू कर सकते हैं।

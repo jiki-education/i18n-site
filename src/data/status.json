@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "07ad446",
-  "approved": 87,
+  "governance_sha": "fbefb09",
+  "approved": 88,
   "disapproved": 1,
   "total": 286,
   "languages": [
@@ -1364,6 +1364,37 @@
       ]
     },
     {
+      "lang": "hi",
+      "name": "Hindi",
+      "stage": "setup",
+      "category_slug": "i18n-hi",
+      "approved": 1,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 482,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 756,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 757,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 804,
+          "status": "approved"
+        }
+      ]
+    },
+    {
       "lang": "sv",
       "name": "Swedish",
       "stage": "setup",
@@ -1576,37 +1607,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "hi",
-      "name": "Hindi",
-      "stage": "setup",
-      "category_slug": "i18n-hi",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 482,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 756,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 757,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 804,
           "status": "pending"
         }
       ]

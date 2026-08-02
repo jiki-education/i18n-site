@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "8cf9a9f",
-  "approved": 139,
+  "governance_sha": "72deb97",
+  "approved": 140,
   "disapproved": 1,
   "total": 327,
   "languages": [
@@ -927,7 +927,7 @@
       "name": "Latin American Spanish",
       "stage": "refining",
       "category_slug": "i18n-es-419",
-      "approved": 7,
+      "approved": 8,
       "disapproved": 0,
       "total": 9,
       "items": [
@@ -974,7 +974,7 @@
         {
           "key": "concept/repeat",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         }
       ]
     },

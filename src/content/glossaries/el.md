@@ -3,10 +3,10 @@ lang: "el"
 name: "Greek"
 family: null
 stage: "refining"
-governance_sha: "8e3de87"
-content_version: "a43642d3bde0"
-published_at: "2026-07-31"
-term_count: 62
+governance_sha: "ec30de8"
+content_version: "1539f2c9a5a3"
+published_at: "2026-08-02"
+term_count: 63
 category_id: 265
 forum_topic_id: 497
 video_player_forum_topic_id: 747
@@ -113,10 +113,11 @@ it is the ordinary word here.
 | deploy (verb) | explain as "ανάπτυξη σε παραγωγικό περιβάλλον" | The verb inflects around the English word ("κάνω deploy"). Low confidence; revisit with native-speaker feedback. |
 | JavaScript, Python, React | (no gloss) | Product/language names. |
 | Debug, Test | (no gloss) | As keywords/technical tokens. |
-| Code, Bug, Frontend, Backend | (no gloss) | |
+| Code, Bug, Frontend, Backend | (no gloss) | **Bug is the one exception:** at its first mention across the Greek curriculum (the `while` loops concept page) it is written `bugs (λογικά σφάλματα)`, so a beginner meets the meaning once. Every other mention, on that page and every other, is bare English. |
 | Variable and function names | (no gloss) | Never translated. |
 | CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. |
 | Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
+| `let` (the JavaScript keyword) | _έστω_ | Confirmed by a native speaker (astyanax, 2026-07-31). The one exception to the row above: gloss it **once**, where the keyword is first introduced, as `` `let` (έστω) ``, borrowing the standard Greek mathematical "let" ("έστω x = 10"). Every later mention is bare `let`. |
 
 ## Jiki physical metaphors
 
@@ -148,6 +149,217 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-02: "bug" stays English, but is explained once, at its first mention
+
+**Decided by:** owner (iHiD).
+**Raised by:** astyanax (native speaker) on the Greek `while` loops concept review thread,
+https://forum.jiki.io/t/1059, asking what a Greek beginner is meant to make of the bare
+English word.
+**Status:** human-decided, settled.
+**Terms affected:** `Bug` (existing "Keep in English" row, Notes column only).
+
+The existing decision stands: Greek developers say "bug", so the English word is the
+ordinary word and it is not translated. The gap astyanax pointed at is that a beginner
+meeting it for the first time has no way in. The owner's ruling is a single one-off
+explanation rather than a running translation: at the **first** place the term appears
+across the Greek curriculum, the English word carries a short bracketed Greek explanation,
+and every later occurrence anywhere is bare English. This is the same shape as the `let`
+(έστω) decision above.
+
+Astyanax's own proposed Greek rendering, **λογικό σφάλμα**, is what the bracket uses. It is
+deliberately not a glossary term row: nothing translates "bug" as λογικό σφάλμα in running
+prose, and a term row would invite exactly that.
+
+The first mention is in `concepts/while-loops/el.md`, which is the only Greek curriculum
+file (concept page, exercise instructions or exercise catalog) where the word occurs at all.
+The second occurrence, later in the same paragraph, was deliberately left bare. The
+instruction is recorded permanently in `languages/el/concept/while-loops.md` so a future
+pass on that page does not strip the bracket or spread it to the other mention.
+
+### 2026-08-02: Unconfirmed drafts from the first Stage 3 batch (not yet in the glossary)
+
+**Decided by:** nobody yet. These are **proposals**, surfaced translating the first 10
+Stage 3 exercises (space-invaders-solve-basic, maze-solve-walk, fix-wall, snowman-basic,
+foxy-face, penguin, cloud-rain-sun, jumbled-house, golf-rolling-ball-loop,
+maze-solve-repeat). **None of them has been written into `glossary.md`.**
+
+- **row** (grid row, e.g. a row of aliens) → **σειρά**. Deliberately avoids **γραμμή**,
+  which is reserved for the `draw` family's `line()` describer. Medium confidence.
+- **shot** (golf) → **βολή**. Recurs across the golf family. Medium confidence.
+- **position** (a place on the grid/course) → **θέση**. Flagging only: this is the same
+  Greek word already assigned to **index**, so there's an overlap worth a native speaker's
+  eye rather than a proposal to fix it. Low confidence.
+- **puff** (a cloud puff, drawing) → **τολύπη**. Recurs 4 times in `cloud-rain-sun`; a real
+  alternative (**φούσκα**) exists. Low confidence.
+
+### 2026-08-02: Final -ν (τελικό -ν) rule added to `guide.md`
+
+**Raised by:** astyanax (native speaker) on the Greek `while` loops concept review thread,
+https://forum.jiki.io/t/1059 (posts 2683, 2753).
+**Status:** settled.
+
+Astyanax's first pass flagged "τρέξε τον βρόχο" and "έναν βρόχο", asking for the final -ν
+to drop before β. Applying that surfaced the masculine/neuter distinction: Triantafyllidis'
+grammar traditionally keeps τον/έναν's -ν in every position specifically so it stays
+distinguishable from neuter το/ένα. Asked astyanax directly whether Jiki prose should drop
+it on masculine forms generally; he checked further (including a university course page
+using the traditional form) and confirmed: **keep -ν on masculine τον/έναν always**, and
+apply the drop rule only to την/δεν/μην. `concepts/while-loops/el.md` was fixed to the
+drop-ν version first, then reverted back to "τρέξε τον βρόχο"/"έναν βρόχο" once this was
+confirmed. The guide now states the settled rule directly, with masculine as an explicit
+always-keep case.
+
+### 2026-08-02: Stage 2 batch 2 catch-up (unconfirmed drafts)
+
+**Decided by:** agent (proposals only, nothing written to `glossary.md`). This closes
+Greek's gap in the original Stage 2 queue (it had jumped ahead to Stage 2c and skipped this
+batch). Pass translated `two-fer`, `strings`, `digital-clock`, `arrays`, `weather-symbols`.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| data type | τύπος δεδομένων | Canonical Greek CS term; recurs across concept pages. | high |
+| compound data type | σύνθετος τύπος δεδομένων | Defined in `arrays`; sets the pattern for later compound types. | medium |
+| element (of an array) | στοιχείο | "αντικείμενο" would collide with "object" later. | high |
+| coin (number metaphor) | κέρμα | Jiki machine-slot metaphor; κέρμα vs νόμισμα needs settling. | high |
+| piece of paper (string metaphor) | κομμάτι χαρτί | Jiki string metaphor; shortens to bare "χαρτί" once established. | high |
+| input (value passed to a function/machine) | είσοδος | Proposed independently twice (two-fer, strings), same target both times. Must stay distinct from the agreed "θυρίδα" (input slot, physical opening). | medium |
+| quotation marks | εισαγωγικά (διπλά εισαγωγικά) | Greek "εισαγωγικά" defaults to guillemets («»); here it must always mean straight double quotes. | medium |
+| concatenation | συνένωση | Recurs across string exercises. | medium |
+| scenario | σενάριο | Recurs in every exercise catalog; prevents drift to περίπτωση/δοκιμή. | medium |
+| counter (loop counter) | μετρητής | "δείκτης" is reserved for "pointer". | medium |
+| iterate (verb) | διατρέχω | Glossary fixes only the noun "iteration" → "επανάληψη"; verb form needs to stay coherent. | medium |
+| template string | kept English | Greek devs use the English term; sets precedent for JS-syntax terms. | medium |
+| category label "Action" | Ενέργεια | Function-panel label, recurs across exercises. | medium |
+| category label "Time" | Ώρα | "Χρόνος" was the alternative. | low |
+| label (verb, to label a box) | βάζω ετικέτα / ως ετικέτα | Likely recurs in draw-family exercises. | low |
+
+**Possible guide bug, not a term row:** `guide.md` says weekday names aren't capitalised in
+Greek prose; standard Modern Greek orthography does capitalise them (Δευτέρα, Σάββατο). The
+weather-symbols worker followed the guide as written (δευτέρα, σάββατο). If confirmed wrong,
+fixing it means re-running weather-symbols (mode `all`) and auditing Stage 2c for the same
+pattern.
+
+### 2026-08-01: Stage 2c
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the Stage 2c
+translation batch (concepts: else, else-if, for-loops, while-loops, dictionaries; exercises:
+maze-turn-around, bouncer-dress-code, luhn, digital-root, word-count). They are logged here
+for review and have **not** been written to `glossary.md`; they need agreement (ideally a
+native speaker) before landing there. The renderings below are what the translated pages
+currently use, so a reviewer rejecting one implies fixing those pages.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| dictionary (data type) | λεξικό (pl. λεξικά) | Core data-type name; proposed independently by two workers. Alternative rejected: πίνακας κατακερματισμού (wrong register for beginners). | high |
+| key (dictionary key) | κλειδί | Proposed independently by two workers. Row needed to keep it distinct from the existing keyword → λέξη-κλειδί. Pairs with value → τιμή. | high |
+| character (exercise avatar) | ανθρωπάκι | Already the de facto choice in the maze family el catalog; maze-solve-basic's el instructions mix ανθρωπάκι with χαρακτήρας, which a row would stop. | high |
+| bouncer (recurring character) | πορτιέρης | Proposed independently by two workers (else-if concept, bouncer-dress-code exercise). Alternatives: μπράβος (rougher connotation), σεκιουριτάς. | medium |
+| infinite loop | ατέρμονος βρόχος (pl. ατέρμονες βρόχοι) | Alternatives: άπειρος βρόχος, learned ατέρμων βρόχος. Recurs across loop/debugging content. | medium |
+| initializer (for-loop part) | αρχικοποίηση | Alternative: αρχικοποιητής. Names one of the three canonical for-loop parts. | medium |
+| increment (for-loop part) | αύξηση | Alternative: προσαύξηση (common in Greek CS texts); plainer everyday word chosen per voice guidance. | medium |
+| else clause / clause | ρήτρα `else` | ρήτρα is used in Greek CS teaching (cf. "ρήτρα WHERE") but can read legalistic to a beginner; alternative: τμήμα. Native speaker should confirm. | medium |
+| spiral notebook (dictionary metaphor) | σπιράλ σημειωματάριο | Jiki physical metaphor for dictionaries; alternatives: μπλοκ σπιράλ, τετράδιο. Bare σημειωματάριο after first mention in-page. | medium |
+| turn around (maze manoeuvre) | αναστροφή | Everyday word for a U-turn; alternatives: μεταβολή, στροφή προς τα πίσω. Family-wide consistency matters. | medium |
+| checksum | άθροισμα ελέγχου | Alternatives: keep English "checksum"; ψηφίο ελέγχου means check digit, a different thing. Recurs in ISBN/Luhn content. | medium |
+| dress code | dress code (kept in English) | Ordinary term in Greek nightlife context; ενδυματολογικός κώδικας reads bureaucratic. | medium |
+| outfit | ντύσιμο | Alternative: ενδυμασία (stiffer). Must match between bouncer prose and catalog. | medium |
+| smart (dress-code sense) | κομψό | Paired with formal → επίσημο; alternatives: καλοντυμένος, καθωσπρέπει. | medium |
+| branch (of a conditional) | διακλάδωση | Alternative: κλάδος. Recurs wherever conditionals are taught. | medium |
+| case insensitive | πεζά-κεφαλαία (δεν γίνεται διάκριση πεζών-κεφαλαίων) | Phrasing varies easily (ανεξαρτήτως κεφαλαίων); recurs across string exercises. | medium |
+| function category label: Sensing | Ανίχνευση | Reference-panel label, must be identical across exercises; alternative: Αίσθηση. | medium |
+| function category label: Type Conversion | Μετατροπή τύπων | Same reference-panel consistency argument. | medium |
+| function category labels: Information / Action | Πληροφορίες / Ενέργεια | Same reference-panel consistency argument. | medium |
+| condition | συνθήκη | Near-canonical in Greek CS prose; logged only because it recurs on every conditional page. May be rejected as "the ordinary word". | low |
+| contraction (grammatical) | σύντμηση | EFL materials also use συντομευμένος τύπος; native speaker should confirm. | low |
+| collapse (a number to a single digit) | καταλήγει σε (result) / συνέχισε να αθροίζεις (process) | Exercise-local (digital-root); flagged as ambiguity, may not merit a row. | low |
+
+Open question flagged by the batch: "Canadian SIN" is kept as the bare English acronym in
+luhn scenario text (the no-auto-gloss rule forbids adding an untagged parenthetical); worth
+a call if it recurs.
+
+### 2026-08-01: `guide.md` pruned of rationale, plus two consistency fixes
+
+**Decided by:** agent, per the standing rule that `guide.md` is loaded into every Greek
+translation prompt forever, so it holds rules stated imperatively and nothing else.
+**Status:** editorial cleanup; no rule removed, no term decision changed. The two
+consistency fixes below are **unconfirmed drafts**.
+
+The rationale moved out of the guide, kept here so a later reader does not "fix" a rule
+back to the option that was already considered and rejected:
+
+- **Informal εσύ.** It matches Jiki's "friend teaching you" voice, and εσείς reads cold
+  and institutional against that mentor voice. The official school Πληροφορική curriculum
+  defaults to εσείς, but that is the classroom-plural "you" addressing a room of students,
+  not a deliberate politeness register, so it is not the model to follow. The guide now
+  states only "use εσύ, never εσείς, and do not take the curriculum as the model".
+- **Straight double quotes, not guillemets.** Guillemets («») are the more traditional
+  Greek printed-textbook convention, so the choice is a deliberate divergence from print
+  convention: plain quotes are already common in informal Greek digital writing and fit a
+  modern web platform. Not native-speaker-confirmed; worth a forum question if the pinned
+  thread is live.
+- **Monotonic accentuation** is standard since the 1982 reform (provenance only; the rule
+  itself is unchanged).
+- **Clitic placement, aspect and word order.** The dropped sentences said only that
+  getting these wrong is a common tell of non-native Greek. The rules themselves are
+  unchanged.
+- **Keeping a gloss on a real Greek word.** Greek is written in its own script, so pairing
+  the Greek word with the italic English one is genuinely informative: it tells the reader
+  which English word they will meet in code, in documentation, and in every English
+  tutorial they read next. Conversely a phonetic transliteration restates the English
+  without adding meaning, and Greek readers read the Latin alphabet perfectly well, so the
+  transliteration is harder to read than the English it glosses.
+- **"Για την ώρα" over "Για τώρα".** Both are correct; "Για την ώρα" ("for the moment") is
+  what a Greek speaker reaches for in this teaching aside.
+- **"μηδενικά και άσσους".** Rationale already logged in the 2026-07-31 entry below; the
+  guide's copy of it was removed as a duplicate.
+
+**Two consistency fixes (unconfirmed drafts):**
+
+- **The skip-a-gloss rule used `framework` as its example of a transliteration-only term
+  (φρέιμγουορκ), which contradicted the glossary row** giving `framework` the gloss
+  _πλαίσιο εργασίας_ (adopted from astyanax, logged below). The glossary row wins: the
+  guide's examples are now ντιμπάγκινγκ and φρόντεντ, and the rule now says explicitly
+  that a "Keep in English" row carrying a Greek gloss is glossed as usual, while only
+  rows marked "(no gloss)" are left bare.
+- **The Greek question mark rule now names the codepoint**: the ASCII semicolon U+003B, not
+  the deprecated U+037E. The examples in the guide already used U+003B, so this only
+  pins down what was already practised.
+
+**Instructions preserved, not lost.** The deleted "Common EN→EL pitfalls" tail restated
+three rules already stated imperatively under Grammar (pro-drop, clitic placement, English
+clause order). Its only non-duplicate content, "prefer active constructions over a carried
+English passive", was folded into the Word order bullet.
+
+**Gaps noted, deliberately not filled** (adding them would be inventing rules without
+research): no rule on the disjunctive ή (whether it takes an accent, and how it is
+distinguished from the article η in prose); no rule on declining, or refusing to decline,
+Latin-script code identifiers and English-kept technical terms in Greek case frames (only
+"Jiki" is covered); and nothing on final sigma when such a term takes a Greek ending.
+
+### 2026-07-31: `let` glosses once as "έστω", confirmed by a native speaker
+
+**Decided by:** astyanax (native speaker), confirming an agent proposal.
+**Raised on:** the pinned glossary thread, https://forum.jiki.io/t/497/7 (asked at
+https://forum.jiki.io/t/497/6)
+**Status:** native-speaker-confirmed, settled.
+**Terms affected:** `let` (the JavaScript keyword), new row under "Keep in English".
+
+The variables concept page introduces the keyword as `` `let` (έστω) ``, borrowing the
+standard Greek mathematical "let" ("έστω x = 10"). That was an agent's medium-confidence
+call from the translation pass, so it was put to the thread.
+
+Astyanax confirmed it, having gone and checked the Greek high-school CS textbooks
+(_Ανάπτυξη Εφαρμογών σε Προγραμματιστικό Περιβάλλον_) for precedent first. He found no use
+of _έστω_ in the ΓΛΩΣΣΑ pseudocode itself, but plenty of mathematical terminology
+throughout, which is exactly the register the gloss leans on: students and young beginners
+are already accustomed to that mathematical background, so it reads naturally to them. He
+also quoted the textbook's warning that an assignment statement (_εντολή εκχώρησης_) must
+never be read as an equation, which is why ΓΛΩΣΣΑ writes assignment as `<-` rather than
+`=`. His verdict: "So, I agree with `let` (έστω) being used!"
+
+The row records it as a **one-time** gloss on first introduction, not a running
+translation: later mentions stay bare `let`, like every other keyword.
 
 ### 2026-07-31: Nine terms added as unconfirmed drafts from translation passes
 
@@ -239,7 +451,7 @@ and idiomatic Greek rendering for this sense.
 
 ### 2026-07-31: Glossary pruned of ordinary vocabulary
 
-**Decided by:** agent, per the standing rule in `global/translating.md` step 6 that a
+**Decided by:** agent, per the standing rule in `global/pass-mechanics.md` § "Proposed glossary delta" that a
 glossary only earns a row where a real choice exists. 34 rows removed: `value`, `number`,
 `Boolean`, `character`, `integer`, `float / decimal`, `dictionary`, `element`,
 `key-value pair`, `condition`, `comparison`, `expression`, `operator`,

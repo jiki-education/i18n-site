@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "fc2d3f7",
-  "approved": 86,
+  "governance_sha": "07ad446",
+  "approved": 87,
   "disapproved": 1,
   "total": 286,
   "languages": [
@@ -696,7 +696,7 @@
       "name": "Hungarian",
       "stage": "refining",
       "category_slug": "i18n-hu",
-      "approved": 5,
+      "approved": 6,
       "disapproved": 0,
       "total": 14,
       "items": [
@@ -727,8 +727,8 @@
         },
         {
           "key": "concept/if",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 981,
+          "status": "approved"
         },
         {
           "key": "exercise/rock-paper-scissors",

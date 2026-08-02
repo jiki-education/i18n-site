@@ -7,13 +7,13 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "fc671310093a081113a8f301b6ff53fe"
-governance_sha: "5d6460b"
-content_version: "1cac6d3eb4a4"
-published_at: "2026-08-01"
+governance_sha: "07ad446"
+content_version: "1b6bc982033b"
+published_at: "2026-08-02"
 forum_topic_id: 758
 ---
 
-Amikor kódot írsz, valójában azt mondod el egy olyan nyelven, amit a számítógép is megért, hogy mit szeretnél, hogy megtörténjen. Rengeteg különböző programozási nyelv létezik, és rengeteg különböző értelmező (_interpreters_ angolul) is, amely a leírt kódot olyan egyesekké és nullákká alakítja, amelyeket a számítógép megért. Ebben a kurzusban a te értelmeződ Jiki. Az egész kurzus róla kapta a nevét. Ő itt Jiki. Jiki lesz a barátod ezen a programozós utazáson. Az ő dolga, hogy értelmezze a kódot, amit írsz, és olyan egyesekké és nullákká alakítsa, amelyekkel a számítógép ténylegesen dolgozni tud.
+Amikor kódot írsz, valójában azt mondod el egy olyan nyelven, amit a számítógép is megért, hogy mit szeretnél, hogy megtörténjen. Rengeteg különböző programozási nyelv létezik, és rengeteg különböző értelmező (_interpreters_ angolul) is, amely a leírt kódot olyan egyesekké és nullákká alakítja, amelyeket a számítógép megért. Ezen a kurzuson a te értelmeződ Jiki. Az egész kurzus róla kapta a nevét. Ő itt Jiki. Jiki lesz a barátod ezen a programozós utazáson. Az ő dolga, hogy értelmezze a kódot, amit írsz, és olyan egyesekké és nullákká alakítsa, amelyekkel a számítógép ténylegesen dolgozni tud.
 
 <img
   class="concept-image"
@@ -23,7 +23,7 @@ Amikor kódot írsz, valójában azt mondod el egy olyan nyelven, amit a számí
   height="400"
 />
 
-A programozás lényege, hogy a megfelelő utasításokat adjuk az értelmezőnek, jelen esetben Jikinek. Rengeteg különböző utasítást adhatsz Jikinek, nagyon sok mindent megért. Össze tud illeszteni dolgokat, meg tud csinálni valamit sokszor egymás után, és azt is tudja mondani: „Ha ez történik, akkor ezt kell tennem." Meg tud jegyezni dolgokat, és később újra fel tudja használni őket. Ha valami nem stimmel, hibát (_error_ angolul) is tud jelezni. A kurzus során ezekkel mind foglalkozunk majd. A legfontosabb viszont az, hogy bármit is csinálsz majd, lényegében utasításokat írsz fel egy táblára, Jiki pedig jön, és követi őket.
+A programozás lényege, hogy a megfelelő utasításokat adjuk az értelmezőnek, jelen esetben Jikinek. Rengeteg különböző utasítást adhatsz Jikinek, nagyon sok mindent megért. Össze tud illeszteni dolgokat, meg tud csinálni valamit sokszor egymás után, és azt is tudja mondani: „Ha ez történik, akkor ezt kell tennem.” Meg tud jegyezni dolgokat, és később újra fel tudja használni őket. Ha valami nem stimmel, hibát (_error_ angolul) is tud jelezni. A kurzus során ezekkel mind foglalkozunk majd. A legfontosabb viszont az, hogy bármit is csinálsz majd, lényegében utasításokat írsz fel egy táblára, Jiki pedig jön, és követi őket.
 
 Amikor 34 évvel ezelőtt megtanultam programozni, ezt a gondolati modellt építettem fel magamban, és a mai napig ez van a fejemben. Pontosan értem, hogyan működik a számítógép, egészen az egyesekig és nullákig, de őszintén szólva sosem gondolok erre. A fejemben egy kis ember lakik a számítógépben, és én megmondom neki, mit csináljon. Tarts hát velem ebben. Ez egy erős gondolati modell, amit te is felépíthetsz, és ha elkezdesz ilyen vizuálisan gondolkodni arról, hogy mit csinál a számítógépben lakó emberke, az nagyon jól fog jönni, miközben programozni tanulsz.
 

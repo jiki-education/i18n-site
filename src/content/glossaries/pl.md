@@ -3,10 +3,10 @@ lang: "pl"
 name: "Polish"
 family: null
 stage: "refining"
-governance_sha: "8cf9a9f"
-content_version: "1dfdc395fafd"
+governance_sha: "4015cb5"
+content_version: "df48f15794bd"
 published_at: "2026-08-02"
-term_count: 102
+term_count: 104
 category_id: 201
 forum_topic_id: 417
 video_player_forum_topic_id: 771
@@ -126,6 +126,7 @@ These are terms where the Polish is used in prose, so the "Use (pl/en)" column i
 | English | Polish | Use (pl/en) | Notes |
 |---------|--------|----------|-------|
 | course | kurs | pl | The whole Jiki course the learner is taking. Keep distinct from _lekcja_ (lesson) and _program nauczania_ (curriculum). |
+| Great work! / Great job! (success or congratulation opener) | Dobra robota! | pl | Never _Świetna robota!_: nobody says it in Polish, it reads as a word-for-word calque of "great job". |
 | character (the little figure in the maze exercises) | ludzik | pl | **Masculine**, so every agreeing verb, adjective, participle and pronoun is masculine: _ludzik wszedł_, _ludzik nie dotarł_, _jest zwrócony_, _a on skręca_. Declines _ludzika_ (gen./acc.), _ludzikowi_ (dat.). Never _postać_, which is feminine and too abstract for the little person the English describes. |
 
 ## Keep in English
@@ -157,6 +158,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | English metaphor | Polish rendering | Notes |
 |-------------------|-------------------|-------|
 | box (value container) | pudełko | Neuter. |
+| box (draw-family grid cell) | pole | Neuter. A cell of a grid the learner draws into (e.g. the six forecast boxes in `weather-symbols`), not the variable metaphor: never _pudełko_ here, and never _pudełko_'s inflections. „Numer pola", „w polu", „siatka pól". |
 | chain (array metaphor) | łańcuch | Where the source `<define>`s it, pair it with _tablica_ (the technical term for array), e.g. „tablica działa jak łańcuch (`tablica`)", so it doesn't get read as a synonym for _ciąg znaków_ (string), which some informal Polish programming material loosely calls "a chain of characters". Masculine. |
 | machine (function metaphor) | maszyna | Feminine. |
 | input slot | otwór wejściowy | Considered coinage, never validated by a native speaker. Flag for native-speaker review via `/action-forum-post`. |
@@ -181,6 +183,56 @@ Default to plain **nawias**. When a specific bracket type matters, name it and s
 ---
 
 ## Decision log
+
+### 2026-08-03: the draw-family grid cell is `pole`, never `pudełko`
+
+**Decided by:** native speaker **mlistewnik** on the pinned Polish glossary thread, forum
+topic 417, post 11: https://forum.jiki.io/t/417/11
+**Terms affected:** `box (draw-family grid cell)` (new row).
+
+We had asked, in the glossary announcement, whether the grid cell a learner draws into should
+reuse the value-container metaphor. mlistewnik answered directly: absolutely do not use
+_pudełko_ for a grid cell, _pole_ is fine, and gave the everyday reference point of
+„pola na szachownicy" (the squares on a chess board). That is exactly the sense the draw
+family needs: a flat, bounded area on a marked-out surface, not a container something is put
+inside.
+
+Keeping the two senses on separate words also protects the variable metaphor. _Pudełko_ is
+load-bearing for "a box on Jiki's shelves that holds one value"; using the same word for a
+square of a grid would make a learner read the forecast grid as six containers of values, and
+would blur the one image the variables concept is built on. The existing `box (value
+container) → pudełko` row is untouched by this decision.
+
+This settles the "priority row to settle" logged as open in the 2026-08-02 Stage 2 batch 2
+entry below, which the checker had been warning on for every draw-family pass.
+
+**This row is human-decided.** It changes only by fresh agreement with a native speaker.
+
+Already-published Polish content needed no fix: the only translated item using the grid-cell
+sense, `exercise/weather-symbols` (instructions and message catalog), had already rendered it
+as _pole_ throughout („numer pola", „w polu", „siatka sześciu pól"). Every occurrence of
+_pudełko_ in Polish content (the `variables`, `arrays` and `if` concepts, and the JavaScript
+interpreter catalog) is the value-container sense and is correct.
+
+### 2026-08-03: success messages open with `Dobra robota!`, not `Świetna robota!`
+
+**Decided by:** native speaker **mlistewnik** on the website-copy review thread, forum topic
+1025, post 7: https://forum.jiki.io/t/1025/7
+**Terms affected:** `Great work! / Great job! (success or congratulation opener)` (new row).
+
+The exercise-completion success messages opened with „Świetna robota!". mlistewnik's verdict:
+nobody says „świetna robota", it is a 1:1 translation of English "great job"; „dobra robota"
+is the idiomatic Polish phrase. The row is written as a phrase mapping rather than a rule
+because it is a fixed collocation: the fix is the word, not a principle about register.
+
+Applied to `exerciseCompletion.success.messageExercise` and `.messageChallenge` in
+`../front-end/app/messages/pl.json`. The rest of each sentence was already fine and was left
+alone.
+
+Deliberately left alone, because they are not the flagged collocation and are ordinary Polish:
+„Świetnie!" (`successTitle`), „Świetny postęp!" (`allStartedDescription`), „Te ćwiczenia to
+świetny sposób..." (concept-practice description), and „Fantastyczna robota!"
+(`congratsFantasticJob`, which is a distinct exclamation, not a rendering of "great work").
 
 ### 2026-08-02: no `o` after `zapytaj` before a subordinate clause
 
@@ -254,10 +306,9 @@ objection before reopening, not just a plausible alternative.
 **Decided by:** agent (proposals only, nothing written to `glossary.md`). The catch-up pass
 translating `two-fer`, `strings`, `digital-clock`, `arrays`, `weather-symbols`.
 
-**Priority row to settle:** `box` (draw-family grid cell) → _pole_, deliberately distinct
-from the existing value-container metaphor `box → pudełko`. Using `pudełko` for a grid cell
-crosses two metaphors; the checker will keep warning on every draw-family pass until this is
-recorded.
+**Priority row to settle (now settled):** `box` (draw-family grid cell) → _pole_, deliberately
+distinct from the existing value-container metaphor `box → pudełko`. Confirmed by a native
+speaker and written to `glossary.md` on 2026-08-03; see the entry at the top of this file.
 
 | English | Proposed target | Notes | Confidence |
 |---------|-----------------|-------|------------|

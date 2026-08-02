@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "a8dd9ad",
-  "approved": 129,
+  "governance_sha": "73eb7a9",
+  "approved": 130,
   "disapproved": 1,
   "total": 297,
   "languages": [
@@ -272,7 +272,7 @@
       "name": "Greek",
       "stage": "refining",
       "category_slug": "i18n-el",
-      "approved": 15,
+      "approved": 16,
       "disapproved": 0,
       "total": 24,
       "items": [
@@ -363,8 +363,8 @@
         },
         {
           "key": "exercise/bouncer-dress-code",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1060,
+          "status": "approved"
         },
         {
           "key": "exercise/word-count",

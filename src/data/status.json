@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "6351e0e",
-  "approved": 93,
+  "governance_sha": "bf79865",
+  "approved": 94,
   "disapproved": 1,
   "total": 286,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "refining",
       "category_slug": "i18n-it",
-      "approved": 13,
+      "approved": 14,
       "disapproved": 0,
       "total": 24,
       "items": [
@@ -106,8 +106,8 @@
         },
         {
           "key": "concept/dictionaries",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 990,
+          "status": "approved"
         },
         {
           "key": "exercise/maze-turn-around",

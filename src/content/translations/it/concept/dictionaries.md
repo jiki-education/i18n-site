@@ -7,14 +7,15 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/dictionaries/source.md"
 en_md5: "3b1b01f6a914ffe1ce4a54e023e46bdd"
-governance_sha: "38591e4"
-content_version: "b687b86f9add"
-published_at: "2026-08-01"
+governance_sha: "bf79865"
+content_version: "c3286cc14393"
+published_at: "2026-08-02"
+forum_topic_id: 990
 ---
 
 Gli array sono la nostra prima scelta quando abbiamo una lista di qualcosa: una lista di mentori, una lista di punteggi, una lista di ingredienti. Per qualsiasi lista, ti conviene usare un array.
 
-Ma c'è un'altra struttura dati molto comune, per quando vuoi qualcosa di un po' più complesso di una lista.
+Ma c'è un'altra struttura dati molto comune per quando vuoi qualcosa di un po' più complesso di una lista.
 
 Immagina di voler salvare alcune informazioni su di me: il mio nome, la mia età, dove sono nato. Potresti usare un array, ma non sarebbe molto chiaro che cosa rappresenta.
 

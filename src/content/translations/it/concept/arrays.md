@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/arrays/source.md"
 en_md5: "012da550948ba2ebcfaf953cd0906f3f"
-governance_sha: "dfefa8a"
+governance_sha: "6351e0e"
 content_version: "b2226c84d02c"
-published_at: "2026-08-01"
+published_at: "2026-08-02"
+forum_topic_id: 983
 ---
 
 Finora hai usato numeri, stringhe e booleani, la parola elegante per dire true e false, e chiamiamo queste categorie tipi di dati (_data types_ in inglese). Adesso aggiungiamo il nostro primo tipo di dati composto (_compound data type_ in inglese).

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/for-loops/source.md"
 en_md5: "e96f2e5a4106a88cfbca449c93a26108"
-governance_sha: "38591e4"
+governance_sha: "6351e0e"
 content_version: "a7940d6bed93"
-published_at: "2026-08-01"
+published_at: "2026-08-02"
+forum_topic_id: 988
 ---
 
 Forse ricordi che il ciclo repeat non esiste davvero in JavaScript. È solo qualcosa che abbiamo aggiunto per renderti la vita un po' più facile all'inizio.

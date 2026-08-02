@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/else/source.md"
 en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
-governance_sha: "38591e4"
+governance_sha: "6351e0e"
 content_version: "f092ae5c9591"
-published_at: "2026-08-01"
+published_at: "2026-08-02"
+forum_topic_id: 985
 ---
 
 Le istruzioni if ti permettono di controllare delle condizioni ed eseguire del codice solo quando qualcosa è vero. Adesso presentiamo il fedele complice di if: `else`.

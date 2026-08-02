@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/strings/source.md"
 en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "dfefa8a"
+governance_sha: "6351e0e"
 content_version: "38ba0568f755"
-published_at: "2026-08-01"
+published_at: "2026-08-02"
+forum_topic_id: 984
 ---
 
 Quando vuoi usare un numero, ti basta scriverlo, e Jiki capisce cosa intendi. Ma se vuoi usare una lettera, una parola o una frase? Per esempio, con la funzione `rectangle` (rettangolo) o la funzione `circle` (cerchio), cosa succederebbe se ci fosse un input in più in cui specificare il colore? Come scriveremmo il colore da mettere nella macchina? Se scriviamo semplicemente la parola `green` (verde) o `blue` (blu), Jiki penserà che ci riferiamo a una macchina sugli scaffali, e dirà: "Non c'è nessuna macchina che si chiama green. Non so cosa fare."

@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "f8815ad",
+  "governance_sha": "42dbe24",
   "approved": 107,
   "disapproved": 1,
-  "total": 289,
+  "total": 292,
   "languages": [
     {
       "lang": "it",
@@ -1432,7 +1432,7 @@
       "category_slug": "i18n-hi",
       "approved": 1,
       "disapproved": 0,
-      "total": 6,
+      "total": 9,
       "items": [
         {
           "key": "glossary",
@@ -1461,6 +1461,21 @@
         },
         {
           "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
           "topic_id": null,
           "status": "pending"
         }

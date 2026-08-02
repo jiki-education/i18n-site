@@ -3,10 +3,10 @@ lang: "id"
 name: "Indonesian"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "bd9104af75ba"
-published_at: "2026-07-31"
-term_count: 63
+governance_sha: "f268cf8"
+content_version: "6e9d757fbb69"
+published_at: "2026-08-02"
+term_count: 64
 category_id: 135
 forum_topic_id: 325
 video_player_forum_topic_id: 761
@@ -81,18 +81,19 @@ These stay in English in Indonesian prose, with the Indonesian gloss to use for 
 
 | Term | Indonesian gloss (on `<define>`) | Notes |
 |------|-----------------------------------|-------|
-| string | _untai_ | Where the source `<define>`s it, gloss _untai_, then use `string`. |
+| string | _rangkaian_ | Where the source `<define>`s it, gloss _rangkaian_ (a sequence of characters), then use `string`. Not _untai_: technically correct in the dictionary, but it reads as the thread of a necklace or a strand of beads. |
 | Boolean | (no gloss needed) | Lower-case in prose (`boolean`), capitalized only as the type name if the source capitalizes it. |
 | scope | _cakupan_ | See "Loops, state & program flow" above. |
 | interpreter | _penerjemah_ | See "Loops, state & program flow" above. |
 | method | (see notes) | See "Loops, state & program flow" above; kept English with no separate gloss needed. |
 | component | _komponen_ | Include the gloss where the source `<define>`s the term; optional otherwise. |
-| API | explain what it is in Indonesian | Where the source `<define>`s it, explain the concept in Indonesian, not just gloss the acronym. |
-| framework | (no gloss) | Keep as-is throughout. |
+| API | _suatu mekanisme yang berfungsi sebagai jembatan penghubung antara dua perangkat lunak agar dapat berkomunikasi dan bertukar data_ | Where the source `<define>`s it, explain the concept with this wording (adapt to fit the sentence), not just expand the acronym as _Antarmuka Pemrograman Aplikasi_. |
+| framework | _kerangka kerja_ | Where the source `<define>`s it, gloss _kerangka kerja_ (the structure or guideline used to tackle a task in an organised way), then use `framework`. Always the full _kerangka kerja_, never bare _kerangka_, which reads as a skeleton. |
 | CLI | _antarmuka baris perintah_ | Explain CLI as _antarmuka baris perintah_ (command-line interface) where the source `<define>`s it. |
 | library | _pustaka_ | Where the source `<define>`s it, gloss _pustaka_, then use `library`. |
 | Debug, Test | (no gloss) | As keywords/technical tokens. |
-| Code, Bug, Frontend, Backend | (no gloss) | |
+| Code | _kode_ | Where the source `<define>`s it, gloss _kode_, then use `code`. |
+| Bug, Frontend, Backend | (no gloss) | |
 
 ## Platform & curriculum vocabulary
 
@@ -117,8 +118,8 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | box (value container) | kotak | |
 | chain (array metaphor) | rantai | |
 | input slot | lubang | |
-| return chute | perosotan | |
-| machine (function metaphor) | mesin | A function modelled as a machine, with an input slot (`lubang`) and a return chute (`perosotan`). |
+| return chute | saluran keluaran | The opening a finished value slides out of. Full form on introduction; plain `saluran` afterwards. Not _perosotan_ (a playground slide), which reads strange for this part of a machine. |
+| machine (function metaphor) | mesin | A function modelled as a machine, with an input slot (`lubang`) and a return chute (`saluran keluaran`). |
 | crank (machine crank) | tuas | The handle Jiki turns to power a machine up: _memutar tuasnya_. |
 | shelves (storage) | rak | Where variables and functions are stored (e.g. `rak buku` = bookshelf). |
 | warehouse (Jiki's warehouse) | gudang | Where Jiki hangs out and keeps his machine shelf. |
@@ -139,10 +140,120 @@ How to phrase a bracket in running prose is in `guide.md`.
 
 ## Decision log
 
+### 2026-08-02: Native-speaker review of the glossary (deenovita, forum topic 325)
+
+**Decided by:** deenovita, a native Indonesian speaker, reviewing the glossary on
+https://forum.jiki.io/t/325 (posts https://forum.jiki.io/t/325/3 and
+https://forum.jiki.io/t/325/5). These rows were all unconfirmed agent drafts from the
+bootstrap, so this is the first native reading of them and it stands.
+**Terms affected:** `string`, `API`, `framework`, `Code`, `return chute`.
+
+- **`string` glosses as _rangkaian_, not _untai_.** _Untai_ is technically correct in the
+  formal dictionary, which is why the bootstrap picked it, but it is rare outside its
+  everyday context: the thread or strand used to make necklaces, pearls and beads. It
+  therefore reads oddly as a sequence of characters. _Rangkaian_ gives the intuitive sense
+  of a sequence, which is exactly what the term has to teach. The row itself is unchanged
+  in kind: `string` still stays English in prose, only the gloss changed.
+- **`API` now carries a real explanation.** The row previously only instructed the
+  translator to "explain what it is in Indonesian" without saying how. deenovita supplied
+  the wording, which the row now quotes: _suatu mekanisme yang berfungsi sebagai jembatan
+  penghubung antara dua perangkat lunak agar dapat berkomunikasi dan bertukar data_. She
+  also confirmed the acronym expansion (_Antarmuka Pemrograman Aplikasi_) is real but is
+  not on its own an explanation a beginner can use.
+- **`framework` glosses as _kerangka kerja_.** The row previously said "(no gloss)". It has
+  an ordinary Indonesian rendering after all: _kerangka kerja_ (or interchangeably
+  _kerangka_) for the foundation, structure or guideline used to tackle a task in an
+  organised way. The full form is mandatory because bare _kerangka_ pulls in the
+  skeleton/_kerangka manusia_ reading. `framework` still stays English in prose.
+- **`Code` glosses as _kode_.** deenovita noted `code` does have a straightforward
+  Indonesian rendering, _kode_, while `Bug`, `Frontend` and `Backend` are rightly left as
+  they are; the shared "(no gloss)" row was therefore split. Whether Indonesian prose
+  should go further and use _kode_ outright rather than keeping `code` English is asked
+  back on the thread and is not yet settled.
+- **`return chute` is _saluran keluaran_, not _perosotan_.** The bootstrap chose
+  _perosotan_ (a playground slide) for physical playfulness over the drier _luncuran_.
+  Shown the actual image of the machine's chute (https://forum.jiki.io/t/325/4), deenovita
+  said _perosotan_ sounds strange for it and offered _saluran keluaran_, or _keluaran_
+  ("output") or _saluran_ ("channel") alone. _Saluran keluaran_ is the row because bare
+  _keluaran_ collides with the existing gloss for `output`, while _saluran_ alone loses the
+  sense that a value comes out; _saluran_ is allowed as the short form once the full term
+  has been introduced.
+
+Also from the same review: deenovita confirmed the whole `Brackets` table, including plain
+`tanda kurung` for `()`, so those rows are no longer unconfirmed drafts. `input slot` ->
+_lubang_ is **still open**: she queried it alongside `return chute` as sounding strange, and
+her follow-up post only addressed the chute, so the row is unchanged and has been asked
+about again on the thread.
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout). Logged here for review
+and **not** written to `glossary.md`; they need agreement (ideally a native speaker) before
+landing there.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| unlock | membuka / terbuka | Core progression verb, recurs app-wide. | medium |
+| upgrade (plan/account) | meng-upgrade (loanword) | Native alternative _tingkatkan_ exists; sets precedent for all billing copy. | medium |
+| challenge (platform content type) | tantangan | Completes the content-type set alongside exercise/concept. | high |
+| subscription / subscribe | langganan / berlangganan | | high |
+| hint | petunjuk | Keeps _instruksi_ free for instructions given to Jiki. | medium |
+| Concept Library | Pustaka Konsep | Learner-facing feature name. | medium |
+| dashboard | Dasbor | Or keep English; must be settled and match across all namespaces/passes. | low |
+| scrubber, frame, breakpoint (coding-exercise UI) | kept English | No settled Indonesian terms. | low |
+| Deep Dive | kept English | Treated as a feature/product name. | low |
+| Free / Premium (plan names) | paket Free / paket Premium | Plan names kept English, "plan" localized as _paket_. | medium |
+
+`dashboard` and `upgrade` are the two most worth settling before any `tidy` re-pass on this
+namespace set; a different pass could reasonably land elsewhere.
+
+### 2026-08-01: Guide pruned of rationale, provenance and duplicated examples
+
+**Decided by:** agent, in the cross-language guide-pruning pass. No rule was changed or
+dropped; everything below is reasoning moved out of `guide.md` (which is loaded into the
+prompt for every Indonesian item) plus one mechanical fix.
+
+Rationale removed from the guide and kept here:
+
+- **Why "kamu" and not "Anda".** "Kamu" is the standard register of Indonesian
+  dev-education tutorials aimed at beginners (Petani Kode, Dicoding, Kelas Terbuka all
+  address the reader this way); it reads warm and direct and matches Jiki's mentor voice.
+  "Anda" belongs to software/product localization (Mozilla and Microsoft style guides use
+  it for UI strings), targets UI copy rather than teaching prose, and reads cold and
+  EULA-like in a tutorial.
+- **Why the audience register is the tutorial one.** Indonesian dev-education publishers
+  (Petani Kode, Dicoding, Codepolitan, Kelas Terbuka) already model the warm, informal
+  tutor voice Jiki wants, so their register is the model rather than the more formal
+  localization-style-guide register. The guide now states the register directly, without
+  naming the sources.
+- **Why Jakarta-colloquial slang is banned.** "Gue"/"lo"/"lu" are non-baku and wrong for a
+  national learning platform, which is why the informality stops at the address form and
+  the grammar and spelling stay baku.
+- **Why headings are sentence case.** Indonesian orthography (PUEBI) reserves full
+  capitalization for publication titles, not tutorial headings or UI text, so English-style
+  Title Case reads as a calque.
+- **Where the worked examples came from.** The imperative, phrasing and heading examples in
+  the guide were drawn from real Indonesian dev-education tutorials during the language
+  bootstrap.
+
+Also done in the same pass:
+
+- **The "Worked examples" section was folded into the rules it illustrated.** Its
+  imperatives, word-order and heading examples restated the Formality, Grammar and Style
+  bullets verbatim; the two examples that taught something extra (the kamu-vs-Anda phrasing
+  pairs, and the heading Title-Case contrast) were moved onto those bullets. No example
+  that carried information was lost.
+- **Quote glyphs corrected (unconfirmed draft).** The typography rule named curly
+  quotation marks but printed ASCII `"` and `'` as its own examples. The glyphs are now the
+  real ones, `“…”` and `‘…’`. The rule itself (curly doubles, curly singles nested) is
+  unchanged and still awaiting native-speaker confirmation.
+
 ### 2026-07-31: Glossary pruned of ordinary vocabulary
 
-**Decided by:** agent, per the pruning pass over `glossary.md` (see `global/translating.md`
-step 6's test: only keep rows where a real decision exists). Removed 31 rows that had one
+**Decided by:** agent, per the pruning pass over `glossary.md` (see `global/pass-mechanics.md` §
+"Proposed glossary delta": only keep rows where a real decision exists). Removed 31 rows that had one
 obvious canonical rendering with nothing to decide, e.g. `value`, `character`, `element`,
 `condition`, `comparison`, `expression`, `operator`, `function`, `keyword`, `code block`,
 `algorithm`, `module`, `workflow`, `property`, and the "for loop"/"while loop"/"to return (a
@@ -264,11 +375,10 @@ repeated here.
 
 | Term | Why |
 |------|-----|
-| string | An official coinage exists (`untai`/`untaian`), but real developer prose keeps `string`. |
+| string | Real developer prose keeps `string`; the gloss is covered by the 2026-08-02 entry above. |
 | Boolean | Naturalized as `boolean`, identical spelling; the official coinage `logika` is essentially unused. |
 | component | `komponen` (naturalized spelling) is common enough that a gloss is optional. |
-| API | Not a word a beginner knows, so the concept has to be explained, not just the acronym expanded. |
-| framework | No established native alternative is in real use. |
+| API | Not a word a beginner knows, so the concept has to be explained, not just the acronym expanded. The explanation itself is in the 2026-08-02 entry above. |
 | library | `library` is dominant in real dev prose; `pustaka` sees genuine localization/academic use. |
 
 #### Platform & curriculum vocabulary
@@ -288,6 +398,5 @@ repeated here.
 | box | Plain, concrete Indonesian word for "box". |
 | chain | Standard Indonesian for a physical chain. |
 | input slot | `lubang` is the concrete, KBBI-backed word for "hole/opening", more intuitive than the loanword `slot`. |
-| return chute | `perosotan` is the everyday word for a playground slide, chosen for physical intuitiveness over the more formal, dictionary-correct `luncuran`. Mirrors the choice other languages make to pick the playful, concrete word over the technically precise one for this metaphor. |
 | crank | `tuas` is the everyday word and reads as a thing you grab and turn. `engkol` is the more literal "crank" but pulls in a starter-motor/bicycle image; `pengungkit` is a physics-lesson word. |
 | warehouse | Plain everyday Indonesian word. |

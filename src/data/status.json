@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "f023aa1",
+  "governance_sha": "42ec450",
   "approved": 107,
   "disapproved": 1,
   "total": 292,
@@ -212,7 +212,7 @@
         },
         {
           "key": "exercise/weather-symbols",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -242,7 +242,7 @@
         },
         {
           "key": "exercise/word-count",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -899,7 +899,7 @@
         },
         {
           "key": "concept/repeat",
-          "topic_id": null,
+          "topic_id": 1038,
           "status": "pending"
         },
         {
@@ -924,7 +924,7 @@
         },
         {
           "key": "concept/arrays",
-          "topic_id": null,
+          "topic_id": 1037,
           "status": "pending"
         },
         {

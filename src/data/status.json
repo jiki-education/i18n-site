@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "032c51c",
-  "approved": 101,
+  "governance_sha": "b99c931",
+  "approved": 102,
   "disapproved": 1,
   "total": 286,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "refining",
       "category_slug": "i18n-it",
-      "approved": 14,
+      "approved": 15,
       "disapproved": 0,
       "total": 24,
       "items": [
@@ -71,8 +71,8 @@
         },
         {
           "key": "exercise/digital-clock",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1022,
+          "status": "approved"
         },
         {
           "key": "concept/arrays",

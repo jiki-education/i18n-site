@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "1e57818",
-  "approved": 115,
+  "governance_sha": "6d5b12e",
+  "approved": 116,
   "disapproved": 1,
   "total": 297,
   "languages": [
@@ -1327,6 +1327,37 @@
       ]
     },
     {
+      "lang": "id",
+      "name": "Indonesian",
+      "stage": "setup",
+      "category_slug": "i18n-id",
+      "approved": 2,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 325,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 760,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 761,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 806,
+          "status": "approved"
+        }
+      ]
+    },
+    {
       "lang": "ja",
       "name": "Japanese",
       "stage": "setup",
@@ -1503,37 +1534,6 @@
           "key": "concept/variables",
           "topic_id": null,
           "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "id",
-      "name": "Indonesian",
-      "stage": "setup",
-      "category_slug": "i18n-id",
-      "approved": 1,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 325,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 760,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 761,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 806,
-          "status": "approved"
         }
       ]
     },

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/strings/source.md"
 en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "7a404b3"
-content_version: "2cc66e8a78c8"
-published_at: "2026-08-01"
+governance_sha: "4015cb5"
+content_version: "c6b4df8d237e"
+published_at: "2026-08-02"
 ---
 
 Quand tu veux utiliser un nombre, tu peux littéralement l'écrire tel quel, et Jiki comprend ce que tu veux dire. Mais que faire si tu veux utiliser une lettre, un mot ou une phrase ? Par exemple, avec la fonction `rectangle` ou la fonction `circle` (cercle), et si tu avais une entrée supplémentaire où préciser la couleur ? Comment écrire la couleur pour la mettre dans la machine ? Si on écrit simplement le mot `green` (vert) ou `blue` (bleu), Jiki pensera qu'on parle d'une machine sur les étagères, et il dira : « Il n'y a pas de machine qui s'appelle green. Je ne sais pas quoi faire. »
@@ -22,12 +22,12 @@ Quand tu veux utiliser un nombre, tu peux littéralement l'écrire tel quel, et 
   height="400"
 />
 
-On a donc une règle : chaque fois qu'on a besoin d'utiliser du texte, il faut le mettre entre guillemets, des guillemets doubles. Et quand tu mets quelque chose entre guillemets comme ça, Jiki sort un morceau de papier et y écrit ce que tu as placé entre ces guillemets, et ces morceaux de papier, on les appelle des _strings_ (chaînes de caractères).
+On a donc une règle : chaque fois qu'on a besoin d'utiliser du texte, il faut le mettre entre guillemets, des guillemets doubles. Et quand tu mets quelque chose entre guillemets comme ça, Jiki sort un bout de papier et y écrit ce que tu as placé entre ces guillemets, et ces bouts de papier, on les appelle des _strings_ (chaînes de caractères).
 
 <img
   class="concept-image"
   src="/static/images/concept-assets/strings/jiki-writing-green.webp"
-  alt="Jiki écrivant le mot green sur un morceau de papier, qui devient une string"
+  alt="Jiki écrivant le mot green sur un bout de papier, qui devient une string"
   width="398"
   height="400"
 />
@@ -48,7 +48,7 @@ Donc si on veut un rectangle bleu, on écrit le nombre pour sa position à gauch
 rectangle(10, 20, 30, 40, "blue")
 ```
 
-Jiki va descendre la machine de l'étagère et mettre des pièces dans les quatre premiers entonnoirs. Ensuite, il écrira blue sur un morceau de papier, il placera ce papier dans le cinquième entonnoir, puis il fera tourner la machine.
+Jiki va descendre la machine de l'étagère et mettre des pièces dans les quatre premiers entonnoirs. Ensuite, il écrira blue sur un bout de papier, il placera ce papier dans le cinquième entonnoir, puis il fera tourner la machine.
 
 <img
   class="concept-image"

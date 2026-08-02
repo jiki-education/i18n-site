@@ -7,8 +7,8 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/arrays/source.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "99d0ffa"
-content_version: "c559f9c536f4"
+governance_sha: "4015cb5"
+content_version: "f4722d915e63"
 published_at: "2026-08-02"
 forum_topic_id: 976
 ---
@@ -33,7 +33,7 @@ En code, un tableau ressemble d'ailleurs un peu à une chaîne, lui aussi. Il a 
 
 Par exemple, si on voulait créer un tableau avec les noms de quelques-uns de nos mentors, on pourrait préparer une boîte appelée `mentors` et mettre cette chaîne à l'intérieur.
 
-On écrirait `let mentors =`, exactement comme pour n'importe quelle autre boîte, puis on aurait un crochet ouvrant, plein d'éléments, leurs noms séparés par des virgules, et enfin un crochet fermant. Quand Jiki voit ça, il va chercher quatre morceaux de papier, un pour chaque nom, puis il prend une nouvelle chaîne, y attache le tout et met cette chaîne dans la boîte `mentors`.
+On écrirait `let mentors =`, exactement comme pour n'importe quelle autre boîte, puis on aurait un crochet ouvrant, plein d'éléments, leurs noms séparés par des virgules, et enfin un crochet fermant. Quand Jiki voit ça, il va chercher quatre bouts de papier, un pour chaque nom, puis il prend une nouvelle chaîne, y attache le tout et met cette chaîne dans la boîte `mentors`.
 
 Tu peux mettre ce que tu veux dans un tableau : des strings, des nombres, des booléens, et même un mélange de tout ça.
 

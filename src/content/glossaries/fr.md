@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "refining"
-governance_sha: "57a0eb4"
-content_version: "b2c7936c357b"
+governance_sha: "4015cb5"
+content_version: "476a12cbb857"
 published_at: "2026-08-02"
-term_count: 68
+term_count: 69
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -131,6 +131,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | crank (machine crank) | manivelle | The handle Jiki turns to start a machine: _tourner la manivelle_. Gender: _la manivelle_. |
 | shelves (storage) | étagères | The shelves where variables and functions are stored. Gender: _les étagères_ (plural), _une étagère_ (singular). |
 | warehouse (Jiki's warehouse) | entrepôt | The place where Jiki hangs out and keeps his machine shelf. Gender: _l'entrepôt_ (masculine). |
+| piece of paper (string metaphor) | bout de papier | Never _morceau de papier_ (correct, but stilted in casual French) or _feuille de papier_. Plural _des bouts de papier_. Gender: _le bout de papier_ (masculine). |
 | board / whiteboard | tableau blanc | **One object, one word**, per `global/terms.md`: the same board the learner writes instructions on for Jiki to follow, and the one a function keeps its own notes on. Always written in full, never shortened to _tableau_, so it never collides with _tableau_ (array). Gender: _le tableau blanc_. |
 
 ## Brackets
@@ -149,6 +150,47 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-03: `piece of paper` → `bout de papier` confirmed
+
+**Decided by:** native speaker (myrtarazona), forum topic 976
+(https://forum.jiki.io/t/976/8).
+**Terms affected:** `piece of paper (string metaphor)`.
+**Files affected:** `glossary.md` (Jiki physical metaphors), `concept/strings`,
+`concept/variables`, `concept/if`, `concept/arrays` translations and their reviewer notes.
+
+The Stage 2 batch 2 pass proposed `morceau de papier` as an unconfirmed, medium-confidence
+draft, with `bout de papier` and `feuille de papier` noted as equally defensible.
+myrtarazona settled it on the arrays page: `morceau de papier` is correct but can sound
+strange in casual French, and `bout de papier` is the more common and natural expression.
+The draft row is therefore promoted to a confirmed glossary row reading `bout de papier`,
+and every existing occurrence of `morceau(x) de papier` in French content was swapped.
+`feuille de papier` was not raised by the reviewer and is excluded as an A4-sheet reading
+rather than the scrap Jiki scribbles on. The row is now protected.
+
+Note that `morceau` remains correct in other senses and was deliberately left alone where
+it does not mean the paper metaphor: _morceaux de texte_ (pieces of text, in the strings
+page description), _morceaux de code_ (`concept/else`, `concept/else-if`), and _les trois
+morceaux_ (the three concatenated fragments, `exercise/two-fer`).
+
+### 2026-08-02: "get (something) out" → `récupérer` confirmed
+
+**Decided by:** two native speakers (myrtarazona and resu-xunil), forum topic 976
+(https://forum.jiki.io/t/976/5, .../6).
+
+For the technical action of retrieving a value out of an array/string/box (English "get
+something out"), `récupérer` is the agreed rendering, not `obtenir` (too generic/standard)
+or the `sortir`/`ressortir` phrasing used inconsistently elsewhere on the page. Applied
+throughout `concepts/arrays/fr.md`.
+
+### 2026-08-02: `code block` → `bloc d'instructions` confirmed
+
+**Decided by:** native speaker (myrtarazona), forum topic 926 (https://forum.jiki.io/t/926/16).
+**Terms affected:** `code block`. **No rendering changed.**
+
+The row already read `bloc d'instructions`, deliberately distinct from `portée` (scope).
+myrtarazona confirmed it should stay as-is: a generic programming concept common across
+languages, worth keeping fixed early for consistent naming. The row is now protected.
 
 ### 2026-08-02: `camelCase`, written as one word, not « camel case »
 
@@ -185,7 +227,7 @@ review; nothing has been written to `glossary.md`.
 | input (value given to a function/program) | entrée (feminine) | Used across exercise hints and errors; _argument_, _donnée d'entrée_ or kept-English _input_ are all defensible. The draw family fr catalog already uses _entrées_. Proposed independently by two workers. | high |
 | quotation marks (string delimiters) | guillemets (doubles) | Must mean the straight `"` characters code uses, not typographic « »; "guillemets droits/anglais" are defensible alternatives. | medium |
 | coin (machine input metaphor) | pièce | Jiki metaphor set; _pièce_ is polysemous, "pièce de monnaie" available for first-mention disambiguation. | medium |
-| piece of paper (string metaphor) | morceau de papier | Metaphor set; _bout de papier_ / _feuille de papier_ equally defensible, recurs on every string page. | medium |
+| piece of paper (string metaphor) | ~~morceau de papier~~ | Settled: a native speaker chose `bout de papier` instead, see the 2026-08-03 entry above. Now a confirmed glossary row. | resolved |
 | compound data type | type de données composé | _composé_ vs _composite_ is a real fork across concept pages. | medium |
 | template string | template string (kept English, une ~) | Parallel to the existing _template literal_ row, which does not obviously cover this phrasing. | medium |
 | meridiem (am/pm indicator) | meridiem (kept English/Latin) | Also the literal parameter name in `displayTime`; a French prose rendering would split prose from code. | medium |

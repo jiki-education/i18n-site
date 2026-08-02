@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "788aa7b",
-  "approved": 125,
+  "governance_sha": "cd6fcea",
+  "approved": 126,
   "disapproved": 1,
   "total": 297,
   "languages": [
@@ -272,7 +272,7 @@
       "name": "Greek",
       "stage": "refining",
       "category_slug": "i18n-el",
-      "approved": 12,
+      "approved": 13,
       "disapproved": 0,
       "total": 24,
       "items": [
@@ -378,8 +378,8 @@
         },
         {
           "key": "concept/strings",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1057,
+          "status": "approved"
         },
         {
           "key": "exercise/digital-clock",

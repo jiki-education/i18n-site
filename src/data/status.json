@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "d9dccd9",
-  "approved": 106,
+  "governance_sha": "f8815ad",
+  "approved": 107,
   "disapproved": 1,
   "total": 289,
   "languages": [
@@ -141,7 +141,7 @@
       "name": "Ukrainian",
       "stage": "refining",
       "category_slug": "i18n-uk",
-      "approved": 12,
+      "approved": 13,
       "disapproved": 0,
       "total": 24,
       "items": [
@@ -252,8 +252,8 @@
         },
         {
           "key": "exercise/luhn",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 880,
+          "status": "approved"
         },
         {
           "key": "exercise/digital-root",
@@ -348,7 +348,7 @@
         },
         {
           "key": "exercise/maze-turn-around",
-          "topic_id": null,
+          "topic_id": 1033,
           "status": "pending"
         },
         {
@@ -1808,7 +1808,7 @@
       "items": [
         {
           "key": "glossary",
-          "topic_id": null,
+          "topic_id": 1049,
           "status": "pending"
         }
       ]

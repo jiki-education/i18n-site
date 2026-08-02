@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "weather-symbols"
 title: "Weather Symbols"
-en_md5: "b7b513859fb935045083257227780d09"
+en_md5: "8bf4ae32a3a835c12bcd2ba77e3b6ebb"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/weather-symbols"
-captured_at: "2026-08-01"
+captured_at: "2026-08-02"
 ---
 
 You've been asked to build a six-day weather forecast. However, rather than receiving traditional weather data, your boss is giving you descriptions of the weather based on how he feels about them (e.g. "Snowboarding time! 🏂" or "Miserable 😩").

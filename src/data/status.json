@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "332f41b",
+  "governance_sha": "d9dccd9",
   "approved": 106,
   "disapproved": 1,
-  "total": 287,
+  "total": 289,
   "languages": [
     {
       "lang": "it",
@@ -1432,7 +1432,7 @@
       "category_slug": "i18n-hi",
       "approved": 1,
       "disapproved": 0,
-      "total": 4,
+      "total": 6,
       "items": [
         {
           "key": "glossary",
@@ -1453,6 +1453,16 @@
           "key": "exercise/maze-solve-basic",
           "topic_id": 804,
           "status": "approved"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },

@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "digital-clock"
 title: "Digital Clock"
-en_md5: "8bc7c402dc4043f8095ba2a0c0ab0490"
+en_md5: "a7acc2ab707d93e7824f4b327960c772"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/digital-clock"
-captured_at: "2026-08-01"
+captured_at: "2026-08-02"
 ---
 
 In this exercise you're going to use two new functions to get the time:

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "6d5b12e",
-  "approved": 116,
+  "governance_sha": "aad356a",
+  "approved": 121,
   "disapproved": 1,
   "total": 297,
   "languages": [
@@ -141,7 +141,7 @@
       "name": "Ukrainian",
       "stage": "refining",
       "category_slug": "i18n-uk",
-      "approved": 13,
+      "approved": 18,
       "disapproved": 0,
       "total": 24,
       "items": [
@@ -198,17 +198,17 @@
         {
           "key": "concept/strings",
           "topic_id": 880,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/arrays",
           "topic_id": 880,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/digital-clock",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/weather-symbols",
@@ -223,12 +223,12 @@
         {
           "key": "concept/else-if",
           "topic_id": 880,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/for-loops",
           "topic_id": 880,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/dictionaries",

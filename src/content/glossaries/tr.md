@@ -2,10 +2,10 @@
 lang: "tr"
 name: "Turkish"
 family: null
-stage: "setup"
-governance_sha: "8e3de87"
-content_version: "e0dbf145ddf3"
-published_at: "2026-07-31"
+stage: "refining"
+governance_sha: "8cf9a9f"
+content_version: "8c7fc5e4533d"
+published_at: "2026-08-02"
 term_count: 53
 category_id: 136
 forum_topic_id: 328
@@ -121,6 +121,131 @@ Load-bearing teaching terms.
 ---
 
 ## Decision log
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout), run as a single fable
+worker per `orchestrator.md`'s one-worker-per-scope rule. Logged here for review, not
+written to `glossary.md`.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| challenge (content type) | meydan okuma | | high |
+| exercise | alıştırma | | high |
+| concept / Concept Library | kavram / Kavram Kitaplığı | | medium |
+| Deep Dive | Derin İnceleme | | medium |
+| dashboard | panel | | medium |
+| streak | seri | | high |
+| hint | ipucu | | high |
+| scenario | senaryo | | high |
+| scrubber | oynatma çubuğu | No settled Turkish term. | low |
+| unlock | kilidini açmak | | high |
+| Learn to Build | Geliştirmeyi Öğren | Product-name call, owner decision. | low |
+| quiz | quiz (kept English) | | medium |
+| AI / AI assistant | yapay zekâ / yapay zekâ asistanı | | high |
+
+`scrubber` and `Learn to Build` are the two worth putting on the Turkish glossary thread for
+native-speaker confirmation.
+
+**FE flag:** `dashboard.exercisePath.completionCert.progress` is "%{percentage} tamamlandı" —
+Turkish puts the percent sign before the number, so it now sits directly against the ICU
+placeholder; worth confirming next-intl parses that cleanly. Several strings (Meydan
+Okumalar, Derin İnceleme, "Kavram Kitaplığı'nı aç", "Yapay zekâ sohbet asistanının kilidini
+açın") run much longer than English and want a visual check in nav/tabs/buttons.
+
+### 2026-08-01: Glossary review from macroicetr — proposed changes logged, not applied
+
+**Raised by:** native speaker (macroicetr), forum topic 328 ("[Turkish Review] Glossary"),
+post 3: https://forum.jiki.io/t/328/3. `tr` is Phase 1 (setup), so nothing here is applied
+yet; it waits for the next retranslate pass rather than an isolated fix.
+
+Most of the table confirms current rows unchanged (`if statement`, `deploy`, `return
+chute`). Two rows have an actual proposed change:
+
+- **`NOT operator / logical negation`**: currently _değilleme_. macroicetr proposes
+  _değil operatörü_ instead — _değilleme_ is technically correct but rarely used in
+  everyday speech and may cause confusion at first glance; _değil operatörü_ reads more
+  naturally. The `!` symbol itself stays as-is in code either way.
+- **`framework`**: currently defined once as _çerçeve_ then used as _framework_.
+  macroicetr proposes _çatı_ instead of _çerçeve_ for the defining gloss — "frame" does
+  mean _çerçeve_, but _çatı_ better avoids confusion with the everyday sense of "frame" in
+  this context.
+
+One row is flagged but with no concrete alternative: **`if statement`** — macroicetr
+suggests a first-use parenthetical, "if deyimi (koşul ifadesi)", to help explain what a
+conditional expression does the first time it's taught. Not a term change, an in-page
+explanatory addition to consider during the next `using-functions`/`if` retranslate.
+
+One row is flagged as merely "keep in mind": **`return chute`** (_kaydırak_) — macroicetr
+says the meaning is right but it may sound slightly awkward in use; no alternative offered,
+no action needed now.
+
+### 2026-08-01: Confirmed translation engine — fable (stick with original)
+
+**Decided by:** native speaker (macroicetr), forum topic 938 ("[Turkish Review] Alternative
+translation model"). The alternative model read more naturally/human-like but produced more
+errors, deviated from the original meaning while trying to sound natural, and was harder to
+understand as a result; macroicetr said "if I had to choose, I'd prefer the original."
+iHiD confirmed (post #3): "OK thank you. We'll lock that in." `tr`'s `translation_engine` is
+now explicitly set to `fable` in `tracking.json`.
+
+### 2026-08-01: Quotation-mark example corrected to match the rule
+
+**Decided by:** agent, applying the guide's own imperative rule over its worked example.
+**Terms affected:** none.
+
+The Style-notes bullet requires curly double quotes in Turkish prose but wrote its own
+parenthetical example with straight ASCII quotes, so the example demonstrated the opposite of
+the rule. The rule wins: the example now shows `(“…”)`, and the nested-quote half now shows
+`(‘…’)` rather than naming "single quotes" without a glyph. The rest of the bullet, including
+the requirement that code spans, string literals and CLI commands keep straight ASCII quotes,
+is unchanged.
+
+### 2026-08-01: Rationale moved out of the guide
+
+**Decided by:** agent, authorised by owner (iHiD). `languages/tr/guide.md` is loaded into
+the prompt for every Turkish item in every pass, so the reasoning behind its rules was
+moved here and the rules left stated imperatively. Every behavioural instruction was kept;
+nothing was reworded into a different rule. What was cut, and why it was true:
+
+- **Why the guide targets one written standard.** There is no regional split comparable to
+  Spanish or Portuguese: Cyprus Turkish and other regional forms are spoken-register
+  variation without a competing written standard, and Azerbaijani is a distinct language,
+  not a Turkish variant. The diaspora audience (notably Germany and other parts of Europe)
+  reads the same standard written Turkish, so no locale variant is needed.
+- **Why the "let's/we" framing carries the warmth.** Real Turkish tutorial culture
+  (community sites like Yazbel/İstihza, Django Girls TR, government MEB course material)
+  is warm and inclusive, but reaches that warmth through a different grammatical mechanism
+  than Hungarian's `te` or French's `tu`: the hortative/optative and first-person-plural
+  forms, not a drop to the informal pronoun.
+- **Why `sen` is banned.** Unlike French `tu` or Hungarian `te`, Turkish `sen` is not
+  simply "the casual register": it signals an already-established intimacy or equal
+  footing. Real Turkish tutorials, from community sites to government curricula,
+  consistently avoid it in written instructional prose, reserving it for short marketing
+  CTAs or content aimed at children. Used in Jiki prose it would read off-register rather
+  than warm and modern. `-iniz` was likewise rejected for body prose because it reads
+  officious in a warm tutorial.
+- **Status of the address system.** The `siz`-only system, with warmth carried by the
+  "let's/we" framing, was applied across the first Turkish page (the using-functions
+  concept) and is settled, as are the verb-final order, pro-drop, and code-token rules.
+  Later pages inherit them; they are not re-opened per page.
+- **Why code tokens are rephrased around rather than suffixed.** Turkish suffixes are
+  chosen by the token's *pronounced* last vowel, which for an English identifier is a guess
+  the reader has to make, and the four-way i/İ/ı/I hazard makes some of those guesses look
+  wrong on the page. It is not squeamishness about apostrophes: the rephrased sentence
+  reads better in Turkish anyway, because the carrier noun tells the reader what kind of
+  thing the token names.
+- **Why native verbs beat "X etmek".** Spoken developer Turkish productively forms verbs
+  like "compile etmek", "debug etmek", "run etmek", but written tutorials prefer the
+  single-word native verb (_derlemek_, _hata ayıklamak_, _çalıştırmak_).
+
+Also removed as duplication, not as a decision: the guide's acronym examples for `CLI` and
+`API` (both already glossary rows), and a "Worked examples" block of natural-phrasing and
+EN→TR-pitfall lines that repeated examples already given verbatim under Formality and
+Grammar. The one non-duplicate example there, "the value in the list" → _listedeki değer_,
+was moved up into the case-suffix rule.
 
 ### 2026-07-31: Glossary pruned of ordinary vocabulary
 

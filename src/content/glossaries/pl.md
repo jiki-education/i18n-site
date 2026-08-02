@@ -3,8 +3,8 @@ lang: "pl"
 name: "Polish"
 family: null
 stage: "refining"
-governance_sha: "3d224cf"
-content_version: "51f363e8d6b8"
+governance_sha: "8cf9a9f"
+content_version: "1dfdc395fafd"
 published_at: "2026-08-02"
 term_count: 102
 category_id: 201
@@ -181,6 +181,25 @@ Default to plain **nawias**. When a specific bracket type matters, name it and s
 ---
 
 ## Decision log
+
+### 2026-08-02: no `o` after `zapytaj` before a subordinate clause
+
+**Decided by:** native speaker **mlistewnik** on the website-copy review thread, forum topic
+1025, post 4: https://forum.jiki.io/t/1025/4
+**Terms affected:** none (grammar rule, recorded in `guide.md` under Grammar).
+
+The app's "Ask about..." prompt in the Ask Jiki panel was translated as „Zapytaj o...”,
+followed by an animated rotating phrase („jak podejść do tego ćwiczenia”, „co oznacza ten
+błąd”, ...). mlistewnik reported this as a grammatical error: the `o` is a calque of English
+"ask about". In Polish, `pytać`/`zapytać` takes `o` only before a **noun** („spytaj o drogę”),
+never before a subordinate clause. He noted that a pronoun workaround („Zapytaj o to, jak...”)
+would be grammatical but does not fit here, because the prefix is fixed while the second half
+of the sentence changes inside the animation, so the correct fix is simply to drop the `o`.
+
+Applied: `codingExercise.canStart.askAbout` in `../front-end/app/messages/pl.json` changed
+from „Zapytaj o...” to „Zapytaj...”. The two curriculum/app uses where `o` precedes a noun
+(„zapytaj o wiek” in the `if` concept, „Zadawaj pytania o swój kod” in the premium upgrade
+modal) are correct and were left alone.
 
 ### 2026-08-02: the maze character is `ludzik`, not `postać`
 

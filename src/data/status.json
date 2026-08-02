@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "3da8b5e",
+  "governance_sha": "f6ef867",
   "approved": 134,
   "disapproved": 1,
-  "total": 306,
+  "total": 307,
   "languages": [
     {
       "lang": "it",
@@ -143,7 +143,7 @@
       "category_slug": "i18n-uk",
       "approved": 18,
       "disapproved": 0,
-      "total": 33,
+      "total": 34,
       "items": [
         {
           "key": "glossary",
@@ -307,6 +307,11 @@
         },
         {
           "key": "exercise/foxy-face",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-loop",
           "topic_id": null,
           "status": "pending"
         }

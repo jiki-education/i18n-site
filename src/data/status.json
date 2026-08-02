@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "62b679b",
-  "approved": 110,
+  "governance_sha": "db901e9",
+  "approved": 111,
   "disapproved": 1,
   "total": 297,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "refining",
       "category_slug": "i18n-it",
-      "approved": 19,
+      "approved": 20,
       "disapproved": 0,
       "total": 24,
       "items": [
@@ -126,8 +126,8 @@
         },
         {
           "key": "exercise/word-count",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1044,
+          "status": "approved"
         },
         {
           "key": "exercise/bouncer-dress-code",

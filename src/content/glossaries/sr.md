@@ -3,10 +3,10 @@ lang: "sr"
 name: "Serbian"
 family: null
 stage: "refining"
-governance_sha: "1a9f130"
-content_version: "c6926c4bfc77"
+governance_sha: "c02677c"
+content_version: "b0fc8034cb0d"
 published_at: "2026-08-02"
-term_count: 114
+term_count: 115
 category_id: 166
 forum_topic_id: 402
 video_player_forum_topic_id: 779
@@ -98,7 +98,8 @@ These are terms where the Serbian is used in prose, so the "Use (sr/en)" column 
 | increment | uvećanje | sr | "inkrement" is also used in more academic registers; use "uvećanje" here. |
 | modulo / remainder operator | ostatak (deljenja) | sr | "The remainder of division"; no clarification needed. |
 | concatenation / to concatenate | spajanje (stringova) | sr | Joining strings. Not "spajanje nizova" (reads as joining arrays). |
-| toggle | preklopiti | sr | To flip a value between two states. |
+| toggle (the noun: a control with two states) | prekidač | sr | The switch/control itself. Masculine; declines normally ("prekidača", "na prekidaču"). Corrected from "preklopiti" per native-speaker feedback (see glossary-notes.md), which merged the noun and the verb into one verb form. |
+| to toggle (the verb) | prebaciti | sr | **Context-dependent, not a fixed rendering.** Serbian has no single one-word verb covering English "to toggle"; "prebaciti" (to switch/flip over) is the general-case default, but pick the verb that fits the actual action ("promeniti", "invertovati", "uključiti/isključiti" for an on/off control). Never force "prebaciti" where it reads oddly. |
 | state / stateful | stanje | sr | |
 | scope | opseg | sr | Corrected from "doseg" per native-speaker feedback (see glossary-notes.md). Keep distinct from "blok" (code block) above. |
 | class | klasa | sr | |
@@ -134,7 +135,7 @@ These are terms where the Serbian is used in prose, so the "Use (sr/en)" column 
 | level | nivo | sr | |
 | milestone | prekretnica | sr | |
 | pathway | putanja | sr | Keep distinct from "staza" (track) below; both mean "path" but are assigned to different concepts. |
-| bootcamp | bootkamp | sr | |
+| bootcamp | butkamp | sr | Corrected from the hybrid spelling "bootkamp" per native-speaker feedback (see glossary-notes.md): a loanword adopted into Serbian prose is respelled phonetically throughout, not half-kept in its English spelling. Declines normally ("butkampa", "u butkampu"). Deliberately not "kurs", which is spoken for by `course` above. |
 | syllabus | silabus | sr | |
 | mentor / mentoring | mentor / mentorstvo | sr | |
 | track (curriculum path) | staza | sr | Keep distinct from "putanja" (pathway) above. |
@@ -182,6 +183,91 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-02: `bootcamp` is "butkamp", not "bootkamp"
+
+**Decided by:** native speaker **aleksaelezovic** on the pinned Serbian glossary thread
+([post 2522](https://forum.jiki.io/t/402/2522)), answering the questions asked in
+[post 2484](https://forum.jiki.io/t/402/2484). **Terms affected:** `bootcamp`.
+**Status: human-decided, settled.**
+
+The row read **"bootkamp"**, a hybrid that keeps the English "boot" spelling and respells
+only the second half. aleksaelezovic gave "butkamp" (noting it is "not really a word") or
+plain "kurs" as the two options.
+
+**"butkamp" is picked.** Two reasons. The guide's own loanword rule is that a new loanword
+adopted into Serbian prose is respelled phonetically *throughout* ("framework" → "frejmvork"),
+which "bootkamp" only half does, so the old spelling was inconsistent with the language's
+stated pattern rather than a deliberate exception. And "kurs" is already the agreed rendering
+of `course` (the whole Jiki course a learner is taking), so reusing it for `bootcamp` would
+collapse two curriculum-vocabulary terms the glossary deliberately keeps apart. That
+aleksaelezovic calls "butkamp" "not really a word" is expected of a recent loanword and is
+not an objection to it; the row records the declension so it is used as an ordinary Serbian
+masculine noun.
+
+The published Serbian `arrays` concept page carries the old "bootkampa" and needs the
+corresponding content fix; a glossary change does not update already-translated files.
+
+### 2026-08-02: `toggle` splits into a noun and a verb row
+
+**Decided by:** native speaker **aleksaelezovic** on the pinned Serbian glossary thread
+([post 2522](https://forum.jiki.io/t/402/2522)), answering the questions asked in
+[post 2484](https://forum.jiki.io/t/402/2484). **Terms affected:** `toggle`.
+**Status: human-decided, settled** (the split and the noun; the verb is settled *as*
+context-dependent).
+
+There was a single row, `toggle` → **"preklopiti"**, which is a verb, so the one row was
+silently doing two jobs and answered the noun sense with an infinitive. aleksaelezovic
+answered the two senses separately, so the row is now two:
+
+- The **noun** `toggle` (the two-state control itself) is **"prekidač"**, the ordinary
+  Serbian word for a switch. Clean substitution, settled.
+- The **verb** `to toggle` has no single-word Serbian equivalent: as he put it, it "really
+  depends on the context and there is no single word verb that it can be directly translated
+  to". The row therefore carries **"prebaciti"** as the general-case default with an explicit
+  caveat that a translator picks the verb fitting the actual action rather than forcing this
+  one. The context-dependence is the decision, not a gap in it; this is the same shape as the
+  `deploy` row settled on 2026-07-31.
+
+This also closes the `toggle` question left open by little_mouse's post (entry below), which
+had offered "prebaciti", "promeniti", "invertovati" and "prekidač" without picking between
+them. The reason it looked unresolvable there is that the options are answers to two
+different questions: "prekidač" is the noun, the rest are the verb.
+
+### 2026-08-02: `dictionary` = "rečnik" and `milestone` = "prekretnica" confirmed by a second native speaker
+
+**Confirmed by:** native speaker **aleksaelezovic** on the pinned Serbian glossary thread
+([post 2522](https://forum.jiki.io/t/402/2522)), answering the questions asked in
+[post 2484](https://forum.jiki.io/t/402/2484). **Terms affected:** `dictionary`, `milestone`.
+**No rendering changed.**
+
+- **`dictionary` → "rečnik": human-confirmed, protected.** This is a second independent
+  native speaker endorsing the rendering little_mouse corrected "mapa" to (entry below). The
+  row is now backed by two native speakers and must not be changed back by any pass.
+- **`milestone` → "prekretnica": unchanged, but the question stays OPEN.** See the open item
+  below; this is not a clean confirmation.
+
+#### OPEN: `milestone` in the dashboard UI, revisit later
+
+aleksaelezovic keeps **"prekretnica"** for now, on the grounds that it is the closest
+translation of the English word itself, and adds that "anything other than `prekretnica`
+seems kind of silly in the dashboard UI and gives away that it was just directly translated
+from english". So the row stands and nothing changes.
+
+But he raises a real tension rather than closing it: "prekretnica" is, in his reading, nearer
+to **`checkpoint`** than to `milestone`, and he offers "cilj" (goal), "dostignuće"
+(accomplishment) and "faza" (phase) as candidates that might fit the dashboard use-case
+better, ending with "I would just discuss `milestone` some more maybe, or change it in the
+future".
+
+**Status: open, deliberately unresolved.** Three earlier passes have now landed on the same
+spot: miroslav-inc proposed "dostignuće" (2026-07-31 entry below, not actioned because
+*achievement* is a different concept Jiki may want for its own feature), little_mouse
+proposed "tačka"/"cilj"/"dostignuće", and aleksaelezovic now proposes "cilj"/"dostignuće"/
+"faza" while preferring the status quo. What none of the three had is the thing that would
+settle it: the actual dashboard string in context, and a decision about whether Jiki wants
+`milestone` and `achievement` as two separate product concepts. Revisit when the dashboard
+copy is real; do not re-litigate the row from the glossary alone.
 
 ### 2026-08-02: `dictionary` is "rečnik", not "mapa"
 
@@ -530,8 +616,6 @@ repeated here.
 
 | Term | Why |
 |------|-----|
-| milestone | Native, transparent ("turning point"). |
-| bootcamp | Phonetically adapted loanword. |
 | syllabus | Established loanword in Serbian academic usage. |
 | mentor / mentoring | Established loanword, fully naturalized. |
 | tutorial | Loanword. |

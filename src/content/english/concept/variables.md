@@ -2,10 +2,10 @@
 type: "concept"
 slug: "variables"
 title: "Creating and Using Variables"
-en_md5: "6fca9aed7a4f51de337288e739f8b44a"
+en_md5: "dd0834017a8d42c22cca25966c1fdd91"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/variables/source.md"
-captured_at: "2026-08-01"
+captured_at: "2026-08-02"
 ---
 
 <define>Variables</define> are what let us store information. When we're coding, we often need to store some number or some string to use later, and variables are how we do it. So let's zoom out a bit in Jiki's warehouse, and you'll see that he has another set of shelves. We're already familiar with the first set of shelves that have got the functions on, these little machines like `move` and `rectangle`. But on this second set of shelves, rather than machines, you can see lots of boxes, and these boxes are what we call variables. You can tell Jiki to store anything in these boxes, and then later on ask him to get it out again. Each box has a name, exactly the same as functions have a name, and each box contains just one thing. For now, either a number or a string. But we'll look at storing more complex things in them further in the course.
@@ -34,7 +34,7 @@ let name = "Jeremy"
 
 So we've told him to make a box, put a label on it, and put something in it, and now he goes and puts the box on the shelf. And then at any other time in your program, Jiki can go and get that box off the shelf, look at what's inside it. Start to build this mental model. I've been coding forever, and I still imagine when I write code that I'm putting something into a box, and I'm going to get it out later. When you see that `let` keyword, really think, "Okay, that means I'm making a new box."
 
-A word on the names of variables, the labels on these boxes. We have a few rules about those. Firstly, variable names can't have spaces in them. If you want to use multiple words for a label of a box, we shove the words up against each other, and we change the first letter of each word to be a capital letter. We call this camel case. Imagine the humps on a camel pushing up the first letter of each new word to become a capital letter. So if you want a label that is my name, rather than write two words with spaces, we write it as one word with the N capitalized: `myName`.
+A word on the names of variables, the labels on these boxes. We have a few rules about those. Firstly, variable names can't have spaces in them. If you want to use multiple words for a label of a box, we shove the words up against each other, and we change the first letter of each word to be a capital letter. We call this <define>camel case</define>. Imagine the humps on a camel pushing up the first letter of each new word to become a capital letter. So if you want a label that is my name, rather than write two words with spaces, we write it as one word with the N capitalized: `myName`.
 
 Also, every variable name must be unique. You can't have two boxes with the same label, and also variables can't have the same name as functions. If you forget, Jiki will get confused and will give you an error message.
 

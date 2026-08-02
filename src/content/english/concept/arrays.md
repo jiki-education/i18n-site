@@ -2,10 +2,10 @@
 type: "concept"
 slug: "arrays"
 title: "Arrays"
-en_md5: "012da550948ba2ebcfaf953cd0906f3f"
+en_md5: "d26ccb9e04fbc77129f3199d63a95017"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/arrays/source.md"
-captured_at: "2026-08-01"
+captured_at: "2026-08-02"
 ---
 
 You've been using numbers and strings and Booleans, the posh word for true and false, and we call these different <define>data types</define>. Now we're adding our first <define>compound data type</define>.
@@ -26,7 +26,7 @@ He can put it into an input slot of a machine. He can pull it out of a return ch
 
 Now, in code, an array looks a little bit like a chain, too. It has a square bracket on each end and then lots of items that are chained together, separated by commas.
 
-So for example, if we wanted to create an array with the names of some of our bootcamp members, we could put together a box called <define>`mentors`</define> and put that chain inside of it.
+So for example, if we wanted to create an array with the names of some of our mentors, we could put together a box called <define>`mentors`</define> and put that chain inside of it.
 
 We would write `let mentors =`, exactly the same as we do with any other box, and then we'd have an opening square bracket, lots of elements, their names separated by commas, and then a closing square bracket. When Jiki sees this, he goes and gets four pieces of paper, one for each name, then gets a new chain and chains them all together, and then he puts that chain in the `mentors` box.
 

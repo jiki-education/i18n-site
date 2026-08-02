@@ -3,9 +3,9 @@ lang: "sr"
 name: "Serbian"
 family: null
 stage: "refining"
-governance_sha: "63b88af"
-content_version: "11bc452902c8"
-published_at: "2026-08-01"
+governance_sha: "1a9f130"
+content_version: "c6926c4bfc77"
+published_at: "2026-08-02"
 term_count: 114
 category_id: 166
 forum_topic_id: 402
@@ -43,7 +43,7 @@ These are terms where the Serbian is used in prose, so the "Use (sr/en)" column 
 | integer | ceo broj | sr | Also "celobrojni tip" for the type name specifically. |
 | float / decimal | broj sa pokretnim zarezom | sr | Or "realni tip" when the type name (not the value) is meant. |
 | array / list | niz | sr | See also "chain" under Jiki physical metaphors for the teaching metaphor used alongside it. |
-| dictionary | mapa | sr | |
+| dictionary | rečnik | sr | Corrected from "mapa" per native-speaker feedback (see glossary-notes.md). "mapa" / "mapiranje" belongs to Java's `Map`; the Python-style dictionary Jiki teaches is "rečnik". Masculine; declines normally ("u rečniku", pl. "rečnici", instr. pl. "rečnicima"). |
 | element | element | sr | "element niza" = array element. |
 | index | indeks | sr | Stands alone. |
 | data type | tip podataka | sr | |
@@ -183,6 +183,141 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 
 ## Decision log
 
+### 2026-08-02: `dictionary` is "rečnik", not "mapa"
+
+**Decided by:** owner (iHiD), on the correction of native speaker **little_mouse** on the
+pinned Serbian glossary thread ([post 8](https://forum.jiki.io/t/402/8), post id 2371).
+**Terms affected:** `dictionary`. **Status: human-decided, settled.**
+
+The row read **"mapa"**. little_mouse's point is that the two words are split by language in
+Serbian developer usage: "mapa" (and the verb sense "mapiranje") is what Java's `Map` type is
+called, while Python calls its dictionaries "rečnik". Jiki's `dictionary` concept teaches the
+Python-style key/value dictionary, not a Java `Map`, so "mapa" points a Serbian reader at the
+wrong language's data structure. "rečnik" is also the literal translation of "dictionary". The
+row now reads "rečnik", and the note records the Java-vs-Python split so a future pass does not
+reintroduce "mapa".
+
+The already-translated Serbian JavaScript interpreter catalog carried "mapa" in the two error
+messages whose English says "dictionary" (`InOperatorRequiresObject`,
+`InWithArrayNotAllowed`); both were updated to "rečnik" with the change.
+
+The same post raised four other terms, **none of them actioned here** because each is a choice
+between several plausible options rather than a single clean substitution: `increment`
+("inkrement" / "inkrementirati" for the `++` sense specifically, argued as not merely
+academic), `toggle` ("preklopiti" questioned; "prebaciti", "promeniti", "invertovati" or
+"prekidač" offered instead, with the reviewer unsure), `milestone` ("prekretnica" reads as a
+turning point rather than an achieved mid-goal; "tačka", "cilj" or another reviewer's
+"dostignuće" offered), and `bootcamp` ("bootkamp" questioned; plain "bootcamp",
+"intenzivni kurs" or "kurs" offered). The post also noted "ugnježden" as an equally valid
+spelling variant of `nested` (no change needed), and observed that Serbian IT people are often
+more comfortable with English UI words such as "Save" and "Edit" than with translations.
+
+### 2026-08-02: Proposed terms from the Stage 2 batch 2 catch-up pass (unconfirmed drafts)
+
+**Decided by:** agent (proposals only, nothing written to `glossary.md`). The catch-up pass
+translating `two-fer`, `strings`, `digital-clock`, `arrays`, `weather-symbols` (full detail
+also in `STATUS.md`).
+
+**Conflict, needs settling:** `piece of paper` (string metaphor) — this batch's `strings`
+item proposes _папир_, but the earlier `if` pass proposed _папирић_ for the same term. One
+has to win.
+
+**Two rows narrow existing agreed metaphors, worth a native-speaker check before agreeing:**
+`slot` (bare/generic) → _отвор_ sits beside the already-agreed "input slot = улазни отвор";
+`box` (weather-symbols forecast grid cell) → _поље_ was deliberately kept distinct from the
+value-container `box → кутија`, which is the right call but should be confirmed rather than
+assumed.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| compound data type | сложени тип података | | high |
+| coin (number metaphor) | новчић | | high |
+| item (informal, vs technical "element") | ставка | | medium |
+| template string | шаблонски стринг | | medium |
+| meridiem (am/pm marker) | kept as-is, quoted on first mention | | medium |
+| week (scenario names) | седмица | Not "недеља", which also means Sunday. | medium |
+| counter (loop counter) | бројач | | low |
+
+Possible `global/terms.md` gaps flagged: `coin`, `piece of paper`, `template string`,
+`meridiem`, `counter`.
+
+### 2026-08-01: `guide.md` trimmed to rules only
+
+**Decided by:** agent, on an owner-requested pass over `languages/sr/guide.md`.
+**Status:** editorial, plus two **unconfirmed drafts** flagged below. No term mapping
+changed, and no glossary row was touched.
+
+The guide is loaded into the prompt for every Serbian item, in every pass, so the pass
+removed everything in it that was rationale, provenance or a restatement of a global file
+(9,570 → 6,022 characters, −37%). Every behavioural instruction was kept. What was removed,
+and is recorded here instead:
+
+- **Script provenance.** The Latin-script decision was justified by the fact that every
+  real source of Serbian programming education (Petlja.org, university course material, dev
+  blogs) writes in Latin script, even on platforms that otherwise default to Cyrillic for
+  general content, and that dropping the diacritics is a casual chat/SMS convention rather
+  than something serious educational writing does. The imperative rule stays in the guide;
+  the evidence is here.
+- **The whole "Audience specifics" section.** It said that readers are in Serbia and other
+  Serbian-speaking communities, and that real Serbian CS-education material already leans on
+  concrete physical metaphors for abstract concepts (a variable as a "little box", array
+  elements as "boxes on a shelf", encapsulation as "cocooned data"), so Jiki's metaphor
+  family is a natural fit rather than an import. That is research provenance, not an
+  instruction: `global/voice.md` carries the audience profile and `global/rules.md` carries
+  the "metaphors are load-bearing" rule. The individual attestations are already in the Term
+  rationale table below.
+- **The ти/ви justification.** The guide argued the informal "ti" choice at length:
+  institutional Serbian CS material (official course manuals, university textbooks) actually
+  defaults to formal "vi", but that register belongs to academic/institutional writing rather
+  than to Jiki's warm, informal, mentor-like brand voice; "ti" is what real Serbian marketing
+  and youth-oriented tutorial content uses, and matches the rest of Jiki's languages. The
+  rule ("use ti, never vi") is unchanged in the guide.
+- **Cross-language commentary on word order.** A parenthetical compared Serbian's
+  topic/focus word order with the more rigid focus-position system documented in Hungarian's
+  guide. Serbian's word order is freer than English but not rule-governed the way Hungarian's
+  is, which is why the guide states it as "reorder for naturalness", not as a positional rule.
+- **The "Worked examples" tail.** Its titles, calls-to-action and natural-phrasing bullets
+  restated `global/voice.md` with Serbian illustrations: "Stiže Jiki" / "Upoznaj Jiki" rather
+  than the melodramatic "Rođen je Jiki"; "Nov način da naučiš programiranje" rather than the
+  redundant "Jedan novi način učenja programiranja"; "Počni odmah!" / "Prijavi se odmah!"
+  rather than the vague "Pridruži nam se!"; "Probaj besplatno!" / "Isprobaj ovo!"; "Hajde da
+  naučimo React" rather than the flatter "Naučimo React". The two examples that taught the
+  ti-form/aspect rule something the rule alone did not ("Prvo instaliraj Node.js", "Probaj da
+  pokreneš ovaj kod") moved up into the Formality section and are still in the guide.
+- **The acronym bullet.** It instructed that "API" be explained as "skup pravila koja
+  omogućavaju da dva programa međusobno komuniciraju" and "CLI" as "komandna linija" rather
+  than glossed letter by letter. Both are already glossary rows in the "Keep in English"
+  table, with that exact Serbian text, and `global/voice.md` carries the general principle.
+- **Rationale trimmed from surviving rules.** That an invariant technical noun is "the single
+  biggest source of machine-translated-sounding Serbian"; that the gendered-participle problem
+  "comes up constantly in walkthrough prose"; that the identical-loanword gloss "bites often,
+  because so many Serbian technical terms are Latin-spelled loanwords". All true, none of it
+  changes what a translator does.
+- **A "flag it for a native-speaker check" instruction on Jiki-name inflection**, with the
+  observation that no inflected form had yet appeared in a real translated file. `global/rules.md`
+  ("When unsure") already covers flagging anything ambiguous, so this was a duplicate. The
+  inflection rule itself ("Jikija", "Jikiju") is unchanged.
+
+#### Two conflicts resolved
+
+- **Quotation marks (unconfirmed draft).** The guide stated no quotation convention but its
+  own Serbian examples opened with „ (U+201E) and closed with a straight ASCII `"`, which is
+  a mismatched pair. The guide now states the standard Serbian pair **„...“** (U+201E opening,
+  U+201C closing) and all its examples use it. This is an agent call from the standard written
+  convention, not a native-speaker decision, and is worth confirming on the forum.
+- **The hyphen as an em-dash substitute (unconfirmed draft).** The guide's style notes said a
+  hyphen "is also acceptable where it reads better" as a replacement for an em dash.
+  `global/rules.md` outranks the guide and enumerates the replacements as separate sentences,
+  commas or parentheses, so the guide now says a hyphen is not a dash substitute. The hyphen's
+  Serbian-specific real job, attaching a case suffix to a code identifier or a number in prose
+  („`niz`-u“, „30-og“), was kept and promoted to a Grammar bullet in its own right, since
+  declension on code tokens is a load-bearing Serbian rule rather than a typographic aside.
+
+No other contradiction was found: the Latin-script decision reads consistently everywhere it
+appears (including the "never write Cyrillic `енгл.`" rule that depends on it), and the guide
+already triggers glossing only from a `<define>` tag, never on first occurrence, as
+`global/voice.md` requires.
+
 ### 2026-07-31: `deploy` is "postavi na server", not "deploj"; `return chute` is "izlazni otvor", not "izlazni žleb"
 
 **Decided by:** native speaker **aleksaelezovic** on the pinned Serbian glossary thread
@@ -278,7 +413,7 @@ speakers". Serbian has both variants; the **v** form is the ordinary spoken one,
 the one the course uses, per the "default to the ordinary, common word" principle below.
 
 A row was added for `maze` (there was none before, which is how the exercise came to pick a
-rendering on its own). The translated exercise files are being corrected to match.
+rendering on its own).
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

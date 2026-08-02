@@ -3,10 +3,10 @@ lang: "pl"
 name: "Polish"
 family: null
 stage: "refining"
-governance_sha: "05d5a78"
-content_version: "14247b349d6f"
-published_at: "2026-08-01"
-term_count: 100
+governance_sha: "3d224cf"
+content_version: "51f363e8d6b8"
+published_at: "2026-08-02"
+term_count: 102
 category_id: 201
 forum_topic_id: 417
 video_player_forum_topic_id: 771
@@ -126,6 +126,7 @@ These are terms where the Polish is used in prose, so the "Use (pl/en)" column i
 | English | Polish | Use (pl/en) | Notes |
 |---------|--------|----------|-------|
 | course | kurs | pl | The whole Jiki course the learner is taking. Keep distinct from _lekcja_ (lesson) and _program nauczania_ (curriculum). |
+| character (the little figure in the maze exercises) | ludzik | pl | **Masculine**, so every agreeing verb, adjective, participle and pronoun is masculine: _ludzik wszedł_, _ludzik nie dotarł_, _jest zwrócony_, _a on skręca_. Declines _ludzika_ (gen./acc.), _ludzikowi_ (dat.). Never _postać_, which is feminine and too abstract for the little person the English describes. |
 
 ## Keep in English
 
@@ -163,6 +164,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | shelves (storage) | półki | Feminine. |
 | crank (machine crank) | korba | Feminine. The action is _zakręcić korbą_ (perfective, one-off). |
 | warehouse (Jiki's warehouse) | magazyn | Masculine. |
+| bouncer (bar/club door scenario) | ochroniarz | Masculine. Never _bramkarz_, which in everyday Polish reads first as "goalkeeper". Recurs across the `if` concept and the bouncer/guest-list exercises, so keep it identical everywhere, including image `alt` text and the compound _robot-ochroniarz_. |
 | board / whiteboard | notatnik | **One object, one word**: the board the learner writes instructions on for Jiki, and the board a function keeps its own instructions and notes on, are the same word. Masculine. Do not reuse `notatnik` for the future dictionary spiral-notepad metaphor. See `glossary-notes.md` for why `tablica` was rejected. |
 
 ## Brackets
@@ -179,6 +181,79 @@ Default to plain **nawias**. When a specific bracket type matters, name it and s
 ---
 
 ## Decision log
+
+### 2026-08-02: the maze character is `ludzik`, not `postać`
+
+**Decided by:** native speaker **mlistewnik** on the maze-solve-basic review thread, forum
+topic 811, post 9: https://forum.jiki.io/t/811/9
+**Terms affected:** `character (the little figure in the maze exercises)` (new row).
+
+The English describes a *little person* walking the maze. `postać` is the generic word for a
+character/figure in the abstract (a character in a story, a form something takes), and reads
+as distant and vague for a small cartoon figure a beginner is steering around a grid.
+`ludzik` is the ordinary Polish diminutive for exactly that: a little human figure, the word
+Poles use for the small person in a game or on a screen. It also removes the awkwardness of
+the source's "small character" needing `mała postać`, since the smallness is already in the
+word.
+
+The swap is not lexical only: `postać` is feminine and `ludzik` is masculine, so every
+agreeing verb, adjective, participle and pronoun in the surrounding sentence changed with it
+(_Postać weszła_ → _Ludzik wszedł_, _jest zwrócona_ → _jest zwrócony_, _a ona skręca_ → _a on
+skręca_). That is why the row carries the gender explicitly: a future pass that reaches for
+the word without it produces sentences that are wrong rather than merely unidiomatic.
+
+**This row is human-decided.** It changes only by fresh agreement with a native speaker.
+
+`postać` is still correct, and is left alone, in its unrelated senses elsewhere in the Polish
+content: "Prognoza ma postać siatki" (weather-symbols instructions) and "Poprawna postać to"
+(JavaScript interpreter catalog) both mean *form*, not *character*.
+
+The same reviewer contested `skręcać` in the same post. That is being handled separately and
+nothing about it is recorded here.
+
+### 2026-08-02: `input slot` candidate from mlistewnik, not yet confirmed
+
+**Raised by:** mlistewnik (forum topic 417, post 7): https://forum.jiki.io/t/417/7
+**Status:** open, one candidate logged, not written to `glossary.md`.
+
+Proposes **szczelina wrzutowa** for `input slot` (currently the unconfirmed coinage `otwór
+wejściowy`), citing real vending-machine manuals as the source (a narrow coin/card slot,
+closer to Jiki's physical input-slot metaphor than the rounder-sounding `otwór`). Reviewer
+disclosed partial LLM assistance in researching it, cross-checked against real manuals
+though, so the term itself is worth keeping as a candidate even if the process that found it
+isn't the personal-recollection kind we usually ask for. Needs a second, LLM-free native
+speaker to independently confirm before it replaces the current row.
+
+Same post also proposed **podajnik odbiorczy** to replace the already-settled `return
+chute` → `kanał zwrotny` (see the 2026-07-31 entry below). Declined to act on that one: it
+contests a native-speaker-settled row, and came with the same disclosed-LLM-assistance
+caveat, so per "guide/glossary defers to humans" it needs a fresh, LLM-free native-speaker
+objection before reopening, not just a plausible alternative.
+
+### 2026-08-02: Proposed terms from the Stage 2 batch 2 catch-up pass (unconfirmed drafts)
+
+**Decided by:** agent (proposals only, nothing written to `glossary.md`). The catch-up pass
+translating `two-fer`, `strings`, `digital-clock`, `arrays`, `weather-symbols`.
+
+**Priority row to settle:** `box` (draw-family grid cell) → _pole_, deliberately distinct
+from the existing value-container metaphor `box → pudełko`. Using `pudełko` for a grid cell
+crosses two metaphors; the checker will keep warning on every draw-family pass until this is
+recorded.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| compound data type | złożony typ danych | _złożony_/_zespolony_/_kompozytowy_ all defensible; sets precedent alongside the existing `typ danych` row. | medium |
+| Boolean (the data type name) | wartość logiczna | Glossary has _prawda_/_fałsz_ but no row for the type itself; `boolean` kept-English or _typ logiczny_ are alternatives. | medium |
+| piece of paper (string metaphor) | kartka papieru | Load-bearing recurring metaphor; over _papier_/_karteczka_ so every page pictures the same object. | medium |
+| coin (machine-input metaphor) | moneta | Recurring metaphor for number inputs to machines. | medium |
+| template string | kept English, as-is | Polish devs say it in English; consistent with the existing "string stays English" row. MDN-pl uses _literały szablonowe_ as an alternative. | medium |
+| line of code | linijka kodu | _linijka_ (informal, matches Jiki voice) vs _wiersz_ (formal); line-count checks recur across exercises. | medium |
+| meridiem / am-pm indicator | meridiem (indeclinable); _oznaczenie_ for "indicator" | Keep the Latin term where the source teaches it, paraphrase elsewhere; recurs in clock content. | medium |
+| quotation marks | cudzysłów / podwójny cudzysłów | **Ambiguity, not just a term choice**: Polish prose quotes are „…", but the code a learner types uses straight ". Worth deciding whether teaching pages should show the `"` glyph explicitly. | medium |
+| string in error-message prose (no `<define>`) | declined loanword, e.g. _stringami_ | Register call: declining the bare loanword vs _ciągami znaków_ in error messages; follows the existing keep-English row but a native speaker may want to settle it. | medium |
+
+Possible `global/terms.md` gaps flagged: "template string", "compound data type", the
+paper/coin metaphors.
 
 ### 2026-08-01: `guide.md` trimmed to rules only; rationale moved here
 
@@ -395,4 +470,5 @@ repeated here.
 | crank | Ordinary Polish word for a hand crank. |
 | warehouse | Ordinary word for a storeroom/warehouse; the shelves stand in it. |
 | input slot | No established Polish pedagogical precedent for this compound. |
+| bouncer | Settled by a native speaker (marysska6, forum topic 1012, 2026-08-02): `bramkarz` is ambiguous and reads first as "goalkeeper", so the bar-door scenario misfires. `ochroniarz` is the neutral word for the door-security role. |
 | return chute | `zsyp` (a chute an object drops through, e.g. a laundry/garbage chute) fits a returned value better than `zjeżdżalnia` (a slide, which implies a person riding it). |

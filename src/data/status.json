@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "6a710d3",
-  "approved": 70,
+  "governance_sha": "d467437",
+  "approved": 71,
   "disapproved": 1,
   "total": 286,
   "languages": [
@@ -1240,6 +1240,37 @@
       ]
     },
     {
+      "lang": "es-419",
+      "name": "Latin American Spanish",
+      "stage": "setup",
+      "category_slug": "i18n-es-419",
+      "approved": 2,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 312,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 748,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 749,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 800,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "zh-CN",
       "name": "Simplified Chinese",
       "stage": "setup",
@@ -1267,37 +1298,6 @@
           "key": "exercise/maze-solve-basic",
           "topic_id": 820,
           "status": "approved"
-        }
-      ]
-    },
-    {
-      "lang": "es-419",
-      "name": "Latin American Spanish",
-      "stage": "setup",
-      "category_slug": "i18n-es-419",
-      "approved": 1,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 312,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 748,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 749,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 800,
-          "status": "pending"
         }
       ]
     },

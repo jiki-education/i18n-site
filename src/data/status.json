@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "db875eb",
+  "governance_sha": "a8f391f",
   "approved": 79,
   "disapproved": 1,
-  "total": 287,
+  "total": 286,
   "languages": [
     {
       "lang": "uk",
@@ -1782,22 +1782,6 @@
         },
         {
           "key": "exercise/maze-solve-basic",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "zz",
-      "name": "French (scratch test locale)",
-      "stage": "setup",
-      "category_slug": null,
-      "approved": 0,
-      "disapproved": 0,
-      "total": 1,
-      "items": [
-        {
-          "key": "glossary",
           "topic_id": null,
           "status": "pending"
         }

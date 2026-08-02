@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "88ccd7d",
-  "approved": 108,
+  "governance_sha": "89250da",
+  "approved": 109,
   "disapproved": 1,
   "total": 297,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "refining",
       "category_slug": "i18n-it",
-      "approved": 17,
+      "approved": 18,
       "disapproved": 0,
       "total": 24,
       "items": [
@@ -121,8 +121,8 @@
         },
         {
           "key": "exercise/digital-root",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1043,
+          "status": "approved"
         },
         {
           "key": "exercise/word-count",

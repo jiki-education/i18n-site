@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "73eb7a9",
-  "approved": 130,
+  "governance_sha": "a3e0fb0",
+  "approved": 131,
   "disapproved": 1,
   "total": 297,
   "languages": [
@@ -272,7 +272,7 @@
       "name": "Greek",
       "stage": "refining",
       "category_slug": "i18n-el",
-      "approved": 16,
+      "approved": 17,
       "disapproved": 0,
       "total": 24,
       "items": [
@@ -373,8 +373,8 @@
         },
         {
           "key": "exercise/two-fer",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1061,
+          "status": "approved"
         },
         {
           "key": "concept/strings",

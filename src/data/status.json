@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "80e1842",
-  "approved": 136,
+  "governance_sha": "ac26b04",
+  "approved": 137,
   "disapproved": 1,
-  "total": 307,
+  "total": 317,
   "languages": [
     {
       "lang": "it",
@@ -12,7 +12,7 @@
       "category_slug": "i18n-it",
       "approved": 20,
       "disapproved": 0,
-      "total": 24,
+      "total": 34,
       "items": [
         {
           "key": "glossary",
@@ -131,6 +131,56 @@
         },
         {
           "key": "exercise/bouncer-dress-code",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-solve-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/fix-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/foxy-face",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/penguin",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cloud-rain-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/jumbled-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-repeat",
           "topic_id": null,
           "status": "pending"
         }
@@ -964,7 +1014,7 @@
       "name": "Polish",
       "stage": "refining",
       "category_slug": "i18n-pl",
-      "approved": 5,
+      "approved": 6,
       "disapproved": 0,
       "total": 14,
       "items": [
@@ -995,8 +1045,8 @@
         },
         {
           "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1071,
+          "status": "approved"
         },
         {
           "key": "concept/variables",

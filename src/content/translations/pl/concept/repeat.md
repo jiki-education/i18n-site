@@ -7,12 +7,12 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/repeat/source.md"
 en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "36e0767"
-content_version: "7bf71c1e0fa5"
-published_at: "2026-08-01"
+governance_sha: "ac26b04"
+content_version: "81c7f12cde62"
+published_at: "2026-08-02"
 ---
 
-Do tej pory cały kod był zapisany liniowo: Jiki wykonywał instrukcje po kolei, od góry do dołu.
+Do tej pory cały kod był zapisywany liniowo: Jiki wykonywał instrukcje po kolei, od góry do dołu.
 
 Teraz zobaczymy, jak Jiki może wyjść z tego sztywnego porządku, a konkretnie jak kazać mu wykonać ten sam fragment kodu wiele razy z rzędu.
 
@@ -69,7 +69,7 @@ repeat(4) {
 
 Takie powtarzane instrukcje nazywamy pętlami (ang. _loop_). Różnych pętli jest wiele i każda działa trochę inaczej.
 
-Została jeszcze jedna rzecz: przy pracy z pętlami utrzymywanie kodu w porządku staje się niezbędne. Kiedy kod ma dobrą wizualną strukturę, od razu widać, co się w nim dzieje. Ale jeśli o to nie zadbasz, jeśli zapomnisz o wcięciach albo je pomieszasz, wszystko bardzo szybko robi się zagmatwane. Dlatego w tym kursie obowiązuje stała zasada. Otwierający nawias klamrowy zawsze stawiasz w tej samej linii, w której stoi instrukcja (ang. _statement_) `repeat`. Zamykający nawias klamrowy zawsze stawiasz w osobnej linii pod spodem, a kod pomiędzy nimi wcinasz o dwie spacje. Dzięki temu wszystko pozostanie czytelne, a jeśli zapomnisz albo spróbujesz innego układu, pojawi się błąd.
+Została jeszcze jedna rzecz: przy pracy z pętlami utrzymywanie kodu w porządku staje się niezbędne. Kiedy kod ma dobrą wizualną strukturę, od razu widać, co się w nim dzieje. Ale jeśli o to nie zadbasz, jeśli zapomnisz o wcięciach albo je pomieszasz, wszystko bardzo szybko robi się zagmatwane. Dlatego w tym kursie obowiązuje stała zasada. Otwierający nawias klamrowy zawsze stawiaj w tej samej linii, w której stoi instrukcja (ang. _statement_) `repeat`. Zamykający nawias klamrowy zawsze stawiaj w osobnej linii pod spodem, a kod pomiędzy nimi wcinaj o dwie spacje. Dzięki temu wszystko pozostanie czytelne, a jeśli zapomnisz albo spróbujesz innego układu, pojawi się błąd.
 
 <img
   class="concept-image"

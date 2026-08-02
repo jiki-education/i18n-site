@@ -8,6 +8,7 @@ import PinToggle from "../../components/PinToggle.astro";
 import { contentTypeLabel, forumCategoryUrl, languageMeta, stageMeta } from "../../lib/languages";
 import { reviewItemId } from "../../lib/reviewed";
 import { playerReviewVersion } from "../../lib/videojs";
+import status from "../../data/status.json";
 
 export const getStaticPaths = (async () => {
   const glossaries = await getCollection("glossaries");
@@ -24,8 +25,14 @@ const meta = languageMeta(lang);
 const translations = (await getCollection("translations")).filter((t) => t.data.lang === lang).sort((a, b) => a.data.slug.localeCompare(b.data.slug));
 
 const published = translations.filter((t) => t.data.status === "published");
-const planned = translations.filter((t) => t.data.status === "planned");
 const termCount = glossary.data.term_count ?? 0;
+
+/**
+ * How much of this language a native speaker has signed off, from the same
+ * `status.json` the /status leaderboard reads. Falls back to zeroes for a
+ * language with no row there, so the aside never loses a line.
+ */
+const signedOff = status.languages.find((entry) => entry.lang === lang) ?? { approved: 0, total: 0 };
 const stage = stageMeta(glossary.data.stage);
 
 const byType = new Map<string, typeof translations>();
@@ -50,16 +57,16 @@ for (const item of translations) {
       </div>
       <p class="-mt-[13px] ml-auto max-w-[250px] text-right text-[12px] leading-snug text-purple-300">{stage.blurb}</p>
       <div class="flex items-baseline justify-between gap-3">
+        <dt class="text-purple-300">Reviewed</dt>
+        <dd class="font-semibold text-white">{signedOff.approved} / {signedOff.total}</dd>
+      </div>
+      <div class="flex items-baseline justify-between gap-3">
         <dt class="text-purple-300">Agreed terms</dt>
         <dd class="font-semibold text-white">{termCount}</dd>
       </div>
       <div class="flex items-baseline justify-between gap-3">
         <dt class="text-purple-300">Published</dt>
         <dd class="font-semibold text-white">{published.length}</dd>
-      </div>
-      <div class="flex items-baseline justify-between gap-3">
-        <dt class="text-purple-300">Queued</dt>
-        <dd class="font-semibold text-white">{planned.length}</dd>
       </div>
       {
         glossary.data.family && (

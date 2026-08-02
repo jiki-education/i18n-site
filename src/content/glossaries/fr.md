@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "refining"
-governance_sha: "26d3ce7"
-content_version: "2135755dbd9a"
-published_at: "2026-08-01"
-term_count: 67
+governance_sha: "57a0eb4"
+content_version: "b2c7936c357b"
+published_at: "2026-08-02"
+term_count: 68
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -109,6 +109,7 @@ in the gloss column below; with no `<define>`, use the English bare, no gloss.
 | template literal | _littéral de gabarit_ | Where the source defines it, explain it as a _littéral de gabarit_ (the official term), then use _template literal_. |
 | CLI (the concept) | _interface en ligne de commande_ | Where the source defines it, explain CLI as _interface en ligne de commande_ (command-line interface), then "la CLI". Gender: _la CLI_ (feminine). |
 | canvas (graphics exercises) | _zone de dessin_ | The drawing surface in creative-coding exercises. Where the source defines it, explain it as the _zone de dessin_ (the `canvas` element), then use _canvas_. |
+| camel case | (no gloss; the spelling is the example) | Always write the term itself as one word, in code style: `camelCase`. Never the two-word phrase « camel case », in guillemets or otherwise: the capital C is the whole point, so the term has to *show* the rule it names. Where the source explains it, keep the explanation (camel = chameau, case = casse, and the chameau/bosses metaphor), which still reads correctly against `camelCase`. Same for any other named case style: `snake_case`, `kebab-case`. |
 | JavaScript, Python, React | (no gloss) | Product/language names. |
 | Debug, Test | (no gloss) | As keywords/technical tokens. |
 | Code, Bug, Frontend, Backend | (no gloss) | |
@@ -148,6 +149,98 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-02: `camelCase`, written as one word, not « camel case »
+
+**Decided by:** native speaker (williamapc), forum topic 946 ("[French Review] Concept:
+Créer et utiliser des variables"), post #6 (https://forum.jiki.io/t/946/6).
+**Terms affected:** `camel case`.
+**Files affected:** `glossary.md` (Keep in English), `concept/variables` reviewer notes,
+`concept/variables` translation.
+
+The page named the convention as the two-word phrase « camel case ». williamapc pointed out
+that French writing on the subject overwhelmingly writes `camelCase`, one word with the
+capital, and that the spelling is doing teaching work: it demonstrates the rule at the same
+moment it names it, which the spaced-out phrase cannot. That reasoning holds for any named
+case style, so the row covers `snake_case` and `kebab-case` too.
+
+This supersedes the earlier guillemets decision on this page (« camel case » at first
+mention): the term is now code-styled rather than quoted. The two-word gloss that follows
+it (camel = chameau, case = casse) stays, because the reader still needs to know what the
+two English words mean, and it reads correctly against `camelCase`.
+
+Note that the English source still writes "camel case" as two words. This is a French-side
+call, not a divergence to be fixed by rewriting the source; if the English is ever changed
+to match, nothing here needs to change.
+
+### 2026-08-01: Stage 2 batch 2 proposed additions (unconfirmed drafts, not yet in the glossary)
+
+**Decided by:** nobody yet. These are agent proposals from the Stage 2 batch 2 translation
+pass (two-fer, strings, digital-clock, arrays, weather-symbols). Additive drafts awaiting
+review; nothing has been written to `glossary.md`.
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| string (gender) | une string (feminine) | Existing "keep _string_ English" row records no gender. Feminine follows dev usage (by analogy with _chaîne_) and avoids the garment reading of "un string". Proposed independently by two workers. | high |
+| input (value given to a function/program) | entrée (feminine) | Used across exercise hints and errors; _argument_, _donnée d'entrée_ or kept-English _input_ are all defensible. The draw family fr catalog already uses _entrées_. Proposed independently by two workers. | high |
+| quotation marks (string delimiters) | guillemets (doubles) | Must mean the straight `"` characters code uses, not typographic « »; "guillemets droits/anglais" are defensible alternatives. | medium |
+| coin (machine input metaphor) | pièce | Jiki metaphor set; _pièce_ is polysemous, "pièce de monnaie" available for first-mention disambiguation. | medium |
+| piece of paper (string metaphor) | morceau de papier | Metaphor set; _bout de papier_ / _feuille de papier_ equally defensible, recurs on every string page. | medium |
+| compound data type | type de données composé | _composé_ vs _composite_ is a real fork across concept pages. | medium |
+| template string | template string (kept English, une ~) | Parallel to the existing _template literal_ row, which does not obviously cover this phrasing. | medium |
+| meridiem (am/pm indicator) | meridiem (kept English/Latin) | Also the literal parameter name in `displayTime`; a French prose rendering would split prose from code. | medium |
+| indicator (the am/pm argument, prose sense) | indicateur | Overlaps with meridiem above; the pair should be settled together. | medium |
+| "Expected X but got Y" (check-message formula) | On attendait « X » mais on a obtenu « Y » | Recurs across many exercise catalogs; attendu/reçu/obtenu variants would otherwise diverge. | medium |
+
+Open questions flagged by the pass, not proposals: whether "la string vide" should instead
+read "la chaîne vide" (the existing string row's open question applies with extra force
+here), and whether guillemets or straight quotes should wrap sentinel strings inside catalog
+values (guillemets were used this pass).
+
+### 2026-08-01: Prefer a relative clause over a compressed modifier
+
+**Decided by:** native speaker (resu-xunil), forum topics 951 ("[French Review] Exercise:
+Arc-en-ciel", https://forum.jiki.io/t/951) and the same reviewer's earlier threads.
+**Files affected:** `guide.md` (Style notes), `exercise/rainbow` catalog, shared
+draw-category catalog.
+
+Two of the three suggestions in topic 951 were the same shape: "du code répétitif" ->
+"du code qui se répète", and "une couleur hexadécimale commençant par #" -> "une couleur
+hexadécimale qui commence par #". Neither original is wrong, but the compressed forms (an
+adjective, a present participle) belong to a more formal, written register than the rest of
+the page. A relative clause with **qui** is what a French speaker says out loud, and Jiki's
+prose is meant to sound spoken. Recorded as a general style rule rather than two per-item
+notes, because the participle pattern recurs constantly in translations from English.
+
+The third suggestion, "Comment mettre la couleur..." -> "Comment mettre de la couleur...",
+is a separate point: the partitive is right because the hint question is asked before any
+particular colour has been introduced, so the definite article refers back to nothing.
+Logged as a per-item note only.
+
+### 2026-08-01: "C'est une égalité. Annonce-la correctement !" confirmed feminine
+
+**Decided by:** us, answering a question from resu-xunil, forum topic 949 ("[French Review]
+Exercise: Pierre-feuille-ciseaux", https://forum.jiki.io/t/949).
+**Files affected:** none (no change made); `exercise/rock-paper-scissors` reviewer notes.
+
+resu-xunil asked whether the pronoun should be "-le" (agreeing with an implied masculine
+_résultat_) or "-la" (agreeing with _égalité_). The string is self-contained: the only noun
+in it is "une égalité", in the sentence immediately before, so the antecedent is feminine
+and "Annonce-la" is correct. _Résultat_ appears nowhere in that scenario description; it is
+in the instructions, in a different string entirely. Left unchanged.
+
+### 2026-08-01: "un espace", not "une espace"
+
+**Decided by:** native speaker (resu-xunil), forum topic 946 ("[French Review] Concept:
+Créer et utiliser des variables"), post #1 (https://forum.jiki.io/t/946).
+**Files affected:** `guide.md` (Grammar), `concept/variables` translation.
+
+The variables page said "deux mots séparés par une espace". The feminine _une espace_ is
+genuine printers'/typographers' jargon for the blank itself, which is why it can look
+defensible, but in ordinary prose (and to a beginner) the space between words is _un
+espace_. resu-xunil corrected it in his review. Recorded as a grammar rule in `guide.md`
+rather than as a per-item note, because the trap will recur on any page that talks about
+spaces in names, whitespace, or indentation.
 
 ### 2026-08-01: `input slot` / `return chute` settled — entonnoir / tapis roulant
 

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "1b1b79d",
-  "approved": 95,
+  "governance_sha": "cc9d623",
+  "approved": 97,
   "disapproved": 1,
   "total": 286,
   "languages": [
@@ -86,7 +86,7 @@
         },
         {
           "key": "concept/else-if",
-          "topic_id": null,
+          "topic_id": 987,
           "status": "pending"
         },
         {
@@ -1271,6 +1271,37 @@
       ]
     },
     {
+      "lang": "de",
+      "name": "German",
+      "stage": "setup",
+      "category_slug": "i18n-de",
+      "approved": 2,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 340,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 738,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 739,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 798,
+          "status": "approved"
+        }
+      ]
+    },
+    {
       "lang": "ja",
       "name": "Japanese",
       "stage": "setup",
@@ -1545,37 +1576,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 801,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "de",
-      "name": "German",
-      "stage": "setup",
-      "category_slug": "i18n-de",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 340,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 738,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 739,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 798,
           "status": "pending"
         }
       ]

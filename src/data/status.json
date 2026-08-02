@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "d7b8672",
-  "approved": 102,
+  "governance_sha": "ceee2a6",
+  "approved": 103,
   "disapproved": 1,
   "total": 286,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "refining",
       "category_slug": "i18n-it",
-      "approved": 15,
+      "approved": 16,
       "disapproved": 0,
       "total": 24,
       "items": [
@@ -81,8 +81,8 @@
         },
         {
           "key": "exercise/weather-symbols",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1026,
+          "status": "approved"
         },
         {
           "key": "concept/else-if",

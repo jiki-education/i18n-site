@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "9a0a5eb",
+  "governance_sha": "d7b8672",
   "approved": 102,
   "disapproved": 1,
   "total": 286,
@@ -61,7 +61,7 @@
         },
         {
           "key": "exercise/two-fer",
-          "topic_id": null,
+          "topic_id": 1020,
           "status": "pending"
         },
         {
@@ -192,17 +192,17 @@
         },
         {
           "key": "exercise/two-fer",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/strings",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/arrays",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -222,17 +222,17 @@
         },
         {
           "key": "concept/else-if",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/for-loops",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/dictionaries",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -247,7 +247,7 @@
         },
         {
           "key": "exercise/maze-turn-around",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -383,7 +383,7 @@
         },
         {
           "key": "exercise/word-count",
-          "topic_id": null,
+          "topic_id": 1021,
           "status": "pending"
         },
         {

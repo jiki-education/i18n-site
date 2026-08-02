@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "ed82ed0",
+  "governance_sha": "80e1842",
   "approved": 136,
   "disapproved": 1,
   "total": 307,
@@ -539,7 +539,7 @@
         },
         {
           "key": "concept/dictionaries",
-          "topic_id": null,
+          "topic_id": 980,
           "status": "pending"
         },
         {

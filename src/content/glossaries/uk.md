@@ -3,10 +3,10 @@ lang: "uk"
 name: "Ukrainian"
 family: null
 stage: "refining"
-governance_sha: "2fbebc1"
-content_version: "bdaf9b86611d"
-published_at: "2026-08-01"
-term_count: 122
+governance_sha: "2c04051"
+content_version: "64cd5f6ad2bc"
+published_at: "2026-08-02"
+term_count: 130
 category_id: 100
 forum_topic_id: 308
 video_player_forum_topic_id: 785
@@ -25,6 +25,7 @@ decision log (`glossary-notes.md`).
 | developer | розробник | uk | |
 | tech / tech industry | IT-індустрія | uk | Not _tech-індустрія_: keep the whole term in Ukrainian script. |
 | streak | серія (днів) | uk | |
+| journey (e.g. "our journey into the world of programming") | подорож | uk | Prefer _подорож_ over _мандрівка_. |
 
 ## Localize (use the Ukrainian term)
 
@@ -46,6 +47,9 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | index | індекс | uk | No clarification parens needed. |
 | key-value pair | пара ключ-значення | uk | The key itself is _ключ_ (ordinary word once introduced). |
 | template literal | шаблонний рядок | uk | |
+| data type | тип даних | uk | Unconfirmed draft (agent, 2026-08-01). |
+| compound data type | складений тип даних | uk | Unconfirmed draft (agent, 2026-08-01). Not _складний_ (means "difficult") and not the rarer borrowing _композитний_. |
+| default (value) | типове значення / типовий | uk | Unconfirmed draft (agent, 2026-08-01). Not _за замовчуванням_ or _усталений_; do not mix forms in one document. |
 
 ### Functions & control flow
 
@@ -97,6 +101,7 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | increment | інкремент | uk | "збільшення на одиницю" also natural in a fuller explanation. |
 | modulo / remainder operator | остача (від ділення) | uk | |
 | concatenation / to concatenate | конкатенація / зʼєднати (рядки) | uk | |
+| to iterate (through an array/string) | перебирати (елементи) | uk | Unconfirmed draft (agent, 2026-08-01). The verb; the noun stays _ітерація_. Not the calque _ітерувати_. |
 | toggle | перемикати | uk | |
 | state / stateful | стан | uk | |
 | scope | область видимості | uk | |
@@ -122,7 +127,7 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 
 | English | Ukrainian | Use (uk/en) | Notes |
 |---------|-----------|-------------|-------|
-| feature (platform capability) | можливість | uk | Deliberately distinct from _функція_ (function) to avoid collision; see guide § Style notes. |
+| feature (platform capability) | можливість | uk | Deliberately distinct from _функція_ (function) to avoid collision. `function` (the programming concept) is _функція_; `feature` (a platform capability) is _можливість_. Never use _функція_ for a product feature. |
 | lesson | урок | uk | |
 | exercise | вправа | uk | |
 | scenario | сценарій | uk | |
@@ -147,7 +152,8 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | lightness | світлість | uk | Unconfirmed draft (agent, 2026-08-01). Deliberately distinct from _яскравість_ (brightness); keep it stable across the whole draw family. |
 | canvas (drawing surface) | полотно | uk | Unconfirmed draft (agent, 2026-08-01). The surface drawn on, not the HTML element name. Do not mix with _канва_ / _канвас_ in one document. |
 | hex color / hex string | шістнадцятковий колір / шістнадцятковий код кольору | uk | Unconfirmed draft (agent, 2026-08-01). Use the first for the colour itself, the second for the `#rrggbb` string. Not _hex-код_: keep the whole term in Ukrainian script. |
-| radial width / radial height | радіальна ширина / радіальна висота | uk | Unconfirmed draft (agent, 2026-08-01), **low confidence**: an ellipse's `rx`/`ry`. Awaiting native-speaker confirmation on t/308; do not treat as settled. |
+| radial width / radial height (also "horizontal radius / vertical radius") | горизонтальний радіус / вертикальний радіус | uk | An ellipse's `radiusX`/`radiusY`. The English source says "radial width/height" in the describers and "horizontal/vertical radius" in the instructions and function description for the same two values: render **both** wordings with this one pair. Not the formal geometry terms _велика піввісь_ / _мала піввісь_. At the first ellipse occurrence (the Penguin exercise) carry the one-time aside saying these are not the real geometric names; nowhere else. |
+| box (drawing/forecast grid cell) | комірка | uk | Unconfirmed draft (agent, 2026-08-01). A numbered cell on the drawing canvas or forecast grid. Never _коробка_, which is reserved for the value-container metaphor. |
 
 ### Characters & story vocabulary (exercise family)
 
@@ -163,8 +169,8 @@ use the Ukrainian gloss shown below; with no `<define>`, use the English bare, w
 
 | Term | Ukrainian gloss (on `<define>`) | Notes |
 |------|-----------------------------------|-------|
-| string | _рядок_ | Exception: the string concept itself uses _рядок_ where the source defines it, then _string_ throughout. |
-| Boolean | _булеве значення_ | Exception: where the source defines it, explain it means _булеве значення_, then use _Boolean_. _Логічне значення_ is an accepted synonym if it reads better in context; do not mix both in one document. |
+| string | _рядок тексту_ | Always gloss as _рядок тексту (англ. string)_ at each first mention per page, then _рядок тексту_ (not bare English _string_) afterwards, because a bare English word reads too jarring against Ukrainian sentences for learners. Do not switch to English-only after the first mention like other "Keep in English" terms. |
+| Boolean / Booleans | _булеві значення_ | Always gloss as _булеві значення (англ. Boolean)_ at each first mention per page, then _булеві значення_ (not bare English _Boolean_) afterwards, exactly as `string` above. Singular is _булеве значення_. Do not switch to English-only after the first mention like other "Keep in English" terms. _Логічне значення_ is an accepted synonym if it reads better in context; do not mix both in one document. |
 | component | _компонент_ | Where the source defines it, gloss as "component (компонент)". Use _компонент_ freely after that. |
 | API | explain what it is in Ukrainian | Not a word a beginner knows; where defined, explain the concept in Ukrainian, not just gloss the acronym. |
 | framework | _фреймворк_ | Where the source defines it, explain it means a reusable structure. |
@@ -175,7 +181,8 @@ use the Ukrainian gloss shown below; with no `<define>`, use the English bare, w
 | Variable and function names | (no gloss) | Never translated. |
 | CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. |
 | Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
-| camel case | (no gloss) | Unconfirmed draft (agent, 2026-08-01). The naming convention: stays _camel case_, the form Ukrainian devs actually use. The camel image is carried by the surrounding explanation, so no Ukrainian coinage is introduced. |
+| camel case | _горбатий регістр_ | Gloss **once**, at the very first mention across the course (the "Creating and Using Variables" article), as _горбатий регістр_ (_верблюдячий регістр_ is the known alternative; both are named after the animal, as _зміїний регістр_ is for snake case). Every later occurrence, on that page and on every other, uses the English _camel case_ bare. |
+| meridiem | _позначка «meridiem»_ | Unconfirmed draft (agent, 2026-08-01). The am/pm indicator; carry it with the noun _позначка_. The sentinel values `am`/`pm` and expected time strings stay verbatim. |
 
 ## Jiki physical metaphors
 
@@ -186,6 +193,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | box (value container) | коробка | Neutral default. _Скринька_ (a warmer, chest/mailbox-adjacent word) is an accepted alternative if a passage wants a softer tone; do not mix both in one document. |
 | label (on a variable box) | етикетка | Unconfirmed draft (agent, 2026-08-01). The name stuck on the outside of a _коробка_; part of the box metaphor set, so keep it stable rather than alternating with _підпис_ / _наліпка_ / _ярлик_. |
 | chain (array metaphor) | ланцюжок | Not _ланцюг_. |
+| piece of paper (string metaphor) | аркуш паперу | Unconfirmed draft (agent, 2026-08-01). Use _аркуш паперу_ consistently; do not alternate with _папірець_ / _листок_ in prose. |
 | input slot | щілина | |
 | return chute | лоток | |
 | machine (function metaphor) | машина | "Little machines" is _маленькі машини_. Not the diminutive _машинка_. |
@@ -209,6 +217,271 @@ glyph in a code tag immediately after: _квадратні дужки (`[]`)_.
 ---
 
 ## Decision log
+
+### 2026-08-02: `radial width / radial height` RESOLVED, `camel case` glossed once, `Boolean` localized
+
+**Decided by:** decard (native speaker) on the pinned Ukrainian glossary thread,
+[t/308 post 12](https://forum.jiki.io/t/308/12), for the first two; iternewo (native
+speaker) on [t/308 post 13](https://forum.jiki.io/t/308/13) for the third.
+**Terms affected:** `radial width / radial height`, `camel case`, `Boolean`.
+
+- **`radial width / radial height` → горизонтальний радіус / вертикальний радіус.** This
+  **resolves** the low-confidence draft flagged in the 2026-08-01 batch-1 entry below and
+  the question raised for this thread; the row is no longer provisional and is now a human
+  native speaker's decision. decard traced the English source itself: the describers say
+  "a radial width of X, a radial height of Y", while the instructions and the function
+  description for the same call say "horizontal radius"/"vertical radius" (`radiusX`,
+  `radiusY`), so the two English wordings name the same two values and take one Ukrainian
+  pair. The formally correct Ukrainian terms are _велика піввісь_ / _мала піввісь_
+  (semi-major / semi-minor axis), but they are unintuitive, uncommon, largely confined to
+  mathematical literature, and they contradict the parameter names the learner actually
+  types. So the literal, recognizable rendering wins over the technically exact one. Because
+  it is not a real geometric term, decard asked for a single explanatory aside where
+  ellipses are first introduced (the Penguin exercise), and nowhere else. Her suggested
+  wording: _В геометрії вони називаються велика та мала піввісь, але в цьому курсі ми
+  будемо використовувати слова «горизонтальний радіус» та «вертикальний радіус» на
+  позначення цих відстаней задля наочності._ That aside is prose in a translated file, not
+  a term, so it is queued in `state/content-updates-needed.md` for the next Penguin pass
+  rather than written into the glossary.
+- **`camel case` becomes gloss-once, then English.** The previous row (an unconfirmed agent
+  draft, 2026-08-01) kept it in English outright with no gloss. decard's revision: translate
+  it once, at its introduction in the "Creating and Using Variables" article, as _горбатий
+  регістр_ (also known as _верблюдячий регістр_, named after the animal, in the same way
+  snake case is _зміїний регістр_), then keep the English term for every other occurrence.
+  This gives the beginner the camel image once without introducing a Ukrainian coinage the
+  rest of the course would have to carry.
+- **`Boolean` is now translated, not kept in English.** iternewo petitioned for **булеві
+  значення**, on the same reasoning that settled `string`: an isolated English word inside
+  Ukrainian sentences reads as a mistake rather than a deliberate choice. He notes the
+  Ukrainian form is heard in public-school education, so it will not raise eyebrows,
+  provided the definition and the English equivalent are given on first encounter. The row
+  now follows the `string` pattern exactly (_булеві значення (англ. Boolean)_ at each first
+  mention per page, _булеві значення_ afterwards, never bare English). It stays physically
+  in the "Keep in English" table next to `string`, which carries the same exception. The
+  previous row was an unconfirmed draft (nothing in this log recorded a human deciding it);
+  the accepted synonym _логічне значення_ is retained from it.
+
+### 2026-08-01: Stage 2c
+
+**Decided by:** agent proposals from the Stage-2 batch-3 (Stage 2c) translation passes
+(concepts else, else-if, for-loops, while-loops, dictionaries; exercises maze-turn-around,
+bouncer-dress-code, luhn, digital-root, word-count). Not a forum thread; not
+native-speaker-sourced.
+**Status:** unconfirmed drafts, logged here only. **Not written to `glossary.md`.** None of
+these outrank a later native-speaker call.
+**Terms affected:** `else clause`, `initializer`, `infinite loop`, `data structure`,
+`spiral notebook sheet (dictionary metaphor)`, `Sensing (maze function category)`,
+`valid / invalid`, `checksum`, `formal (dress code)`, `smart (dress code)`,
+`to turn away (bouncer action)`, `dress code`, plus two open questions on `bug` and
+`true`/`false`.
+
+Proposed rows (all unconfirmed drafts):
+
+- `else clause / else branch` → **гілка else** (medium). Keeps _блок_ free for "code block"
+  (блок коду); matches Ukrainian dev writing on if/else branching. Keyword `else` stays
+  English. (else pass)
+- `initializer (for-loop part)` → **ініціалізатор** (medium). The ordinary developer
+  borrowing, chosen over the descriptive _початкове значення_; sets the direction for the
+  other loop-part names. (for-loops pass)
+- `infinite loop` → **нескінченний цикл** (medium). Alternative _безкінечний_ exists, so
+  one form is worth pinning; recurs across loop content. (while-loops pass)
+- `data structure` → **структура даних** (high). `<define>`d umbrella term sitting next to
+  the agreed _тип даних_ rows; pinned so passes do not conflate the two. (dictionaries pass)
+- `spiral notebook sheet (dictionary metaphor)` → **аркуш зі спірального блокнота**
+  (medium). The dictionary-metaphor object set, parallel to коробка/ланцюжок.
+  (dictionaries pass)
+- `Sensing (maze function category)` → **Сприйняття** (medium). Category label shared by
+  every maze exercise's function panel; must stay identical family-wide. Movement → Рух is
+  obvious and not proposed. (maze-turn-around pass)
+- `valid / invalid (number, input)` → **дійсний / недійсний** (medium). Recurs across the
+  validation exercises (Luhn, ISBN), which cross-reference each other. (luhn pass)
+- `checksum` → **контрольна сума** (low). Likely the one canonical rendering; listed to
+  block calques like _чек-сума_. (luhn pass)
+- `formal (dress-code category)` → **урочисте вбрання** (medium) and `smart (dress-code
+  category)` → **елегантне вбрання** (medium). Shared across all three bouncer exercises;
+  the pair must stay stable together. (bouncer-dress-code pass)
+- `to turn away (bouncer action)` → **відмовити у вході** (medium). Pairs with _впустити_;
+  used across checks, describers, scenarios and instructions of every bouncer exercise.
+  (bouncer-dress-code pass)
+- `dress code` → **дрес-код** (low). Spelling-variant question only (_дрескод_ vs
+  _дрес-код_); appears in an exercise title. (bouncer-dress-code pass)
+
+Open questions (no row proposed):
+
+- `bug` in running prose: the Keep-in-English row ("Bug, no gloss") breaks in inflected
+  prose; the while-loops pass used _помилки_. Needs a decision between Latin _bug_,
+  Cyrillic _баг_, or folding into _помилка_.
+- `true`/`false` in "returns true or false" catalog phrasing: the glossary maps prose
+  true/false to _правда/неправда_, but the word-count pass kept the literal returned values
+  Latin (`повертає true або false`). The existing row's Notes could record which side wins
+  in "returns X" phrasing.
+
+### 2026-08-01: Seven terms added as unconfirmed drafts from the Stage-2 batch-2 passes
+
+**Decided by:** agent, per the standing rule from the owner (iHiD) that translation-pass
+proposals are added to the glossary as unconfirmed drafts rather than held back for review.
+**Source:** the five Stage-2 batch-2 translation passes (exercise/two-fer, concept/strings,
+exercise/digital-clock, concept/arrays, exercise/weather-symbols). Not a forum thread; not
+native-speaker-sourced.
+**Status:** unconfirmed drafts. None of these outrank a later native-speaker call.
+**Terms affected:** `data type`, `compound data type`, `default (value)`,
+`to iterate (through an array/string)`, `box (drawing/forecast grid cell)`, `meridiem`,
+`piece of paper (string metaphor)`.
+
+- **From the concept/arrays pass:** `data type` → **тип даних** (canonical, pinned because
+  it anchors the next row). `compound data type` → **складений тип даних**: _складний_
+  means "difficult" (wrong sense) and _композитний_ is a rarer borrowing; sets a precedent
+  for the arrays and dictionaries pages. `to iterate` → **перебирати (елементи)**: the
+  glossary only had the noun _ітерація_; the everyday verb was chosen over the calque
+  _ітерувати_ for beginner prose, and different passes could reasonably diverge without a
+  row.
+- **From the exercise/two-fer pass:** `default (value)` → **типове значення / типовий**,
+  chosen over _за замовчуванням_ and _усталений_; recurs across hints and exercises.
+- **From the concept/strings pass:** `piece of paper` (the string metaphor object) →
+  **аркуш паперу**, part of the Jiki metaphor set alongside коробка/ланцюжок; _папірець_
+  and _листок_ are equally plausible, which is exactly why it needs pinning. The pass
+  itself used _аркуш паперу_ in prose but _папірець_ once in an image alt; the row settles
+  on _аркуш паперу_.
+- **From the exercise/weather-symbols pass:** `box (drawing/forecast grid cell)` →
+  **комірка**. This is a distinct sense from the value-container metaphor _коробка_; a
+  translator following the metaphor row would collide the two, so the split is recorded
+  explicitly.
+- **From the exercise/digital-clock pass:** `meridiem` kept in English as **позначка
+  «meridiem»**, added under "Keep in English". The exercise teaches the word itself, and a
+  Ukrainian coinage would diverge from the sentinel values `am`/`pm` the learner must
+  produce.
+
+**Open question for the pinned thread ([t/308](https://forum.jiki.io/t/308)):** the
+`string` row mandates _рядок тексту_ in prose, but the uk draw-family base catalog (a
+prior decision) uses bare `типу string` in error messages. The weather-symbols pass
+followed the family catalog for its sibling error message so the two catalogs read
+consistently on one screen. Whether catalog error messages are exempt from the _рядок
+тексту_ rule needs a native-speaker call.
+
+### 2026-08-01: Jiki takes masculine verb agreement, especially in `describers`
+
+**Decided by:** decard (native speaker), on forum topic
+[t/880](https://forum.jiki.io/t/880), reviewing the rainbow and rock-paper-scissors
+exercises. **Terms affected:** none; this is a grammar rule, recorded in `guide.md`.
+
+decard flagged that the uk exercise message catalogs described Jiki's actions with
+feminine past-tense verbs (_намалювала_, _очистила_, _перетворила_, _оголосила_,
+_повернула_). Jiki is male, so all such verbs take the masculine form. The `describers`
+strings are the recurring failure point because the verb starts the string with no visible
+subject, so the agreement has nothing nearby to cue it. The rule is not exercise-specific,
+which is why it lives in `guide.md` rather than in a per-item reviewer-notes file.
+
+The fix was applied to the shared category catalogs
+(`exercise-categories/draw` and `exercise-categories/rock-paper-scissors`), which is where
+the describers actually live; a sweep of every uk exercise and category catalog found no
+other feminine or neuter forms remaining.
+
+### 2026-08-01: House-style fix in the `string` row
+
+**Decided by:** agent, applying the no-em-dash rule in `CLAUDE.md` and `global/rules.md`.
+**Terms affected:** `string` (punctuation of the Notes column only).
+
+The Notes cell used an em dash, which house style bans in these docs; it now reads "…
+afterwards, because a bare English word reads too jarring…". The decision itself, iternewo
+and decard's call that `string` is always rendered _рядок тексту (англ. string)_ at first
+mention per page and _рядок тексту_ afterwards, is untouched and was not re-examined: it is a
+native-speaker decision and outranks any agent's opinion, including the general no-auto-gloss
+rule in `global/voice.md`.
+
+### 2026-08-01: `guide.md` trimmed to rules only; its rationale recorded here
+
+**Decided by:** iHiD (owner), as a structural clean-up of `languages/uk/guide.md`. No
+linguistic decision was changed, reversed or reworded: this entry only records where the
+existing material went and the reasoning that was removed from the guide.
+**Terms affected:** `journey` (new row), `feature (platform capability)` (Notes column
+only).
+
+`guide.md` is loaded in full into the prompt for every Ukrainian item in every pass, so it
+now states only rules. Everything below was removed from it.
+
+**Moved to the glossary**
+
+- **`journey`** (as in "our journey into the world of programming") → **подорож**, added to
+  "Core decisions" with the decision verbatim: prefer _подорож_ over _мандрівка_. The
+  reasoning, from iternewo (native speaker) on [t/784](https://forum.jiki.io/t/784):
+  _подорож_ is a journey with a defined plan and goal and has wider register, matching how
+  Jiki frames the course; _мандрівка_ emphasizes the emotion and process of wandering and
+  reads as tourism-flavored, which is the wrong connotation here.
+- **`feature` vs `function`.** The guide carried a Style note saying these must not collide:
+  `function` (the programming concept) is _функція_, `feature` (a platform capability) is
+  _можливість_, and _функція_ is never used for a product feature. The glossary row for
+  `feature` already carried the same decision and pointed back at the guide, a circular
+  cross-reference. The instruction now lives only in the `feature` row's Notes column; the
+  pointer to the guide is gone.
+
+**Removed as duplication**
+
+- A Style note saying that exercise prose sometimes says "list" where concept pages say
+  "array", that both are the same concept, and that both render as _масив_ with no second
+  word introduced. This is word for word what the `array / list` glossary row's Notes
+  column already says.
+- A Style note giving the Ukrainian replacement for an em dash. `global/rules.md` already
+  bans em dashes globally; the Ukrainian-specific part of it (a comma for a mid-sentence
+  aside, or two sentences) was kept, moved into § Grammar and structure next to the copula
+  rule it interacts with.
+- An "Audience specifics" section noting that readers are in Ukraine and Ukrainian-speaking
+  communities abroad, and that Ukrainian online technical education leans slightly more
+  formal than some other markets so readers do not expect overfamiliar address from an
+  unknown platform. The second point is the rationale for the Formality section stated ten
+  lines below it; the first changes nothing a translator writes.
+
+**Rationale and provenance removed from the guide, kept here**
+
+- **Formality research.** The register choice was made because no strong precedent was found
+  for sustained direct informal "ти" addressed to an adult stranger in serious Ukrainian
+  programming education. The closest comparable resource, uk.javascript.info (a large,
+  actively human-maintained Ukrainian JS tutorial), sidesteps the choice entirely by using
+  the collective "ми" plus inclusive imperatives, which is the pattern the guide adopts: it
+  keeps the encouraging, inclusive Jiki tone without the ти-to-a-stranger presumptuousness
+  or the ви-to-a-beginner coldness. Direct "ти" reads as unusually casual for this genre and
+  is unattested in the sources reviewed. Pure formal "ви" is correct and is used by some
+  platforms (e.g. Prometheus.org.ua) but reads more distant than the Jiki voice wants. The
+  guide also carried a note that this is the first thing to revisit if native-speaker
+  feedback surfaces a strong preference either way; that remains true and is recorded here
+  rather than in the guide.
+- **The handoff-imperative exception** (a standalone instruction to the learner takes the
+  plain imperative, додайте, while narrative prose stays inclusive) came from iternewo
+  (native speaker) in [t/817 posts 2 and 4](https://forum.jiki.io/t/817), and was confirmed
+  there as a one-line-category fix, not a request to drop "ми" generally.
+- **Quotation marks.** The « » primary convention is the 2019 official orthography
+  (Український правопис). The guide's warning not to carry over a „ "-primary convention was
+  originally phrased against Hungarian specifically.
+- **Dative -ові/-еві vs -у/-ю**, **conjunction euphony і vs й** and **the analytic future
+  tense** all come from iternewo (native speaker) on
+  [t/784](https://forum.jiki.io/t/784). He confirmed the dative rule applies generally
+  rather than only to "interpreter", gave _створювати і власні машини_ as the euphony
+  example, and said the analytic "будемо + infinitive" future reads easier than the
+  synthetic form in this kind of prose.
+- **_поєднувати_ vs _склеювати_** was confirmed against the English source on
+  [t/784](https://forum.jiki.io/t/784): "He can stick things together" sits in a list of
+  abstract interpreter capabilities (repeat, conditionals, memory, errors), not in the
+  crank/machine scene, so the neutral rendering is correct there. **This rule was left in
+  the guide, not moved to the glossary**, because it is conditional on context rather than a
+  flat term mapping, and because moving it would put it next to the existing
+  `concatenation / to concatenate` → _конкатенація / зʼєднати (рядки)_ row, which it appears
+  to overlap with (the guide's rule names string concatenation as a case for _поєднувати_).
+  That apparent disagreement is recorded, deliberately not resolved, and needs a
+  native-speaker call.
+
+### 2026-08-01: `string` always glossed as _рядок тексту (англ. string)_, never bare English
+
+**Decided by:** native speakers (iternewo and decard, agreed together) on the pinned
+Ukrainian glossary thread, forum topic 308, post #11 (https://forum.jiki.io/t/308/11), and
+on the new-content thread, topic 880, post #3 (https://forum.jiki.io/t/880/3).
+**Terms affected:** `string`.
+
+The row previously followed the usual "Keep in English" pattern: gloss once as _рядок_ on
+first mention, then use bare English _string_ afterwards. iternewo and decard say this is
+too cognitively jarring for learners across every article that uses it, an isolated English
+word standing out of Ukrainian prose reads as a mistake, not a deliberate choice. Changed to
+always render _рядок тексту (англ. string)_ at first mention per page and _рядок тексту_
+(not bare English) afterwards. Also fixes the target word itself: _рядок тексту_ (line of
+text) rather than bare _рядок_ (line), which is ambiguous on its own.
 
 ### 2026-08-01: Nine terms added as unconfirmed drafts from the Stage-2 batch-1 passes
 

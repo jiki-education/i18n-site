@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/variables/source.md"
 en_md5: "6fca9aed7a4f51de337288e739f8b44a"
-governance_sha: "5aee54f"
-content_version: "eb60c46f6728"
-published_at: "2026-08-01"
+governance_sha: "2c04051"
+content_version: "32be604978a6"
+published_at: "2026-08-02"
+forum_topic_id: 946
 ---
 
 Les variables sont ce qui nous permet de stocker des informations. Quand on code, on a souvent besoin de garder un nombre ou une string pour plus tard, et c'est justement à ça que servent les variables. Alors prenons un peu de recul dans l'entrepôt de Jiki : tu verras qu'il possède un deuxième ensemble d'étagères. On connaît déjà les premières étagères, celles qui portent les fonctions, ces petites machines comme `move` et `rectangle`. Mais sur ce deuxième ensemble d'étagères, à la place des machines, tu peux voir plein de boîtes, et ces boîtes sont ce qu'on appelle des variables. Tu peux demander à Jiki d'y ranger n'importe quoi, puis, plus tard, de le ressortir. Chaque boîte a un nom, exactement comme les fonctions ont un nom, et chaque boîte ne contient qu'une seule chose. Pour l'instant, soit un nombre, soit une string. Mais on verra plus loin dans le cours comment y stocker des choses plus complexes.
@@ -38,7 +39,7 @@ let name = "Jeremy"
 
 On lui a donc demandé de fabriquer une boîte, d'y coller une étiquette et d'y mettre quelque chose, et maintenant il va poser la boîte sur l'étagère. À n'importe quel autre moment de ton programme, Jiki peut aller chercher cette boîte sur l'étagère et regarder ce qu'elle contient. Commence à te construire ce modèle mental. Je code depuis toujours, et quand j'écris du code, j'imagine encore que je mets quelque chose dans une boîte pour le ressortir plus tard. Quand tu vois ce mot-clé `let`, pense vraiment : « D'accord, ça veut dire que je fabrique une nouvelle boîte. »
 
-Une précision sur les noms de variables, les étiquettes de ces boîtes. Il y a quelques règles à leur sujet. D'abord, un nom de variable ne peut pas contenir d'espaces. Si tu veux utiliser plusieurs mots pour l'étiquette d'une boîte, il faudra coller les mots les uns aux autres en mettant la première lettre de chaque mot en majuscule. C'est ce qu'on appelle le « camel case » : imagine les bosses d'un chameau qui poussent la première lettre de chaque nouveau mot vers le haut pour en faire une majuscule. Donc si tu veux une étiquette avec « mon nom » dessus, plutôt que d'écrire les deux mots séparés par un espace, il faudra l'écrire en un seul mot avec le N en majuscule : `myName`.
+Une précision sur les noms de variables, les étiquettes de ces boîtes. Il y a quelques règles à leur sujet. D'abord, un nom de variable ne peut pas contenir d'espaces. Si tu veux utiliser plusieurs mots pour l'étiquette d'une boîte, il faudra coller les mots les uns aux autres en mettant la première lettre de chaque mot en majuscule. C'est ce qu'on appelle le « camel case » (camel = chameau, case = casse) : imagine les bosses d'un chameau qui poussent la première lettre de chaque nouveau mot vers le haut pour en faire une majuscule. Donc si tu veux une étiquette avec « mon nom » dessus, plutôt que d'écrire les deux mots séparés par un espace, il faudra l'écrire en un seul mot, en anglais, avec le N en majuscule : « my name » devient `myName`.
 
 Autre règle : chaque nom de variable doit être unique. Tu ne peux pas avoir deux boîtes avec la même étiquette, et une variable ne peut pas non plus porter le même nom qu'une fonction. Si tu l'oublies, Jiki va s'embrouiller et te donnera un message d'erreur.
 

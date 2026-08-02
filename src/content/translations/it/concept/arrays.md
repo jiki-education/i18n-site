@@ -6,9 +6,9 @@ title: "Gli array"
 status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/arrays/source.md"
-en_md5: "012da550948ba2ebcfaf953cd0906f3f"
+en_md5: "d26ccb9e04fbc77129f3199d63a95017"
 governance_sha: "6351e0e"
-content_version: "b2226c84d02c"
+content_version: "9e3eb37ce6a2"
 published_at: "2026-08-02"
 forum_topic_id: 983
 ---
@@ -31,7 +31,7 @@ Può infilarlo nella fessura di una macchina. Può tirarlo fuori da uno scivolo.
 
 Ora, nel codice, anche un array assomiglia un po' a una catena. Ha una parentesi quadra a ogni estremità e poi tanti elementi concatenati, separati da virgole.
 
-Per esempio, se volessimo creare un array con i nomi di alcuni membri del nostro bootcamp, potremmo preparare una scatola chiamata `mentors` (mentori) e metterci dentro quella catena.
+Per esempio, se volessimo creare un array con i nomi di alcuni dei nostri mentori, potremmo preparare una scatola chiamata `mentors` (mentori) e metterci dentro quella catena.
 
 Scriveremmo `let mentors =`, esattamente come facciamo con qualsiasi altra scatola, e poi una parentesi quadra aperta, tanti elementi, i loro nomi separati da virgole, e infine una parentesi quadra chiusa. Quando Jiki vede questo codice, va a prendere quattro pezzi di carta, uno per ogni nome, poi prende una catena nuova, li concatena tutti insieme e mette quella catena nella scatola `mentors`.
 

@@ -7,8 +7,8 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/repeat/source.md"
 en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "89c8066"
-content_version: "b4666face5df"
+governance_sha: "d142c84"
+content_version: "1d53bd1ac563"
 published_at: "2026-08-02"
 ---
 
@@ -18,7 +18,9 @@ Ahora vamos a ver cómo Jiki puede salir de este flujo estricto de arriba hacia 
 
 Por ejemplo, imagina que estás en el laberinto y quieres avanzar 10 pasos. Existe la función `walk` para ayudarte con esto, pero ¿y si no existiera? ¿Qué pasaría si solo tuvieras la función `move` (mover)?
 
-En lugar de escribir `move` 10 veces seguidas, lo que se vuelve muy repetitivo, lo que necesitamos poder hacer es decir: «Oye, Jiki, haz lo siguiente que te diga 10 veces. `Move`».
+En lugar de escribir `move` 10 veces seguidas, lo que se vuelve muy repetitivo, lo que necesitamos poder hacer es decir: «Oye, Jiki, haz lo siguiente que te diga 10 veces.
+
+`Move`».
 
 Para hacer esto con código, necesitamos usar nuestra primera palabra clave (_keyword_ en inglés), y las palabras clave son instrucciones que Jiki entiende. Se parecen un poco a las máquinas, pero no lo son. Cuando Jiki ve una palabra clave, no busca una máquina en el estante; simplemente sabe qué hacer. Lo tiene integrado en su cerebro. Hay unas 20 palabras clave distintas que vamos a aprender durante el curso, y la primera de ellas es la palabra clave `repeat`.
 

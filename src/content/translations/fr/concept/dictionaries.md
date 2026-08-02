@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/dictionaries/source.md"
 en_md5: "3b1b01f6a914ffe1ce4a54e023e46bdd"
-governance_sha: "fa246be"
-content_version: "9f09793ba26b"
-published_at: "2026-08-01"
+governance_sha: "8838483"
+content_version: "7c96a5416188"
+published_at: "2026-08-02"
 ---
 
 Les tableaux sont notre premier choix dès qu'on a une liste de quelque chose : une liste de mentors, une liste de scores, une liste d'ingrédients. Pour n'importe quelle liste, c'est un tableau qu'il te faut.
@@ -20,7 +20,7 @@ Imagine qu'on veuille stocker quelques informations sur moi : mon nom, mon âge
 
 Est-ce que England est mon lieu de naissance ou l'endroit où je vis ? Est-ce que 42 est mon âge ou autre chose ?
 
-Et si je veux utiliser tout ça, il faut que je me souvienne que la première position est pour le nom, la deuxième pour l'âge, la troisième pour le lieu de naissance. C'est un peu le bazar, et c'est le bazar parce que ce n'est pas vraiment une liste de choses. C'est plus complexe que ça. Et c'est là que les dictionnaires (_dictionaries_ en anglais) entrent en jeu. Un dictionnaire est un nouveau type de structure de données, la cinquième que tu rencontres : tu as les strings, les nombres, les booléens, les tableaux, et maintenant les dictionnaires.
+Et si je veux utiliser tout ça, il faut que je me souvienne que la première position est pour le nom, la deuxième pour l'âge, la troisième pour le lieu de naissance. C'est un peu le bazar, et c'est le bazar parce que ce n'est pas vraiment une liste de choses. C'est plus complexe que ça. Et c'est là que les dictionnaires (_dictionaries_ en anglais) entrent en jeu. Un dictionnaire est un nouveau type de structure de données, le cinquième que tu rencontres : tu as les strings, les nombres, les booléens, les tableaux, et maintenant les dictionnaires.
 
 Et je veux que tu imagines un dictionnaire comme une feuille d'un carnet à spirale.
 

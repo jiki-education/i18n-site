@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "rainbow"
 title: "Rainbow"
-en_md5: "13eacec248261d0fab194a75e29e9c90"
+en_md5: "98ab9c3cc19496acb7a76a35eb595772"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/rainbow"
-captured_at: "2026-07-31"
+captured_at: "2026-08-02"
 ---
 
 Your task is to make a beautiful rainbow pattern made up of 100 vertical bars. It should look like this:

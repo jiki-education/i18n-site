@@ -3,10 +3,10 @@ lang: "ja"
 name: "Japanese"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "8b64437b0edc"
-published_at: "2026-07-31"
-term_count: 65
+governance_sha: "199762c"
+content_version: "a4b36a7eb689"
+published_at: "2026-08-02"
+term_count: 66
 category_id: 70
 forum_topic_id: 311
 video_player_forum_topic_id: 765
@@ -61,7 +61,8 @@ These are terms where the Japanese is used in prose, so the "Use (ja/en)" column
 | English | Japanese | Use (ja/en) | Notes |
 |---------|----------|-------------|-------|
 | keyword | キーワード | ja | 「予約語」is a more precise alternative; do not mix. |
-| interpreter | 通訳 | ja | **A person doing a job, not a program.** Use 通訳者 only where the person needs to be named explicitly and 通訳 alone would read as the activity. **Do not use インタープリター / インタプリタ**: those name the software, not a person, so they cannot name Jiki. |
+| interpreter (the program) | インタプリタ | ja | The software sense: the thing that turns written code into 1 と 0. Use インタプリタ, not インタープリター: this is an established exception to the guide's keep-the-ー rule. |
+| interpreter (the one interpreting, incl. Jiki) | 通訳者 | ja | The personified sense, where the interpreter is named as a someone (Jiki). **Never bare 通訳 here**: 通訳 on its own names the *activity*, so 「このコースでの通訳は Jiki です」reads as Jiki being a kind of interpreting. Bare 通訳 is correct only in activity phrasings (「Jiki が通訳をしてくれます」「通訳の役割を担うプログラム」), and those are usually the more natural rewrite. |
 | instruction (given to Jiki) | 指示 | ja | Do not use 命令, which reads as a command in the military/legal register (and as a CPU instruction). |
 | mental model | イメージ | ja | 「頭の中のイメージ」when the "in your head" part needs saying. Do not use メンタルモデル and do not drift to 考え方 mid-page: one word per document. |
 | (programming) language | プログラミング言語 | ja | The technical compound is プログラミング言語. For the "a language the computer understands" framing, use the ordinary 言葉 (「コンピューターにわかる言葉」). These are the two senses the source itself distinguishes, not two words for one thing; never reach for a katakana ランゲージ. |
@@ -88,7 +89,7 @@ These are terms where the Japanese is used in prose, so the "Use (ja/en)" column
 |---------|----------|-------------|-------|
 | feature (platform capability) | 機能 | ja | Different word from 関数 (function); no collision. Never use 関数 for a product feature. |
 | exercise | 演習 | ja | 「エクササイズ」is an alternative; do not mix both in one document. |
-| course | コース | ja | The whole Jiki course the learner is taking (「このコースでの通訳は Jiki です」). Keep distinct from レッスン (lesson) and カリキュラム (curriculum); do not use 講座. |
+| course | コース | ja | The whole Jiki course the learner is taking (「このコースでは、Jiki が通訳をしてくれます」). Keep distinct from レッスン (lesson) and カリキュラム (curriculum); do not use 講座. |
 | milestone | マイルストーン | ja | 「節目」is a native alternative. |
 | pathway | 学習パス | ja | A structured learning sequence; near-synonym of "track". |
 | solution (learner's submission) | 解答 | ja | The code the learner writes for an exercise. Avoid 「ソリューション」. |
@@ -157,6 +158,139 @@ Example: 「関数を呼び出すには、関数名のあとに括弧（`()`）�
 ---
 
 ## Decision log
+
+### 2026-08-02: `interpreter` splits into インタプリタ (program) and 通訳者 (person)
+
+**Decided by:** owner (iHiD), accepting a native speaker's challenge from
+alexfalcon528 on <https://forum.jiki.io/t/japanese-review-glossary/311> (post 3).
+**Terms affected:** `interpreter`; the `course` row's example sentence.
+
+**This supersedes the `interpreter` decision in the 2026-07-30 owner-decisions entry
+below.** That entry stands as history and is not to be re-applied. It moved the row from
+`インタープリター` to `通訳` on the reasoning that Jiki is a character whose job is
+interpreting, so a word naming a human interpreter was right. The premise was sound; the
+word was not, and a native speaker's read outranks it. iHiD's direction was to trust the
+reviewer here.
+
+alexfalcon528, having read the published using-functions page:
+
+> Specifically, the word 「通訳」when used alone does not mean 'interpreter' but
+> 'interpretation,' as in the noun form of the verb 'to interpret.' As stated in the current
+> glossary entry, the word 「インタプリタ」would more accurately describe 'interpreters,' as
+> in the type of program, and 「通訳者」would more accurately describe 'interpreter,' as in the
+> human profession.
+
+On the specific sentence 「このコースでの通訳は Jiki です」:
+
+> This sentence in particular feels unnatural to me, as it reads as if "Jiki" is a *type of
+> interpretation* instead of the interpreter.
+
+So the one row becomes two: **`インタプリタ`** for the software, **`通訳者`** for the one
+doing the interpreting, Jiki included. What the previous entry got right and this one keeps
+is that Jiki is a someone, not a program; `通訳者` names that someone, which bare `通訳`
+cannot.
+
+Bare `通訳` is not banned, it is just not a noun that names an interpreter. It is the
+activity, and it is the more natural rendering wherever the sentence can be turned into a
+verb or a role: alexfalcon528's own rewrite of the opening paragraph uses it that way twice
+and never needs `通訳者`, replacing 「このコースでの通訳は Jiki です」with 「このコースでは、
+Jiki が通訳をしてくれます」and glossing the program as 「インタプリタ、つまり通訳の役割を担う
+プログラム」. His rewrite was applied verbatim to the page.
+
+`インタプリタ` without the final ー is a deliberate exception to `guide.md`'s "keep the
+long-vowel ー, do not apply the older JIS drop rule". The reviewer wrote it that way, and it
+is the entrenched form in Japanese computing writing, so the term wins over the general
+orthographic rule. The guide's rule is unchanged; the exception is noted on the glossary row
+where a translator will see it.
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout), run as a single fable
+worker per `orchestrator.md`'s one-worker-per-scope rule. Logged here for review and **not**
+written to `glossary.md`.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| concept (curriculum item) | 概念 | Concept Library → 概念ライブラリ; precedent across all content types. | high |
+| challenge (product feature) | チャレンジ | Kept distinct from 演習 (exercise); 課題 would collide. | high |
+| lesson | レッスン | Pins the コース / レッスン distinction. | high |
+| unlock | アンロック | ~15 keys; alternative was 解放. | medium |
+| Premium (tier) | プレミアム | Katakana everywhere rather than Latin. | medium |
+| Deep Dive (feature) | ディープダイブ | Katakana rendering of the feature name. | medium |
+| Learn to Build | 開発を学ぶ | Paired with Learn to Code → コードを学ぶ. | medium |
+| streak (verbal contexts) | 連続学習 | Glossary's 連続学習日数 kept as the noun form. | medium |
+| library (Concept Library) | ライブラリ | No final ー (ordinary form); flagged as an exception to the guide's long-vowel rule. | medium |
+| Instructions (exercise panel) | 説明 | Deliberately not 指示 (that's what the learner gives Jiki). **Wants a native-speaker check.** | low |
+
+Worth raising with reviewers, not glossary rows: standard politeness formulas (お試しください
+/ お待ちください / お問い合わせください) used in error copy — the guide bans honorific keigo,
+but these are ubiquitous set phrases, easy to soften if reviewers find them stiff.
+`modals.levelMilestone.title` uses game register「レベルクリア！」while statuses elsewhere use
+完了. `challenges.empty.inProgressDescription` quotes a "Get started" button rendered
+「開始する」, but that button's own key lives in a still-untranslated namespace — must align
+once it lands.
+
+### 2026-08-01: Term-clarification example now shows the mandated italics
+
+**Decided by:** agent, applying `global/voice.md` as the higher authority. **Terms
+affected:** none.
+
+`global/voice.md` says the English term is **always** set in italics, whether it is the
+primary form or the bracketed gloss. The guide's Term-clarification example wrote it bare:
+`関数（英: function）`. Japanese typographic convention does not conflict here: what is
+italicised is the Latin-script word inside the full-width parentheses, and Japanese
+characters are never italicised (the Hebrew guide states the same split for the same reason).
+So this was an oversight, not a real conflict, and the example is now `関数（英: _function_）`,
+with the Latin-only scope of the italics stated explicitly.
+
+Also in the Orthography section, "full-width parentheses （） for the **first-use** English
+gloss" now reads "for the `<define>` English gloss", so the wording cannot be read as
+licensing a first-use auto-gloss, which `global/voice.md` forbids.
+
+**Left alone:** the `brackets` row's instruction to show the glyph 「括弧（`()`）」 on first
+mention in a page. That is a glyph disambiguation, not a cross-language gloss, so the
+no-auto-gloss rule does not reach it.
+
+### 2026-08-01: Rationale moved out of `guide.md`
+
+**Decided by:** owner (iHiD), as part of the guide audits across languages. **Terms
+affected:** none; no glossary row changed.
+
+`languages/ja/guide.md` is loaded into the prompt for every Japanese item in every pass, so
+the reasoning behind its rules was moved here and the rules left stated imperatively. Nothing
+behavioural was dropped. What was removed, and why it is worth keeping:
+
+- **Why です・ます is the "informal, friendly" register in Japanese.** Japanese
+  learn-to-code content aimed at beginners (Progate, ドットインストール, Udemy JP) is warm
+  and approachable, but it achieves that **within the polite です・ます register**, not by
+  dropping into casual speech. The Microsoft Japanese Style Guide likewise mandates
+  です・ます for user-facing content. This is why the guide's formality rule reads as the
+  opposite of what `global/voice.md`'s "use the informal register" implies elsewhere.
+- **Why both plain forms are rejected.** である体 (plain-formal) reads as a dry academic
+  textbook or research paper: cold and distancing. だ体 (plain-casual) reads as either blunt
+  and curt, or over-familiar, coming from a platform the reader does not know yet.
+- **Why keigo is rejected.** Layered honorific/humble keigo (尊敬語・謙譲語) reads as stiff
+  and corporate, the opposite of a friendly mentor; plain です・ます is the right level.
+- **Why 私 is the one licensed pronoun.** Where the author is genuinely speaking about
+  himself, the sentence is *about* him, and dropping the subject loses whose experience it
+  is. That is the whole justification, and it is why the exception does not extend to the
+  editorial 私たち or to あなた.
+- **Why "do not over-kanji-fy".** Modern web writing "opens" formal auxiliaries and formal
+  nouns into hiragana; that openness is what keeps the tone warm and readable, whereas heavy
+  kanji reads as officious.
+- **Why the long-vowel ー is kept.** サーバー/ユーザー/コンピューター is the modern
+  web/Microsoft convention, superseding the older JIS "drop the final ー" rule.
+- **Why sentence structure gets its own section.** It is the single biggest quality lever in
+  Japanese, and the characteristic failure mode of machine-produced Japanese is
+  translation-flavoured (翻訳調) prose that tracks English word order.
+- **Where the before/after examples came from.** The `if` and arrays concept pages.
+
+Two guide bullets were deleted rather than moved, because the glossary already carries them
+as rows: `機能` (feature) vs `関数` (function) not colliding, and "list" as an informal
+synonym for "array" both rendering as 配列. The glossary wording was already equivalent, so
+no row was edited.
 
 ### 2026-07-31: Pruned ordinary vocabulary
 

@@ -3,8 +3,8 @@ lang: "tr"
 name: "Turkish"
 family: null
 stage: "refining"
-governance_sha: "8cf9a9f"
-content_version: "8c7fc5e4533d"
+governance_sha: "170faf5"
+content_version: "7f655e27d3e7"
 published_at: "2026-08-02"
 term_count: 53
 category_id: 136
@@ -42,9 +42,9 @@ These are terms where the Turkish is used in prose, so the "Use (tr/en)" column 
 
 | English | Turkish | Use (tr/en) | Notes |
 |---------|---------|-------------|-------|
-| if statement | `if` deyimi | tr | Keep `if` as the real keyword. |
+| if statement | `if` deyimi | tr | Keep `if` as the real keyword. At its first mention on a page that teaches conditionals, write it once as `if` deyimi (koşul ifadesi) so a beginner meets the meaning; every later mention on that page and elsewhere is bare `if` deyimi. |
 | operator | operatör | tr | |
-| NOT operator / logical negation | değilleme | tr | In code context, the concept is "`!` operatörü"; the `!` symbol stays as-is in code. |
+| NOT operator / logical negation | değil operatörü | tr | In code context, the concept is "`!` operatörü"; the `!` symbol stays as-is in code. |
 | statement (executable) | deyim | tr | The imperative sense: a line of code that does something and gets executed. |
 | statement (logical claim) | önerme | tr | The proposition sense: a claim that is true or false; also a test assertion. Deliberately distinct from _deyim_ above. |
 | function | fonksiyon | tr | The *keyword* `function` in code stays English; the concept in prose is _fonksiyon_. |
@@ -93,7 +93,7 @@ These stay in English in Turkish prose, with the Turkish gloss to use for each.
 |------|----------------------------------|-------|
 | Boolean | _mantıksal değer_ | Exception: where the source defines it, explain it means _mantıksal değer_, then use _Boolean_. |
 | API | explain what it is in Turkish | Where defined, explain the concept in Turkish, not just gloss the acronym. |
-| framework | _çerçeve_ | Where defined, explain it means a reusable _çerçeve_, then use _framework_. |
+| framework | _çatı_ | Where defined, explain it means a reusable _çatı_, then use _framework_. Never gloss it as _çerçeve_, which is the everyday word for "frame". |
 | JavaScript, Python, React | (no gloss) | Product/language names. |
 | Debug, Test | (no gloss) | As keywords/technical tokens. |
 | Code, Bug, Frontend, Backend | (no gloss) | |
@@ -155,32 +155,55 @@ placeholder; worth confirming next-intl parses that cleanly. Several strings (Me
 Okumalar, Derin İnceleme, "Kavram Kitaplığı'nı aç", "Yapay zekâ sohbet asistanının kilidini
 açın") run much longer than English and want a visual check in nav/tabs/buttons.
 
-### 2026-08-01: Glossary review from macroicetr — proposed changes logged, not applied
+### 2026-08-02: Glossary review from macroicetr — applied
 
-**Raised by:** native speaker (macroicetr), forum topic 328 ("[Turkish Review] Glossary"),
-post 3: https://forum.jiki.io/t/328/3. `tr` is Phase 1 (setup), so nothing here is applied
-yet; it waits for the next retranslate pass rather than an isolated fix.
+**Decided by:** native speaker (macroicetr), forum topic 328 ("[Turkish Review] Glossary"),
+post 3: https://forum.jiki.io/t/328/3, raised 2026-08-01 and applied to `glossary.md` on
+2026-08-02. Turkish has a single active reviewer and nothing here is contested, so these are
+that speaker's own calls on their own language and were actioned directly rather than being
+held for the next retranslate. Supersedes the earlier logging of this thread as
+"proposed, not applied".
 
-Most of the table confirms current rows unchanged (`if statement`, `deploy`, `return
-chute`). Two rows have an actual proposed change:
+Two rows changed:
 
-- **`NOT operator / logical negation`**: currently _değilleme_. macroicetr proposes
-  _değil operatörü_ instead — _değilleme_ is technically correct but rarely used in
-  everyday speech and may cause confusion at first glance; _değil operatörü_ reads more
-  naturally. The `!` symbol itself stays as-is in code either way.
-- **`framework`**: currently defined once as _çerçeve_ then used as _framework_.
-  macroicetr proposes _çatı_ instead of _çerçeve_ for the defining gloss — "frame" does
-  mean _çerçeve_, but _çatı_ better avoids confusion with the everyday sense of "frame" in
-  this context.
+- **`NOT operator / logical negation`**: _değilleme_ → **_değil operatörü_**. _değilleme_
+  is technically correct but almost never used in everyday speech, so it may confuse a
+  beginner at first glance; _değil operatörü_ is the friendlier, more recognisable framing.
+  The `!` symbol itself stays as-is in code either way, and the row's existing note about
+  "`!` operatörü" in code context is unchanged.
+- **`framework`**: defining gloss _çerçeve_ → **_çatı_** (the term still stays English in
+  prose after the first definition). _çerçeve_ is the literal rendering of "frame", so
+  glossing `framework` with it invites confusion with the everyday picture-frame sense;
+  _çatı_ ("roof/superstructure") carries the reusable-scaffolding sense the concept
+  actually means. The row's note now says explicitly not to gloss it as _çerçeve_, so the
+  superseded word cannot drift back in.
 
-One row is flagged but with no concrete alternative: **`if statement`** — macroicetr
-suggests a first-use parenthetical, "if deyimi (koşul ifadesi)", to help explain what a
-conditional expression does the first time it's taught. Not a term change, an in-page
-explanatory addition to consider during the next `using-functions`/`if` retranslate.
+One row gained an instruction but not a new term:
 
-One row is flagged as merely "keep in mind": **`return chute`** (_kaydırak_) — macroicetr
-says the meaning is right but it may sound slightly awkward in use; no alternative offered,
-no action needed now.
+- **`if statement`** stays `if` deyimi. macroicetr asked for a first-use parenthetical,
+  "`if` deyimi (koşul ifadesi)", the first time conditionals are taught, so a beginner
+  meets the meaning of a conditional expression once before the bare term is used
+  throughout. This is a translator-actionable instruction attached to one term, so it lives
+  in that glossary row's `Notes`, matching how Greek handles the first-use gloss of `bug`,
+  rather than in `guide.md` (which holds language-wide rules, not per-term ones).
+
+Noted, not acted on:
+
+- **`return chute`** (_kaydırak_): macroicetr says the intended meaning is right but it
+  "may sound awkward in use", and offered no alternative, saying to let it stand for now
+  and keep it in mind. Left unchanged deliberately: an unease with no proposed replacement
+  is not enough to move a term. **Open question to put back to macroicetr**: what about it
+  reads awkwardly (register? the playground-slide image? the way it inflects in sentences?),
+  and is there a word they would reach for instead. Revisit if an alternative appears.
+- **`deploy`** (_dağıtım_): explicitly confirmed correct, "these are the exact
+  equivalents". macroicetr listed the verb alongside the noun (_dağıtmak / dağıtım_), which
+  is the ordinary inflection of the same word rather than a second term, so the row is
+  unchanged; the existing note that the colloquial "deploy etmek" is spoken-only still
+  holds.
+
+No Turkish translated content used _değilleme_ or _çerçeve_ at the time of the change
+(checked across the curriculum sources, the exercise message catalogs and the app UI
+catalog), so no published file needed editing.
 
 ### 2026-08-01: Confirmed translation engine — fable (stick with original)
 

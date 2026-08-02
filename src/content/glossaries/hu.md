@@ -3,10 +3,10 @@ lang: "hu"
 name: "Hungarian"
 family: null
 stage: "refining"
-governance_sha: "5aee54f"
-content_version: "4c3df5d7d959"
-published_at: "2026-08-01"
-term_count: 84
+governance_sha: "6f86d78"
+content_version: "83bf5c3a8713"
+published_at: "2026-08-02"
+term_count: 87
 category_id: 68
 forum_topic_id: 289
 video_player_forum_topic_id: 759
@@ -62,6 +62,8 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 | letter (of a string) | betű | hu | Distinct from karakter (text character). |
 | dictionary | szótár | hu | If glossed, gloss in the singular (_dictionary_), even when the Hungarian noun is plural (_szótárak_). |
 | key (dictionary key) | kulcs | hu | If glossed, gloss in the singular (_key_), even when the Hungarian noun is plural (_kulcsoknak_). |
+| object (JS `{}` literal) | objektum | hu | Unconfirmed draft (agent, 2026-08-02), awaiting native-speaker confirmation. Use _objektum_ for a JS `{}` and in its compounds (_objektumkulcs_, _objektumliterál_); keep _szótár_ (see the `dictionary` row) only where the English itself says "dictionary". |
+| type coercion | típuskényszerítés | hu | Unconfirmed draft (agent, 2026-08-02), awaiting native-speaker confirmation. Use one rendering everywhere; never alternate with _automatikus típuskonverzió_ inside one catalog or document. |
 
 ### Functions & control flow
 
@@ -90,6 +92,7 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 | bar / vertical bar (`\|`) | függőleges vonal | hu | The `\|\|` keyword stays English. On `<define>`, show the glyph itself (`\|`) in the bracket, not the English word "bar". |
 | pure (function) | tiszta | hu | _tiszta függvény_ = pure function. When glossed, gloss the full term _pure function_, not the bare adjective _pure_. |
 | scenario (exercise test case) | forgatókönyv | hu | Also the concept title. |
+| variable shadowing | változóárnyékolás | hu | Unconfirmed draft (agent, 2026-08-02), awaiting native-speaker confirmation. One word, no hyphen; the verb is _árnyékol_. Do not leave the English _shadowing_ bare in prose. |
 
 ### Loops, state & program flow
 
@@ -140,7 +143,7 @@ These stay in English in Hungarian prose, with the Hungarian gloss to use for ea
 | CLI (the concept) | parancssori felület | Explain CLI as _parancssori felület_ (command-line interface) where the source defines it. |
 | Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
 | template literal / template string | (no gloss) | The JS construct's own name. The general prose concept is _string-sablon_; see "Functions & control flow". Suffix e.g. template stringben. |
-| backtick | (show the glyph) | |
+| backtick | (show the glyph) | On `<define>`, show the glyph itself (`` ` ``), not the English word. In flowing prose the English word is used and takes Hungarian suffixes: _backticket_ (accusative), _backtickes_ (adjective, e.g. _backtickes template stringek_). The suffixed prose forms are an unconfirmed draft (agent, 2026-08-02), awaiting native-speaker confirmation. |
 | AI | _mesterséges intelligencia_ | Use "AI" (not MI) in prose/marketing. Compounds: AI-segítség, AI-ügynökök. |
 | LLM | explain in Hungarian | Suffix e.g. LLM-korszak. |
 | widget | _widget_ | |
@@ -177,6 +180,96 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-02: Four terms written in from the JS interpreter catalog pass (unconfirmed drafts)
+
+**Decided by:** agent, on the owner's authorisation to write the rows so a native speaker
+has something concrete to confirm or correct. **Status: unconfirmed drafts.** Nobody who
+speaks Hungarian has seen them yet, and none of them is settled.
+**Terms affected:** `object (JS {} literal)`, `type coercion`, `variable shadowing`,
+`backtick`.
+
+The source was the `/translate-interpreters hu` pass that translated the JavaScript
+interpreter's 214 error and step-description messages. That catalog is a new surface for
+Hungarian: it is the prose a learner reads when their code fails or when they step through
+a program, and it forced four terms that no page-level content had needed before.
+
+- **object (JS `{}` literal) → objektum.** The catalog talks about `{}` literals in a dozen
+  places (`TrailingCommaInDictionary`, `InvalidDictionaryKey`, `DuplicateDictionaryKey`,
+  `MissingRightBraceInDictionary`, `DictionaryExpressionNotAllowed`, the `for...in` and `in`
+  errors), and Hungarian has to choose between _objektum_ and the already-agreed _szótár_
+  for `dictionary`. The pass drew the line at the English: _objektum_ where the language
+  construct is a JS object, _szótár_ only where the English source itself says
+  "dictionary". That keeps the existing `dictionary` row intact and gives the two words
+  separate jobs, but it means one message (`InOperatorRequiresObject`) carries both, as
+  _objektumnak/szótárnak_. This is the row most worth a considered answer, because the JS
+  `{}` and the teaching notion of a dictionary genuinely overlap and a native speaker may
+  prefer one word to cover both. `object` was previously removed in the 2026-07-31 prune as
+  having nothing to decide; it is back because this boundary is exactly the thing that
+  needed deciding. Confidence: medium.
+- **type coercion → típuskényszerítés.** _Automatikus típuskonverzió_ is equally defensible
+  and arguably clearer to a beginner, but longer, and it describes the mechanism rather
+  than naming the concept. Two errors (`TypeCoercionNotAllowed`,
+  `UnaryTypeCoercionNotAllowed`) depend on the choice, so the value of picking one is
+  consistency more than correctness. Confidence: medium.
+- **variable shadowing → változóárnyékolás.** Used by `ShadowingDisabled`. Leaving the
+  English _shadowing_ bare was the alternative, and is what some Hungarian developer writing
+  does, but the message is aimed at a beginner who has just hit the error, and an
+  untranslated English noun there teaches nothing. Note the same message keeps _scope_ in
+  English, per the existing "Keep in English" row, so the sentence is already mixed.
+  Confidence: medium.
+- **backtick: existing row extended, rendering unchanged.** The row only covered the
+  `<define>` case (show the glyph). The catalog needs the word in running prose
+  (`MissingBacktickToTerminateTemplateLiteral`, `QuoteUsedToTerminateTemplateLiteral`,
+  `TemplateLiteralExpressionNotAllowed`), where it has to take Hungarian suffixes, so the
+  pass used _backticket_ and _backtickes_. This is a **correction to an unconfirmed row**
+  (nothing in this log records a human deciding `backtick`): the term still stays English
+  and the `<define>` behaviour is untouched; only the Notes now say what to do in prose. The
+  suffixed forms are the lowest-confidence item of the four, because they are a spelling
+  judgement about an English stem, which is exactly the gap the 2026-08-01 pruning entry
+  flags as still open. Confidence: low.
+
+### 2026-08-02: Proposed terms from the Stage 2 batch 2 catch-up pass (unconfirmed drafts)
+
+**Decided by:** agent (proposals only, nothing written to `glossary.md`). The catch-up pass
+translating `two-fer`, `digital-clock`, `weather-symbols` (and checking `strings`/`arrays`,
+found already up-to-date) surfaced these terms:
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| Array (type name, capitalised) | kept English (`_Array_`), one-time gloss "tömb" | Glossary has the chain/lánc *metaphor* but not the type name itself. Alternative: localise fully as "tömb". Cross-exercise precedent, worth settling once. | medium |
+| meridiem (am/pm marker) | kept English; the argument named "jelölés" | No natural Hungarian word; "napszakjelző" would be a coinage. Names a function argument, so consistency matters. | medium |
+| category label: Action | Akció | Reference-panel label shared across exercises; must render identically everywhere. "Művelet" was the alternative. | medium |
+
+Possible `global/terms.md` gap: "Array" as a type name, distinct from the chain metaphor.
+
+### 2026-08-01: Proposed terms from the Stage 2 batch 1 passes (unconfirmed drafts)
+
+**Decided by:** agent (proposals only, nothing written to `glossary.md`). The Stage 2
+batch 1 translation passes (concept `if`, exercise `rock-paper-scissors` + its family
+catalog, exercise `rainbow` + the `draw` family catalog) surfaced these terms with more
+than one defensible rendering. They are **unconfirmed drafts awaiting agreement**; no
+native speaker has seen them, and no row has been added to the glossary.
+
+- **announce** (a result, rock-paper-scissors family) → _bejelent_. Family-wide verb
+  across errors, describers and member-exercise catalogs; _kihirdet_ and _közöl_ are
+  equally defensible, and divergence would fragment the family the shared catalog exists
+  to keep consistent. Confidence: medium.
+- **X vs Y** (scenario/matchup naming) → _„X vs. y”_ (e.g. „Papír vs. kő”), over
+  _„X a Y ellen”_. Sets a cross-file precedent for the RPS family. Confidence: medium.
+- **canvas** (drawing surface) → _vászon_. Proposed independently by both draw-family
+  workers; _rajzvászon_, _rajzterület_ and bare English _canvas_ were also defensible.
+  Central object of every draw exercise. Confidence: medium.
+- **saturation** → _telítettség_. Proposed independently by both draw-family workers;
+  completes the HSL trio alongside the agreed hue (_színárnyalat_) and lightness
+  (_világosság_) rows; a translator could reach for _szaturáció_. Confidence: high.
+- **radial width / radial height** (ellipse `rx`/`ry`) → _vízszintes sugár_ /
+  _függőleges sugár_. The English is itself coined; _sugárirányú szélesség_ would be a
+  calque. Confidence: medium.
+
+The workers also flagged that **canvas** and **saturation** may be missing from the
+canonical term catalogue (`global/terms.md`); adding them there is a governance step for
+whoever reviews this delta.
 
 ### 2026-08-01: Closing quotation mark corrected, quotation rule written down
 

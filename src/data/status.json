@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-02",
-  "governance_sha": "a8f391f",
+  "governance_sha": "172cb91",
   "approved": 79,
   "disapproved": 1,
   "total": 286,
@@ -1242,7 +1242,7 @@
     {
       "lang": "ko",
       "name": "Korean",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
@@ -1273,7 +1273,7 @@
     {
       "lang": "es-419",
       "name": "Latin American Spanish",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-es-419",
       "approved": 2,
       "disapproved": 0,

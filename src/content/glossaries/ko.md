@@ -2,10 +2,10 @@
 lang: "ko"
 name: "Korean"
 family: null
-stage: "setup"
-governance_sha: "f7167c4"
-content_version: "4d3652a92872"
-published_at: "2026-08-01"
+stage: "refining"
+governance_sha: "172cb91"
+content_version: "554393372de1"
+published_at: "2026-08-02"
 term_count: 51
 category_id: 236
 forum_topic_id: 479
@@ -120,6 +120,109 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 
 ## Decision log
 
+### 2026-08-01: Paragraph breaks added to guide.md's Style notes
+
+**Decided by:** owner (iHiD), from native speaker (Dojany) feedback on forum topic 896
+("[Korean Review] Progress?" post #2, https://forum.jiki.io/t/896/2). Dojany flagged a
+pattern they'd seen before with AI translation generally: even when individual sentences
+translate well, mechanically preserving the English source's paragraph breaks can hurt
+readability, pacing and flow in Korean, especially in beginner-focused educational content.
+iHiD confirmed (post #3): "I'll ensure this is added to the Korean guide!" Added as an
+imperative rule under Style notes.
+
+### 2026-08-01: Subject honorific `-시-` ruled on (UNCONFIRMED DRAFT)
+
+**Decided by:** agent. **Status: unconfirmed draft. No native speaker has confirmed this
+rule.** It needs a native-speaker call on the pinned Korean glossary thread. **Terms
+affected:** none.
+
+The guide mandates 해요체 but never ruled on the subject honorific `-시-`, and its own examples
+disagreed: "잘하셨어요!" in the Punctuation bullet uses it, "먼저 Node.js를 설치해요" in the
+Worked examples does not. No higher authority decides this (`global/voice.md` fixes the
+register level, not honorific agreement), so it was settled here and both examples were kept.
+
+**The rule adopted:** `-시-` raises the **subject of its own verb**, so it can never attach to
+a verb whose subject is the writer or an inclusive "we". Because the guide's default framing
+is the shared step (`-아/어 봐요`, 해요 with a dropped inclusive subject), the default is **no
+`-시-`**; it is added only where the sentence is unambiguously about the reader's own action,
+most often praise for something they have just done ("잘하셨어요!").
+
+**Research behind it.** `-(으)시-` is the subject-honorific pre-final ending: it marks respect
+for whoever the sentence is *about*, and it is set independently of the hearer-level ending
+(`-요`), so a 해요체 text can carry it or not depending on the subject. That makes the two
+existing examples compatible rather than contradictory, and it makes any blanket "always use
+`-시-`" rule wrong on the shared-step sentences that dominate this guide. The one place the
+plain form would be actively wrong is praise: "잘했어요" to an adult stranger reads as an adult
+praising a child, which is why "잘하셨어요!" keeps the honorific. Sources consulted: 나무위키
+해요체 and 한국어의 존비어 체계, and English-language grammar references on `-(으)시-` (Elon.io,
+Migaku, Wikipedia "Korean honorifics").
+
+**Not touched:** the `interpreter` row's first-appearance explanation, which is Dojany's
+native-speaker decision (entry below).
+
+Also, house style: an em dash in the "Confirmed translation engine" heading below was
+replaced with a colon, per the no-em-dash rule in `CLAUDE.md` and `global/rules.md`.
+
+### 2026-08-01: Rationale moved out of `guide.md`
+
+**Decided by:** agent, applying the "Where each piece of the feedback goes" split in
+`orchestrator.md`. No rule changed and no term changed; this entry is the home for the
+research, attribution and connotation analysis that used to sit inside the guide, which is
+loaded into the prompt for every Korean item in every pass.
+
+**Why 해요체 is the register.** Korean coding-education platforms aimed at adult beginners
+stay inside a polite register while sounding warm and approachable: Codeit's own marketing
+and course copy ("...전달해요", "...쉽게 이해해요") is 해요체 start to finish, and MDN
+Korean's beginner-facing "Learn" hub is likewise warm rather than clinical, as is the
+Korean translation of the Modern JavaScript Tutorial at ko.javascript.info.
+
+**Why 반말 is banned outright.** Korean etiquette treats an unknown adult reader, including
+a "student" in a teacher/learner relationship, as someone you address politely by default,
+so 반말 (당신을 아는 사이가 아닌 학습자에게는 무례하게 들립니다) would read as presumptuous
+no matter how casual Jiki's brand voice is elsewhere.
+
+**Why the second-person pronoun is dropped.** Explicit 당신 reads oddly formal or even
+pointed outside a few narrow contexts (married couples, formal address to an unnamed reader
+in print, song lyrics), and 너 is the 반말 problem restated.
+
+**Why Jiki takes no honorific suffix.** Jiki is the friendly guide; the bare name keeps the
+voice warm rather than corporate.
+
+**Where the pro-drop exception came from.** A native-speaker review flagged a sentence about
+what Jiki can do, several clauses after "Jiki" was last the grammatical subject, as reading
+better with "Jiki는" restated than left implicit. That report is what the guide's
+"re-establish the subject when the topic has drifted" exception encodes; it was never a
+blanket return to explicit subjects.
+
+**Audience research behind the Korean pass.** Korea has a strong, well-funded
+coding-education market (bootcamps, university CS programs, platforms like Codeit and
+노마드코더), but genuinely low functional English proficiency among adult beginners despite
+heavy English-class exposure in school. That gap is what the Korean content exists to close:
+real, natural Korean explanation rather than a thin gloss over English, which is why the
+guide's Information structure section is written as the pass's biggest quality lever.
+Machine-produced Korean characteristically fails there, tracking English word order and
+producing grammatically correct but translation-flavoured prose.
+
+### 2026-08-01: Unconfirmed draft proposal: `person` (the maze character) as 캐릭터
+
+**Proposed by:** a translation worker during the DeepSeek re-run of
+exercise/maze-solve-basic. **Not decided by anyone**; this is an unconfirmed draft awaiting
+review, and no glossary row has been added. **Terms affected:** `person` (maze character).
+
+캐릭터 is already the de facto rendering across the ko maze instructions, the exercise
+catalog, and the maze family base catalog. A future pass could defensibly pick 사람 instead,
+and a mismatch across maze exercises would be visible on one screen, so it is worth
+settling. Confidence: medium.
+
+### 2026-08-01: Confirmed translation engine: DeepSeek
+
+**Decided by:** native speaker (Dojany), forum topic 885 ("[Korean Review] Alternative
+translation model"), comparing three versions of concept/using-functions: the currently
+published version, a first alternative model, and a second alternative model. Dojany judged
+the second alternative ("Version 3") noticeably better overall for comprehensibility,
+despite a few still-awkward sentences. Per iHiD, that version is DeepSeek. `ko`'s
+`translation_engine` is now set to `deepseek` (`deepseek-v4-pro`) in `tracking.json`.
+
 ### 2026-08-01: `interpreter` (인터프리터) needs a first-use explanation
 
 **Decided by:** native speaker (Dojany) on the pinned Korean glossary thread, forum topic
@@ -176,7 +279,7 @@ reader has met". That one was a hybrid, a native first half bolted to a loanword
 half. Dojany's is 모형, an ordinary Korean noun, which makes the whole compound read as
 Korean rather than as a half-translation.
 
-**Decided by:** agent, applying the pruning test in `global/translating.md` step 6. Removed
+**Decided by:** agent, applying the pruning test in `global/pass-mechanics.md` § "Proposed glossary delta". Removed
 51 rows that had one obvious canonical rendering with nothing to decide (e.g. `developer`,
 `value`, `variable`, `class`, `object`, `deploy`, `module`, `algorithm`), keeping only rows
 that settle a real choice, record a rejected alternative, distinguish a collision, or belong

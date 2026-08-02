@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/strings/source.md"
 en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "0107947"
+governance_sha: "1f962b4"
 content_version: "6b982168bdf1"
-published_at: "2026-08-01"
+published_at: "2026-08-02"
+forum_topic_id: 1011
 ---
 
 Kiedy chcesz użyć liczby, możesz ją po prostu zapisać i Jiki wie, o co Ci chodzi. Ale co, jeśli chcesz użyć litery, słowa albo zdania? Na przykład: co by było, gdyby funkcja `rectangle` (prostokąt) albo funkcja `circle` (okrąg) miała dodatkowy otwór wejściowy, w którym podaje się kolor? Jak zapisać taki kolor, żeby włożyć go do maszyny? Jeśli po prostu napiszemy słowo `green` (zielony) albo `blue` (niebieski), Jiki pomyśli, że chodzi nam o maszynę stojącą na półkach, i powie: „Nie ma żadnej maszyny o nazwie green. Nie wiem, co mam zrobić”.

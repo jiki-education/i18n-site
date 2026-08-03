@@ -3,8 +3,8 @@ lang: "pt-BR"
 name: "Brazilian Portuguese"
 family: "pt"
 stage: "refining"
-governance_sha: "c6b2cac"
-content_version: "b223623ff697"
+governance_sha: "e10d478"
+content_version: "7504ce4b859b"
 published_at: "2026-08-03"
 term_count: 65
 category_id: 74
@@ -161,7 +161,7 @@ column structure as the family file.
 | instruction (given to Jiki) | instrução | pt-BR | Everyday word: _dar as instruções certas ao intérprete_. Shares the word with `statement (executable)` in `../pt/glossary.md`; this is intended, not a collision, since a statement is an instruction. |
 | mental model | modelo mental | pt-BR | _é um modelo mental poderoso_. |
 | (programming) language | linguagem (de programação) | pt-BR | `linguagem` alone once context is set; `linguagem de programação` on introduction. Never `língua` (natural languages only). |
-| iteration | iteração | pt-BR | Verb: _iterar_; "passar por cada elemento" also natural. |
+| iteration | iteração | pt-BR | Verb: _iterar_, taking **sobre**: _iterar sobre um array_, _iteramos sobre strings_. Never _iterar por_. "passar por cada elemento" also natural. |
 | to run / execute (code) | rodar / executar | pt-BR | `rodar` in warm/casual register; `executar` in formal or procedural steps. Diverges from pt-pt, where "rodar" is not natural usage. |
 | loop | laço | pt-BR | `for`/`while` keywords stay English. Diverges from pt-pt's "ciclo". |
 | scope | escopo | pt-BR | Diverges from pt-pt's "âmbito". |
@@ -240,6 +240,21 @@ fechamento (`()`)._
 ---
 
 ## Decision log
+
+### 2026-08-03: _iterar_ takes _sobre_, not _por_
+
+**Decided by:** native speaker (oxe-b), forum post https://forum.jiki.io/t/1109/1, reviewing
+the Arrays concept page. **Status: confirmed.**
+**Terms affected:** `iteration`.
+
+oxe-b flagged that "iterate through" should be _iterar sobre_. The `iteration` row was an
+unconfirmed draft: it gave the verb _iterar_ but said nothing about which preposition follows
+it, and the Arrays translation had reached for _iterar por_. _Iterar sobre_ is the standard
+collocation in Brazilian technical writing, so the row's Notes now name it and rule out
+_iterar por_. The rendering _iteração_ itself does not move; only the usage note is new.
+
+The same post's other two suggestions were phrasing, not terms, and are recorded in
+`languages/pt-BR/concept/arrays.md` instead.
 
 ### 2026-08-03: "input" splits away from _fenda_, and `intérprete` + `quadro` are confirmed
 

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/repeat/source.md"
 en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "42f5991"
-content_version: "d46822e216f2"
-published_at: "2026-07-31"
+governance_sha: "e10d478"
+content_version: "4f656cac8565"
+published_at: "2026-08-03"
 ---
 
 Até agora, tudo foi escrito de forma linear: o Jiki segue cada instrução na ordem, de cima para baixo.
@@ -69,7 +69,7 @@ repeat(4) {
 
 Chamamos essas instruções de repetição de laços (_loops_ em inglês), e existem vários laços diferentes que podemos usar, cada um funcionando de um jeito um pouco diferente.
 
-Tem mais uma coisa importante: manter o código limpo e organizado se torna essencial quando trabalhamos com laços. Quando o seu código tem uma boa estrutura visual, fica muito fácil ver o que está acontecendo. Mas se não tiver, se você esquecer de indentar direito ou misturar a indentação, as coisas ficam confusas bem rápido. Por isso, neste curso, temos sempre uma regra. Você sempre coloca a chave de abertura na mesma linha da instrução (_statement_ em inglês) `repeat`. Você sempre coloca a chave de fechamento em uma linha própria, depois da instrução. E você sempre indenta o código entre elas com dois espaços. Assim tudo fica bem organizado. E se você esquecer ou tentar seguir outro padrão, vai receber um erro.
+Tem mais uma coisa importante: manter o código limpo e organizado se torna essencial quando trabalhamos com laços. Quando o seu código tem uma boa estrutura visual, fica muito fácil ver o que está acontecendo. Mas se não tiver, se você esquecer de indentar direito ou misturar a indentação, as coisas ficam confusas bem rápido. Por isso, neste curso, temos uma regra. Você sempre coloca a chave de abertura na mesma linha da instrução (_statement_ em inglês) `repeat`. Você sempre coloca a chave de fechamento em uma linha própria, depois da instrução. E você sempre indenta o código entre elas com dois espaços. Assim tudo fica bem organizado. E se você esquecer ou tentar seguir outro padrão, vai dar erro.
 
 <img
   class="concept-image"

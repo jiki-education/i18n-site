@@ -3,10 +3,10 @@ lang: "pt-BR"
 name: "Brazilian Portuguese"
 family: "pt"
 stage: "refining"
-governance_sha: "e8c68bd"
-content_version: "0d7b18b656a1"
+governance_sha: "c6b2cac"
+content_version: "b223623ff697"
 published_at: "2026-08-03"
-term_count: 63
+term_count: 65
 category_id: 74
 forum_topic_id: 288
 video_player_forum_topic_id: 773
@@ -149,13 +149,15 @@ column structure as the family file.
 |---------|------------|-----------------|-------|
 | to return (a value) | retornar | pt-BR | "A função retorna um valor." Diverges from pt-pt's "devolver". |
 | return value | valor de retorno | pt-BR | Follows the verb `retornar` above. |
+| input (one a function declares) | entrada | pt-BR | Use only where the English word is **input** and it names one of the inputs a function declares or expects ("give it four inputs: `left`, `top`, `radius`, `color`"; "an extra input where you specified the color"). Feminine: _uma entrada extra_, _as quatro entradas_. Never _fenda_, which translates the English **slot** only (see `../pt/glossary.md` § Jiki physical metaphors): pick by the English word in front of you, not by what the sentence is about, and where one paragraph uses both English words, use both renderings. |
+| input (a value passed in at a call) | valor de entrada | pt-BR | Use only where the English word is **input** and it names the value written at one position of a call ("for the fifth input, we write `"blue"`"). Masculine, so agreement follows: _o quinto valor de entrada_. Bare _entrada_ is also natural here once context is set; _valor de entrada_ is the default where the sentence needs to name the value itself. Never _fenda_, on the same distinction as the row above. |
 | brackets (the two after a function name) | parênteses | pt-BR | The `()` pair written after a function name to call it: _escreva o nome dela e depois os parênteses_. Always `parênteses`, never `colchetes` (which is `[]`). See § Brackets below for the glyph names. |
 
 ### Loops, state & program flow
 
 | English | Portuguese | Use (pt-BR/en) | Notes |
 |---------|------------|-----------------|-------|
-| interpreter | intérprete | pt-BR | Use for the person doing the interpreting, including Jiki himself ("o trabalho dele é interpretar o código"). Never `interpretador`, which names interpreter *software*, not a person. |
+| interpreter | intérprete | pt-BR | Use for the person doing the interpreting, including Jiki himself ("o trabalho dele é interpretar o código"). Never `interpretador`, which names interpreter *software*, not a person. Confirmed by a native speaker (oxe-b) on the pt-BR glossary thread; do not revisit. |
 | instruction (given to Jiki) | instrução | pt-BR | Everyday word: _dar as instruções certas ao intérprete_. Shares the word with `statement (executable)` in `../pt/glossary.md`; this is intended, not a collision, since a statement is an instruction. |
 | mental model | modelo mental | pt-BR | _é um modelo mental poderoso_. |
 | (programming) language | linguagem (de programação) | pt-BR | `linguagem` alone once context is set; `linguagem de programação` on introduction. Never `língua` (natural languages only). |
@@ -201,7 +203,7 @@ Terms below diverge from `../pt/glossary.md` or exist only for Brazilian Portugu
 | shelves (storage) | prateleira | _a prateleira do Jiki_; plural _prateleiras_ when there is more than one. |
 | warehouse (Jiki's warehouse) | galpão | The big shed where Jiki hangs out and keeps his machine shelf. |
 | crank (machine crank) | manivela | The handle Jiki turns to power a machine up: _girar a manivela_. |
-| board / whiteboard | quadro | **One word for one object.** Both the board the learner writes instructions on for Jiki to follow, and the board a function keeps its own instructions and notes on. Never a second word such as `quadro branco` or `lousa` for the same object. |
+| board / whiteboard | quadro | **One word for one object.** Both the board the learner writes instructions on for Jiki to follow, and the board a function keeps its own instructions and notes on. Never a second word such as `quadro branco` or `lousa` for the same object. Confirmed by a native speaker (oxe-b) on the pt-BR glossary thread; do not revisit. |
 | return chute | boca da máquina | The opening a value comes out of, as on a vending machine or an ATM. Replaces the earlier draft, _calha de saída_, which must not be used. Contracts normally: _na boca da máquina_, _da boca da máquina_. Where the machine is already named in the same sentence, _a boca_ alone is fine. |
 
 ## Provisional terms (🟡)
@@ -238,6 +240,62 @@ fechamento (`()`)._
 ---
 
 ## Decision log
+
+### 2026-08-03: "input" splits away from _fenda_, and `intérprete` + `quadro` are confirmed
+
+**Decided by:** native speaker (oxe-b), forum post https://forum.jiki.io/t/288/15, answering
+our question at https://forum.jiki.io/t/288/14. **Status: confirmed.**
+**Terms affected:** `input (one a function declares)`, `input (a value passed in at a call)`,
+`interpreter`, `board / whiteboard`, and, by exclusion, the family row `input slot`.
+
+We asked whether keeping _fenda_ for the physical vending-machine slot and using
+_entrada_ / _valor de entrada_ for the ordinary "a value passed in" sense would read cleanly
+as a split, or whether the two side by side would confuse a reader. oxe-b: "'Entrada' is a
+good default word. 'Input value' is usually translated as 'valor de entrada' or just
+'entrada'." So the split stands, and this resolves the conflict the 2026-08-02 catch-up pass
+flagged below (the `strings` worker had merged both senses onto _fenda_, while the `two-fer`
+and `weather-symbols` workers had proposed _entrada_ for the ordinary sense).
+
+**This is not a correction to `input slot`.** The English source uses two words in the same
+passage and uses them deliberately: **slot** for the physical opening a coin or a piece of
+paper goes into ("put some coins in the first four slots"), **input** for the thing you
+supply ("an extra input", "the fifth input"). _Fenda_ stays the rendering of the first, and
+is confirmed family-wide. What was wrong was reaching for the metaphor word where the English
+had not used the metaphor, so the new rows are keyed on the **English word**, not on what the
+sentence is about. A future pass that finds them redundant is reading the sense, which is
+exactly the mistake that produced _fenda_.
+
+**Two `input` rows, not one**, mirroring the split European Portuguese settled independently
+on the same day: _entrada_ where the English names an input a function declares or offers,
+_valor de entrada_ where it names the value written at one position of a call. The two rows
+differ from pt-pt's (which uses _parâmetro de entrada_ for the first), so both stay in this
+locale file rather than moving up to `../pt/glossary.md`.
+
+Applied to `curriculum/src/concepts/strings/pt-BR.md`: "uma fenda extra" → "uma entrada
+extra" and "na quinta fenda" → "no quinto valor de entrada". The two genuine **slot**
+sentences in the same page (the coins in the first four slots, the paper in the fifth slot,
+and the image `alt` text) keep _fenda_ / _fendas_, as does "a fenda de uma máquina" on the
+Arrays page, which renders the English "an input slot of a machine". The JavaScript
+interpreter's pt-BR catalog was checked and already draws the distinction correctly
+(`slotCount` → _fenda(s) de entrada_, `inputCount` → _entrada(s)_), so nothing was changed
+there.
+
+**Two existing rows were confirmed in the same post**, both of which had been our own calls
+flagged as wanting a second opinion:
+
+- **`interpreter` → intérprete** is right, and _interpretador_ is not. This was reversed once
+  before (see the 2026-07-30 owner-decisions entry below), so the confirmation matters.
+- **`board / whiteboard` → quadro** is clean for the whiteboard/instruction-board sense.
+
+Neither rendering moves; both rows are now protected, and their Notes say so.
+
+**Forward guidance, no glossary row yet: a chess/checkers-style board is _tabuleiro_, not
+_quadro_.** oxe-b added that if a grid-of-squares board ever appears, _tabuleiro_ is the word
+for it, and _quadro_ would be wrong there. No Jiki content needs it today, so there is
+nothing for a translator to act on and no row was added; this note is here so that the first
+pass that does hit one reaches for _tabuleiro_ and does not widen _quadro_ to cover it. It
+pairs with the existing `cell (grid square)` → _casa_ row, which already borrows the
+board-game frame.
 
 ### 2026-08-03: `return chute` corrected to `boca da máquina`, and the row left the family file
 

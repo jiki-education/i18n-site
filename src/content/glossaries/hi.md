@@ -3,10 +3,10 @@ lang: "hi"
 name: "Hindi"
 family: null
 stage: "refining"
-governance_sha: "65fc365"
-content_version: "68db13f9f122"
+governance_sha: "2b01dd3"
+content_version: "c9f4904fea04"
 published_at: "2026-08-03"
-term_count: 122
+term_count: 133
 category_id: 237
 forum_topic_id: 482
 video_player_forum_topic_id: 757
@@ -167,6 +167,32 @@ clarification"). Split by theme for readability; every table below follows the s
 | maze | भूलभुलैया | f | hi | Always spelled भूलभुलैया. Never "solved" (see the row below). |
 | to solve a maze / get through a maze | भूलभुलैया से बाहर निकलना | - | hi | **Never भूलभुलैया हल करना.** Hindi does not say you solved a maze; you got out of it or found a way out. Applies to the title ("भूलभुलैया से बाहर निकलिए"), to the exercise description, and to every later sentence about the task. Transitive, where the learner gets the पात्र out: "पात्र को भूलभुलैया से बाहर निकालना". हल stays correct for a learner's solution to an exercise (see `solution` above). |
 
+### Drawing & colour (creative-coding exercises)
+
+The shapes, colour components and orientations the drawing exercises are built on. They are
+already used consistently in shipped Hindi content (`rainbow`, and the shared `draw`
+category catalog), and the rows exist so that consistency survives the next pass.
+
+**Every row in this section is an unconfirmed draft**, proposed by a translation pass and
+not ruled on by any native speaker. Use them, because a consistent term beats a drifting
+one, but do not read them as settled the way the confirmed rows elsewhere in this glossary
+are. Two are weaker than the rest and are listed under "Open / low-confidence terms" below:
+वृत्त and हेक्स.
+
+| English | Hindi | Gender | Use (hi/en) | Notes |
+|---------|-------|--------|-------------|-------|
+| rectangle | आयत | m | hi | The school-geometry word; already shipped throughout `rainbow`. |
+| circle | वृत्त | m | hi | The school-geometry register, matching the other shape names. गोला is the everyday word and stays the maze's green target ("हरे गोले तक"), which is a ball on screen and not a named shape. **Medium confidence**, and shipped content disagrees: `concepts/variables/hi.md` glosses `circle` as गोला (see `glossary-notes.md`). |
+| triangle | त्रिभुज | m | hi | |
+| ellipse | दीर्घवृत्त | m | hi | |
+| line (drawn on the canvas) | रेखा | f | hi | "एक रेखा खींची". Kept distinct from a line of code, which is लाइन. |
+| radius | त्रिज्या | f | hi | The school-geometry word. The `radius` parameter name itself stays in code font, as any identifier does. |
+| hue | रंगत | f | hi | Already shipped in `rainbow` and the `draw` catalog. |
+| saturation | संतृप्ति | f | hi | Already shipped in `rainbow` and the `draw` catalog. |
+| lightness | चमक | f | hi | Already shipped in `rainbow` and the `draw` catalog. Kept distinct from रंगत and संतृप्ति; the three always appear together. |
+| hex (colour) | हेक्स | - | hi | Devanagari, per `guide.md` § "Script convention": "हेक्स रंग", "हेक्स स्ट्रिंग". The `#` and the hex digits themselves are code and stay as they are. **Medium confidence.** |
+| horizontal / vertical | आड़ी / खड़ी | - | hi | The everyday pair, matching "खड़ी पट्टियां" (vertical stripes) and "आड़ी त्रिज्या / खड़ी त्रिज्या" in shipped content. Not क्षैतिज / ऊर्ध्वाधर, which are the textbook-formal pair. Shipped content disagrees in one place: `rainbow`'s instructions say "क्षैतिज स्थिति" (see `glossary-notes.md`). |
+
 ### Exercise scenario vocabulary
 
 Real-world nouns that an exercise's story is built on, where the obvious rendering is wrong
@@ -235,6 +261,15 @@ Flag these via `/action-forum-post` once real native-speaker feedback is availab
   proposal to drop them, because a `<define>` and the इनपुट स्लॉट metaphor both need a noun.
   His point is carried as a prose rule instead. Needs a native speaker to confirm the bare
   noun is acceptable in the noun-only positions.
+- **The whole "Drawing & colour" section**: every row is an unconfirmed draft from a
+  translation pass, not a native speaker's call. Two are weaker than the others and are the
+  ones to put in front of a reviewer first. **circle (वृत्त vs गोला)**: वृत्त is the
+  school-geometry word and matches त्रिभुज / दीर्घवृत्त, but shipped Hindi already uses both
+  (`draw` says वृत्त, `concepts/variables/hi.md` says गोला), so a reviewer has to settle
+  which one a beginner reads more easily, and whether reserving गोला for the maze's green
+  ball holds up. **hex (हेक्स)**: the borrow rule says Devanagari, but a hex colour is
+  written next to `#` and Latin hex digits every time it appears, so the transliteration may
+  read worse than the bare Latin would.
 - **string, class, method, backwards compatibility, streak**: gender unconfirmed.
 - **scenario, encapsulation, pure function, backwards compatibility, milestone, streak,
   pitfall**: term choice low confidence.
@@ -247,6 +282,76 @@ Flag these via `/action-forum-post` once real native-speaker feedback is availab
 ---
 
 ## Decision log
+
+### 2026-08-03: Drawing and colour vocabulary written down (unconfirmed), plus a comma-splice fix
+
+**Decided by:** us, not a native speaker. **Status: unconfirmed drafts.** **Terms
+affected:** `rectangle`, `circle`, `triangle`, `ellipse`, `line (drawn)`, `radius`, `hue`,
+`saturation`, `lightness`, `hex (colour)`, `horizontal / vertical` (all new rows, in a new
+"Drawing & colour" section of `glossary.md`).
+
+#### Where the rows came from
+
+They are not new choices. Every one of them is already the word shipped Hindi content uses,
+in `rainbow` and in the shared `draw` category catalog, and every gender in the table is
+confirmed by the agreement in a live string ("पहला आयत", "एक रेखा खींची", "रंगत ... होनी
+चाहिए"). They arrived as a translation pass's proposed delta and were never written down,
+so nothing stopped the next pass picking a different word for the same shape. That is the
+only reason the rows exist.
+
+**They are our judgement, and they are marked as such.** The section says so in its own
+words, so that they cannot be mistaken for the rows a native speaker actually ruled on
+(कैनेपे, गेस्ट लिस्ट, लौटाना, चैलेंज, पेज, एज केस, टेम्पलेट लिटरल). Forum feedback is the
+review; these go up as drafts and wait for it.
+
+#### Two places where shipped content contradicts the rows
+
+Both were found while sanity-checking the rows against live text, and neither is fixed here.
+
+- **`circle`: वृत्त or गोला.** The `draw` catalog and `concepts/strings/hi.md` both gloss
+  `circle` as वृत्त; `concepts/variables/hi.md` glosses the same function as गोला. So the
+  same drawing function has two names across two concept pages a learner reads days apart.
+  The row picks वृत्त, because it matches त्रिभुज and दीर्घवृत्त and keeps the shape names
+  in one register, and reserves गोला for the maze's green target, which is a ball rather
+  than a named shape. **That leaves `concepts/variables/hi.md` disagreeing with the
+  glossary**, and it needs a one-word fix on its next pass (or a reviewer telling us the
+  row is wrong).
+- **`horizontal`: आड़ी or क्षैतिज.** The `draw` catalog says "आड़ी त्रिज्या / खड़ी त्रिज्या"
+  and `rainbow`'s catalog says "खड़ी पट्टियां", but `rainbow`'s own instruction prose says
+  "`x` (क्षैतिज स्थिति)". One exercise, two registers, on the same screen. The row picks the
+  everyday pair; `rainbow`'s instructions need the same fix.
+
+#### The two rows a reviewer should be asked about first
+
+वृत्त (against गोला) and हेक्स. The reasoning for each is in the glossary's
+"Open / low-confidence terms" list rather than repeated here.
+
+#### The comma splice in `maze-solve-basic`, and why the fix is not the old template
+
+`scenarios.maze1.description` still opened with "आपका काम है, ...", the construction
+`guide.md` § "Sentence structure" names as the rejected form, in content @suditi has
+approved. The obvious repair was the rewrite she gave on topic 804, "आपका काम यह है कि ...",
+which is what the reviewer note in `languages/hi/exercise/maze-solve-basic.md` tells a pass
+to use.
+
+It was not used, because @aadish-code-create (topic 1063) has since criticised exactly that
+shape as still reading like English carried across. Taking one reviewer's repair of one
+sentence and stamping it onto every later sentence is how a rewrite becomes a formula, and
+a formula is the thing he is objecting to.
+
+What was written instead is "आपको अपने पात्र को भूलभुलैया में से निकालकर हरे रंग के लक्ष्य
+वाले खाने तक पहुंचाना है।" Hindi states a task the learner owes with the obligation
+construction (आपको ... करना है), not by naming the task with a noun and then attaching it
+with a copula. The English's "Your job is to ..." is what forced the copula to the front and
+left the comma holding two clauses together; dropping the noun framing removes the second
+clause altogether, so no connective is needed and nothing has to be announced. The rest of
+the sentence is byte-identical to the approved wording.
+
+The hint `whatAmIMoving.answer` had the same fault in its other common shape: one sentence
+carrying an English appositive ("उस छोटे पात्र को, जो ... , ... ले जाना है, और ..."). It is
+now a fronted correlative (जो ... , उसे ...), which is how Hindi builds a relative clause,
+plus a second sentence for the avoidance. That change is ours, on the guide's "split, don't
+carry across" rule, and no reviewer asked for it.
 
 ### 2026-08-03: The imperative form settled (-इए vs -एं), plus challenge and page (forum topic 999)
 

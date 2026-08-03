@@ -3,10 +3,10 @@ lang: "it"
 name: "Italian"
 family: null
 stage: "reviewing"
-governance_sha: "7b3a97e"
-content_version: "7e51bba748d3"
-published_at: "2026-08-02"
-term_count: 59
+governance_sha: "7a20d26"
+content_version: "7739b51e0c5d"
+published_at: "2026-08-03"
+term_count: 60
 category_id: 133
 forum_topic_id: 319
 video_player_forum_topic_id: 763
@@ -89,6 +89,7 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 | track (curriculum path) | indirizzo | it | Confirmed by a native speaker: the standard Italian word for a course of study (secondary-school _indirizzo_, university track). Stays distinct from _percorso_ (pathway). |
 | mentor / mentoring | mentore / mentoring | it | "Mentoring" is used as-is; "mentore" is the native word for the person. |
 | tutorial | tutorial | en | Established as-is in Italian tech/education writing. |
+| "Run Code" (the button) | Esegui il codice | it | The app's run button. Prose that tells the learner to press it quotes the button's own label, so use this exact wording every time, never the shorter _Esegui codice_. |
 | drawing shapes (function category) | disegno di forme geometriche | it | The graphics-exercise function category. Use _forme geometriche_ for "shapes" in drawing contexts; bare _forme_ is acceptable only where the geometric sense is already unambiguous from the sentence. |
 
 ### Exercise domain vocabulary
@@ -141,6 +142,61 @@ Naming convention and worked example are in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-03: The "Run Code" button label fixed on `Esegui il codice`
+
+**Decided by:** agent, from established Italian usage, prompted by native speaker FraSanga
+on the penguin exercise review thread (https://forum.jiki.io/t/1087). **Human-flagged,
+agent-applied.** **Terms affected:** `"Run Code" (the button)` (new row, under "Platform &
+curriculum vocabulary").
+
+FraSanga flagged that the label appeared in two forms across Italian content. It does: the
+app catalog (`app/messages/it.json`) and the approved `maze-solve-basic` translation both
+say _Esegui il codice_, while `penguin` had shrunk it to _Esegui codice_. He did not pick a
+form and was not asked to: the established one already existed, so this is bookkeeping, not
+a new choice.
+
+It earns a glossary row even though it is not interesting vocabulary. Exercise prose quotes
+a button the learner is looking at, and a pass writing that prose loads the glossary but not
+the app's UI catalog, so nothing else in the inputs of a pass carries the agreed string.
+Article-dropping is exactly the kind of small liberty a translator takes without noticing,
+and it produces prose that names a button that does not exist.
+
+### 2026-08-03: Quotation-mark rule narrowed: UI labels are not quotations
+
+**Decided by:** agent, on the proposal of native speaker FraSanga on the maze-solve-walk
+exercise review thread (https://forum.jiki.io/t/1083). **Human-proposed, agent-applied.**
+**Terms affected:** none. This is a `guide.md` Style notes change.
+
+The 2026-08-02 switch to _caporali_ (below) recorded a native speaker's convention for
+quoted dialogue, and the rule as written then stretched it to "a value or label named rather
+than used". FraSanga read the result, _troverai una sezione «Funzioni»_, and said guillemets
+are wrong there: nobody is being quoted, the sentence is pointing at a panel on the screen.
+
+So the guide now says guillemets are for quoted speech and quoted material, and the name of
+an on-screen element (button, panel, section) takes plain double quotes. That is the same
+reviewer refining his own convention rather than a reversal of it, and it matches what the
+rest of the Italian content already does (`maze-solve-basic`, `penguin`). It also scopes the
+outstanding straight-quote sweep noted in the 2026-08-02 entry: that sweep converts quoted
+material, and must leave UI labels alone.
+
+### 2026-08-03: Function input names stay in English in Italian prose
+
+**Decided by:** agent, on the proposal of native speaker FraSanga on the fix-wall exercise
+review thread (https://forum.jiki.io/t/1084). **Human-proposed, agent-applied.**
+**Terms affected:** none. This is a `guide.md` rule, not a term mapping.
+
+`fix-wall` teaches four inputs, `left`, `top`, `width` and `height`, then closes with a
+sentence naming all four. The Italian had translated two of them and left two ("i valori di
+top, left, altezza e larghezza"), because `top` and `left` have no natural Italian while
+_larghezza_ and _altezza_ are the obvious words. FraSanga asked for all four in English.
+
+The rule is general, not one sentence's wording, so it goes in `guide.md` rather than only
+in the reviewer notes: whenever prose names a function's inputs it names identifiers the
+learner types, and the fact that the source writes some of them without backticks is not
+evidence that they are prose. The same words used descriptively ("how wide the rectangle
+is") are still translated, and the guide says so, because that distinction is the whole
+reason the mistake happens.
 
 ### 2026-08-02: `weather` settled on `meteo`, never `tempo`
 

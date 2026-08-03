@@ -3,10 +3,10 @@ lang: "fa"
 name: "Persian"
 family: null
 stage: "refining"
-governance_sha: "4033bc3"
-content_version: "aab9077860ac"
-published_at: "2026-08-01"
-term_count: 31
+governance_sha: "f349919"
+content_version: "34f96a3bbdbd"
+published_at: "2026-08-03"
+term_count: 35
 category_id: 331
 forum_topic_id: 683
 video_player_forum_topic_id: 753
@@ -42,14 +42,23 @@ throughout. Split by theme for readability; every table below follows the same c
 |---------|---------|-------------|-------|
 | loop | حلقه | fa | **Never use this word for an individual link of the "chain" array metaphor** (see the metaphors table below); the two would collide. |
 | interpreter | مفسر | fa | **A person doing a job, not a program**: in the course Jiki *is* the interpreter (کار او این است که کد را تفسیر کند). Never use مفسر with a program word attached (برنامه‌ی مفسر) or a machine-suffixed coinage. The verb is تفسیر کردن. |
-| instruction (given to Jiki) | دستور | fa | Plural دستورها. Not a formal/legal register word (never دستورالعمل, which reads as an official manual). Note the deliberate overlap with دستور شرطی (if statement): دستور is the ordinary word in both and that is fine. |
+| instruction (given to Jiki) | دستورالعمل | fa | Plural دستورالعمل‌ها. **Native speaker's decision; do not revert to دستور.** Keep it distinct from **statement** («دستور», as in دستور شرطی for an if statement and «دستور `repeat`»): a statement is a piece of code syntax and stays دستور, an instruction the learner gives Jiki is دستورالعمل. |
+
+### Drawing & colour
+
+| English | Persian | Use (fa/en) | Notes |
+|---------|---------|-------------|-------|
+| hue (the H of HSL) | فام | fa | **One term everywhere; never رنگ‌مایه.** Applies in prose, hints, check messages and function descriptions alike. Saturation stays اشباع and lightness روشنایی. |
+| draw (a shape) | رسم کردن | fa | **Never کشیدن**, which also reads as "pull". Use رسم کنید for an instruction to the learner, رسم می‌کند for a function description, and رسم شد for a timeline describer. کشیدن is still fine in its non-drawing senses. |
+| canvas (the drawing surface) | بوم | fa | The surface the drawing exercises paint on. Keep distinct from تخته (board/whiteboard) below, which is Jiki's instruction board: they are two different objects and must not share a word. |
 
 ### Platform & curriculum vocabulary
 
 | English | Persian | Use (fa/en) | Notes |
 |---------|---------|-------------|-------|
 | course | دوره | fa | The whole Jiki course ("در این دوره"). Keep distinct from درس (lesson) and برنامه‌ی درسی (curriculum). |
-| Jiki | جیکی | fa | The interpreter character and the course's name. Written in Persian script in all prose, unlike the product/language names in the "Keep in English" table (JavaScript, Python, React), which stay Latin. Ezāfe and possessives attach as to any Persian noun («انبار جیکی»). Consistent with «جیکی کوچولو» (mini-Jiki) below. Branded sub-product names (Ask Jiki, Jiki Premium) stay English per the guide. |
+| choice (the thing chosen) | گزینه | fa | The **noun**: a player's choice, one of the valid choices. The verb "to choose" stays انتخاب کردن, so «قیچی را انتخاب می‌کنند» is correct; only the noun انتخاب is wrong. |
+| Jiki | جیکی | fa | The interpreter character and the course's name. Written in Persian script in all prose, unlike the product/language names in the "Keep in English" table (JavaScript, Python, React), which stay Latin. Ezāfe and possessives attach as to any Persian noun («انبار جیکی»). Consistent with «جیکی کوچولو» (mini-Jiki) below. Branded sub-product names (Ask Jiki, Jiki Premium) translate like ordinary UI copy now, per the guide; "Ask Jiki" renders as «از جیکی بپرسید». |
 
 ## Keep in English
 
@@ -60,7 +69,7 @@ Persian gloss below.
 |------|-------------------------------|-------|
 | API | رابط برنامه‌نویسی کاربردی | Not a word a beginner knows; where defined, explain the concept in Persian, not just gloss the acronym. |
 | CLI (the concept) | رابط خط فرمان | Explain as "command-line interface" where the source defines it. |
-| AI | هوش مصنوعی | Use "AI" (English) in prose/marketing, not هوش مصنوعی throughout. Gloss once on first use per the glossary. Flag for confirmation once real content surfaces whether this matches how Iranian users actually talk about AI features. |
+| AI | هوش مصنوعی | Use "AI" (English) in prose/marketing, not هوش مصنوعی throughout. Gloss it in Persian only where the source `<define>`s it, never on first use of your own initiative. Flag for confirmation once real content surfaces whether this matches how Iranian users actually talk about AI features. |
 | JavaScript, Python, React | (no gloss) | Product/language names. |
 | Debug, Test, Code, Bug, Frontend, Backend | (no gloss) | |
 | Variable and function names | (no gloss) | Never translated. |
@@ -95,6 +104,172 @@ review.
 ---
 
 ## Decision log
+
+### 2026-08-03: Hue is فام; "draw" is رسم کردن; "choice" (noun) is گزینه
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/916/4 and
+https://forum.jiki.io/t/916/5), actioned by an agent on 2026-08-03. **Terms affected:** the
+new `hue`, `draw (a shape)`, `canvas` and `choice` rows.
+**Protected: `hue`, `draw` and `choice` are a native speaker's decisions and are not to be
+reversed by an agent.** `canvas` (بوم) is the agent's own drafting, see below.
+
+- **hue → فام.** The Rainbow exercise used رنگ‌مایه in its instructions and its own catalog
+  but فام in the shared `draw` category catalog, and mominchezgi asked for one term so the
+  reader is not left guessing whether they are the same thing. فام is the settled Persian
+  equivalent: Persian Wikipedia's article on Hue is titled فام, and its اچ‌اس‌ال و اچ‌اس‌وی
+  (HSL/HSV) article names the H component فام رنگی. رنگ‌مایه appears in neither and reads
+  closer to "tint/tone", which is a different colour property. Every occurrence in Persian
+  content was swept to فام.
+- **draw → رسم کردن.** mominchezgi flagged «رنگین‌کمان را بکشید» as ambiguous, because
+  کشیدن means both "draw" and "pull". رسم کردن carries only the drawing sense. Applied to
+  the task and scenario names, the hints, the instruction prose, the `rectangle` function
+  description and its category label.
+- **choice (noun) → گزینه.** mominchezgi asked for گزینه rather than انتخاب, quoting the
+  `getYukiChoice` describer. The verb is untouched: انتخاب کردن is still how a player
+  chooses, and only the noun moved.
+
+**canvas → بوم is the agent's own drafting, and is a deliberate departure from the wording
+mominchezgi suggested.** He asked for «بوم را پاک کرد» to be restructured to «الان تخته
+خالی است». The restructure was applied, but with بوم kept rather than تخته, because تخته is
+already the agreed word for Jiki's instruction board (the 2026-07-30 owner decision below,
+whose whole point is that one board is one word), and بوم is what the Rainbow task
+description already calls the drawing surface. Using تخته for the canvas would have created
+exactly the one-thing-two-words problem he raised about hue, one row further down. The
+string now reads «الان بوم خالی است». **This needs his confirmation**; if he wants تخته
+after all, that is a decision about the board row too, not just this string.
+
+### 2026-08-02: "instruction" is دستورالعمل, not دستور
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1036/2), actioned by an
+agent the same day. **Terms affected:** the `instruction (given to Jiki)` row.
+**Protected: this is a native speaker's decision and is not to be reversed by an agent.**
+
+The row previously said دستور, with a note explicitly rejecting دستورالعمل as reading like
+an official manual. That note was an agent's own judgement at bootstrap, never a native
+speaker's; mominchezgi asked plainly for the opposite ("don't translate instruction to
+دستور, translate it to دستورالعمل") after reading the live pages, so the reviewer's call
+stands and the note has been rewritten.
+
+The overlap the old note called deliberate is now a distinction worth keeping: **statement**
+stays دستور (دستور شرطی for an if statement, «دستور `repeat`»), because it names a piece of
+code syntax, while an **instruction** the learner hands Jiki is دستورالعمل. Nothing that
+translates "statement" was changed, in the curriculum or in the JavaScript interpreter's
+error catalog (which uses دستور throughout for `statement`, correctly).
+
+### 2026-08-02: "scenario" (سناریو) queried, left open
+
+**Raised by:** native speaker mominchezgi (https://forum.jiki.io/t/1036/2), who disliked the
+transliteration سناریو in the app's exercise UI and asked for "a more common and better
+word" without naming one. **Status: open, no glossary row written.**
+
+Recorded here so a future pass does not quietly invent a replacement. A Jiki scenario is one
+named situation an exercise runs the learner's code against (its own maze, its own inputs),
+and the word has to carry every one of «تمام سناریوها با موفقیت انجام شدند» (All Scenarios
+Passed), «گزارش سناریو» (Scenario Log) and «یک سناریوی امتیازی» (a bonus scenario). The
+obvious candidates each fail on at least one of those: حالت reads as "mode" in «یک حالت
+امتیازی» and as "state" in «گزارش حالت»; مورد is too vague to head a panel; آزمون/تست reads
+naturally everywhere but renames the product concept into "test", which is a teaching
+decision (Jiki deliberately does not call these tests to beginners) and not a translator's
+to make. mominchezgi has been asked on the thread to pick.
+
+### 2026-08-01: Guide and glossary contradiction resolved (first-use auto-gloss)
+
+**Decided by:** agent, applying `global/voice.md` as the higher authority. **Terms
+affected:** `AI` (Notes column only; the term and its Persian gloss are unchanged).
+
+Two places told the translator to gloss on first use, which `global/voice.md` forbids:
+glossing is triggered **only** by a `<define>` tag in the source, and the tidy pass in
+`global/translating.md` lists an unprompted parenthetical as something to remove. `voice.md`
+outranks the guide, so both were repointed at `<define>`.
+
+- **Guide, "Loanword policy".** "Gloss the English term once per file on first occurrence"
+  ("تابع (function)" then "تابع") is replaced by the `<define>`-only rule. The test it
+  carried, which terms deserve a gloss at all (genuine CS jargon yes; a word a
+  non-programmer already knows, no), was kept in full and re-attached to `<define>`
+  expansion, where it serves `voice.md`'s "skip a gloss that would teach nothing".
+- **Guide, "Keep in English".** The Latin-script term list said those terms were "glossed
+  once in Persian on first use". The list itself is unchanged. The gloss instruction is now
+  split: an acronym in that list is still explained in Persian rather than left bare or
+  transliterated, because `global/voice.md` mandates that separately under "Acronyms and
+  foreign terms"; any other bracketed gloss comes only from a `<define>`.
+- **Glossary, `AI` row.** "Gloss once on first use per the glossary" now reads "Gloss it in
+  Persian only where the source `<define>`s it, never on first use of your own initiative".
+  The decision (English "AI" in prose, هوش مصنوعی as the gloss, flagged for native-speaker
+  confirmation) is untouched.
+
+### 2026-08-01: Rationale moved out of `guide.md`
+
+**Decided by:** owner (iHiD), as a guide audit. No rule changed; nothing was re-decided.
+`guide.md` is loaded into the prompt for every Persian item in every pass, so the reasoning
+behind its rules was moved here and the rules themselves left stated imperatively. About a
+third of the file was record-of-the-conversation rather than instruction. What was removed,
+and why each choice was made, is below so none of it is lost.
+
+**Where the research came from.** Persian has no Duolingo course and no Duolingo site UI at
+all (checked, absent), so unlike most Jiki languages there is no Duolingo tone to benchmark
+against; this is the same position as Urdu. The guide was instead built from real Persian
+tech-education writing: Quera (quera.org/blog) and Faradars (blog.faradars.org), both
+long-running, human-authored Iranian CS-education publishers, cross-checked against Persian
+Wikipedia's programming articles and its own house style manual.
+
+**Why formal شما, not informal تو.** This looks like a departure from other Jiki languages'
+"use the informal register", and is not. Quera and Faradars, both checked directly,
+consistently address the reader with شما, never تو. From an unfamiliar voice like Jiki's,
+تو reads as presumptuous rather than warm; شما is the actual modern, everyday-appropriate
+register for this kind of instructional writing, not a formality downgrade. Same correction
+Urdu documents for Urdu.
+
+**Why Persian-native digits.** Explicit, sourced Persian Wikipedia house style
+(ویکی‌پدیا:شیوه‌نامه/تاریخ‌ها و اعداد), corroborated by real tutorial prose (Faradars) and by
+Persian Wikipedia's own CS articles. This is the **opposite** convention from Arabic and
+Urdu in this repo (both use Western digits): a genuine, deliberate per-language difference,
+not an inconsistency for anyone to "fix" later.
+
+**Video-player numerals are an app problem, not a translation one.** UI chrome numerals a
+translator never touches, such as the video player's time/duration readout, still
+conventionally read as Farsi digits for a Persian audience. That readout is rendered by the
+third-party Mux player component (`app/components/ui/JikiMuxPlayer.tsx` in front-end), not
+by any translated content, so it is app-level locale-aware number formatting work.
+
+**Why no manual bidi markup.** Real Persian technical sources embed English code and
+keywords directly in running RTL prose with no inserted directional-override characters and
+rely on the renderer's bidi algorithm, so the guide requires the same.
+
+**Why native Persian primary for core CS vocabulary.** Unlike Arabic (which leans toward
+heavy Arabization of nearly everything, given a lower average English proficiency in that
+audience), Persian already has comfortable, settled, non-awkward native terms for
+programming fundamentals in real everyday use (تابع, متغیر, حلقه, آرایه, رشته, اندیس). These
+are not stiff or mocked Academy calques the way some consumer-tech coinages are (compare
+دندان آبی for Bluetooth); they are the ordinary words real Iranian developers and CS
+educators use.
+
+**Why one link of the chain is never حلقه.** زنجیر is the ordinary, concrete Persian word
+for a physical chain and is safe unqualified for the array metaphor as a whole. But the
+natural Persian word for one *link* of a chain is حلقه, which is the settled term for
+**loop**. Arrays and loops are taught close together, so a bare حلقه for a chain link risks
+real confusion between two concepts on one page, hence دانه (bead) or قطعه (segment)
+instead. زنجیر itself is never at risk; only "link" is. The rule itself already lives on the
+`loop` and `chain` glossary rows, so the guide's copy of it was redundant and was dropped.
+
+**Why Persian guillemets.** «…» are the standard Persian quotation marks (Persian Wikipedia
+house style, and universal in Quera/Faradars prose).
+
+**Two native-speaker flags whose rules stay in the guide.** A native speaker flagged the
+doubled این in «هدف این تمرین این است» as an audible duplication, and flagged a named UI
+element left unquoted in prose as ambiguous (hence wrapping such names in «…»). The rules
+are in the guide; the attribution is here.
+
+**Owner precedents.** Product/strand names (descriptive strand names translated, coined and
+branded names kept English) and AI terminology (use "AI" in prose, glossed once as
+هوش مصنوعی) were both owner decisions following the Hungarian precedent. The AI section was
+dropped from the guide entirely because the glossary's `AI` row already carries the same
+instruction word for word. The two strand-name renderings in the guide («برنامه‌نویسی یاد
+بگیرید», «ساختن یاد بگیرید») are still unconfirmed drafts and worth checking with a native
+speaker on their first real use; the guide's inline "confirm on first use" aside was dropped
+because the engine that reads the guide has no channel to report on.
+
+**Jiki's name.** The guide's account of the جیکی decision (the forum thread, the reviewer,
+the date) duplicated the entry immediately below, which remains the record.
 
 ### 2026-08-01: "Jiki" is written in Persian script (جیکی)
 
@@ -200,7 +375,6 @@ covered by a dated entry above (`board / whiteboard`, `interpreter`) is not repe
 | variable | Confirmed via Persian Wikipedia, Quera, Faradars. |
 | loop | Confirmed via Persian Wikipedia, Quera, Faradars. |
 | nested | Confirmed via Faradars («if-elseهای تو در تو» for nested if-else). |
-| instruction (given to Jiki) | Everyday Persian for an instruction/command that someone is told to carry out. |
 | error | The standard Persian CS term; ordinary enough that a beginner reads it without help. |
 | mental model | The picture-in-your-head framing («یک آدم کوچک داخل کامپیوتر زندگی می‌کند»). The ordinary Persian phrase, used as-is in Persian writing about learning. |
 

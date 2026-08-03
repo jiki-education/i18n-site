@@ -3,10 +3,10 @@ lang: "it"
 name: "Italian"
 family: null
 stage: "reviewing"
-governance_sha: "ea7c7e7"
-content_version: "7739b51e0c5d"
+governance_sha: "3ed5b6e"
+content_version: "53ccb6aab9ad"
 published_at: "2026-08-03"
-term_count: 60
+term_count: 61
 category_id: 133
 forum_topic_id: 319
 video_player_forum_topic_id: 763
@@ -65,6 +65,7 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 | (programming) language | linguaggio (di programmazione) | it | _linguaggio_, never _lingua_ (which means a natural human language). Also used for the "language a computer understands" framing: _un linguaggio che il computer capisce_. |
 | code block | blocco di codice | it | Deliberately distinct from _scope_ below. |
 | comment (in code) | commento | it | A `//` or `#` note in the source that the computer ignores. Masculine: _il commento_, plural _i commenti_. The word stands alone: qualify it as _commento nel codice_ only where the surrounding sentence could be read as a remark or a piece of feedback. Verb: _commentare_ ("aggiungere un commento"); for commenting a line out, say _trasformare in commento_, never "commentare fuori". |
+| to refactor / refactoring | riorganizzare / riorganizzazione | it | Reworking code without changing what it does. Never _rifattorizzare_, a literal calque that is not natural Italian. _Modificare_ (to edit) is too weak: it loses the "same behaviour, better structure" sense. |
 | nested | annidato | it | e.g. _ciclo annidato_ = nested loop. Prefer over "nidificato". |
 | modulo / remainder operator | operatore modulo (operator) / resto (value) | it | Use _operatore modulo_ for the `%` operator; _resto_ for the resulting value. |
 | toggle | azionare | it | Verb. "Ian azionò l'interruttore e la luce si accese." Confirmed by two native speakers: a single plain verb, more natural than the earlier draft _alternare_, which invited an on/off two-word pairing. |
@@ -142,6 +143,27 @@ Naming convention and worked example are in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-03: `refactor` settled on `riorganizzare`, never `rifattorizzare`
+
+**Decided by:** agent, from the two options native speaker FraSanga offered on the
+loopy-maze exercise review thread (https://forum.jiki.io/t/1091). **Human-proposed,
+agent-applied.** **Terms affected:** `to refactor / refactoring` (new row, under "Loops,
+state & program flow").
+
+The `maze-solve-repeat` task and scenario names read _Rifattorizza la soluzione del
+labirinto_. FraSanga called _rifattorizzare_ literal and unnatural and offered
+_riorganizzare_ (reorganise) or _modificare_ (edit) instead.
+
+_Riorganizzare_ wins because it says what refactoring is: reorganising code without
+changing what it does. _Modificare_ is any edit at all, so a learner told to _modificare_
+the maze solution has been told nothing about the point of the exercise, which is that the
+behaviour must stay identical while the code gets shorter.
+
+It earns a row because this was the **first** occurrence of the term in Italian content and
+several later exercises are refactoring exercises. Fixing one page and leaving the choice
+unrecorded guarantees the next pass invents a third rendering; the same page already had a
+third (_Riscrivi_, "rewrite", in the instruction frontmatter), now aligned.
 
 ### 2026-08-03: The "Run Code" button label fixed on `Esegui il codice`
 

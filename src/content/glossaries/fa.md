@@ -3,10 +3,10 @@ lang: "fa"
 name: "Persian"
 family: null
 stage: "refining"
-governance_sha: "69985f8"
-content_version: "5cf2b4eb1ab2"
+governance_sha: "ba33763"
+content_version: "5ae2a6f3a944"
 published_at: "2026-08-03"
-term_count: 36
+term_count: 38
 category_id: 331
 forum_topic_id: 683
 video_player_forum_topic_id: 753
@@ -27,6 +27,7 @@ throughout. Split by theme for readability; every table below follows the same c
 | English | Persian | Use (fa/en) | Notes |
 |---------|---------|-------------|-------|
 | Boolean | منطقی | fa | Where a noun is needed, write «مقدار منطقی» / «مقادیر منطقی» (boolean value/values); منطقی is an ordinary Persian word and reads naturally however often it repeats. **بولی may be named once, and only once**, on the page that first introduces the concept, so a learner recognizes the word elsewhere in the Iranian ecosystem; every mention after that is منطقی. **Never pluralize بولی as «بولی‌ها»** on that one mention: it is an adjective and takes no plural marker. Keep «مقادیر منطقی» (boolean values) distinct from «عملگرهای منطقی» (logical operators), which is a different thing. |
+| pair (key/value, in a dictionary) | جفت | fa | The key-and-value unit on a dictionary page: «چندین جفت» (several pairs), «هر جفت» (each pair). Never زوج. |
 | item / element (of an array) | عنصر | fa | **One word for both.** English's "item" and "element" name the same thing on the arrays material, and Persian uses عنصر for both; **never آیتم**, which is a bare transliteration where an ordinary Persian word exists. Plural عنصرها/عناصر. |
 
 ### Functions & control flow
@@ -57,6 +58,7 @@ throughout. Split by theme for readability; every table below follows the same c
 
 | English | Persian | Use (fa/en) | Notes |
 |---------|---------|-------------|-------|
+| name (of a person, variable, key) | اسم | fa | **Never نام**, in any construction: «به اسم» (called), «با اسم» (with the name), and possessives («اسمم», my name). |
 | course | دوره | fa | The whole Jiki course ("در این دوره"). Keep distinct from درس (lesson) and برنامه‌ی درسی (curriculum). |
 | choice (the thing chosen) | گزینه | fa | The **noun**: a player's choice, one of the valid choices. The verb "to choose" stays انتخاب کردن, so «قیچی را انتخاب می‌کنند» is correct; only the noun انتخاب is wrong. |
 | Jiki | جیکی | fa | The interpreter character and the course's name. Written in Persian script in all prose, unlike the product/language names in the "Keep in English" table (JavaScript, Python, React), which stay Latin. Ezāfe and possessives attach as to any Persian noun («انبار جیکی»). Consistent with «جیکی کوچولو» (mini-Jiki) below. Branded sub-product names (Ask Jiki, Jiki Premium) translate like ordinary UI copy now, per the guide; "Ask Jiki" renders as «از جیکی بپرسید». |
@@ -105,6 +107,28 @@ review.
 ---
 
 ## Decision log
+
+### 2026-08-03: "name" is اسم, not نام; dictionary pairs are جفت
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1106), actioned by an
+agent the same day. **Terms affected:** the new `name` and `pair` rows.
+**Protected: اسم is a native speaker's decision and is not to be reversed by an agent.**
+
+Reviewing the Dictionaries concept page, he asked to "replace all نام with اسم". Both words
+mean "name" and both are ordinary Persian, but نام is the more literary register and اسم is
+what people say. The course is spoken-voice throughout, so اسم is the one that matches how
+the material sounds, and "name" recurs constantly (the `name` key, variable names, function
+names), which is why it earns a row rather than a one-page fix. The row covers every
+construction, including «به اسم» where نام is the more common bookish default.
+
+جفت (pair) came out of the same review, on the sentence introducing key-value pairs. It was
+not previously in the glossary and will recur across all the dictionary material, so it is
+recorded now. جفت is the everyday word for a pair of matched things; زوج is the alternative
+and was not used, since it carries a "couple/spouse" reading in ordinary speech.
+
+The same review also produced sentence-level rewording on that page (chain in the singular,
+a reordered opening, an added چون, «و الی آخر» for "and so on"), which is item-specific and
+so is recorded in `languages/fa/concept/dictionaries.md` rather than here.
 
 ### 2026-08-03: Boolean is منطقی, not بولی
 

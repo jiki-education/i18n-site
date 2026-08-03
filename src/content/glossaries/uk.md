@@ -2,8 +2,8 @@
 lang: "uk"
 name: "Ukrainian"
 family: null
-stage: "refining"
-governance_sha: "e23e66a"
+stage: "reviewing"
+governance_sha: "ba33763"
 content_version: "929cbca426b4"
 published_at: "2026-08-03"
 term_count: 139

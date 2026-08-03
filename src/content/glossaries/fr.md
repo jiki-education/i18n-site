@@ -2,11 +2,11 @@
 lang: "fr"
 name: "French"
 family: null
-stage: "refining"
-governance_sha: "e50c4c0"
-content_version: "fcbad8b27b27"
+stage: "reviewing"
+governance_sha: "ba33763"
+content_version: "35154cfeefc9"
 published_at: "2026-08-03"
-term_count: 70
+term_count: 71
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -93,6 +93,7 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | pathway | parcours | fr | A structured learning sequence. Deliberately distinct from _filière_ (track) below. |
 | track (curriculum path) | filière | fr | Deliberately distinct from _parcours_ (pathway) above. |
 | syllabus | programme (du cours) | fr | Note the deliberate overlap with _curriculum → programme_; disambiguate with "du cours" when both appear in the same context. |
+| Not started (progress status) | Non commencé / Non commencés | fr | Never _Pas commencé_. Agree in number with what the label describes: singular _Non commencé_ on a status badge for one item (e.g. one challenge), plural _Non commencés_ on a filter tab covering a list of items. |
 
 ## Keep in English
 
@@ -151,6 +152,56 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-03: "Not started" → `Non commencé` / `Non commencés`
+
+**Decided by:** native speaker (mirina), agreed by a second native speaker (resu-xunil),
+forum topic 959 (https://forum.jiki.io/t/959/7).
+**Terms affected:** the new `Not started (progress status)` row.
+**Files affected:** `glossary.md` (Platform & curriculum vocabulary) and the French app
+copy, whose progress-status keys now read `Non commencé` / `Non commencés`.
+
+The app copy previously rendered the status as `Pas commencé` / `Pas commencés`. mirina
+proposed `Non commencé` instead and resu-xunil agreed; nobody argued for keeping `Pas`.
+`Non` is the form French uses to negate a participle used attributively, which is what a
+status label is, whereas `Pas commencé` reads as a clipped spoken negation of a verb and
+sits awkwardly as a standalone label.
+
+Number agreement is part of the decision, because the string appears in two shapes in the
+UI: singular on a status badge describing one challenge, plural on a filter tab covering a
+list of them. That is why the row carries both forms rather than one, and it is the part a
+future website-copy pass would otherwise flatten.
+
+There was no glossary row for this at all before, so a future pass would have regenerated
+`Pas commencé` and quietly undone the fix. The row is now protected: it is a native
+speakers' decision and is not to be re-opened by a translation pass.
+
+### 2026-08-03: Dictionaries page wording, settled between two reviewers
+
+**Decided by:** mirina and resu-xunil on forum topic 980
+(https://forum.jiki.io/t/980). They reviewed the page independently, disagreed on seven
+sentences, and were asked to settle those between themselves rather than have us pick a
+side. mirina listed the resolutions in post 8 and resu-xunil accepted all of them in post 9
+("That choice is perfect, I can't do better"), so every one of the seven is a two-speaker
+agreement, not one reviewer's preference.
+**Terms affected:** none. No glossary row changed; this is per-page wording plus one
+existing standard being reaffirmed.
+**Files affected:** `concept/dictionaries` reviewer notes and the `fr` translation of the
+Dictionaries concept page.
+
+The one decision with reach beyond this page is _récupérer_ for getting a value out of a
+container. It was settled on the Arrays page first, and both reviewers chose the version
+that matches it here (_d'en récupérer sa valeur_) over _en sortir_ and _en extraire_, so it
+is now the consistent French verb for that action across concept pages.
+
+Two points where the reviewers' reasoning is worth keeping. First, mirina refused to swap
+_si tu veux_ for _si nécessaire_ in the same-values rule: to a complete beginner "if you
+want" and "if needed" are different instructions, and the English says the former. Second,
+the "in code" sentence was restructured with a colon rather than a semicolon; mirina's
+two-clause structure won, but with her own later correction from semicolon to colon.
+
+The straight-quote question that both reviewers raised separately was not put to them,
+because `guide.md` already settles it: French uses guillemets. It was applied mechanically.
 
 ### 2026-08-03: "Solve the Maze" exercise title → `Évade-toi du labyrinthe` (reviewer vote)
 

@@ -2,11 +2,11 @@
 lang: "el"
 name: "Greek"
 family: null
-stage: "refining"
-governance_sha: "ec30de8"
-content_version: "1539f2c9a5a3"
-published_at: "2026-08-02"
-term_count: 63
+stage: "reviewing"
+governance_sha: "ba33763"
+content_version: "381ecc612557"
+published_at: "2026-08-03"
+term_count: 64
 category_id: 265
 forum_topic_id: 497
 video_player_forum_topic_id: 747
@@ -89,6 +89,7 @@ These are terms where the Greek is used in prose, so the "Use (el/en)" column is
 | English | Greek | Use (el/en) | Notes |
 |---------|-------|-------------|-------|
 | vs (versus, between two choices/scenarios) | **εναντίον** | el | Unconfirmed draft (agent, 2026-07-31). From the rock-paper-scissors exercise. |
+| golf tee | **πάσσαλος του γκολφ** | el | Confirmed by a native speaker (astyanax, 2026-08-03). Never left as bare English `tee`. `γκολφ` is transliterated here, matching `μπάλα γκολφ` in the same content. |
 
 ### Drawing & color (exercise family)
 
@@ -149,6 +150,49 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-03: "golf tee" is translated, not kept in English
+
+**Decided by:** astyanax (native speaker).
+**Raised by:** astyanax on the Greek `golf-rolling-ball-loop` exercise review thread,
+https://forum.jiki.io/t/1107.
+**Terms affected:** `golf tee` (added, _πάσσαλος του γκολφ_).
+
+The translation had left `tee` as a bare English word inside otherwise Greek prose. Astyanax
+said golf tees are too niche a concept in Greece for the English term to carry any meaning to
+a general reader, and proposed either _πάσσαλος του golf_ or _πάσσαλος του γκολφ_, checking
+first whether the glossary required `golf` to stay in Latin script. It does not: nothing in
+the Greek glossary keeps `golf` untranslated, and the surrounding sentence already reads
+_μπάλα γκολφ_, so the transliterated variant was the one that matched what was on the page.
+That settled the choice between his two options without needing to go back to him.
+
+`golf` is a sport name rather than a technical token, so keeping it in Latin script would
+have been the odd choice here, not the safe one.
+
+### 2026-08-03: `αληθής` stands as a fixed term; boolean literals get quotes in prose
+
+**Decided by:** agent, applying the existing glossary row.
+**Raised by:** astyanax (native speaker) on the Greek `word-count` exercise review thread,
+https://forum.jiki.io/t/1093.
+**Status:** the quoting is applied; the grammar question underneath it is settled by the
+existing row, not reopened.
+**Terms affected:** none. The `true / false` row (_αληθής / ψευδής_) is unchanged.
+
+Astyanax's instinct was that "Επιστρέφει αληθής" should be _αληθές_, the neuter, because a
+returned value is a neuter thing and a Greek adjective would agree with it. He raised it as a
+nuance rather than a firm error, and flagged the reason himself: if _αληθής_ is being used as
+a fixed technical term elsewhere in the Greek content (as in "Αληθής (συνθήκη)"), the
+citation form is defensible and agreement does not apply to it. That is exactly the case
+here. The glossary already settles `true / false` as _αληθής / ψευδής_, so these are names of
+values, not adjectives describing the returned thing, and inflecting them per sentence would
+break the one-word-per-concept property the row exists to guarantee.
+
+What was genuinely wrong is that nothing on the page told the reader that. Bare _αληθής_ in
+running prose reads as an adjective and invites precisely astyanax's parse. So his own
+proposed middle ground was applied: the literals go in straight double quotes (the Greek
+guide's quote style) wherever they are named as values, which marks them as terms and makes
+the non-agreement deliberate rather than accidental. This resolves the concern whichever way
+the grammar question would have gone, which is why it did not need a human ruling.
 
 ### 2026-08-02: "bug" stays English, but is explained once, at its first mention
 

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "e95c905",
-  "approved": 165,
+  "governance_sha": "788d9bf",
+  "approved": 166,
   "disapproved": 0,
   "total": 357,
   "languages": [
@@ -1409,98 +1409,11 @@
       ]
     },
     {
-      "lang": "tr",
-      "name": "Turkish",
-      "stage": "refining",
-      "category_slug": "i18n-tr",
-      "approved": 3,
-      "disapproved": 0,
-      "total": 9,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 328,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 782,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 783,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 816,
-          "status": "approved"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "sv",
-      "name": "Swedish",
-      "stage": "setup",
-      "category_slug": "i18n-sv",
-      "approved": 3,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 828,
-          "status": "approved"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 831,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 843,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 879,
-          "status": "approved"
-        }
-      ]
-    },
-    {
       "lang": "fa",
       "name": "Persian",
       "stage": "refining",
       "category_slug": "i18n-fa",
-      "approved": 2,
+      "approved": 3,
       "disapproved": 0,
       "total": 19,
       "items": [
@@ -1512,7 +1425,7 @@
         {
           "key": "concept/using-functions",
           "topic_id": 752,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "video-player",
@@ -1598,6 +1511,93 @@
           "key": "exercise/weather-symbols",
           "topic_id": null,
           "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "tr",
+      "name": "Turkish",
+      "stage": "refining",
+      "category_slug": "i18n-tr",
+      "approved": 3,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 328,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 782,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 783,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 816,
+          "status": "approved"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "sv",
+      "name": "Swedish",
+      "stage": "setup",
+      "category_slug": "i18n-sv",
+      "approved": 3,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 828,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 831,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 843,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 879,
+          "status": "approved"
         }
       ]
     },

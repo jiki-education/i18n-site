@@ -3,10 +3,10 @@ lang: "it"
 name: "Italian"
 family: null
 stage: "reviewing"
-governance_sha: "dcb247e"
-content_version: "53ccb6aab9ad"
+governance_sha: "9b3a28d"
+content_version: "051a3e8b7e5a"
 published_at: "2026-08-03"
-term_count: 61
+term_count: 63
 category_id: 133
 forum_topic_id: 319
 video_player_forum_topic_id: 763
@@ -100,6 +100,7 @@ Everyday words from an exercise's subject matter where the obvious rendering is 
 | English | Italian | Use (it/en) | Notes |
 |---------|---------|-------------|-------|
 | weather | meteo | it | Confirmed by a native speaker: more precise than _tempo_, which also means "time" and so reads ambiguously in an exercise. Masculine and invariant: _il meteo_, _previsioni meteo_, _simboli meteo_. Never use _tempo_ for the weather sense. |
+| tee (golf) | tee | en | Keep the English word: it is the standard term in Italian golf usage. Never _chiodino_. Masculine and invariant: _il tee_, _sul tee_. |
 
 ## Keep in English
 
@@ -112,6 +113,7 @@ These stay in English in Italian prose, with the Italian gloss to use for each.
 | CLI (the concept) | _interfaccia a riga di comando_ | Where the source `<define>`s it, explain CLI as _interfaccia a riga di comando_ (command-line interface). |
 | canvas (graphics exercises) | _area di disegno_ | The drawing surface in creative-coding exercises. Where the source `<define>`s it, explain it as the _area di disegno_ (the `canvas` element), then use _canvas_. Where the source does not `<define>` it (exercise tasks, describers, hints), never leave a bare _canvas_: use _area di disegno_. |
 | Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
+| `move()` (exercise function) | _muovi_ | Gloss the command with the imperative _muovi_, matching the command's behaviour. Never the reflexive infinitive _muoversi_, which describes the character moving itself rather than instructing it. The same imperative pattern applies to any other exercise function glossed this way. |
 
 ## Jiki physical metaphors
 
@@ -143,6 +145,75 @@ Naming convention and worked example are in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-03: `move()` glossed as the imperative `muovi`, never the reflexive `muoversi`
+
+**Decided by:** native speaker kernelaklees on the Take a Walk exercise review thread
+(https://forum.jiki.io/t/1083/3). **Human-decided, agent-applied.** **Terms affected:**
+`move()` (exercise function) (new row, under "Keep in English").
+
+The Italian instructions for `maze-solve-walk` glossed the command as _muoversi_. He pointed
+out that _muoversi_ is reflexive (the character moving itself), while _muovi_ is the
+imperative and so matches what the command actually is: an instruction the learner gives.
+The rest of the page he read as fine.
+
+The imperative is also what the neighbouring `maze-solve-basic` page already used
+(_`move()` (muovi)_), so the reflexive was an inconsistency rather than a settled choice,
+and fixing it aligns the two maze exercises on one gloss.
+
+It earns a row because every exercise that introduces a command glosses it the same way in
+parentheses, so the imperative-not-infinitive rule generalizes beyond this one function and
+would otherwise be re-decided per exercise.
+
+### 2026-08-03: `tee` (golf) settled on the English word, never `chiodino`
+
+**Decided by:** native speaker kernelaklees on the Rolling Ball exercise review thread
+(https://forum.jiki.io/t/1090), answering a question native speaker FraSanga left open on
+the same thread. **Human-decided, agent-applied.** **Terms affected:** `tee (golf)` (new
+row, under "Exercise domain vocabulary").
+
+FraSanga read _Una pallina da golf si trova sul tee_ and said either the English technical
+term or _chiodino_ would be acceptable, but that he does not play golf and so could not say
+which is actually used. Nobody on our side could either, so the question was posted back to
+the thread and left open.
+
+kernelaklees answered it independently: he checked, and _tee_ is what Italian golf
+terminology uses, exactly as in English, so keeping it is correct. That is one reviewer
+resolving another's open question, not two reviewers disagreeing, so it settles cleanly and
+no further consultation was needed.
+
+_Chiodino_ (literally "little nail") loses on the same evidence: it describes the shape of
+the object rather than naming it as the sport does, so it would read as a translator's
+invention to anyone who plays.
+
+It earns a row because golf recurs across several exercises (`golf-rolling-ball-loop`,
+`golf-rolling-ball-state`, `golf-scenarios`, `golf-shot-checker`), and the neighbouring
+golf words are already localized (_buca_, _pallina_), which is exactly the pattern that
+tempts a later pass into localizing this one too.
+
+### 2026-08-03: `ballNotAtEnd` on `golf-rolling-ball-loop` moved off the past simple
+
+**Decided by:** agent, on the proposal of native speaker kernelaklees on the Rolling Ball
+exercise review thread (https://forum.jiki.io/t/1090). **Human-proposed, agent-applied.**
+**Terms affected:** none. This is a single-message wording fix, recorded in
+`languages/it/exercise/golf-rolling-ball-loop.md`.
+
+The check message read _La pallina è rotolata fino a {{ballX}}_, tracking the English past
+simple "The ball rolled to". kernelaklees explained that Italian does not use a marked past
+this way in technical description: English narrates the action, Italian states the resulting
+position, in the present or a resultative form. He offered _spostata_ as a more precise verb
+than _rotolata_ but was explicit that the verb itself can stay and that the tense is the
+real point.
+
+The message is now _La pallina si trova a {{ballX}}_, which is the resultative he described
+and is also what the sibling exercise `golf-rolling-ball-state` already says in its own
+`ballNotAtEnd` (_Si trova alla posizione {{ballX}}_). Swapping the verb to _spostata_ was
+not taken up: it would have kept the tense he objected to, and it describes displacement
+rather than the rolling the exercise is about.
+
+No general rule is drawn from this into `guide.md`. One reviewer's observation about one
+message is not yet evidence about every past tense in Italian content, and a blanket
+"never narrate in the past" instruction would be paid for on every item in every pass.
 
 ### 2026-08-03: `refactor` settled on `riorganizzare`, never `rifattorizzare`
 

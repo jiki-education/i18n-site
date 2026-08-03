@@ -3,8 +3,8 @@ lang: "fa"
 name: "Persian"
 family: null
 stage: "refining"
-governance_sha: "3b80d5e"
-content_version: "9e9cb9f609ee"
+governance_sha: "69985f8"
+content_version: "5cf2b4eb1ab2"
 published_at: "2026-08-03"
 term_count: 36
 category_id: 331
@@ -26,7 +26,7 @@ throughout. Split by theme for readability; every table below follows the same c
 
 | English | Persian | Use (fa/en) | Notes |
 |---------|---------|-------------|-------|
-| Boolean | بولی | fa | Not treated as a foreign/English word needing italics. «مقدار منطقی» (logical value) is an acceptable descriptive alternative when introducing the concept, but بولی is the term used consistently afterward. **Never pluralize it as «بولی‌ها»**: بولی is an adjective and does not take a plural marker. Where English pluralizes ("Booleans"), write «مقادیر بولی» (boolean values). |
+| Boolean | منطقی | fa | Where a noun is needed, write «مقدار منطقی» / «مقادیر منطقی» (boolean value/values); منطقی is an ordinary Persian word and reads naturally however often it repeats. **بولی may be named once, and only once**, on the page that first introduces the concept, so a learner recognizes the word elsewhere in the Iranian ecosystem; every mention after that is منطقی. **Never pluralize بولی as «بولی‌ها»** on that one mention: it is an adjective and takes no plural marker. Keep «مقادیر منطقی» (boolean values) distinct from «عملگرهای منطقی» (logical operators), which is a different thing. |
 | item / element (of an array) | عنصر | fa | **One word for both.** English's "item" and "element" name the same thing on the arrays material, and Persian uses عنصر for both; **never آیتم**, which is a bare transliteration where an ordinary Persian word exists. Plural عنصرها/عناصر. |
 
 ### Functions & control flow
@@ -105,6 +105,41 @@ review.
 ---
 
 ## Decision log
+
+### 2026-08-03: Boolean is منطقی, not بولی
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1095), actioned by an
+agent the same day. **Terms affected:** the `Boolean` row, and `guide.md`'s "Boolean values
+go in guillemets" rule.
+**Protected: this is a native speaker's decision and is not to be reversed by an agent.**
+It **supersedes the "open, not decided" note in the entry below**, which left this pending.
+
+His words: *"A big change for boolean: I accepted to use بولی for boolean translation. But I
+regret choosing that word. If you want to use it one time or just a couple of times, yeah;
+But if you want to write it again and again, it's awful to use بولی in the text. I strongly
+suggest منطقی instead of بولی."*
+
+The reason is grammatical, not stylistic. بولی is a bare transliteration doing the work of an
+adjective, and Persian adjectives do not inflect or pluralize naturally, which is why
+«بولی‌ها» had to be banned as a plural on the Arrays page the same day (entry below). Every
+place the material needed a plural or an ezafe, the word had to be worked around. منطقی is an
+ordinary Persian adjective, so «مقدار منطقی» / «مقادیر منطقی» behave like any other Persian
+noun phrase and read naturally however often they repeat, which on this material is often.
+
+**This corrects the agent's own bootstrap research, not a human decision.** بولی came from
+Persian Wikipedia's «نوع داده بولی» during the bootstrap (see the "Values & data types" term
+rationale below, now amended); no dated entry in this log ever recorded a native speaker
+choosing it. mominchezgi's own "I accepted to use بولی" refers to not objecting earlier, and
+he is the person withdrawing it. Nobody has argued the other way.
+
+بولی is kept, named **once**, on the page that first introduces the concept (the `if` concept
+page), because it is what a learner will meet on Persian Wikipedia, Quera and Faradars.
+Everywhere after that first naming the term is منطقی. That is the mirror image of the row's
+previous structure, with the two terms swapped in priority.
+
+One collision to watch, recorded on the row: «مقادیر منطقی» (boolean values) and «عملگرهای
+منطقی» (logical operators, already in the JavaScript interpreter catalog) are different
+things and must keep their distinguishing noun.
 
 ### 2026-08-03: چیز is never the default word for "thing"
 
@@ -430,7 +465,8 @@ with a native speaker.
 Why individual rows read the way they do, for the reasoning that is not a dated decision
 above. Ordered by the glossary's own sections, not by date, because most of it dates from
 the language bootstrap rather than from any one decision. A term whose reasoning is already
-covered by a dated entry above (`board / whiteboard`, `interpreter`) is not repeated here.
+covered by a dated entry above (`board / whiteboard`, `interpreter`, `Boolean`) is not
+repeated here.
 
 #### Values & data types
 
@@ -439,7 +475,6 @@ covered by a dated entry above (`board / whiteboard`, `interpreter`) is not repe
 | array | Standard Persian CS term; confirmed via Persian Wikipedia, Faradars, sariasan. |
 | index (array index) | Dominant generic CS term for an array index; confirmed via Persian Wikipedia, Faradars. |
 | string | Already the comfortable, established primary Persian term (unlike some other Jiki languages that keep "string" in English); confirmed via general Persian CS usage. |
-| Boolean | Already a fully nativized transliteration, written in Persian script and used unremarkably as the primary term (confirmed via Persian Wikipedia's «نوع داده بولی»). |
 
 #### Functions & control flow
 

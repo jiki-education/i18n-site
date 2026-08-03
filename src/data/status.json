@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "d61cf81",
-  "approved": 196,
+  "governance_sha": "cefaca3",
+  "approved": 197,
   "disapproved": 0,
   "total": 497,
   "languages": [
@@ -1051,6 +1051,87 @@
       ]
     },
     {
+      "lang": "pt-BR",
+      "name": "Brazilian Portuguese",
+      "stage": "refining",
+      "category_slug": "i18n-pt-br",
+      "approved": 9,
+      "disapproved": 0,
+      "total": 14,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 288,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 772,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 773,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 812,
+          "status": "approved"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": 1104,
+          "status": "approved"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": 1108,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": 1120,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": 1101,
+          "status": "approved"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": 1015,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": 1109,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "nl",
       "name": "Dutch",
       "stage": "refining",
@@ -1313,87 +1394,6 @@
         },
         {
           "key": "concept/dictionaries",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "pt-BR",
-      "name": "Brazilian Portuguese",
-      "stage": "refining",
-      "category_slug": "i18n-pt-br",
-      "approved": 8,
-      "disapproved": 0,
-      "total": 14,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 288,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 772,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 773,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 812,
-          "status": "approved"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": 1104,
-          "status": "approved"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": 1108,
-          "status": "approved"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/two-fer",
-          "topic_id": 1101,
-          "status": "approved"
-        },
-        {
-          "key": "concept/strings",
-          "topic_id": 1015,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/digital-clock",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/arrays",
-          "topic_id": 1109,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/weather-symbols",
           "topic_id": null,
           "status": "pending"
         }

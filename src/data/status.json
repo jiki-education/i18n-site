@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "0c8493b",
-  "approved": 174,
+  "governance_sha": "e23e66a",
+  "approved": 184,
   "disapproved": 0,
   "total": 439,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 31,
+      "approved": 32,
       "disapproved": 0,
       "total": 44,
       "items": [
@@ -176,8 +176,8 @@
         },
         {
           "key": "exercise/golf-rolling-ball-loop",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1090,
+          "status": "approved"
         },
         {
           "key": "exercise/maze-solve-repeat",
@@ -241,7 +241,7 @@
       "name": "Ukrainian",
       "stage": "refining",
       "category_slug": "i18n-uk",
-      "approved": 19,
+      "approved": 28,
       "disapproved": 0,
       "total": 34,
       "items": [
@@ -293,7 +293,7 @@
         {
           "key": "exercise/two-fer",
           "topic_id": 880,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/strings",
@@ -368,32 +368,32 @@
         {
           "key": "exercise/maze-solve-walk",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/maze-solve-repeat",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/cloud-rain-sun",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/snowman-basic",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/fix-wall",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-solve-basic",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/penguin",
@@ -408,12 +408,12 @@
         {
           "key": "exercise/foxy-face",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/golf-rolling-ball-loop",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "b8da86f",
+  "governance_sha": "e0c1dee",
   "approved": 140,
   "disapproved": 1,
   "total": 332,
@@ -1597,7 +1597,7 @@
     {
       "lang": "zh-CN",
       "name": "Simplified Chinese",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-zh-cn",
       "approved": 2,
       "disapproved": 0,

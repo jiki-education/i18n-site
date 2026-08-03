@@ -2,10 +2,10 @@
 lang: "zh-CN"
 name: "Simplified Chinese"
 family: "zh"
-stage: "setup"
-governance_sha: "25595e6"
-content_version: "57f2343204ad"
-published_at: "2026-08-01"
+stage: "refining"
+governance_sha: "e0c1dee"
+content_version: "3373b3d3e787"
+published_at: "2026-08-03"
 term_count: 118
 category_id: 199
 forum_topic_id: 413
@@ -33,7 +33,7 @@ These are terms whose Chinese rendering is confirmed identical, character for ch
 | value | 值 | zh | Ordinary word. Identical in both scripts. |
 | dictionary | 字典 | zh | Identical in both scripts. |
 | element | 元素 | zh | Array element. Identical in both scripts. |
-| character (maze figure / mental-model "little person") | 角色 | zh | The on-screen figure the learner controls in maze exercises, and the same figure imagined "inside the computer" in the mental-model metaphor. Not 小人 (reads as "a petty/mean person" or an old humble first-person pronoun in Chinese, not a friendly figure). Distinct from the text-character sense (字符 in zh-CN's glossary), so no collision. Identical in both scripts. |
+| character (maze/on-screen figure) | 角色 | zh | The on-screen figure the learner controls in maze exercises. Not 小人 (reads as "a petty/mean person" or an old humble first-person pronoun in Chinese, not a friendly figure). Distinct from the text-character sense (字符 in zh-CN's glossary), so no collision. Identical in both scripts. For the separate "little person imagined inside the computer" mental-model sense, see each locale's own glossary — the two senses may take different words. |
 
 ### Tooling & engineering
 
@@ -176,7 +176,7 @@ These are terms where the Chinese is used in prose, so the "Use (zh-CN/en)" colu
 
 | English | Chinese | Use (zh-CN/en) | Notes |
 |---------|---------|----------|-------|
-| feature (platform capability) | 功能 | zh-CN | Deliberately distinct from 函数 (function); see `guide.md` § Style notes. Never use 函数 for a product feature. |
+| feature (platform capability) | 功能 | zh-CN | Deliberately distinct from 函数 (function); the two do not collide in Mainland usage. Never use 函数 for a product feature. |
 | course | 课程 | zh-CN | The whole Jiki course. Counted with 门, and the short form 这门课 is the natural way to say "this course" in running prose, so both are this one term. Distinct from 课 (lesson), 课程体系 (curriculum) and 教程 (tutorial). |
 | lesson | 课 | zh-CN | One teaching unit: 第 3 课, 一节课, counted with 节. |
 | exercise | 练习 | zh-CN | |
@@ -225,6 +225,58 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout), run as a single fable
+worker per `orchestrator.md`'s one-worker-per-scope rule. Logged here for review and **not**
+written to `glossary.md`.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| Premium (product tier) | kept English | Recurs app-wide ("Premium 会员", "升级到 Premium"); worth pinning as a product name. | medium |
+| plan (subscription) | 方案 | Chosen over 套餐/计划. | medium |
+| Dashboard | 主页 | 仪表盘 judged too technical for beginners. | medium |
+| Deep Dive (walkthrough video) | 深度解析 | Feature name across dashboard, hints panel, modals. | medium |
+| Ask Jiki (feature/tab) | 问 Jiki | Header variant: "卡住了？问问 Jiki 吧！". | medium |
+| scrubber (execution timeline) | 时间轴 | Picked over 进度条 to avoid colliding with video/lesson progress bars. | medium |
+| bonus scenario | 附加场景 | Pairs with existing 场景; bare "Bonus" badge → 附加. | medium |
+| unlock / locked (gamified) | 解锁 / 未解锁 | 锁定 was the alternative. | medium |
+| Learn to Build (product area) | 学习构建 | Named section in nav and Premium feature lists; must stay identical everywhere. | medium |
+| streak (verb phrases) | 连续学习天数 | Reuses the existing glossary noun; the noStreak/oneDayStreak phrasing (开启/累积你的连续学习天数) wants reviewer confirmation. | low |
+
+### 2026-08-01: zh-CN guide pruned; rationale moved here
+
+**Decided by:** agent (guide-pruning pass). No term rendering changed, and no rule was lost:
+everything cut was either rationale, research provenance, or content the locale guide
+already inherits unchanged from `../zh/guide.md` or restates from `glossary.md`.
+
+Rationale and provenance removed from `guide.md`, kept for the record:
+
+- **Audience.** The Mainland tech-education market is shaped by long-running,
+  human-authored, pre-LLM-era resources such as 廖雪峰的官方网站 and 菜鸟教程 (runoob.com):
+  short-sentence, problem-first, no-nonsense prose. That is the research behind this
+  locale's plainer register and behind the sparing use of sentence-final particles; the
+  behavioural instructions themselves are in `../zh/guide.md` § Writing norms and this
+  guide's § Register.
+- **Quotation marks.** The curly “ ” convention follows the GB/T 15834—2011 national
+  punctuation standard and is standard in Mainland technical writing. It contrasts with
+  Taiwan's corner-bracket convention.
+- **您.** The full rationale for 你-throughout is in `../zh/glossary-notes.md`.
+
+Duplication removed (behaviour unaffected, the same instruction still exists elsewhere):
+
+- The **"feature" vs "function"** style note (功能 vs 函数) is a term mapping and now lives
+  only in `glossary.md`'s `feature (platform capability)` row.
+- The **Jiki physical metaphors (zh-CN specifics)** section restated glyphs that are already
+  glossary rows (链/链条, 机器, 货架, 仓库, 摇柄) and repeated the board/whiteboard
+  one-word-one-object instruction that `glossary.md` § Jiki physical metaphors already
+  states in full. Cut from the guide; the glossary is unchanged.
+- The pitfall "break long English relative-clause chains into short Chinese sentences" is
+  inherited verbatim from `../zh/guide.md` § Writing norms, so the locale copy was cut. The
+  的-chain depth pitfall and the dropped-subject pitfall are zh-CN-only and were kept.
 
 ### 2026-08-01: `statement (logical claim)` is `判定`, not `断言`
 

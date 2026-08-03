@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "fc671310093a081113a8f301b6ff53fe"
-governance_sha: "73f520e"
+governance_sha: "795036d"
 content_version: "5622a766ea57"
-published_at: "2026-07-31"
+published_at: "2026-08-03"
+forum_topic_id: 754
 ---
 
 Quand tu écris du code, ce que tu fais en réalité, c'est expliquer ce que tu veux voir se produire, dans une langue que l'ordinateur comprend. Il existe énormément de langages de programmation différents, et tout autant d'interprètes qui prennent ce que tu as écrit et qui le transforment en des « uns » et des « zéros » que l'ordinateur peut comprendre. Dans ce cours, ton interprète s'appelle Jiki. Le cours entier porte son nom. Le voici : c'est Jiki. Jiki sera ton ami tout au long de ce voyage à travers le code. Son travail consiste à interpréter le code que tu écris et à le transformer en uns et zéros avec lesquels l'ordinateur peut vraiment agir.

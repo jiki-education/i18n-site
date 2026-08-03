@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/variables/source.md"
 en_md5: "dd0834017a8d42c22cca25966c1fdd91"
-governance_sha: "6cdf745"
-content_version: "7448b86a0549"
-published_at: "2026-08-02"
+governance_sha: "08a75bf"
+content_version: "019e8b14a541"
+published_at: "2026-08-03"
 ---
 
 Değişkenler (İngilizce: _variables_) bilgi saklamamızı sağlar. Kod yazarken çoğu zaman bir sayıyı veya bir karakter dizisini daha sonra kullanmak üzere saklamamız gerekir ve bunu değişkenlerle yaparız. Şimdi Jiki'nin deposunda biraz geriye çekilip bakalım: Jiki'nin bir raf takımı daha olduğunu göreceksiniz. İlk raf takımını zaten tanıyoruz; üzerinde fonksiyonlar, yani `move` ve `rectangle` gibi küçük makineler duruyor. Bu ikinci raf takımındaysa makineler yerine bir sürü kutu var ve işte bu kutulara değişken diyoruz. Jiki'ye bu kutulara herhangi bir şey koymasını söyleyebilir, daha sonra da tekrar çıkarmasını isteyebilirsiniz. Tıpkı fonksiyonların bir adı olduğu gibi her kutunun da bir adı vardır ve her kutunun içinde yalnızca tek bir şey bulunur. Şimdilik bu ya bir sayı ya da bir karakter dizisi olacak. Kursun ilerleyen bölümlerinde kutularda daha karmaşık şeyler saklamayı da göreceğiz.
@@ -22,7 +22,7 @@ Değişkenler (İngilizce: _variables_) bilgi saklamamızı sağlar. Kod yazarke
   height="173"
 />
 
-Peki Jiki'ye bir kutu yapıp içine bir şey koymasını nasıl söyleriz? Bunun için `let` (olsun) anahtar kelimesini kullanırız. `let` anahtar kelimesi Jiki'ye yeni bir kutu yapması gerektiğini söyler. Onu bir karton kutuyu ambalajından çıkarıp katlarını açarken hayal edebilirsiniz. Sonra `let` kelimesinden sonra gelene bakar; bu, kutuya yapıştıracağı etikettir, bu örnekte `name` (isim). Kalemini çıkarır ve etikete `name` yazar. Ardından eşittir işaretinden (İngilizce: _equal sign_) sonra gelene bakar. Bu örnekte bu benim adım, `"Jeremy"`. `"Jeremy"` bir karakter dizisi olduğu için Jiki bir kâğıt parçası alır ve üzerine `"Jeremy"` yazar. Bu, şimdiye kadar çalıştığınız renklerle tıpatıp aynı türden bir karakter dizisi. Sonra o kâğıt parçasını kutunun içine koyar.
+Peki Jiki'ye bir kutu yapıp içine bir şey koymasını nasıl söyleriz? Bunun için `let` anahtar kelimesini kullanırız. Bu kelimenin birebir Türkçe karşılığı yok; “olsun” anlamında düşünebilirsiniz. Yaptığı iş ikiye ayrılır: değişken tanımlama ve değer atama. `let` anahtar kelimesi Jiki'ye yeni bir kutu yapması gerektiğini söyler. Onu bir karton kutuyu ambalajından çıkarıp katlarını açarken hayal edebilirsiniz. Sonra `let` kelimesinden sonra gelene bakar; bu, kutuya yapıştıracağı etikettir, bu örnekte `name` (isim). Kalemini çıkarır ve etikete `name` yazar. Ardından eşittir işaretinden (İngilizce: _equal sign_) sonra gelene bakar. Bu örnekte bu benim adım, `"Jeremy"`. `"Jeremy"` bir karakter dizisi olduğu için Jiki bir kâğıt parçası alır ve üzerine `"Jeremy"` yazar. Bu, şimdiye kadar çalıştığınız renklerle tıpatıp aynı türden bir karakter dizisi. Sonra o kâğıt parçasını kutunun içine koyar.
 
 ```javascript
 let name = "Jeremy"

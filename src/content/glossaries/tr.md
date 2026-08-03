@@ -3,10 +3,10 @@ lang: "tr"
 name: "Turkish"
 family: null
 stage: "refining"
-governance_sha: "6935dd7"
-content_version: "af3e894e95e8"
+governance_sha: "08a75bf"
+content_version: "caa9be6dbd7c"
 published_at: "2026-08-03"
-term_count: 59
+term_count: 60
 category_id: 136
 forum_topic_id: 328
 video_player_forum_topic_id: 783
@@ -50,7 +50,8 @@ These are terms where the Turkish is used in prose, so the "Use (tr/en)" column 
 | function | fonksiyon | tr | The *keyword* `function` in code stays English; the concept in prose is _fonksiyon_. |
 | parameter | parametre | tr | Declaration-site name. |
 | argument | argüman | tr | Call-site value. |
-| keyword | anahtar kelime | tr | Unconfirmed draft (agent, 2026-08-03). The keyword itself stays English in code and in prose (`repeat` anahtar kelimesi, `if` anahtar kelimesi); this is the carrier noun it takes. Deliberately not _anahtar sözcük_, so one form is used everywhere. |
+| keyword | anahtar kelime | tr | The keyword itself stays English in code and in prose (`repeat` anahtar kelimesi, `if` anahtar kelimesi); this is the carrier noun it takes. Deliberately not _anahtar sözcük_, so one form is used everywhere. |
+| `let` (first-mention gloss) | olsun | tr | The keyword `let` itself always stays English, in code and in prose; _olsun_ is only the sense given when it is first introduced, and it is never used as a standalone term afterwards. Never _izin ver_ ("allow / give permission"), which is the wrong sense of English "let". Introduce it by what it does, per the first-use rule in `guide.md`. |
 | brackets (the two after a function name) | parantez | tr | Bare _parantez_ already means round brackets in Turkish, so it needs no qualifier here; square brackets are _köşeli parantez_ and curly ones _süslü parantez_, so use the qualified form whenever those are meant. Plural: _parantezler_ ("o iki parantez"). |
 
 ### Loops, state & program flow
@@ -90,10 +91,10 @@ These are terms where the Turkish is used in prose, so the "Use (tr/en)" column 
 
 | English | Turkish | Use (tr/en) | Notes |
 |---------|---------|-------------|-------|
-| hue | renk tonu | tr | Unconfirmed draft (agent, 2026-08-03). Always the two-word form, including inside a compact describer argument list ("renk tonu: ${arg1}"); bare _ton_ is not a short form for it. |
-| saturation | doygunluk | tr | Unconfirmed draft (agent, 2026-08-03). |
-| lightness | açıklık | tr | Unconfirmed draft (agent, 2026-08-03). The HSL L channel is **always** _açıklık_, including where the English source says "brightness" loosely for the same channel (it does, in the `hsl` and `colors` concepts). Never render it _parlaklık_: that word is reserved for a genuinely separate brightness/luminosity concept, and using it here collapses the two. |
-| canvas (drawing surface) | tuval | tr | Unconfirmed draft (agent, 2026-08-03). Takes ordinary case suffixes (_tuvali temizledi_, _tuval boyunca_). |
+| hue | renk tonu | tr | Always the two-word form, including inside a compact describer argument list ("renk tonu: ${arg1}"); bare _ton_ is not a short form for it. |
+| saturation | doygunluk | tr | |
+| lightness | açıklık | tr | The HSL L channel is **always** _açıklık_, including where the English source says "brightness" loosely for the same channel (it does, in the `hsl` and `colors` concepts). Never render it _parlaklık_: that word is reserved for a genuinely separate brightness/luminosity concept, and using it here collapses the two. |
+| canvas (drawing surface) | tuval | tr | Takes ordinary case suffixes (_tuvali temizledi_, _tuval boyunca_). |
 
 ## Keep in English
 
@@ -132,6 +133,59 @@ Load-bearing teaching terms.
 ---
 
 ## Decision log
+
+### 2026-08-03: Drawing/color terms, `keyword` and `let` confirmed by macroicetr
+
+**Decided by:** native speaker (macroicetr), forum topic 328 ("[Turkish Review] Glossary"),
+post 8: https://forum.jiki.io/t/328/8.
+**Status:** human-decided, settled. Supersedes the "unconfirmed drafts" status recorded in
+the entry below, and closes the open question on `let` recorded there.
+**Terms affected:** `hue`, `saturation`, `lightness`, `canvas`, `keyword`, and a new `let`
+row.
+
+All five drafted rows were confirmed as they stood, so no rendering moved; what changed is
+that they are now protected rather than provisional. The "Unconfirmed draft" marker was
+removed from each. Two rows gained reasoning worth keeping, and one new row was added.
+
+- **`lightness` → açıklık, kept distinct from _parlaklık_.** macroicetr explicitly endorsed
+  the separation ("makes sense to separate the meanings") and pointed out that Photoshop's
+  Turkish interface also uses _açıklık_ for this channel, so the choice matches software a
+  learner may already have met. The row's existing guard against _parlaklık_ therefore now
+  rests on a native speaker's call, not on an agent's reading of the English sources.
+- **`keyword` → anahtar kelime, not _anahtar sözcük_.** macroicetr confirmed _kelime_ is the
+  right choice here, which is the same conclusion the row already recorded from usage. The
+  two words are synonyms in Turkish, but _kelime_ is the ordinary everyday one and the form
+  the content already uses throughout, so nothing had to change.
+- **`hue` → renk tonu, `saturation` → doygunluk, `canvas` → tuval.** Confirmed with no
+  comment beyond agreement. The `hue` row's insistence on the full two-word form and the
+  outstanding content fix to `draw`'s `hsl` describer ("ton: ${arg1}") are unaffected and
+  still open.
+- **`let` → olsun, not _izin ver_.** macroicetr settled the open question in favour of
+  _olsun_. His reasoning against _izin ver_ is that it means "allow / grant permission",
+  which is simply the wrong sense of English "let": nothing is being permitted when a
+  variable is declared. He accepted _olsun_ as imperfect but correct, and it now has a
+  glossary row of its own rather than living only as a one-off gloss on one page.
+
+**Two first-use-explanation instructions came with the confirmations, and both went to
+`guide.md`.** They are rules about how to write, not term mappings, and neither is specific
+enough to one row to sit in a `Notes` column the way `if statement`'s parenthetical does:
+
+- For _açıklık_, macroicetr asked for a brief one-sentence explanation of what the word
+  means at its first mention in content, because the word alone will be unfamiliar to a
+  newcomer meeting it as a colour channel.
+- For `let`, his point was that since the keyword has no exact Turkish translation, trying
+  to translate the word alone is the wrong move. Explain it instead with clear example
+  phrases at its first introduction, specifically _değişken tanımlama_ (variable
+  declaration) and _değer atama_ (value assignment). Once that logic is established,
+  _olsun_ reads naturally.
+
+Both were applied to translated content in the same pass: `concepts/variables/tr.md` now
+introduces `let` through those two phrases instead of the bare "(olsun)" parenthetical it
+carried, and `exercises/rainbow/instructions/tr.md` now says what _açıklık_ controls at the
+point the term is taught. The two exercise message catalogs that use _açıklık_
+(`exercises/rainbow` and `exercise-categories/draw`) are short UI strings with no room for
+an explanation and were left alone; the concept pages `hsl` and `colors`, the other places
+the term would land, have no Turkish translation yet.
 
 ### 2026-08-03: `move` (the character) is _götürmek_, never _taşımak_
 

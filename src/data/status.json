@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "d6c11e7",
-  "approved": 189,
+  "governance_sha": "7b781d0",
+  "approved": 190,
   "disapproved": 0,
   "total": 457,
   "languages": [
@@ -462,7 +462,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 19,
+      "approved": 20,
       "disapproved": 0,
       "total": 34,
       "items": [
@@ -573,8 +573,8 @@
         },
         {
           "key": "exercise/digital-clock",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1110,
+          "status": "approved"
         },
         {
           "key": "concept/arrays",

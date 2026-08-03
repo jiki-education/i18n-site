@@ -3,10 +3,10 @@ lang: "hi"
 name: "Hindi"
 family: null
 stage: "refining"
-governance_sha: "f023aa1"
-content_version: "7a7fff390e5d"
-published_at: "2026-08-02"
-term_count: 120
+governance_sha: "65fc365"
+content_version: "68db13f9f122"
+published_at: "2026-08-03"
+term_count: 122
 category_id: 237
 forum_topic_id: 482
 video_player_forum_topic_id: 757
@@ -158,6 +158,8 @@ clarification"). Split by theme for readability; every table below follows the s
 | tutorial | ट्यूटोरियल | m | hi | Kept distinct from पाठ (lesson). |
 | solution (learner's submission) | हल | m | hi | |
 | scenario | सिनेरियो | m | hi | Jiki-specific: a structured variant within an exercise. Low confidence: flag for native-speaker review. |
+| challenge (an optional harder exercise) | चैलेंज | m | hi | **Confirmed by a native speaker.** Never चुनौती for this sense. **Masculine**, so the agreement changes with the word: "चैलेंज पूरा हुआ", never "चुनौती पूरी हुई". Same form in the plural (चैलेंज), oblique plural चैलेंजों. The verb "to challenge yourself" is a different thing and is not this row; write खुद को परखना rather than mixing चुनौती back into a sentence about चैलेंज. |
+| page (of the site or app) | पेज | m | hi | **Confirmed by a native speaker.** Never पृष्ठ, which carries the "page of a book" meaning. |
 | bootcamp | बूटकैंप | m | hi | Treated close to a proper noun where it names Jiki's predecessor program. |
 | canvas (graphics exercises) | कैनवास | m | hi | The drawing surface in creative-coding exercises. |
 | feature (platform capability) | फीचर | m | hi | Kept distinct from फंक्शन; no collision risk in Hindi. सुविधा is a good alternative in warmer prose. |
@@ -245,6 +247,89 @@ Flag these via `/action-forum-post` once real native-speaker feedback is availab
 ---
 
 ## Decision log
+
+### 2026-08-03: The imperative form settled (-इए vs -एं), plus challenge and page (forum topic 999)
+
+**Decided by:** @suditi (post 5) and @dazecodes (post 6) of forum topic 999 ("[Hindi] First
+website copy translated"), both native speakers, answering a question we put to them.
+**Status: native-speaker confirmed**, on two independent readings.
+
+**Terms affected:** `challenge` (new row), `page` (new row).
+
+#### Why it was asked
+
+`guide.md` said nothing at all about which आप-form imperative to use. That silence is how a
+website-copy pass came to flip several hundred app strings wholesale from -इए (कीजिए,
+देखिए, आज़माइए) to -एं (करें, देखें, आज़माएं) with nothing in the guidance to stop it, while
+the lesson pages stayed on -इए. Both forms are आप-form and both are correct, so the question
+was never right-vs-wrong; it was that one product was spelling the same act two ways.
+
+#### What they said
+
+@suditi:
+
+> "It's okay to use the second form that you've used in the app now. You can use the second
+> form for most cases except for the problem name. According to me the first form is politer
+> than the second. But it feels weird for the button names or short texts to use the first
+> form and ruder to use the second form for problem name."
+
+@dazecodes, agreeing and refining:
+
+> "Yes, I feel too that the first form is much more polite and the second one feels
+> polite-direct. I think for short phrases of course the second form wins, but say you are
+> requesting something than the first form should take over. फिर से कोशिश करें would be
+> totally fine if it means to say 'Try Again' when our code is not working."
+
+#### The rule derived, and where the two framings differ
+
+The rule is in `guide.md` § Formality: -इए for teaching prose, for anything phrased as a
+request, and for titles; -एं for the interface's own short labels and for the short messages
+the app shows in reply to something the learner just did.
+
+**Their two framings are not identical, and the difference is worth recording.** @suditi
+draws the line at *title vs everything else* ("most cases" get -एं, the problem name does
+not). @dazecodes draws it at *short label vs request* (short phrases get -एं, requests get
+-इए). On every case Jiki actually has they agree, because our titles are also the places we
+ask something of the learner, and our -एं strings are all buttons, menu items and reactions.
+The guide states both halves rather than picking one framing, and resolves the one place they
+could disagree (a short piece of teaching text) in favour of @dazecodes' test, since a hint
+that asks something of the learner is a request whatever its length.
+
+**"Problem name" is read as the exercise title**, and by extension the task, scenario and
+level titles, which are the same kind of object. That reading is an inference: the question
+she was answering did not mention titles, so she introduced the case herself, and Jiki has no
+other screen furniture that "problem name" could plausibly mean. If she meant something
+narrower, the cost of the wider reading is politeness we did not need, not rudeness.
+
+#### The two terms
+
+Both are **native-speaker confirmed and therefore protected**, per "Glossary writes are
+additive" in `global/workflow.md`.
+
+- **`challenge` (an optional harder exercise) → चैलेंज.** Her words: "challenge: चैलेंज. It
+  is common enough." This is a **revert**: the website-copy pass had changed चैलेंज to
+  चुनौती across 33 keys on its own initiative. The revert is not a word swap, because चुनौती
+  is feminine and चैलेंज is masculine, so every agreeing word around it moved too ("चुनौती
+  पूरी हुई!" → "चैलेंज पूरा हुआ!", "हाल की चुनौतियां" → "हाल के चैलेंज"). One string carried
+  both senses at once ("challenge yourself with Premium Challenges"), which would have read
+  as चैलेंज and चुनौती in one sentence; the verb sense was rewritten to खुद को परखें so the
+  noun row is not contradicted by the sentence around it.
+- **`page` → पेज.** Her words: "page: पेज. Same for this. Plus पृष्ठ gives the pages of a
+  book meaning." The catalog was already पेज throughout, so nothing changed in the text.
+  The row exists because that spelling was our own guess until now and would have kept
+  drifting; it is now settled and protected.
+
+#### An independent second verdict on the engine, on a different thread
+
+@dazecodes has also backed @suditi's translation-quality judgement once before: on **forum
+topic 893** ("[Hindi Review] Progress?"), post 7, "I agree, the third is the best of the
+three", agreeing with her post 5 on the same three candidates. **That is not a second verdict
+on the DeepSeek choice**, which was made on topic 925 from a different, blind A/B/C sample
+(see the 2026-08-02 entry below); topic 893 was an earlier, unlabelled three-way comparison
+of ungoverned model output. What it is worth is that our two most active Hindi reviewers
+independently pick the same Hindi out of a set, which is the assumption the single-reviewer
+engine decision rests on. Recorded here because it is the kind of corroboration that is easy
+to lose, and easy to overstate.
 
 ### 2026-08-02: Chandrabindu vs anusvara settled as anusvara (house default, medium confidence)
 

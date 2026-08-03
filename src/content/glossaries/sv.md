@@ -3,9 +3,9 @@ lang: "sv"
 name: "Swedish"
 family: null
 stage: "setup"
-governance_sha: "593199c"
-content_version: "33c68d018a29"
-published_at: "2026-08-01"
+governance_sha: "e56bb6a"
+content_version: "7c150281053b"
+published_at: "2026-08-03"
 term_count: 95
 category_id: 365
 forum_topic_id: 828
@@ -174,6 +174,70 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout), run as a single fable
+worker per `orchestrator.md`'s one-worker-per-scope rule. Logged here for review and **not**
+written to `glossary.md`.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| challenge (product area) | utmaning | Used across nav, tabs and cards; sets app-wide precedent. | medium |
+| hint | ledtråd | Kept distinct from casual "tip" → tips. | medium |
+| streak | svit | Loanword _streak_ is also current; wants a native check. | medium |
+| badge | märke | Kept distinct from achievements → prestationer. | medium |
+| scrubber | tidslinjen | No settled Swedish word; rendered as "the timeline". | medium |
+| scenario | scenario (pl. scenarier) | huvudscenario / bonusscenario. | medium |
+| fair use limits | gräns(er) för rimlig användning | No Swedish idiom; descriptive. | medium |
+
+"Agentic coding" → "agentisk kodning" (`layout.footer.freeContent.agenticGuides`) is
+emerging, not settled, Swedish.
+
+Flags, not glossary rows: `challenges.empty.inProgressDescription` quotes a "Kom igång"
+button whose own key is in a still-untranslated namespace — must match once that lands.
+`modals.premiumUpgrade.featureLivestreams` runs noticeably longer than English and may wrap.
+
+### 2026-08-01: `guide.md` trimmed to rules; rationale moved here
+
+**Decided by:** agent, on the owner's instruction to strip rationale from every language
+guide (the guide is loaded into the prompt for every Swedish item, in every pass).
+**Terms affected:** none. No rule was dropped and no glossary row changed.
+
+The rationale, connotation analysis and emphasis that used to sit in `guide.md` alongside
+each rule is recorded here instead:
+
+- **"du" throughout.** The du-reform of the late 1960s made _du_ universal, and modern
+  Swedish instructional and marketing copy uses nothing else. _Ni_ addressed to one reader
+  reads as either archaic or as shop-counter affectation.
+- **"Låt oss" is banned** because it is a calque of English "Let's...": in Swedish it reads
+  as a translated hymn rather than as speech.
+- **Sweden-Swedish over Finland-Swedish** shows up most visibly on `loop` (Finland-Swedish
+  curriculum documents keep _slinga_; see the bootstrap entry below).
+- **V2 inversion.** Tracking English word order after a fronted adverbial is the single
+  most common way a Swedish translation gives itself away, which is why the rule and the
+  self-check both name it.
+- **Särskrivning** is the most visible error in written Swedish, and it changes meaning
+  outright rather than merely looking sloppy.
+- **The -ing rule.** An English participle carried straight over ("När skrivande kod")
+  reads as machine output; Swedish wants a finite verb.
+- **Em dashes.** Swedish does not use the em dash at all, so `global/rules.md`'s house rule
+  costs Swedish nothing. The tankstreck is a spaced en dash and is a different mark.
+- **No Oxford comma** because the construction does not exist in Swedish at all.
+- **Anti-patterns list.** The old guide restated four rules it had already given
+  imperatively, plus the anglicisms (_deploya_, _exekvera_, _inkrementera_, _konkatenera_,
+  _indentering_) and false friends (_karaktär_, _uppgift_, _kalla_) that `glossary.md`
+  already rules out row by row. It is now a one-line self-check that names each once.
+  _kontrollera_ for English "control" is the one item with no glossary row; it stayed in
+  the guide.
+
+**Contradiction fixed: quotation marks.** The guide's imperative rule has always been the
+Swedish standard `”...”` (the same high right-hand mark at both ends), but roughly a dozen
+of its own worked examples used the German-style low opening mark `„...”`. The examples were
+wrong and are now consistent with the rule, which also now names `„` explicitly as a mark to
+avoid. The rule outranks its own examples, and no native speaker had decided otherwise.
 
 ### 2026-08-01: `dictionary` is `uppslagstabell`, not `ordbok`; `array` confirmed as `array`
 

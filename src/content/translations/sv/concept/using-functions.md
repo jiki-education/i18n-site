@@ -2,15 +2,15 @@
 lang: "sv"
 type: "concept"
 slug: "using-functions"
-title: "Använda funktioner"
+title: "Att använda funktioner"
 status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
-en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "93bb263"
-content_version: "f1c79010ea40"
-published_at: "2026-07-31"
-forum_topic_id: 828
+en_md5: "fc671310093a081113a8f301b6ff53fe"
+governance_sha: "32a4d0d"
+content_version: "eab2d607785c"
+published_at: "2026-08-03"
+forum_topic_id: 831
 ---
 
 När du skriver kod är det du egentligen gör att berätta vad du vill ska hända, på ett programmeringsspråk som en dator förstår. Det finns massor av olika programmeringsspråk, och det finns massor av olika tolkar (_interpreters_ på engelska) som tar det du skriver och gör om det till ettorna och nollorna som en dator förstår. I den här kursen är Jiki din tolk. Hela kursen är uppkallad efter honom. Det här är Jiki. Jiki blir din kompis på den här programmeringsresan. Det är hans jobb att tolka koden du skriver och göra om den till ettorna och nollorna som datorn faktiskt kan göra något med.
@@ -27,7 +27,7 @@ Hela poängen med programmering är att ge tolken, i det här fallet Jiki, rätt
 
 När jag lärde mig programmera för 34 år sedan var det här tankemodellen jag byggde upp, och det är den jag har än i dag. Jag förstår hur datorer fungerar hela vägen ner till ettorna och nollorna, men ärligt talat tänker jag aldrig på det. I mitt huvud bor det en liten gubbe inne i datorn, och jag talar om för honom vad han ska göra. Så häng med mig på det här. Det är en kraftfull tankemodell att bygga upp, och om du börjar tänka så här bildligt kring vad personen inne i datorn gör, kommer det att hjälpa dig långt när du lär dig programmera.
 
-Nu ska vi börja med att titta på ett av de mest grundläggande begreppen inom programmering: funktioner (_functions_ på engelska). Funktioner är som små maskiner som du kan säga åt Jiki att använda. Om vi tittar in i Jikis lager, det är där han håller till, ser du att han har en hylla med tre olika maskiner på: `move` (flytta dig), `turnLeft` (sväng vänster) och `turnRight` (sväng höger).
+Nu ska vi börja med att titta på ett av de mest grundläggande begreppen inom programmering: funktioner (_functions_ på engelska). Funktioner är som små maskiner som du kan säga åt Jiki att använda. Om vi tittar in i Jikis lager, det är där han håller till, ser du att han har en hylla med tre olika maskiner på: `move` (flytta), `turnLeft` (sväng vänster) och `turnRight` (sväng höger).
 
 <img
   class="concept-image"

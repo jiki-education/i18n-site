@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "43cd531",
+  "governance_sha": "55e78b6",
   "approved": 192,
   "disapproved": 0,
-  "total": 467,
+  "total": 477,
   "languages": [
     {
       "lang": "it",
@@ -514,7 +514,7 @@
       "category_slug": "i18n-el",
       "approved": 22,
       "disapproved": 0,
-      "total": 34,
+      "total": 44,
       "items": [
         {
           "key": "glossary",
@@ -685,6 +685,56 @@
           "key": "exercise/maze-solve-repeat",
           "topic_id": 1111,
           "status": "approved"
+        },
+        {
+          "key": "exercise/space-invaders-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/traffic-lights",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-snowman",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-traffic-lights",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/structured-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/plant-the-flowers",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/finish-wall",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },

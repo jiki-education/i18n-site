@@ -2,10 +2,10 @@
 lang: "de"
 name: "German"
 family: null
-stage: "setup"
-governance_sha: "8e3de87"
-content_version: "b531259d6149"
-published_at: "2026-07-31"
+stage: "refining"
+governance_sha: "413a493"
+content_version: "e57981324346"
+published_at: "2026-08-03"
 term_count: 57
 category_id: 71
 forum_topic_id: 340
@@ -130,6 +130,88 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout), run as a single fable
+worker per `orchestrator.md`'s one-worker-per-scope rule. Logged here for review and **not**
+written to `glossary.md`.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| challenge (platform content type) | Challenge | Kept English as a feature name. | medium |
+| hint | Hinweis | | medium |
+| badge | Abzeichen | | medium |
+| frame (execution frame) | Schritt | | medium |
+| plan (subscription) | Plan | | medium |
+| AI | KI | | high |
+| scrubber (timeline control) | Scrubber | Kept English; no settled German term. | low |
+| Learn to Code / Learn to Build | kept English | Treated as branded section names. | medium |
+
+Layout risks flagged by the worker: "Fehlgeschlagen" / "Ausstehend" run long in tight status
+badges (shorter fallbacks: "Fehler" / "Offen"), "In Bearbeitung" in the challenges tab row,
+and the video pill "Du hast {name} fertig geschaut" vs English "Finished {name}".
+
+### 2026-08-01: `guide.md` trimmed to rules only (rationale moved here)
+
+**Decided by:** owner (iHiD), as part of the cross-language guide-trimming pass. No term
+mapping changed, and no glossary row was edited. `guide.md` is loaded into the prompt for
+every German item in every pass, so the material below was moved out of it and kept here.
+
+**Two contradictions were fixed in the guide, on the authority of `global/voice.md`:**
+
+- The "Jargon and loanword rules" section told the translator to gloss `String` with
+  `Zeichenkette` "once at first use, then `String` throughout". `global/voice.md` is
+  explicit that a gloss is triggered **only** by a `<define>` tag and that auto-glossing is
+  forbidden, and the tidy pass in `global/translating.md` lists auto-glosses as something to
+  remove. The first-use trigger was removed. The term decision itself was already correct in
+  `glossary.md` (`string` row: gloss as "String (Zeichenkette)" where the source `<define>`s
+  it, then "String" throughout), so nothing was lost.
+- The "Acronyms" worked examples told the translator to explain "API" and "CLI" "on first
+  use", the same forbidden auto-gloss trigger. Both are term decisions already carried
+  verbatim by `glossary.md` (`API` in the Keep-in-English table, with the instruction to
+  explain the concept in German where the source defines it; `CLI (the concept)` =
+  `Kommandozeile`, "the working term itself, not the bare acronym"), so the guide bullets
+  were dropped. `global/voice.md`'s general acronym rule still applies unchanged.
+- The quotation-mark rule named German quotes as „…“ (low-opening, high-closing) but wrote
+  the closing glyph as a straight ASCII `"`. The rule's own statement wins, so the example
+  now uses „…“.
+
+**Rationale and provenance moved out of the guide:**
+
+- **Register / du.** The informal, lowercase "du" was adopted because it is the standard
+  address form in modern German coding tutorials and platform copy, confirmed against real
+  German coding tutorials and Duolingo's German localization. Capitalized "Du" is only
+  optionally correct in personal letters and emails under Duden's spelling rule, and is not
+  the norm for tutorial or platform copy whatever some marketing copy does. "Sie" was
+  rejected as reading like a corporate manual rather than a mentor, and the impersonal
+  constructions of print-era German programming textbooks were rejected as the older
+  register. The rules themselves stay in the guide.
+- **The "wosch-Glossar" reference source.** A German CS glossary by a German university
+  professor, findable by searching for the name. It is a useful *inventory*: it gives a
+  German form for essentially every English computing word, so it answers "does a German
+  rendering exist at all". It is not a style model. It is deliberately purist, and its
+  renderings sit far outside this course's register ("Fehler beseitigen" for *debug*,
+  "Fehleraufspürer" for *debugger*, where German learners say "debuggen" and "Debugger"). A
+  term found only there, and not in real German teaching material or developer speech, fails
+  the "default to the ordinary, common word" test in `global/voice.md`.
+- **The native/loanword mix.** German programming education genuinely mixes native coinages
+  (`Funktion`, `Schleife`, `Anweisung`, `Rückgabewert`) with fully naturalized English
+  loanwords (`Array`, `API`, `Framework`, `Tool`). Which applies to a given term is recorded
+  in the glossary's `Use (de/en)` column; there is no separate rule for the translator to
+  apply, beyond `global/voice.md`'s ordinary-word principle.
+- **Audience note.** The German-language tech-education market expects clear, precise
+  writing that still reads warm and encouraging, not the impersonal, formal register of
+  older print textbooks. This is `global/voice.md`'s tone in German dress, so it was cut
+  from the guide.
+
+**Term decisions removed from the guide's prose** because `glossary.md` already carries them
+verbatim: `Befehl` vs `Anweisung`, `Übung` vs `Aufgabe`, `Tafel` as one word for one object,
+and `Interpreter` as a person rather than a program. The one part of the `Interpreter` entry
+that is a *phrasing* rule rather than a term mapping (keep the surrounding prose personal and
+use the verb `interpretieren` nearby) was kept in the guide's style notes.
 
 ### 2026-07-31: `input slot` = `Trichter` (resolves the open objection)
 

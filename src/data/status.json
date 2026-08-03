@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "21e9951",
+  "governance_sha": "413a493",
   "approved": 170,
   "disapproved": 0,
-  "total": 426,
+  "total": 439,
   "languages": [
     {
       "lang": "it",
@@ -1405,11 +1405,11 @@
     {
       "lang": "sv",
       "name": "Swedish",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-sv",
       "approved": 4,
       "disapproved": 0,
-      "total": 45,
+      "total": 56,
       "items": [
         {
           "key": "glossary",
@@ -1633,6 +1633,61 @@
         },
         {
           "key": "concept/string-templates",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/type-conversion",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/random",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/updating-dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/updating-variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/while-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
           "topic_id": null,
           "status": "pending"
         }
@@ -1938,6 +1993,62 @@
       ]
     },
     {
+      "lang": "de",
+      "name": "German",
+      "stage": "refining",
+      "category_slug": "i18n-de",
+      "approved": 2,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 340,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 738,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 739,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 798,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "ko",
       "name": "Korean",
       "stage": "refining",
@@ -2044,52 +2155,6 @@
         },
         {
           "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "de",
-      "name": "German",
-      "stage": "setup",
-      "category_slug": "i18n-de",
-      "approved": 2,
-      "disapproved": 0,
-      "total": 7,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 340,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 738,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 739,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 798,
-          "status": "approved"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
           "topic_id": null,
           "status": "pending"
         }

@@ -3,9 +3,9 @@ lang: "ja"
 name: "Japanese"
 family: null
 stage: "setup"
-governance_sha: "199762c"
-content_version: "a4b36a7eb689"
-published_at: "2026-08-02"
+governance_sha: "0e7d01d"
+content_version: "cfbc80fbe123"
+published_at: "2026-08-03"
 term_count: 66
 category_id: 70
 forum_topic_id: 311
@@ -61,7 +61,7 @@ These are terms where the Japanese is used in prose, so the "Use (ja/en)" column
 | English | Japanese | Use (ja/en) | Notes |
 |---------|----------|-------------|-------|
 | keyword | キーワード | ja | 「予約語」is a more precise alternative; do not mix. |
-| interpreter (the program) | インタプリタ | ja | The software sense: the thing that turns written code into 1 と 0. Use インタプリタ, not インタープリター: this is an established exception to the guide's keep-the-ー rule. |
+| interpreter (the program) | インタプリター | ja | The software sense: the thing that turns written code into 1 と 0. Keep the final ー: the guide's keep-the-ー rule applies here too. Do not write インタプリタ, and do not stretch it to インタープリター. |
 | interpreter (the one interpreting, incl. Jiki) | 通訳者 | ja | The personified sense, where the interpreter is named as a someone (Jiki). **Never bare 通訳 here**: 通訳 on its own names the *activity*, so 「このコースでの通訳は Jiki です」reads as Jiki being a kind of interpreting. Bare 通訳 is correct only in activity phrasings (「Jiki が通訳をしてくれます」「通訳の役割を担うプログラム」), and those are usually the more natural rewrite. |
 | instruction (given to Jiki) | 指示 | ja | Do not use 命令, which reads as a command in the military/legal register (and as a CPU instruction). |
 | mental model | イメージ | ja | 「頭の中のイメージ」when the "in your head" part needs saying. Do not use メンタルモデル and do not drift to 考え方 mid-page: one word per document. |
@@ -133,7 +133,7 @@ not substitute one for the other on a given page.
 | warehouse (Jiki's warehouse) | 倉庫 | Keep distinct from 作業場 (workshop). |
 | workshop (Jiki's workshop) | 作業場 | Keep distinct from 倉庫 (warehouse). |
 | board / whiteboard | ホワイトボード | **One object, one word:** the board the learner writes instructions on for Jiki to follow, and the board a function keeps its own instructions and notes on, are the same thing and take the same word. Do not use 掲示板 (reads as an online forum), 黒板 (a classroom blackboard), or bare ボード. |
-| crank (machine crank) | ハンドル | Rendered as the verb phrase **「ハンドルを回す」** ("turn the handle") rather than a bare noun. Powering the machine up: 「ハンドルを回して電源を入れる」. |
+| crank (machine crank) | クランク | Rendered as the verb phrase **「クランクを回す」** ("turn the crank") rather than a bare noun. Powering the machine up: 「クランクを回して電源を入れる」. **Never ハンドル**, which in Japanese means a car's steering wheel or a bike's handlebars, not a mechanical crank. |
 | paper (a string) | 紙 | Jiki writes each string on a piece of paper. |
 | chain (array metaphor) | 鎖 | A link is 鎖の輪 (or 輪). **Low confidence, flagged for native-speaker review.** |
 | input slot | 差し込み口 | 「入力スロット」is an alternative. **Low confidence, flagged for native-speaker review.** |
@@ -158,6 +158,45 @@ Example: 「関数を呼び出すには、関数名のあとに括弧（`()`）�
 ---
 
 ## Decision log
+
+### 2026-08-03: `crank` becomes クランク, and the program-sense `interpreter` keeps its ー
+
+**Decided by:** alexfalcon528, a native speaker, on
+<https://forum.jiki.io/t/japanese-review-glossary/311> (post 5), with the crank point made
+independently a second time on <https://forum.jiki.io/t/japanese-review-using-functions/764>
+(post 2, paragraph 5).
+**Terms affected:** `crank (machine crank)`; `interpreter (the program)`.
+
+**`crank` moves from `ハンドル` to `クランク`.**
+
+> `ハンドル` in Japanese almost exclusively refers to the steering wheel of a car or handles
+> on a bike/motorcycle. クランク is the generally accepted term for a mechanical crank.
+
+and, on the using-functions page itself:
+
+> `ハンドル` does not map 1 to 1 onto the English word 'handle.' It means 'steering wheel.'
+> `クランク` is the generally accepted word for a crank (as in the mechanical part, comprised
+> of a handle and shaft used to power/operate a machine, such as the crank of an old film
+> camera).
+
+The source image is Jiki turning a crank on the side of a machine to power it up, so the
+steering-wheel reading is not a near miss, it is a different object. The verb-phrase framing
+the row already carried is kept: 「クランクを回して電源を入れる」.
+
+**`interpreter` (the program) moves from `インタプリタ` to `インタプリター`.** This corrects
+the 2026-08-02 entry below, which recorded the dropped ー as a deliberate exception to
+`guide.md`'s keep-the-ー rule on the grounds that the reviewer had written it that way. The
+same reviewer has since said the exception was a mistake:
+
+> both `インタプリター` and `インタプリタ` are generally accepted, but the *correct* form is
+> `インタプリター`. There is a long-standing trend in the IT industry in Japan to drop the
+> long-vowel `ー`, so it is common to see both, but the general rule of not dropping it should
+> be followed in most if not all cases. I apologize for causing confusion.
+
+So Japanese now has **no** exception to its own long-vowel rule: `guide.md` says keep the ー,
+and this row keeps it. The `インタプリタ`/`通訳者` split from the 2026-08-02 entry is
+untouched; only the spelling of the software-sense word changes. `インタープリター`, the form
+the row held before that split, stays rejected.
 
 ### 2026-08-02: `interpreter` splits into インタプリタ (program) and 通訳者 (person)
 

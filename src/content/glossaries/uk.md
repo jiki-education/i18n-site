@@ -3,10 +3,10 @@ lang: "uk"
 name: "Ukrainian"
 family: null
 stage: "refining"
-governance_sha: "ea7c7e7"
-content_version: "8644f82d9c79"
+governance_sha: "e23e66a"
+content_version: "929cbca426b4"
 published_at: "2026-08-03"
-term_count: 132
+term_count: 139
 category_id: 100
 forum_topic_id: 308
 video_player_forum_topic_id: 785
@@ -70,6 +70,7 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | parameter | параметр | uk | |
 | argument | аргумент | uk | Call-site value sense. |
 | input (to a function) | вхідні дані | uk | |
+| to expect / to take (input) | приймати (вхідні дані) | uk | Render "the function expects X" as _функція приймає X_. Never _очікує_: a function does not wait for input, it accepts it. |
 | output | вихідні дані | uk | |
 | to return (a value) | повернути (значення) | uk | |
 | return value | повернене значення | uk | Noun form; distinct from the verb "to return." |
@@ -156,6 +157,12 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | hex color / hex string | шістнадцятковий колір / шістнадцятковий код кольору | uk | Unconfirmed draft (agent, 2026-08-01). Use the first for the colour itself, the second for the `#rrggbb` string. Not _hex-код_: keep the whole term in Ukrainian script. |
 | radial width / radial height (also "horizontal radius / vertical radius") | горизонтальний радіус / вертикальний радіус | uk | An ellipse's `radiusX`/`radiusY`. The English source says "radial width/height" in the describers and "horizontal/vertical radius" in the instructions and function description for the same two values: render **both** wordings with this one pair. Not the formal geometry terms _велика піввісь_ / _мала піввісь_. At the first ellipse occurrence (the Penguin exercise) carry the one-time aside saying these are not the real geometric names; nowhere else. |
 | box (drawing/forecast grid cell) | комірка | uk | Unconfirmed draft (agent, 2026-08-01). A numbered cell on the drawing canvas or forecast grid. Never _коробка_, which is reserved for the value-container metaphor. |
+| icon (a picture the learner draws) | картинка | uk | The thing being drawn in an exercise. Never _іконка_, which in Ukrainian means a UI icon (or a religious icon) and not a picture. |
+| scene (a drawn picture) | зображення / картинка | uk | Use _зображення_ after _створити_ (_створіть зображення погоди_) and _картинка_ elsewhere (_намалювати картинку погоди_). Never _сцена_, which does not carry the "picture" sense. |
+| guide lines (the faint outlines shapes sit inside) | напрямні лінії | uk | The shapes go _всередині напрямних ліній_, and must not cross them (_а не перетинати їх_). |
+| target image / template outline | лінії шаблону | uk | What the learner matches their drawing against. Never _цільове зображення_, which is not idiomatic Ukrainian. |
+| corner point / vertex (of a shape) | вершина | uk | A rectangle's top-left corner is _верхня ліва вершина_; a triangle is drawn _за трьома вершинами_. |
+| lock icon (a locked scenario) | символ замочка | uk | The diminutive _замочок_, not _замок_, which also means "castle". |
 
 ### Characters & story vocabulary (exercise family)
 
@@ -219,6 +226,65 @@ glyph in a code tag immediately after: _квадратні дужки (`[]`)_.
 ---
 
 ## Decision log
+
+### 2026-08-03: Drawing vocabulary from the Stage 3 exercise review, and the `&&`/`||` house rule
+
+**Decided by:** decard (native speaker) on [t/880 posts
+36-45](https://forum.jiki.io/t/880/36), with iternewo (native speaker) on post 38.
+**Terms affected:** `icon`, `scene`, `guide lines`, `target image`, `corner point /
+vertex`, `lock icon`, `to expect / to take (input)`.
+
+- **`icon` → картинка.** The Cloud, Rain & Sun instructions called the drawing an
+  _іконка_. decard flagged that _іконка_ in Ukrainian means a UI icon (and, outside
+  computing, a religious icon), not a picture, so the learner reads it as the wrong kind of
+  object. The whole draw family draws pictures, so the row is worth having rather than
+  being a one-file fix.
+- **`scene` → зображення / картинка.** _Сцена_ is a stage or a scene in a play and does not
+  carry English "scene"'s "picture" sense. decard gave both renderings and which verb each
+  goes with: _створіть зображення погоди_ but _намалювати картинку погоди_. The same fix
+  applies to the `drawScene.description` scenario string, which he called out explicitly.
+- **`guide lines` → напрямні лінії**, and shapes sit inside them rather than on them
+  (_а не перетинати їх_). _Напрямні_ is the standard term; the previous rendering just
+  described the position without naming the thing.
+- **`target image` → лінії шаблону.** decard called _цільове зображення_ "something very
+  uncommon", and pointed out that what the learner actually matches is the template
+  outline, not an image. Same word choice family as the _цільова клітинка_ correction
+  below.
+- **`corner point / vertex` → вершина.** Both the rectangle's top-left corner and the
+  triangle's three corner points are _вершини_; _кутові точки_ was a calque.
+- **`lock icon` → символ замочка.** The diminutive avoids the _замок_ ("castle")
+  ambiguity and is what UI copy uses.
+- **`to expect (input)` → приймати, never очікує.** decard raised this twice, on Fix Wall
+  and on Take a Walk, and gave the reason in general terms: a function does not wait for
+  input, it accepts it. Stated once as a row rather than per exercise.
+- **Not a glossary row: `цільова клітинка`.** decard noted that _цільова_ reads like
+  "target audience", and gave the recast (_дістатися нашої цілі, зеленої клітинки_) rather
+  than a replacement adjective, so it stays as a reviewer note on the Take a Walk
+  exercise.
+- **The `&&` / `||` rule went to the guide, not here.** decard asked for the operator to be
+  spelled out in full at its first occurrence per page and abbreviated afterwards. That is
+  a typography rule, so it lives in `guide.md` § Style notes.
+
+#### Open, awaiting a decision
+
+Two questions from this batch are genuinely unresolved. Neither has been guessed at in the
+files, and both need a native speaker to settle them.
+
+- **A better Ukrainian word for `frame` (the house's frame/scaffolding).** decard, [t/880
+  post 42](https://forum.jiki.io/t/880/42): "Also, about the word 'каркас' (frame).
+  'Каркас' is closer to scaffolding then to a finished building. So far we're not sure how
+  to properly translate it, maybe we'll adress this later, but if you have any suggestions
+  - please share. The word needs to be changed all across the exercise, not only in this
+  sentence." iternewo separately suggested _конструкція_ in post 38. No row has been added,
+  and the Jumbled House sentences he gave replacements for now avoid the word entirely
+  (_верхнього краю будинку_, _на верху будинку_) rather than picking a new one.
+- **Whose left is "the penguin's left"?** iternewo, [t/880 post
+  38](https://forum.jiki.io/t/880/38): "the penguin's left side is missing from the
+  perspective of the penguin, however, the exercise takes the user's perspective. Should we
+  change it? I feel like Ukrainians take the perspective of the object of drawing when
+  drawing it." This is a question about the **English** source's convention across the
+  whole draw family, not about the Ukrainian wording, so it is not ours to settle in a
+  translation.
 
 ### 2026-08-03: `Jeremy` transliterated as Джеремі, `workhorse` becomes ключовий інструмент
 

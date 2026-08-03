@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "6aa35e7",
-  "approved": 140,
+  "governance_sha": "ea7c7e7",
+  "approved": 146,
   "disapproved": 1,
   "total": 337,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 20,
+      "approved": 26,
       "disapproved": 0,
       "total": 34,
       "items": [
@@ -136,33 +136,33 @@
         },
         {
           "key": "exercise/space-invaders-solve-basic",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1082,
+          "status": "approved"
         },
         {
           "key": "exercise/maze-solve-walk",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1083,
+          "status": "approved"
         },
         {
           "key": "exercise/fix-wall",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1084,
+          "status": "approved"
         },
         {
           "key": "exercise/snowman-basic",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1085,
+          "status": "approved"
         },
         {
           "key": "exercise/foxy-face",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1086,
+          "status": "approved"
         },
         {
           "key": "exercise/penguin",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1087,
+          "status": "approved"
         },
         {
           "key": "exercise/cloud-rain-sun",

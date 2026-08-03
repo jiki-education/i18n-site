@@ -3,10 +3,10 @@ lang: "uk"
 name: "Ukrainian"
 family: null
 stage: "refining"
-governance_sha: "2c04051"
-content_version: "64cd5f6ad2bc"
-published_at: "2026-08-02"
-term_count: 130
+governance_sha: "ea7c7e7"
+content_version: "8644f82d9c79"
+published_at: "2026-08-03"
+term_count: 132
 category_id: 100
 forum_topic_id: 308
 video_player_forum_topic_id: 785
@@ -26,6 +26,7 @@ decision log (`glossary-notes.md`).
 | tech / tech industry | IT-індустрія | uk | Not _tech-індустрія_: keep the whole term in Ukrainian script. |
 | streak | серія (днів) | uk | |
 | journey (e.g. "our journey into the world of programming") | подорож | uk | Prefer _подорож_ over _мандрівка_. |
+| Jeremy (the course author) | Джеремі | uk | Transliterate in **prose**, everywhere it occurs, in every content type. Indeclinable: it takes no case endings, exactly like `Jiki` (see guide § Grammar and structure), so case is carried by the surrounding words (_разом із Джеремі_, _Джеремі показав_). **Exception: inside a literal code string value it stays as the English letters `Jeremy`**, untouched, because it is then the string the learner's code produces or compares against (e.g. `twoFer("Jeremy")`, `let name = "Jeremy"`, and the `alt` text describing the paper that string is written on). |
 
 ## Localize (use the Ukrainian term)
 
@@ -121,6 +122,7 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | edge case | крайній випадок | uk | |
 | backwards compatibility | зворотна сумісність | uk | |
 | tool / tooling | інструмент / інструментарій | uk | |
+| workhorse (the idiom: "the workhorse of X") | ключовий інструмент | uk | The English idiom, not the animal. Never the literal _робоча конячка_ / _робочий кінь_, which reads as a joke in Ukrainian prose. Takes _у_ before the thing it is central to: "робить цикли `for` ключовим інструментом у JavaScript". |
 | pitfall | пастка | uk | Stands alone; no gloss needed. |
 
 ### Platform & curriculum vocabulary
@@ -217,6 +219,84 @@ glyph in a code tag immediately after: _квадратні дужки (`[]`)_.
 ---
 
 ## Decision log
+
+### 2026-08-03: `Jeremy` transliterated as Джеремі, `workhorse` becomes ключовий інструмент
+
+**Decided by:** iternewo (native speaker) on [t/880 post
+28](https://forum.jiki.io/t/880/28), agreed by decard (native speaker) in the same
+thread. **Terms affected:** `Jeremy`, `workhorse`.
+
+- **`Jeremy` → Джеремі, in prose, everywhere.** iternewo asked for the name to be
+  transliterated rather than left in Latin script, and noted it does not conjugate or
+  decline, so it behaves in Ukrainian exactly like `Jiki` already does: no case endings,
+  case carried by the surrounding words. Two files already used _Джеремі_ before this
+  decision (`app/messages/uk.json`, in `loggedOutDescription` and `deepDiveDescription`),
+  so the decision also settles an existing inconsistency rather than introducing a new
+  form.
+
+  The **code-string exception** is the reason this needed a Notes column rather than a
+  bare row. In several places `Jeremy` is not the man's name in prose but the literal
+  contents of a string the learner's code produces or is compared against: the Two Fer
+  worked example (`twoFer("Jeremy")` → `"One for Jeremy, one for me."`), the Variables and
+  Dictionaries pages (`let name = "Jeremy"`, `person["name"]`), and the Variables page's
+  `alt` text, which describes the piece of paper with that string written on it. Those are
+  sentinel values under `global/rules.md`, so they stay in Latin letters; transliterating
+  them would make the exercise unpassable with no visible cause. Every other locale
+  (hu, pl, fr, it, ru) already keeps the `alt`-text occurrence in Latin for the same
+  reason, so the exception is consistent with how the rest of the course reads it.
+
+  decard was explicitly waiting on this propagation for the Dress Code exercise, whose
+  message catalog was the one place a bare Latin `Jeremy` sat in running Ukrainian prose.
+
+- **`workhorse` → ключовий інструмент.** The existing translation of the For Loops page
+  rendered the idiom literally as _робочою конячкою_ ("little workhorse"), which is a
+  diminutive animal word and reads as a joke in explanatory prose. iternewo gave the
+  worked replacement for the whole sentence ("Саме ця гнучкість робить цикли `for`
+  ключовим інструментом у JavaScript"), which also fixes the government: the Ukrainian
+  takes _у_ + the language name where English takes "of". The chosen noun deliberately
+  reuses _інструмент_, already agreed for `tool`, so the row sits next to it.
+
+### 2026-08-02: Unconfirmed drafts from the first Stage 3 batch (not yet in the glossary)
+
+**Decided by:** nobody yet. These are **proposals**, surfaced by the fable workers that
+translated the first 10 Stage 3 exercises (space-invaders-solve-basic, maze-solve-walk,
+fix-wall, snowman-basic, foxy-face, penguin, cloud-rain-sun, jumbled-house,
+golf-rolling-ball-loop, maze-solve-repeat). **None of them has been written into
+`glossary.md`.**
+
+- **alien** (space-invaders family) → **прибулець**. Surfaced independently by more than
+  one worker on this batch, so it has more weight than a single proposal. Medium/high
+  confidence.
+- **laser cannon** → **лазерна гармата**. Medium confidence.
+- **ammo** ("wasting ammo") → **заряди**. Medium confidence.
+- **target image** (draw-family reference picture) → **цільове зображення**. Medium
+  confidence.
+- **corner point** (triangle corner) → **вершина**. Medium confidence.
+- **charcoal** (prose colour word) → **вугільний (колір)**. Low confidence.
+- **face** (animal character's face) → **мордочка**. Medium confidence.
+- **iris** (eye part in drawing checks) → **райдужка**. Medium confidence.
+- **Drawing Shapes** (function category label) → **Малювання фігур**. Already used
+  consistently elsewhere, medium confidence.
+- **cloud puff** → **клубочок (хмари)**. Low confidence.
+- **instructions** (learner-facing directions, distinct from the existing
+  "statement"/"instruction to Jiki" rows) → **вказівки**. Medium confidence.
+- **tee** (golf tee) → **кілочок**. Medium confidence.
+- **refactor** → **переписати (код)**. Medium confidence.
+
+### 2026-08-02: Two more em-dash workaround patterns confirmed, not a rule exception
+
+**Decided by:** agent, on native speaker decard's Word Count feedback, [t/880 post
+2614](https://forum.jiki.io/t/880). **Terms affected:** none (a Style/Grammar guide
+pattern, not a glossary row).
+
+decard asked for a literal em dash in two sentences (a repeated predicate, and a
+cause-pointing aside). Neither turned out to be grammatically unavoidable: a different verb
+for the second clause fixes the first ("а значеннями **слугують** їхні частоти" instead of
+repeating "є"), and the correlative **то** fixes the second ("апостроф, **то** символ
+належить..."). Since a clean dashless rephrase existed for both, the global no-em-dash rule
+stands; no Ukrainian exception was carved out. Both patterns are recorded in the guide next
+to the existing copula-sentence workaround, so a future pass doesn't have to re-derive them.
+If a genuinely dash-unavoidable case ever surfaces, that would be the trigger to revisit this.
 
 ### 2026-08-02: `radial width / radial height` RESOLVED, `camel case` glossed once, `Boolean` localized
 

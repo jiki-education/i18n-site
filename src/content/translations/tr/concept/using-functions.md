@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "fc671310093a081113a8f301b6ff53fe"
-governance_sha: "2c04051"
-content_version: "9c7626af5419"
-published_at: "2026-08-02"
+governance_sha: "c9cf002"
+content_version: "d2908afa539e"
+published_at: "2026-08-03"
 forum_topic_id: 782
 ---
 
@@ -25,7 +25,7 @@ Kod yazarken aslında yaptığınız şey, ne olmasını istediğinizi bilgisaya
 
 Programlamanın bütün amacı, yorumlayıcıya, bu durumda Jiki'ye doğru talimatları vermektir. Jiki'ye verebileceğiniz pek çok farklı talimat var, anladığı çok şey var. Bir şeyleri birbirine ekleyebilir, bir şeyi defalarca yapabilir, “Bu olursa, o zaman şunu yapmam gerekir” diyebilir. Bir şeyleri hatırlayıp sonra tekrar kullanabilir. Bir şey yolunda değilse size bir hata (İngilizce: _error_) verebilir. Bu kursta bunların hepsini göreceğiz. Ama anlaşılması gereken en önemli şey şu: yapacağınız her şey, Jiki'nin gelip uygulaması için bir beyaz tahtaya talimatlar yazmaktan ibaret.
 
-34 yıl önce programlamayı öğrendiğimde kafamda kurduğum zihinsel model buydu ve bugün de hâlâ aynısını kullanıyorum. Bilgisayarların birlere ve sıfırlara kadar nasıl çalıştığını biliyorum, ama açıkçası bunu hiç düşünmüyorum. Kafamda, bilgisayarın içinde yaşayan küçük bir adam var ve ona ne yapacağını söylüyorum. O yüzden bu konuda bana katılın. Bu, kurabileceğiniz çok güçlü bir zihinsel model. Bilgisayarın içindeki kişinin ne yaptığını bu kadar görsel bir şekilde düşünmeye başlarsanız, bu size programlamayı öğrenirken çok yarar sağlayacak.
+34 yıl önce programlamayı öğrendiğimde kafamda kurduğum zihinsel model buydu ve bugün de hâlâ aynısını kullanıyorum. Bilgisayarların birlere ve sıfırlara kadar nasıl çalıştığını biliyorum, ama açıkçası bunu hiç düşünmüyorum. Kafamda, bilgisayarın içinde yaşayan küçük bir adam var ve ona ne yapacağını söylüyorum. Bu yüzden bu konuda bana katılın. Bu, kurabileceğiniz çok güçlü bir zihinsel modeldir. Bilgisayarın içindeki kişinin ne yaptığını görsel bir şekilde düşünmeye başlamak, programlamayı öğrenirken çok yarar sağlayacaktır.
 
 Öyleyse programlamanın temel kavramlarından biriyle, fonksiyonlarla (İngilizce: _function_) başlayalım. Fonksiyonlar, Jiki'ye kullanmasını söyleyebileceğiniz küçük makineler gibidir. Jiki'nin takıldığı yer olan deposuna bakarsak, üzerinde üç farklı makine bulunan bir rafı olduğunu göreceksiniz: `move` (hareket et), `turnLeft` (sola dön) ve `turnRight` (sağa dön).
 

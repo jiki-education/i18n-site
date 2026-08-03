@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "e0c1dee",
+  "governance_sha": "e15eb3e",
   "approved": 140,
   "disapproved": 1,
-  "total": 332,
+  "total": 335,
   "languages": [
     {
       "lang": "it",
@@ -1471,6 +1471,52 @@
       ]
     },
     {
+      "lang": "zh-CN",
+      "name": "Simplified Chinese",
+      "stage": "refining",
+      "category_slug": "i18n-zh-cn",
+      "approved": 2,
+      "disapproved": 0,
+      "total": 7,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 413,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 790,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 791,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 820,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "de",
       "name": "German",
       "stage": "setup",
@@ -1590,37 +1636,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 809,
-          "status": "approved"
-        }
-      ]
-    },
-    {
-      "lang": "zh-CN",
-      "name": "Simplified Chinese",
-      "stage": "refining",
-      "category_slug": "i18n-zh-cn",
-      "approved": 2,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 413,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 790,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 791,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 820,
           "status": "approved"
         }
       ]

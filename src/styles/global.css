@@ -209,11 +209,19 @@
     margin: 24px auto;
   }
 
-  /* Jiki's own element, marking a term as it is introduced. */
-  & define {
-    border-bottom: 2px solid var(--color-purple-300);
-    font-weight: 500;
-    color: var(--color-purple-700);
+  /*
+   * Jiki's own <define>/<literal> elements, which mark a term in the English
+   * source. They are staged verbatim and rendered as unknown inline elements,
+   * so they carry no styling of their own here: on this site the term reads as
+   * ordinary body text. The product styles them; a review page should not,
+   * because the highlight draws the reviewer's eye to English markup rather
+   * than to the translation they are here to read.
+   */
+  & :is(define, literal) {
+    font: inherit;
+    color: inherit;
+    border: none;
+    background: none;
   }
 }
 

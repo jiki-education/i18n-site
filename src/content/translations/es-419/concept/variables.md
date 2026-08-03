@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/variables/source.md"
 en_md5: "dd0834017a8d42c22cca25966c1fdd91"
-governance_sha: "89c8066"
-content_version: "837a336f6d59"
-published_at: "2026-08-02"
+governance_sha: "e15eb3e"
+content_version: "794ef2cdac27"
+published_at: "2026-08-03"
+forum_topic_id: 1065
 ---
 
 Las variables nos permiten almacenar información. Cuando programamos, a menudo necesitamos guardar algún número o algún string para usarlo después, y las variables son la forma de hacerlo. Entonces, alejémonos un poco en el almacén de Jiki y verás que tiene otro juego de estantes. Ya conocemos el primer juego de estantes que tiene las funciones, esas pequeñas máquinas como `move` y `rectangle`. Pero en este segundo juego de estantes, en lugar de máquinas, puedes ver muchas cajas, y esas cajas son lo que llamamos variables. Puedes decirle a Jiki que guarde cualquier cosa en estas cajas y, más tarde, pedirle que la saque de nuevo. Cada caja tiene un nombre, exactamente igual que las funciones tienen un nombre, y cada caja contiene solo una cosa. Por ahora, un número o un string. Pero más adelante en el curso veremos cómo guardar cosas más complejas en ellas.
@@ -22,7 +23,7 @@ Las variables nos permiten almacenar información. Cuando programamos, a menudo 
   height="173"
 />
 
-Entonces, ¿cómo le decimos a Jiki que haga una caja y ponga algo dentro? Usamos la palabra clave `let` (palabra clave para crear variables). La palabra clave `let` le dice a Jiki que necesita hacer una caja nueva. Puedes imaginarlo sacando una caja de cartón de su envoltorio, armándola y luego mirando lo que viene después de la palabra `let`: esa es la etiqueta que pone en la caja, en este caso `name` (nombre). Entonces saca su pluma y escribe `name` en la etiqueta. Luego mira lo que viene después del signo igual (_equal sign_ en inglés). En este caso, es mi nombre, `"Jeremy"`, y como `"Jeremy"` es un string, toma un pedazo de papel y escribe `"Jeremy"` en él. Es solo un string, exactamente igual que los colores con los que has estado trabajando, y luego pone ese pedazo de papel en la caja.
+Entonces, ¿cómo le decimos a Jiki que haga una caja y ponga algo dentro? Usamos la palabra clave `let` (palabra clave para crear variables). La palabra clave `let` le dice a Jiki que necesita hacer una caja nueva. Puedes imaginarlo sacando una caja de cartón de su envoltura, armándola y luego mirando lo que viene después de la palabra `let`: esa es la etiqueta que pone en la caja, en este caso `name` (nombre). Entonces saca su pluma y escribe `name` en la etiqueta. Luego mira lo que viene después del signo igual (_equal sign_ en inglés). En este caso, es mi nombre, `"Jeremy"`, y como `"Jeremy"` es un string, toma un pedazo de papel y escribe `"Jeremy"` en él. Es solo un string, exactamente igual que los colores con los que has estado trabajando, y luego pone ese pedazo de papel en la caja.
 
 ```javascript
 let name = "Jeremy"
@@ -71,4 +72,4 @@ circle(leftPosition, topPosition, radius, color)
   height="378"
 />
 
-En cualquier momento de nuestro código, podemos volver a referirnos a estas variables y Jiki sacará los valores (_values_ en inglés) y los pondrá en una máquina. La otra gran ventaja de las variables es que cada vez que queramos dibujar algo en la misma posición que el sol, podemos reutilizar esas mismas variables `leftPosition` y `topPosition`. Tomemos otro ejemplo. Imagina que estás construyendo una pared con 30 ladrillos y quieres que todos los ladrillos tengan el mismo ancho y el mismo alto. Es mucho mejor crear variables para el ancho y el alto al principio de tu código y luego referirte a ellas en el resto del código. Porque si luego quieres cambiar el ancho o el alto, solo tienes que cambiarlo en un lugar y todo lo demás se actualizará.
+En cualquier momento de nuestro código, podemos volver a referirnos a estas variables y Jiki sacará los valores (_values_ en inglés) y los pondrá en una máquina. La otra gran ventaja de las variables es que cada vez que queramos dibujar algo en la misma posición que el sol, podemos reutilizar esas mismas variables `leftPosition` y `topPosition`. Tomemos otro ejemplo. Imagina que estás construyendo una pared con 30 ladrillos y quieres que todos los ladrillos tengan el mismo ancho y la misma altura. Es mucho mejor crear variables para el ancho y la altura al principio de tu código y luego referirte a ellas en el resto del código. Porque si luego quieres cambiar el ancho o la altura, solo tienes que cambiarlo en un lugar y todo lo demás se actualizará.

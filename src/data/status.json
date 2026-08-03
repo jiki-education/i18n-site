@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "ba33763",
+  "governance_sha": "171737a",
   "approved": 186,
   "disapproved": 0,
-  "total": 439,
+  "total": 457,
   "languages": [
     {
       "lang": "it",
@@ -243,7 +243,7 @@
       "category_slug": "i18n-uk",
       "approved": 28,
       "disapproved": 0,
-      "total": 34,
+      "total": 42,
       "items": [
         {
           "key": "glossary",
@@ -414,6 +414,46 @@
           "key": "exercise/golf-rolling-ball-loop",
           "topic_id": null,
           "status": "approved"
+        },
+        {
+          "key": "exercise/space-invaders-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/traffic-lights",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/plant-the-flowers",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/structured-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-snowman",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-traffic-lights",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-sun",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -605,7 +645,7 @@
       "category_slug": "i18n-fr",
       "approved": 15,
       "disapproved": 0,
-      "total": 24,
+      "total": 34,
       "items": [
         {
           "key": "glossary",
@@ -726,6 +766,56 @@
           "key": "exercise/luhn",
           "topic_id": 986,
           "status": "approved"
+        },
+        {
+          "key": "exercise/fix-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cloud-rain-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-solve-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/jumbled-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/foxy-face",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/penguin",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },

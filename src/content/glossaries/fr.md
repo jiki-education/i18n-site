@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "ba33763"
-content_version: "35154cfeefc9"
+governance_sha: "1115f13"
+content_version: "8c32246c121b"
 published_at: "2026-08-03"
-term_count: 71
+term_count: 84
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -14,9 +14,11 @@ video_player_forum_topic_id: 755
 
 # French (fr) glossary
 
-The agreed term list for French. Every term here has been agreed and is binding: use it
-exactly, with no synonyms and no mixing within a document. Why each term was chosen is in
-the decision log (`glossary-notes.md`).
+The agreed term list for French. Every term here is binding: use it exactly, with no
+synonyms and no mixing within a document. Rows whose Notes begin "Unconfirmed draft" are
+still binding for consistency, but no native speaker has checked them yet, so they are the
+ones to raise on the forum. Why each term was chosen is in the decision log
+(`glossary-notes.md`).
 
 ## Core decisions
 
@@ -25,6 +27,9 @@ the decision log (`glossary-notes.md`).
 | streak | série | fr | A run of consecutive days, as in the learning-platform sense. |
 | foot-gun | piège involontaire | fr | Use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`. |
 | Solve the Maze (exercise title) | Évade-toi du labyrinthe | fr | Title only, and no exclamation mark. Prose about the maze keeps "faire sortir le personnage du labyrinthe". |
+| Take a Walk (exercise title) | Une petite marche | fr | Unconfirmed draft (agent, 2026-08-03). Title only. |
+| Loopy Maze (exercise title) | Le labyrinthe des boucles | fr | Unconfirmed draft (agent, 2026-08-03). Title only. |
+| UI button label quoted in prose | the app's own `fr` catalog string | fr | Unconfirmed draft (agent, 2026-08-03). When prose tells the learner to press a button, quote the string the French app actually shows, in guillemets and italics: _« Exécuter le code »_. Never invent a fresh rendering of an English button label. |
 
 ## Localize (use the French term)
 
@@ -53,6 +58,7 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | function | fonction | fr | The *keyword* `function` in code stays English; the concept in prose is _fonction_. |
 | parameter | paramètre | fr | Declaration-site name. |
 | argument | argument | fr | Call-site value. |
+| input(s) (beginner framing of what you give a function) | entrée(s) | fr | Unconfirmed draft (agent, 2026-08-03). Feminine: _une entrée_, _les entrées_. Use it where the English source itself says "input" in beginner prose (_la fonction `triangle` prend 7 entrées_). It does **not** replace _paramètre_ or _argument_ above: keep those where the English says "parameter"/"argument", which is the precise register. The two are in tension in practice, and the `draw` family catalog currently says _arguments_ in six places and _entrée_ in two, so this row is the open question, not a settled split. |
 | to return (a value) | renvoyer | fr | "La fonction renvoie 30." Not "retourner". |
 | return value | valeur de retour | fr | Noun form; keep distinct from the verb _renvoyer_ above. |
 | brackets (the two after a function name) | parenthèses | fr | The `()` pair written after a function name to call it: _écris son nom, puis ces parenthèses_. French names the bracket type, so always say which; see the Brackets section below. |
@@ -82,6 +88,7 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | tool / tooling | outil / outillage | fr | _outils_ reads more naturally than _outillage_ in most prose; _outillage_ for the collective sense ("toolchain" = _chaîne d'outils_). |
 | edge case | cas limite | fr | The agreed rendering; no official French ruling exists, so do not coin an alternative. |
 | backwards compatibility | rétrocompatibilité | fr | Not "compatibilité descendante". |
+| refactor | réécrire | fr | Unconfirmed draft (agent, 2026-08-03). Noun form: _réécriture_. Never the anglicism _refactoriser_/_refactoring_ in learner-facing prose. |
 
 ### Platform & curriculum vocabulary
 
@@ -94,6 +101,23 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | track (curriculum path) | filière | fr | Deliberately distinct from _parcours_ (pathway) above. |
 | syllabus | programme (du cours) | fr | Note the deliberate overlap with _curriculum → programme_; disambiguate with "du cours" when both appear in the same context. |
 | Not started (progress status) | Non commencé / Non commencés | fr | Never _Pas commencé_. Agree in number with what the label describes: singular _Non commencé_ on a status badge for one item (e.g. one challenge), plural _Non commencés_ on a filter tab covering a list of items. |
+
+### Exercise world vocabulary
+
+The recurring nouns and verbs of the exercise families (space invaders, golf, the drawing
+exercises). They matter because a family shares one message catalog across many exercises,
+so a term that drifts between two exercises drifts inside one screen.
+
+| English | French | Use (fr/en) | Notes |
+|---------|--------|-------------|-------|
+| alien | alien | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _un alien_, plural _des aliens_. Never _extraterrestre_, which is heavier than the arcade register the exercise is written in. |
+| row (of aliens) | rangée | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _une rangée_. Never _ligne_ here, which in these pages already means a line of code. |
+| to shoot down (an alien) | abattre | fr | Unconfirmed draft (agent, 2026-08-03). **Conflict, not yet settled:** the shared `space-invaders` base catalog previously said _vaincre_ for the same action while the exercise catalogs said _abattre_; the catalogs have been made consistent on _abattre_, but no native speaker has ruled on which of the two French verbs a beginner should read. Raise it on the forum before treating this row as settled. The act of firing itself stays _tirer_ (_tire sur chaque alien_); _abattre_ is the outcome (_tu n'as pas abattu tous les aliens_). |
+| shot (golf) | coup | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _un coup_, as in _un coup de golf_, _la longueur du coup_. |
+| step / unit (distance moved) | unité | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _une unité_. The distance a thing moves in one call: _faire rouler la balle d'une unité vers la droite_. Follows the `golf` family catalog. |
+| inset (drawing exercises) | en retrait / le retrait | fr | Unconfirmed draft (agent, 2026-08-03). Adjectival/adverbial use _en retrait_ (_un rectangle en retrait_), noun use _le retrait_. Recurs across the drawing exercises, so do not alternate with _décalage_ or _marge_. |
+| nose (of an animal) | la truffe | fr | Unconfirmed draft (agent, 2026-08-03). The nose of a fox, dog or similar animal in the drawing exercises. Over _nez_ (human) and _museau_ (the whole snout, not the nose tip). |
+| penguin | pingouin | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _le pingouin_. The everyday French word a beginner expects, not the zoologically stricter _manchot_. |
 
 ## Keep in English
 
@@ -152,6 +176,79 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-03: Stage 3 batch 1 additions (13 unconfirmed drafts, written into the glossary)
+
+**Decided by:** nobody yet. These are agent proposals from the Stage 3 batch 1 translation
+pass (space-invaders-solve-basic, maze-solve-walk, fix-wall, snowman-basic, foxy-face,
+penguin, cloud-rain-sun, jumbled-house, golf-rolling-ball-loop, maze-solve-repeat, plus the
+shared `space-invaders` and `golf` family catalogs). Unlike the 2026-08-01 batch below,
+these **have** been written into `glossary.md`, each marked "Unconfirmed draft (agent,
+2026-08-03)" in its Notes, so that the ten translations stay consistent with each other
+while native speakers review them. Every one of them is open to being overruled on the
+forum; none is protected.
+
+**Terms affected:** `Take a Walk (exercise title)`, `Loopy Maze (exercise title)`,
+`UI button label quoted in prose`, `input(s)`, `refactor`, `alien`, `row (of aliens)`,
+`to shoot down (an alien)`, `shot (golf)`, `step / unit (distance moved)`,
+`inset (drawing exercises)`, `nose (of an animal)`, `penguin`.
+**Files affected:** `glossary.md` (Core decisions, Functions & control flow, Tooling &
+engineering, and a new "Exercise world vocabulary" section), and the ten `fr` exercise
+translations and two family catalogs listed above.
+
+**`input(s)` → _entrée(s)_.** Proposed independently by four of the ten workers, all
+agreeing on the same rendering, which is the strongest signal in the batch. It was already
+proposed once, by two workers on 2026-08-01 (see that entry below), and left unwritten;
+another four arriving at it independently is the reason it is now in the glossary rather
+than parked again. The tension it creates is real and is recorded in the row itself rather
+than resolved silently: French already has agreed rows for `parameter` → _paramètre_ and
+`argument` → _argument_, and the shared `draw` family catalog currently says _arguments_ in
+six places and _entrée_ in two. Those two rows are older and were not touched. The split
+this batch applies is by what the English source says, not by what the concept is: English
+beginner prose deliberately says "input" before it ever says "argument", and flattening
+that into _argument_ would teach the precise word earlier than the curriculum does. If a
+native speaker prefers one word throughout, this row is the one to drop, not the other two.
+
+**`to shoot down` → _abattre_, and the conflict behind it.** The `space-invaders` family
+had two verbs for one action: the shared base catalog said _vaincre_ once
+(`errors.notAllAliensDead`), and `space-invaders-solve-basic`'s own catalog said
+_abattre_/_Abats_ three times. A learner sees both in the same exercise, because the base
+catalog and the exercise catalog render on one screen. _abattre_ won on usage (three
+occurrences against one) and because _vaincre_ is the verb for defeating an opponent in a
+contest, which does not describe firing at a target. The base catalog now reads _abattre_.
+This is a consistency fix, not a language ruling: nobody who speaks French has been asked
+which verb a beginner should read, and _vaincre_ has a fair claim in a sentence about
+winning. The row says so, and it should be put to the forum.
+
+**`alien` → _alien_** rather than _extraterrestre_: the exercise is written in an arcade
+register, and _extraterrestre_ is a four-syllable formal noun that would sit oddly in
+_abats tous les aliens_. **`row` → _rangée_** rather than _ligne_ specifically because
+these pages already use _ligne_ for a line of code, and the collision would land inside a
+single sentence. **`shot` → _coup_** and **`step`/`unit` → _unité_** both follow renderings
+the `golf` family catalog was already using (_la longueur du coup_, _d'une unité vers la
+droite_), so the rows record existing practice rather than introduce anything.
+
+**`nose` → _la truffe_** is the batch's least obvious call. French distinguishes the human
+_nez_, the animal's whole snout _museau_, and the moist nose-tip _truffe_; what the drawing
+exercises draw on a fox is the tip, so _truffe_ is the accurate word, and it is the one a
+French child would use. **`penguin` → _pingouin_** deliberately takes the everyday word
+over the zoologically correct _manchot_, on the same reasoning as the rest of the
+curriculum's vocabulary: the exercise is not about taxonomy, and _manchot_ would read as a
+correction the learner did not ask for. **`refactor` → _réécrire_** avoids the anglicism
+_refactoriser_, which is what French developers say to each other but not a word a beginner
+has met.
+
+**The two exercise titles** (`Take a Walk` → _Une petite marche_, `Loopy Maze` → _Le
+labyrinthe des boucles_) follow the precedent set by the `Solve the Maze` vote below: a
+title is rendered for what it does, not word for word, and it earns a glossary row because
+sibling exercises cross-reference each other by title. That cross-referencing is also why
+the `foxy-face` title _Tête de renard_ now appears in the `penguin` instructions, which
+previously referred to the sibling exercise by its English name.
+
+**The UI button row** is a convention rather than a term: when prose tells the learner to
+press something, the quoted string has to be the one the French app actually renders
+(_« Exécuter le code »_), because a freshly invented rendering sends the learner looking
+for a button that does not exist.
 
 ### 2026-08-03: "Not started" → `Non commencé` / `Non commencés`
 

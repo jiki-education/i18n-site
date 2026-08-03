@@ -3,10 +3,10 @@ lang: "uk"
 name: "Ukrainian"
 family: null
 stage: "reviewing"
-governance_sha: "ba33763"
-content_version: "929cbca426b4"
+governance_sha: "1115f13"
+content_version: "19a78b9902e2"
 published_at: "2026-08-03"
-term_count: 139
+term_count: 151
 category_id: 100
 forum_topic_id: 308
 video_player_forum_topic_id: 785
@@ -48,6 +48,7 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | index | індекс | uk | No clarification parens needed. |
 | key-value pair | пара ключ-значення | uk | The key itself is _ключ_ (ordinary word once introduced). |
 | template literal | шаблонний рядок | uk | |
+| casing (letter case) | регістр | uk | Unconfirmed draft (agent, 2026-08-03). Upper/lower case of letters. Not _відмінок_ (grammatical case) and not _написання_. Distinct from _горбатий регістр_ (camel case), which reuses the same noun. |
 | data type | тип даних | uk | Unconfirmed draft (agent, 2026-08-01). |
 | compound data type | складений тип даних | uk | Unconfirmed draft (agent, 2026-08-01). Not _складний_ (means "difficult") and not the rarer borrowing _композитний_. |
 | default (value) | типове значення / типовий | uk | Unconfirmed draft (agent, 2026-08-01). Not _за замовчуванням_ or _усталений_; do not mix forms in one document. |
@@ -104,6 +105,8 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | modulo / remainder operator | остача (від ділення) | uk | |
 | concatenation / to concatenate | конкатенація / зʼєднати (рядки) | uk | |
 | to iterate (through an array/string) | перебирати (елементи) | uk | Unconfirmed draft (agent, 2026-08-01). The verb; the noun stays _ітерація_. Not the calque _ітерувати_. |
+| pattern (a repeating pattern in data or in a drawing) | закономірність | uk | Unconfirmed draft (agent, 2026-08-03). The regularity the learner spots and turns into a loop. Not _патерн_ (a borrowing) and not _шаблон_, which this glossary already leans on for _шаблонний рядок_ and _лінії шаблону_. |
+| anchor (a variable or value everything else is measured from) | опорна змінна / опорне значення | uk | Unconfirmed draft (agent, 2026-08-03). The one value other values are derived from, in exercises that build every dimension off a single starting figure. Use _опорна змінна_ for the variable, _опорне значення_ for the number in it. Never _якір_ (the ship's anchor, or an HTML anchor). |
 | toggle | перемикати | uk | |
 | state / stateful | стан | uk | |
 | scope | область видимості | uk | |
@@ -146,6 +149,9 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | track (curriculum path) | трек (курсу) | uk | |
 | tutorial | туторіал / посібник | uk | |
 | solution (learner's submission) | рішення | uk | |
+| typo | одруківка | uk | Unconfirmed draft (agent, 2026-08-03). A mistyped character in the learner's own code. Not _опечатка_ (a Russianism) and not the long _друкарська помилка_, which reads as a printing-press error. |
+| relational (in an exercise title: sizes derived from one another) | пропорційний | uk | Unconfirmed draft (agent, 2026-08-03). The "Relational X" exercise family, where every dimension is worked out from a single value rather than hard-coded. Titles read _Пропорційний сніговик_, _Пропорційний світлофор_, _Пропорційне сонце_. Not _реляційний_, which in Ukrainian means relational databases. |
+| "I'm totally stuck" (the recurring last-resort hint) | Я зовсім не знаю, що робити | uk | Unconfirmed draft (agent, 2026-08-03). The final hint title that recurs across exercises; keep it word-for-word identical everywhere so learners recognise it. |
 
 ### Drawing & colour (exercise family)
 
@@ -163,6 +169,12 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | target image / template outline | лінії шаблону | uk | What the learner matches their drawing against. Never _цільове зображення_, which is not idiomatic Ukrainian. |
 | corner point / vertex (of a shape) | вершина | uk | A rectangle's top-left corner is _верхня ліва вершина_; a triangle is drawn _за трьома вершинами_. |
 | lock icon (a locked scenario) | символ замочка | uk | The diminutive _замочок_, not _замок_, which also means "castle". |
+| light (one lamp of a traffic light) | вогник | uk | Unconfirmed draft (agent, 2026-08-03). One of the three coloured lamps, in prose, describers and scenario names alike (_червоний вогник_, _вогники світлофора_). Not _світло_ (light as illumination) and not _лампа_ / _ліхтар_. The traffic light itself stays _світлофор_. |
+| amber (the middle traffic light) | бурштиновий | uk | Unconfirmed draft (agent, 2026-08-03). **Open question**: Ukrainian road usage normally calls this light _жовтий_, so a native speaker still has to choose between the literal _бурштиновий_ and the idiomatic _жовтий_ (see the decision log). Until then use _бурштиновий_ consistently. |
+| housing / casing (the traffic light's body) | корпус | uk | Unconfirmed draft (agent, 2026-08-03). The box the three lamps sit in. Not _кожух_ and not _коробка_, which is reserved for the value-container metaphor. |
+| snowball (one section of a snowman) | снігова куля | uk | Unconfirmed draft (agent, 2026-08-03). The stacked body sections. The full two-word form, not bare _куля_, which collides with the plain "circle/sphere" sense used elsewhere in the draw family. |
+| frame (the main body of a house) | каркас будинку | uk | Unconfirmed draft (agent, 2026-08-03). **Contested**: a native speaker has flagged _каркас_ as reading like scaffolding rather than a finished building, and the replacement is still open (see the decision log). Do not guess at a substitute; leave existing occurrences alone until it is settled. |
+| gap (the distance a shape is inset from an edge) | відступ | uk | Unconfirmed draft (agent, 2026-08-03). The spacing between a shape and the edge it sits in from (_з відступом `10` від його боків_). Not _проміжок_ or _зазор_. |
 
 ### Characters & story vocabulary (exercise family)
 
@@ -226,6 +238,108 @@ glyph in a code tag immediately after: _квадратні дужки (`[]`)_.
 ---
 
 ## Decision log
+
+### 2026-08-03: Twelve unconfirmed drafts from the second Stage 3 exercise batch
+
+**Decided by:** agent, per the standing rule from the owner (iHiD) that translation-pass
+proposals are written into the glossary as unconfirmed drafts rather than held back for
+review. **Source:** the eight fable translation passes over
+`exercise/space-invaders-repeat`, `exercise/snowman`, `exercise/traffic-lights`,
+`exercise/relational-sun`, `exercise/relational-snowman`,
+`exercise/relational-traffic-lights`, `exercise/structured-house` and
+`exercise/plant-the-flowers`, plus the flower-planting family message catalog. Not a forum
+thread; not native-speaker-sourced.
+**Status:** unconfirmed drafts. None of them outranks a later native-speaker call, and two
+of them (`amber`, `frame`) carry an open question that is not settled by the row being
+written.
+**Terms affected:** `light (traffic-light lamp)`, `relational (title sense)`,
+`frame (house body)`, `anchor (variable/value)`, `housing / casing (traffic light body)`,
+`pattern (repeating pattern)`, `gap (inset from an edge)`, `snowball`, `typo`,
+`casing (letter case)`, `amber`, `"I'm totally stuck"`. A thirteenth proposal,
+`to hard-code`, was **not** written as a row: see "Contested, no row written" below.
+
+- **`light` → вогник.** Proposed independently by the Traffic Lights and Relational
+  Traffic Lights passes, which agreed, so it carries more weight than a single proposal.
+  _Світло_ is light as illumination and _лампа_ / _ліхтар_ are the physical fittings;
+  _вогник_ is what Ukrainian actually calls one lamp of a traffic light. The word recurs in
+  prose, in every describer and in the scenario names on both exercises, so it needed
+  pinning rather than being re-decided per file. _Світлофор_ (the whole traffic light) was
+  never in question.
+- **`relational` → пропорційний.** Also agreed by two passes (Relational Snowman and
+  Relational Traffic Lights). This is the exercise-title sense: the family where every
+  dimension is derived from one starting value instead of being written out as literals.
+  _Реляційний_ exists in Ukrainian but belongs to relational databases and would read as a
+  category error in a beginner drawing exercise. _Пропорційний_ names what the learner is
+  actually being taught, which is that the shapes scale together.
+- **`anchor` → опорна змінна / опорне значення.** From the Structured House pass. The
+  exercise turns on there being one value (the frame's position and size) that every other
+  shape is measured from, and the English leans on "anchor" to say so. _Якір_ is the ship's
+  anchor or an HTML anchor and carries none of that sense. The split between the variable
+  and the number in it mirrors the existing `variable` / `value` rows.
+- **`housing` / `casing` (the traffic light's body) → корпус.** From the Relational Traffic
+  Lights pass. _Корпус_ is the ordinary word for a device's outer body. _Кожух_ is a cover
+  or jacket, and _коробка_ is already spoken for by the value-container metaphor, so using
+  it here would collide two unrelated pictures in a learner's head.
+- **`pattern` → закономірність.** From the Space Invaders (Repeat) pass. The exercise is
+  about noticing that something repeats and turning that into a loop, which is exactly what
+  _закономірність_ means. _Патерн_ is a bare borrowing, and _шаблон_ is already carrying
+  weight in this glossary (_шаблонний рядок_, _лінії шаблону_).
+- **`gap` → відступ.** From the Relational Sun pass, and already the word the Jumbled House
+  reviewer notes use for the same idea (_з відступом `10` від його боків_), so the row
+  records existing practice rather than introducing anything. _Проміжок_ and _зазор_ both
+  read as a gap *between* two things rather than an inset from an edge.
+- **`snowball` → снігова куля.** From the Relational Snowman pass. Kept as the full two-word
+  form because bare _куля_ is the plain circle/sphere word used throughout the draw family,
+  and the snowman exercises talk about both in the same sentence.
+- **`typo` → одруківка.** From the Snowman pass. _Опечатка_ is a Russianism and
+  _друкарська помилка_ reads as a printing-press error rather than something the learner
+  just did on a keyboard.
+- **`casing` (letter case) → регістр.** Also from the Snowman pass. Ukrainian reuses
+  _регістр_ for this, which is why the glossary already has _горбатий регістр_ for camel
+  case; the row makes the plain sense explicit so nobody reaches for _відмінок_
+  (grammatical case) or _написання_.
+- **`"I'm totally stuck"` → Я зовсім не знаю, що робити.** From the Plant the Flowers pass.
+  This hint title recurs across many exercises and only works if it is recognisably the
+  same string every time, so it is worth a row despite being a sentence rather than a term.
+
+#### Open, awaiting a decision
+
+- **`amber` → бурштиновий, or should it be жовтий?** The Traffic Lights pass rendered the
+  middle light literally, as _бурштиновий_. That is a correct translation of the English
+  word, but Ukrainian road usage, driving-test material and everyday speech all call that
+  light _жовтий_. So the literal rendering may read as a translation artifact to a learner
+  who has only ever heard _жовтий_, while _жовтий_ loses the distinction the English source
+  draws between amber and yellow. This needs a native speaker to pick one. The row is
+  written as _бурштиновий_ so the files are at least self-consistent while the question is
+  open, not because the question has been answered.
+- **`to hard-code` / `hardcoded`: contested, no row written.** Three passes in this batch
+  reached three different renderings for the same idea: _жорстко задати_ (Relational Sun),
+  _вписати готове число_ / _вписати напряму_ (Structured House), and _числа напряму_
+  (Relational Traffic Lights). _Жорстко задати_ is the established Ukrainian IT calque and
+  is precise, but it is register-heavy for a beginner drawing exercise; the _вписати_
+  variants read far more naturally but are descriptions rather than a term, and they do not
+  give a noun or an adjective for "hardcoded". Because this is a genuine disagreement
+  between passes rather than one proposal, no row has been written and no winner has been
+  picked: a native speaker should settle it. Existing occurrences stay as each pass wrote
+  them until then; do not sweep them to one form on an agent's judgement.
+- **`frame` (the house's body) remains unresolved, and now affects two exercises.** The
+  Structured House pass used _каркас будинку_, which is the exact word decard flagged on
+  [t/880 post 42](https://forum.jiki.io/t/880/42) as reading like scaffolding rather than a
+  finished building (see the entry below). A row has now been written, marked contested, so
+  that the term is visible on the published glossary page and a reviewer can settle it in
+  one place. It is **not** a decision: the open question below stands, and the rendering
+  does not move until a native speaker names a replacement. When it is settled, both
+  `exercise/jumbled-house` and `exercise/structured-house` need the same sweep, in
+  instructions and message catalog alike; both files' reviewer notes say so.
+- **UI button labels are rendered three different ways across Ukrainian exercises.** The
+  Snowman pass surfaced this. `maze-solve-basic` uses a translated, bolded **Запустити
+  код**; `penguin` uses the English in italics and guillemets, _«Run Code»_; `snowman` uses
+  «Run Code»; and one file has «Run code» with different capitalisation. These are labels on
+  buttons the learner is looking at, so which language they are in is a real decision (does
+  the Ukrainian app show a translated button or not?) and the answer has to be the same in
+  every exercise. This is a rule about how to write, not a term, so once it is settled it
+  belongs in `guide.md` § Style notes rather than here. It needs a native speaker who has
+  seen the Ukrainian app UI, because the right answer is whatever that button actually says.
 
 ### 2026-08-03: Drawing vocabulary from the Stage 3 exercise review, and the `&&`/`||` house rule
 

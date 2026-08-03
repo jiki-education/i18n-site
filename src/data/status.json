@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "7a29f02",
-  "approved": 166,
+  "governance_sha": "dcb247e",
+  "approved": 168,
   "disapproved": 0,
   "total": 357,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 28,
+      "approved": 30,
       "disapproved": 0,
       "total": 44,
       "items": [
@@ -166,8 +166,8 @@
         },
         {
           "key": "exercise/cloud-rain-sun",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1088,
+          "status": "approved"
         },
         {
           "key": "exercise/jumbled-house",
@@ -181,8 +181,8 @@
         },
         {
           "key": "exercise/maze-solve-repeat",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1091,
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-repeat",

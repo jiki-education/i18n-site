@@ -3,7 +3,7 @@ lang: "it"
 name: "Italian"
 family: null
 stage: "reviewing"
-governance_sha: "3ed5b6e"
+governance_sha: "dcb247e"
 content_version: "53ccb6aab9ad"
 published_at: "2026-08-03"
 term_count: 61

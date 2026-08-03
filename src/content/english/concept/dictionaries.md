@@ -2,10 +2,10 @@
 type: "concept"
 slug: "dictionaries"
 title: "Dictionaries"
-en_md5: "3b1b01f6a914ffe1ce4a54e023e46bdd"
+en_md5: "b8a26ad63301df1d00ce08e1e429cf05"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/dictionaries/source.md"
-captured_at: "2026-08-01"
+captured_at: "2026-08-03"
 ---
 
 Arrays are our go-to choice when we have a list of anything, a list of mentors, list of scores, list of ingredients, any list, you want to use an array.
@@ -26,7 +26,7 @@ And on the right-hand side, next to each heading, you've got the actual data, `"
 
 Just like arrays, a dictionary is one thing. It's one page from a notebook. And just like arrays, Jiki can put it in a variable, in a box, or as an input for a function, or he can get a dictionary out of the return chute. So here's what a dictionary looks like in code. We use curly braces to signify the start and the end, and then inside you've got pairs, a key on the left, a colon, and then the value on the right. And we have a comma between each pair. So Jiki sees this and he gets out his spiral notebook. He writes `name`, `"Jeremy"`, `age`, `42`, and so on for each pair.
 
-And when he's done, he tears off the sheet and puts that in a box labeled person.
+And when he's done, he tears off the sheet and puts that in a box labeled <define>`person`</define>.
 
 There's a few rules to know. Keys are always strings. They must have quotes around them, and each key must be unique. You can't have two keys called `name` in the same dictionary.
 
@@ -44,7 +44,7 @@ We use the same square bracket syntax as we did with arrays and strings, but ins
 person["name"] // "Jeremy"
 ```
 
-And that tells Jiki to look in the `person` dictionary, find the key for `"name"`, and to get out its value. Jiki goes to the person box, takes out the page from the notebook, scans through all the keys until he finds `"name"`, and then reads off the value, `"Jeremy"`, and puts it in a new box called name.
+And that tells Jiki to look in the `person` dictionary, find the key for `"name"`, and to get out its value. Jiki goes to the `person` box, takes out the page from the notebook, scans through all the keys until he finds `"name"`, and then reads off the value, `"Jeremy"`, and puts it in a new box called `name`.
 
 Square brackets always mean the same things. You're reaching into something and getting something out. With arrays and strings, you use a number to say which position you wanna get something from. With dictionaries, you use a string for the key.
 

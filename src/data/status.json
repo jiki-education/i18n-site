@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "46f8834",
+  "governance_sha": "855c167",
   "approved": 140,
   "disapproved": 1,
-  "total": 336,
+  "total": 337,
   "languages": [
     {
       "lang": "it",
@@ -1477,7 +1477,7 @@
       "category_slug": "i18n-zh-cn",
       "approved": 2,
       "disapproved": 0,
-      "total": 8,
+      "total": 9,
       "items": [
         {
           "key": "glossary",
@@ -1516,6 +1516,11 @@
         },
         {
           "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
           "topic_id": null,
           "status": "pending"
         }

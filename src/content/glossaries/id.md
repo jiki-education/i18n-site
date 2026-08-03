@@ -3,10 +3,10 @@ lang: "id"
 name: "Indonesian"
 family: null
 stage: "refining"
-governance_sha: "6740b5b"
-content_version: "6b6ad36549f5"
+governance_sha: "9872bca"
+content_version: "c3b487aa8b39"
 published_at: "2026-08-03"
-term_count: 64
+term_count: 85
 category_id: 135
 forum_topic_id: 325
 video_player_forum_topic_id: 761
@@ -14,8 +14,10 @@ video_player_forum_topic_id: 761
 
 # Indonesian (id) glossary
 
-The agreed term list for Indonesian. Why each term was chosen, and who chose it, is in the
-decision log (`glossary-notes.md`).
+The agreed term list for Indonesian. Rows whose Notes begin "Unconfirmed draft" are still
+binding for consistency, but no native speaker has checked them yet, so they are the ones to
+raise on the forum. Why each term was chosen, and who chose it, is in the decision log
+(`glossary-notes.md`).
 
 ## Core decisions
 
@@ -36,6 +38,12 @@ These are terms where the Indonesian is used in prose by default; the "Use (id/e
 | true / false | benar / salah | id | Used when explaining the concept; the literals `True`/`False` in code stay as code. |
 | float / decimal | bilangan pecahan | id | Or _bilangan riil_ if the real-number nature matters more than the fractional one. Pick one per document and stay consistent. |
 | index | indeks | id | Use the `indeks` spelling (the Indonesian-orthography form); `index` is also seen. |
+| data type | tipe data | id | Unconfirmed draft (agent, 2026-08-04). Not _jenis data_. |
+| compound data type | tipe data majemuk | id | Unconfirmed draft (agent, 2026-08-04). A type that holds several things at once (an `array`). |
+| value | nilai | id | Unconfirmed draft (agent, 2026-08-04). The general sense of a piece of data. |
+| element (of an array) | elemen | id | Unconfirmed draft (agent, 2026-08-04). One item inside an `array`; keep it distinct from `item` used loosely in prose. |
+| default value | nilai default | id | Unconfirmed draft (agent, 2026-08-04). Not _nilai bawaan_, which reads more formal than these pages want. |
+| concatenation | penggabungan | id | Unconfirmed draft (agent, 2026-08-04). Verb: _menggabungkan_. |
 
 ### Functions & control flow
 
@@ -49,6 +57,9 @@ These are terms where the Indonesian is used in prose by default; the "Use (id/e
 | argument | argumen | id | Distinguish from `parameter` where the two are introduced together. |
 | input (to a function) | input | en | Where the source `<define>`s it, gloss _masukan_, then use `input`. |
 | output | output | en | Where the source `<define>`s it, gloss _keluaran_, then use `output`. |
+| condition | kondisi | id | Unconfirmed draft (agent, 2026-08-04). The test an `if` checks. Not _syarat_, which reads as a requirement/prerequisite. |
+| keyword | kata kunci | id | Unconfirmed draft (agent, 2026-08-04). The keyword itself stays in code font and in English (`if`, `for`, `repeat`); only the word "keyword" is translated. |
+| code block | blok kode | id | Unconfirmed draft (agent, 2026-08-04). The indented body between the braces. |
 | brackets (the two after a function name) | tanda kurung | id | `tanda kurung` unmodified is the round pair `()`; never expand it to `tanda kurung biasa` here. Square and curly brackets take their own modifiers (see "Brackets" below). |
 
 ### Loops, state & program flow
@@ -67,6 +78,7 @@ These are terms where the Indonesian is used in prose by default; the "Use (id/e
 | class | kelas | id | The `class` keyword in code stays English. |
 | method | method | en | Kept English in dev prose. |
 | object | objek | id | Use the `objek` spelling (the Indonesian-orthography default); `object` is also seen. |
+| to iterate (over a string or array) | menelusuri | id | Unconfirmed draft (agent, 2026-08-04). Verb, and the default in prose: _menelusuri isi array satu per satu_. Use the noun _iterasi_ only where the source itself uses the noun "iteration". |
 
 ### Tooling & engineering
 
@@ -94,6 +106,10 @@ These stay in English in Indonesian prose, with the Indonesian gloss to use for 
 | Debug, Test | (no gloss) | As keywords/technical tokens. |
 | Code | _kode_ | Where the source `<define>`s it, gloss _kode_, then use `code`. |
 | Bug, Frontend, Backend | (no gloss) | |
+| array | _larik_ | Unconfirmed draft (agent, 2026-08-04). Where the source `<define>`s it, gloss _larik_, then use `array` in prose. **Always _larik_**, never a descriptive paraphrase such as _deretan nilai_. The chain metaphor (`rantai`) is separate and stays as it is. |
+| camel case | (no gloss) | Unconfirmed draft (agent, 2026-08-04). Naming-convention term, kept English; do not invent an Indonesian rendering. |
+| template string | (no gloss) | Unconfirmed draft (agent, 2026-08-04). Kept English as the feature name. |
+| hue | (no gloss) | Unconfirmed draft (agent, 2026-08-04). Colour-model term, kept English even though its two companions `saturation` and `lightness` are localized (see "Exercise vocabulary"), because `hue` has no single-word Indonesian equivalent that a beginner would recognise. |
 
 ## Platform & curriculum vocabulary
 
@@ -108,6 +124,20 @@ These stay in English in Indonesian prose, with the Indonesian gloss to use for 
 | mentor / mentoring | mentor | en | `pembimbing` is a workable native alternative but `mentor` is preferred. |
 | tutorial | tutorial | en | Kept English for an interactive, step-by-step lesson; use `panduan` only for a static written guide, not an interactive tutorial. |
 | solution (learner's submission) | solusi / penyelesaian / jawaban | id | Context-dependent: `solusi` in general, `penyelesaian` for a worked solution, `jawaban` for a quiz answer. Pick the right one per context; do not force a single word everywhere. |
+
+## Exercise vocabulary
+
+Terms that belong to a specific exercise or exercise family rather than to programming in general.
+
+| English | Indonesian | Use (id/en) | Notes |
+|---------|-----------|----------|-------|
+| Rock, Paper, Scissors (game and exercise title) | Batu, Kertas, Gunting | id | Unconfirmed draft (agent, 2026-08-04). Comma-separated, each word capitalized, in that order. Lower-case the individual words when they refer to the moves in running prose (_batu menumpulkan gunting_). |
+| tie (a drawn game) | seri | id | Unconfirmed draft (agent, 2026-08-04). Not _imbang_ (more football-commentary flavoured) and not _seri_ in the "series" sense, which does not arise in these pages. |
+| playing hall | aula pertandingan | id | Unconfirmed draft (agent, 2026-08-04). From the rock-paper-scissors setting. |
+| canvas | kanvas | id | Unconfirmed draft (agent, 2026-08-04). The drawing surface in the `draw` exercise family. |
+| radius | jari-jari | id | Unconfirmed draft (agent, 2026-08-04). Always hyphenated. Horizontal/vertical forms: _jari-jari horizontal_, _jari-jari vertikal_. |
+| saturation | saturasi | id | Unconfirmed draft (agent, 2026-08-04). In prose only. Where the word is the *name of a function input* being quoted back to the learner, it currently stays English; that split is an open question (see `glossary-notes.md`). |
+| lightness | kecerahan | id | Unconfirmed draft (agent, 2026-08-04). In prose only, with the same function-input caveat as `saturation`. |
 
 ## Jiki physical metaphors
 
@@ -139,6 +169,129 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### OPEN QUESTION: are function input names translated inside error strings?
+
+**Status:** unresolved. Not a term to settle inside a translation pass; it needs a policy
+call and ideally a native speaker's read.
+
+The `draw` exercise family's shared catalog talks about a function's inputs by name (`red`,
+`hue`, `width`, `saturation`, `lightness`, `x`, `y`, `height`). The learner sees those exact
+names in the code they are writing, so the name is arguably a code token. But the same words
+are also ordinary colour/geometry vocabulary, and in prose Indonesian has perfectly good
+renderings for several of them.
+
+The current Indonesian catalog is internally inconsistent, which is what surfaced the
+question:
+
+- `Nilai hue harus antara 0 dan 360` and `Nilai red harus antara 0 dan 255` keep the input
+  name in English.
+- `Input x, y, width, dan height harus berupa angka` keeps them in English.
+- `Lebar harus lebih besar dari 0` translates `width`.
+- The `hsl`/`rgb` describers keep `hue`, `saturation`, `lightness`, `red`, `green`, `blue`
+  in English, while the rainbow exercise's prose uses _saturasi_ and _kecerahan_.
+
+Three coherent options: (a) input names always stay English, on the grounds that they are
+identifiers the learner types; (b) input names are always translated, on the grounds that
+the error message is prose; (c) the split we half have, English when the message quotes the
+input as an identifier, Indonesian when it describes the quantity. Nothing is being changed
+until this is decided. The `saturation` and `lightness` rows carry a note pointing here, and
+`hue` is currently a keep-in-English row, so the glossary as it stands does not silently
+pre-decide the answer.
+
+### 2026-08-04: `array` glosses as _larik_, not _deretan nilai_
+
+**Decided by:** agent (orchestrator call during the Stage 2 batch), unconfirmed by any
+native speaker. **Rendering changed** in one file.
+
+Two workers in the same fan-out glossed `array` independently and disagreed: the arrays
+concept page introduced it as _array_ (larik), the weather-symbols exercise as _array_
+(deretan nilai). Both are defensible Indonesian, so this is a consistency call rather than a
+correctness one, and it had to be made rather than aggregated.
+
+_Larik_ wins because the concept page is where the term is actually taught, and a dedicated
+single word is what a taught term needs: the learner meets it once, in the page whose whole
+job is that concept, and every later page is only referring back to it. _Deretan nilai_
+("a row/series of values") is a description, not a name. It reads fine in isolation but it
+cannot be the thing the arrays page defines, and having a passing mention in an exercise
+introduce a *different* expansion than the concept page teaches is exactly the failure the
+glossary exists to prevent.
+
+`array` itself still stays English in prose, like `string`: only the parenthetical gloss is
+Indonesian. The row therefore lives in the "Keep in English" table.
+
+Applied: `../front-end/curriculum/src/exercises/weather-symbols/instructions/id.md` changed
+_deretan nilai_ to _larik_ (one occurrence, the only one anywhere in Indonesian content),
+re-checked and re-stamped, and re-staged to the review site. The arrays concept page was
+already correct and was not touched.
+
+### 2026-08-04: Stage 2 batch drafts (10 items + 2 family catalogs)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, aggregated from the
+proposed deltas of the fable worker fan-out that translated `concept/variables`,
+`exercise/rock-paper-scissors`, `concept/if`, `exercise/rainbow`, `concept/repeat`,
+`exercise/two-fer`, `concept/strings`, `exercise/digital-clock`, `concept/arrays` and
+`exercise/weather-symbols`, plus the shared `rock-paper-scissors` and `draw` family
+catalogs. They are written to `glossary.md` as drafts (per "Decisions" in
+`orchestrator.md`: draft, publish, let the forum review them) and every one is up for
+challenge on the pinned glossary thread.
+
+#### Programming concepts
+
+- **`condition` -> _kondisi_** (high confidence). The direct loan is the term Indonesian
+  programming material actually uses. _Syarat_ was the alternative and loses: it means a
+  requirement or prerequisite that must be satisfied, which imports an obligation the `if`
+  test does not have.
+- **`data type` -> _tipe data_** (high confidence). Standard and unambiguous. _Jenis data_
+  is grammatical but is the everyday "kind of" word rather than the technical term.
+- **`element` -> _elemen_** (high confidence). Needed as its own row because the arrays page
+  distinguishes the array-as-one-thing from the elements inside it, and that contrast fails
+  if "element" drifts between _elemen_, _item_ and _isi_ across pages.
+- **`compound data type` -> _tipe data majemuk_**. _Majemuk_ is the established word for a
+  compound/composite grammatical or logical unit, so it carries the "made of several parts"
+  sense without inventing anything.
+- **`keyword` -> _kata kunci_**. Literal and standard. The row exists mainly to state the
+  thing that is easy to get wrong: only the word "keyword" is translated, never the keyword
+  itself, which stays an English code token.
+- **`code block` -> _blok kode_**. Consistent with the already-confirmed `kode` for `Code`.
+- **`value` -> _nilai_**. Uncontroversial, but worth a row because `nilai` is already doing
+  work in the existing `to assign` row (_memberikan nilai_) and in `nilai default` below, so
+  pinning it stops a competing word appearing for the noun.
+- **`iterate` -> _menelusuri_** (verb), _iterasi_ (noun). _Menelusuri_ ("to trace/walk
+  through") is what the arrays and strings pages actually needed, and it fits the physical
+  register of the chain metaphor better than the loan. The noun _iterasi_ is kept available
+  because there is no natural noun form of _menelusuri_ for the technical sense. Currently
+  no Indonesian file uses the noun.
+- **`camel case` -> kept English**. There is no recognised Indonesian rendering, and any
+  attempt would obscure a convention the learner has to recognise on sight in code.
+
+#### Exercises and families
+
+- **`playing hall` -> _aula pertandingan_** (rock-paper-scissors). _Aula_ is the hall, and
+  _pertandingan_ marks it as the competition venue rather than a school assembly hall.
+- **`canvas` -> _kanvas_** (`draw` family). The absorbed loan; the art sense is already
+  ordinary Indonesian, which is exactly the metaphor the exercise wants.
+- **`radius` -> _jari-jari_** (`draw` family). The standard geometry term taught in
+  Indonesian schools, so it is more familiar to a beginner than the loan _radius_.
+- **`Rock/Paper/Scissors` -> _Batu, Kertas, Gunting_**. The game is known by these words in
+  Indonesian. Recorded with the commas because that is how the exercise title renders it and
+  a title needs one fixed form. (The other common name, _suit_, refers to the local
+  thumb/finger/pinky game, which is a different game with different rules, so it would be
+  actively wrong here.)
+- **`tie` -> _seri_**. The ordinary sports word for a drawn result. _Imbang_ also means
+  drawn but is more commentary-flavoured.
+- **`hue` -> kept English**; **`saturation` -> _saturasi_**; **`lightness` -> _kecerahan_**.
+  The split is not arbitrary: _saturasi_ is a real absorbed loan and _kecerahan_ is ordinary
+  Indonesian for brightness, whereas the nearest words for `hue` (_rona_, _corak_, _warna_)
+  either read as literary or collapse into "colour" itself, which destroys the distinction
+  the HSL explanation is teaching. Both localized rows are prose-only; see the open question
+  at the top of this file about the same words used as function input names.
+- **`concatenation` -> _penggabungan_**, verb _menggabungkan_. The plain "joining together"
+  word, which is all the term means.
+- **`template string` -> kept English**. A feature name, like `string` itself.
+- **`default value` -> _nilai default_**. The hybrid is what Indonesian developers say.
+  _Nilai bawaan_ is fully native and correct but reads more formal than these pages want,
+  and `default` is already understood.
 
 ### 2026-08-02: `Code` → `kode` and `input slot` → `lubang` confirmed
 

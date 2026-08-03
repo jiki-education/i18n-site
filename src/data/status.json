@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "4e60917",
+  "governance_sha": "50b73a4",
   "approved": 168,
   "disapproved": 0,
-  "total": 367,
+  "total": 372,
   "languages": [
     {
       "lang": "it",
@@ -1857,6 +1857,62 @@
       ]
     },
     {
+      "lang": "ja",
+      "name": "Japanese",
+      "stage": "refining",
+      "category_slug": "i18n-ja",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 311,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 764,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 765,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 808,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "ar",
       "name": "Arabic",
       "stage": "setup",
@@ -2007,37 +2063,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "ja",
-      "name": "Japanese",
-      "stage": "setup",
-      "category_slug": "i18n-ja",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 311,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 764,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 765,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 808,
           "status": "pending"
         }
       ]

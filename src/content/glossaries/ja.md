@@ -2,8 +2,8 @@
 lang: "ja"
 name: "Japanese"
 family: null
-stage: "setup"
-governance_sha: "0e7d01d"
+stage: "refining"
+governance_sha: "19b1038"
 content_version: "cfbc80fbe123"
 published_at: "2026-08-03"
 term_count: 66

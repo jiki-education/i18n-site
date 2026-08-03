@@ -3,10 +3,10 @@ lang: "sr"
 name: "Serbian"
 family: null
 stage: "refining"
-governance_sha: "471034c"
-content_version: "40457cf3411e"
+governance_sha: "6b13a61"
+content_version: "326140380060"
 published_at: "2026-08-03"
-term_count: 115
+term_count: 117
 category_id: 166
 forum_topic_id: 402
 video_player_forum_topic_id: 779
@@ -145,6 +145,15 @@ These are terms where the Serbian is used in prose, so the "Use (sr/en)" column 
 | maze | lavirint | sr | Masculine; declines normally ("u lavirintu", "kroz lavirint", pl. "lavirinti"). Spelled with **v**, not "labirint": both are valid, but "lavirint" is what Serbian speakers actually say. |
 | foot-gun | opasna prečica | sr | Flagged for native-speaker review; Serbian has the idiom "pucati sebi u nogu" (to shoot yourself in the foot), which may be worth workshopping into a punchier term. |
 
+### Exercise scenario vocabulary
+
+Terms that belong to an exercise's story rather than to programming itself.
+
+| English | Serbian | Use (sr/en) | Notes |
+|---------|---------|-------------|-------|
+| dress code | pravila oblačenja | sr | Confirmed over the alternative "dres kod" per native-speaker feedback (see glossary-notes.md). Plural noun phrase; declines normally ("prema pravilima oblačenja"). |
+| dead end (maze) | ćorsokak | sr | Masculine; declines normally ("iz ćorsokaka", pl. "ćorsokaci", "sa dva ćorsokaka"). |
+
 ## Keep in English
 
 These stay in English in Serbian prose, with the Serbian gloss to use for each.
@@ -184,6 +193,60 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 
 ## Decision log
 
+### 2026-08-04: `dress code` and `dead end` confirmed; `smart` (attire) stays open
+
+**Decided by:** native speaker **little_mouse** on the pinned Serbian glossary thread
+([post 3080](https://forum.jiki.io/t/402/3080)), answering the draft terms posted in
+[post 2946](https://forum.jiki.io/t/402/2946). **Terms affected:** `dress code`,
+`dead end`, `smart (attire)`, `formal (attire)`. **Status: two settled, one left open.**
+
+**`dress code` = "pravila oblačenja". Settled, moved into `glossary.md`.** little_mouse
+noted that Serbian news and general writing freely mix in English terms, so "dres kod" is
+also idiomatic and is arguably the clearer of the two, but described "pravila oblačenja" as
+"more fluid, not like Latin" and closed with "we can also leave as it is". Read together,
+that is a mild preference for the draft we already had rather than a correction of it, so
+the draft is confirmed rather than swapped. It also matches the register the rest of the
+Serbian glossary uses, which reaches for a native phrase where one reads naturally and
+keeps English only where the English is the real technical token. The published
+`bouncer-dress-code` exercise already used "pravila oblačenja" throughout (both
+`instructions/sr.md` and the message catalog), so no content sweep followed from this.
+
+**`dead end` = "ćorsokak". Settled, moved into `glossary.md`.** Confirmed unchanged ("OK").
+Already in use across the `maze-turn-around` exercise.
+
+**`smart` (attire) stays an unconfirmed draft.** This is the substantive point in the post
+and it did not produce a term. little_mouse's objection is precise and correct: English
+"smart" in dress is not "elegant". It names a specific register sitting *between* casual and
+formal/elegant, closest to business-casual, whereas "elegantno" reaches for the formal end.
+What was offered as the alternative was to keep the English word "smart" (they note Serbian
+dress writing does borrow it), with "elegantno" accepted as "less precise but OK". No
+Serbian rendering of the business-casual register was actually supplied.
+
+Left as a draft deliberately rather than guessed at. Substituting a word little_mouse did
+not give would be our invention wearing their authority, and the two candidates on the table
+each have a real cost: keeping bare English "smart" cuts against the guide's loanword rule
+(a borrowing that enters Serbian prose is respelled phonetically throughout, "framework" →
+"frejmvork") and would sit oddly beside a fully Serbian "svečano" in the same list, while
+"elegantno" is the imprecision they flagged. Constructed options such as "poslovno-ležerno"
+were not proposed by anyone and are not ours to coin.
+
+The published exercise keeps "elegantno" in the meantime, which is the reviewer's own
+"less precise but OK", and a second opinion has been asked for on the thread. What would
+settle it is a native speaker naming the Serbian phrase they would actually use for the
+business-casual register, at which point it is a clean term swap across
+`bouncer-dress-code`'s instructions and message catalog.
+
+**`formal` (attire) = "svečano" stays unchanged.** little_mouse raised "formalno" as
+possibly more precise (politicians, suits, serious dress, as against fancy dress generally),
+then set the point aside themselves: "doesn't matter since this is not fashion text but IT
+exercise". Not treated as a change request. There is also a reason to keep "svečano" beyond
+inertia: the exercise's own `"ballgown"`/`"tuxedo"` values are gala wear, which "svečano"
+covers and "formalno" arguably narrows. If `smart` is later settled with a business-register
+word, this row is worth revisiting in the same breath, since the two are read as a pair.
+
+The remaining drafts from post 2946 (`bouncer`, `guest list`, `standard library`,
+`dictionary key`) were not commented on and stay unconfirmed drafts below.
+
 ### 2026-08-03: Proposed terms for the bouncer/maze family (unconfirmed drafts)
 
 **Status: agent draft, not yet reviewed by a native speaker.**
@@ -194,12 +257,14 @@ terms, so logging them now rather than re-deriving per exercise. None of these a
 `glossary.md` yet — do not treat them as settled.
 
 - **bouncer** (the exercise's job title) → izbacivač
-- **dress code** → pravila oblačenja
 - **guest list** → spisak gostiju
-- **smart (as in "smart attire")** → elegantno
-- **dead end** (maze family) → ćorsokak
+- **smart (as in "smart attire")** → elegantno (flagged as imprecise by a native speaker
+  without a replacement being supplied; see the 2026-08-04 entry above before using it)
 - **standard library** → standardna biblioteka
 - **dictionary key** → ključ
+
+`dress code` → pravila oblačenja and `dead end` → ćorsokak were on this list and are now
+confirmed and in `glossary.md` (see the 2026-08-04 entry above).
 
 If a native speaker confirms or corrects any of these on the forum, move it into
 `glossary.md` as a normal additive row and remove it from this list.

@@ -3,10 +3,10 @@ lang: "pt-pt"
 name: "European Portuguese"
 family: "pt"
 stage: "refining"
-governance_sha: "63b88af"
-content_version: "9147c6878292"
-published_at: "2026-08-01"
-term_count: 53
+governance_sha: "d49117d"
+content_version: "3ed11c0c8bce"
+published_at: "2026-08-03"
+term_count: 55
 category_id: 73
 forum_topic_id: 341
 video_player_forum_topic_id: 775
@@ -152,6 +152,8 @@ Terms below diverge from `../pt/glossary.md` or exist only for European Portugue
 |---------|------------|-----------------|-------|
 | to return (a value) | devolver | pt-pt | "A função devolve um valor." Deliberately diverges from Brazilian `retornar`; never mix the two. |
 | return value | valor devolvido | pt-pt | Follows the verb `devolver` above. |
+| input (one a function declares) | parâmetro de entrada | pt-pt | Use only where the English word is **input** and it names one of the inputs a function declares or expects ("give it four inputs: `left`, `top`, `radius`, `color`"). Plural _parâmetros de entrada_. Never bare _entrada_. Never _fenda_, which translates the English **slot** only (see `../pt/glossary.md` § Jiki physical metaphors): pick between the three by the English word in front of you, not by what the sentence is about, and where one paragraph uses both English words, use both renderings. |
+| input (a value passed in at a call) | valor de entrada | pt-pt | Use only where the English word is **input** and it names the value written at one position of a call ("for the fifth input, we write `"blue"`"). Masculine, so agreement follows: _um valor de entrada extra_, _o quinto valor de entrada_. Never bare _entrada_. Never _fenda_, on the same three-way distinction as the row above. |
 | brackets (the two after a function name) | parênteses | pt-pt | The prose rendering of "those two brackets" written after a function name: _os parênteses_, or _dois parênteses_ on first mention. The glyph naming convention (and when to disambiguate `()` as _parênteses curvos_) is in § Brackets below. |
 
 ### Loops, state & program flow
@@ -222,6 +224,92 @@ fecho (`()`)._
 ---
 
 ## Decision log
+
+### 2026-08-03: "input" splits into two rows, and neither of them is _fenda_
+
+**Decided by:** native speaker (rlsmota), reviewing the European Portuguese Strings concept
+page. **Terms affected:** `input (one a function declares)`, `input (a value passed in at a
+call)`, and, by exclusion, the family row `input slot`.
+
+The Strings page had rendered the English word **input** as _fenda_ ("uma fenda extra", "na
+quinta fenda"). The reviewer's correction is that the natural European Portuguese for an
+input is _valor de entrada_: "valor de entrada extra", "no quinto valor de entrada".
+
+**This is not a correction to `input slot`.** The English source uses two different words in
+the same passage, and it uses them deliberately: **input** where it means the thing you
+supply, and **slot** where it means the physical opening in the machine that a coin or a
+piece of paper goes into ("put some coins in the first four slots"). _Fenda_ is the agreed
+rendering of the second, confirmed by Brazilian native speakers on the pt-BR glossary thread
+and binding on the whole family, and the reviewer flagged neither of the sentences that use
+it correctly. So the family row is untouched: what was wrong was reaching for the metaphor
+word where the English had not used the metaphor.
+
+**Two `input` rows, not one.** An earlier round with the same reviewer settled "inputs" as
+_parâmetros de entrada_ on the Variables page, where the sentence names what the `circle`
+function declares ("give it four inputs. Its `left`, `top`, `radius`, and `color`"). That is
+a different object from the one settled here, which is the value written at one position of
+a particular call. European Portuguese distinguishes them naturally, _parâmetro_ being the
+declared input and _valor_ being what is passed for it, so both renderings are right for
+their own sense and neither generalises to the other. Unifying them would have had to
+overrule one of the reviewer's own two corrections, so the glossary carries both rows, each
+scoped to the English wording that triggers it, and each ruling out _fenda_ explicitly. A
+future pass that finds them redundant is looking at the sense, which is exactly the mistake
+that produced _fenda_; the rows are keyed on the English word for that reason.
+
+Both rows are in the **locale** file, not the family file: the distinction is settled for
+European Portuguese only, and nobody has confirmed that Brazilian Portuguese draws it the
+same way.
+
+**This supersedes** the unconfirmed 2026-08-02 proposal below of `input (the value passed
+in)` as _o valor recebido_, which nobody confirmed and which was avoiding _entrada_ on the
+grounds that it collided with _fenda_. The collision is real, and this is the resolution of
+it.
+
+**Left unfixed, flagged rather than changed:** the JavaScript interpreter's pt-pt message
+catalog renders the `inputCount` plural family as bare _entrada_ / _entradas_, which these
+rows now rule out (its `slotCount` family correctly uses _fenda_, matching the English
+"input slot"). It is a different content type with its own validated write path, so it wants
+a `/translate-interpreters` pass, not a hand edit.
+
+### 2026-08-02: Proposed terms from the Stage 2 batch 2 catch-up pass (unconfirmed drafts)
+
+**Decided by:** agent (proposals only, nothing written to `glossary.md`). The catch-up pass
+translating `two-fer`, `strings`, `digital-clock`, `arrays`, `weather-symbols`.
+
+**Family-glossary spelling conflict, needs settling.** `languages/pt/glossary.md:68`
+(family) spells the `string` gloss `cadeia de caracteres` — the Brazilian spelling. But
+`languages/pt-pt/glossary.md:31` (`character`) mandates the post-1990 European spelling
+`carateres`, explicitly noting `caracteres` is the Brazilian form. The family file is
+carrying a Brazilian spelling that binds pt-pt too. This pass followed the locale rule
+(`carateres`), but the family row is wrong for pt-pt as written. Fix options: add a
+per-locale spelling note to the family row, or move the gloss into each locale file.
+
+**Also unrecorded:** `string`'s grammatical gender — this pass used feminine (`uma string`);
+a future pass could defensibly pick masculine. Worth one note on the existing row.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| data type | tipo de dados | Recurs across every concept page; likely family-level (pt-BR should match). | high |
+| compound data type | tipo de dados composto | Adjective could vary (_composto_ vs _combinado_). | medium |
+| concatenation | concatenação | Pairs with `+` across many exercises; probably the one canonical word, may not earn a row. | high |
+| default (value) | valor por omissão | European form (pt-BR would say _valor padrão_); belongs in the **locale** file, not the family file. Alternatives: _predefinido_, _por defeito_. | medium |
+| to display (on screen/clock) | mostrar | Chosen over _apresentar_/_exibir_; recurs across visual exercises. | medium |
+| input (the value passed in) | o valor recebido | Avoids bare _input_ and _entrada_ (which collides with the _fenda_ input-slot metaphor). | medium |
+| quotation marks | aspas (duplas) | Portugal traditionally uses angle quotes («»), so _aspas_ alone is mildly ambiguous where the page teaches straight double quotes as syntax. | medium |
+| meridiem (am/pm indicator) | kept English | It is the literal parameter name in `displayTime`; translating it would break the tie to the code. | medium |
+| template string | kept English | Alternatives exist (_string de template_, _literal de modelo_), so passes could diverge. | low |
+
+Flags, not glossary rows: `arrays` renders "the posh word for true and false" as _o nome
+pomposo_ — a native reviewer may prefer _chique_ or _fino_. `weather-symbols`'
+`functions.draw.category` renders as _Desenho_; checked the shared `draw` catalog for a
+competing category label, found none, but worth a glance if that file gains one. Possible
+`global/terms.md` gaps: "data type" / "compound data type", possibly "quotation marks".
+
+**Casing bug (not a glossary item, flag for Aron/Jeremy):** `exercise-categories/draw/
+locales/` is on disk as `pt-PT` (capital PT) while this batch and everything else write
+`pt-pt`. macOS's case-insensitive filesystem hides this; a case-sensitive Linux CI box would
+treat them as two different locales and the shared `draw` messages would fall back to raw
+keys. Not renamed by this pass.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 
@@ -317,3 +405,36 @@ covered by a dated entry above (`interpreter`, `board / whiteboard`) is not repe
 | chain | pt-BR's equivalent entry warns of a different collision risk, with electric current; both renderings are valid for their own locale. |
 | machine | Direct, concrete word; not currently used in pt-BR material. |
 | warehouse | Ordinary word for a storage building. |
+
+### 2026-08-01: Guide pruned; rationale moved here
+
+**Decided by:** agent (guide-pruning pass). **Status: no rule changed.**
+
+`guide.md` is loaded into the prompt for every European Portuguese item, so the reasoning
+behind its rules was moved here. Every instruction survives in the guide; what follows is
+only the justification that was sitting next to it.
+
+- **Audience.** The removed text: Portuguese tech education leans more formal and more
+  restrained with anglicisms than Brazil's. The rule that follows from it (be restrained with
+  anglicisms; the warmth comes from register and encouragement, not from loanwords) stays in
+  the guide, stated imperatively.
+- **`tu` over `você`.** The removed text: `tu` is the register used by real Portuguese online
+  tutorials and learning platforms, and `você` reads as distancing, overly formal, or even
+  brusque. The rules ("Use `tu` throughout", "Never default to `você`") are unchanged.
+- **Separate locale, not a variant.** The guide said that where it diverges from
+  `languages/pt-BR/guide.md` the divergence is deliberate and researched. A pt-pt pass never
+  loads the pt-BR guide, so the cross-reference could not be acted on; the actionable half,
+  "never carry a Brazilian choice over by default", stays.
+- **Duplicated rules cut, not weakened.** The § "Contractions are mandatory" bullet was
+  word-for-word the same rule as pt-BR's and now sits once in `../pt/guide.md` § Grammar,
+  which this locale inherits (see `../pt/glossary-notes.md`). The § "Common EN→pt-PT
+  pitfalls" tail restated the family guide's null-subject rule, this guide's own `estar a` +
+  infinitive rule, and its own "never default to `você`" rule; the gerund bullet's one extra
+  clause (it creeps in from English or Brazilian source material) is folded into the `estar
+  a` rule, and the two genuinely new items ("just" → só/apenas, "make sure" → certifica-te de
+  que) are folded into § "Style notes (pt-pt specifics)" as calque traps. "Try running this
+  code" appeared both in the before/after table and in § "Natural phrasing"; the table row
+  keeps it.
+- **A false attribution fixed.** § "Information structure and emphasis" credited "given
+  information first, new information last" to `global/voice.md`, which does not state it. It
+  is now stated plainly as this guide's own rule, unchanged in substance.

@@ -3,10 +3,10 @@ lang: "pl"
 name: "Polish"
 family: null
 stage: "refining"
-governance_sha: "4015cb5"
-content_version: "df48f15794bd"
-published_at: "2026-08-02"
-term_count: 104
+governance_sha: "0f2a416"
+content_version: "c00c1a18139c"
+published_at: "2026-08-03"
+term_count: 105
 category_id: 201
 forum_topic_id: 417
 video_player_forum_topic_id: 771
@@ -127,7 +127,8 @@ These are terms where the Polish is used in prose, so the "Use (pl/en)" column i
 |---------|--------|----------|-------|
 | course | kurs | pl | The whole Jiki course the learner is taking. Keep distinct from _lekcja_ (lesson) and _program nauczania_ (curriculum). |
 | Great work! / Great job! (success or congratulation opener) | Dobra robota! | pl | Never _Świetna robota!_: nobody says it in Polish, it reads as a word-for-word calque of "great job". |
-| character (the little figure in the maze exercises) | ludzik | pl | **Masculine**, so every agreeing verb, adjective, participle and pronoun is masculine: _ludzik wszedł_, _ludzik nie dotarł_, _jest zwrócony_, _a on skręca_. Declines _ludzika_ (gen./acc.), _ludzikowi_ (dat.). Never _postać_, which is feminine and too abstract for the little person the English describes. |
+| character (the little figure in the maze exercises) | ludzik | pl | **Masculine**, so every agreeing verb, adjective, participle and pronoun is masculine: _ludzik wszedł_, _ludzik nie dotarł_, _jest zwrócony_, _a on obraca się_. Declines _ludzika_ (gen./acc.), _ludzikowi_ (dat.). Never _postać_, which is feminine and too abstract for the little person the English describes. |
+| turn (the maze character's `turnLeft()`/`turnRight()` instruction) | obracać się (verb) / obrót (noun) | pl | The character rotates on the spot: _ludzik obraca się w lewo_, _obrót w prawo_, _polecenie obrotu w lewo_. The reflexive _się_ is required on the verb. Never _skręcać_ / _skręcić_ / _skręt_, which describe turning while travelling and imply the character moves forward through the turn. |
 
 ## Keep in English
 
@@ -183,6 +184,37 @@ Default to plain **nawias**. When a specific bracket type matters, name it and s
 ---
 
 ## Decision log
+
+### 2026-08-03: the maze character turns with `obracać się`, never `skręcać`
+
+**Decided by:** native speakers **mlistewnik** and **siling**, on the maze-solve-basic review
+thread, forum topic 811: mlistewnik in post 9 (https://forum.jiki.io/t/811/9), siling agreeing
+in post 11 (https://forum.jiki.io/t/811/11).
+**Terms affected:** `turn (the maze character's turnLeft()/turnRight() instruction)` (new row);
+also the example wording inside the `character (the little figure in the maze exercises)` row.
+
+siling originally chose _skręcać_ in an earlier line-by-line review of the same exercise.
+mlistewnik contested it: in these exercises the character rotates on the spot and nothing else
+happens, whereas _skręcić_ describes turning in the middle of travelling („samochód skręcił w
+prawo" means it drove on, turned, and drove on again). _Obracać się_ is rotation in place,
+which is exactly what `turnLeft()` and `turnRight()` do. siling has now explicitly reversed his
+earlier position and agreed with mlistewnik, so two native speakers back _obracać się_.
+
+**This row is human-decided.** It changes only by fresh agreement with a native speaker.
+
+The verb is reflexive, so the _się_ is not optional, and the noun form used when naming the
+instruction is _obrót_ („obrót w lewo", „polecenie obrotu w lewo"), not _skręt_.
+
+Applied to every Polish occurrence, which were all in `exercise/maze-solve-basic`: the two
+instruction bullets in `instructions/pl.md` and the `turnLeftTurnsRight` hint (both question
+and answer) in `locales/pl/translation.json`. The shared maze category catalog
+(`exercise-categories/maze/locales/pl/translation.json`) already read „Obraca ludzika o 90
+stopni w lewo/w prawo" and needed no change. No other Polish content uses the turn verb.
+
+The 2026-08-02 `ludzik` entry below quotes _a on skręca_ as one of its masculine-agreement
+examples. That entry stands as written (this log is append-only); the corresponding example in
+the glossary row itself now reads _a on obraca się_, which is the same grammatical point made
+with wording that still exists in the content. The `ludzik` decision itself is untouched.
 
 ### 2026-08-03: the draw-family grid cell is `pole`, never `pudełko`
 

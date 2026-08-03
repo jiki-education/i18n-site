@@ -3,8 +3,8 @@ lang: "pt-pt"
 name: "European Portuguese"
 family: "pt"
 stage: "refining"
-governance_sha: "d49117d"
-content_version: "3ed11c0c8bce"
+governance_sha: "e8c68bd"
+content_version: "4468ff1d949d"
 published_at: "2026-08-03"
 term_count: 55
 category_id: 73
@@ -99,7 +99,6 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 |-----------------|---------------------|-------|
 | box (value container) | caixa | A box that holds a value. |
 | input slot | fenda | The narrow slot you insert a coin into, like on a piggy bank. Confirmed by multiple native speakers (oxe-b, alanprofeta) on the pt-BR glossary thread: _ranhura_ reads formal/dated, _fenda_ is the natural word for a piggy-bank-style coin slot specifically (as opposed to _entrada_ for a hardware slot, or _ficha_ for arcade tokens). Replaces the earlier draft, _ranhura_. |
-| return chute | calha de saída | A chute a value slides out of. Low-to-medium confidence; flag for native-speaker confirmation on first real use. |
 
 ## Brackets
 
@@ -203,6 +202,7 @@ Terms below diverge from `../pt/glossary.md` or exist only for European Portugue
 | board / whiteboard | quadro | **One object, one word.** Always _quadro_. Never _quadro branco_ or _painel_. |
 | warehouse (Jiki's warehouse) | armazém | Where Jiki hangs out and keeps his shelf of machines. |
 | crank (machine crank) | manivela | The handle Jiki turns to power a machine up. Verb phrase: _rodar a manivela_. |
+| return chute | calha de saída | A chute a value slides out of. Low-to-medium confidence; still awaiting European Portuguese native-speaker confirmation. Do not carry over pt-BR's _boca da máquina_, which is a Brazilian colloquialism. |
 
 ## Brackets
 
@@ -224,6 +224,22 @@ fecho (`()`)._
 ---
 
 ## Decision log
+
+### 2026-08-03: `return chute` inherited down from the family file, unchanged and still unconfirmed
+
+**Decided by:** nobody, for European Portuguese. **Status: unconfirmed draft**, exactly as it
+was before. **Terms affected:** `return chute`.
+
+`return chute → calha de saída` used to live in `../pt/glossary.md` as a shared row. Brazilian
+native speakers rejected that rendering for their locale and picked `boca da máquina` instead
+(see `../pt-BR/glossary-notes.md`), so the term stopped being family-shared and each locale
+now carries its own row.
+
+Nothing about European Portuguese was decided here. `calha de saída` is copied down verbatim,
+including its original low-to-medium confidence warning, and no pt-pt translated file was
+touched. It is still open for a European Portuguese speaker to confirm or replace, and the
+Brazilian discussion is worth reading first: the objection there was that the phrase reads
+oddly in isolation, which may or may not apply in Portugal, and `boca` may read differently.
 
 ### 2026-08-03: "input" splits into two rows, and neither of them is _fenda_
 

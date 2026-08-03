@@ -3,10 +3,10 @@ lang: "pt-BR"
 name: "Brazilian Portuguese"
 family: "pt"
 stage: "refining"
-governance_sha: "8e3de87"
-content_version: "2603f068e6df"
-published_at: "2026-07-31"
-term_count: 61
+governance_sha: "e8c68bd"
+content_version: "0d7b18b656a1"
+published_at: "2026-08-03"
+term_count: 63
 category_id: 74
 forum_topic_id: 288
 video_player_forum_topic_id: 773
@@ -99,7 +99,6 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 |-----------------|---------------------|-------|
 | box (value container) | caixa | A box that holds a value. |
 | input slot | fenda | The narrow slot you insert a coin into, like on a piggy bank. Confirmed by multiple native speakers (oxe-b, alanprofeta) on the pt-BR glossary thread: _ranhura_ reads formal/dated, _fenda_ is the natural word for a piggy-bank-style coin slot specifically (as opposed to _entrada_ for a hardware slot, or _ficha_ for arcade tokens). Replaces the earlier draft, _ranhura_. |
-| return chute | calha de saída | A chute a value slides out of. Low-to-medium confidence; flag for native-speaker confirmation on first real use. |
 
 ## Brackets
 
@@ -127,8 +126,10 @@ Why each term here was chosen is in the decision log (`glossary-notes.md`).
 | English | Portuguese | Use (pt-BR/en) | Notes |
 |---------|------------|-----------------|-------|
 | programming / coding | **programação** | pt-BR | Use `programação` consistently. `codificação` is not natural in Brazilian informal register; avoid. |
-| tech / tech industry | mercado de tech | pt-BR | "tech" kept as-is; "mercado de tech" for "tech industry". |
+| tech / tech industry | mercado de tech | pt-BR | "tech" kept as-is; "mercado de tech" for "tech industry" in the broad/generic sense. |
+| tech industry (software/programming jobs specifically) | mercado de TI | pt-BR | Use when the context is specifically the software/programming job market, not "mercado de tech". "TI" = "tecnologia da informação". |
 | developer | desenvolvedor | pt-BR | Use gender-neutral rephrasing where practical; see guide § Gender-neutral phrasing. |
+| welcome (greeting / interjection) | Bem-vindo | pt-BR | Never `Boas-vindas` as a standalone greeting: it is a noun and only works inside a construction like "damos as boas-vindas a você". Masculine fallback per guide § Gender-neutral phrasing, or recast to avoid the greeting entirely ("Vamos ao seu primeiro exercício!"). |
 
 ## Localize (use the Portuguese term)
 
@@ -201,6 +202,7 @@ Terms below diverge from `../pt/glossary.md` or exist only for Brazilian Portugu
 | warehouse (Jiki's warehouse) | galpão | The big shed where Jiki hangs out and keeps his machine shelf. |
 | crank (machine crank) | manivela | The handle Jiki turns to power a machine up: _girar a manivela_. |
 | board / whiteboard | quadro | **One word for one object.** Both the board the learner writes instructions on for Jiki to follow, and the board a function keeps its own instructions and notes on. Never a second word such as `quadro branco` or `lousa` for the same object. |
+| return chute | boca da máquina | The opening a value comes out of, as on a vending machine or an ATM. Replaces the earlier draft, _calha de saída_, which must not be used. Contracts normally: _na boca da máquina_, _da boca da máquina_. Where the machine is already named in the same sentence, _a boca_ alone is fine. |
 
 ## Provisional terms (🟡)
 
@@ -236,6 +238,76 @@ fechamento (`()`)._
 ---
 
 ## Decision log
+
+### 2026-08-03: `return chute` corrected to `boca da máquina`, and the row left the family file
+
+**Decided by:** native speakers (alanprofeta, oxe-b), forum posts
+https://forum.jiki.io/t/288/10 and https://forum.jiki.io/t/288/12.
+**Status: confirmed.**
+**Terms affected:** `return chute`.
+
+The previous rendering, `calha de saída`, was an unconfirmed draft carrying its own
+"low-to-medium confidence; flag for native-speaker confirmation on first real use" warning.
+alanprofeta read it in isolation and said it struck him as very odd, but had no alternative
+to offer. We replied with the metaphor's actual context (Jiki's machine is a vending
+machine: you post a value into the input slot at the top, and the return value comes out of
+the opening at the bottom) and asked for a suggestion.
+
+oxe-b answered with two candidates:
+
+- **`bandeja de retirada`**, the more formal, manual-style term (literally a "collection
+  tray").
+- **`boca da máquina`**, the colloquial term Brazilians actually use for the opening on a
+  vending machine or an ATM.
+
+`boca da máquina` is the choice, on oxe-b's own stated preference for exactly this context.
+It also fits the two rules that were already going to decide it: `global/voice.md`'s
+"default to the ordinary, common word", and the requirement that the metaphor keep teaching.
+`bandeja de retirada` is accurate but reads as signage rather than as something Jiki would
+say, and it names a tray, which pictures a value resting in a receptacle rather than being
+pushed out of the machine. `boca` is what a Brazilian reader already calls that opening, and
+it binds the chute to the machine that owns it, which is the whole point of the metaphor.
+
+It also sits well beside the confirmed `input slot → fenda`: `fenda` is the narrow slot a
+value goes *in*, `boca` is the wide opening it comes *out* of, and the two words are not
+confusable with each other.
+
+**The row moved out of `../pt/glossary.md` into the two locale glossaries.** `boca da
+máquina` is a Brazilian colloquialism, and no European Portuguese speaker has been asked
+about it, so promoting it family-wide would be assuming what the family rule
+(`global/workflow.md`, "only move it up to the family file once it is confirmed identical
+across every locale") says must be confirmed. pt-pt keeps `calha de saída` verbatim, warning
+and all, now in `../pt-pt/glossary.md`; its effective glossary is unchanged, and its
+translated content was not touched.
+
+### 2026-08-02: Proposed terms from the Stage 2 batch 2 catch-up pass (unconfirmed drafts)
+
+**Decided by:** agent (proposals only, nothing written to `glossary.md`). The catch-up pass
+translating `two-fer`, `strings`, `digital-clock`, `arrays`, `weather-symbols`.
+
+**The one real conflict, needs a native-speaker ruling.** `languages/pt/glossary.md`
+(family) already has a human-confirmed row: `input slot → fenda`. The `strings` worker
+extended `fenda` to cover ordinary "input" too, merging the source's "an extra input" and
+"the fifth slot" onto the one metaphor word. The `two-fer` and `weather-symbols` workers
+went the other way, proposing `entrada` for ordinary "input" and deliberately keeping it
+distinct from the `fenda` metaphor. Both can't stand — recommend keeping `fenda` for the
+physical-slot metaphor and adding `entrada` for the ordinary "value passed in" sense, with a
+Notes line on each pointing at the other, but this is a native-speaker call and `strings` is
+already published with the merged reading.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| input (ordinary sense, distinct from the fenda metaphor — see conflict above) | entrada | | medium |
+| compound data type | tipo de dado composto | Core teaching term, recurs on later compound-type pages. Pairs with "tipo de dado". | high |
+| template string | kept English, no gloss | Brazilian dev writing uses the English term; alternatives (_literal de modelo_, _string de modelo_) exist, so this sets a precedent. | medium |
+| display (the time) | mostrar | Chosen over _exibir_ for warmer register; other display-style exercises should match. | medium |
+| meridiem | kept as-is / quoted | Source names it as a term of art; alternative is paraphrasing as "o indicador de am/pm". | medium |
+
+**Note:** the `arrays` item's proposed delta was lost (its worker stopped responding across
+three relay attempts) despite the page itself translating and publishing cleanly (stamped
+`012da550948ba2ebcfaf953cd0906f3f`, first real use of "calha de saída" flagged for the
+native-speaker confirmation the family glossary asks for). Worth a `tidy` re-ask later to
+recover whatever term choices it made. Possible `global/terms.md` gap: "template string".
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 
@@ -288,6 +360,20 @@ this file from an earlier pass. A search of this locale's guide and glossary als
 instance of `brackets` glossed as `colchetes` where `parênteses` was meant; the file
 already used `parênteses` consistently for the function-call bracket pair.
 
+### 2026-07-31: `tech industry` split into a software/programming-specific sense from forum feedback
+
+**Decided by:** native speaker (oxe-b), forum post https://forum.jiki.io/t/288/3.
+**Status: confirmed.**
+**Terms affected:** `tech / tech industry`.
+
+Reviewing the pt-BR glossary, oxe-b noted that "mercado de tech" carries a job/business
+sense that works for "tech industry" broadly, but when the context is specifically
+software/programming jobs, "mercado de TI" ("TI" = "tecnologia da informação", a literal
+translation of "information technology") is more natural and common. They also noted
+"setor de tecnologia" as an option for the broad/generic sense, but the existing "mercado
+de tech" row already covers that case, so only the specific software/programming-jobs
+sense was added as a new row rather than replacing the existing one.
+
 ### Term rationale
 
 Why individual rows read the way they do, for the reasoning that is not a dated decision
@@ -336,3 +422,49 @@ grid-based exercise, not just this one.
 The same post confirmed the existing "bonequinho" choice for the maze walker/character is
 fine as-is (flagged only as "not the most literal translation", not as wrong), so no
 glossary change there.
+
+### 2026-08-01: `welcome` moved from the guide into the glossary, and the guide pruned
+
+**Decided by:** native speaker (oxe-b), forum posts https://forum.jiki.io/t/812/2 and
+https://forum.jiki.io/t/288/7, re-recorded here. **Status: confirmed** (the decision is
+unchanged; only the file it lives in changed).
+**Terms affected:** `welcome (greeting / interjection)`.
+
+Reviewing the published `pt-BR` translation of `Solve the Maze`, oxe-b flagged "Welcome"
+rendered as "Boas-vindas". `Boas-vindas` is a **noun**, something you wish or celebrate, and
+only works inside a construction like "damos as boas-vindas a você" or "uma festa de
+boas-vindas"; `Bem-vindo` is what directly addresses a person and is the right form for the
+standalone greeting. That decision was written into `guide.md` § "Gender-neutral phrasing"
+at the time, but a term mapping is a glossary row, not guide prose, so it now sits in
+`glossary.md` § "Core decisions" with the instruction intact. The guide keeps only the
+behavioural residue that is not about this one word: do not use a noun as an interjection to
+dodge gender agreement, recast the sentence instead. Nothing was reworded away from what
+oxe-b decided.
+
+**The rest of the guide was pruned in the same pass**, with the removed reasoning recorded
+here:
+
+- **Audience research.** The guide described the Brazilian ed-tech market as large and
+  diverse, shaped by platforms like Rocketseat and Curso em Vídeo, which set a warm, direct,
+  encouraging, informal tone, and noted that learners span a wide range of educational
+  backgrounds so one should write as if the reader is intelligent but has never typed a line
+  of code. That is the research behind the register, and every instruction in it is already
+  stated in `global/voice.md` (§ Audience, § Voice and tone). Only "Readers are in Brazil."
+  survives in the guide.
+- **Formality rationale.** "It is the standard second-person address in Brazilian Portuguese
+  for online learning and informal writing" justified `você`; the rule itself is unchanged.
+- **Duplicated rules cut, not weakened.** The `## Grammar` section restated "`você` +
+  third-person conjugation", which § Formality already required; the two are merged into the
+  Formality bullet, keeping the note that mixing them is the most common translator error.
+  Its "Prepositions contract with articles" bullet and its "Contractions are mandatory"
+  bullet were the same rule twice, and both are now the single family-level bullet in
+  `../pt/guide.md` § Grammar (see `../pt/glossary-notes.md`). The § "Common EN→pt-BR
+  pitfalls" tail restated the family guide's null-subject rule and its
+  break-up-long-subordination rule; only its two genuinely new items ("just" → só/apenas,
+  "make sure" → certifique-se de que) survive, folded into § "Style notes (pt-BR specifics)"
+  as calque traps.
+- **A false attribution fixed.** § "Information structure and emphasis" opened by comparing
+  Portuguese word order to Hungarian's and credited "given information first, new information
+  last" to `global/voice.md`, which does not state it. The comparison is gone and the
+  principle is now stated plainly as this guide's own rule, which is what it always was. No
+  instruction changed.

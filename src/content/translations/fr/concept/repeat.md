@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/repeat/source.md"
 en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "2c04051"
-content_version: "4a78069d95e0"
-published_at: "2026-08-02"
+governance_sha: "55e78b6"
+content_version: "a6236c1c77c8"
+published_at: "2026-08-03"
 forum_topic_id: 943
 ---
 
@@ -17,7 +17,7 @@ Jusqu'ici, tout a été écrit de façon linéaire : Jiki suit chaque instructi
 
 Maintenant, on va voir comment Jiki peut sortir de ce déroulement strict de haut en bas, et plus précisément comment on peut lui demander d'exécuter la même section de code plusieurs fois de suite.
 
-Par exemple, imagine que tu es dans le labyrinthe et que tu veux avancer de 10 pas. Il existe une fonction `walk` pour t'aider, mais que se passerait-il si elle n'existait pas ? Si tu n'avais que la fonction `move` (avancer) ?
+Par exemple, imagine que tu es dans le labyrinthe et que tu veux avancer de 10 pas. Il existe une fonction `walk` (marcher) pour t'aider, mais que se passerait-il si elle n'existait pas ? Si tu n'avais que la fonction `move` (avancer) ?
 
 Plutôt que d'écrire `move` 10 fois de suite, ce qui devient très répétitif, ce qu'il nous faut, c'est pouvoir dire : « Hé, Jiki, fais 10 fois la prochaine instruction que je te donne.
 

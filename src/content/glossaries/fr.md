@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "refining"
-governance_sha: "4015cb5"
-content_version: "476a12cbb857"
-published_at: "2026-08-02"
-term_count: 69
+governance_sha: "e50c4c0"
+content_version: "fcbad8b27b27"
+published_at: "2026-08-03"
+term_count: 70
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -24,6 +24,7 @@ the decision log (`glossary-notes.md`).
 |---------|--------|-------------|-------|
 | streak | série | fr | A run of consecutive days, as in the learning-platform sense. |
 | foot-gun | piège involontaire | fr | Use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`. |
+| Solve the Maze (exercise title) | Évade-toi du labyrinthe | fr | Title only, and no exclamation mark. Prose about the maze keeps "faire sortir le personnage du labyrinthe". |
 
 ## Localize (use the French term)
 
@@ -150,6 +151,31 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-03: "Solve the Maze" exercise title → `Évade-toi du labyrinthe` (reviewer vote)
+
+**Decided by:** a vote of native speakers on forum topic 803
+(https://forum.jiki.io/t/803), which we ran as a ranking of three candidates and committed
+in advance to following.
+**Terms affected:** the `Solve the Maze (exercise title)` row.
+**Files affected:** `glossary.md` (Core decisions), `exercise/maze-solve-basic` reviewer
+notes, and the `fr` title of the `maze-solve-basic` instructions.
+
+The title had been debated at length (`Fais sortir le personnage du labyrinthe` vs `Sors du
+labyrinthe` vs a "Solve"-faithful option), so the three candidates were put to a ranking
+vote. Results: mirina picked `Évade-toi du labyrinthe`; resu-xunil ranked `Évade-toi` 1st,
+`Sors` 2nd, `Résous` 3rd; williamapc ranked `Sors` 1st, `Évade-toi` 2nd and explicitly
+disliked `Résous le labyrinthe`, saying it reads like solving a maths problem. `Évade-toi du
+labyrinthe` took two first places, was never ranked last, and nobody argued against it, so
+it wins. This row is protected: it is a native speakers' decision and is not to be
+re-opened by a translation pass.
+
+No exclamation mark, even though one reviewer liked the energy of `Résous le labyrinthe !`:
+the English exercise titles carry none, so neither do the French ones.
+
+The decision is scoped to the **title**. The guide's general rule (French doesn't "solve" a
+maze; prose says "faire sortir le personnage du labyrinthe") is unchanged, and reviewers
+explicitly said that phrasing is fine in the body prose.
 
 ### 2026-08-03: `piece of paper` → `bout de papier` confirmed
 

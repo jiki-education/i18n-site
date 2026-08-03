@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "59af88d",
-  "approved": 193,
+  "governance_sha": "6740b5b",
+  "approved": 195,
   "disapproved": 0,
   "total": 477,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 34,
+      "approved": 36,
       "disapproved": 0,
       "total": 54,
       "items": [
@@ -186,8 +186,8 @@
         },
         {
           "key": "exercise/space-invaders-repeat",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1115,
+          "status": "approved"
         },
         {
           "key": "exercise/snowman",
@@ -221,8 +221,8 @@
         },
         {
           "key": "exercise/plant-the-flowers",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1114,
+          "status": "approved"
         },
         {
           "key": "exercise/golf-rolling-ball-state",
@@ -2353,7 +2353,7 @@
     {
       "lang": "id",
       "name": "Indonesian",
-      "stage": "setup",
+      "stage": "refining",
       "category_slug": "i18n-id",
       "approved": 2,
       "disapproved": 0,

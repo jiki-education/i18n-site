@@ -3,8 +3,8 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "1115f13"
-content_version: "8c32246c121b"
+governance_sha: "88fcc6f"
+content_version: "1748bf356181"
 published_at: "2026-08-03"
 term_count: 84
 category_id: 72
@@ -72,13 +72,13 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | (programming) language | langage (de programmation) | fr | _langage_ for a programming language (_langage de programmation_ on first mention, then _langage_). Use _langue_ only for the human-language framing ("une langue que l'ordinateur comprend"), which is what French actually distinguishes; never mix the two words for the same sense on one page. |
 | assignment | affectation | fr | Not "assignation", which is a flagged anglicism in French. |
 | to assign | affecter | fr | Matches _affectation_ above: "affecter une valeur à une variable." |
-| code block | bloc d'instructions | fr | Deliberately distinct from _portée_ (scope) below. |
+| code block | bloc de code | fr | Deliberately distinct from _portée_ (scope) below. Never _bloc d'instructions_, which excludes expressions. |
 | iteration | itération | fr | Verb: _itérer_; "parcourir" also natural for iterating over a collection. |
 | break (loop control) | instruction `break` | fr | The keyword `break` in code stays English; this is the prose concept of breaking out of a loop. |
 | modulo / remainder operator | modulo (opérateur) / le reste (valeur) | fr | _modulo_ for the `%` operator; _le reste (de la division)_ for the resulting value. |
 | toggle | basculer | fr | Verb only; no crisp noun exists. "basculer une valeur booléenne." |
 | state / stateful | état / à état | fr | "à état" or "avec état" for "stateful". |
-| scope | portée | fr | Deliberately distinct from _bloc d'instructions_ (code block) above. |
+| scope | portée | fr | Deliberately distinct from _bloc de code_ (code block) above. |
 
 ### Tooling & engineering
 
@@ -176,6 +176,50 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-03: `code block` → `bloc de code` (reviewer retraction)
+
+**Decided by:** native speaker (myrtarazona), forum topic 926
+(https://forum.jiki.io/t/926/18), retracting her own confirmation at
+https://forum.jiki.io/t/926/16 three hours earlier. Corroborated by two further native
+speakers on the same topic: williamapc (https://forum.jiki.io/t/926/20) and resu-xunil
+(https://forum.jiki.io/t/926/21).
+**Terms affected:** `code block` (`bloc d'instructions` → `bloc de code`), and the
+cross-reference in the Notes of `scope` → `portée`.
+**Files affected:** `glossary.md` (Loops, state & program flow).
+
+myrtarazona confirmed `bloc d'instructions` on 2026-08-02 (see the superseded entry below),
+then came back the same evening to say she had not been comfortable with that answer. Her
+objection is one of precision, not of taste: `bloc d'instructions` names only the
+statements, so a French explanation built on it teaches something narrower than the English
+does. Her own worked example is the argument. "Dans une fonction, un bloc d'instructions
+après un if contient uniquement des instructions à exécuter si la condition est vraie."
+misleads a learner, because a block after an `if` also holds expressions such as
+`x = 5 + 3`; "Dans une fonction, un bloc de code après un if peut contenir n'importe quel
+code à exécuter si la condition est vraie, que ce soit des instructions, des expressions ou
+des déclarations." is accurate. She also checked usage before writing, citing MDN's
+French glossary (community-translated) and the French version of Coddy.Tech as evidence
+that `bloc de code` is what French programming writing universally says, and noted the
+practical cost of the narrower term: learners hitting the mismatch would ask about it on
+the forum and Discord, which is avoidable confusion we would be generating ourselves.
+
+williamapc agreed with her reasoning while considering both renderings usable ("I think you
+are absolutely right", "you can mostly use both with the same meaning", "after a few days of
+coding you won't notice any difference"), so his position argues against nothing here.
+resu-xunil supported the substantive point from the other side: instructions exist
+perfectly well without code (wiring diagrams, safety procedures, recipes, step-by-step
+manuals all give instructions and contain no programming), so `instructions` is the weaker
+half of the pair to build the term on. No reviewer argued for keeping `bloc d'instructions`.
+
+**This is a correction of a retracted decision, not an overwrite of a live one.** The
+protection on a native-speaker row exists so an agent's opinion cannot displace a speaker's
+judgement; here the speaker who made the call withdrew it herself, on the record, in the
+same thread, with two other reviewers weighing in and neither objecting. The owner
+authorised actioning it. The row is protected again in its new form, and reopening it means
+going back to topic 926.
+
+The `scope` → `portée` row cross-references this one to keep the two concepts apart, so its
+Notes were updated in the same edit; the `portée` rendering itself did not change.
 
 ### 2026-08-03: Stage 3 batch 1 additions (13 unconfirmed drafts, written into the glossary)
 
@@ -358,6 +402,10 @@ or the `sortir`/`ressortir` phrasing used inconsistently elsewhere on the page. 
 throughout `concepts/arrays/fr.md`.
 
 ### 2026-08-02: `code block` → `bloc d'instructions` confirmed
+
+**Superseded** by the 2026-08-03 entry "`code block` → `bloc de code` (reviewer retraction)"
+above: myrtarazona retracted this confirmation herself on the same topic, and the row now
+reads `bloc de code`. Kept here as the historical record of what was decided on the day.
 
 **Decided by:** native speaker (myrtarazona), forum topic 926 (https://forum.jiki.io/t/926/16).
 **Terms affected:** `code block`. **No rendering changed.**

@@ -2,10 +2,10 @@
 lang: "id"
 name: "Indonesian"
 family: null
-stage: "setup"
-governance_sha: "f268cf8"
-content_version: "6e9d757fbb69"
-published_at: "2026-08-02"
+stage: "refining"
+governance_sha: "6740b5b"
+content_version: "6b6ad36549f5"
+published_at: "2026-08-03"
 term_count: 64
 category_id: 135
 forum_topic_id: 325
@@ -139,6 +139,13 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-02: `Code` → `kode` and `input slot` → `lubang` confirmed
+
+**Decided by:** native speaker (deenovita), forum topic 325 (https://forum.jiki.io/t/325/7).
+**Terms affected:** `Code`, `input slot`. **No rendering changed.**
+
+Both rows already read as she confirmed. Row status upgraded to human-confirmed, protected.
 
 ### 2026-08-02: Native-speaker review of the glossary (deenovita, forum topic 325)
 

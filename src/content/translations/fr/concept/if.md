@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/if/source.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "4015cb5"
-content_version: "8723146931f0"
-published_at: "2026-08-02"
+governance_sha: "6740b5b"
+content_version: "8bc5261b589b"
+published_at: "2026-08-03"
 forum_topic_id: 926
 ---
 
@@ -31,7 +31,7 @@ Il existe un mot-clé qui nous permet de dire à Jiki de ne faire certaines chos
   height="400"
 />
 
-On utilise le mot-clé `if` d'une manière très similaire à celle de `repeat`. On met une information entre parenthèses : dans ce cas, cette information est la condition que l'on vérifie. Et là, on met entre accolades un bloc d'instructions qui ne s'exécute que si cette condition est vraie.
+On utilise le mot-clé `if` d'une manière très similaire à celle de `repeat`. On met une information entre parenthèses : dans ce cas, cette information est la condition que l'on vérifie. Et là, on met entre accolades un bloc de code qui ne s'exécute que si cette condition est vraie.
 
 ```javascript
 if (condition) {

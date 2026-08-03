@@ -3,10 +3,10 @@ lang: "fa"
 name: "Persian"
 family: null
 stage: "refining"
-governance_sha: "f349919"
-content_version: "34f96a3bbdbd"
+governance_sha: "3b80d5e"
+content_version: "9e9cb9f609ee"
 published_at: "2026-08-03"
-term_count: 35
+term_count: 36
 category_id: 331
 forum_topic_id: 683
 video_player_forum_topic_id: 753
@@ -26,7 +26,8 @@ throughout. Split by theme for readability; every table below follows the same c
 
 | English | Persian | Use (fa/en) | Notes |
 |---------|---------|-------------|-------|
-| Boolean | بولی | fa | Not treated as a foreign/English word needing italics. «مقدار منطقی» (logical value) is an acceptable descriptive alternative when introducing the concept, but بولی is the term used consistently afterward. |
+| Boolean | بولی | fa | Not treated as a foreign/English word needing italics. «مقدار منطقی» (logical value) is an acceptable descriptive alternative when introducing the concept, but بولی is the term used consistently afterward. **Never pluralize it as «بولی‌ها»**: بولی is an adjective and does not take a plural marker. Where English pluralizes ("Booleans"), write «مقادیر بولی» (boolean values). |
+| item / element (of an array) | عنصر | fa | **One word for both.** English's "item" and "element" name the same thing on the arrays material, and Persian uses عنصر for both; **never آیتم**, which is a bare transliteration where an ordinary Persian word exists. Plural عنصرها/عناصر. |
 
 ### Functions & control flow
 
@@ -104,6 +105,86 @@ review.
 ---
 
 ## Decision log
+
+### 2026-08-03: چیز is never the default word for "thing"
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1097), actioned by an
+agent the same day. **Terms affected:** none; this is a writing rule, not a term mapping.
+**Protected: this is a native speaker's decision and is not to be reversed by an agent.**
+
+He asked for the point to be a standing rule rather than a per-page correction: English uses
+"thing/things/anything" far more freely than Persian uses چیز, so translating it 1:1 stacks
+چیز through a paragraph and reads as filler. The instruction is to understand what the
+sentence actually means and pick the specific word, and where nothing specific fits, to
+prefer a construction that drops the noun («می‌توانند هرچه باشند») over another چیز. The
+same point had already been recorded once as a per-page reviewer note on
+`concept/using-functions`; it is now an imperative in `guide.md`, "Grammar", and the
+per-page note stands as the worked examples for it.
+
+### 2026-08-03: Arrays page corrections (عنصر, بولی plural, bare ordinals)
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1095), actioned by an
+agent the same day. **Terms affected:** the `Boolean` row's plural note and the new
+`item / element (of an array)` row.
+**Protected: both are a native speaker's decisions and are not to be reversed by an agent.**
+
+- **item/element → عنصر, never آیتم.** He asked for آیتم to be replaced with عنصر
+  throughout the Arrays concept page. The page was already using عنصر for the `<define>`d
+  "element" and آیتم for English's "item", which are the same thing in this material, so the
+  fix is one word for both rather than a two-term split. آیتم was the only Persian content
+  anywhere using it (swept: the Arrays page was the sole occurrence across all translated
+  Persian files), so the row records a decision rather than triggering a cross-content sweep.
+- **بولی takes no plural marker.** «بولی‌ها» is wrong because بولی is an adjective; where
+  English writes "Booleans" the Persian is «مقادیر بولی» (boolean values). Recorded on the
+  existing `Boolean` row.
+- **A bare ordinal or adjective needs its noun.** He flagged «اگر بخواهیم اولین را بیرون
+  بیاوریم» (it needs «اولین عنصر»), and made the same point a second time on the thread, so
+  it is generalized into `guide.md`, "Grammar", rather than fixed only in place.
+- **«درست»/«غلط» in guillemets in a boolean context.** Already a standing rule in
+  `guide.md`'s "Style notes" ("Boolean values go in guillemets"); the Arrays page simply was
+  not following it. Nothing new was written, the page was corrected.
+- **No comma before و.** Likewise already a `guide.md` rule; three violations on the page
+  were fixed, two by starting a new sentence.
+
+**Open, not decided: he proposes replacing بولی with منطقی.** That reverses a bootstrap
+decision and is deliberately left untouched here, pending a human call. See the `Boolean`
+row and the "Values & data types" term rationale below for the existing reasoning.
+
+### 2026-08-03: No English term in brackets after a Persian term, ever
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/752, posts 11-13),
+ratified by the owner (iHiD) on 2026-08-03 and actioned by an agent the same day. **Terms
+affected:** none; this is a formatting rule, not a term mapping. **Protected: this is a
+native speaker's decision and is not to be reversed by an agent.**
+
+mominchezgi objected twice, on the same thread, to the parenthetical-English pattern that
+`global/voice.md`'s markup expansion produces for a target-primary term, e.g. «توابع
+(_functions_ به انگلیسی)»: *"Sadly I see this ... Please never ever use them"*. Everything
+else he raised on that thread had been fixed; this one had not, and our reply on the thread
+had defended it as a course-wide styling decision instead. It is not one that survives a
+native speaker saying "never ever": the guide defers to the human.
+
+- **`guide.md`, "Term clarification (Persian realisation)".** The Persian-primary bullet no
+  longer produces a bracket. It now states the override explicitly, because a worker loads
+  `voice.md` as well as the guide and would otherwise follow `voice.md`'s default: Persian
+  never appends an English term in brackets after a Persian term, and never writes the
+  marker `به انگلیسی` at all, in any content type, whether or not the source `<define>`s
+  the term.
+- **What is kept.** The two bracket forms whose brackets carry *Persian* are unaffected,
+  because the objection was to being shown English the reader did not ask for: an
+  English-primary term still glosses into Persian (`_API_ (رابط برنامه‌نویسی کاربردی)`), and
+  a code identifier still carries its Persian meaning (`` `turnLeft` `` (به چپ بچرخ)).
+- **`guide.md`, "Loanword policy".** The bullet that permitted a bracketed English gloss
+  where the source has a `<define>` (itself the narrowed form of the older first-use rule,
+  see 2026-08-01 below) is replaced by the flat prohibition.
+- **Existing content swept.** 33 occurrences removed across 12 already-translated Persian
+  files (10 concept pages, 2 exercise instruction pages). "Never ever" is not a per-page
+  request, so the sweep covered everything already translated, not just
+  `concepts/using-functions`.
+- **Expected checker noise.** `check-translation`'s gloss-count check is a heuristic that
+  compares bracketed glosses against the source's `<define>`/`<literal>` count, so Persian
+  pages will now WARN with a lower gloss count than tags. That is the rule working, not a
+  failure. It is a WARN and never gates a pass.
 
 ### 2026-08-03: Hue is فام; "draw" is رسم کردن; "choice" (noun) is گزینه
 

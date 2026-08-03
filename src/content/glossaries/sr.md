@@ -3,9 +3,9 @@ lang: "sr"
 name: "Serbian"
 family: null
 stage: "refining"
-governance_sha: "c02677c"
-content_version: "b0fc8034cb0d"
-published_at: "2026-08-02"
+governance_sha: "471034c"
+content_version: "40457cf3411e"
+published_at: "2026-08-03"
 term_count: 115
 category_id: 166
 forum_topic_id: 402
@@ -38,7 +38,7 @@ These are terms where the Serbian is used in prose, so the "Use (sr/en)" column 
 |---------|---------|-------------|-------|
 | value | vrednost | sr | |
 | number | broj | sr | |
-| true / false | tačno / netačno | sr | Not capitalised in prose. |
+| true / false | tačno / netačno | sr | Not capitalised in prose. This governs the prose concept only. A LITERAL boolean value a function returns or compares against in code (e.g. `true`/`false` as a sentinel) stays in English — do not translate a code-checked literal. |
 | character | karakter | sr | |
 | integer | ceo broj | sr | Also "celobrojni tip" for the type name specifically. |
 | float / decimal | broj sa pokretnim zarezom | sr | Or "realni tip" when the type name (not the value) is meant. |
@@ -183,6 +183,26 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-03: Proposed terms for the bouncer/maze family (unconfirmed drafts)
+
+**Status: agent draft, not yet reviewed by a native speaker.**
+
+Surfaced while translating Stage 2 batch 2 (bouncer-dress-code, maze-turn-around); the
+remaining bouncer-family exercises (bouncer, bouncer-wristbands) still need these same
+terms, so logging them now rather than re-deriving per exercise. None of these are in
+`glossary.md` yet — do not treat them as settled.
+
+- **bouncer** (the exercise's job title) → izbacivač
+- **dress code** → pravila oblačenja
+- **guest list** → spisak gostiju
+- **smart (as in "smart attire")** → elegantno
+- **dead end** (maze family) → ćorsokak
+- **standard library** → standardna biblioteka
+- **dictionary key** → ključ
+
+If a native speaker confirms or corrects any of these on the forum, move it into
+`glossary.md` as a normal additive row and remove it from this list.
 
 ### 2026-08-02: `bootcamp` is "butkamp", not "bootkamp"
 

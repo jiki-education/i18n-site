@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/if/source.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "42f5991"
-content_version: "1f198ec1b35f"
-published_at: "2026-07-31"
+governance_sha: "53f3baa"
+content_version: "686396eafd16"
+published_at: "2026-08-03"
 ---
 
 Existe uma palavra-chave que nos ajuda a dizer ao Jiki para fazer as coisas só em certas situações. Talvez você esteja escrevendo um código para guardar a entrada de um bar, talvez você seja o segurança, e o Jiki só deva abrir a porta se a pessoa estiver vestida adequadamente. Ou talvez você esteja escrevendo um código em que é responsável por agitar a bandeira quadriculada no fim de uma corrida, mas o Jiki precisa saber que só deve fazer isso na última volta. Nesse tipo de situação, vamos usar a palavra-chave `if`.
@@ -51,7 +51,7 @@ Usamos símbolos para escrever essas comparações. Você provavelmente já conh
   height="400"
 />
 
-Isso nos ajuda a não confundir com o momento em que estamos definindo ou atualizando variáveis, quando usamos um sinal de igual para dizer coloque isto na caixa. É só lembrar: três sinais de igual para comparar.
+Isso ajuda a gente a não se confundir na hora de definir ou atualizar variáveis, quando usamos um sinal de igual para dizer “coloque isto na caixa”. É só lembrar: três sinais de igual para comparar.
 
 Você também pode comparar strings. Então `"hello"` é igual a `"hello"`. Isso é verdadeiro. As duas strings são iguais. Mas tome cuidado aqui, porque o Jiki compara cada caractere (_character_ em inglês) das duas strings, nos dois pedaços de papel. Então `"Hello"` com H maiúsculo não é igual a `"hello"` com h minúsculo. São strings diferentes. Comparar as duas daria falso, porque o H maiúsculo e o h minúsculo são caracteres diferentes.
 

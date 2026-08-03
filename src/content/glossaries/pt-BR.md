@@ -3,10 +3,10 @@ lang: "pt-BR"
 name: "Brazilian Portuguese"
 family: "pt"
 stage: "refining"
-governance_sha: "e10d478"
-content_version: "7504ce4b859b"
+governance_sha: "e4d40de"
+content_version: "244d50dbd1b7"
 published_at: "2026-08-03"
-term_count: 65
+term_count: 79
 category_id: 74
 forum_topic_id: 288
 video_player_forum_topic_id: 773
@@ -47,7 +47,7 @@ These are terms where the Portuguese is used in prose, so the "Use (pt/en)" colu
 
 | English | Portuguese | Use (pt/en) | Notes |
 |---------|------------|-------------|-------|
-| true / false | verdadeiro / falso | pt | Lowercase in prose. |
+| true / false | verdadeiro / falso | pt | Lowercase in prose. **Concept sense only**: use _verdadeiro / falso_ where the words describe whether something is the case ("se a condição for verdadeira"). Where **true** or **false** names the literal value a function returns or a comparison evaluates to, it is a code token and stays English, whether it is written in code font (`true`) or bolded in a function description (**true**). Pick by which of the two the sentence is doing, not by formatting alone. |
 
 ### Functions & control flow
 
@@ -142,6 +142,10 @@ column structure as the family file.
 |---------|------------|-----------------|-------|
 | character | caractere | pt-BR | Singular is `caractere` (not `caracter`). Diverges from pt-pt's `caráter`/`carateres`. |
 | float / decimal | número de ponto flutuante | pt-BR | Or _decimal_ when the floating-point nature does not matter. Diverges from pt-pt's "vírgula flutuante". |
+| dictionary | dicionário | pt-BR | _um dicionário_; pairs with `key`/`value` below. |
+| key (in a dictionary) | chave | pt-BR | _a chave_, plural _as chaves_. **Unconfirmed draft.** Deliberately locale-only: `{}` is also _chaves_ in pt-BR (see § Brackets), so where both senses appear near each other, disambiguate (_a chave do dicionário_ vs _a chave de fechamento_) rather than changing either word. pt-pt has no such collision (`{}` is _chavetas_ there), so this row must not be moved to `../pt/glossary.md`. |
+| value (in a dictionary) | valor | pt-BR | _o valor associado à chave_. **Unconfirmed draft.** Pairs with `key` above; keep the same pair of words throughout a page. |
+| data structure | estrutura de dados | pt-BR | **Unconfirmed draft.** Feminine: _uma estrutura de dados_, _essas estruturas de dados_. |
 
 ### Functions & control flow
 
@@ -151,6 +155,9 @@ column structure as the family file.
 | return value | valor de retorno | pt-BR | Follows the verb `retornar` above. |
 | input (one a function declares) | entrada | pt-BR | Use only where the English word is **input** and it names one of the inputs a function declares or expects ("give it four inputs: `left`, `top`, `radius`, `color`"; "an extra input where you specified the color"). Feminine: _uma entrada extra_, _as quatro entradas_. Never _fenda_, which translates the English **slot** only (see `../pt/glossary.md` § Jiki physical metaphors): pick by the English word in front of you, not by what the sentence is about, and where one paragraph uses both English words, use both renderings. |
 | input (a value passed in at a call) | valor de entrada | pt-BR | Use only where the English word is **input** and it names the value written at one position of a call ("for the fifth input, we write `"blue"`"). Masculine, so agreement follows: _o quinto valor de entrada_. Bare _entrada_ is also natural here once context is set; _valor de entrada_ is the default where the sentence needs to name the value itself. Never _fenda_, on the same distinction as the row above. |
+| condition is true / false | a condição é verdadeira / falsa | pt-BR | Prose form. After _se_ or _quando_ the verb goes to the future subjunctive: _quando a condição for verdadeira_. The code literals `true`/`false` stay English (see `../pt/glossary.md`). |
+| else clause | cláusula `else` | pt-BR | _podemos colocar uma cláusula `else` depois da chave de fechamento_. Keep `else` in backticks (real keyword). **Unconfirmed draft.** |
+| branch (of a conditional) | bloco | pt-BR | The chunk of code one arm of a conditional runs: _o Jiki roda esse bloco quando a condição é verdadeira_. **Unconfirmed draft, low confidence**: _bloco_ describes the code, not the fork; where the source is about the fork itself, the road-fork metaphor (_bifurcação_) reads better. Native-speaker input wanted. |
 | brackets (the two after a function name) | parênteses | pt-BR | The `()` pair written after a function name to call it: _escreva o nome dela e depois os parênteses_. Always `parênteses`, never `colchetes` (which is `[]`). See § Brackets below for the glyph names. |
 
 ### Loops, state & program flow
@@ -164,6 +171,8 @@ column structure as the family file.
 | iteration | iteração | pt-BR | Verb: _iterar_, taking **sobre**: _iterar sobre um array_, _iteramos sobre strings_. Never _iterar por_. "passar por cada elemento" also natural. |
 | to run / execute (code) | rodar / executar | pt-BR | `rodar` in warm/casual register; `executar` in formal or procedural steps. Diverges from pt-pt, where "rodar" is not natural usage. |
 | loop | laço | pt-BR | `for`/`while` keywords stay English. Diverges from pt-pt's "ciclo". |
+| for loop | laço `for` | pt-BR | Keep `for` in backticks (real keyword) + _laço_. |
+| while loop | laço `while` | pt-BR | As above. |
 | scope | escopo | pt-BR | Diverges from pt-pt's "âmbito". |
 | comment (code comment) | comentário | pt-BR | The `//` line a learner writes as a private note; Jiki ignores it and moves to the next line. **Unconfirmed:** added for the function-inputs concept page, not yet used in a real translated file; likely identical in pt-pt, so a candidate to move to `../pt/glossary.md` once confirmed. |
 
@@ -171,6 +180,8 @@ column structure as the family file.
 
 | English | Portuguese | Use (pt-BR/en) | Notes |
 |---------|------------|-----------------|-------|
+| checksum | soma de verificação | pt-BR | **Unconfirmed draft.** Feminine: _a soma de verificação_. Used for the Luhn-style check-digit idea; keep the full phrase rather than the English _checksum_ in beginner-facing prose. |
+| standard library (stdlib) | biblioteca padrão | pt-BR | **Unconfirmed draft.** Never abbreviated in prose; _stdlib_ is not used. |
 | deploy (verb: to deploy) | publicar | pt-BR | "Publique o código" for go-live (subjunctive imperative, matches `você` formality). "Fazer deploy" is natural in dev prose; prefer `publicar` for beginner-facing text. |
 
 ### Platform & curriculum vocabulary
@@ -179,6 +190,13 @@ column structure as the family file.
 |---------|------------|-----------------|-------|
 | course | curso | pt-BR | The whole Jiki course: _neste curso, o seu intérprete é o Jiki_. Keep distinct from `lição` (lesson). |
 | cell (grid square, e.g. maze exercises) | casa | pt-BR | "Move the character forward one cell" → "avance uma casa" (like a square on a board game), not "uma célula", which reads as a biology/spreadsheet term and feels unnatural here. |
+| character / figure (the walker in maze exercises) | bonequinho | pt-BR | The little figure the learner moves around the grid. Confirmed as natural by a native speaker (sorrizo) on https://forum.jiki.io/t/812/5; already in use across the maze exercises. |
+| bouncer (the door-staff character) | segurança | pt-BR | _o segurança da balada_. Masculine despite the `-a` ending. Chosen over _porteiro_ (which reads as a residential doorman rather than club door staff). **Unconfirmed draft.** |
+| to turn (someone) away | barrar | pt-BR | _barrar a pessoa na porta_. **Unconfirmed draft.** _recusar a entrada_ is the natural alternative where the sentence needs an object phrase rather than a single verb; keep one of the two consistently within a page. |
+| dress code | código de vestimenta | pt-BR | **Unconfirmed draft.** The rule about what may be worn, as posted at a club door. |
+| smart (of clothing, in a dress code) | roupa elegante | pt-BR | **Unconfirmed draft.** English "smart" here means dressed-up, never _inteligente_. Adjectivally: _elegante_. |
+| Sensing (exercise function category label) | Percepção | pt-BR | **Unconfirmed draft.** The category heading grouping the functions that let the character sense its surroundings, in exercise message catalogs. |
+| digital root | raiz digital | pt-BR | **Unconfirmed draft.** The repeated-digit-sum result; keep the mathematical calque, do not leave it in English. |
 
 ## Keep in English
 
@@ -213,11 +231,7 @@ first actual use and move to the sections above once confirmed.
 
 | English | Portuguese | Notes |
 |---------|------------|-------|
-| for loop | laço `for` | Keep `for` in backticks (real keyword) + _laço_. |
-| while loop | laço `while` | As above. |
 | loop body | corpo do laço | |
-| dictionary | dicionário | |
-| condition is true/false | a condição é verdadeira / falsa | |
 | auth (authentication / authorization) | autenticação / autorização | Pick by meaning. Standard Brazilian Portuguese; not abbreviated to "auth" in beginner-facing prose. |
 
 ## Brackets
@@ -541,3 +555,65 @@ here:
   last" to `global/voice.md`, which does not state it. The comparison is gone and the
   principle is now stated plainly as this guide's own rule, which is what it always was. No
   instruction changed.
+
+### 2026-08-04: Stage 2 batch-3 delta (12 draft rows), and four provisional terms promoted
+
+**Decided by:** nobody yet, apart from `bonequinho` (see below). **Status: unconfirmed
+drafts**, added from the ten-item Stage 2 batch (`else-if`, `for-loops`, `else`,
+`while-loops`, `dictionaries`, `maze-turn-around`, `luhn`, `digital-root`, `word-count`,
+`bouncer-dress-code`). Native-speaker confirmation is wanted on all of them.
+**Terms affected:** `bouncer`, `to turn (someone) away`, `character / figure`, `checksum`,
+`digital root`, `standard library`, `dress code`, `smart (of clothing)`, `Sensing`, `key`,
+`value`, `data structure`, `else clause`, `branch (of a conditional)`, plus the four
+promotions listed at the end.
+
+**All of these went into the locale file, not `../pt/glossary.md`.** Per the family rule a
+term defaults to the locale file and only moves up once it is confirmed identical in both
+locales, and several of these (`checksum`, `estrutura de dados`, `biblioteca padrão`) are
+plausibly identical in pt-pt but have not been checked there. Whoever confirms them can move
+them up later; guessing now would have written unagreed rows that bind pt-pt.
+
+`key` → _chave_ is a deliberate exception that must **never** move to the family file. In
+pt-BR `{}` is also _chaves_, so dictionary keys and closing braces share a word, and the row
+carries the disambiguation instruction for that. pt-pt has no collision (`{}` is _chavetas_
+there), so its reasoning for the same rendering is a different reasoning, and one shared row
+could not state both. The same collision was already flagged independently by the
+JavaScript interpreter-catalog pass.
+
+`bouncer` → _segurança_ was proposed by two workers independently, over _porteiro_, which
+reads as a residential doorman rather than club door staff. It is masculine despite ending
+in `-a`. A related pt-BR delta from an earlier pass had proposed the same word at medium
+confidence, so this is the second time it has come up unprompted.
+
+`to turn away` → _barrar_ is the single-verb rendering; `else`'s translation reached for
+_recusar a entrada_ in the same sentence position. Both read naturally, so the row asks for
+consistency within a page rather than ruling one out.
+
+`branch (of a conditional)` → _bloco_ is the weakest of the set and is marked low
+confidence in the row. _Bloco_ names the code a branch runs, not the fork itself, and where
+the English is about the fork the translations reached for the road-fork metaphor
+(_bifurcação_) instead. This one genuinely needs a native speaker.
+
+`character / figure` → _bonequinho_ is **not** a draft: sorrizo confirmed it as natural at
+https://forum.jiki.io/t/812/5 while flagging a different word on the same page. It was in de
+facto use across the maze exercises without ever being written down, which is exactly the
+state that lets a later pass quietly replace it, so it now has a row.
+
+**Four provisional terms promoted out of § "Provisional terms".** That section's own rule is
+to confirm on first actual use, and this batch is that first use: `for loop` → _laço `for`_
+(`for-loops`), `while loop` → _laço `while`_ (`while-loops`), `dictionary` → _dicionário_
+(`dictionaries`), and `condition is true/false` → _a condição é verdadeira / falsa_ (`else`,
+`else-if`, `while-loops`). Each read naturally in place and none was reworded to fit, so the
+rendering each row already carried is what moved; nothing new was invented. The
+true/false row gained one usage note that the translations demonstrated and the old row did
+not state: after _se_ or _quando_ the verb takes the future subjunctive (_quando a condição
+for verdadeira_). `loop body` → _corpo do laço_ stays provisional: it did not appear in
+either loops page, so it still has no first use. `auth` stays provisional for the same
+reason.
+
+**Not changed, flagged instead:** the family row `true / false` → _verdadeiro / falso_ says
+only "Lowercase in prose" and does not state that the code literals stay English. The
+pt-BR `condition is true / false` row now says so for this locale. Adding it to the family
+file was deliberately not done here: a family edit binds pt-pt and obliges republishing and
+announcing on every sibling locale, and a pt-pt session was working in the same checkout at
+the time. It is worth doing as its own family-level change.

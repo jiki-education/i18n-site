@@ -3,10 +3,10 @@ lang: "pt-pt"
 name: "European Portuguese"
 family: "pt"
 stage: "refining"
-governance_sha: "e8c68bd"
-content_version: "4468ff1d949d"
+governance_sha: "e4d40de"
+content_version: "5e5100e3f387"
 published_at: "2026-08-03"
-term_count: 55
+term_count: 70
 category_id: 73
 forum_topic_id: 341
 video_player_forum_topic_id: 775
@@ -47,7 +47,7 @@ These are terms where the Portuguese is used in prose, so the "Use (pt/en)" colu
 
 | English | Portuguese | Use (pt/en) | Notes |
 |---------|------------|-------------|-------|
-| true / false | verdadeiro / falso | pt | Lowercase in prose. |
+| true / false | verdadeiro / falso | pt | Lowercase in prose. **Concept sense only**: use _verdadeiro / falso_ where the words describe whether something is the case ("se a condição for verdadeira"). Where **true** or **false** names the literal value a function returns or a comparison evaluates to, it is a code token and stays English, whether it is written in code font (`true`) or bolded in a function description (**true**). Pick by which of the two the sentence is doing, not by formatting alone. |
 
 ### Functions & control flow
 
@@ -144,6 +144,11 @@ Terms below diverge from `../pt/glossary.md` or exist only for European Portugue
 |---------|------------|-----------------|-------|
 | character | caráter (pl. carateres) | pt-pt | Post-1990 spelling: European Portuguese silences the `c`, giving "carateres" (Brazilian keeps it: "caractere/caracteres"). |
 | float / decimal | número de vírgula flutuante | pt-pt | Use "decimal" alone when the floating-point nature does not matter. |
+| digit | algarismo | pt-pt | The individual symbol inside a number ("soma os seus algarismos", "um número de três algarismos"). Not _dígito_, which reads technical next to the school-register _algarismo_. |
+| dictionary | dicionário | pt-pt | The data structure. Masculine: _um dicionário_, _o dicionário_. |
+| key (of a dictionary) | chave | pt-pt | The label on the left of a dictionary pair ("encontra a chave `name`"). Plural _chaves_. Safe in this locale because `{}` is _chavetas_ here (see § Brackets), so nothing collides; never assume the same for pt-BR. |
+| apostrophe | apóstrofo | pt-pt | Plural _apóstrofos_. Never _apóstrofe_, which is the rhetorical figure, not the punctuation mark. |
+| case-insensitive | não distinguir maiúsculas de minúsculas | pt-pt | Render as a verb phrase, not an adjective: _as palavras não distinguem maiúsculas de minúsculas_, _conta as palavras independentemente de serem maiúsculas ou minúsculas_. Case-sensitive is the same phrase without _não_. |
 
 ### Functions & control flow
 
@@ -153,6 +158,7 @@ Terms below diverge from `../pt/glossary.md` or exist only for European Portugue
 | return value | valor devolvido | pt-pt | Follows the verb `devolver` above. |
 | input (one a function declares) | parâmetro de entrada | pt-pt | Use only where the English word is **input** and it names one of the inputs a function declares or expects ("give it four inputs: `left`, `top`, `radius`, `color`"). Plural _parâmetros de entrada_. Never bare _entrada_. Never _fenda_, which translates the English **slot** only (see `../pt/glossary.md` § Jiki physical metaphors): pick between the three by the English word in front of you, not by what the sentence is about, and where one paragraph uses both English words, use both renderings. |
 | input (a value passed in at a call) | valor de entrada | pt-pt | Use only where the English word is **input** and it names the value written at one position of a call ("for the fifth input, we write `"blue"`"). Masculine, so agreement follows: _um valor de entrada extra_, _o quinto valor de entrada_. Never bare _entrada_. Never _fenda_, on the same three-way distinction as the row above. |
+| else clause | cláusula else | pt-pt | The keyword `else` stays English inside the phrase: _uma cláusula else_. |
 | brackets (the two after a function name) | parênteses | pt-pt | The prose rendering of "those two brackets" written after a function name: _os parênteses_, or _dois parênteses_ on first mention. The glyph naming convention (and when to disambiguate `()` as _parênteses curvos_) is in § Brackets below. |
 
 ### Loops, state & program flow
@@ -167,12 +173,28 @@ Terms below diverge from `../pt/glossary.md` or exist only for European Portugue
 | to run / execute (code) | executar / correr | pt-pt | `correr` in warm/casual register ("experimenta correr este código"); `executar` in formal or procedural steps. Deliberately diverges from Brazilian "rodar", which is not natural European Portuguese usage. |
 | loop | ciclo | pt-pt | Deliberately diverges from Brazilian `laço`. `for`/`while` keywords stay English. |
 | scope | âmbito | pt-pt | Deliberately diverges from Brazilian `escopo`. |
+| pass (one sweep over the data) | passagem | pt-pt | One run of an algorithm over its data: _numa única passagem_, _uma segunda passagem_. Never _passe_. |
 
 ### Tooling & engineering
 
 | English | Portuguese | Use (pt-pt/en) | Notes |
 |---------|------------|-----------------|-------|
 | deploy (verb: to deploy) | publicar | pt-pt | "Publica o código" for go-live, beginner-facing (tu-imperative, matches `tu` formality). Avoid "fazer deploy" here, though it appears in professional dev prose. |
+
+### Exercise vocabulary
+
+Domain words the exercises are built on. Use the same rendering in the instructions and in
+the exercise's message catalog (`locales/pt-PT/translation.json`), never one in each.
+
+| English | Portuguese | Use (pt-pt/en) | Notes |
+|---------|------------|-----------------|-------|
+| bouncer | porteiro | pt-pt | The door supervisor of the `bouncer*` exercises. Feminine _porteira_ where the person is a woman. Not _segurança_, which names the security role rather than the person on the door. |
+| venue (the bouncer's club) | espaço | pt-pt | The place the bouncer lets people into ("deixa a pessoa entrar no espaço"). Unrelated to the family's `input slot` (_fenda_): pick by the English word in front of you. |
+| to turn away (a person) | mandar embora | pt-pt | "Manda a pessoa embora." The pronoun splits the phrase, so keep the verb and _embora_ agreeing with the object. |
+| smart (attire) | elegante | pt-pt | _roupa elegante_ in the dress-code exercise. Keep distinct from **formal** (_formal_), which is a separate dress-code value in the same list. |
+| dead end | beco sem saída | pt-pt | The maze's no-exit corridor. Plural _becos sem saída_. |
+| checksum | soma de verificação | pt-pt | "a soma de verificação de Luhn". |
+| Sensing (scenario category) | Deteção | pt-pt | The scenario-category label in exercise catalogs. Post-1990 European spelling, with no `c` (Brazilian keeps _Detecção_). |
 
 ### Platform & curriculum vocabulary
 
@@ -198,6 +220,7 @@ Terms below diverge from `../pt/glossary.md` or exist only for European Portugue
 |-----------------|---------------------|-------|
 | chain (array metaphor) | corrente | Physical chain of links; links = _elos_. Keep the context physical to avoid collision with "cadeia" (used for _cadeia de caracteres_, the string gloss). |
 | machine (function metaphor) | máquina | |
+| spiral notebook (dictionary metaphor) | bloco de notas de espiral | The notebook a dictionary is pictured as. One entry is a page: _uma página do bloco de notas_. Keep _de espiral_ on first mention, then _bloco de notas_ is enough. |
 | shelves (storage) | prateleiras | The shelves where variables and functions are stored. Singular _prateleira_ for Jiki's one shelf of machines. |
 | board / whiteboard | quadro | **One object, one word.** Always _quadro_. Never _quadro branco_ or _painel_. |
 | warehouse (Jiki's warehouse) | armazém | Where Jiki hangs out and keeps his shelf of machines. |
@@ -224,6 +247,44 @@ fecho (`()`)._
 ---
 
 ## Decision log
+
+### 2026-08-04: fifteen rows added from the Stage 2 batch-3 translation pass
+
+**Decided by:** nobody. **Status: unconfirmed drafts**, proposed by the translation workers
+that produced the ten batch-3 items (`else-if`, `for-loops`, `else`, `while-loops`,
+`dictionaries`, `maze-turn-around`, `luhn`, `digital-root`, `word-count`,
+`bouncer-dress-code`). **Terms affected:** `digit`, `dictionary`, `key (of a dictionary)`,
+`apostrophe`, `case-insensitive`, `else clause`, `pass (one sweep over the data)`,
+`bouncer`, `venue (the bouncer's club)`, `to turn away (a person)`, `smart (attire)`,
+`dead end`, `checksum`, `Sensing (scenario category)`, `spiral notebook`.
+
+No European Portuguese speaker has ruled on any of them. They are written down so that the
+next pass reuses the wording already shipped in those ten items rather than drifting, and
+each rendering here was read back out of the translated files, not invented for the
+glossary. Every one of them is open for a native speaker to change.
+
+**All fifteen go in this locale file, not `../pt/glossary.md`.** A term is only promoted to
+the family file once it is confirmed identical in both locales, and none of these has been
+checked against Brazilian usage at all. `key → chave` is the clearest case of why that
+default matters: it is unambiguous here because this locale calls `{}` _chavetas_, but pt-BR
+calls `{}` _chaves_, so the same row in the family file would collide with the bracket
+naming on the Brazilian side.
+
+**Confidence, as the workers reported it.** `chave`, `dicionário` and `algarismo` are
+straightforward. The exercise-domain words (`porteiro`, `espaço`, `mandar embora`,
+`elegante`, `beco sem saída`, `soma de verificação`, `Deteção`, `cláusula else`, `bloco de
+notas de espiral`, `passagem`, and the `case-insensitive` phrasing) are ordinary Portuguese
+that reads correctly but has alternatives worth a speaker's opinion. `apóstrofo` is the
+weakest: it is the standard name for the punctuation mark, and the row exists mainly to rule
+out _apóstrofe_, the rhetorical figure, which is the mistake worth guarding against.
+
+**Two of the workers' labels were corrected against the actual text.** What one worker
+proposed as `slot → espaço` is the English word **venue** in `bouncer-dress-code` ("working
+at a venue with a strict dress code"), not **slot**; filing it as `slot` would have
+contradicted the family's confirmed `input slot → fenda`, which Brazilian native speakers
+settled, so the row is written as `venue`. And `case-insensitive` is recorded as the verb
+phrase the files actually use (_não distinguem maiúsculas de minúsculas_) rather than as an
+adjective, because European Portuguese has no natural adjective for it.
 
 ### 2026-08-03: `return chute` inherited down from the family file, unchanged and still unconfirmed
 

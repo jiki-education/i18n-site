@@ -3,8 +3,8 @@ lang: "ja"
 name: "Japanese"
 family: null
 stage: "refining"
-governance_sha: "19b1038"
-content_version: "cfbc80fbe123"
+governance_sha: "21e9951"
+content_version: "8fb2071d36fb"
 published_at: "2026-08-03"
 term_count: 66
 category_id: 70
@@ -48,21 +48,21 @@ These are terms where the Japanese is used in prose, so the "Use (ja/en)" column
 |---------|----------|-------------|-------|
 | if statement | `if`文 | ja | Keep `if` in code font + 文. |
 | NOT operator / logical negation | 否定 | ja | 「NOT演算子」when the operator itself is meant. |
-| statement (executable) | 文 | ja | The imperative sense: a line of code that executes, e.g. `if` 文、代入文. |
+| statement (executable) | 文 | ja | The imperative sense: a line of code that executes, e.g. `if`文、代入文. |
 | statement (logical claim) | 命題 | ja | The proposition sense: a claim that is true or false. Pick by meaning, not by the English word. |
 | function | 関数 | ja | The *keyword* `function` in code stays English; the concept in prose is 関数. |
 | parameter | 仮引数 | ja | The declaration-site name. Rarely surfaced; Jiki prose favours 入力. |
 | input (to a function) | 入力 | ja | Jiki prefers this over parameter/argument in prose. |
 | return value | 戻り値 | ja | Noun form; distinct from the verb "to return". 「返り値」is a common alternative; use 戻り値, not 返り値. |
-| brackets (the two after a function name) | 括弧 | ja | Plain 括弧, not 丸括弧, for the `()` pair written after a function name. Show the glyph on the first mention in a page, 「括弧（`()`）」, then bare 括弧 after that. Do not render "two brackets" as 「2 つの括弧」. See the Brackets section below. |
+| brackets (the two after a function name) | 括弧 | ja | Plain 括弧, not 丸括弧, for the `()` pair written after a function name. Show the glyph on the first mention in a page, 「括弧（`()`）」, then bare 括弧 after that. Do not render "two brackets" as 「2つの括弧」. See the Brackets section below. |
 
 ### Loops, state & program flow
 
 | English | Japanese | Use (ja/en) | Notes |
 |---------|----------|-------------|-------|
 | keyword | キーワード | ja | 「予約語」is a more precise alternative; do not mix. |
-| interpreter (the program) | インタプリター | ja | The software sense: the thing that turns written code into 1 と 0. Keep the final ー: the guide's keep-the-ー rule applies here too. Do not write インタプリタ, and do not stretch it to インタープリター. |
-| interpreter (the one interpreting, incl. Jiki) | 通訳者 | ja | The personified sense, where the interpreter is named as a someone (Jiki). **Never bare 通訳 here**: 通訳 on its own names the *activity*, so 「このコースでの通訳は Jiki です」reads as Jiki being a kind of interpreting. Bare 通訳 is correct only in activity phrasings (「Jiki が通訳をしてくれます」「通訳の役割を担うプログラム」), and those are usually the more natural rewrite. |
+| interpreter (the program) | インタプリター | ja | The software sense: the thing that turns written code into 1と0. Keep the final ー: the guide's keep-the-ー rule applies here too. Do not write インタプリタ, and do not stretch it to インタープリター. |
+| interpreter (the one interpreting, incl. Jiki) | 通訳者 | ja | The personified sense, where the interpreter is named as a someone (Jiki). **Never bare 通訳 here**: 通訳 on its own names the *activity*, so 「このコースでの通訳はJikiです」reads as Jiki being a kind of interpreting. Bare 通訳 is correct only in activity phrasings (「Jikiが通訳をしてくれます」「通訳の役割を担うプログラム」), and those are usually the more natural rewrite. |
 | instruction (given to Jiki) | 指示 | ja | Do not use 命令, which reads as a command in the military/legal register (and as a CPU instruction). |
 | mental model | イメージ | ja | 「頭の中のイメージ」when the "in your head" part needs saying. Do not use メンタルモデル and do not drift to 考え方 mid-page: one word per document. |
 | (programming) language | プログラミング言語 | ja | The technical compound is プログラミング言語. For the "a language the computer understands" framing, use the ordinary 言葉 (「コンピューターにわかる言葉」). These are the two senses the source itself distinguishes, not two words for one thing; never reach for a katakana ランゲージ. |
@@ -89,7 +89,7 @@ These are terms where the Japanese is used in prose, so the "Use (ja/en)" column
 |---------|----------|-------------|-------|
 | feature (platform capability) | 機能 | ja | Different word from 関数 (function); no collision. Never use 関数 for a product feature. |
 | exercise | 演習 | ja | 「エクササイズ」is an alternative; do not mix both in one document. |
-| course | コース | ja | The whole Jiki course the learner is taking (「このコースでは、Jiki が通訳をしてくれます」). Keep distinct from レッスン (lesson) and カリキュラム (curriculum); do not use 講座. |
+| course | コース | ja | The whole Jiki course the learner is taking (「このコースでは、Jikiが通訳をしてくれます」). Keep distinct from レッスン (lesson) and カリキュラム (curriculum); do not use 講座. |
 | milestone | マイルストーン | ja | 「節目」is a native alternative. |
 | pathway | 学習パス | ja | A structured learning sequence; near-synonym of "track". |
 | solution (learner's submission) | 解答 | ja | The code the learner writes for an exercise. Avoid 「ソリューション」. |
@@ -158,6 +158,44 @@ Example: 「関数を呼び出すには、関数名のあとに括弧（`()`）�
 ---
 
 ## Decision log
+
+### 2026-08-03: no spaces around Latin, numerals or code in Japanese prose
+
+**Decided by:** alexfalcon528, a native speaker, on
+<https://forum.jiki.io/t/japanese-review-using-functions/764> (post 6), answering a direct
+question we asked in post 5 about what the general rule should be. He had raised the same
+observation twice before, in the "Overall" section of posts 2 and 4.
+**Guide section affected:** "Orthography and mechanics" → Spacing, Half-width characters,
+Times. No glossary rows changed.
+
+We previously required a half-width space around inline Latin script and code, with a
+carve-out for full-width brackets. That was wrong. His answer:
+
+> In general, there should be basically no use of spaces in the Japanese translation.
+
+with four exceptions, which are now the guide's four sub-points: an inline English sentence
+keeps its internal spaces but takes none around it (one space after a trailing Latin full
+stop); spaces added for legibility, case-by-case; code spans; and the internal space of a
+multi-word proper noun (「イギリスの英語はGreat Britainです。」).
+
+The code-span point is the one that changes how we write pages, so it is worth quoting:
+
+> It would be easier to keep it consistent if all inline code references were contained in
+> something like Markdown `code blocks`, as this would give a way for the user to distinguish
+> it from the surrounding text. […] most Markdown renderers add a bit of space before and
+> after a code block, for legibility.
+
+with his example, 日本語の文章の中にあっても`code block`の前後に自然と余白ができる。 So the
+guide now asks for `move`, `turnLeft` and friends to be code spans with **no** hand-written
+space around them: the renderer supplies the gap, which is why the result stays consistent
+across a page in a way hand-placed spaces never did. He allows a space around a bare run of
+Latin only where a code span is not an option, but the default remains no space, so the guide
+does not offer that as a licence.
+
+He also volunteered four general Japanese typography conventions. Two were already in the
+guide (keep the long-vowel ー; keep one verb-form register throughout a document, which is our
+です・ます rule) and are not repeated. The other two are new: Latin letters and Arabic
+numerals are always half-width, and times use the 24-hour clock.
 
 ### 2026-08-03: `crank` becomes クランク, and the program-sense `interpreter` keeps its ー
 

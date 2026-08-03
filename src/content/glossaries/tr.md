@@ -3,10 +3,10 @@ lang: "tr"
 name: "Turkish"
 family: null
 stage: "refining"
-governance_sha: "170faf5"
-content_version: "7f655e27d3e7"
-published_at: "2026-08-02"
-term_count: 53
+governance_sha: "6935dd7"
+content_version: "af3e894e95e8"
+published_at: "2026-08-03"
+term_count: 59
 category_id: 136
 forum_topic_id: 328
 video_player_forum_topic_id: 783
@@ -50,6 +50,7 @@ These are terms where the Turkish is used in prose, so the "Use (tr/en)" column 
 | function | fonksiyon | tr | The *keyword* `function` in code stays English; the concept in prose is _fonksiyon_. |
 | parameter | parametre | tr | Declaration-site name. |
 | argument | argüman | tr | Call-site value. |
+| keyword | anahtar kelime | tr | Unconfirmed draft (agent, 2026-08-03). The keyword itself stays English in code and in prose (`repeat` anahtar kelimesi, `if` anahtar kelimesi); this is the carrier noun it takes. Deliberately not _anahtar sözcük_, so one form is used everywhere. |
 | brackets (the two after a function name) | parantez | tr | Bare _parantez_ already means round brackets in Turkish, so it needs no qualifier here; square brackets are _köşeli parantez_ and curly ones _süslü parantez_, so use the qualified form whenever those are meant. Plural: _parantezler_ ("o iki parantez"). |
 
 ### Loops, state & program flow
@@ -85,6 +86,15 @@ These are terms where the Turkish is used in prose, so the "Use (tr/en)" column 
 | curriculum | müfredat | tr | |
 | mentor / mentoring | mentor / mentorluk | en | |
 
+### Drawing & color (exercise family)
+
+| English | Turkish | Use (tr/en) | Notes |
+|---------|---------|-------------|-------|
+| hue | renk tonu | tr | Unconfirmed draft (agent, 2026-08-03). Always the two-word form, including inside a compact describer argument list ("renk tonu: ${arg1}"); bare _ton_ is not a short form for it. |
+| saturation | doygunluk | tr | Unconfirmed draft (agent, 2026-08-03). |
+| lightness | açıklık | tr | Unconfirmed draft (agent, 2026-08-03). The HSL L channel is **always** _açıklık_, including where the English source says "brightness" loosely for the same channel (it does, in the `hsl` and `colors` concepts). Never render it _parlaklık_: that word is reserved for a genuinely separate brightness/luminosity concept, and using it here collapses the two. |
+| canvas (drawing surface) | tuval | tr | Unconfirmed draft (agent, 2026-08-03). Takes ordinary case suffixes (_tuvali temizledi_, _tuval boyunca_). |
+
 ## Keep in English
 
 These stay in English in Turkish prose, with the Turkish gloss to use for each.
@@ -116,11 +126,109 @@ Load-bearing teaching terms.
 | crank (machine crank) | kol | The handle Jiki turns to power a machine up. The verb phrase is _kolunu çevirmek_ ("to turn its crank"): _makinenin kolunu çevirip çalıştırmak_. Deliberately not _krank_, which in Turkish means an engine crankshaft, nor _manivela_, which is a lever for prying. |
 | shelves (storage) | raf / raflar | The shelves where variables and functions are stored. |
 | warehouse (Jiki's warehouse) | depo | Where Jiki hangs out and keeps his machine shelf. Preferred over _ambar_ (grain store, ship's hold) and _antrepo_ (a customs term). |
+| move (the character) | götürmek | The verb for moving a character to a place, in the maze family and anywhere else a character is moved. Never _taşımak_, which is the "lift and carry" sense and pictures the learner picking the character up. Covers the `move()` describers and instruction bullets ("karakteri bir hücre ileri götürür"), not just hint prose. Unrelated senses of _taşımak_ are untouched: the "bear a name" idiom (_aynı adı taşımak_) and the noun _taş_ ("stone", as in rock-paper-scissors) are correct as they stand. |
 | board / whiteboard | beyaz tahta | **One object, one word**: the board the learner puts instructions on for Jiki to follow, and the board a function keeps its own instructions and notes on, take the same word, always written in full as _beyaz tahta_. Bare _tahta_ also means wood or a plank and reads as a classroom blackboard, so it is never used as a short form. Never _akıllı tahta_ (smartboard), a different object. |
 
 ---
 
 ## Decision log
+
+### 2026-08-03: `move` (the character) is _götürmek_, never _taşımak_
+
+**Decided by:** native speaker (macroicetr), forum topic 816 ("[Turkish Review] Exercise:
+Solve the Maze").
+**Status:** human-decided, settled.
+**Terms affected:** new `move (the character)` row in "Jiki physical metaphors".
+
+macroicetr's original batch on the maze exercise moved the hint prose from _taşımak_ to
+_götürmek_, and they returned to point out that two spots had been missed: the `move()`
+bullet in the instructions and the shared `describers.move` message in the maze category
+catalog. The distinction is not stylistic. _Taşımak_ is "lift and carry/transport", so it
+pictures the learner physically picking the character up and putting it down elsewhere;
+_götürmek_ is "take/lead somewhere", which is what actually happens when the character walks
+a step forward under instruction. The wrong verb quietly contradicts the whole premise of the
+exercise, which is that you instruct the character rather than manipulate it.
+
+This earned a glossary row rather than staying a per-item reviewer note for two reasons.
+First, the term is not local to one exercise: `describers.move` lives in
+`exercise-categories/maze/locales/tr/`, so it is shared by every exercise in the maze family
+and a future maze exercise had nothing to follow. Second, the miss itself shows the failure
+mode: a per-exercise note phrased around the hint keys did not stop the same English word
+being rendered the old way in the describer and the instructions, because nothing said the
+rule was about the verb rather than about those two strings.
+
+A sweep of all Turkish curriculum content, exercise message catalogs and concept pages found
+no other occurrence of _taşımak_ in the move-a-character sense. The remaining hits are
+different words that must not be "fixed": _taş_ ("stone") throughout
+`rock-paper-scissors`, and the ordinary Turkish idiom _aynı adı taşımak_ ("to bear the same
+name") in the `variables` concept. The row says so explicitly, so a later reader running the
+same grep does not over-correct them.
+
+### 2026-08-03: Drawing/color terms and `keyword` logged from existing content
+
+**Decided by:** nobody yet. These five rows are **unconfirmed drafts** (agent, 2026-08-03),
+awaiting native-speaker confirmation on the pinned Turkish glossary topic.
+**Terms affected:** `hue`, `saturation`, `lightness`, `canvas`, `keyword`.
+
+All five were already in use in translated Turkish content from earlier passes but had never
+been written into `glossary.md`, so the next exercise in the `draw` family had nothing to
+follow and would have been free to diverge. Nothing was invented here: each row records what
+the content already says, verified against the files before it was written. No existing row
+was changed, and no translated file was edited.
+
+- **`hue` → renk tonu.** In use in `exercises/rainbow/locales/tr/translation.json` (checks
+  `hueRed`, `huePurple`, the scenario description, the hint Q&A, the HSL function
+  description) and in `exercise-categories/draw/locales/tr/translation.json` (`hueRange`).
+  The row insists on the full two-word form because one place already disagrees: the shared
+  `draw` describer key `hsl` writes bare "ton: ${arg1}" while every other string says _renk
+  tonu_. Bare _ton_ in Turkish is the general "tone/shade" word and does not name the HSL H
+  channel on its own, so the majority form is the one recorded. Flagged, not fixed: the
+  content edit is a separate job.
+- **`saturation` → doygunluk.** In use in the same two files (`minSaturationLightness`,
+  `saturationRange`, the `hsl` describer, the HSL function description). Consistent
+  everywhere.
+- **`lightness` → açıklık.** In use in the same two files (`minSaturationLightness`,
+  `lightnessRange`, the `hsl` describer, the HSL function description). Consistent
+  everywhere, and _parlaklık_ appears nowhere in Turkish content. The collision the row
+  guards is upstream rather than in the Turkish: the English `hsl` and `colors` concept
+  sources use "brightness" and "lightness" interchangeably for the same HSL channel, so a
+  future pass translating those pages could reach for _parlaklık_ for one and _açıklık_ for
+  the other and split one channel into two words. The row says the channel is always
+  _açıklık_; _parlaklık_ is left free for a real, separate brightness concept if one ever
+  appears.
+- **`canvas` → tuval.** In use in `draw`'s `clear` describer ("tuvali temizledi") and in the
+  rainbow scenario description ("Tuval boyunca"). No competing rendering (_kanvas_, _çizim
+  alanı_) appears anywhere in Turkish content.
+- **`keyword` → anahtar kelime.** In use across `concepts/repeat/tr.md`, `concepts/if/tr.md`
+  and `concepts/variables/tr.md`, always as the carrier noun after an English keyword left in
+  code font (`repeat` anahtar kelimesi). The variant _anahtar sözcük_ appears nowhere, so the
+  row fixes the form that is actually used rather than opening a choice.
+
+#### Open question: how to gloss `let`
+
+**Not decided, and deliberately not decided here.** `let` is Jiki's variable-declaration
+keyword, and like every keyword it stays English in code and prose. The question is only what
+one-off Turkish gloss it gets the first time a learner meets it.
+
+What the content does today: `concepts/variables/tr.md` glosses it once, at first mention, as
+"`let` (olsun) anahtar kelimesini", and uses bare `let` every time after. That is the only
+gloss of it anywhere in Turkish content; _izin ver_ appears nowhere.
+
+What each candidate implies:
+
+- **olsun** is the optative/jussive "let it be", the mathematical "let x = 5" sense. It
+  matches what the keyword actually does (bring a named box into existence with a value) and
+  it fits the concept page's box metaphor, but it is a bound verb form rather than a noun, so
+  it reads oddly standing alone in brackets and cannot be inflected as a term.
+- **izin ver** is the everyday "allow / give permission" sense of English "let". It is the
+  more recognisable dictionary translation, and a beginner who looks the word up will find
+  it, but it means the wrong thing here: nothing is being permitted, and it may teach the
+  keyword as a permission rather than a declaration.
+
+To put to a native speaker on the pinned topic: is _olsun_ the right first-mention gloss,
+should it be _izin ver_, or is the honest answer that neither works and the keyword is better
+introduced by describing what it does ("yeni bir kutu yapar") with no single-word gloss at
+all? Whichever way it goes, it is one gloss on one page, so changing it is cheap.
 
 ### 2026-08-02: Website copy (app UI catalog)
 

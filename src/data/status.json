@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "c349693",
+  "governance_sha": "4e60917",
   "approved": 168,
   "disapproved": 0,
-  "total": 362,
+  "total": 367,
   "languages": [
     {
       "lang": "it",
@@ -1608,7 +1608,7 @@
       "category_slug": "i18n-hi",
       "approved": 2,
       "disapproved": 0,
-      "total": 9,
+      "total": 14,
       "items": [
         {
           "key": "glossary",
@@ -1652,6 +1652,31 @@
         },
         {
           "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/weather-symbols",
           "topic_id": null,
           "status": "pending"
         }

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "55e78b6",
-  "approved": 192,
+  "governance_sha": "59af88d",
+  "approved": 193,
   "disapproved": 0,
   "total": 477,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 33,
+      "approved": 34,
       "disapproved": 0,
       "total": 54,
       "items": [
@@ -131,8 +131,8 @@
         },
         {
           "key": "exercise/bouncer-dress-code",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1018,
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-solve-basic",

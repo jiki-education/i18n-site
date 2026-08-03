@@ -1,0 +1,21 @@
+---
+type: "exercise"
+slug: "gold-panning"
+title: "Gold Panning"
+en_md5: "e62d584285e129af1ec13bb8d337d0fc"
+source_repo: "front-end"
+source_path: "curriculum/src/exercises/gold-panning"
+captured_at: "2026-08-03"
+---
+
+Before California was the home of tech, it was the home of gold! Over 300,000 people came and started searching the rivers for little nuggets of gold to sell.
+
+In this exercise, you're building a robot that's going out to pan for gold.
+
+You have a <define>`pan()`</define> function, which you can use to pan some gold out of the water. The function <define>returns</define> the amount of nuggets you find.
+
+You also have a <define>`sell(numberOfNuggets)`</define> function that you can use to sell the total number of nuggets you find.
+
+Your robot has enough capacity to pan a few times before selling. You need to write code so that it heads to the river, pans **5 times**, keeping track of how much gold it's collected as it goes, and then sells the total number of nuggets it has found (across all 5 pans at the end).
+
+Solve the puzzle in **5 lines of code** (or less)!

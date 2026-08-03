@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-03",
-  "governance_sha": "83d6fdf",
-  "approved": 190,
+  "governance_sha": "43cd531",
+  "approved": 192,
   "disapproved": 0,
-  "total": 457,
+  "total": 467,
   "languages": [
     {
       "lang": "it",
@@ -12,7 +12,7 @@
       "category_slug": "i18n-it",
       "approved": 33,
       "disapproved": 0,
-      "total": 44,
+      "total": 54,
       "items": [
         {
           "key": "glossary",
@@ -231,6 +231,56 @@
         },
         {
           "key": "exercise/finish-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/dnd-roll",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/gold-panning",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sunset",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sprouting-flower",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/random-salad",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow-splodges",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stock-market",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-scenarios",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/owners-bouquets",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cityscape-skyscraper",
           "topic_id": null,
           "status": "pending"
         }
@@ -462,7 +512,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 20,
+      "approved": 22,
       "disapproved": 0,
       "total": 34,
       "items": [
@@ -543,8 +593,8 @@
         },
         {
           "key": "exercise/luhn",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1112,
+          "status": "approved"
         },
         {
           "key": "exercise/digital-root",
@@ -633,8 +683,8 @@
         },
         {
           "key": "exercise/maze-solve-repeat",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1111,
+          "status": "approved"
         }
       ]
     },

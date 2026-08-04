@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "f48dc6e",
-  "approved": 242,
+  "governance_sha": "5cd0518",
+  "approved": 243,
   "disapproved": 0,
   "total": 544,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 52,
+      "approved": 53,
       "disapproved": 0,
       "total": 74,
       "items": [
@@ -237,7 +237,7 @@
         {
           "key": "exercise/dnd-roll",
           "topic_id": 1148,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/gold-panning",

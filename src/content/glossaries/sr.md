@@ -3,10 +3,10 @@ lang: "sr"
 name: "Serbian"
 family: null
 stage: "refining"
-governance_sha: "6b13a61"
-content_version: "326140380060"
-published_at: "2026-08-03"
-term_count: 117
+governance_sha: "d8edd8a"
+content_version: "ce11ea981f34"
+published_at: "2026-08-04"
+term_count: 122
 category_id: 166
 forum_topic_id: 402
 video_player_forum_topic_id: 779
@@ -153,6 +153,11 @@ Terms that belong to an exercise's story rather than to programming itself.
 |---------|---------|-------------|-------|
 | dress code | pravila oblačenja | sr | Confirmed over the alternative "dres kod" per native-speaker feedback (see glossary-notes.md). Plural noun phrase; declines normally ("prema pravilima oblačenja"). |
 | dead end (maze) | ćorsokak | sr | Masculine; declines normally ("iz ćorsokaka", pl. "ćorsokaci", "sa dva ćorsokaka"). |
+| ballgown | balska haljina | sr | Feminine. The English value stays as-is in code; use the Serbian in prose, or in brackets as an explanation where the code value is shown. |
+| tuxedo | smoking | sr | Masculine ("u smokingu"). The English value stays as-is in code; use the Serbian in prose, or in brackets as an explanation where the code value is shown. |
+| suit | odelo | sr | Neuter ("u odelu"). The English value stays as-is in code; use the Serbian in prose, or in brackets as an explanation where the code value is shown. |
+| dress | haljina | sr | Feminine. The English value stays as-is in code; use the Serbian in prose, or in brackets as an explanation where the code value is shown. |
+| denim | teksas | sr | Masculine; adjective "teksas" is invariable before the noun ("teksas jakna"). The English value stays as-is in code; use the Serbian in prose, or in brackets as an explanation where the code value is shown. |
 
 ## Keep in English
 
@@ -192,6 +197,58 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-04: clothing-item terms confirmed and added; `smart` (attire) still open
+
+**Raised by:** native speaker **little_mouse** on the `bouncer-dress-code` review thread
+([t/1125 post 1](https://forum.jiki.io/t/1125/1)), and **confirmed by the same reviewer** on
+2026-08-04 in [t/1125 post 3](https://forum.jiki.io/t/1125/3) (post_id 3157). **Terms
+affected:** `ballgown`, `tuxedo`, `suit`, `dress`, `denim`, plus further input on
+`smart (attire)` and `formal (attire)`. **Status: all five clothing terms are confirmed and
+now rows in `glossary.md`; `smart` remains open.**
+
+**The exercise itself was approved** in the same post ("I think this can pass"), so
+`exercise/bouncer-dress-code` is recorded as approved in `tracking.json`. The term points
+below are separate from that sign-off and do not block it.
+
+**Clothing-item terms, confirmed and now rows in `glossary.md`.** little_mouse suggested the
+mappings below, noting the English stays in the code and any Serbian could appear as a
+bracketed explanation:
+
+| English | Serbian |
+| --- | --- |
+| ballgown | balska haljina |
+| tuxedo | smoking |
+| suit | odelo |
+| dress | haljina |
+| denim | teksas |
+
+They were first logged here rather than in `glossary.md` because the reviewer signalled low
+confidence three times in the same post ("I am 80% sure", "I am not sure", "maybe we should
+read fashion texts"), and the hedging was not cleanly separable term by term: the list came
+in the same breath as the `smart`/`formal` point they explicitly left unresolved. Per
+"Decisions" in `global/workflow.md`, a low-confidence proposal goes back to the reviewer for
+confirmation rather than being written in as settled, so a follow-up question was posted on
+t/1125.
+
+little_mouse answered it on 2026-08-04 in [post 3157](https://forum.jiki.io/t/1125/3) with
+"I'm sure about clothing words", which withdraws the hedge from these five specifically and
+confirms them exactly as first written (no wording changes). They are therefore now rows in
+`glossary.md`, decided by a native speaker, and are not to be reworded or removed by an
+agent. The confirmation is deliberately narrow: in the same post they kept `smart` and
+`formal` open (see below), so the withdrawn hedge covers the clothing items only.
+
+**`smart` (attire) still an unconfirmed draft; this post is input, not a resolution.** The
+question was left open on the pinned glossary thread
+([t/402](https://forum.jiki.io/t/402), see the 2026-08-04 entry below), and this post is the
+same reviewer returning to the same question rather than a new dispute. What is new is the
+direction they lean: they now say "we don't have to nitpick", that "svečano" and "elegantno"
+can stay as "less precise but OK", and offer `smart` = "smart" (bare English) and `formal` =
+"formalno" as what they believe fashion writing uses. That is still hedged at 80%, and they
+close by reopening it themselves ("maybe it could be actually changed or we should read
+fashion texts"), plus a useful observation for whoever settles it: the two words are a
+register scale, "smart is more casual than formal". So the published wording stands
+unchanged, the row stays a draft, and the question stays open on t/402.
 
 ### 2026-08-04: `dress code` and `dead end` confirmed; `smart` (attire) stays open
 

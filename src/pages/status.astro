@@ -64,7 +64,18 @@ function groupItems(items: Item[]): [string, Item[]][] {
   return [...groups.entries()];
 }
 
-const forumTopicUrl = (topicId: number | null) => (topicId ? `https://forum.jiki.io/t/${topicId}` : null);
+/**
+ * The actual page a reviewer needs to read the item and, from there, open its
+ * "Discuss on the Forum" button (that button is what sets `topic_id` in the
+ * first place). This is the link every item should carry, whether or not a
+ * discussion has started yet: a null `topic_id` just means nobody has reviewed
+ * it, not that there's nothing to read.
+ */
+const contentUrl = (lang: string, key: string): string => {
+  if (key === "glossary") return `/${lang}/glossary`;
+  if (key === "video-player") return `/${lang}/video-player`;
+  return `/${lang}/${key}`;
+};
 
 /**
  * Standard competition ranking: languages level on approved count share a
@@ -155,7 +166,7 @@ const withAny = languages.filter((l) => l.approved > 0).length;
                   </div>
                   <div class="mt-1.5 flex flex-wrap gap-1.5 text-[12px]">
                     {items.map((item) => {
-                      const url = forumTopicUrl(item.topic_id);
+                      const url = contentUrl(entry.lang, item.key);
                       const tone =
                         item.status === "approved"
                           ? "bg-emerald-50 font-semibold text-emerald-700"
@@ -165,14 +176,10 @@ const withAny = languages.filter((l) => l.approved > 0).length;
                       const label = itemLabel(item.key);
                       const body = item.status === "approved" ? `✓ ${label}` : item.status === "disapproved" ? `✗ ${label}` : label;
                       const title = item.status === "approved" ? `${label}: signed off` : item.status === "disapproved" ? `${label}: flagged as wrong` : `${label}: not signed off yet`;
-                      return url ? (
+                      return (
                         <a href={url} class={`rounded-full px-2 py-0.5 transition hover:brightness-95 ${tone}`} title={title}>
                           {body}
                         </a>
-                      ) : (
-                        <span class={`rounded-full px-2 py-0.5 ${tone}`} title={title}>
-                          {body}
-                        </span>
                       );
                     })}
                   </div>
@@ -184,7 +191,7 @@ const withAny = languages.filter((l) => l.approved > 0).length;
       }
     </div>
 
-    <p class="mt-6 max-w-2xl text-[14px] text-gray-500">Open a language to see its items. Each one links to the forum thread where it's being reviewed, and if you speak the language, saying whether it sounds right is the single most useful thing you can do.</p>
+    <p class="mt-6 max-w-2xl text-[14px] text-gray-500">Open a language to see its items. Each one links to the page itself, and if you speak the language, reading it and saying whether it sounds right (using the "Discuss on the Forum" button on the page) is the single most useful thing you can do.</p>
     <p class="mt-2 text-[13px] text-gray-400">Last updated {status.published_at}.</p>
   </div>
 </Layout>

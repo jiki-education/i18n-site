@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/variables/source.md"
 en_md5: "dd0834017a8d42c22cca25966c1fdd91"
-governance_sha: "4015cb5"
-content_version: "2ad3ff242f8f"
-published_at: "2026-08-02"
+governance_sha: "1ec4365"
+content_version: "82ecd99d341f"
+published_at: "2026-08-04"
 forum_topic_id: 946
 ---
 
@@ -72,4 +72,4 @@ circle(leftPosition, topPosition, radius, color)
   height="378"
 />
 
-À tout moment dans le code, on pourra se référer à ces variables, et Jiki ira sortir les valeurs pour les mettre dans une machine. L'autre grand avantage des variables, c'est que chaque fois qu'on veut dessiner quelque chose à la même position que le soleil, on peut réutiliser ces mêmes variables `leftPosition` et `topPosition`. Prends un autre exemple : imagine que tu construis un mur de 30 briques et que tu veux que toutes les briques aient la même largeur et la même hauteur. Il est bien préférable de créer une variable pour la largeur et une pour la hauteur dès le début du code, puis de t'y référer par la suite. Ainsi, si plus tard tu veux changer cette largeur ou cette hauteur, il te suffira de la modifier en un seul endroit, et tout le reste se mettra à jour automatiquement.
+À tout moment dans le code, on pourra se référer à ces variables, et Jiki ira sortir les valeurs pour les mettre dans une machine. L'autre grand avantage des variables, c'est que chaque fois qu'on veut dessiner quelque chose à la même position que le soleil, on peut réutiliser ces mêmes variables `leftPosition` et `topPosition`. Prends un autre exemple : imagine que tu construis un mur de 30 briques et que tu veux que toutes les briques aient la même largeur et la même hauteur. Il sera préférable de créer une variable pour la largeur et une pour la hauteur dès le début du code, puis de t'y référer par la suite. Ainsi, si plus tard tu veux changer cette largeur ou cette hauteur, il te suffira de la modifier en un seul endroit, et tout le reste se mettra à jour automatiquement.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/while-loops/source.md"
 en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "fa246be"
-content_version: "afb2086e3c93"
-published_at: "2026-08-01"
+governance_sha: "1ec4365"
+content_version: "e43a8f7004ac"
+published_at: "2026-08-04"
 ---
 
 La prochaine boucle à connaître est la boucle `while` (tant que).
@@ -27,4 +27,4 @@ Chaque fois que quelqu'un tire, on augmente `numShots` de un, si bien qu'on fini
 
 Cela dit, les boucles while posent un problème : il est assez facile d'introduire des bugs qui font que la boucle ne se termine jamais. On appelle cela des boucles infinies (_infinite loops_ en anglais), et c'est l'un des bugs les plus courants dans les programmes.
 
-Quand ton ordinateur ralentit, que les ventilateurs se mettent à tourner et que tout devient bruyant, c'est souvent parce que quelqu'un a laissé dans son code une boucle infinie qui ne se termine jamais.
+Quand ton ordinateur ralentit, que les ventilateurs se mettent à tourner et que tout devient bruyant, c'est souvent parce que quelqu'un a laissé dans son code une boucle infinie qui, par définition, ne se termine jamais.

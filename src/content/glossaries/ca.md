@@ -3,9 +3,9 @@ lang: "ca"
 name: "Catalan"
 family: null
 stage: "setup"
-governance_sha: "c72a8bd"
-content_version: "095fc33c1a65"
-published_at: "2026-08-03"
+governance_sha: "1ec4365"
+content_version: "0ad6613be35d"
+published_at: "2026-08-04"
 term_count: 53
 category_id: 298
 forum_topic_id: 536
@@ -110,7 +110,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | English metaphor | Catalan rendering | Notes |
 |-------------------|--------------------|-------|
 | box (value container) | capsa | Not _caixa_: too many competing technical senses (crate, cash register, gearbox casing). |
-| chain (array metaphor) | reguitzell | **Collision:** _cadena_ is already the established term for **string** (see Values & data types), so it cannot also mean the array/chain metaphor. |
+| chain (array metaphor) | filera | Never _cadena_: it is the everyday word for a physical chain, but the programming term for a **string** is _corda_, so _cadena_ reads as a false friend. Never _reguitzell_: literary and dated. |
 | input slot | ranura d'entrada | |
 | return chute | conducte de sortida | |
 | machine (function metaphor) | màquina | |
@@ -122,6 +122,51 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-05: Chain metaphor becomes _filera_, and the cognate-gloss policy is settled
+
+**Decided by:** mnoe (native speaker), on the Catalan glossary review thread (forum topic
+536, post 4). Single reviewer, no dispute, clear recommendations, so actioned directly per
+the project's rule that the guide and glossary defer to native speakers when the two
+disagree.
+
+#### chain (array metaphor): _reguitzell_ → _filera_
+
+Three words were in play and each was assessed on its own:
+
+- **_Reguitzell_** (the previous rendering) is real but dated and effectively literary. It
+  is barely used outside writing these days and is not something a speaker under a certain
+  age would say in conversation. The 2026-07-30 draft below already flagged this row as the
+  highest-priority metaphor term to confirm with a native speaker; this is that
+  confirmation, and it went against the draft.
+- **_Cadena_** had been proposed as the replacement, on the reasoning that it is the common,
+  everyday word for a chain. It was rejected. It is common, but it is imprecise here: the
+  actual Catalan programming term for a **string** is _corda_, not _cadena_, so _cadena_ is
+  a false friend that carries an English-shaped assumption into Catalan. Note that this also
+  corrects the old row's "Collision" note, which asserted that _cadena_ was the established
+  string term and used that as the reason the chain metaphor could not have it. The premise
+  was wrong; the conclusion (don't use _cadena_ here) survives for a different reason.
+- **_Filera_** is the recommendation: the safest widely used term, current in ordinary
+  speech, and it carries the "things lined up in a row" sense the metaphor needs without
+  colliding with any programming vocabulary.
+
+The row's Notes column now rules out both _cadena_ and _reguitzell_, since a translator
+reaching for either is the specific failure mode this decision exists to prevent.
+
+#### Dropping the English gloss for cognates is confirmed, not a draft
+
+The standing policy is that a prose `<define>` gloss is dropped when the Catalan is a
+recognisable cognate of the English (_intèrpret_, _error_, _funcions_ and most of the file),
+so a Catalan concept page can legitimately carry no English glosses at all. That policy was
+drafted by an agent and explicitly flagged as wanting a native speaker's view before being
+treated as settled (see the 2026-07-30 entries below). Asked directly whether it still felt
+right for obvious cognates, mnoe confirmed it does.
+
+No glossary or guide change follows from this: the guide already states the rule
+imperatively and the reassurance that no glosses at all is the expected outcome. It is
+logged here so the question is not reopened and re-litigated later. This supersedes the
+"unconfirmed draft" status the 2026-08-01 and 2026-07-30 entries below record for it; those
+entries are kept as the record of what was decided when.
 
 ### 2026-08-04: Loop word order, track/pathway swap, and three terms brought into Catalan
 
@@ -416,7 +461,7 @@ covered by a dated entry above (`board / whiteboard`, `interpreter`) is not repe
 | Term | Why |
 |------|-----|
 | box | Small-container word (matchbox-scale); the right physical size for "a value goes in a box." |
-| chain | _Reguitzell_ ("a long series of things," used idiomatically for lining things up in a row) is more literary and less common in spoken register than _cadena_ would have been. This is the highest-priority metaphor term to confirm with a native speaker. |
+| chain | _Filera_ (a row/line of things) is the current, widely used word for the "things lined up in a row" sense, and collides with nothing. See the 2026-08-05 entry above for why it replaced _reguitzell_ and why _cadena_ was rejected. |
 | input slot | _entrada_ (input) + _ranura_ (a slot/opening). Catalan already uses _ranura_ for a hardware expansion slot, which reinforces rather than undermines the metaphor. |
 | return chute | _sortida_ (output) + _conducte_ (a duct/channel). No established term exists since this is a Jiki-only coinage; no collision found. |
 | machine | Direct cognate; both the general and everyday-appliance senses map onto "takes an input, does work, produces output." |

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "40b16a3",
-  "approved": 233,
+  "governance_sha": "c90604f",
+  "approved": 234,
   "disapproved": 0,
   "total": 544,
   "languages": [
@@ -1377,7 +1377,7 @@
       "name": "Persian",
       "stage": "refining",
       "category_slug": "i18n-fa",
-      "approved": 11,
+      "approved": 12,
       "disapproved": 0,
       "total": 19,
       "items": [
@@ -1439,7 +1439,7 @@
         {
           "key": "concept/else-if",
           "topic_id": 1170,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/for-loops",

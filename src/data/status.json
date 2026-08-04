@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "a23d5db",
-  "approved": 219,
+  "governance_sha": "03af641",
+  "approved": 220,
   "disapproved": 0,
   "total": 517,
   "languages": [
@@ -1161,7 +1161,7 @@
       "name": "Hungarian",
       "stage": "refining",
       "category_slug": "i18n-hu",
-      "approved": 10,
+      "approved": 11,
       "disapproved": 0,
       "total": 14,
       "items": [
@@ -1217,8 +1217,8 @@
         },
         {
           "key": "concept/strings",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1155,
+          "status": "approved"
         },
         {
           "key": "exercise/digital-clock",

@@ -3,10 +3,10 @@ lang: "fa"
 name: "Persian"
 family: null
 stage: "refining"
-governance_sha: "ba33763"
-content_version: "5ae2a6f3a944"
-published_at: "2026-08-03"
-term_count: 38
+governance_sha: "2a5600a"
+content_version: "7724b6dadc2b"
+published_at: "2026-08-04"
+term_count: 39
 category_id: 331
 forum_topic_id: 683
 video_player_forum_topic_id: 753
@@ -60,7 +60,8 @@ throughout. Split by theme for readability; every table below follows the same c
 |---------|---------|-------------|-------|
 | name (of a person, variable, key) | اسم | fa | **Never نام**, in any construction: «به اسم» (called), «با اسم» (with the name), and possessives («اسمم», my name). |
 | course | دوره | fa | The whole Jiki course ("در این دوره"). Keep distinct from درس (lesson) and برنامه‌ی درسی (curriculum). |
-| choice (the thing chosen) | گزینه | fa | The **noun**: a player's choice, one of the valid choices. The verb "to choose" stays انتخاب کردن, so «قیچی را انتخاب می‌کنند» is correct; only the noun انتخاب is wrong. |
+| choice (the thing chosen) | گزینه / انتخاب | fa | گزینه is an **option offered from a fixed set** («یکی از سه گزینه‌ی معتبر»). A **person's** choice, the thing they actually picked, is انتخاب: «انتخاب یوکی و آندو», «اگر انتخاب‌ها یکسان باشند». Never «گزینه‌ی یوکی». The verb "to choose" stays انتخاب کردن. |
+| syntax | نحوه‌ی نگارش | fa | **Never نحو.** Native speaker's decision; do not revert. The exact wording may vary with context: «نحوه‌ی نگارش», «روش نوشتن» or «شکل نوشتن» are all acceptable, and a sentence often reads better recast around the verb («نحوه‌ی نوشتنش فرق می‌کند») than with a noun. Pick whichever is most natural in the sentence, but نحو is never one of the options. |
 | Jiki | جیکی | fa | The interpreter character and the course's name. Written in Persian script in all prose, unlike the product/language names in the "Keep in English" table (JavaScript, Python, React), which stay Latin. Ezāfe and possessives attach as to any Persian noun («انبار جیکی»). Consistent with «جیکی کوچولو» (mini-Jiki) below. Branded sub-product names (Ask Jiki, Jiki Premium) translate like ordinary UI copy now, per the guide; "Ask Jiki" renders as «از جیکی بپرسید». |
 
 ## Keep in English
@@ -107,6 +108,53 @@ review.
 ---
 
 ## Decision log
+
+### 2026-08-04: "syntax" is نحوه‌ی نگارش; نحو is banned outright
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1137, post 3120),
+actioned by an agent the same day. **Terms affected:** the new `syntax` row.
+**Protected: this is a native speaker's decision and is not to be reversed by an agent.**
+
+Reviewing the Dictionaries concept page he asked us to stop using نحو for "syntax"
+anywhere, in any page, and to make a dedicated glossary decision about it rather than
+fixing it sentence by sentence. نحو is the formal Arabic-derived grammar term and reads as
+academic linguistics, not as something a beginner meets while learning to code. He offered
+نحوه‌ی نگارش، روش نوشتن and شکل نوشتن as alternatives, with the caveat that the best choice
+may vary by context.
+
+نحوه‌ی نگارش is recorded as the glossary default, with the row stating explicitly that the
+other two are acceptable and that recasting the sentence around a verb is often better than
+using any noun at all. The point that is not negotiable is the ban on نحو. This matches an
+earlier, page-scoped version of the same call on the Arrays page ("no «نحو کروشه‌ای»,
+too academic"), which is now generalized to a term-level rule.
+
+Jeremy has designated mominchezgi's Persian feedback as authoritative: his calls are
+actioned directly, without seeking further confirmation.
+
+The rest of that post is sentence-level rewording on the Dictionaries page (a singular page
+title, «و…» for "and so on", an impersonal unique-keys sentence, a parenthetical «(اگر
+بخواهید)», naming the brackets instead of a "syntax", and a fronted position clause), which
+is item-specific and so lives in `languages/fa/concept/dictionaries.md`.
+
+### 2026-08-04: the Arrays gloss names "boolean" in Latin script
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1095, post 3117),
+actioned by an agent the same day. **Terms affected:** none; the `Boolean` row is unchanged
+and منطقی remains the term in running prose.
+**Protected: this is a native speaker's decision and is not to be reversed by an agent.**
+
+Reviewing the Arrays page he asked that the parenthetical gloss on the opening sentence
+(«(منطقی، واژه‌ی پرطمطراقِ «درست» و «غلط»)») name the term as `boolean`, in Latin script,
+"for the first time (as I said before)". The sentence around it still says «مقادیر منطقی»,
+and every later mention on the page is منطقی, so this is a one-off naming of the English
+word where the page glosses the concept, not a reversal of the 2026-08-03 منطقی decision.
+It is recorded as a reviewer note on `languages/fa/concept/arrays.md` rather than as a rule,
+because it applies to that one gloss.
+
+The rest of that post is sentence-level rewording on the same page (سر و ته for "two ends",
+the appositive parenthesis losing its آن, «هر برگه‌ی کاغذ برای یک اسم», درست می‌کند for
+"gets", dropping a چیز, and shortening the first thank-you sentence), which is item-specific
+and so lives in that same reviewer-notes file.
 
 ### 2026-08-03: "name" is اسم, not نام; dictionary pairs are جفت
 

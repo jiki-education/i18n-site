@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "1ffe327",
-  "approved": 231,
+  "governance_sha": "297562e",
+  "approved": 233,
   "disapproved": 0,
   "total": 524,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 51,
+      "approved": 52,
       "disapproved": 0,
       "total": 54,
       "items": [
@@ -281,8 +281,8 @@
         },
         {
           "key": "exercise/cityscape-skyscraper",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1167,
+          "status": "approved"
         }
       ]
     },
@@ -1277,7 +1277,7 @@
       "name": "Persian",
       "stage": "refining",
       "category_slug": "i18n-fa",
-      "approved": 10,
+      "approved": 11,
       "disapproved": 0,
       "total": 19,
       "items": [
@@ -1348,8 +1348,8 @@
         },
         {
           "key": "concept/else",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1168,
+          "status": "approved"
         },
         {
           "key": "concept/while-loops",

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "2a5600a",
-  "approved": 204,
+  "governance_sha": "1171608",
+  "approved": 205,
   "disapproved": 0,
   "total": 517,
   "languages": [
@@ -1662,6 +1662,112 @@
       ]
     },
     {
+      "lang": "fa",
+      "name": "Persian",
+      "stage": "refining",
+      "category_slug": "i18n-fa",
+      "approved": 6,
+      "disapproved": 0,
+      "total": 19,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 683,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 752,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 753,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 802,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": 1138,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": 916,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": 916,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": 916,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": 1095,
+          "status": "approved"
+        },
+        {
+          "key": "concept/else-if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/for-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/else",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/while-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/dictionaries",
+          "topic_id": 1137,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "hu",
       "name": "Hungarian",
       "stage": "refining",
@@ -1732,112 +1838,6 @@
         },
         {
           "key": "concept/arrays",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/weather-symbols",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "fa",
-      "name": "Persian",
-      "stage": "refining",
-      "category_slug": "i18n-fa",
-      "approved": 5,
-      "disapproved": 0,
-      "total": 19,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 683,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 752,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 753,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 802,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": 916,
-          "status": "pending"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": 916,
-          "status": "pending"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": 916,
-          "status": "pending"
-        },
-        {
-          "key": "concept/strings",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/arrays",
-          "topic_id": 1095,
-          "status": "approved"
-        },
-        {
-          "key": "concept/else-if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/for-loops",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/else",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/while-loops",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/dictionaries",
-          "topic_id": 1137,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/two-fer",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/digital-clock",
           "topic_id": null,
           "status": "pending"
         },

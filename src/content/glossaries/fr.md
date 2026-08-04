@@ -3,9 +3,9 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "88fcc6f"
-content_version: "1748bf356181"
-published_at: "2026-08-03"
+governance_sha: "c99dd90"
+content_version: "19bfaa336266"
+published_at: "2026-08-04"
 term_count: 84
 category_id: 72
 forum_topic_id: 314
@@ -110,14 +110,14 @@ so a term that drifts between two exercises drifts inside one screen.
 
 | English | French | Use (fr/en) | Notes |
 |---------|--------|-------------|-------|
-| alien | alien | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _un alien_, plural _des aliens_. Never _extraterrestre_, which is heavier than the arcade register the exercise is written in. |
+| alien | alien | fr | Confirmed by native speakers (2026-08-04). Gender: _un alien_, plural _des aliens_. Never _extraterrestre_, which is heavier than the arcade register the exercise is written in. |
 | row (of aliens) | rangée | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _une rangée_. Never _ligne_ here, which in these pages already means a line of code. |
-| to shoot down (an alien) | abattre | fr | Unconfirmed draft (agent, 2026-08-03). **Conflict, not yet settled:** the shared `space-invaders` base catalog previously said _vaincre_ for the same action while the exercise catalogs said _abattre_; the catalogs have been made consistent on _abattre_, but no native speaker has ruled on which of the two French verbs a beginner should read. Raise it on the forum before treating this row as settled. The act of firing itself stays _tirer_ (_tire sur chaque alien_); _abattre_ is the outcome (_tu n'as pas abattu tous les aliens_). |
+| to shoot down (an alien) | abattre | fr | Confirmed by a native speaker (2026-08-04), over _vaincre_, which is now settled and not to be reopened. The act of firing itself stays _tirer_ (_tire sur chaque alien_); _abattre_ is the outcome (_tu n'as pas abattu tous les aliens_). |
 | shot (golf) | coup | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _un coup_, as in _un coup de golf_, _la longueur du coup_. |
 | step / unit (distance moved) | unité | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _une unité_. The distance a thing moves in one call: _faire rouler la balle d'une unité vers la droite_. Follows the `golf` family catalog. |
 | inset (drawing exercises) | en retrait / le retrait | fr | Unconfirmed draft (agent, 2026-08-03). Adjectival/adverbial use _en retrait_ (_un rectangle en retrait_), noun use _le retrait_. Recurs across the drawing exercises, so do not alternate with _décalage_ or _marge_. |
-| nose (of an animal) | la truffe | fr | Unconfirmed draft (agent, 2026-08-03). The nose of a fox, dog or similar animal in the drawing exercises. Over _nez_ (human) and _museau_ (the whole snout, not the nose tip). |
-| penguin | pingouin | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _le pingouin_. The everyday French word a beginner expects, not the zoologically stricter _manchot_. |
+| nose / snout (of a snouted animal) | le museau | fr | Confirmed by native speakers (2026-08-04). Gender: _un museau_. The fox and similar snouted animals in the drawing exercises. Never _truffe_, which everyday French attaches to pigs and boars and reads oddly for a fox. Never _la pointe du museau_, which is too heavy for instructions. Birds (the `penguin` exercise) keep _le nez_; _museau_ does not apply to them. |
+| penguin | pingouin | fr | Confirmed by native speakers (2026-08-04). Gender: _le pingouin_. The everyday French word, matching the cartoon drawing the exercise uses, not the zoologically stricter _manchot_. |
 
 ## Keep in English
 
@@ -176,6 +176,54 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-04: Stage 3 batch 1 review (`nose` corrected, three rows confirmed)
+
+**Decided by:** native speakers mirina and resu-xunil, forum topic 314
+(https://forum.jiki.io/t/314), posts 3105, 3115, 3119, 3153, 3156, 3160, 3162.
+**Terms affected:** `nose (of an animal)` (_la truffe_ → _le museau_), plus confirmation of
+`alien`, `penguin` and `to shoot down`.
+**Files affected:** `glossary.md` (Exercise world vocabulary),
+`front-end/curriculum/src/exercises/foxy-face/instructions/fr.md` and
+`.../foxy-face/locales/fr/translation.json`.
+
+**`nose` → _le museau_** overturns the _truffe_ draft written the day before, which the
+batch entry below already flagged as its shakiest call. mirina (post 3105) argues that
+_truffe_ is technically defensible but unidiomatic for a fox: in everyday French it is the
+word people attach to pigs and boars, and the Académie française entry for _museau_
+(https://www.dictionnaire-academie.fr/article/A9M3243) uses the fox sense directly. Because
+`foxy-face` draws the whole head rather than an isolated nose-tip, _museau_ is also the more
+accurate description of the shape on screen. She explicitly rejects _la pointe du museau_ as
+too heavy for instruction text. resu-xunil (post 3153) independently confirms with the CNRTL
+entry (https://www.cnrtl.fr/definition/museau), while noting he says _truffe_ about cats and
+dogs himself, which is exactly the pet-nose sense that does not carry to a fox's whole head.
+Two native speakers agreeing outranks the agent draft, so the row is now confirmed rather
+than reopened. The row is scoped to snouted animals: the `penguin` exercise keeps _le nez_,
+since a bird has no _museau_, and mirina notes in the same post that _nez_ is unremarkable
+French for an animal anyway.
+
+**`alien` → _alien_** confirmed by mirina (post 3115) and resu-xunil (post 3160).
+**`penguin` → _pingouin_** confirmed by mirina (post 3119) and resu-xunil (post 3156).
+mirina corrects our stated reasoning while agreeing with the answer: the choice is not about
+what a beginner expects but about the drawing, which is the cartoon penguin of games and
+social media, an image that is a _manchot_ zoologically and _pingouin_ to everyone looking at
+it. She adds that the pairing of young and beginner audiences is what makes it right.
+resu-xunil notes the two are near-universally confused in French. The row's Notes now say
+"matching the cartoon drawing" rather than "the word a beginner expects".
+
+**`to shoot down` → _abattre_** confirmed by resu-xunil (post 3162), who prefers it to
+_vaincre_ in this context. That settles the conflict recorded in the 2026-08-03 entry below:
+the catalogs were already consistent on _abattre_, and a native speaker has now ruled, so the
+row is no longer a draft and the question is closed rather than open to a further round.
+
+**Left open: a glossary row for `build`.** mirina (post 3116) reports that `build` recurs
+across exercise instructions and that she re-decides it each time (_construire_, _réaliser_,
+_créer_, _concevoir_), which risks two translators diverging on one word. The observation is
+sound but no single French verb was proposed and nobody has yet said whether one rendering
+should be forced everywhere or the choice should stay contextual, so nothing has been written
+to the glossary. Asked back on the thread. resu-xunil (post 3169) leans towards flexibility
+over a forced single verb, on the grounds that the context should decide; mirina has not yet
+answered, so the row stays unwritten until the two of them agree.
 
 ### 2026-08-03: `code block` → `bloc de code` (reviewer retraction)
 

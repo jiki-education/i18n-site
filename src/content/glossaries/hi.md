@@ -3,8 +3,8 @@ lang: "hi"
 name: "Hindi"
 family: null
 stage: "refining"
-governance_sha: "d0e4086"
-content_version: "0804cf5665e6"
+governance_sha: "39ffeb7"
+content_version: "09fb8db966aa"
 published_at: "2026-08-04"
 term_count: 133
 category_id: 237
@@ -21,8 +21,7 @@ this glossary applies, and § "Script convention" for why almost every row is De
 The **Gender** column is binding: Hindi verbs, adjectives and postpositions all agree with
 a noun's gender, including for borrowed nouns, so a wrong gender is a grammatical error on
 every sentence the term appears in. `m` = masculine, `f` = feminine, `m/f` = agrees with the
-person referred to, `-` = not a noun. A gender marked "unconfirmed" in Notes is our best
-call, not a verified fact.
+person referred to, `-` = not a noun.
 
 ## Core decisions
 
@@ -32,8 +31,8 @@ call, not a verified fact.
 | programming | प्रोग्रामिंग | f | hi | |
 | code (the noun, in prose) | कोड | m | hi | Devanagari, not bare Latin. Distinct from the literal UI label / token `Code`, which stays English (see "Keep in English"). |
 | developer | डेवलपर | m/f | hi | Agrees with the person: "एक डेवलपर ने लिखा" / "एक डेवलपर ने लिखी" as appropriate. |
-| streak | स्ट्रीक | f | hi | Gender and term both low confidence: not source-verified. Flag for native-speaker confirmation on first real use. |
-| pitfall | आम गलती | f | hi | Medium confidence: flag for native-speaker review. |
+| streak | स्ट्रीक | f | hi | |
+| pitfall | आम गलती | f | hi | Literally "common mistake". |
 
 ## Localize (use the Hindi term)
 
@@ -46,7 +45,7 @@ clarification"). Split by theme for readability; every table below follows the s
 
 | English | Hindi | Gender | Use (hi/en) | Notes |
 |---------|-------|--------|-------------|-------|
-| value | वैल्यू | f | hi | "वैल्यू रखी जाती है", "वैल्यू बदल जाती है". Confirmed by a native speaker for the "value of a variable" sense; still our own call for the other senses (see below). मान is the school-maths word for the same idea; we use वैल्यू for consistency with the other borrowed technical nouns. |
+| value | वैल्यू | f | hi | "वैल्यू रखी जाती है", "वैल्यू बदल जाती है". मान is the school-maths word for the same idea; we use वैल्यू for consistency with the other borrowed technical nouns. |
 | number | संख्या | f | hi | Ordinary Hindi word; no borrowing. |
 | integer | पूर्णांक | m | hi | Ordinary school-maths word. |
 | float / decimal | दशमलव संख्या | f | hi | |
@@ -54,13 +53,13 @@ clarification"). Split by theme for readability; every table below follows the s
 | true / false | सही / गलत | - | hi | Not capitalised in prose. Distinct from the literal code values `true`/`false`, which stay as-is in code. |
 | Boolean | बूलियन | m | hi | The सही/गलत data type. |
 | data type | डेटा टाइप | m | hi | |
-| string | स्ट्रिंग | f | hi | Gender unconfirmed; feminine chosen and used consistently. |
+| string | स्ट्रिंग | f | hi | |
 | array / list | ऐरे | m | hi | The Devanagari spelling of "array"; सरणी is never used in real Hindi programming prose. Exercise prose sometimes says "list" informally for the same concept; treat as one term. Not to be confused with the ज़ंजीर metaphor (see Jiki metaphors). |
 | element | एलिमेंट | m | hi | An item inside an ऐरे. कड़ी (link) is used only inside the chain metaphor, see Jiki metaphors. |
 | index | इंडेक्स | m | hi | The position number of an element. |
 | dictionary | डिक्शनरी | f | hi | The key-value data type. शब्दकोश is the everyday word behind the metaphor and can carry the explanation where the source gives one. |
 | key-value pair | की-वैल्यू जोड़ा | m | hi | |
-| template literal | टेम्पलेट लिटरल | m | hi | Where the source explains it: "एक तरह की स्ट्रिंग जिसमें एक्सप्रेशन इस्तेमाल कर सकते हैं" (wording by @suditi; only the embedded terms' script has changed, see `glossary-notes.md`). |
+| template literal | टेम्पलेट लिटरल | m | hi | Where the source explains it: "एक तरह की स्ट्रिंग जिसमें एक्सप्रेशन इस्तेमाल कर सकते हैं". |
 
 ### Functions & control flow
 
@@ -75,7 +74,7 @@ clarification"). Split by theme for readability; every table below follows the s
 | output | आउटपुट | m | hi | As इनपुट above; in prose, "फंक्शन जोड़ देता है" rather than "फंक्शन का आउटपुट जोड़ है". |
 | to return (a value) | लौटाना | - | hi | "यह फंक्शन एक वैल्यू लौटाता है।" Transitive (लौटाना), never the intransitive लौटना or the redundant वापस लौटना. वापस देना is fine where the prose is leaning on the machine metaphor. **Never रिटर्न करना.** |
 | return value | रिटर्न वैल्यू | f | hi | Noun form, for where a noun is needed. In prose prefer the verb: "जो वैल्यू यह फंक्शन लौटाता है". |
-| pure function | प्योर फंक्शन | m | hi | Advanced term; low confidence, flag for native-speaker review. |
+| pure function | प्योर फंक्शन | m | hi | Advanced term. |
 | condition | शर्त | f | hi | Ordinary Hindi word; stands alone. |
 | comparison | तुलना | f | hi | |
 | if statement | `if` स्टेटमेंट | m | hi | The `if` keyword itself stays in code font; the surrounding noun is Devanagari. |
@@ -112,9 +111,9 @@ clarification"). Split by theme for readability; every table below follows the s
 | state | स्थिति | f | hi | The information present in the code at a given moment. |
 | toggle | टॉगल | m | hi | An on/off style change. |
 | scope | स्कोप | m | hi | Where a वेरिएबल can be used. Kept distinct from कोड ब्लॉक. |
-| interpreter | इंटरप्रेटर | m | hi | A **person** doing a job, not a program: Jiki is the interpreter. Never gloss it as a प्रोग्राम or सॉफ्टवेयर; it sits with the other person-role loanwords (डेवलपर, मेंटर). दुभाषिया is the native word for a human interpreter (a different job): flag for native-speaker review. |
+| interpreter | इंटरप्रेटर | m | hi | A **person** doing a job, not a program: Jiki is the interpreter. Never gloss it as a प्रोग्राम or सॉफ्टवेयर; it sits with the other person-role loanwords (डेवलपर, मेंटर). Not दुभाषिया, which is a human language interpreter, a different job. |
 | instruction (given to Jiki) | निर्देश | m | hi | Plural is also निर्देश ("Jiki को निर्देश देना"). This is the ordinary written Hindi word; इंस्ट्रक्शन is a needless borrowing where Hindi has its own word. |
-| mental model | सोचने का तरीका | m | hi | Not मेंटल मॉडल, which is jargon a beginner has not met. Flag for native-speaker review. |
+| mental model | सोचने का तरीका | m | hi | Not मेंटल मॉडल, which is jargon a beginner has not met. |
 | (programming) language | भाषा | f | hi | Used both for a programming language and for "a language the computer understands". Use it throughout a page; do not mix in लैंग्वेज. |
 | algorithm | एल्गोरिदम | m | hi | |
 
@@ -123,10 +122,10 @@ clarification"). Split by theme for readability; every table below follows the s
 | English | Hindi | Gender | Use (hi/en) | Notes |
 |---------|-------|--------|-------------|-------|
 | object | ऑब्जेक्ट | m | hi | Data representing something from the real world. |
-| class | क्लास | f | hi | A blueprint for something: "किसी चीज़ का खाका". Gender unconfirmed; feminine chosen (matching the school sense of क्लास) and used consistently. |
-| method | मेथड | m | hi | A फंक्शन attached to an ऑब्जेक्ट. Gender unconfirmed. |
+| class | क्लास | f | hi | A blueprint for something: "किसी चीज़ का खाका". |
+| method | मेथड | m | hi | A फंक्शन attached to an ऑब्जेक्ट. |
 | property | प्रॉपर्टी | f | hi | A विशेषता or piece of information belonging to an ऑब्जेक्ट. Kept distinct from फीचर (a platform capability). |
-| encapsulation | एनकैप्सुलेशन | m | hi | Advanced/OOP term; low confidence, flag for native-speaker review. |
+| encapsulation | एनकैप्सुलेशन | m | hi | Advanced/OOP term. |
 | module | मॉड्यूल | m | hi | A separate, reusable piece of code. |
 | component | कंपोनेंट | m | hi | A small, reusable part of a page. |
 
@@ -139,8 +138,8 @@ clarification"). Split by theme for readability; every table below follows the s
 | tool / tooling | टूल | m | hi | Programs made to make work easier. |
 | workflow | वर्कफ्लो | m | hi | The way or order in which work gets done. |
 | auth (authentication / authorization) | ऑथेंटिकेशन | m | hi | The identity-check concept: "पहचान जाँचने की प्रक्रिया". |
-| edge case | एज केस | m | hi | Where the source explains it: "कोई असामान्य स्थिति जिसका होने का अवसर कम होता है लेकिन हो सकता है" (wording by @dazecodes, unchanged). |
-| backwards compatibility | बैकवर्ड कंपैटिबिलिटी | f | hi | Low confidence, term and gender; flag for native-speaker review. |
+| edge case | एज केस | m | hi | Where the source explains it: "कोई असामान्य स्थिति जिसका होने का अवसर कम होता है लेकिन हो सकता है". |
+| backwards compatibility | बैकवर्ड कंपैटिबिलिटी | f | hi | |
 
 ### Platform & curriculum vocabulary
 
@@ -152,14 +151,14 @@ clarification"). Split by theme for readability; every table below follows the s
 | course | कोर्स | m | hi | The whole Jiki course, e.g. "इस कोर्स में आपका इंटरप्रेटर Jiki है". Kept distinct from पाठ (lesson) and पाठ्यक्रम (curriculum). |
 | curriculum | पाठ्यक्रम | m | hi | |
 | syllabus | सिलेबस | m | hi | Kept distinct from पाठ्यक्रम (curriculum) per `global/terms.md`. |
-| milestone | पड़ाव | m | hi | "A stop/stage on a journey." Medium confidence: flag for native-speaker review. |
+| milestone | पड़ाव | m | hi | "A stop/stage on a journey." |
 | track / pathway | रास्ता | m | hi | |
 | mentor / mentoring | मेंटर | m/f | hi | Agrees with the person. |
 | tutorial | ट्यूटोरियल | m | hi | Kept distinct from पाठ (lesson). |
 | solution (learner's submission) | हल | m | hi | |
-| scenario | सिनेरियो | m | hi | Jiki-specific: a structured variant within an exercise. Low confidence: flag for native-speaker review. |
-| challenge (an optional harder exercise) | चैलेंज | m | hi | **Confirmed by a native speaker.** Never चुनौती for this sense. **Masculine**, so the agreement changes with the word: "चैलेंज पूरा हुआ", never "चुनौती पूरी हुई". Same form in the plural (चैलेंज), oblique plural चैलेंजों, **confirmed by @suditi**: "if you are using plural form for all other English words in Devanagari, you might as well use the plural for challenge." The verb "to challenge yourself" is a different thing and is not this row; write खुद को परखना rather than mixing चुनौती back into a sentence about चैलेंज. |
-| page (of the site or app) | पेज | m | hi | **Confirmed by a native speaker.** Never पृष्ठ, which carries the "page of a book" meaning. |
+| scenario | सिनेरियो | m | hi | Jiki-specific: a structured variant within an exercise. |
+| challenge (an optional harder exercise) | चैलेंज | m | hi | Never चुनौती for this sense. **Masculine**, so the agreement changes with the word: "चैलेंज पूरा हुआ", never "चुनौती पूरी हुई". Same form in the plural (चैलेंज), oblique plural चैलेंजों. The verb "to challenge yourself" is a different thing and is not this row; write खुद को परखना rather than mixing चुनौती back into a sentence about चैलेंज. |
+| page (of the site or app) | पेज | m | hi | Never पृष्ठ, which carries the "page of a book" meaning. |
 | bootcamp | बूटकैंप | m | hi | Treated close to a proper noun where it names Jiki's predecessor program. |
 | canvas (graphics exercises) | कैनवास | m | hi | The drawing surface in creative-coding exercises. |
 | feature (platform capability) | फीचर | m | hi | Kept distinct from फंक्शन; no collision risk in Hindi. सुविधा is a good alternative in warmer prose. |
@@ -169,13 +168,8 @@ clarification"). Split by theme for readability; every table below follows the s
 
 ### Drawing & colour (creative-coding exercises)
 
-The shapes, colour components and orientations the drawing exercises are built on. They are
-already used consistently in shipped Hindi content (`rainbow`, and the shared `draw`
-category catalog), and the rows exist so that consistency survives the next pass.
-
-Most of this section has now been ruled on by native speakers. **saturation (संतृप्ति) is
-the one row still unconfirmed**, and it is listed under "Open / low-confidence terms" below;
-everything else here is settled.
+The shapes, colour components and orientations the drawing exercises are built on, used
+consistently across every drawing exercise and the shared `draw` category catalog.
 
 **Every geometry term carries the English in bare brackets on first use** (आयत (rectangle)),
 per `guide.md` § "Geometry terms carry an English gloss".
@@ -183,26 +177,25 @@ per `guide.md` § "Geometry terms carry an English gloss".
 | English | Hindi | Gender | Use (hi/en) | Notes |
 |---------|-------|--------|-------------|-------|
 | rectangle | आयत | m | hi | The school-geometry word. Glossed: "आयत (rectangle)". |
-| circle | वृत्त | m | hi | **Confirmed by @suditi**: these are mathematical technical terms, and वृत्त is circle. **Never गोला for the `circle` function**, which she gives as "similar to round", not as circle. गोला stays the maze's green target ("हरे गोले तक"), which is a ball on screen and not a named shape. Glossed: "वृत्त (circle)". |
+| circle | वृत्त | m | hi | **Never गोला for the `circle` function**: गोला is "round", not "circle". गोला stays the maze's green target ("हरे गोले तक"), which is a ball on screen and not a named shape. Glossed: "वृत्त (circle)". |
 | triangle | त्रिभुज | m | hi | Glossed: "त्रिभुज (triangle)". |
 | ellipse | दीर्घवृत्त | m | hi | Glossed: "दीर्घवृत्त (ellipse)". |
 | line (drawn on the canvas) | रेखा | f | hi | "एक रेखा खींची". Kept distinct from a line of code, which is लाइन. |
 | radius | त्रिज्या | f | hi | The school-geometry word. The `radius` parameter name itself stays in code font, as any identifier does. |
-| hue | मूल रंग | m | hi | **Confirmed by @dazecodes**, who ruled रंगत wrong because it also means a person's complexion. **Masculine** (रंग), so the agreement moved with it: "मूल रंग 0 से 360 के बीच होना चाहिए", never "होनी चाहिए". प्राथमिक रंग is his equally acceptable alternative; we use मूल रंग throughout for consistency. |
-| saturation | संतृप्ति | f | hi | **Unconfirmed.** Neither @dazecodes nor @suditi had a view on this one, so it is still a translation pass's draft, unlike the two rows either side of it. Already shipped in `rainbow` and the `draw` catalog. |
-| lightness | हल्कापन | m | hi | **Confirmed by @dazecodes**, who ruled चमक wrong because it mainly means the shine of an object. **Masculine**: "हल्कापन 0 से 100 के बीच होना चाहिए". Kept distinct from मूल रंग and संतृप्ति; the three always appear together. |
-| hex (colour) | हेक्स | - | hi | **Confirmed by @suditi**: "it is the name of the code so it should be fine." Devanagari, per `guide.md` § "Script convention": "हेक्स रंग", "हेक्स स्ट्रिंग". The `#` and the hex digits themselves are code and stay as they are. |
-| horizontal / vertical | आड़ी रेखा / खड़ी रेखा | f | hi | **Confirmed by @dazecodes**: name the noun, so it is clear the adjective describes the line. Not क्षैतिज / ऊर्ध्वाधर, which are the textbook-formal pair. **Where the thing is not a line, keep the adjective and use that thing's own noun**: "खड़ी पट्टियाँ" (vertical stripes), "आड़ी त्रिज्या / खड़ी त्रिज्या" (horizontal / vertical radius), "आड़ी स्थिति" (horizontal position). Never a bare आड़ी / खड़ी with no noun after it. |
+| hue | मूल रंग | m | hi | **Never रंगत**, which also means a person's complexion. **Masculine** (रंग), so the agreement follows: "मूल रंग 0 से 360 के बीच होना चाहिए", never "होनी चाहिए". प्राथमिक रंग is an equally acceptable alternative; we use मूल रंग throughout for consistency. |
+| saturation | संतृप्ति | f | hi | |
+| lightness | हल्कापन | m | hi | **Never चमक**, which mainly means the shine of an object. **Masculine**: "हल्कापन 0 से 100 के बीच होना चाहिए". Kept distinct from मूल रंग and संतृप्ति; the three always appear together. |
+| hex (colour) | हेक्स | - | hi | Devanagari, per `guide.md` § "Script convention": "हेक्स रंग", "हेक्स स्ट्रिंग". The `#` and the hex digits themselves are code and stay as they are. |
+| horizontal / vertical | आड़ी रेखा / खड़ी रेखा | f | hi | Name the noun, so it is clear the adjective describes the line. Not क्षैतिज / ऊर्ध्वाधर, which are the textbook-formal pair. **Where the thing is not a line, keep the adjective and use that thing's own noun**: "खड़ी पट्टियाँ" (vertical stripes), "आड़ी त्रिज्या / खड़ी त्रिज्या" (horizontal / vertical radius), "आड़ी स्थिति" (horizontal position). Never a bare आड़ी / खड़ी with no noun after it. |
 
 ### Exercise scenario vocabulary
 
 Real-world nouns that an exercise's story is built on, where the obvious rendering is wrong
-or reads clunky in Hindi. Only terms a native speaker has ruled on belong here; ordinary
-words an exercise happens to use do not.
+or reads clunky in Hindi. Ordinary words an exercise happens to use do not belong here.
 
 | English | Hindi | Gender | Use (hi/en) | Notes |
 |---------|-------|--------|-------------|-------|
-| canapé / canapés | कैनेपे | m | hi | **Same form singular and plural.** Never कैनापेज़ or any other English-style `-s`/`-ज़` plural; plurality is carried by the verb, the adjective or a quantifier, not by the noun. Gender unconfirmed: @suditi ruled on the form, not the gender. |
+| canapé / canapés | कैनेपे | m | hi | **Same form singular and plural.** Never कैनापेज़ or any other English-style `-s`/`-ज़` plural; plurality is carried by the verb, the adjective or a quantifier, not by the noun. |
 | guest list (the list of invited people) | गेस्ट लिस्ट | f | hi | Not मेहमानों की सूची. The real-world guest list of an event only. **Not the data structure**: an array or a code-level list is ऐरे (see "Values & data types"), whatever the English calls it. |
 
 ## Keep in English (Latin script)
@@ -240,10 +233,32 @@ technical language.
 | crank (machine crank) | हैंडल | m | To crank it is "हैंडल घुमाना". |
 | board / whiteboard | बोर्ड | m | **One object, one word.** Both the board the learner puts निर्देश on for Jiki to follow and a function's own board of notes are बोर्ड. Never use व्हाइटबोर्ड alongside it. |
 
-## Open / low-confidence terms for native-speaker review
+---
 
-Flag these via `/action-forum-post` once real native-speaker feedback is available, per
-`global/rules.md` § "When unsure."
+## Decision log
+
+### 2026-08-04: Hedges, open questions and attributions moved out of `guide.md` and `glossary.md`
+
+**Decided by:** iHiD (guidance-lane audit of the two prompt-loaded Hindi files). **Status:
+no term mapping and no rule changed**, with two exceptions named at the end: one row's Notes
+turned a review flag into a plain instruction, and `guide.md` § "Sentence structure" was
+rewritten. **Terms affected:** none, in the sense that no Hindi word, gender or `Use` value
+moved.
+
+`guide.md` and `glossary.md` are loaded into the prompt for every Hindi item in every pass,
+forever. Both had grown by accretion over three days of reviewer feedback and had come to
+read as work in progress: confidence markers inside rules, "unconfirmed" and "flag for
+native-speaker review" inside Notes columns, a banner over a whole section, and a trailing
+list of open questions. Every one of those is paid for on every call, and each invites the
+model to weigh how sure we are instead of doing what the line says. The instruction stays in
+the guide or the glossary; **what we know about how sure we are lives here**, because we
+still need it in order to ask reviewers the right questions.
+
+#### The open-questions list, removed from `glossary.md`
+
+It stood as a final section headed "Open / low-confidence terms for native-speaker review",
+introduced with "Flag these via `/action-forum-post` once real native-speaker feedback is
+available, per `global/rules.md` § 'When unsure.'" Its content, unchanged:
 
 - **value (वैल्यू vs मान)**: **confirmed by @suditi for the variable-value sense**
   ("the value of a variable"), which is the common case, so the row is settled for ordinary
@@ -275,9 +290,157 @@ Flag these via `/action-forum-post` once real native-speaker feedback is availab
   default stands for consistency only; every word other than सिर्फ is challengeable. Collect
   a per-word list from her over time rather than asking her to rule on the convention again.
 
----
+**That list is the live queue of things to ask about, and it is still live.** Nothing on it
+was answered by this edit; it moved file.
 
-## Decision log
+#### The per-row hedges, and what each row now says
+
+Every row keeps its Hindi, its gender and its `Use` value. Only the Notes text changed.
+
+| Row | What the Notes said | What it says now |
+|-----|---------------------|------------------|
+| streak | "Gender and term both low confidence: not source-verified. Flag for native-speaker confirmation on first real use." | (empty) |
+| pitfall | "Medium confidence: flag for native-speaker review." | "Literally 'common mistake'." (moved up from the Term rationale section at the foot of this file, so the row is not left bare) |
+| value | "Confirmed by a native speaker for the 'value of a variable' sense; still our own call for the other senses (see below)." | (removed; the मान sentence and the usage examples stay) |
+| string | "Gender unconfirmed; feminine chosen and used consistently." | (empty; the Gender column already says `f`) |
+| class | "Gender unconfirmed; feminine chosen (matching the school sense of क्लास) and used consistently." | (removed; the खाका gloss stays) |
+| method | "Gender unconfirmed." | (removed) |
+| pure function | "Advanced term; low confidence, flag for native-speaker review." | "Advanced term." |
+| encapsulation | "Advanced/OOP term; low confidence, flag for native-speaker review." | "Advanced/OOP term." |
+| backwards compatibility | "Low confidence, term and gender; flag for native-speaker review." | (empty) |
+| milestone | "'A stop/stage on a journey.' Medium confidence: flag for native-speaker review." | "'A stop/stage on a journey.'" |
+| scenario | "Jiki-specific: a structured variant within an exercise. Low confidence: flag for native-speaker review." | "Jiki-specific: a structured variant within an exercise." |
+| mental model | "Flag for native-speaker review." | (removed; the "not मेंटल मॉडल" instruction stays) |
+| interpreter | "दुभाषिया is the native word for a human interpreter (a different job): flag for native-speaker review." | "Not दुभाषिया, which is a human language interpreter, a different job." (see the exception noted below) |
+| saturation | "**Unconfirmed.** Neither @dazecodes nor @suditi had a view on this one, so it is still a translation pass's draft, unlike the two rows either side of it. Already shipped in `rainbow` and the `draw` catalog." | (empty) |
+| canapé / canapés | "Gender unconfirmed: @suditi ruled on the form, not the gender." | (removed; the same-form-plural instruction stays in full) |
+
+**So the current inventory of what is not confirmed**, which is what the removed markers were
+carrying: genders for `string`, `class`, `method`, `backwards compatibility`, `streak` and
+`canapé`; term choice for `scenario`, `encapsulation`, `pure function`, `backwards
+compatibility`, `milestone`, `streak` and `pitfall`; and `saturation`, which is the single
+unconfirmed row in "Drawing & colour" and stays in the glossary as a usable row.
+
+The glossary's own preamble also carried "A gender marked 'unconfirmed' in Notes is our best
+call, not a verified fact", which no longer describes anything and is removed. The "Drawing &
+colour" section lost its two-sentence banner ("Most of this section has now been ruled on by
+native speakers. **saturation (संतृप्ति) is the one row still unconfirmed**, and it is listed
+under 'Open / low-confidence terms' below; everything else here is settled") and the sentence
+explaining that its rows exist so consistency survives the next pass.
+
+#### Attributions removed from `glossary.md`
+
+The decisions themselves are untouched, in wording and in force. Only the record of who made
+them moved, and each is already logged in the dated entry below that settled it.
+
+- `challenge`: "**Confirmed by a native speaker.**" and the oblique-plural quote,
+  "**confirmed by @suditi**: 'if you are using plural form for all other English words in
+  Devanagari, you might as well use the plural for challenge.'"
+- `page`: "**Confirmed by a native speaker.**"
+- `circle`: "**Confirmed by @suditi**: these are mathematical technical terms, and वृत्त is
+  circle" and "which she gives as 'similar to round', not as circle". The row now states the
+  same thing without her: गोला is "round", not "circle".
+- `hue`: "**Confirmed by @dazecodes**, who ruled रंगत wrong because ..." became "**Never
+  रंगत**, which ...", and "his equally acceptable alternative" became "an equally acceptable
+  alternative".
+- `lightness`: same treatment, "who ruled चमक wrong because" → "**Never चमक**, which".
+- `hex (colour)`: "**Confirmed by @suditi**: 'it is the name of the code so it should be
+  fine.'"
+- `horizontal / vertical`: "**Confirmed by @dazecodes**:" dropped from the front of his rule,
+  which is otherwise word for word what it was.
+- `template literal`: "(wording by @suditi; only the embedded terms' script has changed, see
+  `glossary-notes.md`)".
+- `edge case`: "(wording by @dazecodes, unchanged)".
+- The "Exercise scenario vocabulary" intro said "Only terms a native speaker has ruled on
+  belong here; ordinary words an exercise happens to use do not." It now says the second half
+  only. **The rule it stated is real and still applies**: that section is for scenario nouns
+  a reviewer has ruled on, not for whatever an exercise's story happens to mention.
+
+#### Confidence markers removed from `guide.md`
+
+- **Nukta.** The rule read "This one is a **low-confidence house default**, chosen so two
+  Hindi pages do not spell the same word two ways, and no word on that list except सिर्फ is
+  settled." It now reads "This keeps two Hindi pages from spelling the same word two ways."
+  The requirement to report a word that looks wrong without its nukta is kept, because that
+  is an instruction and it is the only route by which the per-word list grows. Only सिर्फ is
+  actually settled; every other word on that list is challengeable, and the standing plan is
+  to collect words from @suditi one at a time rather than reopening the convention.
+- **Chandrabindu.** "**Confirmed by a native speaker** (@dazecodes: 'यहाँ looks better than
+  यहां')" removed; "do not re-decide it per page" kept. The ruling is logged in the entry
+  directly below.
+- **Borrowed plurals.** "**Confidence: medium.**" removed. The sentence it qualified stays in
+  full, because it is a scope limit a translator acts on: this is a rule about not inventing
+  plurals, and masculine nouns in -आ still take -ए, oblique plurals still take -ओं.
+- **Gender agreement.** The bullet told the translator that where the glossary marks a gender
+  as unconfirmed, pick one, use it consistently and flag it. No glossary row marks a gender
+  any more, so that instruction had no trigger left. It is rewritten to the case that does
+  still arise: a noun the glossary does not list at all. The behaviour asked for is unchanged.
+- **Geometry gloss.** "**Ruled by @dazecodes**, whose reason is regional" removed, and "his
+  own format" became "no italics and no marker word". His reason is kept as a plain statement
+  (these words are taught in Hindi-medium maths, so a reader elsewhere may know the shape and
+  not its Hindi name), because it is what tells a translator which words the closed list
+  covers.
+
+#### The one place an instruction changed rather than moved
+
+The `interpreter` row said दुभाषिया was the native word for a human interpreter and asked for
+it to be flagged for review. Dropping the flag would have left the word mentioned with no
+instruction attached, so the row now says not to use it. That follows from the row's own
+target (इंटरप्रेटर) and from the "person doing a job, not a program" framing already in it,
+but it is our inference and not a reviewer's ruling: **दुभाषिया is unconfirmed either way**,
+and if a native speaker prefers it for the human-interpreter framing the row should change.
+
+#### `guide.md` § "Sentence structure" rewritten
+
+**Why.** The section prescribed "आपका काम यह है कि ..." as *the* fix for a comma splice, with
+a worked example built on it. That construction came from @suditi's own rewrite of one
+`maze-solve-basic` sentence (topic 804), and it was correct for that sentence. Two reviewers
+have since criticised sentences built exactly that way as still reading like English carried
+across word for word: @aadish-code-create on topic 1063 quoted `rainbow`'s "आपका काम यह है कि
+100 खड़ी पट्टियों से एक सुंदर इंद्रधनुष पैटर्न बनाइए।" as a direct translation of "Your task
+is to make a beautiful rainbow pattern made up of 100 vertical bars", and @suditi's original
+complaint was the same family of fault. Presenting one reviewer's repair of one sentence as
+the general fix turned it into a template the engine pattern-matches onto everything, which
+is how it reached the sentence he objected to.
+
+**What the section now does.** It opens with the judgement rather than a rule: work out what
+the English tells the learner, stop looking at it, and write that in Hindi, with the test
+being whether a bilingual reader could lay the two sentences side by side and match them
+piece for piece. It then says explicitly that no construction is a template and that reaching
+for the same shape twice is the same fault as keeping the English one. The five structural
+moves that were rules are now a list of what Hindi has available, to use where a particular
+sentence calls for it, with two added from the 2026-08-03 entry below: the obligation
+construction (आपको ... करना है) and the fronted correlative (जो ... , उसे ...).
+
+**The worked examples.** Three, all kept or added because the examples are what make the
+point legible.
+
+1. The maze pair. The rejected sentence is unchanged. The accepted one is no longer
+   @suditi's "आपका काम यह है कि ...", but the obligation-construction sentence actually
+   shipped in `maze-solve-basic` ("आपको अपने पात्र को भूलभुलैया में से निकालकर हरे रंग के
+   लक्ष्य वाले खाने तक पहुँचाना है।", now spelled with the chandrabindu per the current rule),
+   with the commentary explaining why dropping the noun framing removes the second clause
+   rather than how to join two clauses.
+2. The **Run Code** split pair, unchanged, still @suditi's structure with standard
+   orthography.
+3. New: `rainbow`'s "आपका काम यह है कि 100 खड़ी पट्टियों से ...", as a negative example with
+   **no replacement offered**. Its whole job is to show a sentence with no vocabulary error
+   and no comma splice that is still wrong, and to name the old prescription as the thing
+   that produced it. @aadish-code-create's own suggested rewrite is deliberately not printed
+   in the guide, because printing it would create exactly the next template.
+
+**Honest assessment, and it is not optimistic.** This wording is better than what it replaces:
+it can no longer be read as prescribing a shape, and it names the specific failure the two
+reviewers reported. But the controlled experiment on topic 925 already showed the limit. A
+leaner guide removed the bad construction without producing a good one, and the engine ignored
+an explicit instruction to restructure, which is the same result reported for other languages.
+"Do not preserve the English sentence's shape" is a negative instruction with no positive
+target, and a model that cannot see its own output as a bilingual reader cannot apply the test
+this section asks for. **I do not expect this rewrite to fix the problem, and it should not be
+treated as having fixed it.** What has reliably carried a native speaker's phrasing into the
+next pass is per-item reviewer notes (`languages/hi/exercise/<slug>.md`), sentence by sentence,
+and that remains the only working lever. The value of this edit is that the guide no longer
+actively teaches the construction reviewers are complaining about.
 
 ### 2026-08-04: Chandrabindu restored, colour and orientation terms fixed, shapes settled (topic 482)
 

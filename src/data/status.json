@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "55f5d54",
-  "approved": 245,
+  "governance_sha": "748463e",
+  "approved": 246,
   "disapproved": 0,
   "total": 564,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 55,
+      "approved": 56,
       "disapproved": 0,
       "total": 74,
       "items": [
@@ -356,8 +356,8 @@
         },
         {
           "key": "exercise/bouncer-wristbands",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1178,
+          "status": "approved"
         },
         {
           "key": "exercise/golf-shot-checker",

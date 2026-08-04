@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "8c3e26e",
+  "governance_sha": "12ae675",
   "approved": 227,
   "disapproved": 0,
-  "total": 517,
+  "total": 524,
   "languages": [
     {
       "lang": "it",
@@ -926,7 +926,7 @@
       "category_slug": "i18n-hu",
       "approved": 14,
       "disapproved": 0,
-      "total": 14,
+      "total": 21,
       "items": [
         {
           "key": "glossary",
@@ -997,6 +997,41 @@
           "key": "exercise/weather-symbols",
           "topic_id": 1160,
           "status": "approved"
+        },
+        {
+          "key": "exercise/maze-turn-around",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/luhn",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-root",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/word-count",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/bouncer-dress-code",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/while-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },

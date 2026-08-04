@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "653293a",
-  "approved": 216,
+  "governance_sha": "a23d5db",
+  "approved": 219,
   "disapproved": 0,
   "total": 517,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 44,
+      "approved": 45,
       "disapproved": 0,
       "total": 54,
       "items": [
@@ -246,8 +246,8 @@
         },
         {
           "key": "exercise/sunset",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1153,
+          "status": "approved"
         },
         {
           "key": "exercise/sprouting-flower",
@@ -1157,6 +1157,87 @@
       ]
     },
     {
+      "lang": "hu",
+      "name": "Hungarian",
+      "stage": "refining",
+      "category_slug": "i18n-hu",
+      "approved": 10,
+      "disapproved": 0,
+      "total": 14,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 289,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 758,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 759,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 805,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": 877,
+          "status": "approved"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": 981,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": 1149,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": 1150,
+          "status": "approved"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": 1152,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": 1154,
+          "status": "approved"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "pt-BR",
       "name": "Brazilian Portuguese",
       "stage": "refining",
@@ -1595,87 +1676,6 @@
         },
         {
           "key": "exercise/digital-clock",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/weather-symbols",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "hu",
-      "name": "Hungarian",
-      "stage": "refining",
-      "category_slug": "i18n-hu",
-      "approved": 8,
-      "disapproved": 0,
-      "total": 14,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 289,
-          "status": "approved"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 758,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 759,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 805,
-          "status": "approved"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": 877,
-          "status": "approved"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": 981,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": 1149,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": 1150,
-          "status": "approved"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/two-fer",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/strings",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/digital-clock",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/arrays",
           "topic_id": null,
           "status": "pending"
         },

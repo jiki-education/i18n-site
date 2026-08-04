@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/repeat/source.md"
 en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "9f00e97"
-content_version: "18f431b8914f"
-published_at: "2026-08-01"
+governance_sha: "a23d5db"
+content_version: "3a03423081af"
+published_at: "2026-08-04"
+forum_topic_id: 1152
 ---
 
 Eddig minden kódunk lineáris volt: Jiki minden utasítást sorban, fentről lefelé hajtott végre.
@@ -69,7 +70,7 @@ repeat(4) {
 
 Ezeket az ismétlő utasításokat ciklusnak (_loop_ angolul) hívjuk, és sokféle ciklus létezik, amelyek mind egy kicsit másképp működnek.
 
-Még egy dolgot érdemes tudni: amikor ciklusokkal dolgozol, elengedhetetlen, hogy a kódod rendezett és áttekinthető maradjon. Ha a kódodnak jó a vizuális szerkezete, ránézésre látszik, mi történik benne. Ha viszont nem, ha elfelejted szépen behúzni a sorokat, vagy összevissza húzod be őket, minden nagyon gyorsan zavarossá válik. Ezért ebben a kurzusban mindig egy szabályt követünk. A nyitó kapcsos zárójelet mindig ugyanabba a sorba írod, mint a `repeat` utasítást (_statement_ angolul). A záró kapcsos zárójelet mindig külön sorba írod az utasítás után, a köztük lévő kódot pedig mindig két szóközzel húzod be. Így minden szépen rendezett marad, és ha ezt elfelejted, vagy más mintát próbálsz követni, hibát kapsz.
+Még egy dolgot érdemes tudni: amikor ciklusokkal dolgozol, elengedhetetlen, hogy a kódod rendezett és áttekinthető maradjon. Ha a kódodnak jó a vizuális szerkezete, ránézésre látszik, mi történik benne. Ha viszont nem, ha elfelejted szépen behúzni a sorokat, vagy összevissza húzod be őket, minden nagyon gyorsan zavarossá válik. Ezért ezen a kurzuson mindig egy szabályt követünk. A nyitó kapcsos zárójelet mindig ugyanabba a sorba írod, mint a `repeat` utasítást (_statement_ angolul). A záró kapcsos zárójelet mindig külön sorba írod az utasítás után, a köztük lévő kódot pedig mindig két szóközzel húzod be. Így minden szépen rendezett marad, és ha ezt elfelejted, vagy más mintát próbálsz követni, hibát kapsz.
 
 <img
   class="concept-image"

@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "4fc5e3b",
+  "governance_sha": "b7f2a4c",
   "approved": 233,
   "disapproved": 0,
-  "total": 524,
+  "total": 544,
   "languages": [
     {
       "lang": "it",
@@ -12,7 +12,7 @@
       "category_slug": "i18n-it",
       "approved": 52,
       "disapproved": 0,
-      "total": 54,
+      "total": 74,
       "items": [
         {
           "key": "glossary",
@@ -283,6 +283,106 @@
           "key": "exercise/cityscape-skyscraper",
           "topic_id": 1167,
           "status": "approved"
+        },
+        {
+          "key": "concept/using-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/function-composition",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arithmetic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/updating-variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-concatenation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-templates",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cityscape-skyline",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-nested-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/bouncer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-conditional",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/bouncer-wristbands",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-shot-checker",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stripey-fabric",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/annalyns-infiltration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-automated-solve",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/build-wall",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },

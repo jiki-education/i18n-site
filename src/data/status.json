@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "9cf7870",
-  "approved": 229,
+  "governance_sha": "d8edd8a",
+  "approved": 230,
   "disapproved": 0,
   "total": 524,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 49,
+      "approved": 50,
       "disapproved": 0,
       "total": 54,
       "items": [
@@ -271,8 +271,8 @@
         },
         {
           "key": "exercise/golf-scenarios",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1165,
+          "status": "approved"
         },
         {
           "key": "exercise/owners-bouquets",

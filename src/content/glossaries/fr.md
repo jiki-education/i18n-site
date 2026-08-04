@@ -3,8 +3,8 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "c99dd90"
-content_version: "19bfaa336266"
+governance_sha: "404db5e"
+content_version: "059da20dda88"
 published_at: "2026-08-04"
 term_count: 84
 category_id: 72
@@ -28,7 +28,7 @@ ones to raise on the forum. Why each term was chosen is in the decision log
 | foot-gun | piège involontaire | fr | Use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`. |
 | Solve the Maze (exercise title) | Évade-toi du labyrinthe | fr | Title only, and no exclamation mark. Prose about the maze keeps "faire sortir le personnage du labyrinthe". |
 | Take a Walk (exercise title) | Une petite marche | fr | Unconfirmed draft (agent, 2026-08-03). Title only. |
-| Loopy Maze (exercise title) | Le labyrinthe des boucles | fr | Unconfirmed draft (agent, 2026-08-03). Title only. |
+| Loopy Maze (exercise title) | Labyrinthe en boucle | fr | Proposed by one native speaker (2026-08-04), not yet confirmed by a second. Title only, no article. |
 | UI button label quoted in prose | the app's own `fr` catalog string | fr | Unconfirmed draft (agent, 2026-08-03). When prose tells the learner to press a button, quote the string the French app actually shows, in guillemets and italics: _« Exécuter le code »_. Never invent a fresh rendering of an English button label. |
 
 ## Localize (use the French term)
@@ -176,6 +176,35 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-04: "Loopy Maze" exercise title → `Labyrinthe en boucle` (one speaker, not yet confirmed)
+
+**Decided by:** one native speaker (resu-xunil), forum topic 314
+(https://forum.jiki.io/t/314/42, post 3183). Not corroborated by a second speaker, so the
+row stays provisional rather than protected.
+**Terms affected:** the `Loopy Maze (exercise title)` row.
+**Files affected:** `glossary.md` (Core decisions), the `fr` title of the
+`maze-solve-repeat` instructions, and `languages/fr/exercise/maze-solve-repeat.md`.
+
+The previous rendering, _Le labyrinthe des boucles_, was an agent draft from the Stage 3
+batch 1 pass with no reasoning behind it beyond "a title is rendered for what it does"
+(see the 2026-08-03 batch entry below). resu-xunil proposes _Labyrinthe en boucle_ so the
+loop aspect stays the point of the title, and it is the better French on two counts he does
+not spell out but which support him: _en boucle_ is a live idiomatic collocation (something
+that runs round and round), whereas _le labyrinthe des boucles_ is a heavy possessive that
+reads like the proper name of a place; and the English is an adjective on a noun, which
+_en boucle_ mirrors and the genitive does not. Dropping the article also matches how the
+English title reads as a label.
+
+This is a swap of one unconfirmed draft for a better-informed unconfirmed draft, not a
+settled decision. Nobody defended the old rendering, and no agent opinion is being placed
+above a speaker's, so it is applied immediately; a second speaker agreeing (or objecting)
+on the thread is what would move it to confirmed. The row's Notes say so.
+
+A parallel suggestion on `Take a Walk` → _une petite balade_ (post 3229) is deliberately
+**not** actioned here: it is phrased as an open question rather than a recommendation, and
+_marche_ tracks the `walk()` function the exercise is about more directly than _balade_
+does. It has been put back to him on the thread.
 
 ### 2026-08-04: Stage 3 batch 1 review (`nose` corrected, three rows confirmed)
 

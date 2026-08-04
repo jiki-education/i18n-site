@@ -3,10 +3,10 @@ lang: "hu"
 name: "Hungarian"
 family: null
 stage: "refining"
-governance_sha: "6f86d78"
-content_version: "83bf5c3a8713"
-published_at: "2026-08-02"
-term_count: 87
+governance_sha: "6dfb03a"
+content_version: "082e3b5d4f29"
+published_at: "2026-08-04"
+term_count: 86
 category_id: 68
 forum_topic_id: 289
 video_player_forum_topic_id: 759
@@ -30,14 +30,13 @@ decision log (`glossary-notes.md`).
 
 ## Product and strand names
 
-Owner decision: descriptive strand names are translated; coined or branded names stay
-English.
+Everything here translates like ordinary UI copy; nothing stays English (see
+`content-types/website-keys.md`).
 
 | English | Hungarian | Use (hu/en) | Notes |
 |---------|-----------|-------------|-------|
 | Learn to Code (strand) | Tanulj meg programozni | hu | Descriptive strand name, so it is translated. |
 | Learn to Build (strand) | Tanulj fejleszteni | hu | Descriptive strand name, so it is translated. |
-| Ask Jiki, Deep Dive, Jiki Premium, Bootcamp, the game names | (unchanged) | en | Coined and branded names stay English. |
 
 ## Localize (use the Hungarian term)
 
@@ -62,8 +61,8 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 | letter (of a string) | betű | hu | Distinct from karakter (text character). |
 | dictionary | szótár | hu | If glossed, gloss in the singular (_dictionary_), even when the Hungarian noun is plural (_szótárak_). |
 | key (dictionary key) | kulcs | hu | If glossed, gloss in the singular (_key_), even when the Hungarian noun is plural (_kulcsoknak_). |
-| object (JS `{}` literal) | objektum | hu | Unconfirmed draft (agent, 2026-08-02), awaiting native-speaker confirmation. Use _objektum_ for a JS `{}` and in its compounds (_objektumkulcs_, _objektumliterál_); keep _szótár_ (see the `dictionary` row) only where the English itself says "dictionary". |
-| type coercion | típuskényszerítés | hu | Unconfirmed draft (agent, 2026-08-02), awaiting native-speaker confirmation. Use one rendering everywhere; never alternate with _automatikus típuskonverzió_ inside one catalog or document. |
+| object (JS `{}` literal) | objektum | hu | Confirmed by a native speaker (vinetu, 2026-08-04). Use _objektum_ for a JS `{}` and in its compounds (_objektumkulcs_, _objektumliterál_); keep _szótár_ (see the `dictionary` row) only where the English itself says "dictionary". Where one message has to cover both, the double-barrelled _objektumnak/szótárnak_ is correct and stays. |
+| type coercion | automatikus típuskonverzió | hu | Confirmed by a native speaker (vinetu, 2026-08-04). Use one rendering everywhere; never _típuskényszerítés_, which is not in real use. _Implicit típuskonverzió_ is an acceptable synonym, but do not alternate with it inside one catalog or document. |
 
 ### Functions & control flow
 
@@ -92,7 +91,7 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 | bar / vertical bar (`\|`) | függőleges vonal | hu | The `\|\|` keyword stays English. On `<define>`, show the glyph itself (`\|`) in the bracket, not the English word "bar". |
 | pure (function) | tiszta | hu | _tiszta függvény_ = pure function. When glossed, gloss the full term _pure function_, not the bare adjective _pure_. |
 | scenario (exercise test case) | forgatókönyv | hu | Also the concept title. |
-| variable shadowing | változóárnyékolás | hu | Unconfirmed draft (agent, 2026-08-02), awaiting native-speaker confirmation. One word, no hyphen; the verb is _árnyékol_. Do not leave the English _shadowing_ bare in prose. |
+| variable shadowing | változóárnyékolás | hu | Confirmed by a native speaker (vinetu, 2026-08-04). One word, no hyphen; the verb is _árnyékol_. Do not leave the English _shadowing_ bare in prose. |
 
 ### Loops, state & program flow
 
@@ -143,7 +142,7 @@ These stay in English in Hungarian prose, with the Hungarian gloss to use for ea
 | CLI (the concept) | parancssori felület | Explain CLI as _parancssori felület_ (command-line interface) where the source defines it. |
 | Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
 | template literal / template string | (no gloss) | The JS construct's own name. The general prose concept is _string-sablon_; see "Functions & control flow". Suffix e.g. template stringben. |
-| backtick | (show the glyph) | On `<define>`, show the glyph itself (`` ` ``), not the English word. In flowing prose the English word is used and takes Hungarian suffixes: _backticket_ (accusative), _backtickes_ (adjective, e.g. _backtickes template stringek_). The suffixed prose forms are an unconfirmed draft (agent, 2026-08-02), awaiting native-speaker confirmation. |
+| backtick | (show the glyph) | On `<define>`, show the glyph itself (`` ` ``), not the English word. In flowing prose the English word is used and takes Hungarian suffixes: _backticket_ (accusative), _backtickes_ (adjective, e.g. _backtickes template stringek_). The suffixed prose forms are confirmed by a native speaker (vinetu, 2026-08-04). |
 | AI | _mesterséges intelligencia_ | Use "AI" (not MI) in prose/marketing. Compounds: AI-segítség, AI-ügynökök. |
 | LLM | explain in Hungarian | Suffix e.g. LLM-korszak. |
 | widget | _widget_ | |
@@ -180,6 +179,42 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-04: The four interpreter-catalog drafts settled by a native speaker
+
+**Decided by:** vinetu, a native Hungarian speaker, on the pinned glossary thread
+(https://forum.jiki.io/t/289, post 3155), answering the four questions we asked about the
+2026-08-02 unconfirmed drafts below. **Status: settled.** Three rows are confirmed as
+drafted; one term changed. These rows are now native-speaker decisions and are not to be
+reopened by a translation pass.
+
+- **object (JS `{}` literal) → objektum, and the double-barrel stays.** vinetu confirmed
+  the boundary the pass drew: _objektum_ for the JS construct, _szótár_ only where the
+  English says "dictionary", and the one message that has to carry both
+  (`InOperatorRequiresObject`) correctly reads _objektumnak/szótárnak_. He saw no reason to
+  collapse the two words into one. The row loses its unconfirmed marker, unchanged.
+- **type coercion: típuskényszerítés → automatikus típuskonverzió. Term changed.** vinetu
+  had never encountered _típuskényszerítés_, including as a computer science student; it
+  reads as a coinage rather than the name of anything. What is actually used in Hungarian
+  is _automatikus típuskonverzió_ (or _implicit típuskonverzió_), and he judged it the
+  clearer of the two for a beginner as well as the real one. That reverses the 2026-08-02
+  call, which had picked _típuskényszerítés_ on the grounds that it names the concept
+  rather than describing the mechanism; the mechanism-describing phrase turns out to be the
+  name. Applied as a clean literal term swap across already-published Hungarian content:
+  the two JS interpreter catalog messages (`TypeCoercionNotAllowed`,
+  `UnaryTypeCoercionNotAllowed`) were the only occurrences in the corpus.
+- **variable shadowing → változóárnyékolás.** Confirmed, and the coinage is deliberately
+  kept over bare English _shadowing_. vinetu's reasoning is about the message rather than
+  the word: the sentence immediately after the first use explains what shadowing is, so a
+  Hungarian term there is something the beginner can attach the explanation to, and it
+  teaches them the concept instead of handing them an untranslated English noun. This
+  answers the doubt logged on 2026-08-02 directly.
+- **backtick: the suffixed prose forms are fine.** vinetu confirmed _backticket_
+  (accusative) and _backtickes_ (adjective, e.g. _backtickes template stringek_) as natural
+  Hungarian inflection of the English stem. This was the lowest-confidence of the four and
+  needed a native ear precisely because it is a spelling judgement about an English word;
+  it is now settled. The term stays English and the `<define>` behaviour (show the glyph)
+  is unchanged.
 
 ### 2026-08-02: Four terms written in from the JS interpreter catalog pass (unconfirmed drafts)
 

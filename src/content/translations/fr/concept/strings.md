@@ -7,12 +7,12 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/strings/source.md"
 en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "1ec4365"
-content_version: "f832936b97e7"
+governance_sha: "77f6a16"
+content_version: "989697197309"
 published_at: "2026-08-04"
 ---
 
-Quand tu veux utiliser un nombre, tu peux littéralement l'écrire tel quel, et Jiki comprend ce que tu veux dire. Mais que faire si tu veux utiliser une lettre, un mot ou une phrase ? Et si, par exemple, tu avais une entrée supplémentaire où préciser la couleur dans la fonction `rectangle` ou la fonction `circle` (cercle) ? Comment devrions-nous écrire la couleur pour pouvoir l'insérer dans la machine ? Si on écrit simplement le mot `green` (vert) ou `blue` (bleu), Jiki pensera qu'on parle d'une machine sur les étagères, et il dira : « Il n'y a pas de machine qui s'appelle « green ». Je ne sais pas quoi faire. »
+Quand tu veux utiliser un nombre, tu peux littéralement l'écrire tel quel, et Jiki comprend ce que tu veux dire. Mais que faire si tu veux utiliser une lettre, un mot ou une phrase ? Et si, par exemple, tu avais une entrée supplémentaire où préciser la couleur dans la fonction `rectangle` ou la fonction `circle` (cercle) ? Comment devrions-nous écrire la couleur pour pouvoir l'insérer dans la machine ? Si on écrit simplement le mot `green` (vert) ou `blue` (bleu), Jiki pensera qu'on parle d'une machine sur les étagères, et il dira : « Il n'y a pas de machine qui s'appelle ‹ green ›. Je ne sais pas quoi faire. »
 
 <img
   class="concept-image"

@@ -3,8 +3,8 @@ lang: "th"
 name: "Thai"
 family: null
 stage: "setup"
-governance_sha: "a45684f"
-content_version: "34faa1c1d52f"
+governance_sha: "738c7cb"
+content_version: "6681f122e1f1"
 published_at: "2026-08-04"
 term_count: 99
 category_id: 430
@@ -62,7 +62,7 @@ These are terms where the Thai is used in prose, so the "Use (th/en)" column is 
 | return value | ค่าที่คืนออกมา | th | The noun. Keep distinct from the verb above. |
 | if statement | คำสั่งเงื่อนไข | th | The `if` keyword stays English. English hint on first use: `คำสั่งเงื่อนไข (_if statement_)`. |
 | statement (executable) | คำสั่ง | th | The imperative sense: a line of code that does something and gets executed. Shares the word with "instruction (given to Jiki)" below. English hint on first use: `คำสั่ง (_statement_)`, which also keeps it apart from the CLI-command reading of the bare word. |
-| statement (logical claim) | ประพจน์ | th | The proposition sense: a claim that is true or false; also a test assertion. Pick by meaning, not by the English word. |
+| statement (logical claim) | เงื่อนไข | th | The proposition sense: a claim that is true or false; also a test assertion. Never `ประพจน์` (maths register). Pick by meaning, not by the English word. Where a page has both this and `คำสั่งเงื่อนไข` (if statement), make the sentence show which is the whole statement and which is the claim being tested. |
 | instruction (given to Jiki) | คำสั่ง | th | What the learner puts on the board for Jiki to follow. Everyday Thai. Deliberately the same word as "statement (executable)". |
 | expression | นิพจน์ | th | Not `เอ็กซ์เพรสชัน`. English hint on first use: `นิพจน์ (_expression_)`. |
 | operator | ตัวดำเนินการ | th | Not `โอเปอเรเตอร์`. |
@@ -72,23 +72,23 @@ These are terms where the Thai is used in prose, so the "Use (th/en)" column is 
 | pure (function) | บริสุทธิ์ | th | `ฟังก์ชันบริสุทธิ์` = pure function. When glossed, gloss the full term _pure function_, not the bare adjective. English hint on first use: `ฟังก์ชันบริสุทธิ์ (_pure function_)`. |
 | brackets (the two after a function name) | วงเล็บ | th | Plain `วงเล็บ` for the `()` pair written after a function name. Name the specific type only when disambiguating; see the Brackets table. |
 | and / or (logical, in prose) | และ / หรือ | th | The keywords and/or/`&&`/`\|\|` stay English. If the source glosses one, the bracket may show the bare English word. |
-| ampersand (`&`) | เครื่องหมายแอมเปอร์แซนด์ | th | On `<define>`, show the glyph itself (`&`), not the English word "ampersand". |
-| bar / vertical bar (`\|`) | ขีดตั้ง | th | The `\|\|` keyword stays English. On `<define>`, show the glyph itself (`\|`), not the English word "bar". |
+| ampersand (`&`) | เครื่องหมายและ | th | Never `เครื่องหมายแอมเปอร์แซนด์`: the transliterated name means nothing to a Thai reader. On `<define>`, show the glyph itself (`&`), not the English word "ampersand". |
+| bar / vertical bar (`\|`) | `\|` (the glyph) | th | Never `ขีดตั้ง`. Show the character itself in code formatting and let it speak; only where a sentence genuinely needs a spoken name for it, use `ท่อ`. The `\|\|` keyword stays English. On `<define>`, show the glyph, not the English word "bar". |
 | bang (the `!` character) | เครื่องหมายตกใจ | th | The conversational name used on the logical-not concept page. |
 
 ### Loops, state & program flow
 
 | English | Thai | Use (th/en) | Notes |
 |---------|------|-------------|-------|
-| interpreter | ล่าม | th | **A person doing a job, not a program.** On concept pages Jiki *is* the `ล่าม` (`หน้าที่ของ Jiki คือแปลโค้ดที่คุณเขียน`). Never `ตัวแปลภาษา` (the `ตัว` prefix names a thing), never `โปรแกรมแปลคำสั่ง` (machine-only), never `อินเทอร์พรีเตอร์`. |
+| interpreter | อินเทอร์พรีเตอร์ | th | Never `ล่าม`, which is a human interpreter of spoken language. Never `ตัวแปลภาษา`, never `โปรแกรมแปลคำสั่ง`. On concept pages Jiki *is* the `อินเทอร์พรีเตอร์`; keep the "does a job for you" framing in the surrounding prose rather than in the word itself. |
 | loop | ลูป | th | Not `การวนซ้ำ` as the noun and not `วงวน`. `คำสั่งวนลูป` where the statement is meant. |
-| loop body | ตัวลูป | th | |
+| loop body | ในลูป | th | Never `ตัวลูป`. Phrase it positionally rather than as a bare noun: `โค้ดในลูป` = the code in the loop. `ด้านในลูป` where the sentence needs the extra weight. |
 | iteration | การวนรอบ | th | Verb: `วนซ้ำ`. |
 | nested | ซ้อนกัน | th | e.g. `ลูปซ้อนกัน` = nested loop. When glossed, gloss the full term (_nested loop_), not the bare adjective. |
 | keyword | คีย์เวิร์ด | th | Not `คำสงวน`, which is the narrower "reserved word". |
 | assignment / to assign | การกำหนดค่า / กำหนดค่า | th | |
-| to update (a variable/dict) | อัปเดต | th | **Spelled `อัปเดต`, never `อัพเดท`.** |
-| code block | บล็อกโค้ด | th | Keep distinct from `ขอบเขต` (scope). |
+| to update (a variable/dict) | เปลี่ยน | th | Never `อัปเดต` for changing a value. `แก้ไข` where the sense is correcting or editing something rather than replacing a value. |
+| code block | โค้ดบล็อก | th | Word order is `โค้ดบล็อก`, never `บล็อกโค้ด`. Keep distinct from `ขอบเขต` (scope). Where the source is just pointing at a stretch of code, prefer naming its position (`โค้ดในลูป`, `โค้ดข้างล่าง`) over the term. |
 | scope | ขอบเขต | th | Not `สโคป`. |
 | error | ข้อผิดพลาด | th | Not `เออเรอร์`. |
 | exception | ข้อยกเว้น | th | The catchable runtime event. Keep distinct from `ข้อผิดพลาด` (error). |
@@ -97,7 +97,7 @@ These are terms where the Thai is used in prose, so the "Use (th/en)" column is 
 | comment (code comment) | คอมเมนต์ | th | Not `หมายเหตุ`. |
 | indentation | การย่อหน้า | th | |
 | concatenation / to concatenate | การเชื่อมสตริง | th | |
-| mental model | ภาพในหัว | th | Deliberately informal. Not `แบบจำลองความคิด`, which is academic register. |
+| mental model | โมเดลในหัว | th | Not `ภาพในหัว` and not `แบบจำลองความคิด` (academic register). |
 
 ### Tooling & engineering
 
@@ -183,18 +183,20 @@ He asked whether some rows could show the English word in parentheses as a hint,
 
 Deliberately not applied to the whole glossary in one pass. Most rows do not need it (transliterations like `สตริง`, `อาร์เรย์`, `ฟังก์ชัน` already read as the English word, and the metaphor vocabulary is ordinary Thai), and a hint on every term would clutter the prose it is meant to help. Further rows get the hint incrementally, as native speakers flag them; he was invited on the thread to name more.
 
-#### Term suggestions from the same post, not actioned here
+#### Term changes from the same post (all eight actioned)
 
-He also gave concrete Thai alternatives for several rows, which are term changes rather than a presentation change, and each needs its own decision plus a sweep of published content. Recorded so they are not lost:
+The rest of his list was a different kind of feedback: the Thai word itself is wrong, not merely unfamiliar. All eight are now applied to `glossary.md`. Where he offered two options, the shorter and more general one is the glossary term and the other is kept in the `Notes` column for the cases it fits better.
 
-- `interpreter` `ล่าม` → `อินเทอร์พรีเตอร์` ("ล่าม refers to a person"). This is the exact objection the bootstrap flagged as the first question to put to a native speaker, and the answer came back against the choice. See "The term worth the most argument" below.
-- `ampersand` `เครื่องหมายแอมเปอร์แซนด์` → `เครื่องหมายและ` (nobody knows what an "and-per-se" is).
-- `bar (|)` `ขีดตั้ง` → show the glyph, or `ท่อ` where a name is needed.
-- `loop body` `ตัวลูป` → `ในลูป` / `ด้านในลูป`.
-- `to update` `อัปเดต` → `เปลี่ยน` / `แก้ไข`.
-- `code block` `บล็อกโค้ด` → `โค้ดบล็อก`, though he notes position is what Thai usually uses to refer to a stretch of code.
-- `mental model` `ภาพในหัว` → `โมเดลในหัว` ("much more understandable"). Also a bootstrap open question, answered.
-- `statement (logical claim)` `ประพจน์` → `เงื่อนไข` is what is normally said, at least for the if/else sense.
+- **`interpreter`: `ล่าม` → `อินเทอร์พรีเตอร์`.** "Just use อินเทอร์พรีเตอร์. ล่าม refer to a person." This is exactly the objection the bootstrap flagged as the first question to put to a native speaker (see "The term worth the most argument" below), and the answer came back against the choice. The bootstrap's reasoning was that `global/terms.md` wants a word that can name a person, and that Thai's alternatives all carry a thing/machine morpheme. A native speaker saying the person-word reads as a human translator settles it: the transliteration's clumsiness costs less than naming the wrong thing. The row's old prohibition on `อินเทอร์พรีเตอร์` is now a prohibition on `ล่าม`.
+- **`mental model`: `ภาพในหัว` → `โมเดลในหัว`.** "โมเดลในหัว is much more understandable." Also a bootstrap open question ("may read as too casual"), answered. The informal register was right; the noun was not.
+- **`ampersand`: `เครื่องหมายแอมเปอร์แซนด์` → `เครื่องหมายและ`.** "We honestly just use เครื่องหมายและ. No one will know an *and-per-se* character is." The transliteration transliterates a name that carries no meaning in English either.
+- **`bar (|)`: `ขีดตั้ง` → the glyph itself, `ท่อ` where a name is needed.** "Just show us the '|' and we will understand. We do sometime call the symbol ท่อ though." The glyph is the primary rendering because he put it first and because it needs no vocabulary at all; `ท่อ` is in the `Notes` for sentences that must speak the character's name.
+- **`loop body`: `ตัวลูป` → `ในลูป`, with `ด้านในลูป` as the heavier variant.** He also noted that Thai normally refers to a stretch of code by its position rather than by a noun for it, so the row now tells the translator to phrase it positionally (`โค้ดในลูป`) rather than hunting for a bare noun.
+- **`to update`: `อัปเดต` → `เปลี่ยน`, with `แก้ไข` for the correct/edit sense.** `เปลี่ยน` ("change") is the shorter and more general of the two he gave and matches the curriculum's use, which is almost always replacing a value in a box. The `อัปเดต`/`อัพเดท` spelling pin stays in `guide.md`, since the word still occurs in product copy; it just no longer names this concept.
+- **`code block`: `บล็อกโค้ด` → `โค้ดบล็อก`.** A word-order swap; "โค้ดบล็อก could work". His preference for naming position instead is carried in the `Notes`.
+- **`statement (logical claim)`: `ประพจน์` → `เงื่อนไข`.** "Most of the time we use the word เงื่อนไข, and that's when referring to condition in if else statement." The bootstrap already rated this row medium confidence, noting `ประพจน์` is maths register a beginner may not know. The cost is that `เงื่อนไข` now sits inside `คำสั่งเงื่อนไข` (if statement) too, so the row carries an instruction to keep the whole statement and the claim it tests visibly apart on any page that has both.
+
+**Content sweep:** none needed. Thai is still in Phase 1 with an empty `content` map in `tracking.json`, so no page has been translated yet and none of these terms appears anywhere in `../front-end`. The only rendered copy of any of them was the published glossary page on the review site, which regenerates from `glossary.md`. Every one of these changes therefore lands before the first translated page exists, which is the cheapest possible moment for it.
 
 He closed with "There are more I wanted to say but this is what I'm currently able to convey", so expect more.
 
@@ -213,6 +215,8 @@ The research rested on: the Microsoft Thai Localization Style Guide (punctuation
 - **`Jiki` stays Latin, with a one-time pronunciation gloss.** The owner gave the canonical pronunciation as the Japanese short-vowel `じき` (as in 正直), with a high tone on the first syllable and a low tone on the second. That maps to `จิ๊กิ`: both `จ` and `ก` are mid-class consonants and a short vowel with no final makes a dead syllable, which defaults to low tone, so the second syllable needs no mark and the first takes ไม้ตรี to reach high. See the open questions below.
 
 #### The term worth the most argument: `interpreter` → `ล่าม`
+
+**Superseded on 2026-08-04:** a native speaker rejected `ล่าม`; the term is now `อินเทอร์พรีเตอร์`. The reasoning below is kept as the record of why the original call was made.
 
 `global/terms.md` requires a word that can name **a person**, and warns off any candidate carrying a device or program morpheme. Thai makes that bite hard, because its three standard renderings all fail it. `ตัวแปลภาษา` is the usual term, but `ตัว` is the classifier and prefix for things and animals, so it literally names an object. `โปรแกรมแปลคำสั่ง` begins with "program" and is disqualified outright. `อินเทอร์พรีเตอร์` is a nine-syllable transliteration that is both machine-flavoured and hostile to a beginner.
 
@@ -235,9 +239,9 @@ The cost is real and should be stated plainly: `ล่าม` is a *spoken-langu
 
 These are the rows most likely to be wrong, and the ones to raise first on the pinned thread:
 
-- **`ล่าม` for `interpreter`**, per the argument above.
+- ~~**`ล่าม` for `interpreter`**, per the argument above.~~ Answered 2026-08-04: wrong, now `อินเทอร์พรีเตอร์`.
 - **`จิ๊กิ` as the pronunciation gloss for `Jiki`.** The tones were derived from the owner's spec, not heard from a Thai speaker, and two things remain unchecked: whether `จิ๊กิ` carries an unwanted echo of `จิ๊ก` (slang, "to swipe/nick something"), and whether the unaspirated `ก` or an aspirated `ข`/`ค` is the better consonant for the second syllable. The tone pattern survives either consonant.
 - **`รางคืนค่า` for `return chute`.** The weakest row in the file. Thai has no everyday one-word noun for a chute, so this is a descriptive compound rather than a real word, and it sits in a load-bearing metaphor.
 - **`โรงงาน` for `workshop`.** Chosen only because `เวิร์กช็อป` has drifted in modern Thai to mean a training seminar and is therefore unusable. `โรงงาน` means "factory", which is bigger and more industrial than the room the metaphor wants.
 - **`ชนิดข้อมูลแบบประกอบ` for `compound data type`.** Coinage territory; no source confirmed this exact form.
-- **`ภาพในหัว` for `mental model`.** Deliberately informal over the academic `แบบจำลองความคิด`, but it may read as too casual to name a concept.
+- ~~**`ภาพในหัว` for `mental model`.** Deliberately informal over the academic `แบบจำลองความคิด`, but it may read as too casual to name a concept.~~ Answered 2026-08-04: wrong, now `โมเดลในหัว`.

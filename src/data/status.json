@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "cd45385",
-  "approved": 235,
+  "governance_sha": "f48dc6e",
+  "approved": 242,
   "disapproved": 0,
   "total": 544,
   "languages": [
@@ -391,7 +391,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 29,
+      "approved": 36,
       "disapproved": 0,
       "total": 42,
       "items": [
@@ -568,22 +568,22 @@
         {
           "key": "exercise/space-invaders-repeat",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/traffic-lights",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/plant-the-flowers",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/snowman",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/structured-house",
@@ -593,17 +593,17 @@
         {
           "key": "exercise/relational-snowman",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/relational-traffic-lights",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/relational-sun",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         }
       ]
     },
@@ -934,7 +934,7 @@
         },
         {
           "key": "concept/else",
-          "topic_id": null,
+          "topic_id": 1173,
           "status": "pending"
         },
         {

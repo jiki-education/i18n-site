@@ -7,8 +7,8 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/else-if/source.md"
 en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "19f6076"
-content_version: "396edb286e19"
+governance_sha: "77f6a16"
+content_version: "040ce19a0e04"
 published_at: "2026-08-04"
 forum_topic_id: 1181
 ---
@@ -60,4 +60,4 @@ Dans le premier cas, avec le `else if`, on vérifie si le score est élevé et o
 
 Mais dans le second exemple, les deux `if` sont totalement indépendants. Les deux vont s'exécuter et les deux conditions seront vraies. La personne reçoit donc deux prix. Dans le premier cas : un prix, dans le second : deux. Prends un moment pour être sûr de bien comprendre ça.
 
-Il est aussi intéressant de noter que l'une ou l'autre version peut être la bonne, selon la façon dont le jeu est conçu. Peut-être que le participant reçoit un prix de base plus un prix bonus, ou peut-être qu'il a simplement été promu au prix bonus. Aucun des deux morceaux de code n'est juste ou faux. Ils sont simplement utiles dans des situations différentes. Mais tu dois savoir lequel tu as l'intention d'utiliser.
+Il est aussi intéressant de noter que l'une ou l'autre version peut être la bonne, selon la façon dont le jeu est conçu. Peut-être que le participant reçoit un prix de base ainsi qu'un prix bonus, ou peut-être reçoit-il seulement le prix bonus. Aucun des deux morceaux de code n'est juste ou faux. Ils sont simplement utiles dans des situations différentes. Mais tu dois savoir lequel tu as l'intention d'utiliser.

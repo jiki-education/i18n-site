@@ -3,8 +3,8 @@ lang: "fa"
 name: "Persian"
 family: null
 stage: "refining"
-governance_sha: "2a5600a"
-content_version: "7724b6dadc2b"
+governance_sha: "db6b9ea"
+content_version: "a23d79419d49"
 published_at: "2026-08-04"
 term_count: 39
 category_id: 331
@@ -108,6 +108,35 @@ review.
 ---
 
 ## Decision log
+
+### 2026-08-04: "choice" splits into گزینه (an option) and انتخاب (what a player picked)
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1138, post 3125),
+actioned by an agent the same day. **Terms affected:** the existing `choice` row.
+**Protected: this is a native speaker's decision and is not to be reversed by an agent.**
+
+Reviewing the Rock, Paper, Scissors exercise he flagged «misuse of the گزینه» and asked us
+to go through the whole item deciding, case by case, which occurrences are گزینه and which
+are انتخاب. This refines his own earlier blanket ruling of 2026-08-03 (below), which the
+Rainbow-era feedback had produced from a single quoted describer; it is the same reviewer
+narrowing his own rule, not an agent reversing him.
+
+The line he drew: گزینه is an **option offered from a fixed set**, so «یکی از سه گزینه‌ی
+معتبر» (one of the three valid options) stays. A **person's** choice, the thing they
+actually picked, is انتخاب: «انتخاب هر دو بازیکن», «اگر انتخاب‌ها یکسان باشند», «انتخاب
+یوکی را برمی‌گرداند». He was most direct about the possessive: «گزینه‌ی یوکی» is not
+something Persian says, even though "Yuki's choice" is unremarkable in English.
+
+For the two describers he asked for the possessive to go entirely rather than be
+retranslated, giving «یوکی به عنوان خروجی برگردانده شد» for "returned Yuki's choice". That
+generalises to a guide rule (drop a possessive Persian does not need), so it is stated in
+`guide.md` under Describers, and the describer example there was updated to match.
+
+He also asked, separately in the same post, for «توابع آماده» ("provided functions") to
+become «توابع از پیش تعیین شده». He offered it tentatively, unsure what "provided
+functions" meant; it means the functions the exercise hands the learner, so his reading is
+right and it was applied. It is not a glossary row: it is one exercise's phrasing, logged
+in `languages/fa/exercise/rock-paper-scissors.md` with the rest of his line edits.
 
 ### 2026-08-04: "syntax" is نحوه‌ی نگارش; نحو is banned outright
 
@@ -314,7 +343,9 @@ reversed by an agent.** `canvas` (بوم) is the agent's own drafting, see below
   description and its category label.
 - **choice (noun) → گزینه.** mominchezgi asked for گزینه rather than انتخاب, quoting the
   `getYukiChoice` describer. The verb is untouched: انتخاب کردن is still how a player
-  chooses, and only the noun moved.
+  chooses, and only the noun moved. **Narrowed by the same reviewer on 2026-08-04 (see the
+  top of this file): گزینه is an option from a fixed set, and a person's own choice is
+  انتخاب.**
 
 **canvas → بوم is the agent's own drafting, and is a deliberate departure from the wording
 mominchezgi suggested.** He asked for «بوم را پاک کرد» to be restructured to «الان تخته

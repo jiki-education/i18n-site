@@ -7,8 +7,8 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/arrays/source.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "d90ca4e"
-content_version: "3abaea4add6d"
+governance_sha: "77f6a16"
+content_version: "bd920c14aedc"
 published_at: "2026-08-04"
 forum_topic_id: 1130
 ---
@@ -21,9 +21,9 @@ Cuando escuchas la palabra array, quiero que pienses en una cadena física que m
 
 Esas cosas que sostiene pueden ser cualquier cosa: strings, números, Booleans, incluso otros arrays, incluso cosas que todavía no has aprendido, pero no nos preocupemos por eso ahora.
 
-Todo en esta cadena está en orden, el orden en el que están encadenadas.
+Todo en esta cadena tiene un orden: el orden en el que las cosas se fueron encadenando.
 
-Así que un array contiene muchas cosas, pero es un solo elemento (_element_ en inglés), una sola cosa sólida, un array con muchos elementos dentro de él.
+Así que un array contiene muchas cosas, pero es un solo elemento (_element_ en inglés), una sola cosa sólida: un único array que lleva muchos elementos adentro.
 
 Jiki puede tomar ese array, esa cadena, y ponerlo en una caja, igual que puede poner un string en una caja o un número en una caja.
 

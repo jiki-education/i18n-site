@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "af6afa1",
+  "governance_sha": "019c263",
   "approved": 199,
   "disapproved": 0,
   "total": 517,
@@ -703,7 +703,7 @@
         },
         {
           "key": "exercise/relational-sun",
-          "topic_id": null,
+          "topic_id": 1129,
           "status": "pending"
         },
         {
@@ -1449,7 +1449,7 @@
         },
         {
           "key": "exercise/two-fer",
-          "topic_id": null,
+          "topic_id": 1131,
           "status": "pending"
         },
         {
@@ -1464,7 +1464,7 @@
         },
         {
           "key": "concept/arrays",
-          "topic_id": null,
+          "topic_id": 1130,
           "status": "pending"
         },
         {

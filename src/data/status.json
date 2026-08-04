@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-08-03",
-  "governance_sha": "e4d40de",
-  "approved": 198,
+  "published_at": "2026-08-04",
+  "governance_sha": "af6afa1",
+  "approved": 199,
   "disapproved": 0,
   "total": 517,
   "languages": [
@@ -2196,67 +2196,11 @@
       ]
     },
     {
-      "lang": "tr",
-      "name": "Turkish",
-      "stage": "refining",
-      "category_slug": "i18n-tr",
-      "approved": 3,
-      "disapproved": 0,
-      "total": 9,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 328,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 782,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 783,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 816,
-          "status": "approved"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
       "lang": "hi",
       "name": "Hindi",
       "stage": "refining",
       "category_slug": "i18n-hi",
-      "approved": 2,
+      "approved": 3,
       "disapproved": 0,
       "total": 14,
       "items": [
@@ -2268,7 +2212,7 @@
         {
           "key": "concept/using-functions",
           "topic_id": 756,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "video-player",
@@ -2327,6 +2271,62 @@
         },
         {
           "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "tr",
+      "name": "Turkish",
+      "stage": "refining",
+      "category_slug": "i18n-tr",
+      "approved": 3,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 328,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 782,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 783,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 816,
+          "status": "approved"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
           "topic_id": null,
           "status": "pending"
         }

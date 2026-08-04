@@ -3,9 +3,9 @@ lang: "hi"
 name: "Hindi"
 family: null
 stage: "refining"
-governance_sha: "2b01dd3"
-content_version: "c9f4904fea04"
-published_at: "2026-08-03"
+governance_sha: "d0e4086"
+content_version: "0804cf5665e6"
+published_at: "2026-08-04"
 term_count: 133
 category_id: 237
 forum_topic_id: 482
@@ -71,7 +71,7 @@ clarification"). Split by theme for readability; every table below follows the s
 | to call (a function) | कॉल करना | - | hi | "फंक्शन को कॉल करना". |
 | parameter | पैरामीटर | m | hi | The declaration-site name: "फंक्शन बनाते समय दिया गया नाम". Kept distinct from आर्गुमेंट. |
 | argument | आर्गुमेंट | m | hi | The call-site value: "फंक्शन को कॉल करते समय दी गई वास्तविक वैल्यू". Kept distinct from पैरामीटर. |
-| input (to a function) | इनपुट | m | hi | The noun, for where a noun is needed (a `<define>`, a heading, the इनपुट स्लॉट metaphor). In ordinary prose say what the फंक्शन does instead: "फंक्शन दो संख्याएं लेता है", not "फंक्शन का इनपुट दो संख्याएं हैं" (see `guide.md` § "Sentence structure"). |
+| input (to a function) | इनपुट | m | hi | The noun, for where a noun is needed (a `<define>`, a heading, the इनपुट स्लॉट metaphor). In ordinary prose say what the फंक्शन does instead: "फंक्शन दो संख्याएँ लेता है", not "फंक्शन का इनपुट दो संख्याएँ हैं" (see `guide.md` § "Sentence structure"). |
 | output | आउटपुट | m | hi | As इनपुट above; in prose, "फंक्शन जोड़ देता है" rather than "फंक्शन का आउटपुट जोड़ है". |
 | to return (a value) | लौटाना | - | hi | "यह फंक्शन एक वैल्यू लौटाता है।" Transitive (लौटाना), never the intransitive लौटना or the redundant वापस लौटना. वापस देना is fine where the prose is leaning on the machine metaphor. **Never रिटर्न करना.** |
 | return value | रिटर्न वैल्यू | f | hi | Noun form, for where a noun is needed. In prose prefer the verb: "जो वैल्यू यह फंक्शन लौटाता है". |
@@ -138,7 +138,7 @@ clarification"). Split by theme for readability; every table below follows the s
 | framework | फ्रेमवर्क | m | hi | A ready-made structure for building programs. |
 | tool / tooling | टूल | m | hi | Programs made to make work easier. |
 | workflow | वर्कफ्लो | m | hi | The way or order in which work gets done. |
-| auth (authentication / authorization) | ऑथेंटिकेशन | m | hi | The identity-check concept: "पहचान जांचने की प्रक्रिया". |
+| auth (authentication / authorization) | ऑथेंटिकेशन | m | hi | The identity-check concept: "पहचान जाँचने की प्रक्रिया". |
 | edge case | एज केस | m | hi | Where the source explains it: "कोई असामान्य स्थिति जिसका होने का अवसर कम होता है लेकिन हो सकता है" (wording by @dazecodes, unchanged). |
 | backwards compatibility | बैकवर्ड कंपैटिबिलिटी | f | hi | Low confidence, term and gender; flag for native-speaker review. |
 
@@ -158,7 +158,7 @@ clarification"). Split by theme for readability; every table below follows the s
 | tutorial | ट्यूटोरियल | m | hi | Kept distinct from पाठ (lesson). |
 | solution (learner's submission) | हल | m | hi | |
 | scenario | सिनेरियो | m | hi | Jiki-specific: a structured variant within an exercise. Low confidence: flag for native-speaker review. |
-| challenge (an optional harder exercise) | चैलेंज | m | hi | **Confirmed by a native speaker.** Never चुनौती for this sense. **Masculine**, so the agreement changes with the word: "चैलेंज पूरा हुआ", never "चुनौती पूरी हुई". Same form in the plural (चैलेंज), oblique plural चैलेंजों. The verb "to challenge yourself" is a different thing and is not this row; write खुद को परखना rather than mixing चुनौती back into a sentence about चैलेंज. |
+| challenge (an optional harder exercise) | चैलेंज | m | hi | **Confirmed by a native speaker.** Never चुनौती for this sense. **Masculine**, so the agreement changes with the word: "चैलेंज पूरा हुआ", never "चुनौती पूरी हुई". Same form in the plural (चैलेंज), oblique plural चैलेंजों, **confirmed by @suditi**: "if you are using plural form for all other English words in Devanagari, you might as well use the plural for challenge." The verb "to challenge yourself" is a different thing and is not this row; write खुद को परखना rather than mixing चुनौती back into a sentence about चैलेंज. |
 | page (of the site or app) | पेज | m | hi | **Confirmed by a native speaker.** Never पृष्ठ, which carries the "page of a book" meaning. |
 | bootcamp | बूटकैंप | m | hi | Treated close to a proper noun where it names Jiki's predecessor program. |
 | canvas (graphics exercises) | कैनवास | m | hi | The drawing surface in creative-coding exercises. |
@@ -173,25 +173,26 @@ The shapes, colour components and orientations the drawing exercises are built o
 already used consistently in shipped Hindi content (`rainbow`, and the shared `draw`
 category catalog), and the rows exist so that consistency survives the next pass.
 
-**Every row in this section is an unconfirmed draft**, proposed by a translation pass and
-not ruled on by any native speaker. Use them, because a consistent term beats a drifting
-one, but do not read them as settled the way the confirmed rows elsewhere in this glossary
-are. Two are weaker than the rest and are listed under "Open / low-confidence terms" below:
-वृत्त and हेक्स.
+Most of this section has now been ruled on by native speakers. **saturation (संतृप्ति) is
+the one row still unconfirmed**, and it is listed under "Open / low-confidence terms" below;
+everything else here is settled.
+
+**Every geometry term carries the English in bare brackets on first use** (आयत (rectangle)),
+per `guide.md` § "Geometry terms carry an English gloss".
 
 | English | Hindi | Gender | Use (hi/en) | Notes |
 |---------|-------|--------|-------------|-------|
-| rectangle | आयत | m | hi | The school-geometry word; already shipped throughout `rainbow`. |
-| circle | वृत्त | m | hi | The school-geometry register, matching the other shape names. गोला is the everyday word and stays the maze's green target ("हरे गोले तक"), which is a ball on screen and not a named shape. **Medium confidence**, and shipped content disagrees: `concepts/variables/hi.md` glosses `circle` as गोला (see `glossary-notes.md`). |
-| triangle | त्रिभुज | m | hi | |
-| ellipse | दीर्घवृत्त | m | hi | |
+| rectangle | आयत | m | hi | The school-geometry word. Glossed: "आयत (rectangle)". |
+| circle | वृत्त | m | hi | **Confirmed by @suditi**: these are mathematical technical terms, and वृत्त is circle. **Never गोला for the `circle` function**, which she gives as "similar to round", not as circle. गोला stays the maze's green target ("हरे गोले तक"), which is a ball on screen and not a named shape. Glossed: "वृत्त (circle)". |
+| triangle | त्रिभुज | m | hi | Glossed: "त्रिभुज (triangle)". |
+| ellipse | दीर्घवृत्त | m | hi | Glossed: "दीर्घवृत्त (ellipse)". |
 | line (drawn on the canvas) | रेखा | f | hi | "एक रेखा खींची". Kept distinct from a line of code, which is लाइन. |
 | radius | त्रिज्या | f | hi | The school-geometry word. The `radius` parameter name itself stays in code font, as any identifier does. |
-| hue | रंगत | f | hi | Already shipped in `rainbow` and the `draw` catalog. |
-| saturation | संतृप्ति | f | hi | Already shipped in `rainbow` and the `draw` catalog. |
-| lightness | चमक | f | hi | Already shipped in `rainbow` and the `draw` catalog. Kept distinct from रंगत and संतृप्ति; the three always appear together. |
-| hex (colour) | हेक्स | - | hi | Devanagari, per `guide.md` § "Script convention": "हेक्स रंग", "हेक्स स्ट्रिंग". The `#` and the hex digits themselves are code and stay as they are. **Medium confidence.** |
-| horizontal / vertical | आड़ी / खड़ी | - | hi | The everyday pair, matching "खड़ी पट्टियां" (vertical stripes) and "आड़ी त्रिज्या / खड़ी त्रिज्या" in shipped content. Not क्षैतिज / ऊर्ध्वाधर, which are the textbook-formal pair. Shipped content disagrees in one place: `rainbow`'s instructions say "क्षैतिज स्थिति" (see `glossary-notes.md`). |
+| hue | मूल रंग | m | hi | **Confirmed by @dazecodes**, who ruled रंगत wrong because it also means a person's complexion. **Masculine** (रंग), so the agreement moved with it: "मूल रंग 0 से 360 के बीच होना चाहिए", never "होनी चाहिए". प्राथमिक रंग is his equally acceptable alternative; we use मूल रंग throughout for consistency. |
+| saturation | संतृप्ति | f | hi | **Unconfirmed.** Neither @dazecodes nor @suditi had a view on this one, so it is still a translation pass's draft, unlike the two rows either side of it. Already shipped in `rainbow` and the `draw` catalog. |
+| lightness | हल्कापन | m | hi | **Confirmed by @dazecodes**, who ruled चमक wrong because it mainly means the shine of an object. **Masculine**: "हल्कापन 0 से 100 के बीच होना चाहिए". Kept distinct from मूल रंग and संतृप्ति; the three always appear together. |
+| hex (colour) | हेक्स | - | hi | **Confirmed by @suditi**: "it is the name of the code so it should be fine." Devanagari, per `guide.md` § "Script convention": "हेक्स रंग", "हेक्स स्ट्रिंग". The `#` and the hex digits themselves are code and stay as they are. |
+| horizontal / vertical | आड़ी रेखा / खड़ी रेखा | f | hi | **Confirmed by @dazecodes**: name the noun, so it is clear the adjective describes the line. Not क्षैतिज / ऊर्ध्वाधर, which are the textbook-formal pair. **Where the thing is not a line, keep the adjective and use that thing's own noun**: "खड़ी पट्टियाँ" (vertical stripes), "आड़ी त्रिज्या / खड़ी त्रिज्या" (horizontal / vertical radius), "आड़ी स्थिति" (horizontal position). Never a bare आड़ी / खड़ी with no noun after it. |
 
 ### Exercise scenario vocabulary
 
@@ -261,15 +262,10 @@ Flag these via `/action-forum-post` once real native-speaker feedback is availab
   proposal to drop them, because a `<define>` and the इनपुट स्लॉट metaphor both need a noun.
   His point is carried as a prose rule instead. Needs a native speaker to confirm the bare
   noun is acceptable in the noun-only positions.
-- **The whole "Drawing & colour" section**: every row is an unconfirmed draft from a
-  translation pass, not a native speaker's call. Two are weaker than the others and are the
-  ones to put in front of a reviewer first. **circle (वृत्त vs गोला)**: वृत्त is the
-  school-geometry word and matches त्रिभुज / दीर्घवृत्त, but shipped Hindi already uses both
-  (`draw` says वृत्त, `concepts/variables/hi.md` says गोला), so a reviewer has to settle
-  which one a beginner reads more easily, and whether reserving गोला for the maze's green
-  ball holds up. **hex (हेक्स)**: the borrow rule says Devanagari, but a hex colour is
-  written next to `#` and Latin hex digits every time it appears, so the transliteration may
-  read worse than the bare Latin would.
+- **saturation (संतृप्ति)**: the only row left unconfirmed in "Drawing & colour". @dazecodes
+  ruled on the two terms either side of it (hue and lightness) and had no view on this one,
+  and @suditi deferred to him on all three, so it is still a translation pass's own call. Ask
+  him about this single term rather than reopening the trio.
 - **string, class, method, backwards compatibility, streak**: gender unconfirmed.
 - **scenario, encapsulation, pure function, backwards compatibility, milestone, streak,
   pitfall**: term choice low confidence.
@@ -282,6 +278,110 @@ Flag these via `/action-forum-post` once real native-speaker feedback is availab
 ---
 
 ## Decision log
+
+### 2026-08-04: Chandrabindu restored, colour and orientation terms fixed, shapes settled (topic 482)
+
+**Decided by:** @dazecodes and @suditi, on the pinned Hindi glossary thread (topic 482), with
+@suditi's introduction on topic 481. **Status: native-confirmed**, and the first of these
+**overrules a house default we set ourselves two days earlier**. **Terms affected:** the
+nasalization rule in `guide.md` § Orthography, plus `hue`, `lightness`, `horizontal /
+vertical`, `circle`, `hex (colour)` and the oblique plural in the `challenge` row.
+
+#### 1. Chandrabindu, not anusvara. This overrules the 2026-08-02 house default.
+
+@dazecodes: **"यहाँ looks better than यहां."** @suditi had already stood aside on exactly this
+question, in the same thread: "As for teaching prose, I would defer to @dazecodes's judgement.
+I haven't read a Hindi textbook in 13 years." So the one person with a view has ruled, and the
+other has explicitly handed him the decision. **The 2026-08-02 entry below is superseded**; it
+was our own call, recorded at the time as a medium-confidence house default in mild tension
+with the textbook register the guide asks for, and it was that tension that turned out to be
+the real signal.
+
+His earlier post in the same thread gives the rule, and it is the standard shirorekha rule
+rather than a preference:
+
+> If a vowel stays below the shirorekha (like ा, ु, ू), the full chandrabindu (ँ) is written.
+> [...] If a vowel symbol breaks above the shirorekha (like ि, ी, े, ै, ो, ौ), the crescent is
+> dropped for space, and only a dot (ं) is written. [...] Female nouns like चिड़िया गुड़िया
+> चूहिया are the singular forms. The chandrabindu is added to distinguish the plural forms of
+> these from them (चिड़ियाँ गुड़ियाँ चूहियाँ).
+
+That is what `guide.md` § Orthography now states, including his feminine-plural point, which
+is what makes पट्टियाँ, आकृतियाँ, अलमारियाँ and स्थितियाँ chandrabindu forms.
+
+**This was reversed word by word, not by a character swap**, because getting it wrong in the
+new direction would be exactly as bad: हैं, में, मैं, नहीं, अंत, संख्या, फंक्शन and every
+above-the-line form (करें, देखें, दोनों, बाईं) keep the anusvara and never had a chandrabindu
+to lose. He also notes his caveat that the anusvara is more common in everyday writing; the
+guide's register (textbook, tutorial, Hindi Wikipedia) is what decides it against that.
+
+#### 2. hue: रंगत is wrong. मूल रंग.
+
+@dazecodes: "रंगत can refer to the complexion of a person too, so you may either use मूल रंग /
+प्राथमिक रंग which will mean base color / primary color, and would capture the meaning of hue
+perfectly." Both of his options are acceptable; **मूल रंग is used everywhere** and प्राथमिक
+रंग is recorded in the glossary row as the alternative, so a later pass does not read the
+choice as open. The term is masculine where रंगत was feminine, so every agreement around it
+moved with it ("मूल रंग ... होना चाहिए").
+
+#### 3. lightness: चमक is wrong. हल्कापन.
+
+@dazecodes: "चमक mainly means the shine of an object. To avoid ambiguity, हल्कापन can be used
+for lightness." Masculine, so the same agreement change applies.
+
+#### 4. saturation is still unruled, and stays marked as such.
+
+Neither reviewer had a view. @suditi: "I've no idea about Hindi words for hue, saturation or
+lightness", and she then deferred to @dazecodes, who ruled on the other two and said nothing
+about this one. संतृप्ति therefore stays, still an unconfirmed draft, and it is now the only
+unconfirmed row in the "Drawing & colour" section. Worth going back to him with that single
+term rather than reopening the trio.
+
+#### 5. horizontal / vertical: name the noun.
+
+@dazecodes: "Better use आड़ी रेखा / खड़ी रेखा (horizontal lines / vertical lines) to keep
+things clear that the preceding words are describing the lines." The row is now the two-word
+pair. **Where the thing being described is not a line, his reason still applies but his noun
+does not**: the rainbow's bars are पट्टियाँ, so "खड़ी पट्टियाँ" stays; an ellipse's radii are
+"आड़ी त्रिज्या / खड़ी त्रिज्या"; and `rainbow`'s "क्षैतिज स्थिति" became "आड़ी स्थिति", which
+also clears the one place shipped content contradicted the row. What the rule forbids is a
+bare आड़ी or खड़ी with no noun after it.
+
+#### 6. Shape names are right, and keep an English gloss.
+
+@suditi: "All the terms you have used for shapes are mathematical technical terms. वृत्त is
+like circle and गोला is similar to round." @dazecodes: "For better understanding you continue
+applying the below format: आयत (rectangle) [...] as these mathematical terms are mainly used
+in places where Hindi is used as a primary language, other regions of India would not be
+familiar with it much."
+
+His reason is regional, not pedagogical: a reader outside the Hindi-medium states knows the
+shape and not its Hindi name. That makes it **a deliberate, closed exception** to the guide's
+rule against glossing a term the English source did not tag, and `guide.md` states it as such
+in its own subsection so it cannot be read as licence to gloss anything else.
+
+#### 7. The `circle` contradiction is resolved: वृत्त, not गोला.
+
+The 2026-08-03 entry logged that `concepts/variables/hi.md` glossed the `circle` function as
+गोला while the `draw` catalog and `concepts/strings/hi.md` said वृत्त. @suditi settles it:
+गोला is "similar to round", not circle, and the shape names are technical terms. The concept
+page now reads "`circle` (वृत्त)". **गोला survives where it is not a shape name**: the maze's
+green target ("हरे गोले तक") is a ball on screen, and गोल ब्रैकेट is the agreed name for a
+round bracket. Neither was touched.
+
+#### 8. हेक्स confirmed.
+
+@suditi: "As for हेक्स, it is the name of the code so it should be fine." The row's
+medium-confidence marker is removed and it comes out of the open-terms list; the worry that
+the Devanagari would read worse next to `#` and Latin digits was ours, and she has answered
+it.
+
+#### 9. चैलेंजों confirmed.
+
+@suditi, on the oblique plural: "Either is fine. But if you are using plural form for all
+other English words in Devanagari, you might as well use the plural for challenge." We do
+inflect the other borrowed nouns in the oblique plural (वेरिएबलों, फंक्शनों, एलिमेंटों), so
+चैलेंजों stays, now as her call rather than ours.
 
 ### 2026-08-03: Drawing and colour vocabulary written down (unconfirmed), plus a comma-splice fix
 
@@ -437,6 +537,10 @@ engine decision rests on. Recorded here because it is the kind of corroboration 
 to lose, and easy to overstate.
 
 ### 2026-08-02: Chandrabindu vs anusvara settled as anusvara (house default, medium confidence)
+
+> **SUPERSEDED on 2026-08-04.** @dazecodes ruled the other way ("यहाँ looks better than यहां")
+> and @suditi deferred to him, so the chandrabindu is now the rule. See the 2026-08-04 entry
+> at the top of this file. This entry is kept for the record of what we decided and why.
 
 **Decided by:** us, not a native speaker. **Status: house default, unconfirmed. Needs a
 native-speaker ruling** (question drafted at the end of this entry).

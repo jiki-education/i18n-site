@@ -1,7 +1,12 @@
 ---
 /**
  * The status pill on a list row: "Ready to review" until the reader marks it
- * reviewed, then "Reviewed".
+ * reviewed, then "Reviewed". If the item has actually been signed off by a
+ * native speaker (the project's own record, from `status.json`, the same one
+ * the `/status` leaderboard reads), that outranks both: it renders "Approved"
+ * with a tick and skips the client-side reviewed/unreviewed logic entirely,
+ * since a visitor's own browsing history isn't the interesting fact once a
+ * real sign-off exists.
  *
  * Rendered as "Ready to review" and upgraded client-side, so the static HTML
  * stays cacheable and a reader with no localStorage still sees something true.
@@ -10,12 +15,22 @@
 interface Props {
   itemId: string;
   version: string;
+  approved?: boolean;
 }
 
-const { itemId, version } = Astro.props;
+const { itemId, version, approved = false } = Astro.props;
 ---
 
-<span class="review-badge shrink-0 rounded-full bg-emerald-50 px-2.5 py-1 text-[12px] font-semibold text-emerald-700 aria-pressed:bg-emerald-600 aria-pressed:text-white" data-review-id={itemId} data-review-version={version} aria-pressed="false"> Ready to review </span>
+{
+  approved ? (
+    <span class="shrink-0 rounded-full bg-emerald-600 px-2.5 py-1 text-[12px] font-semibold text-white">✓ Approved</span>
+  ) : (
+    <span class="review-badge shrink-0 rounded-full bg-emerald-50 px-2.5 py-1 text-[12px] font-semibold text-emerald-700 aria-pressed:bg-emerald-600 aria-pressed:text-white" data-review-id={itemId} data-review-version={version} aria-pressed="false">
+      {" "}
+      Ready to review{" "}
+    </span>
+  )
+}
 
 <script>
   import { REVIEWED_STORAGE_KEY } from "../lib/reviewed";

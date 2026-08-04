@@ -32,8 +32,11 @@ const termCount = glossary.data.term_count ?? 0;
  * `status.json` the /status leaderboard reads. Falls back to zeroes for a
  * language with no row there, so the aside never loses a line.
  */
-const signedOff = status.languages.find((entry) => entry.lang === lang) ?? { approved: 0, total: 0 };
+const signedOff = status.languages.find((entry) => entry.lang === lang) ?? { approved: 0, total: 0, items: [] as { key: string; status: string }[] };
 const stage = stageMeta(glossary.data.stage);
+
+/** Real native-speaker sign-off, keyed the same way as `status.json` ("glossary", "video-player", "concept/for-loops", ...). */
+const approvedKeys = new Set((signedOff.items ?? []).filter((item) => item.status === "approved").map((item) => item.key));
 
 const byType = new Map<string, typeof translations>();
 for (const item of translations) {
@@ -96,7 +99,7 @@ for (const item of translations) {
                   <span class="block font-semibold text-gray-900">Glossary</span>
                   <span class="mt-0.5 block text-[13px] text-gray-500">The {termCount} agreed terms every translation is built on</span>
                 </span>
-                <ReviewBadge itemId={reviewItemId(lang, "glossary")} version={glossary.data.content_version ?? glossary.data.governance_sha} />
+                <ReviewBadge itemId={reviewItemId(lang, "glossary")} version={glossary.data.content_version ?? glossary.data.governance_sha} approved={approvedKeys.has("glossary")} />
               </a>
             </li>
             <li>
@@ -105,7 +108,7 @@ for (const item of translations) {
                   <span class="block font-semibold text-gray-900">Video player</span>
                   <span class="mt-0.5 block text-[13px] text-gray-500">The controls and captions wrapped around every video</span>
                 </span>
-                <ReviewBadge itemId={reviewItemId(lang, "video-player")} version={playerReviewVersion(lang)} />
+                <ReviewBadge itemId={reviewItemId(lang, "video-player")} version={playerReviewVersion(lang)} approved={approvedKeys.has("video-player")} />
               </a>
             </li>
           </ul>
@@ -126,7 +129,7 @@ for (const item of translations) {
                           </span>
                           <span class="mt-0.5 block text-[13px] text-gray-500">{item.data.slug}</span>
                         </span>
-                        <ReviewBadge itemId={reviewItemId(lang, item.data.type, item.data.slug)} version={item.data.content_version ?? item.data.en_md5 ?? "unknown"} />
+                        <ReviewBadge itemId={reviewItemId(lang, item.data.type, item.data.slug)} version={item.data.content_version ?? item.data.en_md5 ?? "unknown"} approved={approvedKeys.has(`${item.data.type}/${item.data.slug}`)} />
                       </a>
                     </li>
                   ) : (

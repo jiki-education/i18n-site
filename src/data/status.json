@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "c90604f",
-  "approved": 234,
+  "governance_sha": "cd45385",
+  "approved": 235,
   "disapproved": 0,
   "total": 544,
   "languages": [
@@ -391,7 +391,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 28,
+      "approved": 29,
       "disapproved": 0,
       "total": 42,
       "items": [
@@ -588,7 +588,7 @@
         {
           "key": "exercise/structured-house",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/relational-snowman",

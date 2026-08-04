@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "f39b44f",
-  "approved": 243,
+  "governance_sha": "55f5d54",
+  "approved": 245,
   "disapproved": 0,
   "total": 564,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 53,
+      "approved": 55,
       "disapproved": 0,
       "total": 74,
       "items": [
@@ -346,8 +346,8 @@
         },
         {
           "key": "exercise/bouncer",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1177,
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-conditional",
@@ -371,8 +371,8 @@
         },
         {
           "key": "exercise/annalyns-infiltration",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1176,
+          "status": "approved"
         },
         {
           "key": "exercise/maze-automated-solve",

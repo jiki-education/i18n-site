@@ -3,10 +3,10 @@ lang: "el"
 name: "Greek"
 family: null
 stage: "reviewing"
-governance_sha: "ba33763"
-content_version: "381ecc612557"
-published_at: "2026-08-03"
-term_count: 64
+governance_sha: "f39b44f"
+content_version: "273159e85f2f"
+published_at: "2026-08-04"
+term_count: 66
 category_id: 265
 forum_topic_id: 497
 video_player_forum_topic_id: 747
@@ -90,6 +90,7 @@ These are terms where the Greek is used in prose, so the "Use (el/en)" column is
 |---------|-------|-------------|-------|
 | vs (versus, between two choices/scenarios) | **εναντίον** | el | Unconfirmed draft (agent, 2026-07-31). From the rock-paper-scissors exercise. |
 | golf tee | **πάσσαλος του γκολφ** | el | Confirmed by a native speaker (astyanax, 2026-08-03). Never left as bare English `tee`. `γκολφ` is transliterated here, matching `μπάλα γκολφ` in the same content. |
+| meridiem (the `am`/`pm` indicator) | **ένδειξη μεσημβρίας** | el | Confirmed by a native speaker (astyanax, 2026-08-03). Never left as bare English `meridiem` in prose. Inflect the head noun and keep `μεσημβρίας` fixed in the genitive: `τη σωστή ένδειξη μεσημβρίας`, never `τη σωστή μεσημβρία`. The code identifier `meridiem` (in `displayTime(hour, minutes, meridiem)`) and the catalog key of the same name stay English. |
 
 ### Drawing & color (exercise family)
 
@@ -99,6 +100,7 @@ These are terms where the Greek is used in prose, so the "Use (el/en)" column is
 | saturation | **κορεσμός** | el | Unconfirmed draft (agent, 2026-07-31). |
 | lightness | **φωτεινότητα** | el | Unconfirmed draft (agent, 2026-07-31). |
 | bar (vertical drawing unit, e.g. a rainbow bar) | **ράβδος** | el | Unconfirmed draft (agent, 2026-07-31). Chosen over `γραμμή` specifically to avoid collision with the existing `line()` shape/describer, which is already glossaried as `γραμμή`. |
+| hardcode (verb) / hardcoded value | **καρφωτή τιμή** / plural **καρφωτές τιμές** | el | Confirmed by a native speaker (astyanax, 2026-08-04). Never the loanword `hardcode`/`hard-code`, and never `σκληροκωδικοποιημένος`. Verb sense renders as "βάζω καρφωτή τιμή". |
 
 ## Keep in English
 
@@ -150,6 +152,48 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-04: "hardcode" is "καρφωτή τιμή"
+
+**Decided by:** astyanax (native speaker).
+**Raised by:** astyanax on the Greek `relational-sun` exercise review thread,
+https://forum.jiki.io/t/1129.
+**Terms affected:** `hardcode` (added, _καρφωτή τιμή_ / plural _καρφωτές τιμές_).
+
+The translation had rendered "hardcode"/"hard-code" as the loanword `hardcode` in one place
+and as `σκληροκωδικοποιημένοι` (a literal calque of "hard-coded") in another. Astyanax
+rejected both: "don't use `hardcode` or `hard-code`, and let's not translate it as
+`σκληροκωδικοποιημένοι`, use `καρφωτή τιμή`/`καρφωτές τιμές`." _Καρφωτή τιμή_ (literally
+"nailed-down value") is the idiomatic Greek programmer's term; the verb sense is expressed as
+"βάζω καρφωτή τιμή" (to put in a hardcoded value), not as a standalone verb form.
+
+### 2026-08-03: "meridiem" is translated as "ένδειξη μεσημβρίας"
+
+**Decided by:** astyanax (native speaker).
+**Raised by:** astyanax on the Greek `digital-clock` exercise review thread,
+https://forum.jiki.io/t/1110.
+**Terms affected:** `meridiem` (added, _ένδειξη μεσημβρίας_).
+
+The translation had kept `meridiem` as a bare Latin token inside Greek prose, on the
+reasoning that it matches the third parameter of `displayTime(hour, minutes, meridiem)` and
+so keeps the page and the code speaking the same word. Astyanax said it simply reads better
+translated, and gave the rendering himself: _ένδειξη μεσημβρίας_, literally the "midday
+indication". He framed it as a preference rather than an error ("we could keep `meridiem`
+untranslated, but I think it sounds better if we translate it"), which is why the row is
+recorded as confirmed rather than as a draft: the wording is his, not an agent's proposal he
+approved.
+
+He also settled the grammar in the same breath, by giving _τη σωστή ένδειξη μεσημβρίας_ and
+explicitly marking it as better than _τη σωστή μεσημβρία_. The difference matters: the
+shorter form makes _μεσημβρία_ itself the noun being inflected, which turns the term into an
+ordinary word meaning "midday" and loses the sense of an indicator with two settings. Keeping
+_ένδειξη_ as the head noun and _μεσημβρίας_ fixed in the genitive preserves the two-part
+term, so only the head inflects. That is the rule the glossary row carries.
+
+The code identifier keeps its English name. Translating the prose term while the parameter
+in the signature stays `meridiem` is the normal split for this curriculum (identifiers are
+never translated), and the signature sits three lines below the sentence that introduces the
+Greek term, so the connection is still visible on the page.
 
 ### 2026-08-03: "golf tee" is translated, not kept in English
 

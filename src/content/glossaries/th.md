@@ -3,11 +3,12 @@ lang: "th"
 name: "Thai"
 family: null
 stage: "setup"
-governance_sha: "25ef780"
-content_version: "ac61bfa6b851"
-published_at: "2026-08-02"
+governance_sha: "a45684f"
+content_version: "34faa1c1d52f"
+published_at: "2026-08-04"
 term_count: 99
 category_id: 430
+forum_topic_id: 1049
 ---
 
 # Thai (th) glossary
@@ -21,7 +22,7 @@ The agreed term list for Thai. Why each term was chosen, and who chose it, is in
 | programming / coding | การเขียนโปรแกรม | th | Verb: `เขียนโปรแกรม`. `โค้ดดิ้ง` is slangier; never mix both in one document. |
 | developer / programmer | โปรแกรมเมอร์ | th | The learner-facing sense, "a person who programs". `นักพัฒนา` is the industry job title; keep it for copy really about the profession. |
 | bug | บัค | th | Not `ข้อบกพร่อง`, which is formal-report register. |
-| syntax | ไวยากรณ์ | th | Not `ซินแท็กซ์`. `ไวยากรณ์` is the word a beginner already knows from school. |
+| syntax | ไวยากรณ์ | th | Not `ซินแท็กซ์`. `ไวยากรณ์` is the word a beginner already knows from school. English hint on first use: `ไวยากรณ์ (_syntax_)`. |
 
 ## Localize (use the Thai term)
 
@@ -40,12 +41,12 @@ These are terms where the Thai is used in prose, so the "Use (th/en)" column is 
 | Boolean | บูลีน | th | `ค่าความจริง` as the gloss where the source defines it, then `บูลีน` throughout. |
 | array / list | อาร์เรย์ | th | Not `แถวลำดับ` (Royal Society) and not `ตัวแปรชุด` (older textbooks). Exercise prose saying "list" informally means the same thing. |
 | element | สมาชิก | th | Not `อิลิเมนต์`. |
-| index | ดัชนี | th | Not `อินเด็กซ์`. |
+| index | ดัชนี | th | Not `อินเด็กซ์`. English hint on first use: `ดัชนี (_index_)`. |
 | position (in a string/array) | ตำแหน่ง | th | The beginner-facing word taught before `ดัชนี`. Keep the two visibly apart on any page that has both. |
-| dictionary | พจนานุกรม | th | Not `ดิกชันนารี`. The everyday word carries the spiral-notebook teaching metaphor. |
+| dictionary | พจนานุกรม | th | Not `ดิกชันนารี`. The everyday word carries the spiral-notebook teaching metaphor. English hint on first use: `พจนานุกรม (_dictionary_)`. |
 | key (dictionary key) | คีย์ | th | Never `กุญแจ`, which is a physical door key. |
 | data type | ชนิดข้อมูล | th | Not `ประเภทข้อมูล`. Use one form; it recurs on every concept page. |
-| compound data type | ชนิดข้อมูลแบบประกอบ | th | Distinct from plain `ชนิดข้อมูล`. |
+| compound data type | ชนิดข้อมูลแบบประกอบ | th | Distinct from plain `ชนิดข้อมูล`. English hint on first use: `ชนิดข้อมูลแบบประกอบ (_compound data type_)`. |
 | object (JS `{}` literal) | ออบเจ็กต์ | th | Never `วัตถุ` (a physical object). Keep `พจนานุกรม` only where the English itself says "dictionary". |
 
 ### Functions & control flow
@@ -59,16 +60,16 @@ These are terms where the Thai is used in prose, so the "Use (th/en)" column is 
 | argument | อาร์กิวเมนต์ | th | The call-site value. Keep the pair distinct. |
 | to return (a value) | คืนค่า | th | Not `ส่งค่ากลับ`. The bracketed `<define>` gloss word must be _return_, never _returning_. |
 | return value | ค่าที่คืนออกมา | th | The noun. Keep distinct from the verb above. |
-| if statement | คำสั่งเงื่อนไข | th | The `if` keyword stays English. |
-| statement (executable) | คำสั่ง | th | The imperative sense: a line of code that does something and gets executed. Shares the word with "instruction (given to Jiki)" below. |
+| if statement | คำสั่งเงื่อนไข | th | The `if` keyword stays English. English hint on first use: `คำสั่งเงื่อนไข (_if statement_)`. |
+| statement (executable) | คำสั่ง | th | The imperative sense: a line of code that does something and gets executed. Shares the word with "instruction (given to Jiki)" below. English hint on first use: `คำสั่ง (_statement_)`, which also keeps it apart from the CLI-command reading of the bare word. |
 | statement (logical claim) | ประพจน์ | th | The proposition sense: a claim that is true or false; also a test assertion. Pick by meaning, not by the English word. |
 | instruction (given to Jiki) | คำสั่ง | th | What the learner puts on the board for Jiki to follow. Everyday Thai. Deliberately the same word as "statement (executable)". |
-| expression | นิพจน์ | th | Not `เอ็กซ์เพรสชัน`. |
+| expression | นิพจน์ | th | Not `เอ็กซ์เพรสชัน`. English hint on first use: `นิพจน์ (_expression_)`. |
 | operator | ตัวดำเนินการ | th | Not `โอเปอเรเตอร์`. |
 | to declare / declaration | ประกาศ | th | |
 | initializer | ค่าเริ่มต้น | th | |
-| placeholder | ตัวแทนค่า | th | |
-| pure (function) | บริสุทธิ์ | th | `ฟังก์ชันบริสุทธิ์` = pure function. When glossed, gloss the full term _pure function_, not the bare adjective. |
+| placeholder | ตัวแทนค่า | th | English hint on first use: `ตัวแทนค่า (_placeholder_)`. |
+| pure (function) | บริสุทธิ์ | th | `ฟังก์ชันบริสุทธิ์` = pure function. When glossed, gloss the full term _pure function_, not the bare adjective. English hint on first use: `ฟังก์ชันบริสุทธิ์ (_pure function_)`. |
 | brackets (the two after a function name) | วงเล็บ | th | Plain `วงเล็บ` for the `()` pair written after a function name. Name the specific type only when disambiguating; see the Brackets table. |
 | and / or (logical, in prose) | และ / หรือ | th | The keywords and/or/`&&`/`\|\|` stay English. If the source glosses one, the bracket may show the bare English word. |
 | ampersand (`&`) | เครื่องหมายแอมเปอร์แซนด์ | th | On `<define>`, show the glyph itself (`&`), not the English word "ampersand". |
@@ -171,6 +172,31 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-04: English hint in parentheses for terms Thai speakers say in English
+
+**Decided by:** native speaker `faiifaiipuipui` on the pinned glossary thread (https://forum.jiki.io/t/1049, post 3), actioned by agent under the owner's standing instruction to apply clean, uncontested native-speaker recommendations. First native-speaker feedback Thai has had.
+
+He asked whether some rows could show the English word in parentheses as a hint, because for many programming terms Thai speakers say the English even where a Thai word exists, and listed the terms he has "seldom heard someone say in Thai" in a learning-to-program context. The convention itself was already the Thai realisation of `<define>` (Thai first, English in italic brackets); what is new is applying it to a term on first use in a page even where the English source carries no markup. The rule lives in `guide.md` under "Term clarification"; the per-row trigger is the phrase "English hint on first use" in the `Notes` column.
+
+**Rows given the hint (the ones he named where the Thai term itself stands and only the recognition is the problem):** `syntax`, `index`, `dictionary`, `compound data type`, `if statement`, `statement (executable)`, `expression`, `placeholder`, `pure (function)`.
+
+Deliberately not applied to the whole glossary in one pass. Most rows do not need it (transliterations like `สตริง`, `อาร์เรย์`, `ฟังก์ชัน` already read as the English word, and the metaphor vocabulary is ordinary Thai), and a hint on every term would clutter the prose it is meant to help. Further rows get the hint incrementally, as native speakers flag them; he was invited on the thread to name more.
+
+#### Term suggestions from the same post, not actioned here
+
+He also gave concrete Thai alternatives for several rows, which are term changes rather than a presentation change, and each needs its own decision plus a sweep of published content. Recorded so they are not lost:
+
+- `interpreter` `ล่าม` → `อินเทอร์พรีเตอร์` ("ล่าม refers to a person"). This is the exact objection the bootstrap flagged as the first question to put to a native speaker, and the answer came back against the choice. See "The term worth the most argument" below.
+- `ampersand` `เครื่องหมายแอมเปอร์แซนด์` → `เครื่องหมายและ` (nobody knows what an "and-per-se" is).
+- `bar (|)` `ขีดตั้ง` → show the glyph, or `ท่อ` where a name is needed.
+- `loop body` `ตัวลูป` → `ในลูป` / `ด้านในลูป`.
+- `to update` `อัปเดต` → `เปลี่ยน` / `แก้ไข`.
+- `code block` `บล็อกโค้ด` → `โค้ดบล็อก`, though he notes position is what Thai usually uses to refer to a stretch of code.
+- `mental model` `ภาพในหัว` → `โมเดลในหัว` ("much more understandable"). Also a bootstrap open question, answered.
+- `statement (logical claim)` `ประพจน์` → `เงื่อนไข` is what is normally said, at least for the if/else sense.
+
+He closed with "There are more I wanted to say but this is what I'm currently able to convey", so expect more.
 
 ### 2026-08-02: Thai bootstrapped (every row an unconfirmed draft)
 

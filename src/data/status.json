@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-04",
-  "governance_sha": "748463e",
-  "approved": 246,
+  "governance_sha": "988c976",
+  "approved": 248,
   "disapproved": 0,
   "total": 564,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 56,
+      "approved": 58,
       "disapproved": 0,
       "total": 74,
       "items": [
@@ -336,8 +336,8 @@
         },
         {
           "key": "exercise/cityscape-skyline",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1180,
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-nested-repeat",
@@ -381,8 +381,8 @@
         },
         {
           "key": "exercise/build-wall",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1179,
+          "status": "approved"
         }
       ]
     },

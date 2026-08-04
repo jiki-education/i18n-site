@@ -3,10 +3,10 @@ lang: "it"
 name: "Italian"
 family: null
 stage: "reviewing"
-governance_sha: "9b3a28d"
-content_version: "051a3e8b7e5a"
-published_at: "2026-08-03"
-term_count: 63
+governance_sha: "dec20ea"
+content_version: "7a9faa926722"
+published_at: "2026-08-04"
+term_count: 67
 category_id: 133
 forum_topic_id: 319
 video_player_forum_topic_id: 763
@@ -50,7 +50,7 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 | to define (a function) | definire (una funzione) | it | Distinct from _dichiarare_ (declare), which is not used for this concept here. |
 | parameter | parametro | it | Declaration-site name. |
 | argument | argomento | it | Call-site value. Deliberately distinct from _parametro_ above. |
-| input (to a function) | input | en | Not _ingresso_, which is reserved for hardware/circuit contexts. |
+| input (to a function) | input | en | Not _ingresso_, which is the construction/building-entrance term (see `entrance` below), not this sense. |
 | output | output | en | Not _uscita_. |
 | to return (a value) | restituire | it | "La funzione restituisce 30." Not "ritornare". |
 | return value | valore restituito | it | Noun form; matches the verb _restituire_ above for consistency. |
@@ -92,6 +92,7 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 | tutorial | tutorial | en | Established as-is in Italian tech/education writing. |
 | "Run Code" (the button) | Esegui il codice | it | The app's run button. Prose that tells the learner to press it quotes the button's own label, so use this exact wording every time, never the shorter _Esegui codice_. |
 | drawing shapes (function category) | disegno di forme geometriche | it | The graphics-exercise function category. Use _forme geometriche_ for "shapes" in drawing contexts; bare _forme_ is acceptable only where the geometric sense is already unambiguous from the sentence. |
+| basic / simple (exercise-title modifier) | semplice | it | Where two exercises share a subject and one is the basic version (`-basic` and its fuller counterpart), mark the basic one's Italian title with _semplice_ **before** the noun phrase: _Semplice pupazzo di neve_. The fuller exercise keeps the undecorated title (_Pupazzo di neve_), so only the basic one carries a modifier. Applies to the title only, not to the noun inside the prose or the message catalog. Agrees with the noun in gender and number (_Semplice X_, _Semplici X_). |
 
 ### Exercise domain vocabulary
 
@@ -101,6 +102,9 @@ Everyday words from an exercise's subject matter where the obvious rendering is 
 |---------|---------|-------------|-------|
 | weather | meteo | it | Confirmed by a native speaker: more precise than _tempo_, which also means "time" and so reads ambiguously in an exercise. Masculine and invariant: _il meteo_, _previsioni meteo_, _simboli meteo_. Never use _tempo_ for the weather sense. |
 | tee (golf) | tee | en | Keep the English word: it is the standard term in Italian golf usage. Never _chiodino_. Masculine and invariant: _il tee_, _sul tee_. |
+| radial width / radial height (ellipse) | raggio orizzontale / raggio verticale | it | Confirmed by a native speaker: the wording Italian graphics usage actually employs for an ellipse's two radii. Masculine, so the article and preposition agree with _raggio_: _un raggio orizzontale di 40_, _ed un raggio verticale di 20_. Never _larghezza radiale_ / _altezza radiale_, which are literally correct but not what is said. |
+| jumbled (parts swapped/rearranged) | stravolto / stravolta | it | Confirmed by native speakers. The sense is a thing whose own parts have been shuffled and swapped around, not a thing that is untidy inside. Agree gender with the noun: _casa stravolta_. Never _disordinato_ / _in disordine_ (that is interior mess), and not _scombinato_. |
+| entrance (building) | ingresso | it | Confirmed by a native speaker: the construction/building term. Masculine: _un ingresso_, never the feminine _un'entrata_. Distinct from `input (to a function)` below, which is a different English word and stays _input_. |
 
 ## Keep in English
 
@@ -145,6 +149,139 @@ Naming convention and worked example are in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-04: a building entrance is `ingresso`, never `entrata`
+
+**Decided by:** native speaker kernelaklees on the Skyline exercise review thread
+(https://forum.jiki.io/t/1180, post_id 3332). **Human-decided, agent-applied.** **Terms
+affected:** `entrance (building)` (new row); the `buildEntrance` describer string in the
+shared `cityscape` category message catalog, which reaches every cityscape-family exercise.
+
+The describer read _ha costruito un'entrata alla posizione (X, Y)_. kernelaklees said "It's
+fine `ha costruito un'entrata` is fine, but in construction terminology the correct term is
+`ingresso`." The swap also changes the article's gender: _entrata_ is feminine, _ingresso_
+is masculine, so _un'entrata_ becomes _un ingresso_.
+
+This sits next to the existing `input (to a function)` row, which already says "not
+_ingresso_". That note originally called _ingresso_ "reserved for hardware/circuit
+contexts", which this decision shows was too narrow: it is also the ordinary word for a
+building entrance. The note is corrected to point at this row instead of repeating the
+narrower claim; the underlying instruction (don't use it for "input") is unchanged.
+
+### 2026-08-04: an ellipse has a `raggio orizzontale` and a `raggio verticale`
+
+**Decided by:** native speaker kernelaklees on the Build the Wall exercise review thread
+(https://forum.jiki.io/t/1179, post_id 3330). **Human-decided, agent-applied.** **Terms
+affected:** `radial width / radial height (ellipse)` (new row, under "Exercise domain
+vocabulary"); the ellipse describer strings in the shared `draw` category message catalog,
+which every drawing exercise renders.
+
+The ellipse describers read _una larghezza radiale di X_ and _un'altezza radiale di Y_.
+kernelaklees confirmed those are correct, and then said that in graphics Italian usually
+says _raggio orizzontale_ and _raggio verticale_. That is the distinction the row records:
+not an error being corrected, but a literal rendering being replaced by the collocation a
+reader in the domain expects. It also lines the ellipse up with the circle describer, which
+already says _un raggio di X_, so the two shapes now describe the same quantity with the
+same word instead of one calling it a radius and the other a radial width.
+
+The swap changes the gender of the head noun (_larghezza_ and _altezza_ are feminine,
+_raggio_ is masculine), so the articles move with it: _una larghezza radiale_ becomes _un
+raggio orizzontale_, and _ed un'altezza radiale_ becomes _ed un raggio verticale_.
+
+It earns a row rather than a one-off catalog edit because the strings live in the shared
+`draw` category catalog, so the wording is the same in every drawing exercise, and because
+the trap is that the literal rendering is not wrong: nothing in a per-exercise review flags
+it unless the reviewer happens to know the graphics idiom.
+
+Ukrainian settled the identical point on its own thread earlier the same day. The two
+decisions are independent (each language decides for itself); they are noted together only
+because the same shared catalog strings are involved.
+
+### 2026-08-04: a jumbled thing is `stravolto`, never `in disordine` / `disordinato`
+
+**Decided by:** native speakers kernelaklees and FraSanga on the Jumbled House exercise
+review thread (https://forum.jiki.io/t/1089, posts 2 and 4). **Human-decided,
+agent-applied.** **Terms affected:** `jumbled (parts swapped/rearranged)` (new row, under
+"Exercise domain vocabulary"); the `exercise/jumbled-house` Italian title, description and
+image alt text.
+
+The exercise was titled _Casa in disordine_. kernelaklees objected that _disordinata_ /
+_in disordine_ translates back as "messy": a house whose contents are strewn about inside.
+That is not what the exercise shows. The house's own structural elements (frame, roof,
+windows, door) have been detached, resized and swapped around on the outside; nothing about
+the interior is involved. The word has to describe a thing whose parts have been rearranged,
+not a thing that is untidy.
+
+He offered two candidates, _scombinata_ and _stravolta_, and preferred _stravolta_.
+_Scombinata_ is accurate but weaker and more colloquial: it suggests things mixed up or
+muddled, and is often used of people ("scombinato" as scatterbrained), which risks reading
+as a comment on the house's tidiness again. _Stravolta_ means upended, drastically
+rearranged, turned inside out, and carries the sense of a form violently reordered while
+its pieces all remain present. That is exactly the puzzle the learner is being asked to
+undo, and it keeps the title's promise consistent with the task ("riordinare i pezzi").
+
+FraSanga, who had already approved the translation, quoted kernelaklees's preference and
+replied "I agree with you", so both reviewers are on _stravolta_ and the runner-up is
+settled, not merely unpicked.
+
+It earns a row rather than being a one-off title fix because "jumbled" and its neighbours
+recur across the drawing exercises, and the trap (reaching for the obvious _disordinato_,
+which is a real word that reads fine and means the wrong thing) is invisible to anyone
+translating a single title in isolation.
+
+### 2026-08-04: the basic exercise of a pair is marked `semplice`, before the noun
+
+**Decided by:** native speakers kernelaklees and FraSanga, across the two Snowman review
+threads (raised on https://forum.jiki.io/t/1085, for `exercise/snowman-basic`; confirmed on
+https://forum.jiki.io/t/1118, post_id 3094, for `exercise/snowman`). **Human-decided,
+agent-applied.** **Terms affected:** `basic / simple (exercise-title modifier)` (new row,
+under "Platform & curriculum vocabulary"); the `exercise/snowman-basic` Italian title.
+
+Both Snowman exercises had the identical Italian title _Pupazzo di neve_, because English
+distinguishes them by a slug (`snowman-basic` versus `snowman`) that never reaches the
+learner-visible title. kernelaklees raised it on the basic exercise's thread and proposed a
+word meaning "basic/simple", suggesting _semplice_. We held off replying until the second
+thread so the pair could be named consistently rather than one exercise at a time.
+
+FraSanga then confirmed it on the fuller exercise's thread: he called separating the two
+with _semplice_ a good idea and gave the exact phrasing, _Semplice pupazzo di neve_. That
+fixes the word order as adjective-before-noun. Italian allows _pupazzo di neve semplice_,
+but postposed _semplice_ reads as a description of the snowman itself (a plain, unelaborate
+snowman) rather than of the exercise, and a compound noun like _pupazzo di neve_ takes a
+trailing adjective awkwardly. Preposed, it reads as the qualifier on the lesson.
+
+Only the basic exercise is marked. The fuller one keeps the plain _Pupazzo di neve_,
+because the distinction is carried entirely by the presence of the modifier on the simpler
+of the two; decorating both would restore the ambiguity in a longer form.
+
+It earns a row because the curriculum has many `-basic`/fuller exercise pairs (the maze and
+space-invaders sequences among them), so a future pass hitting any of them would otherwise
+re-decide both the word and its position.
+
+### 2026-08-04: an animal's face is `faccia`, not `viso` and not `muso`
+
+**Decided by:** native speakers kernelaklees and FraSanga on the Foxy Face exercise review
+thread (https://forum.jiki.io/t/1086, posts 5, 6, 7 and 9). **Human-decided,
+agent-applied.** **Terms affected:** none as a glossary row (see below); the Foxy Face
+translation and its message catalog.
+
+FraSanga originally asked for the fox's face halves to read _viso_ rather than _faccia_
+(post 1), and that was applied. kernelaklees then objected (post 5): _viso_ carries a human,
+aesthetic register in Italian (_viso pallido_, _viso sorridente_, _viso armonioso_), so on
+an animal it sounds odd and almost anthropomorphizing. FraSanga proposed _muso_ as a middle
+ground (post 6); kernelaklees ruled that out too (post 7), because _muso_ names only the
+snout or mouth region, not the whole face. FraSanga closed the question in post 9 by
+accepting _faccia_ and giving the go-ahead to edit the page.
+
+So both reviewers converged on _faccia_ for an animal's face. _viso_ is reserved for human
+faces and _muso_ for a snout specifically. Every _viso_ on the Foxy Face page and in its
+message catalog was changed to _faccia_ (eight occurrences: one in the instructions prose
+and seven across `checks` and `hints`), which also undoes the earlier _viso_ fix rather than
+leaving the prose and the catalog disagreeing.
+
+No glossary row was added. _faccia_ was already what the translation reached for by default,
+so there is no mapping a future pass would get wrong without one; what needed recording is
+why the page did not move to _viso_, and why _muso_ is not the compromise it looks like.
 
 ### 2026-08-03: `move()` glossed as the imperative `muovi`, never the reflexive `muoversi`
 

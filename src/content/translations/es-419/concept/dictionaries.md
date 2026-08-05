@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/dictionaries/source.md"
 en_md5: "b8a26ad63301df1d00ce08e1e429cf05"
-governance_sha: "29b680f"
-content_version: "0b7e9d7a05c4"
-published_at: "2026-08-03"
+governance_sha: "14811a7"
+content_version: "df008597dd16"
+published_at: "2026-08-05"
 ---
 
 Los arrays son nuestra opción preferida cuando tenemos una lista de cualquier cosa: una lista de mentores, de calificaciones, de ingredientes… cualquier lista, lo que quieres es usar un array.
@@ -40,7 +40,7 @@ Y los valores pueden ser cualquier cosa. Pueden ser strings, números, Boolean, 
 
 También puedes tener un diccionario vacío, igual que teníamos un array vacío, y podemos empezar con eso y construir sobre él más adelante.
 
-Entonces, tienes un diccionario, pero ¿cómo extraes algo de él?
+Entonces, tienes un diccionario, pero ¿cómo sacas algo de él?
 
 Usamos la misma sintaxis de corchetes que usábamos con arrays y strings, pero en lugar de un número de posición, ponemos una clave. Así que si queremos obtener el nombre de alguien de un diccionario, escribimos:
 

@@ -1,5 +1,5 @@
 ---
-lang: "pt-PT"
+lang: "pt-pt"
 type: "exercise"
 slug: "bouncer-dress-code"
 title: "Porteiro: Código de vestuário"

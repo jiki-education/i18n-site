@@ -1,5 +1,5 @@
 ---
-lang: "pt-PT"
+lang: "pt-pt"
 type: "exercise"
 slug: "maze-turn-around"
 title: "Dá meia-volta"

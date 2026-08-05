@@ -1,5 +1,5 @@
 ---
-lang: "pt-PT"
+lang: "pt-pt"
 type: "concept"
 slug: "else"
 title: "Else"

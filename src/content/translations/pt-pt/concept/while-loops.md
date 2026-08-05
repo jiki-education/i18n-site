@@ -1,5 +1,5 @@
 ---
-lang: "pt-PT"
+lang: "pt-pt"
 type: "concept"
 slug: "while-loops"
 title: "Ciclos while"

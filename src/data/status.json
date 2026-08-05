@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "f53ad5d",
-  "approved": 311,
-  "disapproved": 2,
-  "total": 607,
+  "governance_sha": "c12e6a2",
+  "approved": 319,
+  "disapproved": 0,
+  "total": 619,
   "languages": [
     {
       "lang": "it",
@@ -12,7 +12,7 @@
       "category_slug": "i18n-it",
       "approved": 72,
       "disapproved": 0,
-      "total": 90,
+      "total": 92,
       "items": [
         {
           "key": "glossary",
@@ -463,6 +463,16 @@
           "key": "exercise/driving-test",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/hello",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/scroll-and-shoot",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -471,8 +481,8 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 52,
-      "disapproved": 2,
+      "approved": 54,
+      "disapproved": 0,
       "total": 62,
       "items": [
         {
@@ -623,7 +633,7 @@
         {
           "key": "exercise/space-invaders-solve-basic",
           "topic_id": null,
-          "status": "disapproved"
+          "status": "approved"
         },
         {
           "key": "exercise/penguin",
@@ -648,7 +658,7 @@
         {
           "key": "exercise/space-invaders-repeat",
           "topic_id": null,
-          "status": "disapproved"
+          "status": "approved"
         },
         {
           "key": "exercise/traffic-lights",
@@ -794,7 +804,7 @@
       "category_slug": "i18n-fr",
       "approved": 30,
       "disapproved": 0,
-      "total": 34,
+      "total": 43,
       "items": [
         {
           "key": "glossary",
@@ -965,6 +975,51 @@
           "key": "exercise/penguin",
           "topic_id": 1242,
           "status": "approved"
+        },
+        {
+          "key": "exercise/snowman",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/traffic-lights",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-snowman",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-traffic-lights",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/plant-the-flowers",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/structured-house",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -1206,7 +1261,7 @@
       "category_slug": "i18n-hu",
       "approved": 21,
       "disapproved": 0,
-      "total": 30,
+      "total": 31,
       "items": [
         {
           "key": "glossary",
@@ -1357,6 +1412,11 @@
           "key": "exercise/maze-solve-repeat",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-loop",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -1365,7 +1425,7 @@
       "name": "Latin American Spanish",
       "stage": "refining",
       "category_slug": "i18n-es-419",
-      "approved": 15,
+      "approved": 21,
       "disapproved": 0,
       "total": 29,
       "items": [
@@ -1456,8 +1516,8 @@
         },
         {
           "key": "concept/while-loops",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1247,
+          "status": "approved"
         },
         {
           "key": "concept/dictionaries",
@@ -1486,8 +1546,8 @@
         },
         {
           "key": "exercise/bouncer-dress-code",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1249,
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-solve-basic",
@@ -1496,23 +1556,23 @@
         },
         {
           "key": "exercise/maze-solve-walk",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1245,
+          "status": "approved"
         },
         {
           "key": "exercise/fix-wall",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1246,
+          "status": "approved"
         },
         {
           "key": "exercise/snowman-basic",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1248,
+          "status": "approved"
         },
         {
           "key": "exercise/foxy-face",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1250,
+          "status": "approved"
         }
       ]
     },

@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "861d572",
+  "governance_sha": "469aac4",
   "approved": 327,
   "disapproved": 0,
-  "total": 619,
+  "total": 623,
   "languages": [
     {
       "lang": "it",
@@ -483,7 +483,7 @@
       "category_slug": "i18n-uk",
       "approved": 56,
       "disapproved": 0,
-      "total": 62,
+      "total": 66,
       "items": [
         {
           "key": "glossary",
@@ -792,6 +792,26 @@
         },
         {
           "key": "exercise/sprouting-flower",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-nested-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/owners-bouquets",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cityscape-skyscraper",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cityscape-skyline",
           "topic_id": null,
           "status": "pending"
         }

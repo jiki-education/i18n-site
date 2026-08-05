@@ -7,13 +7,13 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/arrays/source.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "77f6a16"
-content_version: "bd920c14aedc"
-published_at: "2026-08-04"
+governance_sha: "a711869"
+content_version: "0dccb3781d6f"
+published_at: "2026-08-05"
 forum_topic_id: 1130
 ---
 
-Has estado usando números, strings y Booleans, la palabra elegante para verdadero y falso, y a estos los llamamos tipos de datos (_data types_ en inglés). Ahora vamos a agregar nuestro primer tipo de dato compuesto (_compound data type_ en inglés).
+Has estado usando números, strings y Booleans, la palabra elegante para verdadero y falso, y a todos estos los llamamos tipos de datos (_data types_ en inglés). Ahora vamos a agregar nuestro primer tipo de dato compuesto (_compound data type_ en inglés).
 
 Es un tipo de dato que puede contener varias cosas, no solo una, y este tipo de dato se llama arreglo (_array_ en inglés).
 

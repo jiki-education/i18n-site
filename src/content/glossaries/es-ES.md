@@ -3,10 +3,10 @@ lang: "es-ES"
 name: "European Spanish"
 family: "es"
 stage: "setup"
-governance_sha: "2b9f5eb"
-content_version: "63e4b591a49c"
-published_at: "2026-08-01"
-term_count: 60
+governance_sha: "672aa33"
+content_version: "eb74e4c94220"
+published_at: "2026-08-05"
+term_count: 61
 category_id: 75
 forum_topic_id: 310
 video_player_forum_topic_id: 751
@@ -38,6 +38,7 @@ file; it has not necessarily gone unagreed, it may simply diverge by locale.
 | English | Spanish | Use (es/en) | Notes |
 |---------|---------|-------------|-------|
 | programming / coding | **programación** | es | Use `programación` consistently. `codificación` exists for the narrow act of writing code but is not natural in the warm register; avoid. |
+| code (what the learner writes) | **código** | es | Always translated, never left as English "code": _tu código_, _el código_, _líneas de código_, _ejecutar el código_. Gender: _el código_, so the contractions apply (_del código_, _al código_). Consistent with _bloque de código_ below. |
 
 ## Localize (use the Spanish term)
 
@@ -80,7 +81,7 @@ These are terms where the Spanish is used in prose, so the "Use (es/en)" column 
 
 | English | Spanish | Use (es/en) | Notes |
 |---------|---------|-------------|-------|
-| feature (platform capability) | funcionalidad | es | Deliberately distinct from _función_ (function) to avoid collision; see `guide.md` § Style notes. Never use _función_ for a product feature. |
+| feature (platform capability) | funcionalidad | es | Deliberately distinct from _función_ (function) to avoid collision. Never use _función_ for a product feature. |
 | scenario | escenario | es | Jiki-specific: a structured variant within an exercise. |
 | curriculum | plan de estudios | es | "currículo" is an accepted alternative; do not mix both in one document. |
 | syllabus | temario | es | The list of topics; distinct from _plan de estudios_ (curriculum). "programa del curso" also natural. |
@@ -97,7 +98,7 @@ Spanish in the gloss column below; with no `<define>`, use the English bare, no 
 | CLI (the concept) | _interfaz de línea de comandos_ | Where the source `<define>`s it, explain CLI as _interfaz de línea de comandos_ (command-line interface). |
 | JavaScript, Python, React | (no gloss) | Product / language names. |
 | Debug, Test | (no gloss) | As keywords / technical tokens. |
-| Code, Bug, Frontend, Backend | (no gloss) | |
+| Bug, Frontend, Backend | (no gloss) | |
 | Variable and function names | (no gloss) | Never translated. |
 | CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. |
 | Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
@@ -225,6 +226,91 @@ paréntesis (`()`)._
 ---
 
 ## Decision log
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout). Logged here for review
+and **not** written to `glossary.md`.
+
+Two direct conflicts are already live in the catalog (chunked fan-out with no glossary row
+to anchor on) and need a decision before a targeted `all`-mode re-run of `modals`:
+
+| English | Conflict | Recommendation |
+|---------|----------|-----------------|
+| challenge | *reto* in 24 keys (challenges, dashboard, concepts, layout, codingExercise) vs *desafío* in 9 `modals` keys | **reto** — two of three workers chose it independently, shorter for nav, names the section. |
+| quiz | *cuestionario* (lesson) vs *test* (dashboard) | Needs a call. |
+
+Other proposed rows, no conflict:
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| dashboard | panel | Agreed by two workers. | medium |
+| Settings | ajustes | Agreed by two workers. | medium |
+| streak | racha | Suggest settling at the `es` family level. | medium |
+| hint | pista | | medium |
+| badge | insignia | | medium |
+| blank (fill-in) | hueco | | medium |
+| upgrade | mejorar (tu plan) | | medium |
+| bonus | extra | | medium |
+| journey | aventura | Vs literal _viaje_. | medium |
+| scrubber | barra de tiempo | No established term. | low |
+| frame | fotograma | | medium |
+| log | registro / registrar | | medium |
+| Deep Dive, Learn to Build, Projects, AI Chat | kept English | Treated as feature names. | medium |
+
+Flags for Aron/product, not glossary rows: tier names may mix languages if `{tier}`
+placeholders inject raw English tier data next to translated copy ("Plan Básico" next to
+"Plan Basic"); "Spotlight" kept English on the assumption it's a feature name (else _modo
+foco_); lesson-status labels are feminine (_Completada_) while challenge/concept statuses
+are masculine (_Completado_) — check no component reuses one key across differently
+gendered nouns; length risks on the fair-use link, the livestreams bullet, and the "Agentic
+Coding" footer link.
+
+### 2026-08-01: Guide pruned to rules only, auto-gloss and quotation defects fixed
+
+**Decided by:** agent, in a guide-pruning pass across all three Spanish files. No term
+rendering changed.
+
+**Auto-gloss instruction removed (authority: `global/voice.md`).** The § Style notes bullet
+on "list" as an informal synonym for "array" told the translator to keep the glossary's
+`array` term "(the English word, glossed once as _matriz_)". `global/voice.md` is explicit
+that a `<define>` in the source is the **only** trigger for a gloss and that auto-glossing is
+forbidden, and `global/translating.md`'s tidy pass lists auto-glosses as removable. `array`
+is an ordinary word, not an acronym, so the separate licence to explain acronyms does not
+apply. The bullet now just says to use the glossary's `array` term and not to introduce
+_lista_; the `array` row in `glossary.md` already says the gloss is _matriz_ **on
+`<define>`**, which is the correct and only home for that instruction.
+
+**Quotation marks** were moved to the family guide and the dangling "do not use the
+Hungarian `„ "` pattern" cross-reference dropped; the new family-level rule and its
+unconfirmed-draft status are recorded in `../es/glossary-notes.md` (2026-08-01).
+
+**Cut from the guide as duplication, not as a decision change:**
+
+- § "European vs Latin American Spanish (distinctiveness)". Four of its five bullets
+  repeated a binding row that already exists: loop → _bucle_ never _ciclo_ and to return →
+  _devolver_ never _retornar_ are family glossary rows; `array` kept English with the
+  _matriz_ gloss and never _arreglo_ is this locale's own `array` row; "informal plural →
+  vosotros" is the § Formality rule. The fifth (ordenador / vídeo / fichero-archivo) has no
+  glossary row and survives as the § Style notes "Spain vs Latin American lexicon" bullet,
+  which the guide's opening now points at.
+- § "Glosses that would teach nothing", moved wholesale to `../es/guide.md` § Term
+  clarification, since es-419 stated the same rule in its own words (see the family notes).
+- § "Audience specifics": the second bullet restated `global/voice.md` § Audience and § Voice
+  and tone; the first (readers in Spain and other European Spanish-speaking communities) is
+  now part of the guide's opening sentence.
+- Sentence case for titles and headings, which is pan-Spanish and now lives in the family
+  guide.
+- The § Grammar bullet on the personal "a" in "llamar **a** una función", which is the
+  `to call (a function)` family glossary row's own instruction.
+- The § Style notes "loanword gender is fixed once" bullet, folded into the § Grammar gender
+  agreement bullet that already listed _el array_ / _los arrays_ / _el string_.
+
+**Proposed glossary delta, not applied** (term mappings kept in `guide.md` so no instruction
+is lost, but which belong in glossary rows once agreed): "computer" → _ordenador_, "video" →
+_vídeo_, "input" → _entrada_.
 
 ### 2026-07-31: Pruned ordinary vocabulary
 

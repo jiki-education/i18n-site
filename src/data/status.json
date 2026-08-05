@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "eb13942",
+  "governance_sha": "0892f06",
   "approved": 246,
   "disapproved": 0,
   "total": 582,
@@ -321,7 +321,7 @@
         },
         {
           "key": "concept/updating-variables",
-          "topic_id": null,
+          "topic_id": 1207,
           "status": "pending"
         },
         {

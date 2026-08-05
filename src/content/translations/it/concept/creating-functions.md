@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/creating-functions/source.md"
 en_md5: "93286a30a373b5604b60b3c109ad00a3"
-governance_sha: "76021ea"
-content_version: "6a0d92a4197f"
-published_at: "2026-08-04"
+governance_sha: "ae16caf"
+content_version: "8b3ef19f3aad"
+published_at: "2026-08-05"
 ---
 
 Finora, hai usato funzioni che sono state create per te, funzioni come `circle`, `rectangle`, `moveRight`, `shoot`. Tutte queste sono funzioni che sono state create e messe sugli scaffali di Jiki.
@@ -46,7 +46,7 @@ E poi il nostro compito sarà racchiudere tutte queste prime cinque righe in una
 
 Per trasformare queste cinque righe in una funzione, queste cinque `move` in una funzione, dobbiamo usare una nuova parola chiave: la parola chiave `function`.
 
-Quando usiamo la parola chiave `function`, dobbiamo fare due cose. Uno, specificare il nome della funzione. In questo caso, è `walk5`. E due, usare le parentesi graffe (`{}`) per racchiudere del codice che dice: «Questo è ciò che devi fare all'interno della funzione». Quindi possiamo aggiungerlo al nostro codice e stiamo dicendo a Jiki di creare una funzione chiamata `walk5` e, quando `walk5` viene usata, deve eseguire queste cinque righe di codice.
+Quando usiamo la parola chiave `function`, dobbiamo fare due cose. Uno, specificare il nome della funzione. In questo caso, è `walk5`. E due, usare le parentesi graffe (`{}`) per racchiudere del codice che dice: «Questo è ciò che devi fare all'interno della funzione». Quindi possiamo aggiungerlo al nostro codice dicendo a Jiki di creare una funzione chiamata `walk5` e, quando `walk5` viene usata, deve eseguire queste cinque righe di codice.
 
 ```javascript
 function walk5() {

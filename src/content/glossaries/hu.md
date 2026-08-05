@@ -2,11 +2,11 @@
 lang: "hu"
 name: "Hungarian"
 family: null
-stage: "refining"
-governance_sha: "6dfb03a"
-content_version: "082e3b5d4f29"
-published_at: "2026-08-04"
-term_count: 86
+stage: "reviewing"
+governance_sha: "f53ad5d"
+content_version: "7fc226b58cd5"
+published_at: "2026-08-05"
+term_count: 88
 category_id: 68
 forum_topic_id: 289
 video_player_forum_topic_id: 759
@@ -49,6 +49,7 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 | course / track | kurzus | hu | Covers both the whole Jiki course (_Ebben a kurzusban_ = "In this course") and a curriculum track. |
 | concept (learning unit) | fogalom | hu | Concept Library = Fogalomtár. Not koncepció. |
 | task (within an exercise) | részfeladat | hu | Distinct from feladat (the exercise itself). |
+| level stdlib (in a function description) | a feladat stdlib-je | hu | Never a szint stdlib-je: szint stays for the learner's progression level (as used in the interpreter catalog), not the exercise. |
 
 ### Values & data types
 
@@ -119,6 +120,12 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 | hue | színárnyalat | hu | Not árnyalat (reserved for "shade of a colour"). |
 | lightness | világosság | hu | Distinct from fényerő (brightness). |
 
+### Exercise world
+
+| English | Hungarian | Use (hu/en) | Notes |
+|---------|-----------|-------------|-------|
+| alien (creature) | űrlény | hu | Not idegen, which means "stranger" (any unknown person), not a being from another planet. Not földön kívüli either; that was a reviewer's first suggestion, superseded once he recalled the corpus already used űrlény. The exercise name _Space Invaders_ and the code identifiers (`isAlienAbove`, `getStartingAliensInRow`) stay English. |
+
 ### App & product UI
 
 | English | Hungarian | Use (hu/en) | Notes |
@@ -179,6 +186,44 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-05: _elegánstalan_ is not a Hungarian word (no glossary row)
+
+**Decided by:** vinetu, a native Hungarian speaker, reviewing the `maze-turn-around` exercise
+(https://forum.jiki.io/t/1218). **Status: settled.**
+
+The Hungarian instructions had coined _elegánstalan_ as the negation of _elegáns_. It does
+not exist: the `-talan/-telen` privative suffix does not attach to _elegáns_, and a Hungarian
+reader sees an invented word rather than a stylistic judgement. The natural phrasing is the
+comparative _kevésbé elegáns_ ("less elegant"), and the sentence reads better recast as a
+rhetorical question, so `Talán egy kicsit elegánstalan megoldásnak érezted, hogy…` became
+`Nem érezted egy kicsit kevésbé elegáns megoldásnak, hogy…`.
+
+No row was added to `glossary.md`. "elegant" is not a recurring Jiki term and _elegáns_ needs
+no mapping decision; the only thing worth remembering is that its negation must be formed
+with _kevésbé_ (or _nem túl elegáns_), never by suffixing. Logged here so a future pass does
+not reinvent the coinage.
+
+### 2026-08-05: alien (creature) → űrlény
+
+**Decided by:** vinetu, a native Hungarian speaker, reviewing the `while-loops` concept page
+(https://forum.jiki.io/t/1216, posts 2 and 3). **Status: settled.**
+
+The page rendered the code comment "shoot the alien" as _lövés az idegenre_. vinetu flagged
+it as probably a glossary matter rather than a one-page fix: _idegen_ is "stranger", any
+person from the street you do not know, not a being from another planet. His first
+suggestion was _földön kívüli_, which was applied to `while-loops/hu.md` as a new glossary
+row.
+
+Before sweeping the rest of the corpus we checked and found the already-published Hungarian
+Space Invaders content does not use _idegen_ at all: it uses a third word, _űrlény_ ("space
+creature"), in five files (`space-invaders-solve-basic` instructions and catalog, the
+`space-invaders` category catalog, and the `creating-functions-with-inputs` /
+`creating-functions-with-return-values` concept pages). We asked vinetu which of _földön
+kívüli_ or _űrlény_ should be the standard. In post 3541 he said he'd forgotten about
+_űrlény_, called it "perfect", and said to use it everywhere. The glossary row and every
+occurrence of _földön kívüli_ have been swept to _űrlény_ accordingly; this is now a settled
+native-speaker decision and not to be reopened by a translation pass.
 
 ### 2026-08-04: The four interpreter-catalog drafts settled by a native speaker
 

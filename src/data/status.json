@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "7c6547d",
+  "governance_sha": "9b82103",
   "approved": 246,
   "disapproved": 0,
   "total": 582,
@@ -331,7 +331,7 @@
         },
         {
           "key": "concept/string-templates",
-          "topic_id": null,
+          "topic_id": 1210,
           "status": "pending"
         },
         {
@@ -341,7 +341,7 @@
         },
         {
           "key": "exercise/space-invaders-nested-repeat",
-          "topic_id": null,
+          "topic_id": 1211,
           "status": "pending"
         },
         {

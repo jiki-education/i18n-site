@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "e463f56",
+  "governance_sha": "ae16caf",
   "approved": 248,
   "disapproved": 0,
   "total": 582,
@@ -296,7 +296,7 @@
         },
         {
           "key": "concept/creating-functions",
-          "topic_id": null,
+          "topic_id": 1200,
           "status": "pending"
         },
         {
@@ -311,7 +311,7 @@
         },
         {
           "key": "concept/function-composition",
-          "topic_id": null,
+          "topic_id": 1201,
           "status": "pending"
         },
         {

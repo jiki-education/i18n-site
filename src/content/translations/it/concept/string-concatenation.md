@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/string-concatenation/source.md"
 en_md5: "0e6c7a941a1fb1161445da27a4d7e818"
-governance_sha: "76021ea"
-content_version: "258eba71ab43"
-published_at: "2026-08-04"
+governance_sha: "5aafdec"
+content_version: "ef085a8ff4f1"
+published_at: "2026-08-05"
 ---
 
 Sai già cosa sono le stringhe. Sono pezzi di carta con sopra del testo.
@@ -18,7 +18,7 @@ Finora, ogni stringa che hai usato l'hai digitata direttamente. Cosa succede se 
 
 Ci sono due modi.
 
-Il primo si chiama concatenazione di stringhe, un modo un po' altisonante e leggermente confuso per dire «aggiungere due stringhe tra loro».
+Il primo si chiama concatenazione di stringhe, un modo un po' altisonante e leggermente confuso per dire di unire due stringhe tra loro.
 
 Immagina di avere due parole, `"hello"` (ciao) e `"world"` (mondo), e di voler creare una stringa che contenga `"hello world"`.
 

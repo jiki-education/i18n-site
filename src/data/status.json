@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "ae16caf",
-  "approved": 248,
+  "governance_sha": "8d4e605",
+  "approved": 246,
   "disapproved": 0,
   "total": 582,
   "languages": [
@@ -391,7 +391,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 36,
+      "approved": 34,
       "disapproved": 0,
       "total": 62,
       "items": [
@@ -483,7 +483,7 @@
         {
           "key": "concept/dictionaries",
           "topic_id": 880,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/else",
@@ -513,7 +513,7 @@
         {
           "key": "exercise/bouncer-dress-code",
           "topic_id": 880,
-          "status": "approved"
+          "status": "pending"
         },
         {
           "key": "exercise/maze-solve-walk",
@@ -538,7 +538,7 @@
         {
           "key": "exercise/fix-wall",
           "topic_id": null,
-          "status": "approved"
+          "status": "pending"
         },
         {
           "key": "exercise/space-invaders-solve-basic",
@@ -588,7 +588,7 @@
         {
           "key": "exercise/structured-house",
           "topic_id": null,
-          "status": "approved"
+          "status": "pending"
         },
         {
           "key": "exercise/relational-snowman",
@@ -1366,7 +1366,7 @@
         },
         {
           "key": "exercise/space-invaders-solve-basic",
-          "topic_id": null,
+          "topic_id": 1202,
           "status": "pending"
         },
         {

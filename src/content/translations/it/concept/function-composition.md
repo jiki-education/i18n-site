@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/function-composition/source.md"
 en_md5: "7df3110b30c0f279d7f04d3b4e331a99"
-governance_sha: "ae16caf"
-content_version: "1eac0b2dded3"
+governance_sha: "2d9f7c0"
+content_version: "d4c70a222bd5"
 published_at: "2026-08-05"
+forum_topic_id: 1201
 ---
 
 Finora, quando hai scritto delle funzioni, ognuna se l'è cavata da sola e conteneva tutta la logica necessaria per funzionare.
@@ -75,4 +76,4 @@ Quindi se provi a fare riferimento alla variabile `count` (contatore) dall'inter
 
 In JavaScript possiamo creare variabili in cima, sopra ogni altra cosa, condivise tra le funzioni, ma ti consiglio di non farlo a meno che non ci sia una buona ragione.
 
-Più mantieni ogni funzione indipendente, e la parola tecnica per questo è pura, funzioni pure, più il tuo codice sarà pulito e meno bug creerai.
+Più mantieni ogni funzione indipendente, e la parola tecnica per questo è pura, funzioni pure, più il tuo codice sarà pulito e meno bug creerai ed avrai.

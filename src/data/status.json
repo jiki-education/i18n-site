@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "8d4e605",
+  "governance_sha": "2d9f7c0",
   "approved": 246,
   "disapproved": 0,
   "total": 582,
@@ -1205,22 +1205,22 @@
         },
         {
           "key": "exercise/luhn",
-          "topic_id": null,
+          "topic_id": 1219,
           "status": "pending"
         },
         {
           "key": "exercise/digital-root",
-          "topic_id": null,
+          "topic_id": 1221,
           "status": "pending"
         },
         {
           "key": "exercise/word-count",
-          "topic_id": null,
+          "topic_id": 1222,
           "status": "pending"
         },
         {
           "key": "exercise/bouncer-dress-code",
-          "topic_id": null,
+          "topic_id": 1227,
           "status": "pending"
         },
         {
@@ -1603,7 +1603,7 @@
         },
         {
           "key": "concept/while-loops",
-          "topic_id": null,
+          "topic_id": 1226,
           "status": "pending"
         },
         {

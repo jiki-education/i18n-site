@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "469aac4",
+  "governance_sha": "4d03c45",
   "approved": 327,
   "disapproved": 0,
-  "total": 623,
+  "total": 633,
   "languages": [
     {
       "lang": "it",
@@ -824,7 +824,7 @@
       "category_slug": "i18n-fr",
       "approved": 30,
       "disapproved": 0,
-      "total": 43,
+      "total": 53,
       "items": [
         {
           "key": "glossary",
@@ -1038,6 +1038,56 @@
         },
         {
           "key": "exercise/structured-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/finish-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/gold-panning",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sunset",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/dnd-roll",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sprouting-flower",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/random-salad",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/owners-bouquets",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow-splodges",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-scenarios",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stock-market",
           "topic_id": null,
           "status": "pending"
         }

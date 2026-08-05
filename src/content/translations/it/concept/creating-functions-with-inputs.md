@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/creating-functions-with-inputs/source.md"
 en_md5: "f70d737888fcbda3306196ff069eb2f1"
-governance_sha: "ff1663d"
-content_version: "4641f0e8fd79"
+governance_sha: "0a69d35"
+content_version: "6ab4abd16732"
 published_at: "2026-08-05"
+forum_topic_id: 1215
 ---
 
 Le funzioni che hai creato finora fanno sempre esattamente la stessa cosa ogni volta. `turnAround` (girati) fa sempre girare a sinistra due volte. `shootIfAlienAbove` (spara se l'alieno è sopra) controlla e spara sempre.
@@ -20,7 +21,7 @@ Ora aggiungeremo anche alle tue funzioni le fessure di input.
 
 Per farlo, devi sapere due cose. La prima è come appare, cosa devi scrivere, e la seconda è cosa succede davvero.
 
-La prima parte è piuttosto semplice. Devi solo aggiungere delle normali parentesi tonde e poi i nomi degli input che vuoi.
+La prima parte è piuttosto semplice. Devi solo aggiungere delle normali parentesi tonde (`()`) e poi i nomi degli input che vuoi.
 
 Immagina di creare una funzione che deve sparare molte volte. Chiamiamola `shootMany` (spara più volte).
 

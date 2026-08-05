@@ -7,18 +7,18 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/while-loops/source.md"
 en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "fe54e35"
-content_version: "de6cbfd6fa02"
-published_at: "2026-08-04"
+governance_sha: "0f3b51b"
+content_version: "ec6f350eadf5"
+published_at: "2026-08-05"
 ---
 
 A következő ciklus, amit meg kell ismerned, a `while` (amíg) ciklus.
 
-Ez azt mondja: »Amíg egy feltétel teljesül, futtasd a ciklust.« Tehát lehet egy szabály, ami azt mondja, hogy a Space Invaders-ben csak ötször lőhetsz. Ezért lenne egy ciklusunk, ami azt mondja, nos, amíg a lövések száma kisebb, mint öt, futtassunk egy ciklust, ami lehetővé teszi, hogy valaki játsszon.
+Ez azt mondja: »Amíg egy feltétel teljesül, futtasd a ciklust.« Például létezhet egy szabály, ami azt mondja, hogy a Space Invaders-ben csak ötször lőhetsz. Ekkor lenne egy ciklusunk, ami azt mondja, nos, amíg a lövések száma kisebb, mint öt, futtassuk a ciklust, ami lehetővé teszi, hogy valaki játsszon.
 
 ```javascript
 while (numShots < 5) {
-  // lövés az idegenre
+  // lövés a földön kívülire
   numShots++
 }
 ```

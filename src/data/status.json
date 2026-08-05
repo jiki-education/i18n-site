@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "3d063a1",
+  "governance_sha": "eb13942",
   "approved": 246,
   "disapproved": 0,
   "total": 582,
@@ -316,7 +316,7 @@
         },
         {
           "key": "concept/arithmetic",
-          "topic_id": null,
+          "topic_id": 1206,
           "status": "pending"
         },
         {

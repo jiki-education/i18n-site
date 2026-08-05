@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "672aa33",
+  "governance_sha": "e463f56",
   "approved": 248,
   "disapproved": 0,
   "total": 582,
@@ -1341,7 +1341,7 @@
         },
         {
           "key": "exercise/maze-turn-around",
-          "topic_id": null,
+          "topic_id": 1198,
           "status": "pending"
         },
         {

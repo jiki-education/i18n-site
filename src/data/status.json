@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "9b82103",
+  "governance_sha": "bbf33c0",
   "approved": 246,
   "disapproved": 0,
   "total": 582,
@@ -351,7 +351,7 @@
         },
         {
           "key": "exercise/space-invaders-conditional",
-          "topic_id": null,
+          "topic_id": 1212,
           "status": "pending"
         },
         {
@@ -361,7 +361,7 @@
         },
         {
           "key": "exercise/golf-shot-checker",
-          "topic_id": null,
+          "topic_id": 1213,
           "status": "pending"
         },
         {

@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "134a769",
+  "governance_sha": "0f3b51b",
   "approved": 246,
   "disapproved": 0,
   "total": 582,
@@ -1225,7 +1225,7 @@
         },
         {
           "key": "concept/while-loops",
-          "topic_id": null,
+          "topic_id": 1216,
           "status": "pending"
         },
         {

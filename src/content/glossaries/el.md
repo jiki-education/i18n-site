@@ -3,9 +3,9 @@ lang: "el"
 name: "Greek"
 family: null
 stage: "reviewing"
-governance_sha: "f39b44f"
-content_version: "273159e85f2f"
-published_at: "2026-08-04"
+governance_sha: "7c6547d"
+content_version: "9e2e56861ed9"
+published_at: "2026-08-05"
 term_count: 66
 category_id: 265
 forum_topic_id: 497
@@ -152,6 +152,64 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-05: Weekday and month names ARE capitalized (reverses a wrong guide rule)
+
+**Decided by:** astyanax (native speaker).
+**Raised by:** the Stage 2 batch 2 pass, flagged as a "possible guide bug" in the
+2026-08-02 entry below; put to astyanax on the pinned glossary thread,
+https://forum.jiki.io/t/497.
+**Status:** native-speaker-confirmed, settled. `guide.md` corrected.
+**Terms affected:** none (guide-level orthography rule, not a term row).
+
+`guide.md` said "Days, months, and language names are not capitalized in Greek prose". For
+days, months and holidays that was simply wrong. Astyanax confirmed the capitalized forms
+(Δευτέρα, Σάββατο) and cited Greek Wikipedia's own style manual: "Μήνες, ημέρες και αργίες
+ξεκινούν με κεφαλαίο γράμμα" (months, days and holidays start with a capital letter). The
+guide now requires capitalization for days, months and holidays, and keeps the (correct)
+lowercase rule for language names as a separate bullet.
+
+**Follow-up sweep needed, not done here.** Greek content translated while the wrong rule was
+in force will contain lowercase weekdays. The known case is `weather-symbols`, whose worker
+followed the guide as written and produced δευτέρα/σάββατο; Stage 2c and anything else
+naming days or months needs auditing for the same pattern. Because the English source is
+unchanged, this is invisible to the `en_md5` staleness check, so any re-run must use mode
+`all`. Flagged for the orchestrator.
+
+### 2026-08-05: Straight double quotes confirmed as the house style
+
+**Decided by:** astyanax (native speaker), confirming an agent's editorial call.
+**Raised on:** the pinned glossary thread, https://forum.jiki.io/t/497.
+**Status:** native-speaker-confirmed, settled. `guide.md` already stated the rule; no edit
+needed.
+**Terms affected:** none (guide-level punctuation rule).
+
+The guide's straight-quotes rule was a deliberate divergence from Greek print convention
+(which uses guillemets, «»), taken by an agent and logged in the 2026-08-01 entry below as
+"not native-speaker-confirmed; worth a forum question". It now is confirmed. Astyanax's
+rationale: straight quotes are "easier to type... we can use them properly when defining
+strings. When writing on paper, we are indeed supposed to write guillemets, but for everyday
+uses nobody would bat an eye." The extra argument he adds, that plain quotes match how string
+literals are written in code, is the one that matters most for this curriculum, where quoted
+prose sits alongside quoted code on the same page.
+
+The guide's existing carve-out is unaffected: inside an HTML attribute already delimited by
+double quotes (e.g. `alt="..."`), guillemets are still used, because a literal `"` there
+would close the attribute early.
+
+### 2026-08-05: "throw an error" stays "πετάει" as the default rendering
+
+**Decided by:** astyanax (native speaker), confirming an existing editorial default.
+**Raised on:** the pinned glossary thread, https://forum.jiki.io/t/497.
+**Status:** confirmed, settled. No glossary change: the existing row already reads this way.
+**Terms affected:** `to throw / raise an error` (unchanged).
+
+The 2026-07-31 entry below records astyanax offering _πετάει_ ("throws") and _αναφέρει_
+("reports") without ranking them, and an agent picking _πετάει_ as the primary rendering with
+_αναφέρει_ kept for sources that themselves say "reports". That was the open question left in
+that entry. Asked directly, astyanax confirmed it: "Your choice looks sensible to me, let's
+keep it unless somebody else raises a concern." The default now has his backing rather than
+being an unreviewed editorial call.
 
 ### 2026-08-04: "hardcode" is "καρφωτή τιμή"
 

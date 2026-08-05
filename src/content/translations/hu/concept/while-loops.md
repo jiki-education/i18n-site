@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/while-loops/source.md"
 en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "0f3b51b"
-content_version: "ec6f350eadf5"
+governance_sha: "36f01d3"
+content_version: "c38c0205bbff"
 published_at: "2026-08-05"
+forum_topic_id: 1216
 ---
 
 A következő ciklus, amit meg kell ismerned, a `while` (amíg) ciklus.
@@ -18,7 +19,7 @@ Ez azt mondja: »Amíg egy feltétel teljesül, futtasd a ciklust.« Például l
 
 ```javascript
 while (numShots < 5) {
-  // lövés a földön kívülire
+  // lövés az űrlényre
   numShots++
 }
 ```

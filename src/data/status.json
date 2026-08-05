@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "4d03c45",
-  "approved": 327,
+  "governance_sha": "efae104",
+  "approved": 328,
   "disapproved": 0,
   "total": 633,
   "languages": [
@@ -1098,7 +1098,7 @@
       "name": "Latin American Spanish",
       "stage": "reviewing",
       "category_slug": "i18n-es-419",
-      "approved": 23,
+      "approved": 24,
       "disapproved": 0,
       "total": 29,
       "items": [
@@ -1209,8 +1209,8 @@
         },
         {
           "key": "exercise/digital-root",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1252,
+          "status": "approved"
         },
         {
           "key": "exercise/word-count",

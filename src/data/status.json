@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-05",
-  "governance_sha": "7425da1",
+  "governance_sha": "7ea5ab7",
   "approved": 246,
   "disapproved": 0,
   "total": 582,
@@ -1014,7 +1014,7 @@
         },
         {
           "key": "exercise/digital-clock",
-          "topic_id": null,
+          "topic_id": 1193,
           "status": "pending"
         },
         {

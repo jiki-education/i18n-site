@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "528b17a",
-  "approved": 333,
+  "governance_sha": "97ec466",
+  "approved": 334,
   "disapproved": 1,
   "total": 633,
   "languages": [
@@ -481,7 +481,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 57,
+      "approved": 58,
       "disapproved": 0,
       "total": 66,
       "items": [
@@ -782,8 +782,8 @@
         },
         {
           "key": "exercise/random-salad",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 880,
+          "status": "approved"
         },
         {
           "key": "exercise/stock-market",

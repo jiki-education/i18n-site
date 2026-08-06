@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "81fc354",
+  "governance_sha": "15a34cb",
   "approved": 359,
   "disapproved": 1,
-  "total": 1051,
+  "total": 1099,
   "languages": [
     {
       "lang": "it",
@@ -12,7 +12,7 @@
       "category_slug": "i18n-it",
       "approved": 76,
       "disapproved": 0,
-      "total": 119,
+      "total": 121,
       "items": [
         {
           "key": "glossary",
@@ -608,6 +608,16 @@
           "key": "exercise/acronym",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/methodic-pangram",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/nucleotide",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -959,7 +969,7 @@
       "category_slug": "i18n-el",
       "approved": 44,
       "disapproved": 0,
-      "total": 90,
+      "total": 94,
       "items": [
         {
           "key": "glossary",
@@ -1410,6 +1420,26 @@
           "key": "concept/string-indexing",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "concept/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-templates",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/type-conversion",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/updating-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -1696,7 +1726,7 @@
       "category_slug": "i18n-es-419",
       "approved": 24,
       "disapproved": 0,
-      "total": 61,
+      "total": 65,
       "items": [
         {
           "key": "glossary",
@@ -2002,6 +2032,26 @@
           "key": "concept/using-functions-with-return-values",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/penguin",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cloud-rain-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/jumbled-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-loop",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -2012,7 +2062,7 @@
       "category_slug": "i18n-hu",
       "approved": 21,
       "disapproved": 0,
-      "total": 72,
+      "total": 75,
       "items": [
         {
           "key": "glossary",
@@ -2373,6 +2423,21 @@
           "key": "exercise/relational-snowman",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/relational-traffic-lights",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/structured-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/plant-the-flowers",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -2383,7 +2448,7 @@
       "category_slug": "i18n-fa",
       "approved": 15,
       "disapproved": 0,
-      "total": 50,
+      "total": 55,
       "items": [
         {
           "key": "glossary",
@@ -2632,6 +2697,31 @@
         },
         {
           "key": "concept/scope",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-concatenation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-indexing",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-templates",
           "topic_id": null,
           "status": "pending"
         }
@@ -3336,7 +3426,7 @@
       "category_slug": "i18n-ja",
       "approved": 4,
       "disapproved": 0,
-      "total": 108,
+      "total": 117,
       "items": [
         {
           "key": "glossary",
@@ -3877,6 +3967,51 @@
           "key": "exercise/methodic-pangram",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/caesar-cipher",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-root",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/isbn-verifier",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/luhn",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/run-length-encoding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/guest-list",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/after-party",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/formal-dinner",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -4178,7 +4313,7 @@
       "category_slug": "i18n-hi",
       "approved": 3,
       "disapproved": 0,
-      "total": 36,
+      "total": 40,
       "items": [
         {
           "key": "glossary",
@@ -4359,6 +4494,26 @@
           "key": "concept/properties",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "concept/random",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat-while",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/rgb",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/scenarios",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -4506,7 +4661,7 @@
       "category_slug": "i18n-zh-cn",
       "approved": 2,
       "disapproved": 0,
-      "total": 107,
+      "total": 119,
       "items": [
         {
           "key": "glossary",
@@ -5042,6 +5197,66 @@
           "key": "exercise/lower-pangram",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/pangram",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/acronym",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/nucleotide",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/methodic-pangram",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/isbn-verifier",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/luhn",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/caesar-cipher",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-root",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/run-length-encoding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/guest-list",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/after-party",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -5052,7 +5267,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 39,
+      "total": 44,
       "items": [
         {
           "key": "glossary",
@@ -5246,6 +5461,31 @@
         },
         {
           "key": "concept/string-concatenation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-indexing",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-templates",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/type-conversion",
           "topic_id": null,
           "status": "pending"
         }

@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "17d20c0",
+  "governance_sha": "7b59d37",
   "approved": 359,
   "disapproved": 1,
-  "total": 1111,
+  "total": 1116,
   "languages": [
     {
       "lang": "it",
@@ -979,7 +979,7 @@
       "category_slug": "i18n-el",
       "approved": 44,
       "disapproved": 0,
-      "total": 95,
+      "total": 96,
       "items": [
         {
           "key": "glossary",
@@ -1455,6 +1455,11 @@
           "key": "concept/updating-variables",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -1741,7 +1746,7 @@
       "category_slug": "i18n-es-419",
       "approved": 24,
       "disapproved": 0,
-      "total": 67,
+      "total": 68,
       "items": [
         {
           "key": "glossary",
@@ -2077,6 +2082,11 @@
           "key": "exercise/space-invaders-repeat",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/snowman",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -2087,7 +2097,7 @@
       "category_slug": "i18n-hu",
       "approved": 21,
       "disapproved": 0,
-      "total": 77,
+      "total": 78,
       "items": [
         {
           "key": "glossary",
@@ -2471,6 +2481,11 @@
         },
         {
           "key": "exercise/finish-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/dnd-roll",
           "topic_id": null,
           "status": "pending"
         }
@@ -4353,7 +4368,7 @@
       "category_slug": "i18n-hi",
       "approved": 3,
       "disapproved": 0,
-      "total": 41,
+      "total": 42,
       "items": [
         {
           "key": "glossary",
@@ -4557,6 +4572,11 @@
         },
         {
           "key": "concept/scope",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/state",
           "topic_id": null,
           "status": "pending"
         }
@@ -5317,7 +5337,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 46,
+      "total": 47,
       "items": [
         {
           "key": "glossary",
@@ -5546,6 +5566,11 @@
         },
         {
           "key": "concept/updating-variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-inputs",
           "topic_id": null,
           "status": "pending"
         }

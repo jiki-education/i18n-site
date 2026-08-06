@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "7b59d37",
+  "governance_sha": "cbed6c7",
   "approved": 359,
   "disapproved": 1,
-  "total": 1116,
+  "total": 1118,
   "languages": [
     {
       "lang": "it",
@@ -12,7 +12,7 @@
       "category_slug": "i18n-it",
       "approved": 76,
       "disapproved": 0,
-      "total": 123,
+      "total": 124,
       "items": [
         {
           "key": "glossary",
@@ -626,6 +626,11 @@
         },
         {
           "key": "exercise/isbn-verifier",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/run-length-encoding",
           "topic_id": null,
           "status": "pending"
         }
@@ -5337,7 +5342,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 47,
+      "total": 48,
       "items": [
         {
           "key": "glossary",
@@ -5571,6 +5576,11 @@
         },
         {
           "key": "concept/using-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-return-values",
           "topic_id": null,
           "status": "pending"
         }

@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "90a6ed3",
+  "governance_sha": "17d20c0",
   "approved": 359,
   "disapproved": 1,
-  "total": 1102,
+  "total": 1111,
   "languages": [
     {
       "lang": "it",
@@ -12,7 +12,7 @@
       "category_slug": "i18n-it",
       "approved": 76,
       "disapproved": 0,
-      "total": 122,
+      "total": 123,
       "items": [
         {
           "key": "glossary",
@@ -623,6 +623,11 @@
           "key": "exercise/caesar-cipher",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/isbn-verifier",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -974,7 +979,7 @@
       "category_slug": "i18n-el",
       "approved": 44,
       "disapproved": 0,
-      "total": 94,
+      "total": 95,
       "items": [
         {
           "key": "glossary",
@@ -1445,6 +1450,11 @@
           "key": "concept/updating-dictionaries",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "concept/updating-variables",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -1731,7 +1741,7 @@
       "category_slug": "i18n-es-419",
       "approved": 24,
       "disapproved": 0,
-      "total": 65,
+      "total": 67,
       "items": [
         {
           "key": "glossary",
@@ -2057,6 +2067,16 @@
           "key": "exercise/golf-rolling-ball-loop",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-repeat",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -2067,7 +2087,7 @@
       "category_slug": "i18n-hu",
       "approved": 21,
       "disapproved": 0,
-      "total": 76,
+      "total": 77,
       "items": [
         {
           "key": "glossary",
@@ -2448,6 +2468,11 @@
           "key": "exercise/golf-rolling-ball-state",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/finish-wall",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -2458,7 +2483,7 @@
       "category_slug": "i18n-fa",
       "approved": 15,
       "disapproved": 0,
-      "total": 55,
+      "total": 56,
       "items": [
         {
           "key": "glossary",
@@ -2732,6 +2757,11 @@
         },
         {
           "key": "concept/string-templates",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/type-conversion",
           "topic_id": null,
           "status": "pending"
         }
@@ -4323,7 +4353,7 @@
       "category_slug": "i18n-hi",
       "approved": 3,
       "disapproved": 0,
-      "total": 40,
+      "total": 41,
       "items": [
         {
           "key": "glossary",
@@ -4524,6 +4554,11 @@
           "key": "concept/scenarios",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "concept/scope",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -4671,7 +4706,7 @@
       "category_slug": "i18n-zh-cn",
       "approved": 2,
       "disapproved": 0,
-      "total": 119,
+      "total": 120,
       "items": [
         {
           "key": "glossary",
@@ -5267,6 +5302,11 @@
           "key": "exercise/after-party",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/formal-dinner",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -5277,7 +5317,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 45,
+      "total": 46,
       "items": [
         {
           "key": "glossary",
@@ -5501,6 +5541,11 @@
         },
         {
           "key": "concept/updating-dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/updating-variables",
           "topic_id": null,
           "status": "pending"
         }

@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "91332e4",
+  "governance_sha": "0eb6ba3",
   "approved": 359,
   "disapproved": 1,
-  "total": 1215,
+  "total": 1218,
   "languages": [
     {
       "lang": "it",
@@ -1766,7 +1766,7 @@
       "category_slug": "i18n-es-419",
       "approved": 24,
       "disapproved": 0,
-      "total": 70,
+      "total": 71,
       "items": [
         {
           "key": "glossary",
@@ -2115,6 +2115,11 @@
         },
         {
           "key": "exercise/relational-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-snowman",
           "topic_id": null,
           "status": "pending"
         }
@@ -4823,7 +4828,7 @@
       "category_slug": "i18n-hi",
       "approved": 3,
       "disapproved": 0,
-      "total": 45,
+      "total": 46,
       "items": [
         {
           "key": "glossary",
@@ -5047,6 +5052,11 @@
         },
         {
           "key": "concept/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-templates",
           "topic_id": null,
           "status": "pending"
         }
@@ -6434,11 +6444,16 @@
       "category_slug": "i18n-th",
       "approved": 0,
       "disapproved": 0,
-      "total": 1,
+      "total": 2,
       "items": [
         {
           "key": "glossary",
           "topic_id": 1049,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": null,
           "status": "pending"
         }
       ]

@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "f98fa71",
+  "governance_sha": "b065784",
   "approved": 359,
   "disapproved": 1,
-  "total": 1499,
+  "total": 1516,
   "languages": [
     {
       "lang": "it",
@@ -1931,7 +1931,7 @@
       "category_slug": "i18n-es-419",
       "approved": 24,
       "disapproved": 0,
-      "total": 115,
+      "total": 121,
       "items": [
         {
           "key": "glossary",
@@ -2505,6 +2505,36 @@
         },
         {
           "key": "exercise/nucleotide",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/caesar-cipher",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/isbn-verifier",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/run-length-encoding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/guest-list",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/after-party",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/formal-dinner",
           "topic_id": null,
           "status": "pending"
         }
@@ -3328,7 +3358,7 @@
       "category_slug": "i18n-fa",
       "approved": 15,
       "disapproved": 0,
-      "total": 96,
+      "total": 99,
       "items": [
         {
           "key": "glossary",
@@ -3807,6 +3837,21 @@
         },
         {
           "key": "exercise/build-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/checkerboard",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/scroll-and-shoot",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow-ball",
           "topic_id": null,
           "status": "pending"
         }
@@ -5893,7 +5938,7 @@
       "category_slug": "i18n-hi",
       "approved": 3,
       "disapproved": 0,
-      "total": 76,
+      "total": 80,
       "items": [
         {
           "key": "glossary",
@@ -6272,6 +6317,26 @@
         },
         {
           "key": "exercise/rainbow-splodges",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stock-market",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-scenarios",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/owners-bouquets",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cityscape-skyscraper",
           "topic_id": null,
           "status": "pending"
         }
@@ -7032,7 +7097,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 87,
+      "total": 91,
       "items": [
         {
           "key": "glossary",
@@ -7466,6 +7531,26 @@
         },
         {
           "key": "exercise/maze-automated-solve",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/checkerboard",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sunset",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stock-market",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow-ball",
           "topic_id": null,
           "status": "pending"
         }

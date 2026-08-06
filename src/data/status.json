@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "15a34cb",
+  "governance_sha": "90a6ed3",
   "approved": 359,
   "disapproved": 1,
-  "total": 1099,
+  "total": 1102,
   "languages": [
     {
       "lang": "it",
@@ -12,7 +12,7 @@
       "category_slug": "i18n-it",
       "approved": 76,
       "disapproved": 0,
-      "total": 121,
+      "total": 122,
       "items": [
         {
           "key": "glossary",
@@ -616,6 +616,11 @@
         },
         {
           "key": "exercise/nucleotide",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/caesar-cipher",
           "topic_id": null,
           "status": "pending"
         }
@@ -2062,7 +2067,7 @@
       "category_slug": "i18n-hu",
       "approved": 21,
       "disapproved": 0,
-      "total": 75,
+      "total": 76,
       "items": [
         {
           "key": "glossary",
@@ -2436,6 +2441,11 @@
         },
         {
           "key": "exercise/plant-the-flowers",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-state",
           "topic_id": null,
           "status": "pending"
         }
@@ -5267,7 +5277,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 44,
+      "total": 45,
       "items": [
         {
           "key": "glossary",
@@ -5486,6 +5496,11 @@
         },
         {
           "key": "concept/type-conversion",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/updating-dictionaries",
           "topic_id": null,
           "status": "pending"
         }

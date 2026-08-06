@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "ce3a749",
+  "governance_sha": "f98fa71",
   "approved": 359,
   "disapproved": 1,
-  "total": 1481,
+  "total": 1499,
   "languages": [
     {
       "lang": "it",
@@ -1931,7 +1931,7 @@
       "category_slug": "i18n-es-419",
       "approved": 24,
       "disapproved": 0,
-      "total": 110,
+      "total": 115,
       "items": [
         {
           "key": "glossary",
@@ -2480,6 +2480,31 @@
         },
         {
           "key": "exercise/driving-test",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/hamming",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/niche-named-party",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/pangram",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/methodic-pangram",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/nucleotide",
           "topic_id": null,
           "status": "pending"
         }
@@ -3303,7 +3328,7 @@
       "category_slug": "i18n-fa",
       "approved": 15,
       "disapproved": 0,
-      "total": 91,
+      "total": 96,
       "items": [
         {
           "key": "glossary",
@@ -3757,6 +3782,31 @@
         },
         {
           "key": "exercise/bouncer-dress-code",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-shot-checker",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stripey-fabric",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/annalyns-infiltration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-automated-solve",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/build-wall",
           "topic_id": null,
           "status": "pending"
         }
@@ -5843,7 +5893,7 @@
       "category_slug": "i18n-hi",
       "approved": 3,
       "disapproved": 0,
-      "total": 73,
+      "total": 76,
       "items": [
         {
           "key": "glossary",
@@ -6207,6 +6257,21 @@
         },
         {
           "key": "exercise/dnd-roll",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sunset",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sprouting-flower",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow-splodges",
           "topic_id": null,
           "status": "pending"
         }
@@ -6967,7 +7032,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 82,
+      "total": 87,
       "items": [
         {
           "key": "glossary",
@@ -7376,6 +7441,31 @@
         },
         {
           "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/bouncer-dress-code",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-shot-checker",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stripey-fabric",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/annalyns-infiltration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-automated-solve",
           "topic_id": null,
           "status": "pending"
         }

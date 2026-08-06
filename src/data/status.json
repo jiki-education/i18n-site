@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "131ec1f",
-  "approved": 330,
+  "governance_sha": "3973de6",
+  "approved": 331,
   "disapproved": 0,
   "total": 633,
   "languages": [
@@ -822,7 +822,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 30,
+      "approved": 31,
       "disapproved": 0,
       "total": 53,
       "items": [
@@ -948,8 +948,8 @@
         },
         {
           "key": "exercise/fix-wall",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1233,
+          "status": "approved"
         },
         {
           "key": "exercise/cloud-rain-sun",

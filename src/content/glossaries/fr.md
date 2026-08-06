@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "131ec1f"
-content_version: "934bc5960a73"
+governance_sha: "62ebcc4"
+content_version: "8d6b7dcf7fb8"
 published_at: "2026-08-06"
-term_count: 86
+term_count: 88
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -28,7 +28,7 @@ ones to raise on the forum. Why each term was chosen is in the decision log
 | foot-gun | piège involontaire | fr | Use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`. |
 | Solve the Maze (exercise title) | Évade-toi du labyrinthe | fr | Title only, and no exclamation mark. Prose about the maze keeps "faire sortir le personnage du labyrinthe". |
 | Take a Walk (exercise title) | Une petite marche | fr | Unconfirmed draft (agent, 2026-08-03). Title only. |
-| Loopy Maze (exercise title) | Labyrinthe en boucle | fr | Proposed by one native speaker (2026-08-04), not yet confirmed by a second. Title only, no article. |
+| Loopy Maze (exercise title) | Le labyrinthe, version boucles | fr | Settled 2026-08-06 by an owner-authorised ruling after three native speakers did not converge (topic 314). Title only. Do not reopen. The title must not describe the maze itself as looping. |
 | UI button label quoted in prose | the app's own `fr` catalog string | fr | Unconfirmed draft (agent, 2026-08-03). When prose tells the learner to press a button, quote the string the French app actually shows, in guillemets and italics: _« Exécuter le code »_. Never invent a fresh rendering of an English button label. |
 
 ## Localize (use the French term)
@@ -120,6 +120,8 @@ so a term that drifts between two exercises drifts inside one screen.
 | nose / snout (of a snouted animal) | le museau | fr | Confirmed by native speakers (2026-08-04). Gender: _un museau_. The fox and similar snouted animals in the drawing exercises. Never _truffe_, which everyday French attaches to pigs and boars and reads oddly for a fox. Never _la pointe du museau_, which is too heavy for instructions. Applies only to snouted mammals: for birds (the `penguin` exercise) use _le bec_, never _museau_ and never _nez_. |
 | beak (of a bird) | le bec | fr | Confirmed by native speakers (2026-08-05). Gender: _un bec_. The beak-shaped triangle in the `penguin` exercise. Never _le nez_: unlike snouted mammals, where everyday French tolerates _nez_ alongside _museau_, French never says _nez_ of a bird at any register. |
 | penguin | pingouin | fr | Confirmed by native speakers (2026-08-04). Gender: _le pingouin_. The everyday French word, matching the cartoon drawing the exercise uses, not the zoologically stricter _manchot_. |
+| to fill/plug (a hole) | combler | fr | Confirmed by a native speaker (2026-08-06), replacing the earlier unconfirmed _boucher_. Past participle _comblé_ agrees with its noun ("le trou... comblé"). |
+| to cover (a hole with a shape) | recouvrir | fr | Confirmed by a native speaker (2026-08-06), replacing the earlier unconfirmed _couvrir_ in this context. |
 
 ## Keep in English
 
@@ -178,6 +180,89 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-06: "Loopy Maze" exercise title settled → `Le labyrinthe, version boucles`
+
+**Decided by:** an owner-authorised ruling (Jeremy explicitly asked for a final call on this
+one thread), after three native speakers on forum topic 314
+(https://forum.jiki.io/t/314) had gone several rounds without converging. **Status:**
+settled, not to be reopened by a translation pass.
+**Terms affected:** the `Loopy Maze (exercise title)` row.
+**Files affected:** `glossary.md` (Core decisions), `exercise/maze-solve-repeat` reviewer
+notes, and the `fr` title of the `maze-solve-repeat` instructions.
+
+Six candidates were on the table: _Labyrinthe en boucle_ (resu-xunil, the provisional pick),
+_Labyrinthe avec boucle(s)_ and _Labyrinthe par boucle(s)_ (williamapc), _Bouclez le
+labyrinthe_ and _Labyrinthe à boucler_ (resu-xunil), plus _Le labyrinthe des boucles_ (the
+original agent draft) and mirina's _Tournoyez à travers le labyrinthe_ / _Tournez pour
+traverser le labyrinthe_.
+
+**The fact that unblocked it.** The thread had accepted resu-xunil's reading of the English
+(post 51): that _Loopy Maze_ means a maze whose paths are full of loops, dead ends and closed
+circuits. That is a fair reading of the English words, but it is not this exercise. The maze
+in `scenarios.ts` is a single winding corridor with no loops and no dead ends, and the
+English description is "Refactor a maze solution to use loops instead of repeated code": the
+learner is given a working 40-odd-line solution and rewrites it with `repeat` down to 22
+lines. So the loops belong to the *solution*, not to the maze, and the structural reading the
+thread had settled on would have enshrined a misdescription of the exercise.
+
+**Why none of the six was taken.** Every _<noun> + modifier_ candidate attaches _boucle_ to
+_labyrinthe_, which is exactly the ambiguity the thread could not resolve: _en boucle_ and
+_avec boucles_ both read most naturally as the maze looping (williamapc's objection to the
+first, resu-xunil's to the second), _par boucle_ does not mean anything to a native ear
+(resu-xunil), _le labyrinthe des boucles_ is the heavy genitive already rejected, and
+_bouclez le labyrinthe_ / _à boucler_ invite the "cordon off the maze" reading mirina
+described. mirina's _Tournoyez_ options are unambiguous but drop the link to `repeat`
+entirely.
+
+**Why _Le labyrinthe, version boucles_.** The apposition with _version_ is an ordinary, live
+French construction (_le match, version 2026_), so nothing about it is invented or strained.
+It attaches the loops to *this rendering of the exercise* rather than to the maze, which kills
+the ambiguity outright instead of arbitrating it. And it is literally true of the exercise's
+place in the curriculum: `maze-solve-basic` is the maze, and `maze-solve-repeat` is the same
+maze done again with loops. It stays a noun phrase, as `guide.md` requires for an English
+noun-phrase title, and it keeps the light tone of _Loopy_.
+
+### 2026-08-06: Translation engine confirmed as `fable`
+
+**Decided by:** williamapc, a native speaker, on the "Alternative translation model"
+comparison thread (https://forum.jiki.io/t/924). **Status:** settled.
+**Terms affected:** none (engine choice, not a glossary or guide change).
+**Files affected:** `tracking.json` (`translation_engine`).
+
+Jeremy posted an alternative-model rendering of a French page alongside the published one
+and asked which read better. williamapc answered "I much prefer the original version", and
+the thread was closed with "we'll stay on the original for French".
+
+This is a **confirmation of the existing default, not a switch**: French was already running
+on `fable`, and it continues to. What changed is that the choice is now native-speaker-backed
+and therefore recorded as a `translation_engine` block, which per `orchestrator.md` means a
+human has confirmed that model for this language.
+
+### 2026-08-06: `exercise/fix-wall` — _boucher_/_couvrir_ → _combler_/_recouvrir_
+
+**Decided by:** native speaker resu-xunil, forum topic 1233
+(https://forum.jiki.io/t/1233/1).
+**Terms affected:** new rows `to fill/plug (a hole)` → _combler_ and `to cover (a hole with
+a shape)` → _recouvrir_, replacing the unconfirmed agent drafts _boucher_ and _couvrir_ used
+throughout the exercise.
+**Files affected:** `glossary.md` (Exercise world vocabulary);
+`../front-end/curriculum/src/exercises/fix-wall/instructions/fr.md` and
+`../front-end/curriculum/src/exercises/fix-wall/locales/fr/translation.json` (every
+occurrence of the old verbs swapped and restamped).
+
+resu-xunil flagged that _boucher_/_bouché_ reads wrong for patching a hole with a shape
+(it carries a "stuff up, block" connotation) and that _couvrir_ undersells placing a
+rectangle precisely over a gap; _combler_ and _recouvrir_ are the natural fits. Also fixed
+the `### Réparer le mur` heading, which was still the infinitive: it should have already
+been imperative per the guide's existing "gerund-style heading" rule (the frontmatter
+`title` already correctly said "Répare le mur"), so this was a pre-existing inconsistency
+within the file, not a new rule.
+
+resu-xunil separately asked whether other exercises (naming `Luhn` and `Digital Root` as
+already using the imperative) should be swept for the same infinitive-vs-imperative
+inconsistency. That sweep is out of scope for this single-item fix and was reported back
+rather than actioned here.
 
 ### 2026-08-06: `track (curriculum path)` → _voie_, replacing the unconfirmed _filière_
 

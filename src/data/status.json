@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "9e31abf",
+  "governance_sha": "b7bacf9",
   "approved": 359,
   "disapproved": 1,
-  "total": 1243,
+  "total": 1293,
   "languages": [
     {
       "lang": "it",
@@ -1004,7 +1004,7 @@
       "category_slug": "i18n-el",
       "approved": 44,
       "disapproved": 0,
-      "total": 97,
+      "total": 103,
       "items": [
         {
           "key": "glossary",
@@ -1490,6 +1490,36 @@
           "key": "concept/using-functions-with-return-values",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/checkerboard",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/scroll-and-shoot",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow-ball",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/battle-procedures",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/even-or-odd",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -1776,7 +1806,7 @@
       "category_slug": "i18n-es-419",
       "approved": 24,
       "disapproved": 0,
-      "total": 75,
+      "total": 80,
       "items": [
         {
           "key": "glossary",
@@ -2150,6 +2180,31 @@
         },
         {
           "key": "exercise/golf-rolling-ball-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/finish-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/dnd-roll",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sunset",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sprouting-flower",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/random-salad",
           "topic_id": null,
           "status": "pending"
         }
@@ -2973,7 +3028,7 @@
       "category_slug": "i18n-fa",
       "approved": 15,
       "disapproved": 0,
-      "total": 61,
+      "total": 66,
       "items": [
         {
           "key": "glossary",
@@ -3279,6 +3334,31 @@
           "key": "exercise/penguin",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/cloud-rain-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/jumbled-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-repeat",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -3420,7 +3500,7 @@
       "category_slug": "i18n-sr",
       "approved": 13,
       "disapproved": 0,
-      "total": 34,
+      "total": 60,
       "items": [
         {
           "key": "glossary",
@@ -3589,6 +3669,136 @@
         },
         {
           "key": "concept/creating-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/logical-or",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/hsl",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/logical-and",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/logical-not",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/modulo",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/methods",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/random",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat-while",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/nested-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/scenarios",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/rgb",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/scope",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-templates",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-concatenation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-indexing",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/type-conversion",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/updating-dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/updating-variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/fix-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-walk",
           "topic_id": null,
           "status": "pending"
         }
@@ -4918,7 +5128,7 @@
       "category_slug": "i18n-hi",
       "approved": 3,
       "disapproved": 0,
-      "total": 49,
+      "total": 53,
       "items": [
         {
           "key": "glossary",
@@ -5162,6 +5372,26 @@
         },
         {
           "key": "concept/updating-variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/while-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-solve-basic",
           "topic_id": null,
           "status": "pending"
         }
@@ -5922,7 +6152,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 53,
+      "total": 57,
       "items": [
         {
           "key": "glossary",
@@ -6186,6 +6416,26 @@
         },
         {
           "key": "exercise/snowman-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/penguin",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cloud-rain-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/jumbled-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-loop",
           "topic_id": null,
           "status": "pending"
         }

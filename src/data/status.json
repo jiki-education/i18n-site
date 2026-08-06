@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "05e92cf",
+  "governance_sha": "077c649",
   "approved": 359,
   "disapproved": 1,
-  "total": 1547,
+  "total": 1564,
   "languages": [
     {
       "lang": "it",
@@ -3358,7 +3358,7 @@
       "category_slug": "i18n-fa",
       "approved": 15,
       "disapproved": 0,
-      "total": 109,
+      "total": 115,
       "items": [
         {
           "key": "glossary",
@@ -3902,6 +3902,36 @@
         },
         {
           "key": "exercise/tile-search",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/tile-rack",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sign-price",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/reverse-string",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/driving-test",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/hamming",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/niche-named-party",
           "topic_id": null,
           "status": "pending"
         }
@@ -5988,7 +6018,7 @@
       "category_slug": "i18n-hi",
       "approved": 3,
       "disapproved": 0,
-      "total": 90,
+      "total": 94,
       "items": [
         {
           "key": "glossary",
@@ -6437,6 +6467,26 @@
         },
         {
           "key": "exercise/maze-automated-solve",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/build-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/checkerboard",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/scroll-and-shoot",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow-ball",
           "topic_id": null,
           "status": "pending"
         }
@@ -7197,7 +7247,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 102,
+      "total": 109,
       "items": [
         {
           "key": "glossary",
@@ -7706,6 +7756,41 @@
         },
         {
           "key": "exercise/tile-rack",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sign-price",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/reverse-string",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/driving-test",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/hamming",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/niche-named-party",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/lower-pangram",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/pangram",
           "topic_id": null,
           "status": "pending"
         }

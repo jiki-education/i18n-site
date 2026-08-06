@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "b494d21",
-  "approved": 329,
+  "governance_sha": "131ec1f",
+  "approved": 330,
   "disapproved": 0,
   "total": 633,
   "languages": [
@@ -2271,7 +2271,7 @@
       "name": "Polish",
       "stage": "refining",
       "category_slug": "i18n-pl",
-      "approved": 8,
+      "approved": 9,
       "disapproved": 0,
       "total": 14,
       "items": [
@@ -2307,8 +2307,8 @@
         },
         {
           "key": "concept/variables",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1254,
+          "status": "approved"
         },
         {
           "key": "exercise/rock-paper-scissors",

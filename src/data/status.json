@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "b065784",
+  "governance_sha": "05e92cf",
   "approved": 359,
   "disapproved": 1,
-  "total": 1516,
+  "total": 1547,
   "languages": [
     {
       "lang": "it",
@@ -3358,7 +3358,7 @@
       "category_slug": "i18n-fa",
       "approved": 15,
       "disapproved": 0,
-      "total": 99,
+      "total": 109,
       "items": [
         {
           "key": "glossary",
@@ -3852,6 +3852,56 @@
         },
         {
           "key": "exercise/rainbow-ball",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/battle-procedures",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/even-or-odd",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/triangle",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/leap",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/collatz-conjecture",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/look-around",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/hello",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/raindrops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/three-letter-acronym",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/tile-search",
           "topic_id": null,
           "status": "pending"
         }
@@ -5938,7 +5988,7 @@
       "category_slug": "i18n-hi",
       "approved": 3,
       "disapproved": 0,
-      "total": 80,
+      "total": 90,
       "items": [
         {
           "key": "glossary",
@@ -6337,6 +6387,56 @@
         },
         {
           "key": "exercise/cityscape-skyscraper",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cityscape-skyline",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-nested-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/bouncer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-conditional",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/bouncer-wristbands",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/bouncer-dress-code",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-shot-checker",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stripey-fabric",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/annalyns-infiltration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-automated-solve",
           "topic_id": null,
           "status": "pending"
         }
@@ -7097,7 +7197,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 91,
+      "total": 102,
       "items": [
         {
           "key": "glossary",
@@ -7551,6 +7651,61 @@
         },
         {
           "key": "exercise/rainbow-ball",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/battle-procedures",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/even-or-odd",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/triangle",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/leap",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/collatz-conjecture",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/look-around",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/hello",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/three-letter-acronym",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/tile-rack",
           "topic_id": null,
           "status": "pending"
         }

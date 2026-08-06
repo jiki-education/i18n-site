@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions-with-inputs/source.md"
 en_md5: "0bd82377f2407de5fe030511752d5503"
-governance_sha: "76021ea"
+governance_sha: "c80036b"
 content_version: "d9c2dcbd0a22"
-published_at: "2026-08-04"
+published_at: "2026-08-06"
+forum_topic_id: 1196
 ---
 
 Una delle cose più potenti delle macchine, cioè delle funzioni, è che molte di esse ti permettono di inserire delle informazioni al loro interno e, quando le esegui, cambiano ciò che fanno.

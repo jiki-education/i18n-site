@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/dictionaries/source.md"
 en_md5: "b8a26ad63301df1d00ce08e1e429cf05"
-governance_sha: "21e9951"
+governance_sha: "c80036b"
 content_version: "02cb9cd25ffd"
-published_at: "2026-08-03"
+published_at: "2026-08-06"
 ---
 
 Nizovi su naš prvi izbor kad god imamo listu bilo čega: listu mentora, listu rezultata, listu sastojaka, koju god listu, tu ćeš koristiti niz.

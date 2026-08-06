@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/repeat/source.md"
 en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "18055e8"
+governance_sha: "c80036b"
 content_version: "3774d8c6a5f9"
-published_at: "2026-08-03"
+published_at: "2026-08-06"
 ---
 
 今までは、コードを上から下へ順番に書いてきました。Jikiは指示をひとつずつ、上から下へ順に実行します。

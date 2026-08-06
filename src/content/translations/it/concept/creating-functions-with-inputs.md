@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/creating-functions-with-inputs/source.md"
 en_md5: "f70d737888fcbda3306196ff069eb2f1"
-governance_sha: "0a69d35"
+governance_sha: "c80036b"
 content_version: "6ab4abd16732"
-published_at: "2026-08-05"
+published_at: "2026-08-06"
 forum_topic_id: 1215
 ---
 

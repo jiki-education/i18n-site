@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/while-loops/source.md"
 en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "21e9951"
+governance_sha: "c80036b"
 content_version: "75f9b248126b"
-published_at: "2026-08-03"
+published_at: "2026-08-06"
 ---
 
 Sledeća petlja koju treba da upoznaš je `while` petlja (`while` znači „dok“).

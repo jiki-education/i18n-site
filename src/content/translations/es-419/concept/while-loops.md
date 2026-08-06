@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/while-loops/source.md"
 en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "29b680f"
+governance_sha: "c80036b"
 content_version: "51b471634c7c"
-published_at: "2026-08-03"
+published_at: "2026-08-06"
+forum_topic_id: 1247
 ---
 
 El siguiente bucle que debes conocer es el bucle `while` (mientras).

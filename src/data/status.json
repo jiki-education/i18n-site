@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "b35bbb0",
+  "governance_sha": "f5a48d9",
   "approved": 360,
   "disapproved": 1,
-  "total": 1679,
+  "total": 1659,
   "languages": [
     {
       "lang": "it",
@@ -2867,7 +2867,7 @@
       "category_slug": "i18n-hu",
       "approved": 21,
       "disapproved": 0,
-      "total": 160,
+      "total": 137,
       "items": [
         {
           "key": "glossary",
@@ -3315,17 +3315,7 @@
           "status": "pending"
         },
         {
-          "key": "exercise/alien-detector",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/alphanumeric",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/anagram",
           "topic_id": null,
           "status": "pending"
         },
@@ -3350,11 +3340,6 @@
           "status": "pending"
         },
         {
-          "key": "exercise/boundaried-ball",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/build-wall",
           "topic_id": null,
           "status": "pending"
@@ -3366,11 +3351,6 @@
         },
         {
           "key": "exercise/checkerboard",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/chop-shop",
           "topic_id": null,
           "status": "pending"
         },
@@ -3395,17 +3375,7 @@
           "status": "pending"
         },
         {
-          "key": "exercise/emoji-collector",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/even-or-odd",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/extract-words",
           "topic_id": null,
           "status": "pending"
         },
@@ -3450,32 +3420,12 @@
           "status": "pending"
         },
         {
-          "key": "exercise/llm-response",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/look-around",
           "topic_id": null,
           "status": "pending"
         },
         {
-          "key": "exercise/lookup-time",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/lower-pangram",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/lunchbox",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/matching-socks",
           "topic_id": null,
           "status": "pending"
         },
@@ -3486,11 +3436,6 @@
         },
         {
           "key": "exercise/maze-walk",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/meal-prep",
           "topic_id": null,
           "status": "pending"
         },
@@ -3510,22 +3455,12 @@
           "status": "pending"
         },
         {
-          "key": "exercise/nucleotide-count",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/owners-bouquets",
           "topic_id": null,
           "status": "pending"
         },
         {
           "key": "exercise/pangram",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/protein-translation",
           "topic_id": null,
           "status": "pending"
         },
@@ -3555,17 +3490,7 @@
           "status": "pending"
         },
         {
-          "key": "exercise/rna-transcription",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/run-length-encoding",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/scrabble-score",
           "topic_id": null,
           "status": "pending"
         },
@@ -3575,17 +3500,7 @@
           "status": "pending"
         },
         {
-          "key": "exercise/sieve",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/sign-price",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/smashing-blocks",
           "topic_id": null,
           "status": "pending"
         },
@@ -3600,17 +3515,7 @@
           "status": "pending"
         },
         {
-          "key": "exercise/spotify",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/sprouting-flower",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/stars",
           "topic_id": null,
           "status": "pending"
         },
@@ -3635,11 +3540,6 @@
           "status": "pending"
         },
         {
-          "key": "exercise/tic-tac-toe",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/tile-rack",
           "topic_id": null,
           "status": "pending"
@@ -3651,21 +3551,6 @@
         },
         {
           "key": "exercise/triangle",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/wordle-process-game",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/wordle-process-guess",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/wordle-solver",
           "topic_id": null,
           "status": "pending"
         }
@@ -6408,7 +6293,7 @@
       "category_slug": "i18n-hi",
       "approved": 3,
       "disapproved": 0,
-      "total": 114,
+      "total": 117,
       "items": [
         {
           "key": "glossary",
@@ -6977,6 +6862,21 @@
         },
         {
           "key": "exercise/acronym",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/methodic-pangram",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/nucleotide",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/caesar-cipher",
           "topic_id": null,
           "status": "pending"
         }

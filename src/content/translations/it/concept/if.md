@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/if/source.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "a57f4da"
+governance_sha: "c80036b"
 content_version: "364bd2327dc8"
-published_at: "2026-08-01"
+published_at: "2026-08-06"
+forum_topic_id: 948
 ---
 
 C'è una parola chiave che ci aiuta a dire a Jiki di fare qualcosa solo in certe situazioni. Magari stai scrivendo del codice per sorvegliare l'ingresso di un bar, magari sei un buttafuori, e Jiki deve aprire la porta solo se una persona è vestita in modo adeguato. O magari stai scrivendo del codice in cui tocca a te sventolare la bandiera a scacchi alla fine di una gara, ma Jiki deve sapere che va sventolata solo all'ultimo giro. In situazioni come queste useremo la parola chiave `if`.

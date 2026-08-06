@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/if/source.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "53f3baa"
+governance_sha: "c80036b"
 content_version: "50b5ccd5aa60"
-published_at: "2026-08-03"
+published_at: "2026-08-06"
+forum_topic_id: 1102
 ---
 
 Jikiに指示を出すときに、とあるキーワードを使えば、特定の条件が整っている場合のみ実行してもらうことができます。たとえば、バーの入り口を守るコードを書いているとしましょう。あなたはバウンサーで、Jikiに、きちんとした服装の人だけを入れるようにしてほしいとします。あるいは、あなたがレースの最後にチェッカーフラッグを振る係をしているときに使うコードを書いているとしましょう。この場合は、Jikiに、最終ラップのときだけ旗を振る必要があることを伝えなければなりません。こういうときに使うのが、`if`キーワードです。

@@ -1,0 +1,43 @@
+---
+lang: "ja"
+type: "exercise"
+slug: "maze-automated-solve"
+title: "迷路をプログラムで解く"
+status: "published"
+source_repo: "front-end"
+source_path: "curriculum/src/exercises/maze-automated-solve"
+en_md5: "7ed01d8967f812a99b5171ddcf729ee7"
+governance_sha: "c80036b"
+content_version: "1a871d53dafd"
+published_at: "2026-08-06"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"describers","rows":[{"key":"canMove","english":"Check if the character can move forward","target":"キャラクターが前に進めるかどうかを確認"},{"key":"canTurnLeft","english":"Check if there is a path to the character's left","target":"キャラクターの左側に道があるかどうかを確認"},{"key":"canTurnRight","english":"Check if there is a path to the character's right","target":"キャラクターの右側に道があるかどうかを確認"}]},{"name":"checks","rows":[{"key":"reachedEnd","english":"You didn't reach the end of the maze.","target":"迷路のゴールに到達できませんでした。"},{"key":"extraTurn","english":"You seem to have done an extra unnecessary turn at the end.","target":"最後に不要な回転をしてしまったようです。"}]},{"name":"tasks","rows":[{"key":"straightPath.name","english":"A straight path","target":"まっすぐな道"},{"key":"straightPath.description","english":"Move forward to the end of the maze.","target":"迷路のゴールまでまっすぐ進んでください。"},{"key":"turnLeft.name","english":"Turn left if you can","target":"左に行けるなら左へ"},{"key":"turnLeft.description","english":"If there's a path to the left, take it!","target":"左に道があるなら、そこを進みましょう！"},{"key":"turnRight.name","english":"Turn right if you can't move straight or left","target":"直進も左も行けないなら右へ"},{"key":"turnRight.description","english":"If there's not a path to the left or straight ahead, take the path to the right.","target":"左にも前方にも道がなければ、右の道を進みましょう。"},{"key":"turnAround.name","english":"Turn around if needed","target":"必要なら反転"},{"key":"turnAround.description","english":"Handle dead ends by turning around. If you can't go left, straight, or right, turn around and move forward.","target":"行き止まりでは向きを反転して対処します。左にも前にも右にも進めないときは、反転してから前に進みましょう。"}]},{"name":"scenarios","rows":[{"key":"maze1.name","english":"Guide person to the end of the maze","target":"キャラクターを迷路のゴールまで導く"},{"key":"maze1.description","english":"A straight path down","target":"まっすぐ下に進む迷路"},{"key":"leftTurn.name","english":"A single left turn","target":"一度だけ左に曲がる"},{"key":"leftTurn.description","english":"Navigate a left turn","target":"左折を進みます"},{"key":"rightTurn.name","english":"A single right turn","target":"一度だけ右に曲がる"},{"key":"rightTurn.description","english":"Navigate a right turn","target":"右折を進みます"},{"key":"forks.name","english":"Choose left if you can, otherwise choose right","target":"可能なら左、そうでなければ右"},{"key":"forks.description","english":"A maze with forks that tests left-priority","target":"左優先アルゴリズムをテストする分岐のある迷路"},{"key":"turnAround.name","english":"Turn around at a dead end","target":"行き止まりで反転する"},{"key":"turnAround.description","english":"A maze that requires turning around","target":"反転が必要な迷路"},{"key":"forks2.name","english":"Complex maze with forks and dead ends","target":"分岐と行き止まりのある複雑な迷路"},{"key":"forks2.description","english":"A complex maze testing the full algorithm","target":"完全なアルゴリズムをテストする複雑な迷路"}]},{"name":"hints","rows":[{"key":"solveEachMaze.question","english":"Do I have to solve each maze separately?","target":"迷路をそれぞれ別々に解く必要がありますか？"},{"key":"solveEachMaze.answer","english":"No. You write one algorithm that works for any maze, and the same code runs on every scenario.","target":"いいえ。すべての迷路で動作する1つのアルゴリズムを書き、その同じコードがすべてのシナリオで実行されます。"},{"key":"runEveryStep.question","english":"How do I get my code to run for every step of the maze?","target":"迷路の各ステップでコードを実行するにはどうすればよいですか？"},{"key":"runEveryStep.answer","english":"Wrap your logic in the repeat loop. It runs your code over and over until you reach the end, so you only need to describe what to do for a single step.","target":"ロジックをrepeatループで囲みます。これにより、ゴールに到達するまでコードが繰り返し実行されるので、1ステップで何をするかを記述するだけで済みます。"},{"key":"oneCheckPerStep.question","english":"How do I make sure only one of my checks happens each step?","target":"各ステップでチェックのうち1つだけが実行されるようにするにはどうすればよいですか？"},{"key":"oneCheckPerStep.answer","english":"Use a single `if` / `else if` / `else` chain rather than several separate `if`s. That way exactly one branch runs each time through the loop.","target":"複数の別々の`if`文ではなく、1つの`if` / `else if` / `else`の連鎖を使います。そうすることで、ループの各回でちょうど1つの分岐だけが実行されます。"},{"key":"stuckAfterTurn.question","english":"I turn, but the character gets stuck in the same spot.","target":"方向を変えたのに、キャラクターが同じ場所で立ち往生してしまいます。"},{"key":"stuckAfterTurn.answer","english":"Turning only changes the direction the character faces, it doesn't take a step. After turning, you still need to `move()`.","target":"方向転換はキャラクターの向きを変えるだけで、一歩も進みません。方向を変えた後も、`move()`を呼ぶ必要があります。"},{"key":"turnAroundDeadEnd.question","english":"How do I turn around at a dead end?","target":"行き止まりで反転するにはどうすればよいですか？"},{"key":"turnAroundDeadEnd.answer","english":"There's no turn-around function. Turning the same way twice (two left turns, or two right turns) leaves the character facing back the way it came.","target":"反転用の関数はありません。同じ方向に2回曲がる（左に2回、または右に2回）と、キャラクターは来た方向を向きます。"}]},{"name":"functions","rows":[{"key":"move.description","english":"Moves the character **one step forward** in the current direction. The character will only move if the target position is not blocked by a wall.","target":"現在の向きに**1歩前進**します。移動先の位置が壁で遮られていない場合のみ、キャラクターは移動します。"},{"key":"move.category","english":"Movement","target":"移動"},{"key":"turnLeft.description","english":"Turns the character **90 degrees to the left** (counterclockwise). This changes the direction the character is facing.","target":"キャラクターを**左に90度**（反時計回り）回転させます。これにより、キャラクターの向きが変わります。"},{"key":"turnLeft.category","english":"Movement","target":"移動"},{"key":"turnRight.description","english":"Turns the character **90 degrees to the right** (clockwise). This changes the direction the character is facing.","target":"キャラクターを**右に90度**（時計回り）回転させます。これにより、キャラクターの向きが変わります。"},{"key":"turnRight.category","english":"Movement","target":"移動"},{"key":"canMove.description","english":"Returns **true** if the space ahead of the character is not a wall, **false** otherwise.","target":"キャラクターの前方のマスが壁でなければ**true**を、そうでなければ**false**を返します。"},{"key":"canMove.category","english":"Sensing","target":"感知"},{"key":"canTurnLeft.description","english":"Returns **true** if the space to the character's left is not a wall, **false** otherwise.","target":"キャラクターの左側のマスが壁でなければ**true**を、そうでなければ**false**を返します。"},{"key":"canTurnLeft.category","english":"Sensing","target":"感知"},{"key":"canTurnRight.description","english":"Returns **true** if the space to the character's right is not a wall, **false** otherwise.","target":"キャラクターの右側のマスが壁でなければ**true**を、そうでなければ**false**を返します。"},{"key":"canTurnRight.category","english":"Sensing","target":"感知"}]}]},{"heading":"Shared \"maze\" messages","note":"Shared by every exercise in the maze category, not just this one. A change here changes all of them.","namespaces":[{"name":"errors","rows":[{"key":"fellOffEdge","english":"Oh no - you tried to fall off the edge of the maze!","target":"あらら！迷路の端から落ちそうになりました！"},{"key":"hitWall","english":"Ouch - you walked into a wall!","target":"いたっ！壁にぶつかってしまいました！"},{"key":"walkedIntoFire","english":"Ouch! You walked into the fire!","target":"あちっ！火の中に入ってしまいました！"},{"key":"walkedIntoPoop","english":"Ewww! You walked into the poop! 💩💩💩","target":"うわっ！うんちを踏んでしまいました！💩💩💩"}]},{"name":"describers","rows":[{"key":"move","english":"Move the character forward one cell","target":"キャラクターを 1 マス前に進めます"},{"key":"turnLeft","english":"Turn the character 90 degrees left","target":"キャラクターを左に 90 度回転させます"},{"key":"turnRight","english":"Turn the character 90 degrees right","target":"キャラクターを右に 90 度回転させます"}]}]}]
+---
+
+前回の迷路演習では、手動でキャラクターを動かしましたね。今度はコードを使って、どんな迷路でも自動で解けるようになりましょう！
+
+そのために、3つの新しい関数を用意しました：
+
+- `` `canTurnLeft()` ``（左に曲がれるかどうかを返す）は、キャラクターの左のマスが壁でなければ `true` を返します。
+- `` `canTurnRight()` ``（右に曲がれるかどうかを返す）は、キャラクターの右のマスが壁でなければ `true` を返します。
+- `` `canMove()` ``（前に進めるかどうかを返す）は、キャラクターの目の前のマスが壁でなければ `true` を返します。
+
+これらを、これまで使ってきた `` `move()` ``（前に進む）、`` `turnLeft()` ``（左に曲がる）、`` `turnRight()` ``（右に曲がる）と組み合わせれば、**どんな**迷路でも解けるアルゴリズムを書くことができます。「アルゴリズム」というのはちょっと難しい言葉ですが、単に「何かをする方法」という意味です。公式やレシピのようなものです。
+
+このあとの説明で、アルゴリズムをお伝えしますが、その前に、ちょっとした論理パズルとしてご自身で考えてみてください。左に曲がれるか、右に曲がれるか、前に進めるかがわかれば、どんな迷路が与えられても、どう解けばいいでしょうか？
+
+答えがわかった方も、諦めてしまった方も、下にスクロールして答えと、コードに書くべき内容を確認してください。
+
+<hr style="border-top: 1px solid var(--color-gray-200); margin:40px 0"/>
+
+### アルゴリズム
+
+さて、なかなか難しいお願いでしたね。いろいろアイデアは浮かんだかもしれませんが、全体像はつかめなかったかもしれません。以下が、辿るべき手順です：
+
+- 左に曲がれるなら、左に曲がってから前に進む
+- そうでなければ、前に進めるなら前に進む
+- そうでなければ、右に曲がれるなら右に曲がってから前に進む
+- そうでなければ、向きを反転する
+
+こうすれば、どんな迷路でも解けます！
+
+これらの指示をコードで書いてください。楽しんでくださいね！

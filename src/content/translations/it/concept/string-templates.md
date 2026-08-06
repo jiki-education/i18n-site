@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/string-templates/source.md"
 en_md5: "7fd0e09ac3b32db5f159f8e772872104"
-governance_sha: "76021ea"
+governance_sha: "c80036b"
 content_version: "a3e0510a4422"
-published_at: "2026-08-04"
+published_at: "2026-08-06"
+forum_topic_id: 1210
 ---
 
 Possiamo usare qualcosa che si chiama stringhe interpolate (_template literals_ in inglese) per inserire stringhe in altre stringhe.

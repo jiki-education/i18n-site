@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/repeat/source.md"
 en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "d0e4086"
+governance_sha: "c80036b"
 content_version: "5251dd0c382a"
-published_at: "2026-08-04"
+published_at: "2026-08-06"
 ---
 
 अब तक, सब कुछ एक सीधी रेखा में लिखा गया है, जहाँ Jiki हर निर्देश का पालन ऊपर से नीचे क्रम से करता है।

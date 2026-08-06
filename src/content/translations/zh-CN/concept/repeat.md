@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/repeat/source.md"
 en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "2db6560"
+governance_sha: "c80036b"
 content_version: "6341914da10d"
-published_at: "2026-08-03"
+published_at: "2026-08-06"
 ---
 
 到目前为止，所有指令都是线性编写的，Jiki 从上到下依次执行每一条指令。

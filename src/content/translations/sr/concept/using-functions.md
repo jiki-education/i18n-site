@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions/source.md"
 en_md5: "fc671310093a081113a8f301b6ff53fe"
-governance_sha: "5d6460b"
-content_version: "2155bb633271"
-published_at: "2026-08-01"
+governance_sha: "c80036b"
+content_version: "3b9a6539835a"
+published_at: "2026-08-06"
 forum_topic_id: 778
 ---
 
@@ -23,7 +23,7 @@ Kada pišeš kod, ti u stvari objašnjavaš računaru šta želiš da se dogodi,
   height="400"
 />
 
-Suština programiranja je u tome da interpreteru, u ovom slučaju Jikiju, daš prave instrukcije, a postoji mnogo različitih instrukcija koje možeš da mu daš, mnogo njih koje razume. Može da spaja stvari, može nešto da uradi mnogo puta, može da kaže: „Ako se ovo dogodi, onda treba da uradim ovo." Može da pamti stvari i da ih kasnije ponovo upotrebi. Može da ti prijavi grešku ako nešto nije u redu. Sve ovo ćemo obraditi na kursu. Ali najvažnije je da razumeš da se sve što ćeš raditi svodi na to da na tablu ispisuješ instrukcije koje Jiki prati i izvršava ih.
+Suština programiranja je u tome da interpreteru, u ovom slučaju Jikiju, daš prave instrukcije, a postoji mnogo različitih instrukcija koje možeš da mu daš, mnogo njih koje razume. Može da spaja stvari, može nešto da uradi mnogo puta, može da kaže: „Ako se ovo dogodi, onda treba da uradim ovo.“ Može da pamti stvari i da ih kasnije ponovo upotrebi. Može da ti prijavi grešku ako nešto nije u redu. Sve ovo ćemo obraditi na kursu. Ali najvažnije je da razumeš da se sve što ćeš raditi svodi na to da na tablu ispisuješ instrukcije koje Jiki prati i izvršava ih.
 
 Kada sam pre 34 godine učio da programiram, ovo je bio mentalni model koji sam izgradio i koji i danas imam. Razumem kako računari rade, sve do jedinica i nula, ali iskreno, nikada ne razmišljam o tome. U mojoj glavi, u računaru živi mali čovek, a ja mu kažem šta da radi. Zato prati me u ovome. U pitanju je moćan mentalni model koji možeš da izgradiš, i ako počneš da razmišljaš na ovakav vizuelan način o tome šta radi taj čovek u računaru, to će ti mnogo pomoći dok učiš da programiraš.
 

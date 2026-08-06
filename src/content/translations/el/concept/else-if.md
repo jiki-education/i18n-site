@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/else-if/source.md"
 en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "38591e4"
+governance_sha: "c80036b"
 content_version: "fae8adf83fc2"
-published_at: "2026-08-01"
+published_at: "2026-08-06"
+forum_topic_id: 1055
 ---
 
 Έχεις δει πώς το `if` και το `else` σου δίνουν δύο δρόμους: κάνεις ένα πράγμα όταν μια συνθήκη είναι αληθής, και κάτι άλλο όταν είναι ψευδής. Τι γίνεται όμως αν έχεις περισσότερες από δύο πιθανότητες;

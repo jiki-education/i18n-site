@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/while-loops/source.md"
 en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "2d9f7c0"
+governance_sha: "c80036b"
 content_version: "fb3767a49bef"
-published_at: "2026-08-05"
+published_at: "2026-08-06"
+forum_topic_id: 1226
 ---
 
 حلقه‌ی بعدی که باید با آن آشنا شوید، حلقه‌ی _while_ (تا زمانی که) است.

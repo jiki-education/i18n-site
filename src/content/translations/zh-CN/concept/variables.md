@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/variables/source.md"
 en_md5: "dd0834017a8d42c22cca25966c1fdd91"
-governance_sha: "2db6560"
+governance_sha: "c80036b"
 content_version: "f9d0d15c2b4e"
-published_at: "2026-08-03"
+published_at: "2026-08-06"
 ---
 
 变量（英语：_variables_）是让我们存储信息的方式。当我们编写代码时，经常需要存储一些数字或字符串以备后用，而变量正是实现这一点的工具。所以让我们在 Jiki 的仓库里把视角拉远一点，你会看到他有另一组货架。我们已经熟悉了第一组货架，上面放着函数，那些类似 `move` 和 `rectangle` 的小机器。但在这第二组货架上，不是机器，你可以看到很多盒子，而这些盒子就是我们所说的变量。你可以告诉 Jiki 把任何东西存进这些盒子里，稍后再让他取出来。每个盒子都有一个名字，就像函数有名字一样，而且每个盒子只放一件东西。目前只能是数字或字符串。但在课程后面我们会看看如何把更复杂的东西放进去。

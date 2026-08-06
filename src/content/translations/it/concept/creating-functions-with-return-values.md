@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/creating-functions-with-return-values/source.md"
 en_md5: "51d31f709a7051c29b499a31ad68555e"
-governance_sha: "76021ea"
+governance_sha: "c80036b"
 content_version: "c1efd38a151c"
-published_at: "2026-08-04"
+published_at: "2026-08-06"
+forum_topic_id: 1199
 ---
 
 Adesso sai creare funzioni con e senza input. C'è un'ultima cosa da imparare, e poi sarai un esperto nella creazione di funzioni: come dare alle tue funzioni uno scivolo.

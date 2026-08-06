@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/else/source.md"
 en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
-governance_sha: "21e9951"
+governance_sha: "c80036b"
 content_version: "eaf38c25751a"
-published_at: "2026-08-03"
+published_at: "2026-08-06"
 ---
 
 Pomoću if naredbi možeš da proveriš uslove i izvršiš kod samo kada je nešto tačno. Hajde da sada upoznamo if-ovog saučesnika, `else`.

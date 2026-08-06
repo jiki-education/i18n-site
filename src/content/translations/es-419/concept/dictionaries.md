@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/dictionaries/source.md"
 en_md5: "b8a26ad63301df1d00ce08e1e429cf05"
-governance_sha: "14811a7"
+governance_sha: "c80036b"
 content_version: "df008597dd16"
-published_at: "2026-08-05"
+published_at: "2026-08-06"
 ---
 
 Los arrays son nuestra opción preferida cuando tenemos una lista de cualquier cosa: una lista de mentores, de calificaciones, de ingredientes… cualquier lista, lo que quieres es usar un array.

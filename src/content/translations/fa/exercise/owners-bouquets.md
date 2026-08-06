@@ -1,0 +1,32 @@
+---
+lang: "fa"
+type: "exercise"
+slug: "owners-bouquets"
+title: "دسته‌گل‌های صاحب‌خانه"
+status: "published"
+source_repo: "front-end"
+source_path: "curriculum/src/exercises/owners-bouquets"
+en_md5: "412a9f3a6ed5bb6b797c6239d51492be"
+governance_sha: "c80036b"
+content_version: "1b42dbb57374"
+published_at: "2026-08-06"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"checks","rows":[{"key":"flowerCount_one","english":"The owner expected to see {{count}} flower planted. But you planted {{got}}.","target":"صاحب‌خانه انتظار داشت که {{count}} گل کاشته شود. اما شما {{got}} گل کاشتید."},{"key":"flowerCount_other","english":"The owner expected to see {{count}} flowers planted. But you planted {{got}}.","target":"صاحب‌خانه انتظار داشت که {{count}} گل کاشته شود. اما شما {{got}} گل کاشتید."},{"key":"flowerAtPosition","english":"Expected a flower at position {{position}}, but didn't find one.","target":"انتظار می‌رفت گلی در نقطهٔ {{position}} باشد، اما گلی پیدا نشد."},{"key":"strayFlower","english":"Found a flower at position {{position}}, which isn't where the owner wanted one. The flowers should be evenly spaced.","target":"گلی در نقطهٔ {{position}} پیدا شد که صاحب‌خانه آنجا گلی نمی‌خواست. گل‌ها باید با فاصله‌ی مساوی کاشته شوند."}]},{"name":"tasks","rows":[{"key":"plantFlowersEvenly.name","english":"Plant flowers evenly","target":"گل‌ها را به‌طور مساوی بکارید"},{"key":"plantFlowersEvenly.description","english":"Use askNumberOfFlowers() to find out how many flowers to plant, calculate the gap, and plant them evenly spaced.","target":"با استفاده از `askNumberOfFlowers()` تعداد گل‌های لازم را پیدا کنید، فاصله‌ها را محاسبه کنید و گل‌ها را با فاصله‌ی مساوی بکارید."}]},{"name":"scenarios","rows":[{"key":"oneFlower.name","english":"The owner wants 1 flower","target":"صاحب‌خانه ۱ گل می‌خواهد"},{"key":"oneFlower.description","english":"In this scenario, `askNumberOfFlowers()` will return 1. Plant 1 flower at position 50.","target":"در این سناریو، `askNumberOfFlowers()` عدد ۱ را برمی‌گرداند. ۱ گل را در نقطهٔ ۵۰ بکارید."},{"key":"threeFlowers.name","english":"The owner wants 3 flowers","target":"صاحب‌خانه ۳ گل می‌خواهد"},{"key":"threeFlowers.description","english":"In this scenario, `askNumberOfFlowers()` will return 3. Plant 3 flowers at positions 25, 50, and 75.","target":"در این سناریو، `askNumberOfFlowers()` عدد ۳ را برمی‌گرداند. ۳ گل را در نقاط ۲۵، ۵۰ و ۷۵ بکارید."},{"key":"fourFlowers.name","english":"The owner wants 4 flowers","target":"صاحب‌خانه ۴ گل می‌خواهد"},{"key":"fourFlowers.description","english":"In this scenario, `askNumberOfFlowers()` will return 4. Plant 4 flowers at positions 20, 40, 60, and 80.","target":"در این سناریو، `askNumberOfFlowers()` عدد ۴ را برمی‌گرداند. ۴ گل را در نقاط ۲۰، ۴۰، ۶۰ و ۸۰ بکارید."},{"key":"nineFlowers.name","english":"The owner wants 9 flowers","target":"صاحب‌خانه ۹ گل می‌خواهد"},{"key":"nineFlowers.description","english":"In this scenario, `askNumberOfFlowers()` will return 9. Plant 9 flowers at positions 10, 20, 30, 40, 50, 60, 70, 80, and 90.","target":"در این سناریو، `askNumberOfFlowers()` عدد ۹ را برمی‌گرداند. ۹ گل را در نقاط ۱۰، ۲۰، ۳۰، ۴۰، ۵۰، ۶۰، ۷۰، ۸۰ و ۹۰ بکارید."}]},{"name":"hints","rows":[{"key":"chooseGap.question","english":"How do I work out where to plant each flower?","target":"چطور بفهمم هر گل را کجا بکارم؟"},{"key":"chooseGap.answer","english":"First work out the gap between flowers:\n\n```javascript\n100 / (numberOfFlowers + 1)\n```\n\nThe first flower goes at that position, and each next flower is one more gap along. So if there are 3 flowers the gap is 25, and they go at 25, 50 and 75.","target":"ابتدا فاصله‌ی بین گل‌ها را پیدا کنید:\n\n```javascript\n100 / (numberOfFlowers + 1)\n```\n\nاولین گل در همان فاصله کاشته می‌شود، و هر گل بعدی به اندازه‌ی یک فاصله جلوتر کاشته می‌شود. بنابراین اگر ۳ گل داشته باشیم، فاصله ۲۵ می‌شود و گل‌ها در فاصله‌های ۲۵، ۵۰ و ۷۵ کاشته می‌شوند."},{"key":"seeScenarios.question","english":"How do I see the different scenarios","target":"چطور سناریوهای مختلف را ببینم؟"},{"key":"seeScenarios.answer","english":"Click on the circles on the left hand side in between your code and the results.","target":"روی دایره‌های سمت چپ، بین کد و نتایج کلیک کنید."}]},{"name":"functions","rows":[{"key":"askNumberOfFlowers.description","english":"Returns the **number of flowers** to plant.","target":"**تعداد گل‌هایی که باید کاشته شود** را برمی‌گرداند."},{"key":"askNumberOfFlowers.category","english":"Gardening","target":"باغبانی"},{"key":"plant.description","english":"Plants a flower at the given **position**.","target":"یک گل را در **نقطه‌ی** داده شده می‌کارد."},{"key":"plant.category","english":"Gardening","target":"باغبانی"}]},{"name":"describers","rows":[{"key":"askNumberOfFlowers","english":"asked for the number of flowers to plant","target":"تعداد گل‌هایی که باید کاشته شود پرسیده شد."},{"key":"plant","english":"planted a flower at position ${arg1}","target":"یک گل در نقطهٔ ${arg1} کاشته شد."}]}]},{"heading":"Shared \"flower-planting\" messages","note":"Shared by every exercise in the flower-planting category, not just this one. A change here changes all of them.","namespaces":[{"name":"errors","rows":[{"key":"positionNumber","english":"Position must be a number","target":null}]}]}]
+---
+
+به تمرین دوم شما با سناریوها خوش آمدید.
+
+با دستگاه باغبانی خودکارمان برگشته‌ایم. قبلاً همیشه ۹ گل می‌کاشتیم، اما الان شرایط تغییر کرده است. باید ربات ما بتواند هر تعداد گلی را که صاحب‌خانه به او می‌گوید بکارد.
+
+برای این کار تابعی به اسم `askNumberOfFlowers()` (تعداد گل‌ها را می‌پرسد) داریم. وقتی از آن استفاده می‌کنیم، از صاحب‌خانه می‌پرسیم چند گل بکاریم و تابع عددی را با پاسخ برمی‌گرداند.
+
+اگر تابع ۳ برگرداند، باید ۳ گل بکاریم. اگر ۸ برگرداند، باید ۸ گل بکاریم.
+
+به ما دستورات اکیدی داده شده که باغچه را مرتب نگه داریم، بنابراین باید گل‌ها را به طور مساوی در سرتاسر باغچه بکاریم. اگر ۳ گل باشد، باید آن‌ها را در نقاط ۲۵، ۵۰ و ۷۵ بکاریم. اگر ۴ گل باشد، باید آن‌ها را در نقاط ۲۰، ۴۰، ۶۰، ۸۰ و به همین ترتیب بکاریم. (طبق معمول، عرض باغچه ۱۰۰ واحد است).
+
+### سناریوها
+
+همانند تمرین گلف که به‌تازگی حل کردید، در سمت چپ چهار نقطهٔ خاکستری برای چهار سناریوی مختلف خواهید دید. **با کلیک روی هر نقطه** یک سناریوی متفاوت نشان داده می‌شود، اما این بار این `askNumberOfFlowers()` است که هر بار عدد متفاوتی برمی‌گرداند.
+
+وظیفهٔ شما نوشتن یک برنامه است که برای همهٔ مقادیر مختلف ممکنی که `askNumberOfFlowers()` ممکن است برگرداند کار کند.
+
+موفق باشید!

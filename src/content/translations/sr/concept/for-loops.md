@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/for-loops/source.md"
 en_md5: "e96f2e5a4106a88cfbca449c93a26108"
-governance_sha: "21e9951"
+governance_sha: "c80036b"
 content_version: "b968d2c09dc5"
-published_at: "2026-08-03"
+published_at: "2026-08-06"
 ---
 
 Možda se sećaš da repeat petlja zapravo ne postoji u JavaScriptu. To je samo nešto što smo dodali da ti malo olakšamo život dok se zagrevamo.

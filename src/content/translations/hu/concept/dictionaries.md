@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/dictionaries/source.md"
 en_md5: "b8a26ad63301df1d00ce08e1e429cf05"
-governance_sha: "fe54e35"
+governance_sha: "c80036b"
 content_version: "cdfc3da4dd5f"
-published_at: "2026-08-04"
+published_at: "2026-08-06"
+forum_topic_id: 1217
 ---
 
 Ha bármiből listánk van, mentorok listája, pontszámok listája, hozzávalók listája, bármilyen lista, akkor tömböt használunk.

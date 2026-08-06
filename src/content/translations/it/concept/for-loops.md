@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/for-loops/source.md"
 en_md5: "e96f2e5a4106a88cfbca449c93a26108"
-governance_sha: "6351e0e"
+governance_sha: "c80036b"
 content_version: "a7940d6bed93"
-published_at: "2026-08-02"
+published_at: "2026-08-06"
 forum_topic_id: 988
 ---
 

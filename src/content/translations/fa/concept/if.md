@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/if/source.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "3792ec0"
+governance_sha: "c80036b"
 content_version: "f1ab36ccf092"
-published_at: "2026-08-04"
+published_at: "2026-08-06"
 forum_topic_id: 1158
 ---
 

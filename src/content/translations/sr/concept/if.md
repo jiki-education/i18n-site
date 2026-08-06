@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/if/source.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "5731205"
+governance_sha: "c80036b"
 content_version: "889817fe35d6"
-published_at: "2026-08-01"
+published_at: "2026-08-06"
+forum_topic_id: 973
 ---
 
 Postoji ključna reč koja nam pomaže da kažemo Jikiju da nešto uradi samo u određenim situacijama. Možda pišeš kod koji čuva ulaz u bar, recimo da si izbacivač, i Jiki treba da otvori vrata samo ako je neko prikladno obučen. Ili možda pišeš kod u kome si zadužen da mahneš kariranom zastavicom na kraju trke, ali Jiki mora da zna da to treba da uradi samo u poslednjem krugu. U ovakvim situacijama koristićemo ključnu reč `if`.

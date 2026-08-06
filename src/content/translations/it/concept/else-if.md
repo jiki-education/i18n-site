@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/else-if/source.md"
 en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "38591e4"
+governance_sha: "c80036b"
 content_version: "a5cc4ada8ba1"
-published_at: "2026-08-01"
+published_at: "2026-08-06"
+forum_topic_id: 987
 ---
 
 Hai visto come `if` ed `else` ti danno due strade: fare una cosa quando una condizione è vera, farne un'altra quando è falsa. Ma cosa succede se le possibilità sono più di due?

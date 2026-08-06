@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/dictionaries/source.md"
 en_md5: "3b1b01f6a914ffe1ce4a54e023e46bdd"
-governance_sha: "c79faa0"
+governance_sha: "c80036b"
 content_version: "02b5643ffede"
-published_at: "2026-08-02"
+published_at: "2026-08-06"
 forum_topic_id: 1053
 ---
 

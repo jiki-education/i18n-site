@@ -7,7 +7,7 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/checkerboard"
 en_md5: "3c7827efbcc4032acb8c09dd900e28bb"
-governance_sha: "81fc354"
+governance_sha: "c80036b"
 content_version: "c0f16057f24b"
 published_at: "2026-08-06"
 forum_topic_id: 1259

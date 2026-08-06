@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/strings/source.md"
 en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "21ba311"
+governance_sha: "c80036b"
 content_version: "05d2f56b26cd"
-published_at: "2026-08-01"
+published_at: "2026-08-06"
 ---
 
 Kada želiš da upotrebiš broj, možeš prosto da ga napišeš i Jiki zna na šta misliš. Ali šta ako želiš da upotrebiš slovo, reč ili rečenicu? Na primer, šta ako bi funkcija `rectangle` (pravougaonik) ili funkcija `circle` (krug) imala dodatni ulaz u kojem navodiš boju? Kako bismo napisali boju da je ubacimo u mašinu? Ako samo napišemo reč `green` (zeleno) ili `blue` (plavo), Jiki će misliti da govorimo o nekoj mašini na policama, pa će reći: „Ne postoji mašina koja se zove green. Ne znam šta da radim.“

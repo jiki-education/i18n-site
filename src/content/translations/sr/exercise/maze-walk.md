@@ -1,0 +1,24 @@
+---
+lang: "sr"
+type: "exercise"
+slug: "maze-walk"
+title: "Nauči da hodaš"
+status: "published"
+source_repo: "front-end"
+source_path: "curriculum/src/exercises/maze-walk"
+en_md5: "a15372817fd885ccc45a2fe27624bbf6"
+governance_sha: "c80036b"
+content_version: "e816f3ac3547"
+published_at: "2026-08-06"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"checks","rows":[{"key":"notReachedEnd","english":"You didn't reach the end of the maze.","target":null},{"key":"walkNotDefined","english":"You should define a <code>walk</code> function that takes a number of steps and moves forward that many times.","target":null}]},{"name":"tasks","rows":[{"key":"writeWalk.name","english":"Write a walk function","target":null},{"key":"writeWalk.description","english":"Define a function called walk that takes a number of steps as its input and moves forward that many times.","target":null}]},{"name":"scenarios","rows":[{"key":"maze1.name","english":"Navigate the maze","target":null},{"key":"maze1.description","english":"Walk 3, turn left, walk 2, turn right, walk 4 to reach the target.","target":null}]},{"name":"hints","rows":[{"key":"howToMoveForward.question","english":"How do I move forward?","target":null},{"key":"howToMoveForward.answer","english":"Use the `move()` function.","target":null},{"key":"howToMoveSpecificTimes.question","english":"How do I move forward a specific number of times?","target":null},{"key":"howToMoveSpecificTimes.answer","english":"You have solved other exercises where you had to do something a specific number of times (think back to making the golf ball roll a specific distance). Use the same ideas here.","target":null}]},{"name":"functions","rows":[{"key":"move.description","english":"Moves the character **one step forward** in the current direction. The character will only move if the target position is not blocked by a wall.","target":null},{"key":"move.category","english":"Movement","target":null},{"key":"turnLeft.description","english":"Turns the character **90 degrees to the left** (counterclockwise). This changes the direction the character is facing.","target":null},{"key":"turnLeft.category","english":"Movement","target":null},{"key":"turnRight.description","english":"Turns the character **90 degrees to the right** (clockwise). This changes the direction the character is facing.","target":null},{"key":"turnRight.category","english":"Movement","target":null}]}]},{"heading":"Shared \"maze\" messages","note":"Shared by every exercise in the maze category, not just this one. A change here changes all of them.","namespaces":[{"name":"errors","rows":[{"key":"fellOffEdge","english":"Oh no - you tried to fall off the edge of the maze!","target":"O ne, umalo da padneš sa ivice lavirinta!"},{"key":"hitWall","english":"Ouch - you walked into a wall!","target":"Jao, ideš pravo u zid!"},{"key":"walkedIntoFire","english":"Ouch! You walked into the fire!","target":"Jao! Ideš pravo u vatru!"},{"key":"walkedIntoPoop","english":"Ewww! You walked into the poop! 💩💩💩","target":"Bljak! Ideš pravo u kaku! 💩💩💩"}]},{"name":"describers","rows":[{"key":"move","english":"Move the character forward one cell","target":"Pomera lika za jedno polje napred"},{"key":"turnLeft","english":"Turn the character 90 degrees left","target":"Okreće lika za 90 stepeni ulevo"},{"key":"turnRight","english":"Turn the character 90 degrees right","target":"Okreće lika za 90 stepeni udesno"}]}]}]
+---
+
+Vraćamo se lavirintu, a na trenutak ćemo se odmaknuti od automatskog rešavanja. U prethodnoj vežbi, kada ručno rešavaš lavirint, ako želiš da se pomeriš tri koraka napred, moraš da napišeš `move()` (pomeri se) tri puta.
+
+U ovoj vežbi napravićeš novu funkciju `walk(numSteps)` (hodaj sa brojem koraka) koja prima broj koraka kao ulaz, i pomera se napred onoliko puta.
+
+Dakle, korišćenje `walk(5)` znači da `move()` pozivaš pet puta.
+
+Ispod tvoje funkcije nalazi se primer koda koji rešava lavirint. Kada napišeš svoju funkciju, taj kod će je koristiti zajedno sa `turnLeft()` (okreni se levo) i `turnRight()` (okreni se desno) da se kreće kroz lavirint.
+
+Srećno!

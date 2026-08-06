@@ -1,0 +1,56 @@
+---
+lang: "ko"
+type: "exercise"
+slug: "weather-symbols"
+title: "날씨 기호"
+status: "published"
+source_repo: "front-end"
+source_path: "curriculum/src/exercises/weather-symbols"
+en_md5: "8bf4ae32a3a835c12bcd2ba77e3b6ebb"
+governance_sha: "c80036b"
+content_version: "4a6974db7264"
+published_at: "2026-08-06"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"checks","rows":[{"key":"dayIsntCorrect","english":"Day {{day}}'s weather isn't right.","target":"{{day}}의 날씨가 맞지 않아요."}]},{"name":"tasks","rows":[{"key":"drawForecast.name","english":"Draw the forecast","target":"예보 그리기"},{"key":"drawForecast.description","english":"Draw each day's weather into its own box, using the day's position in the list as the box number.","target":"각 날의 날씨를 해당 요일의 칸에 그리는데, 배열에서 그 날의 위치를 칸 번호로 사용해요."}]},{"name":"scenarios","rows":[{"key":"mixedWeek.name","english":"A Mixed Week","target":"혼합된 한 주"},{"key":"mixedWeek.description","english":"A bit of everything across the six days.","target":"6일에 걸쳐 이것저것 조금씩."},{"key":"sunnyWeek.name","english":"A Sunny Week","target":"화창한 한 주"},{"key":"sunnyWeek.description","english":"Lots of sunshine, with a couple of cloudier days.","target":"대체로 화창하고, 구름 낀 날이 조금 있어요."},{"key":"rainyWeek.name","english":"A Rainy Week","target":"비 오는 한 주"},{"key":"rainyWeek.description","english":"A soggy week of clouds and rain.","target":"구름과 비로 축축한 한 주."},{"key":"snowyWeek.name","english":"A Snowy Week","target":"눈 오는 한 주"},{"key":"snowyWeek.description","english":"A cold week full of snow.","target":"눈으로 가득 찬 추운 한 주."}]},{"name":"hints","rows":[{"key":"loopWithIndex.question","english":"How do I go through the days and know which box each one goes in?","target":"각 날짜가 어느 칸에 들어가는지 어떻게 알면서 days를 순회할 수 있을까요?"},{"key":"loopWithIndex.answer","english":"Loop over `days` with a counter that goes from `0` up to `days.length - 1`. That counter is the box number for each day.","target":"`days`를 `0`부터 `days.length - 1`까지 카운터를 사용해서 순회하세요. 그 카운터가 각 날짜의 칸 번호예요."},{"key":"descriptionToSymbols.question","english":"How do I turn a description like `\"Miserable 😩\"` into symbols?","target":"`\"Miserable 😩\"`과 같은 설명을 기호로 어떻게 변환할까요?"},{"key":"descriptionToSymbols.answer","english":"Match the description against each possible one and pick the matching list of symbols, for example `[\"cloud\", \"rain\"]`. The instructions list every description and its symbols.","target":"설명을 가능한 모든 설명과 비교해서 맞는 기호 배열을 고르세요. 예를 들면 `[\"cloud\", \"rain\"]`이 있어요. 지시 사항에 모든 설명과 해당 기호가 나와 있어요."},{"key":"weekdaysList.question","english":"How do I get the weekday name for each box?","target":"각 칸에 해당하는 요일 이름을 어떻게 가져올까요?"},{"key":"weekdaysList.answer","english":"Make a list of the six weekday names in order, `\"Monday\"` through `\"Saturday\"`, and read the one at your current position using the same counter as the box number.","target":"`\"Monday\"`부터 `\"Saturday\"`까지 여섯 요일 이름을 순서대로 배열로 만든 다음, 현재 위치의 값을 칸 번호와 같은 카운터로 읽어요."},{"key":"passArgs.question","english":"What do I pass to `draw`?","target":"`draw`에 무엇을 전달해야 하나요?"},{"key":"passArgs.answer","english":"Three things: the box number (your counter), the weekday name for that box, and the list of symbols for that day.","target":"세 가지를 전달해요: 칸 번호(카운터), 그 칸에 해당하는 요일 이름, 그리고 그날의 기호 배열이에요."},{"key":"tidyWithHelper.question","english":"My loop is getting long. How can I tidy it?","target":"루프가 길어지고 있어요. 어떻게 정리할 수 있을까요?"},{"key":"tidyWithHelper.answer","english":"You can move the description-to-symbols matching into its own function and call it from the loop. This is optional, but it keeps the loop short and easy to read.","target":"설명을 기호로 변환하는 부분을 별도의 함수로 옮겨서 루프에서 호출할 수 있어요. 이건 선택 사항이지만, 루프를 짧고 읽기 쉽게 만들어 줘요."}]},{"name":"functions","rows":[{"key":"draw.description","english":"Draw the given weather symbols into a forecast box. Takes the box number (0 to 5), the weekday name to label it with, and the list of symbols.","target":"주어진 날씨 기호를 예보 칸에 그려요. 칸 번호(0~5), 칸에 붙일 요일 이름, 그리고 기호 배열을 받아요."},{"key":"draw.category","english":"Drawing","target":"그리기"}]},{"name":"describers","rows":[{"key":"draw","english":"drew ${arg3} into ${arg2}'s box","target":"${arg2}의 칸에 ${arg3}을 그렸어요."}]},{"name":"errors","rows":[{"key":"elementsMustBeList","english":"The weather symbols (the third input to draw) must be a list, like [\"sun\", \"cloud\"].","target":"날씨 기호(draw의 세 번째 입력)는 `[\"sun\", \"cloud\"]` 같은 배열이어야 해요."},{"key":"elementsMustBeStrings","english":"The weather symbols in the list must all be strings, like \"sun\" or \"rain\".","target":"배열 안의 날씨 기호는 모두 `\"sun\"`이나 `\"rain\"`과 같은 문자열이어야 해요."},{"key":"unknownElement","english":"\"{{element}}\" isn't a weather symbol. Use \"sun\", \"cloud\", \"rain\", or \"snow\".","target":"`\"{{element}}\"`은 날씨 기호가 아니에요. `\"sun\"`, `\"cloud\"`, `\"rain\"`, `\"snow\"` 중 하나를 사용하세요."},{"key":"indexMustBeNumber","english":"The box number (the first input to draw) must be a number.","target":"칸 번호(draw의 첫 번째 입력)는 숫자여야 해요."},{"key":"indexOutOfRange","english":"The box number must be a whole number between 0 and {{max}}.","target":"칸 번호는 0과 {{max}} 사이의 정수여야 해요."},{"key":"dayMustBeString","english":"The weekday (the second input to draw) must be text, like \"Monday\".","target":"요일(draw의 두 번째 입력)은 `\"Monday\"`와 같은 텍스트여야 해요."}]}]},{"heading":"Shared \"draw\" messages","note":"Shared by every exercise in the draw category, not just this one. A change here changes all of them.","namespaces":[{"name":"errors","rows":[{"key":"allInputsNumbers","english":"All inputs must be numbers","target":"모든 입력값은 숫자여야 해요"},{"key":"blueRange","english":"Blue must be between 0 and 255","target":"파랑은 0에서 255 사이여야 해요"},{"key":"circleInputsNumbers","english":"The x, y, and radius inputs must be numbers","target":"x, y, 반지름 입력값은 숫자여야 해요"},{"key":"colorNamedOrHex","english":"Color must be a named color (\"orange\", \"blue\", \"white\", etc) specified in the instructions, or a hex color starting with #","target":"색상은 지시 사항에 명시된 이름이 있는 색상(\"orange\", \"blue\", \"white\" 등)이거나 #으로 시작하는 16진수 색상이어야 해요"},{"key":"colorNotAllowed","english":"Color should not be specified for this exercise","target":"이 연습 문제에서는 색상을 지정하지 않아야 해요"},{"key":"colorNotString","english":"Color must be a string","target":"색상은 문자열이어야 해요"},{"key":"ellipseInputsNumbers","english":"The x, y, rx, and ry inputs must be numbers","target":"x, y, rx, ry 입력값은 숫자여야 해요"},{"key":"greenRange","english":"Green must be between 0 and 255","target":"초록은 0에서 255 사이여야 해요"},{"key":"heightPositive","english":"Height must be greater than 0","target":"높이는 0보다 커야 해요"},{"key":"hueRange","english":"Hue must be between 0 and 360","target":"색상은 0에서 360 사이여야 해요"},{"key":"lightnessRange","english":"Lightness must be between 0 and 100","target":"명도는 0에서 100 사이여야 해요"},{"key":"lineInputsNumbers","english":"The x1, y1, x2, and y2 inputs must be numbers","target":"x1, y1, x2, y2 입력값은 숫자여야 해요"},{"key":"rectInputsNumbers","english":"The x, y, width, and height inputs must be numbers","target":"x, y, 너비, 높이 입력값은 숫자여야 해요"},{"key":"redRange","english":"Red must be between 0 and 255","target":"빨강은 0에서 255 사이여야 해요"},{"key":"saturationRange","english":"Saturation must be between 0 and 100","target":"채도는 0에서 100 사이여야 해요"},{"key":"triangleInputsNumbers","english":"The x1, y1, x2, y2, x3, and y3 inputs must be numbers","target":"x1, y1, x2, y2, x3, y3 입력값은 숫자여야 해요"},{"key":"widthPositive","english":"Width must be greater than 0","target":"너비는 0보다 커야 해요"}]},{"name":"describers","rows":[{"key":"rectangle.default","english":"drew a rectangle at coordinates (${arg1}, ${arg2}) with a width of ${arg3}, a height of ${arg4}, and a color of ${arg5}","target":"좌표 (${arg1}, ${arg2})에 너비 ${arg3}, 높이 ${arg4}, 색상 ${arg5}인 직사각형을 그렸어요"},{"key":"rectangle.fixedColor","english":"drew a rectangle at coordinates (${arg1}, ${arg2}) with a width of ${arg3} and a height of ${arg4}","target":"좌표 (${arg1}, ${arg2})에 너비 ${arg3}, 높이 ${arg4}인 직사각형을 그렸어요"},{"key":"triangle.default","english":"drew a triangle with three points: (${arg1}, ${arg2}), (${arg3}, ${arg4}), and (${arg5}, ${arg6}) with a color of ${arg7}","target":"세 점 (${arg1}, ${arg2}), (${arg3}, ${arg4}), (${arg5}, ${arg6})과 색상 ${arg7}으로 삼각형을 그렸어요"},{"key":"triangle.fixedColor","english":"drew a triangle with three points: (${arg1}, ${arg2}), (${arg3}, ${arg4}), and (${arg5}, ${arg6})","target":"세 점 (${arg1}, ${arg2}), (${arg3}, ${arg4}), (${arg5}, ${arg6})으로 삼각형을 그렸어요"},{"key":"circle.default","english":"drew a circle with its center at (${arg1}, ${arg2}), a radius of ${arg3}, and a color of ${arg4}","target":"중심 좌표 (${arg1}, ${arg2})에 반지름 ${arg3}, 색상 ${arg4}인 원을 그렸어요"},{"key":"circle.fixedColor","english":"drew a circle with its center at (${arg1}, ${arg2}) and a radius of ${arg3}","target":"중심 좌표 (${arg1}, ${arg2})에 반지름 ${arg3}인 원을 그렸어요"},{"key":"ellipse.default","english":"drew an ellipse with its center at (${arg1}, ${arg2}), a horizontal radius of ${arg3}, a vertical radius of ${arg4}, and a color of ${arg5}","target":"중심 좌표 (${arg1}, ${arg2})에 가로 반지름 ${arg3}, 세로 반지름 ${arg4}, 색상 ${arg5}인 타원을 그렸어요"},{"key":"ellipse.fixedColor","english":"drew an ellipse with its center at (${arg1}, ${arg2}), a horizontal radius of ${arg3}, and a vertical radius of ${arg4}","target":"중심 좌표 (${arg1}, ${arg2})에 가로 반지름 ${arg3}, 세로 반지름 ${arg4}인 타원을 그렸어요"},{"key":"line.default","english":"drew a line from (${arg1}, ${arg2}) to (${arg3}, ${arg4}) with a color of ${arg5}","target":"(${arg1}, ${arg2})에서 (${arg3}, ${arg4})까지 색상 ${arg5}인 선을 그렸어요"},{"key":"line.fixedColor","english":"drew a line from (${arg1}, ${arg2}) to (${arg3}, ${arg4})","target":"(${arg1}, ${arg2})에서 (${arg3}, ${arg4})까지 선을 그렸어요"},{"key":"clear","english":"cleared the canvas","target":"캔버스를 지웠어요"},{"key":"hsl","english":"converted HSL color (hue: ${arg1}, saturation: ${arg2}, lightness: ${arg3}) to a hex string","target":"HSL 색상 (색상: ${arg1}, 채도: ${arg2}, 명도: ${arg3})을 16진수 문자열로 변환했어요"},{"key":"rgb","english":"converted RGB color (red: ${arg1}, green: ${arg2}, blue: ${arg3}) to a hex string","target":"RGB 색상 (빨강: ${arg1}, 초록: ${arg2}, 파랑: ${arg3})을 16진수 문자열로 변환했어요"}]}]}]
+---
+
+6일치 날씨 예보를 만들어 달라는 요청을 받았어요. 하지만 평범한 날씨 데이터를 받는 대신, 상사가 날씨에 대한 자신의 느낌을 담은 설명을 건네주고 있어요(예: "Snowboarding time! 🏂", "Miserable 😩").
+
+여섯 개의 날씨 설명이 담긴 배열(영어: _Array_)을 받게 돼요. 하루에 하나씩이죠. 여러분이 할 일은 각 날짜의 날씨를 해당 칸에 그리는 거예요.
+
+예보는 월요일부터 토요일까지 각 요일별로 한 칸씩, 6칸으로 이루어진 표로 나타나요. 설명은 순서대로 정렬되어 있어요: 첫 번째(칸 `0`)는 월요일 날씨, 두 번째(칸 `1`)는 화요일, 이런 식으로 토요일(칸 `5`)까지 이어져요. (상사가 일요일에는 집 밖에 나가지 않아서 날씨에 신경 쓰지 않기 때문에, 일요일은 예보할 수가 없답니다...)
+
+## 하루 그리기
+
+그림을 모두 대신 그려 주는 `draw`(그리기) 함수를 준비해 뒀어요. 여러분이 할 일은 함수 안에 넣을 알맞은 요소를 알아내는 거예요.
+
+```js
+draw(box, day, elements)
+```
+
+- `box`: 그림을 그릴 칸이에요(`0`에서 `5`까지).
+- `day`: 칸에 표시할 요일이에요. 예를 들어 `"Monday"`.
+- `elements`: 보여줄 날씨 기호들의 배열이에요(자세한 내용은 아래 참조).
+
+요일은 순서대로 `"Monday"`, `"Tuesday"`, `"Wednesday"`, `"Thursday"`, `"Friday"`, `"Saturday"`이에요.
+
+그래서 첫째 날의 설명이 `"Exciting 🤩"`이라면, 다음과 같이 작성해요:
+
+```js
+draw(0, "Monday", ["cloud", "snow"])
+```
+
+## 각 설명의 의미
+
+각 설명은 특정 기호 배열로 변환돼요:
+
+- "Sunny ☀️": ["sun"]
+- "Dull 😴": ["cloud"]
+- "Miserable 😩": ["cloud", "rain"]
+- "Hopeful 🤞": ["sun", "cloud"]
+- "Rainbow territory! 🌈": ["sun", "cloud", "rain"]
+- "Exciting 🤩": ["cloud", "snow"]
+- "Snowboarding time! 🏂": ["sun", "cloud", "snow"]
+
+## 여러분이 할 일
+
+`days` 목록을 하루씩 차례대로 처리해 봐요. 각 설명을 알맞은 기호 배열로 바꾸고, 해당 요일이 붙은 칸에 `draw`로 그려 넣으세요.

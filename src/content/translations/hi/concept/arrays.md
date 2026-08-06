@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/arrays/source.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "d0e4086"
+governance_sha: "c80036b"
 content_version: "1d68504cb234"
-published_at: "2026-08-04"
+published_at: "2026-08-06"
 ---
 
 आप अब तक संख्याएँ, स्ट्रिंग और बूलियन इस्तेमाल कर रहे हैं, सही और गलत के लिए एक ज़रा भारी-भरकम शब्द, और हम इन्हें अलग-अलग डेटा टाइप (_data types_) कहते हैं। अब हम अपना पहला कंपाउंड डेटा टाइप (_compound data type_) जोड़ रहे हैं।

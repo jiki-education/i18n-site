@@ -1,0 +1,49 @@
+---
+lang: "ja"
+type: "exercise"
+slug: "relational-snowman"
+title: "相対的な雪だるま"
+status: "published"
+source_repo: "front-end"
+source_path: "curriculum/src/exercises/relational-snowman"
+en_md5: "957fea62970d6c37351ce3908df01938"
+governance_sha: "c80036b"
+content_version: "a995875c7082"
+published_at: "2026-08-06"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"checks","rows":[{"key":"base","english":"The base (bottom) circle is either in the wrong place or the wrong size. Check `baseRadius` and `baseY`.","target":"土台（一番下）の円の位置か大きさが間違っています。`baseRadius`と`baseY`を確認してください。"},{"key":"body","english":"The body (middle) circle is either in the wrong place or the wrong size. Check `bodyRadius` and `bodyY`.","target":"胴体（真ん中）の円の位置か大きさが間違っています。`bodyRadius`と`bodyY`を確認してください。"},{"key":"head","english":"The head (top) circle is either in the wrong place or the wrong size. Check `headRadius` and `headY`.","target":"頭（一番上）の円の位置か大きさが間違っています。`headRadius`と`headY`を確認してください。"},{"key":"notResponsive","english":"Your code doesn't scale correctly when `size` is {{size}}. Every radius and y position should be derived from `size`.","target":"`size`が{{size}}のとき、コードが正しく拡大縮小されません。すべての半径とY座標は`size`から導き出す必要があります。"}]},{"name":"tasks","rows":[{"key":"buildRelationalSnowman.name","english":"Build the relational snowman","target":"相対的な雪だるまを作る"},{"key":"buildRelationalSnowman.description","english":"Derive all sizes and positions from `size` so the snowman scales correctly.","target":"雪だるまが正しく拡大縮小されるように、すべての大きさと位置を`size`から導き出します。"}]},{"name":"scenarios","rows":[{"key":"buildRelationalSnowman.name","english":"Build the relational snowman","target":"相対的な雪だるまを作る"},{"key":"buildRelationalSnowman.description","english":"Derive every radius and y position from `size`.","target":"すべての半径とY座標を`size`から導き出します。"}]},{"name":"hints","rows":[{"key":"whereToStart.question","english":"Where should I start?","target":"どこから始めればいいですか？"},{"key":"whereToStart.answer","english":"Start with the base, because it's the only circle anchored to anything fixed (the bottom of the canvas). Once you know `baseY`, you can stack the body on top of it, and then the head on top of the body.","target":"土台から始めてください。これは、固定されたもの（キャンバスの下端）に固定されている唯一の円だからです。`baseY`がわかれば、その上に胴体を、さらにその上に頭を積み重ねることができます。"},{"key":"baseSits.question","english":"How do I work out where the base sits?","target":"土台の位置はどうやって計算しますか？"},{"key":"baseSits.answer","english":"The bottom edge of the base sits `size` above the ground (Y=100). The center of the base is one base-radius further up from its bottom edge.","target":"土台の下端は地面（Y=100）から`size`上にあります。土台の中心は、その下端から土台の半径分だけさらに上にあります。"},{"key":"stackBody.question","english":"How do I stack the body on the base?","target":"土台の上に胴体を積み重ねるにはどうすればいいですか？"},{"key":"stackBody.answer","english":"When two circles touch with one directly above the other, the distance between their centers equals the sum of their two radii.","target":"2つの円が接し、一方が他方の真上にある場合、それらの中心間の距離は2つの半径の和に等しくなります。"},{"key":"head.question","english":"What about the head?","target":"頭はどうですか？"},{"key":"head.answer","english":"The head sits on the body in exactly the same way as the body sits on the base.","target":"頭が胴体の上に乗るのは、胴体が土台の上に乗るのとまったく同じです。"},{"key":"whyDeriveFromSize.question","english":"Why must everything be derived from `size`?","target":"なぜすべてを`size`から導き出さなければならないのですか？"},{"key":"whyDeriveFromSize.answer","english":"If you hardcode a number, changing `size` will leave gaps or overlaps between the circles. Using formulas keeps everything in proportion.","target":"数値を直接書いてしまうと、`size`を変更したときに円の間に隙間ができたり重なったりします。式を使うと、すべての比率が保たれます。"}]},{"name":"functions","rows":[{"key":"circle.description","english":"Draw a circle centered at (centerX, centerY) with the given radius and color","target":"指定された半径と色で、(centerX, centerY)を中心とする円を描きます。"},{"key":"circle.category","english":"Drawing Shapes","target":"図形の描画"}]}]},{"heading":"Shared \"draw\" messages","note":"Shared by every exercise in the draw category, not just this one. A change here changes all of them.","namespaces":[{"name":"errors","rows":[{"key":"allInputsNumbers","english":"All inputs must be numbers","target":"すべての入力は数値でなければなりません"},{"key":"blueRange","english":"Blue must be between 0 and 255","target":"青の値は0から255の間でなければなりません"},{"key":"circleInputsNumbers","english":"The x, y, and radius inputs must be numbers","target":"x、y、半径の入力は数値でなければなりません"},{"key":"colorNamedOrHex","english":"Color must be a named color (\"orange\", \"blue\", \"white\", etc) specified in the instructions, or a hex color starting with #","target":"色は、指示で指定された名前付きの色（\"orange\"、\"blue\"、\"white\"など）か、#で始まる16進数の色でなければなりません"},{"key":"colorNotAllowed","english":"Color should not be specified for this exercise","target":"この演習では色を指定してはいけません"},{"key":"colorNotString","english":"Color must be a string","target":"色は文字列でなければなりません"},{"key":"ellipseInputsNumbers","english":"The x, y, rx, and ry inputs must be numbers","target":"x、y、rx、ryの入力は数値でなければなりません"},{"key":"greenRange","english":"Green must be between 0 and 255","target":"緑の値は0から255の間でなければなりません"},{"key":"heightPositive","english":"Height must be greater than 0","target":"高さは0より大きくなければなりません"},{"key":"hueRange","english":"Hue must be between 0 and 360","target":"色相は0から360の間でなければなりません"},{"key":"lightnessRange","english":"Lightness must be between 0 and 100","target":"明度は0から100の間でなければなりません"},{"key":"lineInputsNumbers","english":"The x1, y1, x2, and y2 inputs must be numbers","target":"x1、y1、x2、y2の入力は数値でなければなりません"},{"key":"rectInputsNumbers","english":"The x, y, width, and height inputs must be numbers","target":"x、y、幅、高さの入力は数値でなければなりません"},{"key":"redRange","english":"Red must be between 0 and 255","target":"赤の値は0から255の間でなければなりません"},{"key":"saturationRange","english":"Saturation must be between 0 and 100","target":"彩度は0から100の間でなければなりません"},{"key":"triangleInputsNumbers","english":"The x1, y1, x2, y2, x3, and y3 inputs must be numbers","target":"x1、y1、x2、y2、x3、y3の入力は数値でなければなりません"},{"key":"widthPositive","english":"Width must be greater than 0","target":"幅は0より大きくなければなりません"}]},{"name":"describers","rows":[{"key":"rectangle.default","english":"drew a rectangle at coordinates (${arg1}, ${arg2}) with a width of ${arg3}, a height of ${arg4}, and a color of ${arg5}","target":"幅${arg3}、高さ${arg4}、色${arg5}の長方形を座標(${arg1}, ${arg2})に描きました"},{"key":"rectangle.fixedColor","english":"drew a rectangle at coordinates (${arg1}, ${arg2}) with a width of ${arg3} and a height of ${arg4}","target":"幅${arg3}、高さ${arg4}の長方形を座標(${arg1}, ${arg2})に描きました"},{"key":"triangle.default","english":"drew a triangle with three points: (${arg1}, ${arg2}), (${arg3}, ${arg4}), and (${arg5}, ${arg6}) with a color of ${arg7}","target":"3点(${arg1}, ${arg2})、(${arg3}, ${arg4})、(${arg5}, ${arg6})を頂点とする色${arg7}の三角形を描きました"},{"key":"triangle.fixedColor","english":"drew a triangle with three points: (${arg1}, ${arg2}), (${arg3}, ${arg4}), and (${arg5}, ${arg6})","target":"3点(${arg1}, ${arg2})、(${arg3}, ${arg4})、(${arg5}, ${arg6})を頂点とする三角形を描きました"},{"key":"circle.default","english":"drew a circle with its center at (${arg1}, ${arg2}), a radius of ${arg3}, and a color of ${arg4}","target":"中心(${arg1}, ${arg2})、半径${arg3}、色${arg4}の円を描きました"},{"key":"circle.fixedColor","english":"drew a circle with its center at (${arg1}, ${arg2}) and a radius of ${arg3}","target":"中心(${arg1}, ${arg2})、半径${arg3}の円を描きました"},{"key":"ellipse.default","english":"drew an ellipse with its center at (${arg1}, ${arg2}), a horizontal radius of ${arg3}, a vertical radius of ${arg4}, and a color of ${arg5}","target":"中心(${arg1}, ${arg2})、水平半径${arg3}、垂直半径${arg4}、色${arg5}の楕円を描きました"},{"key":"ellipse.fixedColor","english":"drew an ellipse with its center at (${arg1}, ${arg2}), a horizontal radius of ${arg3}, and a vertical radius of ${arg4}","target":"中心(${arg1}, ${arg2})、水平半径${arg3}、垂直半径${arg4}の楕円を描きました"},{"key":"line.default","english":"drew a line from (${arg1}, ${arg2}) to (${arg3}, ${arg4}) with a color of ${arg5}","target":"(${arg1}, ${arg2})から(${arg3}, ${arg4})への色${arg5}の線を描きました"},{"key":"line.fixedColor","english":"drew a line from (${arg1}, ${arg2}) to (${arg3}, ${arg4})","target":"(${arg1}, ${arg2})から(${arg3}, ${arg4})への線を描きました"},{"key":"clear","english":"cleared the canvas","target":"キャンバスをクリアしました"},{"key":"hsl","english":"converted HSL color (hue: ${arg1}, saturation: ${arg2}, lightness: ${arg3}) to a hex string","target":"HSL色（色相: ${arg1}、彩度: ${arg2}、明度: ${arg3}）を16進数の文字列に変換しました"},{"key":"rgb","english":"converted RGB color (red: ${arg1}, green: ${arg2}, blue: ${arg3}) to a hex string","target":"RGB色（赤: ${arg1}、緑: ${arg2}、青: ${arg3}）を16進数の文字列に変換しました"}]}]}]
+---
+
+この演習では、再び雪だるまを作ります。前回の演習と似ていますが、今回はすべての値を、単一の`size`（サイズ）変数から算術で導き出せるようにします。
+
+選択した`size`に応じて、雪だるまが大きくなります。
+
+<img
+  src="/static/images/exercise-assets/relational-snowman/sizes.webp"
+  alt="サイズ1から5までの雪だるま"
+  style="width: 100%; max-width: 600px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 5px; box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); margin-bottom: 8px;"
+/>
+
+### 仕組み
+
+- 描画キャンバスの左上は`0,0`です。右下は`100,100`です。
+- あらかじめ用意された変数として、画像の中心のX座標を表す`snowmanX`（中心のX座標）と、`size`変数があります。`size`は`1`から`5`まで変更でき、雪だるまを大きくできます。
+- その他の変数はすべて、算術式を使って導き出します。
+- 頭の半径は`size * 2`、胴体の半径は`size * 3`、土台の半径は`size * 4`です。
+- 円は互いに接するようにします。胴体は土台の真上に、頭は胴体の真上に配置します。（今回の雪だるまは前回よりやや不安定です。各雪玉は下の雪玉にぴったり接していて、溶け込んだりしていません。きっととても寒い日なのでしょうね！）
+- 土台の円の底は、描画領域の下端から`size`だけ上にあります。
+- 3つの雪玉すべての中心座標を計算します。
+
+### 変数
+
+上記の指示に従って、以下の変数を設定してください。
+
+- `headRadius`（頭の半径）：`size`から導き出します
+- `bodyRadius`（胴体の半径）：`size`から導き出します
+- `baseRadius`（土台の半径）：`size`から導き出します
+- `baseY`（土台のY座標）：`size`と`baseRadius`から導き出します（土台は地面に接しています）
+- `bodyY`（胴体のY座標）：`baseY`、`baseRadius`、`bodyRadius`から導き出します
+- `headY`（頭のY座標）：`bodyY`、`bodyRadius`、`headRadius`から導き出します
+
+### サイズを試す
+
+`size`を`1`から`5`に変更すると、雪だるまが大きくなります。変更したら「コードを実行」ボタンを押してください。

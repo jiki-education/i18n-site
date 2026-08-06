@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/while-loops/source.md"
 en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "ec30de8"
+governance_sha: "c80036b"
 content_version: "d903274839db"
-published_at: "2026-08-02"
+published_at: "2026-08-06"
 forum_topic_id: 1059
 ---
 

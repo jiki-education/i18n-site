@@ -1,0 +1,36 @@
+---
+lang: "ko"
+type: "exercise"
+slug: "acronym"
+title: "Acronym"
+status: "published"
+source_repo: "front-end"
+source_path: "curriculum/src/exercises/acronym"
+en_md5: "f42dbd1b0fe85c42e70bb2c37a4746c2"
+governance_sha: "c80036b"
+content_version: "a224663bf1e4"
+published_at: "2026-08-06"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"tasks","rows":[{"key":"createAcronymFunction.name","english":"Create acronym function","target":"약어 함수 만들기"},{"key":"createAcronymFunction.description","english":"Write a function that takes a phrase and returns its acronym: the first letter of each word, in uppercase. Words are separated by spaces and hyphens, and any other punctuation is ignored.","target":"문구를 입력받아 약어를 반환하는 함수를 작성하세요. 약어는 각 단어의 첫 글자를 대문자로 만든 것입니다. 단어는 공백과 하이픈(-)으로 구분되며, 다른 구두점은 무시합니다."},{"key":"solveTightly.name","english":"Solve it in 46 lines","target":"46줄로 해결하기"},{"key":"solveTightly.description","english":"Bonus: with the letter-testing and case-swapping pulled into helper functions that `acronym` reuses, the whole solution fits in 46 lines. Can you match it?","target":"보너스: 글자 검사와 대소문자 변환을 도우미 함수로 분리하면 `acronym`에서 재사용할 수 있고, 전체 해결책이 46줄로 정리됩니다. 따라해 볼 수 있나요?"}]},{"name":"scenarios","rows":[{"key":"png.name","english":"Basic acronym: PNG","target":"기본 약어: PNG"},{"key":"png.description","english":"Convert 'Portable Network Graphics' to 'PNG'.","target":"'Portable Network Graphics'를 'PNG'로 변환하세요."},{"key":"ror.name","english":"Lowercase words: ROR","target":"소문자 단어: ROR"},{"key":"ror.description","english":"Convert 'Ruby on Rails' to 'ROR'.","target":"'Ruby on Rails'를 'ROR'로 변환하세요."},{"key":"gimp.name","english":"All caps word: GIMP","target":"모두 대문자 단어: GIMP"},{"key":"gimp.description","english":"Convert 'GNU Image Manipulation Program' to 'GIMP'.","target":"'GNU Image Manipulation Program'을 'GIMP'로 변환하세요."},{"key":"firstWordOnly.name","english":"Single word: H","target":"한 단어: H"},{"key":"firstWordOnly.description","english":"Convert 'HyperText' to 'H'.","target":"'HyperText'를 'H'로 변환하세요."},{"key":"hyphenated.name","english":"Hyphenated phrase: CMOS","target":"하이픈 포함 문구: CMOS"},{"key":"hyphenated.description","english":"Convert 'Complementary metal-oxide semiconductor' to 'CMOS'.","target":"'Complementary metal-oxide semiconductor'를 'CMOS'로 변환하세요."},{"key":"fifo.name","english":"Comma-separated: FIFO","target":"쉼표로 구분된 문구: FIFO"},{"key":"fifo.description","english":"Convert 'First In, First Out' to 'FIFO'.","target":"'First In, First Out'를 'FIFO'로 변환하세요."},{"key":"punctuation.name","english":"With punctuation: PHT","target":"구두점 포함: PHT"},{"key":"punctuation.description","english":"Convert 'Portable, HyperText, Transmitter' to 'PHT'.","target":"'Portable, HyperText, Transmitter'를 'PHT'로 변환하세요."},{"key":"hc.name","english":"With an apostrophe: HC","target":"아포스트로피 포함: HC"},{"key":"hc.description","english":"Convert 'Halley's Comet' to 'HC'.","target":"'Halley's Comet'를 'HC'로 변환하세요."},{"key":"simufta.name","english":"Consecutive delimiters: SIMUFTA","target":"연속된 구분자: SIMUFTA"},{"key":"simufta.description","english":"Convert 'Something - I made up from thin air' to 'SIMUFTA'.","target":"'Something - I made up from thin air'를 'SIMUFTA'로 변환하세요."},{"key":"trnt.name","english":"Underscore emphasis: TRNT","target":"밑줄 강조: TRNT"},{"key":"trnt.description","english":"Convert 'The Road _Not_ Taken' to 'TRNT'.","target":"'The Road _Not_ Taken'를 'TRNT'로 변환하세요."},{"key":"long.name","english":"A very long one: ROTFLSHTMDCOALM","target":"매우 긴 문구: ROTFLSHTMDCOALM"},{"key":"long.description","english":"Convert 'Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me' to 'ROTFLSHTMDCOALM'.","target":"'Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me'를 'ROTFLSHTMDCOALM'로 변환하세요."},{"key":"emoji.name","english":"With an emoji: HW","target":"이모지 포함: HW"},{"key":"emoji.description","english":"Convert 'Hello 👋 World' to 'HW'.","target":"'Hello 👋 World'를 'HW'로 변환하세요."},{"key":"acronymBonusLineCount.name","english":"Neat and tidy","target":"깔끔하게 정리하기"},{"key":"acronymBonusLineCount.description","english":"The tidiest solution reuses its helpers and fits in 46 lines. Can you find it?","target":"가장 깔끔한 해결책은 도우미 함수를 재사용하여 46줄로 정리됩니다. 찾을 수 있나요?"}]},{"name":"checks","rows":[{"key":"tooManyLines","english":"Keep going! See if you can solve it in fewer lines.","target":"계속 도전하세요! 더 적은 줄로 해결할 수 있는지 확인해 보세요."},{"key":"noMethods","english":"This exercise is about building the tools yourself. Solve it without using any built-in methods.","target":"이 연습 문제는 스스로 도구를 만드는 것이 핵심입니다. 내장 메서드를 전혀 사용하지 않고 해결해보세요."}]},{"name":"hints","rows":[{"key":"pickLetters.question","english":"How do I pick out which letters become the acronym?","target":"어떤 글자가 약어가 되는지 어떻게 고르나요?"},{"key":"pickLetters.answer","english":"The acronym is built from the letter that starts each word: the very first letter of the phrase, plus the first letter after every space or hyphen.","target":"약어는 각 단어의 첫 글자로 구성됩니다. 즉, 문구의 맨 첫 글자와 모든 공백이나 하이픈(-) 다음에 나오는 첫 글자를 모아 만듭니다."},{"key":"findWordStarts.question","english":"How do I know when a new word starts?","target":"새 단어가 언제 시작되는지 어떻게 알 수 있나요?"},{"key":"findWordStarts.answer","english":"Walk the phrase one character at a time and keep track of whether you're at the start of a new word. You are at the very beginning, and again straight after any space or hyphen. Anything that isn't a letter (punctuation, underscores, apostrophes) should be skipped rather than counted as the start of a word.","target":"문구를 한 글자씩 살펴보면서 새 단어의 시작인지 추적하세요. 처음 시작할 때와 공백이나 하이픈 바로 다음이 새 단어의 시작입니다. 글자가 아닌 것(구두점, 밑줄, 아포스트로피)은 단어의 시작으로 간주하지 않고 그냥 건너뜁니다."},{"key":"buildResult.question","english":"How do I build up the result as I go?","target":"진행하면서 결과를 어떻게 만들어 나가나요?"},{"key":"buildResult.answer","english":"Start with an empty string and add each chosen letter onto the end using `+`.","target":"빈 문자열로 시작해서 선택한 글자를 `+`를 사용해 끝에 하나씩 추가하세요."},{"key":"uppercaseLetters.question","english":"How do I make a letter uppercase when there's no built-in for it?","target":"대문자로 바꾸는 내장 기능이 없을 때 어떻게 글자를 대문자로 만들 수 있나요?"},{"key":"uppercaseLetters.answer","english":"There's no ready-made uppercaser here. Just like in Pangram, you can line up a lowercase alphabet against an uppercase one and swap a letter for the one at the same position. Letters that are already uppercase can stay as they are.","target":"여기에는 미리 만들어진 대문자 변환기가 없어요. Pangram에서 했던 것처럼, 소문자 알파벳과 대문자 알파벳을 나란히 두고 같은 위치의 글자로 바꾸면 돼요. 이미 대문자인 글자는 그대로 두면 됩니다."}]}]}]
+---
+
+간단한 세 글자 약어는 이미 풀어보셨어요. 예를 들어 `Portable Network Graphics`를 `PNG`로 바꾸는 것처럼요.
+
+하지만 이번 연습 문제에서는 한 걸음 더 나아가, 세 글자뿐 아니라 모든 약어를 다뤄요. 훨씬 더 어려울 거예요…
+
+해야 할 일은 `acronym(phrase)`라는 함수를 작성하는 거예요. 이 함수는 문구를 입력받아 그 약어를 반환해요.
+
+## 규칙
+
+새 단어는 **공백** 또는 **하이픈**(`-`) 이후에 시작돼요. 나머지 모든 문자(쉼표, 아포스트로피, 밑줄, 느낌표 등)은 구분자가 아니며 약어에 포함되지 않아요. 글자만 셉니다.
+
+| 문구                      | 약어 |
+| ------------------------- | ---- |
+| As Soon As Possible       | ASAP |
+| Liquid-crystal display    | LCD  |
+| Thank George It's Friday! | TGIF |
+
+## 주의하세요
+
+이 강의 후반부에서 배우게 될 고급 JavaScript 메서드는 하나도 제공하지 않았어요. 글자를 간단히 대문자로 바꾸거나, 어떤 문자가 글자인지 판별해 주는 마법 같은 도구는 전혀 없어요. 그런 도우미 함수들을 직접 만들어야 전체를 조립할 수 있어요.
+
+이번 문제는 듣는 것보다 까다로워요. 재미있게 풀어보세요!

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/creating-functions/source.md"
 en_md5: "93286a30a373b5604b60b3c109ad00a3"
-governance_sha: "ae16caf"
+governance_sha: "c80036b"
 content_version: "8b3ef19f3aad"
-published_at: "2026-08-05"
+published_at: "2026-08-06"
+forum_topic_id: 1200
 ---
 
 Finora, hai usato funzioni che sono state create per te, funzioni come `circle`, `rectangle`, `moveRight`, `shoot`. Tutte queste sono funzioni che sono state create e messe sugli scaffali di Jiki.

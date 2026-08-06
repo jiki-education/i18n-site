@@ -7,7 +7,7 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/battle-procedures"
 en_md5: "ab16d83f6a45d12645032159192cd109"
-governance_sha: "d599c12"
+governance_sha: "c80036b"
 content_version: "3bb8ceb4578e"
 published_at: "2026-08-06"
 forum_topic_id: 1257

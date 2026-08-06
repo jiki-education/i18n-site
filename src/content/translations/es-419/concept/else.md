@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/else/source.md"
 en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
-governance_sha: "29b680f"
+governance_sha: "c80036b"
 content_version: "5d75ffbc2650"
-published_at: "2026-08-03"
+published_at: "2026-08-06"
+forum_topic_id: 1135
 ---
 
 Los condicionales te permiten verificar condiciones y ejecutar código solo cuando algo es verdadero. Ahora conozcamos al cómplice de `if`, el `else`.

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions-with-return-values/source.md"
 en_md5: "5d8a17a37be570bc9c63df0c854ba774"
-governance_sha: "7fb5f3a"
+governance_sha: "c80036b"
 content_version: "65a86c448682"
-published_at: "2026-08-05"
+published_at: "2026-08-06"
+forum_topic_id: 1214
 ---
 
 Finora abbiamo visto funzioni che fanno qualcosa nel mondo. Quindi la funzione `circle` disegna un cerchio. La funzione `move` sposta il tuo personaggio. Ma alcune funzioni funzionano in modo diverso. Invece di fare qualcosa di esterno, ti danno indietro qualcosa che puoi usare all'interno del tuo codice. Quando una funzione fornisce qualcosa a Jiki da usare nel codice, diciamo che questa funzione restituisce (_return_ in inglese) qualcosa. Restituisce qualcosa indietro a Jiki. Puoi pensare a queste macchine come se avessero uno scivolo di output. Abbiamo già le nostre fessure di input in cui mettiamo le cose, ma possiamo anche avere una singola fessura di output o uno scivolo da cui qualcosa può tornare fuori. Quando Jiki preme il pulsante sulla macchina, la macchina si mette in moto e qualcosa salterà fuori da quello scivolo alla fine. Potrebbe essere un numero. Potrebbe essere una stringa. È qualcosa che Jiki può prendere e usare.

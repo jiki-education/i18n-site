@@ -1,0 +1,45 @@
+---
+lang: "ko"
+type: "exercise"
+slug: "relational-sun"
+title: "관계형 태양"
+status: "published"
+source_repo: "front-end"
+source_path: "curriculum/src/exercises/relational-sun"
+en_md5: "9ff58522efc81e1fab45e94feaa23998"
+governance_sha: "c80036b"
+content_version: "5609f68eb42d"
+published_at: "2026-08-06"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"checks","rows":[{"key":"wrongPosition","english":"The sun is either in the wrong place or the wrong size. Check your `sunX` and `sunY` calculations, and make sure you're passing `radius` to `circle`.","target":"태양이 잘못된 위치에 있거나 크기가 잘못되었어요. `sunX`와 `sunY` 계산을 확인하고, `circle`에 `radius`를 제대로 전달했는지 확인해 보세요."},{"key":"notResponsive","english":"Your code doesn't scale correctly when `gap` is {{gap}} and `radius` is {{radius}}. `sunX` and `sunY` should be derived from `gap` and `radius`, not hardcoded numbers.","target":"`gap`이 {{gap}}이고 `radius`가 {{radius}}일 때 코드가 올바르게 조정되지 않아요. `sunX`와 `sunY`는 직접 숫자를 하드코딩하지 말고 `gap`과 `radius`로부터 계산해야 해요."}]},{"name":"tasks","rows":[{"key":"positionSun.name","english":"Position the sun","target":"태양 배치하기"},{"key":"positionSun.description","english":"Derive `sunX` and `sunY` from `canvasSize`, `gap`, and `radius` so the sun scales correctly.","target":"`canvasSize`, `gap`, `radius`로 `sunX`와 `sunY`를 계산하여 태양이 제대로 조정되도록 해 보세요."}]},{"name":"scenarios","rows":[{"key":"positionSun.name","english":"Position the sun","target":"태양 배치하기"},{"key":"positionSun.description","english":"Derive the sun's position from `gap` and `radius` so it scales.","target":"`gap`과 `radius`로 태양의 위치를 계산하여 태양이 제대로 조정되도록 해 보세요."}]},{"name":"hints","rows":[{"key":"sunXPosition.question","english":"How should I think about the sun's x position?","target":"태양의 x 좌표는 어떻게 생각하면 될까요?"},{"key":"sunXPosition.answer","english":"Picture the right edge of the canvas. The edge of the sun sits `gap` to the left of that edge. The *centre* of the sun is one more radius further in than that.","target":"캔버스의 오른쪽 가장자리를 상상해 보세요. 태양의 가장자리는 그 가장자리에서 왼쪽으로 `gap`만큼 떨어져 있어요. 태양의 *중심*은 거기서 반지름만큼 더 안쪽에 있어요."},{"key":"sunYPosition.question","english":"How should I think about the sun's y position?","target":"태양의 y 좌표는 어떻게 생각하면 될까요?"},{"key":"sunYPosition.answer","english":"It's the same idea as the x position, but measured down from the top edge of the canvas instead of in from the right edge.","target":"x 좌표와 같은 개념이에요. 오른쪽 가장자리에서 왼쪽으로 재는 대신, 캔버스 위쪽 가장자리에서 아래로 잰다는 점만 달라요."},{"key":"whyNotHardcode.question","english":"Why can't I just write the numbers directly?","target":"왜 숫자를 바로 쓰면 안 되나요?"},{"key":"whyNotHardcode.answer","english":"If you hardcode `sunX` and `sunY`, the sun will stay in one place when `gap` or `radius` change. Building them from `gap` and `radius` keeps the sun in the corner no matter what values you choose.","target":"`sunX`와 `sunY`를 하드코딩하면, `gap`이나 `radius`가 변해도 태양이 한곳에 머물러요. `gap`과 `radius`로부터 계산하면, 어떤 값을 선택하든 태양이 항상 모서리에 위치하도록 해요."}]},{"name":"functions","rows":[{"key":"circle.description","english":"Draw a circle centered at (centerX, centerY) with the given radius and color","target":"(centerX, centerY) 좌표를 중심으로, 주어진 반지름과 색상으로 원을 그려요."},{"key":"circle.category","english":"Drawing Shapes","target":"도형 그리기"}]}]},{"heading":"Shared \"draw\" messages","note":"Shared by every exercise in the draw category, not just this one. A change here changes all of them.","namespaces":[{"name":"errors","rows":[{"key":"allInputsNumbers","english":"All inputs must be numbers","target":"모든 입력값은 숫자여야 해요"},{"key":"blueRange","english":"Blue must be between 0 and 255","target":"파랑은 0에서 255 사이여야 해요"},{"key":"circleInputsNumbers","english":"The x, y, and radius inputs must be numbers","target":"x, y, 반지름 입력값은 숫자여야 해요"},{"key":"colorNamedOrHex","english":"Color must be a named color (\"orange\", \"blue\", \"white\", etc) specified in the instructions, or a hex color starting with #","target":"색상은 지시 사항에 명시된 이름이 있는 색상(\"orange\", \"blue\", \"white\" 등)이거나 #으로 시작하는 16진수 색상이어야 해요"},{"key":"colorNotAllowed","english":"Color should not be specified for this exercise","target":"이 연습 문제에서는 색상을 지정하지 않아야 해요"},{"key":"colorNotString","english":"Color must be a string","target":"색상은 문자열이어야 해요"},{"key":"ellipseInputsNumbers","english":"The x, y, rx, and ry inputs must be numbers","target":"x, y, rx, ry 입력값은 숫자여야 해요"},{"key":"greenRange","english":"Green must be between 0 and 255","target":"초록은 0에서 255 사이여야 해요"},{"key":"heightPositive","english":"Height must be greater than 0","target":"높이는 0보다 커야 해요"},{"key":"hueRange","english":"Hue must be between 0 and 360","target":"색상은 0에서 360 사이여야 해요"},{"key":"lightnessRange","english":"Lightness must be between 0 and 100","target":"명도는 0에서 100 사이여야 해요"},{"key":"lineInputsNumbers","english":"The x1, y1, x2, and y2 inputs must be numbers","target":"x1, y1, x2, y2 입력값은 숫자여야 해요"},{"key":"rectInputsNumbers","english":"The x, y, width, and height inputs must be numbers","target":"x, y, 너비, 높이 입력값은 숫자여야 해요"},{"key":"redRange","english":"Red must be between 0 and 255","target":"빨강은 0에서 255 사이여야 해요"},{"key":"saturationRange","english":"Saturation must be between 0 and 100","target":"채도는 0에서 100 사이여야 해요"},{"key":"triangleInputsNumbers","english":"The x1, y1, x2, y2, x3, and y3 inputs must be numbers","target":"x1, y1, x2, y2, x3, y3 입력값은 숫자여야 해요"},{"key":"widthPositive","english":"Width must be greater than 0","target":"너비는 0보다 커야 해요"}]},{"name":"describers","rows":[{"key":"rectangle.default","english":"drew a rectangle at coordinates (${arg1}, ${arg2}) with a width of ${arg3}, a height of ${arg4}, and a color of ${arg5}","target":"좌표 (${arg1}, ${arg2})에 너비 ${arg3}, 높이 ${arg4}, 색상 ${arg5}인 직사각형을 그렸어요"},{"key":"rectangle.fixedColor","english":"drew a rectangle at coordinates (${arg1}, ${arg2}) with a width of ${arg3} and a height of ${arg4}","target":"좌표 (${arg1}, ${arg2})에 너비 ${arg3}, 높이 ${arg4}인 직사각형을 그렸어요"},{"key":"triangle.default","english":"drew a triangle with three points: (${arg1}, ${arg2}), (${arg3}, ${arg4}), and (${arg5}, ${arg6}) with a color of ${arg7}","target":"세 점 (${arg1}, ${arg2}), (${arg3}, ${arg4}), (${arg5}, ${arg6})과 색상 ${arg7}으로 삼각형을 그렸어요"},{"key":"triangle.fixedColor","english":"drew a triangle with three points: (${arg1}, ${arg2}), (${arg3}, ${arg4}), and (${arg5}, ${arg6})","target":"세 점 (${arg1}, ${arg2}), (${arg3}, ${arg4}), (${arg5}, ${arg6})으로 삼각형을 그렸어요"},{"key":"circle.default","english":"drew a circle with its center at (${arg1}, ${arg2}), a radius of ${arg3}, and a color of ${arg4}","target":"중심 좌표 (${arg1}, ${arg2})에 반지름 ${arg3}, 색상 ${arg4}인 원을 그렸어요"},{"key":"circle.fixedColor","english":"drew a circle with its center at (${arg1}, ${arg2}) and a radius of ${arg3}","target":"중심 좌표 (${arg1}, ${arg2})에 반지름 ${arg3}인 원을 그렸어요"},{"key":"ellipse.default","english":"drew an ellipse with its center at (${arg1}, ${arg2}), a horizontal radius of ${arg3}, a vertical radius of ${arg4}, and a color of ${arg5}","target":"중심 좌표 (${arg1}, ${arg2})에 가로 반지름 ${arg3}, 세로 반지름 ${arg4}, 색상 ${arg5}인 타원을 그렸어요"},{"key":"ellipse.fixedColor","english":"drew an ellipse with its center at (${arg1}, ${arg2}), a horizontal radius of ${arg3}, and a vertical radius of ${arg4}","target":"중심 좌표 (${arg1}, ${arg2})에 가로 반지름 ${arg3}, 세로 반지름 ${arg4}인 타원을 그렸어요"},{"key":"line.default","english":"drew a line from (${arg1}, ${arg2}) to (${arg3}, ${arg4}) with a color of ${arg5}","target":"(${arg1}, ${arg2})에서 (${arg3}, ${arg4})까지 색상 ${arg5}인 선을 그렸어요"},{"key":"line.fixedColor","english":"drew a line from (${arg1}, ${arg2}) to (${arg3}, ${arg4})","target":"(${arg1}, ${arg2})에서 (${arg3}, ${arg4})까지 선을 그렸어요"},{"key":"clear","english":"cleared the canvas","target":"캔버스를 지웠어요"},{"key":"hsl","english":"converted HSL color (hue: ${arg1}, saturation: ${arg2}, lightness: ${arg3}) to a hex string","target":"HSL 색상 (색상: ${arg1}, 채도: ${arg2}, 명도: ${arg3})을 16진수 문자열로 변환했어요"},{"key":"rgb","english":"converted RGB color (red: ${arg1}, green: ${arg2}, blue: ${arg3}) to a hex string","target":"RGB 색상 (빨강: ${arg1}, 초록: ${arg2}, 파랑: ${arg3})을 16진수 문자열로 변환했어요"}]}]}]
+---
+
+이 연습 문제에서는 산술과 변수를 사용해 태양을 하늘의 오른쪽 위 모서리에 배치하는 것이 과제예요. 중요한 조건은 태양의 크기에 상관없이, 태양의 가장자리가 캔버스 가장자리에서 항상 고정된 간격을 유지해야 한다는 점이에요.
+
+파일 맨 위에 네 개의 변수(영어: _variables_)를 미리 설정해 두었어요.
+
+- `` `canvasSize` ``(캔버스 크기): 캔버스의 크기로, `100`이에요.
+- `` `color` ``(색상): `"yellow"`로 설정되어 있어요.
+- `` `gap` ``(간격): 태양의 가장자리가 캔버스 위쪽과 오른쪽 가장자리에서 떨어져 있는 거리예요.
+- `` `radius` ``(반지름): 태양의 반지름이에요.
+
+### 2단계 과정
+
+이 문제를 풀려면 두 가지를 해야 해요.
+
+#### 1. 파생 변수 정의하기
+
+`` `sunX` ``(태양의 x 좌표)와 `` `sunY` ``(태양의 y 좌표) 변수를 정의해요. 이 변수들은 `gap`, `radius`, `canvasSize`를 사용해서 오른쪽 위 모서리에 있는 태양의 중심을 계산하는 식이에요.
+
+#### 2. 원 그리기
+
+`sunX`, `sunY`, `radius`, `color`를 사용해서 원을 그려요.
+
+## 유연성
+
+기본값으로 `gap`은 10, `radius`는 15로 설정되어 있어요. 먼저 이 값으로 문제를 풀면서 배경을 참고해 위치를 맞춰 보세요. 코드가 올바르면 페이지에 원이 제자리에 나타나는 걸 볼 수 있어요.
+
+하지만, 이 연습 문제를 통과하려면 값을 '하드코딩'(단순히 숫자 하나로 설정하는 것)해서는 안 돼요. `sunX`와 `sunY`는 다른 변수를 포함한 계산식이어야 해요.
+
+문제를 통과한 후에는 '코드 정리하기'를 클릭하고 파일 맨 위의 `gap`과 `radius` 값을 바꿔 보세요. 코드를 다시 실행하면 태양이 커지거나 이동하면서도 여전히 모서리에 머무는 걸 볼 수 있어요.
+
+다 마치면 오른쪽 위에 있는 '대시보드'를 눌러 평소처럼 계속 진행하면 돼요.

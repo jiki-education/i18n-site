@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/arithmetic/source.md"
 en_md5: "7ce54754a3ca29896609a01a51b12377"
-governance_sha: "76021ea"
+governance_sha: "c80036b"
 content_version: "b45872dbbfe4"
-published_at: "2026-08-04"
+published_at: "2026-08-06"
+forum_topic_id: 1206
 ---
 
 Finora, quando abbiamo creato variabili, abbiamo usato solo valori semplici: un numero come `50` o una stringa come `"yellow"`. Le variabili diventano molto più potenti quando possiamo usarle in combinazione tra loro. Così possiamo dire che il bordo sinistro del rettangolo deve trovarsi a una certa distanza dal bordo dell'area di disegno.

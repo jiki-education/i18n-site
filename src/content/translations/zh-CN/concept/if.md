@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/if/source.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "2db6560"
+governance_sha: "c80036b"
 content_version: "70b223fb991b"
-published_at: "2026-08-03"
+published_at: "2026-08-06"
 ---
 
 有个关键字可以帮我们告诉 Jiki 只在特定情况下做事情。比如你写了一段看守酒吧入口的代码，你是个门卫，只有当来人的穿着得体时 Jiki 才开门。又比如你在写一段负责在比赛终点挥动方格旗的代码，但你需要让 Jiki 知道只能在最后一圈挥旗。在这些情况下，我们就要用到 `if` 关键字。

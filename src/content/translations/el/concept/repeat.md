@@ -7,7 +7,7 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/repeat/source.md"
 en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "8f081e8"
+governance_sha: "c80036b"
 content_version: "a3d87048e723"
 published_at: "2026-08-06"
 forum_topic_id: 846

@@ -7,7 +7,7 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/annalyns-infiltration"
 en_md5: "e75575c9972e672fe298c43672e853d9"
-governance_sha: "81fc354"
+governance_sha: "c80036b"
 content_version: "9cf30c008e9f"
 published_at: "2026-08-06"
 forum_topic_id: 1176

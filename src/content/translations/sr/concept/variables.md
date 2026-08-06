@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/variables/source.md"
 en_md5: "dd0834017a8d42c22cca25966c1fdd91"
-governance_sha: "1a9f130"
+governance_sha: "c80036b"
 content_version: "464f22580f20"
-published_at: "2026-08-02"
+published_at: "2026-08-06"
+forum_topic_id: 975
 ---
 
 Promenljive (engl. _variables_) nam omogućavaju da čuvamo informacije. Dok programiramo, često treba da sačuvamo neki broj ili neki string da bismo ih kasnije koristili, a tome služe promenljive. Hajde zato da pogledamo Jikijevo skladište iz malo šire perspektive, pa ćeš videti da on ima još jedan niz polica. Prvi niz polica već nam je poznat, na njemu se nalaze funkcije, one male mašine kao što su `move` i `rectangle`. Ali na ovom drugom nizu polica, umesto mašina, vidiš mnoštvo kutija, i te kutije nazivamo promenljivama. Možeš da kažeš Jikiju da u ove kutije smesti bilo šta, a kasnije da mu kažeš da izvadi ono što je u njima. Svaka kutija ima ime, baš kao što ga imaju i funkcije, i svaka kutija sadrži samo jednu stvar. Za sada, to može biti broj ili string. Ali kasnije u kursu ćemo pogledati kako se u njima čuvaju i složenije stvari.

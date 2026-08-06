@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/else/source.md"
 en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
-governance_sha: "38591e4"
+governance_sha: "c80036b"
 content_version: "c3a16281e234"
-published_at: "2026-08-01"
+published_at: "2026-08-06"
+forum_topic_id: 1054
 ---
 
 Οι εντολές `if` σου επιτρέπουν να ελέγχεις συνθήκες και να τρέχεις κώδικα μόνο όταν κάτι είναι αληθές. Τώρα ας γνωρίσουμε τον συνεργό του `if`, το `else`.

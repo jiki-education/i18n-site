@@ -1,0 +1,58 @@
+---
+lang: "zh-CN"
+type: "exercise"
+slug: "isbn-verifier"
+title: "ISBN 验证器"
+status: "published"
+source_repo: "front-end"
+source_path: "curriculum/src/exercises/isbn-verifier"
+en_md5: "aaa075db8f213a7a09416e8003eafb94"
+governance_sha: "c80036b"
+content_version: "5b1140b38777"
+published_at: "2026-08-06"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"tasks","rows":[{"key":"validateBasicIsbn.name","english":"Validate a basic ISBN","target":"验证基本 ISBN"},{"key":"validateBasicIsbn.description","english":"Write a function called isValidIsbn that takes an ISBN-10 string and returns true if valid, false if not. ISBN-10s contain dashes which should be skipped. Multiply each digit by a weight counting down from 10 to 1, sum them, and check if the total is divisible by 11.","target":"编写一个名为 isValidIsbn 的函数，接受一个 ISBN-10 字符串，如果有效则返回 true，否则返回 false。ISBN-10 含有需要跳过的连字符。将每位数字乘以从 10 递减到 1 的权重，求和，检查总和是否能被 11 整除。"},{"key":"handleXCheckDigit.name","english":"Handle X as a check digit","target":"将 X 作为校验位处理"},{"key":"handleXCheckDigit.description","english":"Sometimes an ISBN ends with an X, which represents 10. Update your function to handle X in the last position.","target":"有时 ISBN 以 X 结尾，它代表 10。更新你的函数，使其能处理最后一位上的 X。"},{"key":"handleEdgeCases.name","english":"Handle edge cases","target":"处理边界情况"},{"key":"handleEdgeCases.description","english":"Make your function robust: handle ISBNs without dashes, reject invalid characters, reject X in non-last positions, and ensure exactly 10 digits are processed.","target":"使你的函数更稳健：处理不带连字符的 ISBN，拒绝无效字符，拒绝 X 出现在非最后一位的情况，并确保恰好处理了 10 位数字。"},{"key":"useContinue.name","english":"Bonus: skip dashes with continue","target":"附加：使用 continue 跳过连字符"},{"key":"useContinue.description","english":"Rather than only doing work when a character is a digit, use continue to skip straight past the dashes and move on to the next character.","target":"不要在仅当字符为数字时才执行操作，而是使用 continue 直接跳过连字符，继续处理下一个字符。"}]},{"name":"scenarios","rows":[{"key":"isbnValid.name","english":"Valid ISBN","target":"有效的 ISBN"},{"key":"isbnValid.description","english":"A valid ISBN-10 should return true.","target":"有效的 ISBN-10 应返回 true。"},{"key":"isbnValidCheckDigitX.name","english":"Valid ISBN with X as check digit","target":"有效的 ISBN，X 作为校验位"},{"key":"isbnValidCheckDigitX.description","english":"A valid ISBN-10 with check digit 'X' should return true.","target":"校验位为 'X' 的有效 ISBN-10 应返回 true。"},{"key":"isbnValidNoDashes.name","english":"Valid ISBN without dashes","target":"不带连字符的有效 ISBN"},{"key":"isbnValidNoDashes.description","english":"A valid ISBN-10 without separating dashes should return true.","target":"不带分隔连字符的有效 ISBN-10 应返回 true。"},{"key":"isbnValidNoDashesXCheck.name","english":"Valid ISBN without dashes and X as check digit","target":"不带连字符且 X 作为校验位的有效 ISBN"},{"key":"isbnValidNoDashesXCheck.description","english":"A valid ISBN-10 without dashes and check digit 'X' should return true.","target":"不带连字符且校验位为 'X' 的有效 ISBN-10 应返回 true。"},{"key":"isbnInvalidCheckDigit.name","english":"Invalid ISBN check digit","target":"无效的 ISBN 校验位"},{"key":"isbnInvalidCheckDigit.description","english":"An ISBN-10 with an incorrect check digit should return false.","target":"校验位不正确的 ISBN-10 应返回 false。"},{"key":"isbnInvalidCharacter.name","english":"Check digit is a character other than X","target":"校验位是 X 以外的字符"},{"key":"isbnInvalidCharacter.description","english":"An ISBN-10 containing an invalid character should return false.","target":"包含无效字符的 ISBN-10 应返回 false。"},{"key":"isbnInvalidCharacterNotZero.name","english":"Invalid check digit not treated as zero","target":"无效的校验位不能视为零"},{"key":"isbnInvalidCharacterNotZero.description","english":"An invalid check digit should not be treated as zero.","target":"无效的校验位不应视为零。"},{"key":"isbnInvalidNonNumeric.name","english":"Invalid character in ISBN","target":"ISBN 中包含无效字符"},{"key":"isbnInvalidNonNumeric.description","english":"Invalid characters in ISBN should not be ignored.","target":"ISBN 中的无效字符不应被忽略。"},{"key":"isbnInvalidXPosition.name","english":"X only valid as a check digit","target":"X 仅当校验位时有效"},{"key":"isbnInvalidXPosition.description","english":"An 'X' should only be valid as a check digit.","target":"'X' 仅当校验位时才有效。"},{"key":"isbnInvalidMissingCheckDigit.name","english":"ISBN without check digit","target":"缺少校验位的 ISBN"},{"key":"isbnInvalidMissingCheckDigit.description","english":"An ISBN-10 without a check digit should return false.","target":"缺少校验位的 ISBN-10 应返回 false。"},{"key":"isbnInvalidTooLong.name","english":"Too long ISBN","target":"过长的 ISBN"},{"key":"isbnInvalidTooLong.description","english":"An ISBN-10 that is too long should return false.","target":"过长的 ISBN-10 应返回 false。"},{"key":"isbnInvalidTooShort.name","english":"Too short ISBN","target":"过短的 ISBN"},{"key":"isbnInvalidTooShort.description","english":"An ISBN-10 that is too short should return false.","target":"过短的 ISBN-10 应返回 false。"},{"key":"isbnInvalidEmpty.name","english":"Empty ISBN","target":"空 ISBN"},{"key":"isbnInvalidEmpty.description","english":"An empty ISBN string should return false.","target":"空 ISBN 字符串应返回 false。"},{"key":"isbnInvalidLengthNine.name","english":"ISBN is 9 characters","target":"ISBN 为 9 位"},{"key":"isbnInvalidLengthNine.description","english":"An input with 9 characters should return false.","target":"9 位字符的输入应返回 false。"},{"key":"isbnInvalidNonNumericBeforeCheck.name","english":"Invalid character before checking length","target":"长度检查前遇到无效字符"},{"key":"isbnInvalidNonNumericBeforeCheck.description","english":"Invalid characters should not be ignored before checking length.","target":"在检查长度之前，无效字符不应被忽略。"},{"key":"isbnInvalidExtraLength.name","english":"Input too long but contains a valid ISBN","target":"输入过长但包含有效的 ISBN"},{"key":"isbnInvalidExtraLength.description","english":"An input longer than 10 characters should return false.","target":"超过 10 个字符的输入应返回 false。"},{"key":"isbnBonusUseContinue.name","english":"Skipped dashes with continue","target":"使用 continue 跳过了连字符"},{"key":"isbnBonusUseContinue.description","english":"Your solution works and uses continue to skip over the dashes.","target":"你的解答正确，并且使用了 continue 跳过连字符。"}]},{"name":"hints","rows":[{"key":"howChecked.question","english":"How does an ISBN-10 actually get checked?","target":"ISBN-10 实际上是如何被验证的？"},{"key":"howChecked.answer","english":"Each of the 10 digits is multiplied by a decreasing weight. The first digit by 10, the second by 9, all the way down to the last by 1. You sum all those products. If the total is divisible by 11, the ISBN is valid.","target":"10 位数字的每一位都乘以一个递减的权重。第一位乘以 10，第二位乘以 9，以此类推，最后一位乘以 1。然后将所有乘积相加。如果总和能被 11 整除，这个 ISBN 就是有效的。"},{"key":"dashes.question","english":"What do I do with the dashes?","target":"我应该如何处理连字符？"},{"key":"dashes.answer","english":"Dashes are just for human readability. Skip over them entirely. They don't count as a digit and they don't move you forward in the weighting.","target":"连字符只是为了方便人阅读。完全跳过它们。它们不算作一个数字，也不会影响权重的变化。"},{"key":"trackWeight.question","english":"How do I keep track of the weight?","target":"我该如何跟踪权重？"},{"key":"trackWeight.answer","english":"Start a multiplier variable at 10. Every time you process a digit, multiply it by the current multiplier, add the product to the running sum, then decrease the multiplier by 1.","target":"设置一个乘数变量，初始值为 10。每次处理一个数字时，将其乘以当前的乘数，将结果加到总和中，然后将乘数减 1。"},{"key":"stringToNumber.question","english":"How do I turn the string into a number?","target":"我如何将字符串转换为数字？"},{"key":"stringToNumber.answer","english":"You have two options. Firstly, the intended way in this exercise is to find a way using the `indexOf` method. Have a think about that. If you can't figure that out, check the next hint for an answer.","target":"你有两个选择。首先，本练习的目的之一是让你使用 `indexOf` 方法找到解决方法。想一想。如果想不到，可以查看下一个提示获取答案。"},{"key":"stringToNumberAgain.question","english":"No seriously, how do I turn the string into a number?","target":"不开玩笑，我到底该如何将字符串转换为数字？"},{"key":"stringToNumberAgain.answer","english":"Two options. Firstly you can use the `Number()` function (with a capital \"N\"), so `Number(\"5\")` gives `5`. Read the <a href=\"/concepts/type-conversion\" target=\"_blank\" rel=\"noopener noreferrer\">Type Conversion</a> concept page if you'd like a refresher. There's also a neat `indexOf` trick worth exploring afterwards.","target":"两个选择。首先，你可以使用 `Number()` 函数（注意是大写的 \"N\"），所以 `Number(\"5\")` 返回 `5`。如果想复习一下，可以阅读 <a href=\"/concepts/type-conversion\" target=\"_blank\" rel=\"noopener noreferrer\">类型转换</a> 的概念页面。此外，还有一个巧妙的 `indexOf` 技巧值得探索。"},{"key":"handleX.question","english":"How do I handle 'X'. That's not a digit, is it?","target":"'X' 怎么处理？它不是数字，对吧？"},{"key":"handleX.answer","english":"'X' is special. It represents the value 10, but only as the very last character. Treat it like a digit with value 10 when you see it at the end, and reject the ISBN if 'X' appears anywhere else.","target":"'X' 是特殊的。它代表数值 10，但只能作为最后一个字符。当出现在末尾时，将其视为值为 10 的数字；如果 'X' 出现在其他位置，则拒绝该 ISBN。"},{"key":"exactlyTenDigits.question","english":"How do I make sure there are exactly 10 digits?","target":"我如何确保恰好有 10 位数字？"},{"key":"exactlyTenDigits.answer","english":"Your multiplier started at 10 and decreased by 1 per digit. If you processed exactly 10 digits, it'll have ended up at 0. Anything else means the wrong number of digits, so reject it.","target":"你的乘数从 10 开始，每处理一位数字就减 1。如果你恰好处理了 10 位数字，乘数最终会变为 0。否则就说明数字位数不对，应该拒绝该 ISBN。"},{"key":"finalCheck.question","english":"What's the final validity check?","target":"最后的有效性检查是什么？"},{"key":"finalCheck.answer","english":"After processing everything, the ISBN is valid if the total sum is divisible by 11 (i.e. `sum % 11 == 0`).","target":"处理完所有字符后，如果总和能被 11 整除（即 `sum % 11 == 0`），则 ISBN 有效。"}]},{"name":"checks","rows":[{"key":"mustUseContinue","english":"So close! For this bonus, use `continue` to skip the dashes.","target":"就差一点！附加要求：使用 `continue` 跳过连字符。"},{"key":"tooManyLines","english":"So close! Your solution works, but it's a little long.","target":"就差一点！你的解答可以运行，但有点长了。"}]},{"name":"functions","rows":[{"key":"number.description","english":"Convert a string containing digits to a number","target":"将包含数字的字符串转换为数字"},{"key":"number.category","english":"Type Conversion","target":"类型转换"},{"key":"includes.description","english":"Check whether a string contains a smaller string (provided by level stdlib)","target":"检查字符串是否包含一个子字符串（由关卡标准库提供）"},{"key":"includes.category","english":"String Operations","target":"字符串操作"},{"key":"indexOf.description","english":"Find the position of a smaller string within a string, or -1 if it isn't found (provided by level stdlib)","target":"查找子字符串在字符串中的位置，如果未找到则返回 -1（由关卡标准库提供）"},{"key":"indexOf.category","english":"String Operations","target":"字符串操作"}]}]}]
+---
+
+每本书都有一个ISBN，这是一个10位的数字，用来唯一标识它。每个ISBN都是唯一的，并且遵循特定的格式。此外，还有一个正式的验证过程，用于检查一个字符串是否为ISBN，这就是你将在本练习中要做的事情。
+
+ISBN 通常包含连字符，看起来像这样：`3-598-21508-8`
+
+（还有13位的ISBN，但本练习中可以安全地忽略它们！）
+
+### 验证 ISBN
+
+要验证一个ISBN，我们：
+
+- 从左边开始，将每个数字乘以一个从10递减到1的权重，然后相加。
+- 计算总和除以11的余数。
+- 检查该余数是否为零。
+
+例如，对于 ISBN `3-598-21508-8`，我们需要检查：
+
+```
+(3*10 + 5*9 + 9*8 + 8*7 + 2*6 + 1*5 + 5*4 + 0*3 + 8*2 + 8*1) % 11 === 0
+```
+
+由于结果为0，这证明我们的ISBN是有效的。
+
+还有几点重要说明：
+
+- 有时ISBN可能以X结尾。如果是这样，X代表`10`。如果X出现在任何其他位置，则该ISBN无效。
+- ISBN可以有连字符，也可以没有。
+- 任何其他字符都会使ISBN无效。
+
+### 你的任务
+
+创建一个名为 `isValidIsbn(isbn)` 的函数（用于检查 ISBN 是否有效），它接受一个 ISBN 字符串，如果有效则返回 `true`，无效则返回 `false`。
+
+### Number(...) 函数
+
+有一件事我们还没有讲到，但你需要了解，那就是 `Number(str)` 函数。这个函数接受一个字符串，并将其作为数字返回。所以，如果你写 `Number("1234")`，你会得到 `1234`。这个函数有点奇怪，因为它以大写字母开头。现在不用担心，我们以后会解释为什么会这样。
+
+### 运用你刚学到的知识
+
+和上一个练习一样，尽管有很多有效的方法来解决这个练习，但我们希望你给出的解决方案使用 `continue` 语句。
+
+附加场景挑战你在22行代码内解决此问题。还有更短的解决方案，但如果你能做到22行，就已经优化得很好了。
+
+玩得开心！

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/string-concatenation/source.md"
 en_md5: "0e6c7a941a1fb1161445da27a4d7e818"
-governance_sha: "5aafdec"
+governance_sha: "c80036b"
 content_version: "ef085a8ff4f1"
-published_at: "2026-08-05"
+published_at: "2026-08-06"
+forum_topic_id: 1208
 ---
 
 Sai già cosa sono le stringhe. Sono pezzi di carta con sopra del testo.

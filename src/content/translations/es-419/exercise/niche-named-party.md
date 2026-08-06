@@ -1,0 +1,36 @@
+---
+lang: "es-419"
+type: "exercise"
+slug: "niche-named-party"
+title: "Fiesta de nombre de nicho"
+status: "published"
+source_repo: "front-end"
+source_path: "curriculum/src/exercises/niche-named-party"
+en_md5: "470a19833eba55849106588dfa7326f2"
+governance_sha: "c80036b"
+content_version: "869647ed97b2"
+published_at: "2026-08-06"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"tasks","rows":[{"key":"checkTheName.name","english":"Check the name","target":"Verifica el nombre"},{"key":"checkTheName.description","english":"Write a `handleGuest` function that checks whether the person's name starts with the allowed letters for tonight's party. Return `true` if it does, or `false` if it doesn't.","target":"Escribe una función `handleGuest` que verifique si el nombre de la persona empieza con las letras permitidas para la fiesta de esta noche. Devuelve `true` si lo hace, o `false` si no lo hace."},{"key":"solveTightly.name","english":"Solve it in 20 lines","target":"Resuélvelo en 20 líneas"},{"key":"solveTightly.description","english":"Bonus: with the length-counting pulled out into a helper function that `handleGuest` reuses, the whole solution fits in 20 lines. Can you match it?","target":"Adicional: si extraes el conteo de longitud en una función auxiliar que `handleGuest` reutilice, la solución completa cabe en 20 líneas. ¿Puedes lograrlo?"}]},{"name":"scenarios","rows":[{"key":"sarahSParty.name","english":"S Party: Sarah arrives","target":"Fiesta S: llega Sarah"},{"key":"sarahSParty.description","english":"Tonight only names starting with \"S\" are allowed. Sarah should get in!","target":"Esta noche solo se permiten los nombres que empiezan con \"S\". ¡Sarah debería entrar!"},{"key":"bradSParty.name","english":"S Party: Brad arrives","target":"Fiesta S: llega Brad"},{"key":"bradSParty.description","english":"Tonight only names starting with \"S\" are allowed. Brad should be turned away.","target":"Esta noche solo se permiten los nombres que empiezan con \"S\". Brad debería ser rechazado."},{"key":"bradleyBradParty.name","english":"Brad Party: Bradley arrives","target":"Fiesta Brad: llega Bradley"},{"key":"bradleyBradParty.description","english":"Tonight only names starting with \"Brad\" are allowed. Bradley should get in!","target":"Esta noche solo se permiten los nombres que empiezan con \"Brad\". ¡Bradley debería entrar!"},{"key":"bradBradleyParty.name","english":"Bradley Party: Brad arrives","target":"Fiesta Bradley: llega Brad"},{"key":"bradBradleyParty.description","english":"Tonight only names starting with \"Bradley\" are allowed. Brad is too short, so he's not allowed.","target":"Esta noche solo se permiten los nombres que empiezan con \"Bradley\". Brad es demasiado corto, así que no está permitido."},{"key":"brianBradParty.name","english":"Brad Party: Brian arrives","target":"Fiesta Brad: llega Brian"},{"key":"brianBradParty.description","english":"Tonight only names starting with \"Brad\" are allowed. Brian should be turned away.","target":"Esta noche solo se permiten los nombres que empiezan con \"Brad\". Brian debería ser rechazado."},{"key":"silence.name","english":"S Party: Silence...","target":"Fiesta S: Silencio..."},{"key":"silence.description","english":"The person doesn't say their name. An empty name can't start with anything. Turn them away!","target":"La persona no dice su nombre. Un nombre vacío no puede empezar con nada. ¡Recházala!"},{"key":"cherCherParty.name","english":"Cher Party: Cher arrives","target":"Fiesta Cher: llega Cher"},{"key":"cherCherParty.description","english":"Tonight only names starting with \"Cher\" are allowed. Cher's name is exactly \"Cher\" — let her in!","target":"Esta noche solo se permiten los nombres que empiezan con \"Cher\". El nombre de Cher es exactamente \"Cher\". ¡Déjala entrar!"},{"key":"nicheNamedPartyBonusLineCount.name","english":"Neat and tidy","target":"Limpio y ordenado"},{"key":"nicheNamedPartyBonusLineCount.description","english":"The shortest solution fits in 20 lines. Can you find it?","target":"La solución más corta cabe en 20 líneas. ¿Puedes encontrarla?"}]},{"name":"checks","rows":[{"key":"tooManyLines","english":"Keep going! See if you can solve it in fewer lines.","target":"¡Sigue así! A ver si puedes resolverlo en menos líneas."}]},{"name":"hints","rows":[{"key":"checkStartsWith.question","english":"How do I check that a name starts with certain letters?","target":"¿Cómo verifico que un nombre empieza con ciertas letras?"},{"key":"checkStartsWith.answer","english":"Compare each character of the allowed prefix with the character at the same position in the name. If any character differs, the name doesn't match.","target":"Compara cada carácter del prefijo permitido con el carácter en la misma posición dentro del nombre. Si algún carácter difiere, el nombre no coincide."},{"key":"loopCharacters.question","english":"How do I look at one character at a time?","target":"¿Cómo examino un carácter a la vez?"},{"key":"loopCharacters.answer","english":"Use string iteration to step through a string.","target":"Usa iteración de strings para recorrer un string."},{"key":"findEquivalentLetter.question","english":"How do I find the equivalent letter in the other word?","target":"¿Cómo encuentro la letra equivalente en la otra palabra?"},{"key":"findEquivalentLetter.answer","english":"Use string indexing to find a specific letter.","target":"Usa la indexación de strings para encontrar una letra específica."},{"key":"longerAllowedPrefix.question","english":"What if the allowed prefix is longer than the name?","target":"¿Qué pasa si el prefijo permitido es más largo que el nombre?"},{"key":"longerAllowedPrefix.answer","english":"That person can't match, so you should return `false`.","target":"Esa persona no puede coincidir, por lo tanto debes devolver `false`."}]}]}]
+---
+
+¡La fiesta de esta noche es muy exclusiva: solo pueden entrar las personas cuyo nombre empiece con una secuencia específica de letras!
+
+Tu trabajo es escribir una función llamada `handleGuest` (manejar al invitado) que recibe dos argumentos:
+
+- `name` - el nombre de la persona en la puerta
+- `allowedPrefix` - las letras iniciales que se requieren para la fiesta de esta noche
+
+Debe devolver `true` si la persona puede entrar, y `false` si debe ser rechazada.
+
+Por ejemplo:
+
+- Si el prefijo de esta noche es `"S"`, entonces Sarah entra (devuelve `true`) pero Brad no (devuelve `false`).
+- Si el prefijo permitido es `"Brad"`, entonces Brad y Bradley entran, pero Brian no.
+
+### Funciones auxiliares
+
+A medida que avances en este ejercicio, te darás cuenta de que necesitas calcular la longitud del nombre del invitado y también la longitud del prefijo permitido. Esta es la oportunidad perfecta para crear una función auxiliar llamada `getLength(someString)`, que cuenta cuántas letras hay en el string. Luego puedes usar esta función en diferentes lugares dentro de `handleGuest(...)`.
+
+El escenario adicional te reta a resolver esto con la menor cantidad de líneas posible. También puedes pensar en otras soluciones que te gusten más, que usen más líneas. No pasa nada (y te animamos a explorar diferentes enfoques), pero intenta encontrar también la versión más corta.
+
+¡Diviértete!

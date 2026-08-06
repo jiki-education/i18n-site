@@ -7,9 +7,9 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/variables/source.md"
 en_md5: "dd0834017a8d42c22cca25966c1fdd91"
-governance_sha: "47f2c0d"
-content_version: "cb6c639c0a61"
-published_at: "2026-08-03"
+governance_sha: "c80036b"
+content_version: "ea541ae95432"
+published_at: "2026-08-06"
 ---
 
 변수(영어: _variables_)는 정보를 저장할 수 있게 해줘요. 코딩을 하다 보면 어떤 숫자나 문자열을 나중에 쓰려고 저장해야 할 때가 많아요. 그럴 때 변수를 사용해요. 자, Jiki의 작업실을 조금 뒤로 물러서서 바라볼까요? 그러면 선반이 또 하나 더 있는 게 보여요. 우리는 이미 첫 번째 선반에 `move`나 `rectangle` 같은 작은 기계들, 즉 함수가 올려져 있는 걸 알고 있어요. 그런데 이 두 번째 선반에는 기계 대신 상자가 아주 많아요. 이 상자들이 바로 변수예요. Jiki에게 이 상자 안에 무엇이든 넣어 두라고 지시할 수 있고, 나중에 다시 꺼내 달라고 할 수도 있어요. 각 상자에는 함수와 똑같이 이름이 붙어 있고, 각 상자에는 딱 하나의 값만 들어 있어요. 지금은 숫자나 문자열이에요. 하지만 강의가 진행되면 더 복잡한 것도 저장하는 방법을 배워요.
@@ -29,11 +29,11 @@ let name = "Jeremy"
 ```
 
 <img
-  class="concept-image"
-  src="/static/images/concept-assets/variables/jeremy-paper.webp"
-  alt="`"Jeremy"`라고 적힌 종이를 들고 상자에 넣으려는 Jiki"
-  width="373"
-  height="400"
+class="concept-image"
+src="/static/images/concept-assets/variables/jeremy-paper.webp"
+alt="`"Jeremy"`라고 적힌 종이를 들고 상자에 넣으려는 Jiki"
+width="373"
+height="400"
 />
 
 이제 우리는 Jiki에게 상자를 만들고, 이름표를 붙이고, 그 안에 무언가를 넣으라고 지시했어요. 그러면 Jiki는 그 상자를 선반에 올려놔요. 프로그램 안 어디에서든 Jiki가 그 상자를 선반에서 가져와서 안에 뭐가 들었는지 확인할 수 있어요. 이런 머릿속 모형을 만들어 보세요. 저는 오래 코딩을 해 왔지만, 지금도 코드를 쓸 때면 뭔가를 상자에 넣어 두었다가 나중에 꺼내는 그림을 상상해요. `let` 키워드를 보면 '아, 이제 새 상자를 만드는 거구나' 하고 생각하세요.

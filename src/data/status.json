@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "878a241",
-  "approved": 356,
+  "governance_sha": "d599c12",
+  "approved": 357,
   "disapproved": 1,
   "total": 653,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 73,
+      "approved": 74,
       "disapproved": 0,
       "total": 92,
       "items": [
@@ -386,8 +386,8 @@
         },
         {
           "key": "exercise/checkerboard",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1259,
+          "status": "approved"
         },
         {
           "key": "exercise/rainbow-ball",

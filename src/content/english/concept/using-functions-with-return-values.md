@@ -2,13 +2,13 @@
 type: "concept"
 slug: "using-functions-with-return-values"
 title: "Functions That Return Things"
-en_md5: "5d8a17a37be570bc9c63df0c854ba774"
+en_md5: "830f19fb6aaf184c1f32ade792b60a12"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/using-functions-with-return-values/source.md"
-captured_at: "2026-08-03"
+captured_at: "2026-08-06"
 ---
 
-So far we've looked at functions that do something in the world. So the circle function draws a circle. The move function moves your character. But some functions work differently. Rather than doing something external, they give you something back that you can use within your code. When a function gives something back to Jiki to use in the code, we say that this function is <define>returning</define> something. It returns something back out to Jiki. You can think of these machines as having an output chute. We already have our input slots that we put things into, but we can also have a single output slot or a chute that something can come back out of. When Jiki presses the button on the machine, the machine whirs away, and something will pop out of that chute at the end. It could be a number. It could be a string. It's something that Jiki can catch and can use.
+So far we've looked at functions that do something in the world. So the <define>`circle`</define> function draws a circle. The <define>`move`</define> function moves your character. But some functions work differently. Rather than doing something external, they give you something back that you can use within your code. When a function gives something back to Jiki to use in the code, we say that this function is <define>returning</define> something. It returns something back out to Jiki. You can think of these machines as having an output chute. We already have our input slots that we put things into, but we can also have a single output slot or a chute that something can come back out of. When Jiki presses the button on the machine, the machine whirs away, and something will pop out of that chute at the end. It could be a number. It could be a string. It's something that Jiki can catch and can use.
 
 <img
   class="concept-image"

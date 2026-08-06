@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "97ec466",
-  "approved": 334,
+  "governance_sha": "55ca652",
+  "approved": 335,
   "disapproved": 1,
   "total": 633,
   "languages": [
@@ -481,7 +481,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 58,
+      "approved": 59,
       "disapproved": 0,
       "total": 66,
       "items": [
@@ -793,7 +793,7 @@
         {
           "key": "exercise/sprouting-flower",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-nested-repeat",

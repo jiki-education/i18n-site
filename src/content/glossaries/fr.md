@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "404db5e"
-content_version: "059da20dda88"
-published_at: "2026-08-04"
-term_count: 84
+governance_sha: "131ec1f"
+content_version: "934bc5960a73"
+published_at: "2026-08-06"
+term_count: 86
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -97,8 +97,8 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | feature (platform capability) | fonctionnalité | fr | Deliberately distinct from _fonction_ (function) to avoid collision. |
 | course | cours | fr | The whole Jiki course the learner is taking: _dans ce cours_. Keep distinct from _leçon_ (lesson) and _programme_ (curriculum). |
 | curriculum | programme | fr | Avoid the false friend "curriculum", which in French means a CV/résumé. |
-| pathway | parcours | fr | A structured learning sequence. Deliberately distinct from _filière_ (track) below. |
-| track (curriculum path) | filière | fr | Deliberately distinct from _parcours_ (pathway) above. |
+| pathway | parcours | fr | A structured learning sequence. Deliberately distinct from _voie_ (track) below. |
+| track (curriculum path) | voie | fr | Confirmed by a native speaker (2026-08-06), replacing the earlier unconfirmed _filière_. Deliberately distinct from _parcours_ (pathway) above. Feminine: _une voie_, _la voie_, e.g. "Choisis ta voie !". |
 | syllabus | programme (du cours) | fr | Note the deliberate overlap with _curriculum → programme_; disambiguate with "du cours" when both appear in the same context. |
 | Not started (progress status) | Non commencé / Non commencés | fr | Never _Pas commencé_. Agree in number with what the label describes: singular _Non commencé_ on a status badge for one item (e.g. one challenge), plural _Non commencés_ on a filter tab covering a list of items. |
 
@@ -114,9 +114,11 @@ so a term that drifts between two exercises drifts inside one screen.
 | row (of aliens) | rangée | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _une rangée_. Never _ligne_ here, which in these pages already means a line of code. |
 | to shoot down (an alien) | abattre | fr | Confirmed by a native speaker (2026-08-04), over _vaincre_, which is now settled and not to be reopened. The act of firing itself stays _tirer_ (_tire sur chaque alien_); _abattre_ is the outcome (_tu n'as pas abattu tous les aliens_). |
 | shot (golf) | coup | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _un coup_, as in _un coup de golf_, _la longueur du coup_. |
-| step / unit (distance moved) | unité | fr | Unconfirmed draft (agent, 2026-08-03). Gender: _une unité_. The distance a thing moves in one call: _faire rouler la balle d'une unité vers la droite_. Follows the `golf` family catalog. |
-| inset (drawing exercises) | en retrait / le retrait | fr | Unconfirmed draft (agent, 2026-08-03). Adjectival/adverbial use _en retrait_ (_un rectangle en retrait_), noun use _le retrait_. Recurs across the drawing exercises, so do not alternate with _décalage_ or _marge_. |
-| nose / snout (of a snouted animal) | le museau | fr | Confirmed by native speakers (2026-08-04). Gender: _un museau_. The fox and similar snouted animals in the drawing exercises. Never _truffe_, which everyday French attaches to pigs and boars and reads oddly for a fox. Never _la pointe du museau_, which is too heavy for instructions. Birds (the `penguin` exercise) keep _le nez_; _museau_ does not apply to them. |
+| unit (distance moved) | unité | fr | Confirmed by a native speaker (2026-08-05). Gender: _une unité_. The distance a thing moves in one call, as used by the `golf` family catalog: _faire rouler la balle d'une unité vers la droite_. |
+| step (generic) | (no fixed term) | fr | Confirmed by a native speaker (2026-08-05): unlike `unit` above, "step" has no single fixed rendering. Pick by context: _étape_ (a stage in a sequence, "étape après étape"), _pas_ (a footstep or a discrete move, "pas à pas"), _marche_ (a stair step), or others. Do not render it as _unité_. |
+| inset (drawing exercises) | en retrait / le retrait | fr | Confirmed by a native speaker (2026-08-05). Adjectival/adverbial use _en retrait_ (_un rectangle en retrait_), noun use _le retrait_. Recurs across the drawing exercises, so do not alternate with _décalage_ or _marge_. |
+| nose / snout (of a snouted animal) | le museau | fr | Confirmed by native speakers (2026-08-04). Gender: _un museau_. The fox and similar snouted animals in the drawing exercises. Never _truffe_, which everyday French attaches to pigs and boars and reads oddly for a fox. Never _la pointe du museau_, which is too heavy for instructions. Applies only to snouted mammals: for birds (the `penguin` exercise) use _le bec_, never _museau_ and never _nez_. |
+| beak (of a bird) | le bec | fr | Confirmed by native speakers (2026-08-05). Gender: _un bec_. The beak-shaped triangle in the `penguin` exercise. Never _le nez_: unlike snouted mammals, where everyday French tolerates _nez_ alongside _museau_, French never says _nez_ of a bird at any register. |
 | penguin | pingouin | fr | Confirmed by native speakers (2026-08-04). Gender: _le pingouin_. The everyday French word, matching the cartoon drawing the exercise uses, not the zoologically stricter _manchot_. |
 
 ## Keep in English
@@ -176,6 +178,342 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-06: `track (curriculum path)` → _voie_, replacing the unconfirmed _filière_
+
+**Decided by:** native speaker mirina, forum topic 314 ("[French Review] Glossary"), post 71
+(https://forum.jiki.io/t/314/71).
+**Terms affected:** `track (curriculum path)` row (`filière` → `voie`); the `pathway` row's
+cross-reference note updated to match.
+**Files affected:** `glossary.md` (Platform & curriculum vocabulary).
+
+The `filière` rendering had never actually been reviewed: it was written by an agent when
+the Platform & curriculum vocabulary table was first drafted and carried no native-speaker
+sign-off (its "Agreed by" column read "agent" in the row's early history), so there was
+nothing here for mirina's correction to conflict with.
+
+mirina argues `filière` is the wrong register for Jiki's "track": in French it names an
+academic or professional field (_filière informatique_, _filière scientifique_), which
+imports an institutional, somewhat rigid connotation from traditional education systems
+that sits against Jiki's playful, Duolingo-inspired tone, and it does not read as
+addressing "everyone" the way the platform wants to. She proposed two alternatives, _voie_
+and _chemin_, both of which she says convey a dynamic, adaptable progression instead. She
+gave `voie` more weight throughout: it is listed first, gets the fuller explanation (the
+"freedom" reading of _la voie est libre_, "no barriers"), and is the one behind her sample
+tagline "Choisis ta voie !" (Pick your track), which reads as an actual UI-style
+call-to-action rather than just a dictionary gloss. `chemin`, by contrast, she frames as
+carrying more of a "step-by-step" descriptive sense.
+
+**Action taken.** Applied `voie` as the confirmed rendering, since it is the option she
+gave primacy to and it is a feminine noun like the outgoing `filière`, so no other row's
+agreement changes. `chemin` was not chosen but is recorded here as the alternative she also
+offered, in case a second native speaker prefers it. No translated content used `filière`
+anywhere in front-end or curriculum sources, so there is nothing else to swap; only the
+published review-site glossary snapshot mirrored the old value, and that regenerates from
+this file on the next `publish-glossary` run.
+
+
+### 2026-08-05: Stage 3 exercise batch (space-invaders-repeat through golf-rolling-ball-state) — unconfirmed drafts
+
+**Decided by:** no one yet. These are agent proposals from the Stage 3 fr batch translating
+`exercise/space-invaders-repeat`, `exercise/snowman`, `exercise/traffic-lights`,
+`exercise/relational-sun`, `exercise/relational-snowman`, `exercise/relational-traffic-lights`,
+`exercise/structured-house`, `exercise/plant-the-flowers` and `exercise/golf-rolling-ball-state`
+(fable subagent workers, one per item, fanned out via `/translate-exercise`). Not written to
+`glossary.md`; every row below is open to being overruled on the forum.
+
+**From `exercise/space-invaders-repeat`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| pattern (repeating pattern in loop exercises) | motif | Recurs across loop/repeat exercises ("find the pattern"); *schéma* or *régularité* are also defensible alternatives, risk of drift across passes. | medium |
+
+**From `exercise/traffic-lights`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| Traffic Lights (exercise title) | Feu tricolore | Title-only, singular (one traffic light in the exercise); standard French term. | medium |
+| light (lamp on a traffic light) | le feu | "le feu rouge / orange / vert". Rejected *lumière* as non-idiomatic. Note: the whole object is also "le feu (tricolore)" — the two senses coexist naturally in French, but future passes could drift toward *lumière* for the lamp sense. | medium |
+| amber (traffic-light color, in prose) | orange | French traffic lights say "orange", never "ambre". Prose only — the sentinel string "amber" stays untranslated. | high |
+
+**From `exercise/relational-sun`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| Relational Sun (exercise title) | Soleil relationnel | Matches other agreed exercise-title rows (title only, no article); keeps the "derived from variable relationships" sense. | medium |
+| hard-code | coder en dur | Two defensible renderings exist; recurs across exercises about derived values, worth locking in for consistency. | medium |
+
+**From `exercise/relational-snowman`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| to derive (a value from another) | calculer à partir de | Recurs across relational exercises; *dériver* reads as calculus differentiation in French, would mislead. *déduire de* also defensible — this sets a precedent. | medium |
+| to scale (respond proportionally to `size`) | s'adapter | Used in `checks.notResponsive`. Alternatives *se mettre à l'échelle* / *grandir proportionnellement* also defensible; will recur in other responsive-drawing exercises. Note this partially overlaps with the `relational-traffic-lights` row proposing *se redimensionner* for the same underlying concept — worth reconciling. | low |
+
+**From `exercise/relational-traffic-lights`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| housing (traffic-light casing) | le boîtier | Recurs in prose + 6 catalog strings of this exercise and likely future traffic-light exercises; caisson/coffret/support were defensible alternatives, so drift is possible. | medium |
+| traffic light | le feu tricolore | Already the de-facto choice in the approved traffic-lights fr files but recorded nowhere; feu de circulation/feu de signalisation are competing renderings. Individual lights are les feux. | high |
+| to scale / rescale (drawing scales with a variable) | se redimensionner | The relational drawing series' recurring verb; se mettre à l'échelle and grandir (used contextually in relational-snowman) compete. | medium |
+| padding (space around drawn content) | la marge | Distinct from the agreed inset → retrait; espacement was the plausible alternative. | low |
+
+**From `exercise/plant-the-flowers`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| "I'm totally stuck" (recurring hint question) | Je bloque complètement | The literal "Je suis totalement bloqué" gender-marks the learner; this neutral phrasing avoids that. Recurs across many exercise catalogs so different passes could drift between gendered/neutral forms; may belong in the guide rather than the glossary. | medium |
+
+**From `exercise/golf-rolling-ball-state`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| Stateful Ball (exercise title) | Balle à état | Matches sibling title "Balle qui roule" (no article) and the already-agreed `stateful` → _à état_ glossary row; only proposed because exercise titles have precedent rows. | medium |
+
+**`exercise/snowman`, `exercise/structured-house`:** no delta proposed (workers judged the
+terms they hit — e.g. "anchor" → *ancrage*, "hardcode" → *coder en dur* — to have one obvious
+canonical rendering, not meeting the bar for a glossary row).
+
+**`exercise/traffic-lights`, `exercise/relational-sun`, `exercise/relational-snowman`:** these
+workers' proposed-delta sections could not be re-retrieved for this note (the orchestrator's
+recap request to their completed subagents did not return a response in time). Their
+translations are checker-passed, `en_md5`-stamped and published; only the delta text is
+unconfirmed-missing. Worth a follow-up read of the actual translated files if term drift shows
+up in review.
+
+### 2026-08-06: Stage 3 exercise batch (finish-wall through owners-bouquets) — unconfirmed drafts
+
+**Decided by:** no one yet. These are agent proposals from the Stage 3 fr batch translating
+`exercise/finish-wall`, `exercise/dnd-roll`, `exercise/gold-panning`, `exercise/sunset`,
+`exercise/sprouting-flower`, `exercise/random-salad`, `exercise/rainbow-splodges`,
+`exercise/stock-market`, `exercise/golf-scenarios` and `exercise/owners-bouquets` (fable
+subagent workers, one per item). Not written to `glossary.md`; every row below is open to
+being overruled on the forum.
+
+**From `exercise/finish-wall`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| layer / row (of bricks, wall exercises) | rangée | English alternates "row"/"layer" for one object; *couche* also defensible. Wall exercises (fix-wall, finish-wall) share a screen with the draw family catalog, so drift between passes would show. | medium |
+
+**From `exercise/dnd-roll`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| roll (dice, D&D) | lancer (the act/throw) / jet (the scored result, "jet d'attaque") | Two defensible renderings that will recur if more D&D-flavoured exercises land; drifting between them inside one screen would read wrong. French D&D materials consistently say "jet d'attaque". | medium |
+
+**From `exercise/gold-panning`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| to pan (for gold) / a pan (one panning action) | orpailler / une batée | Core recurring verb+noun pair, shared between prose and catalog on one screen. *Orpailler* is standard; *une batée* is correct but somewhat specialised — a translator could defensibly pick *laver l'or* / *un lavage* instead. | medium |
+| Gold Panning (exercise title) | Orpaillage | Title only, matches the term pair above. | medium |
+| trading post | le comptoir | Recurs in describers, tasks, and function descriptions; *poste de traite* (Canadian) and *comptoir d'échange* were alternatives. | medium |
+
+**From `exercise/sunset`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| flipbook / flip-book style | flip book (le style flip book) | Used repeatedly for the animation model, will recur across every animation exercise. Loanword *flip book* (what French speakers actually say) chosen over the technical *folioscope*. Masculine: *un flip book*. | medium |
+
+**From `exercise/sprouting-flower`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| scrubber (bar) | la barre de lecture | First occurrence in any fr exercise; UI element that will recur. Alternatives *barre de défilement*, *timeline* also defensible. **Conflicts with the `exercise/stock-market` row below (*curseur*) — same batch, two different renderings; needs reconciling before either lands.** | medium |
+| frame (animation) | image | *une image*. French dev prose also tolerates the loanword *frame*; recurs across all 10 `checks.*` and both coordinate hints. | medium |
+| flower head | la tête de la fleur | Chosen over the botanically correct *corolle*, which is heavier than the exercise's register. Recurs in checks + prose. | medium |
+| Sprouting Flower (exercise title) | La fleur qui pousse | Title only. Relative clause with *qui* per the guide's style preference. | medium |
+
+**From `exercise/rainbow-splodges`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| Rainbow Splodges (exercise title) | Taches arc-en-ciel | Title only. *Éclaboussures* considered for "splodges" but heavier; *tache* is the ordinary word and reads well in the task name too. | medium |
+| box (drawing area bounds) | le cadre | Recurs across drawing exercises ("outside the box", "inside the box"). Deliberately distinct from *boîte* (the glossary's value-container metaphor) — the checker flags this collision. | medium |
+
+**From `exercise/stock-market`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| hint (exercise hints panel) | astuce | Genuine fork: the natural word *indice* is already bound to "index (array)" in the glossary and would collide on-screen. Every exercise has hints, so worth settling once. | medium |
+| scrubber (timeline control) | curseur | No precedent anywhere in the fr catalogs or app copy at the time this worker ran. **Conflicts with the `exercise/sprouting-flower` row above (*la barre de lecture*) — same batch, two different renderings; needs reconciling before either lands.** | low |
+
+**From `exercise/golf-scenarios`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| step (golf distance) | position | The existing "step (generic)" row says pick by context and forbids *unité*; *position* matches the existing `golf-rolling-ball-state` fr strings, another translator could defensibly pick *pas*. Could land as a context note on the existing row rather than a new one. | medium |
+
+**From `exercise/owners-bouquets`:**
+
+| English | Proposed target | Rationale / notes | Confidence |
+|---------|-----------------|-------------------|------------|
+| gap (spacing between planted items, flower-planting family) | écart | *espacement* and *intervalle* equally defensible; recurs across the flower-planting family (hint, task description), so drift between exercises would show on one screen. | medium |
+
+**`exercise/random-salad`:** no delta proposed (every term hit either already settled in the
+glossary — button label, tutoiement, imperative task names — or has one obvious canonical
+rendering: salade, feuille, tomate, croûton, olive, ingrédient).
+
+**Note for whoever reconciles this batch:** two workers independently hit "scrubber" (a
+timeline/play-position control) and proposed different French renderings — *la barre de
+lecture* (sprouting-flower) vs *curseur* (stock-market) — because neither could see the
+other's decision. Also flagged as a possible `global/terms.md` gap: "scrubber" looks like a
+cross-language recurring UI term worth cataloguing there.
+
+### 2026-08-05: curriculum-copy catalogs (video lessons, badges): judgment calls (unconfirmed draft, dated 2026-08-05)
+
+**Decided by:** no one yet. Unconfirmed draft (agent, 2026-08-05), from the first `fr` pass
+over the two curriculum-copy catalogs. Nothing here was written into `glossary.md`; these
+are proposals to agree or correct.
+**Files affected:** `curriculum/src/video-lessons/locales/fr/translation.json` and
+`curriculum/src/badges/locales/fr/translation.json` in the front-end repo.
+
+**Calls made, worth recording:**
+
+- **Coding Fundamentals (course name)** → _Fondamentaux de la programmation_, matching the
+  string the French app already shows (`app/messages/fr.json`, `layout.sidebar.nav.learn`),
+  per the existing "UI button label quoted in prose" principle of reusing the app's own
+  `fr` catalog string rather than inventing a fresh rendering. Lesson title: "Bienvenue
+  dans les Fondamentaux de la programmation".
+- **badge** and **fun fact** never appear as words inside either catalog's values, so no
+  term was needed; no row proposed.
+- **Badge descriptions** are rendered as second-person past ("Tu as terminé ta première
+  leçon"), matching the tu-register, and deliberately using _avoir_-participle phrasings
+  throughout so no participle agrees with the reader's gender.
+- **Badge names**, proposed renderings: Beta User → _Utilisateur bêta_, Early Bird →
+  _Lève-tôt_, First Steps → _Premiers pas_, Maze Navigator → _Explorateur de labyrinthe_
+  (following the guide's "explorer le labyrinthe" phrasing; French doesn't "solve" a
+  maze), Member → _Membre_, Night Owl → _Oiseau de nuit_, Premium → _Premium_ (kept
+  English, matching _membre Premium_ in the app; written with `--allow-english`),
+  Scenario Handler → _Maître des scénarios_, Sidekick → _Acolyte_ (matching the
+  2026-08-04 "partner in crime" → _acolyte_ entry below), Townsfolk → _Villageois_.
+- **maze_navigator.description** quotes the lesson title as _« Évade-toi du labyrinthe »_,
+  reusing the agreed exercise-title row rather than translating "Solve a Maze" afresh.
+- **early_bird.funFact**: the English proverb "The early bird catches the worm" is
+  rendered by the equivalent French proverb _L'avenir appartient à ceux qui se lèvent
+  tôt_, not literally.
+
+### 2026-08-05: `inset (drawing exercises)` confirmed as _en retrait / le retrait_
+
+**Decided by:** native speaker resu-xunil, forum topic 314, post 68
+(https://forum.jiki.io/t/314/68).
+**Terms affected:** `inset (drawing exercises)` row, promoted from "Unconfirmed draft" to
+confirmed.
+**Files affected:** `languages/fr/glossary.md`. No translated content changed:
+`exercise/jumbled-house`'s `fr` instructions and message catalog already use _en retrait_ /
+_le retrait_ throughout, matching the now-confirmed rendering.
+
+**What happened.** Quoting the row as it stood since the 2026-08-03 Stage 3 batch 1 draft,
+resu-xunil said it "fits perfect for Exercise: Jumbled House," a clean confirmation with no
+correction or counter-proposal. The row is now protected rather than draft.
+
+### 2026-08-05: `unit` confirmed as _unité_; `step` split out as context-dependent, not `unité`
+
+**Decided by:** native speaker resu-xunil, forum topic 314, post 67
+(https://forum.jiki.io/t/314/67).
+**Terms affected:** the `step / unit (distance moved)` row is split into two: `unit
+(distance moved)` → _unité_ (confirmed, was "Unconfirmed draft") and a new `step
+(generic)` row recording that "step" has no single fixed rendering.
+**Files affected:** `languages/fr/glossary.md`. No translated content changed: the
+`golf` family catalog and `exercise/golf-rolling-ball-loop` already only use "unit", never
+"step", so nothing there was wrong.
+
+**What happened.** The 2026-08-03 batch wrote a single row, `step / unit (distance moved)`
+→ _unité_, treating the two English words as interchangeable because the `golf` family
+catalog only ever needed "unit". resu-xunil quoted that row on the pinned glossary thread
+and confirmed _unité_ is correct for "unit" as used in `exercise/golf-rolling-ball-loop`,
+but flagged that "step" is a different case: it "depends on the context," and can be
+_étape_ (après étape), _pas_ (à pas), _marche_ (après marche), etc. Conflating the two
+words under one fixed term would have been wrong the first time an English source actually
+used "step" rather than "unit".
+
+**Action taken.** Split the row rather than overwrite the confirmed half: `unit (distance
+moved)` keeps _unité_, now marked confirmed instead of draft. A new `step (generic)` row
+records that "step" has no fixed mapping and lists the candidate words by sense, so a
+future translator picks by context instead of defaulting to _unité_.
+
+### 2026-08-05: the penguin's `nose` is _le bec_, not _le nez_ (reverses the earlier scoping)
+
+**Decided by:** native speakers mirina (who raised it) and resu-xunil (who confirmed it),
+forum topic 314 (https://forum.jiki.io/t/314).
+**Terms affected:** new row `beak (of a bird)` → _le bec_; the
+`nose / snout (of a snouted animal)` → _le museau_ row keeps its translation but has its
+scoping note corrected.
+**Files affected:** `languages/fr/glossary.md`,
+`curriculum/src/exercises/penguin/instructions/fr.md`,
+`curriculum/src/exercises/penguin/locales/fr/translation.json`,
+`languages/fr/exercise/penguin.md`.
+
+**The earlier "the `penguin` exercise keeps _le nez_" call was wrong and is now
+corrected.** When the `nose` → _le museau_ row was decided (and again when it was
+reaffirmed against williamapc's challenge), the row was scoped to snouted animals and the
+penguin was left with _le nez_ on the reasoning that a bird has no _museau_. That reasoning
+was sound about _museau_ and wrong about the fallback: the alternative to _museau_ for a
+bird is not _nez_, it is _bec_. mirina flagged that French simply does not use _nez_ of a
+bird, at any register, so the penguin's beak-shaped triangle has to be _le bec_.
+resu-xunil, who co-signed the original scoping, confirmed it without reservation ("Of
+course, go for `bec`!"), so the two speakers who set the earlier scoping are the two who
+have now reversed it.
+
+**_museau_ for snouted mammals is untouched.** This changes only the bird case. The fox in
+`exercise/foxy-face` keeps _le museau_, and everything decided in the 2026-08-04 entries
+below about _museau_ vs _truffe_ vs _nez_ for snouted animals still stands; only the
+"birds keep _le nez_" clause of that scoping is superseded.
+
+### 2026-08-04: "partner in crime" → _acolyte_ on `concept/else` (unconfirmed, provisional)
+
+**Decided by:** nobody yet. Provisional pick, awaiting a native speaker.
+**Terms affected:** none; no glossary row added. This entry records an open question about
+one page's wording.
+**Files affected:** `curriculum/src/concepts/else/fr.md`,
+`languages/fr/concept/else.md`.
+
+Reviewing `concept/else` (forum topic 1173, https://forum.jiki.io/t/1173, post 3274),
+resu-xunil flagged _le complice de `if`_ (English "if's partner in crime") and offered
+three candidates, _complice_, _acolyte_ and _compère_, explicitly without choosing between
+them. He also suggested glossing the keyword at its first mention, as
+_l'instruction else (sinon)_.
+
+_acolyte_ was applied so the sentence could carry the rest of his edits, and the gloss was
+added: _Découvrons maintenant l'acolyte du `if`, l'instruction `else` (« sinon »)._ This is
+an unconfirmed, provisional pick, not a decision: he has been asked on the thread to choose.
+If he picks _complice_ or _compère_, swap the word on that page and update
+`languages/fr/concept/else.md`. The phrase occurs once in the whole curriculum, so it earns
+no glossary row unless it recurs.
+
+### 2026-08-04: `nose` → _le museau_ reaffirmed, "Loopy Maze" title still open (two new candidates)
+
+**Decided by:** native speaker resu-xunil, forum topic 314
+(https://forum.jiki.io/t/314), posts 3275 and 3278, answering williamapc's challenge in
+post 3252.
+**Terms affected:** `nose (of an animal)` (reaffirmed, no change), the
+`Loopy Maze (exercise title)` row (unchanged, still provisional).
+**Files affected:** none. This entry records the state of two discussions, not an edit.
+
+**`nose` → _le museau_ is settled.** williamapc (post 3252) challenged the row, asking why
+_nez_ is not simply used for every animal now that it has entered common usage for animals
+generally. Put back to the two speakers who originally decided the row, resu-xunil answers
+(post 3275) with an explicit ranking, _museau_ > _truffe_ > _nez_, calling _museau_ "cute",
+having read williamapc's argument first. That is the speaker who corroborated mirina's
+original recommendation reaffirming it against a direct challenge, so the row stands as
+confirmed and `exercise/foxy-face` keeps _museau_ unchanged. The scoping stays as it was:
+the `penguin` exercise keeps _le nez_, since a bird has no _museau_.
+
+**The "Loopy Maze" title now has four candidates and no agreement.** williamapc's
+_Labyrinthe par boucle(s)_ and _Labyrinthe avec boucle(s)_ (post 3252) are both rejected by
+resu-xunil (post 3278): _par boucle_ does not mean anything to him, and _avec boucles_ can
+be read as the maze itself being made of loops, which lands back in exactly the ambiguity
+williamapc was trying to remove. He counters with two new options, _bouclez le labyrinthe_
+(imperative) and _Labyrinthe à boucler_, using _boucler_ in its "to finish, to close" sense.
+He also clarifies the English: _Loopy Maze_ describes a maze whose paths are full of loops,
+dead ends that lead back and closed circuits, as opposed to a linear one, so "the maze that
+loops" is in fact the intended sense. Two native speakers are in genuine disagreement here,
+each rejecting the other's proposals, so we do not pick a side. The title stays
+_Labyrinthe en boucle_ (the current provisional pick) and the row keeps its "proposed by one
+native speaker, not yet confirmed" note. williamapc has been asked on the thread whether
+either of resu-xunil's new options lands better for him than his own.
 
 ### 2026-08-04: "Loopy Maze" exercise title → `Labyrinthe en boucle` (one speaker, not yet confirmed)
 
@@ -877,6 +1215,7 @@ covered by a dated entry above (`interpreter`, `board / whiteboard`) is not repe
 | Term | Why |
 |------|-----|
 | string | Kept English so _chaîne_ stays free for the array-chain metaphor. This is in tension with the ordinary-word principle above, since French dev writing genuinely says "chaîne de caractères"; flagged as an open question, not re-decided. |
+| pattern | resu-xunil proposed keeping "pattern" in English rather than "motif" (t/1235 post 1, re: exercise/foxy-face "Tu retrouveras souvent ce motif"), explicitly uncertain and tagged @mirina and @williamapc for a second opinion. Not yet settled either way; current published text still says "motif". |
 | API | Not a word a beginner knows, so the concept has to be explained, not just the acronym expanded. |
 | framework | Established loanword in French dev writing. |
 | template literal | This is what real French developers actually say, even though an official French term exists. |

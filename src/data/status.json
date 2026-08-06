@@ -1,16 +1,16 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "077c649",
-  "approved": 359,
+  "governance_sha": "f58a0c1",
+  "approved": 360,
   "disapproved": 1,
-  "total": 1564,
+  "total": 1568,
   "languages": [
     {
       "lang": "it",
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 76,
+      "approved": 77,
       "disapproved": 0,
       "total": 128,
       "items": [
@@ -416,8 +416,8 @@
         },
         {
           "key": "exercise/leap",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1261,
+          "status": "approved"
         },
         {
           "key": "exercise/collatz-conjecture",
@@ -3358,7 +3358,7 @@
       "category_slug": "i18n-fa",
       "approved": 15,
       "disapproved": 0,
-      "total": 115,
+      "total": 117,
       "items": [
         {
           "key": "glossary",
@@ -3932,6 +3932,16 @@
         },
         {
           "key": "exercise/niche-named-party",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/lower-pangram",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/pangram",
           "topic_id": null,
           "status": "pending"
         }
@@ -6018,7 +6028,7 @@
       "category_slug": "i18n-hi",
       "approved": 3,
       "disapproved": 0,
-      "total": 94,
+      "total": 95,
       "items": [
         {
           "key": "glossary",
@@ -6487,6 +6497,11 @@
         },
         {
           "key": "exercise/rainbow-ball",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-turn-around",
           "topic_id": null,
           "status": "pending"
         }
@@ -7247,7 +7262,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 109,
+      "total": 110,
       "items": [
         {
           "key": "glossary",
@@ -7791,6 +7806,11 @@
         },
         {
           "key": "exercise/pangram",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/acronym",
           "topic_id": null,
           "status": "pending"
         }

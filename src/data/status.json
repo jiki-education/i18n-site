@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "bd1cf4b",
+  "governance_sha": "fcaff21",
   "approved": 359,
   "disapproved": 1,
-  "total": 679,
+  "total": 703,
   "languages": [
     {
       "lang": "it",
@@ -12,7 +12,7 @@
       "category_slug": "i18n-it",
       "approved": 76,
       "disapproved": 0,
-      "total": 95,
+      "total": 96,
       "items": [
         {
           "key": "glossary",
@@ -488,6 +488,11 @@
           "key": "concept/building-arrays",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "concept/colors",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -839,7 +844,7 @@
       "category_slug": "i18n-el",
       "approved": 44,
       "disapproved": 0,
-      "total": 65,
+      "total": 67,
       "items": [
         {
           "key": "glossary",
@@ -1165,6 +1170,16 @@
           "key": "concept/animation",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "concept/arithmetic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/break",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -1451,7 +1466,7 @@
       "category_slug": "i18n-es-419",
       "approved": 24,
       "disapproved": 0,
-      "total": 32,
+      "total": 33,
       "items": [
         {
           "key": "glossary",
@@ -1612,6 +1627,11 @@
           "key": "concept/break",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "concept/building-arrays",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -1622,7 +1642,7 @@
       "category_slug": "i18n-hu",
       "approved": 21,
       "disapproved": 0,
-      "total": 38,
+      "total": 44,
       "items": [
         {
           "key": "glossary",
@@ -1811,6 +1831,36 @@
         },
         {
           "key": "concept/creating-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/else",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/else-if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/for-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/function-composition",
           "topic_id": null,
           "status": "pending"
         }
@@ -2957,7 +3007,7 @@
       "category_slug": "i18n-ja",
       "approved": 4,
       "disapproved": 0,
-      "total": 15,
+      "total": 21,
       "items": [
         {
           "key": "glossary",
@@ -3031,6 +3081,36 @@
         },
         {
           "key": "concept/continue",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/else",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/else-if",
           "topic_id": null,
           "status": "pending"
         }
@@ -3265,13 +3345,109 @@
       ]
     },
     {
+      "lang": "zh-CN",
+      "name": "Simplified Chinese",
+      "stage": "refining",
+      "category_slug": "i18n-zh-cn",
+      "approved": 2,
+      "disapproved": 0,
+      "total": 17,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 413,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 790,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 791,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 820,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/animation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/break",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arithmetic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/continue",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/colors",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "ko",
       "name": "Korean",
       "stage": "refining",
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 11,
+      "total": 12,
       "items": [
         {
           "key": "glossary",
@@ -3327,65 +3503,9 @@
           "key": "concept/animation",
           "topic_id": null,
           "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "zh-CN",
-      "name": "Simplified Chinese",
-      "stage": "refining",
-      "category_slug": "i18n-zh-cn",
-      "approved": 2,
-      "disapproved": 0,
-      "total": 10,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 413,
-          "status": "pending"
         },
         {
-          "key": "concept/using-functions",
-          "topic_id": 790,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 791,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 820,
-          "status": "approved"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/animation",
+          "key": "concept/arrays",
           "topic_id": null,
           "status": "pending"
         }

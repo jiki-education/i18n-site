@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "0df2c83",
-  "approved": 330,
+  "governance_sha": "47e971e",
+  "approved": 331,
   "disapproved": 1,
   "total": 633,
   "languages": [
@@ -481,7 +481,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 54,
+      "approved": 55,
       "disapproved": 0,
       "total": 66,
       "items": [
@@ -772,8 +772,8 @@
         },
         {
           "key": "exercise/sunset",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 880,
+          "status": "approved"
         },
         {
           "key": "exercise/golf-scenarios",

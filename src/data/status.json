@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-06",
-  "governance_sha": "3973de6",
-  "approved": 331,
+  "governance_sha": "1f591dc",
+  "approved": 329,
   "disapproved": 0,
   "total": 633,
   "languages": [
@@ -481,7 +481,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 56,
+      "approved": 54,
       "disapproved": 0,
       "total": 66,
       "items": [
@@ -633,7 +633,7 @@
         {
           "key": "exercise/space-invaders-solve-basic",
           "topic_id": null,
-          "status": "approved"
+          "status": "pending"
         },
         {
           "key": "exercise/penguin",
@@ -658,7 +658,7 @@
         {
           "key": "exercise/space-invaders-repeat",
           "topic_id": null,
-          "status": "approved"
+          "status": "pending"
         },
         {
           "key": "exercise/traffic-lights",

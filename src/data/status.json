@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "b68ac73",
-  "approved": 400,
+  "governance_sha": "4cbd791",
+  "approved": 401,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 103,
+      "approved": 104,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -631,8 +631,8 @@
         },
         {
           "key": "exercise/run-length-encoding",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1301,
+          "status": "approved"
         },
         {
           "key": "exercise/guest-list",

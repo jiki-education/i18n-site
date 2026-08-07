@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "fe755fb",
-  "approved": 403,
+  "governance_sha": "07cc356",
+  "approved": 404,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 60,
+      "approved": 61,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1297,8 +1297,8 @@
         },
         {
           "key": "exercise/alphanumeric",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 880,
+          "status": "approved"
         },
         {
           "key": "exercise/isbn-verifier",

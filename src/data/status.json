@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "ccdf4bb",
-  "approved": 394,
+  "governance_sha": "ead37e3",
+  "approved": 395,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -1322,7 +1322,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 46,
+      "approved": 47,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1838,8 +1838,8 @@
         },
         {
           "key": "exercise/even-or-odd",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1295,
+          "status": "approved"
         },
         {
           "key": "exercise/triangle",

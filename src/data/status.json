@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "ead37e3",
-  "approved": 395,
+  "governance_sha": "5416d19",
+  "approved": 398,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 98,
+      "approved": 101,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -596,13 +596,13 @@
         },
         {
           "key": "exercise/niche-named-party",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1298,
+          "status": "approved"
         },
         {
           "key": "exercise/lower-pangram",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1296,
+          "status": "approved"
         },
         {
           "key": "exercise/acronym",
@@ -611,8 +611,8 @@
         },
         {
           "key": "exercise/methodic-pangram",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1297,
+          "status": "approved"
         },
         {
           "key": "exercise/nucleotide",

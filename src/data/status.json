@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "364d17d",
-  "approved": 391,
+  "governance_sha": "5d3c5b9",
+  "approved": 392,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -5423,7 +5423,7 @@
       "name": "Traditional Chinese",
       "stage": "refining",
       "category_slug": "i18n-zh-tw",
-      "approved": 5,
+      "approved": 6,
       "disapproved": 0,
       "total": 9,
       "items": [
@@ -5469,8 +5469,8 @@
         },
         {
           "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1287,
+          "status": "approved"
         }
       ]
     },

@@ -4,12 +4,12 @@ type: "concept"
 slug: "repeat"
 title: "Repeat 迴圈"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat/source.md"
+source_repo: "i18n"
+source_path: "locales/zh-TW/curriculum/concepts/repeat/page.md"
 en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "79461bb"
+governance_sha: "707e2bb"
 content_version: "2143ad167fa6"
-published_at: "2026-08-01"
+published_at: "2026-08-07"
 ---
 
 到目前為止，所有的程式碼都是以線性的方式撰寫，Jiki 會由上到下依序執行每一個指令。

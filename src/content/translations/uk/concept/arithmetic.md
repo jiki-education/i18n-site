@@ -4,12 +4,12 @@ type: "concept"
 slug: "arithmetic"
 title: "Арифметика"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/arithmetic/source.md"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/arithmetic/page.md"
 en_md5: "7ce54754a3ca29896609a01a51b12377"
-governance_sha: "14dc2ed"
-content_version: "a0d65f010fa0"
-published_at: "2026-08-04"
+governance_sha: "609cd5a"
+content_version: "28688f7b5d55"
+published_at: "2026-08-07"
 ---
 
 Досі, створюючи змінні, ми використовували лише прості значення: число на кшталт `50` або рядок тексту (англ. _string_) на кшталт `"yellow"`. Справжня сила змінних розкривається тоді, коли ми поєднуємо їх одна з одною. Наприклад, ми можемо сказати, що лівий край прямокутника має бути на певній відстані від краю полотна.
@@ -60,7 +60,7 @@ let height = canvasSize - top * 2 // 40
 rectangle(left, top, width, height, "blue")
 ```
 
-Подумаймо, що робить Jiki, коли ми пишемо let `height` дорівнює `canvasSize` мінус `top` помножити на два. Спершу він бере з полиці коробку `top`, знаходить у ній 30, дістає кишеньковий калькулятор, множить 30 на два і занотовує собі подумки 60.
+Подумаймо, що робить Jiki, коли ми пишемо `let` `height` дорівнює `canvasSize` мінус `top` помножити на два. Спершу він бере з полиці коробку `top`, знаходить у ній 30, дістає кишеньковий калькулятор, множить 30 на два і занотовує собі подумки 60.
 
 <img
   class="concept-image"

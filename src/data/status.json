@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "4cbd791",
-  "approved": 401,
+  "governance_sha": "609cd5a",
+  "approved": 402,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 104,
+      "approved": 105,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -461,8 +461,8 @@
         },
         {
           "key": "exercise/driving-test",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1262,
+          "status": "approved"
         },
         {
           "key": "exercise/hello",

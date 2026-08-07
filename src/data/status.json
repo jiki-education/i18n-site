@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "5ecd366",
-  "approved": 362,
+  "governance_sha": "a9b4225",
+  "approved": 364,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 79,
+      "approved": 81,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -436,8 +436,8 @@
         },
         {
           "key": "exercise/three-letter-acronym",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1268,
+          "status": "approved"
         },
         {
           "key": "exercise/tile-search",
@@ -466,8 +466,8 @@
         },
         {
           "key": "exercise/hello",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1267,
+          "status": "approved"
         },
         {
           "key": "exercise/scroll-and-shoot",

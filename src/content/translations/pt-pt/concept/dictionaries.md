@@ -7,9 +7,10 @@ status: "published"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/dictionaries/source.md"
 en_md5: "b8a26ad63301df1d00ce08e1e429cf05"
-governance_sha: "e4d40de"
-content_version: "02dc94f9484a"
-published_at: "2026-08-03"
+governance_sha: "eafe9fe"
+content_version: "a2eeb338de5b"
+published_at: "2026-08-07"
+forum_topic_id: 941
 ---
 
 Os arrays são a nossa escolha habitual quando temos uma lista de qualquer coisa: uma lista de mentores, uma lista de pontuações, uma lista de ingredientes. Qualquer lista, queres usar um array.
@@ -48,7 +49,7 @@ Usamos a mesma sintaxe de parênteses retos que usámos com os arrays e as strin
 person["name"] // "Jeremy"
 ```
 
-E isso diz ao Jiki para procurar no dicionário `person`, encontrar a chave `"name"` e tirar o valor dela. O Jiki vai à caixa `person`, tira a página do bloco de notas, percorre todas as chaves até encontrar `"name"`, lê o valor, `"Jeremy"`, e põe-no numa caixa nova chamada `name`.
+E isso diz ao Jiki para procurar no dicionário `person`, encontrar a chave `"name"` e tirar o seu valor. O Jiki vai à caixa `person`, tira a página do bloco de notas, percorre todas as chaves até encontrar `"name"`, lê o valor, `"Jeremy"`, e põe-no numa caixa nova chamada `name`.
 
 Os parênteses retos significam sempre o mesmo. Estás a enfiar a mão em algo e a tirar qualquer coisa lá de dentro. Com os arrays e as strings, usas um número para dizer de que posição queres tirar algo. Com os dicionários, usas uma string para a chave.
 

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "e1de739",
-  "approved": 372,
+  "governance_sha": "0be8b37",
+  "approved": 373,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 83,
+      "approved": 84,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -391,8 +391,8 @@
         },
         {
           "key": "exercise/rainbow-ball",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1271,
+          "status": "approved"
         },
         {
           "key": "exercise/battle-procedures",

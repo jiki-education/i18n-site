@@ -1,9 +1,9 @@
 {
-  "published_at": "2026-08-06",
-  "governance_sha": "f5a48d9",
+  "published_at": "2026-08-07",
+  "governance_sha": "90a620a",
   "approved": 360,
   "disapproved": 1,
-  "total": 1659,
+  "total": 1706,
   "languages": [
     {
       "lang": "it",
@@ -1324,7 +1324,7 @@
       "category_slug": "i18n-el",
       "approved": 44,
       "disapproved": 0,
-      "total": 128,
+      "total": 129,
       "items": [
         {
           "key": "glossary",
@@ -1965,6 +1965,11 @@
           "key": "exercise/formal-dinner",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/alphanumeric",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -2251,7 +2256,7 @@
       "category_slug": "i18n-es-419",
       "approved": 24,
       "disapproved": 0,
-      "total": 121,
+      "total": 129,
       "items": [
         {
           "key": "glossary",
@@ -2855,6 +2860,46 @@
         },
         {
           "key": "exercise/formal-dinner",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/gold-panning",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/scroll-and-shoot",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/raindrops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/lower-pangram",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/acronym",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/three-letter-acronym",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/alphanumeric",
           "topic_id": null,
           "status": "pending"
         }
@@ -4350,7 +4395,7 @@
       "category_slug": "i18n-sr",
       "approved": 13,
       "disapproved": 0,
-      "total": 123,
+      "total": 129,
       "items": [
         {
           "key": "glossary",
@@ -4966,6 +5011,36 @@
           "key": "exercise/formal-dinner",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/checkerboard",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/scroll-and-shoot",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/three-letter-acronym",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cityscape-skyscraper",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/alphanumeric",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -5406,7 +5481,7 @@
       "category_slug": "i18n-ja",
       "approved": 4,
       "disapproved": 0,
-      "total": 117,
+      "total": 128,
       "items": [
         {
           "key": "glossary",
@@ -5992,6 +6067,61 @@
           "key": "exercise/formal-dinner",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/relational-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/random-salad",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-nested-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/pangram",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-traffic-lights",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-turn-around",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/three-letter-acronym",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/alphanumeric",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -6293,7 +6423,7 @@
       "category_slug": "i18n-hi",
       "approved": 3,
       "disapproved": 0,
-      "total": 117,
+      "total": 128,
       "items": [
         {
           "key": "glossary",
@@ -6879,6 +7009,61 @@
           "key": "exercise/caesar-cipher",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/luhn",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-root",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/run-length-encoding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/guest-list",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/after-party",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/formal-dinner",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/gold-panning",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/battle-procedures",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/isbn-verifier",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/random-salad",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/alphanumeric",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -7026,7 +7211,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 126,
+      "total": 128,
       "items": [
         {
           "key": "glossary",
@@ -7599,16 +7784,6 @@
           "status": "pending"
         },
         {
-          "key": "exercise/maze-turn-around",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/scroll-and-shoot",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/tile-search",
           "topic_id": null,
           "status": "pending"
@@ -7657,6 +7832,26 @@
           "key": "exercise/formal-dinner",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/scroll-and-shoot",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/alphanumeric",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/caesar-cipher",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-turn-around",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -7667,7 +7862,7 @@
       "category_slug": "i18n-zh-cn",
       "approved": 2,
       "disapproved": 0,
-      "total": 120,
+      "total": 128,
       "items": [
         {
           "key": "glossary",
@@ -8266,6 +8461,46 @@
         },
         {
           "key": "exercise/formal-dinner",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-turn-around",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/niche-named-party",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/scroll-and-shoot",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/bouncer-dress-code",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/reverse-string",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/alphanumeric",
           "topic_id": null,
           "status": "pending"
         }

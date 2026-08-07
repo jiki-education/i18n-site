@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "20d0279",
-  "approved": 360,
+  "governance_sha": "5ecd366",
+  "approved": 362,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 77,
+      "approved": 79,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -406,8 +406,8 @@
         },
         {
           "key": "exercise/even-or-odd",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1265,
+          "status": "approved"
         },
         {
           "key": "exercise/triangle",
@@ -441,8 +441,8 @@
         },
         {
           "key": "exercise/tile-search",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1266,
+          "status": "approved"
         },
         {
           "key": "exercise/tile-rack",

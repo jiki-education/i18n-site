@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "3e5b911",
-  "approved": 380,
+  "governance_sha": "e590b6b",
+  "approved": 381,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -2254,7 +2254,7 @@
       "name": "Latin American Spanish",
       "stage": "reviewing",
       "category_slug": "i18n-es-419",
-      "approved": 24,
+      "approved": 25,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -2885,8 +2885,8 @@
         },
         {
           "key": "exercise/acronym",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1281,
+          "status": "approved"
         },
         {
           "key": "concept/creating-functions",

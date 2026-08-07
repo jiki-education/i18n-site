@@ -3,9 +3,9 @@ lang: "ar"
 name: "Arabic"
 family: null
 stage: "setup"
-governance_sha: "49e750d"
-content_version: "2ab18cc96e8a"
-published_at: "2026-08-06"
+governance_sha: "20d0279"
+content_version: "cad5cef8c991"
+published_at: "2026-08-07"
 term_count: 48
 category_id: 233
 forum_topic_id: 470
@@ -21,8 +21,8 @@ decision log (`glossary-notes.md`).
 
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
-| streak | **سلسلة الأيام** | ar | Always qualified; never shorten to bare سلسلة. See guide § "The سلسلة collision." |
-| pitfall | **فخ شائع** | ar | Both words are mandatory ("common trap" as a set phrase); not فخ alone with شائع as an optional qualifier. |
+| streak | **المواظبة** | ar | Use the single word; do not render streak with سلسلة. Where the sense needs pinning down, say what is being kept up in the surrounding sentence rather than qualifying the term. |
+| pitfall | **خطأ شائع** | ar | "Common mistake", not "common trap": both words are mandatory as a set phrase. Do not use فخ شائع. |
 | code | **الكود** | ar | Use `الكود` in prose. The purist `شيفرة`/`رمز` is the wrong direction. The Latin form stays only inside code and for the `Debug`/`Test` tokens. |
 
 ## Localize (use the Arabic term)
@@ -128,7 +128,89 @@ Default to plain **قوس** (bracket/parenthesis, plural أقواس). When a spe
 
 ## Decision log
 
-### 2026-08-06: Reviewer feedback from forum thread t/470 (pitfall formatting fix; three open questions)
+### 2026-08-07: pitfall and streak settled; true/false contested (t/470)
+
+**Decided by:** native speakers humam-hamdan (https://forum.jiki.io/t/470/5) and baharoon
+(https://forum.jiki.io/t/470/3), on the pinned Arabic glossary thread. humam-hamdan's post
+answers, term by term, the three points baharoon raised the day before and that were left
+open in the 2026-08-06 entry below.
+
+#### pitfall: `فخ شائع` → `خطأ شائع` (actioned)
+
+humam-hamdan: "pitfall, since it's a 'frequent mistake' rather than a 'trap', which is
+something specifically made to trip people over, i add my voice into خطأ شائع." That is a
+second native speaker independently reaching baharoon's suggestion ("more commonly used in
+the context of warning about pitfalls in learning"), which is what the earlier entry was
+waiting for: the open question was explicitly "a register preference on a single opinion".
+Two agreeing reviewers and a semantic argument (a pitfall is an error learners fall into,
+not a snare someone laid) outrank the bootstrap rationale for "common trap", so the row is
+changed. Both words stay mandatory as a set phrase.
+
+#### streak: `سلسلة الأيام` → `المواظبة` (actioned)
+
+humam-hamdan: "مواظبة is the word we need here, as its meaning (directly) entails 'keeping
+it up', while استمرارية is more of a construct with that meaning." baharoon had offered
+`الاستمرارية` and `المواظبة` without choosing; humam-hamdan picks between them and gives
+the reason, which closes that open question too.
+
+This also resolves, rather than breaks, the سلسلة scheme recorded under "The سلسلة
+collision" below. The concern raised in reply to baharoon was that streak was one leg of a
+deliberate three-way qualification (`سلسلة الحلقات` / `سلسلة نصية` / `سلسلة الأيام`) and
+that moving it might reintroduce ambiguity. `المواظبة` shares no root with سلسلة at all, so
+the collision now has two legs instead of three and each is still qualified. `guide.md`
+§ "The سلسلة collision" was updated to list the two remaining senses (array metaphor,
+string); the rule itself (never bare سلسلة) is unchanged.
+
+The one thing lost is the literal "days" in the old rendering. baharoon had asked for a
+hover note explaining what the streak counts; we do not have a mechanism for that on a
+glossary term, so the glossary row instead tells the translator to make the sense explicit
+in the surrounding sentence where it is not obvious.
+
+#### true/false: NOT actioned, now contested between reviewers
+
+The current row (`صحيح / خطأ`) is **unchanged**, because what began as one reviewer's
+correction has turned into a live disagreement between three:
+
+- humam-hamdan, post 5: "صواب / خطأ is the better version, صح is a verb, its noun usage is
+  recent." In post 7 he narrows what he is rejecting: "what i'm rejecting is 'صح'. as for
+  'صحيح' its rejection is not what i did, abdulrahman did that." In post 12 he does then
+  argue against `صحيح` directly, on classical-lexicographic grounds, quoting al-Jawhari's
+  الصحاح: `الصحيح` is opposed to `السقيم` (sound vs ailing) while `الصواب` is opposed to
+  `الخطأ`, so `صواب/خطأ` is the properly paired antonym set.
+- mirina, post 10, argues the opposite: `صحيح` reads as a pure Boolean value while `صواب`
+  carries "correct / in the right" connotations (*إجابتك صواب*, *أنت على صواب*), and
+  `صحيح/خطأ` is what MDN, W3Schools, Code.org and Khan Academy use. She notes she drafted
+  parts of the post with DeepL.
+- humam-hamdan, post 11, rejects that line of evidence rather than the conclusion: an
+  Arabic translation should not be built on foreign-language sources, and an
+  LLM-acceptable rendering is not the bar.
+
+Both the pairing argument and the connotation argument are substantive and neither reviewer
+has conceded. Per `orchestrator.md` ("ask first when the analysis is contested between
+native speakers", and never post again on a contested point without checking first), this
+stays open for the owner, and the reply posted to the thread does not take a side.
+baharoon's original grammatical claim (that `صحيح` is "grammatically incorrect" here) is
+also still unsupported by anything beyond assertion; humam-hamdan's post 12 restates it as
+a question of which antonym pair is idiomatic, which is a different and weaker claim.
+
+### 2026-08-06: Translation engine confirmed as DeepSeek (t/886)
+
+**Decided by:** native speaker humam-hamdan, forum topic 886
+("[Arabic Review] Alternative translation model", https://forum.jiki.io/t/886/5), replying to
+iHiD's direct question asking him to compare the two candidate versions.
+
+This thread is one of the pre-convention, unlabelled engine-comparison posts from
+2026-08-01 (same generating scripts as ja t/887, ko t/885, zh-CN t/888, zh-TW t/902, uk t/903
+— see the general mapping in memory). For this batch: **post #1 = gemini-3.1-pro-preview,
+post #2 = deepseek-v4-pro**, and the thread's opening post links the then-published (fable)
+version for a three-way comparison. humam-hamdan: "So we have the TL from Post 1 and from
+Post 2, post 2 is hands down, w/o discussion better." That is a DeepSeek verdict.
+
+**Actioned:** `languages/ar/tracking.json` → `translation_engine: {engine: deepseek, model:
+deepseek-v4-pro}`. Arabic was previously unset (stage `setup`, no engine chosen yet), so this
+is the language's first engine decision, not a switch.
+
+
 
 **Decided by:** baharoon, native-speaker reviewer, on the pinned glossary thread
 (https://forum.jiki.io/t/470/3).
@@ -376,7 +458,7 @@ covered by a dated entry above (`board / whiteboard`, `interpreter`) is not repe
 | programming / coding | Standard, single established term. |
 | tech / tech industry | Established in Arabic tech media. |
 | developer | Standard Arabic equivalent. |
-| pitfall | "Common trap" is concrete and natural, and matches the informal register. |
+| pitfall | The original `فخ شائع` ("common trap") was chosen as concrete and natural, matching the informal register. Superseded on 2026-08-07 by `خطأ شائع`; see the dated entry at the top of this file. |
 
 #### Values & data types
 

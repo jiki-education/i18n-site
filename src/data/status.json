@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "fb3977f",
+  "governance_sha": "20d0279",
   "approved": 360,
   "disapproved": 1,
   "total": 1706,
@@ -6472,7 +6472,7 @@
         },
         {
           "key": "exercise/two-fer",
-          "topic_id": null,
+          "topic_id": 1263,
           "status": "pending"
         },
         {

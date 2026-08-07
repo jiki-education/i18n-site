@@ -42,9 +42,7 @@ const targetOnly = splitBlocks(targetBody).map(renderBlock);
  * given page lands in the same conversation. Only when no topic id is recorded
  * do we send them to a prefilled composer to open one. See forumNewTopicUrl.
  */
-const forumUrl = forum_topic_id
-  ? `https://forum.jiki.io/t/${forum_topic_id}`
-  : forumNewTopicUrl({ lang, type, slug, englishTitle: source?.data.title ?? title ?? slug });
+const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : forumNewTopicUrl({ lang, type, slug, englishTitle: source?.data.title ?? title ?? slug });
 ---
 
 <Layout title={title ?? slug} description={`${contentTypeLabel(type)}: ${slug}, translated into ${meta.name}. Read it against the English and tell us what sounds wrong.`}>
@@ -99,10 +97,22 @@ const forumUrl = forum_topic_id
             {aligned.rows.map((row) => (
               <div class="grid gap-4 py-5 lg:grid-cols-2 lg:gap-8">
                 <div class="notranslate textual-content text-[17px] text-gray-500" translate="no">
-                  {row.english ? <Fragment set:html={row.english} /> : <p class="text-[13px] italic" data-no-copy>Nothing in the English here.</p>}
+                  {row.english ? (
+                    <Fragment set:html={row.english} />
+                  ) : (
+                    <p class="text-[13px] italic" data-no-copy>
+                      Nothing in the English here.
+                    </p>
+                  )}
                 </div>
                 <div class="notranslate textual-content text-[18px]" translate="no" lang={lang} dir={meta.dir}>
-                  {row.target ? <Fragment set:html={row.target} /> : <p class="text-[13px] text-amber-700 italic" data-no-copy>Missing from the translation.</p>}
+                  {row.target ? (
+                    <Fragment set:html={row.target} />
+                  ) : (
+                    <p class="text-[13px] text-amber-700 italic" data-no-copy>
+                      Missing from the translation.
+                    </p>
+                  )}
                 </div>
               </div>
             ))}

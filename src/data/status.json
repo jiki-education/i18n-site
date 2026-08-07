@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "5416d19",
-  "approved": 398,
+  "governance_sha": "b68ac73",
+  "approved": 400,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 101,
+      "approved": 103,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -616,8 +616,8 @@
         },
         {
           "key": "exercise/nucleotide",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1299,
+          "status": "approved"
         },
         {
           "key": "exercise/caesar-cipher",
@@ -641,8 +641,8 @@
         },
         {
           "key": "exercise/pangram",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1300,
+          "status": "approved"
         },
         {
           "key": "exercise/after-party",

@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "b360f4a",
+  "governance_sha": "6d50cbd",
   "approved": 406,
   "disapproved": 1,
-  "total": 1706,
+  "total": 1716,
   "languages": [
     {
       "lang": "it",
@@ -3608,7 +3608,7 @@
       "category_slug": "i18n-pt-pt",
       "approved": 20,
       "disapproved": 0,
-      "total": 24,
+      "total": 34,
       "items": [
         {
           "key": "glossary",
@@ -3727,6 +3727,56 @@
         },
         {
           "key": "exercise/bouncer-dress-code",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/fix-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-solve-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/foxy-face",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cloud-rain-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/jumbled-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/penguin",
           "topic_id": null,
           "status": "pending"
         }

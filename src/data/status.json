@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "e293a48",
-  "approved": 377,
+  "governance_sha": "3f66946",
+  "approved": 378,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 87,
+      "approved": 88,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -451,8 +451,8 @@
         },
         {
           "key": "exercise/sign-price",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1276,
+          "status": "approved"
         },
         {
           "key": "exercise/reverse-string",

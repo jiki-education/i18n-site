@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "a9b4225",
-  "approved": 364,
+  "governance_sha": "109d3d4",
+  "approved": 372,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 81,
+      "approved": 83,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -401,8 +401,8 @@
         },
         {
           "key": "exercise/maze-walk",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1270,
+          "status": "approved"
         },
         {
           "key": "exercise/even-or-odd",
@@ -426,8 +426,8 @@
         },
         {
           "key": "exercise/look-around",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1269,
+          "status": "approved"
         },
         {
           "key": "exercise/raindrops",
@@ -3602,6 +3602,137 @@
       ]
     },
     {
+      "lang": "pt-pt",
+      "name": "European Portuguese",
+      "stage": "refining",
+      "category_slug": "i18n-pt-pt",
+      "approved": 20,
+      "disapproved": 0,
+      "total": 24,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 341,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 774,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 775,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 822,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "concept/while-loops",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "concept/else-if",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "concept/for-loops",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "concept/else",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "concept/dictionaries",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/digital-root",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/word-count",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-turn-around",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/luhn",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/bouncer-dress-code",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "fa",
       "name": "Persian",
       "stage": "refining",
@@ -4252,137 +4383,6 @@
         },
         {
           "key": "exercise/formal-dinner",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "pt-pt",
-      "name": "European Portuguese",
-      "stage": "refining",
-      "category_slug": "i18n-pt-pt",
-      "approved": 14,
-      "disapproved": 0,
-      "total": 24,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 341,
-          "status": "approved"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 774,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 775,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 822,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": 941,
-          "status": "approved"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/two-fer",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "concept/strings",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/digital-clock",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "concept/arrays",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/weather-symbols",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "concept/while-loops",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/else-if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/for-loops",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/else",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/dictionaries",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/digital-root",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/word-count",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-turn-around",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/luhn",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/bouncer-dress-code",
           "topic_id": null,
           "status": "pending"
         }

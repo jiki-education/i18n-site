@@ -4,12 +4,12 @@ type: "concept"
 slug: "using-functions"
 title: "Függvények használata"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/using-functions/source.md"
+source_repo: "i18n"
+source_path: "locales/hu/curriculum/concepts/using-functions/page.md"
 en_md5: "fc671310093a081113a8f301b6ff53fe"
-governance_sha: "c80036b"
+governance_sha: "f91da20"
 content_version: "1b6bc982033b"
-published_at: "2026-08-06"
+published_at: "2026-08-07"
 forum_topic_id: 758
 ---
 

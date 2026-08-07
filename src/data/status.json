@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "1922285",
-  "approved": 383,
+  "governance_sha": "8b72c6e",
+  "approved": 387,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 90,
+      "approved": 94,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -606,8 +606,8 @@
         },
         {
           "key": "exercise/acronym",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1283,
+          "status": "approved"
         },
         {
           "key": "exercise/methodic-pangram",
@@ -621,8 +621,8 @@
         },
         {
           "key": "exercise/caesar-cipher",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1286,
+          "status": "approved"
         },
         {
           "key": "exercise/isbn-verifier",
@@ -646,8 +646,8 @@
         },
         {
           "key": "exercise/after-party",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1284,
+          "status": "approved"
         },
         {
           "key": "exercise/formal-dinner",
@@ -656,8 +656,8 @@
         },
         {
           "key": "exercise/alphanumeric",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1285,
+          "status": "approved"
         }
       ]
     },

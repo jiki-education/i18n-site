@@ -225,6 +225,81 @@
   }
 }
 
+/**
+ * The per-block copy button injected by src/components/CopyBlocks.astro, so a
+ * reviewer can lift a paragraph straight into a forum post rather than selecting
+ * it by hand. It sits in the block's bottom corner on the side the text ends on:
+ * `inset-inline-end` resolves against the block's own direction, so it mirrors
+ * to the left in an RTL language with no rule of its own.
+ */
+.copyable-block {
+  position: relative;
+}
+
+.copy-block {
+  position: absolute;
+  inset-inline-end: -0.5rem;
+  bottom: -0.4rem;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid var(--color-gray-200);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--color-gray-400);
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.08);
+  cursor: pointer;
+  opacity: 0;
+  transition:
+    opacity 120ms ease,
+    color 120ms ease,
+    border-color 120ms ease;
+}
+
+.copy-block svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* Shown on hover, on keyboard focus, and while it is reporting a result. */
+.copyable-block:hover > .copy-block,
+.copyable-block:hover > li > .copy-block,
+.copy-block:focus-visible,
+.copy-block.is-copied,
+.copy-block.is-failed {
+  opacity: 1;
+}
+
+.copy-block:hover {
+  color: var(--color-purple-600);
+  border-color: var(--color-purple-300);
+}
+
+.copy-block.is-copied {
+  color: #059669;
+  border-color: #6ee7b7;
+}
+
+.copy-block.is-failed {
+  color: #b45309;
+  border-color: #fcd34d;
+}
+
+/* Nothing to hover with, so it stays visible but quiet. */
+@media (hover: none) {
+  .copy-block {
+    opacity: 0.5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .copy-block {
+    transition: none;
+  }
+}
+
 /* Right-to-left content sitting inside an otherwise left-to-right page. */
 [dir="rtl"] {
   text-align: right;

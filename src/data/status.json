@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "90a620a",
+  "governance_sha": "fb3977f",
   "approved": 360,
   "disapproved": 1,
   "total": 1706,
@@ -6487,7 +6487,7 @@
         },
         {
           "key": "concept/arrays",
-          "topic_id": null,
+          "topic_id": 1255,
           "status": "pending"
         },
         {

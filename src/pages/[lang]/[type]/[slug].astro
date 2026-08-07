@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import PageHeader from "../../../components/PageHeader.astro";
 import ReviewToggle from "../../../components/ReviewToggle.astro";
+import CopyBlocks from "../../../components/CopyBlocks.astro";
 import { alignBlocks, renderBlock, splitBlocks } from "../../../lib/markdown";
 import { contentTypeLabel, contentTypeSingular, forumNewTopicUrl, languageMeta } from "../../../lib/languages";
 import { reviewItemId } from "../../../lib/reviewed";
@@ -98,10 +99,10 @@ const forumUrl = forum_topic_id
             {aligned.rows.map((row) => (
               <div class="grid gap-4 py-5 lg:grid-cols-2 lg:gap-8">
                 <div class="notranslate textual-content text-[17px] text-gray-500" translate="no">
-                  {row.english ? <Fragment set:html={row.english} /> : <p class="text-[13px] italic">Nothing in the English here.</p>}
+                  {row.english ? <Fragment set:html={row.english} /> : <p class="text-[13px] italic" data-no-copy>Nothing in the English here.</p>}
                 </div>
                 <div class="notranslate textual-content text-[18px]" translate="no" lang={lang} dir={meta.dir}>
-                  {row.target ? <Fragment set:html={row.target} /> : <p class="text-[13px] text-amber-700 italic">Missing from the translation.</p>}
+                  {row.target ? <Fragment set:html={row.target} /> : <p class="text-[13px] text-amber-700 italic" data-no-copy>Missing from the translation.</p>}
                 </div>
               </div>
             ))}
@@ -164,4 +165,6 @@ const forumUrl = forum_topic_id
       ))
     }
   </div>
+
+  <CopyBlocks />
 </Layout>

@@ -1,0 +1,110 @@
+---
+/**
+ * Puts a small copy button on every block of rendered content on the page, so a
+ * reviewer can lift one paragraph into a forum post without selecting it by
+ * hand. Selecting text with a mouse is fiddly in any script and genuinely
+ * awkward in some, which is what this exists to avoid.
+ *
+ * It attaches itself to the direct block children of every `.textual-content`
+ * container, so any page that renders a Markdown body gets it with no markup of
+ * its own. Opt a single block out with `data-no-copy` (used for the site's own
+ * "nothing here" placeholders, which are chrome rather than content).
+ *
+ * Styling lives in `.copy-block` in src/styles/global.css.
+ */
+---
+
+<script>
+  /** Block-level elements worth quoting. Tables are excluded: see the report note. */
+  const COPYABLE = new Set(["P", "UL", "OL", "BLOCKQUOTE", "PRE", "H1", "H2", "H3", "H4"]);
+
+  const COPY_ICON = `<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="7" y="3" width="10" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M13 17H5a2 2 0 0 1-2-2V7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`;
+  const DONE_ICON = `<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+  /**
+   * The text a reviewer would expect to paste: what they can see, with the line
+   * breaks they can see. innerText gives that; textContent would run list items
+   * together and keep hidden text.
+   */
+  function blockText(block: HTMLElement): string {
+    return (block.innerText ?? block.textContent ?? "").replace(/\u00a0/g, " ").trim();
+  }
+
+  /** Clipboard API where it exists (it needs a secure context), execCommand otherwise. */
+  async function copy(text: string): Promise<boolean> {
+    if (navigator.clipboard?.writeText) {
+      try {
+        await navigator.clipboard.writeText(text);
+        return true;
+      } catch {
+        // Denied or unavailable. Fall through to the legacy path.
+      }
+    }
+
+    const area = document.createElement("textarea");
+    area.value = text;
+    area.setAttribute("readonly", "");
+    area.style.position = "fixed";
+    area.style.top = "-1000px";
+    area.style.opacity = "0";
+    document.body.appendChild(area);
+    area.select();
+    let ok = false;
+    try {
+      ok = document.execCommand("copy");
+    } catch {
+      ok = false;
+    }
+    area.remove();
+    return ok;
+  }
+
+  function attach(block: HTMLElement) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "copy-block";
+    button.innerHTML = COPY_ICON;
+    button.setAttribute("aria-label", "Copy this paragraph");
+    button.title = "Copy this paragraph";
+    button.addEventListener("click", async (event) => {
+      event.preventDefault();
+      const text = blockText(block);
+      if (!text) return;
+
+      const ok = await copy(text);
+      button.innerHTML = ok ? DONE_ICON : COPY_ICON;
+      button.classList.toggle("is-copied", ok);
+      button.classList.toggle("is-failed", !ok);
+      const message = ok ? "Copied" : "Press Ctrl/Cmd+C to copy";
+      button.title = message;
+      button.setAttribute("aria-label", message);
+
+      window.setTimeout(() => {
+        button.innerHTML = COPY_ICON;
+        button.classList.remove("is-copied", "is-failed");
+        button.title = "Copy this paragraph";
+        button.setAttribute("aria-label", "Copy this paragraph");
+      }, 1800);
+    });
+
+    block.classList.add("copyable-block");
+    /*
+     * A list may only contain list items, so the button goes in the last one.
+     * It is still positioned against the list, which is what carries `relative`.
+     */
+    const isList = block.tagName === "UL" || block.tagName === "OL";
+    const host = isList ? (block.lastElementChild ?? block) : block;
+    host.appendChild(button);
+  }
+
+  for (const container of document.querySelectorAll<HTMLElement>(".textual-content")) {
+    for (const child of Array.from(container.children)) {
+      if (!(child instanceof HTMLElement)) continue;
+      if (!COPYABLE.has(child.tagName)) continue;
+      if (child.hasAttribute("data-no-copy")) continue;
+      if (child.querySelector(".copy-block")) continue;
+      if (!blockText(child)) continue;
+      attach(child);
+    }
+  }
+</script>

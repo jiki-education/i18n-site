@@ -4,6 +4,7 @@ import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import ReviewToggle from "../../components/ReviewToggle.astro";
+import CopyBlocks from "../../components/CopyBlocks.astro";
 import { forumCategoryUrl, languageMeta } from "../../lib/languages";
 import { reviewItemId } from "../../lib/reviewed";
 
@@ -83,4 +84,6 @@ const forumUrl = forum_topic_id ? `https://forum.jiki.io/t/${forum_topic_id}` : 
       </section>
     </aside>
   </div>
+
+  <CopyBlocks />
 </Layout>

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "7af38a7",
-  "approved": 379,
+  "governance_sha": "3e5b911",
+  "approved": 380,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 89,
+      "approved": 90,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -411,8 +411,8 @@
         },
         {
           "key": "exercise/triangle",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1278,
+          "status": "approved"
         },
         {
           "key": "exercise/leap",

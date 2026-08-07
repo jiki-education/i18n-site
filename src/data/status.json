@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "e4a7f7f",
-  "approved": 376,
+  "governance_sha": "e293a48",
+  "approved": 377,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 86,
+      "approved": 87,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -471,8 +471,8 @@
         },
         {
           "key": "exercise/scroll-and-shoot",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1275,
+          "status": "approved"
         },
         {
           "key": "concept/animation",

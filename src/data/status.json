@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "a7f3c18",
-  "approved": 388,
+  "governance_sha": "364d17d",
+  "approved": 391,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 95,
+      "approved": 98,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -626,8 +626,8 @@
         },
         {
           "key": "exercise/isbn-verifier",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1291,
+          "status": "approved"
         },
         {
           "key": "exercise/run-length-encoding",
@@ -636,8 +636,8 @@
         },
         {
           "key": "exercise/guest-list",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1289,
+          "status": "approved"
         },
         {
           "key": "exercise/pangram",
@@ -651,8 +651,8 @@
         },
         {
           "key": "exercise/formal-dinner",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1288,
+          "status": "approved"
         },
         {
           "key": "exercise/alphanumeric",

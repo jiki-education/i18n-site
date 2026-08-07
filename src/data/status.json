@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-07",
-  "governance_sha": "63df38a",
-  "approved": 404,
+  "governance_sha": "4a80221",
+  "approved": 405,
   "disapproved": 1,
   "total": 1706,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 105,
+      "approved": 106,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -482,7 +482,7 @@
         {
           "key": "concept/break",
           "topic_id": 1305,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/building-arrays",

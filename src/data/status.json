@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-08-07",
-  "governance_sha": "3a46e8c",
-  "approved": 407,
+  "published_at": "2026-08-08",
+  "governance_sha": "b3d8394",
+  "approved": 408,
   "disapproved": 1,
   "total": 1716,
   "languages": [
@@ -8617,7 +8617,7 @@
       "name": "Arabic",
       "stage": "setup",
       "category_slug": "i18n-ar",
-      "approved": 1,
+      "approved": 2,
       "disapproved": 0,
       "total": 4,
       "items": [
@@ -8639,7 +8639,7 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 795,
-          "status": "pending"
+          "status": "approved"
         }
       ]
     },

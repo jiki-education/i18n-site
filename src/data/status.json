@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-08",
-  "governance_sha": "9484ad7",
-  "approved": 416,
+  "governance_sha": "eb57c5f",
+  "approved": 419,
   "disapproved": 1,
   "total": 1716,
   "languages": [
@@ -1978,7 +1978,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 39,
+      "approved": 42,
       "disapproved": 0,
       "total": 53,
       "items": [
@@ -2174,13 +2174,13 @@
         },
         {
           "key": "exercise/relational-sun",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1315,
+          "status": "approved"
         },
         {
           "key": "exercise/relational-traffic-lights",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1316,
+          "status": "approved"
         },
         {
           "key": "exercise/golf-rolling-ball-state",
@@ -2189,8 +2189,8 @@
         },
         {
           "key": "exercise/plant-the-flowers",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1314,
+          "status": "approved"
         },
         {
           "key": "exercise/structured-house",

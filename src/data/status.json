@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-08",
-  "governance_sha": "61f56cf",
-  "approved": 409,
+  "governance_sha": "3516d44",
+  "approved": 410,
   "disapproved": 1,
   "total": 1716,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 61,
+      "approved": 62,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -823,7 +823,7 @@
         {
           "key": "exercise/penguin",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/jumbled-house",

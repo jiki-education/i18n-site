@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-08",
-  "governance_sha": "b3d8394",
-  "approved": 408,
+  "governance_sha": "61f56cf",
+  "approved": 409,
   "disapproved": 1,
   "total": 1716,
   "languages": [
@@ -7255,6 +7255,37 @@
       ]
     },
     {
+      "lang": "ar",
+      "name": "Arabic",
+      "stage": "setup",
+      "category_slug": "i18n-ar",
+      "approved": 3,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 470,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 740,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 741,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 795,
+          "status": "approved"
+        }
+      ]
+    },
+    {
       "lang": "ko",
       "name": "Korean",
       "stage": "refining",
@@ -8609,37 +8640,6 @@
           "key": "exercise/rock-paper-scissors",
           "topic_id": null,
           "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "ar",
-      "name": "Arabic",
-      "stage": "setup",
-      "category_slug": "i18n-ar",
-      "approved": 2,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 470,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 740,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 741,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 795,
-          "status": "approved"
         }
       ]
     },

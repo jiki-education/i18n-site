@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-08",
-  "governance_sha": "9805e6e",
-  "approved": 420,
+  "governance_sha": "83ed3c0",
+  "approved": 421,
   "disapproved": 1,
   "total": 1716,
   "languages": [
@@ -1978,7 +1978,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 43,
+      "approved": 44,
       "disapproved": 0,
       "total": 53,
       "items": [
@@ -2154,8 +2154,8 @@
         },
         {
           "key": "exercise/snowman",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1320,
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-repeat",

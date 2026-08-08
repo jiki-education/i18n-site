@@ -4,16 +4,16 @@ type: "concept"
 slug: "else"
 title: "Else"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else/source.md"
+source_repo: "i18n"
+source_path: "locales/fr/curriculum/concepts/else/page.md"
 en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
-governance_sha: "efae104"
-content_version: "5e5e2632b6f1"
-published_at: "2026-08-05"
+governance_sha: "3516d44"
+content_version: "a86cdb8722ee"
+published_at: "2026-08-08"
 forum_topic_id: 1173
 ---
 
-Les instructions `if` te permettent de vérifier des conditions et de n'exécuter du code que quand quelque chose est vrai. Découvrons maintenant l'acolyte du `if`, l'instruction `else` (« sinon »).
+Les instructions `if` te permettent de vérifier des conditions et de n'exécuter du code que quand quelque chose est vrai. Découvrons maintenant son acolyte, l'instruction `else` (« sinon »).
 
 Avec une instruction `if` (_if statement_ en anglais), Jiki exécute le bloc de code quand la condition est vraie, et il saute ce bloc quand elle est fausse. Mais comment faire si tu veux que Jiki fasse une chose quand la condition est vraie et une autre quand cette condition est fausse ? C'est justement à ça que sert le `else`. On peut placer une clause `else` après l'accolade fermante du `if`, et Jiki ne l'exécutera que si la condition du `if` est fausse. Si on reprend l'exemple du videur de la boîte de nuit, on a maintenant le choix entre ouvrir la porte et renvoyer la personne, ce qui vaut sans doute mieux que de l'ignorer complètement comme on le faisait jusqu'ici. Imagine une bifurcation sur la route : Jiki arrive à cette bifurcation, il vérifie la condition, puis il part d'un côté si elle est vraie, de l'autre si elle est fausse. Mais il ne prend jamais les deux chemins à la fois.
 

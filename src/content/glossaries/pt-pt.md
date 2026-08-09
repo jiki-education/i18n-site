@@ -2,10 +2,10 @@
 lang: "pt-pt"
 name: "European Portuguese"
 family: "pt"
-stage: "refining"
-governance_sha: "e4d40de"
-content_version: "5e5100e3f387"
-published_at: "2026-08-03"
+stage: "reviewing"
+governance_sha: "8d5ace4"
+content_version: "07acd065eac3"
+published_at: "2026-08-09"
 term_count: 70
 category_id: 73
 forum_topic_id: 341
@@ -247,6 +247,52 @@ fecho (`()`)._
 ---
 
 ## Decision log
+
+### 2026-08-05: Sixteen rows proposed from the website-copy translation pass (unconfirmed drafts)
+
+**Decided by:** nobody. **Status: unconfirmed drafts**, proposed by the workers translating
+website copy (`namespaces=codingExercise,seo,articles,blog,checkout`). **Terms affected:**
+`password`, `sign in / log in`, `breakpoint`, `to throw (an error)`, `tooltip`, `achievement
+(gamification)`, `dashboard`, `email`, `reset (password)`, `computer science`, `post (blog
+post)`, `learner`, `feedback`, `roadmap`, `LLM-era`, `blog`.
+
+No European Portuguese speaker has ruled on any of them. They are written down so the choices
+made in this pass are visible and repeatable, not so they are treated as settled.
+
+**`dashboard` → `painel` wants checking before it is agreed.** This locale's file already
+rejects `painel` once, for a different term: the 2026-07-30 `board / whiteboard` decision
+picked `quadro` and explicitly ruled out `painel` as reading like a control panel or a
+signboard, not something you write on. That objection was about the whiteboard metaphor, not
+about `dashboard`, and `painel` (control panel) is the ordinary Portuguese word for a
+software dashboard, so the two uses are not necessarily in conflict. But the two words now
+sit close enough in the same glossary that a native speaker should confirm `painel` reads
+unambiguously as "dashboard" and never gets misread against the whiteboard metaphor.
+
+**`learner` → `aluno`** is masculine-generic. Flag if a gender-neutral policy is wanted here;
+this pass did not attempt one.
+
+**`post` (blog post) vs `article`.** The pass distinguished `post → publicação` from
+`article → artigo`, matching the English source's own distinction between the two content
+types rather than collapsing them onto one Portuguese word.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| password | palavra-passe | Standard European Portuguese; Brazilian Portuguese says "senha". | high |
+| sign in / log in | iniciar sessão | Standard European Portuguese; Brazilian Portuguese says "fazer login" / "entrar". | high |
+| breakpoint | ponto de paragem | | medium |
+| to throw (an error) | lançar (um erro) | | medium |
+| tooltip | dica | | medium |
+| achievement (gamification) | conquista | | medium |
+| dashboard | painel | Check against the `board / whiteboard` → `quadro` decision, which rejected `painel` for a different metaphor; see note above. | medium |
+| email | email | Kept as the ordinary word, not glossed. | high |
+| reset (password) | repor | | medium |
+| computer science | informática | | medium |
+| post (blog post) | publicação | Distinguished from `article → artigo`. | medium |
+| learner | aluno | Masculine-generic; flag if a gender-neutral policy is wanted. | medium |
+| feedback | kept English | | medium |
+| roadmap | kept English ("Roadmap") | | low |
+| LLM-era | era da inteligência artificial | Loses the LLM specificity in favour of the broader "AI" framing. | low |
+| blog | kept English | Alternative: "blogue". | medium |
 
 ### 2026-08-04: fifteen rows added from the Stage 2 batch-3 translation pass
 

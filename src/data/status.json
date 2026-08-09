@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-09",
-  "governance_sha": "14855b9",
+  "governance_sha": "8d5ace4",
   "approved": 428,
   "disapproved": 1,
   "total": 1785,
@@ -3904,7 +3904,7 @@
     {
       "lang": "pt-pt",
       "name": "European Portuguese",
-      "stage": "refining",
+      "stage": "reviewing",
       "category_slug": "i18n-pt-pt",
       "approved": 20,
       "disapproved": 0,

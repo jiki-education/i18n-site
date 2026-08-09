@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-09",
-  "governance_sha": "cd45949",
+  "governance_sha": "ac020e4",
   "approved": 428,
   "disapproved": 1,
-  "total": 1802,
+  "total": 1805,
   "languages": [
     {
       "lang": "it",
@@ -3988,7 +3988,7 @@
       "category_slug": "i18n-pt-pt",
       "approved": 20,
       "disapproved": 0,
-      "total": 43,
+      "total": 47,
       "items": [
         {
           "key": "glossary",
@@ -4202,6 +4202,26 @@
         },
         {
           "key": "exercise/gold-panning",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/owners-bouquets",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/random-salad",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-scenarios",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow-splodges",
           "topic_id": null,
           "status": "pending"
         }
@@ -7686,7 +7706,7 @@
       "category_slug": "i18n-ar",
       "approved": 3,
       "disapproved": 0,
-      "total": 5,
+      "total": 4,
       "items": [
         {
           "key": "glossary",
@@ -7707,11 +7727,6 @@
           "key": "exercise/maze-solve-basic",
           "topic_id": 795,
           "status": "approved"
-        },
-        {
-          "key": "blog-post/hello-world",
-          "topic_id": null,
-          "status": "pending"
         }
       ]
     },

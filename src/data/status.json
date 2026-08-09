@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-09",
-  "governance_sha": "f0080d7",
-  "approved": 437,
+  "governance_sha": "d1a84ce",
+  "approved": 438,
   "disapproved": 1,
   "total": 1805,
   "languages": [
@@ -1322,7 +1322,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 53,
+      "approved": 54,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1773,8 +1773,8 @@
         },
         {
           "key": "concept/string-indexing",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1343,
+          "status": "approved"
         },
         {
           "key": "concept/string-iteration",

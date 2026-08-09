@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-09",
-  "governance_sha": "59313dc",
-  "approved": 434,
+  "governance_sha": "eecf9fe",
+  "approved": 435,
   "disapproved": 1,
   "total": 1805,
   "languages": [
@@ -2634,7 +2634,7 @@
       "name": "Latin American Spanish",
       "stage": "reviewing",
       "category_slug": "i18n-es-419",
-      "approved": 25,
+      "approved": 26,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -3235,8 +3235,8 @@
         },
         {
           "key": "exercise/after-party",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1340,
+          "status": "approved"
         },
         {
           "key": "exercise/formal-dinner",

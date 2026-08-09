@@ -1,0 +1,27 @@
+---
+type: "article"
+slug: "accessibility"
+title: "Accessibility"
+en_md5: "56823a714c97bb135f4fec57386344c6"
+source_repo: "front-end"
+source_path: "content/src/posts/articles/accessibility/source.md"
+captured_at: "2026-08-09"
+---
+
+Jiki's mission is to help as many people as possible learn to code. We want everyone to be able to use our services and strive to ensure that our content meets accessibility standards.
+
+We've created our website with the following aims:
+
+- The text should be clear and simple to understand. You should be able to zoom in up to 300% without the text spilling off the screen
+- You should be able to navigate most of the site using just a keyboard
+- You should be able to navigate most of the site using speech recognition software
+- You should be able to listen to most of the site using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
+
+## How accessible is our website?
+
+Our website is compliant with the Web Content Accessibility Guidelines version 2.1 AA standard.
+
+## Improving accessibility
+
+We are always keen to know if parts of our website are not accessible.
+If you find something that's not good enough, please let us know on our [forum](https://forum.jiki.io) explaining what we need to improve.

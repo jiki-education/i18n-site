@@ -2,10 +2,10 @@
 lang: "ar"
 name: "Arabic"
 family: null
-stage: "setup"
-governance_sha: "20d0279"
-content_version: "cad5cef8c991"
-published_at: "2026-08-07"
+stage: "refining"
+governance_sha: "4a1b8b3"
+content_version: "49acf765a06d"
+published_at: "2026-08-09"
 term_count: 48
 category_id: 233
 forum_topic_id: 470
@@ -52,7 +52,7 @@ These are terms where the Arabic is used in prose, so the "Use (ar/en)" column i
 | function | دالة | ar | The *keyword* `function` in code stays English; the concept in prose is `دالة`. |
 | parameter | معامل | ar | The declaration-site name. Distinct from `عامل` (operator); do not confuse the two. |
 | argument | وسيط | ar | The call-site value. |
-| brackets (the two after a function name) | القوسان (القوسين) | ar | The round pair `()` written after a function name to call it. Arabic has a dual, so use it: nominative `القوسان`, oblique `القوسين` ("كتبت `move` ثم القوسين"). No need to say "round" here; the plain `قوس` of the Brackets table below already means the round kind. |
+| brackets (the two after a function name) | الهلالان (الهلالَين) | ar | The round pair `()` written after a function name to call it. Arabic has a dual, so use it: nominative `الهلالان`, oblique `الهلالَين` ("كتبت `move` ثم الهلالَين"). Confirmed by humam-hamdan (t/470/16): `()` is `هلالان`, not `قوسان`, since `قوس` is reserved for `{}` in the Brackets table below. |
 
 ### Loops, state & program flow
 
@@ -115,18 +115,60 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 
 ## Brackets
 
-Default to plain **قوس** (bracket/parenthesis, plural أقواس). When a specific bracket type matters, name it and show the glyph in a code tag immediately after.
+Confirmed by humam-hamdan (t/470/16): each bracket type gets its own word, no shared default.
 
 | Glyph | Arabic | Notes |
 |-------|--------|-------|
-| `()` | قوس · قوس عادي | Plain `قوس` by default; add `عادي` + glyph only when disambiguating. |
-| `[]` | قوس معقوف | |
-| `{}` | قوس مجعد | |
-| `<>` | قوس زاوي | |
+| `()` | هلال · هلالان (dual: هلالَين) | See the `brackets (the two after a function name)` row above; this is the pair after a function call. |
+| `[]` | معقوف · معقوفان (dual: معقوفَين) | |
+| `{}` | قوس · قوسان (dual: قوسَين) | Not `مجعد`. |
+| `<>` | قوس زاوي | Not addressed by t/470/16; kept as previously agreed. |
 
 ---
 
 ## Decision log
+
+### 2026-08-08: brackets split by type; الاقتران is a one-time gloss only; demonstrative register left to the author's judgement (t/470, t/740)
+
+**Decided by:** native speaker humam-hamdan (https://forum.jiki.io/t/470/16), answering four
+questions raised while applying his full review of `concept/using-functions` (t/740/3).
+
+#### Brackets: no shared default, each glyph gets its own word (actioned)
+
+Previously `قوس` was the default word for any bracket, disambiguated with a qualifier
+(`عادي`, `معقوف`, `مجعد`, `زاوي`) only when the type mattered. humam-hamdan: "فالمسألة أننا
+عندنا ثلاث أنواع من الأقواس، الهلالية والمربعة والمعقوفة" (we have three types of brackets),
+and assigned each its own word rather than a shared default with qualifiers: `()` is
+`هلالان` (not `قوسان`), `[]` is `معقوفان`, `{}` is `قوسان` (reassigning the bare `قوس`/`قوسان`
+from its old generic-default role to specifically mean curly braces). `<>` was not
+addressed and keeps its previous rendering (`قوس زاوي`). The "brackets after a function
+name" row (the `()` pair in `move()`) moves from `القوسان`/`القوسين` to `الهلالان`/`الهلالَين`
+accordingly. Propagated to `concept/using-functions`, the only published item using this
+term so far.
+
+#### function / الاقتران: not a glossary term, a one-time first-mention gloss
+
+His draft added "(أو الاقتران)" once, next to the first mention of `الدوال`. Asked whether to
+adopt `الاقتران` as an alternative rendering site-wide: "ذكرت الاقتران لأن الدالة والاقتران
+يستخدمان تبادليا، وذكرتها مرة واحدة فقط، لذا نبقيها في تيك المرة ولا تذكر بعدها" (I mentioned
+it because the two are used interchangeably, and mentioned it only once on purpose — keep it
+that one time, don't repeat it elsewhere). Not a glossary row: `الدوال` remains the term used
+everywhere; the parenthetical synonym is restored at its one first-mention spot in
+`concept/using-functions` only, and should not be added anywhere else.
+
+#### Jiki transliteration (چيكي): no preference, left as-is
+
+Asked whether to add "Jiki (چيكي)" on first mention throughout: "إخال لا فرق هنا بين
+الاثنين" (I don't think there's a difference between the two). No action; Jiki's name stays
+in Latin script, unchanged.
+
+#### Demonstratives (ذا/ذه/ذي vs هذا/هذه/هذي): stylistic variation, not a fixed register rule
+
+Asked whether the shortened colloquial forms are the intended register throughout: "فذي
+تعتمد على السياق، وغيّرتُ ما غيرت للتنويع وتقليل الرتابة" (it depends on context; I varied
+what I varied for variety, to reduce monotony). Not a rule to codify in the guide: this is
+deliberate authorial variation, not a register decision that would make other pages wrong
+for using standard `هذا`/`هذه`.
 
 ### 2026-08-07: pitfall and streak settled; true/false contested (t/470)
 

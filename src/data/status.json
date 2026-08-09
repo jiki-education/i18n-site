@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-09",
-  "governance_sha": "378344e",
-  "approved": 432,
+  "governance_sha": "aee8dfe",
+  "approved": 433,
   "disapproved": 1,
   "total": 1805,
   "languages": [
@@ -1322,7 +1322,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 51,
+      "approved": 52,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1613,8 +1613,8 @@
         },
         {
           "key": "exercise/acronym",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1338,
+          "status": "approved"
         },
         {
           "key": "exercise/bouncer",

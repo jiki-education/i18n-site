@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-09",
-  "governance_sha": "ac020e4",
+  "governance_sha": "336221d",
   "approved": 428,
   "disapproved": 1,
   "total": 1805,
@@ -6245,7 +6245,7 @@
         },
         {
           "key": "exercise/maze-solve-walk",
-          "topic_id": null,
+          "topic_id": 1332,
           "status": "pending"
         },
         {

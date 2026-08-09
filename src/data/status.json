@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-09",
-  "governance_sha": "cbdab84",
+  "governance_sha": "14855b9",
   "approved": 428,
   "disapproved": 1,
-  "total": 1782,
+  "total": 1785,
   "languages": [
     {
       "lang": "it",
@@ -1324,7 +1324,7 @@
       "category_slug": "i18n-fr",
       "approved": 50,
       "disapproved": 0,
-      "total": 115,
+      "total": 113,
       "items": [
         {
           "key": "glossary",
@@ -1657,16 +1657,6 @@
           "status": "pending"
         },
         {
-          "key": "exercise/chop-shop",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/wordle-process-guess",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/caesar-cipher",
           "topic_id": null,
           "status": "pending"
@@ -1678,11 +1668,6 @@
         },
         {
           "key": "exercise/cityscape-skyscraper",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/wordle-process-game",
           "topic_id": null,
           "status": "pending"
         },
@@ -1732,17 +1717,7 @@
           "status": "pending"
         },
         {
-          "key": "exercise/extract-words",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/hamming",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/emoji-collector",
           "topic_id": null,
           "status": "pending"
         },
@@ -1753,11 +1728,6 @@
         },
         {
           "key": "exercise/golf-shot-checker",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/loops-group",
           "topic_id": null,
           "status": "pending"
         },
@@ -1793,21 +1763,6 @@
         },
         {
           "key": "exercise/leap",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/lookup-time",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/lunchbox",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/matching-socks",
           "topic_id": null,
           "status": "pending"
         },
@@ -1862,22 +1817,12 @@
           "status": "pending"
         },
         {
-          "key": "exercise/meal-prep",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
           "key": "exercise/nucleotide",
           "topic_id": null,
           "status": "pending"
         },
         {
           "key": "exercise/pangram",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/alien-detector",
           "topic_id": null,
           "status": "pending"
         },
@@ -1892,12 +1837,57 @@
           "status": "pending"
         },
         {
-          "key": "exercise/llm-response",
+          "key": "exercise/three-letter-acronym",
           "topic_id": null,
           "status": "pending"
         },
         {
-          "key": "exercise/nucleotide-count",
+          "key": "exercise/tile-rack",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/triangle",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-nested-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stripey-fabric",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/scroll-and-shoot",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/tile-search",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-conditional",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/reverse-string",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/run-length-encoding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow-ball",
           "topic_id": null,
           "status": "pending"
         }
@@ -3918,7 +3908,7 @@
       "category_slug": "i18n-pt-pt",
       "approved": 20,
       "disapproved": 0,
-      "total": 38,
+      "total": 43,
       "items": [
         {
           "key": "glossary",
@@ -4107,6 +4097,31 @@
         },
         {
           "key": "exercise/relational-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/finish-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sunset",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/dnd-roll",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/gold-panning",
           "topic_id": null,
           "status": "pending"
         }

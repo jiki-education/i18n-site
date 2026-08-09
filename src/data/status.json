@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-09",
-  "governance_sha": "e7eb38f",
-  "approved": 431,
+  "governance_sha": "378344e",
+  "approved": 432,
   "disapproved": 1,
   "total": 1805,
   "languages": [
@@ -1322,7 +1322,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 50,
+      "approved": 51,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1603,8 +1603,8 @@
         },
         {
           "key": "concept/animation",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1337,
+          "status": "approved"
         },
         {
           "key": "concept/continue",

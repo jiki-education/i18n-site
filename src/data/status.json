@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-10",
-  "governance_sha": "991d43f",
-  "approved": 460,
+  "governance_sha": "17d8781",
+  "approved": 461,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -1322,7 +1322,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 60,
+      "approved": 61,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1704,7 +1704,7 @@
         {
           "key": "exercise/collatz-conjecture",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/even-or-odd",

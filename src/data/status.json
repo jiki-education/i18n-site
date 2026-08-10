@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-10",
-  "governance_sha": "e9bb010",
-  "approved": 450,
+  "governance_sha": "34ab681",
+  "approved": 453,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 62,
+      "approved": 65,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1173,7 +1173,7 @@
         {
           "key": "exercise/annalyns-infiltration",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/collatz-conjecture",
@@ -1263,7 +1263,7 @@
         {
           "key": "exercise/acronym",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/lower-pangram",
@@ -1313,7 +1313,7 @@
         {
           "key": "exercise/after-party",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         }
       ]
     },

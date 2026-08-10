@@ -4,17 +4,17 @@ type: "concept"
 slug: "continue"
 title: "Continue"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/continue/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/continue/page.md"
 en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "c80036b"
-content_version: "57b08c23bd3c"
-published_at: "2026-08-06"
+governance_sha: "8c8f01b"
+content_version: "cdcbb555ef5f"
+published_at: "2026-08-10"
 ---
 
 Ci sono situazioni in cui potremmo voler saltare un'iterazione specifica di un ciclo invece di uscirne. Immaginiamo di voler fare qualcosa solo con i numeri dispari.
 
-Vogliamo poter dire: se `i` (l'indice del ciclo) è dispari, non eseguire il ciclo questa volta.
+Vogliamo poter dire che se `i` (l'indice del ciclo) è dispari, non deve eseguire il ciclo questa volta.
 
 Ma non vogliamo uscire completamente dal ciclo. Vogliamo solo saltare questa singola iterazione e poi passare alla successiva.
 

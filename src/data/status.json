@@ -1,9 +1,9 @@
 {
-  "published_at": "2026-08-09",
-  "governance_sha": "f023370",
-  "approved": 439,
+  "published_at": "2026-08-10",
+  "governance_sha": "631519a",
+  "approved": 441,
   "disapproved": 1,
-  "total": 1820,
+  "total": 1830,
   "languages": [
     {
       "lang": "it",
@@ -1322,7 +1322,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 54,
+      "approved": 56,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1764,12 +1764,12 @@
         {
           "key": "concept/state",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/string-concatenation",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/string-indexing",
@@ -5920,7 +5920,7 @@
       "category_slug": "i18n-zh-tw",
       "approved": 7,
       "disapproved": 0,
-      "total": 9,
+      "total": 19,
       "items": [
         {
           "key": "glossary",
@@ -5966,6 +5966,56 @@
           "key": "concept/repeat",
           "topic_id": 1287,
           "status": "approved"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/else-if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/for-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/else",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/while-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },

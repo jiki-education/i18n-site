@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-10",
-  "governance_sha": "3d354c0",
-  "approved": 456,
+  "governance_sha": "991d43f",
+  "approved": 460,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -1322,7 +1322,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 56,
+      "approved": 60,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1619,12 +1619,12 @@
         {
           "key": "exercise/bouncer",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/bouncer-wristbands",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/colors",
@@ -1649,7 +1649,7 @@
         {
           "key": "exercise/build-wall",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/annalyns-infiltration",
@@ -1829,7 +1829,7 @@
         {
           "key": "exercise/battle-procedures",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/isbn-verifier",

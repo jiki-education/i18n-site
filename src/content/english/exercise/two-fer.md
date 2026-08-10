@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "two-fer"
 title: "Two-Fer"
-en_md5: "7e59867ebe08e4bd9b598aae4a8be76a"
+en_md5: "259ef6df34222c26ac1869815e38f66e"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/two-fer"
-captured_at: "2026-08-01"
+captured_at: "2026-08-10"
 ---
 
 Now we're going to build on that simple "Hello" exercise and add some extra rules.
@@ -16,8 +16,8 @@ Imagine a bakery that has a holiday offer where you can buy two cookies for the 
 
 Your task is to determine what you will say as you give away the extra cookie.
 
-- If you know the person's name (e.g. Alice), then you will say: "One for Alice, one for me."
-- If you don't know the person's name, you will say: "One for you, one for me."
+- If you know the person's name (e.g. Alice), then you will say: `"One for Alice, one for me."`
+- If you don't know the person's name, you will say: `"One for you, one for me."`
 
 Write a function called <define>`twoFer(name)`</define> that returns the appropriate dialogue.
 

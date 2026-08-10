@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-10",
-  "governance_sha": "39aacd6",
-  "approved": 463,
+  "governance_sha": "4d6ffd5",
+  "approved": 464,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -1322,7 +1322,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 63,
+      "approved": 64,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1803,8 +1803,8 @@
         },
         {
           "key": "exercise/raindrops",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1373,
+          "status": "approved"
         },
         {
           "key": "concept/scope",

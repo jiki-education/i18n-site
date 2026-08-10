@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-10",
-  "governance_sha": "34ab681",
-  "approved": 453,
+  "governance_sha": "4aba35f",
+  "approved": 454,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 65,
+      "approved": 66,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1168,7 +1168,7 @@
         {
           "key": "exercise/checkerboard",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/annalyns-infiltration",

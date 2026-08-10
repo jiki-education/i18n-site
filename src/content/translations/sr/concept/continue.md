@@ -2,14 +2,14 @@
 lang: "sr"
 type: "concept"
 slug: "continue"
-title: "Continue"
+title: "Ključna reč `continue`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/continue/source.md"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/continue/page.md"
 en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "67151b32101f"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Ponekad želimo da preskočimo određenu iteraciju petlje umesto da iz nje potpuno izađemo. Zamisli da hoćemo da radimo samo sa neparnim brojevima.

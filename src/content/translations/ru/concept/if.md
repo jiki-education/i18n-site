@@ -2,14 +2,15 @@
 lang: "ru"
 type: "concept"
 slug: "if"
-title: "Условные конструкции"
+title: "Как работают условные конструкции `if`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/if/source.md"
+source_repo: "i18n"
+source_path: "locales/ru/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "e4864f3"
+governance_sha: "3d354c0"
 content_version: "43b75018467e"
-published_at: "2026-07-31"
+published_at: "2026-08-10"
+forum_topic_id: 847
 ---
 
 Есть ключевое слово, которое помогает сказать Jiki, что делать что-то нужно только в определённых ситуациях. Представьте, что вы пишете код для охраны входа в бар: вы вышибала, и Jiki должен открывать дверь, только если человек подходяще одет. Или, скажем, вы пишете код, где вам поручено махать клетчатым флагом в конце гонки, но Jiki должен знать, что делать это нужно только на последнем круге. В таких ситуациях нам и пригодится ключевое слово `if`.

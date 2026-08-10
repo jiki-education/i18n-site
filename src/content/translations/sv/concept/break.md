@@ -2,14 +2,14 @@
 lang: "sv"
 type: "concept"
 slug: "break"
-title: "Break"
+title: "Nyckelordet `break`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/break/source.md"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/break/page.md"
 en_md5: "30148766de67ae467ab1a4852ad35895"
-governance_sha: "18055e8"
+governance_sha: "3d354c0"
 content_version: "5d020ebb2a27"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Nyckelordet `break` kan du använda var som helst i kroppen på vilken loop som helst.

@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "if"
-title: "`if` स्टेटमेंट"
+title: "`if` स्टेटमेंट को समझना"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/if/source.md"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "4fb791e23aaa"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 एक कीवर्ड है जो हमें Jiki को यह बताने में मदद करता है कि उसे कुछ काम सिर्फ खास स्थितियों में ही करने हैं। मान लीजिए आप किसी बार के प्रवेश द्वार की निगरानी का कोड लिख रहे हैं, मानिए आप बाउंसर हैं, और Jiki को तभी दरवाज़ा खोलना चाहिए जब कोई सही कपड़े पहने हो। या फिर सोचिए आप किसी दौड़ के अंत में चेकर्ड झंडा लहराने का कोड लिख रहे हैं, लेकिन Jiki को पता होना चाहिए कि उसे ऐसा सिर्फ अंतिम लैप पर ही करना है। इन जैसी स्थितियों में हम `if` कीवर्ड का इस्तेमाल करेंगे।

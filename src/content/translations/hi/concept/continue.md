@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "continue"
-title: "Continue"
+title: "`continue` कीवर्ड"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/continue/source.md"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/continue/page.md"
 en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "1c1b3ea60e39"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 कई बार हम लूप से बाहर निकलने के बजाय उसके किसी एक खास इटरेशन को छोड़ना चाहते हैं। सोचिए कि हम केवल विषम संख्याओं के लिए ही कुछ करना चाहते हैं।

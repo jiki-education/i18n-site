@@ -2,14 +2,14 @@
 lang: "nl"
 type: "concept"
 slug: "if"
-title: "If-statements"
+title: "If-statements begrijpen"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/if/source.md"
+source_repo: "i18n"
+source_path: "locales/nl/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "7218ef4"
+governance_sha: "3d354c0"
 content_version: "783643283f4e"
-published_at: "2026-08-01"
+published_at: "2026-08-10"
 ---
 
 Er is een sleutelwoord waarmee we Jiki kunnen vertellen dat hij bepaalde dingen alleen in bepaalde situaties moet doen. Misschien schrijf je code om de ingang van een bar te bewaken, ben je de uitsmijter, en mag Jiki de deur alleen openen als iemand netjes gekleed is. Of misschien schrijf je code waarin jij aan het einde van een race met de finishvlag mag zwaaien, maar moet Jiki weten dat hij dat alleen in de laatste ronde moet doen. In dit soort situaties gebruiken we het sleutelwoord `if`.

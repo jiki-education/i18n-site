@@ -2,14 +2,14 @@
 lang: "zh-CN"
 type: "concept"
 slug: "break"
-title: "跳出循环"
+title: "`break`关键字"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/break/source.md"
+source_repo: "i18n"
+source_path: "locales/zh-CN/curriculum/concepts/break/page.md"
 en_md5: "30148766de67ae467ab1a4852ad35895"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "99a1044ea4b3"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 `break` 关键字可以用在任何循环体中的任何位置。

@@ -2,14 +2,14 @@
 lang: "de"
 type: "concept"
 slug: "if"
-title: "if-Anweisungen"
+title: "if-Anweisungen verstehen"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/if/source.md"
+source_repo: "i18n"
+source_path: "locales/de/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "413a493"
+governance_sha: "3d354c0"
 content_version: "75c5be4be74a"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Es gibt ein Schlüsselwort, mit dem wir Jiki sagen können, dass er bestimmte Dinge nur in bestimmten Situationen tun soll. Vielleicht schreibst du Code, der den Eingang einer Bar bewacht, vielleicht bist du Türsteher, und Jiki soll die Tür nur öffnen, wenn jemand passend angezogen ist. Oder vielleicht schreibst du Code, in dem du am Ende eines Rennens die Zielflagge schwenken darfst, aber Jiki muss wissen, dass er das nur in der letzten Runde tun soll. In solchen Situationen benutzen wir das Schlüsselwort `if`.

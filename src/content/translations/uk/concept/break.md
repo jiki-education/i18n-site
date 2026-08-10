@@ -2,14 +2,14 @@
 lang: "uk"
 type: "concept"
 slug: "break"
-title: "Break"
+title: "Ключове слово `break`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/break/source.md"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/break/page.md"
 en_md5: "30148766de67ae467ab1a4852ad35895"
-governance_sha: "aa865df"
+governance_sha: "3d354c0"
 content_version: "c1a5867002b7"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Ключове слово `break` можна використати будь-де в тілі будь-якого циклу.

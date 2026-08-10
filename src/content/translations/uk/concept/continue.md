@@ -2,14 +2,14 @@
 lang: "uk"
 type: "concept"
 slug: "continue"
-title: "Continue"
+title: "Ключове слово `continue`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/continue/source.md"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/continue/page.md"
 en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "aa865df"
+governance_sha: "3d354c0"
 content_version: "92626cbbad9e"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Іноді ми хочемо пропустити певну ітерацію циклу, а не повністю з нього виходити. Уявімо, що ми хочемо щось робити лише з непарними числами.

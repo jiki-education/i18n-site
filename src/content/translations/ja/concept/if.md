@@ -2,14 +2,14 @@
 lang: "ja"
 type: "concept"
 slug: "if"
-title: "if文"
+title: "`if`文を理解する"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/if/source.md"
+source_repo: "i18n"
+source_path: "locales/ja/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "50b5ccd5aa60"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 forum_topic_id: 1102
 ---
 

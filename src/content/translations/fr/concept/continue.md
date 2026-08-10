@@ -2,14 +2,14 @@
 lang: "fr"
 type: "concept"
 slug: "continue"
-title: "Continue"
+title: "Le mot-clé `continue`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/continue/page.md"
 en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "84303b0"
+governance_sha: "3d354c0"
 content_version: "54c3ec2dcfc6"
-published_at: "2026-08-08"
+published_at: "2026-08-10"
 ---
 
 Il arrive parfois qu'on veuille sauter une itération précise d'une boucle plutôt que d'en sortir complètement. Imagine qu'on veuille agir uniquement sur les nombres impairs.

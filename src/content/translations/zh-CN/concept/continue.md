@@ -2,14 +2,14 @@
 lang: "zh-CN"
 type: "concept"
 slug: "continue"
-title: "Continue"
+title: "`continue`关键字"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/continue/source.md"
+source_repo: "i18n"
+source_path: "locales/zh-CN/curriculum/concepts/continue/page.md"
 en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "35d1305e1208"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 有时候，我们可能想要跳过循环中的某一次迭代，而不是直接跳出循环。假设我们只想对奇数执行操作。

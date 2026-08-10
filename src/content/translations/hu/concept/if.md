@@ -2,14 +2,14 @@
 lang: "hu"
 type: "concept"
 slug: "if"
-title: "Elágazások"
+title: "Az `if` elágazás működése"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/if/source.md"
+source_repo: "i18n"
+source_path: "locales/hu/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "7c7a445a1b97"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 forum_topic_id: 981
 ---
 

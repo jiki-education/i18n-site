@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "break"
-title: "break"
+title: "`break` कीवर्ड"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/break/source.md"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/break/page.md"
 en_md5: "30148766de67ae467ab1a4852ad35895"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "d07ddbd062cf"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 `break` कीवर्ड किसी भी लूप के अंदर कहीं भी इस्तेमाल किया जा सकता है।

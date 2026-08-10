@@ -2,14 +2,15 @@
 lang: "it"
 type: "concept"
 slug: "break"
-title: "Break"
+title: "La parola chiave `break`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/break/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/break/page.md"
 en_md5: "30148766de67ae467ab1a4852ad35895"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "3881c2951fbe"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
+forum_topic_id: 1305
 ---
 
 La parola chiave `break` può essere usata in qualsiasi punto del corpo di un ciclo.

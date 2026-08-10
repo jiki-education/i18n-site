@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "if"
-title: "`if` 문"
+title: "`if`문 이해하기"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/if/source.md"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "e7589c2a6195"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Jiki에게 특정 상황에서만 어떤 일을 하라고 알려주는 키워드가 있어요. 술집 입구를 지키는 코드를 작성한다고 생각해볼까요? 여러분이 경비원이고, Jiki는 손님이 적절한 복장을 했을 때만 문을 열어줘야 해요. 아니면 경주가 끝날 때 체크무늬 깃발을 흔드는 역할을 하는 코드를 작성하는데, Jiki가 마지막 바퀴에서만 깃발을 흔들어야 한다고 알려줘야 하는 상황일 수도 있어요. 이런 상황에서 우리는 `if` 키워드를 사용해요.

@@ -2,14 +2,14 @@
 lang: "sv"
 type: "concept"
 slug: "continue"
-title: "Continue"
+title: "Nyckelordet `continue`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/continue/source.md"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/continue/page.md"
 en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "18055e8"
+governance_sha: "3d354c0"
 content_version: "1b499cd71a22"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Ibland kan vi vilja hoppa över ett visst varv i en loop, i stället för att avbryta den helt. Tänk dig att vi bara vill göra saker för udda tal.

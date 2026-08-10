@@ -2,14 +2,14 @@
 lang: "fr"
 type: "concept"
 slug: "break"
-title: "L'instruction break"
+title: "Le mot-clé `break`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/break/page.md"
 en_md5: "30148766de67ae467ab1a4852ad35895"
-governance_sha: "84303b0"
+governance_sha: "3d354c0"
 content_version: "0b08b99af8af"
-published_at: "2026-08-08"
+published_at: "2026-08-10"
 ---
 
 Le mot-clé `break` peut être utilisé n'importe où dans le corps de n'importe quelle boucle.

@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "break"
-title: "Break"
+title: "`break` 키워드"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/break/source.md"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/break/page.md"
 en_md5: "30148766de67ae467ab1a4852ad35895"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "b4893678e3a0"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 `break` 키워드는 어떤 루프의 본문 안에서도 어디서든 사용할 수 있어요.

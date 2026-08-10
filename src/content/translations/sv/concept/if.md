@@ -2,14 +2,14 @@
 lang: "sv"
 type: "concept"
 slug: "if"
-title: "`if`-satser"
+title: "Så fungerar `if`-satser"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/if/source.md"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "438242e"
+governance_sha: "3d354c0"
 content_version: "32728287af92"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Det finns ett nyckelord som hjälper oss att tala om för Jiki att han bara ska göra saker i vissa situationer. Kanske skriver du kod som ska vakta dörren till en bar, kanske är du dörrvakt, och Jiki ska bara öppna dörren om någon är rätt klädd. Eller kanske skriver du kod där du har ansvar för att vifta med målflaggan i slutet av ett lopp, men Jiki behöver veta att han bara ska göra det på sista varvet. I sådana situationer använder vi nyckelordet `if`.

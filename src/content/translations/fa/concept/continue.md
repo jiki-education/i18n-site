@@ -2,14 +2,14 @@
 lang: "fa"
 type: "concept"
 slug: "continue"
-title: "continue"
+title: "کلیدواژه‌ی `continue`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/continue/source.md"
+source_repo: "i18n"
+source_path: "locales/fa/curriculum/concepts/continue/page.md"
 en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "5c9f793cee83"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 گاهی ممکن است بخواهیم یک تکرار خاص از حلقه را بدون این که از آن خارج شویم، رد کنیم. فرض کنید فقط می‌خواهیم برای اعداد فرد کاری انجام دهیم.

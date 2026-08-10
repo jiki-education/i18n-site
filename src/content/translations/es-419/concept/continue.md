@@ -2,14 +2,14 @@
 lang: "es-419"
 type: "concept"
 slug: "continue"
-title: "Continue"
+title: "La palabra clave `continue`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/continue/source.md"
+source_repo: "i18n"
+source_path: "locales/es-419/curriculum/concepts/continue/page.md"
 en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "e41f56e69f23"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Hay ocasiones en las que queremos omitir una iteración específica de un bucle en lugar de salir de él. Imagina que solo queremos hacer cosas para los números impares.

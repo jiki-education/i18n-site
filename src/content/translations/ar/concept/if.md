@@ -2,14 +2,14 @@
 lang: "ar"
 type: "concept"
 slug: "if"
-title: "جملة `if` الشرطية"
+title: "فهم جمل `if` الشرطية"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/ar/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "f023370"
+governance_sha: "3d354c0"
 content_version: "8838c5c46f22"
-published_at: "2026-08-09"
+published_at: "2026-08-10"
 ---
 
 هناك كلمة مفتاحية تساعدنا في إخبار Jiki بأن لا يقوم بشيء إلا في مواقف معينة. ربما تكتب كودًا لحراسة مدخل حانة، وربما تكون حارسًا للباب، ويجب أن يفتح Jiki الباب فقط إن كان الشخص لابسًا ملابس مناسبة. أو ربما تكتب كودًا تتولى فيه التلويح بالعلم المتقلّم في نهاية السباق، ولكن على Jiki أن يعرف أنه ينبغي أن يلوّح به فقط في اللفة الأخيرة. في مثل هذه المواقف، سنستخدم الكلمة المفتاحية `if`.

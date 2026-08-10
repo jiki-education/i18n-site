@@ -2,14 +2,14 @@
 lang: "pl"
 type: "concept"
 slug: "if"
-title: "Instrukcje warunkowe"
+title: "Jak działają instrukcje `if`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/if/source.md"
+source_repo: "i18n"
+source_path: "locales/pl/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "1f962b4"
+governance_sha: "3d354c0"
 content_version: "6755dcb2e2b9"
-published_at: "2026-08-02"
+published_at: "2026-08-10"
 forum_topic_id: 1012
 ---
 

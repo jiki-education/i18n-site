@@ -2,14 +2,14 @@
 lang: "el"
 type: "concept"
 slug: "continue"
-title: "Continue"
+title: "Η λέξη-κλειδί `continue`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/continue/source.md"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/continue/page.md"
 en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "d5cfd85a7354"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Υπάρχουν φορές που μπορεί να θέλουμε να παραλείψουμε μια συγκεκριμένη επανάληψη ενός βρόχου αντί να τον διακόψουμε. Φαντάσου ότι θέλουμε να κάνουμε κάτι μόνο για μονούς αριθμούς.

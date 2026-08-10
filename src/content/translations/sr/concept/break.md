@@ -2,14 +2,14 @@
 lang: "sr"
 type: "concept"
 slug: "break"
-title: "Prekid petlje"
+title: "Ključna reč `break`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/break/source.md"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/break/page.md"
 en_md5: "30148766de67ae467ab1a4852ad35895"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "1af12b2a839e"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Ključna reč `break` može da se koristi bilo gde u telu bilo koje petlje.

@@ -2,14 +2,14 @@
 lang: "fa"
 type: "concept"
 slug: "if"
-title: "دستور «اگر»"
+title: "آشنایی با دستور «اگر»"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/if/source.md"
+source_repo: "i18n"
+source_path: "locales/fa/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "f1ab36ccf092"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 forum_topic_id: 1158
 ---
 

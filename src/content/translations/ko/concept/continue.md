@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "continue"
-title: "Continue"
+title: "`continue` 키워드"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/continue/source.md"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/continue/page.md"
 en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "80ca712b5062"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 루프를 완전히 빠져나오지 않고 특정 반복만 건너뛰고 싶을 때가 있어요. 예를 들어 홀수에 대해서만 어떤 작업을 하고 싶다고 상상해 봐요.

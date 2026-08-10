@@ -2,14 +2,14 @@
 lang: "es-419"
 type: "concept"
 slug: "if"
-title: "Condicionales"
+title: "Cómo funcionan las sentencias `if`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/if/source.md"
+source_repo: "i18n"
+source_path: "locales/es-419/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "c80036b"
+governance_sha: "3d354c0"
 content_version: "62913e45ad8c"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 forum_topic_id: 1058
 ---
 

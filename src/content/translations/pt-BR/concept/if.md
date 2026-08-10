@@ -2,14 +2,15 @@
 lang: "pt-BR"
 type: "concept"
 slug: "if"
-title: "Condicionais"
+title: "Entendendo as instruções `if`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/if/source.md"
+source_repo: "i18n"
+source_path: "locales/pt-BR/curriculum/concepts/if/page.md"
 en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "53f3baa"
+governance_sha: "3d354c0"
 content_version: "686396eafd16"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
+forum_topic_id: 1104
 ---
 
 Existe uma palavra-chave que nos ajuda a dizer ao Jiki para fazer as coisas só em certas situações. Talvez você esteja escrevendo um código para guardar a entrada de um bar, talvez você seja o segurança, e o Jiki só deva abrir a porta se a pessoa estiver vestida adequadamente. Ou talvez você esteja escrevendo um código em que é responsável por agitar a bandeira quadriculada no fim de uma corrida, mas o Jiki precisa saber que só deve fazer isso na última volta. Nesse tipo de situação, vamos usar a palavra-chave `if`.

@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "62ebcc4"
-content_version: "8d6b7dcf7fb8"
-published_at: "2026-08-06"
-term_count: 88
+governance_sha: "a2a7b93"
+content_version: "96e7ebb02bb3"
+published_at: "2026-08-10"
+term_count: 89
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -25,7 +25,7 @@ ones to raise on the forum. Why each term was chosen is in the decision log
 | English | French | Use (fr/en) | Notes |
 |---------|--------|-------------|-------|
 | streak | série | fr | A run of consecutive days, as in the learning-platform sense. |
-| foot-gun | piège involontaire | fr | Use a descriptive phrase rather than forcing a fixed term, per `global/terms.md`. |
+| foot-gun | piège involontaire | fr | Settled 2026-08-10 on topic 314; do not reopen. On the first mention in a document, keep the English source's own explanation alongside it: _un « piège involontaire », de quoi se tirer une balle dans le pied sans le vouloir_. Later mentions in the same document may shorten to _piège_. Never _fonctionnalité pénalisante_, _effet de bord_ or _faux ami_. |
 | Solve the Maze (exercise title) | Évade-toi du labyrinthe | fr | Title only, and no exclamation mark. Prose about the maze keeps "faire sortir le personnage du labyrinthe". |
 | Take a Walk (exercise title) | Une petite marche | fr | Unconfirmed draft (agent, 2026-08-03). Title only. |
 | Loopy Maze (exercise title) | Le labyrinthe, version boucles | fr | Settled 2026-08-06 by an owner-authorised ruling after three native speakers did not converge (topic 314). Title only. Do not reopen. The title must not describe the maze itself as looping. |
@@ -122,6 +122,7 @@ so a term that drifts between two exercises drifts inside one screen.
 | penguin | pingouin | fr | Confirmed by native speakers (2026-08-04). Gender: _le pingouin_. The everyday French word, matching the cartoon drawing the exercise uses, not the zoologically stricter _manchot_. |
 | to fill/plug (a hole) | combler | fr | Confirmed by a native speaker (2026-08-06), replacing the earlier unconfirmed _boucher_. Past participle _comblé_ agrees with its noun ("le trou... comblé"). |
 | to cover (a hole with a shape) | recouvrir | fr | Confirmed by a native speaker (2026-08-06), replacing the earlier unconfirmed _couvrir_ in this context. |
+| skyline (city) | la ligne d'horizon | fr | Provisional (orchestrator call, 2026-08-10), pending @fleurdelys44. Never the anglicism _skyline_. Recurs across the `cityscape` exercises and the Cityscape project, so do not alternate with _profil urbain_ or _panorama urbain_. Where the phrase is "a skyline of buildings" rather than the city's own skyline, _une silhouette de bâtiments_ reads better than repeating _ligne d'horizon_. |
 
 ## Keep in English
 
@@ -180,6 +181,120 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-10: `foot-gun` → _piège involontaire_ (owner-authorised ruling)
+
+**Decided by:** the orchestrator, on Jeremy's explicit instruction to make the final call,
+after ten days without convergence on forum topic 314 (https://forum.jiki.io/t/314), posts 24
+to 80, involving resu-xunil, astyanax, williamapc and mirina, all native speakers.
+**Status:** settled. Do not reopen.
+**Terms affected:** `foot-gun`.
+**Files affected:** `glossary.md` (Core decisions). No translated content was touched: the term
+occurs only in three English items (`article/why-is-this-feature-not-implemented`,
+`article/about-jiki-javascript`, `blog/the-backstory-of-jiki`), none of which has a French
+translation yet, so the ruling lands before the first pass that needs it rather than after.
+
+_piège involontaire_ was the standing entry and is confirmed rather than replaced. It is the
+only candidate more than one participant accepted: resu-xunil proposed it, astyanax said he
+would be "perfectly fine" with it, and mirina agreed with the case made for it. It is also
+the most accurate reading of the coinage: a foot-gun is a trap nobody set on purpose, which
+is precisely what _involontaire_ says, and unlike every rival it stays a countable noun that
+drops into all three real source sentences ("Sensible Mode removes these foot-guns", "We call
+some features foot-guns", "But I've removed the foot-guns").
+
+Why the others lost, in the order they were floated:
+
+- _fonctionnalité pénalisante_ (astyanax's own first choice, citing the French Wiktionary
+  entry for "footgun") is natural French but semantically off-target: _pénalisant_ means
+  disadvantageous or handicapping, so it describes a feature that costs you something, not one
+  that hands you the means to hurt yourself. It also collides with the source's own phrasing:
+  "we call some features foot-guns" becomes "nous appelons certaines fonctionnalités des
+  fonctionnalités pénalisantes". Attestation in a dictionary is evidence a rendering exists,
+  not evidence it reads well in our sentences.
+- _fonctionnalité piégée_ / _piège à développeur_ were rejected by astyanax and mirina both.
+  _fonctionnalité piégeuse_ (williamapc) is the best of that family and genuinely idiomatic,
+  but it inherits mirina's objection that _fonctionnalité_ is too narrow, which matters
+  because the blog uses the term for language behaviour generally, not only for listed
+  features.
+- _piège_ alone (mirina) is natural but is already this glossary's rendering of `pitfall`, and
+  the source treats foot-gun as a coined term it stops to define. It survives as the permitted
+  short form on later mentions, which is where the objection to heaviness really bites.
+- _idée trompeuse_ / _idée minée_ (mirina) have no currency in French technical writing;
+  _idée minée_ in particular is not an existing collocation.
+- _effet de bord_ (williamapc) is a real and well-defined French CS term, but it means side
+  effect. A foot-gun need not have side effects and a side effect need not be a foot-gun, so
+  adopting it would teach learners the wrong concept under the right-sounding name.
+- _une balle dans le pied_ (resu-xunil, williamapc) is the idiom French actually reaches for,
+  but it is a verb phrase, not a noun for a thing the platform removes. It is kept, as the
+  gloss attached to the first mention, which is exactly how the English source introduces the
+  term too.
+- Keeping "foot-gun" in English with a first-mention gloss (resu-xunil) was the fallback if
+  nothing French fit. Something French does fit, and the term is a coinage rather than an
+  established API word like `string`, so there is nothing to preserve by leaving it English.
+- _piège classique_ and _faux ami_ (mirina, post 80, offered without endorsement) arrived last.
+  _piège classique_ has the same clash with `pitfall`, and _faux ami_ is an established
+  linguistics term for a deceptive cognate, which would actively mislead in a language-learning
+  context.
+
+resu-xunil's closing point on post 78, that context decides which expression fits, is honoured
+by the row rather than overruled: the glossary now fixes the term for first mention, carries
+the "balle dans le pied" idiom as its explanation, and lets later mentions shorten.
+
+### 2026-08-10: `skyline` → _la ligne d'horizon_ (provisional, orchestrator call)
+
+**Decided by:** the orchestrator, choosing between two options offered by resu-xunil, a native
+speaker, on forum topic 1372 (https://forum.jiki.io/t/1372), reviewing
+`exercise/cityscape-skyline`. **Status:** provisional, pending @fleurdelys44, who resu-xunil
+tagged for an opinion and who has not yet replied. A native speaker's answer overrides this.
+**Terms affected:** `skyline (city)`.
+**Files affected:** `glossary.md` (Exercise world vocabulary), `exercise/cityscape-skyline.md`,
+and the fr `cityscape-skyline` instructions and message catalog.
+
+resu-xunil asked for the title "La skyline" to lose the anglicism and offered two candidates,
+_la ligne d'horizon_ and _le profil urbain_, without picking one. _ligne d'horizon_ was chosen
+because resu-xunil used it themselves in the same post for the body fix ("la skyline de la
+ville" → "la ligne d'horizon de la ville"), so it is the option they already reached for
+unprompted; _profil urbain_ is also the more technical, architectural-drawing register, which
+sits above the beginner tone of these pages. It fits the general French stance against
+anglicisms already recorded here (see _assignment → affectation_, _refactor → réécrire_).
+
+The word earns a glossary row rather than a one-off note because it recurs: the
+`cityscape-skyscraper` instructions close by promising "whole city skylines" (currently
+rendered _panoramas urbains_, a third variant), and the Cityscape project itself is built on
+the same image. One row keeps the three from drifting apart.
+
+Where English says "a skyline of buildings" rather than the city's own skyline, resu-xunil
+asked for _une silhouette de bâtiments_, which is kept: repeating _ligne d'horizon_ there
+would read as the horizon itself being made of buildings.
+
+The `X`/`Y` capitalisation also asked for on this topic is not a new decision; it is the rule
+already settled on 2026-08-08 below, applied to another exercise.
+
+### 2026-08-08: « en dur » always in guillemets; X/Y/Z capitalised in prose parentheticals
+
+**Decided by:** resu-xunil, a native speaker, across forum topics 1313, 1315 and 1316
+(https://forum.jiki.io/t/1313, https://forum.jiki.io/t/1315, https://forum.jiki.io/t/1316),
+reviewing `exercise/relational-snowman`, `exercise/relational-sun` and
+`exercise/relational-traffic-lights`. **Status:** settled.
+**Terms affected:** none (typography/house-style rules, not term mappings).
+**Files affected:** `guide.md` (Style notes), the four exercises fixed in the same pass, and
+`state/content-updates-needed.md` for the outstanding sweep.
+
+**« en dur ».** _en dur_ is developer jargon inside otherwise beginner-facing prose, so it
+reads as an unmarked oddity when written bare. resu-xunil asked for it to be set in
+guillemets everywhere it appears, and for a short gloss on first use where the sentence has
+room: "utiliser une valeur fixe au lieu d'une variable que l'on peut modifier à tout
+moment". The guillemets do the same job the quotes around a term do in English: they mark it
+as a named thing rather than an ordinary adjective phrase. Applied in this pass to
+`relational-snowman`, `relational-sun` and `relational-traffic-lights`; other already-published
+French files may still carry it bare, which is logged for the next pass.
+
+**X/Y/Z in parentheticals.** The parenthetical glosses that explain a coordinate variable
+("(position x du soleil)", "(y du rouge)") were writing the axis letter in lower case, which
+reads as a stray letter rather than as the name of an axis. resu-xunil asked for it
+capitalised, and separately asked for every exercise to be checked. Code identifiers are
+untouched: `sunX` and `sunY` are the program's own names and keep their casing. The
+repo-wide sweep is logged rather than done here.
 
 ### 2026-08-06: "Loopy Maze" exercise title settled → `Le labyrinthe, version boucles`
 
@@ -1263,7 +1378,7 @@ covered by a dated entry above (`interpreter`, `board / whiteboard`) is not repe
 | developer | Standard French equivalent. |
 | tech / tech industry | Natural in French tech media; "industrie technologique" is heavier. |
 | pitfall | Ordinary French word. |
-| foot-gun | Idiomatic English term with no clean one-word French equivalent. |
+| foot-gun | Settled by the dated entry above (2026-08-10, topic 314). |
 
 #### Values & data types
 

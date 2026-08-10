@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "updating-dictionaries"
-title: "딕셔너리 변경하기"
+title: "딕셔너리 수정하기"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-dictionaries/source.md"
-en_md5: "254912c3c672aec40b2729cd005fb1a7"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/updating-dictionaries/page.md"
+en_md5: "5dfff7e37d863711be783b2fbe0873a4"
+governance_sha: "494ce4b"
 content_version: "4b5eab6f8667"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 딕셔너리를 만들고 값을 가져오는 방법은 이미 알고 계시죠? 그런데 데이터가 바뀌면 어떻게 될까요? 어느 순간 저도 나이가 더 들 거예요. `42`가 아니라 `43`이 될 거예요.

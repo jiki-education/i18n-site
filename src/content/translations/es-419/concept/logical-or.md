@@ -2,14 +2,14 @@
 lang: "es-419"
 type: "concept"
 slug: "logical-or"
-title: "La palabra clave `or`"
+title: "El operador `||` (o lógico)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-or/source.md"
-en_md5: "4c9ebc144707760d944e0cddfac5a561"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/es-419/curriculum/concepts/logical-or/page.md"
+en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
+governance_sha: "494ce4b"
 content_version: "fdc300da79c6"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 También podemos usar `or`, pero lamentablemente, de nuevo, no hay una palabra clave `or` bonita en JavaScript. En su lugar, tenemos que usar estas dos barras (_bars_ en inglés) juntas para indicar "o". Se ve raro, pero en realidad no lo es. Te vas a acostumbrar.

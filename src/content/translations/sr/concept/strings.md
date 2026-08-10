@@ -2,14 +2,14 @@
 lang: "sr"
 type: "concept"
 slug: "strings"
-title: "Stringovi"
+title: "Upoznavanje sa stringovima"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/strings/source.md"
-en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/strings/page.md"
+en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
+governance_sha: "494ce4b"
 content_version: "05d2f56b26cd"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Kada želiš da upotrebiš broj, možeš prosto da ga napišeš i Jiki zna na šta misliš. Ali šta ako želiš da upotrebiš slovo, reč ili rečenicu? Na primer, šta ako bi funkcija `rectangle` (pravougaonik) ili funkcija `circle` (krug) imala dodatni ulaz u kojem navodiš boju? Kako bismo napisali boju da je ubacimo u mašinu? Ako samo napišemo reč `green` (zeleno) ili `blue` (plavo), Jiki će misliti da govorimo o nekoj mašini na policama, pa će reći: „Ne postoji mašina koja se zove green. Ne znam šta da radim.“

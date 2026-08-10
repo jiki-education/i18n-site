@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "strings"
-title: "문자열"
+title: "문자열 알아보기"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/strings/source.md"
-en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/strings/page.md"
+en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
+governance_sha: "494ce4b"
 content_version: "4bb92319531a"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 숫자를 사용하고 싶을 때는, 그냥 숫자를 적으면 Jiki가 무슨 뜻인지 알아요. 그런데 글자 하나나 단어, 문장을 사용하고 싶다면 어떨까요? 예를 들어, `rectangle`(직사각형) 기계나 `circle`(원) 기계에 색깔을 지정하는 입력이 하나 더 있다고 해볼까요? 그 색깔을 기계에 넣으려면 어떻게 적어야 할까요? 만약 그냥 `green`(녹색)이나 `blue`(파란색)라고 적으면, Jiki는 선반에 있는 기계를 가리키는 줄 알고 "`green`이라는 기계는 없어요. 뭘 해야 할지 모르겠어요."라고 말할 거예요.

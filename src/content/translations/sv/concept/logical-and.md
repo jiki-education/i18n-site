@@ -2,14 +2,14 @@
 lang: "sv"
 type: "concept"
 slug: "logical-and"
-title: "Nyckelordet `and`"
+title: "Operatorn `&&` (och)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-and/source.md"
-en_md5: "6ea0de65a81d8e5c8d2eb89f3db29705"
-governance_sha: "438242e"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/logical-and/page.md"
+en_md5: "cef8d76c4235e85573c3eeede294ab72"
+governance_sha: "494ce4b"
 content_version: "ee29e62c7152"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Om jag bad dig att bara öppna dörren om någon är över 20 år skulle du nog veta precis vad du skulle göra. Men om du i stället behövde kolla om någon är över 20 _och_ har rätt outfit på sig? Då behöver du kolla två olika villkor på en gång. Hur skulle du göra det?

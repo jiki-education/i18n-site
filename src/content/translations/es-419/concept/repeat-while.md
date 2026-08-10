@@ -2,14 +2,14 @@
 lang: "es-419"
 type: "concept"
 slug: "repeat-while"
-title: "Repetir sin contar"
+title: "Usar `repeat` sin decir cuántas veces"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat-while/source.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/es-419/curriculum/concepts/repeat-while/page.md"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "5bdd12c50e6e"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Hasta ahora, cuando usabas el bucle `repeat`, siempre especificabas un número que dice cuántas veces repetir. Repetir cinco veces, diez veces, cuarenta veces. A veces también has usado una variable para esto. Pero siempre le has dicho a Jiki exactamente cuántas veces repetir el bucle. Sin embargo, a veces no sabemos de antemano cuántas veces repetir. Piensa en el laberinto. Hace mucho, al principio de este curso, resolviste el laberinto escribiendo movimientos específicos. Podías ver el laberinto, contar los pasos y escribir la cantidad correcta de movimientos.

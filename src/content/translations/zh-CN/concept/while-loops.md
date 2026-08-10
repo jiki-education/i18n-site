@@ -2,17 +2,17 @@
 lang: "zh-CN"
 type: "concept"
 slug: "while-loops"
-title: "While 循环"
+title: "认识`while`循环"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/while-loops/source.md"
-en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "c80036b"
-content_version: "ce52914e362a"
-published_at: "2026-08-06"
+source_repo: "i18n"
+source_path: "locales/zh-CN/curriculum/concepts/while-loops/page.md"
+en_md5: "aeceed2abb1434307cfd7c9a0df55c81"
+governance_sha: "494ce4b"
+content_version: "8447500f564e"
+published_at: "2026-08-10"
 ---
 
-下一个要了解的循环是 `while` 循环（英语：while loop）。
+下一个要了解的循环是 `while` 循环（英文：while loop）。
 
 它的意思是：“当某个条件成立，就运行循环。”比如，有一条规则规定在《 Space Invaders 》中你只能射击五次。所以我们这里会有一个循环：嗯，当射击次数小于 5 时，就运行一个允许某人玩游戏的循环。
 
@@ -25,6 +25,6 @@ while (numShots < 5) {
 
 每次有人射击，我们把 `numShots` 加 1，最终达到 5 时，循环就会退出。
 
-`while` 循环的一个问题是，很容易写出导致循环永不结束的 bug。这些 bug 被称为无限循环（英语：infinite loop），是程序中最常见的 bug 之一。
+`while` 循环的一个问题是，很容易写出导致循环永不结束的 bug。这些 bug 被称为无限循环（英文：infinite loop），是程序中最常见的 bug 之一。
 
 当你的电脑变慢、风扇开始转动、声音变大时，往往就是因为有人在代码里留下了一个永远不结束的无限循环。

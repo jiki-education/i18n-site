@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "logical-and"
-title: "`and` कीवर्ड"
+title: "`&&` (और) ऑपरेटर"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-and/source.md"
-en_md5: "6ea0de65a81d8e5c8d2eb89f3db29705"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/logical-and/page.md"
+en_md5: "cef8d76c4235e85573c3eeede294ab72"
+governance_sha: "494ce4b"
 content_version: "447069d8087f"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 अगर मैं आपसे कहूँ कि दरवाज़ा तभी खोलिए जब कोई 20 साल से बड़ा हो, तो आप शायद जान जाएँगे कि क्या करना है। लेकिन अगर आपको यह देखना हो कि कोई 20 साल से बड़ा _और_ सही पोशाक पहने हुए है, तो? तो आपको एक साथ दो अलग-अलग शर्तें जाँचनी हैं। आप यह कैसे करेंगे?

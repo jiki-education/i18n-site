@@ -2,14 +2,14 @@
 lang: "it"
 type: "concept"
 slug: "repeat-while"
-title: "Ripetere senza contare"
+title: "Usare `repeat` senza un numero di ripetizioni"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat-while/source.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/repeat-while/page.md"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "64469b7ff49e"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Fino ad ora, quando hai usato il ciclo repeat, hai sempre specificato un numero che indica quante volte ripetere. Ripeti cinque volte, 10 volte, 40 volte. A volte hai usato anche una variabile per farlo. Ma hai sempre detto a Jiki esattamente quante volte ripetere il ciclo. Tuttavia, a volte non sappiamo in anticipo quante volte ripetere. Pensa al labirinto. All'inizio del corso, hai risolto il labirinto scrivendo le mosse specifiche. Potevi vedere il labirinto, contare i passi e scrivere il numero giusto di mosse.

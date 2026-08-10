@@ -2,14 +2,15 @@
 lang: "nl"
 type: "concept"
 slug: "repeat"
-title: "De repeat-loop"
+title: "De `repeat`-loop"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat/source.md"
-en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "7218ef4"
-content_version: "d2ad0481520f"
-published_at: "2026-08-01"
+source_repo: "i18n"
+source_path: "locales/nl/curriculum/concepts/repeat/page.md"
+en_md5: "f37a63911f75934656cbf04a38ff2b60"
+governance_sha: "494ce4b"
+content_version: "7278ae2af10d"
+published_at: "2026-08-10"
+forum_topic_id: 1038
 ---
 
 Tot nu toe is alles op een lineaire manier geschreven: Jiki volgt elke instructie op volgorde, van boven naar beneden.
@@ -69,7 +70,7 @@ repeat(4) {
 
 Zulke herhaalinstructies noemen we lussen (_loops_ in het Engels), en er zijn veel verschillende lussen die we kunnen gebruiken en die allemaal net iets anders werken.
 
-Er is nog één ding om te weten: je code netjes en overzichtelijk houden wordt essentieel zodra je met lussen werkt. Met een goede visuele structuur in je code zie je heel makkelijk wat er gebeurt. Maar als je dat niet doet, als je vergeet netjes in te springen of je inspringing door elkaar haalt, wordt het razendsnel verwarrend. Daarom hanteren we in deze cursus altijd een regel. Je zet de openingsaccolade altijd op dezelfde regel als het `repeat`-_statement_ (een uitvoerbare instructie). Je zet de sluitaccolade altijd op een eigen regel na het statement, en je springt de code ertussen altijd twee spaties in. Zo blijft alles keurig netjes, en als je het vergeet of een ander patroon probeert te volgen, krijg je een foutmelding.
+Er is nog één ding om te weten: je code netjes en overzichtelijk houden wordt essentieel zodra je met lussen werkt. Met een goede visuele structuur in je code zie je heel makkelijk wat er gebeurt. Maar als je dat niet doet, als je vergeet netjes in te springen of je inspringing door elkaar haalt, wordt het razendsnel verwarrend. Daarom hanteren we in deze cursus altijd een regel. Je zet de openingsaccolade altijd op dezelfde regel als het `repeat`-_statement_ (een uitvoerbare instructie). Je zet de sluitaccolade altijd op een eigen regel na het statement, en laat de code ertussen altijd twee spaties inspringen. Zo blijft alles keurig netjes, en als je het vergeet of een ander patroon probeert te volgen, krijg je een foutmelding.
 
 <img
   class="concept-image"

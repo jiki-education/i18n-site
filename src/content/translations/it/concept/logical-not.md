@@ -2,14 +2,14 @@
 lang: "it"
 type: "concept"
 slug: "logical-not"
-title: "L'operatore `not`"
+title: "L'operatore `!` (negazione)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-not/source.md"
-en_md5: "842c4a4e9cb1fd11c4318a1508296e27"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/logical-not/page.md"
+en_md5: "7cffbd1fa13317b3d6e6a71415413041"
+governance_sha: "494ce4b"
 content_version: "eedd065b8f45"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Finora, quando abbiamo confrontato le cose per vedere se sono uguali, abbiamo usato tre segni di uguale. A volte, però, vogliamo controllare se le cose non sono uguali, e per questo usiamo un punto esclamativo seguito da due segni di uguale. E in generale, nella programmazione, un punto esclamativo, o _bang_ (punto esclamativo), come penso lo chiamino i nostri amici americani, significa non. Quindi immagina di lavorare in un negozio, e la direzione ha deciso che non sono ammessi abiti da discoteca.

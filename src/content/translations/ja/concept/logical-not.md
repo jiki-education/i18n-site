@@ -2,14 +2,14 @@
 lang: "ja"
 type: "concept"
 slug: "logical-not"
-title: "`not`演算子"
+title: "`!`（NOT）演算子"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-not/source.md"
-en_md5: "842c4a4e9cb1fd11c4318a1508296e27"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ja/curriculum/concepts/logical-not/page.md"
+en_md5: "7cffbd1fa13317b3d6e6a71415413041"
+governance_sha: "494ce4b"
 content_version: "05d9b810e77f"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 これまでは、等しいかどうかを調べるときに、イコールを3つ使ってきました。しかし、等しくないかどうかを調べたいこともあります。そのときは、エクスクラメーションマークの後ろにイコールを2つ続けて書きます。そして、プログラミングでは、エクスクラメーションマーク（あるいはアメリカでは「バン」（英: _bang_）と呼ばれることもあります）は、「否定」を意味します。たとえば、お店で働いている場面を想像してみてください。ディスコ衣装は一切お断り、という方針が出たとします。

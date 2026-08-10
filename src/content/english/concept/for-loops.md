@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "for-loops"
-title: "For Loops"
-en_md5: "e96f2e5a4106a88cfbca449c93a26108"
+title: "Understanding `for` Loops"
+en_md5: "0ad4155ded18c2df27d29e5355bd0532"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/for-loops/source.md"
-captured_at: "2026-08-01"
+captured_at: "2026-08-10"
 ---
 
 You might remember that the repeat loop doesn't really exist in JavaScript. It's just something added to make your life a little bit easier while we get going.

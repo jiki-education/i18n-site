@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "logical-or"
-title: "The `or` keyword"
-en_md5: "4c9ebc144707760d944e0cddfac5a561"
+title: "The `||` (Or) Operator"
+en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/logical-or/source.md"
-captured_at: "2026-08-03"
+captured_at: "2026-08-10"
 ---
 
 We can also use `or`, and again, sadly, there's not a nice or keyword in JavaScript. Instead, we have to use these two <define>bars</define> next to each other to mean or. It looks weird, but it's really not. You'll get used to it.

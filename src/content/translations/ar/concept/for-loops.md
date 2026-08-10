@@ -2,14 +2,14 @@
 lang: "ar"
 type: "concept"
 slug: "for-loops"
-title: "حلقات `for`"
+title: "فهم حلقات `for`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/ar/curriculum/concepts/for-loops/page.md"
-en_md5: "e96f2e5a4106a88cfbca449c93a26108"
-governance_sha: "f023370"
+en_md5: "0ad4155ded18c2df27d29e5355bd0532"
+governance_sha: "494ce4b"
 content_version: "3c3c3fcb07d8"
-published_at: "2026-08-09"
+published_at: "2026-08-10"
 ---
 
 قد تتذكر أن حلقة `repeat` لا توجد فعلًا في JavaScript. إنها مجرد شيء أُضيف ليجعل حياتك أسهل قليلًا في أثناء انطلاقتنا.

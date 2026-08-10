@@ -2,14 +2,14 @@
 lang: "ja"
 type: "concept"
 slug: "while-loops"
-title: "whileループ"
+title: "`while`ループを理解する"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/while-loops/source.md"
-en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ja/curriculum/concepts/while-loops/page.md"
+en_md5: "aeceed2abb1434307cfd7c9a0df55c81"
+governance_sha: "494ce4b"
 content_version: "cd0f653f1cfa"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 次に知っておきたいループは、`while`ループ（英: _while_ loop）です。

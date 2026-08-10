@@ -2,14 +2,14 @@
 lang: "fr"
 type: "concept"
 slug: "string-iteration"
-title: "Parcourir les strings"
+title: "Parcourir les strings avec `for ... of`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/string-iteration/page.md"
-en_md5: "584ac0a187a9e5244b84f0fd417494f3"
-governance_sha: "cd45949"
+en_md5: "09f399cc3f52b89380d3ed23fc6be513"
+governance_sha: "494ce4b"
 content_version: "cb6579e006c8"
-published_at: "2026-08-09"
+published_at: "2026-08-10"
 ---
 
 Tu peux accéder à une seule lettre d'une string avec des crochets (`[]`). Maintenant, on va voir comment parcourir une string avec une boucle, en récupérant chaque lettre une à la fois.

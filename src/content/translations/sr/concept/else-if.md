@@ -2,14 +2,14 @@
 lang: "sr"
 type: "concept"
 slug: "else-if"
-title: "Naredba `else if`"
+title: "Ulančavanje `else if` naredbi"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else-if/source.md"
-en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/else-if/page.md"
+en_md5: "64274945347d47d67baf3378cf219c9b"
+governance_sha: "494ce4b"
 content_version: "4e2383be58b1"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Već znaš kako ti `if` i `else` daju dva puta: uradi jedno kada je uslov tačan, a drugo kada je netačan. Ali šta ako imaš više od dve mogućnosti?

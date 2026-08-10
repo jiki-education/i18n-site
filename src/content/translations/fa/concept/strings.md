@@ -2,14 +2,14 @@
 lang: "fa"
 type: "concept"
 slug: "strings"
-title: "رشته"
+title: "معرفی رشته"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/strings/source.md"
-en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/fa/curriculum/concepts/strings/page.md"
+en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
+governance_sha: "494ce4b"
 content_version: "c3ee9a556f61"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 وقتی می‌خواهید از یک عدد استفاده کنید، می‌توانید دقیقاً همان عدد را بنویسید و جیکی می‌فهمد منظورتان چیست. اما اگر بخواهید از یک حرف، یک کلمه یا یک جمله استفاده کنید چه؟ به عنوان مثال، اگر تابع `rectangle` (مستطیل) یا تابع `circle` (دایره) ورودی اضافی‌ای داشت که رنگ را مشخص می‌کرد، چه می‌شد؟ چطور رنگ را می‌نوشتیم تا داخل دستگاه بگذاریم؟ اگر فقط کلمه‌ی `green` (سبز) یا `blue` (آبی) را بنویسیم، جیکی فکر می‌کند داریم به یک دستگاه روی قفسه‌ها اشاره می‌کنیم و می‌گوید «دستگاهی به اسم green وجود ندارد. نمی‌دانم چه کار کنم.»

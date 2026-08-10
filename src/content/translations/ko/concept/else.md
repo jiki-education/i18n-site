@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "else"
-title: "Else"
+title: "`else` 키워드"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else/source.md"
-en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/else/page.md"
+en_md5: "a3d7b0672bd9c022675831044c5610ed"
+governance_sha: "494ce4b"
 content_version: "8a56b8d315c5"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 `if`문을 사용하면 조건을 검사해서 어떤 것이 참일 때만 코드를 실행할 수 있어요. 이제 if의 공범인 `else`를 소개할게요.

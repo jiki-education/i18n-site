@@ -2,14 +2,14 @@
 lang: "es-419"
 type: "concept"
 slug: "string-iteration"
-title: "Iteración sobre strings"
+title: "Recorrer strings con `for ... of`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-iteration/source.md"
-en_md5: "584ac0a187a9e5244b84f0fd417494f3"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/es-419/curriculum/concepts/string-iteration/page.md"
+en_md5: "09f399cc3f52b89380d3ed23fc6be513"
+governance_sha: "494ce4b"
 content_version: "80f93a7aae1e"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Puedes acceder a una sola letra de un string usando corchetes. Ahora vamos a ver cómo recorrer un string, sacando cada letra una por una.

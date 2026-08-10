@@ -2,14 +2,14 @@
 lang: "ja"
 type: "concept"
 slug: "string-iteration"
-title: "文字列をループで処理する"
+title: "`for ... of`で文字列を繰り返し処理する"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-iteration/source.md"
-en_md5: "584ac0a187a9e5244b84f0fd417494f3"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ja/curriculum/concepts/string-iteration/page.md"
+en_md5: "09f399cc3f52b89380d3ed23fc6be513"
+governance_sha: "494ce4b"
 content_version: "4af9b1904e6e"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 文字列の一文字には、角括弧`[]`でアクセスできます。では、文字列をループで処理し、一文字ずつ取り出す方法を見てみましょう。

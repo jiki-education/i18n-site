@@ -2,17 +2,17 @@
 lang: "sv"
 type: "concept"
 slug: "logical-not"
-title: "Operatorn `not`"
+title: "Operatorn `!` (inte)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-not/source.md"
-en_md5: "842c4a4e9cb1fd11c4318a1508296e27"
-governance_sha: "eb01ba1"
-content_version: "f3bb0b2a8ff2"
-published_at: "2026-08-03"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/logical-not/page.md"
+en_md5: "7cffbd1fa13317b3d6e6a71415413041"
+governance_sha: "494ce4b"
+content_version: "09b7be61e156"
+published_at: "2026-08-10"
 ---
 
-Hittills har vi använt tre likhetstecken när vi har jämfört saker för att se om de är lika. Men ibland vill vi i stället kolla om saker *inte* är lika, och då använder vi ett utropstecken följt av två likhetstecken. Inom programmering betyder ett utropstecken (eller _bang_, som jag tror att våra amerikanska vänner kallar det) i allmänhet ”inte”. Så tänk dig att du jobbar i en butik och att ledningen har bestämt att inga discokläder släpps in.
+Hittills har vi använt tre likhetstecken när vi har jämfört saker för att se om de är lika. Men ibland vill vi i stället kolla om saker _inte_ är lika, och då använder vi ett utropstecken följt av två likhetstecken. Inom programmering betyder ett utropstecken (eller _bang_, som jag tror att våra amerikanska vänner kallar det) i allmänhet ”inte”. Så tänk dig att du jobbar i en butik och att ledningen har bestämt att inga discokläder släpps in.
 
 <img
   class="concept-image"

@@ -2,14 +2,14 @@
 lang: "sv"
 type: "concept"
 slug: "else-if"
-title: "Else if"
+title: "Kedjor av `else if`-grenar"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else-if/source.md"
-en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "18055e8"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/else-if/page.md"
+en_md5: "64274945347d47d67baf3378cf219c9b"
+governance_sha: "494ce4b"
 content_version: "223048d38250"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Du har sett hur `if` och `else` ger dig två vägar: gör en sak när ett villkor är sant, och gör en annan när det är falskt. Men vad gör du när du har fler än två möjligheter?

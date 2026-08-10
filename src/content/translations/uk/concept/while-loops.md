@@ -2,14 +2,14 @@
 lang: "uk"
 type: "concept"
 slug: "while-loops"
-title: "Цикли while"
+title: "Як працюють цикли `while`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/while-loops/source.md"
-en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "38591e4"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/while-loops/page.md"
+en_md5: "aeceed2abb1434307cfd7c9a0df55c81"
+governance_sha: "494ce4b"
 content_version: "2509be05fed6"
-published_at: "2026-08-01"
+published_at: "2026-08-10"
 ---
 
 Наступний цикл, про який варто дізнатися, називається циклом `while` (означає «поки»).

@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "string-iteration"
-title: "문자열 순회하기"
+title: "`for...of`로 문자열 순회하기"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-iteration/source.md"
-en_md5: "584ac0a187a9e5244b84f0fd417494f3"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/string-iteration/page.md"
+en_md5: "09f399cc3f52b89380d3ed23fc6be513"
+governance_sha: "494ce4b"
 content_version: "534cd482c475"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 문자열의 한 글자에 접근할 때는 대괄호(`[]`)를 사용할 수 있어요. 이제 문자열을 반복해서 돌며 글자를 하나씩 꺼내는 방법을 살펴볼 거예요.

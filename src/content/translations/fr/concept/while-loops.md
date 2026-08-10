@@ -2,14 +2,14 @@
 lang: "fr"
 type: "concept"
 slug: "while-loops"
-title: "Les boucles while"
+title: "Comprendre les boucles `while`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/while-loops/source.md"
-en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "1ec4365"
+source_repo: "i18n"
+source_path: "locales/fr/curriculum/concepts/while-loops/page.md"
+en_md5: "aeceed2abb1434307cfd7c9a0df55c81"
+governance_sha: "494ce4b"
 content_version: "e43a8f7004ac"
-published_at: "2026-08-04"
+published_at: "2026-08-10"
 ---
 
 La prochaine boucle à connaître est la boucle `while` (tant que).

@@ -2,14 +2,14 @@
 lang: "uk"
 type: "concept"
 slug: "modulo"
-title: "Остача"
+title: "Використання оператора `%` для остачі від ділення"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/modulo/source.md"
-en_md5: "fe49222bd3f3a019dd9f74a960c5dede"
-governance_sha: "aa865df"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/modulo/page.md"
+en_md5: "4955abecb626b8eff02ee7484e2065dd"
+governance_sha: "494ce4b"
 content_version: "93f61acd6296"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Досі, коли ми займалися арифметикою, ми використовували додавання, віднімання, множення й ділення. Тепер познайомимося ще з одним оператором: оператором остачі (англ. _remainder_).

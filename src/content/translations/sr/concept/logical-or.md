@@ -2,14 +2,14 @@
 lang: "sr"
 type: "concept"
 slug: "logical-or"
-title: "`or` ključna reč"
+title: "Operator `||` (logičko ILI)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-or/source.md"
-en_md5: "4c9ebc144707760d944e0cddfac5a561"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/logical-or/page.md"
+en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
+governance_sha: "494ce4b"
 content_version: "de458a9aa818"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Možemo da koristimo i `or`, i opet, nažalost, ne postoji lepa reč za „ili“ u JavaScriptu. Umesto toga, moramo da koristimo ove dve vertikalne crte (engl. _bars_) jednu pored druge da bismo označili ili. Izgleda čudno, ali zaista nije. Navići ćeš se.

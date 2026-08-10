@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "updating-dictionaries"
-title: "डिक्शनरी बदलना"
+title: "डिक्शनरी अपडेट करना"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-dictionaries/source.md"
-en_md5: "254912c3c672aec40b2729cd005fb1a7"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/updating-dictionaries/page.md"
+en_md5: "5dfff7e37d863711be783b2fbe0873a4"
+governance_sha: "494ce4b"
 content_version: "734313b08bf5"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 आप जानते हैं कि डिक्शनरी कैसे बनाई जाती है और उसमें से वैल्यू कैसे निकाली जाती हैं। लेकिन तब क्या होगा अगर डेटा बदल जाए? मैं कभी न कभी बड़ी हो जाऊँगी। मैं `42` की नहीं रहूँगी, मैं `43` की हो जाऊँगी।

@@ -2,14 +2,14 @@
 lang: "hu"
 type: "concept"
 slug: "string-iteration"
-title: "Iterálás a stringeken"
+title: "Stringek bejárása `for ... of` ciklussal"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-iteration/source.md"
-en_md5: "584ac0a187a9e5244b84f0fd417494f3"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hu/curriculum/concepts/string-iteration/page.md"
+en_md5: "09f399cc3f52b89380d3ed23fc6be513"
+governance_sha: "494ce4b"
 content_version: "d1d08d50f979"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Egy string egy-egy betűjét szögletes zárójellel (`[]`) érheted el. Most azt nézzük meg, hogyan mehetsz végig egy stringen úgy, hogy a betűit egyenként veszed ki.

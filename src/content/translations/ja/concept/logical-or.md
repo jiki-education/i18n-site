@@ -2,14 +2,14 @@
 lang: "ja"
 type: "concept"
 slug: "logical-or"
-title: "`or` キーワード"
+title: "`||`（OR）演算子"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-or/source.md"
-en_md5: "4c9ebc144707760d944e0cddfac5a561"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ja/curriculum/concepts/logical-or/page.md"
+en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
+governance_sha: "494ce4b"
 content_version: "b11c10269c85"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 `or`も使えます。ただ残念ながら、JavaScriptには直感的な`or`キーワードはありません。代わりに、`or`という意味で、この2本の縦棒（英: _bars_）を並べて使わなければなりません。見た目は変ですが、実際はそうでもありません。すぐに慣れますよ。

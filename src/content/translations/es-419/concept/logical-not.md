@@ -2,14 +2,14 @@
 lang: "es-419"
 type: "concept"
 slug: "logical-not"
-title: "El operador `not`"
+title: "El operador `!` (negación lógica)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-not/source.md"
-en_md5: "842c4a4e9cb1fd11c4318a1508296e27"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/es-419/curriculum/concepts/logical-not/page.md"
+en_md5: "7cffbd1fa13317b3d6e6a71415413041"
+governance_sha: "494ce4b"
 content_version: "8f15cbf2d06e"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Hasta ahora, cuando comparábamos cosas para ver si son iguales, usábamos tres signos igual. A veces, sin embargo, queremos verificar si las cosas no son iguales, y para esto usamos un signo de exclamación seguido de dos signos igual. Y en general, en programación, un signo de exclamación o _bang_ en inglés, como creo que le llaman nuestros amigos estadounidenses, significa no. Así que imagina que trabajas en una tienda y la gerencia ha decidido que no se permiten atuendos disco.

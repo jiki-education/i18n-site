@@ -2,14 +2,14 @@
 lang: "sv"
 type: "concept"
 slug: "while-loops"
-title: "While-loopar"
+title: "Så fungerar `while`-loopar"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/while-loops/source.md"
-en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "471034c"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/while-loops/page.md"
+en_md5: "aeceed2abb1434307cfd7c9a0df55c81"
+governance_sha: "494ce4b"
 content_version: "a5b4a9562317"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Nästa loop du ska lära dig om är en `while`-loop (så länge).

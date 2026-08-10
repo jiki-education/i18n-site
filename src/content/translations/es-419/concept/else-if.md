@@ -2,14 +2,14 @@
 lang: "es-419"
 type: "concept"
 slug: "else-if"
-title: "Else If"
+title: "Usar cadenas de `else if`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else-if/source.md"
-en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/es-419/curriculum/concepts/else-if/page.md"
+en_md5: "64274945347d47d67baf3378cf219c9b"
+governance_sha: "494ce4b"
 content_version: "828d6dfaaa06"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Ya viste cómo `if` y `else` te dan dos caminos: hacer una cosa cuando una condición es verdadera y otra cuando es falsa. Pero, ¿qué pasa si tienes más de dos posibilidades?

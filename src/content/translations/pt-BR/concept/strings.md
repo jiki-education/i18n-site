@@ -2,14 +2,14 @@
 lang: "pt-BR"
 type: "concept"
 slug: "strings"
-title: "Strings"
+title: "Conhecendo as strings"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/strings/source.md"
-en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "c6b2cac"
+source_repo: "i18n"
+source_path: "locales/pt-BR/curriculum/concepts/strings/page.md"
+en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
+governance_sha: "494ce4b"
 content_version: "a97736032928"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 forum_topic_id: 1015
 ---
 

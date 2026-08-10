@@ -2,14 +2,14 @@
 lang: "sv"
 type: "concept"
 slug: "repeat-while"
-title: "Repeat utan antal"
+title: "`repeat` utan antal"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat-while/source.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "21e9951"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/repeat-while/page.md"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "79d9f6b5c6b6"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Hittills, när du har använt repeat-loopen, har du alltid angett ett tal som säger hur många gånger den ska upprepas. Upprepa fem gånger, 10 gånger, 40 gånger. Ibland har du använt en variabel för att göra det. Men du har alltid talat om för Jiki exakt hur många gånger loopen ska köras. Ibland vet vi dock inte i förväg hur många gånger vi behöver upprepa. Tänk på labyrinten. Långt tillbaka i början av kursen löste du labyrinten genom att skriva ut varje drag för sig. Du kunde se labyrinten, räkna stegen och skriva exakt rätt antal drag.

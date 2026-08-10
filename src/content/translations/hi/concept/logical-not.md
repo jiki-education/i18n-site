@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "logical-not"
-title: "`not` ऑपरेटर"
+title: "`!` (नहीं) ऑपरेटर"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-not/source.md"
-en_md5: "842c4a4e9cb1fd11c4318a1508296e27"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/logical-not/page.md"
+en_md5: "7cffbd1fa13317b3d6e6a71415413041"
+governance_sha: "494ce4b"
 content_version: "534769c553db"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 अब तक जब हमने यह देखा है कि दो चीज़ें बराबर हैं या नहीं, हमने तीन बराबर के चिह्नों का इस्तेमाल किया है। लेकिन कभी-कभी हम यह जाँचना चाहते हैं कि चीज़ें बराबर नहीं हैं, और तब हम विस्मयादिबोधक चिह्न लगाकर उसके बाद दो बराबर के चिह्न लगाते हैं। और प्रोग्रामिंग में आम तौर पर विस्मयादिबोधक चिह्न या धमाका (_bang_), जो शायद हमारे अमेरिकी दोस्त कहते हैं, का मतलब ‘नहीं’ होता है। तो सोचिए कि आप एक दुकान में काम कर रहे हैं और प्रबंधन ने यह तय कर दिया है कि किसी को भी डिस्को वाली पोशाक में अंदर आने की अनुमति नहीं है।

@@ -2,14 +2,14 @@
 lang: "fa"
 type: "concept"
 slug: "modulo"
-title: "باقی‌مانده"
+title: "استفاده از عملگر `%` برای باقی‌مانده"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/modulo/source.md"
-en_md5: "fe49222bd3f3a019dd9f74a960c5dede"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/fa/curriculum/concepts/modulo/page.md"
+en_md5: "4955abecb626b8eff02ee7484e2065dd"
+governance_sha: "494ce4b"
 content_version: "89a37c8c0a23"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 تا اینجا از جمع، تفریق، ضرب و تقسیم برای انجام محاسبات استفاده کرده‌ایم. حالا می‌خواهیم یکی دیگر را معرفی کنیم، عملگر «باقی‌مانده» را.

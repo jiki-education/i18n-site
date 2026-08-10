@@ -2,14 +2,14 @@
 lang: "sv"
 type: "concept"
 slug: "logical-or"
-title: "Nyckelordet `or`"
+title: "Operatorn `||` (eller)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-or/source.md"
-en_md5: "4c9ebc144707760d944e0cddfac5a561"
-governance_sha: "438242e"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/logical-or/page.md"
+en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
+governance_sha: "494ce4b"
 content_version: "51ef610541a1"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Vi kan också använda `or`, och tyvärr finns det inte här heller något trevligt or-nyckelord i JavaScript. I stället måste vi skriva de här två lodstrecken (`|`) bredvid varandra, och det betyder eller. Det ser konstigt ut, men det är det egentligen inte. Du vänjer dig.

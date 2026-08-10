@@ -2,14 +2,14 @@
 lang: "el"
 type: "concept"
 slug: "modulo"
-title: "Υπόλοιπο"
+title: "Χρήση του τελεστή `%` για υπόλοιπα"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/modulo/source.md"
-en_md5: "fe49222bd3f3a019dd9f74a960c5dede"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/modulo/page.md"
+en_md5: "4955abecb626b8eff02ee7484e2065dd"
+governance_sha: "494ce4b"
 content_version: "74768177f6ba"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Μέχρι τώρα, χρησιμοποιούσαμε την πρόσθεση, την αφαίρεση, τον πολλαπλασιασμό και τη διαίρεση όταν κάναμε αριθμητικές πράξεις. Τώρα θα γνωρίσουμε έναν ακόμα, τον τελεστή υπολοίπου (_remainder_ στα αγγλικά).

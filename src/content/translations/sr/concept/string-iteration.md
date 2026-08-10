@@ -2,14 +2,14 @@
 lang: "sr"
 type: "concept"
 slug: "string-iteration"
-title: "Iteriranje kroz stringove"
+title: "Prolazak kroz stringove pomoću `for ... of`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-iteration/source.md"
-en_md5: "584ac0a187a9e5244b84f0fd417494f3"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/string-iteration/page.md"
+en_md5: "09f399cc3f52b89380d3ed23fc6be513"
+governance_sha: "494ce4b"
 content_version: "e4d19a503603"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Pomoću uglastih zagrada možeš da pristupiš pojedinačnom slovu u stringu. Sada ćemo pogledati kako da prođemo kroz string, izvlačeći svako slovo jedno po jedno.

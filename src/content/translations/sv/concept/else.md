@@ -2,14 +2,14 @@
 lang: "sv"
 type: "concept"
 slug: "else"
-title: "Else"
+title: "Nyckelordet `else`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else/source.md"
-en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
-governance_sha: "18055e8"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/else/page.md"
+en_md5: "a3d7b0672bd9c022675831044c5610ed"
+governance_sha: "494ce4b"
 content_version: "9ab89887efd2"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Med `if`-satser kan du kolla villkor och köra kod bara när något är sant. Nu ska vi presentera `if`-satsens trogna partner: `else`.

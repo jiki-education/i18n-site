@@ -2,14 +2,14 @@
 lang: "sr"
 type: "concept"
 slug: "logical-and"
-title: "Ključna reč `and`"
+title: "Operator `&&` (logičko I)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-and/source.md"
-en_md5: "6ea0de65a81d8e5c8d2eb89f3db29705"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/logical-and/page.md"
+en_md5: "cef8d76c4235e85573c3eeede294ab72"
+governance_sha: "494ce4b"
 content_version: "eca30c35d225"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Da te pitam da otvoriš vrata samo ako je neko stariji od 20 godina, verovatno bi znao šta da radiš. Ali šta ako treba da proveriš da li je neko stariji od 20 i da li je obučen u odgovarajuću odeću? Dakle, treba da proveriš dva različita uslova istovremeno. Kako bi to uradio?

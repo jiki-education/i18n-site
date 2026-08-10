@@ -2,14 +2,14 @@
 lang: "hu"
 type: "concept"
 slug: "logical-and"
-title: "Az `and` kulcsszó"
+title: "Az `&&` (és) operátor"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-and/source.md"
-en_md5: "6ea0de65a81d8e5c8d2eb89f3db29705"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hu/curriculum/concepts/logical-and/page.md"
+en_md5: "cef8d76c4235e85573c3eeede294ab72"
+governance_sha: "494ce4b"
 content_version: "1db389506e10"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Ha azt kérném tőled, hogy csak akkor nyisd ki az ajtót, ha valaki elmúlt 20 éves, valószínűleg tudnád, mit kell tenned. De mi van akkor, ha azt is ellenőrizned kell, hogy az illető elmúlt-e 20, _és_ a megfelelő ruhát viseli-e? Ilyenkor két különböző feltételt kell egyszerre megvizsgálnod. Hogyan csinálnád?

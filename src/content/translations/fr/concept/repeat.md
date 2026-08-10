@@ -2,14 +2,14 @@
 lang: "fr"
 type: "concept"
 slug: "repeat"
-title: "La boucle repeat"
+title: "La boucle `repeat`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat/source.md"
-en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "0a8ed07"
+source_repo: "i18n"
+source_path: "locales/fr/curriculum/concepts/repeat/page.md"
+en_md5: "f37a63911f75934656cbf04a38ff2b60"
+governance_sha: "494ce4b"
 content_version: "f0e1e7386b14"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 forum_topic_id: 943
 ---
 

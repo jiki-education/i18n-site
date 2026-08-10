@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "repeat-while"
-title: "Repeat Without Count"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
+title: "Using `repeat` Without a Count"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/repeat-while/source.md"
-captured_at: "2026-08-03"
+captured_at: "2026-08-10"
 ---
 
 So far, when you've used the repeat loop, you've always specified a number that says how many times to repeat. Repeat five times, 10 times, 40 times. You've used a variable to do this too sometimes. But you've always told Jiki exactly how many times to repeat the loop. However, sometimes we don't know in advance how many times to repeat. Think about the maze. Way back at the start of this course, you solved the maze by writing out specific moves. You could see the maze, count the steps, and write the right number of moves.

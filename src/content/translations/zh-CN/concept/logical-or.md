@@ -2,17 +2,17 @@
 lang: "zh-CN"
 type: "concept"
 slug: "logical-or"
-title: "`or` 关键字"
+title: "`||`（或）运算符"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-or/source.md"
-en_md5: "4c9ebc144707760d944e0cddfac5a561"
-governance_sha: "c80036b"
-content_version: "6b441c38c986"
-published_at: "2026-08-06"
+source_repo: "i18n"
+source_path: "locales/zh-CN/curriculum/concepts/logical-or/page.md"
+en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
+governance_sha: "494ce4b"
+content_version: "de9fcf49219e"
+published_at: "2026-08-10"
 ---
 
-我们还可以使用 `or`，可惜 JavaScript 里没有一个那么好用的 or 关键字。我们只能用这两个挨在一起的竖杠（英语：_bars_）来表示“或”。它看起来有点怪，但其实还好，用着用着就习惯了。
+我们还可以使用 `or`，可惜 JavaScript 里没有一个那么好用的 or 关键字。我们只能用这两个挨在一起的竖杠（英文：_bars_）来表示“或”。它看起来有点怪，但其实还好，用着用着就习惯了。
 
 所以我们可以说，如果某个人超过 20 岁，或者穿着迪斯科风的衣服，他就可以进来。于是我们就有了一场有趣的派对——迪斯科装扮的年轻人和穿着难看的大人们都会来，听起来还挺像那么回事。
 

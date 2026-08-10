@@ -2,17 +2,17 @@
 lang: "zh-CN"
 type: "concept"
 slug: "modulo"
-title: "求余"
+title: "用`%`运算符求余数"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/modulo/source.md"
-en_md5: "fe49222bd3f3a019dd9f74a960c5dede"
-governance_sha: "c80036b"
-content_version: "6aedacbbab96"
-published_at: "2026-08-06"
+source_repo: "i18n"
+source_path: "locales/zh-CN/curriculum/concepts/modulo/page.md"
+en_md5: "4955abecb626b8eff02ee7484e2065dd"
+governance_sha: "494ce4b"
+content_version: "21f3dc53bc1d"
+published_at: "2026-08-10"
 ---
 
-到目前为止，我们在进行算术运算时已经使用了加、减、乘、除。现在，我们要再介绍一个，求余运算符（英语：_remainder_）。
+到目前为止，我们在进行算术运算时已经使用了加、减、乘、除。现在，我们要再介绍一个，求余运算符（英文：_remainder_）。
 
 求余运算符的作用，顾名思义，是在你把两个数相除时，给出余数，我们用百分号来写它。所以如果我们写：
 

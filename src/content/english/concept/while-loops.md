@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "while-loops"
-title: "While Loops"
-en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
+title: "Understanding `while` Loops"
+en_md5: "aeceed2abb1434307cfd7c9a0df55c81"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/while-loops/source.md"
-captured_at: "2026-08-01"
+captured_at: "2026-08-10"
 ---
 
 The next loop to know about is a <define>while</define> loop.

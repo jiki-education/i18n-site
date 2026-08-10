@@ -2,14 +2,14 @@
 lang: "es-419"
 type: "concept"
 slug: "for-loops"
-title: "Bucles `for`"
+title: "Cómo funcionan los bucles `for`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/for-loops/source.md"
-en_md5: "e96f2e5a4106a88cfbca449c93a26108"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/es-419/curriculum/concepts/for-loops/page.md"
+en_md5: "0ad4155ded18c2df27d29e5355bd0532"
+governance_sha: "494ce4b"
 content_version: "85374dcb17e6"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Quizá recuerdes que el bucle `repeat` en realidad no existe en JavaScript. Es algo que agregamos para facilitarte un poquito la vida mientras arrancamos.

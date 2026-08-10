@@ -2,14 +2,14 @@
 lang: "fr"
 type: "concept"
 slug: "modulo"
-title: "Le reste"
+title: "Utiliser l'opérateur `%` pour obtenir le reste"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/modulo/page.md"
-en_md5: "fe49222bd3f3a019dd9f74a960c5dede"
-governance_sha: "84303b0"
+en_md5: "4955abecb626b8eff02ee7484e2065dd"
+governance_sha: "494ce4b"
 content_version: "7e681f79aa35"
-published_at: "2026-08-08"
+published_at: "2026-08-10"
 ---
 
 Jusqu'ici, on a utilisé l'addition, la soustraction, la multiplication et la division pour faire de l'arithmétique. On va maintenant en découvrir un de plus : l'opérateur de reste (_remainder_ en anglais).

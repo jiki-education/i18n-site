@@ -2,14 +2,14 @@
 lang: "el"
 type: "concept"
 slug: "else"
-title: "Else"
+title: "Η λέξη-κλειδί `else`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else/source.md"
-en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/else/page.md"
+en_md5: "a3d7b0672bd9c022675831044c5610ed"
+governance_sha: "494ce4b"
 content_version: "c3a16281e234"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 forum_topic_id: 1054
 ---
 

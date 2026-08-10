@@ -4,12 +4,12 @@ type: "concept"
 slug: "updating-dictionaries"
 title: "辞書の更新"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-dictionaries/source.md"
-en_md5: "254912c3c672aec40b2729cd005fb1a7"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ja/curriculum/concepts/updating-dictionaries/page.md"
+en_md5: "5dfff7e37d863711be783b2fbe0873a4"
+governance_sha: "494ce4b"
 content_version: "bda1fa513b02"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 辞書の作り方と値の取り出し方はもうご存知ですね。でも、データが変わったらどうなるのでしょうか？　私もいずれ年をとります。いつまでも`42`のままではありません。`43`になります。

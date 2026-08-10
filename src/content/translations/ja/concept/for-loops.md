@@ -2,14 +2,14 @@
 lang: "ja"
 type: "concept"
 slug: "for-loops"
-title: "`for`ループ"
+title: "`for`ループを理解する"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/for-loops/source.md"
-en_md5: "e96f2e5a4106a88cfbca449c93a26108"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ja/curriculum/concepts/for-loops/page.md"
+en_md5: "0ad4155ded18c2df27d29e5355bd0532"
+governance_sha: "494ce4b"
 content_version: "a939fd07b4a4"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 JavaScriptには `repeat` ループというものが実際には存在しないのを覚えているかもしれません。これは、これから進めるにあたって少しでも楽に感じてもらうために用意されたものにすぎません。

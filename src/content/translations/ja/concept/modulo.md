@@ -2,14 +2,14 @@
 lang: "ja"
 type: "concept"
 slug: "modulo"
-title: "余り"
+title: "`%`演算子で余りを求める"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/modulo/source.md"
-en_md5: "fe49222bd3f3a019dd9f74a960c5dede"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ja/curriculum/concepts/modulo/page.md"
+en_md5: "4955abecb626b8eff02ee7484e2065dd"
+governance_sha: "494ce4b"
 content_version: "c6b9a2176b76"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 これまで、算数をするときに足し算、引き算、掛け算、割り算を使ってきました。ここでもう一つ、余り（英: _remainder_）演算子をご紹介します。

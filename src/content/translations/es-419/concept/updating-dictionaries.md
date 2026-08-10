@@ -2,14 +2,14 @@
 lang: "es-419"
 type: "concept"
 slug: "updating-dictionaries"
-title: "Cambiar diccionarios"
+title: "Actualizar diccionarios"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-dictionaries/source.md"
-en_md5: "254912c3c672aec40b2729cd005fb1a7"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/es-419/curriculum/concepts/updating-dictionaries/page.md"
+en_md5: "5dfff7e37d863711be783b2fbe0873a4"
+governance_sha: "494ce4b"
 content_version: "0a596efcbc81"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Ya sabes cómo crear un diccionario y sacar valores de él. Pero ¿qué pasa si los datos cambian? En algún momento, yo voy a cumplir años. No voy a tener `42`, voy a tener `43`.

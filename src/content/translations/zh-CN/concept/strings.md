@@ -2,14 +2,14 @@
 lang: "zh-CN"
 type: "concept"
 slug: "strings"
-title: "字符串"
+title: "认识字符串"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/strings/source.md"
-en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "c80036b"
-content_version: "3eecb0aad7ad"
-published_at: "2026-08-06"
+source_repo: "i18n"
+source_path: "locales/zh-CN/curriculum/concepts/strings/page.md"
+en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
+governance_sha: "494ce4b"
+content_version: "1ee7d74c5a3c"
+published_at: "2026-08-10"
 ---
 
 当你想使用一个数字时，你直接写下那个数字，Jiki 就明白你的意思。但如果你想使用一个字母、一个单词或一个句子呢？比如，对于 `rectangle`（矩形）函数或 `circle`（圆形）函数，如果你多了一个输入来指定颜色，该怎么办？我们要怎样把颜色写进机器里？如果我们直接写 `green`（绿色）或 `blue`（蓝色），Jiki 会以为我们在指货架上的某台机器，然后他会说：“这里没有一台叫 green 的机器。我不知道该怎么办。”
@@ -22,7 +22,7 @@ published_at: "2026-08-06"
   height="400"
 />
 
-所以我们有一条规则：只要我们需要使用文本，就必须把它放在引号里，放在双引号里。当你像这样把内容放进引号时，Jiki 会拿出一张纸，把你放在引号里的内容写在那张纸上，而我们把这些纸张称为字符串（英语：string）。
+所以我们有一条规则：只要我们需要使用文本，就必须把它放在引号里，放在双引号里。当你像这样把内容放进引号时，Jiki 会拿出一张纸，把你放在引号里的内容写在那张纸上，而我们把这些纸张称为字符串（英文：string）。
 
 <img
   class="concept-image"

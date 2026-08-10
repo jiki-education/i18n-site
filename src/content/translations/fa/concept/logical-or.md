@@ -2,14 +2,14 @@
 lang: "fa"
 type: "concept"
 slug: "logical-or"
-title: "کلمه‌ی کلیدی `or`"
+title: "عملگر `||` (یا)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-or/source.md"
-en_md5: "4c9ebc144707760d944e0cddfac5a561"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/fa/curriculum/concepts/logical-or/page.md"
+en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
+governance_sha: "494ce4b"
 content_version: "9ec74d9820ce"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 ما می‌توانیم از `or` هم استفاده کنیم، و باز هم، متاسفانه در جاوااسکریپت یک کلمه‌ی کلیدی خوب برای or وجود ندارد. در عوض، باید از این دو «میله» کنار هم استفاده کنیم که معنی or بدهد. ظاهر عجیبی دارد، اما واقعاً این‌طور نیست. به آن عادت می‌کنید.

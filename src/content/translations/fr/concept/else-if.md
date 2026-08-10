@@ -2,14 +2,14 @@
 lang: "fr"
 type: "concept"
 slug: "else-if"
-title: "L'instruction `else if`"
+title: "Enchaîner les instructions `else if`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else-if/source.md"
-en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "77f6a16"
+source_repo: "i18n"
+source_path: "locales/fr/curriculum/concepts/else-if/page.md"
+en_md5: "64274945347d47d67baf3378cf219c9b"
+governance_sha: "494ce4b"
 content_version: "040ce19a0e04"
-published_at: "2026-08-04"
+published_at: "2026-08-10"
 forum_topic_id: 1181
 ---
 

@@ -2,14 +2,15 @@
 lang: "pt-pt"
 type: "concept"
 slug: "while-loops"
-title: "Ciclos while"
+title: "Compreender os ciclos `while`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/while-loops/source.md"
-en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "e4d40de"
+source_repo: "i18n"
+source_path: "locales/pt-pt/curriculum/concepts/while-loops/page.md"
+en_md5: "aeceed2abb1434307cfd7c9a0df55c81"
+governance_sha: "494ce4b"
 content_version: "a87ffd3df850"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
+forum_topic_id: 941
 ---
 
 O próximo ciclo a conhecer é o ciclo `while` (enquanto).

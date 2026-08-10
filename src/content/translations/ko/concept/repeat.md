@@ -4,12 +4,12 @@ type: "concept"
 slug: "repeat"
 title: "`repeat` 루프"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat/source.md"
-en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/repeat/page.md"
+en_md5: "f37a63911f75934656cbf04a38ff2b60"
+governance_sha: "494ce4b"
 content_version: "8978357129a6"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 지금까지는 모든 것이 순차적으로, Jiki가 위에서부터 아래로 각 지시를 차례대로 따라가는 방식으로 작성되었어요.

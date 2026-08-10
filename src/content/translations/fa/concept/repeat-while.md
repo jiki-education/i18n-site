@@ -2,14 +2,14 @@
 lang: "fa"
 type: "concept"
 slug: "repeat-while"
-title: "تکرار بدون تعداد"
+title: "استفاده از حلقه‌ی Repeat بدون مشخص‌کردن تعداد"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat-while/source.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/fa/curriculum/concepts/repeat-while/page.md"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "7c87e52d1ec4"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 تا به حال، وقتی از حلقه‌ی Repeat استفاده کرده‌اید، همیشه عددی را مشخص کرده‌اید که می‌گوید چند بار تکرار شود. پنج بار تکرار کنید، ۱۰ بار، ۴۰ بار. گاهی هم از یک متغیر برای این کار استفاده کرده‌اید. اما همیشه دقیقاً به جیکی گفته‌اید که حلقه را چند بار تکرار کند.

@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "repeat-while"
-title: "बिना संख्या के दोहराएँ"
+title: "बिना संख्या बताए `repeat` चलाना"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat-while/source.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/repeat-while/page.md"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "74c6f14f0cdb"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 अब तक, जब भी आपने `repeat` लूप का प्रयोग किया है, आपने हमेशा एक संख्या बताई है जो यह तय करती है कि कितनी बार दोहराना है। पाँच बार दोहराएँ, दस बार, चालीस बार। कभी-कभी आपने इसके लिए वेरिएबल का भी इस्तेमाल किया है। लेकिन आपने हमेशा Jiki को ठीक-ठीक बता दिया है कि लूप को कितनी बार दोहराना है।

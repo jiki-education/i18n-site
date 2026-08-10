@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "else-if"
-title: "Else If"
+title: "`else if`로 조건 이어 붙이기"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else-if/source.md"
-en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/else-if/page.md"
+en_md5: "64274945347d47d67baf3378cf219c9b"
+governance_sha: "494ce4b"
 content_version: "a98efac510e4"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 지금까지 `if`와 `else`를 통해 두 가지 길을 봤어요. 조건이 참일 때는 하나를 하고, 거짓일 때는 다른 걸 하죠. 그런데 가능성이 두 가지보다 더 많다면 어떨까요?

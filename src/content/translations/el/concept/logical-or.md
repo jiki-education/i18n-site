@@ -2,14 +2,14 @@
 lang: "el"
 type: "concept"
 slug: "logical-or"
-title: "Η λέξη-κλειδί `or`"
+title: "Ο τελεστής `||` (ή)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-or/source.md"
-en_md5: "4c9ebc144707760d944e0cddfac5a561"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/logical-or/page.md"
+en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
+governance_sha: "494ce4b"
 content_version: "c87f27a4ccfa"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Μπορούμε επίσης να χρησιμοποιήσουμε το `or`, και πάλι, δυστυχώς, δεν υπάρχει μια ωραία λέξη-κλειδί `or` στη JavaScript. Αντίθετα, πρέπει να χρησιμοποιήσουμε αυτές τις δύο μπάρες (_bars_ στα αγγλικά) η μία δίπλα στην άλλη για να σημαίνουν ή. Φαίνεται περίεργο, αλλά στην πραγματικότητα δεν είναι. Θα το συνηθίσεις.

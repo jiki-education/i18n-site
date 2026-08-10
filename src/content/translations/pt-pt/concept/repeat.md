@@ -2,14 +2,14 @@
 lang: "pt-pt"
 type: "concept"
 slug: "repeat"
-title: "Ciclo repeat"
+title: "O ciclo `repeat`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat/source.md"
-en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "5731205"
+source_repo: "i18n"
+source_path: "locales/pt-pt/curriculum/concepts/repeat/page.md"
+en_md5: "f37a63911f75934656cbf04a38ff2b60"
+governance_sha: "494ce4b"
 content_version: "f1cfb0863b42"
-published_at: "2026-08-01"
+published_at: "2026-08-10"
 ---
 
 Até agora, tudo foi escrito de forma linear: o Jiki segue cada instrução por ordem, de cima para baixo.

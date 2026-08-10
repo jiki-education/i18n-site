@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "else"
-title: "Else"
-en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
+title: "The `else` Keyword"
+en_md5: "a3d7b0672bd9c022675831044c5610ed"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/else/source.md"
-captured_at: "2026-08-01"
+captured_at: "2026-08-10"
 ---
 
 If statements let you check conditions and run code only when something is true. Now let's introduce if's partner in crime, `else`.

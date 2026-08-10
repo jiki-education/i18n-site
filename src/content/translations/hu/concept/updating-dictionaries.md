@@ -2,14 +2,14 @@
 lang: "hu"
 type: "concept"
 slug: "updating-dictionaries"
-title: "Szótárak módosítása"
+title: "Szótárak frissítése"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-dictionaries/source.md"
-en_md5: "254912c3c672aec40b2729cd005fb1a7"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hu/curriculum/concepts/updating-dictionaries/page.md"
+en_md5: "5dfff7e37d863711be783b2fbe0873a4"
+governance_sha: "494ce4b"
 content_version: "04ce5d2b630f"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Tudod már, hogyan hozol létre egy szótárt, és hogyan olvasol ki belőle értékeket. De mi történik, ha megváltoznak az adatok? Egyszer én is öregebb leszek. Nem `42` leszek, hanem `43`.

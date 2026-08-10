@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "repeat-while"
-title: "횟수 없는 반복"
+title: "횟수를 정하지 않고 `repeat` 사용하기"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat-while/source.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/repeat-while/page.md"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "2cabd40efe4d"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 지금까지 `repeat`문을 사용할 때는 항상 몇 번 반복할지 숫자를 정해 줬어요. "5번 반복해", "10번 반복해", "40번 반복해" 같은 식으로요. 변수를 써서 횟수를 정한 적도 있어요. 하지만 어떤 때에는 미리 몇 번 반복해야 할지 알 수 없어요. 미로를 생각해 보세요. 이 강의 초반에는 미로를 풀 때 구체적인 동작을 하나하나 써서 해결했어요. 미로를 보면서 걸음 수를 세고, 알맞은 동작 개수를 적었죠.

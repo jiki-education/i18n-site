@@ -2,14 +2,14 @@
 lang: "hu"
 type: "concept"
 slug: "modulo"
-title: "Maradék"
+title: "A `%` operátor használata maradékszámításhoz"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/modulo/source.md"
-en_md5: "fe49222bd3f3a019dd9f74a960c5dede"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hu/curriculum/concepts/modulo/page.md"
+en_md5: "4955abecb626b8eff02ee7484e2065dd"
+governance_sha: "494ce4b"
 content_version: "4eea2dcd0f76"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Eddig összeadást, kivonást, szorzást és osztást használtunk, amikor számoltunk. Most bevezetünk még egyet: a maradék (_remainder_ angolul) operátort.

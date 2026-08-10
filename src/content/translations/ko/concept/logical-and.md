@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "logical-and"
-title: "`and` 키워드"
+title: "`&&` (그리고) 연산자"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-and/source.md"
-en_md5: "6ea0de65a81d8e5c8d2eb89f3db29705"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/logical-and/page.md"
+en_md5: "cef8d76c4235e85573c3eeede294ab72"
+governance_sha: "494ce4b"
 content_version: "2370b2426a61"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 만약 누군가의 나이가 20세 이상일 때만 문을 열라고 하면, 아마 어떻게 해야 할지 알겠죠? 그런데 누군가가 20세 이상이면서 _그리고_ 올바른 옷차림인지도 확인해야 한다면 어떨까요? 즉, 한 번에 두 가지 다른 조건을 확인해야 하는 거예요. 어떻게 하면 될까요?

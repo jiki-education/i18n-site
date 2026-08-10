@@ -2,14 +2,14 @@
 lang: "fr"
 type: "concept"
 slug: "else"
-title: "Else"
+title: "Le mot-clé `else`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/else/page.md"
-en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
-governance_sha: "3516d44"
+en_md5: "a3d7b0672bd9c022675831044c5610ed"
+governance_sha: "494ce4b"
 content_version: "a86cdb8722ee"
-published_at: "2026-08-08"
+published_at: "2026-08-10"
 forum_topic_id: 1173
 ---
 

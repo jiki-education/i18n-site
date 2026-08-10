@@ -2,14 +2,14 @@
 lang: "uk"
 type: "concept"
 slug: "else-if"
-title: "Else If"
+title: "Використання ланцюжків `else if`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else-if/source.md"
-en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "ea7c7e7"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/else-if/page.md"
+en_md5: "64274945347d47d67baf3378cf219c9b"
+governance_sha: "494ce4b"
 content_version: "3d2e5ac05474"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 forum_topic_id: 880
 ---
 

@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "repeat"
-title: "Repeat लूप"
+title: "`repeat` लूप"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat/source.md"
-en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/repeat/page.md"
+en_md5: "f37a63911f75934656cbf04a38ff2b60"
+governance_sha: "494ce4b"
 content_version: "5251dd0c382a"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 अब तक, सब कुछ एक सीधी रेखा में लिखा गया है, जहाँ Jiki हर निर्देश का पालन ऊपर से नीचे क्रम से करता है।

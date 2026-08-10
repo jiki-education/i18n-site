@@ -2,14 +2,14 @@
 lang: "hu"
 type: "concept"
 slug: "logical-not"
-title: "A `not` operátor"
+title: "A `!` (nem) operátor"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-not/source.md"
-en_md5: "842c4a4e9cb1fd11c4318a1508296e27"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hu/curriculum/concepts/logical-not/page.md"
+en_md5: "7cffbd1fa13317b3d6e6a71415413041"
+governance_sha: "494ce4b"
 content_version: "a468bb6cbadd"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Eddig, amikor azt vizsgáltuk, hogy két dolog egyenlő-e, három egyenlőségjelet használtunk. Néha viszont azt szeretnénk ellenőrizni, hogy két dolog nem egyenlő, és ehhez egy felkiáltójelet írunk, utána pedig két egyenlőségjelet. A programozásban a felkiáltójel (_bang_ angolul, ahogy szerintem amerikai barátaink hívják) általában azt jelenti: nem. Képzeld el, hogy egy boltban dolgozol, és a vezetőség úgy döntött, hogy diszkós szerelésben senki nem jöhet be.

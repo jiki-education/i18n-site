@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "modulo"
-title: "शेष"
+title: "`%` ऑपरेटर से शेष निकालना"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/modulo/source.md"
-en_md5: "fe49222bd3f3a019dd9f74a960c5dede"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/modulo/page.md"
+en_md5: "4955abecb626b8eff02ee7484e2065dd"
+governance_sha: "494ce4b"
 content_version: "3766faabc2d0"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 अब तक हमने जोड़, घटाव, गुणा और भाग का इस्तेमाल गणित के लिए किया है। अब हम एक और ऑपरेटर पेश कर रहे हैं, शेष (_remainder_) ऑपरेटर।

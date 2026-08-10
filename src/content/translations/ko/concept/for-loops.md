@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "for-loops"
-title: "for문"
+title: "`for`문 이해하기"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/for-loops/source.md"
-en_md5: "e96f2e5a4106a88cfbca449c93a26108"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/for-loops/page.md"
+en_md5: "0ad4155ded18c2df27d29e5355bd0532"
+governance_sha: "494ce4b"
 content_version: "50889228e4ce"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 JavaScript에는 repeat 루프라는 것이 실제로는 없어요. 처음 시작할 때 조금 더 쉽게 하기 위해 추가한 것일 뿐이에요.

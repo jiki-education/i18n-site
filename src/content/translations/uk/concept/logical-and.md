@@ -2,14 +2,14 @@
 lang: "uk"
 type: "concept"
 slug: "logical-and"
-title: "Ключове слово `and`"
+title: "Оператор `&&` (логічне і)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-and/source.md"
-en_md5: "6ea0de65a81d8e5c8d2eb89f3db29705"
-governance_sha: "aa865df"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/logical-and/page.md"
+en_md5: "cef8d76c4235e85573c3eeede294ab72"
+governance_sha: "494ce4b"
 content_version: "d32c69ec0119"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Якби нас попросили відчиняти двері лише тим, кому більше 20 років, ми б, мабуть, одразу знали, що робити. А якщо треба перевірити, чи людині більше 20 років _і_ чи вдягнена вона в правильне вбрання? Тобто перевірити одразу дві різні умови. Як це зробити?

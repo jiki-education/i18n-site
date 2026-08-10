@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "else-if"
-title: "Else If"
+title: "एक के बाद एक `else if` लगाना"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else-if/source.md"
-en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/else-if/page.md"
+en_md5: "64274945347d47d67baf3378cf219c9b"
+governance_sha: "494ce4b"
 content_version: "4cf940db4914"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 आपने देख लिया है कि `if` और `else` आपको दो रास्ते देते हैं: जब कोई शर्त सही हो तो एक काम करो, और जब गलत हो तो दूसरा। लेकिन तब क्या जब आपके पास दो से ज़्यादा संभावनाएँ हों?

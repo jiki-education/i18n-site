@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "logical-not"
-title: "The `not` operator"
-en_md5: "842c4a4e9cb1fd11c4318a1508296e27"
+title: "The `!` (Not) Operator"
+en_md5: "7cffbd1fa13317b3d6e6a71415413041"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/logical-not/source.md"
-captured_at: "2026-08-03"
+captured_at: "2026-08-10"
 ---
 
 So far, when we've compared things to see if they're equal, we've used three equal signs. Sometimes, though, we want to check whether things are not equal, and for this, we use an exclamation mark followed by two equal signs. And generally, in programming, an exclamation mark or <define>bang</define>, as I think our American friends call it, means not. So imagine you work in a shop, and management have made a decision that no disco outfits are allowed in.

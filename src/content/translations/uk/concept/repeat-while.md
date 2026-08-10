@@ -2,14 +2,14 @@
 lang: "uk"
 type: "concept"
 slug: "repeat-while"
-title: "Цикл `repeat` без кількості повторень"
+title: "Використання `repeat` без кількості повторень"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat-while/source.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "aa865df"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/repeat-while/page.md"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "80ecdc946a2d"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Досі, використовуючи цикл `repeat`, ми завжди вказували число, яке каже, скільки разів повторити. Повторити пʼять разів, 10 разів, 40 разів. Іноді для цього ми брали й змінну. Але ми завжди казали Jiki точно, скільки разів повторити цикл. Проте інколи ми не знаємо заздалегідь, скільки повторень знадобиться. Згадаймо лабіринт. Ще на самому початку курсу ми проходили його, виписуючи конкретні рухи. Ми бачили лабіринт, могли порахувати кроки й написати саме ту кількість рухів, яка потрібна.

@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "string-iteration"
-title: "Iterating Through Strings"
-en_md5: "584ac0a187a9e5244b84f0fd417494f3"
+title: "Looping Through Strings with `for ... of`"
+en_md5: "09f399cc3f52b89380d3ed23fc6be513"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/string-iteration/source.md"
-captured_at: "2026-08-03"
+captured_at: "2026-08-10"
 ---
 
 You can access a single letter of a string using square brackets. Now we're going to look at how to loop through a string, getting out each letter one at a time.

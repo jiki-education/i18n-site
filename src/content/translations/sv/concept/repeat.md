@@ -2,14 +2,14 @@
 lang: "sv"
 type: "concept"
 slug: "repeat"
-title: "repeat-loopen"
+title: "`repeat`-loopen"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat/source.md"
-en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "c6b2cac"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/repeat/page.md"
+en_md5: "f37a63911f75934656cbf04a38ff2b60"
+governance_sha: "494ce4b"
 content_version: "9088f613d5d7"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Hittills har allt varit skrivet linjärt: Jiki följer varje instruktion i ordning, uppifrån och ner.

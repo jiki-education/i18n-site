@@ -2,14 +2,14 @@
 lang: "ja"
 type: "concept"
 slug: "repeat"
-title: "repeatループ"
+title: "`repeat`ループ"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat/source.md"
-en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ja/curriculum/concepts/repeat/page.md"
+en_md5: "f37a63911f75934656cbf04a38ff2b60"
+governance_sha: "494ce4b"
 content_version: "3774d8c6a5f9"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 今までは、コードを上から下へ順番に書いてきました。Jikiは指示をひとつずつ、上から下へ順に実行します。

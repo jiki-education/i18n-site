@@ -2,14 +2,14 @@
 lang: "zh-CN"
 type: "concept"
 slug: "for-loops"
-title: "for 循环"
+title: "认识`for`循环"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/for-loops/source.md"
-en_md5: "e96f2e5a4106a88cfbca449c93a26108"
-governance_sha: "c80036b"
-content_version: "2be8c610616d"
-published_at: "2026-08-06"
+source_repo: "i18n"
+source_path: "locales/zh-CN/curriculum/concepts/for-loops/page.md"
+en_md5: "0ad4155ded18c2df27d29e5355bd0532"
+governance_sha: "494ce4b"
+content_version: "d29b4bef81e7"
+published_at: "2026-08-10"
 ---
 
 你也许记得，`repeat` 循环在 JavaScript 中并不真的存在。它只是为了在入门阶段给你行个方便而加入的。
@@ -26,7 +26,7 @@ for (let i = 0; i < 5; i++) {
 
 但现在，你已经掌握了所有需要熟悉它的知识。所以，让我们来分解一下。
 
-一个 for 循环由三部分组成：初始化（英语：_initializer_）、条件和自增（英语：_increment_）。
+一个 for 循环由三部分组成：初始化（英文：_initializer_）、条件和自增（英文：_increment_）。
 
 初始化部分，也就是 `let i = 0` 这一段，会在整个循环开始时运行。它只运行一次，这里它创建了一个名为 `i` 的盒子（`i` 是循环中用来跟踪数值的变量），并设置为 0。`i` 只是一个字母，用于在循环过程中跟踪一个值，传统上常使用 `i` 或 `x` 来表示。
 

@@ -2,14 +2,14 @@
 lang: "ar"
 type: "concept"
 slug: "strings"
-title: "السلاسل النصية"
+title: "التعرّف على السلاسل النصية"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/ar/curriculum/concepts/strings/page.md"
-en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "f023370"
+en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
+governance_sha: "494ce4b"
 content_version: "f349f3522144"
-published_at: "2026-08-09"
+published_at: "2026-08-10"
 ---
 
 عندما تريد استخدام عدد، يمكنك حرفيًا كتابة هذا العدد، ويعرف جيكي ما تعنيه. ولكن ماذا لو أردت استخدام حرف أو كلمة أو جملة؟ على سبيل المثال، مع دالة `rectangle` (مستطيل) أو دالة `circle` (دائرة)، ماذا لو كان لديك إدخال إضافي تحدد فيه اللون؟ كيف نكتب اللون لنضعه في الآلة؟ إذا كتبنا فقط الكلمة `green` (أخضر) أو `blue` (أزرق)، فسيظن جيكي أننا نشير إلى آلة على الرفوف، وسيقول: "لا توجد آلة تُدعى 'green'. لا أعرف ماذا أفعل."

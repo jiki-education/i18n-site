@@ -2,14 +2,14 @@
 lang: "el"
 type: "concept"
 slug: "logical-not"
-title: "Ο τελεστής `not`"
+title: "Ο τελεστής `!` (όχι)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-not/source.md"
-en_md5: "842c4a4e9cb1fd11c4318a1508296e27"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/logical-not/page.md"
+en_md5: "7cffbd1fa13317b3d6e6a71415413041"
+governance_sha: "494ce4b"
 content_version: "f4d3eb3fc442"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Μέχρι τώρα, όταν συγκρίναμε πράγματα για να δούμε αν είναι ίσα, χρησιμοποιούσαμε τρία ίσον. Καμιά φορά, όμως, θέλουμε να ελέγξουμε αν τα πράγματα **δεν** είναι ίσα, και γι' αυτό χρησιμοποιούμε ένα θαυμαστικό ακολουθούμενο από δύο ίσον. Και γενικά, στον προγραμματισμό, ένα θαυμαστικό ή _bang_, όπως νομίζω το λένε οι Αμερικάνοι φίλοι μας, σημαίνει "όχι". Φαντάσου λοιπόν ότι δουλεύεις σε ένα κατάστημα και η διοίκηση έχει αποφασίσει ότι δεν επιτρέπονται ρούχα ντίσκο.

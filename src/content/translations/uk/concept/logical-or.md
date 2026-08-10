@@ -2,14 +2,14 @@
 lang: "uk"
 type: "concept"
 slug: "logical-or"
-title: "Ключове слово `or`"
+title: "Оператор `||` (логічне або)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-or/source.md"
-en_md5: "4c9ebc144707760d944e0cddfac5a561"
-governance_sha: "aa865df"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/logical-or/page.md"
+en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
+governance_sha: "494ce4b"
 content_version: "6354527f5ed8"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Ми можемо використовувати й `or`. Але, на жаль, і тут у JavaScript немає зручного ключового слова. Замість нього ми пишемо поруч дві вертикальні риски (англ. _bars_), і вони означають «або». Виглядає це дивно, але насправді все просто. Ми швидко звикнемо.

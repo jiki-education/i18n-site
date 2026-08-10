@@ -2,14 +2,14 @@
 lang: "ja"
 type: "concept"
 slug: "logical-and"
-title: "`and`キーワード"
+title: "`&&`（AND）演算子"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-and/source.md"
-en_md5: "6ea0de65a81d8e5c8d2eb89f3db29705"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ja/curriculum/concepts/logical-and/page.md"
+en_md5: "cef8d76c4235e85573c3eeede294ab72"
+governance_sha: "494ce4b"
 content_version: "9892743e6432"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 誰かに「20歳以上の人が来たらドアを開けてください」と頼まれたら、きっとどうすればいいかわかりますよね。でも、もし20歳以上で、**かつ**正しい服装をしているかどうかを同時に確認しなければならないとしたら？　つまり、二つの異なる条件を一度にチェックする必要があるわけです。どうすればいいでしょうか？

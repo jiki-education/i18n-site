@@ -2,14 +2,14 @@
 lang: "sr"
 type: "concept"
 slug: "modulo"
-title: "Ostatak"
+title: "Korišćenje operatora `%` za ostatak deljenja"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/modulo/source.md"
-en_md5: "fe49222bd3f3a019dd9f74a960c5dede"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/modulo/page.md"
+en_md5: "4955abecb626b8eff02ee7484e2065dd"
+governance_sha: "494ce4b"
 content_version: "b74c252cc60d"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Do sada smo koristili sabiranje, oduzimanje, množenje i deljenje kada radimo aritmetiku. Sada ćemo uvesti još jedan, operator ostatka (engl. _remainder_).

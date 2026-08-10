@@ -2,14 +2,14 @@
 lang: "pt-BR"
 type: "concept"
 slug: "while-loops"
-title: "Laços while"
+title: "Entendendo os laços `while`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/while-loops/source.md"
-en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "e4d40de"
+source_repo: "i18n"
+source_path: "locales/pt-BR/curriculum/concepts/while-loops/page.md"
+en_md5: "aeceed2abb1434307cfd7c9a0df55c81"
+governance_sha: "494ce4b"
 content_version: "63861f5f1015"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 O próximo laço que você precisa conhecer é o laço `while` (enquanto).

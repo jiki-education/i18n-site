@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "strings"
-title: "Strings"
-en_md5: "89b04f3849f9388a46734924f35c913c"
+title: "Introducing Strings"
+en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/strings/source.md"
-captured_at: "2026-08-01"
+captured_at: "2026-08-10"
 ---
 
 When you want to use a number, you can literally just write that number down, and Jiki knows what you mean. But what about if you want to use a letter or a word or a sentence? For example, with the <define>`rectangle`</define> function or the <define>`circle`</define> function, what if you had an extra input where you specified the color? How would we write the color to put it into the machine? If we just write the word <define>`green`</define> or <define>`blue`</define>, Jiki will think we're referring to a machine on the shelves, and he'll say, "There is no machine called green. I don't know what to do."

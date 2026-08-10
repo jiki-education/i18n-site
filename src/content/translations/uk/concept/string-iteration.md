@@ -2,14 +2,14 @@
 lang: "uk"
 type: "concept"
 slug: "string-iteration"
-title: "Перебирання рядків тексту"
+title: "Перебирання рядків тексту за допомогою `for ... of`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-iteration/source.md"
-en_md5: "584ac0a187a9e5244b84f0fd417494f3"
-governance_sha: "aa865df"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/string-iteration/page.md"
+en_md5: "09f399cc3f52b89380d3ed23fc6be513"
+governance_sha: "494ce4b"
 content_version: "4253bc797d1a"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Ми вже знаємо, як отримати окрему літеру рядка тексту (англ. _string_) за допомогою квадратних дужок. Тепер погляньмо, як пройтися циклом по рядку тексту, дістаючи літери одну за одною.

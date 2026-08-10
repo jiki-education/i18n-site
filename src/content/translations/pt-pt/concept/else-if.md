@@ -2,14 +2,15 @@
 lang: "pt-pt"
 type: "concept"
 slug: "else-if"
-title: "Else If"
+title: "Usar `else if` em cadeia"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else-if/source.md"
-en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "e4d40de"
+source_repo: "i18n"
+source_path: "locales/pt-pt/curriculum/concepts/else-if/page.md"
+en_md5: "64274945347d47d67baf3378cf219c9b"
+governance_sha: "494ce4b"
 content_version: "cc03d451f64d"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
+forum_topic_id: 941
 ---
 
 Já viste como o `if` e o `else` te dão dois caminhos: fazer uma coisa quando uma condição é verdadeira e fazer outra quando é falsa. Mas e se tiveres mais do que duas possibilidades?

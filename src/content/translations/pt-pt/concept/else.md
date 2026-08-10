@@ -2,14 +2,15 @@
 lang: "pt-pt"
 type: "concept"
 slug: "else"
-title: "Else"
+title: "A palavra-chave `else`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else/source.md"
-en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
-governance_sha: "e4d40de"
+source_repo: "i18n"
+source_path: "locales/pt-pt/curriculum/concepts/else/page.md"
+en_md5: "a3d7b0672bd9c022675831044c5610ed"
+governance_sha: "494ce4b"
 content_version: "dae6275451b1"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
+forum_topic_id: 941
 ---
 
 As condicionais permitem-te verificar condições e executar código apenas quando algo é verdadeiro. Agora vamos apresentar o parceiro inseparável do if: o `else`.

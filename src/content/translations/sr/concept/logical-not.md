@@ -2,14 +2,14 @@
 lang: "sr"
 type: "concept"
 slug: "logical-not"
-title: "Operator `not`"
+title: "Operator `!` (logičko NE)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-not/source.md"
-en_md5: "842c4a4e9cb1fd11c4318a1508296e27"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/logical-not/page.md"
+en_md5: "7cffbd1fa13317b3d6e6a71415413041"
+governance_sha: "494ce4b"
 content_version: "9b991c6d5438"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Do sada, kada smo upoređivali stvari da vidimo da li su jednake, koristili smo tri znaka jednakosti. Međutim, ponekad želimo da proverimo da li stvari nisu jednake, i za to koristimo uzvičnik praćen sa dva znaka jednakosti. I generalno, u programiranju, uzvičnik ili bang, kako to zovu naši američki prijatelji, znači ne. Zamisli da radiš u prodavnici, i uprava je donela odluku da niko ne može ući u disko odeći.

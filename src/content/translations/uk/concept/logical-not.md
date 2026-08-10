@@ -2,14 +2,14 @@
 lang: "uk"
 type: "concept"
 slug: "logical-not"
-title: "Оператор `not`"
+title: "Оператор `!` (логічне заперечення)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-not/source.md"
-en_md5: "842c4a4e9cb1fd11c4318a1508296e27"
-governance_sha: "aa865df"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/logical-not/page.md"
+en_md5: "7cffbd1fa13317b3d6e6a71415413041"
+governance_sha: "494ce4b"
 content_version: "2d9718c1dd63"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Досі, коли ми порівнювали речі, щоб перевірити, чи вони рівні, ми використовували три знаки рівності. Але іноді нам треба перевірити, чи речі не рівні, і для цього ми пишемо знак оклику, а за ним два знаки рівності. Загалом у програмуванні знак оклику, або _bang_, як, здається, кажуть наші американські друзі, означає «не». Тож уявімо, що ми працюємо в магазині, а керівництво вирішило, що відвідувачів у диско-вбранні пускати не можна.

@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "updating-dictionaries"
-title: "Changing Dictionaries"
-en_md5: "254912c3c672aec40b2729cd005fb1a7"
+title: "Updating Dictionaries"
+en_md5: "5dfff7e37d863711be783b2fbe0873a4"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/updating-dictionaries/source.md"
-captured_at: "2026-08-03"
+captured_at: "2026-08-10"
 ---
 
 You know how to create a dictionary and get values out of it. But what happens if the data changes? At some point, I'm gonna get older. I'm not gonna be `42`, I'm gonna be `43`.

@@ -2,14 +2,14 @@
 lang: "hu"
 type: "concept"
 slug: "repeat-while"
-title: "Repeat szám nélkül"
+title: "A `repeat` használata szám nélkül"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat-while/source.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hu/curriculum/concepts/repeat-while/page.md"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "30c91c883175"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Eddig, amikor a repeat ciklust használtad, mindig megadtál egy számot, ami megmondta, hányszor ismételjen. Ismételj ötször, 10-szer, 40-szer. Néha erre változót is használtál. De mindig pontosan megmondtad Jikinek, hányszor fusson le a ciklus. Csakhogy néha előre nem tudjuk, hányszor kell ismételni. Gondolj a labirintusra. Még a kurzus legelején úgy oldottad meg a labirintust, hogy egyesével leírtad a lépéseket. Láttad a labirintust, megszámoltad a lépéseket, és pontosan a megfelelő számú mozdulatot írtad le.

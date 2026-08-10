@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "logical-and"
-title: "The `and` keyword"
-en_md5: "6ea0de65a81d8e5c8d2eb89f3db29705"
+title: "The `&&` (And) Operator"
+en_md5: "cef8d76c4235e85573c3eeede294ab72"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/logical-and/source.md"
-captured_at: "2026-08-03"
+captured_at: "2026-08-10"
 ---
 
 If I asked you to open the door only if somebody was over the age of 20, you'd probably know what to do. But what about if you needed to check whether someone is over 20 _and_ wearing the correct outfit? So you need to check two different conditions at once. How would you do that?

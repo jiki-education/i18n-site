@@ -2,14 +2,14 @@
 lang: "nl"
 type: "concept"
 slug: "strings"
-title: "Strings"
+title: "Kennismaken met strings"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/strings/source.md"
-en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "21ba311"
+source_repo: "i18n"
+source_path: "locales/nl/curriculum/concepts/strings/page.md"
+en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
+governance_sha: "494ce4b"
 content_version: "d76e656a1e01"
-published_at: "2026-08-01"
+published_at: "2026-08-10"
 ---
 
 Als je een getal wilt gebruiken, kun je dat getal gewoon opschrijven en weet Jiki wat je bedoelt. Maar wat als je een letter, een woord of een zin wilt gebruiken? Stel bijvoorbeeld dat de functie `rectangle` (rechthoek) of de functie `circle` (cirkel) een extra invoer had waarin je de kleur opgeeft. Hoe schrijven we die kleur op om die in de machine te stoppen? Als we gewoon het woord `green` (groen) of `blue` (blauw) schrijven, denkt Jiki dat we een machine op de planken bedoelen, en zegt hij: “Er is geen machine die green heet. Ik weet niet wat ik moet doen.”

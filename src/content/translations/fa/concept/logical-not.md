@@ -2,14 +2,14 @@
 lang: "fa"
 type: "concept"
 slug: "logical-not"
-title: "عملگر `not`"
+title: "عملگر `!` (نه)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-not/source.md"
-en_md5: "842c4a4e9cb1fd11c4318a1508296e27"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/fa/curriculum/concepts/logical-not/page.md"
+en_md5: "7cffbd1fa13317b3d6e6a71415413041"
+governance_sha: "494ce4b"
 content_version: "4e9e25687a55"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 تا اینجا، هر وقت چیزها را مقایسه می‌کردیم تا ببینیم برابرند یا نه، از سه علامت مساوی استفاده کردیم. اما گاهی می‌خواهیم بررسی کنیم که چیزها برابر نیستند، و برای این کار از یک علامت تعجب و به دنبال آن دو علامت مساوی استفاده می‌کنیم. و به طور کلی، در برنامه‌نویسی، علامت تعجب یا «بنگ»، که فکر می‌کنم دوستان آمریکایی‌مان اینطور می‌گویند، به معنی «نه» است. پس تصور کنید در یک فروشگاه کار می‌کنید و مدیریت تصمیم گرفته است که هیچ‌کس با لباس دیسکو وارد نشود.

@@ -2,14 +2,14 @@
 lang: "ar"
 type: "concept"
 slug: "while-loops"
-title: "حلقات `while`"
+title: "فهم حلقات `while`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/ar/curriculum/concepts/while-loops/page.md"
-en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "f023370"
+en_md5: "aeceed2abb1434307cfd7c9a0df55c81"
+governance_sha: "494ce4b"
 content_version: "dabe04b4f10e"
-published_at: "2026-08-09"
+published_at: "2026-08-10"
 ---
 
 الحلقة التالية التي ينبغي معرفتها هي حلقة `while` (طالما).

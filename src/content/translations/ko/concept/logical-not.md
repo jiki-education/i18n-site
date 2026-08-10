@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "logical-not"
-title: "`not` 연산자"
+title: "`!` (논리 부정) 연산자"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-not/source.md"
-en_md5: "842c4a4e9cb1fd11c4318a1508296e27"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/logical-not/page.md"
+en_md5: "7cffbd1fa13317b3d6e6a71415413041"
+governance_sha: "494ce4b"
 content_version: "852ac0b0f1e4"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 지금까지 값들이 같은지 비교할 때 등호 세 개(`===`)를 써 왔어요. 하지만 같지 **않은지**를 확인하고 싶을 때도 있어요. 이럴 때는 느낌표(`!`) 뒤에 등호 두 개를 붙인 `!=`를 사용해요. 그리고 보통 프로그래밍에서 느낌표, 또는 미국 친구들이 부르는 대로 bang은 “아니다(not)”라는 뜻이에요. 자, 가게에서 일한다고 상상해 보세요. 경영진이 디스코 복장은 출입 금지라고 결정했어요.

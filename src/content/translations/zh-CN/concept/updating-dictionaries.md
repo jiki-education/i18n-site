@@ -4,12 +4,12 @@ type: "concept"
 slug: "updating-dictionaries"
 title: "更新字典"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-dictionaries/source.md"
-en_md5: "254912c3c672aec40b2729cd005fb1a7"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/zh-CN/curriculum/concepts/updating-dictionaries/page.md"
+en_md5: "5dfff7e37d863711be783b2fbe0873a4"
+governance_sha: "494ce4b"
 content_version: "b57898b631ce"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 你已经知道如何创建字典并从中取出值。但如果数据发生了变化呢？总有一天，我会变老。不再是 `42` 岁，而是 `43` 岁。

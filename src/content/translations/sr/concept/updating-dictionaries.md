@@ -2,14 +2,14 @@
 lang: "sr"
 type: "concept"
 slug: "updating-dictionaries"
-title: "Izmena rečnika"
+title: "Ažuriranje rečnika"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-dictionaries/source.md"
-en_md5: "254912c3c672aec40b2729cd005fb1a7"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/updating-dictionaries/page.md"
+en_md5: "5dfff7e37d863711be783b2fbe0873a4"
+governance_sha: "494ce4b"
 content_version: "857bd4519d1f"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Znaš kako se pravi rečnik i kako se iz njega izvlače vrednosti. Ali šta se dešava kada se podaci promene? U jednom trenutku, ja ću ostariti. Neću više imati `42` godine, imaću `43`.

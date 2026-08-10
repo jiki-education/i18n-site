@@ -2,14 +2,14 @@
 lang: "el"
 type: "concept"
 slug: "logical-and"
-title: "Η λέξη-κλειδί `and`"
+title: "Ο τελεστής `&&` (και)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-and/source.md"
-en_md5: "6ea0de65a81d8e5c8d2eb89f3db29705"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/logical-and/page.md"
+en_md5: "cef8d76c4235e85573c3eeede294ab72"
+governance_sha: "494ce4b"
 content_version: "e2a46cc3bad7"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Αν σου ζητούσα να ανοίξεις την πόρτα μόνο αν κάποιος είναι πάνω από 20 χρονών, μάλλον θα ήξερες τι να κάνεις. Αλλά τι γίνεται αν χρειαζόσουν να ελέγξεις αν κάποιος είναι πάνω από 20 _και_ φοράει το σωστό ντύσιμο; Πρέπει λοιπόν να ελέγξεις δύο διαφορετικές συνθήκες ταυτόχρονα. Πώς θα το έκανες αυτό;

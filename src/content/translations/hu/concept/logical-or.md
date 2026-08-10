@@ -2,14 +2,14 @@
 lang: "hu"
 type: "concept"
 slug: "logical-or"
-title: "Az `or` kulcsszó"
+title: "A `||` (vagy) operátor"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-or/source.md"
-en_md5: "4c9ebc144707760d944e0cddfac5a561"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hu/curriculum/concepts/logical-or/page.md"
+en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
+governance_sha: "494ce4b"
 content_version: "ad649497d9b8"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 A vagy kapcsolatot is használhatjuk, és sajnos a JavaScriptben ehhez sincs egy kedves or kulcsszó. Helyette ezt a két függőleges vonalat (_bars_ angolul) írjuk egymás mellé, ez jelenti azt, hogy vagy. Elsőre furán néz ki, de igazából nem az. Meg fogod szokni.

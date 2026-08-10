@@ -2,14 +2,14 @@
 lang: "it"
 type: "concept"
 slug: "else-if"
-title: "Else if"
+title: "Usare le sequenze di `else if`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else-if/source.md"
-en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/else-if/page.md"
+en_md5: "64274945347d47d67baf3378cf219c9b"
+governance_sha: "494ce4b"
 content_version: "a5cc4ada8ba1"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 forum_topic_id: 987
 ---
 

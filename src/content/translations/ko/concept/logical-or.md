@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "logical-or"
-title: "`or` 키워드"
+title: "`||` (또는) 연산자"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-or/source.md"
-en_md5: "4c9ebc144707760d944e0cddfac5a561"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/logical-or/page.md"
+en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
+governance_sha: "494ce4b"
 content_version: "3b4946f6eecb"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 `or`도 사용할 수 있어요. 안타깝게도 JavaScript에는 `or`라는 키워드가 따로 없어요. 대신에, 두 개의 막대(영어: _bars_)를 나란히 써서 `or`를 나타내요. 처음엔 이상해 보일 수 있지만, 금방 익숙해져요.

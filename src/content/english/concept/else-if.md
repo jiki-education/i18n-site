@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "else-if"
-title: "Else If"
-en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
+title: "Using `else if` Chains"
+en_md5: "64274945347d47d67baf3378cf219c9b"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/else-if/source.md"
-captured_at: "2026-08-01"
+captured_at: "2026-08-10"
 ---
 
 You've seen how `if` and `else` give you two paths: do one thing when a condition is true, do another when it's false. But what if you've got more than two possibilities?

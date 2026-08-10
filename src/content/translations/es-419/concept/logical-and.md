@@ -2,14 +2,14 @@
 lang: "es-419"
 type: "concept"
 slug: "logical-and"
-title: "La palabra clave `and`"
+title: "El operador `&&` (y lógico)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-and/source.md"
-en_md5: "6ea0de65a81d8e5c8d2eb89f3db29705"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/es-419/curriculum/concepts/logical-and/page.md"
+en_md5: "cef8d76c4235e85573c3eeede294ab72"
+governance_sha: "494ce4b"
 content_version: "decf8c2e2511"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Si te pidiera que abras la puerta solo si la persona tiene más de 20 años, seguramente sabrías qué hacer. Pero ¿y si necesitaras comprobar si alguien tiene más de 20 _y_ lleva el atuendo correcto? Entonces necesitas revisar dos condiciones distintas al mismo tiempo. ¿Cómo lo harías?

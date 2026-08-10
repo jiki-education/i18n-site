@@ -2,14 +2,15 @@
 lang: "ru"
 type: "concept"
 slug: "repeat"
-title: "Цикл repeat"
+title: "Цикл `repeat`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat/source.md"
-en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "e4864f3"
+source_repo: "i18n"
+source_path: "locales/ru/curriculum/concepts/repeat/page.md"
+en_md5: "f37a63911f75934656cbf04a38ff2b60"
+governance_sha: "494ce4b"
 content_version: "4ed3b63ba3a3"
-published_at: "2026-07-31"
+published_at: "2026-08-10"
+forum_topic_id: 848
 ---
 
 До сих пор весь наш код был написан линейно: Jiki выполнял каждую инструкцию по порядку, сверху вниз.

@@ -2,14 +2,14 @@
 lang: "es-419"
 type: "concept"
 slug: "modulo"
-title: "Residuo"
+title: "Usar el operador `%` para obtener residuos"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/modulo/source.md"
-en_md5: "fe49222bd3f3a019dd9f74a960c5dede"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/es-419/curriculum/concepts/modulo/page.md"
+en_md5: "4955abecb626b8eff02ee7484e2065dd"
+governance_sha: "494ce4b"
 content_version: "cdc6b797f506"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Hasta ahora hemos usado la suma, la resta, la multiplicación y la división para hacer operaciones aritméticas. Ahora vamos a presentar uno más, el operador de residuo (_remainder_ en inglés).

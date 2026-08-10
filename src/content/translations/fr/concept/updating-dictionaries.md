@@ -6,10 +6,10 @@ title: "Modifier les dictionnaires"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/updating-dictionaries/page.md"
-en_md5: "254912c3c672aec40b2729cd005fb1a7"
-governance_sha: "cd45949"
+en_md5: "5dfff7e37d863711be783b2fbe0873a4"
+governance_sha: "494ce4b"
 content_version: "e86b8d424032"
-published_at: "2026-08-09"
+published_at: "2026-08-10"
 ---
 
 Tu sais maintenant créer un dictionnaire et en récupérer des valeurs. Mais que se passe-t-il si les données changent ? À un moment, je vais vieillir. Je ne vais plus avoir `42` ans, j'en aurai `43`.

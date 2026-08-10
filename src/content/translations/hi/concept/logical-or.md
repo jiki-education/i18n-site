@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "logical-or"
-title: "`or` कीवर्ड"
+title: "`||` (या) ऑपरेटर"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-or/source.md"
-en_md5: "4c9ebc144707760d944e0cddfac5a561"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/logical-or/page.md"
+en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
+governance_sha: "494ce4b"
 content_version: "2913650e29aa"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 हम `or` का भी इस्तेमाल कर सकते हैं, लेकिन दुर्भाग्य से JavaScript में कोई अच्छा-सा `or` कीवर्ड नहीं है। इसके बजाय, हमें ये दो बार (_bars_) एक-दूसरे के बगल में इस्तेमाल करने होते हैं, जिनका मतलब 'या' होता है। यह देखने में अजीब लगता है, लेकिन वास्तव में ऐसा नहीं है। आपको इसकी आदत हो जाएगी।

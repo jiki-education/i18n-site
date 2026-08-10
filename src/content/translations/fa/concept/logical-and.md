@@ -2,14 +2,14 @@
 lang: "fa"
 type: "concept"
 slug: "logical-and"
-title: "کلیدواژه‌ی `and`"
+title: "عملگر `&&` (و)"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/logical-and/source.md"
-en_md5: "6ea0de65a81d8e5c8d2eb89f3db29705"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/fa/curriculum/concepts/logical-and/page.md"
+en_md5: "cef8d76c4235e85573c3eeede294ab72"
+governance_sha: "494ce4b"
 content_version: "f7b647dbb4d7"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 اگر از شما می‌خواستم فقط در صورتی در را باز کنید که فردی بالای ۲۰ سال سن داشته باشد، احتمالاً می‌دانستید باید چه کنید. اما اگر لازم بود بررسی کنید که کسی هم بالای ۲۰ سال است و هم لباس مناسب پوشیده، چطور؟ پس باید همزمان دو شرط متفاوت را بررسی کنید. چطور این کار را انجام می‌دهید؟

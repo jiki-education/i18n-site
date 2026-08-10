@@ -2,14 +2,14 @@
 lang: "ar"
 type: "concept"
 slug: "else-if"
-title: "Else If"
+title: "ربط عبارات `else if`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/ar/curriculum/concepts/else-if/page.md"
-en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "f023370"
+en_md5: "64274945347d47d67baf3378cf219c9b"
+governance_sha: "494ce4b"
 content_version: "a8f37d2f038e"
-published_at: "2026-08-09"
+published_at: "2026-08-10"
 ---
 
 لقد رأيت كيف يمنحك `if` و`else` مسارين: أن تفعل شيئاً عندما يكون الشرط صحيحاً، وشيئاً آخر عندما يكون خاطئاً. لكن ماذا لو كان لديك أكثر من إمكانيتين؟

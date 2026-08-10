@@ -2,14 +2,14 @@
 lang: "ja"
 type: "concept"
 slug: "repeat-while"
-title: "回数を指定しない繰り返し"
+title: "回数を指定せずに`repeat`を使う"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat-while/source.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ja/curriculum/concepts/repeat-while/page.md"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "9ec932aa6de1"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 これまで、`repeat`ループを使うときは、必ず何回繰り返すかを数で指定してきました。5回、10回、40回。変数を使って回数を決めることもありました。いずれにしても、Jikiにはっきりと「この回数だけ繰り返して」と伝えていたのです。ところが、あらかじめ繰り返しの回数がわからない場面もあります。迷路を思い出してください。このコースの最初の方で、具体的な動きを書き並べて迷路を解きましたね。迷路を見て、歩数を数え、ちょうどいい数の動きを書くことができました。

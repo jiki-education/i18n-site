@@ -2,14 +2,14 @@
 lang: "hu"
 type: "concept"
 slug: "else"
-title: "Else"
+title: "Az `else` kulcsszó"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else/source.md"
-en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hu/curriculum/concepts/else/page.md"
+en_md5: "a3d7b0672bd9c022675831044c5610ed"
+governance_sha: "494ce4b"
 content_version: "966040359ca0"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Az elágazások segítségével feltételeket ellenőrizhetsz, és csak akkor futtatsz le kódot, ha valami igaz. Most pedig ismerd meg az if cinkostársát, az `else`-t.

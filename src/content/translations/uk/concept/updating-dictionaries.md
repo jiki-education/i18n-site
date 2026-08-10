@@ -2,14 +2,14 @@
 lang: "uk"
 type: "concept"
 slug: "updating-dictionaries"
-title: "Зміна словників"
+title: "Оновлення словників"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-dictionaries/source.md"
-en_md5: "254912c3c672aec40b2729cd005fb1a7"
-governance_sha: "aa865df"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/updating-dictionaries/page.md"
+en_md5: "5dfff7e37d863711be783b2fbe0873a4"
+governance_sha: "494ce4b"
 content_version: "47ac58aeb32e"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Ми вже вміємо створювати словник і діставати з нього значення. Але що робити, коли дані змінюються? Колись я стану старшим: мені буде вже не `42`, а `43`.

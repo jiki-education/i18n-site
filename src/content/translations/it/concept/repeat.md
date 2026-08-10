@@ -2,14 +2,14 @@
 lang: "it"
 type: "concept"
 slug: "repeat"
-title: "Il ciclo repeat"
+title: "Il ciclo `repeat`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat/source.md"
-en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/repeat/page.md"
+en_md5: "f37a63911f75934656cbf04a38ff2b60"
+governance_sha: "494ce4b"
 content_version: "c419eef37e18"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 forum_topic_id: 950
 ---
 

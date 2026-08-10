@@ -2,14 +2,14 @@
 lang: "sv"
 type: "concept"
 slug: "for-loops"
-title: "For-loopar"
+title: "Så fungerar `for`-loopar"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/for-loops/source.md"
-en_md5: "e96f2e5a4106a88cfbca449c93a26108"
-governance_sha: "18055e8"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/for-loops/page.md"
+en_md5: "0ad4155ded18c2df27d29e5355bd0532"
+governance_sha: "494ce4b"
 content_version: "cd45303ac836"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Du kanske minns att repeat-loopen egentligen inte finns i JavaScript. Den är bara något vi lagt till för att göra livet lite enklare för dig medan vi kommer igång.

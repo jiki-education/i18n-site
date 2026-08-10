@@ -2,14 +2,14 @@
 lang: "it"
 type: "concept"
 slug: "updating-dictionaries"
-title: "Modificare i dizionari"
+title: "Aggiornare i dizionari"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-dictionaries/source.md"
-en_md5: "254912c3c672aec40b2729cd005fb1a7"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/updating-dictionaries/page.md"
+en_md5: "5dfff7e37d863711be783b2fbe0873a4"
+governance_sha: "494ce4b"
 content_version: "0462d8d05909"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Sai come creare un dizionario e ottenere valori al suo interno. Ma cosa succede se i dati cambiano? A un certo punto, invecchierò. Non avrò più `42`, ma `43`.

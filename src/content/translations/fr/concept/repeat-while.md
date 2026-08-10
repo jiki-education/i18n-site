@@ -2,14 +2,14 @@
 lang: "fr"
 type: "concept"
 slug: "repeat-while"
-title: "La boucle repeat sans nombre"
+title: "Utiliser `repeat` sans nombre de répétitions"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/repeat-while/page.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "84303b0"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "82cd12e94552"
-published_at: "2026-08-08"
+published_at: "2026-08-10"
 ---
 
 Jusqu'ici, quand tu as utilisé la boucle repeat, tu as toujours précisé un nombre qui indique combien de fois répéter. Répéter cinq fois, 10 fois, 40 fois. Parfois, tu as même utilisé une variable pour ça. Mais tu as toujours dit à Jiki exactement combien de fois répéter la boucle. Pourtant, il arrive qu'on ne sache pas à l'avance combien de fois répéter. Pense au labyrinthe. Tout au début de ce cours, tu as fait sortir le personnage du labyrinthe en écrivant chaque déplacement un par un. Tu pouvais voir le labyrinthe, compter les pas et écrire exactement le bon nombre de déplacements.

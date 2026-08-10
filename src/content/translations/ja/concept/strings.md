@@ -2,14 +2,14 @@
 lang: "ja"
 type: "concept"
 slug: "strings"
-title: "文字列"
+title: "文字列入門"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/strings/source.md"
-en_md5: "89b04f3849f9388a46734924f35c913c"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ja/curriculum/concepts/strings/page.md"
+en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
+governance_sha: "494ce4b"
 content_version: "ef707b7676b7"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 数値を使いたいときは、その数値をそのまま書けば、Jikiは理解してくれます。でも、文字や単語、文章を使いたいときはどうでしょう？　たとえば、`rectangle`（長方形）関数や`circle`（円）関数で、色を指定する入力を追加したとします。機械に色を入れるにはどう書けばいいのでしょうか？　単に`green`（緑）や`blue`（青）という単語を書くと、Jikiは棚の上の機械を指していると思い、「greenという機械はありません。どうすればいいかわかりません」と言ってしまいます。

@@ -2,14 +2,14 @@
 lang: "sr"
 type: "concept"
 slug: "repeat-while"
-title: "Ponavljanje bez broja"
+title: "Korišćenje `repeat`-a bez broja ponavljanja"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat-while/source.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/repeat-while/page.md"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "6706e0ff90d2"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Dosad, kad god koristiš `repeat` petlju, uvek navodiš broj koji kaže koliko puta treba da se ponovi. Ponovi pet puta, 10 puta, 40 puta. Ponekad za ovo koristiš i promenljivu. Ali Jikiju uvek tačno kažeš koliko puta da ponovi petlju. Međutim, ponekad ne znamo unapred koliko puta treba ponoviti. Razmisli o lavirintu. Još na samom početku ovog kursa, rešavaš lavirint tako što napišeš konkretne poteze. Možeš da vidiš lavirint, izbrojiš korake i napišeš tačan broj poteza.

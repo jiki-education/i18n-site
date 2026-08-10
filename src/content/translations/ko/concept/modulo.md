@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "modulo"
-title: "나머지"
+title: "`%` 연산자로 나머지 구하기"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/modulo/source.md"
-en_md5: "fe49222bd3f3a019dd9f74a960c5dede"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/modulo/page.md"
+en_md5: "4955abecb626b8eff02ee7484e2065dd"
+governance_sha: "494ce4b"
 content_version: "8e3e432421a7"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 지금까지 덧셈, 뺄셈, 곱셈, 나눗셈을 산술 계산에 사용해 왔어요. 이제 하나 더, 나머지(영어: _remainder_) 연산자를 소개할게요.

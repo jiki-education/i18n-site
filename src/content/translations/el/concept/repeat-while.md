@@ -2,14 +2,14 @@
 lang: "el"
 type: "concept"
 slug: "repeat-while"
-title: "Επανάληψη χωρίς μέτρημα"
+title: "Χρήση του `repeat` χωρίς μέτρημα"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat-while/source.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/repeat-while/page.md"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "5579b053ebe6"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 Μέχρι τώρα, όποτε χρησιμοποιούσες τον βρόχο `repeat`, πάντα έδινες έναν αριθμό που λέει πόσες φορές να επαναλάβεις. Επανάλαβε πέντε φορές, 10 φορές, 40 φορές. Κάποιες φορές χρησιμοποίησες και μια μεταβλητή για να το κάνεις αυτό. Όμως πάντα έλεγες στον Jiki ακριβώς πόσες φορές να επαναλάβει τον βρόχο. Ωστόσο, μερικές φορές δεν ξέρουμε από πριν πόσες φορές θα χρειαστεί να επαναλάβουμε. Σκέψου τον λαβύρινθο. Στην αρχή αυτού του μαθήματος, έλυσες τον λαβύρινθο γράφοντας συγκεκριμένες κινήσεις. Μπορούσες να δεις τον λαβύρινθο, να μετρήσεις τα βήματα και να γράψεις τον σωστό αριθμό κινήσεων.

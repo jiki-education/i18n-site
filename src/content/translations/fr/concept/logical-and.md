@@ -2,14 +2,14 @@
 lang: "fr"
 type: "concept"
 slug: "logical-and"
-title: "Le mot-clé `and`"
+title: "L'opérateur `&&` (ET)"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/logical-and/page.md"
-en_md5: "6ea0de65a81d8e5c8d2eb89f3db29705"
-governance_sha: "cd45949"
+en_md5: "cef8d76c4235e85573c3eeede294ab72"
+governance_sha: "494ce4b"
 content_version: "7c4c03856772"
-published_at: "2026-08-09"
+published_at: "2026-08-10"
 ---
 
 Si je te demandais d'ouvrir la porte seulement aux personnes de plus de 20 ans, tu saurais sans doute quoi faire. Mais que faire si tu devais vérifier qu'une personne a plus de 20 ans _et_ qu'elle porte la bonne tenue ? Il faudrait alors vérifier deux conditions différentes à la fois. Comment ferais-tu ?

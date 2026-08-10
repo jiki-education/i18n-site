@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "modulo"
-title: "Remainder"
-en_md5: "fe49222bd3f3a019dd9f74a960c5dede"
+title: "Using the `%` Operator for Remainders"
+en_md5: "4955abecb626b8eff02ee7484e2065dd"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/modulo/source.md"
-captured_at: "2026-08-03"
+captured_at: "2026-08-10"
 ---
 
 So far, we've used addition, subtraction, multiplication, and division for when we're doing arithmetic. Now we're gonna introduce one more, the <define>remainder</define> operator.

@@ -2,14 +2,14 @@
 lang: "zh-CN"
 type: "concept"
 slug: "repeat-while"
-title: "不设次数的重复"
+title: "不指定次数使用`repeat`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/repeat-while/source.md"
-en_md5: "5902e86c82b7bfe9ca519f9bdf8650ad"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/zh-CN/curriculum/concepts/repeat-while/page.md"
+en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
+governance_sha: "494ce4b"
 content_version: "f780878f5998"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 到目前为止，每次用 repeat 循环时，你都会指定一个数字，告诉 Jiki 要重复多少次。重复五次，十次，四十次。有时你也会用变量来做这件事。但不管怎样，你总是明确地告诉 Jiki 循环要执行多少次。然而，有些时候我们事先并不知道要重复多少次。想想迷宫。在这门课最开始的时候，你是通过写出具体的移动指令来解决迷宫的。你能看到迷宫，数出步数，然后写下正确数量的移动指令。

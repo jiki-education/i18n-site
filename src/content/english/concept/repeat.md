@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "repeat"
-title: "Repeat Loop"
-en_md5: "8ae468aa2be428f22b6eef47b3bdea68"
+title: "The `repeat` Loop"
+en_md5: "f37a63911f75934656cbf04a38ff2b60"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/repeat/source.md"
-captured_at: "2026-07-31"
+captured_at: "2026-08-10"
 ---
 
 So far, everything has been written in a linear way, where Jiki follows each instruction in order from top to bottom.

@@ -2,14 +2,14 @@
 lang: "pt-BR"
 type: "concept"
 slug: "else-if"
-title: "Else If"
+title: "Encadeando cláusulas `else if`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else-if/source.md"
-en_md5: "5e1c9b2e77abbd41708f4c33b9aabd8f"
-governance_sha: "e4d40de"
+source_repo: "i18n"
+source_path: "locales/pt-BR/curriculum/concepts/else-if/page.md"
+en_md5: "64274945347d47d67baf3378cf219c9b"
+governance_sha: "494ce4b"
 content_version: "23d860f8970f"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Você já viu como `if` e `else` te dão dois caminhos: fazer uma coisa quando a condição é verdadeira e fazer outra quando ela é falsa. Mas e se você tiver mais de duas possibilidades?

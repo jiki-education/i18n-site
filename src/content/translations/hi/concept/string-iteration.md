@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "string-iteration"
-title: "स्ट्रिंग के हर अक्षर पर लूप चलाना"
+title: "`for ... of` से स्ट्रिंग के हर अक्षर पर लूप चलाना"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-iteration/source.md"
-en_md5: "584ac0a187a9e5244b84f0fd417494f3"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/string-iteration/page.md"
+en_md5: "09f399cc3f52b89380d3ed23fc6be513"
+governance_sha: "494ce4b"
 content_version: "1169abae5d56"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 आप चौकोर ब्रैकेट की मदद से स्ट्रिंग के किसी एक अक्षर तक पहुँच सकते हैं। अब हम देखेंगे कि स्ट्रिंग पर लूप कैसे चलाया जाता है और एक-एक करके हर अक्षर को कैसे निकाला जाता है।

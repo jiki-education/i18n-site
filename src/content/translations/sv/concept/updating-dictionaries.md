@@ -2,14 +2,14 @@
 lang: "sv"
 type: "concept"
 slug: "updating-dictionaries"
-title: "Ändra uppslagstabeller"
+title: "Uppdatera uppslagstabeller"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-dictionaries/source.md"
-en_md5: "254912c3c672aec40b2729cd005fb1a7"
-governance_sha: "471034c"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/updating-dictionaries/page.md"
+en_md5: "5dfff7e37d863711be783b2fbe0873a4"
+governance_sha: "494ce4b"
 content_version: "c6c6a40b0ee0"
-published_at: "2026-08-03"
+published_at: "2026-08-10"
 ---
 
 Du vet hur du skapar en uppslagstabell och hämtar värden ur den. Men vad händer om datan ändras? Någon gång blir jag ju äldre. Då är jag inte `42` längre, utan `43`.

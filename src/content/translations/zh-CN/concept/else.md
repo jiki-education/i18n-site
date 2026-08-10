@@ -2,19 +2,19 @@
 lang: "zh-CN"
 type: "concept"
 slug: "else"
-title: "Else"
+title: "`else`关键字"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/else/source.md"
-en_md5: "4dd08e94d86dd11cd54793cf64008e3d"
-governance_sha: "c80036b"
-content_version: "0c8d56e63251"
-published_at: "2026-08-06"
+source_repo: "i18n"
+source_path: "locales/zh-CN/curriculum/concepts/else/page.md"
+en_md5: "a3d7b0672bd9c022675831044c5610ed"
+governance_sha: "494ce4b"
+content_version: "46ee43fa4f11"
+published_at: "2026-08-10"
 ---
 
 `if` 语句让你检查条件，并只在条件为真时运行代码。现在，让我们介绍 `if` 的最佳搭档：`else`。
 
-对于 `if` 语句（英语：if statement），Jiki 会在条件为真时运行代码块，为假时跳过。但如果你希望 Jiki 在条件为真时做一件事，为假时做另一件事呢？这就是 `else` 的作用。我们可以在 `if` 的右大括号后面放一个 `else` 子句（英语：else clause），如果 `if` 的条件为假，Jiki 就会运行它。回到俱乐部保安的例子，现在我们有了开门或拒绝入场的选项，这大概比之前完全无视他们要好。可以把它想象成一条分岔路。Jiki 来到岔路口，检查条件，然后如果为真走一条路，为假走另一条。但他绝不会两条路都走。
+对于 `if` 语句（英文：if statement），Jiki 会在条件为真时运行代码块，为假时跳过。但如果你希望 Jiki 在条件为真时做一件事，为假时做另一件事呢？这就是 `else` 的作用。我们可以在 `if` 的右大括号后面放一个 `else` 子句（英文：else clause），如果 `if` 的条件为假，Jiki 就会运行它。回到俱乐部保安的例子，现在我们有了开门或拒绝入场的选项，这大概比之前完全无视他们要好。可以把它想象成一条分岔路。Jiki 来到岔路口，检查条件，然后如果为真走一条路，为假走另一条。但他绝不会两条路都走。
 
 ```javascript
 if (age >= 21) {

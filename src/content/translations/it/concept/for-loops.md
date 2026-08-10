@@ -2,14 +2,14 @@
 lang: "it"
 type: "concept"
 slug: "for-loops"
-title: "I cicli for"
+title: "Capire i cicli `for`"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/for-loops/source.md"
-en_md5: "e96f2e5a4106a88cfbca449c93a26108"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/for-loops/page.md"
+en_md5: "0ad4155ded18c2df27d29e5355bd0532"
+governance_sha: "494ce4b"
 content_version: "a7940d6bed93"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 forum_topic_id: 988
 ---
 

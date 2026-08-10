@@ -2,14 +2,14 @@
 lang: "hi"
 type: "concept"
 slug: "for-loops"
-title: "`for` लूप"
+title: "`for` लूप को समझना"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/for-loops/source.md"
-en_md5: "e96f2e5a4106a88cfbca449c93a26108"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/for-loops/page.md"
+en_md5: "0ad4155ded18c2df27d29e5355bd0532"
+governance_sha: "494ce4b"
 content_version: "bf8733e007c2"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 आपको शायद याद होगा कि `repeat` लूप वास्तव में JavaScript में नहीं होता। यह सिर्फ एक अतिरिक्त चीज़ है, जो शुरुआत में आपकी ज़िंदगी थोड़ी आसान बनाने के लिए जोड़ी गई है।

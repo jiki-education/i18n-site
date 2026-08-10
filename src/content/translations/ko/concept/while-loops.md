@@ -2,14 +2,14 @@
 lang: "ko"
 type: "concept"
 slug: "while-loops"
-title: "`while`문"
+title: "`while`문 이해하기"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/while-loops/source.md"
-en_md5: "daef89c6551b1d1cbc0e58668fd368bc"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/ko/curriculum/concepts/while-loops/page.md"
+en_md5: "aeceed2abb1434307cfd7c9a0df55c81"
+governance_sha: "494ce4b"
 content_version: "1de841a7ab7f"
-published_at: "2026-08-06"
+published_at: "2026-08-10"
 ---
 
 다음으로 알아볼 루프는 `while`문(영어: _while_)이에요.

@@ -4,12 +4,12 @@ type: "concept"
 slug: "string-concatenation"
 title: "Συνένωση συμβολοσειρών"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-concatenation/source.md"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/string-concatenation/page.md"
 en_md5: "0e6c7a941a1fb1161445da27a4d7e818"
-governance_sha: "c80036b"
-content_version: "528139e21b44"
-published_at: "2026-08-06"
+governance_sha: "631519a"
+content_version: "cbc3f90b4266"
+published_at: "2026-08-10"
 ---
 
 Ξέρεις ήδη τι είναι οι συμβολοσειρές. Είναι χαρτάκια με κείμενο πάνω τους.
@@ -18,9 +18,9 @@ published_at: "2026-08-06"
 
 Υπάρχουν δύο τρόποι.
 
-Η πρώτη ονομάζεται _string concatenation_ (συνένωση συμβολοσειρών), που είναι ένας φανταχτερός και λίγο μπερδευτικός τρόπος να πεις πρόσθεση δύο συμβολοσειρών.
+Ο πρώτος ονομάζεται _string concatenation_ (συνένωση συμβολοσειρών), που είναι ένας φανταχτερός και λίγο μπερδευτικός τρόπος να πεις πρόσθεση δύο συμβολοσειρών.
 
-Φαντάσου ότι έχεις δύο λέξεις, την `"hello"` (γεια) και την `"world"` (κόσμος), και θέλεις να δημιουργήσεις μια συμβολοσειρά που να περιέχει το `"hello world"`.
+Φαντάσου ότι έχεις δύο λέξεις, την `"hello"` (γεια) και την `"world"` (κόσμος), και θέλεις να δημιουργήσεις μια συμβολοσειρά που να περιέχει το `"hello world"` (γειά κόσμε).
 
 Θα μπορούσες απλώς να γράψεις το `"hello world"` ως μία συμβολοσειρά, αλλά θα μπορούσες επίσης να γράψεις `"hello " + "world"`, και αυτό θα σου έδινε την ίδια συμβολοσειρά.
 

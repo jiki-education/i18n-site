@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-10",
-  "governance_sha": "17d8781",
-  "approved": 461,
+  "governance_sha": "dddbbe1",
+  "approved": 463,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -1322,7 +1322,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 61,
+      "approved": 63,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1698,8 +1698,8 @@
         },
         {
           "key": "exercise/cityscape-skyline",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1372,
+          "status": "approved"
         },
         {
           "key": "exercise/collatz-conjecture",
@@ -1793,8 +1793,8 @@
         },
         {
           "key": "exercise/look-around",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1371,
+          "status": "approved"
         },
         {
           "key": "concept/scenarios",

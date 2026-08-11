@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-11",
-  "governance_sha": "f06aaed",
-  "approved": 484,
+  "governance_sha": "502c219",
+  "approved": 486,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -1978,7 +1978,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 61,
+      "approved": 63,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -2219,8 +2219,8 @@
         },
         {
           "key": "exercise/sprouting-flower",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1398,
+          "status": "approved"
         },
         {
           "key": "exercise/random-salad",
@@ -2274,8 +2274,8 @@
         },
         {
           "key": "exercise/bouncer-wristbands",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1397,
+          "status": "approved"
         },
         {
           "key": "exercise/golf-shot-checker",

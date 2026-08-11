@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "57ddf51"
-content_version: "c2b01201f210"
+governance_sha: "5a5406e"
+content_version: "4e5c9b8ae7d7"
 published_at: "2026-08-11"
-term_count: 90
+term_count: 91
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -100,6 +100,7 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | pathway | parcours | fr | A structured learning sequence. Deliberately distinct from _voie_ (track) below. |
 | track (curriculum path) | voie | fr | Confirmed by a native speaker (2026-08-06), replacing the earlier unconfirmed _filière_. Deliberately distinct from _parcours_ (pathway) above. Feminine: _une voie_, _la voie_, e.g. "Choisis ta voie !". |
 | syllabus | programme (du cours) | fr | Note the deliberate overlap with _curriculum → programme_; disambiguate with "du cours" when both appear in the same context. |
+| challenge (platform content type) | défi | fr | Confirmed by a native speaker (2026-08-11, topic 314) and by the app's own French copy, which already says it: the sidebar item _Défis_, the heading _Défis associés_, _Défis récents_, and _Relève des **défis** plus difficiles_. Gender: _un défi_, plural _des défis_. The Jiki content type, capitalised _Défis_ where the English capitalises Challenges. Distinct from `puzzle`, which uses _casse-tête_/_énigme_/_défi_ depending on context: see that row, and avoid _défi_ for the puzzle sense wherever the platform sense could be read on the same screen. |
 | Not started (progress status) | Non commencé / Non commencés | fr | Never _Pas commencé_. Agree in number with what the label describes: singular _Non commencé_ on a status badge for one item (e.g. one challenge), plural _Non commencés_ on a filter tab covering a list of items. |
 
 ### Exercise world vocabulary
@@ -122,7 +123,7 @@ so a term that drifts between two exercises drifts inside one screen.
 | penguin | pingouin | fr | Confirmed by native speakers (2026-08-04). Gender: _le pingouin_. The everyday French word, matching the cartoon drawing the exercise uses, not the zoologically stricter _manchot_. |
 | to fill/plug (a hole) | combler | fr | Confirmed by a native speaker (2026-08-06), replacing the earlier unconfirmed _boucher_. Past participle _comblé_ agrees with its noun ("le trou... comblé"). |
 | to cover (a hole with a shape) | recouvrir | fr | Confirmed by a native speaker (2026-08-06), replacing the earlier unconfirmed _couvrir_ in this context. |
-| puzzle (the thing the learner has to solve) | casse-tête / énigme / défi (context decides) | fr | Confirmed by a native speaker (2026-08-11, topic 314). **Never _puzzle_**, whose ordinary French sense is a jigsaw, which misreads badly where the exercise also has a board or pieces. Pick by context: _casse-tête_ where the point is a brain-teaser to work out (_un petit casse-tête de logique_, _un célèbre casse-tête mathématique_); _énigme_ where the framing is a mystery or an investigation (_utiliser des fonctions pour résoudre des énigmes_); _défi_ where it simply means the task the learner is being set (_relève ce défi en 5 lignes de code_). Where the sense is just "this exercise", _exercice_ is also fine. One document picks one of them and stays with it. _défi_ is also the app's word for a platform Challenge, so avoid it where both senses could be read on the same screen. |
+| puzzle (the thing the learner has to solve) | casse-tête / énigme / défi (context decides) | fr | Confirmed by a native speaker (2026-08-11, topic 314). **Never _puzzle_**, whose ordinary French sense is a jigsaw, which misreads badly where the exercise also has a board or pieces. Pick by context: _casse-tête_ where the point is a brain-teaser to work out (_un petit casse-tête de logique_, _un célèbre casse-tête mathématique_); _énigme_ where the framing is a mystery or an investigation (_utiliser des fonctions pour résoudre des énigmes_); _défi_ where it simply means the task the learner is being set (_relève ce défi en 5 lignes de code_). Where the sense is just "this exercise", _exercice_ is also fine. One document picks one of them and stays with it. _défi_ is also the app's word for a platform Challenge (see the `challenge (platform content type)` row under Platform & curriculum vocabulary), so avoid it where both senses could be read on the same screen. |
 | skyline (city) | la ligne d'horizon | fr | Provisional (orchestrator call, 2026-08-10), pending @fleurdelys44. Never the anglicism _skyline_. Recurs across the `cityscape` exercises and the Cityscape project, so do not alternate with _profil urbain_ or _panorama urbain_. Where the phrase is "a skyline of buildings" rather than the city's own skyline, _une silhouette de bâtiments_ reads better than repeating _ligne d'horizon_. |
 
 ## Keep in English
@@ -182,6 +183,108 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-11: "challenge" (platform content type) → _défi_ gets its own row (settled)
+
+**Decided by:** mirina, forum topic 314 (https://forum.jiki.io/t/314), post 90.
+**Status:** settled.
+**Terms affected:** new row `challenge (platform content type)` → _défi_ in
+`languages/fr/glossary.md` (Platform & curriculum vocabulary); the existing
+`puzzle (the thing the learner has to solve)` row now cross-references it instead of only
+mentioning the collision in passing.
+**Files affected:** `languages/fr/glossary.md`, `languages/fr/glossary-notes.md`.
+
+**What was asked.** Earlier the same day, the `puzzle` resolution settled that French has
+no single word for "puzzle" and picks _casse-tête_/_énigme_/_défi_ by context. That left an
+open question: _défi_ is also the app's own word for the platform content type "Challenge",
+so does "challenge" deserve a glossary row of its own rather than a passing note inside the
+`puzzle` row?
+
+**mirina's answer.** She agreed, on one condition: that "challenge" has a specific meaning
+that flows throughout the course, rather than being an ordinary English word used loosely.
+
+**Why the condition is already satisfied.** It is not a judgement call: the French app copy
+already treats Challenge as a named content type and already renders it _défi_. The
+`fr` app catalog has the sidebar item _Défis_, the section headings _Défis associés_ and
+_Défis récents_, the page title _Défis_, and the marketing line _Relève des **défis** plus
+difficiles_. A content type the learner navigates by name, in the sidebar, is exactly the
+kind of term that has to be fixed once and never drift, so it earns a row.
+
+**How the two rows now relate.** They are separate senses of one French word, and the
+glossary says so from both sides: `challenge` is the platform noun and is always _défi_;
+`puzzle` picks its word by context and may land on _défi_, but must not where the platform
+sense could be read on the same screen.
+
+### 2026-08-11: "partner in crime" → _compagnon_ on `concept/else` (settled, reverses _acolyte_)
+
+**Decided by:** orchestrator, on the strength of two native speakers' picks, forum topic
+1173 (https://forum.jiki.io/t/1173): williamapc ranked _compagnon_ first (post 4086) and
+mirina's final word was _compagnon_ (posts 4352, 4353). resu-xunil, who argued for
+_acolyte_, said twice he was happy with whichever word won (posts 4103, 3316) and himself
+agreed _acolyte_ is not in younger learners' everyday lexicon (post 4355).
+**Status:** settled. This reverses the earlier _acolyte_ pick, which had been marked
+resolved on 2026-08-10 (post 4235) after resu-xunil confirmed it; mirina's review, already
+written before that mark, arrived the next day and reopened the question with an argument
+nobody had answered.
+**Terms affected:** none; still no glossary row. "partner in crime" occurs exactly once in
+the whole curriculum (`curriculum/src/concepts/else/source.md`), so it does not earn one.
+**Files affected:** `../i18n/locales/fr/curriculum/concepts/else/page.md`,
+`languages/fr/concept/else.md`.
+
+The sentence is now _Découvrons maintenant son compagnon, l'instruction `else`
+(« sinon »)._, keeping resu-xunil's possessive construction (post 3307), which carries the
+"`else` cannot exist without `if`" idea regardless of which noun follows.
+
+**Why _compagnon_ won.** The deciding rule is naturalness for the actual audience: Jiki
+teaches absolute beginners, many of them young, so the register has to be everyday spoken
+French, not literary French. _compagnon_ is understood across ages and education levels
+(mirina), carries the belong-together, go-as-a-pair sense (_les compagnons de toujours_),
+and was independently the first choice of both native speakers who ranked the candidates.
+
+**Why the alternatives lost.** _acolyte_ and _compère_ are the closest literal matches for
+"partner in crime" and _acolyte_ additionally carries the subordinate-helper sense
+resu-xunil valued (CNRTL: "companion and usual servant of a person to whom he is
+subordinate"), but both are formal/literary and rare in everyday speech, especially among
+younger speakers, which is precisely the audience this page is written for. mirina's
+concession that _acolyte_ is "by far the best" match is about the English idiom in
+isolation, not about the sentence's readers, and the English idiom is itself playful rather
+than technical, so a close idiomatic match is worth less here than an accessible word.
+_camarade_ has the right register but misses the mutual dependency. _partenaire_ (mirina's
+intermediate proposal) captures the pairing well but reads as a work/sport partner and was
+not her final pick. _complice_ was the original draft wording and nobody defended it.
+
+**The badge coincidence is not an argument.** resu-xunil noticed (post 4355, screenshot in
+post 4201) that Jiki's own achievement badge already reads _Acolyte_, and presented it
+lightly, as a coincidence. It carries no consistency cost either way: that badge translates
+the English **Sidekick**, a different word in a different place, where _Acolyte_ remains a
+good rendering. The badge is unchanged.
+
+### 2026-08-11: `encrypt` → _chiffrer_, `encode` → _encoder_ (cryptography vs format)
+
+**Decided by:** resu-xunil, native speaker, on forum topic 314
+(https://forum.jiki.io/t/314), post 86, while reviewing `caesar-cipher`.
+**Status:** settled.
+**Terms affected:** `encrypt` / `encode`. No glossary row: the split is exercise-scoped and
+recorded as a terminology bullet in `languages/fr/exercise/caesar-cipher.md`.
+**Files affected:** `languages/fr/exercise/caesar-cipher.md` only.
+
+French keeps a strict distinction that English blurs. _Chiffrer_ is cryptography: a key or
+secret algorithm turns readable text into unreadable text, with the intent to hide it (the
+cipher itself is _un chiffre_). _Encoder_ is representation only: Base64, UTF-8, ASCII, URL
+encoding, run-length encoding, where anyone holding the rule can read the result. Translating
+"encode a message" literally in a Caesar cipher context is a technical mistake in French: a
+French developer reads it as "convert this to Base64". So the exercise's prose uses
+_chiffrer / chiffré / chiffre_ throughout, while the identifiers `encode(message, shift)` and
+`encodeMessage` stay English because they are code. _Encoder_ remains correct everywhere the
+sense really is format-only, so this is not a sweep.
+
+williamapc added a usage note (post 87) that does not change the decision. In everyday
+professional French, especially among practitioners under 35, _encrypter / décrypter_ (and
+_crypter_) are what people actually say, and _encrypter_ now has a Larousse entry; he reports
+meeting only one developer in twenty years who said _chiffrer_. But his own citation settles
+it the other way: Larousse calls _chiffrer_ "le terme technique correct en français, à
+préférer à l'anglicisme crypter". Jiki teaches the correct technical term, so _chiffrer_
+stands. Recorded here as real-world colour in case the choice is ever revisited.
 
 ### 2026-08-11: `puzzle` → _casse-tête_ / _énigme_ / _défi_, never _puzzle_
 
@@ -307,6 +410,13 @@ would read as the horizon itself being made of buildings.
 
 The `X`/`Y` capitalisation also asked for on this topic is not a new decision; it is the rule
 already settled on 2026-08-08 below, applied to another exercise.
+
+On 2026-08-11, applying the row to `cityscape-skyscraper` (topic 1379) replaced _panoramas
+urbains_ with _lignes d'horizon urbaines_. resu-xunil said he had noticed the varied wording
+and liked that it was not repetitive, but deferred to consistency ("If you need consistancy,
+go ahead"). So the row stands, with a native speaker's stylistic preference on record against
+it: if it is ever revisited, the question to weigh is whether one page's prose variety is
+worth a learner meeting the concept under two names.
 
 ### 2026-08-08: « en dur » always in guillemets; X/Y/Z capitalised in prose parentheticals
 
@@ -624,7 +734,8 @@ are proposals to agree or correct.
   _Lève-tôt_, First Steps → _Premiers pas_, Maze Navigator → _Explorateur de labyrinthe_
   (following the guide's "explorer le labyrinthe" phrasing; French doesn't "solve" a
   maze), Member → _Membre_, Night Owl → _Oiseau de nuit_, Premium → _Premium_ (kept
-  English, matching _membre Premium_ in the app; written with `--allow-english`),
+  English, matching _membre Premium_ in the app; needs its own glossary row, since that
+  is now what lets the writer accept a value identical to English),
   Scenario Handler → _Maître des scénarios_, Sidekick → _Acolyte_ (matching the
   2026-08-04 "partner in crime" → _acolyte_ entry below), Townsfolk → _Villageois_.
 - **maze_navigator.description** quotes the lesson title as _« Évade-toi du labyrinthe »_,

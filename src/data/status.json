@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-11",
-  "governance_sha": "d954ab3",
-  "approved": 473,
+  "governance_sha": "9195a96",
+  "approved": 474,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 70,
+      "approved": 71,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1192,8 +1192,8 @@
         },
         {
           "key": "exercise/triangle",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1384,
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-nested-repeat",

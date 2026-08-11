@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-11",
-  "governance_sha": "2823e05",
-  "approved": 491,
+  "governance_sha": "662db3f",
+  "approved": 492,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -1322,7 +1322,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 68,
+      "approved": 69,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1668,8 +1668,8 @@
         },
         {
           "key": "concept/colors",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1404,
+          "status": "approved"
         },
         {
           "key": "concept/continue",

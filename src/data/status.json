@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-11",
-  "governance_sha": "662db3f",
+  "governance_sha": "43fcfe5",
   "approved": 492,
   "disapproved": 1,
   "total": 1830,
@@ -2509,7 +2509,7 @@
         },
         {
           "key": "exercise/hello",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -2544,7 +2544,7 @@
         },
         {
           "key": "exercise/look-around",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -2579,7 +2579,7 @@
         },
         {
           "key": "exercise/lower-pangram",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -2594,7 +2594,7 @@
         },
         {
           "key": "exercise/hamming",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -2614,7 +2614,7 @@
         },
         {
           "key": "exercise/isbn-verifier",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {

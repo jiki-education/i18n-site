@@ -3,10 +3,10 @@ lang: "el"
 name: "Greek"
 family: null
 stage: "reviewing"
-governance_sha: "7c6547d"
-content_version: "9e2e56861ed9"
-published_at: "2026-08-05"
-term_count: 66
+governance_sha: "ef403cc"
+content_version: "a98469fe4574"
+published_at: "2026-08-11"
+term_count: 70
 category_id: 265
 forum_topic_id: 497
 video_player_forum_topic_id: 747
@@ -69,6 +69,8 @@ These are terms where the Greek is used in prose, so the "Use (el/en)" column is
 | loop | βρόχος | el | The general "repetition" concept is `επανάληψη`; keep `βρόχος` for the loop construct itself. |
 | for loop | `for` βρόχος | el | Keep `for` in backticks (real keyword) + `βρόχος`. |
 | while loop | `while` βρόχος | el | As above. |
+| nested loop(s) | εμφωλευμένος βρόχος / εμφωλευμένοι βρόχοι | el | The CS-standard word, as used in Greek programming courses and textbooks. **Never `φωλιασμένος/-η/-ο`**, which is the colloquial, spatial "nested" (a bird's nest, a place tucked into a landscape) and is wrong for this sense. Applies to anything nested in code, not just loops: `εμφωλευμένη εντολή if`, `εμφωλευμένος κώδικας`. |
+| Nested Loop (concept / heading) | Εμφωλευμένη Επανάληψη | el | The title-case form for the concept and its headings, built on `επανάληψη` (the repetition concept) rather than `βρόχος`. |
 | class | κλάση | el | Not the older, more generic `τάξη`. |
 
 ### Platform & curriculum
@@ -91,6 +93,8 @@ These are terms where the Greek is used in prose, so the "Use (el/en)" column is
 | vs (versus, between two choices/scenarios) | **εναντίον** | el | Unconfirmed draft (agent, 2026-07-31). From the rock-paper-scissors exercise. |
 | golf tee | **πάσσαλος του γκολφ** | el | Confirmed by a native speaker (astyanax, 2026-08-03). Never left as bare English `tee`. `γκολφ` is transliterated here, matching `μπάλα γκολφ` in the same content. |
 | meridiem (the `am`/`pm` indicator) | **ένδειξη μεσημβρίας** | el | Confirmed by a native speaker (astyanax, 2026-08-03). Never left as bare English `meridiem` in prose. Inflect the head noun and keep `μεσημβρίας` fixed in the genitive: `τη σωστή ένδειξη μεσημβρίας`, never `τη σωστή μεσημβρία`. The code identifier `meridiem` (in `displayTime(hour, minutes, meridiem)`) and the catalog key of the same name stay English. |
+| infiltration | **παρείσφρηση** | el | Confirmed by a native speaker (astyanax, 2026-08-07). Never `διείσδυση`, which carries an unwanted sexual innuendo. Feminine noun, same gender pattern as `διείσδυση` (`η παρείσφρηση`). |
+| record (a data record) | **καταγραφή** | el | Not `αρχείο`, which reads as "a file". Feminine noun (`μία καταγραφή`). |
 
 ### Drawing & color (exercise family)
 
@@ -152,6 +156,100 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-11: "nested" is "εμφωλευμένος", never the colloquial "φωλιασμένος"
+
+**Decided by:** astyanax, the authoritative native-speaker reviewer for Greek, on
+https://forum.jiki.io/t/1399/1.
+**Status:** native-speaker-confirmed, settled.
+**Terms affected:** `nested loop(s)` (added, _εμφωλευμένος βρόχος_), `Nested Loop (concept /
+heading)` (added, _Εμφωλευμένη Επανάληψη_).
+**Files affected:** `locales/el/curriculum/exercises/checkerboard/messages.json` (one
+occurrence), `locales/el/curriculum/exercises/lower-pangram/instructions.md` (two
+occurrences), `locales/el/interpreters/javascript/messages.json` (two occurrences, the
+"nested code" sense).
+
+Astyanax flagged "Χρησιμοποίησε φωλιασμένους βρόχους" in the `checkerboard` exercise: he
+said `φωλιασμένοι` "isn't used in CS courses or books (it's sometimes used to describe
+places, context not relevant to us)". It is the colloquial, spatial sense of "nested", the
+bird's-nest one. The CS-standard Greek term is `εμφωλευμένος`, and he gave both the running
+form (`εμφωλευμένους βρόχους`) and the concept/heading form (`Εμφωλευμένη Επανάληψη`).
+
+Most Greek content already used `εμφωλευμένος` (`build-wall`,
+`space-invaders-nested-repeat`, the `logical-and` concept page, the `and-or` subtitles), so
+this settles a real inconsistency rather than reversing a house choice. The rule is not
+loop-specific: `φωλιασμένος/-η/-ο` is wrong for anything nested in code, which is why the
+two interpreter messages about nested code were swept in alongside the exercises.
+
+### 2026-08-10: "record" is "καταγραφή", not "αρχείο" (reads as "file")
+
+**Decided by:** astyanax, the authoritative native-speaker reviewer for Greek, on
+https://forum.jiki.io/t/1345/1.
+**Status:** native-speaker-confirmed, settled.
+**Terms affected:** `record` (added, _καταγραφή_). **Files affected:**
+`locales/el/curriculum/concepts/state/page.md` (one occurrence, fixed).
+
+Astyanax flagged that everywhere the English word "record" (in the data-record sense, as in
+"a record of whether we're traveling left or right") had been rendered as `αρχείο`, that
+reading is wrong: `αρχείο` reads as "a file" to a Greek reader, not as a record of a value.
+He gave the correct rendering himself: `μία καταγραφή`. He noted the rest of the `state`
+page was fine as-is ("The rest is good enough, I don't have anything else to nit-pick
+here"). The page had exactly one occurrence of the pattern, in the second paragraph; it was
+changed from "ένα αρχείο για το αν ταξιδεύουμε αριστερά ή δεξιά" to "μία καταγραφή για το αν
+ταξιδεύουμε αριστερά ή δεξιά". `καταγραφή` is feminine, matching astyanax's `μία καταγραφή`.
+
+### 2026-08-10: Ordinal/referent gender agreement rule added to `guide.md`
+
+**Decided by:** astyanax (native speaker), forum topic 1344 ("[Greek Review] Concept page:
+String Concatenation").
+**Status:** settled. `guide.md` updated with a new imperative bullet under Grammar.
+**Terms affected:** none (grammar rule, not a term row). **Files affected:**
+`locales/el/curriculum/concepts/string-concatenation/page.md`.
+
+The published page read "Υπάρχουν δύο τρόποι. Η πρώτη ονομάζεται..." ("there are two ways.
+The first is called..."), using the feminine ordinal η πρώτη. Astyanax pointed out that "the
+first" refers back to τρόπους (ways), masculine, so it must agree as ο πρώτος. Fixed on the
+page; checked the rest of the file for the same noun/ordinal pairing and found no other
+instance. The underlying rule (an ordinal standing in for an earlier plural noun must agree
+with that noun's gender, not with whichever noun sits nearest it in the English) is general
+enough to recur on any concept page enumerating options with ordinals, so it was written into
+`guide.md`'s Grammar section as its own bullet rather than left as a one-off fix.
+
+The same review also corrected the "hello world" example sentence to add a bracketed Greek
+gloss, `(γειά κόσμε)`, after the `"hello world"` string, matching how the individual words
+`"hello"`/`"world"` are already glossed earlier in the same sentence. Applied as a wording fix
+only; no glossary or guide change follows from it.
+
+### 2026-08-07: "infiltration" is "παρείσφρηση", not "διείσδυση" (unwanted innuendo)
+
+**Decided by:** astyanax, the authoritative native-speaker reviewer for Greek, on
+https://forum.jiki.io/t/1293/1.
+**Status:** native-speaker-confirmed, settled.
+**Terms affected:** `infiltration` (added, _παρείσφρηση_). **Files affected:**
+`locales/el/curriculum/exercises/annalyns-infiltration/instructions.md` (title only; the
+rest of the page was confirmed fine as-is).
+
+Astyanax flagged that the published title, "Η διείσδυση της Annalyn", uses `διείσδυση` in a
+way that carries an unwanted sexual innuendo ("penetration") in Greek. He proposed
+`παρείσφρηση` instead, from the verb `παρεισφρέω` ("to enter by deceit or stealth"), a
+formal-register word that means "infiltration" or "sneaking in" without the innuendo. It is
+feminine, like `διείσδυση`, so the title's `Η ... της Annalyn` structure carries over
+unchanged: `Η παρείσφρηση της Annalyn`.
+
+### 2026-08-06: Translation engine switched to `deepseek`
+
+**Decided by:** astyanax, the authoritative native-speaker reviewer for Greek, on the
+"Alternative translation model" comparison thread (https://forum.jiki.io/t/920).
+**Status:** settled. **Terms affected:** none (engine choice, not a glossary or guide
+change). **Files affected:** none; `tracking.json` already carried the block, this entry
+records the decision behind it.
+
+Jeremy posted an alternative-model rendering of a Greek page alongside the published one and
+asked which read better. astyanax answered that "in general the new version is better... I
+do prefer the new version", and Greek was switched to it.
+
+Greek therefore runs on `deepseek` rather than the `fable` default. This was a genuine
+switch, made on a native speaker's verdict, not on our own judgement or on cost.
 
 ### 2026-08-05: Weekday and month names ARE capitalized (reverses a wrong guide rule)
 

@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "a2a7b93"
-content_version: "96e7ebb02bb3"
-published_at: "2026-08-10"
-term_count: 89
+governance_sha: "57ddf51"
+content_version: "c2b01201f210"
+published_at: "2026-08-11"
+term_count: 90
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -122,6 +122,7 @@ so a term that drifts between two exercises drifts inside one screen.
 | penguin | pingouin | fr | Confirmed by native speakers (2026-08-04). Gender: _le pingouin_. The everyday French word, matching the cartoon drawing the exercise uses, not the zoologically stricter _manchot_. |
 | to fill/plug (a hole) | combler | fr | Confirmed by a native speaker (2026-08-06), replacing the earlier unconfirmed _boucher_. Past participle _comblé_ agrees with its noun ("le trou... comblé"). |
 | to cover (a hole with a shape) | recouvrir | fr | Confirmed by a native speaker (2026-08-06), replacing the earlier unconfirmed _couvrir_ in this context. |
+| puzzle (the thing the learner has to solve) | casse-tête / énigme / défi (context decides) | fr | Confirmed by a native speaker (2026-08-11, topic 314). **Never _puzzle_**, whose ordinary French sense is a jigsaw, which misreads badly where the exercise also has a board or pieces. Pick by context: _casse-tête_ where the point is a brain-teaser to work out (_un petit casse-tête de logique_, _un célèbre casse-tête mathématique_); _énigme_ where the framing is a mystery or an investigation (_utiliser des fonctions pour résoudre des énigmes_); _défi_ where it simply means the task the learner is being set (_relève ce défi en 5 lignes de code_). Where the sense is just "this exercise", _exercice_ is also fine. One document picks one of them and stays with it. _défi_ is also the app's word for a platform Challenge, so avoid it where both senses could be read on the same screen. |
 | skyline (city) | la ligne d'horizon | fr | Provisional (orchestrator call, 2026-08-10), pending @fleurdelys44. Never the anglicism _skyline_. Recurs across the `cityscape` exercises and the Cityscape project, so do not alternate with _profil urbain_ or _panorama urbain_. Where the phrase is "a skyline of buildings" rather than the city's own skyline, _une silhouette de bâtiments_ reads better than repeating _ligne d'horizon_. |
 
 ## Keep in English
@@ -181,6 +182,43 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-11: `puzzle` → _casse-tête_ / _énigme_ / _défi_, never _puzzle_
+
+**Decided by:** resu-xunil, native speaker, on forum topic 314
+(https://forum.jiki.io/t/314), post 84, raising it after replacing the word repeatedly in his
+own reviews.
+**Status:** settled for the "never _puzzle_" half; the three-way split is his own proposal
+("défi, or another term depending on the context") shaped into a row.
+**Terms affected:** `puzzle`.
+**Files affected:** `glossary.md` (Exercise world vocabulary). No translated content was
+touched: the five French items that render the word (`checkerboard`, `gold-panning`,
+`collatz-conjecture`, `maze-automated-solve`, `annalyns-infiltration`) already use exactly the
+three renderings this row now fixes, so the row records existing practice rather than changing
+it.
+
+The English source uses "puzzle" loosely, for a logic brain-teaser (`maze-automated-solve`,
+"a little logic puzzle"), for a famous mathematical problem (`collatz-conjecture`), for the
+RPG's obstacles (`annalyns-infiltration`, "use functions to solve puzzles"), and simply for the
+task in front of the learner (`gold-panning`, "Solve the puzzle in 5 lines of code";
+`checkerboard`, "One puzzle uses the classic 8x8 board"). French has no one word that covers
+all four, which is why the row is contextual rather than fixed, the same shape as `step`.
+
+Leaving it as _puzzle_ is the one thing ruled out. Its primary French sense is a jigsaw
+(CNRTL: "jeu de patience fait d'un grand nombre de pièces découpées"), and resu-xunil's
+`checkerboard` example shows the cost: "un puzzle utilise le damier classique de 8x8" reads as
+a jigsaw, because jigsaws have boards too. The figurative sense the dictionary also records (a
+truth to piece together from scattered elements) is not the sense our exercises use.
+
+_défi_, resu-xunil's own default, is kept as one of the three rather than as the single answer,
+for two reasons. It is not the natural word for a brain-teaser, where French says _casse-tête_,
+and it is already the app catalog's rendering of `challenge`, the platform's own premium
+content type (_Défis_ in the sidebar, "Relève des défis plus difficiles"), so used everywhere
+it would blur two different things. Hence the caution in the row's note.
+
+Open, and worth a native speaker's answer: whether `challenge` should have a glossary row of
+its own recording the app's _défi_, so the boundary between the two words is written down and
+not just implied here.
 
 ### 2026-08-10: `foot-gun` → _piège involontaire_ (owner-authorised ruling)
 

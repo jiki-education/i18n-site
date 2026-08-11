@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-11",
-  "governance_sha": "e6cb93a",
-  "approved": 480,
+  "governance_sha": "7d22813",
+  "approved": 481,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -1813,7 +1813,7 @@
         },
         {
           "key": "exercise/golf-shot-checker",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -1903,7 +1903,7 @@
         },
         {
           "key": "exercise/guest-list",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -1978,7 +1978,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 57,
+      "approved": 58,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -2579,8 +2579,8 @@
         },
         {
           "key": "exercise/acronym",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1393,
+          "status": "approved"
         },
         {
           "key": "exercise/methodic-pangram",

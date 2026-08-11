@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-11",
-  "governance_sha": "27a3801",
-  "approved": 469,
+  "governance_sha": "c148436",
+  "approved": 470,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 66,
+      "approved": 67,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1002,8 +1002,8 @@
         },
         {
           "key": "exercise/caesar-cipher",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1380,
+          "status": "approved"
         },
         {
           "key": "exercise/checkerboard",

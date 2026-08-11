@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-11",
-  "governance_sha": "cfea081",
-  "approved": 466,
+  "governance_sha": "3565b32",
+  "approved": 467,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -2634,7 +2634,7 @@
       "name": "Latin American Spanish",
       "stage": "reviewing",
       "category_slug": "i18n-es-419",
-      "approved": 28,
+      "approved": 29,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -3075,8 +3075,8 @@
         },
         {
           "key": "exercise/bouncer",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1377,
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-conditional",

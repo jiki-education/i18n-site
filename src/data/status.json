@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-11",
-  "governance_sha": "0685452",
-  "approved": 490,
+  "governance_sha": "2823e05",
+  "approved": 491,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -1322,7 +1322,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 67,
+      "approved": 68,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1653,8 +1653,8 @@
         },
         {
           "key": "concept/arithmetic",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1403,
+          "status": "approved"
         },
         {
           "key": "concept/break",

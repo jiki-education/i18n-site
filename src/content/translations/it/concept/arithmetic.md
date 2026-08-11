@@ -4,18 +4,18 @@ type: "concept"
 slug: "arithmetic"
 title: "Aritmetica"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/arithmetic/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/arithmetic/page.md"
 en_md5: "7ce54754a3ca29896609a01a51b12377"
-governance_sha: "c80036b"
-content_version: "b45872dbbfe4"
-published_at: "2026-08-06"
+governance_sha: "20de186"
+content_version: "aa8669b285ac"
+published_at: "2026-08-11"
 forum_topic_id: 1206
 ---
 
-Finora, quando abbiamo creato variabili, abbiamo usato solo valori semplici: un numero come `50` o una stringa come `"yellow"`. Le variabili diventano molto più potenti quando possiamo usarle in combinazione tra loro. Così possiamo dire che il bordo sinistro del rettangolo deve trovarsi a una certa distanza dal bordo dell'area di disegno.
+Finora, quando abbiamo creato variabili, abbiamo usato solo valori semplici: un numero come `50` o una stringa come `"yellow"`. Le variabili diventano molto più potenti quando possiamo usarle in combinazione tra loro. In questo modo possiamo stabilire quanto il rettangolo deve essere distante dal bordo sinistro dell'area di disegno.
 
-Nella programmazione, possiamo usare la matematica di base, le solite operazioni come addizione, sottrazione, moltiplicazione e divisione, e possiamo usare le variabili che abbiamo già impostato come parte di queste.
+Nella programmazione possiamo usare la matematica di base, addizione, sottrazione, moltiplicazione e divisione, e possiamo usare nei calcoli le variabili che abbiamo definito in precedenza.
 
 Iniziamo dicendo che vogliamo disegnare un rettangolo sulla nostra area di disegno, e vogliamo che inizi a 10 di distanza dal bordo sinistro e dal bordo destro, e a 20 dal bordo superiore e dal bordo inferiore. Quindi sarà al centro dell'area di disegno, leggermente più largo che alto.
 

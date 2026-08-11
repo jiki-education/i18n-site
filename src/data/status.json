@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-11",
-  "governance_sha": "c148436",
-  "approved": 470,
+  "governance_sha": "f814c08",
+  "approved": 471,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 67,
+      "approved": 68,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1027,8 +1027,8 @@
         },
         {
           "key": "exercise/driving-test",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1381,
+          "status": "approved"
         },
         {
           "key": "concept/creating-functions-with-inputs",

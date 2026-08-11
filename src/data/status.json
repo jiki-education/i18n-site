@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-11",
-  "governance_sha": "26c8f19",
-  "approved": 482,
+  "governance_sha": "d93da0a",
+  "approved": 483,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -1978,7 +1978,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 59,
+      "approved": 60,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -2614,8 +2614,8 @@
         },
         {
           "key": "exercise/after-party",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1395,
+          "status": "approved"
         },
         {
           "key": "exercise/formal-dinner",

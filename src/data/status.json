@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-11",
-  "governance_sha": "9e6c2c9",
-  "approved": 478,
+  "governance_sha": "a28044e",
+  "approved": 479,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 74,
+      "approved": 75,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1072,8 +1072,8 @@
         },
         {
           "key": "exercise/golf-shot-checker",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1390,
+          "status": "approved"
         },
         {
           "key": "exercise/guest-list",

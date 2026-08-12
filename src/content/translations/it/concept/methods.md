@@ -4,17 +4,17 @@ type: "concept"
 slug: "methods"
 title: "Metodi"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/methods/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/methods/page.md"
 en_md5: "37c097a81459cd2ff4ae684559bd4311"
-governance_sha: "c80036b"
-content_version: "abee9e5f7dbe"
-published_at: "2026-08-06"
+governance_sha: "5756401"
+content_version: "1ac4621bcfbc"
+published_at: "2026-08-12"
 ---
 
 Finora, quando abbiamo pensato alle stringhe o ai numeri, li abbiamo considerati come cose piuttosto statiche.
 
-E anche se lo sono, hanno anche molte funzionalità incorporate che Jiki può usare.
+E anche se lo sono, esse hanno molte funzionalità incorporate che Jiki può usare.
 
 E man mano che andiamo avanti, impareremo queste funzionalità, queste specie di capacità che hanno e che ti semplificano la vita.
 
@@ -26,7 +26,7 @@ Quindi, invece di scrivere una funzione a cui passiamo una stringa come input, p
 
 Per esempio, ricordi una funzione con cui controlli se una stringa contiene una lettera particolare al suo interno? Beh, le stringhe hanno in realtà un metodo chiamato `includes` (contiene) che fa proprio questo, e possiamo usarlo con la stessa sintassi con il punto che hai visto per le proprietà.
 
-La differenza rispetto alle proprietà è che quando li scriviamo, li scriviamo come funzioni, con parentesi e input.
+La differenza rispetto alle proprietà è che quando li scriviamo, li scriviamo come funzioni, con parentesi ed input.
 
 Quindi possiamo scrivere:
 

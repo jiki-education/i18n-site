@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "6bb6f65",
-  "approved": 536,
+  "governance_sha": "48bca23",
+  "approved": 537,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 114,
+      "approved": 115,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -531,8 +531,8 @@
         },
         {
           "key": "concept/nested-loops",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1445,
+          "status": "approved"
         },
         {
           "key": "concept/properties",

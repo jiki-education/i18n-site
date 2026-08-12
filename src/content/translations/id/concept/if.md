@@ -6,10 +6,10 @@ title: "Memahami percabangan `if`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/id/curriculum/concepts/if/page.md"
-en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "3d354c0"
-content_version: "3d111b2f872b"
-published_at: "2026-08-10"
+en_md5: "81c99eea67b02e082ca6c9d7988a3914"
+governance_sha: "77058ce"
+content_version: "23ad87a001f5"
+published_at: "2026-08-12"
 ---
 
 Ada sebuah kata kunci yang membantu kita memberi tahu Jiki agar hanya melakukan sesuatu dalam situasi tertentu. Misalnya kamu sedang menulis kode untuk menjaga pintu masuk sebuah bar, anggaplah kamu seorang penjaga pintu, dan Jiki hanya boleh membuka pintu jika pakaian orang yang datang sudah pantas. Atau mungkin kamu menulis kode ketika kamu bertugas mengibarkan bendera finis di akhir sebuah balapan, tapi Jiki perlu tahu bahwa ia hanya boleh mengibarkannya di putaran terakhir. Dalam situasi-situasi seperti inilah kita akan menggunakan kata kunci `if`.
@@ -51,7 +51,7 @@ Kita menggunakan simbol untuk menuliskan perbandingan ini. Kamu mungkin sudah me
   height="400"
 />
 
-Ini membantu kita agar tidak tertukar dengan saat kita mengisi atau memperbarui variabel, ketika satu tanda sama dengan berarti masukkan ini ke dalam kotak. Ingat saja: tiga tanda sama dengan untuk membandingkan.
+Ini membantu kita agar tidak tertukar dengan saat kita mengisi atau memperbarui variabel, ketika satu tanda sama dengan berarti masukkan ini ke dalam kotak. Perlu diingat: tiga tanda sama dengan untuk membandingkan.
 
 Kamu juga bisa membandingkan string. Jadi `"hello"` sama dengan `"hello"`. Itu benar. Kedua string itu sama. Tapi hati-hati di sini, karena Jiki membandingkan setiap karakter (bahasa Inggris: _character_) di kedua string itu, di kedua lembar kertasnya. Jadi `"Hello"` dengan H besar tidak sama dengan `"hello"` dengan h kecil. Keduanya string yang berbeda. Membandingkan keduanya akan menghasilkan salah, karena H besar dan h kecil adalah karakter yang berbeda.
 

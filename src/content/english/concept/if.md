@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "if"
-title: "If Statements"
-en_md5: "8797e078e1ad90b7652373baf6f96f28"
+title: "Understanding `if` Statements"
+en_md5: "81c99eea67b02e082ca6c9d7988a3914"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/if/source.md"
-captured_at: "2026-07-31"
+captured_at: "2026-08-12"
 ---
 
 There's a keyword that helps us tell Jiki to only do things in certain situations. Maybe you're writing some code to guard the entrance of a bar, maybe you're a bouncer, and Jiki should only open the door if someone's appropriately dressed. Or maybe you're writing some code where you're in charge of waving the checkered flag at the end of a race, but Jiki needs to know that he should only do it on the last lap. In these sorts of situations, we're going to use the `if` keyword.

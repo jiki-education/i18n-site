@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "00ae418",
+  "governance_sha": "2bb5396",
   "approved": 519,
   "disapproved": 1,
-  "total": 1830,
+  "total": 1833,
   "languages": [
     {
       "lang": "it",
@@ -9488,6 +9488,32 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 819,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "hr",
+      "name": "Croatian",
+      "stage": "setup",
+      "category_slug": "i18n-hr",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 3,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 1436,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": null,
           "status": "pending"
         }
       ]

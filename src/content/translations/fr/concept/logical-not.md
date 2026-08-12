@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/logical-not/page.md"
 en_md5: "7cffbd1fa13317b3d6e6a71415413041"
-governance_sha: "494ce4b"
-content_version: "0b176f3cdc46"
-published_at: "2026-08-10"
+governance_sha: "e3d3469"
+content_version: "00286aad5132"
+published_at: "2026-08-12"
 ---
 
 Jusqu'ici, quand on a comparé des choses pour voir si elles étaient égales, on a utilisé trois signes égal. Mais parfois, on veut vérifier que des choses ne sont pas égales, et pour ça, on utilise un point d'exclamation suivi de deux signes égal. Et de manière générale, en programmation, un point d'exclamation, ou _bang_ comme disent, je crois, nos amis américains, signifie « non ». Alors imagine que tu travailles dans un magasin et que la direction a décidé d'interdire l'entrée aux tenues disco.
@@ -30,7 +30,7 @@ if (outfit !== "disco") {
 }
 ```
 
-Simplement, la condition renvoie vrai si les choses sont différentes, et elle renvoie faux si elles sont identiques. On pourrait donc écrire la même chose en disant : « Si la tenue est disco, ne fais rien. Sinon, ouvre la porte. » Mais en général, il est plus simple et plus clair d'utiliser l'opérateur (_operator_ en anglais) `not` pour dire vraiment ce que tu veux dire.
+Simplement, la condition renvoie vrai si les choses sont différentes, et elle renvoie faux si elles sont identiques. On pourrait donc écrire la même chose en disant : « Si la tenue est disco, ne fais rien. Sinon, ouvre la porte. » Mais en général, il est plus simple et plus clair d'utiliser l'opérateur (_operator_ en anglais) `not` (pas) pour dire vraiment ce que tu veux dire.
 
 Encore une chose à ce sujet. Parfois, tu vas avoir une variable qui vaut vrai et que tu veux faire passer à faux, ou quelque chose qui vaut faux et que tu veux faire passer à vrai, et on peut s'en servir pour garder une trace de quelque chose. Imagine par exemple quelque chose qui rebondit de gauche à droite, avec une variable appelée `movingRight` (« se déplace vers la droite »), qui vaut vrai quand il faut aller vers la droite. Mais quand tu atteins le bord droit, tu veux la faire basculer (_toggle_ en anglais) à faux.
 

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "fe51f6f",
-  "approved": 507,
+  "governance_sha": "02cf3fc",
+  "approved": 508,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 77,
+      "approved": 78,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1122,8 +1122,8 @@
         },
         {
           "key": "exercise/maze-walk",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1422,
+          "status": "approved"
         },
         {
           "key": "exercise/maze-automated-solve",

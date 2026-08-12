@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "f54d1c2",
+  "governance_sha": "cbba983",
   "approved": 504,
   "disapproved": 1,
   "total": 1830,
@@ -1002,117 +1002,117 @@
         },
         {
           "key": "concept/break",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/continue",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/building-arrays",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/modulo",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/animation",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/logical-or",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/hsl",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/properties",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/nested-loops",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/scenarios",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/methods",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/repeat-while",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/logical-and",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/rgb",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/logical-not",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/random",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/scope",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/colors",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/state",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/type-conversion",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/string-indexing",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/string-iteration",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
           "key": "concept/updating-dictionaries",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {

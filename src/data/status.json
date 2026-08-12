@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "83fc3a4",
-  "approved": 551,
+  "governance_sha": "d52a10a",
+  "approved": 552,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 123,
+      "approved": 124,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -581,8 +581,8 @@
         },
         {
           "key": "concept/type-conversion",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1460,
+          "status": "approved"
         },
         {
           "key": "concept/updating-dictionaries",

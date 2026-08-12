@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "86dcdb9",
-  "approved": 549,
+  "governance_sha": "4138c64",
+  "approved": 550,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 90,
+      "approved": 91,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1157,8 +1157,8 @@
         },
         {
           "key": "concept/rgb",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1458,
+          "status": "approved"
         },
         {
           "key": "exercise/nucleotide",

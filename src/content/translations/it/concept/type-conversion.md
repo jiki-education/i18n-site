@@ -4,17 +4,17 @@ type: "concept"
 slug: "type-conversion"
 title: "Conversione di tipo"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/type-conversion/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/type-conversion/page.md"
 en_md5: "8d85e3d274a6cdfdb74bd0488b685f18"
-governance_sha: "c80036b"
-content_version: "be14ddc33ca8"
-published_at: "2026-08-06"
+governance_sha: "d52a10a"
+content_version: "8a45c4583421"
+published_at: "2026-08-12"
 ---
 
-Ogni valore nei nostri programmi ha un tipo. `"7"` è una stringa e `7` è un numero. Possono sembrare quasi identici, ma Jiki li tratta in modo molto diverso. Non puoi sommare la stringa `"7"` al numero `3` e aspettarti di ottenere `10`, perché una è un pezzo di testo e l'altro è una quantità.
+Ogni valore nei nostri programmi ha un tipo. `"7"` è una stringa e `7` è un numero. Possono sembrare quasi identici, ma Jiki li tratta in modo molto diverso. Non puoi sommare la stringa `"7"` al numero `3` ed aspettarti di ottenere `10`, perché una è un pezzo di testo e l'altro è una quantità.
 
-Abbastanza spesso abbiamo bisogno di spostare un valore da un tipo a un altro. Questo si chiama «conversione di tipo», e ci sono due conversioni che userai sempre.
+Abbastanza spesso abbiamo bisogno di spostare un valore da un tipo ad un altro. Questo si chiama `"conversione di tipo"`, e ci sono due conversioni che userai sempre.
 
 ### Convertire una stringa in un numero
 
@@ -40,7 +40,7 @@ Se passi a `Number()` qualcosa che non è un numero valido, come `Number("cat")`
 
 ### Convertire un numero in una stringa
 
-La direzione opposta è altrettanto utile. A volte hai un numero e vuoi trattarlo come testo, magari per unirlo a un'altra stringa o per guardare le sue singole cifre. Lo facciamo con `String()`, l'immagine speculare di `Number()`.
+La direzione opposta è altrettanto utile. A volte hai un numero e vuoi trattarlo come testo, magari per unirlo ad un'altra stringa o per guardare le sue singole cifre. Lo facciamo con `String()`, l'immagine speculare di `Number()`.
 
 ```javascript
 String(42)

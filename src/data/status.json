@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "01076b9",
-  "approved": 539,
+  "governance_sha": "f771135",
+  "approved": 540,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 117,
+      "approved": 118,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -546,8 +546,8 @@
         },
         {
           "key": "concept/repeat-while",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1448,
+          "status": "approved"
         },
         {
           "key": "concept/rgb",

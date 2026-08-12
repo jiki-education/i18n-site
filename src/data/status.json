@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "43bc7dd",
-  "approved": 554,
+  "governance_sha": "b4a6aaa",
+  "approved": 555,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 124,
+      "approved": 125,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -586,8 +586,8 @@
         },
         {
           "key": "concept/updating-dictionaries",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1463,
+          "status": "approved"
         },
         {
           "key": "exercise/hamming",

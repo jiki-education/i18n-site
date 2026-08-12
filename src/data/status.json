@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "16c5440",
-  "approved": 546,
+  "governance_sha": "e3d3469",
+  "approved": 548,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 121,
+      "approved": 122,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -571,8 +571,8 @@
         },
         {
           "key": "concept/string-indexing",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1455,
+          "status": "approved"
         },
         {
           "key": "concept/string-iteration",
@@ -1322,7 +1322,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 88,
+      "approved": 89,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1713,8 +1713,8 @@
         },
         {
           "key": "concept/logical-not",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1456,
+          "status": "approved"
         },
         {
           "key": "exercise/hamming",

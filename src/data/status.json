@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "58c76bd",
-  "approved": 517,
+  "governance_sha": "be5aa77",
+  "approved": 518,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -1978,7 +1978,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 72,
+      "approved": 73,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -2519,8 +2519,8 @@
         },
         {
           "key": "exercise/hello",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1427,
+          "status": "approved"
         },
         {
           "key": "exercise/raindrops",

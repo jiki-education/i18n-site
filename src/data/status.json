@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "b4a6aaa",
-  "approved": 555,
+  "governance_sha": "d455b95",
+  "approved": 556,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 93,
+      "approved": 94,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1097,8 +1097,8 @@
         },
         {
           "key": "concept/modulo",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1464,
+          "status": "approved"
         },
         {
           "key": "concept/nested-loops",

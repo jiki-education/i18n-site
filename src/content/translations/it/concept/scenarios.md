@@ -4,12 +4,12 @@ type: "concept"
 slug: "scenarios"
 title: "Scenari"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/scenarios/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/scenarios/page.md"
 en_md5: "d5c4ee54eed8083e13f18bb7d256b86d"
-governance_sha: "c80036b"
-content_version: "e20de32a2aff"
-published_at: "2026-08-06"
+governance_sha: "ded8d13"
+content_version: "062022b75da1"
+published_at: "2026-08-12"
 ---
 
 Ogni esercizio presenta diversi scenari, diverse situazioni che il codice deve affrontare.
@@ -29,7 +29,7 @@ Prendi come esempio un gioco di golf. Potresti dover variare la distanza percors
 <img
   class="concept-image"
   src="/static/images/concept-assets/scenarios/golf-game.webp"
-  alt="Una scena di golf con un golfista, una palla e una bandierina nella buca a destra"
+  alt="Una scena di golf con un golfista, una palla ed una bandierina nella buca a destra"
   width="412"
   height="400"
 />
@@ -40,4 +40,4 @@ Il risultato che ti arriva passa attraverso questa funzione. Quindi in uno scena
 let distance = getShotLength()
 ```
 
-Gli scenari ti assicurano che il codice funzioni davvero correttamente. È piuttosto facile scrivere codice che funzioni in una situazione specifica. È molto più difficile e più prezioso scrivere codice che funzioni in tante situazioni diverse. Quando risolvi gli esercizi, inizia dal primo scenario. Fai in modo che funzioni. Poi passa allo scenario successivo e fai funzionare anche quello. Quando il codice si rompe in uno scenario diverso, pensa a cosa è cambiato e a come il codice deve adattarsi.
+Gli scenari ti assicurano che il codice funzioni davvero correttamente. È piuttosto facile scrivere codice che funzioni in una situazione specifica. È molto più difficile e più prezioso scrivere codice che funzioni in tante situazioni diverse. Quando risolvi gli esercizi, inizia dal primo scenario. Fai in modo che funzioni. Poi passa allo scenario successivo e fai funzionare anche quello. Quando il codice si rompe in uno scenario diverso, pensa a cosa è cambiato ed a come il codice deve adattarsi.

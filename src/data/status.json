@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "9702569",
-  "approved": 544,
+  "governance_sha": "fed964b",
+  "approved": 545,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 120,
+      "approved": 121,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -566,8 +566,8 @@
         },
         {
           "key": "concept/state",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1453,
+          "status": "approved"
         },
         {
           "key": "concept/string-indexing",

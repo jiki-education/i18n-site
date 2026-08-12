@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/repeat/page.md"
 en_md5: "f37a63911f75934656cbf04a38ff2b60"
-governance_sha: "494ce4b"
-content_version: "f0e1e7386b14"
-published_at: "2026-08-10"
+governance_sha: "3909554"
+content_version: "0c5154bf8d78"
+published_at: "2026-08-12"
 forum_topic_id: 943
 ---
 
@@ -70,7 +70,7 @@ repeat(4) {
 
 Ces instructions de répétition sont appelées des boucles (_loops_ en anglais), et il existe plein de boucles différentes, qui fonctionnent chacune un peu différemment.
 
-Il reste une dernière chose à savoir : garder un code propre et bien rangé devient essentiel quand on travaille avec des boucles. Quand ton code a une bonne structure visuelle, on voit très facilement ce qui se passe. Mais si ce n'est pas le cas, si tu oublies d'indenter proprement (c'est-à-dire de décaler le début des lignes avec des espaces, pour montrer à quel bloc de code elles appartiennent) ou si tu mélanges tes indentations, ça devient vite très confus. Alors dans ce cours, on suit toujours une règle. Tu mets toujours l'accolade ouvrante sur la même ligne que l'instruction (_statement_ en anglais) `repeat`. Tu mets toujours l'accolade fermante sur sa propre ligne après l'instruction, et tu indentes toujours le code qui se trouve entre ces deux lignes avec deux espaces. Comme ça, tout restera bien net, et si tu oublies ou si tu essaies de suivre un autre schéma, tu obtiendras une erreur.
+Il reste une dernière chose à savoir : garder un code propre et bien rangé devient essentiel quand on travaille avec des boucles. Quand ton code a une bonne structure visuelle, on voit très facilement ce qui se passe. Mais si ce n'est pas le cas, si tu oublies d'indenter correctement (c'est-à-dire de décaler le début des lignes avec des espaces, pour montrer à quel bloc de code elles appartiennent) ou si tu mélanges tes indentations, ça devient vite très confus. Alors dans ce cours, on suit toujours une règle. Tu mets toujours l'accolade ouvrante sur la même ligne que l'instruction (_statement_ en anglais) `repeat`. Tu mets toujours l'accolade fermante sur sa propre ligne après l'instruction, et tu indentes toujours le code qui se trouve entre ces deux lignes avec deux espaces. Comme ça, tout restera bien net, et si tu oublies ou si tu essaies de suivre un autre schéma, tu obtiendras une erreur.
 
 <img
   class="concept-image"

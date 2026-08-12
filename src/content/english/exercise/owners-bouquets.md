@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "owners-bouquets"
 title: "Owner's Bouquets"
-en_md5: "412a9f3a6ed5bb6b797c6239d51492be"
+en_md5: "efa4b6b1200e7ce612ec32d3043b56bf"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/owners-bouquets"
-captured_at: "2026-08-03"
+captured_at: "2026-08-12"
 ---
 
 Welcome to your second exercise with scenarios.

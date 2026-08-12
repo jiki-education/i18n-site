@@ -4,17 +4,17 @@ type: "concept"
 slug: "properties"
 title: "Proprietà"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/properties/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/properties/page.md"
 en_md5: "0634cd72388bef118e9dd22131a3c1cd"
-governance_sha: "c80036b"
-content_version: "e19ecc6103be"
-published_at: "2026-08-06"
+governance_sha: "7ec3365"
+content_version: "aea5b3a6d833"
+published_at: "2026-08-12"
 ---
 
 Finora, quando abbiamo pensato a stringhe e numeri, li abbiamo considerati oggetti piuttosto statici.
 
-E anche se lo sono, hanno anche molte funzionalità incorporate che Jiki può usare.
+E anche se lo sono, esse hanno molte funzionalità incorporate che Jiki può usare.
 
 Ci sono due tipi di capacità che vedremo: le proprietà e i metodi.
 

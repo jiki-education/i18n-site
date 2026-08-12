@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "continue"
-title: "Continue"
-en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
+title: "The `continue` Keyword"
+en_md5: "6cd21a2f25c493f61d000f865014709d"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/continue/source.md"
-captured_at: "2026-08-03"
+captured_at: "2026-08-12"
 ---
 
 There are some times we might want to skip a specific iteration of a loop instead of breaking out of it. Imagine we only want to do things for odd numbers.

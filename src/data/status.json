@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "c3dfe68",
-  "approved": 531,
+  "governance_sha": "6bb6f65",
+  "approved": 536,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -1322,7 +1322,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 80,
+      "approved": 85,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1718,8 +1718,8 @@
         },
         {
           "key": "exercise/hamming",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1419,
+          "status": "approved"
         },
         {
           "key": "concept/logical-or",
@@ -1733,8 +1733,8 @@
         },
         {
           "key": "exercise/guest-list",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1412,
+          "status": "approved"
         },
         {
           "key": "exercise/formal-dinner",
@@ -1823,8 +1823,8 @@
         },
         {
           "key": "exercise/pangram",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1444,
+          "status": "approved"
         },
         {
           "key": "exercise/battle-procedures",
@@ -1833,8 +1833,8 @@
         },
         {
           "key": "exercise/isbn-verifier",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1418,
+          "status": "approved"
         },
         {
           "key": "exercise/three-letter-acronym",
@@ -1968,8 +1968,8 @@
         },
         {
           "key": "exercise/niche-named-party",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1425,
+          "status": "approved"
         }
       ]
     },

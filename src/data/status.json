@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "9aa793b",
-  "approved": 505,
+  "governance_sha": "139da52",
+  "approved": 503,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 79,
+      "approved": 77,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -773,7 +773,7 @@
         {
           "key": "exercise/maze-turn-around",
           "topic_id": 880,
-          "status": "approved"
+          "status": "pending"
         },
         {
           "key": "exercise/luhn",
@@ -822,8 +822,8 @@
         },
         {
           "key": "exercise/penguin",
-          "topic_id": null,
-          "status": "approved"
+          "topic_id": 880,
+          "status": "pending"
         },
         {
           "key": "exercise/jumbled-house",
@@ -1177,7 +1177,7 @@
         },
         {
           "key": "exercise/collatz-conjecture",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -1202,7 +1202,7 @@
         },
         {
           "key": "exercise/even-or-odd",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -1277,7 +1277,7 @@
         },
         {
           "key": "exercise/driving-test",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {
@@ -1307,7 +1307,7 @@
         },
         {
           "key": "exercise/formal-dinner",
-          "topic_id": null,
+          "topic_id": 880,
           "status": "pending"
         },
         {

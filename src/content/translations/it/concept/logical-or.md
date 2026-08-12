@@ -7,14 +7,14 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/logical-or/page.md"
 en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
-governance_sha: "494ce4b"
-content_version: "b4d8cb0b9f8d"
-published_at: "2026-08-10"
+governance_sha: "bb9e566"
+content_version: "1b4f4088789c"
+published_at: "2026-08-12"
 ---
 
-Possiamo usare anche `or`, ma purtroppo in JavaScript non esiste una parola chiave comoda per `or`. Dobbiamo invece usare queste due barre (_bars_ in inglese) una accanto all'altra per indicare «or». Sembra strano, ma non lo è. Ti ci abituerai.
+Possiamo usare anche `or`, ma purtroppo in JavaScript non esiste una parola chiave comoda per `or`. Dobbiamo invece usare queste due barre (_bars_ in inglese) una accanto all'altra per indicarlo. Sembra strano, ma non lo è. Ti ci abituerai.
 
-Quindi possiamo dire che se qualcuno ha più di 20 anni o è vestito in stile disco, allora può entrare. Così avremo una festa divertente con ragazzi vestiti in stile disco e adulti vestiti male, il che sembra ragionevole.
+Quindi possiamo dire che se qualcuno ha più di 20 anni o è vestito in stile disco, allora può entrare. Così avremo una festa divertente con ragazzi vestiti in stile disco ed adulti vestiti male, il che sembra ragionevole.
 
 ```javascript
 if (age > 20 || outfit === "disco") {
@@ -25,7 +25,7 @@ if (age > 20 || outfit === "disco") {
 <img
   class="concept-image"
   src="/static/images/concept-assets/logical-or/party-door.webp"
-  alt="Jiki dà il benvenuto a un mix di ragazzi vestiti in stile disco e adulti vestiti in modo informale alla porta di una festa"
+  alt="Jiki dà il benvenuto a un mix di ragazzi vestiti in stile disco ed adulti vestiti in modo informale alla porta di una festa"
   width="327"
   height="400"
 />

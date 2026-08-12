@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "b891f7d",
-  "approved": 529,
+  "governance_sha": "5756401",
+  "approved": 530,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 112,
+      "approved": 113,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -521,8 +521,8 @@
         },
         {
           "key": "concept/methods",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1442,
+          "status": "approved"
         },
         {
           "key": "concept/modulo",

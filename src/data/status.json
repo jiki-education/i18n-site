@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "39b0e08",
-  "approved": 527,
+  "governance_sha": "bb9e566",
+  "approved": 529,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 111,
+      "approved": 112,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -516,8 +516,8 @@
         },
         {
           "key": "concept/logical-or",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1440,
+          "status": "approved"
         },
         {
           "key": "concept/methods",
@@ -1322,7 +1322,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 79,
+      "approved": 80,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1963,8 +1963,8 @@
         },
         {
           "key": "exercise/methodic-pangram",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1441,
+          "status": "approved"
         },
         {
           "key": "exercise/niche-named-party",

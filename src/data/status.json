@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "d52a10a",
-  "approved": 552,
+  "governance_sha": "43bc7dd",
+  "approved": 554,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 91,
+      "approved": 93,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1017,8 +1017,8 @@
         },
         {
           "key": "concept/hsl",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1462,
+          "status": "approved"
         },
         {
           "key": "concept/function-composition",
@@ -1112,8 +1112,8 @@
         },
         {
           "key": "concept/random",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1461,
+          "status": "approved"
         },
         {
           "key": "exercise/lower-pangram",

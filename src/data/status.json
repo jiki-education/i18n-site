@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "e332205",
-  "approved": 526,
+  "governance_sha": "39b0e08",
+  "approved": 527,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 110,
+      "approved": 111,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -511,8 +511,8 @@
         },
         {
           "key": "concept/logical-not",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1439,
+          "status": "approved"
         },
         {
           "key": "concept/logical-or",

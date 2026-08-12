@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "2bb5396",
-  "approved": 519,
+  "governance_sha": "e332205",
+  "approved": 526,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 83,
+      "approved": 90,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1163,7 +1163,7 @@
         {
           "key": "exercise/rainbow-ball",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/checkerboard",
@@ -1188,7 +1188,7 @@
         {
           "key": "exercise/maze-walk",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/triangle",
@@ -1218,7 +1218,7 @@
         {
           "key": "exercise/raindrops",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/three-letter-acronym",
@@ -1238,7 +1238,7 @@
         {
           "key": "exercise/reverse-string",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/caesar-cipher",
@@ -1258,7 +1258,7 @@
         {
           "key": "exercise/methodic-pangram",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/acronym",
@@ -1273,7 +1273,7 @@
         {
           "key": "exercise/niche-named-party",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/driving-test",
@@ -1293,7 +1293,7 @@
         {
           "key": "exercise/pangram",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/alphanumeric",

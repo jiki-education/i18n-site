@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "36f71ec",
-  "approved": 505,
+  "governance_sha": "2987c4a",
+  "approved": 506,
   "disapproved": 1,
   "total": 1830,
   "languages": [
@@ -1322,7 +1322,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 75,
+      "approved": 76,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1783,8 +1783,8 @@
         },
         {
           "key": "exercise/maze-automated-solve",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1421,
+          "status": "approved"
         },
         {
           "key": "concept/repeat-while",

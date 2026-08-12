@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "f771135",
-  "approved": 540,
+  "governance_sha": "ded8d13",
+  "approved": 542,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 118,
+      "approved": 119,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -556,8 +556,8 @@
         },
         {
           "key": "concept/scenarios",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1449,
+          "status": "approved"
         },
         {
           "key": "concept/scope",
@@ -1322,7 +1322,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 85,
+      "approved": 86,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1593,8 +1593,8 @@
         },
         {
           "key": "concept/break",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1450,
+          "status": "approved"
         },
         {
           "key": "concept/building-arrays",

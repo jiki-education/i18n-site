@@ -4,12 +4,12 @@ type: "concept"
 slug: "string-indexing"
 title: "Indicizzazione delle stringhe"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-indexing/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/string-indexing/page.md"
 en_md5: "cd31e0366b3090b358494667003f54c9"
-governance_sha: "c80036b"
-content_version: "18109894c3fd"
-published_at: "2026-08-06"
+governance_sha: "e3d3469"
+content_version: "c9c40397906a"
+published_at: "2026-08-12"
 ---
 
 Immagina di avere il mio nome, Jeremy, e di voler estrarre la mia iniziale J. Come potremmo farlo?
@@ -22,24 +22,24 @@ Immagina di avere il mio nome, Jeremy, e di voler estrarre la mia iniziale J. Co
   height="353"
 />
 
-Beh, puoi pensare a una stringa come a una serie di lettere. Quindi `"Jeremy"` ha sei lettere, J-E-R-E-M-Y, e ognuna ha una posizione. `"J"` è nella prima posizione, `"y"` è nell'ultima posizione.
+Beh, puoi pensare ad una stringa come a una serie di lettere. Quindi `"Jeremy"` ha sei lettere, J-E-R-E-M-Y, ed ognuna ha una posizione. `"J"` è nella prima posizione, `"y"` è nell'ultima posizione.
 
 Ora, in JavaScript e nella maggior parte dei linguaggi di programmazione, queste posizioni partono da zero. Quindi la prima lettera `"J"` è alla posizione zero, e poi abbiamo `"e"` alla posizione uno, `"r"` alla due, `"e"` alla tre, `"m"` alla quattro e `"y"` alla cinque.
 
-Ora, questa cosa di partire da zero è piuttosto strana, e onestamente la vita sarebbe più facile se cominciassimo a contare da uno, come nel mondo normale. Ma non lo facciamo. Nella maggior parte dei linguaggi di programmazione, invece, si comincia a contare da zero, quindi devi solo impararlo.
+Ora, questa cosa di partire da zero è piuttosto strana, ed onestamente la vita sarebbe più facile se cominciassimo a contare da uno, come nel mondo normale. Ma non lo facciamo. Nella maggior parte dei linguaggi di programmazione, invece, si comincia a contare da zero, quindi devi solo impararlo.
 
 Quindi, se vogliamo estrarre una lettera in una posizione specifica, possiamo usare le parentesi quadre con il numero all'interno.
 
-Quindi, se scriviamo `"Jeremy"[0]`, stiamo dicendo: dammi la prima lettera della parola `"Jeremy"`.
+Quindi, se scriviamo `"Jeremy"[0]`, stiamo dicendo di darci la prima lettera della parola `"Jeremy"`.
 
-Se scriviamo `"Jeremy"[1]`, stiamo dicendo: dammi la seconda lettera.
+Se scriviamo `"Jeremy"[1]`, stiamo dicendo di darci la seconda lettera.
 
 ```javascript
 "Jeremy"[0] // "J"
 "Jeremy"[1] // "e"
 ```
 
-E possiamo farlo anche con le variabili. Quindi, se creiamo una variabile chiamata `name` (nome) e le assegniamo come valore la stringa `"Jeremy"`, allora possiamo fare `name[0]` e otteniamo di nuovo `"J"`.
+E possiamo farlo anche con le variabili. Quindi, se creiamo una variabile chiamata `name` (nome) e le assegniamo come valore la stringa `"Jeremy"`, allora possiamo fare `name[0]` ed otteniamo di nuovo `"J"`.
 
 ```javascript
 let name = "Jeremy"

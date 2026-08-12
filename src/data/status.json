@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-12",
-  "governance_sha": "11636d6",
-  "approved": 558,
+  "governance_sha": "ff01ea6",
+  "approved": 559,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 96,
+      "approved": 97,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1232,8 +1232,8 @@
         },
         {
           "key": "exercise/rainbow-ball",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1467,
+          "status": "approved"
         },
         {
           "key": "concept/string-indexing",

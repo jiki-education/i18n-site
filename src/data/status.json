@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "cbcc701",
+  "governance_sha": "53cdc3d",
   "approved": 599,
   "disapproved": 1,
-  "total": 1833,
+  "total": 1839,
   "languages": [
     {
       "lang": "it",
@@ -1324,7 +1324,7 @@
       "category_slug": "i18n-fr",
       "approved": 97,
       "disapproved": 0,
-      "total": 129,
+      "total": 133,
       "items": [
         {
           "key": "glossary",
@@ -1970,6 +1970,26 @@
           "key": "exercise/niche-named-party",
           "topic_id": 1425,
           "status": "approved"
+        },
+        {
+          "key": "exercise/anagram",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/boundaried-ball",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/smashing-blocks",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-solver",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -9276,6 +9296,37 @@
       ]
     },
     {
+      "lang": "hr",
+      "name": "Croatian",
+      "stage": "setup",
+      "category_slug": "i18n-hr",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 1436,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 1476,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "es-ES",
       "name": "European Spanish",
       "stage": "setup",
@@ -9431,6 +9482,37 @@
       ]
     },
     {
+      "lang": "th",
+      "name": "Thai",
+      "stage": "setup",
+      "category_slug": "i18n-th",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 4,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 1049,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 1477,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "ur",
       "name": "Urdu",
       "stage": "setup",
@@ -9488,58 +9570,6 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 819,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "hr",
-      "name": "Croatian",
-      "stage": "setup",
-      "category_slug": "i18n-hr",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 3,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 1436,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "th",
-      "name": "Thai",
-      "stage": "setup",
-      "category_slug": "i18n-th",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 3,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 1049,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": null,
           "status": "pending"
         }
       ]

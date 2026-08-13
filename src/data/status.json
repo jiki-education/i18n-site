@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "ece5c60",
-  "approved": 627,
+  "governance_sha": "ead9516",
+  "approved": 628,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -1742,7 +1742,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 112,
+      "approved": 113,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -2458,8 +2458,8 @@
         },
         {
           "key": "api-email/premium_mailer.welcome_to_premium",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1517,
+          "status": "approved"
         },
         {
           "key": "api-email/premium_mailer.subscription_ended",

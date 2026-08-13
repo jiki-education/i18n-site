@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.fr.yml"
 en_md5: "c5baf864e491a2f763a346af05470f74"
-governance_sha: "2e7fb87"
-content_version: "140c24f65148"
+governance_sha: "10b78b3"
+content_version: "d483fbc8c506"
 published_at: "2026-08-13"
+forum_topic_id: 1518
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.premium","rows":[{"key":"subject","english":"Get More Out of Jiki (and help us out)","target":"Profite encore plus de Jiki (et aide-nous)"},{"key":"preview","english":"We made Jiki free because we want it to be accessible to everyone regardless","target":"On a rendu Jiki gratuit parce qu'on veut qu'il soit accessible à tout le monde, quelle"},{"key":"greeting","english":"Hi there,","target":"Salut,"}]}]}]
 ---
 
@@ -23,7 +24,7 @@ Mais **Jiki coûte de l'argent à faire tourner**, et on doit pouvoir payer nos 
 
 On a rendu tout ça super abordable grâce à la **parité de pouvoir d'achat**. Ça veut dire que Premium coûte à peu près le prix de deux boissons à emporter dans ton pays, donc le tarif devrait te sembler raisonnable où que tu sois dans le monde.
 
-Si Jiki te plaît, que tu veux **accélérer ton apprentissage** et soutenir l'équipe Jiki et moi-même, alors [passe à Premium](https://jiki.io/premium).
+Si Jiki te plaît, que tu veux **accélérer ton apprentissage** et soutenir l'équipe Jiki et moi-même, n'hésite pas à [passer à Premium](https://jiki.io/premium) !
 
 Merci,
 Jeremy

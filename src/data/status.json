@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "278103b",
-  "approved": 620,
+  "governance_sha": "1aa0bad",
+  "approved": 621,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -1742,7 +1742,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 105,
+      "approved": 106,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -2583,8 +2583,8 @@
         },
         {
           "key": "badge/first_lesson",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1510,
+          "status": "approved"
         },
         {
           "key": "badge/maze_navigator",

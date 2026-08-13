@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "a61e8a0",
-  "approved": 610,
+  "governance_sha": "31a4a34",
+  "approved": 611,
   "disapproved": 1,
   "total": 2298,
   "languages": [
@@ -2493,7 +2493,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 84,
+      "approved": 85,
       "disapproved": 0,
       "total": 162,
       "items": [
@@ -3159,8 +3159,8 @@
         },
         {
           "key": "api-email/devise.mailer.reset_password_instructions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1499,
+          "status": "approved"
         },
         {
           "key": "api-email/notifications_mailer.badge_earned",

@@ -7,15 +7,15 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/properties/page.md"
 en_md5: "0634cd72388bef118e9dd22131a3c1cd"
-governance_sha: "ba816d5"
-content_version: "97fc725168ae"
-published_at: "2026-08-12"
+governance_sha: "cbcc701"
+content_version: "ae4c7a7d31de"
+published_at: "2026-08-13"
 forum_topic_id: 880
 ---
 
-Досі, коли ми думали про рядки тексту (англ. _string_) чи числа, ми уявляли їх як щось доволі незмінне.
+Досі, коли ми думали про рядки тексту (англ. _string_) або числа, ми уявляли їх як щось доволі незмінне.
 
-І хоча так воно й є, в них також вбудовано чимало функціональності, якою може користуватися Jiki.
+І хоча так воно і є, в них також вбудовано чимало функціональності, якою може користуватися Jiki.
 
 Ми розглянемо два типи таких здібностей: властивості (англ. _properties_) та методи (англ. _methods_).
 

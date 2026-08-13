@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "2ca3c61",
-  "approved": 596,
+  "governance_sha": "cbcc701",
+  "approved": 599,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 122,
+      "approved": 125,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -1018,7 +1018,7 @@
         {
           "key": "concept/modulo",
           "topic_id": 880,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/animation",
@@ -1038,7 +1038,7 @@
         {
           "key": "concept/properties",
           "topic_id": 880,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/nested-loops",
@@ -1053,7 +1053,7 @@
         {
           "key": "concept/methods",
           "topic_id": 880,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/repeat-while",

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/creating-functions/page.md"
 en_md5: "93286a30a373b5604b60b3c109ad00a3"
-governance_sha: "609cd5a"
-content_version: "f2e4c830f3e9"
-published_at: "2026-08-07"
+governance_sha: "cbcc701"
+content_version: "50005d8ded15"
+published_at: "2026-08-13"
 ---
 
 Досі ми користувалися функціями, які вже були створені для нас: `circle`, `rectangle`, `moveRight`, `shoot`. Усі вони були зроблені заздалегідь і поставлені на полиці Jiki.
@@ -76,4 +76,4 @@ function walk5() {
 
 У момент, коли ми пишемо ключове слово `function`, персонаж у лабіринті не рухається.
 
-Jiki збудував машину і поставив її на полиці. Персонаж зрушить з місця лише тоді, коли ми скажемо Jiki використати машину, написавши `walk5()`.
+Jiki збудував машину і поставив її на полицю. Персонаж зрушить з місця лише тоді, коли ми скажемо Jiki використати машину, написавши `walk5()`.

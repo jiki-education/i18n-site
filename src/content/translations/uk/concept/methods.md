@@ -7,15 +7,15 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/methods/page.md"
 en_md5: "37c097a81459cd2ff4ae684559bd4311"
-governance_sha: "cbba983"
-content_version: "da397bb1dde3"
-published_at: "2026-08-12"
+governance_sha: "cbcc701"
+content_version: "399660e0065f"
+published_at: "2026-08-13"
 forum_topic_id: 880
 ---
 
 Досі, коли ми думали про рядки тексту (англ. _string_) чи числа, ми уявляли їх як щось доволі незмінне.
 
-І хоча так воно й є, в них також вбудовано чимало функціональності, якою може користуватися Jiki.
+І хоча так воно і є, в них також вбудовано чимало функціональності, якою може користуватися Jiki.
 
 Рухаючись далі, ми будемо знайомитися з цією функціональністю, з тими своєрідними здібностями, які значно спрощують нам життя.
 

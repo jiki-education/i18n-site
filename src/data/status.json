@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "4950b8f",
-  "approved": 613,
+  "governance_sha": "8eebf84",
+  "approved": 614,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -1742,7 +1742,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 98,
+      "approved": 99,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -2578,8 +2578,8 @@
         },
         {
           "key": "badge/early_bird",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1503,
+          "status": "approved"
         },
         {
           "key": "badge/first_lesson",

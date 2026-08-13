@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "d90aff2",
-  "approved": 561,
+  "governance_sha": "65adc2c",
+  "approved": 562,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -1978,7 +1978,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 75,
+      "approved": 76,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -2314,8 +2314,8 @@
         },
         {
           "key": "concept/break",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1474,
+          "status": "approved"
         },
         {
           "key": "concept/building-arrays",

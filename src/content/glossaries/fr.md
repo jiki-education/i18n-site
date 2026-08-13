@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "5a5406e"
-content_version: "4e5c9b8ae7d7"
-published_at: "2026-08-11"
-term_count: 91
+governance_sha: "7c436b8"
+content_version: "3d96525f7719"
+published_at: "2026-08-13"
+term_count: 98
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -27,7 +27,7 @@ ones to raise on the forum. Why each term was chosen is in the decision log
 | streak | série | fr | A run of consecutive days, as in the learning-platform sense. |
 | foot-gun | piège involontaire | fr | Settled 2026-08-10 on topic 314; do not reopen. On the first mention in a document, keep the English source's own explanation alongside it: _un « piège involontaire », de quoi se tirer une balle dans le pied sans le vouloir_. Later mentions in the same document may shorten to _piège_. Never _fonctionnalité pénalisante_, _effet de bord_ or _faux ami_. |
 | Solve the Maze (exercise title) | Évade-toi du labyrinthe | fr | Title only, and no exclamation mark. Prose about the maze keeps "faire sortir le personnage du labyrinthe". |
-| Take a Walk (exercise title) | Une petite marche | fr | Unconfirmed draft (agent, 2026-08-03). Title only. |
+| Take a Walk (exercise title) | Fais un tour | fr | Confirmed 2026-08-12 by mirina (topic 1241). Title only. The English is a call to action, so the French title is imperative; the earlier _Une petite marche_ read as the descriptive "a short walk". Never _Va faire un tour_: mirina flags it as harsh and derogatory in spoken French ("get lost"). |
 | Loopy Maze (exercise title) | Le labyrinthe, version boucles | fr | Settled 2026-08-06 by an owner-authorised ruling after three native speakers did not converge (topic 314). Title only. Do not reopen. The title must not describe the maze itself as looping. |
 | UI button label quoted in prose | the app's own `fr` catalog string | fr | Unconfirmed draft (agent, 2026-08-03). When prose tells the learner to press a button, quote the string the French app actually shows, in guillemets and italics: _« Exécuter le code »_. Never invent a fresh rendering of an English button label. |
 
@@ -150,6 +150,23 @@ in the gloss column below; with no `<define>`, use the English bare, no gloss.
 | CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. |
 | Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
 
+### Titles that stay as they are
+
+Page and exercise titles whose French is the same text as the English, either because the
+word is identical in both languages or because the title is a name, a named work or
+wordplay. The body and the description are still translated as normal; only the title
+stands. Settled 2026-08-13 by iHiD; see `glossary-notes.md`.
+
+| English | French | Use (fr/en) | Notes |
+|---------|--------|-------------|-------|
+| Animation (concept title) | Animation | en | Title only. The French word is spelled the same; prose about animation still uses _animation_ normally. |
+| Hello (exercise title) | Hello | en | Title only. The exercise is named after the `"Hello"` string it returns, so the title has to match the code. |
+| Luhn (exercise title) | Luhn | en | Title only. Hans Peter Luhn's surname; also used in prose as _la formule de Luhn_. |
+| Space Invaders (exercise title) | Space Invaders | en | Title only, and this row records today's status quo, not a settled answer: mirina's proposal to render it _Les envahisseurs de l'espace_ is still open on topic 1244, and if it is adopted this row goes. Until then leave it in English everywhere, as before. |
+| Triangle (exercise title) | Triangle | en | Title only. The French word is spelled the same. |
+| Two-Fer (exercise title) | Two-Fer | en | Title only. English wordplay ("two for one") that carries the exercise's `"One for you, one for me."` line; there is no French equivalent that keeps both. |
+| Hello, World! 👋 (blog post title) | Hello, World! 👋 | en | Title only. The canonical first-program phrase, used as-is by French developers. |
+
 ## Jiki physical metaphors
 
 Load-bearing teaching terms. Use exactly the agreed rendering; never substitute dry technical language.
@@ -183,6 +200,171 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-12: "Take a Walk" exercise title → `Fais un tour` (confirmed, replaces _Une petite marche_)
+
+**Decided by:** mirina, forum topic 1241 (https://forum.jiki.io/t/1241), post 3.
+**Terms affected:** the `Take a Walk (exercise title)` row.
+**Files affected:** `glossary.md` (Core decisions), the `fr` title of the
+`maze-solve-walk` instructions, and `languages/fr/exercise/maze-solve-walk.md`.
+
+**What was wrong.** _Une petite marche_ was an agent draft from the Stage 3 batch 1 pass
+(2026-08-03), never checked by a speaker. mirina's objection is twofold: it reads back into
+English as "A short walk", which is not what the title says, and more importantly it is
+**descriptive** where the English is a **call to action**. "Take a Walk" is an imperative
+addressed to the learner, and the French lost that register entirely.
+
+**The options she gave**, with her own worked examples in spoken French:
+
+- _Fais un tour_ (her lead pick)
+- _Va faire un tour_ (offered explicitly so it could be ruled out, see below)
+- _Sors te promener_ / _Va te promener_
+- _Sors faire une balade_ / _Va faire une balade_
+
+**Why _Va faire un tour_ is rejected, permanently.** mirina raised it herself only to have
+it eliminated: in spoken French it is double-edged and very derogatory, used verbatim to
+tell someone to get lost ("Allez, allez, va plutôt faire un tour avant que ça dégénère..."
+= "go take a walk before this gets out of hand"). It is recorded as rejected in the
+glossary row so a future pass does not rediscover it as an obvious literal rendering. The
+same caution applies by extension to _Va te promener_, which carries a comparable
+send-someone-packing reading.
+
+**Why _Fais un tour_ wins** over the _sors.../promener/balade_ variants:
+
+- It is the native speaker's own first choice, and no competing speaker has been heard on
+  this title.
+- It is the shortest of the candidates, which matters for a title: it reads as a label, as
+  the English does. _Sors faire une balade_ is a full sentence of instruction.
+- It matches the register the fr titles already use. The sibling exercise `Solve the Maze`
+  is _Évade-toi du labyrinthe_, also a bare imperative to the learner, so this keeps the
+  maze titles consistent rather than mixing a description in among imperatives.
+- _Va faire un tour_ being poisoned does not poison _Fais un tour_: mirina's own contrast
+  puts the derogatory reading squarely on the _va_ construction, and her neutral example
+  (« ça te dirait d'aller faire un tour ? ») shows the _faire un tour_ collocation itself is
+  ordinary and friendly.
+
+**The one thing given up.** The 2026-08-04 entry below declined resu-xunil's _une petite
+balade_ partly because _marche_ tracks the `walk()` function the exercise teaches. _Fais un
+tour_ drops that echo too. That is accepted deliberately: the link to `walk()` is carried
+by the instructions prose, which glosses the function as « marcher » in the body text, and a
+title's job here is register, not vocabulary matching. A speaker's reading of the register
+outranks an agent's preference for a lexical echo.
+
+### 2026-08-12: "Space Invaders" → _Les envahisseurs de l'espace_? (OPEN QUESTION, not decided)
+
+**Raised by:** mirina, forum topic 1244 (https://forum.jiki.io/t/1244), post 3.
+**Status:** open. Nothing is decided and nothing has changed; see the 2026-08-13 addendum at
+the end of this entry for the status-quo row that now exists and what it does not settle.
+**Terms affected:** `Space Invaders`, which is left in English everywhere it appears.
+**Files affected so far:** `languages/fr/glossary-notes.md` only.
+
+**What mirina proposed.** That the exercise title should not stay in English when a common
+French option exists that is still part of everyday French speech regardless of the
+speaker's age, and that "Space Invaders" should become _Les envahisseurs de l'espace_. She
+illustrated it with two screenshots of the French dashboard showing the English title in
+place. She added her own caveat, unprompted: "If approved, the change should apply
+everywhere (« Space Invaders » has multiple use cases)."
+
+Contingent on the title changing, she offered two replacement phrasings for the
+`space-invaders-solve-basic` short description (English: "Shoot down some aliens in your
+first taste of Space Invaders"), explicitly labelled as supplementary propositions
+assuming the title change is approved:
+
+- _Abats des aliens pour débuter avec les Envahisseurs de l'espace_
+- _Abats des aliens pour découvrir les Envahisseurs de l'espace._
+
+**Why this is not a normal wording fix.** Two things put it above the bar for actioning a
+single reviewer's suggestion directly:
+
+- **Scope.** Her own caveat is right, and the reach is wider than the one exercise under
+  review. The four Space Invaders exercises (`space-invaders-solve-basic`,
+  `space-invaders-repeat`, `space-invaders-conditional`, `space-invaders-nested-repeat`)
+  all carry it in their titles, and the name also appears in `exercise/alien-detector`,
+  `exercise/scroll-and-shoot`, `concept/state` and `concept/while-loops`, plus level and
+  project copy. A half-applied rename would be worse than either consistent answer, so it
+  has to be settled once and applied everywhere or not at all.
+- **It is arguably a proper name, not vocabulary.** "Space Invaders" is the title of the
+  1978 arcade game, and the English source treats it as a deliberate reference to it (the
+  `space-invaders-solve-basic` instructions call it "a classic arcade game from the 1970s").
+  Translating it turns a specific cultural reference into a generic descriptive phrase.
+  Against that, mirina's point stands on its own: _les envahisseurs de l'espace_ is
+  ordinary, current French, and a learner reading the French course should not have to
+  parse an English phrase to know what the exercise is about. Both considerations are
+  real; neither one obviously wins.
+
+**Where it stands.** Asked back on the thread, inviting other French reviewers
+(resu-xunil in particular, who opened t/1244 and is the most active fr reviewer, and anyone
+active on the pinned glossary topic 314) to weigh in before anything moves. Until a second
+native speaker answers, a translation pass meeting "Space Invaders" leaves it in English as
+it is today, and must not adopt either of the two description phrasings above.
+
+**Addendum, 2026-08-13.** A `Space Invaders (exercise title)` row now exists in
+`glossary.md`, added as part of the titles-that-stay-as-they-are entry below. It records
+what this entry already says a pass must do (leave the title in English), so that coverage
+stops reporting the page as unreviewed; it decides nothing. mirina's question is still open
+and a second French voice still settles it. If the rename is adopted, that row is removed
+along with the English titles, and this entry is what says why.
+
+### 2026-08-13: seven titles recorded as staying as they are (owner decision)
+
+**Decided by:** iHiD, 2026-08-13, in session. His instruction: "If you're not sure if
+something's right (e.g. the English titles), that's fine, count that as done."
+**Terms affected:** the seven rows under "Titles that stay as they are" in `glossary.md`.
+**Files affected:** `glossary.md` only. No translated file was touched.
+
+**What this is.** `coverage.mjs` cannot tell a title nobody translated from a title that is
+correctly the same in both languages, so it reports every French frontmatter value that is
+byte-identical to its English as needing review, and it reads a language's own glossary for
+the answer: a row whose English and French columns hold the same text is that language
+recording the decision. Seven fr pages were sitting in that bucket. Each was looked at on
+its own; all seven come out the same way, but for four different reasons:
+
+- **The French word is spelled the same.** `Animation`, `Triangle`. These are not English
+  titles at all, they are the French translations, which happen to be homographs. Nothing
+  else was ever going to be written.
+- **The title is a name.** `Luhn` is Hans Peter Luhn's surname, and the French body already
+  says _la formule de Luhn_. `Space Invaders` is the 1978 arcade game (see the open question
+  above, which this does not settle).
+- **The title has to match the code.** `Hello` is named after the `"Hello"` string the
+  exercise returns. Translating the title to _Bonjour_ would make the page name something
+  the learner's own code never produces, and the description (_Dis bonjour au monde..._)
+  already carries the French sense.
+- **The title is English wordplay with no French equivalent.** `Two-Fer` is "two for one",
+  and it exists to set up the exercise's `"One for you, one for me."` line, which the French
+  description keeps in English quotation for the same reason. `Hello, World! 👋` (the blog
+  post) is the canonical first-program phrase, which French developers use as-is; rendering
+  it _Bonjour, le monde !_ would lose the reference the post is built on.
+
+**Scope.** Titles only. Every body, description, excerpt and SEO field on these pages is
+translated as normal and stays that way, and none of these rows licenses leaving any other
+field in English.
+
+### 2026-08-11: `build` stays contextual, no glossary row (settled, question closed)
+
+**Decided by:** resu-xunil, forum topic 314 (https://forum.jiki.io/t/314), post 83,
+confirmed by mirina in post 92.
+**Status:** settled. The question is closed, not open to a further round.
+**Terms affected:** none. `build` deliberately has **no** row in
+`languages/fr/glossary.md`, and adding one would contradict this decision.
+**Files affected:** `languages/fr/glossary-notes.md` only.
+
+**What was asked.** mirina had reported that `build` ("build a wall", "build a house",
+"build a solution") recurs across exercise instructions and that she re-decided it every
+time (_construire_, _réaliser_, _créer_, _concevoir_), which risked two translators
+diverging on one English word. The thread was asked to choose between fixing one French
+verb everywhere and writing "context decides" into the glossary. Either answer settled it.
+
+**The answer.** resu-xunil answered "context decides" (post 83). mirina, who raised the
+concern in the first place, then withdrew it in favour of his position: "in the end, it
+comes that I totally agree with @resu-xunil, he's right => 'context decides' is the best
+and most relevant approach" (post 92). Two native speakers, one of them the person who
+opened the question, agree that no fixed rendering is wanted.
+
+**What that means for a translation pass.** Judge `build` per instance, from what is being
+built and how the sentence reads, exactly as any unglossed word is judged. The absence of a
+row here is a decision, not a gap: a future pass that meets `build` should not treat it as
+an unanswered question, propose a delta for it, or re-raise it on the thread. Nothing in
+`i18n` needed re-translating, because no fixed term was imposed to apply.
 
 ### 2026-08-11: "challenge" (platform content type) → _défi_ gets its own row (settled)
 
@@ -939,7 +1121,9 @@ sound but no single French verb was proposed and nobody has yet said whether one
 should be forced everywhere or the choice should stay contextual, so nothing has been written
 to the glossary. Asked back on the thread. resu-xunil (post 3169) leans towards flexibility
 over a forced single verb, on the grounds that the context should decide; mirina has not yet
-answered, so the row stays unwritten until the two of them agree.
+answered, so the row stays unwritten until the two of them agree. **Since resolved:** they
+agreed on "context decides" on 2026-08-11, and there is deliberately no row. See the
+2026-08-11 `build` entry at the top of this file.
 
 ### 2026-08-03: `code block` → `bloc de code` (reviewer retraction)
 

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "3962042",
-  "approved": 591,
+  "governance_sha": "2ca3c61",
+  "approved": 596,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -666,7 +666,7 @@
       "name": "Ukrainian",
       "stage": "reviewing",
       "category_slug": "i18n-uk",
-      "approved": 117,
+      "approved": 122,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -773,7 +773,7 @@
         {
           "key": "exercise/maze-turn-around",
           "topic_id": 880,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/luhn",
@@ -817,13 +817,13 @@
         },
         {
           "key": "exercise/space-invaders-solve-basic",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 880,
+          "status": "approved"
         },
         {
           "key": "exercise/penguin",
           "topic_id": 880,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/jumbled-house",
@@ -842,8 +842,8 @@
         },
         {
           "key": "exercise/space-invaders-repeat",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 880,
+          "status": "approved"
         },
         {
           "key": "exercise/traffic-lights",
@@ -982,8 +982,8 @@
         },
         {
           "key": "exercise/space-invaders-nested-repeat",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 880,
+          "status": "approved"
         },
         {
           "key": "exercise/owners-bouquets",

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/account_mailer.fr.yml"
 en_md5: "e518eef5a32c5eca34790887e7cac31f"
-governance_sha: "2e7fb87"
+governance_sha: "e308736"
 content_version: "182d5d9365f3"
 published_at: "2026-08-13"
+forum_topic_id: 1513
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"account_mailer.welcome","rows":[{"key":"subject","english":"Welcome to Jiki!","target":"Bienvenue sur Jiki !"},{"key":"greeting","english":"Hi there,","target":"Salut,"}]}]}]
 ---
 

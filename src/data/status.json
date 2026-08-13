@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "10b78b3",
-  "approved": 630,
+  "governance_sha": "891ace1",
+  "approved": 631,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -1742,7 +1742,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 115,
+      "approved": 116,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -2433,8 +2433,8 @@
         },
         {
           "key": "api-email/onboarding_mailer.overview",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1520,
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.coding",

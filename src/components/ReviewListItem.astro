@@ -1,0 +1,56 @@
+---
+/**
+ * One reviewable row on a language page: a link to the item and its status pill.
+ *
+ * Lives in its own component because the same row is rendered into more than one
+ * status section (and moved between two of them client-side), and a row that
+ * differs between sections would make the move visible as a flicker of changing
+ * markup.
+ *
+ * `data-group` is what the client-side script uses to drop a row into the
+ * matching content-type sublist when it moves it from "Needs reviewing" to
+ * "Reviewed", so it must match the `data-group` on the target `ul`.
+ */
+import ReviewBadge from "./ReviewBadge.astro";
+
+interface Props {
+  /** The content-type subheading this row belongs under, e.g. "Concepts". */
+  group: string;
+  href: string;
+  title: string;
+  subtitle: string;
+  /** Item ids and versions as `reviewed.ts` defines them. */
+  itemId: string;
+  version: string;
+  approved: boolean;
+  /**
+   * Whether the title is in the target language (a translated page title) rather
+   * than English (the fixed "Glossary" / "Video player" labels). Only a target
+   * language title carries `lang`/`dir`, so an RTL language doesn't flip the
+   * English ones.
+   */
+  localisedTitle: boolean;
+  lang: string;
+  dir?: string;
+}
+
+const { group, href, title, subtitle, itemId, version, approved, localisedTitle, lang, dir } = Astro.props;
+---
+
+<li data-group={group}>
+  <a href={href} class="flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 transition hover:-translate-y-0.5 hover:border-purple-300 hover:shadow-md">
+    <span class="min-w-0">
+      {
+        localisedTitle ? (
+          <span class="block font-semibold text-gray-900" lang={lang} dir={dir}>
+            {title}
+          </span>
+        ) : (
+          <span class="block font-semibold text-gray-900">{title}</span>
+        )
+      }
+      <span class="mt-0.5 block text-[13px] text-gray-500">{subtitle}</span>
+    </span>
+    <ReviewBadge itemId={itemId} version={version} approved={approved} />
+  </a>
+</li>

@@ -3,7 +3,7 @@ import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import PageHeader from "../../components/PageHeader.astro";
-import ReviewBadge from "../../components/ReviewBadge.astro";
+import ReviewListItem from "../../components/ReviewListItem.astro";
 import PinToggle from "../../components/PinToggle.astro";
 import { contentTypeLabel, forumCategoryUrl, languageMeta, stageMeta } from "../../lib/languages";
 import { reviewItemId } from "../../lib/reviewed";
@@ -38,11 +38,102 @@ const stage = stageMeta(glossary.data.stage);
 /** Real native-speaker sign-off, keyed the same way as `status.json` ("glossary", "video-player", "concept/for-loops", ...). */
 const approvedKeys = new Set((signedOff.items ?? []).filter((item) => item.status === "approved").map((item) => item.key));
 
-const byType = new Map<string, typeof translations>();
+/**
+ * The page groups by review status first and content type second, because the
+ * question a reviewer arrives with is "what still needs me", not "where are the
+ * concepts". Only one of the three statuses is server-side truth:
+ *
+ * - **Approved** is real native-speaker sign-off from `status.json`, known at
+ *   build time and never overridden in the browser.
+ * - **Reviewed** is this browser's own localStorage, which the server cannot
+ *   know. Nothing is rendered into it; the script below moves rows in.
+ * - **Needs reviewing** is everything else, so it is exactly right on first
+ *   paint for a fresh visitor and never depends on JS running.
+ *
+ * That split is what keeps the HTML cacheable and reviewer-agnostic: a visitor
+ * with JS off sees every unapproved item under "Needs reviewing", which is true
+ * (just not personalised), rather than an empty page.
+ */
+type ReviewEntry = {
+  /** The content-type subheading this row sits under. */
+  group: string;
+  href: string;
+  title: string;
+  subtitle: string;
+  itemId: string;
+  version: string;
+  approved: boolean;
+  localisedTitle: boolean;
+};
+
+/**
+ * The glossary and the video player aren't `type/slug` content, but they carry
+ * the same review lifecycle, so they group together under one subheading rather
+ * than each becoming a group of one. The label matches the `/status` page's own
+ * grouping of the same two items.
+ */
+const GENERAL_GROUP = "Glossary & site";
+
+const entries: ReviewEntry[] = [
+  {
+    group: GENERAL_GROUP,
+    href: `/${lang}/glossary`,
+    title: "Glossary",
+    subtitle: `The ${termCount} agreed terms every translation is built on`,
+    itemId: reviewItemId(lang, "glossary"),
+    version: glossary.data.content_version ?? glossary.data.governance_sha,
+    approved: approvedKeys.has("glossary"),
+    localisedTitle: false
+  },
+  {
+    group: GENERAL_GROUP,
+    href: `/${lang}/video-player`,
+    title: "Video player",
+    subtitle: "The controls and captions wrapped around every video",
+    itemId: reviewItemId(lang, "video-player"),
+    version: playerReviewVersion(lang),
+    approved: approvedKeys.has("video-player"),
+    localisedTitle: false
+  },
+  ...published.map((item) => ({
+    group: contentTypeLabel(item.data.type),
+    href: `/${lang}/${item.data.type}/${item.data.slug}`,
+    title: item.data.title ?? item.data.slug,
+    subtitle: item.data.slug,
+    itemId: reviewItemId(lang, item.data.type, item.data.slug),
+    version: item.data.content_version ?? item.data.en_md5 ?? "unknown",
+    approved: approvedKeys.has(`${item.data.type}/${item.data.slug}`),
+    localisedTitle: true
+  }))
+];
+
+/** Sub-group one status section by content type, in the order each type first appears. */
+function byGroup(list: ReviewEntry[]): [string, ReviewEntry[]][] {
+  const groups = new Map<string, ReviewEntry[]>();
+  for (const entry of list) {
+    const items = groups.get(entry.group) ?? [];
+    items.push(entry);
+    groups.set(entry.group, items);
+  }
+  return [...groups.entries()];
+}
+
+const needsReviewing = byGroup(entries.filter((entry) => !entry.approved));
+const approved = byGroup(entries.filter((entry) => entry.approved));
+/**
+ * The empty sublists the client script moves rows into. Only an unapproved row
+ * can ever move, so the "Reviewed" section needs exactly the subheadings that
+ * "Needs reviewing" has, and nothing more.
+ */
+const reviewedGroups = needsReviewing.map(([group]) => group);
+
+/** Not translated yet, so not reviewable: kept out of the three status groups and listed on its own below them. */
+const untranslated = new Map<string, typeof translations>();
 for (const item of translations) {
-  const list = byType.get(item.data.type) ?? [];
+  if (item.data.status === "published") continue;
+  const list = untranslated.get(item.data.type) ?? [];
   list.push(item);
-  byType.set(item.data.type, list);
+  untranslated.set(item.data.type, list);
 }
 ---
 
@@ -89,66 +180,150 @@ for (const item of translations) {
         {published.length === 0 && <p>Nothing published in {meta.name} yet beyond the glossary. Terms are agreed first, then translations start appearing here for you to pull apart. The items below are queued.</p>}
       </div>
 
-      <div class="mt-6 space-y-8">
-        <section>
-          <h3 class="text-[13px] font-bold tracking-[0.08em] text-gray-500 uppercase">Foundations</h3>
-          <ul class="mt-3 space-y-2">
-            <li>
-              <a href={`/${lang}/glossary`} class="flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 transition hover:-translate-y-0.5 hover:border-purple-300 hover:shadow-md">
-                <span class="min-w-0">
-                  <span class="block font-semibold text-gray-900">Glossary</span>
-                  <span class="mt-0.5 block text-[13px] text-gray-500">The {termCount} agreed terms every translation is built on</span>
-                </span>
-                <ReviewBadge itemId={reviewItemId(lang, "glossary")} version={glossary.data.content_version ?? glossary.data.governance_sha} approved={approvedKeys.has("glossary")} />
-              </a>
-            </li>
-            <li>
-              <a href={`/${lang}/video-player`} class="flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 transition hover:-translate-y-0.5 hover:border-purple-300 hover:shadow-md">
-                <span class="min-w-0">
-                  <span class="block font-semibold text-gray-900">Video player</span>
-                  <span class="mt-0.5 block text-[13px] text-gray-500">The controls and captions wrapped around every video</span>
-                </span>
-                <ReviewBadge itemId={reviewItemId(lang, "video-player")} version={playerReviewVersion(lang)} approved={approvedKeys.has("video-player")} />
-              </a>
-            </li>
-          </ul>
+      <div class="mt-6 space-y-10">
+        <section id="needs-reviewing" hidden={needsReviewing.length === 0}>
+          <h3 class="flex items-center gap-2 text-[13px] font-bold tracking-[0.08em] text-amber-700 uppercase">
+            <span class="inline-block h-2 w-2 rounded-full bg-amber-500"></span>
+            Needs reviewing
+          </h3>
+          <div class="mt-4 space-y-6">
+            {
+              needsReviewing.map(([group, items]) => (
+                <div data-group-section>
+                  <h4 class="text-[12px] font-semibold tracking-[0.06em] text-gray-500 uppercase">{group}</h4>
+                  <ul class="mt-2 space-y-2" data-group={group}>
+                    {items.map((entry) => (
+                      <ReviewListItem {...entry} lang={lang} dir={meta.dir} />
+                    ))}
+                  </ul>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+
+        <section id="reviewed" hidden>
+          <h3 class="flex items-center gap-2 text-[13px] font-bold tracking-[0.08em] text-blue-700 uppercase">
+            <span class="inline-block h-2 w-2 rounded-full bg-blue-500"></span>
+            Reviewed by you
+          </h3>
+          <div class="mt-4 space-y-6">
+            {
+              reviewedGroups.map((group) => (
+                <div data-group-section hidden>
+                  <h4 class="text-[12px] font-semibold tracking-[0.06em] text-gray-500 uppercase">{group}</h4>
+                  <ul class="mt-2 space-y-2" data-group={group} />
+                </div>
+              ))
+            }
+          </div>
+        </section>
+
+        <section id="approved" hidden={approved.length === 0}>
+          <h3 class="flex items-center gap-2 text-[13px] font-bold tracking-[0.08em] text-emerald-700 uppercase">
+            <span class="inline-block h-2 w-2 rounded-full bg-emerald-500"></span>
+            Approved
+          </h3>
+          <div class="mt-4 space-y-6">
+            {
+              approved.map(([group, items]) => (
+                <div data-group-section>
+                  <h4 class="text-[12px] font-semibold tracking-[0.06em] text-gray-500 uppercase">{group}</h4>
+                  <ul class="mt-2 space-y-2" data-group={group}>
+                    {items.map((entry) => (
+                      <ReviewListItem {...entry} lang={lang} dir={meta.dir} />
+                    ))}
+                  </ul>
+                </div>
+              ))
+            }
+          </div>
         </section>
 
         {
-          [...byType.entries()].map(([type, items]) => (
+          untranslated.size > 0 && (
             <section>
-              <h3 class="text-[13px] font-bold tracking-[0.08em] text-gray-500 uppercase">{contentTypeLabel(type)}</h3>
-              <ul class="mt-3 space-y-2">
-                {items.map((item) =>
-                  item.data.status === "published" ? (
-                    <li>
-                      <a href={`/${lang}/${item.data.type}/${item.data.slug}`} class="flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 transition hover:-translate-y-0.5 hover:border-purple-300 hover:shadow-md">
-                        <span class="min-w-0">
-                          <span class="block font-semibold text-gray-900" lang={lang} dir={meta.dir}>
-                            {item.data.title ?? item.data.slug}
+              <h3 class="flex items-center gap-2 text-[13px] font-bold tracking-[0.08em] text-gray-500 uppercase">
+                <span class="inline-block h-2 w-2 rounded-full bg-gray-300" />
+                Not translated yet
+              </h3>
+              <div class="mt-4 space-y-6">
+                {[...untranslated.entries()].map(([type, items]) => (
+                  <div>
+                    <h4 class="text-[12px] font-semibold tracking-[0.06em] text-gray-500 uppercase">{contentTypeLabel(type)}</h4>
+                    <ul class="mt-2 space-y-2">
+                      {items.map((item) => (
+                        <li class="flex items-center justify-between gap-4 rounded-xl border border-dashed border-gray-300 bg-gray-50 px-5 py-4">
+                          <span class="min-w-0">
+                            <span class="block font-semibold text-gray-500">{item.data.slug}</span>
+                            <span class="mt-0.5 block text-[13px] text-gray-400">Not translated yet</span>
                           </span>
-                          <span class="mt-0.5 block text-[13px] text-gray-500">{item.data.slug}</span>
-                        </span>
-                        <ReviewBadge itemId={reviewItemId(lang, item.data.type, item.data.slug)} version={item.data.content_version ?? item.data.en_md5 ?? "unknown"} approved={approvedKeys.has(`${item.data.type}/${item.data.slug}`)} />
-                      </a>
-                    </li>
-                  ) : (
-                    <li class="flex items-center justify-between gap-4 rounded-xl border border-dashed border-gray-300 bg-gray-50 px-5 py-4">
-                      <span class="min-w-0">
-                        <span class="block font-semibold text-gray-500">{item.data.slug}</span>
-                        <span class="mt-0.5 block text-[13px] text-gray-400">Not translated yet</span>
-                      </span>
-                      <span class="shrink-0 rounded-full bg-white px-2.5 py-1 text-[12px] font-semibold text-gray-500" lang={lang} dir={meta.dir}>
-                        {meta.comingSoon}
-                      </span>
-                    </li>
-                  )
-                )}
-              </ul>
+                          <span class="shrink-0 rounded-full bg-white px-2.5 py-1 text-[12px] font-semibold text-gray-500" lang={lang} dir={meta.dir}>
+                            {meta.comingSoon}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
             </section>
-          ))
+          )
         }
       </div>
+
+      <script>
+        /**
+         * Move the rows this browser has already reviewed out of "Needs
+         * reviewing" and into "Reviewed by you".
+         *
+         * Everything unapproved is server-rendered under "Needs reviewing", so
+         * this only ever demotes work off the reviewer's pile: if the script
+         * never runs, the page is still true. Approved rows are server truth and
+         * are not touched here at all.
+         */
+        import { REVIEWED_STORAGE_KEY } from "../../lib/reviewed";
+
+        let state: Record<string, string> = {};
+        try {
+          const raw = localStorage.getItem(REVIEWED_STORAGE_KEY);
+          state = raw ? JSON.parse(raw) : {};
+        } catch {
+          state = {};
+        }
+
+        const needsSection = document.getElementById("needs-reviewing");
+        const reviewedSection = document.getElementById("reviewed");
+
+        if (needsSection && reviewedSection) {
+          let moved = 0;
+
+          for (const row of needsSection.querySelectorAll<HTMLLIElement>("li[data-group]")) {
+            const badge = row.querySelector<HTMLElement>(".review-badge");
+            const id = badge?.dataset.reviewId;
+            const version = badge?.dataset.reviewVersion;
+            if (!id || !version || state[id] !== version) continue;
+
+            const group = row.dataset.group;
+            if (!group) continue;
+            const target = reviewedSection.querySelector<HTMLUListElement>(`ul[data-group="${CSS.escape(group)}"]`);
+            if (!target) continue;
+
+            target.appendChild(row);
+            target.closest<HTMLElement>("[data-group-section]")?.removeAttribute("hidden");
+            moved += 1;
+          }
+
+          if (moved > 0) {
+            reviewedSection.removeAttribute("hidden");
+            // A subheading with nothing left under it reads as a bug, so retire the emptied ones.
+            for (const section of needsSection.querySelectorAll<HTMLElement>("[data-group-section]")) {
+              if (!section.querySelector("li")) section.hidden = true;
+            }
+            if (!needsSection.querySelector("li")) needsSection.hidden = true;
+          }
+        }
+      </script>
 
       <div class="textual-content mt-10">
         <h2>How to help</h2>

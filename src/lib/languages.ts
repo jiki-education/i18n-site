@@ -174,6 +174,32 @@ export function contentTypeLabel(type: string): string {
   return CONTENT_TYPE_LABELS[type] ?? type;
 }
 
+/**
+ * The types that always sort to the bottom of a list grouped by content type,
+ * in this order. Emails are transactional copy a reviewer sees once, so they
+ * sit below the curriculum they are reviewing rather than wherever collection
+ * order happens to put them.
+ */
+export const TRAILING_CONTENT_TYPES = ["api-email", "level-milestone"];
+
+const TRAILING_CONTENT_TYPE_LABELS = TRAILING_CONTENT_TYPES.map(contentTypeLabel);
+
+/**
+ * Sort rank for one content type: 0 for everything normal, then 1, 2, ... for
+ * the trailing types. Everything sharing rank 0 means a stable sort leaves the
+ * existing (first-appearance) order of the normal types untouched.
+ */
+export function contentTypeRank(type: string): number {
+  const index = TRAILING_CONTENT_TYPES.indexOf(type);
+  return index === -1 ? 0 : index + 1;
+}
+
+/** The same rank, for a list already keyed by display label rather than by raw type. */
+export function contentTypeLabelRank(label: string): number {
+  const index = TRAILING_CONTENT_TYPE_LABELS.indexOf(label);
+  return index === -1 ? 0 : index + 1;
+}
+
 /** Singular form, for talking about one item: "Review this concept". */
 const CONTENT_TYPE_SINGULARS: Record<string, string> = {
   concept: "concept",

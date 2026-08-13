@@ -5,7 +5,7 @@ import Layout from "../../layouts/Layout.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import ReviewListItem from "../../components/ReviewListItem.astro";
 import PinToggle from "../../components/PinToggle.astro";
-import { contentTypeLabel, forumCategoryUrl, languageMeta, stageMeta } from "../../lib/languages";
+import { contentTypeLabel, contentTypeLabelRank, contentTypeRank, forumCategoryUrl, languageMeta, stageMeta } from "../../lib/languages";
 import { reviewItemId } from "../../lib/reviewed";
 import { playerReviewVersion } from "../../lib/videojs";
 import status from "../../data/status.json";
@@ -107,7 +107,11 @@ const entries: ReviewEntry[] = [
   }))
 ];
 
-/** Sub-group one status section by content type, in the order each type first appears. */
+/**
+ * Sub-group one status section by content type, in the order each type first
+ * appears, except that the trailing types (the emails) are always last however
+ * early the collection happens to surface them.
+ */
 function byGroup(list: ReviewEntry[]): [string, ReviewEntry[]][] {
   const groups = new Map<string, ReviewEntry[]>();
   for (const entry of list) {
@@ -115,7 +119,7 @@ function byGroup(list: ReviewEntry[]): [string, ReviewEntry[]][] {
     items.push(entry);
     groups.set(entry.group, items);
   }
-  return [...groups.entries()];
+  return [...groups.entries()].sort(([a], [b]) => contentTypeLabelRank(a) - contentTypeLabelRank(b));
 }
 
 const needsReviewing = byGroup(entries.filter((entry) => !entry.approved));
@@ -248,24 +252,26 @@ for (const item of translations) {
                 Not translated yet
               </h3>
               <div class="mt-4 space-y-6">
-                {[...untranslated.entries()].map(([type, items]) => (
-                  <div>
-                    <h4 class="text-[12px] font-semibold tracking-[0.06em] text-gray-500 uppercase">{contentTypeLabel(type)}</h4>
-                    <ul class="mt-2 space-y-2">
-                      {items.map((item) => (
-                        <li class="flex items-center justify-between gap-4 rounded-xl border border-dashed border-gray-300 bg-gray-50 px-5 py-4">
-                          <span class="min-w-0">
-                            <span class="block font-semibold text-gray-500">{item.data.slug}</span>
-                            <span class="mt-0.5 block text-[13px] text-gray-400">Not translated yet</span>
-                          </span>
-                          <span class="shrink-0 rounded-full bg-white px-2.5 py-1 text-[12px] font-semibold text-gray-500" lang={lang} dir={meta.dir}>
-                            {meta.comingSoon}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+                {[...untranslated.entries()]
+                  .sort(([a], [b]) => contentTypeRank(a) - contentTypeRank(b))
+                  .map(([type, items]) => (
+                    <div>
+                      <h4 class="text-[12px] font-semibold tracking-[0.06em] text-gray-500 uppercase">{contentTypeLabel(type)}</h4>
+                      <ul class="mt-2 space-y-2">
+                        {items.map((item) => (
+                          <li class="flex items-center justify-between gap-4 rounded-xl border border-dashed border-gray-300 bg-gray-50 px-5 py-4">
+                            <span class="min-w-0">
+                              <span class="block font-semibold text-gray-500">{item.data.slug}</span>
+                              <span class="mt-0.5 block text-[13px] text-gray-400">Not translated yet</span>
+                            </span>
+                            <span class="shrink-0 rounded-full bg-white px-2.5 py-1 text-[12px] font-semibold text-gray-500" lang={lang} dir={meta.dir}>
+                              {meta.comingSoon}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
               </div>
             </section>
           )

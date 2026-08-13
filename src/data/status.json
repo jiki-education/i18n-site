@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "6375847",
+  "governance_sha": "2e7fb87",
   "approved": 604,
   "disapproved": 1,
-  "total": 1839,
+  "total": 2298,
   "languages": [
     {
       "lang": "uk",
@@ -12,7 +12,7 @@
       "category_slug": "i18n-uk",
       "approved": 129,
       "disapproved": 0,
-      "total": 129,
+      "total": 162,
       "items": [
         {
           "key": "glossary",
@@ -658,6 +658,171 @@
           "key": "exercise/after-party",
           "topic_id": null,
           "status": "approved"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -668,7 +833,7 @@
       "category_slug": "i18n-it",
       "approved": 125,
       "disapproved": 0,
-      "total": 129,
+      "total": 162,
       "items": [
         {
           "key": "glossary",
@@ -1314,6 +1479,171 @@
           "key": "exercise/alphanumeric",
           "topic_id": 1285,
           "status": "approved"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -1324,7 +1654,7 @@
       "category_slug": "i18n-fr",
       "approved": 97,
       "disapproved": 0,
-      "total": 133,
+      "total": 166,
       "items": [
         {
           "key": "glossary",
@@ -1990,6 +2320,171 @@
           "key": "exercise/wordle-solver",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -2000,7 +2495,7 @@
       "category_slug": "i18n-el",
       "approved": 78,
       "disapproved": 0,
-      "total": 129,
+      "total": 162,
       "items": [
         {
           "key": "glossary",
@@ -2646,6 +3141,171 @@
           "key": "exercise/alphanumeric",
           "topic_id": 1389,
           "status": "approved"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -2656,7 +3316,7 @@
       "category_slug": "i18n-es-419",
       "approved": 31,
       "disapproved": 0,
-      "total": 129,
+      "total": 153,
       "items": [
         {
           "key": "glossary",
@@ -3302,6 +3962,126 @@
           "key": "exercise/alphanumeric",
           "topic_id": 1376,
           "status": "approved"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -3312,7 +4092,7 @@
       "category_slug": "i18n-hu",
       "approved": 21,
       "disapproved": 0,
-      "total": 137,
+      "total": 170,
       "items": [
         {
           "key": "glossary",
@@ -3998,6 +4778,171 @@
           "key": "exercise/triangle",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -4008,7 +4953,7 @@
       "category_slug": "i18n-pt-pt",
       "approved": 20,
       "disapproved": 0,
-      "total": 47,
+      "total": 52,
       "items": [
         {
           "key": "glossary",
@@ -4244,6 +5189,31 @@
           "key": "exercise/rainbow-splodges",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -4254,7 +5224,7 @@
       "category_slug": "i18n-fa",
       "approved": 15,
       "disapproved": 0,
-      "total": 129,
+      "total": 153,
       "items": [
         {
           "key": "glossary",
@@ -4900,6 +5870,126 @@
           "key": "exercise/formal-dinner",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -4910,7 +6000,7 @@
       "category_slug": "i18n-sr",
       "approved": 13,
       "disapproved": 0,
-      "total": 129,
+      "total": 153,
       "items": [
         {
           "key": "glossary",
@@ -5556,6 +6646,126 @@
           "key": "exercise/alphanumeric",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -5566,7 +6776,7 @@
       "category_slug": "i18n-pl",
       "approved": 10,
       "disapproved": 0,
-      "total": 14,
+      "total": 19,
       "items": [
         {
           "key": "glossary",
@@ -5637,6 +6847,31 @@
           "key": "exercise/weather-symbols",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -5647,7 +6882,7 @@
       "category_slug": "i18n-nl",
       "approved": 9,
       "disapproved": 0,
-      "total": 14,
+      "total": 19,
       "items": [
         {
           "key": "glossary",
@@ -5718,6 +6953,31 @@
           "key": "exercise/weather-symbols",
           "topic_id": 1048,
           "status": "approved"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -5728,7 +6988,7 @@
       "category_slug": "i18n-hi",
       "approved": 8,
       "disapproved": 0,
-      "total": 128,
+      "total": 152,
       "items": [
         {
           "key": "glossary",
@@ -6369,6 +7629,126 @@
           "key": "exercise/alphanumeric",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -6379,7 +7759,7 @@
       "category_slug": "i18n-pt-br",
       "approved": 8,
       "disapproved": 1,
-      "total": 24,
+      "total": 29,
       "items": [
         {
           "key": "glossary",
@@ -6500,6 +7880,31 @@
           "key": "exercise/maze-turn-around",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -6510,7 +7915,7 @@
       "category_slug": "i18n-zh-tw",
       "approved": 8,
       "disapproved": 0,
-      "total": 19,
+      "total": 24,
       "items": [
         {
           "key": "glossary",
@@ -6606,6 +8011,31 @@
           "key": "exercise/weather-symbols",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -6616,7 +8046,7 @@
       "category_slug": "i18n-ru",
       "approved": 8,
       "disapproved": 0,
-      "total": 14,
+      "total": 19,
       "items": [
         {
           "key": "glossary",
@@ -6687,6 +8117,31 @@
           "key": "exercise/weather-symbols",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -6697,7 +8152,7 @@
       "category_slug": "i18n-ja",
       "approved": 4,
       "disapproved": 0,
-      "total": 128,
+      "total": 152,
       "items": [
         {
           "key": "glossary",
@@ -7338,6 +8793,126 @@
           "key": "exercise/alphanumeric",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -7348,7 +8923,7 @@
       "category_slug": "i18n-sv",
       "approved": 4,
       "disapproved": 0,
-      "total": 56,
+      "total": 80,
       "items": [
         {
           "key": "glossary",
@@ -7629,6 +9204,126 @@
           "key": "exercise/rainbow",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -7639,7 +9334,7 @@
       "category_slug": "i18n-id",
       "approved": 4,
       "disapproved": 0,
-      "total": 14,
+      "total": 19,
       "items": [
         {
           "key": "glossary",
@@ -7710,6 +9405,31 @@
           "key": "exercise/weather-symbols",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -7720,7 +9440,7 @@
       "category_slug": "i18n-ar",
       "approved": 3,
       "disapproved": 0,
-      "total": 19,
+      "total": 43,
       "items": [
         {
           "key": "glossary",
@@ -7816,6 +9536,126 @@
           "key": "exercise/weather-symbols",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -7826,7 +9666,7 @@
       "category_slug": "i18n-tr",
       "approved": 3,
       "disapproved": 0,
-      "total": 9,
+      "total": 14,
       "items": [
         {
           "key": "glossary",
@@ -7872,6 +9712,31 @@
           "key": "exercise/rock-paper-scissors",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -7882,7 +9747,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 128,
+      "total": 152,
       "items": [
         {
           "key": "glossary",
@@ -8523,6 +10388,126 @@
           "key": "exercise/maze-turn-around",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -8533,7 +10518,7 @@
       "category_slug": "i18n-zh-cn",
       "approved": 2,
       "disapproved": 0,
-      "total": 128,
+      "total": 152,
       "items": [
         {
           "key": "glossary",
@@ -9174,6 +11159,126 @@
           "key": "exercise/alphanumeric",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -9184,7 +11289,7 @@
       "category_slug": "i18n-de",
       "approved": 2,
       "disapproved": 0,
-      "total": 9,
+      "total": 14,
       "items": [
         {
           "key": "glossary",
@@ -9230,6 +11335,31 @@
           "key": "exercise/rock-paper-scissors",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -9240,7 +11370,7 @@
       "category_slug": "i18n-bn",
       "approved": 0,
       "disapproved": 0,
-      "total": 4,
+      "total": 9,
       "items": [
         {
           "key": "glossary",
@@ -9261,6 +11391,31 @@
           "key": "exercise/maze-solve-basic",
           "topic_id": 796,
           "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -9271,7 +11426,7 @@
       "category_slug": "i18n-ca",
       "approved": 0,
       "disapproved": 0,
-      "total": 4,
+      "total": 9,
       "items": [
         {
           "key": "glossary",
@@ -9291,6 +11446,301 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 797,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "es-ES",
+      "name": "European Spanish",
+      "stage": "setup",
+      "category_slug": "i18n-es-es",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 310,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 750,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 751,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 801,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "ro",
+      "name": "Romanian",
+      "stage": "setup",
+      "category_slug": "i18n-ro",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 825,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 842,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "ur",
+      "name": "Urdu",
+      "stage": "setup",
+      "category_slug": "i18n-ur",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 476,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 786,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 787,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 818,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "vi",
+      "name": "Vietnamese",
+      "stage": "setup",
+      "category_slug": "i18n-vi",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 9,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 322,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 788,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 789,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 819,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "sw",
+      "name": "Swahili",
+      "stage": "setup",
+      "category_slug": "i18n-sw",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 7,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 500,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 780,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 781,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 815,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/notifications_mailer.badge_earned",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
           "status": "pending"
         }
       ]
@@ -9322,37 +11772,6 @@
         {
           "key": "video-player",
           "topic_id": 1476,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "es-ES",
-      "name": "European Spanish",
-      "stage": "setup",
-      "category_slug": "i18n-es-es",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 310,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 750,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 751,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 801,
           "status": "pending"
         }
       ]
@@ -9420,68 +11839,6 @@
       ]
     },
     {
-      "lang": "ro",
-      "name": "Romanian",
-      "stage": "setup",
-      "category_slug": "i18n-ro",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 825,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 842,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "sw",
-      "name": "Swahili",
-      "stage": "setup",
-      "category_slug": "i18n-sw",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 500,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 780,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 781,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 815,
-          "status": "pending"
-        }
-      ]
-    },
-    {
       "lang": "th",
       "name": "Thai",
       "stage": "setup",
@@ -9508,68 +11865,6 @@
         {
           "key": "video-player",
           "topic_id": 1477,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "ur",
-      "name": "Urdu",
-      "stage": "setup",
-      "category_slug": "i18n-ur",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 476,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 786,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 787,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 818,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "vi",
-      "name": "Vietnamese",
-      "stage": "setup",
-      "category_slug": "i18n-vi",
-      "approved": 0,
-      "disapproved": 0,
-      "total": 4,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 322,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 788,
-          "status": "pending"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 789,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 819,
           "status": "pending"
         }
       ]

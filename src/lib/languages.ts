@@ -163,7 +163,11 @@ export const CONTENT_TYPE_LABELS: Record<string, string> = {
   exercise: "Exercises",
   "video-subtitles": "Video subtitles",
   "website-copy": "Website copy",
-  interpreters: "Interpreter messages"
+  interpreters: "Interpreter messages",
+  // The two types that still live in the api repo rather than in i18n. Named
+  // for what a reader receives (an email), not for where it is stored.
+  "api-email": "Emails",
+  "level-milestone": "Level milestone emails"
 };
 
 export function contentTypeLabel(type: string): string {
@@ -178,7 +182,9 @@ const CONTENT_TYPE_SINGULARS: Record<string, string> = {
   exercise: "exercise",
   "video-subtitles": "video's subtitles",
   "website-copy": "website copy",
-  interpreters: "interpreter messages"
+  interpreters: "interpreter messages",
+  "api-email": "email",
+  "level-milestone": "level milestone email"
 };
 
 export function contentTypeSingular(type: string): string {
@@ -200,7 +206,9 @@ const CONTENT_TYPE_THREAD_LABELS: Record<string, string> = {
   exercise: "Exercise",
   "video-subtitles": "Video subtitles",
   "website-copy": "Website copy",
-  interpreters: "Interpreter messages"
+  interpreters: "Interpreter messages",
+  "api-email": "Email",
+  "level-milestone": "Level milestone email"
 };
 
 export function contentTypeThreadLabel(type: string): string {

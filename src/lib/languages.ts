@@ -164,6 +164,7 @@ export const CONTENT_TYPE_LABELS: Record<string, string> = {
   "video-subtitles": "Video subtitles",
   "website-copy": "Website copy",
   interpreters: "Interpreter messages",
+  badge: "Badges",
   // The two types that still live in the api repo rather than in i18n. Named
   // for what a reader receives (an email), not for where it is stored.
   "api-email": "Emails",
@@ -209,6 +210,7 @@ const CONTENT_TYPE_SINGULARS: Record<string, string> = {
   "video-subtitles": "video's subtitles",
   "website-copy": "website copy",
   interpreters: "interpreter messages",
+  badge: "badge",
   "api-email": "email",
   "level-milestone": "level milestone email"
 };
@@ -233,6 +235,7 @@ const CONTENT_TYPE_THREAD_LABELS: Record<string, string> = {
   "video-subtitles": "Video subtitles",
   "website-copy": "Website copy",
   interpreters: "Interpreter messages",
+  badge: "Badge",
   "api-email": "Email",
   "level-milestone": "Level milestone email"
 };

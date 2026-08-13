@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "2e7fb87",
-  "approved": 604,
+  "governance_sha": "2c8759b",
+  "approved": 605,
   "disapproved": 1,
   "total": 2298,
   "languages": [
@@ -2493,7 +2493,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 78,
+      "approved": 79,
       "disapproved": 0,
       "total": 162,
       "items": [
@@ -3174,8 +3174,8 @@
         },
         {
           "key": "api-email/onboarding_mailer.coding",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1486,
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.building",

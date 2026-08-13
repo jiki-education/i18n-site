@@ -7,13 +7,14 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.el.yml"
 en_md5: "c5baf864e491a2f763a346af05470f74"
-governance_sha: "2e7fb87"
-content_version: "1b3066c97294"
+governance_sha: "4a4e784"
+content_version: "aae119abbce5"
 published_at: "2026-08-13"
-messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.premium","rows":[{"key":"subject","english":"Get More Out of Jiki (and help us out)","target":"Αξιοποίησε περισσότερο το Jiki (και βοήθησέ μας)"},{"key":"preview","english":"We made Jiki free because we want it to be accessible to everyone regardless","target":"Φτιάξαμε το Jiki δωρεάν επειδή θέλουμε να είναι προσβάσιμο σε όλους ανεξάρτητα"},{"key":"greeting","english":"Hi there,","target":"Γεια σου,"}]}]}]
+forum_topic_id: 1487
+messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.premium","rows":[{"key":"subject","english":"Get More Out of Jiki (and help us out)","target":"Αξιοποίησε περισσότερο το Jiki (και βοήθησέ μας)"},{"key":"preview","english":"We made Jiki free because we want it to be accessible to everyone regardless","target":"Προσφέρουμε το Jiki δωρεάν επειδή θέλουμε να είναι προσβάσιμο σε όλους ανεξάρτητα"},{"key":"greeting","english":"Hi there,","target":"Γεια σου,"}]}]}]
 ---
 
-Φτιάξαμε το Jiki δωρεάν επειδή θέλουμε να είναι **προσβάσιμο σε όλους** ανεξάρτητα από την οικονομική τους κατάσταση. Όλοι έχουν πρόσβαση σε εκατοντάδες ώρες ασκήσεων και βίντεο, όλα διαθέσιμα χωρίς να ζητάμε τίποτα σε αντάλλαγμα.
+Προσφέρουμε το Jiki δωρεάν επειδή θέλουμε να είναι **προσβάσιμο σε όλους** ανεξάρτητα από την οικονομική τους κατάσταση. Όλοι έχουν πρόσβαση σε εκατοντάδες ώρες ασκήσεων και βίντεο, όλα διαθέσιμα χωρίς να ζητάμε τίποτα σε αντάλλαγμα.
 
 Αλλά **το Jiki κοστίζει χρήματα για να λειτουργεί**, και πρέπει να μπορούμε να πληρώνουμε τα ενοίκιά μας και να αγοράζουμε φαγητό (🍜) και καφεΐνη (☕), οπότε προσθέσαμε μια βαθμίδα Premium που προσφέρει κάποια επιπλέον οφέλη που νομίζω ότι θα σε βοηθήσουν πραγματικά:
 - **Ask Jiki**: Η τεχνητή νοημοσύνη μας για συνομιλία που σε βοηθά να ξεκολλήσεις γρήγορα ή να εξερευνήσεις τις ερωτήσεις σου.

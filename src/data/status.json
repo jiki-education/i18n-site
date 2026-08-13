@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "025d385",
-  "approved": 560,
+  "governance_sha": "d90aff2",
+  "approved": 561,
   "disapproved": 1,
   "total": 1833,
   "languages": [
@@ -1978,7 +1978,7 @@
       "name": "Greek",
       "stage": "reviewing",
       "category_slug": "i18n-el",
-      "approved": 74,
+      "approved": 75,
       "disapproved": 0,
       "total": 129,
       "items": [
@@ -2449,8 +2449,8 @@
         },
         {
           "key": "concept/updating-dictionaries",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1472,
+          "status": "approved"
         },
         {
           "key": "concept/updating-variables",

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/badges/messages.json"
 en_md5: "9f0335edfb4e6474c3c50a0583b7f75d"
-governance_sha: "4d02c56"
+governance_sha: "278103b"
 content_version: "50555e1f70f5"
 published_at: "2026-08-13"
+forum_topic_id: 1509
 ---
 
 Tu as rejoint le forum de la communauté Jiki

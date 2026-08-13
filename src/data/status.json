@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "a2f51e4",
-  "approved": 616,
+  "governance_sha": "278103b",
+  "approved": 620,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -1742,7 +1742,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 101,
+      "approved": 105,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -2603,23 +2603,23 @@
         },
         {
           "key": "badge/premium",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1506,
+          "status": "approved"
         },
         {
           "key": "badge/scenario_handler",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1507,
+          "status": "approved"
         },
         {
           "key": "badge/sidekick",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1508,
+          "status": "approved"
         },
         {
           "key": "badge/townsfolk",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1509,
+          "status": "approved"
         }
       ]
     },

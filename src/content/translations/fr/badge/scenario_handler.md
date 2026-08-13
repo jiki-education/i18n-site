@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/badges/messages.json"
 en_md5: "a7a3bf8abe8bed9297947e44667d7dda"
-governance_sha: "4d02c56"
+governance_sha: "278103b"
 content_version: "3f292a8dcfcd"
 published_at: "2026-08-13"
+forum_topic_id: 1507
 ---
 
 Tu as résolu un exercice avec des scénarios

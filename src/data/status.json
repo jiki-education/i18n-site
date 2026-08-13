@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "4bbc99e",
-  "approved": 625,
+  "governance_sha": "ece5c60",
+  "approved": 627,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -1742,7 +1742,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 110,
+      "approved": 112,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -2428,8 +2428,8 @@
         },
         {
           "key": "api-email/devise.mailer.reset_password_instructions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1515,
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.overview",
@@ -2463,8 +2463,8 @@
         },
         {
           "key": "api-email/premium_mailer.subscription_ended",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1516,
+          "status": "approved"
         },
         {
           "key": "api-email/progression_mailer.level_completed",

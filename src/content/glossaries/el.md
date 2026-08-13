@@ -3,10 +3,10 @@ lang: "el"
 name: "Greek"
 family: null
 stage: "reviewing"
-governance_sha: "ef403cc"
-content_version: "a98469fe4574"
-published_at: "2026-08-11"
-term_count: 70
+governance_sha: "7c4e6b9"
+content_version: "42685d71e292"
+published_at: "2026-08-13"
+term_count: 71
 category_id: 265
 forum_topic_id: 497
 video_player_forum_topic_id: 747
@@ -125,6 +125,7 @@ it is the ordinary word here.
 | CLI commands (`npm install`, `git commit`) | (no gloss) | The commands themselves are never translated. |
 | Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
 | `let` (the JavaScript keyword) | _έστω_ | Confirmed by a native speaker (astyanax, 2026-07-31). The one exception to the row above: gloss it **once**, where the keyword is first introduced, as `` `let` (έστω) ``, borrowing the standard Greek mathematical "let" ("έστω x = 10"). Every later mention is bare `let`. |
+| backtick / backticks | _βαρεία_ / plural _βαρείες_ | Confirmed by a native speaker (astyanax, 2026-08-13). The English word stays in prose (`backticks`), with the Greek term in brackets at its first mention on a page: `backticks (βαρείες)`, matching the `if`/`for` pattern of keeping the real token beside its Greek word. **Never `ανάποδα τικ`**, which is not Greek: `βαρεία` is the proper name of the mark, a `τόνος` / `διακριτικό σημείο`. Feminine noun (`η βαρεία`, `οι βαρείες`). |
 
 ## Jiki physical metaphors
 
@@ -156,6 +157,29 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-13: "backtick" glosses as "βαρεία", never "ανάποδο τικ"
+
+**Decided by:** astyanax, the authoritative native-speaker reviewer for Greek, on
+https://forum.jiki.io/t/1473.
+**Status:** native-speaker-confirmed, settled.
+**Terms affected:** `backtick / backticks` (added, _βαρεία_ / _βαρείες_).
+**Files affected:** `locales/el/curriculum/concepts/string-templates/page.md` (three
+sentences, fixed).
+
+The `string-templates` page introduced backticks as `ανάποδα τικ` ("backward ticks"), a
+literal calque of the English rather than Greek. Greek already has a name for the mark:
+`βαρεία` (plural `βαρείες`), one of the accents/diacritics (`τόνος` / `διακριτικό σημείο`).
+Astyanax gave the replacement wording himself, and it keeps the English `backticks` as the
+word used in prose with `(βαρείες)` in brackets at first mention, so a learner meets both
+the token they will see in code and the Greek name for it. That is the same shape as the
+`if`/`for` rows, and the reason the term sits in the "Keep in English" table rather than
+the localize tables.
+
+His rewrite of the second sentence also explains the mark rather than naming it twice
+(`διακριτικά σημεία σαν ανάποδοι τόνοι`, "diacritics like backward accents") and adds where
+to find the key on a Greek keyboard (above Tab, sharing the key with the tilde), which the
+English source leaves to the reader.
 
 ### 2026-08-11: "nested" is "εμφωλευμένος", never the colloquial "φωλιασμένος"
 

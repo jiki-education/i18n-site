@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-13",
-  "governance_sha": "f899079",
-  "approved": 615,
+  "governance_sha": "a2f51e4",
+  "approved": 616,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -1742,7 +1742,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 100,
+      "approved": 101,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -2598,8 +2598,8 @@
         },
         {
           "key": "badge/night_owl",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1505,
+          "status": "approved"
         },
         {
           "key": "badge/premium",

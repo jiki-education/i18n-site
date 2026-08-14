@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "91fc190",
-  "approved": 660,
+  "governance_sha": "0dbcecb",
+  "approved": 661,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 139,
+      "approved": 140,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -631,8 +631,8 @@
         },
         {
           "key": "concept/creating-functions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1551,
+          "status": "approved"
         },
         {
           "key": "concept/updating-dictionaries",

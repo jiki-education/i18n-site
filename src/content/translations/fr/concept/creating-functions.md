@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/creating-functions/page.md"
 en_md5: "93286a30a373b5604b60b3c109ad00a3"
-governance_sha: "cd45949"
-content_version: "633b52698a4b"
-published_at: "2026-08-09"
+governance_sha: "0dbcecb"
+content_version: "bde743be6efe"
+published_at: "2026-08-14"
+forum_topic_id: 1551
 ---
 
 Jusqu'ici, tu as utilisé des fonctions déjà construites pour toi, des fonctions comme `circle`, `rectangle`, `moveRight` ou `shoot`. Toutes ces fonctions ont été fabriquées puis posées sur les étagères de Jiki.
@@ -18,7 +19,7 @@ Mais maintenant, il est temps que tu commences à fabriquer tes propres fonction
 
 Pour te montrer comment faire, on va fabriquer une nouvelle fonction pour le labyrinthe, appelée `walk5` (marche de 5 pas).
 
-Cette fonction fera toujours avancer le personnage de cinq pas. Ce n'est pas la fonction la plus utile du monde, il faut bien l'avouer, mais c'est un bon point de départ, bien simple.
+Cette fonction fera toujours avancer le personnage de cinq pas. Ce n'est pas la fonction la plus utile du monde, il faut bien l'avouer, mais elle est simple et constitue un bon point de départ.
 
 <img
   class="concept-image"
@@ -28,7 +29,7 @@ Cette fonction fera toujours avancer le personnage de cinq pas. Ce n'est pas la 
   height="314"
 />
 
-Donc, si on te demandait d'écrire du code pour faire avancer le personnage de cinq pas, tu pourrais soit écrire `move` (avancer) cinq fois, soit utiliser une boucle `repeat`. Dans cet exemple, pour garder les choses simples, on va opter pour les cinq `move` à la suite.
+Donc, si on te demandait d'écrire du code pour faire avancer le personnage de cinq pas, tu pourrais soit écrire `move` (avancer) cinq fois, soit utiliser une boucle `repeat` (répéter). Dans cet exemple, pour garder les choses simples, on va opter pour les cinq `move` à la suite.
 
 ```javascript
 move()
@@ -40,7 +41,7 @@ move()
 
 Voilà donc ce qu'on veut mettre à l'intérieur de notre fonction.
 
-Maintenant, ajoute en dessous une ligne qui dit à Jiki d'utiliser cette fonction. Tu as déjà fait ça de nombreuses fois.
+Maintenant, ajoute en dessous une ligne qui dit à Jiki d'utiliser cette fonction. Tu l'as déjà fait ça de nombreuses fois.
 
 Notre travail va ensuite consister à envelopper ces cinq premières lignes dans une fonction, pour que, quand Jiki utilise `walk5`, ce soient ces cinq premières lignes de code qui s'exécutent.
 
@@ -68,7 +69,7 @@ Quand Jiki voit ce mot-clé `function`, il va fabriquer une nouvelle fonction, �
   height="396"
 />
 
-Et il n'y a rien de spécial dans cette fonction que tu as fabriquée par rapport aux fonctions intégrées (_built-in_ en anglais). Elles sont toutes posées côte à côte sur ses étagères.
+Il n'y a rien de spécial dans cette fonction que tu as fabriquée par rapport aux fonctions intégrées (_built-in_ en anglais). Elles sont toutes posées côte à côte sur ses étagères.
 
 Et quand tu utilises la fonction, quand tu écris `walk5()`, Jiki va simplement chercher la machine sur les étagères et l'utiliser exactement comme il l'a toujours fait avec n'importe quelle autre fonction. Tu peux imaginer qu'un mini Jiki habite à l'intérieur de chaque machine. Le mini Jiki porte toujours un chapeau très classe. Et ce mini Jiki travaille exactement de la même façon que le Jiki normal à l'extérieur : il suit les instructions de la même manière.
 

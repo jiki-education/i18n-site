@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/repeat-while/page.md"
 en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
-governance_sha: "494ce4b"
-content_version: "82cd12e94552"
-published_at: "2026-08-10"
+governance_sha: "7b5487a"
+content_version: "f8edaa47a9a0"
+published_at: "2026-08-14"
+forum_topic_id: 1561
 ---
 
 Jusqu'ici, quand tu as utilisé la boucle repeat, tu as toujours précisé un nombre qui indique combien de fois répéter. Répéter cinq fois, 10 fois, 40 fois. Parfois, tu as même utilisé une variable pour ça. Mais tu as toujours dit à Jiki exactement combien de fois répéter la boucle. Pourtant, il arrive qu'on ne sache pas à l'avance combien de fois répéter. Pense au labyrinthe. Tout au début de ce cours, tu as fait sortir le personnage du labyrinthe en écrivant chaque déplacement un par un. Tu pouvais voir le labyrinthe, compter les pas et écrire exactement le bon nombre de déplacements.
@@ -50,7 +51,7 @@ Il te faut donc un moyen de dire à Jiki de continuer, tout simplement. Continue
   height="400"
 />
 
-Et la façon de faire est vraiment simple : il suffit de ne pas donner de nombre au mot-clé `repeat`. Laisse simplement ces parenthèses vides. Si tu fais ça, Jiki continuera jusqu'à ce que quelque chose d'autre lui dise de s'arrêter. Plus tard, on verra ce que peuvent être ces « quelque chose d'autre ». Mais pour l'instant, il continuera jusqu'à ce que l'exercice soit terminé, ou jusqu'à ce qu'il décide qu'il tourne depuis des heures, qu'il veut faire une pause et qu'il en a assez.
+Et la façon de faire est vraiment simple : il suffit de ne pas donner de nombre au mot-clé `repeat`. Laisse simplement ces parenthèses vides. Si tu fais ça, Jiki continuera jusqu'à ce que quelque chose d'autre lui dise de s'arrêter. Plus tard, on verra ce que peuvent être ces « quelque chose d'autre ». Mais pour l'instant, il va juste continuer jusqu'à la fin de l'exercice ou jusqu'à ce qu'il se dise que ça fait une éternité, qu'il en a marre et qu'il a besoin de s'arrêter.
 
 <img
   class="concept-image"

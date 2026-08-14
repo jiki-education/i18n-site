@@ -7,14 +7,15 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/creating-functions-with-inputs/page.md"
 en_md5: "f70d737888fcbda3306196ff069eb2f1"
-governance_sha: "84303b0"
-content_version: "4539ff60b8be"
-published_at: "2026-08-08"
+governance_sha: "1d75e1c"
+content_version: "de2d1fdac1a8"
+published_at: "2026-08-14"
+forum_topic_id: 1552
 ---
 
 Jusqu'ici, les fonctions que tu as créées font exactement la même chose à chaque fois. `turnAround` (faire demi-tour) tourne toujours deux fois à gauche. `shootIfAlienAbove` (tirer si un alien est au-dessus) vérifie toujours, puis tire.
 
-Mais pense aux fonctions que tu utilises depuis le début du cours : elles font des choses différentes selon leurs entrées. Rectangle prend en entrées une position en haut, une position à gauche, une largeur et une hauteur, puis dessine un rectangle différent selon ce que tu lui indiques.
+Mais pense aux fonctions que tu utilises depuis le début du cours : elles font des choses différentes selon leurs entrées. `Rectangle` prend en entrées une position en haut, une position à gauche, une largeur et une hauteur, puis dessine un rectangle différent selon ce que tu lui indiques.
 
 Maintenant, on va aussi ajouter des entonnoirs à tes propres fonctions.
 

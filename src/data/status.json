@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "bd61877",
-  "approved": 666,
+  "governance_sha": "cb66836",
+  "approved": 667,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 145,
+      "approved": 146,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -431,8 +431,8 @@
         },
         {
           "key": "concept/methods",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1555,
+          "status": "approved"
         },
         {
           "key": "exercise/hello",

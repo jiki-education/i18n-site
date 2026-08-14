@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/methods/page.md"
 en_md5: "37c097a81459cd2ff4ae684559bd4311"
-governance_sha: "84303b0"
+governance_sha: "cb66836"
 content_version: "093823018513"
-published_at: "2026-08-08"
+published_at: "2026-08-14"
+forum_topic_id: 1555
 ---
 
 Jusqu'ici, quand on a parlé des _strings_ ou des nombres, on les a plutôt vus comme des choses assez statiques.

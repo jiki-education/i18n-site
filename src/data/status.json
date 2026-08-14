@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "ce7915b",
-  "approved": 648,
+  "governance_sha": "faf3e60",
+  "approved": 649,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -7179,7 +7179,7 @@
       "name": "Hindi",
       "stage": "refining",
       "category_slug": "i18n-hi",
-      "approved": 10,
+      "approved": 11,
       "disapproved": 0,
       "total": 161,
       "items": [
@@ -7490,8 +7490,8 @@
         },
         {
           "key": "exercise/maze-solve-repeat",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1538,
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-repeat",

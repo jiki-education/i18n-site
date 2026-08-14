@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "7af00b3",
-  "approved": 659,
+  "governance_sha": "91fc190",
+  "approved": 660,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 138,
+      "approved": 139,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -286,8 +286,8 @@
         },
         {
           "key": "concept/building-arrays",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1550,
+          "status": "approved"
         },
         {
           "key": "concept/animation",

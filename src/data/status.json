@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "3efe879",
-  "approved": 670,
+  "governance_sha": "e6e7b7d",
+  "approved": 671,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -1762,7 +1762,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 126,
+      "approved": 127,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -2588,8 +2588,8 @@
         },
         {
           "key": "badge/maze_navigator",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1563,
+          "status": "approved"
         },
         {
           "key": "badge/member",

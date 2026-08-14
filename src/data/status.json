@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "7f84268",
-  "approved": 664,
+  "governance_sha": "acc296b",
+  "approved": 665,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 143,
+      "approved": 144,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -112,7 +112,7 @@
         {
           "key": "concept/for-loops",
           "topic_id": 1182,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/digital-root",

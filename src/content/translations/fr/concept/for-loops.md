@@ -7,13 +7,13 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/for-loops/page.md"
 en_md5: "0ad4155ded18c2df27d29e5355bd0532"
-governance_sha: "494ce4b"
-content_version: "8e1cf32e94a9"
-published_at: "2026-08-10"
+governance_sha: "acc296b"
+content_version: "9c96ce69344d"
+published_at: "2026-08-14"
 forum_topic_id: 1182
 ---
 
-Tu te souviens peut-être que la boucle repeat n'existe pas vraiment en JavaScript. C'est juste un ajout pour te simplifier un peu la vie pendant qu'on démarre.
+Tu te souviens peut-être que la boucle `repeat` n'existe pas vraiment en JavaScript. C'est juste un ajout pour te simplifier un peu la vie pendant qu'on démarre.
 
 Alors, qu'est-ce qu'on utilise à la place ? Eh bien, on utilise une boucle `for` normale, et ça ressemble à ceci.
 

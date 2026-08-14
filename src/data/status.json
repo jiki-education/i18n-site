@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "0e99836",
-  "approved": 641,
+  "governance_sha": "5c158d8",
+  "approved": 642,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -876,7 +876,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 126,
+      "approved": 127,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -1657,8 +1657,8 @@
         },
         {
           "key": "level-milestone/make-your-own-functions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1534,
+          "status": "approved"
         },
         {
           "key": "level-milestone/string-manipulation",

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/fr.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "2e7fb87"
+governance_sha: "5c158d8"
 content_version: "942ae022bddc"
-published_at: "2026-08-13"
+published_at: "2026-08-14"
+forum_topic_id: 1534
 ---
 
 Excellent travail. Écrire tes propres fonctions, c'est un vrai changement. Tu ne te contentes plus d'utiliser les outils posés sur l'étagère, tu en fabriques de nouveaux.

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "91be754",
-  "approved": 677,
+  "governance_sha": "f175780",
+  "approved": 678,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -896,7 +896,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 132,
+      "approved": 133,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -1752,8 +1752,8 @@
         },
         {
           "key": "badge/townsfolk",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1573,
+          "status": "approved"
         }
       ]
     },

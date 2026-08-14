@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "6184189",
-  "approved": 685,
+  "governance_sha": "18fe4be",
+  "approved": 686,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 148,
+      "approved": 149,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -601,8 +601,8 @@
         },
         {
           "key": "concept/state",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1596,
+          "status": "approved"
         },
         {
           "key": "concept/string-iteration",

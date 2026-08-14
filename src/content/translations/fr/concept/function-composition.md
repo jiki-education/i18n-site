@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/function-composition/page.md"
 en_md5: "7df3110b30c0f279d7f04d3b4e331a99"
-governance_sha: "84303b0"
-content_version: "ac93d60a2914"
-published_at: "2026-08-08"
+governance_sha: "bd61877"
+content_version: "f7e5310a6857"
+published_at: "2026-08-14"
+forum_topic_id: 1554
 ---
 
 Jusqu'ici, quand tu as écrit des fonctions, chacune se suffisait plus ou moins à elle-même et contenait toute la logique dont elle avait besoin pour fonctionner.
@@ -55,7 +56,7 @@ function describeName(name) {
 }
 ```
 
-On peut ensuite réutiliser cette fonction de comptage générique dans cette mise en forme de texte, mais aussi partout ailleurs où on en a besoin. Dès qu'on doit compter les lettres d'une string, c'est totalement détaché de tout ce qui touche à l'affichage.
+On peut ensuite réutiliser cette fonction de comptage générique dans cette mise en forme de texte, mais aussi partout où on en a besoin. Chaque fois que tu devras compter des lettres dans une string, ce sera totalement détaché de tout ce qui touche à l'affichage.
 
 Tu peux lire chacune des deux fonctions isolément et comprendre immédiatement ce qu'elle fait.
 
@@ -73,6 +74,6 @@ Donc si tu essaies d'accéder à la variable `count` (compte) depuis l'intérieu
   height="353"
 />
 
-En JavaScript, on peut créer des variables tout en haut, au-dessus de tout le reste, qui sont partagées entre les fonctions, mais je te recommande vraiment de ne pas le faire, sauf très bonne raison.
+En JavaScript, on peut créer des variables tout en haut, au-dessus de tout le reste, qui sont partagées entre les fonctions, mais je te recommande vraiment de ne pas le faire, à moins d'avoir une très bonne raison.
 
-Plus tu gardes chaque fonction indépendante, et le mot technique pour ça est « pure », des fonctions pures, plus ton code sera propre et moins tu créeras de bugs.
+Plus tu gardes chaque fonction indépendante (le terme technique pour ça est « pure », on parle de « fonctions pures »), plus ton code sera propre et moins tu créeras de bugs.

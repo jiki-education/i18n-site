@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "faf3e60",
-  "approved": 649,
+  "governance_sha": "884b98d",
+  "approved": 650,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -7179,7 +7179,7 @@
       "name": "Hindi",
       "stage": "refining",
       "category_slug": "i18n-hi",
-      "approved": 11,
+      "approved": 12,
       "disapproved": 0,
       "total": 161,
       "items": [
@@ -7495,8 +7495,8 @@
         },
         {
           "key": "exercise/space-invaders-repeat",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1539,
+          "status": "approved"
         },
         {
           "key": "exercise/snowman",

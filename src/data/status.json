@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "e6e7b7d",
-  "approved": 671,
+  "governance_sha": "862f0f5",
+  "approved": 672,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -1762,7 +1762,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 127,
+      "approved": 128,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -2593,8 +2593,8 @@
         },
         {
           "key": "badge/member",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1564,
+          "status": "approved"
         },
         {
           "key": "badge/night_owl",

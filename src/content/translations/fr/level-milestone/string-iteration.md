@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/fr.json"
 en_md5: "069ee8736766d746d9fa4e6db419b300"
-governance_sha: "2e7fb87"
+governance_sha: "1c83c0b"
 content_version: "43dfcb2dc00c"
-published_at: "2026-08-13"
+published_at: "2026-08-14"
+forum_topic_id: 1524
 ---
 
 Beau travail. On espère que l'accès par indice et le parcours des strings commencent à te paraître clairs.

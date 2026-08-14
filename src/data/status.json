@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "8aaf03e",
-  "approved": 682,
+  "governance_sha": "7d2429e",
+  "approved": 683,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -896,7 +896,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 136,
+      "approved": 137,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -1572,8 +1572,8 @@
         },
         {
           "key": "api-email/onboarding_mailer.coding",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1586,
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.building",

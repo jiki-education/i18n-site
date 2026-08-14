@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "5c158d8",
-  "approved": 642,
+  "governance_sha": "171ca21",
+  "approved": 643,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -876,7 +876,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 127,
+      "approved": 128,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -1702,8 +1702,8 @@
         },
         {
           "key": "level-milestone/changing-dictionaries",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1533,
+          "status": "approved"
         },
         {
           "key": "badge/beta_user",

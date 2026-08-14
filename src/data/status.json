@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "87061c0",
-  "approved": 653,
+  "governance_sha": "4a646a1",
+  "approved": 654,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 132,
+      "approved": 133,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -786,8 +786,8 @@
         },
         {
           "key": "level-milestone/conditionals-and-state",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1544,
+          "status": "approved"
         },
         {
           "key": "level-milestone/make-your-own-functions",

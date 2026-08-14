@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/updating-dictionaries/page.md"
 en_md5: "5dfff7e37d863711be783b2fbe0873a4"
-governance_sha: "494ce4b"
-content_version: "e86b8d424032"
-published_at: "2026-08-10"
+governance_sha: "497e9fa"
+content_version: "6dbd828e9fd6"
+published_at: "2026-08-14"
 ---
 
 Tu sais maintenant créer un dictionnaire et en récupérer des valeurs. Mais que se passe-t-il si les données changent ? À un moment, je vais vieillir. Je ne vais plus avoir `42` ans, j'en aurai `43`.
@@ -24,9 +24,9 @@ Jiki ne crée pas un nouveau dictionnaire, il modifie le carnet qui était déj�
 
 Et si tu veux ajouter une information qui n'existait pas encore ? Eh bien, tu peux faire exactement la même chose.
 
-Si tu indiques une clé qui n'existe pas, Jiki ajoutera simplement une nouvelle clé en bas, avec cette valeur.
+Si tu indiques une clé qui n'existe pas, Jiki va juste rajouter une nouvelle clé tout à la fin avec cette valeur-là.
 
-Donc dans ce cas, il va ouvrir le carnet, chercher `"country"`, voir qu'elle n'y est pas, puis ajouter une nouvelle ligne en bas : `"country"` à gauche, `"England"` à droite.
+Donc dans ce cas, il va ouvrir le carnet, chercher `"country"`, voir qu'elle n'y est pas, puis ajouter une nouvelle ligne à la fin : `"country"` à gauche, `"England"` à droite.
 
 ```javascript
 person["country"] = "England"

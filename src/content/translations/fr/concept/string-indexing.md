@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/string-indexing/page.md"
 en_md5: "cd31e0366b3090b358494667003f54c9"
-governance_sha: "cd45949"
-content_version: "925d0090884c"
-published_at: "2026-08-09"
+governance_sha: "497e9fa"
+content_version: "52c9375f7484"
+published_at: "2026-08-14"
 ---
 
 Imagine que tu as mon prénom, Jeremy, et que tu veux en extraire mon initiale, le J. Comment est-ce qu'on pourrait s'y prendre ?
@@ -46,7 +46,7 @@ let name = "Jeremy"
 name[0] // "J"
 ```
 
-Une chose à bien comprendre : ce que `name[0]` te renvoie est simplement une autre string. C'est un autre bout de papier avec un J écrit dessus. Il n'a rien de spécial. C'est une string, exactement comme `"Jeremy"` est une string.
+Une chose à bien comprendre : ce que `name[0]` te renvoie est simplement une autre string. C'est un autre bout de papier avec un `"J"` écrit dessus. Il n'a rien de spécial. C'est une string, exactement comme `"Jeremy"` est une string.
 
 <img
   class="concept-image"
@@ -56,6 +56,6 @@ Une chose à bien comprendre : ce que `name[0]` te renvoie est simplement une a
   height="289"
 />
 
-Il se trouve juste qu'il porte une seule lettre au lieu de six.
+C'est juste qu'il n'y a qu'une seule lettre dessus, au lieu de six.
 
-Et tout ça ne touche pas du tout à la string d'origine. On n'arrache pas le J, rien de tel. On repère simplement la lettre qu'on veut, puis on crée une nouvelle string avec cette lettre dessus.
+Et en faisant ça, on ne modifie absolument pas la string d'origine. On n'est pas en train de lui "arracher" le `"J"`, ou un truc dans le genre. On se contente de trouver les lettres qu'on veut, puis on crée une nouvelle string avec.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/scope/page.md"
 en_md5: "4d5fc2d1d304725660102e9aaceea4c3"
-governance_sha: "84303b0"
-content_version: "bcb4c45053f4"
-published_at: "2026-08-08"
+governance_sha: "497e9fa"
+content_version: "4db2c6267ab0"
+published_at: "2026-08-14"
 ---
 
 Imagine du code qui dessine un cercle à un endroit différent à chaque exécution, et qu'on veuille dessiner 10 cercles à des endroits différents. On pourrait combiner ça avec une boucle. Mais si tu fais partie de ceux qui suivent attentivement, tu as peut-être remarqué quelque chose d'étrange ici.
@@ -42,7 +42,7 @@ Eh bien, il s'avère que le code est correct. C'est du JavaScript parfaitement v
 
 La portée, c'est quelque chose qui te semblera sans doute assez simple au premier abord, mais je peux te garantir qu'elle te causera des soucis pendant tout le reste de ta carrière. Même les développeurs les plus expérimentés rencontrent des problèmes de portée, et JavaScript est l'un des langages les plus compliqués sur ce point. Je te dis ça pour que, le jour où tu rencontreras un problème de portée, tu ne te sentes pas mal. Mais du coup, sois vraiment attentif à cette partie, parce qu'elle est importante.
 
-Quand tu vois une accolade dans du code, elle crée ce qu'on appelle une nouvelle portée. Qu'est-ce que ça veut dire ? Eh bien, tu peux imaginer que Jiki installe un nouveau petit jeu d'étagères dans son atelier chaque fois qu'il voit une accolade. Et toutes les boîtes qu'il crée pendant qu'il travaille, pendant qu'il exécute le code à l'intérieur de ces accolades, ces boîtes, ces nouvelles boîtes, vont sur le petit jeu d'étagères tout neuf, pas sur les étagères principales.
+Quand tu vois une accolade dans du code, elle crée ce qu'on appelle une nouvelle portée. Qu'est-ce que ça veut dire ? Eh bien, tu peux imaginer que Jiki installe de nouvelles petites étagères dans son atelier chaque fois qu'il voit une accolade. Et toutes les boîtes qu'il crée pendant qu'il travaille, pendant qu'il exécute le code à l'intérieur de ces accolades, ces boîtes, ces nouvelles boîtes, vont sur ces nouvelles petites étagères tout neuf, pas sur les étagères principales.
 
 <img
   class="concept-image"
@@ -52,7 +52,7 @@ Quand tu vois une accolade dans du code, elle crée ce qu'on appelle une nouvell
   height="205"
 />
 
-Et quand Jiki arrive à l'accolade fermante correspondante, il jette toutes les boîtes qui se trouvent sur ce jeu d'étagères secondaire.
+Et quand Jiki arrive à l'accolade fermante correspondante, il jette toutes les boîtes qui se trouvent sur ces étagères secondaires.
 
 <img
   class="concept-image"

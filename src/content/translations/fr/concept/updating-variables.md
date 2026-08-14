@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/updating-variables/page.md"
 en_md5: "f9b2fbb6bfd82a620b093e88951ff841"
-governance_sha: "cd45949"
-content_version: "488b616ead89"
-published_at: "2026-08-09"
+governance_sha: "497e9fa"
+content_version: "4ef8782eb612"
+published_at: "2026-08-14"
 ---
 
 Jusqu'ici, quand on a créé des variables, on a mis des valeurs dans des boîtes pour les ressortir plus tard. C'est très utile pour rendre le code plus clair et pour nous épargner une partie du calcul mental qu'on aurait dû faire autrement. Mais la vraie force des variables vient de la possibilité de changer ce qu'il y a dans une boîte, ce qu'il y a dans la variable, tout au long d'un programme. Ainsi, même si on exécute plusieurs fois le même bout de code, ce qu'il fait peut changer selon ce que contiennent les boîtes.
@@ -79,4 +79,4 @@ Remarque qu'il n'y a pas de `let` (laisser) quand on met à jour la variable. C'
 
 Note aussi qu'on ne crée la boîte qu'une seule fois, en dehors de la boucle. C'est important à retenir : crée la boîte une fois au début, puis mets-la à jour à chaque tour de boucle.
 
-On peut mettre à jour ce que contiennent les boîtes, et on peut se servir de ce pouvoir pour suivre quelque chose qui change au fil du temps. Tu vas utiliser ce schéma en permanence : suivre une position, compter combien de fois quelque chose s'est produit, tenir un score. Chaque fois que tu auras besoin de retenir quelque chose qui change pendant que ton programme tourne, c'est comme ça que tu feras.
+On peut mettre à jour ce que contiennent les boîtes, et se servir de cette capacité pour suivre quelque chose qui évolue au fil du temps. Tu vas utiliser ce schéma en permanence : suivre une position, compter combien de fois quelque chose s'est produit, tenir un score. Chaque fois que tu auras besoin de retenir quelque chose qui change pendant que ton programme tourne, c'est comme ça que tu feras.

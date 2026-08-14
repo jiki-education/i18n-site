@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "18fe4be",
-  "approved": 686,
+  "governance_sha": "522a326",
+  "approved": 695,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 149,
+      "approved": 158,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -296,8 +296,8 @@
         },
         {
           "key": "concept/continue",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1606,
+          "status": "approved"
         },
         {
           "key": "exercise/acronym",
@@ -426,8 +426,8 @@
         },
         {
           "key": "exercise/formal-dinner",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1604,
+          "status": "approved"
         },
         {
           "key": "concept/methods",
@@ -496,8 +496,8 @@
         },
         {
           "key": "concept/scope",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1602,
+          "status": "approved"
         },
         {
           "key": "concept/rgb",
@@ -506,8 +506,8 @@
         },
         {
           "key": "exercise/nucleotide",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1603,
+          "status": "approved"
         },
         {
           "key": "exercise/pangram",
@@ -581,8 +581,8 @@
         },
         {
           "key": "concept/string-indexing",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1599,
+          "status": "approved"
         },
         {
           "key": "concept/string-concatenation",
@@ -596,8 +596,8 @@
         },
         {
           "key": "concept/type-conversion",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1605,
+          "status": "approved"
         },
         {
           "key": "concept/state",
@@ -626,8 +626,8 @@
         },
         {
           "key": "concept/updating-variables",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1598,
+          "status": "approved"
         },
         {
           "key": "concept/creating-functions",
@@ -636,8 +636,8 @@
         },
         {
           "key": "concept/updating-dictionaries",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1600,
+          "status": "approved"
         },
         {
           "key": "exercise/sign-price",
@@ -646,8 +646,8 @@
         },
         {
           "key": "concept/string-templates",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1601,
+          "status": "approved"
         },
         {
           "key": "exercise/methodic-pangram",

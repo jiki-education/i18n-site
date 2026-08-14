@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "1d75e1c",
-  "approved": 662,
+  "governance_sha": "826281c",
+  "approved": 663,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 141,
+      "approved": 142,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -381,8 +381,8 @@
         },
         {
           "key": "concept/creating-functions-with-return-values",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1553,
+          "status": "approved"
         },
         {
           "key": "exercise/cityscape-skyline",

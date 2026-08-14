@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/creating-functions-with-return-values/page.md"
 en_md5: "51d31f709a7051c29b499a31ad68555e"
-governance_sha: "84303b0"
-content_version: "532da194f15b"
-published_at: "2026-08-08"
+governance_sha: "5426931"
+content_version: "6a206ee6b0ac"
+published_at: "2026-08-14"
+forum_topic_id: 1553
 ---
 
 Tu sais maintenant créer des fonctions avec ou sans entrées. Il ne reste plus qu'une dernière chose à apprendre pour devenir un expert en fabrication de fonctions : comment donner un tapis roulant à tes fonctions.
@@ -28,7 +29,7 @@ Quand Jiki utilise ces fonctions, quelque chose sort sur le tapis roulant, qu'il
 
 Pour faire ça, on a besoin d'un nouveau mot-clé : le mot-clé `return`.
 
-Le mot-clé `return` dit à Mini Jiki de pousser quelque chose sur le tapis roulant.
+Le mot-clé `return` dit à Mini Jiki de déposer quelque chose sur le tapis roulant.
 
 <img
   class="concept-image"
@@ -56,7 +57,7 @@ function meaningOfLife() {
 
 Désormais, partout où on utilise `meaningOfLife()` dans le code, on récupère le nombre `42`, qu'on peut utiliser comme n'importe quelle autre valeur. On peut le mettre dans une boîte avec `let`, le passer en entrée à une autre fonction, ou le comparer dans une instruction `if`.
 
-Les fonctions avec un `return` peuvent aussi prendre des entrées. Tu pourrais écrire une fonction `ageBracket(age)` (tranche d'âge) qui renvoie `"Sorry, too young"` quand `age` est inférieur à 18, et `"Welcome"` sinon. Celui qui l'appelle récupère la string que la fonction a renvoyée.
+Les fonctions avec un `return` peuvent aussi prendre des entrées. Tu pourrais écrire une fonction `ageBracket(age)` (tranche d'âge) qui renvoie `"Sorry, too young"` quand `age` est inférieur à 18, et `"Welcome"` dans le cas contraire. Celui qui l'appelle récupère la string que la fonction a renvoyée.
 
 ```javascript
 function ageBracket(age) {

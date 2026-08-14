@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "ad81598",
-  "approved": 674,
+  "governance_sha": "91be754",
+  "approved": 677,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -896,7 +896,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 129,
+      "approved": 132,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -1737,18 +1737,18 @@
         },
         {
           "key": "badge/premium",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1569,
+          "status": "approved"
         },
         {
           "key": "badge/scenario_handler",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1570,
+          "status": "approved"
         },
         {
           "key": "badge/sidekick",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1571,
+          "status": "approved"
         },
         {
           "key": "badge/townsfolk",

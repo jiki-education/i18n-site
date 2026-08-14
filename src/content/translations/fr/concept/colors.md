@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/colors/page.md"
 en_md5: "a0eea0481b975e45f75774d83966a4a7"
-governance_sha: "84303b0"
+governance_sha: "7af00b3"
 content_version: "05d3820c8bca"
-published_at: "2026-08-08"
+published_at: "2026-08-14"
+forum_topic_id: 1549
 ---
 
 Si un jour tu fais quelque chose de visuel avec du code (et même si tu veux devenir data scientist et que tout ce qui touche au dessin te semble un peu ennuyeux, communiquer des données par le visuel est une compétence essentielle), il existe deux grandes façons d'exprimer les couleurs. Tu as déjà utilisé des couleurs par leur nom, comme _red_ ou _yellow_, en dernière entrée de tes fonctions de dessin. C'est pratique pour utiliser une couleur rapidement, mais c'est assez limité : il n'existe qu'une poignée de couleurs nommées. On va donc voir deux façons d'exprimer n'importe quelle couleur, et ces deux façons s'appellent RGB et HSL.

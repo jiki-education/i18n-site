@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "434ae1e",
-  "approved": 658,
+  "governance_sha": "7af00b3",
+  "approved": 659,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 137,
+      "approved": 138,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -316,8 +316,8 @@
         },
         {
           "key": "concept/colors",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1549,
+          "status": "approved"
         },
         {
           "key": "concept/arithmetic",

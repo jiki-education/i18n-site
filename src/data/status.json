@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "826281c",
-  "approved": 663,
+  "governance_sha": "7f84268",
+  "approved": 664,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -10,7 +10,7 @@
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 142,
+      "approved": 143,
       "disapproved": 0,
       "total": 175,
       "items": [
@@ -102,7 +102,7 @@
         {
           "key": "concept/else",
           "topic_id": 1173,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/while-loops",

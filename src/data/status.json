@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "f175780",
-  "approved": 678,
+  "governance_sha": "f96eed9",
+  "approved": 679,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -896,7 +896,7 @@
       "name": "Italian",
       "stage": "reviewing",
       "category_slug": "i18n-it",
-      "approved": 133,
+      "approved": 134,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -1552,8 +1552,8 @@
         },
         {
           "key": "api-email/account_mailer.account_deletion_confirmation",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1577,
+          "status": "approved"
         },
         {
           "key": "api-email/devise.mailer.confirmation_instructions",

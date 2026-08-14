@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "3f9ff7c",
-  "approved": 681,
+  "governance_sha": "8aaf03e",
+  "approved": 682,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -3494,7 +3494,7 @@
       "name": "Latin American Spanish",
       "stage": "reviewing",
       "category_slug": "i18n-es-419",
-      "approved": 31,
+      "approved": 32,
       "disapproved": 0,
       "total": 162,
       "items": [
@@ -4045,8 +4045,8 @@
         },
         {
           "key": "exercise/driving-test",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1585,
+          "status": "approved"
         },
         {
           "key": "exercise/hamming",

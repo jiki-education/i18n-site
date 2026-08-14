@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-14",
-  "governance_sha": "884b98d",
-  "approved": 650,
+  "governance_sha": "1c667e8",
+  "approved": 651,
   "disapproved": 1,
   "total": 2598,
   "languages": [
@@ -7179,7 +7179,7 @@
       "name": "Hindi",
       "stage": "refining",
       "category_slug": "i18n-hi",
-      "approved": 12,
+      "approved": 13,
       "disapproved": 0,
       "total": 161,
       "items": [
@@ -7445,8 +7445,8 @@
         },
         {
           "key": "exercise/space-invaders-solve-basic",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1309,
+          "status": "approved"
         },
         {
           "key": "exercise/maze-solve-walk",

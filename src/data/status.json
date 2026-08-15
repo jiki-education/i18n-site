@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-15",
-  "governance_sha": "fc1d25e",
+  "governance_sha": "6746f9e",
   "approved": 696,
   "disapproved": 1,
   "total": 2598,
@@ -331,7 +331,7 @@
         },
         {
           "key": "exercise/alphanumeric",
-          "topic_id": null,
+          "topic_id": 1360,
           "status": "approved"
         },
         {

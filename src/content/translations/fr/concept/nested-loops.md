@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/nested-loops/page.md"
 en_md5: "4ca3e15c1737b6e8cf2f03a56d23a887"
-governance_sha: "84303b0"
-content_version: "58c3d64e274d"
-published_at: "2026-08-08"
+governance_sha: "fc1d25e"
+content_version: "a1b7431498f8"
+published_at: "2026-08-14"
 ---
 
 Disons qu'on veut une rangée de fleurs. On peut écrire quelque chose comme ceci. On définit une position, on plante une fleur, on augmente la position de 10, on recommence, et on obtient une belle rangée de fleurs bien alignées.
@@ -44,7 +44,7 @@ On a une boucle qui dessine une rangée de fleurs. Comment peux-tu l'utiliser po
 
 Une option serait tout simplement de copier-coller cette boucle quatre fois, en changeant la position verticale à chaque fois. Et ça fonctionnerait. Ce serait tout à fait correct. Mais ce code se répète, et il existe une meilleure façon de faire. On le sait : quand du code se répète, on peut utiliser une boucle pour simplifier les choses.
 
-Ici, on peut donc utiliser une boucle à l'intérieur d'une autre boucle : une boucle pour les rangées, et une pour les fleurs de chaque rangée. Commençons par ajouter une boucle repeat autour de notre code existant, pour que tu te fasses une idée du fonctionnement. Et on va simplement répéter une seule fois. Autrement dit, on demande à Jiki de faire une fois tout ce qui se trouve entre ces accolades externes. Cela a donc exactement le même effet que de ne pas avoir cette boucle externe du tout. On demande à Jiki de répéter quelque chose une fois, ce qui revient exactement à lui demander de le faire sans le repeat. Mais c'est comme ça que ce code fonctionne. C'est du code légitime, parfaitement valide. On a bien une boucle à l'intérieur d'une autre boucle.
+Ici, on peut donc utiliser une boucle à l'intérieur d'une autre boucle : une boucle pour les rangées, et une pour les fleurs de chaque rangée. Commençons par ajouter une boucle `repeat` autour de notre code existant, pour que tu te fasses une idée du fonctionnement. On va simplement le répéter une seule fois. Autrement dit, on demande à Jiki de faire une fois tout ce qui se trouve entre ces accolades externes. Cela a donc exactement le même effet que de ne pas avoir cette boucle externe du tout. On demande à Jiki de ne répéter quelque chose qu'une seule fois, ce qui revient exactement à lui demander de le faire sans utiliser le `repeat`. Mais c'est comme ça que ce code fonctionne. C'est du code légitime, parfaitement valide. On a bien une boucle à l'intérieur d'une autre boucle.
 
 Maintenant, que se passe-t-il si on modifie cette boucle externe pour qu'elle répète deux fois ? Jiki va alors exécuter deux fois toute la partie « `plant` (planter) cinq fois ». Il va planter 10 fleurs. Mais toutes ces fleurs seront sur la même rangée.
 

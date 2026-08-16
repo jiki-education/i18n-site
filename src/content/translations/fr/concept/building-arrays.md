@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/building-arrays/page.md"
 en_md5: "c3358ca032f965cf058bb72df37ffbd4"
-governance_sha: "91fc190"
-content_version: "3ecc05d2d15a"
-published_at: "2026-08-14"
+governance_sha: "b951b19"
+content_version: "587dd42bde62"
+published_at: "2026-08-16"
 forum_topic_id: 1550
 ---
 
@@ -17,7 +17,7 @@ Jusqu'ici, tu as travaillé avec des tableaux dont la valeur est simplement déf
 
 Cette méthode prend une seule entrée : la chose que tu veux attacher au bout du tableau. Ici, on veut donc pousser le mot `"Isaac"` au bout d'un tableau qui contient déjà `"DJ"` et `"Bethany"`.
 
-Pour faire ça, Jiki sort le tableau de la boîte, il attache `"Isaac"` au bout de la chaîne, puis il remet le tout dans la boîte. Note que, contrairement à ce qui se passait avec les strings, où Jiki créait une nouvelle string à chaque fois, ici il modifie vraiment le tableau.
+Pour faire ça, Jiki sort le tableau de la boîte, il attache `"Isaac"` au bout de la chaîne, puis il remet le tout dans la boîte. Note que, contrairement à ce qui se passait avec les _strings_, où Jiki créait une nouvelle _string_ à chaque fois, ici il modifie vraiment le tableau.
 
 Quelque chose que tu verras très souvent en programmation, c'est partir d'un tableau vide et le remplir petit à petit. Tu peux imaginer une grande liste pleine de noms que tu vas passer en revue un par un. Chaque fois qu'on en trouve un qui est celui d'un mentor, on l'ajoute à notre tableau.
 

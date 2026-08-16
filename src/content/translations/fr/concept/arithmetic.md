@@ -7,13 +7,13 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/arithmetic/page.md"
 en_md5: "7ce54754a3ca29896609a01a51b12377"
-governance_sha: "e1a598f"
-content_version: "1eb02110284d"
-published_at: "2026-08-11"
+governance_sha: "b951b19"
+content_version: "858a85b9350e"
+published_at: "2026-08-16"
 forum_topic_id: 1385
 ---
 
-Jusqu'ici, quand on a créé des variables, on n'y a mis que des valeurs simples : un nombre comme `50` ou une string comme `"yellow"` (jaune). Mais les variables deviennent bien plus puissantes quand on peut les combiner entre elles, par exemple pour dire que le bord gauche d'un rectangle doit se trouver à une certaine distance du bord du canvas.
+Jusqu'ici, quand on a créé des variables, on n'y a mis que des valeurs simples : un nombre comme `50` ou une _string_ comme `"yellow"` (jaune). Mais les variables deviennent bien plus puissantes quand on peut les combiner entre elles, par exemple pour dire que le bord gauche d'un rectangle doit se trouver à une certaine distance du bord du canvas.
 
 En programmation, on peut utiliser des maths tout à fait ordinaires, comme additionner, soustraire, multiplier et diviser, et y intégrer les variables qu'on a déjà définies.
 

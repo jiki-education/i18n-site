@@ -3,8 +3,8 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "f337f63"
-content_version: "fc1fa3c9d978"
+governance_sha: "cd8ab70"
+content_version: "b956fa3a1406"
 published_at: "2026-08-16"
 term_count: 99
 category_id: 72
@@ -136,11 +136,11 @@ in the gloss column below; with no `<define>`, use the English bare, no gloss.
 
 | Term | French gloss (on `<define>`) | Notes |
 |------|--------------------------------|-------|
-| string | _chaîne de caractères_ | Confirmed by native speakers (2026-08-14, topic 314), closing the open question. **Always italicize the bare English term in prose: _string_, _strings_.** In the string concept itself, use _chaîne de caractères_ where the source defines it, then _string_ throughout. Keeping it English leaves _chaîne_ free for the array chain metaphor. _chaîne de caractères_ may still be used sporadically in prose where it reads better, but never repeatedly through the same page, which reads as tedious. Two carve-outs where underscores would render literally rather than as italics: a page's frontmatter `description` field (the card component does not parse Markdown) and video subtitles (`.vtt`). |
+| string | _chaîne de caractères_ | Confirmed by native speakers (2026-08-14, topic 314), closing the open question. **Always italicize the bare English term in prose: _string_, _strings_.** In the string concept itself, use _chaîne de caractères_ where the source defines it, then _string_ throughout. Keeping it English leaves _chaîne_ free for the array chain metaphor. _chaîne de caractères_ may still be used sporadically in prose where it reads better, but never repeatedly through the same page, which reads as tedious. Three carve-outs where underscores would render literally rather than as italics: a page's frontmatter `description` field (the card component does not parse Markdown), video subtitles (`.vtt`), and HTML `alt=`/`src=` attributes (not parsed as Markdown either, so a screen reader would read the underscores aloud). |
 | API | explain what it is in French | Where the source defines it, explain the concept in French, not just gloss the acronym. Gender: _une API_ (feminine). |
 | framework | _cadre de développement_ | Where the source defines it, explain it means a reusable _cadre de développement_, then use _framework_ freely. |
 | workflow | _flux de travail_ | The software-engineering sense (a sequence of dev tasks). Where the source defines it, explain it means _flux de travail_, then use _workflow_. |
-| template literal | _littéral de gabarit_ | Where the source defines it, explain it as a _littéral de gabarit_ (the official term), then use _template literal_. **Italicize the bare English term in prose**, same as _string_ (2026-08-14, topic 314). Same `.vtt` and frontmatter carve-outs. |
+| template literal | _littéral de gabarit_ | Where the source defines it, explain it as a _littéral de gabarit_ (the official term), then use _template literal_. **Italicize the bare English term in prose**, same as _string_ (2026-08-14, topic 314). Same `.vtt`, frontmatter, and HTML-attribute carve-outs. |
 | CLI (the concept) | _interface en ligne de commande_ | Where the source defines it, explain CLI as _interface en ligne de commande_ (command-line interface), then "la CLI". Gender: _la CLI_ (feminine). |
 | canvas (graphics exercises) | _zone de dessin_ | The drawing surface in creative-coding exercises. Where the source defines it, explain it as the _zone de dessin_ (the `canvas` element), then use _canvas_. |
 | camel case | (no gloss; the spelling is the example) | Always write the term itself as one word, in code style: `camelCase`. Never the two-word phrase « camel case », in guillemets or otherwise: the capital C is the whole point, so the term has to *show* the rule it names. Where the source explains it, keep the explanation (camel = chameau, case = casse, and the chameau/bosses metaphor), which still reads correctly against `camelCase`. Same for any other named case style: `snake_case`, `kebab-case`. |

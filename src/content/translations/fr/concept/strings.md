@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/strings/page.md"
 en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
-governance_sha: "494ce4b"
-content_version: "989697197309"
-published_at: "2026-08-10"
+governance_sha: "b951b19"
+content_version: "d11dfbd5da68"
+published_at: "2026-08-16"
 ---
 
 Quand tu veux utiliser un nombre, tu peux littéralement l'écrire tel quel, et Jiki comprend ce que tu veux dire. Mais que faire si tu veux utiliser une lettre, un mot ou une phrase ? Et si, par exemple, tu avais une entrée supplémentaire où préciser la couleur dans la fonction `rectangle` ou la fonction `circle` (cercle) ? Comment devrions-nous écrire la couleur pour pouvoir l'insérer dans la machine ? Si on écrit simplement le mot `green` (vert) ou `blue` (bleu), Jiki pensera qu'on parle d'une machine sur les étagères, et il dira : « Il n'y a pas de machine qui s'appelle ‹ green ›. Je ne sais pas quoi faire. »
@@ -58,4 +58,4 @@ Jiki va descendre la machine de l'étagère et mettre des pièces dans les quatr
   height="392"
 />
 
-« String », c'est un de ces mots techniques qui intimident un peu au début, mais en réalité ça veut juste dire du texte. Tu t'y habitueras très vite. Ça n'a rien de magique.
+« _String_ », c'est un de ces mots techniques qui intimident un peu au début, mais en réalité ça veut juste dire du texte. Tu t'y habitueras très vite. Ça n'a rien de magique.

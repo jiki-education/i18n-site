@@ -4,16 +4,16 @@ type: "concept"
 slug: "variables"
 title: "Créer et utiliser des variables"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/variables/source.md"
+source_repo: "i18n"
+source_path: "locales/fr/curriculum/concepts/variables/page.md"
 en_md5: "dd0834017a8d42c22cca25966c1fdd91"
-governance_sha: "1ec4365"
-content_version: "82ecd99d341f"
-published_at: "2026-08-04"
+governance_sha: "b951b19"
+content_version: "b686714761c7"
+published_at: "2026-08-16"
 forum_topic_id: 946
 ---
 
-Les variables sont ce qui nous permet de stocker des informations. Quand on code, on a souvent besoin de garder un nombre ou une string pour plus tard, et c'est justement à ça que servent les variables. Alors prenons un peu de recul dans l'entrepôt de Jiki : tu verras qu'il possède un deuxième ensemble d'étagères. On connaît déjà les premières étagères, celles qui portent les fonctions, ces petites machines comme `move` et `rectangle`. Mais sur ce deuxième ensemble d'étagères, à la place des machines, tu peux voir plein de boîtes, et ces boîtes sont ce qu'on appelle des variables. Tu peux demander à Jiki d'y ranger n'importe quoi, puis, plus tard, de le ressortir. Chaque boîte a un nom, exactement comme les fonctions ont un nom, et chaque boîte ne contient qu'une seule chose. Pour l'instant, soit un nombre, soit une string. Mais on verra plus loin dans le cours comment y stocker des choses plus complexes.
+Les variables sont ce qui nous permet de stocker des informations. Quand on code, on a souvent besoin de garder un nombre ou une _string_ pour plus tard, et c'est justement à ça que servent les variables. Alors prenons un peu de recul dans l'entrepôt de Jiki : tu verras qu'il possède un deuxième ensemble d'étagères. On connaît déjà les premières étagères, celles qui portent les fonctions, ces petites machines comme `move` et `rectangle`. Mais sur ce deuxième ensemble d'étagères, à la place des machines, tu peux voir plein de boîtes, et ces boîtes sont ce qu'on appelle des variables. Tu peux demander à Jiki d'y ranger n'importe quoi, puis, plus tard, de le ressortir. Chaque boîte a un nom, exactement comme les fonctions ont un nom, et chaque boîte ne contient qu'une seule chose. Pour l'instant, soit un nombre, soit une _string_. Mais on verra plus loin dans le cours comment y stocker des choses plus complexes.
 
 <img
   class="concept-image"
@@ -23,7 +23,7 @@ Les variables sont ce qui nous permet de stocker des informations. Quand on code
   height="173"
 />
 
-Alors, comment dire à Jiki de fabriquer une boîte et d'y mettre quelque chose ? On utilise le mot-clé `let` (laisser). Le mot-clé `let` indique à Jiki qu'il doit fabriquer une nouvelle boîte. Tu peux l'imaginer en train de sortir un carton de son emballage et de le monter ; ensuite, il regarde ce qui vient après le mot `let` : c'est l'étiquette qu'il va coller sur cette boîte, ici `name` (nom). Il sort donc son stylo et écrit `name` sur l'étiquette. Puis il regarde ce qui vient après le signe égal. Ici, c'est mon prénom, `"Jeremy"`, et comme `"Jeremy"` est une string, il prend un bout de papier et y écrit `"Jeremy"`. C'est juste une string, exactement comme les couleurs avec lesquelles tu as travaillé jusqu'ici, et il met ce bout de papier dans la boîte.
+Alors, comment dire à Jiki de fabriquer une boîte et d'y mettre quelque chose ? On utilise le mot-clé `let` (laisser). Le mot-clé `let` indique à Jiki qu'il doit fabriquer une nouvelle boîte. Tu peux l'imaginer en train de sortir un carton de son emballage et de le monter ; ensuite, il regarde ce qui vient après le mot `let` : c'est l'étiquette qu'il va coller sur cette boîte, ici `name` (nom). Il sort donc son stylo et écrit `name` sur l'étiquette. Puis il regarde ce qui vient après le signe égal. Ici, c'est mon prénom, `"Jeremy"`, et comme `"Jeremy"` est une _string_, il prend un bout de papier et y écrit `"Jeremy"`. C'est juste une _string_, exactement comme les couleurs avec lesquelles tu as travaillé jusqu'ici, et il met ce bout de papier dans la boîte.
 
 ```javascript
 let name = "Jeremy"

@@ -7,12 +7,12 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/zh-TW/curriculum/concepts/strings/page.md"
 en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
-governance_sha: "494ce4b"
-content_version: "be9a3eee9e90"
-published_at: "2026-08-10"
+governance_sha: "6f5c535"
+content_version: "503755b84ba5"
+published_at: "2026-08-16"
 ---
 
-當你想要使用數字時，你真的只需要把那個數字寫下來，Jiki 就會知道你的意思了。但是，如果你想要使用的是一個字母、一個單字，或是一個句子呢？舉例來說，在使用`rectangle`（矩形）函式或是`circle`（圓形）函式時，如果你有一個額外的輸入用來指定顏色，那該怎麼辦呢？我們要怎麼寫下顏色，才能把它放進機器裡呢？如果我們只寫下`green`（綠色）或是`blue`（藍色）這幾個字，Jiki 會以為我們指的是架子上的某台機器，然後他就會說：「這裡沒有叫做 green 的機器喔，我不知道該怎麼辦。」
+當你想要使用數字時，你只需要把那個數字寫下來，Jiki 就會知道你的意思了。但是，如果你想要使用的是一個字母、一個單字，或是一個句子呢？舉例來說，在使用`rectangle`（矩形）函式或是`circle`（圓形）函式時，如果你有一個額外的輸入用來指定顏色，那該怎麼辦呢？我們要怎麼寫下顏色，才能把它放進機器裡呢？如果我們只寫下`green`（綠色）或是`blue`（藍色）這幾個字，Jiki 會以為我們指的是架子上的某台機器，然後他就會說：「這裡沒有叫做 green 的機器喔，我不知道該怎麼辦。」
 
 <img
   class="concept-image"

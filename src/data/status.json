@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-16",
-  "governance_sha": "8b48749",
+  "governance_sha": "0231f90",
   "approved": 701,
   "disapproved": 1,
-  "total": 2600,
+  "total": 2620,
   "languages": [
     {
       "lang": "fr",
@@ -12312,7 +12312,7 @@
       "category_slug": "i18n-de",
       "approved": 2,
       "disapproved": 0,
-      "total": 23,
+      "total": 33,
       "items": [
         {
           "key": "glossary",
@@ -12428,18 +12428,68 @@
           "key": "badge/townsfolk",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/else-if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/for-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/else",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/while-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
     {
       "lang": "bn",
       "name": "Bengali",
-      "stage": "setup",
+      "stage": "refining",
       "live": false,
       "category_slug": "i18n-bn",
       "approved": 2,
       "disapproved": 0,
-      "total": 18,
+      "total": 28,
       "items": [
         {
           "key": "glossary",
@@ -12528,6 +12578,56 @@
         },
         {
           "key": "badge/townsfolk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/weather-symbols",
           "topic_id": null,
           "status": "pending"
         }

@@ -2,11 +2,11 @@
 lang: "bn"
 name: "Bengali"
 family: null
-stage: "setup"
-governance_sha: "8e3de87"
-content_version: "0c1ad44d58d6"
-published_at: "2026-07-31"
-term_count: 67
+stage: "refining"
+governance_sha: "22c97e3"
+content_version: "b3f0fc2c2ace"
+published_at: "2026-08-16"
+term_count: 68
 category_id: 234
 forum_topic_id: 473
 video_player_forum_topic_id: 743
@@ -82,13 +82,13 @@ by theme for readability; every table below follows the same columns.
 | mental model | মানসিক মডেল | bn | |
 | (programming) language | (প্রোগ্রামিং) ভাষা | bn | Use প্রোগ্রামিং ভাষা for the programming sense and plain ভাষা for "a language a computer understands". Never the transliteration ল্যাঙ্গুয়েজ, and never mix the two inside one page. |
 | variable | ভ্যারিয়েবল | bn | |
-| assignment | অ্যাসাইনমেন্ট | bn | Not independently source-confirmed; flagged for native-speaker review. |
+| assignment | অ্যাসাইনমেন্ট | bn | Confirmed by native-speaker review (see notes). |
 | to assign | অ্যাসাইন করা | bn | Loanword verb via করা. |
 | code block | কোড ব্লক | bn | |
 | loop | লুপ | bn | |
 | error | এরর | bn | |
-| nested | নেস্টেড | bn | Not independently source-confirmed; flagged for native-speaker review. |
-| iteration | ইটারেশন | bn | Not independently source-confirmed; flagged for native-speaker review. |
+| nested | নেস্টেড | bn | Confirmed by native-speaker review (see notes). |
+| iteration | ইটারেশন | bn | Confirmed by native-speaker review (see notes). |
 | element | এলিমেন্ট | bn | On the chain metaphor specifically, see "Jiki physical metaphors" below for how an element is described. |
 | class | ক্লাস | bn | |
 | object | অবজেক্ট | bn | |
@@ -100,6 +100,7 @@ by theme for readability; every table below follows the same columns.
 |---------|--------|----------|-------|
 | course | কোর্স | bn | Keep distinct from lesson and curriculum. |
 | exercise | অনুশীলনী | bn | Curriculum and pedagogy vocabulary takes the ordinary Bangla word, not the transliteration default that applies to CS jargon (see guide § Terminology and code-switching). |
+| greeting (email opener) | স্বাগতম! | bn | Never নমস্কার, which reads as a Hindu-coded religious greeting; Jiki is secular. Confirmed by native-speaker review (see notes). |
 
 ## Keep in English
 
@@ -137,6 +138,45 @@ technical language.
 ---
 
 ## Decision log
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout). Logged here for review
+and **not** written to `glossary.md`.
+
+One direct conflict was already resolved during the pass, on governance rather than taste:
+the two chunk workers landed on different renderings for **hint** (হিন্ট vs ইঙ্গিত). Standardized
+on **ইঙ্গিত** per `languages/bn/guide.md`'s rule that ordinary/pedagogy vocabulary takes the
+ordinary Bangla word, not a transliteration — "hint" is pedagogy vocabulary, not CS jargon.
+All 7 occurrences now agree. The modals worker's objection (ইঙ্গিত reads too literary for a
+UI label) is preserved below for a native speaker to weigh in on.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| hint | ইঙ্গিত | Resolved cross-chunk conflict (see above); worth a native-speaker ruling given the modals worker's objection. | medium |
+| concept | কনসেপ্ট | Agreed independently by both chunk workers. | medium |
+| scenario | সিনারিও | Agreed independently by both chunk workers. | medium |
+| challenge | চ্যালেঞ্জ | | medium |
+| lesson | পাঠ | Pedagogy word, ordinary Bangla, not লেসন. | medium |
+| instructions (exercise panel) | নির্দেশনা | Deliberately distinct from the glossary's নির্দেশ ("instruction given to Jiki"). | medium |
+| to unlock | আনলক করা / হওয়া | | medium |
+| subscription / subscribe | সাবস্ক্রিপশন / সাবস্ক্রাইব করা | | medium |
+| locked (content state) | লক করা | | medium |
+| in progress / not started / completed | চলমান / শুরু হয়নি / সম্পন্ন | Status triple; internal consistency matters more than the individual picks. | medium |
+| achievements | অর্জন | Ordinary word over অ্যাচিভমেন্ট. | medium |
+| testimonials | শিক্ষার্থীদের মতামত | Alternatives defensible; needs a pick. | low |
+| scrubber | স্ক্রাবার | | low |
+| Deep Dive | ডিপ ডাইভ or kept Latin | **Workers disagreed**: modals chunk kept Latin, learning chunk transliterated. Unresolved. | low |
+| Coding Fundamentals | কোডিং ফান্ডামেন্টালস | Could arguably stay Latin as a product name; needs a ruling. | low |
+
+Flags for a product/FE decision, not glossary rows: sidebar asymmetry ("Learn to Build" and
+"Projects" stay Latin, but "Learn to Code" became কোড শিখুন — a Bangla heading directly above
+an English one); `lesson.documentTitle` renders the brand as জিকি rather than Latin "Jiki";
+`layout.localeBanner.cta` "Change to {language}" was rephrased to "{language} সংস্করণে যান"
+because Bangla needs a case ending that can't attach cleanly to the placeholder — only works
+if `{language}` is a bare language name, worth Aron confirming.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 
@@ -183,6 +223,76 @@ loanword-transliteration default for CS jargon (§ Terminology and code-switchin
 `guide.md`). Curriculum and pedagogy vocabulary takes the ordinary Bangla word instead,
 and অনুশীলনী is what Bangladeshi and West Bengali textbooks actually head their exercise
 sets with; no learner reaches for এক্সারসাইজ here.
+
+### 2026-08-01: Rationale moved out of `guide.md`
+
+**Decided by:** owner (iHiD), as an editorial pass on the guide, not a change to any
+decision. **No rule changed and no term changed**; this entry only records the reasoning
+that used to sit inside `guide.md` and has been cut from it, because the guide is loaded
+into the prompt for every Bangla item in every pass and the reasoning is not something a
+translator acts on. Every instruction that was in the guide is still in the guide.
+
+**Why Bangla is one locale, not a language family.** The guide used to open by explaining
+this. Bangla is written with the same Eastern Nagari (Bengali) script and the same modern
+written standard (চলিত ভাষা, cholit bhasha) across Bangladesh and West Bengal (India).
+Research turned up no meaningful divergence in the instructional and connective vocabulary
+a beginner coding tutorial actually uses (words like "example", "practice", "however",
+"let's begin"): the documented Bangladesh/West Bengal lexical differences sit in everyday
+domestic and religious vocabulary (e.g. "water", "salt", "prayer"), not in educated,
+Sanskrit-descended tatsama vocabulary or technical loanwords. Bangla is therefore treated
+as a single locale (`bn`), not a language family, unlike `es`/`pt`/`zh` in this repo. The
+guide keeps only the instruction: write the shared modern written standard, no
+region-specific colloquialisms.
+
+**Why আপনি and not তুমি**, despite `global/voice.md` calling for informal address. Bangla
+has three address forms: তুই (intimate, can read as rude to a stranger), তুমি
+(informal/friendly), and আপনি (formal/respectful). Real Bangla online tutorials and
+programming blogs consistently address an unknown learner with আপনি. আপনি is the register
+that reads as warm-but-respectful to a stranger; তুমি is reserved for people you already
+know, and তুই can read as presumptuous or condescending. So applying the *letter* of the
+global principle ("use the register modern online educational content actually uses")
+means আপনি here, even though the label "formal" makes it look like the wrong pick at first
+glance. আপনি and a warm voice are not in tension in Bangla the way "formal register" and
+"warm voice" might seem to be in English. The guide now states the rule imperatively, with
+one clause saying it overrides the global wording so nobody "corrects" it back to তুমি.
+
+**Why CS jargon is transliterated rather than Sanskritized.** Transliterating the English
+loanword into Bengali script (ফাংশন, ভ্যারিয়েবল, অ্যারে, লুপ) is the real, consistent
+convention in Bangla programming tutorials and blogs, as opposed to the Sanskritized
+vocabulary of formal school ICT textbooks (চলক for "variable"), which reads as
+exam-syllabus register rather than tutorial register. The guide keeps the rule and the চলক
+counter-example; the survey behind it is here.
+
+**Why দাঁড়ি (।) rather than a Western period.** It is standard in Bangla digital and
+technical writing, not an archaism, which is the objection the guide used to pre-empt.
+
+**Why no gloss on a transliterated loanword.** ইন্টারপ্রেটার, এরর, ফাংশন, স্ট্রিং and the
+rest are phonetic Bengali-script renderings of the English word, so a reader who knows the
+English term recognizes it on sight and a reader who does not learns nothing from seeing
+the Latin spelling next to it. A bracketed "(function)" after ফাংশন is redundant in a way
+it is not for, say, Hungarian's _függvény_. Note this is a deliberate Bangla-specific call
+against the Japanese コート example in `global/voice.md`: Bengali-script transliteration is
+already legible to the reader, so it does not buy what katakana buys.
+
+**Why the Jiki physical metaphors were expected to land in Bangla.** Bangla pedagogical
+writing already reaches naturally for concrete container metaphors: real Bangla tutorial
+content independently describes an array's slots as খোপ (compartments/pigeonholes, the
+same word used for a train berth or a mail pigeonhole). That was the evidence that Jiki's
+physical-metaphor approach (box, chain, machine, input slot, return chute) would land
+naturally rather than feeling foreign. খোপ is not itself an agreed term and has no
+glossary row.
+
+**Why অনুশীলনী for "exercise"** is already recorded in the 2026-07-30 entry above; the
+guide's repetition of that argument has been cut, leaving the general rule (curriculum and
+pedagogy vocabulary takes the ordinary Bangla word) and the "settled, do not re-argue per
+page" instruction.
+
+**Also cut from the guide, as duplication rather than rationale:** the lists of individual
+term renderings (all already rows in `glossary.md`, unchanged), the bullet restating
+`global/rules.md` on Jikiscript keywords staying English (also a row in the "Keep in
+English" table), the worked example repeating the glossary's API explanation verbatim, and
+a second copy of the "warmth does not mean downgrading the pronoun" rule that appeared in
+both § Formality and § Style notes (kept once, in § Formality).
 
 ### Term rationale
 
@@ -245,12 +355,12 @@ and in the row's own Notes column in `glossary.md`, not treated as a decision.
 | mental model | Ordinary adjective + loanword noun; the picture-in-your-head framing. |
 | (programming) language | ভাষা is the ordinary Bangla word for "language" and beginners already know it. |
 | variable | Loanword; confirmed as the real dev/tutorial-register standard over the textbook word চলক. |
-| assignment | **Open:** loanword pattern-matched to the established অ্যাসাইন করা/আর্গুমেন্ট-style convention, not independently source-confirmed. |
+| assignment | Loanword, confirmed by native-speaker review 2026-08-15 (sohayelmahmud, forum t/473, post 4948) as the standard over নিয়োগ/কাজ. |
 | code block | Loanword pairing; both halves already familiar in Bangla tech writing. |
 | loop | Loanword, the real dev/tutorial-register standard. |
 | error | Loanword; confirmed as the dev/tutorial-register standard over the more formal word ত্রুটি. |
-| nested | **Open:** loanword, pattern-matched to the same convention, not independently source-confirmed. |
-| iteration | **Open:** loanword, pattern-matched to the same convention, not independently source-confirmed. |
+| nested | Loanword, confirmed by native-speaker review 2026-08-15 (sohayelmahmud, forum t/473, post 4948); use নেস্টেড alone, or নেস্টেড লুপ / লুপের ভিতর লুপ when spelling out "nested loop". |
+| iteration | Loanword, confirmed by native-speaker review 2026-08-15 (sohayelmahmud, forum t/473, post 4948) as the standard over পুনরাবৃত্তি. |
 | class | Loanword. |
 | object | Loanword. |
 
@@ -259,6 +369,7 @@ and in the row's own Notes column in `glossary.md`, not treated as a decision.
 | Term | Why |
 |------|-----|
 | course | Loanword, universal in Bangla for a taught course. |
+| greeting (email opener) | স্বাগতম! confirmed by native-speaker review 2026-08-15/16 (sohayelmahmud, forum t/1660, t/1661, t/1662, t/1663) over নমস্কার, which he flagged as Hindu-coded and inappropriate for a secular product; he explicitly said "স্বাগতম! is the best for this type of mail, you can lock it in" (t/1661). Applied across the bn mailer files. |
 
 #### Jiki physical metaphors
 

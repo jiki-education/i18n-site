@@ -123,17 +123,17 @@ const withAny = languages.filter((l) => l.approved > 0).length;
     </div>
 
     <div class="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white">
-      <div class="hidden border-b border-gray-200 px-5 py-3 text-[12px] tracking-wide text-gray-500 uppercase sm:grid sm:grid-cols-[3rem_1fr_7rem_10rem] sm:gap-4">
+      <div class="hidden border-b border-gray-200 px-5 py-3 text-[12px] tracking-wide text-gray-500 uppercase sm:grid sm:grid-cols-[3rem_1fr_10rem_10rem] sm:gap-4">
         <span class="font-semibold">#</span>
         <span class="font-semibold">Language</span>
-        <span class="font-semibold">Stage</span>
+        <span class="text-right font-semibold">Stage</span>
         <span class="font-semibold">Signed off</span>
       </div>
 
       {
         languages.map((entry) => (
           <details class="group border-b border-gray-100 last:border-0">
-            <summary class="grid cursor-pointer list-none grid-cols-1 gap-2 px-5 py-3.5 transition hover:bg-purple-50/60 sm:grid-cols-[3rem_1fr_7rem_10rem] sm:items-center sm:gap-4">
+            <summary class="grid cursor-pointer list-none grid-cols-1 gap-2 px-5 py-3.5 transition hover:bg-purple-50/60 sm:grid-cols-[3rem_1fr_10rem_10rem] sm:items-center sm:gap-4">
               <span class="text-[20px] leading-none font-bold text-gray-400 tabular-nums">{entry.rank}.</span>
               <span class="flex items-center gap-2.5 font-semibold text-gray-900">
                 <span class="text-[13px] text-gray-400 transition group-open:rotate-90" aria-hidden="true">
@@ -144,9 +144,9 @@ const withAny = languages.filter((l) => l.approved > 0).length;
                 </span>
                 {entry.meta.name}
               </span>
-              <span class="flex flex-wrap items-center gap-1.5">
-                <StageBadge stage={entry.stage} />
+              <span class="flex flex-wrap items-center justify-end gap-1.5">
                 {entry.live && <LiveBadge />}
+                <StageBadge stage={entry.stage} />
               </span>
               <span class="flex items-center gap-2.5">
                 <span class="flex h-1.5 w-20 overflow-hidden rounded-full bg-gray-200">

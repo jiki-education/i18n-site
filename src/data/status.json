@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-16",
-  "governance_sha": "0231f90",
-  "approved": 701,
+  "governance_sha": "4df35d2",
+  "approved": 710,
   "disapproved": 1,
   "total": 2620,
   "languages": [
@@ -11,14 +11,14 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-fr",
-      "approved": 162,
+      "approved": 171,
       "disapproved": 0,
       "total": 177,
       "items": [
         {
           "key": "glossary",
           "topic_id": 314,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/using-functions",
@@ -542,13 +542,13 @@
         },
         {
           "key": "exercise/space-invaders-nested-repeat",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1621,
+          "status": "approved"
         },
         {
           "key": "exercise/stripey-fabric",
           "topic_id": 1631,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/scroll-and-shoot",
@@ -562,18 +562,18 @@
         },
         {
           "key": "exercise/space-invaders-conditional",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1619,
+          "status": "approved"
         },
         {
           "key": "exercise/reverse-string",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1616,
+          "status": "approved"
         },
         {
           "key": "exercise/run-length-encoding",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1617,
+          "status": "approved"
         },
         {
           "key": "exercise/rainbow-ball",
@@ -642,8 +642,8 @@
         },
         {
           "key": "exercise/sign-price",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1618,
+          "status": "approved"
         },
         {
           "key": "concept/string-templates",
@@ -892,13 +892,13 @@
         },
         {
           "key": "exercise/llm-response",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1623,
+          "status": "approved"
         },
         {
           "key": "exercise/scrabble-score",
           "topic_id": 1625,
-          "status": "pending"
+          "status": "approved"
         }
       ]
     },

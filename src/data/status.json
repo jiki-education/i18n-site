@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-16",
-  "governance_sha": "c795365",
-  "approved": 713,
+  "governance_sha": "6726af8",
+  "approved": 714,
   "disapproved": 1,
-  "total": 2620,
+  "total": 2628,
   "languages": [
     {
       "lang": "fr",
@@ -13,7 +13,7 @@
       "category_slug": "i18n-fr",
       "approved": 173,
       "disapproved": 0,
-      "total": 177,
+      "total": 185,
       "items": [
         {
           "key": "glossary",
@@ -899,6 +899,46 @@
           "key": "exercise/scrabble-score",
           "topic_id": 1625,
           "status": "approved"
+        },
+        {
+          "key": "exercise/chop-shop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/lookup-time",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/lunchbox",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/matching-socks",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/meal-prep",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/nucleotide-count",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rna-transcription",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stars",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -908,7 +948,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-it",
-      "approved": 139,
+      "approved": 140,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -1669,8 +1709,8 @@
         },
         {
           "key": "level-milestone/make-your-own-functions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1654,
+          "status": "approved"
         },
         {
           "key": "level-milestone/string-manipulation",

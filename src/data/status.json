@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-16",
-  "governance_sha": "4df35d2",
-  "approved": 710,
+  "governance_sha": "fa936f3",
+  "approved": 712,
   "disapproved": 1,
   "total": 2620,
   "languages": [
@@ -11,7 +11,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-fr",
-      "approved": 171,
+      "approved": 173,
       "disapproved": 0,
       "total": 177,
       "items": [
@@ -737,13 +737,13 @@
         },
         {
           "key": "api-email/progression_mailer.level_completed",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1634,
+          "status": "approved"
         },
         {
           "key": "api-email/mailers.shared.footer",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1635,
+          "status": "approved"
         },
         {
           "key": "level-milestone/using-functions",

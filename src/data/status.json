@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-15",
-  "governance_sha": "9dfef94",
-  "approved": 697,
+  "published_at": "2026-08-16",
+  "governance_sha": "ab3238d",
+  "approved": 700,
   "disapproved": 1,
-  "total": 2598,
+  "total": 2600,
   "languages": [
     {
       "lang": "fr",
       "name": "French",
       "stage": "reviewing",
       "category_slug": "i18n-fr",
-      "approved": 159,
+      "approved": 162,
       "disapproved": 0,
-      "total": 175,
+      "total": 177,
       "items": [
         {
           "key": "glossary",
@@ -326,8 +326,8 @@
         },
         {
           "key": "exercise/after-party",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1356,
+          "status": "approved"
         },
         {
           "key": "exercise/alphanumeric",
@@ -531,8 +531,8 @@
         },
         {
           "key": "exercise/tile-rack",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1628,
+          "status": "approved"
         },
         {
           "key": "exercise/triangle",
@@ -546,7 +546,7 @@
         },
         {
           "key": "exercise/stripey-fabric",
-          "topic_id": null,
+          "topic_id": 1631,
           "status": "pending"
         },
         {
@@ -556,8 +556,8 @@
         },
         {
           "key": "exercise/tile-search",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1627,
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-conditional",
@@ -888,6 +888,16 @@
           "key": "badge/townsfolk",
           "topic_id": 1509,
           "status": "approved"
+        },
+        {
+          "key": "exercise/llm-response",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/scrabble-score",
+          "topic_id": 1625,
+          "status": "pending"
         }
       ]
     },

@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "7c436b8"
-content_version: "3d96525f7719"
-published_at: "2026-08-13"
-term_count: 98
+governance_sha: "f337f63"
+content_version: "fc1fa3c9d978"
+published_at: "2026-08-16"
+term_count: 99
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -89,6 +89,7 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | edge case | cas limite | fr | The agreed rendering; no official French ruling exists, so do not coin an alternative. |
 | backwards compatibility | rétrocompatibilité | fr | Not "compatibilité descendante". |
 | refactor | réécrire | fr | Unconfirmed draft (agent, 2026-08-03). Noun form: _réécriture_. Never the anglicism _refactoriser_/_refactoring_ in learner-facing prose. |
+| standard library (level stdlib) | bibliothèque standard du niveau | fr | Flagged by native-speaker review (resu-xunil, t/1620, 2026-08-15): some exercises had drifted to "stdlib du niveau"; standardized on the majority spelled-out form. |
 
 ### Platform & curriculum vocabulary
 
@@ -135,11 +136,11 @@ in the gloss column below; with no `<define>`, use the English bare, no gloss.
 
 | Term | French gloss (on `<define>`) | Notes |
 |------|--------------------------------|-------|
-| string | _chaîne de caractères_ | Exception: in the string concept itself, use _chaîne de caractères_ where the source defines it, then use _string_ throughout. Keeping it English leaves _chaîne_ free for the array chain metaphor. Open question: French dev writing genuinely says "chaîne de caractères", so the ordinary-word principle points the other way; not yet revisited (see `glossary-notes.md`). |
+| string | _chaîne de caractères_ | Confirmed by native speakers (2026-08-14, topic 314), closing the open question. **Always italicize the bare English term in prose: _string_, _strings_.** In the string concept itself, use _chaîne de caractères_ where the source defines it, then _string_ throughout. Keeping it English leaves _chaîne_ free for the array chain metaphor. _chaîne de caractères_ may still be used sporadically in prose where it reads better, but never repeatedly through the same page, which reads as tedious. Two carve-outs where underscores would render literally rather than as italics: a page's frontmatter `description` field (the card component does not parse Markdown) and video subtitles (`.vtt`). |
 | API | explain what it is in French | Where the source defines it, explain the concept in French, not just gloss the acronym. Gender: _une API_ (feminine). |
 | framework | _cadre de développement_ | Where the source defines it, explain it means a reusable _cadre de développement_, then use _framework_ freely. |
 | workflow | _flux de travail_ | The software-engineering sense (a sequence of dev tasks). Where the source defines it, explain it means _flux de travail_, then use _workflow_. |
-| template literal | _littéral de gabarit_ | Where the source defines it, explain it as a _littéral de gabarit_ (the official term), then use _template literal_. |
+| template literal | _littéral de gabarit_ | Where the source defines it, explain it as a _littéral de gabarit_ (the official term), then use _template literal_. **Italicize the bare English term in prose**, same as _string_ (2026-08-14, topic 314). Same `.vtt` and frontmatter carve-outs. |
 | CLI (the concept) | _interface en ligne de commande_ | Where the source defines it, explain CLI as _interface en ligne de commande_ (command-line interface), then "la CLI". Gender: _la CLI_ (feminine). |
 | canvas (graphics exercises) | _zone de dessin_ | The drawing surface in creative-coding exercises. Where the source defines it, explain it as the _zone de dessin_ (the `canvas` element), then use _canvas_. |
 | camel case | (no gloss; the spelling is the example) | Always write the term itself as one word, in code style: `camelCase`. Never the two-word phrase « camel case », in guillemets or otherwise: the capital C is the whole point, so the term has to *show* the rule it names. Where the source explains it, keep the explanation (camel = chameau, case = casse, and the chameau/bosses metaphor), which still reads correctly against `camelCase`. Same for any other named case style: `snake_case`, `kebab-case`. |
@@ -162,7 +163,7 @@ stands. Settled 2026-08-13 by iHiD; see `glossary-notes.md`.
 | Animation (concept title) | Animation | en | Title only. The French word is spelled the same; prose about animation still uses _animation_ normally. |
 | Hello (exercise title) | Hello | en | Title only. The exercise is named after the `"Hello"` string it returns, so the title has to match the code. |
 | Luhn (exercise title) | Luhn | en | Title only. Hans Peter Luhn's surname; also used in prose as _la formule de Luhn_. |
-| Space Invaders (exercise title) | Space Invaders | en | Title only, and this row records today's status quo, not a settled answer: mirina's proposal to render it _Les envahisseurs de l'espace_ is still open on topic 1244, and if it is adopted this row goes. Until then leave it in English everywhere, as before. |
+| Space Invaders (exercise title) | Space Invaders | en | Title only. Decided 2026-08-14 (topic 1244): the 1978 arcade game's name, kept as a deliberate reference rather than translated to _Les envahisseurs de l'espace_. |
 | Triangle (exercise title) | Triangle | en | Title only. The French word is spelled the same. |
 | Two-Fer (exercise title) | Two-Fer | en | Title only. English wordplay ("two for one") that carries the exercise's `"One for you, one for me."` line; there is no French equivalent that keeps both. |
 | Hello, World! 👋 (blog post title) | Hello, World! 👋 | en | Title only. The canonical first-program phrase, used as-is by French developers. |
@@ -200,6 +201,35 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-08-14: the `string` open question, closed (bare English terms now italicized)
+
+**Decided by:** resu-xunil and williamapc, forum topic 314 (https://forum.jiki.io/t/314), posts 94-96.
+
+The glossary had recorded a tension: `string` was kept English so _chaîne_ stayed free for
+the array-chain metaphor, but the ordinary-word principle pointed at _chaîne de caractères_,
+which French dev writing genuinely uses. resu-xunil reopened it (post 94), reporting that
+bare English `string` sitting unmarked in French sentences read uncomfortably, and proposed
+either italicizing it or switching to _chaîne de caractères_ outright, preferring the
+former. williamapc agreed (post 95) and added the limiting condition from the other side:
+the repetition _chaîne de caractères_ forces is fine when sporadic, tedious when it recurs
+through a page.
+
+The two positions combine into one rule rather than competing, so the original
+English-keeping call stands and gains a typographic marker that answers the discomfort:
+`string` stays English and is always italicized in prose, and _chaîne de caractères_ stays
+available for occasional use where it reads better but must not repeat through the same
+page. resu-xunil extended the same treatment to `template literal` (post 96). Whether it
+extends to the other kept-English terms (`API`, `framework`, `workflow`, `CLI`, `canvas`)
+was not asked and is not decided here.
+
+Two mechanical carve-outs surfaced in posts 98-99, where the same italic markup would reach
+the reader as literal underscore characters rather than as italics: a page's frontmatter
+`description` field (not parsed as Markdown by the card component) and video subtitles
+(`.vtt`). Both stay unitalicized.
+
+**Terms affected:** `string`, `template literal` (glossary rows updated in the "Keep in
+English" table).
 
 ### 2026-08-12: "Take a Walk" exercise title → `Fais un tour` (confirmed, replaces _Une petite marche_)
 
@@ -250,11 +280,11 @@ by the instructions prose, which glosses the function as « marcher » in the bo
 title's job here is register, not vocabulary matching. A speaker's reading of the register
 outranks an agent's preference for a lexical echo.
 
-### 2026-08-12: "Space Invaders" → _Les envahisseurs de l'espace_? (OPEN QUESTION, not decided)
+### 2026-08-12: "Space Invaders" → _Les envahisseurs de l'espace_? (DECIDED 2026-08-14: keep English)
 
 **Raised by:** mirina, forum topic 1244 (https://forum.jiki.io/t/1244), post 3.
-**Status:** open. Nothing is decided and nothing has changed; see the 2026-08-13 addendum at
-the end of this entry for the status-quo row that now exists and what it does not settle.
+**Status:** decided 2026-08-14. Keep "Space Invaders" in English everywhere, as it already is.
+See the 2026-08-14 resolution note at the end of this entry.
 **Terms affected:** `Space Invaders`, which is left in English everywhere it appears.
 **Files affected so far:** `languages/fr/glossary-notes.md` only.
 
@@ -304,6 +334,18 @@ what this entry already says a pass must do (leave the title in English), so tha
 stops reporting the page as unreviewed; it decides nothing. mirina's question is still open
 and a second French voice still settles it. If the rename is adopted, that row is removed
 along with the English titles, and this entry is what says why.
+
+**Resolution, 2026-08-14.** resu-xunil answered on t/1244, post 6 — the second native-speaker
+voice this entry was waiting on. His answer: keep "Space Invaders" in English. He pointed to
+the same reasoning already recorded above (the 1970s-arcade-game framing in the English
+source) and said plainly he'd never thought of it as something to translate. mirina, having
+weighed the tradeoff herself in post 5, had already come around to seeing value in keeping the
+English reference too ("this is actually a great opportunity" for students to look it up).
+With both active French voices landing on the same side, this is decided: **`Space Invaders`
+stays in English everywhere it appears**, and the `Space Invaders (exercise title)` row in
+`glossary.md` is now a settled decision, not a placeholder. Mirina's two contingent
+description phrasings (_Abats des aliens pour débuter/découvrir avec/les Envahisseurs de
+l'espace_) are not adopted and should not be used.
 
 ### 2026-08-13: seven titles recorded as staying as they are (owner decision)
 
@@ -1747,7 +1789,7 @@ covered by a dated entry above (`interpreter`, `board / whiteboard`) is not repe
 
 | Term | Why |
 |------|-----|
-| string | Kept English so _chaîne_ stays free for the array-chain metaphor. This is in tension with the ordinary-word principle above, since French dev writing genuinely says "chaîne de caractères"; flagged as an open question, not re-decided. |
+| string | Kept English so _chaîne_ stays free for the array-chain metaphor. Always italicized in prose as of 2026-08-14 (topic 314) — see the dated entry below for how the open question was closed. |
 | pattern | resu-xunil proposed keeping "pattern" in English rather than "motif" (t/1235 post 1, re: exercise/foxy-face "Tu retrouveras souvent ce motif"), explicitly uncertain and tagged @mirina and @williamapc for a second opinion. Not yet settled either way; current published text still says "motif". |
 | API | Not a word a beginner knows, so the concept has to be explained, not just the acronym expanded. |
 | framework | Established loanword in French dev writing. |

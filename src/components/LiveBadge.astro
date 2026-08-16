@@ -1,0 +1,26 @@
+---
+/**
+ * A small purple pill marking a language as live in production, i.e. a real
+ * user can select it on the app today.
+ *
+ * This is a different fact from `StageBadge`'s stage: stage is a translation
+ * governance call (how far the language's own review process has got),
+ * decided in the translator repo's tracking.json. Live is a product/deployment
+ * fact, decided by what the front-end ships (`app/lib/production-locales.json`
+ * there), and published here as the `live` field on each language's entry in
+ * `src/data/status.json`. Only rendered when `live` is true; the caller
+ * decides whether to render it at all.
+ */
+interface Props {
+  class?: string;
+}
+
+const { class: className = "" } = Astro.props;
+---
+
+<span
+  class={`inline-flex items-center gap-1 rounded-full bg-purple-100 px-2 py-0.5 text-[11px] font-semibold text-purple-800 ${className}`}
+  title="Live in production — real users can select this language today"
+>
+  Live
+</span>

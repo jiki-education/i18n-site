@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-16",
-  "governance_sha": "ab3238d",
-  "approved": 700,
+  "governance_sha": "356485d",
+  "approved": 701,
   "disapproved": 1,
   "total": 2600,
   "languages": [
@@ -9,6 +9,7 @@
       "lang": "fr",
       "name": "French",
       "stage": "reviewing",
+      "live": true,
       "category_slug": "i18n-fr",
       "approved": 162,
       "disapproved": 0,
@@ -905,6 +906,7 @@
       "lang": "it",
       "name": "Italian",
       "stage": "reviewing",
+      "live": true,
       "category_slug": "i18n-it",
       "approved": 139,
       "disapproved": 0,
@@ -1387,7 +1389,7 @@
         },
         {
           "key": "concept/colors",
-          "topic_id": null,
+          "topic_id": 1353,
           "status": "pending"
         },
         {
@@ -1612,7 +1614,7 @@
         },
         {
           "key": "api-email/progression_mailer.level_completed",
-          "topic_id": null,
+          "topic_id": 1632,
           "status": "pending"
         },
         {
@@ -1771,6 +1773,7 @@
       "lang": "uk",
       "name": "Ukrainian",
       "stage": "reviewing",
+      "live": true,
       "category_slug": "i18n-uk",
       "approved": 129,
       "disapproved": 0,
@@ -2637,6 +2640,7 @@
       "lang": "el",
       "name": "Greek",
       "stage": "reviewing",
+      "live": true,
       "category_slug": "i18n-el",
       "approved": 86,
       "disapproved": 0,
@@ -3503,6 +3507,7 @@
       "lang": "es-419",
       "name": "Latin American Spanish",
       "stage": "reviewing",
+      "live": false,
       "category_slug": "i18n-es-419",
       "approved": 32,
       "disapproved": 0,
@@ -3580,12 +3585,12 @@
         },
         {
           "key": "concept/else-if",
-          "topic_id": null,
+          "topic_id": 1136,
           "status": "pending"
         },
         {
           "key": "concept/for-loops",
-          "topic_id": null,
+          "topic_id": 1194,
           "status": "pending"
         },
         {
@@ -3600,7 +3605,7 @@
         },
         {
           "key": "concept/dictionaries",
-          "topic_id": null,
+          "topic_id": 1195,
           "status": "pending"
         },
         {
@@ -4324,6 +4329,7 @@
       "lang": "hu",
       "name": "Hungarian",
       "stage": "reviewing",
+      "live": true,
       "category_slug": "i18n-hu",
       "approved": 21,
       "disapproved": 0,
@@ -5230,6 +5236,7 @@
       "lang": "pt-pt",
       "name": "European Portuguese",
       "stage": "reviewing",
+      "live": false,
       "category_slug": "i18n-pt-pt",
       "approved": 20,
       "disapproved": 0,
@@ -5546,6 +5553,7 @@
       "lang": "fa",
       "name": "Persian",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-fa",
       "approved": 15,
       "disapproved": 0,
@@ -5598,7 +5606,7 @@
         },
         {
           "key": "concept/strings",
-          "topic_id": null,
+          "topic_id": 1223,
           "status": "pending"
         },
         {
@@ -6367,6 +6375,7 @@
       "lang": "hi",
       "name": "Hindi",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-hi",
       "approved": 14,
       "disapproved": 0,
@@ -6614,7 +6623,7 @@
         },
         {
           "key": "concept/updating-variables",
-          "topic_id": null,
+          "topic_id": 1665,
           "status": "pending"
         },
         {
@@ -6689,7 +6698,7 @@
         },
         {
           "key": "exercise/snowman",
-          "topic_id": null,
+          "topic_id": 1645,
           "status": "pending"
         },
         {
@@ -7183,6 +7192,7 @@
       "lang": "sr",
       "name": "Serbian",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-sr",
       "approved": 13,
       "disapproved": 0,
@@ -8004,6 +8014,7 @@
       "lang": "pl",
       "name": "Polish",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-pl",
       "approved": 10,
       "disapproved": 0,
@@ -8155,6 +8166,7 @@
       "lang": "zh-TW",
       "name": "Traditional Chinese",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-zh-tw",
       "approved": 9,
       "disapproved": 0,
@@ -8331,6 +8343,7 @@
       "lang": "nl",
       "name": "Dutch",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-nl",
       "approved": 9,
       "disapproved": 0,
@@ -8482,6 +8495,7 @@
       "lang": "pt-BR",
       "name": "Brazilian Portuguese",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-pt-br",
       "approved": 8,
       "disapproved": 1,
@@ -8619,12 +8633,12 @@
         },
         {
           "key": "api-email/progression_mailer.level_completed",
-          "topic_id": null,
+          "topic_id": 1615,
           "status": "pending"
         },
         {
           "key": "api-email/mailers.shared.footer",
-          "topic_id": null,
+          "topic_id": 1613,
           "status": "pending"
         },
         {
@@ -8683,6 +8697,7 @@
       "lang": "ru",
       "name": "Russian",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-ru",
       "approved": 8,
       "disapproved": 0,
@@ -8834,6 +8849,7 @@
       "lang": "ja",
       "name": "Japanese",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-ja",
       "approved": 4,
       "disapproved": 0,
@@ -9650,6 +9666,7 @@
       "lang": "sv",
       "name": "Swedish",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-sv",
       "approved": 4,
       "disapproved": 0,
@@ -10106,6 +10123,7 @@
       "lang": "id",
       "name": "Indonesian",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-id",
       "approved": 4,
       "disapproved": 0,
@@ -10257,6 +10275,7 @@
       "lang": "ar",
       "name": "Arabic",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-ar",
       "approved": 3,
       "disapproved": 0,
@@ -10528,6 +10547,7 @@
       "lang": "tr",
       "name": "Turkish",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-tr",
       "approved": 3,
       "disapproved": 0,
@@ -10654,6 +10674,7 @@
       "lang": "ko",
       "name": "Korean",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
@@ -11470,6 +11491,7 @@
       "lang": "zh-CN",
       "name": "Simplified Chinese",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-zh-cn",
       "approved": 2,
       "disapproved": 0,
@@ -12286,6 +12308,7 @@
       "lang": "de",
       "name": "German",
       "stage": "refining",
+      "live": false,
       "category_slug": "i18n-de",
       "approved": 2,
       "disapproved": 0,
@@ -12412,8 +12435,9 @@
       "lang": "bn",
       "name": "Bengali",
       "stage": "setup",
+      "live": false,
       "category_slug": "i18n-bn",
-      "approved": 1,
+      "approved": 2,
       "disapproved": 0,
       "total": 18,
       "items": [
@@ -12435,7 +12459,7 @@
         {
           "key": "exercise/maze-solve-basic",
           "topic_id": 796,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "api-email/devise.mailer.confirmation_instructions",
@@ -12449,12 +12473,12 @@
         },
         {
           "key": "api-email/progression_mailer.level_completed",
-          "topic_id": null,
+          "topic_id": 1663,
           "status": "pending"
         },
         {
           "key": "api-email/mailers.shared.footer",
-          "topic_id": null,
+          "topic_id": 1662,
           "status": "pending"
         },
         {
@@ -12513,6 +12537,7 @@
       "lang": "ca",
       "name": "Catalan",
       "stage": "setup",
+      "live": false,
       "category_slug": "i18n-ca",
       "approved": 0,
       "disapproved": 0,
@@ -12614,6 +12639,7 @@
       "lang": "es-ES",
       "name": "European Spanish",
       "stage": "setup",
+      "live": false,
       "category_slug": "i18n-es-es",
       "approved": 0,
       "disapproved": 0,
@@ -12715,6 +12741,7 @@
       "lang": "ro",
       "name": "Romanian",
       "stage": "setup",
+      "live": false,
       "category_slug": "i18n-ro",
       "approved": 0,
       "disapproved": 0,
@@ -12816,6 +12843,7 @@
       "lang": "ur",
       "name": "Urdu",
       "stage": "setup",
+      "live": false,
       "category_slug": "i18n-ur",
       "approved": 0,
       "disapproved": 0,
@@ -12917,6 +12945,7 @@
       "lang": "vi",
       "name": "Vietnamese",
       "stage": "setup",
+      "live": false,
       "category_slug": "i18n-vi",
       "approved": 0,
       "disapproved": 0,
@@ -13018,6 +13047,7 @@
       "lang": "sw",
       "name": "Swahili",
       "stage": "setup",
+      "live": false,
       "category_slug": "i18n-sw",
       "approved": 0,
       "disapproved": 0,
@@ -13109,6 +13139,7 @@
       "lang": "fi",
       "name": "Finnish",
       "stage": "setup",
+      "live": false,
       "category_slug": "i18n-fi",
       "approved": 0,
       "disapproved": 0,
@@ -13190,6 +13221,7 @@
       "lang": "he",
       "name": "Hebrew",
       "stage": "setup",
+      "live": false,
       "category_slug": "i18n-he",
       "approved": 0,
       "disapproved": 0,
@@ -13271,6 +13303,7 @@
       "lang": "th",
       "name": "Thai",
       "stage": "setup",
+      "live": false,
       "category_slug": "i18n-th",
       "approved": 0,
       "disapproved": 0,
@@ -13352,6 +13385,7 @@
       "lang": "hr",
       "name": "Croatian",
       "stage": "setup",
+      "live": false,
       "category_slug": "i18n-hr",
       "approved": 0,
       "disapproved": 0,

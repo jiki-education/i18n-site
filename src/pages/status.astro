@@ -26,6 +26,7 @@
 import Layout from "../layouts/Layout.astro";
 import PageHeader from "../components/PageHeader.astro";
 import StageBadge from "../components/StageBadge.astro";
+import LiveBadge from "../components/LiveBadge.astro";
 import status from "../data/status.json";
 import { contentTypeLabel, languageFlag, languageMeta } from "../lib/languages";
 
@@ -143,8 +144,9 @@ const withAny = languages.filter((l) => l.approved > 0).length;
                 </span>
                 {entry.meta.name}
               </span>
-              <span>
+              <span class="flex flex-wrap items-center gap-1.5">
                 <StageBadge stage={entry.stage} />
+                {entry.live && <LiveBadge />}
               </span>
               <span class="flex items-center gap-2.5">
                 <span class="flex h-1.5 w-20 overflow-hidden rounded-full bg-gray-200">

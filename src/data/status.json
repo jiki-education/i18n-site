@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-17",
-  "governance_sha": "9382ba7",
+  "governance_sha": "0f05613",
   "approved": 741,
   "disapproved": 1,
-  "total": 2658,
+  "total": 2663,
   "languages": [
     {
       "lang": "fr",
@@ -8058,7 +8058,7 @@
       "category_slug": "i18n-zh-tw",
       "approved": 10,
       "disapproved": 0,
-      "total": 33,
+      "total": 38,
       "items": [
         {
           "key": "glossary",
@@ -8152,6 +8152,31 @@
         },
         {
           "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-solve-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/fix-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/foxy-face",
           "topic_id": null,
           "status": "pending"
         },

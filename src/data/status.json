@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-17",
-  "governance_sha": "2ba56b1",
+  "governance_sha": "848f46a",
   "approved": 741,
   "disapproved": 1,
-  "total": 2663,
+  "total": 2673,
   "languages": [
     {
       "lang": "fr",
@@ -8051,6 +8051,208 @@
       ]
     },
     {
+      "lang": "pl",
+      "name": "Polish",
+      "stage": "refining",
+      "live": false,
+      "category_slug": "i18n-pl",
+      "approved": 10,
+      "disapproved": 0,
+      "total": 38,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 417,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 770,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 771,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 811,
+          "status": "approved"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": 1012,
+          "status": "approved"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": 1071,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": 1254,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": 1072,
+          "status": "approved"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": 1011,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": 1375,
+          "status": "approved"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": 1010,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arithmetic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/string-concatenation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/fix-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cloud-rain-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/foxy-face",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/jumbled-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/penguin",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/beta_user",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/early_bird",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/first_lesson",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/maze_navigator",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/member",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/night_owl",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/scenario_handler",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/sidekick",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/townsfolk",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "zh-TW",
       "name": "Traditional Chinese",
       "stage": "refining",
@@ -8189,158 +8391,6 @@
           "key": "api-email/devise.mailer.reset_password_instructions",
           "topic_id": 1540,
           "status": "approved"
-        },
-        {
-          "key": "api-email/progression_mailer.level_completed",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/mailers.shared.footer",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/beta_user",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/early_bird",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/first_lesson",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/maze_navigator",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/member",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/night_owl",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/premium",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/scenario_handler",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/sidekick",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/townsfolk",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "pl",
-      "name": "Polish",
-      "stage": "refining",
-      "live": false,
-      "category_slug": "i18n-pl",
-      "approved": 10,
-      "disapproved": 0,
-      "total": 28,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 417,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 770,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 771,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 811,
-          "status": "approved"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": 1012,
-          "status": "approved"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": 1071,
-          "status": "approved"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": 1254,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/two-fer",
-          "topic_id": 1072,
-          "status": "approved"
-        },
-        {
-          "key": "concept/strings",
-          "topic_id": 1011,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/digital-clock",
-          "topic_id": 1375,
-          "status": "approved"
-        },
-        {
-          "key": "concept/arrays",
-          "topic_id": 1010,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/weather-symbols",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/devise.mailer.confirmation_instructions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/devise.mailer.reset_password_instructions",
-          "topic_id": null,
-          "status": "pending"
         },
         {
           "key": "api-email/progression_mailer.level_completed",

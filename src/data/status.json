@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-17",
-  "governance_sha": "09517f9",
+  "governance_sha": "9382ba7",
   "approved": 741,
   "disapproved": 1,
-  "total": 2643,
+  "total": 2658,
   "languages": [
     {
       "lang": "fr",
@@ -8387,7 +8387,7 @@
       "category_slug": "i18n-bn",
       "approved": 9,
       "disapproved": 0,
-      "total": 38,
+      "total": 48,
       "items": [
         {
           "key": "glossary",
@@ -8576,6 +8576,56 @@
         },
         {
           "key": "exercise/bouncer-dress-code",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/fix-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-solve-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cloud-rain-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/foxy-face",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/jumbled-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/penguin",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-repeat",
           "topic_id": null,
           "status": "pending"
         }
@@ -8968,7 +9018,7 @@
       "category_slug": "i18n-ru",
       "approved": 8,
       "disapproved": 0,
-      "total": 28,
+      "total": 33,
       "items": [
         {
           "key": "glossary",
@@ -9037,6 +9087,31 @@
         },
         {
           "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions-with-return-values",
           "topic_id": null,
           "status": "pending"
         },

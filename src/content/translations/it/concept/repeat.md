@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/repeat/page.md"
 en_md5: "f37a63911f75934656cbf04a38ff2b60"
-governance_sha: "cd8ab70"
-content_version: "ecf205f971fe"
-published_at: "2026-08-16"
+governance_sha: "cbccb94"
+content_version: "8f1fe3e7e50f"
+published_at: "2026-08-17"
 forum_topic_id: 950
 ---
 
@@ -70,7 +70,7 @@ repeat(4) {
 
 Queste istruzioni di ripetizione si chiamano cicli (_loop_ in inglese), e ci sono tanti cicli diversi che possiamo usare, ognuno con un funzionamento un po' diverso.
 
-C'è un'ultima informazione da conoscere: quando lavori con i cicli, tenere il codice in ordine diventa essenziale. Se il tuo codice ha una buona struttura visiva, è molto facile capire cosa sta succedendo. Ma se non ce l'ha, se dimentichi di indentare bene o fai confusione con l'indentazione, i comandi si confondono molto facilmente. Per questo nel corso abbiamo sempre una regola: metti la parentesi graffa di apertura sulla stessa riga dell'istruzione (_statement_ in inglese) `repeat`. Metti la parentesi graffa di chiusura su una riga a sé, dopo l'istruzione, e indenta sempre di due spazi il codice compreso tra queste graffe. In questo modo tutto resterà veramente in ordine; se te ne dimentichi o provi a seguire uno schema diverso, otterrai un errore.
+C'è un'ultima informazione da conoscere: quando lavori con i cicli, tenere il codice in ordine diventa essenziale. Se il tuo codice ha una buona struttura visiva, è molto facile capire cosa sta succedendo. Ma se non ce l'ha, se dimentichi di indentare bene o fai confusione con l'indentazione, i comandi si confondono molto facilmente. Per questo nel corso avremo sempre una regola: metti la parentesi graffa di apertura sulla stessa riga dell'istruzione (_statement_ in inglese) `repeat`. Metti la parentesi graffa di chiusura su una riga a sé, dopo l'istruzione, e indenta sempre di due spazi il codice compreso tra queste graffe. In questo modo tutto resterà veramente in ordine; se te ne dimentichi o provi a seguire uno schema diverso, otterrai un errore.
 
 <img
   class="concept-image"

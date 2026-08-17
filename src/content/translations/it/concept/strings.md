@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/strings/page.md"
 en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
-governance_sha: "494ce4b"
-content_version: "38ba0568f755"
-published_at: "2026-08-10"
+governance_sha: "cbccb94"
+content_version: "a8cdec422e89"
+published_at: "2026-08-17"
 forum_topic_id: 984
 ---
 
@@ -23,7 +23,7 @@ Quando vuoi usare un numero, ti basta scriverlo, e Jiki capisce cosa intendi. Ma
   height="400"
 />
 
-Quindi abbiamo una regola: ogni volta che dobbiamo usare del testo, dobbiamo metterlo tra virgolette, virgolette doppie. E quando metti qualcosa tra virgolette in questo modo, Jiki tira fuori un foglio di carta e ci scrive sopra quello che hai messo tra quelle virgolette. Questi fogli di carta li chiamiamo stringhe.
+Quindi abbiamo una regola: ogni volta che dobbiamo usare del testo, dobbiamo metterlo tra virgolette, virgolette doppie. E ogni volta che metti qualcosa tra virgolette in questo modo, Jiki lo copia su un foglio di carta. Se scrivi `"green"`, ottieni un foglio con scritto "green". Se scrivi `"5"`, ottieni un foglio con scritto "5": anche se sembra un numero, per Jiki è solo testo. Questi fogli di carta li chiamiamo stringhe.
 
 <img
   class="concept-image"

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/arrays/page.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "cd8ab70"
-content_version: "422e756b19b0"
-published_at: "2026-08-16"
+governance_sha: "cbccb94"
+content_version: "dfd8e77b1274"
+published_at: "2026-08-17"
 forum_topic_id: 983
 ---
 
@@ -33,9 +33,9 @@ Ora, nel codice, anche un array assomiglia un po' a una catena. Ha una parentesi
 
 Per esempio, se volessimo creare un array con i nomi di alcuni dei nostri mentori, potremmo preparare una scatola chiamata `mentors` (mentori) e metterci dentro quella catena.
 
-Scriveremmo `let mentors =`, esattamente come facciamo con qualsiasi altra scatola, e poi una parentesi quadra aperta, tanti elementi, i loro nomi separati da virgole, e infine una parentesi quadra chiusa. Quando Jiki vede questo codice, va a prendere quattro pezzi di carta, uno per ogni nome, poi prende una catena nuova, li concatena tutti insieme e mette quella catena nella scatola `mentors`.
+Scriveremmo `let mentors =`, esattamente come facciamo con qualsiasi altra scatola, e poi una parentesi quadra aperta, tanti elementi, i loro nomi separati da virgole, e infine una parentesi quadra chiusa. Quando Jiki vede questo codice, va a prendere quattro pezzi di carta, uno per ogni nome, poi prende una catena nuova, collega tutti quei pezzi di carta uno dopo l'altro, e mette quella catena nella scatola `mentors`.
 
-In un array puoi mettere di tutto: stringhe, numeri, booleani, perfino un misto di tipi diversi.
+In un array puoi mettere qualsiasi tipo di dato, anche mescolati tra loro.
 
 Questi sono tutti esempi di array perfettamente validi.
 
@@ -43,7 +43,7 @@ Puoi anche creare un array vuoto. È solo una catena senza elementi. È comunque
 
 Quindi puoi creare un array con la sintassi delle parentesi quadre, ma come si usano davvero? Come controlliamo cosa c'è dentro e come ne tiriamo fuori gli elementi? Esattamente come abbiamo fatto quando volevamo estrarre le lettere da una stringa: possiamo usare la sintassi delle parentesi quadre con dei numeri all'interno.
 
-Torniamo quindi al nostro array di mentori. Se vogliamo tirare fuori il primo, scriviamo `mentors[0]`. Ricorda che in JavaScript si conta da zero.
+Torniamo quindi al nostro array di mentori. Se vogliamo tirare fuori il primo, scriviamo `mentors[0]`. Ricorda che in JavaScript si parte a contare da zero: il primo elemento ha indice 0, il secondo ha indice 1, il terzo ha indice 2, e così via.
 
 E possiamo anche scorrere un array esattamente come abbiamo scorso le stringhe, usando `for-of`.
 

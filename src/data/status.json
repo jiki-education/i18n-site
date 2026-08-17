@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-08-16",
-  "governance_sha": "6726af8",
-  "approved": 714,
+  "published_at": "2026-08-17",
+  "governance_sha": "cbccb94",
+  "approved": 722,
   "disapproved": 1,
   "total": 2628,
   "languages": [
@@ -11,7 +11,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-fr",
-      "approved": 173,
+      "approved": 181,
       "disapproved": 0,
       "total": 185,
       "items": [
@@ -902,43 +902,43 @@
         },
         {
           "key": "exercise/chop-shop",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1669,
+          "status": "approved"
         },
         {
           "key": "exercise/lookup-time",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1670,
+          "status": "approved"
         },
         {
           "key": "exercise/lunchbox",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1671,
+          "status": "approved"
         },
         {
           "key": "exercise/matching-socks",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1672,
+          "status": "approved"
         },
         {
           "key": "exercise/meal-prep",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1673,
+          "status": "approved"
         },
         {
           "key": "exercise/nucleotide-count",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1674,
+          "status": "approved"
         },
         {
           "key": "exercise/rna-transcription",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1675,
+          "status": "approved"
         },
         {
           "key": "exercise/stars",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1676,
+          "status": "approved"
         }
       ]
     },

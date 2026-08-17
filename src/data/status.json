@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-17",
-  "governance_sha": "cbccb94",
-  "approved": 722,
+  "governance_sha": "8c834aa",
+  "approved": 738,
   "disapproved": 1,
   "total": 2628,
   "languages": [
@@ -2682,7 +2682,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-el",
-      "approved": 86,
+      "approved": 97,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -3468,8 +3468,8 @@
         },
         {
           "key": "level-milestone/advanced-loops",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1686,
+          "status": "approved"
         },
         {
           "key": "level-milestone/arrays",
@@ -3493,53 +3493,53 @@
         },
         {
           "key": "badge/beta_user",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1687,
+          "status": "approved"
         },
         {
           "key": "badge/early_bird",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1687,
+          "status": "approved"
         },
         {
           "key": "badge/first_lesson",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1687,
+          "status": "approved"
         },
         {
           "key": "badge/maze_navigator",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1687,
+          "status": "approved"
         },
         {
           "key": "badge/member",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1687,
+          "status": "approved"
         },
         {
           "key": "badge/night_owl",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1687,
+          "status": "approved"
         },
         {
           "key": "badge/premium",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1687,
+          "status": "approved"
         },
         {
           "key": "badge/scenario_handler",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1687,
+          "status": "approved"
         },
         {
           "key": "badge/sidekick",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1687,
+          "status": "approved"
         },
         {
           "key": "badge/townsfolk",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1687,
+          "status": "approved"
         }
       ]
     },
@@ -8886,6 +8886,158 @@
       ]
     },
     {
+      "lang": "bn",
+      "name": "Bengali",
+      "stage": "refining",
+      "live": false,
+      "category_slug": "i18n-bn",
+      "approved": 7,
+      "disapproved": 0,
+      "total": 28,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 473,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 742,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 743,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 796,
+          "status": "approved"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": 1663,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": 1662,
+          "status": "pending"
+        },
+        {
+          "key": "badge/beta_user",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/early_bird",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/first_lesson",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/maze_navigator",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/member",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/night_owl",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/scenario_handler",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/sidekick",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/townsfolk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": 1679,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": 1685,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": 1684,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": 1680,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": 1678,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "ja",
       "name": "Japanese",
       "stage": "refining",
@@ -12516,158 +12668,6 @@
         },
         {
           "key": "concept/dictionaries",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "bn",
-      "name": "Bengali",
-      "stage": "refining",
-      "live": false,
-      "category_slug": "i18n-bn",
-      "approved": 2,
-      "disapproved": 0,
-      "total": 28,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 473,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 742,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 743,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 796,
-          "status": "approved"
-        },
-        {
-          "key": "api-email/devise.mailer.confirmation_instructions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/devise.mailer.reset_password_instructions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/progression_mailer.level_completed",
-          "topic_id": 1663,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/mailers.shared.footer",
-          "topic_id": 1662,
-          "status": "pending"
-        },
-        {
-          "key": "badge/beta_user",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/early_bird",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/first_lesson",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/maze_navigator",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/member",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/night_owl",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/premium",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/scenario_handler",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/sidekick",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/townsfolk",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/two-fer",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/strings",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/digital-clock",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/arrays",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/weather-symbols",
           "topic_id": null,
           "status": "pending"
         }

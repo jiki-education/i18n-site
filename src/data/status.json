@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-17",
-  "governance_sha": "ca0ee1a",
+  "governance_sha": "09517f9",
   "approved": 741,
   "disapproved": 1,
-  "total": 2638,
+  "total": 2643,
   "languages": [
     {
       "lang": "fr",
@@ -8589,7 +8589,7 @@
       "category_slug": "i18n-nl",
       "approved": 9,
       "disapproved": 0,
-      "total": 28,
+      "total": 33,
       "items": [
         {
           "key": "glossary",
@@ -8660,6 +8660,31 @@
           "key": "exercise/weather-symbols",
           "topic_id": 1048,
           "status": "approved"
+        },
+        {
+          "key": "exercise/space-invaders-solve-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/fix-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/foxy-face",
+          "topic_id": null,
+          "status": "pending"
         },
         {
           "key": "api-email/devise.mailer.confirmation_instructions",

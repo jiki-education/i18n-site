@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-18",
-  "governance_sha": "5146cd4",
-  "approved": 759,
+  "governance_sha": "838096c",
+  "approved": 761,
   "disapproved": 1,
   "total": 2683,
   "languages": [
@@ -4371,7 +4371,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 27,
+      "approved": 29,
       "disapproved": 0,
       "total": 48,
       "items": [
@@ -4397,13 +4397,13 @@
         },
         {
           "key": "api-email/devise.mailer.confirmation_instructions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1660,
+          "status": "approved"
         },
         {
           "key": "api-email/devise.mailer.reset_password_instructions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1661,
+          "status": "approved"
         },
         {
           "key": "api-email/progression_mailer.level_completed",

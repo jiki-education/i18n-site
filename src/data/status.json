@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-18",
-  "governance_sha": "c81ce83",
-  "approved": 762,
+  "governance_sha": "3736c94",
+  "approved": 764,
   "disapproved": 1,
   "total": 2683,
   "languages": [
@@ -4371,7 +4371,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 30,
+      "approved": 32,
       "disapproved": 0,
       "total": 48,
       "items": [
@@ -4408,12 +4408,12 @@
         {
           "key": "api-email/progression_mailer.level_completed",
           "topic_id": 1663,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "api-email/mailers.shared.footer",
           "topic_id": 1662,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "badge/beta_user",

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-18",
-  "governance_sha": "901e9fc",
-  "approved": 742,
+  "governance_sha": "41adb2a",
+  "approved": 743,
   "disapproved": 1,
   "total": 2673,
   "languages": [
@@ -8056,7 +8056,7 @@
       "stage": "refining",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 10,
+      "approved": 11,
       "disapproved": 0,
       "total": 48,
       "items": [
@@ -8168,7 +8168,7 @@
         {
           "key": "exercise/rainbow",
           "topic_id": 1693,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/repeat",

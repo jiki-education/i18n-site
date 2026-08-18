@@ -2,16 +2,17 @@
 lang: "bn"
 type: "badge"
 slug: "beta_user"
-title: "�"
+title: "বেটা ব্যবহারকারী"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/badges/messages.json"
 en_md5: "cbdfa7bd500804e8fb61b2bd65c65fa8"
-governance_sha: "4d02c56"
-content_version: "0d3541fd4db8"
-published_at: "2026-08-13"
+governance_sha: "7d79499"
+content_version: "e18f3b6ef31f"
+published_at: "2026-08-18"
+forum_topic_id: 1607
 ---
 
-�
+বেটা সংস্করণের সময় জিকি-তে যুক্ত হয়েছেন
 
-�
+বেটা ব্যবহারকারীরা জিকির ভবিষ্যৎ গঠনে সাহায্য করেন। আমাদের ওপর আগে থেকেই আস্থা রাখার জন্য ধন্যবাদ!

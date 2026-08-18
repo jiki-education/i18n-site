@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-18",
-  "governance_sha": "6319a97",
+  "governance_sha": "e49b949",
   "approved": 745,
   "disapproved": 1,
   "total": 2673,
@@ -8197,7 +8197,7 @@
         },
         {
           "key": "exercise/weather-symbols",
-          "topic_id": null,
+          "topic_id": 1696,
           "status": "pending"
         },
         {

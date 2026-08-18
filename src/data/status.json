@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-18",
-  "governance_sha": "ad402be",
+  "governance_sha": "c81dc67",
   "approved": 758,
   "disapproved": 1,
   "total": 2683,
@@ -4368,7 +4368,7 @@
     {
       "lang": "bn",
       "name": "Bengali",
-      "stage": "refining",
+      "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
       "approved": 26,

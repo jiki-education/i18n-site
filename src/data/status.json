@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-18",
-  "governance_sha": "0551cec",
+  "governance_sha": "ad402be",
   "approved": 758,
   "disapproved": 1,
-  "total": 2673,
+  "total": 2683,
   "languages": [
     {
       "lang": "fr",
@@ -5532,7 +5532,7 @@
       "category_slug": "i18n-pt-pt",
       "approved": 20,
       "disapproved": 0,
-      "total": 61,
+      "total": 71,
       "items": [
         {
           "key": "glossary",
@@ -5836,6 +5836,56 @@
         },
         {
           "key": "badge/townsfolk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arithmetic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/function-composition",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/functions-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/updating-variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables-group",
           "topic_id": null,
           "status": "pending"
         }

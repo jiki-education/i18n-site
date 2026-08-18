@@ -7,7 +7,7 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/badges/messages.json"
 en_md5: "213bd570895f84fad572abd65e10c238"
-governance_sha: "7d79499"
+governance_sha: "24fb77a"
 content_version: "e7c3856e1f36"
 published_at: "2026-08-18"
 forum_topic_id: 1610

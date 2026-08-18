@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-18",
-  "governance_sha": "718ca2e",
+  "governance_sha": "901e9fc",
   "approved": 742,
   "disapproved": 1,
   "total": 2673,
@@ -8167,7 +8167,7 @@
         },
         {
           "key": "exercise/rainbow",
-          "topic_id": null,
+          "topic_id": 1693,
           "status": "pending"
         },
         {

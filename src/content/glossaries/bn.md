@@ -3,10 +3,10 @@ lang: "bn"
 name: "Bengali"
 family: null
 stage: "refining"
-governance_sha: "22c97e3"
-content_version: "b3f0fc2c2ace"
-published_at: "2026-08-16"
-term_count: 68
+governance_sha: "718ca2e"
+content_version: "6285fa7cba72"
+published_at: "2026-08-18"
+term_count: 72
 category_id: 234
 forum_topic_id: 473
 video_player_forum_topic_id: 743
@@ -26,6 +26,10 @@ decision log (`glossary-notes.md`).
 | streak | ধারাবাহিকতা | bn | Daily-use-streak sense (learning-platform). Not phonetically self-evident, so it takes the `<define>` gloss (see guide § Glossing a `<define>`). |
 | tech / tech industry | টেক ইন্ডাস্ট্রি | bn | |
 | pitfall | বিপদ | bn | Takes the `<define>` gloss. |
+| common | কমন | bn | Phonetic transliteration, not a translated word. Confirmed by native-speaker review (see notes). |
+| game | গেম | bn | Phonetic transliteration, not খেলা. Confirmed by native-speaker review (see notes). |
+| draw (a tied result) | ড্র | bn | Phonetic transliteration, not টাই or সমতা. Confirmed by native-speaker review (see notes). |
+| Rock, Paper, Scissors (the game's name) | রক, পেপার, সিজার | bn | Phonetic transliteration. In a heading or title, phonetic only. On first mention in body prose, add the literal gloss in brackets: রক, পেপার, সিজার (পাথর, কাগজ, কাঁচি). The individual moves as objects stay পাথর / কাগজ / কাঁচি. |
 
 ## Localize (use the Bangla term)
 
@@ -138,6 +142,37 @@ technical language.
 ---
 
 ## Decision log
+
+### 2026-08-18: Phonetic-first for well-known English game and everyday terms
+
+**Decided by:** native-speaker review (sohayelmahmud, forum t/1692, posts 1 and 2, exercise
+`rock-paper-scissors`). He raised the point twice: an English name or word that Bangla
+speakers already use as a loanword should be transliterated phonetically, not translated
+and not replaced by a native equivalent.
+
+The general rule he stated, which applies beyond this exercise:
+
+- A **proper noun** (a game's name, a product's name) is transliterated. Where the reader
+  meets it for the first time in body prose, the literal Bangla translation follows in
+  brackets so the meaning is still clear: রক, পেপার, সিজার (পাথর, কাগজ, কাঁচি).
+- In a **heading or title** the bracketed gloss is dropped and the transliteration stands
+  alone, because the name is already widely used in that form.
+- The same phonetic-first preference applies to **ordinary English words in wide everyday
+  Bangla use**: "game" is গেম, not খেলা, and a tied result is ড্র, not টাই. He called the
+  loanwords "more fluent and widely used".
+
+The individual moves, when they are objects rather than part of the name, stay as the
+ordinary Bangla words (পাথর, কাগজ, কাঁচি). Rows added to `glossary.md`.
+
+He also asked for one wording change with no glossary consequence: "the provided functions"
+reads better as প্রদত্ত ফাংশনগুলো than দেওয়া ফাংশনগুলো.
+
+### 2026-08-17: "common" stays phonetic, not translated
+
+**Decided by:** native-speaker review (sohayelmahmud, forum t/1684, post 5178, concept
+`repeat`). He said the word "common" is always used in English in this context, so Bangla
+should render it phonetically as কমন rather than translating it (e.g. not সাধারণ). Row added
+to `glossary.md`.
 
 ### 2026-08-02: Website copy (app UI catalog)
 

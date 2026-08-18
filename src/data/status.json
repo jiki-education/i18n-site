@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-18",
-  "governance_sha": "838096c",
-  "approved": 761,
+  "governance_sha": "c81ce83",
+  "approved": 762,
   "disapproved": 1,
   "total": 2683,
   "languages": [
@@ -4371,7 +4371,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 29,
+      "approved": 30,
       "disapproved": 0,
       "total": 48,
       "items": [
@@ -4522,8 +4522,8 @@
         },
         {
           "key": "concept/for-loops",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1704,
+          "status": "approved"
         },
         {
           "key": "concept/else",

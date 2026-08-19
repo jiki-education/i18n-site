@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.el.yml"
 en_md5: "b7798a74c11946fe6775eeda0559840e"
-governance_sha: "2e7fb87"
-content_version: "a8be178f1b1b"
-published_at: "2026-08-13"
+governance_sha: "51f9d69"
+content_version: "01f451b72479"
+published_at: "2026-08-19"
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.building","rows":[{"key":"subject","english":"The Best Way to Learn is to Make Stuff!","target":"Ο καλύτερος τρόπος να μάθεις είναι να φτιάχνεις πράγματα!"},{"key":"preview","english":"I really believe that now is the best possible time to get into tech.","target":"Πραγματικά πιστεύω ότι τώρα είναι η καλύτερη δυνατή στιγμή για να μπεις στον χώρο της τεχνολογίας."},{"key":"greeting","english":"Hi there,","target":"Γεια σου,"}]}]}]
 ---
 
@@ -21,7 +21,7 @@ messages: [{"heading":"The rest of this email","note":"The short strings around 
 
 Το νόημα αυτών των πρότζεκτ είναι να μπορέσεις να μάθεις **όλα τα διαφορετικά κομμάτια της ανάπτυξης λογισμικού**. Μπορείς να με συνοδεύσεις καθώς φτιάχνω πράγματα, και θα εξηγήσω ακριβώς τι κάνω και γιατί, και μετά μπορείς να συνεργαστείς με έναν πράκτορα τεχνητής νοημοσύνης για να εφαρμόσεις αυτές τις ίδιες ιδέες στα δικά σου πρότζεκτ.
 
-Απλώς **μην εθιστείς στις δόσεις ντοπαμίνης** του πράκτορα τεχνητής νοημοσύνης που κάνει τη δουλειά για σένα. Φρόντισε να αφιερώσεις χρόνο για να καταλάβεις τι συμβαίνει!
+Απλώς **μην εθιστείς στις δόσεις ντοπαμίνης** βλέποντας τον πράκτορα τεχνητής νοημοσύνης να κάνει τη δουλειά για σένα. Φρόντισε να αφιερώσεις χρόνο για να καταλάβεις τι συμβαίνει!
 
 Ελπίζω να σε δω [σε μια ζωντανή μετάδοση](https://youtube.com/@jiki-coding) σύντομα!
 

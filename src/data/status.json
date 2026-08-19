@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "48f7c5d",
-  "approved": 782,
+  "governance_sha": "51f9d69",
+  "approved": 784,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -2682,7 +2682,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-el",
-      "approved": 102,
+      "approved": 104,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -3353,8 +3353,8 @@
         },
         {
           "key": "api-email/onboarding_mailer.overview",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1722,
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.coding",
@@ -3363,8 +3363,8 @@
         },
         {
           "key": "api-email/onboarding_mailer.building",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1722,
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.premium",

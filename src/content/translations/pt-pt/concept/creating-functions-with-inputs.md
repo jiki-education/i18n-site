@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/pt-pt/curriculum/concepts/creating-functions-with-inputs/page.md"
 en_md5: "f70d737888fcbda3306196ff069eb2f1"
-governance_sha: "e30a904"
-content_version: "0f198419dcf8"
-published_at: "2026-08-18"
+governance_sha: "406f03e"
+content_version: "e3b62a58fc9e"
+published_at: "2026-08-19"
 ---
 
 As funções que criaste até agora fazem sempre exatamente a mesma coisa de cada vez. A função `turnAround` (dar a volta) vira sempre duas vezes para a esquerda. A função `shootIfAlienAbove` (dispara se houver um alienígena por cima) verifica sempre e dispara.
@@ -18,7 +18,7 @@ Mas pensa nas funções que tens estado a usar ao longo do curso e em como fazem
 
 Agora também vamos adicionar fendas de entrada às tuas próprias funções.
 
-Para fazeres isto, precisas de saber duas coisas. A primeira é como é que isto aparece na prática, ou seja, o que tens de escrever; a segunda é o que está de facto a acontecer.
+Para fazeres isto, precisas de saber duas coisas. A primeira é como é que isto aparece na prática, ou seja, o que tens de escrever, a segunda é o que está de facto a acontecer.
 
 A primeira parte é bastante simples. Basta adicionares uns parênteses normais e, a seguir, os nomes dos parâmetros de entrada que quiseres.
 

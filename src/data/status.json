@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "f65c04e",
-  "approved": 808,
+  "governance_sha": "8daa2d2",
+  "approved": 809,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -2682,7 +2682,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-el",
-      "approved": 119,
+      "approved": 120,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -3228,8 +3228,8 @@
         },
         {
           "key": "exercise/raindrops",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1746,
+          "status": "approved"
         },
         {
           "key": "exercise/three-letter-acronym",

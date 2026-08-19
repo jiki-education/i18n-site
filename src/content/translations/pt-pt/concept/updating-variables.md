@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/pt-pt/curriculum/concepts/updating-variables/page.md"
 en_md5: "f9b2fbb6bfd82a620b093e88951ff841"
-governance_sha: "e30a904"
-content_version: "d7aed15b14f7"
-published_at: "2026-08-18"
+governance_sha: "6ab8cb1"
+content_version: "1ade6b1985c3"
+published_at: "2026-08-19"
+forum_topic_id: 1733
 ---
 
 Até agora, quando criámos variáveis, pusemos valores em caixas e voltámos a retirá-los mais tarde. Isso tem sido muito útil para dar clareza ao nosso código e para reduzir algum do cálculo mental que, de outra forma, teríamos de fazer. Mas o verdadeiro valor das variáveis vem da capacidade de mudar o que está numa caixa, o que está na variável, ao longo de um programa. Por isso, mesmo que executemos o mesmo pedaço de código várias vezes, o que ele faz pode mudar consoante o que está dentro das caixas.
@@ -41,7 +42,7 @@ repeat(8) {
 
 O que achas que vai acontecer?
 
-Bem, vai plantar oito flores, mas vai plantá-las no mesmo sítio de cada vez, o que não é bem o que queremos. Por isso, vamos parar um instante para pensar no que o Jiki está a fazer aqui. Está a criar uma caixa com o rótulo da posição. Está a pôr 10 lá dentro. Depois está a correr a máquina `plant` oito vezes. De cada vez, está a tirar o valor da caixa da posição. É sempre 10, e está a pôr esse mesmo 10 lá dentro de cada vez.
+Bem, vai plantar oito flores, mas vai plantá-las no mesmo sítio de cada vez, o que não é bem o que queremos. Por isso, vamos parar um instante para pensar no que o Jiki está a fazer aqui. Está a criar uma caixa com o rótulo position. Está a pôr 10 lá dentro. Depois está a correr a máquina `plant` oito vezes. De cada vez, está a tirar o valor da caixa da posição. É sempre 10, e está a pôr esse mesmo 10 lá dentro de cada vez.
 
 <img
   class="concept-image"

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "9506f03",
-  "approved": 778,
+  "governance_sha": "69852e4",
+  "approved": 781,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -2682,7 +2682,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-el",
-      "approved": 98,
+      "approved": 101,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -3338,8 +3338,8 @@
         },
         {
           "key": "api-email/account_mailer.account_deletion_confirmation",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1722,
+          "status": "approved"
         },
         {
           "key": "api-email/devise.mailer.confirmation_instructions",
@@ -3373,8 +3373,8 @@
         },
         {
           "key": "api-email/onboarding_mailer.community",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1722,
+          "status": "approved"
         },
         {
           "key": "api-email/premium_mailer.welcome_to_premium",
@@ -3383,8 +3383,8 @@
         },
         {
           "key": "api-email/premium_mailer.subscription_ended",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1722,
+          "status": "approved"
         },
         {
           "key": "api-email/progression_mailer.level_completed",

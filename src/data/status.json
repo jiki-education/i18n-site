@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "af9c03a",
-  "approved": 794,
+  "governance_sha": "23afec6",
+  "approved": 795,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -3549,7 +3549,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 48,
+      "approved": 49,
       "disapproved": 0,
       "total": 110,
       "items": [
@@ -3805,8 +3805,8 @@
         },
         {
           "key": "exercise/alphanumeric",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1740,
+          "status": "approved"
         },
         {
           "key": "exercise/annalyns-infiltration",

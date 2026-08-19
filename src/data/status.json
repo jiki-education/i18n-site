@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "de62e64",
-  "approved": 793,
+  "governance_sha": "af9c03a",
+  "approved": 794,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -2682,7 +2682,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-el",
-      "approved": 105,
+      "approved": 106,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -3433,8 +3433,8 @@
         },
         {
           "key": "level-milestone/complex-conditionals",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1738,
+          "status": "approved"
         },
         {
           "key": "level-milestone/conditionals-and-state",

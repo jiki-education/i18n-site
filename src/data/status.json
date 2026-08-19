@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "6562cf7",
-  "approved": 770,
+  "governance_sha": "8e0c130",
+  "approved": 773,
   "disapproved": 1,
   "total": 2683,
   "languages": [
@@ -3549,7 +3549,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 38,
+      "approved": 41,
       "disapproved": 0,
       "total": 48,
       "items": [
@@ -3755,18 +3755,18 @@
         },
         {
           "key": "exercise/snowman-basic",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1713,
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-solve-basic",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1714,
+          "status": "approved"
         },
         {
           "key": "exercise/cloud-rain-sun",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1715,
+          "status": "approved"
         },
         {
           "key": "exercise/foxy-face",

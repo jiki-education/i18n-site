@@ -7,7 +7,7 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/hi/curriculum/exercises/relational-sun"
 en_md5: "9ff58522efc81e1fab45e94feaa23998"
-governance_sha: "8fda083"
+governance_sha: "6779a42"
 content_version: "e59f77c454ce"
 published_at: "2026-08-19"
 forum_topic_id: 1734

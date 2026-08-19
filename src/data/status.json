@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "20b848a",
-  "approved": 775,
+  "governance_sha": "e5d1876",
+  "approved": 777,
   "disapproved": 1,
   "total": 2683,
   "languages": [
@@ -3549,7 +3549,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 43,
+      "approved": 45,
       "disapproved": 0,
       "total": 48,
       "items": [
@@ -3780,13 +3780,13 @@
         },
         {
           "key": "exercise/penguin",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1719,
+          "status": "approved"
         },
         {
           "key": "exercise/golf-rolling-ball-loop",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1720,
+          "status": "approved"
         },
         {
           "key": "exercise/maze-solve-repeat",

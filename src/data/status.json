@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "8e0c130",
-  "approved": 773,
+  "governance_sha": "20b848a",
+  "approved": 775,
   "disapproved": 1,
   "total": 2683,
   "languages": [
@@ -3549,7 +3549,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 41,
+      "approved": 43,
       "disapproved": 0,
       "total": 48,
       "items": [
@@ -3770,13 +3770,13 @@
         },
         {
           "key": "exercise/foxy-face",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1717,
+          "status": "approved"
         },
         {
           "key": "exercise/jumbled-house",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1718,
+          "status": "approved"
         },
         {
           "key": "exercise/penguin",

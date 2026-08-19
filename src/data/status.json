@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "b0d158b",
-  "approved": 807,
+  "governance_sha": "f65c04e",
+  "approved": 808,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -2682,7 +2682,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-el",
-      "approved": 118,
+      "approved": 119,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -3474,7 +3474,7 @@
         {
           "key": "level-milestone/arrays",
           "topic_id": 1688,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "level-milestone/building-arrays",

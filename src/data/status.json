@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "9430791",
-  "approved": 810,
+  "governance_sha": "dfb6f1d",
+  "approved": 811,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -3549,7 +3549,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 49,
+      "approved": 50,
       "disapproved": 0,
       "total": 110,
       "items": [
@@ -3945,8 +3945,8 @@
         },
         {
           "key": "exercise/maze-walk",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1745,
+          "status": "approved"
         },
         {
           "key": "exercise/methodic-pangram",

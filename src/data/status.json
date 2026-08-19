@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-08-18",
-  "governance_sha": "04298b2",
-  "approved": 767,
+  "published_at": "2026-08-19",
+  "governance_sha": "6d10e66",
+  "approved": 769,
   "disapproved": 1,
   "total": 2683,
   "languages": [
@@ -3549,7 +3549,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 35,
+      "approved": 37,
       "disapproved": 0,
       "total": 48,
       "items": [
@@ -3735,18 +3735,18 @@
         },
         {
           "key": "exercise/word-count",
-          "topic_id": null,
+          "topic_id": 1708,
           "status": "pending"
         },
         {
           "key": "exercise/bouncer-dress-code",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1709,
+          "status": "approved"
         },
         {
           "key": "exercise/fix-wall",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1710,
+          "status": "approved"
         },
         {
           "key": "exercise/maze-solve-walk",

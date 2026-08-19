@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "dddec8a",
-  "approved": 792,
+  "governance_sha": "de62e64",
+  "approved": 793,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -3549,7 +3549,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 47,
+      "approved": 48,
       "disapproved": 0,
       "total": 110,
       "items": [
@@ -3800,8 +3800,8 @@
         },
         {
           "key": "exercise/after-party",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1739,
+          "status": "approved"
         },
         {
           "key": "exercise/alphanumeric",

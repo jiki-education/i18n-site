@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "406f03e",
-  "approved": 787,
+  "governance_sha": "dae28ed",
+  "approved": 788,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -4928,6 +4928,373 @@
       ]
     },
     {
+      "lang": "pt-pt",
+      "name": "European Portuguese",
+      "stage": "reviewing",
+      "live": false,
+      "category_slug": "i18n-pt-pt",
+      "approved": 22,
+      "disapproved": 0,
+      "total": 71,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 341,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 774,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 775,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 822,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": null,
+          "status": "approved"
+        },
+        {
+          "key": "concept/while-loops",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "concept/else-if",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "concept/for-loops",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "concept/else",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "concept/dictionaries",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/digital-root",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/word-count",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-turn-around",
+          "topic_id": 941,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/luhn",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/bouncer-dress-code",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/fix-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-solve-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/foxy-face",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cloud-rain-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/jumbled-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/penguin",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/traffic-lights",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/finish-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sunset",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/dnd-roll",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/gold-panning",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/owners-bouquets",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/random-salad",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-scenarios",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rainbow-splodges",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/beta_user",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/early_bird",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/first_lesson",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/maze_navigator",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/member",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/night_owl",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/scenario_handler",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/sidekick",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/townsfolk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arithmetic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/creating-functions-with-inputs",
+          "topic_id": 1729,
+          "status": "approved"
+        },
+        {
+          "key": "concept/creating-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/function-composition",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/functions-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/updating-variables",
+          "topic_id": 1733,
+          "status": "approved"
+        },
+        {
+          "key": "concept/using-functions-with-inputs",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions-with-return-values",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables-group",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "lang": "hu",
       "name": "Hungarian",
       "stage": "reviewing",
@@ -5829,373 +6196,6 @@
         },
         {
           "key": "badge/townsfolk",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "pt-pt",
-      "name": "European Portuguese",
-      "stage": "reviewing",
-      "live": false,
-      "category_slug": "i18n-pt-pt",
-      "approved": 21,
-      "disapproved": 0,
-      "total": 71,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 341,
-          "status": "approved"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 774,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 775,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 822,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": 941,
-          "status": "approved"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/two-fer",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "concept/strings",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/digital-clock",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "concept/arrays",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/weather-symbols",
-          "topic_id": null,
-          "status": "approved"
-        },
-        {
-          "key": "concept/while-loops",
-          "topic_id": 941,
-          "status": "approved"
-        },
-        {
-          "key": "concept/else-if",
-          "topic_id": 941,
-          "status": "approved"
-        },
-        {
-          "key": "concept/for-loops",
-          "topic_id": 941,
-          "status": "approved"
-        },
-        {
-          "key": "concept/else",
-          "topic_id": 941,
-          "status": "approved"
-        },
-        {
-          "key": "concept/dictionaries",
-          "topic_id": 941,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/digital-root",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/word-count",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-turn-around",
-          "topic_id": 941,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/luhn",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/bouncer-dress-code",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/fix-wall",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/golf-rolling-ball-loop",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-walk",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/space-invaders-solve-basic",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/snowman-basic",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/foxy-face",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/cloud-rain-sun",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/jumbled-house",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/penguin",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/space-invaders-repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/traffic-lights",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/snowman",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/relational-sun",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/finish-wall",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/sunset",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/golf-rolling-ball-state",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/dnd-roll",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/gold-panning",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/owners-bouquets",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/random-salad",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/golf-scenarios",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow-splodges",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/devise.mailer.confirmation_instructions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/devise.mailer.reset_password_instructions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/progression_mailer.level_completed",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/mailers.shared.footer",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/beta_user",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/early_bird",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/first_lesson",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/maze_navigator",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/member",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/night_owl",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/premium",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/scenario_handler",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/sidekick",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/townsfolk",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/arithmetic",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/creating-functions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/creating-functions-with-inputs",
-          "topic_id": 1729,
-          "status": "approved"
-        },
-        {
-          "key": "concept/creating-functions-with-return-values",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/function-composition",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/functions-group",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/updating-variables",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions-with-inputs",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions-with-return-values",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/variables-group",
           "topic_id": null,
           "status": "pending"
         }

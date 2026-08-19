@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "ef18bc4",
-  "approved": 789,
+  "governance_sha": "ad1808f",
+  "approved": 790,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -7029,7 +7029,7 @@
       "stage": "refining",
       "live": false,
       "category_slug": "i18n-hi",
-      "approved": 14,
+      "approved": 15,
       "disapproved": 0,
       "total": 161,
       "items": [
@@ -7360,8 +7360,8 @@
         },
         {
           "key": "exercise/relational-sun",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1734,
+          "status": "approved"
         },
         {
           "key": "exercise/relational-snowman",

@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "leap"
 title: "Leap Years"
-en_md5: "0e6c7c50ad01b4d9fe07d721fd973afb"
+en_md5: "a3cf7d264019dae68d9c387231db2484"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/leap"
-captured_at: "2026-08-05"
+captured_at: "2026-08-19"
 ---
 
 In this exercise, we're exploring Leap Years!

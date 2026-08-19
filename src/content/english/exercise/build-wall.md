@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "build-wall"
 title: "Build the Wall"
-en_md5: "01878280aec5da81b7e747488668624f"
+en_md5: "abe5bf292aec66be1c0b672e97fc2295"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/build-wall"
-captured_at: "2026-08-04"
+captured_at: "2026-08-19"
 ---
 
 Last time you saw the wall, you added a top layer to finish it off. In this exercise, you build on that by making a whole wall from scratch, 55 bricks in total.
@@ -17,6 +17,7 @@ The final wall should look like this:
 Things you need to know:
 
 - **Every** brick is 10 high and 20 wide.
+- Bricks can start or end **outside** the canvas if needed, but must not be **fully** outside the canvas.
 - The rows alternate between starting at the left edge (5 bricks), and starting off-screen to the left (6 bricks). (Bottom row is 5, top row is 6)
 - The <define>`rectangle`</define> function can only appear once in your code!
 

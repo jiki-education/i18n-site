@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "acronym"
 title: "Acronym"
-en_md5: "f42dbd1b0fe85c42e70bb2c37a4746c2"
+en_md5: "592721d859fb014903a6b065da3ca8bc"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/acronym"
-captured_at: "2026-08-06"
+captured_at: "2026-08-19"
 ---
 
 You've already solved simple three letter acronyms like turning `Portable Network Graphics` into `PNG`.
@@ -16,7 +16,7 @@ Your job is to write a function called `acronym(phrase)` that takes a phrase and
 
 ## The rules
 
-A new word begins after a **space** or a **hyphen** (`-`). Every other character — commas, apostrophes, underscores, exclamation marks, and so on — is **not** a separator and never becomes part of the acronym. Only letters count.
+A new word begins after a **space** or a **hyphen** (`-`). Other characters (commas, apostrophes, underscores, exclamation marks, etc.) are **not** considered to be separators and never become part of the acronym. Only letters count.
 
 | Phrase                    | Acronym |
 | ------------------------- | ------- |

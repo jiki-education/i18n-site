@@ -4,18 +4,19 @@ type: "concept"
 slug: "creating-functions"
 title: "Scrivere le tue funzioni"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/creating-functions/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/creating-functions/page.md"
 en_md5: "93286a30a373b5604b60b3c109ad00a3"
-governance_sha: "c80036b"
-content_version: "8b3ef19f3aad"
-published_at: "2026-08-06"
+governance_sha: "5d8a8bf"
+content_version: "3c770c22b239"
+published_at: "2026-08-19"
 forum_topic_id: 1200
 ---
 
-Finora, hai usato funzioni che sono state create per te, funzioni come `circle`, `rectangle`, `moveRight`, `shoot`. Tutte queste sono funzioni che sono state create e messe sugli scaffali di Jiki.
+Finora hai usato funzioni già pronte, come `circle`, `rectangle`, `moveRight` e `shoot`.
+Sono funzioni che Jiki mette sugli scaffali per essere usate negli esercizi.
 
-Ma ora è il momento di iniziare a creare le tue funzioni.
+Ora è il momento di iniziare a creare le tue funzioni.
 
 Per mostrarti come fare, vediamo come costruire una nuova funzione per il labirinto chiamata `walk5` (cammina5).
 

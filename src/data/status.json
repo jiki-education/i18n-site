@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "ad1808f",
-  "approved": 790,
+  "governance_sha": "dddec8a",
+  "approved": 792,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -1815,7 +1815,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-uk",
-      "approved": 129,
+      "approved": 131,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -2492,12 +2492,12 @@
         {
           "key": "api-email/onboarding_mailer.coding",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.building",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.premium",

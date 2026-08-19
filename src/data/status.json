@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "9fd9893",
-  "approved": 796,
+  "governance_sha": "63e551b",
+  "approved": 806,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -2682,7 +2682,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-el",
-      "approved": 107,
+      "approved": 117,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -3398,18 +3398,18 @@
         },
         {
           "key": "level-milestone/using-functions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1743,
+          "status": "approved"
         },
         {
           "key": "level-milestone/strings-and-colors",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1743,
+          "status": "approved"
         },
         {
           "key": "level-milestone/repeat-loop",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1743,
+          "status": "approved"
         },
         {
           "key": "level-milestone/variables",
@@ -3423,13 +3423,13 @@
         },
         {
           "key": "level-milestone/functions-that-return-things",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1743,
+          "status": "approved"
         },
         {
           "key": "level-milestone/conditionals",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1743,
+          "status": "approved"
         },
         {
           "key": "level-milestone/complex-conditionals",
@@ -3438,13 +3438,13 @@
         },
         {
           "key": "level-milestone/conditionals-and-state",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1743,
+          "status": "approved"
         },
         {
           "key": "level-milestone/make-your-own-functions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1743,
+          "status": "approved"
         },
         {
           "key": "level-milestone/string-manipulation",
@@ -3453,8 +3453,8 @@
         },
         {
           "key": "level-milestone/string-iteration",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1743,
+          "status": "approved"
         },
         {
           "key": "level-milestone/multiple-functions",
@@ -3463,8 +3463,8 @@
         },
         {
           "key": "level-milestone/methods-and-properties",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1743,
+          "status": "approved"
         },
         {
           "key": "level-milestone/advanced-loops",
@@ -3483,8 +3483,8 @@
         },
         {
           "key": "level-milestone/dictionaries",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1743,
+          "status": "approved"
         },
         {
           "key": "level-milestone/changing-dictionaries",

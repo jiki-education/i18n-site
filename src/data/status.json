@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-19",
-  "governance_sha": "23afec6",
-  "approved": 795,
+  "governance_sha": "9fd9893",
+  "approved": 796,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -2682,7 +2682,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-el",
-      "approved": 106,
+      "approved": 107,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -3458,8 +3458,8 @@
         },
         {
           "key": "level-milestone/multiple-functions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1741,
+          "status": "approved"
         },
         {
           "key": "level-milestone/methods-and-properties",

@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/creating-functions-with-inputs/page.md"
 en_md5: "f70d737888fcbda3306196ff069eb2f1"
-governance_sha: "431ab45"
-content_version: "d769f9d413b8"
+governance_sha: "b2ef272"
+content_version: "57c710932e56"
 published_at: "2026-08-20"
 forum_topic_id: 1215
 ---
@@ -33,7 +33,7 @@ function shootMany(numShots) {
 }
 ```
 
-Quando vuoi usare questa funzione, la chiameresti con il numero di spari che vuoi:
+Quando vuoi utilizzare questa funzione, la richiami specificando il numero di spari desiderato:
 
 ```javascript
 shootMany(5)

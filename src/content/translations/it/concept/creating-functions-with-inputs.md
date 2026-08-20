@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/creating-functions-with-inputs/page.md"
 en_md5: "f70d737888fcbda3306196ff069eb2f1"
-governance_sha: "b2ef272"
-content_version: "57c710932e56"
+governance_sha: "254afa9"
+content_version: "ce94267de74a"
 published_at: "2026-08-20"
 forum_topic_id: 1215
 ---
@@ -40,7 +40,7 @@ shootMany(5)
 shootMany(2)
 ```
 
-Ora arriva il punto chiave. Quando il codice viene eseguito, qualsiasi cosa tu abbia messo in quell'input, `5` o `2`, mini-Jiki, con il cappello all'interno della funzione, prende quel valore in input e lo mette in una scatola chiamata `numShots` (numero di spari), e poi mette quella scatola sugli scaffali all'interno della funzione, perché tu possa usarla nel codice della funzione.
+Ora arriva il punto chiave. Quando il codice viene eseguito, qualsiasi valore tu abbia messo in quell'input (`5`, `2` o altro), il mini-Jiki con il cappello, dentro la funzione, prende quel valore e lo mette in una scatola chiamata `numShots` (numero di spari). Poi appoggia quella scatola sugli scaffali interni, così puoi usarla quando scrivi il codice.
 
 <img
   class="concept-image"

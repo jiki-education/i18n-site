@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/creating-functions-with-inputs/page.md"
 en_md5: "f70d737888fcbda3306196ff069eb2f1"
-governance_sha: "b0a2e52"
-content_version: "a8be55d638fb"
+governance_sha: "431ab45"
+content_version: "d769f9d413b8"
 published_at: "2026-08-20"
 forum_topic_id: 1215
 ---
@@ -25,7 +25,7 @@ La prima parte è piuttosto semplice. Devi solo aggiungere delle normali parente
 
 Immagina di creare una funzione che deve sparare molte volte. Chiamiamola `shootMany` (spara più volte).
 
-La scriveremmo così:
+La scriveremo così:
 
 ```javascript
 function shootMany(numShots) {

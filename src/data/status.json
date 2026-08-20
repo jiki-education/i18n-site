@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-20",
-  "governance_sha": "e18d2c5",
+  "governance_sha": "7829e46",
   "approved": 843,
   "disapproved": 1,
   "total": 2745,
@@ -11110,7 +11110,7 @@
         },
         {
           "key": "concept/for-loops",
-          "topic_id": null,
+          "topic_id": 1759,
           "status": "pending"
         },
         {
@@ -11125,7 +11125,7 @@
         },
         {
           "key": "concept/dictionaries",
-          "topic_id": null,
+          "topic_id": 1758,
           "status": "pending"
         },
         {

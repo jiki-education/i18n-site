@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-20",
-  "governance_sha": "7829e46",
-  "approved": 843,
+  "governance_sha": "a9408d6",
+  "approved": 849,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -948,7 +948,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-uk",
-      "approved": 155,
+      "approved": 161,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -1599,8 +1599,8 @@
         },
         {
           "key": "api-email/account_mailer.welcome",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1495,
+          "status": "approved"
         },
         {
           "key": "api-email/account_mailer.account_deletion_confirmation",
@@ -1619,8 +1619,8 @@
         },
         {
           "key": "api-email/onboarding_mailer.overview",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1495,
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.coding",
@@ -1639,18 +1639,18 @@
         },
         {
           "key": "api-email/onboarding_mailer.community",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1495,
+          "status": "approved"
         },
         {
           "key": "api-email/premium_mailer.welcome_to_premium",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1495,
+          "status": "approved"
         },
         {
           "key": "api-email/premium_mailer.subscription_ended",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1495,
+          "status": "approved"
         },
         {
           "key": "api-email/progression_mailer.level_completed",
@@ -1659,8 +1659,8 @@
         },
         {
           "key": "api-email/mailers.shared.footer",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1495,
+          "status": "approved"
         },
         {
           "key": "level-milestone/using-functions",

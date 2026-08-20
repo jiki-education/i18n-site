@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/uk.json"
 en_md5: "7205cc09a500e11d5ec44a6978ae5af7"
-governance_sha: "2e7fb87"
+governance_sha: "e18d2c5"
 content_version: "ac76a4fce4ed"
-published_at: "2026-08-13"
+published_at: "2026-08-20"
 ---
 
 Чудова робота. Тепер ми вміємо відстежувати значення, які змінюються під час роботи програми, а це справжній крок уперед порівняно з тим, де ми були пару рівнів тому.

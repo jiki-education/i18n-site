@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/uk.json"
 en_md5: "c5535dc792a600941da4f8ca562377c7"
-governance_sha: "2e7fb87"
+governance_sha: "e18d2c5"
 content_version: "d64f6227d3a9"
-published_at: "2026-08-13"
+published_at: "2026-08-20"
 ---
 
 Блискуча робота на дуже насиченому рівні. Функції, які повертають значення, кольори HSL і RGB, анімація, випадкові числа, область видимості, сценарії та цикли всередині циклів. Це чимало нових ідей, щоб додати їх до нашого інструментарію за один раз.

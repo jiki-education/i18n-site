@@ -7,13 +7,13 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.uk.yml"
 en_md5: "df687cdb774a249d59df251a88878ee7"
-governance_sha: "dddec8a"
-content_version: "a38a855f674a"
-published_at: "2026-08-19"
-messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.coding","rows":[{"key":"subject","english":"Build Rock-Solid Coding Fundamentals","target":"Закладіть міцний фундамент у програмуванні"},{"key":"preview","english":"Learning to code has a reputation for being technical and hard.","target":"Навчання програмуванню відоме своєю складністю та технічністю матеріалу."},{"key":"greeting","english":"Hi again,","target":"І знову вітаю,"}]}]}]
+governance_sha: "e18d2c5"
+content_version: "fb7bbc61e878"
+published_at: "2026-08-20"
+messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.coding","rows":[{"key":"subject","english":"Build Rock-Solid Coding Fundamentals","target":"Закладіть міцний фундамент у програмуванні"},{"key":"preview","english":"Learning to code has a reputation for being technical and hard.","target":"Навчання програмуванню заробило собі погану репутацію через складність й технічність матеріалу."},{"key":"greeting","english":"Hi again,","target":"І знову вітаю,"}]}]}]
 ---
 
-Навчання програмуванню відоме своєю складністю та технічністю матеріалу. Коли я почав вчитися програмувати, я був восьмирічною дитиною, яка не знала про програмування нічого, крім того, що **раптом можна стало створювати круті штуки**. Я не знав, що це має бути важко. Я просто знав, що в мене раптом виникла нова віддушина для творчості.
+Навчання програмуванню заробило собі погану репутацію через складність й технічність матеріалу. Коли я почав вчитися програмувати, я був восьмирічною дитиною, яка не знала про програмування нічого, крім того, що **раптом можна стало створювати круті штуки**. Я не знав, що це має бути важко. Я просто знав, що в мене раптом виникла нова віддушина для творчості.
 
 Поки ви вчитеся програмувати, **я не хочу, щоб ви сприймали це як якусь технічну дисципліну, яку треба опанувати**. Я хочу, щоб ви бачили в цьому простір, де можна дати волю **своїй** творчості, де можна **із задоволенням щось створювати** та розвʼязувати головоломки. Бо саме цим програмування і є насправді: розвʼязуванням задач.
 

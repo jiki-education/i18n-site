@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/uk.json"
 en_md5: "07656bf41b4102374b8f16654db4f461"
-governance_sha: "2e7fb87"
+governance_sha: "e18d2c5"
 content_version: "b81955e56724"
-published_at: "2026-08-13"
+published_at: "2026-08-20"
 ---
 
 Чудова робота на непростому рівні. Тепер ми володіємо логічними «і» та «або», остачею від ділення й циклами без заданої кількості повторень.

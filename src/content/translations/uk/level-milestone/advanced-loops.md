@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/uk.json"
 en_md5: "3eb6e1c44486daf5e71618893b5e8bae"
-governance_sha: "2e7fb87"
+governance_sha: "e18d2c5"
 content_version: "3b9fc8f1ab84"
-published_at: "2026-08-13"
+published_at: "2026-08-20"
 ---
 
 Чудова робота. Тепер ми володіємо циклами for, циклами while, а також break і continue. Саме до цих циклів ми будемо найчастіше звертатися поза межами цього курсу, тож витрачений на них час себе виправдовує.

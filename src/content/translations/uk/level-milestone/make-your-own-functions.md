@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/uk.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "2e7fb87"
+governance_sha: "e18d2c5"
 content_version: "2aecc939216e"
-published_at: "2026-08-13"
+published_at: "2026-08-20"
 ---
 
 Блискуча робота. Уміння писати власні функції змінює все. Ми більше не просто беремо готові інструменти з полиці, ми створюємо нові.

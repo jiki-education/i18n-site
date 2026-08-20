@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/uk.json"
 en_md5: "f30486e583f3c2417da5f8a4a1721ee1"
-governance_sha: "2e7fb87"
+governance_sha: "e18d2c5"
 content_version: "dfc586a01aac"
-published_at: "2026-08-13"
+published_at: "2026-08-20"
 ---
 
 Блискуча робота. Масиви (дехто називає їх списками) належать до найкорисніших інструментів у будь-якій мові програмування. Практично щоразу, коли ми маємо справу не з однією річчю, а з кількома, ми будемо звертатися до масиву.

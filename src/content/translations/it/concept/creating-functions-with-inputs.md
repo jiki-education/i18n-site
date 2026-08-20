@@ -4,16 +4,16 @@ type: "concept"
 slug: "creating-functions-with-inputs"
 title: "Aggiungere input alle funzioni"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/creating-functions-with-inputs/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/creating-functions-with-inputs/page.md"
 en_md5: "f70d737888fcbda3306196ff069eb2f1"
-governance_sha: "c80036b"
-content_version: "6ab4abd16732"
-published_at: "2026-08-06"
+governance_sha: "b0a2e52"
+content_version: "a8be55d638fb"
+published_at: "2026-08-20"
 forum_topic_id: 1215
 ---
 
-Le funzioni che hai creato finora fanno sempre esattamente la stessa cosa ogni volta. `turnAround` (girati) fa sempre girare a sinistra due volte. `shootIfAlienAbove` (spara se l'alieno è sopra) controlla e spara sempre.
+Le funzioni che hai creato finora fanno sempre la stessa cosa. `turnAround` (girati) fa sempre girare a sinistra due volte. `shootIfAlienAbove` (spara se l'alieno è sopra) controlla e spara sempre.
 
 Ma pensa alle funzioni che hai usato durante il corso, a come fanno cose diverse a seconda degli input. `Rectangle` prende left, top, width e height come input, e poi disegna un rettangolo diverso in base a ciò che gli dici.
 

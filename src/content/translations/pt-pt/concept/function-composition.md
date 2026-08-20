@@ -1,26 +1,22 @@
 ---
-lang: "pt-pt"
+lang: "pt-PT"
 type: "concept"
 slug: "function-composition"
 title: "Usar várias funções em conjunto"
 status: "published"
 source_repo: "i18n"
-source_path: "locales/pt-pt/curriculum/concepts/function-composition/page.md"
+source_path: "locales/pt-PT/curriculum/concepts/function-composition/page.md"
 en_md5: "7df3110b30c0f279d7f04d3b4e331a99"
-governance_sha: "e30a904"
-content_version: "3da6c9a7db87"
-published_at: "2026-08-18"
+governance_sha: "a179efe"
+content_version: "76b85916e196"
+published_at: "2026-08-20"
 ---
 
 Até agora, quando escreveste funções, cada uma praticamente se aguentava sozinha e continha toda a lógica de que precisava para funcionar.
 
 Agora vamos ver como dividir funções para termos funções mais pequenas que trabalham em conjunto, em vez de funções grandes com muita coisa a acontecer lá dentro.
 
-Como regra geral em programação, queres que cada função faça o mínimo possível.
-
-Chamamos a isto uma função de responsabilidade única (_single responsibility_ em inglês).
-
-Cada função deve fazer apenas uma coisa e usar outras funções para as diferentes subpartes dessa tarefa.
+Como regra geral em programação, queres que cada função faça o mínimo possível. Chamamos a isto uma função de responsabilidade única (_single responsibility_ em inglês). Cada função deve fazer apenas uma coisa e usar outras funções para as diferentes subpartes dessa tarefa.
 
 Vamos então ver um exemplo.
 
@@ -59,9 +55,7 @@ function describeName(name) {
 }
 ```
 
-E podemos depois reutilizar essa função de contagem genérica nesta formatação de strings e também em qualquer outro lugar onde precisemos dela.
-
-Sempre que precisarmos de contar letras numa string, essa função fica totalmente separada de tudo o que tenha a ver com a impressão.
+E podemos depois reutilizar essa função de contagem genérica nesta formatação de strings e também em qualquer outro lugar onde precisemos dela. Sempre que precisarmos de contar letras numa string, essa função fica totalmente separada de tudo o que tenha a ver com a impressão.
 
 Consegues ler ambas as funções isoladamente e perceber imediatamente o que cada uma faz.
 

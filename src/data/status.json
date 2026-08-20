@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-20",
-  "governance_sha": "5291bb1",
-  "approved": 853,
+  "governance_sha": "0e370eb",
+  "approved": 854,
   "disapproved": 1,
   "total": 2929,
   "languages": [
@@ -3549,7 +3549,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 51,
+      "approved": 52,
       "disapproved": 0,
       "total": 110,
       "items": [
@@ -4100,8 +4100,8 @@
         },
         {
           "key": "exercise/triangle",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1761,
+          "status": "approved"
         }
       ]
     },

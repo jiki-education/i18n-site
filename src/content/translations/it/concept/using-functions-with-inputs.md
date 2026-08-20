@@ -4,12 +4,12 @@ type: "concept"
 slug: "using-functions-with-inputs"
 title: "Input di una funzione"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/using-functions-with-inputs/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/using-functions-with-inputs/page.md"
 en_md5: "0bd82377f2407de5fe030511752d5503"
-governance_sha: "c80036b"
-content_version: "d9c2dcbd0a22"
-published_at: "2026-08-06"
+governance_sha: "d59b141"
+content_version: "ef9104eb34d1"
+published_at: "2026-08-20"
 forum_topic_id: 1196
 ---
 
@@ -25,7 +25,7 @@ Finora abbiamo visto macchine che assomigliano un po' a delle scatole, come quel
   height="400"
 />
 
-Ma alcune macchine hanno delle fessure, come questa macchina `walk` (cammina). La macchina `walk` è esattamente come la macchina `move`. Fa avanzare il personaggio (_character_ in inglese), con la differenza che Jiki può usare la fessura per specificare quanti passi deve fare il tuo personaggio. Quindi, invece di dover usare la funzione `move` tre volte di fila: `move`, `move`, `move`, ora puoi semplicemente usare la funzione `walk` e dire a Jiki di mettere il numero tre nella macchina.
+Ma alcune macchine hanno delle fessure, come la macchina `walk` (cammina). La macchina `walk` funziona come la macchina `move`: fa avanzare il personaggio (_character_ in inglese), ma Jiki può usare la fessura per decidere quanti passi deve fare. In questo modo, invece di ripetere `move` tre volte: `move`, `move`, `move`, puoi usare `walk` e dire a Jiki di inserire il numero tre nella macchina.
 
 <img
   class="concept-image"
@@ -35,7 +35,7 @@ Ma alcune macchine hanno delle fessure, come questa macchina `walk` (cammina). L
   height="400"
 />
 
-Per fare questo nel codice, scriviamo comunque il nome della funzione, in questo caso `walk`, e mettiamo la parentesi di apertura. Poi, prima della parentesi di chiusura, specifichiamo quale vogliamo che sia l'input. In questo caso, vogliamo che l'input sia tre, per dire `walk` di fare tre passi in avanti:
+Per attivare la macchina nel gioco, scriviamo il nome della funzione, in questo caso `walk`, e aggiungiamo la parentesi di apertura. Poi, prima della parentesi di chiusura, indichiamo quale deve essere l'input. In questo esempio, l'input è il numero tre, così `walk` sa che deve far avanzare il personaggio di tre passi:
 
 ```javascript
 walk(3)

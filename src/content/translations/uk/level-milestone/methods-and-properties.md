@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/uk.json"
 en_md5: "e58f587dfa34a3832164f862a919f8dd"
-governance_sha: "e18d2c5"
+governance_sha: "5d0edb5"
 content_version: "ea8ce67d6cdf"
 published_at: "2026-08-20"
+forum_topic_id: 1495
 ---
 
 Гарна робота. Методи та властивості працюють дещо інакше, ніж усе, що ми бачили досі. Замість того щоб передавати значення у функцію, ми викликаємо функцію на самому значенні. До цієї ідеї треба трохи звикнути, але вона трапляється всюди, тож досить швидко почне здаватися природною.

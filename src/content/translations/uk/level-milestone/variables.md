@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/uk.json"
 en_md5: "f354e5206e3f25c925621288a2b55fb6"
-governance_sha: "e18d2c5"
+governance_sha: "5d0edb5"
 content_version: "23b9ddb245d9"
 published_at: "2026-08-20"
+forum_topic_id: 1495
 ---
 
 Чудова робота: тепер ми вміємо працювати зі змінними.

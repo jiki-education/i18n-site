@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/uk.json"
 en_md5: "d5bfe9e5cd73eb4049674723644d81f0"
-governance_sha: "e18d2c5"
+governance_sha: "5d0edb5"
 content_version: "c6c4b173bb74"
 published_at: "2026-08-20"
+forum_topic_id: 1495
 ---
 
 Чудова робота на цьому рівні. Саме такий вигляд професійне програмування має день у день: ми поєднуємо функції, щоб розвʼязувати більші задачі. Розбиваємо задачу на частини, пишемо маленьку функцію для кожної частини, а потім складаємо їх разом.

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-20",
-  "governance_sha": "7d79bd7",
-  "approved": 813,
+  "governance_sha": "d2c667c",
+  "approved": 814,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -6207,7 +6207,7 @@
       "stage": "refining",
       "live": false,
       "category_slug": "i18n-hi",
-      "approved": 16,
+      "approved": 17,
       "disapproved": 0,
       "total": 161,
       "items": [
@@ -6543,8 +6543,8 @@
         },
         {
           "key": "exercise/relational-snowman",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1749,
+          "status": "approved"
         },
         {
           "key": "exercise/relational-traffic-lights",

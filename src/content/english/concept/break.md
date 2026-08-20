@@ -1,11 +1,11 @@
 ---
 type: "concept"
 slug: "break"
-title: "Break"
-en_md5: "30148766de67ae467ab1a4852ad35895"
+title: "The `break` Keyword"
+en_md5: "bd746b6c93016dcb2789bd26e38ab33a"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/break/source.md"
-captured_at: "2026-08-03"
+captured_at: "2026-08-20"
 ---
 
 The `break` keyword can be used anywhere in the body of any loop.

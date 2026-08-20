@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-20",
-  "governance_sha": "0e370eb",
-  "approved": 854,
+  "governance_sha": "c4c0e8d",
+  "approved": 855,
   "disapproved": 1,
   "total": 2929,
   "languages": [
@@ -3549,7 +3549,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 52,
+      "approved": 53,
       "disapproved": 0,
       "total": 110,
       "items": [
@@ -4095,8 +4095,8 @@
         },
         {
           "key": "exercise/traffic-lights",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1762,
+          "status": "approved"
         },
         {
           "key": "exercise/triangle",

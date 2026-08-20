@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-08-19",
-  "governance_sha": "dfb6f1d",
-  "approved": 811,
+  "published_at": "2026-08-20",
+  "governance_sha": "21ec21e",
+  "approved": 812,
   "disapproved": 1,
   "total": 2745,
   "languages": [
@@ -3549,7 +3549,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 50,
+      "approved": 51,
       "disapproved": 0,
       "total": 110,
       "items": [
@@ -4035,8 +4035,8 @@
         },
         {
           "key": "exercise/snowman",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1747,
+          "status": "approved"
         },
         {
           "key": "exercise/space-invaders-conditional",

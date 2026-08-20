@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-20",
-  "governance_sha": "b45b6b6",
+  "governance_sha": "94038a7",
   "approved": 819,
   "disapproved": 1,
   "total": 2745,
@@ -2531,17 +2531,17 @@
         },
         {
           "key": "level-milestone/using-functions",
-          "topic_id": null,
+          "topic_id": 1495,
           "status": "pending"
         },
         {
           "key": "level-milestone/strings-and-colors",
-          "topic_id": null,
+          "topic_id": 1495,
           "status": "pending"
         },
         {
           "key": "level-milestone/repeat-loop",
-          "topic_id": null,
+          "topic_id": 1495,
           "status": "pending"
         },
         {
@@ -2571,7 +2571,7 @@
         },
         {
           "key": "level-milestone/conditionals-and-state",
-          "topic_id": null,
+          "topic_id": 1495,
           "status": "pending"
         },
         {
@@ -2581,7 +2581,7 @@
         },
         {
           "key": "level-milestone/string-manipulation",
-          "topic_id": null,
+          "topic_id": 1495,
           "status": "pending"
         },
         {

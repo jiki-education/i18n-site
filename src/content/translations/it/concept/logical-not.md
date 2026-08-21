@@ -7,12 +7,13 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/logical-not/page.md"
 en_md5: "7cffbd1fa13317b3d6e6a71415413041"
-governance_sha: "39b0e08"
-content_version: "b49e72d04200"
-published_at: "2026-08-12"
+governance_sha: "81c3038"
+content_version: "67f3eb88ef53"
+published_at: "2026-08-21"
+forum_topic_id: 1439
 ---
 
-Finora, quando abbiamo confrontato le cose per vedere se sono uguali, abbiamo usato tre segni di uguale. A volte, però, vogliamo controllare se le cose non sono uguali, e per questo usiamo un punto esclamativo seguito da due segni di uguale. In generale, nella programmazione, un punto esclamativo, o _bang_ (punto esclamativo), come penso lo chiamino i nostri amici americani, significa non. Immagina ora di lavorare in un negozio e che la direzione abbia deciso che non sono ammessi abiti da discoteca.
+Finora, quando abbiamo confrontato le cose per vedere se sono uguali, abbiamo usato tre segni di uguale. A volte, però, vogliamo controllare se le cose non sono uguali, e per questo usiamo un punto esclamativo seguito da due segni di uguale. In generale, nella programmazione, un punto esclamativo, o _bang_, come lo chiamano spesso i nostri amici americani, significa «non». Immagina ora di lavorare in un negozio e che la direzione abbia deciso che non sono ammessi abiti da discoteca.
 
 <img
   class="concept-image"

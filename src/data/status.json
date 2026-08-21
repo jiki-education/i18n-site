@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-21",
-  "governance_sha": "9eddfa1",
-  "approved": 871,
+  "governance_sha": "c87f000",
+  "approved": 872,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -7072,7 +7072,7 @@
       "stage": "refining",
       "live": false,
       "category_slug": "i18n-hi",
-      "approved": 18,
+      "approved": 19,
       "disapproved": 0,
       "total": 161,
       "items": [
@@ -7319,7 +7319,7 @@
         {
           "key": "concept/updating-variables",
           "topic_id": 1665,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/using-functions-with-inputs",

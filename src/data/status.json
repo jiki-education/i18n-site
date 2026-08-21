@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-21",
-  "governance_sha": "79157ae",
+  "governance_sha": "0014b11",
   "approved": 871,
   "disapproved": 1,
   "total": 3192,
@@ -2271,7 +2271,7 @@
         },
         {
           "key": "concept/building-arrays",
-          "topic_id": null,
+          "topic_id": 1352,
           "status": "approved"
         },
         {

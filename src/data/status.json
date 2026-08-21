@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-21",
-  "governance_sha": "a2d6c33",
-  "approved": 870,
+  "governance_sha": "c5ed84b",
+  "approved": 871,
   "disapproved": 1,
   "total": 3123,
   "languages": [
@@ -928,7 +928,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-uk",
-      "approved": 167,
+      "approved": 168,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -1689,8 +1689,8 @@
         },
         {
           "key": "level-milestone/make-your-own-functions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1495,
+          "status": "approved"
         },
         {
           "key": "level-milestone/string-manipulation",
@@ -4086,7 +4086,7 @@
       ]
     },
     {
-      "lang": "pt-pt",
+      "lang": "pt-PT",
       "name": "European Portuguese",
       "stage": "reviewing",
       "live": true,

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-21",
-  "governance_sha": "616d60a",
-  "approved": 856,
+  "governance_sha": "1441f1e",
+  "approved": 857,
   "disapproved": 1,
   "total": 2929,
   "languages": [
@@ -3549,7 +3549,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 54,
+      "approved": 55,
       "disapproved": 0,
       "total": 110,
       "items": [
@@ -4085,8 +4085,8 @@
         },
         {
           "key": "exercise/tile-rack",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1764,
+          "status": "approved"
         },
         {
           "key": "exercise/tile-search",

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-21",
-  "governance_sha": "a22748e",
-  "approved": 860,
+  "governance_sha": "521213c",
+  "approved": 864,
   "disapproved": 1,
   "total": 3037,
   "languages": [
@@ -948,7 +948,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-uk",
-      "approved": 162,
+      "approved": 165,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -1689,13 +1689,13 @@
         },
         {
           "key": "level-milestone/functions-that-return-things",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1495,
+          "status": "approved"
         },
         {
           "key": "level-milestone/conditionals",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1495,
+          "status": "approved"
         },
         {
           "key": "level-milestone/complex-conditionals",
@@ -1749,8 +1749,8 @@
         },
         {
           "key": "level-milestone/dictionaries",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1495,
+          "status": "approved"
         },
         {
           "key": "level-milestone/changing-dictionaries",
@@ -2682,7 +2682,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-el",
-      "approved": 121,
+      "approved": 122,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -3488,8 +3488,8 @@
         },
         {
           "key": "level-milestone/changing-dictionaries",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1724,
+          "status": "approved"
         },
         {
           "key": "badge/beta_user",

@@ -1,0 +1,17 @@
+---
+lang: "bn"
+type: "level-milestone"
+slug: "methods-and-properties"
+title: "নতুন কায়দা: মেথড আর প্রপার্টি"
+status: "published"
+source_repo: "api"
+source_path: "db/seeds/level_translations/bn.json"
+en_md5: "e58f587dfa34a3832164f862a919f8dd"
+governance_sha: "9b3923b"
+content_version: "6a679c36e350"
+published_at: "2026-08-21"
+---
+
+চমৎকার কাজ করেছেন। এতদিন যা দেখে এসেছেন, মেথড আর প্রপার্টির ধরনটি তার থেকে একটু আলাদা। ফাংশনের ভেতরে একটি মান পাঠানোর বদলে আপনি মানটির উপরেই ফাংশন কল করেন। ধারণাটির সাথে অভ্যস্ত হতে একটু সময় লাগে, কিন্তু এটি সব জায়গায় ব্যবহার হয়, তাই খুব দ্রুতই স্বাভাবিক লাগতে শুরু করবে।
+
+এরপর আমরা আরও শক্তিশালী কয়েক ধরনের লুপ দেখব: for লুপ, while লুপ, break আর continue। শুভকামনা!

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/devise_mailer.bn.yml"
 en_md5: "74128c13417b85185bcf6f430053ffe3"
-governance_sha: "ebcb088"
+governance_sha: "9b3923b"
 content_version: "8e06d9f974f7"
-published_at: "2026-08-18"
+published_at: "2026-08-21"
 forum_topic_id: 1661
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"devise.mailer.reset_password_instructions","rows":[{"key":"subject","english":"Reset Your Password","target":"পাসওয়ার্ড রিসেট করুন"},{"key":"preview","english":"Reset your password for your Jiki account","target":"আপনার জিকি (Jiki) অ্যাকাউন্টের পাসওয়ার্ড রিসেট করুন।"},{"key":"greeting","english":"Hi there,","target":"স্বাগতম!"},{"key":"cta","english":"Reset My Password","target":"আমার পাসওয়ার্ড রিসেট করুন"},{"key":"footer","english":"If you didn't request this, you can safely ignore this email — your password won't change unless you click the link above.","target":"আপনি যদি এই অনুরোধটি না করে থাকেন, তবে এই ইমেইলটি উপেক্ষা করতে পারেন—উপরের লিঙ্কে ক্লিক না করলে আপনার পাসওয়ার্ড পরিবর্তিত হবে না।"}]}]}]
 ---

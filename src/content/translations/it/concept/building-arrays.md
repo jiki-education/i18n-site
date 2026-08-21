@@ -7,16 +7,16 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/building-arrays/page.md"
 en_md5: "c3358ca032f965cf058bb72df37ffbd4"
-governance_sha: "8c8f01b"
-content_version: "68c3984ccde7"
-published_at: "2026-08-10"
+governance_sha: "0014b11"
+content_version: "64cfb17e11e5"
+published_at: "2026-08-21"
 ---
 
-Fino ad ora hai lavorato con array il cui valore viene fissato all'inizio e resta invariato. Ma cosa succede se vuoi aggiungere elementi ad un array nel tempo? Beh, per farlo, gli array hanno un metodo chiamato `push` (aggiungi).
+Fino ad ora hai lavorato con array il cui valore viene fissato all'inizio e resta invariato. Ma cosa succede se vuoi aggiungere elementi ad un array nel tempo? Per farlo, gli array hanno un metodo chiamato `push` (aggiungi).
 
-Push ha un solo input: l'elemento che vuoi inserire in fondo all'array. In questo caso, vogliamo aggiungere la parola `"Isaac"` in coda all'array che contiene già `"DJ"` e `"Bethany"`, usando `push`.
+Push ha un solo input: l'elemento che vuoi inserire in fondo all'array. In questo caso, vogliamo aggiungere la parola `"Isaac"` in coda all'array che contiene già `"DJ"` e `"Bethany"`, usando il metodo `push`.
 
-Per farlo, Jiki tira fuori l'array dalla scatola, aggiunge `"Isaac"` alla fine della catena e poi rimette il tutto nella scatola. Nota che, a differenza di quanto accadeva con le stringhe, dove Jiki creava ogni volta una nuova stringa, qui sta effettivamente modificando l'array.
+Per farlo, Jiki tira fuori l'array dalla scatola, aggiunge `"Isaac"` alla fine della catena e poi rimette il tutto nella scatola. Nota che, a differenza di quanto accadeva con le stringhe, dove Jiki creava ogni volta una nuova stringa, qui sta davvero modificando l'array esistente.
 
 Un pattern che vedrai spesso nella programmazione è partire con un array vuoto e costruirlo man mano. Puoi immaginare di avere una grande lista di nomi e di volerla scorrere. Ogni volta che troviamo un nome che è un mentore, lo aggiungiamo all'array.
 

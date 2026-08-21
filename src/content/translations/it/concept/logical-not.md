@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/logical-not/page.md"
 en_md5: "7cffbd1fa13317b3d6e6a71415413041"
-governance_sha: "81c3038"
-content_version: "67f3eb88ef53"
+governance_sha: "be1bd1a"
+content_version: "ad2a1d8b2c93"
 published_at: "2026-08-21"
 forum_topic_id: 1439
 ---
@@ -59,8 +59,10 @@ Ma c'è un modo più elegante per farlo, ed è usare lo stesso punto esclamativo
 movingRight = !movingRight
 ```
 
-E questo la inverte. `!movingRight` significa l'opposto di ciò che era prima.
+E questo lo inverte. `!movingRight` significa l'opposto di ciò che era prima.
+Quindi, se `movingRight` era `true`, ora è `false`. Se era `false`, ora è `true`.
 
-Quindi se `movingRight` era true, ora è false. Se era false, ora è true. Jiki prende ciò che c'è attualmente nella scatola,
+Jiki prende ciò che c'è attualmente nella scatola, e quel bang gli dice di calcolare l'opposto.
+L'opposto di `true` è `false`, l'opposto di `false` è `true`, e poi rimette quel valore nella scatola.
 
-e quel bang gli dice di trovare l'opposto. Così l'opposto di true è false. L'opposto di false è true, e poi lo rimette nella scatola. È esattamente lo stesso di quella lunga istruzione if/else, ma è molto più elegante e concisa da scrivere.
+È esattamente lo stesso della lunga istruzione `if/else`, ma molto più elegante e conciso da scrivere.

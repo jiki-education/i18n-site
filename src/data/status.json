@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-21",
-  "governance_sha": "521213c",
-  "approved": 864,
+  "governance_sha": "deb94b1",
+  "approved": 866,
   "disapproved": 1,
   "total": 3037,
   "languages": [
@@ -948,7 +948,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-uk",
-      "approved": 165,
+      "approved": 167,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -1719,8 +1719,8 @@
         },
         {
           "key": "level-milestone/string-iteration",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1495,
+          "status": "approved"
         },
         {
           "key": "level-milestone/multiple-functions",
@@ -1754,8 +1754,8 @@
         },
         {
           "key": "level-milestone/changing-dictionaries",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1495,
+          "status": "approved"
         },
         {
           "key": "badge/beta_user",

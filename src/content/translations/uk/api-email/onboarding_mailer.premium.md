@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.uk.yml"
 en_md5: "c5baf864e491a2f763a346af05470f74"
-governance_sha: "0c55d62"
-content_version: "32c1ebc2764a"
-published_at: "2026-08-20"
+governance_sha: "deb94b1"
+content_version: "7d25b15bc805"
+published_at: "2026-08-21"
+forum_topic_id: 1495
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.premium","rows":[{"key":"subject","english":"Get More Out of Jiki (and help us out)","target":"Отримайте більше від Jiki (і допоможіть нам)"},{"key":"preview","english":"We made Jiki free because we want it to be accessible to everyone regardless","target":"Ми зробили Jiki безкоштовним, бо хочемо, щоб він був доступний кожному"},{"key":"greeting","english":"Hi there,","target":"Вітаю,"}]}]}]
 ---
 
@@ -25,5 +26,5 @@ messages: [{"heading":"The rest of this email","note":"The short strings around 
 
 Якщо вам подобається Jiki, ви хочете **пришвидшити своє навчання** та підтримати мене й команду Jiki, будь ласка, [перейдіть на Premium](https://jiki.io/premium).
 
-Дякую,
+Дякую,  
 Джеремі

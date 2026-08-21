@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/logical-and/page.md"
 en_md5: "cef8d76c4235e85573c3eeede294ab72"
-governance_sha: "7dc4918"
-content_version: "57c50e068867"
+governance_sha: "b57232d"
+content_version: "ece16341fbda"
 published_at: "2026-08-21"
 ---
 
@@ -16,9 +16,9 @@ Se ti chiedessi di aprire la porta solo se qualcuno ha più di 20 anni, probabil
 
 Potresti usare un'istruzione if annidata (_nested_ in inglese), un po' come i cicli annidati di prima. Quindi potresti dire che se `age` è maggiore di `20`, allora entriamo in questo blocco di codice, e poi un altro if in cui `outfit` è uguale a `"disco"`, un'altra parentesi graffa ed un nuovo blocco di codice. Funzionerebbe, ma diventa abbastanza disordinato, soprattutto quando vuoi avere molte condizioni.
 
-Per fortuna, c'è un modo più semplice: avere condizioni che hanno più parti. Invece di controllare una sola cosa nella condizione, possiamo controllare due, tre o più cose. E per farlo, dobbiamo usare la parola chiave `and`. Ora, purtroppo, in JavaScript, la parola chiave `and` non è proprio la parola `"and"`, come succede in alcuni linguaggi. Invece, devi mettere due e commerciali (_ampersand_ in inglese) una accanto all'altra. Dovrai ricordartelo. È fastidioso, ma è così, e ti ci abituerai.
+Per fortuna, c'è un modo più semplice: usare condizioni composte. Invece di controllare una sola cosa nella condizione, possiamo controllare due, tre o più cose. E per farlo, dobbiamo usare la parola chiave `and`. Ora, purtroppo, in JavaScript la parola chiave `and` non è davvero `"and"`, come succede in alcuni linguaggi. Invece, devi mettere due e commerciali `&&` (ampersand in inglese) una accanto all'altra. Dovrai ricordartelo: è un po' fastidioso, ma ci farai l'abitudine.
 
-Quindi possiamo usarlo per creare una condizione più complessa. Possiamo dire che se `age` è maggiore di `20` e `outfit` è `"disco"`, allora andiamo avanti. Se `age` è minore di `20` o `outfit` non è `"disco"`, allora l'intera istruzione, l'intera condizione è falsa. Se hai mai studiato logica, magari hai fatto un po' di elettronica o matematica più avanzata, allora questo ti sembrerà molto naturale. Altrimenti, imparerai in fretta.
+Quindi possiamo usarlo per creare una condizione più complessa. Possiamo dire che se `age` è maggiore di `20` e `outfit` è `"disco"`, allora andiamo avanti. Se `age` è minore di `20` o `outfit` non è `"disco"`, allora l'intera condizione risulta falsa. Se hai mai studiato logica, magari hai fatto un po' di elettronica o matematica più avanzata, allora questo ti sembrerà molto naturale. Altrimenti, lo imparerai in fretta.
 
 ```javascript
 if (age > 20 && outfit === "disco") {

@@ -3,9 +3,9 @@ lang: "pt-pt"
 name: "European Portuguese"
 family: "pt"
 stage: "reviewing"
-governance_sha: "8d5ace4"
+governance_sha: "0284360"
 content_version: "07acd065eac3"
-published_at: "2026-08-09"
+published_at: "2026-08-21"
 term_count: 70
 category_id: 73
 forum_topic_id: 341

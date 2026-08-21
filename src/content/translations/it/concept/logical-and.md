@@ -7,12 +7,12 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/logical-and/page.md"
 en_md5: "cef8d76c4235e85573c3eeede294ab72"
-governance_sha: "494ce4b"
-content_version: "780a65addc89"
-published_at: "2026-08-10"
+governance_sha: "7dc4918"
+content_version: "57c50e068867"
+published_at: "2026-08-21"
 ---
 
-Se ti chiedessi di aprire la porta solo se qualcuno ha più di 20 anni, probabilmente sapresti cosa fare. Ma se dovessi controllare se qualcuno ha più di 20 anni _e_ indossa l'abito giusto? Dovresti verificare due condizioni diverse contemporaneamente. Come faresti?
+Se ti chiedessi di aprire la porta solo se qualcuno ha più di 20 anni, probabilmente sapresti cosa fare. Ma se dovessi controllare se qualcuno ha più di 20 anni _e_ indossa l'abito giusto, dovresti verificare due condizioni diverse nello stesso momento. Come potresti farlo?
 
 Potresti usare un'istruzione if annidata (_nested_ in inglese), un po' come i cicli annidati di prima. Quindi potresti dire che se `age` è maggiore di `20`, allora entriamo in questo blocco di codice, e poi un altro if in cui `outfit` è uguale a `"disco"`, un'altra parentesi graffa ed un nuovo blocco di codice. Funzionerebbe, ma diventa abbastanza disordinato, soprattutto quando vuoi avere molte condizioni.
 

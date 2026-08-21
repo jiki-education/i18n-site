@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "guest-list"
 title: "Guest List"
-en_md5: "016cc4c41a4bcf23a3804240ed7d0a1a"
+en_md5: "52c28de5163d2493a9741c73c4c6ad8c"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/guest-list"
-captured_at: "2026-08-06"
+captured_at: "2026-08-21"
 ---
 
 You're a bouncer at an exclusive club. You have a <define>guest list</define>, but you reckon that a lot of the people in the <define>queue</define> aren't actually on it, and are just trying to chance their way in.

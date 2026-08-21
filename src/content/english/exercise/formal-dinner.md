@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "formal-dinner"
 title: "Formal Dinner"
-en_md5: "8d6a2f3dd90b3a487a6bf855f31ef025"
+en_md5: "ef1a7cb430985cf200bcbeeb451a561f"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/formal-dinner"
-captured_at: "2026-08-06"
+captured_at: "2026-08-21"
 ---
 
 You're back in your side hustle as a bouncer. It's the evening after the After Party, and there's yet another shindig. This time it's a formal dinner, so tonight you're less "burly man on a door" and more "person with a clipboard and a nice waistcoat".

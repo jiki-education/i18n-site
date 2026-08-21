@@ -1,0 +1,31 @@
+---
+lang: "pt-BR"
+type: "exercise"
+slug: "leap"
+title: "Anos bissextos"
+status: "published"
+source_repo: "i18n"
+source_path: "locales/pt-BR/curriculum/exercises/leap"
+en_md5: "a3cf7d264019dae68d9c387231db2484"
+governance_sha: "215346b"
+content_version: "4f782e3b18f9"
+published_at: "2026-08-21"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"checks","rows":[{"key":"moreThanOneLine","english":"You used more than one line of code within the function.","target":"Você usou mais de uma linha de código dentro da função."},{"key":"moreThanOneFunction","english":"Can you solve this with just one function?","target":null}]},{"name":"tasks","rows":[{"key":"determineLeapYear.name","english":"Determine if the year is a leap year","target":"Determine se o ano é bissexto"},{"key":"determineLeapYear.description","english":"Write a function called isLeapYear that takes a year as its input and returns true if it is a leap year, or false if it is not.","target":"Escreva uma função chamada isLeapYear que recebe um ano como entrada e retorna true se for bissexto, ou false se não for."},{"key":"solveInOneLine.name","english":"Solve in one line of code","target":"Resolva em uma linha de código"},{"key":"solveInOneLine.description","english":"Can you solve this with only one line of code within the function?","target":"Você consegue resolver isso com apenas uma linha de código dentro da função?"}]},{"name":"scenarios","rows":[{"key":"year2015.name","english":"Year 2015","target":"Ano 2015"},{"key":"year2015.description","english":"2015 is not divisible by 4 so is not a leap year.","target":"2015 não é divisível por 4, então não é um ano bissexto."},{"key":"year1970.name","english":"Year 1970","target":"Ano 1970"},{"key":"year1970.description","english":"1970 is not divisible by 4 so is not a leap year.","target":"1970 não é divisível por 4, então não é um ano bissexto."},{"key":"year2100.name","english":"Year 2100","target":"Ano 2100"},{"key":"year2100.description","english":"2100 is divisible by 100 but not by 400 so is not a leap year.","target":"2100 é divisível por 100, mas não por 400, então não é um ano bissexto."},{"key":"year1900.name","english":"Year 1900","target":"Ano 1900"},{"key":"year1900.description","english":"1900 is divisible by 100 but not by 400 so is not a leap year.","target":"1900 é divisível por 100, mas não por 400, então não é um ano bissexto."},{"key":"year1800.name","english":"Year 1800","target":"Ano 1800"},{"key":"year1800.description","english":"1800 is divisible by 100 but not by 400 so is not a leap year.","target":"1800 é divisível por 100, mas não por 400, então não é um ano bissexto."},{"key":"year2000.name","english":"Year 2000","target":"Ano 2000"},{"key":"year2000.description","english":"2000 is divisible by 400 so is a leap year.","target":"2000 é divisível por 400, então é um ano bissexto."},{"key":"year2400.name","english":"Year 2400","target":"Ano 2400"},{"key":"year2400.description","english":"2400 is divisible by 400 so is a leap year.","target":"2400 é divisível por 400, então é um ano bissexto."},{"key":"year1996.name","english":"Year 1996","target":"Ano 1996"},{"key":"year1996.description","english":"1996 is divisible by 4 but not by 100 so is a leap year.","target":"1996 é divisível por 4, mas não por 100, então é um ano bissexto."},{"key":"year1960.name","english":"Year 1960","target":"Ano 1960"},{"key":"year1960.description","english":"1960 is divisible by 4 but not by 100 so is a leap year.","target":"1960 é divisível por 4, mas não por 100, então é um ano bissexto."},{"key":"bonus1.name","english":"One line of code","target":"Uma linha de código"},{"key":"bonus1.description","english":"Solve the exercise with only one line of code within the function.","target":"Resolva o exercício com apenas uma linha de código dentro da função."}]},{"name":"hints","rows":[{"key":"basicRule.question","english":"What's the basic rule for a leap year?","target":"Qual é a regra básica para um ano bissexto?"},{"key":"basicRule.answer","english":"Years divisible by 4 are leap years. So `year % 4 === 0` is the starting test.","target":"Os anos divisíveis por 4 são bissextos. Então, `year % 4 === 0` é o teste inicial."},{"key":"exceptions.question","english":"Are there exceptions?","target":"Há exceções?"},{"key":"exceptions.answer","english":"Yes. Years divisible by 100 are NOT leap years, even though they're divisible by 4. For example, 1900 isn't a leap year.","target":"Sim. Os anos divisíveis por 100 NÃO são bissextos, mesmo sendo divisíveis por 4. Por exemplo, 1900 não é um ano bissexto."},{"key":"exceptionsToExceptions.question","english":"Are there exceptions to the exception?","target":"Há exceções à exceção?"},{"key":"exceptionsToExceptions.answer","english":"Yes. Years divisible by 400 ARE leap years after all. For example, 2000 is. So the rule cascades: divisible by 4, but not by 100, unless also by 400.","target":"Sim. Os anos divisíveis por 400 SÃO bissextos, afinal. Por exemplo, 2000 é. Portanto, a regra é em cascata: divisível por 4, mas não por 100, a não ser que também seja divisível por 400."},{"key":"checkDivisibility.question","english":"How do I check divisibility?","target":"Como eu verifico a divisibilidade?"},{"key":"checkDivisibility.answer","english":"Use the remainder operator `%`. `year % 4 === 0` is true when the year divides exactly by 4 with nothing left over. Same trick with 100 and 400.","target":"Use o operador resto `%`. `year % 4 === 0` é verdadeiro quando o ano divide exatamente por 4 sem deixar resto. O mesmo truque funciona com 100 e 400."}]}]}]
+---
+
+Neste exercício, vamos explorar os anos bissextos!
+
+Um ano bissexto (no calendário gregoriano) acontece quando:
+
+- O ano é divisível por 4.
+- Exceto se o ano for divisível por 100; nesse caso, só é bissexto se também for divisível por 400.
+
+Alguns exemplos:
+
+- 1997 não foi um ano bissexto, porque não é divisível por 4.
+- 1900 não foi um ano bissexto, porque não é divisível por 400.
+- 2000 foi um ano bissexto!
+
+A sua tarefa é escrever uma função chamada `isLeapYear` (“é ano bissexto”) que recebe um ano como entrada e retorna `true` se for bissexto, ou `false` se não for.
+
+Leve o tempo que precisar neste exercício. Pense bem antes de começar!

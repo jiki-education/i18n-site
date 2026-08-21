@@ -4,15 +4,20 @@ type: "concept"
 slug: "colors"
 title: "Colori"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/colors/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/colors/page.md"
 en_md5: "a0eea0481b975e45f75774d83966a4a7"
-governance_sha: "c80036b"
-content_version: "f5647809998d"
-published_at: "2026-08-06"
+governance_sha: "8404228"
+content_version: "7505abf48bd4"
+published_at: "2026-08-21"
+forum_topic_id: 1353
 ---
 
-Se mai farai qualcosa di visuale con il codice (e anche se vuoi fare il data scientist e pensi che tutta la roba di disegno sia un po' noiosa, comunicare dati attraverso le immagini è una competenza fondamentale) ci sono due modi diversi per esprimere i colori. Hai già usato i colori con i loro nomi come red o yellow come ultimo input nelle tue funzioni di disegno, ed è stato un bel modo per usare i colori rapidamente, ma è piuttosto limitante. Ci sono solo una manciata di colori con nome che possiamo usare. Quindi adesso vedremo due modi per esprimere qualsiasi colore tu voglia, e questi due si chiamano RGB e HSL.
+Se un giorno programmerai nell'ambito della grafica (e anche se vorrai fare il data scientist e pensi che tutta la parte visiva sia un po' noiosa, comunicare i dati attraverso le immagini è una competenza fondamentale), ci sono due modi diversi per esprimere i colori.
+
+Finora hai usato i colori tramite i loro nomi, come red o yellow, come ultimo input nelle funzioni di disegno: è un modo rapido e comodo per usare i colori, ma è anche piuttosto limitato. I colori "con nome" sono pochi.
+
+Adesso vedremo due modi per rappresentare qualsiasi colore tu voglia, e questi due sistemi si chiamano RGB e HSL.
 
 RGB ci permette di pensare ai colori come a una miscela di rosso, verde e blu. Questo è ciò che RGB significa: rosso (_red (R)_ in inglese), verde (_green (G)_ in inglese), blu (_blue (B)_ in inglese). Se ti ricordi di aver mescolato i colori a scuola, l'idea è simile, solo che invece di mescolare vernice, mescoliamo luce.
 

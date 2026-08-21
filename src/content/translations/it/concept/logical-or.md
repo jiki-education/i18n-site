@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/logical-or/page.md"
 en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
-governance_sha: "ad067f5"
-content_version: "418ae280f99f"
+governance_sha: "5984695"
+content_version: "e6b40de289a0"
 published_at: "2026-08-21"
 forum_topic_id: 1440
 ---
@@ -31,7 +31,11 @@ if (age > 20 || outfit === "disco") {
   height="400"
 />
 
-C'è una cosa che crea confusione sia con `and` che con `or`, ed è che ogni lato dell'operatore `and`/`or` deve essere un confronto completo. Quindi anche se stai confrontando la stessa variabile su entrambi i lati, devi ripeterla. Non puoi scrivere `if age is less than 13 or greater than 20`. Devi scrivere `if age is less than 13 or age is greater than 20`. Hai bisogno che entrambi i lati siano confronti completi.
+C'è una cosa che crea confusione sia con `and` che con `or`: ogni lato dell'operatore deve essere un confronto completo. Quindi, anche se stai confrontando la stessa variabile su entrambi i lati, devi ripeterla.
+
+Non puoi scrivere "if `age` is less than 13 or greater than 20". Devi scrivere "if `age` is less than 13 or `age` is greater than 20".
+
+Hai bisogno che entrambi i lati siano confronti completi.
 
 ```javascript
 if (age < 13 || age > 20)

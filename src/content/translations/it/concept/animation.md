@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/animation/page.md"
 en_md5: "536994294072afea52dab51d3bb7cab8"
-governance_sha: "9b3923b"
-content_version: "fa128e32a4d5"
+governance_sha: "a5ad984"
+content_version: "7866ddc9dbf3"
 published_at: "2026-08-21"
 ---
 
@@ -53,7 +53,7 @@ repeat(100) {
 }
 ```
 
-Invece di una scia di cerchi, i nostri occhi vengono ingannati e vedono un unico cerchio che sembra scivolare attraverso lo schermo.
+Invece di una scia di cerchi, i nostri occhi vengono ingannati e vedono un unico cerchio che sembra muoversi attraverso lo schermo.
 
 <img
   class="concept-image"
@@ -63,7 +63,7 @@ Invece di una scia di cerchi, i nostri occhi vengono ingannati e vedono un unico
   height="187"
 />
 
-Ogni volta che eseguiamo il ciclo, dipingiamo uno sfondo completamente nuovo, coprendo tutto ciò che c'era prima, e poi disegniamo il cerchio nella sua nuova posizione.
+Ogni volta che eseguiamo il ciclo, cancelliamo tutto e ridisegniamo uno sfondo nuovo, coprendo ciò che c'era prima, e poi disegniamo il cerchio nella sua nuova posizione.
 
 Ogni passaggio del ciclo è come una nuova pagina del flip book.
 

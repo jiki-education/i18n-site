@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-21",
-  "governance_sha": "1441f1e",
-  "approved": 857,
+  "governance_sha": "4e7e954",
+  "approved": 859,
   "disapproved": 1,
   "total": 2929,
   "languages": [
@@ -3549,7 +3549,7 @@
       "stage": "reviewing",
       "live": false,
       "category_slug": "i18n-bn",
-      "approved": 55,
+      "approved": 57,
       "disapproved": 0,
       "total": 110,
       "items": [
@@ -3915,8 +3915,8 @@
         },
         {
           "key": "exercise/hello",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1766,
+          "status": "approved"
         },
         {
           "key": "exercise/isbn-verifier",
@@ -4080,8 +4080,8 @@
         },
         {
           "key": "exercise/three-letter-acronym",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1765,
+          "status": "approved"
         },
         {
           "key": "exercise/tile-rack",

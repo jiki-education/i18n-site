@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-22",
-  "governance_sha": "2d06473",
-  "approved": 886,
+  "governance_sha": "aae5080",
+  "approved": 894,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 70,
+      "approved": 78,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4290,8 +4290,8 @@
         },
         {
           "key": "api-email/account_mailer.welcome",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1791,
+          "status": "approved"
         },
         {
           "key": "api-email/account_mailer.account_deletion_confirmation",
@@ -4300,38 +4300,38 @@
         },
         {
           "key": "api-email/onboarding_mailer.overview",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1791,
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.coding",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1791,
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.building",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1791,
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.premium",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1791,
+          "status": "approved"
         },
         {
           "key": "api-email/onboarding_mailer.community",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1791,
+          "status": "approved"
         },
         {
           "key": "api-email/premium_mailer.welcome_to_premium",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1791,
+          "status": "approved"
         },
         {
           "key": "api-email/premium_mailer.subscription_ended",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1791,
+          "status": "approved"
         },
         {
           "key": "level-milestone/using-functions",

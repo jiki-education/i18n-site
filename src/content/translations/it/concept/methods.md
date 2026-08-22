@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/methods/page.md"
 en_md5: "37c097a81459cd2ff4ae684559bd4311"
-governance_sha: "069e7b6"
-content_version: "dd66ec8a4177"
+governance_sha: "4966529"
+content_version: "9029535b21c7"
 published_at: "2026-08-22"
 forum_topic_id: 1442
 ---
@@ -45,9 +45,9 @@ E otterremo `true`, perché `"Jeremy"` contiene una `"e"`.
   height="400"
 />
 
-I metodi sono diversi dalle proprietà perché non sono fatti statici. Sono in realtà funzioni. Puoi considerarli come funzioni che hanno una scatola incorporata con la stringa all'interno.
+I metodi sono diversi dalle proprietà perché non sono elementi statici. Sono in realtà funzioni. Puoi considerarli come funzioni che hanno una "scatola" incorporata con la stringa all'interno.
 
-Come funzionano non importa per ora. Non dovrai costruirli per un po'. Tutto quello che devi sapere è che usi un metodo mettendo un punto e poi la normale sintassi delle funzioni.
+Per ora non importa come funzionano internamente, e non dovrai costruirli per un po'. Tutto quello che devi sapere è che si usano mettendo un punto dopo il valore e poi la normale sintassi delle funzioni.
 
 Una cosa da sapere sulle stringhe è che i metodi non cambiano nulla all'interno della stringa. Per esempio, esiste un metodo `toUpperCase` (in maiuscolo) che restituisce la stringa con tutte le lettere in maiuscolo. Ma questo non cambia la stringa originale. Quella contiene ancora `"Jeremy"` scritto con la sola J maiuscola. Invece, Jiki crea una nuova stringa tutta in maiuscolo.
 

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-22",
-  "governance_sha": "e7f7d94",
-  "approved": 877,
+  "governance_sha": "eb1f1a4",
+  "approved": 878,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 61,
+      "approved": 62,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -3850,8 +3850,8 @@
         },
         {
           "key": "exercise/even-or-odd",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1784,
+          "status": "approved"
         },
         {
           "key": "exercise/finish-wall",

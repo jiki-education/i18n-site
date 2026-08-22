@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/pt-PT/curriculum/concepts/animation/page.md"
 en_md5: "536994294072afea52dab51d3bb7cab8"
-governance_sha: "a347f3f"
+governance_sha: "2ea8340"
 content_version: "82ef03407c0a"
 published_at: "2026-08-22"
+forum_topic_id: 1792
 ---
 
 Até agora, quando usámos o ciclo `repeat` para desenhar coisas, cada coisa nova que desenhámos acrescentou algo à imagem. Se desenhámos um tijolo novo numa parede, ele tapou um buraco. Se desenhámos 10 círculos, vemos 10 círculos no ecrã. É como uma pintura. Depois de pôres tinta na parede, ela não desaparece quando pintas algo novo ao lado. Fica lá. Mas e se quisermos que algo pareça estar em movimento?

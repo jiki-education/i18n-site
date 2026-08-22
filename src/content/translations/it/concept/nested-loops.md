@@ -7,12 +7,13 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/nested-loops/page.md"
 en_md5: "4ca3e15c1737b6e8cf2f03a56d23a887"
-governance_sha: "48bca23"
-content_version: "525e9cd28361"
-published_at: "2026-08-12"
+governance_sha: "e824c3c"
+content_version: "84b1439f8785"
+published_at: "2026-08-22"
+forum_topic_id: 1445
 ---
 
-Mettiamo di volere una fila di fiori. Possiamo scrivere qualcosa del genere. Impostiamo una posizione, piantiamo un fiore, aumentiamo la posizione di 10, ripetiamo, ed otteniamo una bella fila ordinata di fiori.
+Mettiamo di voler creare una fila di fiori. Possiamo scriverlo in questo modo: impostiamo una posizione, piantiamo un fiore, aumentiamo la posizione di 10, ripetiamo, e otteniamo una bella fila ordinata di fiori.
 
 ```javascript
 let x = 10

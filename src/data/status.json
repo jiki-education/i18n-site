@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-22",
-  "governance_sha": "b76ec87",
-  "approved": 875,
+  "governance_sha": "e7f7d94",
+  "approved": 877,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 60,
+      "approved": 61,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4285,8 +4285,8 @@
         },
         {
           "key": "concept/variables-group",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1788,
+          "status": "approved"
         },
         {
           "key": "api-email/account_mailer.welcome",
@@ -4436,7 +4436,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-pt-pt",
-      "approved": 34,
+      "approved": 35,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4868,7 +4868,7 @@
         {
           "key": "concept/variables-group",
           "topic_id": 1752,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/acronym",

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-22",
-  "governance_sha": "67d51a8",
-  "approved": 874,
+  "governance_sha": "b76ec87",
+  "approved": 875,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 59,
+      "approved": 60,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4090,8 +4090,8 @@
         },
         {
           "key": "concept/arithmetic",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1787,
+          "status": "approved"
         },
         {
           "key": "concept/arrays-group",

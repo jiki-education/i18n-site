@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/string-templates/page.md"
 en_md5: "7fd0e09ac3b32db5f159f8e772872104"
-governance_sha: "af41eb2"
-content_version: "805f5d4ef2b7"
-published_at: "2026-08-21"
+governance_sha: "7d00934"
+content_version: "60dfd6a3b7dd"
+published_at: "2026-08-22"
 ---
 
 একটি স্ট্রিংয়ের ভেতরে অন্য স্ট্রিং বসানোর জন্য আমরা টেমপ্লেট লিটারেল নামের একটি জিনিস ব্যবহার করতে পারি।
@@ -34,7 +34,7 @@ published_at: "2026-08-21"
   height="400"
 />
 
-আর এটি স্ট্রিংগুলো যোগ করার মতোই একদম একই কাজ করছে।
+আর এটি স্ট্রিংগুলো যোগ করার মতোই একই কাজ করছে।
 
 তবে যখন একাধিক স্ট্রিং একসাথে এক জায়গায় জুড়ে দিতে হয়, তখন এই পদ্ধতিটি অনেক বেশি কার্যকর হতে পারে।
 

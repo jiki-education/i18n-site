@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-22",
-  "governance_sha": "1491b56",
-  "approved": 879,
+  "governance_sha": "7d00934",
+  "approved": 880,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 63,
+      "approved": 64,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4250,8 +4250,8 @@
         },
         {
           "key": "concept/string-templates",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1789,
+          "status": "approved"
         },
         {
           "key": "concept/strings-group",

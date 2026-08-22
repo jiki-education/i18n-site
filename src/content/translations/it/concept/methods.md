@@ -7,14 +7,15 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/methods/page.md"
 en_md5: "37c097a81459cd2ff4ae684559bd4311"
-governance_sha: "5756401"
-content_version: "1ac4621bcfbc"
-published_at: "2026-08-12"
+governance_sha: "d258e5f"
+content_version: "f44d28529450"
+published_at: "2026-08-22"
+forum_topic_id: 1442
 ---
 
-Finora, quando abbiamo pensato alle stringhe o ai numeri, li abbiamo considerati come cose piuttosto statiche.
+Finora, quando abbiamo parlato di stringhe o numeri, li abbiamo trattati come elementi piuttosto statici.
 
-E anche se lo sono, esse hanno molte funzionalità incorporate che Jiki può usare.
+E anche se lo sono, in realtà hanno molte funzionalità incorporate che Jiki può usare.
 
 E man mano che andiamo avanti, impareremo queste funzionalità, queste specie di capacità che hanno e che ti semplificano la vita.
 

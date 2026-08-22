@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/modulo/page.md"
 en_md5: "4955abecb626b8eff02ee7484e2065dd"
-governance_sha: "c3dfe68"
-content_version: "516da188a976"
-published_at: "2026-08-12"
+governance_sha: "060f821"
+content_version: "85ff0cefc755"
+published_at: "2026-08-22"
+forum_topic_id: 1443
 ---
 
 Finora abbiamo usato addizione, sottrazione, moltiplicazione e divisione per fare calcoli. Ora ne introduciamo un altro, l'operatore modulo.
@@ -20,7 +21,7 @@ L'operatore modulo ti dà il resto della divisione tra due numeri, e lo scriviam
 10 % 4 // 2
 ```
 
-stiamo dicendo, o chiedendo: «Cosa rimane quando dividiamo 10 per 4?» E la risposta è due. Immagina di avere 10 caramelle o noccioline e di volerle dividere in parti uguali tra quattro persone. Ciascuna riceve due, ed alla fine ne rimangono due. Quel che rimane è il resto, ed è proprio quello che ti dà il simbolo percentuale.
+Stiamo dicendo, o chiedendo: «Cosa rimane quando dividiamo 10 per 4?» E la risposta è due. Immagina di avere 10 caramelle o noccioline e di volerle dividere in parti uguali tra quattro persone. Ciascuna riceve due, e alla fine ne avanzano due. Quel che rimane è il resto, ed è proprio ciò che ti restituisce l'operatore modulo (il simbolo percentuale).
 
 <img
   class="concept-image"

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/ar/curriculum/concepts/using-functions/page.md"
 en_md5: "fc671310093a081113a8f301b6ff53fe"
-governance_sha: "061533f"
-content_version: "34d61c53f75e"
-published_at: "2026-08-08"
+governance_sha: "9cb29e4"
+content_version: "13ae6ae7b4a7"
+published_at: "2026-08-22"
 forum_topic_id: 740
 ---
 
@@ -37,7 +37,7 @@ forum_topic_id: 740
   height="371"
 />
 
-عندما كتبت `move` وأتبعتها الهلالَين، أخبرت Jiki أن يذهب ويحضر آلة `move` من الرف، ويدير مقبضها، ويشغلها، ويستخدمها.
+عندما كتبت `move` وأتبعتها الأقواس الهلالية، أخبرت Jiki أن يذهب ويحضر آلة `move` من الرف، ويدير مقبضها، ويشغلها، ويستخدمها.
 
 <img
   class="concept-image"
@@ -47,7 +47,7 @@ forum_topic_id: 740
   height="400"
 />
 
-عندما كتبت `turnLeft` وأتبعتها الهلالَين، أخبرت Jiki أن يحضر آلة `turnLeft` من الرف ويستخدمها. هذا هو النمط الذي ستستخدمه مرارًا وتكرارًا. كلما أردت استخدام آلة، ستكتب اسمها فالهلالَين، وهذا يخبر Jiki أن يذهب ويحضر الآلة ويستخدمها:
+عندما كتبت `turnLeft` وأتبعتها الأقواس الهلالية، أخبرت Jiki أن يحضر آلة `turnLeft` من الرف ويستخدمها. هذا هو النمط الذي ستستخدمه مرارًا وتكرارًا. كلما أردت استخدام آلة، ستكتب اسمها فالأقواس الهلالية، وهذا يخبر Jiki أن يذهب ويحضر الآلة ويستخدمها:
 
 ```javascript
 move()

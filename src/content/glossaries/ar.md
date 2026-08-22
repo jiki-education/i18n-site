@@ -3,10 +3,10 @@ lang: "ar"
 name: "Arabic"
 family: null
 stage: "refining"
-governance_sha: "4a1b8b3"
-content_version: "49acf765a06d"
-published_at: "2026-08-09"
-term_count: 48
+governance_sha: "9cb29e4"
+content_version: "f9d8486755a5"
+published_at: "2026-08-22"
+term_count: 49
 category_id: 233
 forum_topic_id: 470
 video_player_forum_topic_id: 741
@@ -21,9 +21,9 @@ decision log (`glossary-notes.md`).
 
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
-| streak | **المواظبة** | ar | Use the single word; do not render streak with سلسلة. Where the sense needs pinning down, say what is being kept up in the surrounding sentence rather than qualifying the term. |
-| pitfall | **خطأ شائع** | ar | "Common mistake", not "common trap": both words are mandatory as a set phrase. Do not use فخ شائع. |
-| code | **الكود** | ar | Use `الكود` in prose. The purist `شيفرة`/`رمز` is the wrong direction. The Latin form stays only inside code and for the `Debug`/`Test` tokens. |
+| streak | **المواظبة** | ar | Use the single word; do not render streak with سلسلة. Where the sense needs pinning down, say what is being kept up in the surrounding sentence rather than qualifying the term. Feminine; plural المواظبات. |
+| pitfall | **خطأ شائع** | ar | "Common mistake", not "common trap": both words are mandatory as a set phrase. Do not use فخ شائع. Masculine; plural أخطاء شائعة. |
+| code | **الكود** | ar | Use `الكود` in prose. The purist `شيفرة`/`رمز` is the wrong direction. The Latin form stays only inside code and for the `Debug`/`Test` tokens. Masculine; plural أكواد. |
 
 ## Localize (use the Arabic term)
 
@@ -33,51 +33,52 @@ These are terms where the Arabic is used in prose, so the "Use (ar/en)" column i
 
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
-| number | عدد | ar | `عدد` for the data-type sense (`عدد صحيح`, `عدد عشري`); `رقم` is reserved for "digit/numeral", not this term. |
+| number | عدد | ar | `عدد` for the data-type sense (`عدد صحيح`, `عدد عشري`); `رقم` is reserved for "digit/numeral", not this term. Masculine; plural أعداد. |
 | true / false | صحيح / خطأ | ar | Not capitalised in prose. The literal code keywords `True`/`False` stay in English inside code, per `global/rules.md`. |
-| array / list | مصفوفة | ar | Exercise prose that informally says "list" for the same concept as "array" also uses `مصفوفة`; see `global/terms.md`. Distinct from the "chain" physical metaphor, see below. |
-| index | فهرس | ar | Distinct from `مؤشر` (pointer); do not confuse the two. |
-| string | سلسلة نصية | ar | Always the full qualified compound; never shortened to bare `سلسلة`. See guide § "The سلسلة collision." |
-| Boolean | قيمة منطقية | ar | Translated fully; see guide § "Loanword policy." |
+| array / list | مصفوفة | ar | Exercise prose that informally says "list" for the same concept as "array" also uses `مصفوفة`; see `global/terms.md`. Distinct from the "chain" physical metaphor, see below. Array sense: feminine; plural مصفوفات. |
+| variable (the concept, in prose) | متغير / المتغيرات | ar | Only the concept explained in prose is translated. A literal variable *name* used in a code sample (e.g. `leftPosition`) is a code identifier and stays in English, per the "Keep in English" table below; the two are not the same thing. |
+| index | فهرس | ar | Distinct from `مؤشر` (pointer); do not confuse the two. Masculine; plural فهارس. |
+| string | سلسلة نصية | ar | Always the full qualified compound; never shortened to bare `سلسلة`. See guide § "The سلسلة collision." Feminine; plural سلاسل نصية. |
+| Boolean | قيمة منطقية | ar | Translated fully; see guide § "Loanword policy." Feminine; plural قيم منطقية. |
 
 ### Functions & control flow
 
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
-| if statement | جملة شرطية | ar | |
-| expression | تعبير | ar | Distinct from "statement" below; an expression evaluates to a value. |
-| operator | عامل | ar | e.g. `عوامل المقارنة` (comparison operators). Distinct from `معامل` (parameter); do not confuse the two despite the visual similarity. |
+| if statement | جملة شرطية | ar | Feminine; plural جمل شرطية. |
+| expression | تعبير | ar | Distinct from "statement" below; an expression evaluates to a value. Masculine; plural تعبيرات. |
+| operator | عامل | ar | e.g. `عوامل المقارنة` (comparison operators). Distinct from `معامل` (parameter); do not confuse the two despite the visual similarity. Masculine; plural عوامل. |
 | statement (executable) | عبارة | ar | The imperative sense: a line of code that does something and gets executed. Kept distinct from `جملة شرطية` (if statement) and from `تعبير` (expression). |
 | statement (logical claim) | قضية | ar | The proposition sense: a claim that is true or false. Pick by meaning, not by the English word; kept distinct from `عبارة` above. |
-| function | دالة | ar | The *keyword* `function` in code stays English; the concept in prose is `دالة`. |
-| parameter | معامل | ar | The declaration-site name. Distinct from `عامل` (operator); do not confuse the two. |
-| argument | وسيط | ar | The call-site value. |
-| brackets (the two after a function name) | الهلالان (الهلالَين) | ar | The round pair `()` written after a function name to call it. Arabic has a dual, so use it: nominative `الهلالان`, oblique `الهلالَين` ("كتبت `move` ثم الهلالَين"). Confirmed by humam-hamdan (t/470/16): `()` is `هلالان`, not `قوسان`, since `قوس` is reserved for `{}` in the Brackets table below. |
+| function | دالة | ar | The *keyword* `function` in code stays English; the concept in prose is `دالة`. Feminine; plural دوال. |
+| parameter | معامل | ar | The declaration-site name. Distinct from `عامل` (operator); do not confuse the two. Masculine; plural معاملات. |
+| argument | وسيط | ar | The call-site value. Masculine; plural وسائط. |
+| brackets (the two after a function name) | الأقواس الهلالية (الأقواس الهلالَين) | ar | The round pair `()` written after a function name to call it. Arabic has a dual, so use it where the pair is meant: `الأقواس الهلالية`, oblique `الأقواس الهلالَين` ("كتبت `move` ثم الأقواس الهلالَين"). Set by mirina (t/470/32), overriding humam-hamdan's earlier bare `الهلالان`: the generic head-word is `قوس`/`أقواس` for every bracket type, with the shape as a qualifier. See the Brackets table below. |
 
 ### Loops, state & program flow
 
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
-| interpreter | مفسّر | ar | **A person doing a job, not a program**: Jiki *is* the interpreter ("مهمته أن يفسّر الكود"). Plural `مفسّرات`; possessive `مفسّرك` (your interpreter). Related verb `يفسّر`. |
-| instruction (given to Jiki) | تعليمة / تعليمات | ar | Plural `تعليمات` is the natural form in prose ("إعطاء المفسّر التعليمات الصحيحة"). Everyday word; do not use the formal/legal-register `أمر` or `توجيه`. |
-| (programming) language | لغة (البرمجة) | ar | Used both for "programming language" (`لغات البرمجة`) and for the "language a computer understands" framing (`بلغة يفهمها الحاسوب`). Never the transliteration. |
-| assignment | إسناد | ar | Use `إسناد` consistently, not the near-synonym `تعيين`. |
-| exception | استثناء | ar | Kept distinct from `خطأ` (error); an exception is the specific catchable runtime event. |
+| interpreter | مفسّر | ar | **A person doing a job, not a program**: Jiki *is* the interpreter ("مهمته أن يفسّر الكود"). Plural `مفسّرات`; possessive `مفسّرك` (your interpreter). Related verb `يفسّر`. Grammatically masculine, though usable for a person of either gender. |
+| instruction (given to Jiki) | تعليمة / تعليمات | ar | Plural `تعليمات` is the natural form in prose ("إعطاء المفسّر التعليمات الصحيحة"). Everyday word; do not use the formal/legal-register `أمر` or `توجيه`. Feminine. |
+| (programming) language | لغة (البرمجة) | ar | Used both for "programming language" (`لغات البرمجة`) and for the "language a computer understands" framing (`بلغة يفهمها الحاسوب`). Never the transliteration. Feminine; plural لغات برمجة. |
+| assignment | إسناد | ar | Use `إسناد` consistently, not the near-synonym `تعيين`. Masculine; plural إسنادات. |
+| exception | استثناء | ar | Kept distinct from `خطأ` (error); an exception is the specific catchable runtime event. Masculine; plural استثناءات. |
 | for loop | `for` حلقة | ar | Keep `for` in backticks (real keyword) + `حلقة`. |
-| scope | نطاق | ar | Translated fully. |
-| class | صنف | ar | Standardise on `صنف`; do not use the near-synonym `فئة`. |
+| scope | نطاق | ar | Translated fully. Masculine; plural نطاقات. |
+| class | صنف | ar | Standardise on `صنف`; do not use the near-synonym `فئة`. Masculine; plural أصناف. |
 
 ### Tooling & engineering
 
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
-| CLI (the concept) | واجهة سطر الأوامر | ar | Where the source `<define>`s it, explain as `واجهة سطر الأوامر (command-line interface)`; may shorten to `سطر الأوامر` after. |
+| CLI (the concept) | واجهة سطر الأوامر | ar | Where the source `<define>`s it, explain as `واجهة سطر الأوامر (command-line interface)`; may shorten to `سطر الأوامر` after. Feminine; plural واجهات سطر الأوامر. |
 
 ### Platform & curriculum vocabulary
 
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
-| course | دورة | ar | The whole Jiki course the learner is taking ("في هذه الدورة، مفسّرك هو Jiki"). Keep distinct from `درس` (lesson) and `منهج` (curriculum). |
+| course | دورة | ar | The whole Jiki course the learner is taking ("في هذه الدورة، مفسّرك هو Jiki"). Keep distinct from `درس` (lesson) and `منهج` (curriculum). Feminine; plural دورات. |
 
 ## Keep in English
 
@@ -89,7 +90,7 @@ rather than keeping it in English.
 
 | Term | Arabic gloss (on `<define>`) | Notes |
 |------|-------------------------------|-------|
-| API | `واجهة برمجة التطبيقات (API)` | Do not replace it with the Arabic phrase on later mentions; keep the Latin acronym in running prose after it is glossed once. |
+| API | `واجهة برمجة التطبيقات (API)` | Do not replace it with the Arabic phrase on later mentions; keep the Latin acronym in running prose after it is glossed once. Feminine; plural واجهات برمجة التطبيقات. |
 | JavaScript, Python, React | (no gloss) | Product/language names. |
 | Debug, Test | (no gloss) | As keywords/technical tokens. |
 | Bug, Frontend, Backend | (no gloss) | |
@@ -103,30 +104,158 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 
 | English metaphor | Arabic rendering | Notes |
 |-------------------|-------------------|-------|
-| box (value container) | صندوق | |
+| box (value container) | صندوق | Masculine; plural صناديق. |
 | chain (array metaphor) | سلسلة الحلقات | Always the full qualified compound ("chain of links/rings"); never shortened to bare `سلسلة`. See guide § "The سلسلة collision" for why this qualifier is mandatory. |
-| input slot | فتحة الإدخال | |
-| return chute | مزلقة الإخراج | |
-| machine (function metaphor) | آلة | |
-| shelves (storage) | رفوف | |
-| board / whiteboard | سبورة | **One object, one word**: the board the learner writes instructions on for Jiki to follow, and the board a function keeps its own instructions and notes on, are the same object and take the same word. Do not write `السبورة البيضاء`, and do not use `لوح`. |
-| warehouse (Jiki's warehouse) | مستودع | Where Jiki hangs out and keeps his machine shelf. |
-| crank (machine crank) | مقبض | The handle on a machine; the action of cranking it is `يدير المقبض` (turns the handle). Not the transliteration `كرنك`. |
+| input slot | فتحة الإدخال | Feminine; plural فتحات إدخال. |
+| return chute | مجرى الإخراج | |
+| machine (function metaphor) | آلة | Feminine; plural آلات. |
+| shelves (storage) | رفوف | Masculine; singular رف. |
+| board / whiteboard | سبورة | **One object, one word**: the board the learner writes instructions on for Jiki to follow, and the board a function keeps its own instructions and notes on, are the same object and take the same word. Do not write `السبورة البيضاء`, and do not use `لوح`. Feminine; plural سبورات. |
+| warehouse (Jiki's warehouse) | مستودع | Where Jiki hangs out and keeps his machine shelf. Masculine; plural مستودعات. |
+| crank (machine crank) | مقبض | The handle on a machine; the action of cranking it is `يدير المقبض` (turns the handle). Not the transliteration `كرنك`. Masculine; plural مقابض. |
 
 ## Brackets
 
-Confirmed by humam-hamdan (t/470/16): each bracket type gets its own word, no shared default.
+Set by mirina (t/470/32), replacing the earlier humam-hamdan scheme (t/470/16). Every bracket
+type shares one head-word and is distinguished by a qualifier naming its shape, matching the
+English pattern (`bracket` + shape) and the usage of Arabic educational and technical sources.
+**Never use a bare `هلال` or a bare `معقوف` on its own**, and never use `قوس` alone to mean `{}`.
+
+Generic, when no specific type is meant: singular `قوس` (masculine), the pair `القوسان`, plural
+`أقواس` / definite `الأقواس`.
 
 | Glyph | Arabic | Notes |
 |-------|--------|-------|
-| `()` | هلال · هلالان (dual: هلالَين) | See the `brackets (the two after a function name)` row above; this is the pair after a function call. |
-| `[]` | معقوف · معقوفان (dual: معقوفَين) | |
-| `{}` | قوس · قوسان (dual: قوسَين) | Not `مجعد`. |
-| `<>` | قوس زاوي | Not addressed by t/470/16; kept as previously agreed. |
+| `()` | الأقواس الهلالية (dual: الأقواس الهلالَين) | Parentheses / round brackets. See the `brackets (the two after a function name)` row above; that is this pair after a function call. |
+| `[]` | الأقواس المربعة | Square brackets. Note this is a **swap** against the old scheme, where `معقوف` meant `[]`. |
+| `{}` | الأقواس المعقوفة | Curly braces. Note this is a **swap** against the old scheme, where `معقوف` meant `[]` and `قوس` alone meant `{}`. Not `مجعد`, and not the descriptive `المنحنية`/`الحاضنات`. |
+| `<>` | الأقواس الزاوية | Angle brackets. |
 
 ---
 
 ## Decision log
+
+### 2026-08-22: brackets restructured to `قوس` + shape qualifier, overriding the 2026-08-08 scheme (t/470, post 32)
+
+**Decided by:** project owner iHiD, resolving a direct conflict between two native speakers
+in mirina's favour. The linguistic case is mirina's (https://forum.jiki.io/t/470/32); the
+call to adopt it over humam-hamdan's earlier decision (https://forum.jiki.io/t/470/16) is
+iHiD's, made explicitly because the two proposals could not both stand and we had told the
+thread (post 34) we would not pick a side unilaterally. **Both humam-hamdan's rows and this
+override are native-speaker input; this entry exists so it is on the record that the earlier
+rows were replaced by an owner decision, not quietly dropped.**
+
+#### What changed
+
+| Glyph | Was (humam-hamdan, 2026-08-08) | Now (mirina) |
+|-------|-------------------------------|--------------|
+| `()` | هلال · هلالان (dual: هلالَين) | الأقواس الهلالية (dual: الأقواس الهلالَين) |
+| `[]` | معقوف · معقوفان | الأقواس المربعة |
+| `{}` | قوس · قوسان | الأقواس المعقوفة |
+| `<>` | قوس زاوي | الأقواس الزاوية |
+
+Plus a generic baseline the old scheme deliberately did not have: singular `قوس`, the pair
+`القوسان`, plural `أقواس` / `الأقواس`, for use when no specific type is meant.
+
+**Two of these are swaps, not replacements.** `معقوف` meant `[]` under the old scheme and
+means `{}` under the new one, and `قوس` alone meant `{}` and is now the generic head-word for
+all four. Any future edit touching bracket wording has to read the surrounding glyph rather
+than pattern-match the word.
+
+#### mirina's reasoning (t/470/32)
+
+She rejected the premise of humam-hamdan's argument directly: "I do not agree with this
+translation or with the argument put forward by humam-hamdan (t/470/16) against translating
+'Brackets' as 'قوس' because the word should be reserved for 'Curly brackets.' This argument
+is not based on any objective evidence." Her positive case:
+
+- `الهلالان` is real, but its register is grammar and classical typography, not programming:
+  "in educational and technical resources, it is systematically replaced by 'الأقواس
+  الهلالية' (a morphological description of the bracket type). In programming, the term
+  'الهلالَين' is not used as a generic term for brackets."
+- Arabic technical writing mirrors the English two-word pattern, `bracket` + shape:
+  "قوس + specification (bracket form)".
+- `أقواس` as the generic head-word is, in her words, "the generic term validated by all
+  Arabic educational platforms (Hsoub, Elzero, Harmash, Mawdoo3), ALECSO and its ARABTERM
+  database (Rabat), and textbooks from four countries (Egypt, Morocco, the UAE, and Saudi
+  Arabia)", plus Google for Education, Arabic Wikipedia (علامات الترقيم) and the Moroccan
+  external translation group. She supplied screenshots of each.
+- She specifically warns against the bare-`الأقواس` shortcut for `{}` that Google for
+  Education permits, as "it can be a source of confusion in some Arabic-speaking countries",
+  which is why every row here keeps its qualifier.
+
+#### Why this is a correction rather than a coin-toss
+
+humam-hamdan's own post named the three types as "الهلالية والمربعة والمعقوفة", i.e. with
+exactly the shape adjectives mirina uses, and only then assigned bare nouns that put
+`معقوف` on `[]` and `قوس` on `{}`. His descriptive naming and his assigned nouns disagree
+with each other about which shape `معقوف` denotes; mirina's scheme is consistent with the
+naming both of them started from.
+
+#### mirina's own framing of the disagreement (t/470/36)
+
+She later softened the conflict herself, suggesting both schemes are correct in their own
+register: humam-hamdan's bare nouns read as real-world developer shorthand (short forms are
+preferred in inline code comments, partly to dodge RTL/LTR rendering bugs around `{}`),
+while hers is the formal documentation and teaching register. She asked us to decide which
+context Jiki is. **Jiki is teaching material for people who have never programmed**, which
+is the formal/educational register, so that framing points the same way as the decision.
+
+#### Propagation
+
+Swept every published Arabic item using the old terms. The base word for true/false and
+every other open disagreement on t/470 is untouched by this.
+
+### 2026-08-21: `return chute` changed from `مزلقة الإخراج` to `مجرى الإخراج` (t/470, post 33)
+
+**Decided by:** reviewer mirina, forum t/470, post 33. She proposed replacing `مزلقة
+الإخراج` with `مجرى الإخراج`, arguing the new term is simpler and more explicit:
+`الإخراج` already illustrates "output" as "exit" in English, and `مزلقة` specifically means
+"slide" (as in a playground slide), which she felt was an unnecessary and potentially
+ambiguous physical image once paired with `الإخراج`. `مجرى` (channel/duct) keeps the
+output/exit sense without that ambiguity. Uncontested by any other reviewer on the thread
+(unlike the separate "Brackets" disagreement on the same thread, which this does not touch).
+Swept the two already-published pages using the old term (`concept/arrays`,
+`concept/dictionaries`) to match.
+
+### 2026-08-20: Grammatical gender and plurals added to existing terms (t/470, post 24)
+
+**Decided by:** reviewer mirina, forum t/470, post 24. She reviewed the existing glossary
+term by term and confirmed her proposed grammatical gender and plural form for each Arabic
+word already agreed there, without proposing any change to the word itself. This is an
+enrichment pass, not a re-decision: every word audited here already matched what was in the
+glossary; only the missing gender/plural detail was appended to each row's Notes column. A
+handful of terms she also raised turned out to be open conflicts (competing renderings, not
+missing detail on an agreed one) and are being tracked and actioned separately rather than
+folded into this batch.
+
+### 2026-08-19: Demonstratives settled on هذا/هذه/هذي only, reversing the 2026-08-08 call
+
+**Decided by:** reviewer mirina, forum t/470, post 22, following up on the earlier
+"stylistic variation" note below. She researched the short forms ذا/ذه/ذي and found they
+belong to classical/literary Arabic (العربية الفصحى), associated with religious and literary
+texts, not the living everyday language her reading group actually uses — a poor fit for
+this course's tone and its 18-35 audience. She also argued that mixing the two forms
+inconsistently reads as confusion, not variety. This supersedes the 2026-08-08 entry below:
+**always use the full هذا/هذه/هذي, never the short ذا/ذه/ذي.** Row/rule to be added to
+`guide.md`; any existing ar content using the short forms should be swept to the full forms
+next time that page is touched.
+
+### 2026-08-19: `variable` (the concept) given its own glossary row
+
+**Decided by:** reviewer mirina's question on forum t/470, post 20. She was reasonably
+confused by the "Keep in English" table listing "Variable and function names" as never
+translated, having also seen the general word "variable" translated in concept prose. Those
+are two different things: the table entry means literal code identifiers (`leftPosition`,
+`getCurrentTime`), never the CS concept explained in prose. Checked already-translated
+content (`concept/variables`, `concept/dictionaries`) and confirmed متغير/المتغيرات was
+already being used consistently for the concept, with code identifiers correctly left in
+English throughout — no actual bug, just an undocumented convention. Added a row for it,
+matching the existing `array / list` row's pattern, so the distinction is explicit rather
+than implicit. Also confirmed (checked front-end curriculum source) that Jiki teaches
+JikiScript, not Python: no `tuple` or `Set` type exists anywhere in the taught curriculum, so
+her question about those terms needing glossary rows doesn't apply — they're not concepts
+this course teaches at all.
 
 ### 2026-08-08: brackets split by type; الاقتران is a one-time gloss only; demonstrative register left to the author's judgement (t/470, t/740)
 
@@ -551,7 +680,7 @@ covered by a dated entry above (`board / whiteboard`, `interpreter`) is not repe
 |------|-----|
 | box | Plain Arabic word for a physical box (cardboard/storage box); direct and concrete. |
 | input slot | `فتحة` (opening/slot) + `الإدخال` (input, the agreed term). |
-| return chute | `مزلقة` is the everyday Arabic word for a slide (as in a playground slide), the same physical image as a vending-machine dispensing chute, + `الإخراج` (output, the agreed term). |
+| return chute | `مجرى` (channel/duct) + `الإخراج` (output, the agreed term). On 2026-08-21 this superseded the earlier `مزلقة الإخراج` ("slide"); see the dated entry at the top of this file. |
 | machine | Plain, concrete word for a machine. |
 | shelves | Plain, concrete, everyday word. |
 | warehouse | Everyday word for a warehouse. |

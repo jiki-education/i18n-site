@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/methods/page.md"
 en_md5: "37c097a81459cd2ff4ae684559bd4311"
-governance_sha: "4966529"
-content_version: "9029535b21c7"
+governance_sha: "5dae181"
+content_version: "56c96032fdf6"
 published_at: "2026-08-22"
 forum_topic_id: 1442
 ---
@@ -49,7 +49,7 @@ I metodi sono diversi dalle proprietà perché non sono elementi statici. Sono i
 
 Per ora non importa come funzionano internamente, e non dovrai costruirli per un po'. Tutto quello che devi sapere è che si usano mettendo un punto dopo il valore e poi la normale sintassi delle funzioni.
 
-Una cosa da sapere sulle stringhe è che i metodi non cambiano nulla all'interno della stringa. Per esempio, esiste un metodo `toUpperCase` (in maiuscolo) che restituisce la stringa con tutte le lettere in maiuscolo. Ma questo non cambia la stringa originale. Quella contiene ancora `"Jeremy"` scritto con la sola J maiuscola. Invece, Jiki crea una nuova stringa tutta in maiuscolo.
+Una cosa da sapere sulle stringhe è che i metodi non modificano la stringa originale. Per esempio, esiste un metodo `toUpperCase` (in maiuscolo) che restituisce una nuova stringa con tutte le lettere in maiuscolo. Ma questo non cambia la stringa di partenza: quella contiene ancora `"Jeremy"` scritto con la sola J maiuscola. Invece, Jiki crea semplicemente una nuova stringa tutta in maiuscolo.
 
 ```javascript
 const name = "Jeremy"

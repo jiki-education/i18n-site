@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/modulo/page.md"
 en_md5: "4955abecb626b8eff02ee7484e2065dd"
-governance_sha: "060f821"
-content_version: "85ff0cefc755"
+governance_sha: "d70f3ac"
+content_version: "56dd6cf25456"
 published_at: "2026-08-22"
 forum_topic_id: 1443
 ---
@@ -33,6 +33,6 @@ Stiamo dicendo, o chiedendo: «Cosa rimane quando dividiamo 10 per 4?» E la ris
 
 Uno dei motivi per cui lo usiamo spesso nel codice è che ci permette di sapere se un numero è divisibile esattamente oppure no, ed il caso più comune che vedrai è capire se un numero è pari o dispari. I numeri pari, come sai, sono tutti divisibili per due. I numeri dispari hanno sempre il resto di uno quando li dividi per due.
 
-Quindi se prendi quattro, sei o otto, dividendoli per due, non hanno alcun resto, mentre cinque, sette e nove, dividendoli per due, hanno sempre uno di resto alla fine. Quindi scrivendo `if qualcosa % 2 === 0`, stiamo dicendo: «Questo qualcosa è un numero pari?» E questo può essere utile per un sacco di cose. Immagina di creare strisce di colori diversi o di dividere una fila a metà, mandando ogni persona in una delle due direzioni mentre cammina verso di te.
+Quindi se prendi quattro, sei o otto, dividendoli per due, non hanno alcun resto, mentre cinque, sette e nove, dividendoli per due, hanno sempre resto 1 alla fine. Quindi, scrivendo `if qualcosa % 2 === 0`, stiamo dicendo: «Questo qualcosa è un numero pari?» E questo può essere utile in moltissime situazioni. Immagina di creare strisce con colori diversi, oppure di dividere una fila a metà, mandando ogni persona in una delle due direzioni mentre cammina verso di te.
 
-Una cosa da notare: potresti sentire chiamare questo operatore anche «operatore resto» (dall'inglese remainder). Modulo e resto sono praticamente identici. Ci sono alcune lievi differenze di cui probabilmente non dovrai mai preoccuparti, quindi per ora lo considereremo l'operatore modulo, che è molto più semplice.
+Una cosa da notare: potresti sentire chiamare questo operatore anche «operatore resto» (dall'inglese remainder). Modulo e resto sono praticamente identici. Ci sono alcune lievi differenze di cui probabilmente non dovrai mai preoccuparti, quindi per ora lo considereremo semplicemente l'operatore modulo, che è molto più facile da gestire.

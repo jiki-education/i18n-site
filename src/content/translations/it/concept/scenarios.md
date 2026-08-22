@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/scenarios/page.md"
 en_md5: "d5c4ee54eed8083e13f18bb7d256b86d"
-governance_sha: "82d094e"
-content_version: "de8bbf2b26bb"
+governance_sha: "dcbe257"
+content_version: "ff9f341307e4"
 published_at: "2026-08-22"
 forum_topic_id: 1449
 ---
@@ -35,7 +35,7 @@ Prendi come esempio un gioco di golf. Potresti dover variare la distanza percors
   height="400"
 />
 
-Il risultato che ti arriva passa attraverso questa funzione. Quindi in uno scenario, puoi usare la funzione `getShotLength` e questa restituirà `23`, uno swipe breve. In un altro, restituisce `70`, uno swipe lungo. In un altro ancora, restituisce `45`. Il codice deve far rotolare la palla alla distanza giusta per ogni scenario, con un solo programma, un solo insieme di codice. Dovrai usare la funzione `getShotLength` per vedere quanto è andato lontano il colpo e poi far rotolare la palla fino a quel punto.
+Il risultato che ti arriva passa attraverso questa funzione. Quindi, in uno scenario, puoi usare la funzione `getShotLength` e questa restituirà `23`, uno scorrimento breve. In un altro, restituisce `70`, uno scorrimento lungo. In un altro ancora, restituisce `45`. Il codice deve far rotolare la palla alla distanza giusta per ogni scenario, con un solo programma, un solo insieme di codice. Dovrai usare la funzione `getShotLength` per vedere quanto è andato lontano il colpo e poi far rotolare la palla fino a quel punto.
 
 ```javascript
 let distance = getShotLength()

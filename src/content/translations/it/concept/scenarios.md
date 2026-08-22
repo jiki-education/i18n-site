@@ -7,15 +7,15 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/scenarios/page.md"
 en_md5: "d5c4ee54eed8083e13f18bb7d256b86d"
-governance_sha: "93b5757"
-content_version: "27336b449bf2"
+governance_sha: "01f1bf8"
+content_version: "2ed86bca01f4"
 published_at: "2026-08-22"
 forum_topic_id: 1449
 ---
 
 Ogni esercizio presenta scenari diversi, ossia diverse situazioni che il codice deve gestire.
 
-Li vedrai come piccoli pulsanti proprio sopra l'output di ogni esercizio. Ogni pulsante si riferisce a uno scenario diverso. Devi scrivere codice che funzioni per tutti, non solo per il primo. Lascia che lo ripeta. Scrivi il codice una volta sola, ma lo stesso codice viene eseguito per ogni scenario. La differenza è che ogni scenario può essere impostato in modo leggermente diverso, oppure le funzioni che ti vengono fornite possono restituire cose leggermente diverse a seconda dello scenario in cui ti trovi.
+Li vedrai come piccoli pulsanti proprio sopra l'output di ogni esercizio. Ogni pulsante si riferisce a uno scenario diverso. Devi scrivere codice che funzioni per tutti, non solo per il primo. Lascia che lo ripeta chiaramente. Scrivi il codice una volta sola, ma lo stesso codice viene eseguito per ogni scenario. La differenza è che ogni scenario può essere impostato in modo leggermente diverso, oppure le funzioni che ti vengono fornite possono restituire cose leggermente diverse a seconda dello scenario in cui ti trovi.
 
 <img
   class="concept-image"

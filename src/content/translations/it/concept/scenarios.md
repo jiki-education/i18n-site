@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/scenarios/page.md"
 en_md5: "d5c4ee54eed8083e13f18bb7d256b86d"
-governance_sha: "01f1bf8"
-content_version: "2ed86bca01f4"
+governance_sha: "82d094e"
+content_version: "de8bbf2b26bb"
 published_at: "2026-08-22"
 forum_topic_id: 1449
 ---
@@ -25,7 +25,7 @@ Li vedrai come piccoli pulsanti proprio sopra l'output di ogni esercizio. Ogni p
   height="318"
 />
 
-Prendi come esempio un gioco di golf. Potresti dover variare la distanza percorsa da una palla in base al valore restituito (_return value_ in inglese) di una funzione chiamata `getShotLength` (lunghezza del colpo), che ti dice quanto lontano ha colpito la palla il golfista. Immagina che il giocatore abbia dovuto fare uno swipe sul telefono per indicare la distanza del colpo.
+Prendi come esempio un gioco di golf. Potresti dover variare la distanza percorsa da una palla in base al valore restituito (_return value_ in inglese) di una funzione chiamata `getShotLength` (lunghezza del colpo), che ti dice quanto lontano ha colpito la palla il golfista. Immagina che il giocatore abbia dovuto fare uno swipe sul telefono per indicare la distanza del colpo: quel gesto viene trasformato in un valore, e `getShotLength` te lo restituisce così che tu possa usarlo nel codice.
 
 <img
   class="concept-image"

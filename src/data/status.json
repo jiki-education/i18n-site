@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-22",
-  "governance_sha": "ebe8420",
-  "approved": 873,
+  "governance_sha": "67d51a8",
+  "approved": 874,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 58,
+      "approved": 59,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4085,8 +4085,8 @@
         },
         {
           "key": "concept/animation",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1786,
+          "status": "approved"
         },
         {
           "key": "concept/arithmetic",

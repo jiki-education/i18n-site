@@ -64,7 +64,7 @@ export const LANGUAGES: Record<string, LanguageMeta> = {
     comingSoon: "Em breve",
     family: "pt"
   },
-  "pt-pt": {
+  "pt-PT": {
     name: "European Portuguese",
     nativeName: "Português (Portugal)",
     dir: "ltr",
@@ -327,7 +327,7 @@ const FLAGS: Record<string, string> = {
   nl: "🇳🇱",
   pl: "🇵🇱",
   "pt-BR": "🇧🇷",
-  "pt-pt": "🇵🇹",
+  "pt-PT": "🇵🇹",
   ro: "🇷🇴",
   ru: "🇷🇺",
   sr: "🇷🇸",

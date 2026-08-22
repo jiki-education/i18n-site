@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "digital-root"
 title: "Digital Root"
-en_md5: "554e48db79141f8304144e152643a47c"
+en_md5: "defdd57bb547464b7d3e0e8c5aefb5dc"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/digital-root"
-captured_at: "2026-08-01"
+captured_at: "2026-08-22"
 ---
 
 The <define>digital root</define> of a number is what you get when you keep adding its digits together until only a single digit is left.

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-22",
-  "governance_sha": "7d00934",
-  "approved": 880,
+  "governance_sha": "2d06473",
+  "approved": 886,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 64,
+      "approved": 70,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4095,8 +4095,8 @@
         },
         {
           "key": "concept/arrays-group",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1788,
+          "status": "approved"
         },
         {
           "key": "concept/break",
@@ -4115,13 +4115,13 @@
         },
         {
           "key": "concept/colors-group",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1788,
+          "status": "approved"
         },
         {
           "key": "concept/conditionals-group",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1788,
+          "status": "approved"
         },
         {
           "key": "concept/continue",
@@ -4145,8 +4145,8 @@
         },
         {
           "key": "concept/dictionaries-group",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1788,
+          "status": "approved"
         },
         {
           "key": "concept/function-composition",
@@ -4155,8 +4155,8 @@
         },
         {
           "key": "concept/functions-group",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1788,
+          "status": "approved"
         },
         {
           "key": "concept/hsl",
@@ -4180,8 +4180,8 @@
         },
         {
           "key": "concept/loops-group",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1788,
+          "status": "approved"
         },
         {
           "key": "concept/methods",

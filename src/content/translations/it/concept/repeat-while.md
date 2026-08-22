@@ -7,12 +7,13 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/repeat-while/page.md"
 en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
-governance_sha: "494ce4b"
-content_version: "64469b7ff49e"
-published_at: "2026-08-10"
+governance_sha: "1daa89a"
+content_version: "a105a1c1f535"
+published_at: "2026-08-22"
+forum_topic_id: 1448
 ---
 
-Fino ad ora, quando hai usato il ciclo repeat, hai sempre specificato un numero che indica quante volte ripetere. Ripeti cinque volte, 10 volte, 40 volte. A volte hai usato anche una variabile per farlo. Ma hai sempre detto a Jiki esattamente quante volte ripetere il ciclo. Tuttavia, a volte non sappiamo in anticipo quante volte ripetere. Pensa al labirinto. All'inizio del corso, hai risolto il labirinto scrivendo le mosse specifiche. Potevi vedere il labirinto, contare i passi e scrivere il numero giusto di mosse.
+Fino ad ora, quando hai usato il ciclo repeat, hai sempre specificato un numero che indica quante volte ripetere. Ripeti cinque volte, 10 volte, 40 volte. A volte hai usato anche una variabile per farlo. Ma hai sempre detto a Jiki esattamente quante volte ripetere il ciclo. Tuttavia, a volte non sappiamo in anticipo quante volte ripetere. Pensa al labirinto. All'inizio del corso, hai risolto il labirinto scrivendo le mosse specifiche. Potevi vedere il labirinto, contare i passi e scrivere il numero corretto di mosse.
 
 <img
   class="concept-image"

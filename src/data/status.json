@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-08-21",
-  "governance_sha": "c87f000",
-  "approved": 872,
+  "published_at": "2026-08-22",
+  "governance_sha": "ebe8420",
+  "approved": 873,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -7072,7 +7072,7 @@
       "stage": "refining",
       "live": false,
       "category_slug": "i18n-hi",
-      "approved": 19,
+      "approved": 20,
       "disapproved": 0,
       "total": 161,
       "items": [
@@ -7428,8 +7428,8 @@
         },
         {
           "key": "exercise/golf-rolling-ball-state",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1785,
+          "status": "approved"
         },
         {
           "key": "exercise/finish-wall",

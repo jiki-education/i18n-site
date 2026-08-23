@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/scope/page.md"
 en_md5: "4d5fc2d1d304725660102e9aaceea4c3"
-governance_sha: "7194d23"
-content_version: "029551b5fa55"
+governance_sha: "6781d92"
+content_version: "8c06fc43390b"
 published_at: "2026-08-23"
 forum_topic_id: 1452
 ---
@@ -45,7 +45,9 @@ Beh, si scopre che il codice è corretto. Questo è JavaScript perfettamente val
 
 Lo scope è qualcosa che all'inizio probabilmente sembrerà abbastanza semplice, ma ti garantisco che ti darà problemi per il resto della tua carriera. Anche gli sviluppatori più esperti incontrano problemi con lo scope e JavaScript è uno dei linguaggi più complicati in questo senso. Te lo dico perché quando incontrerai problemi legati allo scope, non devi sentirti in colpa. Ma soprattutto: presta molta attenzione a questa parte, perché è davvero importante.
 
-Quando vedi una parentesi graffa nel codice, crea quello che si chiama un nuovo scope. Cosa significa? Beh, puoi immaginare che Jiki crei un nuovo piccolo insieme di scaffali nel suo laboratorio ogni volta che vede una parentesi graffa. E tutte le scatole che crea mentre lavora, eseguendo codice dentro quelle parentesi graffe, quelle scatole, quelle nuove scatole finiscono sul nuovo piccolo insieme di scaffali, non su quelli principali.
+Quando vedi una parentesi graffa nel codice, crea quello che si chiama un nuovo scope. Cosa significa? Immagina che Jiki crei un nuovo insieme di scaffali nel suo laboratorio ogni volta che vede una parentesi graffa.
+
+Tutte quelle scatole che crea mentre esegue il codice dentro quelle parentesi graffe finiscono su quel nuovo insieme di scaffali, non su quelli principali.
 
 <img
   class="concept-image"

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/building-arrays/page.md"
 en_md5: "c3358ca032f965cf058bb72df37ffbd4"
-governance_sha: "af41eb2"
+governance_sha: "0937a53"
 content_version: "9b337d6577a3"
-published_at: "2026-08-21"
+published_at: "2026-08-23"
+forum_topic_id: 1817
 ---
 
 এতদিন আপনি এমন অ্যারে নিয়ে কাজ করেছেন যার মান শুরুতেই ঠিক করে দেওয়া থাকত, আর বদলাত না। কিন্তু যদি সময়ের সাথে সাথে অ্যারেতে নতুন জিনিস যোগ করতে চান, তাহলে? এর জন্যই অ্যারের একটি মেথড আছে, যার নাম `push` (যার মানে "ঠেলে ঢোকানো")।

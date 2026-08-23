@@ -7,14 +7,15 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/updating-dictionaries/page.md"
 en_md5: "5dfff7e37d863711be783b2fbe0873a4"
-governance_sha: "b4a6aaa"
-content_version: "a2ec09ae2f05"
-published_at: "2026-08-12"
+governance_sha: "1ed00e8"
+content_version: "8c8f61bf8313"
+published_at: "2026-08-23"
+forum_topic_id: 1463
 ---
 
 Sai come creare un dizionario ed ottenere valori al suo interno. Ma cosa succede se i dati cambiano? Ad un certo punto, invecchierò. Non avrò più `42`, ma `43`.
 
-Come aggiorniamo il dizionario? Beh, usiamo un metodo molto simile a quello per trovare qualcosa. Sai che per ottenere un valore usiamo le parentesi quadre per estrarlo. Beh, possiamo anche usare le parentesi quadre seguite dal segno di uguale per aggiornare il dizionario. Jiki va alla scatola `person`, tira fuori la pagina del taccuino, trova la chiave `"age"`, poi cancella il `42` che c'era e scrive `43` al suo posto, ed infine la pagina del taccuino torna dentro la scatola. Questo modifica il dizionario stesso.
+Come aggiorniamo il dizionario? Usiamo un metodo molto simile a quello per trovare qualcosa. Sai che per ottenere un valore usiamo le parentesi quadre. Possiamo anche usare le parentesi quadre seguite dal segno di uguale per aggiornare il dizionario. Jiki va alla scatola `person`, tira fuori la pagina del taccuino, trova la chiave `"age"`, cancella il `42` che c'era e scrive `43` al suo posto, poi rimette la pagina nella scatola. Questo aggiorna il dizionario stesso.
 
 ```javascript
 person["age"] = 43

@@ -7,14 +7,15 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/string-iteration/page.md"
 en_md5: "09f399cc3f52b89380d3ed23fc6be513"
-governance_sha: "83fc3a4"
-content_version: "b6ba16497122"
-published_at: "2026-08-12"
+governance_sha: "692b687"
+content_version: "7fabf8b105b9"
+published_at: "2026-08-23"
+forum_topic_id: 1459
 ---
 
 Puoi accedere ad una singola lettera di una stringa usando le parentesi quadre. Ora vediamo come scorrere una stringa, estraendo ciascuna lettera una alla volta.
 
-E per farlo, abbiamo bisogno di un nuovo tipo di ciclo. Finora abbiamo usato il ciclo repeat, ed ora useremo qualcosa chiamato ciclo `for of`. Sono due nuove parole chiave, `for` e `of`.
+Per farlo, abbiamo bisogno di un nuovo tipo di ciclo. Finora abbiamo usato il ciclo repeat, e ora useremo qualcosa chiamato ciclo `for of`: sono due nuove parole chiave, `for` e `of`.
 
 La parola chiave `for` è una di quelle che incontreremo in diversi posti man mano che andiamo avanti. Può stare da sola, oppure può essere abbinata a `in` o `of`. Per ora, concentriamoci su quest'ultima, `of`.
 

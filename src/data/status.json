@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-23",
-  "governance_sha": "c46c65f",
-  "approved": 899,
+  "governance_sha": "0937a53",
+  "approved": 900,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -9937,7 +9937,7 @@
       "stage": "refining",
       "live": false,
       "category_slug": "i18n-nl",
-      "approved": 9,
+      "approved": 10,
       "disapproved": 0,
       "total": 33,
       "items": [
@@ -10024,7 +10024,7 @@
         {
           "key": "exercise/fix-wall",
           "topic_id": null,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/snowman-basic",

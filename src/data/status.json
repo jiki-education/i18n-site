@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-23",
-  "governance_sha": "819cac7",
-  "approved": 902,
+  "governance_sha": "fa4d2b4",
+  "approved": 903,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -7072,7 +7072,7 @@
       "stage": "refining",
       "live": false,
       "category_slug": "i18n-hi",
-      "approved": 20,
+      "approved": 21,
       "disapproved": 0,
       "total": 161,
       "items": [
@@ -7423,8 +7423,8 @@
         },
         {
           "key": "exercise/plant-the-flowers",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1783,
+          "status": "approved"
         },
         {
           "key": "exercise/golf-rolling-ball-state",

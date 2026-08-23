@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/logical-and/page.md"
 en_md5: "cef8d76c4235e85573c3eeede294ab72"
-governance_sha: "af41eb2"
-content_version: "d8c3c98338eb"
-published_at: "2026-08-21"
+governance_sha: "ee4ebd8"
+content_version: "2cbd1cbe8958"
+published_at: "2026-08-23"
 ---
 
 যদি আমি আপনাকে বলি, কারও বয়স ২০-এর বেশি হলে তবেই দরজা খুলবেন, তাহলে কী করতে হবে তা আপনি সম্ভবত জানেন। কিন্তু যদি আপনাকে যাচাই করতে হয় যে কারও বয়স ২০-এর বেশি _এবং_ সে সঠিক পোশাক পরে আছে কি না? অর্থাৎ আপনাকে একসাথে দুটি আলাদা শর্ত যাচাই করতে হবে। সেটা কীভাবে করবেন?
@@ -26,7 +26,7 @@ if (age > 20 && outfit === "disco") {
 }
 ```
 
-and এবং or, দুটির ক্ষেত্রেই একটি বিষয় মানুষকে হোঁচট খাওয়ায়, আর তা হলো and/or-এর প্রতিটি পাশে একটি সম্পূর্ণ তুলনা থাকতে হবে। তাই দুই পাশে একই ভ্যারিয়েবলের তুলনা করলেও সেটি আবার লিখতে হবে। আপনি `if age is greater than 13 and less than 20` লিখতে পারবেন না। আপনাকে `if age is greater than 13 and age is less than 20` লিখতে হবে। দুটি পাশকেই সম্পূর্ণ তুলনা হতে হবে।
+and এবং or, দুটির ক্ষেত্রেই একটি বিষয় মানুষকে বিভ্রান্ত করে, আর তা হলো and/or-এর প্রতিটি পাশে একটি সম্পূর্ণ তুলনা থাকতে হবে। তাই দুই পাশে একই ভ্যারিয়েবলের তুলনা করলেও সেটি আবার লিখতে হবে। আপনি `if age is greater than 13 and less than 20` লিখতে পারবেন না। আপনাকে `if age is greater than 13 and age is less than 20` লিখতে হবে। দুটি পাশকেই সম্পূর্ণ তুলনা হতে হবে।
 
 ```javascript
 if (age > 13 && age < 20)

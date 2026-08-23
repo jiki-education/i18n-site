@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/scope/page.md"
 en_md5: "4d5fc2d1d304725660102e9aaceea4c3"
-governance_sha: "6781d92"
-content_version: "8c06fc43390b"
+governance_sha: "26d5546"
+content_version: "5646f252b217"
 published_at: "2026-08-23"
 forum_topic_id: 1452
 ---
@@ -67,7 +67,7 @@ E quando Jiki arriva alla corrispondente parentesi graffa di chiusura, butta via
   height="237"
 />
 
-Quindi ogni volta che abbiamo un ciclo come questo, possiamo creare scatole che durano solo quanto ogni iterazione del ciclo. Le scatole `left` (sinistra) e `top` (superiore) che vedi qui, durano solo fino a quando raggiungiamo la parentesi graffa di chiusura, e poi vengono buttate via. E Jiki raggiunge quella parentesi graffa di chiusura ogni volta che il ciclo viene eseguito. Quindi sono 10 volte in questo programma. Quindi 10 volte creerà una scatola chiamata `left` e la butterà via di nuovo.
+Quindi ogni volta che abbiamo un ciclo come questo, possiamo creare scatole che durano solo quanto ogni iterazione del ciclo. Le scatole `left` (sinistra) e `top` (superiore) che vedi qui durano solo fino a quando si raggiunge la parentesi graffa di chiusura, e poi vengono buttate via. Quelle parentesi graffe di chiusura che Jiki raggiunge vengono incontrate ogni volta che il ciclo viene eseguito. Quando questo accade 10 volte in questo programma, per 10 volte verrà creata una scatola chiamata `left` e poi verrà buttata via di nuovo.
 
 <img
   class="concept-image"

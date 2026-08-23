@@ -1,6 +1,6 @@
 {
   "published_at": "2026-08-23",
-  "governance_sha": "fa4d2b4",
+  "governance_sha": "8d24ba8",
   "approved": 903,
   "disapproved": 1,
   "total": 3192,
@@ -4110,7 +4110,7 @@
         },
         {
           "key": "concept/colors",
-          "topic_id": null,
+          "topic_id": 1849,
           "status": "pending"
         },
         {

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/logical-or/page.md"
 en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
-governance_sha: "af41eb2"
-content_version: "ac31d4884c99"
-published_at: "2026-08-21"
+governance_sha: "820b2ce"
+content_version: "18dfb7a4fa7d"
+published_at: "2026-08-23"
 ---
 
 আমরা `or`-ও ব্যবহার করতে পারি, আর দুঃখের বিষয়, এবারও JavaScript-এ or বোঝানোর জন্য সুন্দর কোনো কিওয়ার্ড নেই। বদলে, or বোঝাতে আমাদের পাশাপাশি বসানো এই দুটি খাড়া দাগ (ইংরেজিতে _bars_) ব্যবহার করতে হয়। দেখতে অদ্ভুত মনে হয়, কিন্তু আসলে ব্যাপারটা তেমন কিছু নয়। আপনি ঠিকই অভ্যস্ত হয়ে যাবেন।
@@ -30,7 +30,7 @@ if (age > 20 || outfit === "disco") {
   height="400"
 />
 
-and আর or, দুটির ক্ষেত্রেই একটি ব্যাপার আছে যেখানে অনেকে হোঁচট খান: and/or-এর দুই পাশের প্রতিটি অংশকে একটি সম্পূর্ণ তুলনা হতে হবে। তাই দুই পাশে একই ভ্যারিয়েবল নিয়ে তুলনা করলেও সেটি আবার লিখতে হবে। আপনি `if age is less than 13 or greater than 20` লিখতে পারবেন না। লিখতে হবে `if age is less than 13 or age is greater than 20`. দুই পাশেই সম্পূর্ণ তুলনা থাকা চাই।
+and এবং or, দুটির ক্ষেত্রেই একটি বিষয় মানুষকে বিভ্রান্ত করে, আর তা হলো and/or-এর প্রতিটি পাশে একটি সম্পূর্ণ তুলনা থাকতে হবে। তাই দুই পাশে একই ভ্যারিয়েবল নিয়ে তুলনা করলেও সেটি আবার লিখতে হবে। আপনি `if age is less than 13 or greater than 20` লিখতে পারবেন না। লিখতে হবে `if age is less than 13 or age is greater than 20`. দুই পাশেই সম্পূর্ণ তুলনা থাকা চাই।
 
 ```javascript
 if (age < 13 || age > 20)

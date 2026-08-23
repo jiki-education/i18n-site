@@ -7,13 +7,14 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.bn.yml"
 en_md5: "c5baf864e491a2f763a346af05470f74"
-governance_sha: "9b3923b"
-content_version: "9c4e7c38f1fd"
-published_at: "2026-08-21"
-messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.premium","rows":[{"key":"subject","english":"Get More Out of Jiki (and help us out)","target":"জিকি থেকে আরও বেশি কিছু পান (আর আমাদেরও সাহায্য করুন)"},{"key":"preview","english":"We made Jiki free because we want it to be accessible to everyone regardless","target":"জিকিকে আমরা ফ্রি রেখেছি, কারণ আমরা চাই এটা সবার নাগালের মধ্যে থাকুক"},{"key":"greeting","english":"Hi there,","target":"স্বাগতম!"}]}]}]
+governance_sha: "0db5557"
+content_version: "0759e296b94b"
+published_at: "2026-08-23"
+forum_topic_id: 1791
+messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.premium","rows":[{"key":"subject","english":"Get More Out of Jiki (and help us out)","target":"জিকি থেকে আরও বেশি কিছু পান (আর আমাদেরও সাহায্য করুন)"},{"key":"preview","english":"We made Jiki free because we want it to be accessible to everyone regardless","target":"জিকিকে আমরা ফ্রি রেখেছি, কারণ আমরা চাই এটা সবার সাধ্যের মধ্যে থাকুক"},{"key":"greeting","english":"Hi there,","target":"স্বাগতম!"}]}]}]
 ---
 
-জিকিকে আমরা ফ্রি রেখেছি, কারণ আর্থিক অবস্থা যেমনই হোক, আমরা চাই এটা **সবার নাগালের মধ্যে** থাকুক। শত শত ঘণ্টার অনুশীলনী আর ভিডিও সবাই পান, বিনিময়ে কিছুই চাওয়া হয় না।
+জিকিকে আমরা ফ্রি রেখেছি, কারণ আর্থিক অবস্থা যেমনই হোক, আমরা চাই এটা **সবার সাধ্যের মধ্যে** থাকুক। শত শত ঘণ্টার অনুশীলনী আর ভিডিও সবাই পান, বিনিময়ে কিছুই চাওয়া হয় না।
 
 কিন্তু **জিকি চালাতে টাকা লাগে**, আর আমাদেরও ঘরভাড়া দিতে হয়, খাবার (🍜) আর ক্যাফেইনের (☕) খরচ চালাতে হয়। তাই আমরা একটা প্রিমিয়াম টিয়ার যোগ করেছি, যেখানে কিছু বাড়তি সুবিধা আছে যেগুলো আমার বিশ্বাস আপনাকে সত্যিই সাহায্য করবে:
 - **জিকিকে জিজ্ঞাসা করুন**: আমাদের AI চ্যাট, যা আটকে গেলে আপনাকে দ্রুত বের করে আনবে বা আপনার প্রশ্নগুলো খুঁটিয়ে দেখতে সাহায্য করবে।

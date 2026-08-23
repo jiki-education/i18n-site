@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-23",
-  "governance_sha": "dedf66b",
-  "approved": 904,
+  "governance_sha": "42c1ac1",
+  "approved": 905,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 83,
+      "approved": 84,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4130,8 +4130,8 @@
         },
         {
           "key": "concept/creating-functions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1850,
+          "status": "approved"
         },
         {
           "key": "concept/creating-functions-with-inputs",

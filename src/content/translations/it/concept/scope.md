@@ -7,12 +7,15 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/scope/page.md"
 en_md5: "4d5fc2d1d304725660102e9aaceea4c3"
-governance_sha: "9702569"
-content_version: "e00df089eb2a"
-published_at: "2026-08-12"
+governance_sha: "6c9b083"
+content_version: "30ea50934637"
+published_at: "2026-08-23"
+forum_topic_id: 1452
 ---
 
-Immagina un codice che disegna un cerchio in un punto diverso ogni volta che viene eseguito, e vogliamo disegnare 10 cerchi in punti diversi. Potremmo combinare questo con un ciclo. Ma per chi sta prestando molta attenzione, potreste aver notato qualcosa di strano qui.
+Immagina un pezzo di codice che disegna un cerchio in un punto diverso ogni volta che viene eseguito, e che vogliamo disegnare 10 cerchi in posizioni diverse. Potremmo combinarlo con un ciclo.
+
+Ma chi sta seguendo con molta attenzione avrà forse notato qualcosa di strano qui.
 
 ```javascript
 repeat(10) {

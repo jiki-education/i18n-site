@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/string-indexing/page.md"
 en_md5: "cd31e0366b3090b358494667003f54c9"
-governance_sha: "2d45ae8"
-content_version: "b53f7c90188a"
+governance_sha: "7e58296"
+content_version: "234327c7a2fb"
 published_at: "2026-08-23"
 forum_topic_id: 1455
 ---
@@ -31,7 +31,7 @@ Ora, questa cosa di partire da zero è piuttosto strana, ed onestamente la vita 
 
 Quindi, se vogliamo estrarre una lettera in una posizione specifica, possiamo usare le parentesi quadre con il numero all'interno.
 
-Quindi, se scriviamo `"Jeremy"[0]`, stiamo dicendo di darci la prima lettera della parola `"Jeremy"`.
+Se scriviamo `"Jeremy"[0]`, stiamo dicendo di darci la prima lettera della parola `"Jeremy"`.
 
 Se scriviamo `"Jeremy"[1]`, stiamo dicendo di darci la seconda lettera.
 

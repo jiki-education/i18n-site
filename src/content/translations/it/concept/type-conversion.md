@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/type-conversion/page.md"
 en_md5: "8d85e3d274a6cdfdb74bd0488b685f18"
-governance_sha: "d52a10a"
-content_version: "8a45c4583421"
-published_at: "2026-08-12"
+governance_sha: "dc944c1"
+content_version: "7bac70171181"
+published_at: "2026-08-23"
+forum_topic_id: 1460
 ---
 
 Ogni valore nei nostri programmi ha un tipo. `"7"` è una stringa e `7` è un numero. Possono sembrare quasi identici, ma Jiki li tratta in modo molto diverso. Non puoi sommare la stringa `"7"` al numero `3` ed aspettarti di ottenere `10`, perché una è un pezzo di testo e l'altro è una quantità.
@@ -18,7 +19,7 @@ Abbastanza spesso abbiamo bisogno di spostare un valore da un tipo ad un altro. 
 
 ### Convertire una stringa in un numero
 
-Quando leggi i caratteri da una stringa, ogni carattere è a sua volta una stringa, anche quando sembra una cifra. Prima di poterci fare qualsiasi calcolo, devi trasformarlo in un vero numero. Lo facciamo con `Number()`.
+Quando leggi i caratteri da una stringa, ogni carattere è a sua volta una stringa, anche quando sembra una cifra. Prima di poter fare qualsiasi calcolo, devi trasformarlo in un vero numero. Lo facciamo con `Number()`.
 
 ```javascript
 Number("7")

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/break/page.md"
 en_md5: "bd746b6c93016dcb2789bd26e38ab33a"
-governance_sha: "af41eb2"
+governance_sha: "57d0f4a"
 content_version: "ae88535714c7"
-published_at: "2026-08-21"
+published_at: "2026-08-23"
+forum_topic_id: 1816
 ---
 
 `break` কিওয়ার্ডটি যেকোনো লুপের বডির যেকোনো জায়গায় ব্যবহার করা যায়।

@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-08-22",
-  "governance_sha": "9cb29e4",
-  "approved": 896,
+  "published_at": "2026-08-23",
+  "governance_sha": "2419b30",
+  "approved": 897,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -9533,7 +9533,7 @@
       "stage": "refining",
       "live": false,
       "category_slug": "i18n-pl",
-      "approved": 10,
+      "approved": 11,
       "disapproved": 0,
       "total": 38,
       "items": [
@@ -9649,8 +9649,8 @@
         },
         {
           "key": "exercise/jumbled-house",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1795,
+          "status": "approved"
         },
         {
           "key": "exercise/penguin",

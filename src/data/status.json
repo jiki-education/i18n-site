@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-23",
-  "governance_sha": "8d24ba8",
-  "approved": 903,
+  "governance_sha": "dedf66b",
+  "approved": 904,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 82,
+      "approved": 83,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4111,7 +4111,7 @@
         {
           "key": "concept/colors",
           "topic_id": 1849,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/colors-group",

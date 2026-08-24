@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-08-23",
-  "governance_sha": "d4754f2c",
-  "approved": 911,
+  "published_at": "2026-08-24",
+  "governance_sha": "fb6c3631",
+  "approved": 912,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 90,
+      "approved": 91,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4335,8 +4335,8 @@
         },
         {
           "key": "level-milestone/using-functions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1859,
+          "status": "approved"
         },
         {
           "key": "level-milestone/strings-and-colors",

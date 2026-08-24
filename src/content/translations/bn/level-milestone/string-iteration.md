@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "069ee8736766d746d9fa4e6db419b300"
-governance_sha: "9b3923b"
+governance_sha: "30aa468c"
 content_version: "9227677eca82"
-published_at: "2026-08-21"
+published_at: "2026-08-24"
+forum_topic_id: 1875
 ---
 
 দারুণ কাজ করেছেন। আশা করি ইনডেক্সিং আর স্ট্রিংয়ে লুপ চালানো এখন বোধগম্য হতে শুরু করেছে।

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-24",
-  "governance_sha": "30aa468c",
-  "approved": 923,
+  "governance_sha": "e43a9012",
+  "approved": 925,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -2662,7 +2662,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-el",
-      "approved": 122,
+      "approved": 124,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -3048,13 +3048,13 @@
         },
         {
           "key": "concept/logical-not",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1878,
+          "status": "approved"
         },
         {
           "key": "concept/logical-or",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1877,
+          "status": "approved"
         },
         {
           "key": "concept/methods",

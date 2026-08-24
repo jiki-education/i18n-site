@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-24",
-  "governance_sha": "494832c3",
-  "approved": 914,
+  "governance_sha": "5a301b85",
+  "approved": 915,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 93,
+      "approved": 94,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4350,8 +4350,8 @@
         },
         {
           "key": "level-milestone/variables",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1863,
+          "status": "approved"
         },
         {
           "key": "level-milestone/basic-state",

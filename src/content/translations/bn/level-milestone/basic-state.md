@@ -2,14 +2,15 @@
 lang: "bn"
 type: "level-milestone"
 slug: "basic-state"
-title: "স্টেট এখন আপনার আয়ত্তে"
+title: "স্টেট এখন আপনার হাতের মুঠোয়"
 status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "7205cc09a500e11d5ec44a6978ae5af7"
-governance_sha: "7b4aa00f"
-content_version: "fc8e5b7f4c99"
+governance_sha: "488dbd4d"
+content_version: "b5a324578f51"
 published_at: "2026-08-24"
+forum_topic_id: 1864
 ---
 
 এটিতেও দারুণ কাজ করেছেন। প্রোগ্রাম চলার সময় যেসব মান বদলায়, সেগুলোর হিসাব এখন আপনি রাখতে পারেন, আর দুই লেভেল আগের অবস্থার তুলনায় এটি সত্যিই বড় একটি ধাপ।

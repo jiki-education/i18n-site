@@ -2,14 +2,14 @@
 lang: "bn"
 type: "level-milestone"
 slug: "string-manipulation"
-title: "স্ট্রিং, জোড়া লাগানো"
+title: "স্ট্রিং, জোড়া-জুড়ি"
 status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "4bb57788e09cc6de5466d34b560540b2"
-governance_sha: "9b3923b"
-content_version: "8feaa008de4d"
-published_at: "2026-08-21"
+governance_sha: "0ffabdb1"
+content_version: "c45fb0361f6e"
+published_at: "2026-08-24"
 ---
 
 এটিতে চমৎকার কাজ করেছেন। কনক্যাটেনেশন আর টেমপ্লেট বেশ সহজ ধারণা, কিন্তু এগুলো বারবার কাজে লাগে, বিশেষ করে যেখানেই আপনি মানুষের পড়ার জন্য আউটপুট তৈরি করছেন।

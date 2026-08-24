@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-24",
-  "governance_sha": "d6c34edb",
-  "approved": 919,
+  "governance_sha": "970ad8ba",
+  "approved": 920,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 98,
+      "approved": 99,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4380,8 +4380,8 @@
         },
         {
           "key": "level-milestone/make-your-own-functions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1873,
+          "status": "approved"
         },
         {
           "key": "level-milestone/string-manipulation",

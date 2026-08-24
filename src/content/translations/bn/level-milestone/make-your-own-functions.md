@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "9b3923b"
+governance_sha: "970ad8ba"
 content_version: "aa613af8f9c7"
-published_at: "2026-08-21"
+published_at: "2026-08-24"
+forum_topic_id: 1873
 ---
 
 অসাধারণ কাজ করেছেন। নিজের ফাংশন লেখা সত্যিই বড় একটি পরিবর্তন। আপনি আর শুধু তাকে রাখা সরঞ্জাম ব্যবহার করছেন না, আপনি নতুন সরঞ্জাম বানাচ্ছেন।

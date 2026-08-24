@@ -4,12 +4,12 @@ type: "concept"
 slug: "updating-variables"
 title: "Ažuriranje promenljivih"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-variables/source.md"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/updating-variables/page.md"
 en_md5: "f9b2fbb6bfd82a620b093e88951ff841"
-governance_sha: "c80036b"
-content_version: "6d819001f7bd"
-published_at: "2026-08-06"
+governance_sha: "45861691"
+content_version: "7e2eab47d899"
+published_at: "2026-08-24"
 ---
 
 Do sada, kada smo kreirali promenljive, stavljali smo vrednosti u kutije i kasnije ih vadili. To je bilo veoma korisno jer nam olakšava čitanje koda i smanjuje količinu mentalne aritmetike koju bismo inače morali da radimo. Ali prava moć promenljivih dolazi iz mogućnosti da menjamo ono što se nalazi u kutiji, odnosno u promenljivoj, tokom izvršavanja programa. Zato čak i ako pokrenemo isti deo koda više puta, ono što će se dogoditi može se promeniti u zavisnosti od toga šta se nalazi u kutijama.
@@ -23,7 +23,7 @@ plant(10)
 <img
   class="concept-image"
   src="/static/images/concept-assets/updating-variables/flowers-same-spot.webp"
-  alt="Cvet posađen u bašti pored Jikijeve table"
+  alt="Cvet posađen u bašti pored Džikijeve table"
   width="406"
   height="400"
 />
@@ -41,17 +41,17 @@ repeat(8) {
 
 Šta misliš, šta će se dogoditi?
 
-Pa, posadiće osam cvetova, ali svaki put će ih posaditi na istom mestu, što nije ono što želimo. Zato hajde da na trenutak razmislimo o tome šta Jiki ovde radi. On pravi kutiju sa natpisom „pozicija“. U nju stavlja 10. Zatim osam puta pokreće mašinu `plant`. Svaki put iz kutije pozicije uzima vrednost. Uvek je to 10, i svaki put ubacuje taj isti 10.
+Pa, posadiće osam cvetova, ali svaki put će ih posaditi na istom mestu, što nije ono što želimo. Zato hajde da na trenutak razmislimo o tome šta Džiki ovde radi. On pravi kutiju sa natpisom „pozicija“. U nju stavlja 10. Zatim osam puta pokreće mašinu `plant`. Svaki put iz kutije pozicije uzima vrednost. Uvek je to 10, i svaki put ubacuje taj isti 10.
 
 <img
   class="concept-image"
   src="/static/images/concept-assets/updating-variables/jiki-loop-walkthrough.webp"
-  alt="Jiki uzima kutiju pozicije sa police i ubacuje vrednost 10 u mašinu za sadnju"
+  alt="Džiki uzima kutiju pozicije sa police i ubacuje vrednost 10 u mašinu za sadnju"
   width="400"
   height="400"
 />
 
-Dakle, ono što nam treba je način da se svaki put pomerimo malo napred. Nakon što posadimo cvet, želimo da kažemo Jikiju da pomeri poziciju za 10, kako bi bio spreman za sadnju sledećeg cveta.
+Dakle, ono što nam treba je način da se svaki put pomerimo malo napred. Nakon što posadimo cvet, želimo da kažemo Džikiju da pomeri poziciju za 10, kako bi bio spreman za sadnju sledećeg cveta.
 
 Hajde da na trenutak zaboravimo kod: kako to logički izgleda? Ako ti kažem: „Posadi prvi cvet na 10, onda sledeći na 20, pa sledeći na 30“, kako tvoj mozak zna da sledeći treba posaditi na 40, a onaj posle na 50?
 
@@ -59,7 +59,7 @@ Tvoj mozak prati trenutni broj, dodaje mu 10 i zatim ažurira taj broj u sebi.
 
 I potpuno isto možemo da uradimo u kodu. Da bismo to uradili, kažemo: „Ažuriraj kutiju pozicije da ima trenutnu vrednost pozicije plus 10.“ Ovde se prvi put pojavljuje pojam ažurirati (engl. _update_).
 
-Kada Jiki ovo vidi, izvadiće trenutni broj iz kutije pozicije, dodati mu 10, obaviti tu matematiku, sabrati ih, a zatim vratiti rezultat nazad u kutiju za sledeći put.
+Kada Džiki ovo vidi, izvadiće trenutni broj iz kutije pozicije, dodati mu 10, obaviti tu matematiku, sabrati ih, a zatim vratiti rezultat nazad u kutiju za sledeći put.
 
 ```javascript
 position = position + 10
@@ -68,14 +68,14 @@ position = position + 10
 <img
   class="concept-image"
   src="/static/images/concept-assets/updating-variables/jiki-updating-box.webp"
-  alt="Jiki vadi 10 iz kutije pozicije, dodaje 10 da dobije 20 i vraća 20 nazad u kutiju"
+  alt="Džiki vadi 10 iz kutije pozicije, dodaje 10 da dobije 20 i vraća 20 nazad u kutiju"
   width="427"
   height="400"
 />
 
 Dakle, ako ovo dodamo u naš program, tako da sada kažemo: „Postavi početnu vrednost pozicije na 10“, zatim osam puta posadi cvet na toj poziciji, a zatim promeni poziciju tako da bude za 10 veća nego pre, naš kod funkcioniše i dobijamo osam cvetova raspoređenih u prostoru.
 
-Primeti da nema `let` (stvara novu promenljivu) kada ažuriramo promenljivu. To je veoma važno. Kada Jiki vidi `let`, on stvara novu kutiju. A ovde ne želimo da stvorimo novu kutiju. Želimo da promenimo ono što je već u kutiji koju imamo.
+Primeti da nema `let` (stvara novu promenljivu) kada ažuriramo promenljivu. To je veoma važno. Kada Džiki vidi `let`, on stvara novu kutiju. A ovde ne želimo da stvorimo novu kutiju. Želimo da promenimo ono što je već u kutiji koju imamo.
 
 Takođe, obrati pažnju da kutiju kreiramo samo jednom, izvan petlje. To je važno zapamtiti. Kreiraj kutiju jednom na početku, a zatim je ažuriraj svaki put kada se petlja izvrši.
 

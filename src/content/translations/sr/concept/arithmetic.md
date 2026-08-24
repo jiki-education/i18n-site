@@ -4,12 +4,12 @@ type: "concept"
 slug: "arithmetic"
 title: "Aritmetika"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/arithmetic/source.md"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/arithmetic/page.md"
 en_md5: "7ce54754a3ca29896609a01a51b12377"
-governance_sha: "c80036b"
-content_version: "b23b57084d4c"
-published_at: "2026-08-06"
+governance_sha: "45861691"
+content_version: "056340557fd9"
+published_at: "2026-08-24"
 ---
 
 Do sada, kada smo kreirali promenljive, koristili smo samo jednostavne vrednosti; broj poput `50` ili string poput `"yellow"`. Promenljive postaju mnogo moćnije kada ih možemo koristiti u kombinaciji jedna s drugom. Na primer, kada možemo reći da leva ivica pravougaonika treba da bude na određenoj udaljenosti od ivice platna.
@@ -62,12 +62,12 @@ let height = canvasSize - top * 2 // 40
 rectangle(left, top, width, height, "blue")
 ```
 
-Hajde da razmislimo šta Jiki radi kada napišemo let `height` equals `canvasSize` minus `top` puta dva. Pa, on prvo uzima kutiju `top` sa police, i u njoj pronalazi 30, zatim vadi svoj džepni kalkulator i računa 30 puta dva, i pravi mentalnu belešku da je to 60.
+Hajde da razmislimo šta Džiki radi kada napišemo let `height` equals `canvasSize` minus `top` puta dva. Pa, on prvo uzima kutiju `top` sa police, i u njoj pronalazi 30, zatim vadi svoj džepni kalkulator i računa 30 puta dva, i pravi mentalnu belešku da je to 60.
 
 <img
   class="concept-image"
   src="/static/images/concept-assets/arithmetic/flow-of-images-1.webp"
-  alt="Jiki uzima kutiju top sa police i računa 30 puta dva, što je 60"
+  alt="Džiki uzima kutiju top sa police i računa 30 puta dva, što je 60"
   width="377"
   height="400"
 />
@@ -77,7 +77,7 @@ Zatim uzima kutiju `canvasSize` sa police, pronalazi u njoj 100, i izračunava d
 <img
   class="concept-image"
   src="/static/images/concept-assets/arithmetic/flow-of-images-3.webp"
-  alt="Jiki uzima novu kutiju, na nju piše height, i unutra stavlja 40"
+  alt="Džiki uzima novu kutiju, na nju piše height, i unutra stavlja 40"
   width="462"
   height="400"
 />

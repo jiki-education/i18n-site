@@ -4,36 +4,36 @@ type: "concept"
 slug: "creating-functions-with-return-values"
 title: "Dodavanje povratnih vrednosti funkcijama"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/creating-functions-with-return-values/source.md"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/creating-functions-with-return-values/page.md"
 en_md5: "51d31f709a7051c29b499a31ad68555e"
-governance_sha: "c80036b"
-content_version: "0535aa0f00bc"
-published_at: "2026-08-06"
+governance_sha: "45861691"
+content_version: "8f94b17500bf"
+published_at: "2026-08-24"
 ---
 
 Sada znaš kako se prave funkcije sa ulazima i bez njih. Ostala je još jedna stvar da naučiš, i posle toga ćeš biti ekspert za pravljenje funkcija – a to je kako da svojim funkcijama daš izlazni otvor.
 
 Već koristiš mnogo funkcija koje vraćaju vrednosti. `isAlienAbove` (proverava da li je vanzemaljac iznad) ti vraća tačno ili netačno. `Math.randomInt(1, 10)` (vraća nasumični ceo broj između 1 i 10) ti vraća nasumičan broj.
 
-Kada Jiki koristi te funkcije, nešto iskače iz izlaznog otvora, što on zatim može da iskoristi.
+Kada Džiki koristi te funkcije, nešto iskače iz izlaznog otvora, što on zatim može da iskoristi.
 
 <img
   class="concept-image"
   src="/static/images/concept-assets/creating-functions-with-return-values/output-chute.webp"
-  alt="Jiki skuplja vrednost dok iskače iz izlaznog otvora mašine"
+  alt="Džiki skuplja vrednost dok iskače iz izlaznog otvora mašine"
   width="500"
   height="312"
 />
 
 Da bismo to uradili, potrebna nam je još jedna nova ključna reč, a to je `return`.
 
-Ključna reč `return` govori Malom Jikiju da gurne nešto kroz izlazni otvor.
+Ključna reč `return` govori Malom Džikiju da gurne nešto kroz izlazni otvor.
 
 <img
   class="concept-image"
   src="/static/images/concept-assets/creating-functions-with-return-values/return-keyword-push.webp"
-  alt="Mali Jiki unutar mašine gura vrednost 42 kroz izlazni otvor"
+  alt="Mali Džiki unutar mašine gura vrednost 42 kroz izlazni otvor"
   width="500"
   height="335"
 />

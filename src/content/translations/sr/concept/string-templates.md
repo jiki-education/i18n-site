@@ -4,12 +4,12 @@ type: "concept"
 slug: "string-templates"
 title: "Šabloni stringova"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-templates/source.md"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/string-templates/page.md"
 en_md5: "7fd0e09ac3b32db5f159f8e772872104"
-governance_sha: "c80036b"
-content_version: "472ed95f105e"
-published_at: "2026-08-06"
+governance_sha: "45861691"
+content_version: "25b01fd0d7bd"
+published_at: "2026-08-24"
 ---
 
 Za umetanje stringova u druge stringove možemo da koristimo nešto što se zove šablonski literali (engl. _template literals_).
@@ -29,7 +29,7 @@ Koristimo ih da napravimo šablon koji može da sadrži druge stringove. A zatim
 <img
 class="concept-image"
 src="/static/images/concept-assets/string-templates/jiki-name-box.webp"
-alt="Jiki drži kutiju sa oznakom „name", vrednost koja se ubacuje u šablon."
+alt="Džiki drži kutiju sa oznakom „name", vrednost koja se ubacuje u šablon."
 width="207"
 height="400"
 />

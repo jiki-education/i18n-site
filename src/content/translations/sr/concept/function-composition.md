@@ -4,12 +4,12 @@ type: "concept"
 slug: "function-composition"
 title: "Korišćenje više funkcija zajedno"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/function-composition/source.md"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/function-composition/page.md"
 en_md5: "7df3110b30c0f279d7f04d3b4e331a99"
-governance_sha: "c80036b"
-content_version: "8a021f8626f7"
-published_at: "2026-08-06"
+governance_sha: "45861691"
+content_version: "0bb8ea1fd87b"
+published_at: "2026-08-24"
 ---
 
 Do sada, kada pišeš funkcije, svaka je uglavnom stajala na svojim nogama i sadržavala svu logiku koja joj je potrebna za rad.
@@ -68,7 +68,7 @@ Pa ako pokušaš da referenciraš promenljivu `count` (brojač) iz unutrašnjost
 <img
   class="concept-image"
   src="/static/images/concept-assets/function-composition/jiki-thinking.webp"
-  alt="Jiki razmišlja, sa sijalicom iznad glave, o tome kako promenljive ostaju privatne za svaku funkciju"
+  alt="Džiki razmišlja, sa sijalicom iznad glave, o tome kako promenljive ostaju privatne za svaku funkciju"
   width="361"
   height="353"
 />

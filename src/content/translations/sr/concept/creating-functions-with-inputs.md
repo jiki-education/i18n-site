@@ -4,12 +4,12 @@ type: "concept"
 slug: "creating-functions-with-inputs"
 title: "Dodavanje ulaza funkcijama"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/creating-functions-with-inputs/source.md"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/creating-functions-with-inputs/page.md"
 en_md5: "f70d737888fcbda3306196ff069eb2f1"
-governance_sha: "c80036b"
-content_version: "e02d058b0c9b"
-published_at: "2026-08-06"
+governance_sha: "45861691"
+content_version: "98451369e73d"
+published_at: "2026-08-24"
 ---
 
 Funkcije koje si do sada napravio uvek rade potpuno istu stvar svaki put. `turnAround` (okreni se) uvek skreće levo dvaput. `shootIfAlienAbove` (pucaj ako je vanzemaljac iznad) uvek proverava i puca.
@@ -39,29 +39,29 @@ shootMany(5)
 shootMany(2)
 ```
 
-Ovo je ključni deo. Kada se kod izvrši, šta god staviš u taj ulaz, `5` ili `2`, mini-Jiki, sa šeširom unutar funkcije, uzima taj ulaz i stavlja ga u kutiju pod imenom `numShots` (broj hitaca), a zatim tu kutiju stavlja na police unutar funkcije, kako bi mogao da je koristiš u kodu te funkcije.
+Ovo je ključni deo. Kada se kod izvrši, šta god staviš u taj ulaz, `5` ili `2`, mini-Džiki, sa šeširom unutar funkcije, uzima taj ulaz i stavlja ga u kutiju pod imenom `numShots` (broj hitaca), a zatim tu kutiju stavlja na police unutar funkcije, kako bi mogao da je koristiš u kodu te funkcije.
 
 <img
   class="concept-image"
   src="/static/images/concept-assets/creating-functions-with-inputs/numshots-box.webp"
-  alt="Mini-Jiki unutar mašine `shootMany` stavlja ulaz u kutiju sa natpisom `numShots`"
+  alt="Mini-Džiki unutar mašine `shootMany` stavlja ulaz u kutiju sa natpisom `numShots`"
   width="500"
   height="376"
 />
 
 Ponoviću to.
 
-Kada napišemo `shootMany(5)` da bismo koristili funkciju, Jiki sa spoljašnje strane ode i donese `5` i stavi ga u ulazni otvor `shootMany`-ja. Unutar mašine, mini-Jiki uzima taj `5` i stavlja ga u kutiju pod imenom `numShots`, jer si ti tom ulaznom otvoru dao to ime, a zatim tu kutiju stavlja na police unutar funkcije u mašini.
+Kada napišemo `shootMany(5)` da bismo koristili funkciju, Džiki sa spoljašnje strane ode i donese `5` i stavi ga u ulazni otvor `shootMany`-ja. Unutar mašine, mini-Džiki uzima taj `5` i stavlja ga u kutiju pod imenom `numShots`, jer si ti tom ulaznom otvoru dao to ime, a zatim tu kutiju stavlja na police unutar funkcije u mašini.
 
 <img
   class="concept-image"
   src="/static/images/concept-assets/creating-functions-with-inputs/numshots-on-shelf.webp"
-  alt="Mini-Jiki stavlja kutiju `numShots` na police unutar mašine `shootMany`"
+  alt="Mini-Džiki stavlja kutiju `numShots` na police unutar mašine `shootMany`"
   width="500"
   height="302"
 />
 
-I zatim, unutar funkcije, možeš da koristiš kutiju `numShots` baš kao i bilo koju drugu kutiju. U imenu `numShots` nema ničeg magičnog. Mogli smo da je nazovemo kako god želimo. To je samo instrukcija za mini-Jikija da uvek napravi kutiju sa tom oznakom unutar funkcije i da u nju stavi ono što je prosleđeno kroz taj otvor.
+I zatim, unutar funkcije, možeš da koristiš kutiju `numShots` baš kao i bilo koju drugu kutiju. U imenu `numShots` nema ničeg magičnog. Mogli smo da je nazovemo kako god želimo. To je samo instrukcija za mini-Džikija da uvek napravi kutiju sa tom oznakom unutar funkcije i da u nju stavi ono što je prosleđeno kroz taj otvor.
 
 A kada imaš vrednost u toj kutiji, možeš da radiš sve što inače radiš sa kutijama. Mogao bi da iskoristiš kutiju `numShots` kao deo `repeat` petlje da bi pucao tačan broj puta. A možeš imati i više od jednog ulaza. Samo ih razdvoji zarezima.
 
@@ -81,12 +81,12 @@ function drawStar(left, top) {
   height="400"
 />
 
-A kada se funkcija pozove, mini-Jiki će jednostavno smestiti vrednosti prosleđene u ulaze u kutije pod imenima `left` (levo) i `top` (gore), a zatim ih odložiti na police unutar funkcija.
+A kada se funkcija pozove, mini-Džiki će jednostavno smestiti vrednosti prosleđene u ulaze u kutije pod imenima `left` (levo) i `top` (gore), a zatim ih odložiti na police unutar funkcija.
 
 <img
   class="concept-image"
   src="/static/images/concept-assets/creating-functions-with-inputs/draw-star-boxes-shelf.webp"
-  alt="Mini-Jiki smešta dva ulaza u kutije sa natpisima `left` i `top` na police unutar mašine `drawStar`"
+  alt="Mini-Džiki smešta dva ulaza u kutije sa natpisima `left` i `top` na police unutar mašine `drawStar`"
   width="431"
   height="400"
 />

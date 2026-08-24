@@ -6,10 +6,10 @@ title: "Ključna reč `continue`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/sr/curriculum/concepts/continue/page.md"
-en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "3d354c0"
-content_version: "67151b32101f"
-published_at: "2026-08-10"
+en_md5: "6cd21a2f25c493f61d000f865014709d"
+governance_sha: "45861691"
+content_version: "fc296bf369eb"
+published_at: "2026-08-24"
 ---
 
 Ponekad želimo da preskočimo određenu iteraciju petlje umesto da iz nje potpuno izađemo. Zamisli da hoćemo da radimo samo sa neparnim brojevima.
@@ -20,7 +20,7 @@ Ali ne želimo da potpuno izađemo iz petlje. Samo želimo da preskočimo ovu je
 
 Za to imamo još jednu ključnu reč koja se zove `continue`.
 
-Kada Jiki vidi `continue`, on samo skoči nazad na vrh petlje i započne sledeću iteraciju. Tako u `for-of` petlji, ako vidi `continue`, pređe na sledeći element u nizu.
+Kada Džiki vidi `continue`, on samo skoči nazad na vrh petlje i započne sledeću iteraciju. Tako u `for-of` petlji, ako vidi `continue`, pređe na sledeći element u nizu.
 
 ```javascript
 for (let item of list) {
@@ -31,7 +31,7 @@ for (let item of list) {
 }
 ```
 
-U `for` petlji, Jiki nailazi na uvećanje `i++`, a onda započinje sledeću iteraciju.
+U `for` petlji, Džiki nailazi na uvećanje `i++`, a onda započinje sledeću iteraciju.
 
 ```javascript
 for (let i = 0; i < 10; i++) {

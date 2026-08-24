@@ -4,12 +4,12 @@ type: "concept"
 slug: "string-concatenation"
 title: "Spajanje stringova"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-concatenation/source.md"
+source_repo: "i18n"
+source_path: "locales/sr/curriculum/concepts/string-concatenation/page.md"
 en_md5: "0e6c7a941a1fb1161445da27a4d7e818"
-governance_sha: "c80036b"
-content_version: "78deb7dbcf5c"
-published_at: "2026-08-06"
+governance_sha: "45861691"
+content_version: "4ae2c74fd507"
+published_at: "2026-08-24"
 ---
 
 Već znaš šta su stringovi. To su komadići papira sa tekstom na njima.
@@ -31,7 +31,7 @@ Zamisli da imamo promenljivu pod nazivom `name` (ime), koja ponekad sadrži `"Je
 <img
   class="concept-image"
   src="/static/images/concept-assets/string-concatenation/jiki-name-box.webp"
-  alt="Jiki drži kutiju sa natpisom 'ime', koja može da sadrži različite vrednosti"
+  alt="Džiki drži kutiju sa natpisom 'ime', koja može da sadrži različite vrednosti"
   width="207"
   height="400"
 />

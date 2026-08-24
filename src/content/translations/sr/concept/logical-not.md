@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/sr/curriculum/concepts/logical-not/page.md"
 en_md5: "7cffbd1fa13317b3d6e6a71415413041"
-governance_sha: "494ce4b"
-content_version: "9b991c6d5438"
-published_at: "2026-08-10"
+governance_sha: "45861691"
+content_version: "523be6990e2a"
+published_at: "2026-08-24"
 ---
 
 Do sada, kada smo upoređivali stvari da vidimo da li su jednake, koristili smo tri znaka jednakosti. Međutim, ponekad želimo da proverimo da li stvari nisu jednake, i za to koristimo uzvičnik praćen sa dva znaka jednakosti. I generalno, u programiranju, uzvičnik ili bang, kako to zovu naši američki prijatelji, znači ne. Zamisli da radiš u prodavnici, i uprava je donela odluku da niko ne može ući u disko odeći.
@@ -42,7 +42,7 @@ Još jedna stvar u vezi sa ovim. Ponekad ćeš imati promenljivu koja je tačna,
   height="352"
 />
 
-To bismo mogli uraditi tako što bismo rekli: „Ako je `movingRight` jednako tačno, `movingRight` je netačno. U suprotnom, `movingRight` je tačno.“ To je način da se promenljiva prebaci. Dakle, Jiki će pogledati `movingRight` da vidi da li je tačno ili netačno, a zatim će izračunati suprotno i vratiti tu vrednost u kutiju.
+To bismo mogli uraditi tako što bismo rekli: „Ako je `movingRight` jednako tačno, `movingRight` je netačno. U suprotnom, `movingRight` je tačno.“ To je način da se promenljiva prebaci. Dakle, Džiki će pogledati `movingRight` da vidi da li je tačno ili netačno, a zatim će izračunati suprotno i vratiti tu vrednost u kutiju.
 
 ```javascript
 if (movingRight === true) {
@@ -60,4 +60,4 @@ movingRight = !movingRight
 
 I to ga okrene. `!movingRight` znači suprotno od onoga što je bilo prethodno.
 
-Dakle, ako je `movingRight` bilo tačno, sada je netačno. Ako je bilo netačno, sada je tačno. Jiki uzima ono što je trenutno u kutiji, i taj bang mu govori da nađe suprotno. Dakle, suprotno od tačno je netačno. Suprotno od netačno je tačno, a zatim on to vraća natrag u kutiju. Ovo je potpuno isto kao i ona duža if/else naredba, samo je mnogo urednije i sažetije napisati.
+Dakle, ako je `movingRight` bilo tačno, sada je netačno. Ako je bilo netačno, sada je tačno. Džiki uzima ono što je trenutno u kutiji, i taj bang mu govori da nađe suprotno. Dakle, suprotno od tačno je netačno. Suprotno od netačno je tačno, a zatim on to vraća natrag u kutiju. Ovo je potpuno isto kao i ona duža if/else naredba, samo je mnogo urednije i sažetije napisati.

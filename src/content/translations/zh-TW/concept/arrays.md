@@ -7,14 +7,14 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/zh-TW/curriculum/concepts/arrays/page.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "679b0c2"
-content_version: "eb00ba56315e"
-published_at: "2026-08-10"
+governance_sha: "01372fdd"
+content_version: "7b287fa4650e"
+published_at: "2026-08-25"
 ---
 
 你已經使用過數字、字串和布林值（也就是 true 和 false 的高級說法），我們把這些不同的東西稱為資料型態（英文：_data types_）。現在，我們要加入第一個複合資料型態（英文：_compound data type_）了。
 
-這是一種可以包含多個東西，而不只是一個東西的資料型態，這個資料型態就叫做陣列（英文：_array_）。
+這一種資料型態可以包含多個東西，而不只是一個。這個資料型態就叫做陣列（英文：_array_）。
 
 當你聽到陣列這個詞時，我希望你想像一條實體的鏈子，把許多東西串在一起。
 

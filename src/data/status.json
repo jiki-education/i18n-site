@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-25",
-  "governance_sha": "46b26956",
-  "approved": 928,
+  "governance_sha": "7b15fb0e",
+  "approved": 929,
   "disapproved": 1,
   "total": 3192,
   "languages": [
@@ -3529,7 +3529,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 104,
+      "approved": 105,
       "disapproved": 0,
       "total": 179,
       "items": [
@@ -4405,8 +4405,8 @@
         },
         {
           "key": "level-milestone/advanced-loops",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1884,
+          "status": "approved"
         },
         {
           "key": "level-milestone/arrays",

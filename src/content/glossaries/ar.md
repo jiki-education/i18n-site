@@ -3,10 +3,10 @@ lang: "ar"
 name: "Arabic"
 family: null
 stage: "refining"
-governance_sha: "9cb29e4"
-content_version: "f9d8486755a5"
-published_at: "2026-08-22"
-term_count: 49
+governance_sha: "7d77efea"
+content_version: "657786644bd5"
+published_at: "2026-08-26"
+term_count: 51
 category_id: 233
 forum_topic_id: 470
 video_player_forum_topic_id: 741
@@ -53,6 +53,7 @@ These are terms where the Arabic is used in prose, so the "Use (ar/en)" column i
 | function | دالة | ar | The *keyword* `function` in code stays English; the concept in prose is `دالة`. Feminine; plural دوال. |
 | parameter | معامل | ar | The declaration-site name. Distinct from `عامل` (operator); do not confuse the two. Masculine; plural معاملات. |
 | argument | وسيط | ar | The call-site value. Masculine; plural وسائط. |
+| to return (a value) | يُرجع (المصدر: إرجاع) | ar | The programming action of a function giving a value back. Not `يعيد`, which in everyday Arabic also reads as "repeats/redoes". `إخراج`/`يُخرج` stays reserved for output/printing to the screen, so that a value handed back to the program and a result shown on screen never blur together for a beginner. The `return chute` metaphor keeps `مجرى الإخراج`, because that names the physical exit the value slides out of, not the action. Set by mirina (t/470/46). |
 | brackets (the two after a function name) | الأقواس الهلالية (الأقواس الهلالَين) | ar | The round pair `()` written after a function name to call it. Arabic has a dual, so use it where the pair is meant: `الأقواس الهلالية`, oblique `الأقواس الهلالَين` ("كتبت `move` ثم الأقواس الهلالَين"). Set by mirina (t/470/32), overriding humam-hamdan's earlier bare `الهلالان`: the generic head-word is `قوس`/`أقواس` for every bracket type, with the shape as a qualifier. See the Brackets table below. |
 
 ### Loops, state & program flow
@@ -79,6 +80,7 @@ These are terms where the Arabic is used in prose, so the "Use (ar/en)" column i
 | English | Arabic | Use (ar/en) | Notes |
 |---------|--------|-------------|-------|
 | course | دورة | ar | The whole Jiki course the learner is taking ("في هذه الدورة، مفسّرك هو Jiki"). Keep distinct from `درس` (lesson) and `منهج` (curriculum). Feminine; plural دورات. |
+| dashboard | لوحة التحكم | ar | Confirmed by mirina (t/795/7): not necessarily the most elegant term, but correct and widely understandable. |
 
 ## Keep in English
 
@@ -134,6 +136,47 @@ Generic, when no specific type is meant: singular `قوس` (masculine), the pair
 ---
 
 ## Decision log
+
+### 2026-08-26: `to return (a value)` added as `يُرجع` (t/470, post 46)
+
+**Decided by:** reviewer mirina, forum https://forum.jiki.io/t/470/46, actioned directly.
+She pointed out that the glossary had `return chute` (`مجرى الإخراج`) but never named the
+verb for the programming action itself, where the French and Spanish (es-ES) glossaries both
+carry a `to return (a value)` row, and asked for the same row in Arabic.
+
+#### The term
+
+`يُرجع`, verbal noun `إرجاع`. Added to the "Functions & control flow" table.
+
+#### mirina's reasoning
+
+- **It is the standard term.** `يُرجع` is what the major Arabic learning platforms (Hsoub
+  Academy, Elzero Web School, Harmash) and the official standards bodies (ALECSO, and its
+  ARABTERM database) use for a function returning a value. She supplied screenshots of each.
+- **It keeps return and print apart.** Beginners routinely confuse returning a value with
+  printing one to the screen. In Arabic CS writing `إخراج` / `يُخرج` is reserved for
+  output/print, so using it for `return` as well would collapse exactly the distinction the
+  return-values material exists to teach. `يُرجع` says "gives a value back to the program"
+  and nothing else.
+- **`يعيد` is ambiguous.** The verb the Arabic content had been using ad hoc also carries
+  the everyday sense "repeats / does again", which is a live confusion for an absolute
+  beginner reading about loops in the same course.
+
+#### Why this does not disturb `return chute`
+
+`مجرى الإخراج` stays as it is. The metaphor names the physical exit a value slides out of on
+Jiki's machine, which is an output image, while `يُرجع` names the action a function performs.
+The two do not compete and both stay.
+
+#### Propagation
+
+Not yet swept. The published Arabic content mostly uses `يعيد` / `تعيد` for this sense
+(seven files, around seventeen occurrences: the `arrays` concept page, the `digital-clock`,
+`rock-paper-scissors`, `two-fer` and `rainbow` exercises), and three places already say
+`تُرجع` (the level title "دوال تُرجع قيمًا", the `two-fer` catalog, and the `noReturn` app
+message), so the corpus was inconsistent before this decision. A follow-up sweep will bring
+the `يعيد` occurrences over; the other senses of `يعيد` / `إعادة` in the corpus ("rebuild",
+"rewatch", "reset", "reuse") are untouched by it.
 
 ### 2026-08-22: brackets restructured to `قوس` + shape qualifier, overriding the 2026-08-08 scheme (t/470, post 32)
 
@@ -433,7 +476,7 @@ Agreed independently across chunk workers:
 
 | English | Proposed target | Notes | Confidence |
 |---------|-----------------|-------|------------|
-| dashboard | لوحة التحكم | | medium |
+| ~~dashboard~~ | ~~لوحة التحكم~~ | **Confirmed by mirina, t/795/7 (2026-08-24), moved to `glossary.md`.** | ~~medium~~ |
 | Premium (tier name) | kept Latin | | medium |
 | concept | مفهوم | | medium |
 | unlock | فتح | | medium |

@@ -3,10 +3,10 @@ lang: "sr"
 name: "Serbian"
 family: null
 stage: "refining"
-governance_sha: "d8edd8a"
-content_version: "ce11ea981f34"
-published_at: "2026-08-04"
-term_count: 122
+governance_sha: "cd3acbae"
+content_version: "bb1e14b644bf"
+published_at: "2026-08-26"
+term_count: 126
 category_id: 166
 forum_topic_id: 402
 video_player_forum_topic_id: 779
@@ -27,6 +27,8 @@ decision log (`glossary-notes.md`).
 | developer | **programer** | sr | |
 | pitfall | **zamka** | sr | Stands alone; no gloss needed. |
 | pattern (a recurring shape you reuse) | **šablon** | sr | Deliberately not "obrazac", which reads first as a form to fill in and is the more formal register. |
+| Jiki (the character) | **Džiki** | sr | Decided by Jeremy (t/935/7), 2026-08-24. Only when "Jiki" is the friendly guide character in narrative prose. Decline normally: „Džikija“ (genitive), „Džikiju“ (dative). Never for the product/brand name, which stays "Jiki" (Latin). See the guide's "Jiki: character vs product name" note. |
+| Jeremy (as narrator/person) | **Džeremi** | sr | Same decision as above, same split (person vs any use as a bare label/brand mention). Decline normally. |
 
 ## Localize (use the Serbian term)
 
@@ -133,7 +135,7 @@ These are terms where the Serbian is used in prose, so the "Use (sr/en)" column 
 | course | kurs | sr | The whole Jiki course the learner is taking ("na ovom kursu tvoj interpreter je Jiki"). Keep distinct from "lekcija" (lesson) and "kurikulum" (curriculum). |
 | curriculum | kurikulum | sr | Distinct from "radni tok" (workflow) above; this is the curriculum-structure sense. |
 | level | nivo | sr | |
-| milestone | prekretnica | sr | |
+| milestone | etapa | sr | The numbered marker on the learning path ("Etapa 3"). Feminine; declines normally ("u etapi", "završi etapu", pl. "etape"). Deliberately not "prekretnica" (a turning point, which a numbered path marker is not) and deliberately not "dostignuće"/"postignuće", which is spoken for by the separate Achievements feature ("Dostignuća" in the sidebar). Keep distinct from "nivo" (level). Where English uses "milestone" in the loose, everyday sense rather than as the platform feature, translate for sense (e.g. "cilj") instead of forcing this row. |
 | pathway | putanja | sr | Keep distinct from "staza" (track) below; both mean "path" but are assigned to different concepts. |
 | bootcamp | butkamp | sr | Corrected from the hybrid spelling "bootkamp" per native-speaker feedback (see glossary-notes.md): a loanword adopted into Serbian prose is respelled phonetically throughout, not half-kept in its English spelling. Declines normally ("butkampa", "u butkampu"). Deliberately not "kurs", which is spoken for by `course` above. |
 | syllabus | silabus | sr | |
@@ -153,6 +155,8 @@ Terms that belong to an exercise's story rather than to programming itself.
 |---------|---------|-------------|-------|
 | dress code | pravila oblačenja | sr | Confirmed over the alternative "dres kod" per native-speaker feedback (see glossary-notes.md). Plural noun phrase; declines normally ("prema pravilima oblačenja"). |
 | dead end (maze) | ćorsokak | sr | Masculine; declines normally ("iz ćorsokaka", pl. "ćorsokaci", "sa dva ćorsokaka"). |
+| formal (attire) | svečano | sr | The top dress-code tier. Confirmed by a native speaker (see glossary-notes.md) over the alternative "formalno", which narrows toward business/serious dress; "svečano" covers the gala wear the exercise's `"ballgown"`/`"tuxedo"` values name. Neuter adjective; declines normally ("u svečanoj odeći", "svečana odeća"). Read as a pair with "poslovno" below. |
+| smart (attire) | poslovno | sr | The middle dress-code tier, i.e. the business register the exercise's `"suit"`/`"dress"` values name. Decided by a native speaker (see glossary-notes.md), replacing the earlier draft "elegantno", which reaches too far toward the formal end. Neuter adjective; declines normally ("u poslovnoj odeći", "poslovna odeća", "poslovno obučen gost"). Read as a pair with "svečano" above. |
 | ballgown | balska haljina | sr | Feminine. The English value stays as-is in code; use the Serbian in prose, or in brackets as an explanation where the code value is shown. |
 | tuxedo | smoking | sr | Masculine ("u smokingu"). The English value stays as-is in code; use the Serbian in prose, or in brackets as an explanation where the code value is shown. |
 | suit | odelo | sr | Neuter ("u odelu"). The English value stays as-is in code; use the Serbian in prose, or in brackets as an explanation where the code value is shown. |
@@ -197,6 +201,187 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-26: `smart` (attire) is "poslovno" and `formal` (attire) is "svečano" (settled)
+
+**Decided by:** native speaker **little_mouse** on the pinned Serbian glossary thread
+([post 25](https://forum.jiki.io/t/402/25)). **Terms affected:** `smart (attire)`,
+`formal (attire)`. **Status: human-decided, settled. Both are now rows in `glossary.md`.**
+**Files affected:** `glossary.md`, plus `bouncer-dress-code`'s `instructions.md` and message
+catalog in `../i18n/locales/sr/` (swept in the same pass; see below).
+
+This closes the question left open on 2026-08-04 in the two entries below, and it took five
+posts of narrowing to get there.
+
+**The arc.** little_mouse first flagged the draft "elegantno" as over-shooting toward the
+formal end of the register scale, without supplying a replacement (post 15). Returning to it
+on 2026-08-26 she was audibly unsure: hedged, self-contradictory, no term she would stand
+behind (post 19). What unstuck it was not asking her again but telling her what the word
+actually has to do in this exercise. Asked whether "biznis-kežual" would survive repeated use
+in exercise prose (post 20), she asked back for the exact register, "shirt but no tie?"
+(post 21). The answer was that there is no fuzzy register to pin down: in
+`bouncer-dress-code`, "smart" is a **literal code category**, `outfit == "suit"` or
+`"dress"`, exactly as "formal" is `"ballgown"` or `"tuxedo"` (post 22). She then guessed at a
+four-tier system, and was corrected to the real shape (post 24): **two named tiers only**,
+formal (ballgown/tuxedo, adults also get champagne) and smart (suit/dress, canapés only, no
+champagne), with everything else a single bucket where only guest-listed children get in.
+
+**Given that, she answered plainly:** "maybe top tier - 'svečano' and middle - 'poslovno' -
+like business". That is treated as a settled native-speaker decision, not another round of
+input, and the contrast with post 19 is the reason. There is no hedge in it: no "I am 80%
+sure", no "maybe we should read fashion texts", no reopening the question in the closing
+line. The single "maybe" attaches to the tier labelling, not to the words. And "poslovno" is
+a **real, ordinary Serbian adjective** meaning businesslike, not a coined compound: the
+2026-08-04 entry ruled out inventing something like "poslovno-ležerno" precisely because
+constructed options were not ours to coin, and this is the opposite case, a plain word a
+native speaker reached for herself. Per "Decisions" in `global/workflow.md`, a confident
+native-speaker call is the decision; sending it back for a further round of confirmation
+would be treating clarity as if it were doubt.
+
+**Why "poslovno" is right on the merits, too.** The 2026-08-04 objection was that English
+"smart" names a register *between* casual and formal, closest to business-casual, and that
+"elegantno" reaches past it. "poslovno" lands on exactly the register she said was missing,
+and it does so while satisfying the two costs that blocked the earlier candidates: it is not
+bare English (so the guide's loanword rule is untouched), and it sits naturally beside a
+fully Serbian "svečano" in the same list of categories. It also matches what the code
+literals actually mean, since `"suit"` and `"dress"` are business wear, not eveningwear.
+
+**`formal` = "svečano" is confirmed rather than changed.** It had been the published wording
+since the exercise was first translated but was never written into `glossary.md`, and the
+2026-08-04 entry flagged it as worth revisiting in the same breath as `smart`, since the two
+are read as a pair. Post 25 names it directly as the top tier, so it is now a row on the same
+authority as its partner. The earlier alternative "formalno" stays rejected for the reason
+already recorded: it narrows toward serious/business dress, which is now exactly what
+"poslovno" covers, so using it for the gala tier would blur the two categories the exercise
+needs to keep apart.
+
+**Content sweep.** "elegantno" was live in the published `bouncer-dress-code` translation, in
+both `instructions.md` (the rules list and the category definitions) and `messages.json`
+(scenario feedback, the exercise description, and a hint answer). Because the swap is a clean
+adjective-stem substitution with identical declension (`elegantn-` → `poslovn-`), it was
+applied in the same pass rather than deferred, and re-checked and re-stamped with
+`validate.mjs`. The exercise still needs re-publishing to the review site before the thread
+reads as acted on. One unrelated hit was deliberately left alone:
+`space-invaders-repeat/instructions.md` uses "elegantniji način" in the ordinary sense of a
+neater solution, which has nothing to do with attire.
+
+### 2026-08-24: `Jiki`/`Jeremy` transliterate to „Džiki“/„Džeremi“, but only as characters (settled)
+
+**Decided by:** Jeremy, directly, in response to little_mouse's forum post
+([t/935/7](https://forum.jiki.io/t/935/7)). **Terms affected:** `Jiki`, `Jeremy`.
+**Status: settled. Files affected:** `guide.md`, `glossary.md`, and every existing sr
+translated file that mentions "Jiki" or "Jeremy" in narrative prose (a corpus sweep, tracked
+separately, not part of this note).
+
+little_mouse pointed out that keeping the Latin spelling "Jiki" reads as "Yikee" to a Serbian
+speaker, not "Jiki", and that the platform was inconsistent about it (still using Latin "J"
+while everything else transliterates). She proposed „Džiki“ and, by the same logic, „Džeremi“
+for Jeremy.
+
+Jeremy's ruling draws a split the note above doesn't make on its own: „Džiki“/„Džeremi“ apply
+**only when the word names the character or the person** (the friendly guide Jiki talks to
+the learner, or Jeremy narrating in first person), never when "Jiki" is being used as the
+**product or brand name** (the course name, the site name, marketing copy, a subject line
+naming the platform). Those stay Latin "Jiki". This is a judgment call per occurrence, not a
+mechanical find-and-replace: "This is Jiki, and he's going to help you" is a character use;
+"Welcome to Jiki!" as a course/product title is not.
+
+### 2026-08-06: `milestone` is "etapa", not "prekretnica" and not "dostignuće" (settled)
+
+**Decided by:** an owner-authorised ruling (Jeremy explicitly asked for a final call on this
+one disagreement rather than continued escalation) made by a dispatched agent, on the pinned
+Serbian glossary thread ([t/402](https://forum.jiki.io/t/402)) after three rounds of
+native-speaker input that pulled in opposite directions. **Terms affected:**
+`milestone`. **Status: settled** (it supersedes the "OPEN: `milestone` in the dashboard UI"
+item below, which is kept for the record). **Files affected:** `glossary.md`,
+`front-end/app/messages/sr.json`.
+
+#### What the reviewers said
+
+- **miroslav-inc** ([post 3](https://forum.jiki.io/t/402/3), and again in
+  [post 17](https://forum.jiki.io/t/402/17)): "prekretnica" is wrong, because a milestone is
+  an achievement, so the word should be "postignuće" or "dostignuće" (or the English
+  "milestone" left untranslated).
+- **little_mouse** ([post 8](https://forum.jiki.io/t/402/8)), independently: not
+  "prekretnica", "since it is used more like some accomplished mid-goal here"; offered
+  "tačka", "cilj", or miroslav-inc's "dostignuće".
+- **aleksaelezovic** ([post 11](https://forum.jiki.io/t/402/11)): keep "prekretnica" as the
+  closest translation of the English word, while conceding it is "more similar to word
+  checkpoint" and offering "cilj", "dostignuće" or "faza" for the dashboard use case, ending
+  "I would just discuss milestone some more maybe, or change it in the future".
+
+#### The two things that settled it
+
+**1. "dostignuće" is already taken, in shipped Serbian copy.** Jiki has a separate
+**Achievements** feature (its own sidebar entry, badges and certificates page,
+`achievements.*` in `app/messages.json`), and the Serbian sidebar already renders it as
+**"Dostignuća"**. So miroslav-inc's and little_mouse's instinct that a milestone is
+"something achieved" is right about the feeling, but the word that carries it is spoken for:
+adopting it for `milestone` would put one Serbian word on two different product concepts,
+which is exactly the collision the `streak`/`niz` and `feature`/`funkcija` rows already
+guard against. This is the piece of information none of the three reviewers had, and it is
+what makes the choice decidable rather than a matter of taste.
+
+**2. The English string is a numbered path marker, not a turning point.** The concept is
+`dashboard.exercisePath.milestone.label` = "Milestone {index}", rendered on a path whose
+first node is literally "The Start of your Journey", and the roadmap speaks of "Milestones
+6-10 ... extending the journey". So a milestone in Jiki is a numbered leg of a journey that
+a learner works through and completes. "Prekretnica" cannot carry that: it means a turning
+point, a moment where direction changes, which is not what "Milestone 3" is. (miroslav-inc
+glossed it as "crossroad"; the precise Serbian for crossroad is "raskrsnica", but his
+underlying objection stands, and two of the three reviewers made it independently.)
+
+#### Why "etapa"
+
+**"Etapa"** is a leg of a journey: the dictionary sense is "deo puta koji se pređe između
+dva odmora", and in sport it is the numbered section of a course ("treća etapa"). It is
+ordinary, unmarked Serbian, used equally for stages of a project and legs of a race
+("završetak prve etape"), and it numbers cleanly: "Etapa 1", "Etapa 2". It keeps the road
+metaphor the English word carries, which is the thing every other candidate drops.
+
+It also answers aleksaelezovic's real objection, which was not that "prekretnica" is
+semantically right but that a replacement would "seem kind of silly in the dashboard UI and
+give away that it was just directly translated from english". "Etapa" is not a calque of
+"milestone" at all: it is the word Serbian already uses for this shape of thing, so it reads
+as native rather than translated. It is the same family as the "faza" he offered, but a
+better fit, because "faza" is a period of time while an "etapa" is a stretch you cover and
+finish.
+
+Rejected alternatives: "dostignuće"/"postignuće" (collides with Achievements, above);
+"prekretnica" (wrong sense, objected to by two of three reviewers); "faza" (phase, a period
+rather than a leg); "cilj" (goal, and every milestone is not the goal); "tačka" (too bare on
+its own); "ključna tačka" (project-management jargon, and clumsy numbered); leaving the
+English "milestone" (the course localises platform vocabulary, and the row would be the odd
+one out).
+
+**Not a rebuke of any reviewer.** aleksaelezovic's "does it read as translated?" test is the
+right test, and it is the test "etapa" passes; miroslav-inc's and little_mouse's reading of
+the English meaning is the right reading, and it is what ruled "prekretnica" out.
+
+### 2026-08-06: Translation engine switched to `deepseek`
+
+**Decided by:** native speaker **miroslav-inc** (the verdict), on the "[Serbian Review]
+Alternative translation model" comparison thread (https://forum.jiki.io/t/935), plus
+**Jeremy** (project owner), who confirmed which engine the preferred version came from.
+**Status:** settled. **Terms affected:** none (engine choice, not a glossary or guide
+change). **Files affected:** `tracking.json`, which now carries the `translation_engine`
+block.
+
+Jeremy posted an alternative-model rendering of the Serbian `concept/using-functions` page
+alongside the published one and asked which read more naturally. miroslav-inc answered:
+"both version are fine, I would prefer second (from this post)", the "second" being the
+alternative quoted in the thread's opening post rather than the published version on the
+review site.
+
+**Unusual provenance, recorded deliberately:** the thread never names the model behind the
+alternative, by design (the comparison was run unlabelled so the verdict would not be
+biased by the engine's name). Jeremy, who ran the experiment, confirmed directly to the
+orchestrator that the alternative was DeepSeek. So the preference is the native speaker's
+and the engine identity is the owner's; neither is inferable from the thread text alone,
+and anyone re-reading t/935 later will not find "deepseek" written anywhere in it.
+
+Serbian therefore runs on `deepseek` rather than the `fable` default. This was a genuine
+switch, made on a native speaker's verdict, not on our own judgement or on cost.
 
 ### 2026-08-04: clothing-item terms confirmed and added; `smart` (attire) still open
 
@@ -315,13 +500,13 @@ terms, so logging them now rather than re-deriving per exercise. None of these a
 
 - **bouncer** (the exercise's job title) → izbacivač
 - **guest list** → spisak gostiju
-- **smart (as in "smart attire")** → elegantno (flagged as imprecise by a native speaker
-  without a replacement being supplied; see the 2026-08-04 entry above before using it)
 - **standard library** → standardna biblioteka
 - **dictionary key** → ključ
 
 `dress code` → pravila oblačenja and `dead end` → ćorsokak were on this list and are now
-confirmed and in `glossary.md` (see the 2026-08-04 entry above).
+confirmed and in `glossary.md` (see the 2026-08-04 entry above). `smart (attire)` was on it
+too, drafted as "elegantno"; it was settled as **"poslovno"** on 2026-08-26 and is likewise
+now a row in `glossary.md` (see the 2026-08-26 entry at the top).
 
 If a native speaker confirms or corrects any of these on the forum, move it into
 `glossary.md` as a normal additive row and remove it from this list.
@@ -391,6 +576,9 @@ different questions: "prekidač" is the noun, the rest are the verb.
 
 #### OPEN: `milestone` in the dashboard UI, revisit later
 
+**Superseded on 2026-08-06** (see the top entry: the row is now "etapa"). Kept as written for
+the record of what each reviewer argued.
+
 aleksaelezovic keeps **"prekretnica"** for now, on the grounds that it is the closest
 translation of the English word itself, and adds that "anything other than `prekretnica`
 seems kind of silly in the dashboard UI and gives away that it was just directly translated
@@ -443,8 +631,7 @@ more comfortable with English UI words such as "Save" and "Edit" than with trans
 ### 2026-08-02: Proposed terms from the Stage 2 batch 2 catch-up pass (unconfirmed drafts)
 
 **Decided by:** agent (proposals only, nothing written to `glossary.md`). The catch-up pass
-translating `two-fer`, `strings`, `digital-clock`, `arrays`, `weather-symbols` (full detail
-also in `STATUS.md`).
+translating `two-fer`, `strings`, `digital-clock`, `arrays`, `weather-symbols`.
 
 **Conflict, needs settling:** `piece of paper` (string metaphor) — this batch's `strings`
 item proposes _папир_, but the earlier `if` pass proposed _папирић_ for the same term. One

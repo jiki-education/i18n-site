@@ -7,8 +7,8 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/ar/curriculum/concepts/arrays/page.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "9b24d96a"
-content_version: "3dfd9c19c5d7"
+governance_sha: "7d77efea"
+content_version: "554507a605c3"
 published_at: "2026-08-26"
 ---
 
@@ -50,8 +50,8 @@ published_at: "2026-08-26"
 
 لذا في المرة الأولى التي نشكر فيها شخصًا، نشكر `"DJ"`. وفي المرة الثانية، نشكر `"Becky"`، وهكذا.
 
-يمكننا أيضًا استخدام الخاصية `length` على المصفوفات، تمامًا كما تعلمنا عن السلاسل النصية. إذا كان لدينا مصفوفة تحتوي على أربع سلاسل نصية في صندوق `mentors` وكتبنا `mentors.length`، فسيعيد 4.
+يمكننا أيضًا استخدام الخاصية `length` على المصفوفات، تمامًا كما تعلمنا عن السلاسل النصية. إذا كان لدينا مصفوفة تحتوي على أربع سلاسل نصية في صندوق `mentors` وكتبنا `mentors.length`، فسيُرجع 4.
 
-ويمكننا أيضًا استخدام `includes` على المصفوفات بنفس الطريقة. يمكننا أن نقول `mentors.includes("DJ")`، وسيعيد `true`. لكن إذا قلنا `mentors.includes("Frank")`، فسيعيد `false`.
+ويمكننا أيضًا استخدام `includes` على المصفوفات بنفس الطريقة. يمكننا أن نقول `mentors.includes("DJ")`، وسيُرجع `true`. لكن إذا قلنا `mentors.includes("Frank")`، فسيُرجع `false`.
 
 كل شيء يعمل بنفس الطريقة كما في السلاسل النصية. الأمر فقط أننا نتعامل مع عناصر المصفوفة، وليس حروف السلسلة النصية.

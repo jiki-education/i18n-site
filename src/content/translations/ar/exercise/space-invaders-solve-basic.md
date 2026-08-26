@@ -1,0 +1,30 @@
+---
+lang: "ar"
+type: "exercise"
+slug: "space-invaders-solve-basic"
+title: "Space Invaders"
+status: "published"
+source_repo: "i18n"
+source_path: "locales/ar/curriculum/exercises/space-invaders-solve-basic"
+en_md5: "832d47151ead209ebf0f931a8472ec30"
+governance_sha: "955b8514"
+content_version: "d3837bc9891a"
+published_at: "2026-08-26"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"describers","rows":[{"key":"move","english":"moved the laser cannon to the right","target":"حرّك مدفع الليزر إلى اليمين"}]},{"name":"checks","rows":[{"key":"notShotAllAliens","english":"You didn't shoot down all the aliens.","target":"لم تُسقط جميع الكائنات الفضائية."}]},{"name":"tasks","rows":[{"key":"shootTheAliens.name","english":"Shoot all the aliens","target":"أسقط جميع الكائنات الفضائية"},{"key":"shootTheAliens.description","english":"Move your laser cannon to the right and shoot each alien as you pass underneath it. Don't miss or move off the edge!","target":"حرّك مدفع الليزر الخاص بك إلى اليمين وأطلق النار على كل كائن فضائي أثناء مرورك تحته. لا تُخطئ ولا تتجاوز حافة الشاشة!"}]},{"name":"scenarios","rows":[{"key":"shootTheAliens.name","english":"Shoot the Aliens","target":"أسقط الكائنات الفضائية"},{"key":"shootTheAliens.description","english":"Move right and shoot all the aliens","target":"تحرّك إلى اليمين وأسقط جميع الكائنات الفضائية"}]},{"name":"hints","rows":[{"key":"whatDoINeedToDo.question","english":"What do I need to do?","target":"ماذا عليّ أن أفعل؟"},{"key":"whatDoINeedToDo.answer","english":"Like the maze, you need to move your character (this time a laser, not a person). But you also need to shoot from the laser! Move the laser underneath an alien then shoot. Then move again until you're under the next alien, and shoot again. Continue until you've shot down the last alien!","target":"كما في المتاهة، عليك تحريك شخصيتك (هذه المرة مدفع الليزر، وليس شخصًا). لكن عليك أيضًا إطلاق النار من مدفع الليزر! حرّك مدفع الليزر تحت الكائن الفضائي ثم أطلق النار. ثم حرّكه مرة أخرى حتى تكون تحت الكائن الفضائي التالي، وأطلق النار مرة أخرى. استمر حتى تُسقط آخر كائن فضائي!"},{"key":"cantWasteAmmo.question","english":"I get told I can't waste ammo.","target":"يُقال لي إنني لا أستطيع إهدار الذخيرة."},{"key":"cantWasteAmmo.answer","english":"You should only `shoot()` when you're directly below an alien. Try moving one step further (or maybe you've gone one too far?)","target":"يجب ألا تستدعي `shoot()` إلا عندما تكون مباشرةً تحت كائن فضائي. جرّب التحرك خطوةً إضافية (أو ربما تجاوزتَ الحد بخطوة؟)"}]},{"name":"functions","rows":[{"key":"move.description","english":"Moves the laser cannon **one position to the right**. If you move off the right edge of the screen, you lose!","target":"تحرّك مدفع الليزر **موضعًا واحدًا إلى اليمين**. إذا تجاوزتَ الحافة اليمنى للشاشة، تخسر!"},{"key":"move.category","english":"Movement","target":"الحركة"},{"key":"shoot.description","english":"Shoots the laser upwards. **Only shoot when there's an alien above you**, or you lose the game!","target":"تطلق الليزر إلى الأعلى. **لا تُطلق النار إلا عندما يكون فوقك كائن فضائي**، وإلا تخسر اللعبة!"},{"key":"shoot.category","english":"Action","target":"الإجراء"}]}]},{"heading":"Shared \"space-invaders\" messages","note":"Shared by every exercise in the space-invaders category, not just this one. A change here changes all of them.","namespaces":[{"name":"describers","rows":[{"key":"moveLeft","english":"moved the laser cannon to the left","target":"حرّك مدفع الليزر إلى اليسار"},{"key":"moveRight","english":"moved the laser cannon to the right","target":"حرّك مدفع الليزر إلى اليمين"},{"key":"shoot","english":"shot the laser upwards","target":"أطلق الليزر نحو الأعلى"},{"key":"isAlienAbove","english":"determined if there was an alien above the laser cannon","target":"حدد ما إذا كان هناك فضائي فوق مدفع الليزر"},{"key":"getStartingAliensInRow","english":"retrieved the starting positions of row ${arg1} of aliens","target":"استعاد مواقع البداية للصف ${arg1} من الفضائيين"},{"key":"fireFireworks","english":"fired off celebratory fireworks","target":"أطلق ألعابًا نارية احتفالية"}]},{"name":"errors","rows":[{"key":"laserOverheated","english":"Oh no! Your laser cannon overheated from shooting too fast! You need to move before you can shoot a second time.","target":"أوه لا! لقد سخن مدفع الليزر الخاص بك أكثر من اللازم بسبب إطلاق النار بسرعة كبيرة! يجب أن تتحرك قبل أن تتمكن من إطلاق النار مرة ثانية."},{"key":"missedShot","english":"Oh no, you missed. Wasting ammo is not allowed!","target":"أوه لا، لقد أخطأت. إهدار الذخيرة غير مسموح!"},{"key":"moveOffEdge","english":"Oh no, you tried to move off the edge!","target":"أوه لا، لقد حاولت التحرك خارج الحافة!"},{"key":"rowNotNumber","english":"Oh no, the row input you provided is not a number.","target":"أوه لا، إدخال الصف الذي قدمته ليس رقمًا."},{"key":"rowOutOfRange","english":"Oh no, you tried to access a row of aliens that doesn't exist. You asked for row {{row}}, but the rows are numbered 0 to {{max}}.","target":"أوه لا، لقد حاولت الوصول إلى صف من الفضائيين غير موجود. لقد طلبت الصف {{row}}، ولكن الصفوف مرقمة من 0 إلى {{max}}."},{"key":"notAllAliensDead","english":"You need to defeat all the aliens before you can celebrate!","target":"يجب عليك هزيمة جميع الفضائيين قبل أن تتمكن من الاحتفال!"}]}]}]
+---
+
+مرحبًا بك في تمرينك الثاني: Space Invaders! هذه لعبة أركيد كلاسيكية من سبعينيات القرن الماضي، ومن أولى الألعاب التي لعبتها على الإطلاق. خلال الأسابيع القادمة، ستبني ليزرًا يعمل تلقائيًا بالكامل لإسقاط الكائنات الفضائية. أما الآن، فمهمتك هي إسقاط جميع الكائنات الفضائية يدويًا!
+
+لديك دالتان (‏_functions_ بالإنجليزية):
+
+- الدالة `move()` (تحريك) تنقل مدفع الليزر الخاص بك موضعًا واحدًا إلى اليمين
+- الدالة `shoot()` (إطلاق نار) تطلق الليزر إلى الأعلى
+
+لقد وضعنا أول استدعاء `move()` في مكانه لك. **انظر إلى أماكن الكائنات الفضائية**، ثم اكتب تتابعًا من استدعاءات `move()` و`shoot()` لتدميرها جميعًا.
+
+انتبه:
+
+- إذا أطلقت النار ولم يكن فوقك أي كائن فضائي، فستحصل على خطأ (ففي النهاية، إهدار الذخيرة غير مسموح به!)
+- إذا تجاوزت الحافة اليمنى للشاشة، فستحصل على خطأ.
+
+استمتع!

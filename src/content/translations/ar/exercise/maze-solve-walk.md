@@ -1,0 +1,24 @@
+---
+lang: "ar"
+type: "exercise"
+slug: "maze-solve-walk"
+title: "لنتمشَّ"
+status: "published"
+source_repo: "i18n"
+source_path: "locales/ar/curriculum/exercises/maze-solve-walk"
+en_md5: "5f035995ce732e0595cd4d3c95814b84"
+governance_sha: "955b8514"
+content_version: "ad1ef305420c"
+published_at: "2026-08-26"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"errors","rows":[{"key":"walkExpectsNumber","english":"walk() expects a number of steps","target":"تتوقع walk() عددًا من الخطوات"}]},{"name":"describers","rows":[{"key":"walk","english":"Walk forward a given number of steps","target":"يمشي إلى الأمام عددًا محددًا من الخطوات"}]},{"name":"checks","rows":[{"key":"notReachedEnd","english":"You didn't reach the end of the maze.","target":"لم تصل إلى نهاية المتاهة."}]},{"name":"tasks","rows":[{"key":"solveMaze.name","english":"Guide person to the end of the maze","target":"وجّه الشخصية إلى نهاية المتاهة"},{"key":"solveMaze.description","english":"Navigate through the maze using walk(), turnLeft(), and turnRight() to reach the green target cell.","target":"تنقّل عبر المتاهة باستخدام walk() وturnLeft() وturnRight() للوصول إلى الخلية الخضراء المستهدفة."}]},{"name":"scenarios","rows":[{"key":"maze1.name","english":"Guide person to the end of the maze","target":"وجّه الشخصية إلى نهاية المتاهة"},{"key":"maze1.description","english":"Your job is to reach the goal.","target":"مهمتك هي الوصول إلى الهدف."}]},{"name":"hints","rows":[{"key":"moveNotWorking.question","english":"Why doesn't `move()` work any more?","target":"لماذا لم تعد `move()` تعمل؟"},{"key":"moveNotWorking.answer","english":"Each exercise in Jiki has different functions you can use. In this exercise, you have the `walk(...)` function. Replace the `n` with the number of steps you want to walk. So `walk(1)` does exactly the same as `move()` did last time.","target":"في كل تمرين في Jiki دوال مختلفة يمكنك استخدامها. في هذا التمرين، لديك الدالة `walk(...)`. استبدل `n` بعدد الخطوات التي تريد أن تمشيها. لذا فإن `walk(1)` تفعل نفس ما كانت تفعله `move()` في المرة السابقة تمامًا."}]},{"name":"functions","rows":[{"key":"walk.description","english":"Moves the character **forward by the given number of steps** in the current direction. Each step moves one cell. The character will stop and report an error if it hits a wall.","target":"تتحرك الشخصية **إلى الأمام بالعدد المحدد من الخطوات** في الاتجاه الحالي. كل خطوة تحركها خلية واحدة. ستتوقف الشخصية وتبلغ عن خطأ إذا اصطدمت بجدار."},{"key":"walk.category","english":"Movement","target":"الحركة"},{"key":"turnLeft.description","english":"Turns the character **90 degrees to the left** (counterclockwise). This changes the direction the character is facing.","target":"تدير الشخصية **90 درجة إلى اليسار** (عكس اتجاه عقارب الساعة). هذا يغيّر الاتجاه الذي تواجهه الشخصية."},{"key":"turnLeft.category","english":"Movement","target":"الحركة"},{"key":"turnRight.description","english":"Turns the character **90 degrees to the right** (clockwise). This changes the direction the character is facing.","target":"تدير الشخصية **90 درجة إلى اليمين** (مع اتجاه عقارب الساعة). هذا يغيّر الاتجاه الذي تواجهه الشخصية."},{"key":"turnRight.category","english":"Movement","target":"الحركة"}]}]},{"heading":"Shared \"maze\" messages","note":"Shared by every exercise in the maze category, not just this one. A change here changes all of them.","namespaces":[{"name":"errors","rows":[{"key":"fellOffEdge","english":"Oh no - you tried to fall off the edge of the maze!","target":"يا للهول! قاربت السقوط من حافة المتاهة!"},{"key":"hitWall","english":"Ouch - you walked into a wall!","target":"آخ! لقد اصطدمت بالجدار!"},{"key":"walkedIntoFire","english":"Ouch! You walked into the fire!","target":"آخ! لقد دخلت في النار!"},{"key":"walkedIntoPoop","english":"Ewww! You walked into the poop! 💩💩💩","target":"يا للقرف! لقد دست على البراز! 💩💩💩"}]},{"name":"describers","rows":[{"key":"move","english":"Move the character forward one cell","target":"لتتحرك الشخصية خلية إلى الأمام"},{"key":"turnLeft","english":"Turn the character 90 degrees left","target":"لتدر الشخصية 90 درجة يسارًا"},{"key":"turnRight","english":"Turn the character 90 degrees right","target":"لتدر الشخصية 90 درجة يمينًا"}]}]}]
+---
+
+عدنا إلى المتاهة من جديد! في المرة السابقة، استخدمت الدالة `move()` (تحرّك) للانتقال خطوة واحدة في كل مرة. نجح ذلك، لكن كتابة `move()` مرات عديدة متتالية تصبح مملة جدًا!
+
+في هذا التمرين، استبدلنا `move()` بدالة (‏_function_ بالإنجليزية) جديدة اسمها `walk()` (امشِ). تأخذ هذه الدالة عددًا بوصفه مدخلًا وتتحرك إلى الأمام بالعدد نفسه من الخطوات.
+
+على سبيل المثال، عند استدعاء `walk(3)` تتحرك إلى الأمام 3 خطوات، وعند استدعاء `walk(1)` تتحرك خطوة واحدة فقط.
+
+في جميع التمارين القادمة، سيكون لديك قسم «الدوال» مثل القسم أدناه، يسهّل عليك معرفة الدوال المتاحة لك بالضبط وكيفية عملها.
+
+استخدم `walk()` و`turnLeft()` (انعطف يسارًا) و`turnRight()` (انعطف يمينًا) للتنقل عبر المتاهة والوصول إلى الخلية الخضراء المستهدفة.

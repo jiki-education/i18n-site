@@ -1,0 +1,28 @@
+---
+lang: "ar"
+type: "exercise"
+slug: "maze-solve-repeat"
+title: "متاهة الحلقات"
+status: "published"
+source_repo: "i18n"
+source_path: "locales/ar/curriculum/exercises/maze-solve-repeat"
+en_md5: "8e2c5079e7cf134afee6f3c110ebb33b"
+governance_sha: "955b8514"
+content_version: "3cec4e072e47"
+published_at: "2026-08-26"
+messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"checks","rows":[{"key":"notReachedEnd","english":"You didn't reach the end of the maze.","target":"لم تصل إلى نهاية المتاهة."},{"key":"tooManyLines","english":"Your solution has too many lines of code. Look for groups of consecutive move() calls and replace each group with a repeat loop.","target":"حلّك يحتوي على عدد كبير جدًا من أسطر الكود. ابحث عن مجموعات من استدعاءات move() المتتالية واستبدل كل مجموعة بحلقة repeat."},{"key":"oneLineOver","english":"You're just one line too long! A repeat loop isn't always shorter: repeating something only two or three times can take more lines than writing the calls out, so look for a repeat that isn't actually saving you anything.","target":"أنت تتجاوز الحد بسطر واحد فقط! حلقة repeat ليست دائمًا أقصر: تكرار شيء ما مرتين أو ثلاث مرات فقط قد يتطلب أسطرًا أكثر من كتابة الاستدعاءات نفسها، لذا ابحث عن حلقة repeat لا توفر عليك شيئًا في الواقع."}]},{"name":"tasks","rows":[{"key":"solveMazeWithRepeat.name","english":"Refactor the maze solution using repeat loops","target":"أعد هيكلة حلّ المتاهة باستخدام حلقات repeat"},{"key":"solveMazeWithRepeat.description","english":"Replace consecutive `move()` calls with repeat loops to make the code shorter.","target":"استبدل استدعاءات `move()` المتتالية بحلقات repeat لجعل الكود أقصر."}]},{"name":"scenarios","rows":[{"key":"mazeRepeat1.name","english":"Refactor the maze solution using repeat loops","target":"أعد هيكلة حلّ المتاهة باستخدام حلقات repeat"},{"key":"mazeRepeat1.description","english":"Use repeat loops to avoid consecutive `move()` calls.","target":"استخدم حلقات repeat لتجنب استدعاءات `move()` المتتالية."}]},{"name":"hints","rows":[{"key":"noIdea.question","english":"I have no idea what to do","target":"ليست لدي أي فكرة عما يجب فعله"},{"key":"noIdea.answer","english":"Look for groups of consecutive `move()` calls. For example, instead of:\n\n```javascript\nmove()\nmove()\nmove()\n```\n\nYou can write:\n\n```javascript\nrepeat(3) {\n  move()\n}\n```\n\nFind the groups and replace them!","target":"ابحث عن مجموعات من استدعاءات `move()` المتتالية. على سبيل المثال، بدلاً من:\n\n```javascript\nmove()\nmove()\nmove()\n```\n\nيمكنك كتابة:\n\n```javascript\nrepeat(3) {\n  move()\n}\n```\n\nابحث عن المجموعات واستبدلها!"},{"key":"tooManyLines.question","english":"Using repeats but got too many lines?","target":"تستخدم حلقات repeat ولكن عدد الأسطر كبير جدًا؟"},{"key":"tooManyLines.answer","english":"Is it always better to use a repeat? In some cases, it might be shorter to just have two moves next to each other.","target":"هل من الأفضل دائمًا استخدام حلقة repeat؟ في بعض الحالات، قد يكون الأقصر أن تضع استدعاءين لـ move بجانب بعضهما."}]},{"name":"functions","rows":[{"key":"move.description","english":"Moves the character **one step forward** in the current direction. The character will only move if the target position is not blocked by a wall.","target":"تحرّك الشخصية **خطوة واحدة للأمام** في الاتجاه الحالي. لن تتحرك الشخصية إلا إذا لم يكن الموضع المستهدف محجوبًا بجدار."},{"key":"move.category","english":"Movement","target":"الحركة"},{"key":"turnLeft.description","english":"Turns the character **90 degrees to the left** (counterclockwise). This changes the direction the character is facing.","target":"تدير الشخصية **90 درجة إلى اليسار** (عكس اتجاه عقارب الساعة). يغيّر هذا الاتجاه الذي تواجهه الشخصية."},{"key":"turnLeft.category","english":"Movement","target":"الحركة"},{"key":"turnRight.description","english":"Turns the character **90 degrees to the right** (clockwise). This changes the direction the character is facing.","target":"تدير الشخصية **90 درجة إلى اليمين** (باتجاه عقارب الساعة). يغيّر هذا الاتجاه الذي تواجهه الشخصية."},{"key":"turnRight.category","english":"Movement","target":"الحركة"}]}]},{"heading":"Shared \"maze\" messages","note":"Shared by every exercise in the maze category, not just this one. A change here changes all of them.","namespaces":[{"name":"errors","rows":[{"key":"fellOffEdge","english":"Oh no - you tried to fall off the edge of the maze!","target":"يا للهول! قاربت السقوط من حافة المتاهة!"},{"key":"hitWall","english":"Ouch - you walked into a wall!","target":"آخ! لقد اصطدمت بالجدار!"},{"key":"walkedIntoFire","english":"Ouch! You walked into the fire!","target":"آخ! لقد دخلت في النار!"},{"key":"walkedIntoPoop","english":"Ewww! You walked into the poop! 💩💩💩","target":"يا للقرف! لقد دست على البراز! 💩💩💩"}]},{"name":"describers","rows":[{"key":"move","english":"Move the character forward one cell","target":"لتتحرك الشخصية خلية إلى الأمام"},{"key":"turnLeft","english":"Turn the character 90 degrees left","target":"لتدر الشخصية 90 درجة يسارًا"},{"key":"turnRight","english":"Turn the character 90 degrees right","target":"لتدر الشخصية 90 درجة يمينًا"}]}]}]
+---
+
+لديك الآن حلّ يعمل لمتاهة، لكنه طويل جدًا ومليء بالتكرار. مهمتك هي تعديل الكود ليصبح **بأقل عدد ممكن من الأسطر**.
+
+السر في ذلك هو أن تستخدم حلقات `repeat` (‏_loops_ بالإنجليزية) لتجعل الكود أقصر. على سبيل المثال، تذكّر أنّ حلقة `repeat` لها هذه الصيغة:
+
+```javascript
+repeat(3) {
+  // ضع هنا ما تريد تكراره.
+}
+```
+
+مهمتك هنا أن تجعل الكود أقصر ما يمكن - **22 سطرًا من الكود**. هذا يعني أن تفكّر في متى يكون استخدام حلقة `repeat` مناسبًا ومتى لا يكون كذلك. لاحظ أن الأسطر الفارغة والأسطر التي تحتوي على تعليقات فقط لا تُحتسب ضمن الهدف، لذا، لا تتردد في إضافة أسطر فارغة ليكون الكود أسهل في القراءة!
+
+بالتوفيق!

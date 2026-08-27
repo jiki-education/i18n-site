@@ -6,10 +6,10 @@ title: "Le salon express"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/exercises/chop-shop"
-en_md5: "caea992c4cec6eb25313de524e294df9"
-governance_sha: "cbccb94"
-content_version: "9e8127e61c21"
-published_at: "2026-08-17"
+en_md5: "eef10493cf2492b9996e60c7771b3a8f"
+governance_sha: "accabaea"
+content_version: "582ba83d7d0f"
+published_at: "2026-08-27"
 forum_topic_id: 1669
 messages: [{"heading":"Messages shown in the exercise","namespaces":[{"name":"tasks","rows":[{"key":"canFitIn.name","english":"Can You Fit Them In?","target":"Détermine si tu peux les prendre en charge"},{"key":"canFitIn.description","english":"Write a function that determines if a new customer can be served before closing time, given the current queue and time remaining.","target":"Écris une fonction qui détermine si un nouveau client peut être servi avant la fermeture, en fonction de la file d'attente actuelle et du temps restant."}]},{"name":"scenarios","rows":[{"key":"emptyQueue.name","english":"No one in the queue","target":"Personne dans la file"},{"key":"emptyQueue.description","english":"No-one in the queue, plenty of time.","target":"Personne dans la file d'attente et tout le temps qu'il faut."},{"key":"emptyQueueButNoTime.name","english":"Late in the day","target":"Tard dans la journée"},{"key":"emptyQueueButNoTime.description","english":"No-one in the queue but not enough time.","target":"Personne dans la file d'attente, mais pas assez de temps."},{"key":"busyDayNoTime.name","english":"A full day","target":"Une journée bien remplie"},{"key":"busyDayNoTime.description","english":"A full queue and not enough time.","target":"Une file d'attente pleine et pas assez de temps."},{"key":"busyDayButTime.name","english":"Just squeezes in","target":"Ça passe tout juste"},{"key":"busyDayButTime.description","english":"A full day but there's just enough time.","target":"Une journée bien remplie, mais juste assez de temps."},{"key":"stillEarly.name","english":"Still early","target":"Encore tôt"},{"key":"stillEarly.description","english":"It's still early in the day.","target":"Il est encore tôt dans la journée."},{"key":"cuttingItFine.name","english":"Just in time","target":"Juste à temps"},{"key":"cuttingItFine.description","english":"They've made it just in time!","target":"La personne arrive juste à temps !"}]},{"name":"hints","rows":[{"key":"whereToStart.question","english":"Where should I start. The queue, or the new customer?","target":"Par où commencer ? Par la file d'attente ou par le nouveau client ?"},{"key":"whereToStart.answer","english":"First work out how much time the queue will eat up, then see what's left over for the new customer. A helper that turns a haircut name into its duration (in minutes) will make this much cleaner.","target":"Commence par calculer combien de temps la file d'attente va consommer, puis regarde ce qu'il reste pour le nouveau client. Une fonction auxiliaire qui transforme le nom d'une coupe en sa durée (en minutes) rendra le code beaucoup plus propre."},{"key":"subtractQueueTime.question","english":"How do I subtract each haircut's time from the remaining time?","target":"Comment soustraire la durée de chaque coupe du temps restant ?"},{"key":"subtractQueueTime.answer","english":"Loop through the queue. For each haircut, look up its duration with your helper and subtract that from your running total of time left in the day.","target":"Parcours la file d'attente. Pour chaque coupe, récupère sa durée grâce à ta fonction auxiliaire et soustrais-la de ton total de temps restant dans la journée."},{"key":"decideIfFits.question","english":"How do I decide if the new haircut fits?","target":"Comment décider si la nouvelle coupe rentre dans le temps restant ?"},{"key":"decideIfFits.answer","english":"After processing the queue, compare the remaining time against the duration of the new haircut. If the new haircut's time is less than or equal to the time left, it fits.","target":"Une fois la file d'attente traitée, compare le temps restant à la durée de la nouvelle coupe. Si la durée de la nouvelle coupe est inférieure ou égale au temps restant, ça passe !"}]}]}]
 ---
@@ -36,3 +36,27 @@ Les coupes que tu proposes sont :
 - Shave and Polish : 15 minutes
 - Afro Trim : 45 minutes
 - Up-do : 30 minutes
+
+### Tableaux imbriqués
+
+C'est le premier exercice où tu manipules un tableau qui contient d'autres tableaux comme éléments. On appelle ça des « tableaux imbriqués ». Un tableau imbriqué est un tableau comme les autres, mais au lieu de contenir des _strings_ ou des nombres, il contient d'autres tableaux.
+
+Regarde le tableau `cuts` (les coupes). Il contient d'autres tableaux, un pour chaque coupe de cheveux, et chacun de ces tableaux a deux éléments : un nom et une durée.
+
+Le plus simple, ici, est de penser d'abord aux tableaux intérieurs (les paires composées d'un nom et d'une durée), puis d'imaginer qu'ils sont tous regroupés ensemble dans un autre tableau.
+
+L'indexation fonctionne comme partout ailleurs, mais tu peux enchaîner les indices comme ceci...
+
+```javascript
+const cuts = [
+  ["Mohawk", 20],
+  ["Slicked-Back Pixie", 15],
+  ["Bob", 25],
+  //...
+]
+
+cuts[0] // ["Mohawk", 20]
+cuts[0][0] // "Mohawk"
+cuts[0][1] // 20
+cuts[2][0] // "Bob"
+```

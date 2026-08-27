@@ -1,9 +1,9 @@
 {
-  "published_at": "2026-08-26",
-  "governance_sha": "955b8514",
-  "approved": 934,
+  "published_at": "2026-08-27",
+  "governance_sha": "1220628b",
+  "approved": 933,
   "disapproved": 1,
-  "total": 3212,
+  "total": 3261,
   "languages": [
     {
       "lang": "fr",
@@ -11,9 +11,9 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-fr",
-      "approved": 181,
+      "approved": 180,
       "disapproved": 0,
-      "total": 181,
+      "total": 185,
       "items": [
         {
           "key": "glossary",
@@ -892,8 +892,8 @@
         },
         {
           "key": "exercise/lunchbox",
-          "topic_id": 1671,
-          "status": "approved"
+          "topic_id": null,
+          "status": "pending"
         },
         {
           "key": "exercise/matching-socks",
@@ -919,6 +919,26 @@
           "key": "exercise/stars",
           "topic_id": 1676,
           "status": "approved"
+        },
+        {
+          "key": "exercise/wordle-process-game",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-guess",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-solver",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sign-words",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -930,7 +950,7 @@
       "category_slug": "i18n-uk",
       "approved": 168,
       "disapproved": 0,
-      "total": 171,
+      "total": 176,
       "items": [
         {
           "key": "glossary",
@@ -951,6 +971,11 @@
           "key": "exercise/maze-solve-basic",
           "topic_id": 817,
           "status": "approved"
+        },
+        {
+          "key": "exercise/lunchbox",
+          "topic_id": null,
+          "status": "pending"
         },
         {
           "key": "concept/if",
@@ -1786,6 +1811,26 @@
           "key": "badge/townsfolk",
           "topic_id": 1495,
           "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-game",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-guess",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-solver",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sign-words",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -1797,7 +1842,7 @@
       "category_slug": "i18n-it",
       "approved": 140,
       "disapproved": 0,
-      "total": 171,
+      "total": 176,
       "items": [
         {
           "key": "glossary",
@@ -2653,6 +2698,31 @@
           "key": "badge/townsfolk",
           "topic_id": 1573,
           "status": "approved"
+        },
+        {
+          "key": "exercise/lunchbox",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-game",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-guess",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-solver",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sign-words",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -2664,7 +2734,7 @@
       "category_slug": "i18n-el",
       "approved": 124,
       "disapproved": 0,
-      "total": 171,
+      "total": 176,
       "items": [
         {
           "key": "glossary",
@@ -3520,6 +3590,31 @@
           "key": "badge/townsfolk",
           "topic_id": 1687,
           "status": "approved"
+        },
+        {
+          "key": "exercise/lunchbox",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-game",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-guess",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-solver",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sign-words",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -3531,7 +3626,7 @@
       "category_slug": "i18n-bn",
       "approved": 109,
       "disapproved": 0,
-      "total": 179,
+      "total": 184,
       "items": [
         {
           "key": "glossary",
@@ -4427,6 +4522,31 @@
           "key": "level-milestone/changing-dictionaries",
           "topic_id": 1888,
           "status": "approved"
+        },
+        {
+          "key": "exercise/lunchbox",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-game",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-guess",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-solver",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sign-words",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -4438,7 +4558,7 @@
       "category_slug": "i18n-pt-pt",
       "approved": 36,
       "disapproved": 0,
-      "total": 179,
+      "total": 184,
       "items": [
         {
           "key": "glossary",
@@ -5334,6 +5454,31 @@
           "key": "badge/townsfolk",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/lunchbox",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-game",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-guess",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-solver",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sign-words",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -5345,7 +5490,7 @@
       "category_slug": "i18n-es-419",
       "approved": 32,
       "disapproved": 0,
-      "total": 162,
+      "total": 167,
       "items": [
         {
           "key": "glossary",
@@ -6156,6 +6301,31 @@
           "key": "badge/townsfolk",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/lunchbox",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-game",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-guess",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-solver",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sign-words",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -6167,7 +6337,7 @@
       "category_slug": "i18n-hu",
       "approved": 21,
       "disapproved": 0,
-      "total": 179,
+      "total": 184,
       "items": [
         {
           "key": "glossary",
@@ -7061,6 +7231,31 @@
         },
         {
           "key": "badge/townsfolk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/lunchbox",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-game",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-guess",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-solver",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sign-words",
           "topic_id": null,
           "status": "pending"
         }
@@ -10116,7 +10311,7 @@
       "category_slug": "i18n-pt-br",
       "approved": 8,
       "disapproved": 1,
-      "total": 151,
+      "total": 156,
       "items": [
         {
           "key": "glossary",
@@ -10215,6 +10410,31 @@
         },
         {
           "key": "exercise/luhn",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/lunchbox",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-game",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-guess",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-solver",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sign-words",
           "topic_id": null,
           "status": "pending"
         },
@@ -14796,7 +15016,7 @@
       "category_slug": "i18n-es-es",
       "approved": 0,
       "disapproved": 0,
-      "total": 179,
+      "total": 184,
       "items": [
         {
           "key": "glossary",
@@ -15150,6 +15370,31 @@
         },
         {
           "key": "exercise/after-party",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/lunchbox",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-game",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-process-guess",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/wordle-solver",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/sign-words",
           "topic_id": null,
           "status": "pending"
         },

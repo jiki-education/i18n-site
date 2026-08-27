@@ -1,9 +1,9 @@
 {
   "published_at": "2026-08-27",
-  "governance_sha": "1220628b",
-  "approved": 933,
+  "governance_sha": "4d9c13be",
+  "approved": 932,
   "disapproved": 1,
-  "total": 3261,
+  "total": 3288,
   "languages": [
     {
       "lang": "fr",
@@ -11,7 +11,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-fr",
-      "approved": 180,
+      "approved": 179,
       "disapproved": 0,
       "total": 185,
       "items": [
@@ -917,8 +917,8 @@
         },
         {
           "key": "exercise/stars",
-          "topic_id": 1676,
-          "status": "approved"
+          "topic_id": null,
+          "status": "pending"
         },
         {
           "key": "exercise/wordle-process-game",
@@ -950,7 +950,7 @@
       "category_slug": "i18n-uk",
       "approved": 168,
       "disapproved": 0,
-      "total": 176,
+      "total": 177,
       "items": [
         {
           "key": "glossary",
@@ -1831,6 +1831,11 @@
           "key": "exercise/sign-words",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/stars",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -1842,7 +1847,7 @@
       "category_slug": "i18n-it",
       "approved": 140,
       "disapproved": 0,
-      "total": 176,
+      "total": 180,
       "items": [
         {
           "key": "glossary",
@@ -2723,6 +2728,26 @@
           "key": "exercise/sign-words",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/chop-shop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/matching-socks",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/meal-prep",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stars",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -2734,7 +2759,7 @@
       "category_slug": "i18n-el",
       "approved": 124,
       "disapproved": 0,
-      "total": 176,
+      "total": 177,
       "items": [
         {
           "key": "glossary",
@@ -3597,6 +3622,11 @@
           "status": "pending"
         },
         {
+          "key": "exercise/stars",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
           "key": "exercise/wordle-process-game",
           "topic_id": null,
           "status": "pending"
@@ -3626,7 +3656,7 @@
       "category_slug": "i18n-bn",
       "approved": 109,
       "disapproved": 0,
-      "total": 184,
+      "total": 185,
       "items": [
         {
           "key": "glossary",
@@ -4547,6 +4577,11 @@
           "key": "exercise/sign-words",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/stars",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -4558,7 +4593,7 @@
       "category_slug": "i18n-pt-pt",
       "approved": 36,
       "disapproved": 0,
-      "total": 184,
+      "total": 188,
       "items": [
         {
           "key": "glossary",
@@ -5479,6 +5514,26 @@
           "key": "exercise/sign-words",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/chop-shop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/matching-socks",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/meal-prep",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stars",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -5490,7 +5545,7 @@
       "category_slug": "i18n-es-419",
       "approved": 32,
       "disapproved": 0,
-      "total": 167,
+      "total": 171,
       "items": [
         {
           "key": "glossary",
@@ -6326,6 +6381,26 @@
           "key": "exercise/sign-words",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/chop-shop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/matching-socks",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/meal-prep",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stars",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -6337,7 +6412,7 @@
       "category_slug": "i18n-hu",
       "approved": 21,
       "disapproved": 0,
-      "total": 184,
+      "total": 188,
       "items": [
         {
           "key": "glossary",
@@ -7256,6 +7331,26 @@
         },
         {
           "key": "exercise/sign-words",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/chop-shop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/matching-socks",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/meal-prep",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stars",
           "topic_id": null,
           "status": "pending"
         }
@@ -10311,7 +10406,7 @@
       "category_slug": "i18n-pt-br",
       "approved": 8,
       "disapproved": 1,
-      "total": 156,
+      "total": 160,
       "items": [
         {
           "key": "glossary",
@@ -10415,6 +10510,11 @@
         },
         {
           "key": "exercise/lunchbox",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stars",
           "topic_id": null,
           "status": "pending"
         },
@@ -11090,6 +11190,21 @@
         },
         {
           "key": "exercise/triangle",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/chop-shop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/matching-socks",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/meal-prep",
           "topic_id": null,
           "status": "pending"
         }
@@ -15016,7 +15131,7 @@
       "category_slug": "i18n-es-es",
       "approved": 0,
       "disapproved": 0,
-      "total": 184,
+      "total": 188,
       "items": [
         {
           "key": "glossary",
@@ -15935,6 +16050,26 @@
         },
         {
           "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/chop-shop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/matching-socks",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/meal-prep",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/stars",
           "topic_id": null,
           "status": "pending"
         }

@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "alphanumeric"
 title: "Alphanumeric"
-en_md5: "dafa97576cb810f2817bb02ab3c7280d"
+en_md5: "64a26e7eb02e56fef66bb04d3850bf9f"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/alphanumeric"
-captured_at: "2026-08-21"
+captured_at: "2026-08-28"
 ---
 
 In this exercise, your task is to create functions that check whether a string contains letters and/or numbers.

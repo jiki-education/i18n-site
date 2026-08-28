@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "stars"
 title: "Stars"
-en_md5: "2d99d43d7ab5dfb480e447f9c159bae0"
+en_md5: "d1db5e560c550da5acf5b465b3ebfc6a"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/stars"
-captured_at: "2026-08-27"
+captured_at: "2026-08-28"
 ---
 
 In this exercise you're going to build a visual pattern generator that draws rows of stars.

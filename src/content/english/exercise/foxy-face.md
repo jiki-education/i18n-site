@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "foxy-face"
 title: "Foxy Face"
-en_md5: "e4252db4d68ca8163ffebe969e9994dd"
+en_md5: "0fd37ed9c298cc8beaf1a97f0fe4c33f"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/foxy-face"
-captured_at: "2026-08-02"
+captured_at: "2026-08-28"
 ---
 
 This exercise introduces you to the <define>`triangle`</define> function. You use it with 7 inputs. The first 6 inputs are pairs of coordinates for the three corners. The final input is the `color`:
@@ -32,10 +32,10 @@ The face is horizontally symmetrical (the left side is identical to the right si
 
 (Make sure to use those colors when drawing the triangles, and remember to check you write them as <define>strings</define>!)
 
-We've drawn outlines of some of the parts for you to help you get started. If you follow the order given in the comments you'll find it makes life a little easier.
+### Working out the correct coordinates
 
-Also, to make your life even easier, all the numbers used are divisible by 5 (e.g. `5`, `10`, `15`, etc are valid but `1`, `2`, `3`, `4`, `6`, `7`, `8`, `9`, `11`, etc are not). You'll see this pattern a lot in the following exercises.
+We've drawn outlines of some of the parts for you to help you get started. If you **follow the order given in the comments** you'll find it makes life a little easier.
 
-One final thing. You can hover over the space to find co-ordinates. That's great for the left side, but as the right side is symmetrical - can you solve that without needing to hover?
+As in previous exercises, you can **hover over the drawing space** to find co-ordinates and **all the numbers used are divisible by 5** (e.g. `5`, `10`, `15`, etc are valid).
 
 Good luck!

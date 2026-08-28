@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "snowman-basic"
 title: "Snowman"
-en_md5: "31c7fbe0f6e7e9715e443a0d94c6a96f"
+en_md5: "bf47be425dcca86fb9a9fab2d24212e0"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/snowman-basic"
-captured_at: "2026-08-02"
+captured_at: "2026-08-28"
 ---
 
 This exercise introduces you to the `circle` function, which we use with 3 <define>inputs</define>:
@@ -28,4 +28,10 @@ Your job is to draw three white circles to build a snowman. The snowman has:
 
 All three circles should be centered horizontally on the canvas. Use the target image as a guide.
 
-As before, you're drawing on a canvas that's 100 wide and 100 high. So the top-left of the canvas is `0,0`, the bottom right is `100,100`, and you can hover over the canvas to check where something needs to go. To make your life easier, all numbers in this exercise are **divisible by 5**.
+As before, you're drawing on a canvas that's 100 wide and 100 high. So the top-left of the canvas is `0,0` and the bottom right is `100,100`.
+
+### Working out the correct coordinates
+
+You can **hover over the drawing space** to find co-ordinates.
+
+In this exercise, **all the numbers used are divisible by 5** (e.g. `5`, `10`, `15`, etc are valid but `1`, `2`, `3`, `4`, etc are not).

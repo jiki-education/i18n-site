@@ -1,9 +1,9 @@
 {
-  "published_at": "2026-08-27",
-  "governance_sha": "4d9c13be",
+  "published_at": "2026-08-29",
+  "governance_sha": "b03acd0e",
   "approved": 932,
   "disapproved": 1,
-  "total": 3288,
+  "total": 3297,
   "languages": [
     {
       "lang": "fr",
@@ -892,7 +892,7 @@
         },
         {
           "key": "exercise/lunchbox",
-          "topic_id": null,
+          "topic_id": 1671,
           "status": "pending"
         },
         {
@@ -950,7 +950,7 @@
       "category_slug": "i18n-uk",
       "approved": 168,
       "disapproved": 0,
-      "total": 177,
+      "total": 180,
       "items": [
         {
           "key": "glossary",
@@ -1834,6 +1834,21 @@
         },
         {
           "key": "exercise/stars",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/chop-shop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/matching-socks",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/meal-prep",
           "topic_id": null,
           "status": "pending"
         }
@@ -2759,7 +2774,7 @@
       "category_slug": "i18n-el",
       "approved": 124,
       "disapproved": 0,
-      "total": 177,
+      "total": 180,
       "items": [
         {
           "key": "glossary",
@@ -3645,6 +3660,21 @@
           "key": "exercise/sign-words",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/chop-shop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/matching-socks",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/meal-prep",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -3656,7 +3686,7 @@
       "category_slug": "i18n-bn",
       "approved": 109,
       "disapproved": 0,
-      "total": 185,
+      "total": 188,
       "items": [
         {
           "key": "glossary",
@@ -4580,6 +4610,21 @@
         },
         {
           "key": "exercise/stars",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/chop-shop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/matching-socks",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/meal-prep",
           "topic_id": null,
           "status": "pending"
         }

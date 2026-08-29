@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-29",
-  "governance_sha": "b03acd0e",
-  "approved": 932,
+  "governance_sha": "d43e308a",
+  "approved": 933,
   "disapproved": 1,
   "total": 3297,
   "languages": [
@@ -2772,7 +2772,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-el",
-      "approved": 124,
+      "approved": 125,
       "disapproved": 0,
       "total": 180,
       "items": [
@@ -3203,8 +3203,8 @@
         },
         {
           "key": "concept/scenarios",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2047,
+          "status": "approved"
         },
         {
           "key": "concept/scope",

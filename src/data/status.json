@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-08-29",
-  "governance_sha": "d43e308a",
-  "approved": 933,
+  "published_at": "2026-08-30",
+  "governance_sha": "84062696",
+  "approved": 951,
   "disapproved": 1,
   "total": 3297,
   "languages": [
@@ -62,7 +62,7 @@
         },
         {
           "key": "concept/strings",
-          "topic_id": null,
+          "topic_id": 1183,
           "status": "approved"
         },
         {
@@ -107,7 +107,7 @@
         },
         {
           "key": "concept/while-loops",
-          "topic_id": null,
+          "topic_id": 1185,
           "status": "approved"
         },
         {
@@ -307,12 +307,12 @@
         },
         {
           "key": "exercise/bouncer",
-          "topic_id": null,
+          "topic_id": 1366,
           "status": "approved"
         },
         {
           "key": "exercise/bouncer-wristbands",
-          "topic_id": null,
+          "topic_id": 1367,
           "status": "approved"
         },
         {
@@ -337,12 +337,12 @@
         },
         {
           "key": "exercise/build-wall",
-          "topic_id": null,
+          "topic_id": 1368,
           "status": "approved"
         },
         {
           "key": "exercise/annalyns-infiltration",
-          "topic_id": null,
+          "topic_id": 1361,
           "status": "approved"
         },
         {
@@ -392,7 +392,7 @@
         },
         {
           "key": "exercise/collatz-conjecture",
-          "topic_id": null,
+          "topic_id": 1369,
           "status": "approved"
         },
         {
@@ -452,7 +452,7 @@
         },
         {
           "key": "exercise/leap",
-          "topic_id": null,
+          "topic_id": 1363,
           "status": "approved"
         },
         {
@@ -517,7 +517,7 @@
         },
         {
           "key": "exercise/battle-procedures",
-          "topic_id": null,
+          "topic_id": 1365,
           "status": "approved"
         },
         {
@@ -552,7 +552,7 @@
         },
         {
           "key": "exercise/scroll-and-shoot",
-          "topic_id": null,
+          "topic_id": 1347,
           "status": "approved"
         },
         {
@@ -1860,7 +1860,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-it",
-      "approved": 140,
+      "approved": 149,
       "disapproved": 0,
       "total": 180,
       "items": [
@@ -2556,13 +2556,13 @@
         },
         {
           "key": "api-email/premium_mailer.welcome_to_premium",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1630,
+          "status": "approved"
         },
         {
           "key": "api-email/premium_mailer.subscription_ended",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1629,
+          "status": "approved"
         },
         {
           "key": "api-email/progression_mailer.level_completed",
@@ -2576,13 +2576,13 @@
         },
         {
           "key": "level-milestone/using-functions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1651,
+          "status": "approved"
         },
         {
           "key": "level-milestone/strings-and-colors",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1656,
+          "status": "approved"
         },
         {
           "key": "level-milestone/repeat-loop",
@@ -2591,8 +2591,8 @@
         },
         {
           "key": "level-milestone/variables",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1649,
+          "status": "approved"
         },
         {
           "key": "level-milestone/basic-state",
@@ -2601,13 +2601,13 @@
         },
         {
           "key": "level-milestone/functions-that-return-things",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1648,
+          "status": "approved"
         },
         {
           "key": "level-milestone/conditionals",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1646,
+          "status": "approved"
         },
         {
           "key": "level-milestone/complex-conditionals",
@@ -2631,13 +2631,13 @@
         },
         {
           "key": "level-milestone/string-iteration",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1658,
+          "status": "approved"
         },
         {
           "key": "level-milestone/multiple-functions",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1652,
+          "status": "approved"
         },
         {
           "key": "level-milestone/methods-and-properties",
@@ -3213,12 +3213,12 @@
         },
         {
           "key": "concept/state",
-          "topic_id": null,
+          "topic_id": 1345,
           "status": "approved"
         },
         {
           "key": "concept/string-concatenation",
-          "topic_id": null,
+          "topic_id": 1344,
           "status": "approved"
         },
         {
@@ -4636,7 +4636,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-pt-pt",
-      "approved": 36,
+      "approved": 37,
       "disapproved": 0,
       "total": 188,
       "items": [
@@ -4797,8 +4797,8 @@
         },
         {
           "key": "concept/arithmetic",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1727,
+          "status": "approved"
         },
         {
           "key": "concept/break",
@@ -5588,7 +5588,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-es-419",
-      "approved": 32,
+      "approved": 34,
       "disapproved": 0,
       "total": 171,
       "items": [
@@ -5634,7 +5634,7 @@
         },
         {
           "key": "concept/repeat",
-          "topic_id": null,
+          "topic_id": 1062,
           "status": "approved"
         },
         {
@@ -5670,7 +5670,7 @@
         {
           "key": "concept/for-loops",
           "topic_id": 1194,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "concept/else",
@@ -5685,7 +5685,7 @@
         {
           "key": "concept/dictionaries",
           "topic_id": 1195,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/maze-turn-around",
@@ -7683,7 +7683,7 @@
         },
         {
           "key": "exercise/fix-wall",
-          "topic_id": null,
+          "topic_id": 1350,
           "status": "approved"
         },
         {
@@ -10449,7 +10449,7 @@
       "stage": "refining",
       "live": true,
       "category_slug": "i18n-pt-br",
-      "approved": 8,
+      "approved": 10,
       "disapproved": 1,
       "total": 160,
       "items": [
@@ -10616,12 +10616,12 @@
         {
           "key": "api-email/progression_mailer.level_completed",
           "topic_id": 1615,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "api-email/mailers.shared.footer",
           "topic_id": 1613,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "badge/beta_user",
@@ -11427,6 +11427,378 @@
         },
         {
           "key": "badge/townsfolk",
+          "topic_id": null,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "ar",
+      "name": "Arabic",
+      "stage": "refining",
+      "live": false,
+      "category_slug": "i18n-ar",
+      "approved": 7,
+      "disapproved": 0,
+      "total": 72,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 470,
+          "status": "pending"
+        },
+        {
+          "key": "concept/using-functions",
+          "topic_id": 740,
+          "status": "approved"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 741,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/maze-solve-basic",
+          "topic_id": 795,
+          "status": "approved"
+        },
+        {
+          "key": "concept/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays",
+          "topic_id": 1851,
+          "status": "pending"
+        },
+        {
+          "key": "concept/else-if",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/for-loops",
+          "topic_id": 1759,
+          "status": "pending"
+        },
+        {
+          "key": "concept/else",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/while-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/dictionaries",
+          "topic_id": 1758,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/rock-paper-scissors",
+          "topic_id": 1865,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/rainbow",
+          "topic_id": 1861,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": 1868,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": 1855,
+          "status": "approved"
+        },
+        {
+          "key": "exercise/weather-symbols",
+          "topic_id": 1869,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.confirmation_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/devise.mailer.reset_password_instructions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/progression_mailer.level_completed",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/mailers.shared.footer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/beta_user",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/early_bird",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/first_lesson",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/maze_navigator",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/member",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/night_owl",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/scenario_handler",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/sidekick",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "badge/townsfolk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/fix-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-walk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-solve-basic",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/cloud-rain-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/foxy-face",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/jumbled-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/penguin",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/maze-solve-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/space-invaders-repeat",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-snowman",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-sun",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/relational-traffic-lights",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/snowman",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/structured-house",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/traffic-lights",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/finish-wall",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/golf-rolling-ball-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/plant-the-flowers",
           "topic_id": null,
           "status": "pending"
         }
@@ -12853,378 +13225,6 @@
         },
         {
           "key": "badge/townsfolk",
-          "topic_id": null,
-          "status": "pending"
-        }
-      ]
-    },
-    {
-      "lang": "ar",
-      "name": "Arabic",
-      "stage": "refining",
-      "live": false,
-      "category_slug": "i18n-ar",
-      "approved": 3,
-      "disapproved": 0,
-      "total": 72,
-      "items": [
-        {
-          "key": "glossary",
-          "topic_id": 470,
-          "status": "pending"
-        },
-        {
-          "key": "concept/using-functions",
-          "topic_id": 740,
-          "status": "approved"
-        },
-        {
-          "key": "video-player",
-          "topic_id": 741,
-          "status": "approved"
-        },
-        {
-          "key": "exercise/maze-solve-basic",
-          "topic_id": 795,
-          "status": "approved"
-        },
-        {
-          "key": "concept/variables",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/strings",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/arrays",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/else-if",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/for-loops",
-          "topic_id": 1759,
-          "status": "pending"
-        },
-        {
-          "key": "concept/else",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/while-loops",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "concept/dictionaries",
-          "topic_id": 1758,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rock-paper-scissors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/rainbow",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/two-fer",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/digital-clock",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/weather-symbols",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/devise.mailer.confirmation_instructions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/devise.mailer.reset_password_instructions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/progression_mailer.level_completed",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "api-email/mailers.shared.footer",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/using-functions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/strings-and-colors",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/repeat-loop",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/variables",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/basic-state",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/functions-that-return-things",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/conditionals",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/complex-conditionals",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/conditionals-and-state",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/make-your-own-functions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/string-manipulation",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/string-iteration",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/multiple-functions",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/methods-and-properties",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/advanced-loops",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/arrays",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/building-arrays",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/dictionaries",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "level-milestone/changing-dictionaries",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/beta_user",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/early_bird",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/first_lesson",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/maze_navigator",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/member",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/night_owl",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/premium",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/scenario_handler",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/sidekick",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "badge/townsfolk",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/fix-wall",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-walk",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/snowman-basic",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/space-invaders-solve-basic",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/cloud-rain-sun",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/foxy-face",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/jumbled-house",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/penguin",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/golf-rolling-ball-loop",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/maze-solve-repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/space-invaders-repeat",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/relational-snowman",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/relational-sun",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/relational-traffic-lights",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/snowman",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/structured-house",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/traffic-lights",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/finish-wall",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/golf-rolling-ball-state",
-          "topic_id": null,
-          "status": "pending"
-        },
-        {
-          "key": "exercise/plant-the-flowers",
           "topic_id": null,
           "status": "pending"
         }

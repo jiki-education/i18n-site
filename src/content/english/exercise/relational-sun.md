@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "relational-sun"
 title: "Relational Sun"
-en_md5: "9ff58522efc81e1fab45e94feaa23998"
+en_md5: "f8e61ed6381608f02c79577cab58bd33"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/relational-sun"
-captured_at: "2026-08-03"
+captured_at: "2026-08-30"
 ---
 
 In this exercise, your task is to position a sun in the top-right corner of the sky using arithmetic and variables. The key constraint is that the edge of the sun should always be a fixed **gap** away from the edge of the canvas, no matter what size the sun is.

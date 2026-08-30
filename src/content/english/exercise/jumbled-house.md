@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "jumbled-house"
 title: "Jumbled House"
-en_md5: "a48e15acee5acff45d6cc37d0a7cd860"
+en_md5: "491fa418398af6ca7d52a44de4268165"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/jumbled-house"
-captured_at: "2026-08-02"
+captured_at: "2026-08-30"
 ---
 
 Your task is to rearrange the pieces of the house. They are both misplaced and the wrong sizes.

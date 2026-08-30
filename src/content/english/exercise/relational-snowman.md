@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "relational-snowman"
 title: "Relational Snowman"
-en_md5: "957fea62970d6c37351ce3908df01938"
+en_md5: "1a4352c353298c36e99d1c7e77e82c87"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/relational-snowman"
-captured_at: "2026-08-03"
+captured_at: "2026-08-30"
 ---
 
 In this exercise, we're building another snowman, but similar to the last exercise, we're doing it so that everything can be derived from a single <define>`size`</define> variable using arithmetic.

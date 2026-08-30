@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "relational-traffic-lights"
 title: "Relational Traffic Lights"
-en_md5: "22d2e2f8443d2646382b2325b544c742"
+en_md5: "a172fb7ee11a22db3c59cd3ded755d65"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/relational-traffic-lights"
-captured_at: "2026-08-03"
+captured_at: "2026-08-30"
 ---
 
 You're back with the traffic lights! This time, we're going to follow the pattern from the last two exercises, and build the traffic lights so that as we change the radius, they rescale correctly. To achieve this we have a series of variables we can set to be relative to either/both <define>`center`</define> and <define>`radius`</define>.

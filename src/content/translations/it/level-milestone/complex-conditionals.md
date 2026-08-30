@@ -7,13 +7,14 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/it.json"
 en_md5: "07656bf41b4102374b8f16654db4f461"
-governance_sha: "2e7fb87"
-content_version: "45d75aa5b160"
-published_at: "2026-08-13"
+governance_sha: "c7a18dde"
+content_version: "82bead3a00f8"
+published_at: "2026-08-30"
+forum_topic_id: 1641
 ---
 
-Ottimo lavoro su un livello complesso. Ora hai sotto controllo `and`/`or`, il modulo e i cicli senza contatore.
+Ottimo lavoro su un livello impegnativo. Hai acquisito pieno controllo su *and/or*, sull'operatore modulo e sui cicli senza contatore.
 
-Questi sono il tipo di strumenti che ti permettono di scrivere condizioni che rispecchiano davvero la logica del mondo reale, invece di dover suddividere tutto in piccoli controlli separati.
+Questi sono gli strumenti che ti permettono di scrivere condizioni che riflettono la logica del mondo reale, invece di dover spezzare tutto in tanti piccoli controlli separati.
 
-Nel prossimo livello combineremo i condizionali con lo stato, ed è qui che i tuoi programmi inizieranno a essere in grado di rispondere a ciò che accade durante l'esecuzione. Divertiti!
+Nel prossimo livello userai i condizionali ("se succede X, allora fai Y") insieme allo stato. Da qui i tuoi programmi inizieranno a tenere conto di ciò che accade durante l'esecuzione. Divertiti!

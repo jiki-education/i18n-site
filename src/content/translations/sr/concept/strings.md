@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/sr/curriculum/concepts/strings/page.md"
 en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
-governance_sha: "45861691"
-content_version: "7f005361de32"
-published_at: "2026-08-24"
+governance_sha: "c7a18dde"
+content_version: "6043a63b561a"
+published_at: "2026-08-30"
+forum_topic_id: 1027
 ---
 
 Kada želiš da upotrebiš broj, možeš prosto da ga napišeš i Džiki zna na šta misliš. Ali šta ako želiš da upotrebiš slovo, reč ili rečenicu? Na primer, šta ako bi funkcija `rectangle` (pravougaonik) ili funkcija `circle` (krug) imala dodatni ulaz u kojem navodiš boju? Kako bismo napisali boju da je ubacimo u mašinu? Ako samo napišemo reč `green` (zeleno) ili `blue` (plavo), Džiki će misliti da govorimo o nekoj mašini na policama, pa će reći: „Ne postoji mašina koja se zove green. Ne znam šta da radim.“
@@ -58,4 +59,4 @@ Džiki bi skinuo mašinu sa police i ubacio novčiće u prva četiri otvora. Zat
   height="392"
 />
 
-Reč string jedna je od onih tehničkih reči koje ljudima na prvi pogled deluju pomalo zastrašujuće, ali zapravo znači samo tekst. Vrlo brzo ćeš se navići. Nema u tome ničeg magičnog.
+Reč string jedna je od onih tehničkih reči koje ljudima na prvi pogled deluju pomalo zastrašujuće, ali zapravo znači samo tekst. Vrlo brzo ćeš se navići. Nema ničeg magičnog u tome.

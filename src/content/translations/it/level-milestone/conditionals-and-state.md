@@ -7,12 +7,13 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/it.json"
 en_md5: "7116d01d259733a6107a06c51f9bda31"
-governance_sha: "2e7fb87"
-content_version: "0c8302686275"
-published_at: "2026-08-13"
+governance_sha: "c7a18dde"
+content_version: "f5c96ce844c3"
+published_at: "2026-08-30"
+forum_topic_id: 1647
 ---
 
-Ottimo lavoro. Combinare i condizionali con lo stato è il punto in cui i tuoi programmi iniziano davvero a sembrare vivi, rispondendo a ciò che accade invece di seguire un copione fisso.
+Ottimo lavoro. Combinare i condizionali con lo stato, cioè le informazioni che descrivono la situazione attuale del programma, è il punto in cui i tuoi programmi iniziano davvero a sembrare vivi, rispondendo a ciò che accade invece di seguire un copione fisso.
 
 Questo è più o meno il livello di complessità con cui scriverai per il resto del corso, quindi tutto ciò che hai praticato qui continuerà a tornare.
 

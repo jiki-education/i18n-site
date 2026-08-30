@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "structured-house"
 title: "Structured House"
-en_md5: "74355001a33f1ac0bbca2d22f78f85a2"
+en_md5: "fbcfcffdf685bb2686e51822eef6174d"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/structured-house"
-captured_at: "2026-08-03"
+captured_at: "2026-08-30"
 ---
 
 Your task is to draw a house, building the whole thing from just two anchor variables: <define>`houseWidth`</define> and <define>`houseHeight`</define>.

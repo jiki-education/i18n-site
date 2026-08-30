@@ -7,12 +7,13 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/it.json"
 en_md5: "4bb57788e09cc6de5466d34b560540b2"
-governance_sha: "2e7fb87"
-content_version: "0f4657a75089"
-published_at: "2026-08-13"
+governance_sha: "c7a18dde"
+content_version: "3ec08b703512"
+published_at: "2026-08-30"
+forum_topic_id: 1659
 ---
 
-Bel lavoro su questo livello. La concatenazione e le stringhe interpolate sono idee piuttosto semplici, ma si presentano di continuo, specialmente quando produci output da far leggere a una persona.
+Buon lavoro su questo livello. La concatenazione e le stringhe interpolate sono concetti semplici, ma tornano spesso, soprattutto quando vuoi creare output chiari per chi legge.
 
 Userai queste tecniche praticamente in ogni programma che scriverai d'ora in poi.
 

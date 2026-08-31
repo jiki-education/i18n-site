@@ -1,7 +1,7 @@
 {
   "published_at": "2026-08-31",
-  "governance_sha": "e9bbb77b",
-  "approved": 957,
+  "governance_sha": "a49e255a",
+  "approved": 960,
   "disapproved": 1,
   "total": 3297,
   "languages": [
@@ -11,7 +11,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-fr",
-      "approved": 180,
+      "approved": 183,
       "disapproved": 0,
       "total": 185,
       "items": [
@@ -893,7 +893,7 @@
         {
           "key": "exercise/lunchbox",
           "topic_id": 1671,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/matching-socks",
@@ -917,8 +917,8 @@
         },
         {
           "key": "exercise/stars",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1676,
+          "status": "approved"
         },
         {
           "key": "exercise/wordle-process-game",
@@ -937,8 +937,8 @@
         },
         {
           "key": "exercise/sign-words",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2048,
+          "status": "approved"
         }
       ]
     },

@@ -1,9 +1,9 @@
 {
-  "published_at": "2026-08-31",
-  "governance_sha": "a49e255a",
+  "published_at": "2026-09-01",
+  "governance_sha": "e619d11e",
   "approved": 960,
   "disapproved": 1,
-  "total": 3297,
+  "total": 3307,
   "languages": [
     {
       "lang": "fr",
@@ -13,7 +13,7 @@
       "category_slug": "i18n-fr",
       "approved": 183,
       "disapproved": 0,
-      "total": 185,
+      "total": 186,
       "items": [
         {
           "key": "glossary",
@@ -939,6 +939,11 @@
           "key": "exercise/sign-words",
           "topic_id": 2048,
           "status": "approved"
+        },
+        {
+          "key": "exercise/adventures-in-poetry",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -950,7 +955,7 @@
       "category_slug": "i18n-uk",
       "approved": 168,
       "disapproved": 0,
-      "total": 180,
+      "total": 181,
       "items": [
         {
           "key": "glossary",
@@ -1851,6 +1856,11 @@
           "key": "exercise/meal-prep",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/adventures-in-poetry",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -1862,7 +1872,7 @@
       "category_slug": "i18n-it",
       "approved": 151,
       "disapproved": 0,
-      "total": 180,
+      "total": 181,
       "items": [
         {
           "key": "glossary",
@@ -2763,6 +2773,11 @@
           "key": "exercise/stars",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/adventures-in-poetry",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -2774,7 +2789,7 @@
       "category_slug": "i18n-el",
       "approved": 125,
       "disapproved": 0,
-      "total": 180,
+      "total": 181,
       "items": [
         {
           "key": "glossary",
@@ -3675,6 +3690,11 @@
           "key": "exercise/meal-prep",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/adventures-in-poetry",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -3686,7 +3706,7 @@
       "category_slug": "i18n-bn",
       "approved": 109,
       "disapproved": 0,
-      "total": 188,
+      "total": 189,
       "items": [
         {
           "key": "glossary",
@@ -4627,6 +4647,11 @@
           "key": "exercise/meal-prep",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/adventures-in-poetry",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -4638,7 +4663,7 @@
       "category_slug": "i18n-pt-pt",
       "approved": 37,
       "disapproved": 0,
-      "total": 188,
+      "total": 189,
       "items": [
         {
           "key": "glossary",
@@ -5579,6 +5604,11 @@
           "key": "exercise/stars",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/adventures-in-poetry",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -5590,7 +5620,7 @@
       "category_slug": "i18n-es-419",
       "approved": 34,
       "disapproved": 0,
-      "total": 171,
+      "total": 172,
       "items": [
         {
           "key": "glossary",
@@ -6446,6 +6476,11 @@
           "key": "exercise/stars",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "exercise/adventures-in-poetry",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -6457,7 +6492,7 @@
       "category_slug": "i18n-hu",
       "approved": 21,
       "disapproved": 0,
-      "total": 188,
+      "total": 189,
       "items": [
         {
           "key": "glossary",
@@ -7396,6 +7431,11 @@
         },
         {
           "key": "exercise/stars",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/adventures-in-poetry",
           "topic_id": null,
           "status": "pending"
         }
@@ -10451,7 +10491,7 @@
       "category_slug": "i18n-pt-br",
       "approved": 10,
       "disapproved": 1,
-      "total": 160,
+      "total": 161,
       "items": [
         {
           "key": "glossary",
@@ -11250,6 +11290,11 @@
         },
         {
           "key": "exercise/meal-prep",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/adventures-in-poetry",
           "topic_id": null,
           "status": "pending"
         }
@@ -15176,7 +15221,7 @@
       "category_slug": "i18n-es-es",
       "approved": 0,
       "disapproved": 0,
-      "total": 188,
+      "total": 189,
       "items": [
         {
           "key": "glossary",
@@ -16115,6 +16160,11 @@
         },
         {
           "key": "exercise/stars",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/adventures-in-poetry",
           "topic_id": null,
           "status": "pending"
         }

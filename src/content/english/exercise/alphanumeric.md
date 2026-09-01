@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "alphanumeric"
 title: "Alphanumeric"
-en_md5: "64a26e7eb02e56fef66bb04d3850bf9f"
+en_md5: "951ca0605b4b57918696a83979f308d6"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/alphanumeric"
-captured_at: "2026-08-28"
+captured_at: "2026-09-01"
 ---
 
 In this exercise, your task is to create functions that check whether a string contains letters and/or numbers.
@@ -25,9 +25,9 @@ Then, write a <define>`whatAmI(string)`</define> function that uses those helper
 - Strings with both letters and numbers should return `"Alphanumeric"`
 - Everything else should return `"Unknown"`
 
-### Using what you just learned
+### Bonus tasks
 
-Although there are many valid ways to solve this exercise, the solution we want you to come up with uses a `continue` statement and the three functions above.
+There are lots of valid ways to solve this exercise. You might like to try using a `continue` statement, but there are many other good solutions.
 
 There's also a bonus task that challenges you to solve the whole thing in 42 lines of code or fewer. That target isn't necessarily the most production-quality solution. A couple of extra lines probably give a nicer one, and there are shorter solutions too. But it's a good goal to push your capabilities towards.
 

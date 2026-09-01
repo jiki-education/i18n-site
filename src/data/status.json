@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-01",
-  "governance_sha": "1a10634a",
-  "approved": 963,
+  "governance_sha": "f610f4d1",
+  "approved": 964,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -3704,7 +3704,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 112,
+      "approved": 113,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -4335,8 +4335,8 @@
         },
         {
           "key": "concept/hsl",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2254,
+          "status": "approved"
         },
         {
           "key": "concept/logical-and",

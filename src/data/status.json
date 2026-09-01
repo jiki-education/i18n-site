@@ -1,6 +1,6 @@
 {
   "published_at": "2026-09-01",
-  "governance_sha": "e619d11e",
+  "governance_sha": "a3b5cd57",
   "approved": 960,
   "disapproved": 1,
   "total": 3307,
@@ -942,7 +942,7 @@
         },
         {
           "key": "exercise/adventures-in-poetry",
-          "topic_id": null,
+          "topic_id": 2247,
           "status": "pending"
         }
       ]

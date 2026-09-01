@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/function-composition/page.md"
 en_md5: "7df3110b30c0f279d7f04d3b4e331a99"
-governance_sha: "af41eb2"
+governance_sha: "f610f4d1"
 content_version: "1dda2b7b4d16"
-published_at: "2026-08-21"
+published_at: "2026-09-01"
+forum_topic_id: 2253
 ---
 
 এখন পর্যন্ত আপনি যে ফাংশনগুলো লিখেছেন, সেগুলোর প্রতিটি মোটামুটি নিজের পায়ে দাঁড়িয়ে থেকেছে এবং কাজ করার জন্য যে লজিক দরকার, তার সবটাই নিজের ভেতরে রেখেছে।

@@ -1,6 +1,6 @@
 {
   "published_at": "2026-09-01",
-  "governance_sha": "a3b5cd57",
+  "governance_sha": "d86c75f0",
   "approved": 960,
   "disapproved": 1,
   "total": 3307,
@@ -922,7 +922,7 @@
         },
         {
           "key": "exercise/wordle-process-game",
-          "topic_id": null,
+          "topic_id": 2249,
           "status": "pending"
         },
         {

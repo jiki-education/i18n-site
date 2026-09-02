@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-09-01",
-  "governance_sha": "f610f4d1",
-  "approved": 964,
+  "published_at": "2026-09-02",
+  "governance_sha": "5a06540d",
+  "approved": 965,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -3704,7 +3704,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 113,
+      "approved": 114,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -4360,8 +4360,8 @@
         },
         {
           "key": "concept/methods",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2260,
+          "status": "approved"
         },
         {
           "key": "concept/modulo",

@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "wordle-process-guess"
 title: "Wordle: Process Guess"
-en_md5: "3947aa1be7871fcfb0e523cb3c036d7f"
+en_md5: "9c8afa4a4caa91fe2e3243fc4cd4f81d"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/wordle-process-guess"
-captured_at: "2026-08-27"
+captured_at: "2026-09-02"
 ---
 
 Welcome to Wordle, the game that went viral during Covid-19 lockdowns!

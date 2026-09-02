@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "wordle-process-game"
 title: "Wordle: Process a Game"
-en_md5: "3f54f8e85b690f64d730b76d8a0c9277"
+en_md5: "6be12d334e9ef1def6b932cd884369af"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/wordle-process-game"
-captured_at: "2026-08-27"
+captured_at: "2026-09-02"
 ---
 
 We're back with the Wordle game, and now it's time to process the whole game, not just a single guess!

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-02",
-  "governance_sha": "4d128ce1",
-  "approved": 969,
+  "governance_sha": "f43fbb64",
+  "approved": 970,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -3704,7 +3704,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 118,
+      "approved": 119,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -4390,8 +4390,8 @@
         },
         {
           "key": "concept/rgb",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2265,
+          "status": "approved"
         },
         {
           "key": "concept/scenarios",

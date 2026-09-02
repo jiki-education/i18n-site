@@ -7,12 +7,13 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/rgb/page.md"
 en_md5: "8ed038f6d17072b6fb6eaae6bef15c2c"
-governance_sha: "af41eb2"
-content_version: "ad2c3b345468"
-published_at: "2026-08-21"
+governance_sha: "b7cd2475"
+content_version: "d16aef705cdb"
+published_at: "2026-09-02"
+forum_topic_id: 2265
 ---
 
-RGB আমাদের রংকে লাল, সবুজ ও নীলের একটি মিশ্রণ হিসেবে ভাবতে শেখায়। RGB-এর মানে এটাই: লাল (ইংরেজিতে _red (R)_), সবুজ (ইংরেজিতে _green (G)_), নীল (ইংরেজিতে _blue (B)_)। স্কুলে রং মেশানোর কথা মনে থাকলে বুঝবেন, ব্যাপারটা অনেকটা সে রকমই, শুধু এখানে রঙের বদলে আমরা মেশাচ্ছি আলো।
+RGB আমাদের রংকে লাল, সবুজ আর নীলের মিশ্রণ হিসেবে ভাবতে দেয়। RGB-এর পুরো অর্থই তাই: Red, Green, Blue (অর্থাৎ লাল, সবুজ আর নীল)। স্কুলে পেইন্ট মেশানোর কথা মনে থাকলে ব্যাপারটা অনেকটা সেরকমই, শুধু এখানে পেইন্টের বদলে আমরা আলো মেশাচ্ছি।
 
 <img
   class="concept-image"

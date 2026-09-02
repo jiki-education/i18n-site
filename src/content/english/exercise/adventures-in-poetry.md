@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "adventures-in-poetry"
 title: "Adventures in Poetry"
-en_md5: "444b0a68f443ccb86f15cc0f43fb63d7"
+en_md5: "ab3ebe6570023a88a51f091bbb445e40"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/adventures-in-poetry"
-captured_at: "2026-09-01"
+captured_at: "2026-09-02"
 ---
 
 You're making a robotic poetry game called "Adventures in Poetry". As your first step, you need to program the robot so that as it walks, it collects words and then recites the poem at the end.
@@ -15,7 +15,7 @@ Each square holds one of four things:
 1. Nothing (`""`)
 2. A **word** from the poem.
 3. Scenery like a leaf or a butterfly (an emoji).
-4. A checkered flag, which tells the robot to stop.
+4. A checkered flag (`🏁`), which tells the robot to stop.
 
 To help you, you have a few functions. Firstly, you have a <literal>`move()`</literal> function, which tells the poetic robot to move forward onto the next square and returns whatever was on it. You have an <literal>`isEmoji(thing)`</literal> function, which returns a boolean telling you whether the string you pass in is an emoji. And finally you have a <literal>`recite(poem)`</literal> function, which you need to use with the final poem.
 

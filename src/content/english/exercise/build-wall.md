@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "build-wall"
 title: "Build the Wall"
-en_md5: "abe5bf292aec66be1c0b672e97fc2295"
+en_md5: "7d0ed0226f310682aa46083247338058"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/build-wall"
-captured_at: "2026-08-19"
+captured_at: "2026-09-02"
 ---
 
 Last time you saw the wall, you added a top layer to finish it off. In this exercise, you build on that by making a whole wall from scratch, 55 bricks in total.

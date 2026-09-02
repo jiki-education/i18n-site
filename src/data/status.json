@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-02",
-  "governance_sha": "566f52b7",
-  "approved": 974,
+  "governance_sha": "6baef114",
+  "approved": 975,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -3704,7 +3704,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 123,
+      "approved": 124,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -4435,8 +4435,8 @@
         },
         {
           "key": "concept/type-conversion",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2270,
+          "status": "approved"
         },
         {
           "key": "concept/updating-dictionaries",

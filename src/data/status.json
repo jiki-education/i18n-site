@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-02",
-  "governance_sha": "b7b8ef52",
-  "approved": 985,
+  "governance_sha": "4d62b9e2",
+  "approved": 986,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -2787,7 +2787,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 134,
+      "approved": 135,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -3078,8 +3078,8 @@
         },
         {
           "key": "exercise/checkerboard",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2286,
+          "status": "approved"
         },
         {
           "key": "exercise/cityscape-skyline",

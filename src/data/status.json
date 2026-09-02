@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-02",
-  "governance_sha": "695c61c3",
-  "approved": 982,
+  "governance_sha": "3f9d55e7",
+  "approved": 983,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -2787,7 +2787,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 131,
+      "approved": 132,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -3063,8 +3063,8 @@
         },
         {
           "key": "exercise/bouncer-wristbands",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2283,
+          "status": "approved"
         },
         {
           "key": "exercise/build-wall",

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-02",
-  "governance_sha": "a70dd273",
-  "approved": 979,
+  "governance_sha": "5e3f5d9a",
+  "approved": 980,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -2787,7 +2787,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 128,
+      "approved": 129,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -3048,8 +3048,8 @@
         },
         {
           "key": "exercise/annalyns-infiltration",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2280,
+          "status": "approved"
         },
         {
           "key": "exercise/battle-procedures",

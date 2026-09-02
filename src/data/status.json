@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-02",
-  "governance_sha": "4d62b9e2",
-  "approved": 986,
+  "governance_sha": "ad6ca691",
+  "approved": 987,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -2787,7 +2787,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 135,
+      "approved": 136,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -3098,8 +3098,8 @@
         },
         {
           "key": "exercise/dnd-roll",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2288,
+          "status": "approved"
         },
         {
           "key": "exercise/driving-test",

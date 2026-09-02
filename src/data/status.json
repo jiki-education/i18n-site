@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-02",
-  "governance_sha": "ad6ca691",
-  "approved": 987,
+  "governance_sha": "92a63dd8",
+  "approved": 988,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -2787,7 +2787,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 136,
+      "approved": 137,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -3083,8 +3083,8 @@
         },
         {
           "key": "exercise/cityscape-skyline",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2289,
+          "status": "approved"
         },
         {
           "key": "exercise/cityscape-skyscraper",

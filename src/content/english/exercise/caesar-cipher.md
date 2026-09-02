@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "caesar-cipher"
 title: "Caesar Cipher"
-en_md5: "d3e1c006a952dafab93205195f0af6db"
+en_md5: "52ace7fff2ef022f59b3b2ea3a54e2ea"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/caesar-cipher"
-captured_at: "2026-08-06"
+captured_at: "2026-09-02"
 ---
 
 The Caesar Cipher is one of the earliest and simplest encryption techniques. It was used by Julius Caesar to send secret messages to his generals.

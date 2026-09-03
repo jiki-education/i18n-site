@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-03",
-  "governance_sha": "282bb9f8",
-  "approved": 1014,
+  "governance_sha": "649b1ddd",
+  "approved": 1015,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -1870,7 +1870,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 161,
+      "approved": 162,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -2326,8 +2326,8 @@
         },
         {
           "key": "exercise/relational-sun",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2322,
+          "status": "approved"
         },
         {
           "key": "exercise/relational-traffic-lights",

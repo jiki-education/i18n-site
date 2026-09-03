@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-03",
-  "governance_sha": "f2cbb192",
-  "approved": 989,
+  "governance_sha": "cb2b1ac1",
+  "approved": 990,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -2787,7 +2787,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 138,
+      "approved": 139,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -3093,8 +3093,8 @@
         },
         {
           "key": "exercise/collatz-conjecture",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2292,
+          "status": "approved"
         },
         {
           "key": "exercise/dnd-roll",

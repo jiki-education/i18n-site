@@ -2,24 +2,24 @@
 type: "exercise"
 slug: "formal-dinner"
 title: "Formal Dinner"
-en_md5: "ef1a7cb430985cf200bcbeeb451a561f"
+en_md5: "b0628bfad9d662c21ab91a40b9e5bc2b"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/formal-dinner"
-captured_at: "2026-08-21"
+captured_at: "2026-09-03"
 ---
 
 You're back in your side hustle as a bouncer. It's the evening after the After Party, and there's yet another shindig. This time it's a formal dinner, so tonight you're less "burly man on a door" and more "person with a clipboard and a nice waistcoat".
 
 This definitely isn't the place to use **just** your first name. In fact it isn't the place to use your first name at all. Here, everyone goes by an <define>honorific</define> (Miss, Mr, Dr, etc) and their surname.
 
-The organisers have handed you the seating plan as two separate lists. One holds the guests' full names. The other holds the name of the table each guest is sitting at (named after trees and flowers). As with "After Party", the two lists line up: the guest at position 3 in the first list sits at the table at position 3 in the second list.
+The organisers have handed you the seating plan as two separate arrays. One holds the guests' full names. The other holds the name of the table each guest is sitting at (named after trees and flowers). As with "After Party", the two arrays line up: the guest at position 3 in the first array sits at the table at position 3 in the second array.
 
 So when Mr Pitt sweeps in, you need to work out that this is the "Brad Pitt" on your list, and then tell him which table he's on.
 
 Write a function called <define info="looks up the table a guest is seated at">`tableFor`</define>. The function has three inputs:
 
-- The first is the list of guests' full names, as strings
-- The second is the list of table names, in the same order as the guests
+- The first is the array of guests' full names, as strings
+- The second is the array of table names, in the same order as the guests
 - The third is the arriving guest, formatted as an honorific followed by their surname (e.g. "Mr Pitt")
 
 Return the name of the table the guest is sitting at. If they're not on the seating plan at all, return the string <literal>`"No table found"`</literal> instead (no chancers here!).

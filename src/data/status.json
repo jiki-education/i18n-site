@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-03",
-  "governance_sha": "c944957f",
-  "approved": 1007,
+  "governance_sha": "a35c7492",
+  "approved": 1011,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -1870,7 +1870,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 154,
+      "approved": 158,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -2286,23 +2286,23 @@
         },
         {
           "key": "exercise/owners-bouquets",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2311,
+          "status": "approved"
         },
         {
           "key": "exercise/pangram",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2312,
+          "status": "approved"
         },
         {
           "key": "exercise/plant-the-flowers",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2313,
+          "status": "approved"
         },
         {
           "key": "exercise/rainbow-ball",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2314,
+          "status": "approved"
         },
         {
           "key": "exercise/rainbow-splodges",

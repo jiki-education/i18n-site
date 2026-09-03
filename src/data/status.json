@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-03",
-  "governance_sha": "2bacadfa",
-  "approved": 1000,
+  "governance_sha": "4f119a7e",
+  "approved": 1001,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -2787,7 +2787,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 149,
+      "approved": 150,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -3173,8 +3173,8 @@
         },
         {
           "key": "exercise/lower-pangram",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2305,
+          "status": "approved"
         },
         {
           "key": "exercise/maze-automated-solve",

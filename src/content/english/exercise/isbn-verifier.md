@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "isbn-verifier"
 title: "ISBN Verifier"
-en_md5: "aaa075db8f213a7a09416e8003eafb94"
+en_md5: "e8eec0ca29f12f5e3f4309bd520e16c7"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/isbn-verifier"
-captured_at: "2026-08-06"
+captured_at: "2026-09-03"
 ---
 
 Every book has an ISBN - a 10 digit number to uniquely identify it. Each ISBN is unique and follows a specific format. There is also a formal verification process to check that a string is an ISBN, which you're going to make in this exercise.

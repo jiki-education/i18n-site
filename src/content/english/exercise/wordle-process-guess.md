@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "wordle-process-guess"
 title: "Wordle: Process Guess"
-en_md5: "9c8afa4a4caa91fe2e3243fc4cd4f81d"
+en_md5: "267d47d51164b59f054018bd4877368d"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/wordle-process-guess"
-captured_at: "2026-09-02"
+captured_at: "2026-09-03"
 ---
 
 Welcome to Wordle, the game that went viral during Covid-19 lockdowns!
@@ -21,15 +21,19 @@ The game works like this:
 
 In a few exercises, you'll implement the whole Wordle game, but for **this exercise**, you're just going to get things working for the first row.
 
-To do that, you need to create a function called <define>`processGuess(target, guess)`</define>. It should work out the state of each letter in the guess, then call the <define>`colorRow(1, states)`</define> function with an array of states for each letter: either `"correct"`, `"present"`, or `"absent"`.
+To do that, you need to create a function called <define>`processGuess(target, guess)`</define>. The words you receive into your function will always be lowercase.
 
-For example, `processGuess("Hello", "Holes")`, should use `colorRow` with:
+The function should work out the state of each letter in the guess, then call the <define>`colorRow(1, states)`</define> function with an array of states for each letter: either `"correct"`, `"present"`, or `"absent"`.
+
+For example, `processGuess("hello", "holes")` should use `colorRow` with:
 
 ```javascript
 colorRow(1, ["correct", "present", "correct", "present", "absent"])
 ```
 
 Check you understand that before continuing!
+
+Also, if you're a Wordle aficionado, then you might notice the rules above are **slightly simplified** compared to the official game. In this exercise, please stick to these simplified rules and we'll introduce the full set in the next Wordle exercise!
 
 ### Methods
 

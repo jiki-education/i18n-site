@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "wordle-process-game"
 title: "Wordle: Process a Game"
-en_md5: "6be12d334e9ef1def6b932cd884369af"
+en_md5: "dbc8d46e1e052007d48b1c8ffa871888"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/wordle-process-game"
-captured_at: "2026-09-02"
+captured_at: "2026-09-03"
 ---
 
 We're back with the Wordle game, and now it's time to process the whole game, not just a single guess!
@@ -39,7 +39,7 @@ If a letter appears twice in your guess but only once in the target word:
 
 The same idea scales up: three in a guess and two in the word means two get colored and the third goes gray.
 
-Run the second bonus scenario and look at the `"SWISS"` row. The target word is `"swims"`, which has two `"s"`s in it, and both are already green: the one at the start and the one at the end. But your code also colors the fourth square yellow, which tells the player there's _another_ `"s"` still to find. There isn't. That fourth square should be gray.
+Run the second bonus scenario and look at the `"swiss"` row. The target word is `"swims"`, which has two `"s"`s in it, and both are already green: the one at the start and the one at the end. But your code also colors the fourth square yellow, which tells the player there's _another_ `"s"` still to find. There isn't. That fourth square should be gray.
 
 You need to partially solve the issue for the first bonus scenario (so start there!), then fully solve the problem for the second one.
 

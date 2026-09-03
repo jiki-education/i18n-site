@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "random-salad"
 title: "Random Salad"
-en_md5: "e5aaa7fb66d90d3c7074f04bc6296752"
+en_md5: "1159449c9f874cb9f30e79856857af18"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/random-salad"
-captured_at: "2026-08-03"
+captured_at: "2026-09-03"
 ---
 
 You and your partner can never agree on salad proportions — you want loads of leaves, they want extra croutons, neither of you can compromise. You've decided to let randomness settle it once and for all.

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-03",
-  "governance_sha": "754c4f02",
-  "approved": 1012,
+  "governance_sha": "e9f9162f",
+  "approved": 1013,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -1870,7 +1870,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 159,
+      "approved": 160,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -2316,8 +2316,8 @@
         },
         {
           "key": "exercise/random-salad",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2319,
+          "status": "approved"
         },
         {
           "key": "exercise/relational-snowman",

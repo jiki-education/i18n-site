@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "finish-wall"
 title: "Finish the Wall"
-en_md5: "048f6ff8920adb2b4ba2e0c7414e59e8"
+en_md5: "e79753ea56c8aa6d0c445f0570e11bf5"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/finish-wall"
-captured_at: "2026-08-03"
+captured_at: "2026-09-03"
 ---
 
 In the first drawing exercise you completed, you used the <define>`rectangle`</define> function to fill in some gaps in a wall. In this exercise, we build on that by using a loop to add the top layer to a wall.

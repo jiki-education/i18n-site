@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-03",
-  "governance_sha": "e1b4a713",
-  "approved": 1003,
+  "governance_sha": "971f6e96",
+  "approved": 1004,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -1870,7 +1870,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 152,
+      "approved": 153,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -2276,8 +2276,8 @@
         },
         {
           "key": "exercise/niche-named-party",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2309,
+          "status": "approved"
         },
         {
           "key": "exercise/nucleotide",

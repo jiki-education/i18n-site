@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-03",
-  "governance_sha": "0209f24c",
-  "approved": 1002,
+  "governance_sha": "e1b4a713",
+  "approved": 1003,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -1870,7 +1870,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 151,
+      "approved": 152,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -2271,8 +2271,8 @@
         },
         {
           "key": "exercise/methodic-pangram",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2308,
+          "status": "approved"
         },
         {
           "key": "exercise/niche-named-party",

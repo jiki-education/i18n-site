@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "methodic-pangram"
 title: "Methodic Pangram"
-en_md5: "ab05b1c47cdeeb83698a830f79c8b738"
+en_md5: "1a29a1fb96adf654813a037ca7a42f4d"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/methodic-pangram"
-captured_at: "2026-08-06"
+captured_at: "2026-09-03"
 ---
 
 Welcome to the third Pangram exercise, where we're going to take all those helper functions you've made and simplify things a lot!

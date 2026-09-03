@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-03",
-  "governance_sha": "971f6e96",
-  "approved": 1004,
+  "governance_sha": "fdbd2b28",
+  "approved": 1006,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -11,7 +11,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-fr",
-      "approved": 183,
+      "approved": 185,
       "disapproved": 0,
       "total": 186,
       "items": [
@@ -923,7 +923,7 @@
         {
           "key": "exercise/wordle-process-game",
           "topic_id": 2249,
-          "status": "pending"
+          "status": "approved"
         },
         {
           "key": "exercise/wordle-process-guess",
@@ -943,7 +943,7 @@
         {
           "key": "exercise/adventures-in-poetry",
           "topic_id": 2247,
-          "status": "pending"
+          "status": "approved"
         }
       ]
     },

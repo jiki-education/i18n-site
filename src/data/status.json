@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-03",
-  "governance_sha": "86a9735c",
-  "approved": 993,
+  "governance_sha": "bfc71240",
+  "approved": 994,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -2787,7 +2787,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 142,
+      "approved": 143,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -3133,8 +3133,8 @@
         },
         {
           "key": "exercise/golf-scenarios",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2297,
+          "status": "approved"
         },
         {
           "key": "exercise/golf-shot-checker",

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-03",
-  "governance_sha": "cb2b1ac1",
-  "approved": 990,
+  "governance_sha": "4ba58e50",
+  "approved": 991,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -2787,7 +2787,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 139,
+      "approved": 140,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -3103,8 +3103,8 @@
         },
         {
           "key": "exercise/driving-test",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2293,
+          "status": "approved"
         },
         {
           "key": "exercise/even-or-odd",

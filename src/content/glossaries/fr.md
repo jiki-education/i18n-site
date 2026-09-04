@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "272e9ea3"
-content_version: "01273ba37d2a"
+governance_sha: "6627df30"
+content_version: "cb86b8596fa0"
 published_at: "2026-09-04"
-term_count: 105
+term_count: 106
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -90,7 +90,8 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | backwards compatibility | rétrocompatibilité | fr | Not "compatibilité descendante". |
 | refactor | réécrire | fr | Unconfirmed draft (agent, 2026-08-03). Noun form: _réécriture_. Never the anglicism _refactoriser_/_refactoring_ in learner-facing prose. |
 | standard library (level stdlib) | bibliothèque standard du niveau | fr | Flagged by native-speaker review (resu-xunil, t/1620, 2026-08-15): some exercises had drifted to "stdlib du niveau"; standardized on the majority spelled-out form. |
-| neat / clean (of code or a solution) | propre | fr | _code propre_ is the established French collocation and what beginners meet in tutorials and job ads. Never _élégant_ for the quality of code or of a solution. _élégant_ stays correct for a way/approach of doing something (_une façon plus élégante de faire_). |
+| clean / neat and tidy (of code: readable, well-formatted, sound) | propre | fr | _code propre_ is the established French collocation and what beginners meet in tutorials and job ads. Use it wherever the English means the code is readable, well-indented, or free of mess ("clean, satisfying code", "keeping your code neat and tidy"). Never _élégant_ for this sense. |
+| neat / elegant (of a solution or a way of doing something: economical, pleasingly short) | élégant | fr | The other sense of English "neat": a solution that does the job with less, not one that is merely tidy. French _élégant_ carries exactly that economy of means (CNRTL, Wikipédia: « l'économie de moyens »). Never _propre_ here: _propre_ names readability, which these sentences usually treat as a *separate* axis ("a neat solution at 29 lines... you can get lower, but the code tends to become less readable"). Applies to "une façon plus élégante de faire" too. |
 
 ### Platform & curriculum vocabulary
 
@@ -207,6 +208,71 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-09-04 (later the same day): refined into two senses, `clean` → _propre_, `neat/elegant` → _élégant_
+
+**Decided by:** the translator, on the linguistic evidence, after mirina (post 6554) and
+resu-xunil (posts 6559-6574) argued opposite sides in forum topic 1672
+(https://forum.jiki.io/t/1672).
+**Status:** settled. Supersedes the single-row decision logged directly below, which is kept
+for the record because its reasoning is still half of the answer.
+**Terms affected:** the one `neat / clean (of code or a solution)` row is replaced by two
+rows, one per sense ("Tooling & engineering").
+**Files affected:** `glossary.md`, `exercise/matching-socks.md`,
+`../../../i18n/locales/fr/curriculum/exercises/matching-socks/instructions.md`.
+
+resu-xunil's objection was that _propre_ and _élégant_ are not two candidate translations of
+one idea, they are two different qualities, and English says so too: code can be clean (no
+mess, no bugs) without being neat (pleasingly minimal), and the source author wrote "neat",
+not "clean", on purpose. He backed _élégant_'s language-quality sense from CNRTL and from
+the Wikipédia definition that pins élégance to « l'économie de moyens », and pointed out
+that his own three-way code example (badly indented / properly indented / reduced to
+`return condition;`) needs both adjectives to describe, not one.
+
+What decided it was not the dictionaries on either side but the sentence itself, and the
+rest of the French corpus:
+
+- The Bonus paragraph puts the two qualities in *contrast*: "there's a pretty neat solution
+  at 29 lines of code... You can get lower, but the code tends to become **less readable**".
+  Readability is the axis that gets worse below 29 lines, so it cannot also be the quality
+  the 29-line solution is being praised for. Rendering "neat" as _propre_ produced "une
+  solution plutôt **propre** ... mais le code a alors tendance à devenir de moins en moins
+  **lisible**", which sets up an opposition between two words a French developer reads as
+  near-synonyms. _élégante ... mais moins lisible_ is a real contrast; _propre ... mais moins
+  lisible_ is close to a contradiction.
+- The corpus already draws exactly this line, consistently, and matching-socks was the only
+  file out of step after the earlier change. `exercise/space-invaders-repeat` translates
+  English "there's a **neater way** to do this... in only 7 lines of code" as "une façon
+  plus **élégante** de faire", the identical do-more-with-less sense. `concepts/repeat`
+  translates "keeping your code **neat and tidy**" as "garder un code **propre** et bien
+  rangé", and `exercise/build-wall` translates "**clean**, satisfying code" as "un code
+  **propre** et satisfaisant". Same English word, two senses, and French was already
+  splitting them correctly.
+- The laundry echo is a smaller point but pushes the same way: this exercise says _propre_
+  three times in its literal sense (les vêtements propres, le panier propre), so "une
+  solution plutôt propre" lands in the middle of a text about clean washing.
+
+mirina's argument is not overturned, it is scoped. She is right that _code propre_ is the
+collocation French developers and job ads use, right that beginners will meet it constantly,
+and right that it should be introduced early rather than late. That is exactly what the
+first row now fixes, and beginners meet it earlier than this exercise anyway, in
+`concepts/repeat` and `exercise/build-wall`. Her instinct that a beginner would not reach
+for _élégant_ to praise their own code is also correct; the point is that this sentence is
+not praising code quality, it is praising concision.
+
+Where each side was right, in one line: mirina identified the correct word for the quality
+French names _propre_, resu-xunil identified that this sentence is not about that quality.
+
+Not swept: nothing needed sweeping. The other _élégant_ uses in the fr corpus
+(`exercise/space-invaders-repeat`, `concepts/logical-not`, `concepts/function-composition`,
+`videos/using-multiple-functions-together`, `videos/remainder`) are all the economy sense
+and are correct under the new second row; the _propre_ uses (`concepts/repeat`,
+`exercise/build-wall`, `concepts/function-composition`) are all the readability sense and are
+correct under the first. `exercise/alphanumeric` ("quelques lignes de plus donneraient sans
+doute un résultat plus élégant") is the one place where more lines are called _more_
+élégant, which reads oddly against the 29-line argument here but matches its own English
+source and is a different point (production-quality code vs a golf target); left alone.
+
 
 ### 2026-09-04: `neat` / `clean` (of code) → _propre_, never _élégant_
 

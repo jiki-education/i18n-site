@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/es-ES/curriculum/concepts/logical-not/page.md"
 en_md5: "7cffbd1fa13317b3d6e6a71415413041"
-governance_sha: "16f805d"
+governance_sha: "cc53fedf"
 content_version: "81faf447b895"
-published_at: "2026-08-20"
+published_at: "2026-09-04"
 ---
 
 Hasta ahora, cuando comparábamos cosas para ver si son iguales, usábamos tres signos igual. A veces, sin embargo, queremos verificar si las cosas no son iguales, y para esto usamos un signo de exclamación seguido de dos signos igual. Y en general, en programación, un signo de exclamación o _bang_ en inglés, como creo que le llaman nuestros amigos estadounidenses, significa no. Así que imagina que trabajas en una tienda y la gerencia ha decidido que no se permiten atuendos disco.

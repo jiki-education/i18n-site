@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-04",
-  "governance_sha": "a56ac4c3",
-  "approved": 1021,
+  "governance_sha": "c32b2f06",
+  "approved": 1022,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -11,7 +11,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-fr",
-      "approved": 185,
+      "approved": 186,
       "disapproved": 0,
       "total": 186,
       "items": [
@@ -932,8 +932,8 @@
         },
         {
           "key": "exercise/wordle-solver",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2332,
+          "status": "approved"
         },
         {
           "key": "exercise/sign-words",

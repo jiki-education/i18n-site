@@ -2,13 +2,13 @@
 lang: "fr"
 type: "concept"
 slug: "logical-not"
-title: "L'opérateur `!` (pas)"
+title: "L'opérateur `!` (PAS)"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/logical-not/page.md"
 en_md5: "7cffbd1fa13317b3d6e6a71415413041"
-governance_sha: "181e3c5d"
-content_version: "8fd9baa6850d"
+governance_sha: "1ce2b7ba"
+content_version: "941ce76d560b"
 published_at: "2026-09-04"
 forum_topic_id: 1456
 ---
@@ -61,6 +61,4 @@ movingRight = !movingRight
 
 Et ça l'inverse. `!movingRight` signifie l'opposé de sa valeur précédente.
 
-Donc si `movingRight` valait vrai, maintenant elle vaut faux. Si elle valait faux, maintenant elle vaut vrai. Jiki prend ce qui se trouve actuellement dans la boîte,
-
-et ce _bang_ lui dit d'en chercher l'opposé. L'opposé de vrai, c'est faux. L'opposé de faux, c'est vrai, et il remet ensuite cette valeur dans la boîte. C'est exactement la même chose que la longue instruction if/else de tout à l'heure, mais c'est simplement beaucoup plus net et plus concis à écrire.
+Donc si `movingRight` valait vrai, maintenant elle vaut faux. Si elle valait faux, maintenant elle vaut vrai. Jiki prend ce qui se trouve actuellement dans la boîte, et ce _bang_ lui dit d'en chercher l'opposé. L'opposé de vrai, c'est faux. L'opposé de faux, c'est vrai, et il remet ensuite cette valeur dans la boîte. C'est exactement la même chose que la longue instruction if/else de tout à l'heure, mais c'est simplement beaucoup plus net et plus concis à écrire.

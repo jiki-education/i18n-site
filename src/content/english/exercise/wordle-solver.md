@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "wordle-solver"
 title: "Wordle: Solver"
-en_md5: "7b674c2db3dc8d71715f88630c71a6a5"
+en_md5: "37278756e4df2d59183611cfe366e7f8"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/wordle-solver"
-captured_at: "2026-08-27"
+captured_at: "2026-09-04"
 ---
 
 In the last Wordle exercise, you processed a game where the guesses were handed to you. This time, you're sitting on the other side and being the one that actually works out the guesses.

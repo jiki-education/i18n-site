@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "cd8ab70"
-content_version: "b956fa3a1406"
-published_at: "2026-08-16"
-term_count: 99
+governance_sha: "272e9ea3"
+content_version: "01273ba37d2a"
+published_at: "2026-09-04"
+term_count: 105
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -39,7 +39,7 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 
 | English | French | Use (fr/en) | Notes |
 |---------|--------|-------------|-------|
-| true / false | vrai / faux | fr | Not capitalised in prose. Keywords `true`/`false` stay English in code. |
+| true / false | vrai / faux | fr | Not capitalised in prose. Keywords `true`/`false` stay English in code (code font, not italics). Where prose uses the bare English word itself rather than translating it to _vrai_/_faux_ or referencing the literal code value, **always italicize it**: _true_, _false_. Same treatment as _string_ below (2026-08-16, topic 314). |
 | float / decimal | nombre décimal | fr | Use _nombre à virgule flottante_ only when the IEEE-754 floating-point nature specifically matters. |
 | array / list | tableau | fr | Exercise prose sometimes says "list" informally for the same concept; render both as _tableau_, do not introduce a separate word. |
 | dictionary | dictionnaire | fr | In JS-specific prose this is usually an _objet_ or a `Map`; use the concept word _dictionnaire_ only when teaching the general idea. |
@@ -52,7 +52,7 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | English | French | Use (fr/en) | Notes |
 |---------|--------|-------------|-------|
 | if statement | instruction `if` | fr | Keep `if` as the real keyword. |
-| NOT operator / logical negation | opérateur NON / négation logique | fr | The `!` symbol stays as-is in code. |
+| NOT operator / logical negation | opérateur NON / négation logique | fr | The `!` symbol stays as-is in code. On a concept-page title, the operator word in the parenthetical is upper-case, matching `||` (OU) and `&&` (ET): "L'opérateur `!` (PAS)". In body prose the `not` keyword is glossed lower-case, "`not` (pas)". |
 | statement (executable) | instruction | fr | The imperative sense: a line of code that does something and gets executed. Deliberate overlap with _instruction_ (given to Jiki) below: the contexts never compete on a page. |
 | statement (logical claim) | assertion | fr | The proposition sense: a claim that is true or false; also a test assertion. Deliberately distinct from _instruction_ above. |
 | function | fonction | fr | The *keyword* `function` in code stays English; the concept in prose is _fonction_. |
@@ -90,6 +90,7 @@ These are terms where the French is used in prose, so the "Use (fr/en)" column i
 | backwards compatibility | rétrocompatibilité | fr | Not "compatibilité descendante". |
 | refactor | réécrire | fr | Unconfirmed draft (agent, 2026-08-03). Noun form: _réécriture_. Never the anglicism _refactoriser_/_refactoring_ in learner-facing prose. |
 | standard library (level stdlib) | bibliothèque standard du niveau | fr | Flagged by native-speaker review (resu-xunil, t/1620, 2026-08-15): some exercises had drifted to "stdlib du niveau"; standardized on the majority spelled-out form. |
+| neat / clean (of code or a solution) | propre | fr | _code propre_ is the established French collocation and what beginners meet in tutorials and job ads. Never _élégant_ for the quality of code or of a solution. _élégant_ stays correct for a way/approach of doing something (_une façon plus élégante de faire_). |
 
 ### Platform & curriculum vocabulary
 
@@ -125,6 +126,7 @@ so a term that drifts between two exercises drifts inside one screen.
 | to fill/plug (a hole) | combler | fr | Confirmed by a native speaker (2026-08-06), replacing the earlier unconfirmed _boucher_. Past participle _comblé_ agrees with its noun ("le trou... comblé"). |
 | to cover (a hole with a shape) | recouvrir | fr | Confirmed by a native speaker (2026-08-06), replacing the earlier unconfirmed _couvrir_ in this context. |
 | puzzle (the thing the learner has to solve) | casse-tête / énigme / défi (context decides) | fr | Confirmed by a native speaker (2026-08-11, topic 314). **Never _puzzle_**, whose ordinary French sense is a jigsaw, which misreads badly where the exercise also has a board or pieces. Pick by context: _casse-tête_ where the point is a brain-teaser to work out (_un petit casse-tête de logique_, _un célèbre casse-tête mathématique_); _énigme_ where the framing is a mystery or an investigation (_utiliser des fonctions pour résoudre des énigmes_); _défi_ where it simply means the task the learner is being set (_relève ce défi en 5 lignes de code_). Where the sense is just "this exercise", _exercice_ is also fine. One document picks one of them and stays with it. _défi_ is also the app's word for a platform Challenge (see the `challenge (platform content type)` row under Platform & curriculum vocabulary), so avoid it where both senses could be read on the same screen. |
+| guess (Wordle: the word a player submits) | proposition / proposer | fr | Confirmed by a native speaker (resu-xunil, 2026-08-30, topic 2113). Gender: _une proposition_. Never _essai_, whose everyday French sense is "a try/attempt" (and, to a French reader, the rugby score); "guess" here is _proposer_ / _soumettre une proposition_, and the verb "to guess" itself is _deviner_. Recurs across the whole `wordle` exercise family, which shares one vocabulary across three exercises, so do not alternate with _essai_ or _tentative_. |
 | skyline (city) | la ligne d'horizon | fr | Provisional (orchestrator call, 2026-08-10), pending @fleurdelys44. Never the anglicism _skyline_. Recurs across the `cityscape` exercises and the Cityscape project, so do not alternate with _profil urbain_ or _panorama urbain_. Where the phrase is "a skyline of buildings" rather than the city's own skyline, _une silhouette de bâtiments_ reads better than repeating _ligne d'horizon_. |
 
 ## Keep in English
@@ -141,6 +143,9 @@ in the gloss column below; with no `<define>`, use the English bare, no gloss.
 | framework | _cadre de développement_ | Where the source defines it, explain it means a reusable _cadre de développement_, then use _framework_ freely. |
 | workflow | _flux de travail_ | The software-engineering sense (a sequence of dev tasks). Where the source defines it, explain it means _flux de travail_, then use _workflow_. |
 | template literal | _littéral de gabarit_ | Where the source defines it, explain it as a _littéral de gabarit_ (the official term), then use _template literal_. **Italicize the bare English term in prose**, same as _string_ (2026-08-14, topic 314). Same `.vtt`, frontmatter, and HTML-attribute carve-outs. |
+| template (bare, short for template literal) | (no separate gloss; see _template literal_) | The informal short form used once a page has already introduced _template literal_. **Italicize in prose**: _template_. Same carve-outs as _string_ (2026-08-16, topic 314). |
+| template strings | (no separate gloss; see _template literal_) | An informal English name for the same construct as _template literal_. **Italicize in prose**: _template strings_. Same carve-outs as _string_ (2026-08-16, topic 314). |
+| params (informal for parameter) | (no gloss) | The informal English shorthand developers use for _parameter_, distinct from the precise-register _paramètre_/_argument_ rows above, which stay the default. Only use _params_ where the English source itself uses that exact informal shorthand. **Italicize in prose**: _params_. Same carve-outs as _string_ (2026-08-16, topic 314). |
 | CLI (the concept) | _interface en ligne de commande_ | Where the source defines it, explain CLI as _interface en ligne de commande_ (command-line interface), then "la CLI". Gender: _la CLI_ (feminine). |
 | canvas (graphics exercises) | _zone de dessin_ | The drawing surface in creative-coding exercises. Where the source defines it, explain it as the _zone de dessin_ (the `canvas` element), then use _canvas_. |
 | camel case | (no gloss; the spelling is the example) | Always write the term itself as one word, in code style: `camelCase`. Never the two-word phrase « camel case », in guillemets or otherwise: the capital C is the whole point, so the term has to *show* the rule it names. Where the source explains it, keep the explanation (camel = chameau, case = casse, and the chameau/bosses metaphor), which still reads correctly against `camelCase`. Same for any other named case style: `snake_case`, `kebab-case`. |
@@ -167,6 +172,7 @@ stands. Settled 2026-08-13 by iHiD; see `glossary-notes.md`.
 | Triangle (exercise title) | Triangle | en | Title only. The French word is spelled the same. |
 | Two-Fer (exercise title) | Two-Fer | en | Title only. English wordplay ("two for one") that carries the exercise's `"One for you, one for me."` line; there is no French equivalent that keeps both. |
 | Hello, World! 👋 (blog post title) | Hello, World! 👋 | en | Title only. The canonical first-program phrase, used as-is by French developers. |
+| Lunchbox (exercise title) | La lunchbox | en | Title only. mirina (2026-08-29, topic 1671) confirmed a literal rendering ("La boîte à repas") doesn't sound appealing and isn't what the target audience actually says (kids say "goûter", teens "la bento"/"la boîte", adults "tup"), and preferred keeping "Lunchbox" in English, the same reasoning that kept `Space Invaders` English. resu-xunil then proposed prefixing the French article, "La lunchbox", and mirina agreed ("Just excellent!"). Body prose keeps translating "lunchbox" normally as _la boîte à repas_ (the physical-object metaphor); only the title stands. |
 
 ## Jiki physical metaphors
 
@@ -201,6 +207,291 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-09-04: `neat` / `clean` (of code) → _propre_, never _élégant_
+
+**Decided by:** mirina, forum topic 1672 (https://forum.jiki.io/t/1672), post 8, reviewing
+`exercise/matching-socks`.
+**Status:** settled.
+**Terms affected:** `neat / clean (of code or a solution)` (new row, "Tooling &
+engineering").
+**Files affected:** `glossary.md` (Tooling & engineering),
+`languages/fr/exercise/matching-socks.md`,
+`../i18n/locales/fr/curriculum/exercises/matching-socks/instructions.md`.
+
+The Bonus paragraph rendered the English "a pretty **neat** solution at 29 lines of code" as
+"une solution plutôt **élégante**". mirina's point is that _élégant_ applied to code is
+possible in French but uncommon, and wrong for this audience: for a French speaker _élégant_
+belongs to a dress, a way of walking, handwriting, a dance move. The adjective French
+developers actually use for code quality, readability and best practice is _propre_, and
+_code propre_ (sometimes even the English "clean code" alongside it) is the fixed
+collocation. She backed it with screenshots of French programming material and of job ads
+listing "code propre" among required skills, and made the audience argument explicitly:
+these are beginners, and _propre_ is a word they will meet constantly from here on, so it is
+worth introducing from the start.
+
+She offered three phrasings and said the important part was the adjective, not the frame.
+Took "une solution plutôt propre", which keeps resu-xunil's own sentence structure from post
+5 (fronted "Cependant", "qui tient en", the colon, "donc") intact and changes only the one
+word. Declined the "que nous avons retenu" half of her phrasings: the guide's Formality
+section fixes **"on"** as this content's collective voice, so "qu'on s'est fixé" stays.
+
+Noted and accepted that this exercise already uses _propre_ several times in its literal
+laundry sense (le panier propre, "Rien de propre"). It is a different section and a
+different subject (lines of code, not washing), the Bonus paragraph reads unambiguously, and
+the faint echo is harmless rather than confusing.
+
+Scope kept to this item, deliberately. The row forbids _élégant_ for the *quality of code or
+of a solution*; the other French uses of _élégant_ in the corpus
+(`exercise/space-invaders-repeat`, `concept/logical-not`, `concept/function-composition`,
+`videos/remainder`) are all "une façon plus élégante de faire" — an elegant *way* of doing
+something, which is idiomatic French and not what mirina objected to. The one genuine
+borderline case is `exercise/alphanumeric` ("quelques lignes de plus donneraient sans doute
+un résultat plus élégant"), which nobody has reviewed; left as-is for now rather than swept
+unasked.
+
+### 2026-08-30: `guess` (Wordle) → _proposition_, never _essai_
+
+**Decided by:** resu-xunil, forum topic 2113 (https://forum.jiki.io/t/2113), post 1,
+reviewing `exercise/wordle-process-guess`.
+**Status:** settled.
+**Terms affected:** `guess (Wordle: the word a player submits)` (new row, "Exercise world
+vocabulary").
+**Files affected:** `glossary.md` (Exercise world vocabulary),
+`languages/fr/exercise/wordle-process-guess.md` (new),
+`../i18n/locales/fr/curriculum/exercises/wordle-process-guess/instructions.md` and
+`messages.json`.
+
+resu-xunil objected to _essai_ as the rendering of "guess": in everyday French _essai_
+means a try or an attempt (and is the word for a rugby try), so it describes the act of
+having a go, not the five-letter word the player submits. His proposed frame is
+_proposer_ / _soumettre une proposition_ for the act, _deviner_ for the guessing itself,
+and _une proposition_ for the thing submitted. He applied the change only where the old
+wording sounded worst to him, noting "I changed sometimes `essai` for `proposition` where
+it sounded awkward", so his post is a direction rather than a complete sweep.
+
+**Scope: the corpus had already decided this, and `wordle-process-guess` was the lone
+outlier.** The Wordle family is three exercises sharing one vocabulary
+(`wordle-process-guess`, `wordle-process-game`, `wordle-solver`). Both later exercises
+already use _proposition_ exclusively, with no occurrence of _essai_ at all
+(`wordle-process-game` uses it about a dozen times across instructions and catalog;
+`wordle-solver` builds its whole scenario set on it, "Deux/Trois/Quatre propositions
+nécessaires", and glosses the `guess(word)` function as "proposer un mot"). Only the first
+exercise in the family said _essai_, so the family read inconsistently to anyone working
+through it in order. That makes this a term with a settled corpus answer rather than a
+one-page phrasing preference, hence a glossary row: the swap was applied throughout
+`wordle-process-guess`, and no other file needed touching.
+
+One instance beyond resu-xunil's list was changed for the same reason: "Le joueur a 6
+essais pour le trouver" → "6 propositions". _essai_ reads acceptably there in isolation
+(that sentence really is about attempts), but the very next bullet introduces the boxes
+per proposition, and having the page name the same thing two ways three lines apart is
+exactly the drift the row exists to stop.
+
+The verb _essayer_ is unaffected and stays: "un mot secret que le joueur essaie de
+deviner" is correct French for the guessing action and is not the noun at issue.
+
+### 2026-08-29: "Lunchbox" exercise title stays English; `packLunch`/`capacity` glosses correctly removed; "item" split from "element" (`objet` vs `élément`)
+
+**Decided by:** mirina, forum topic 1671 (https://forum.jiki.io/t/1671), post 6154
+(https://forum.jiki.io/t/1671/3), reviewing `exercise/lunchbox`.
+**Status:** settled.
+**Terms affected:** `Lunchbox (exercise title)` (new row, "Titles that stay as they are").
+No new glossary row for "item"/"element" — see below, it stays an exercise-scoped note.
+**Files affected:** `glossary.md` (Titles that stay as they are),
+`languages/fr/exercise/lunchbox.md` (new), `../i18n/locales/fr/curriculum/exercises/lunchbox/
+instructions.md`.
+
+**Title.** mirina argued the standing title, "La boîte à repas", is a literal rendering
+nobody in the target audience actually says: kids say "goûter", teens "la bento" or "la
+boîte", and at work people say "tup". She offered two options, "La boîte à déjeuner" or
+keeping "Lunchbox" in English, and stated a clear preference for the latter, pointing out
+that French kids commonly eat at the canteen and that the English word brings "an
+interesting cultural touch" — the same shape of argument that settled `Space Invaders`
+staying English (2026-08-14 entry below). Actioned directly on her stated preference. Body
+prose is unaffected: "lunchbox" the physical object still translates as _la boîte à repas_
+throughout, exactly like the `Hello`/`Triangle`/`Space Invaders` precedent rows (title only,
+body translated as normal). **Follow-up, same thread:** resu-xunil then proposed adding the
+French definite article over the bare English word, "La lunchbox"; mirina agreed ("Just
+excellent!"). Final title is "La lunchbox", not bare "Lunchbox" — glossary row and
+`languages/fr/exercise/lunchbox.md` updated to match.
+
+**Gloss removal, confirmed correct.** mirina removed the parenthetical French glosses
+"(prépare le déjeuner)" next to `packLunch` and "(capacité)" next to `capacity`, unsure
+whether that was right. It is: both are code identifiers (a function name and a parameter
+name) inside `<define>` tags in the English source, and the fr glossary's own "Variable and
+function names" row (Keep in English section) already says, for this exact case, "(no
+gloss) — Never translated." That row is a deliberate, already-settled fr-specific carve-out
+from the general `<define>` mechanism in `voice.md`/`gloss.md` (which would otherwise gloss
+an opaque code identifier's meaning): French readers can already read the Latin-script
+identifiers, so the meaning-gloss `voice.md` describes for languages like Japanese teaches
+nothing here. mirina's removal matches the existing rule exactly; no glossary change needed.
+
+**"item" vs "element" collision.** mirina flagged that "élément" was used throughout for
+both the physical objects in the lunchbox (water bottle, crisps, sandwich...) and the
+data-structure sense (an array's elements), and asked for a better word for the physical
+sense; she offered "article" tentatively. The English source itself only ever says "item"
+for the physical objects and uses "element" exactly once, for the sub-array's two entries
+("the name of the item and its size"). The fr translation had flattened both onto
+"élément", which is the actual source of the collision, not a vocabulary gap.
+**Recommendation: split them.** Physical items → _objet(s)_; the data-structure sense stays
+_élément(s)_, used only where the English itself says "element" (the two-entry sub-array).
+_objet_ has precedent in this exact use (`exercise/matching-socks`: "Pour les objets qui
+vont par paire") and is the ordinary, common French word for a physical item a beginner
+reader already knows, unlike _article_, whose primary French sense is a retail or
+shop/catalog item (or a written article), which reads oddly for a water bottle or a
+sandwich packed for school. The `dictionary → objet` glossary row (JS-specific sense) does
+not collide here: this exercise never touches dictionaries/objects-as-JS-values. Applied
+throughout `lunchbox/instructions.md`; recorded as an exercise-scoped reviewer note in
+`languages/fr/exercise/lunchbox.md` rather than a glossary row, since the same collision
+does not obviously recur elsewhere yet (`meal-prep` sidesteps it by naming the concrete
+ingredients instead of a generic "item" word). If a future exercise hits the same
+item/element collision, this note is the precedent to reach for.
+
+**Prose proposals, mixed.** Also on this thread, mirina proposed a list of wording
+tweaks to the exercise body. Two were applied: "ton travail consiste à" → "ta mission est
+de" (matches the majority existing rendering of this exact recurring sentence across the fr
+corpus — 4 other exercises already say "ta mission est de" for "your job is to", only 3
+including lunchbox said "travail consiste"), and "aller dans" → "rentrer dans" for "which
+items can go into the lunchbox" (more precise for a capacity-fit sense, and matches the
+file's own earlier use of "rentrer" in "ce qui ne rentrait pas"). The rest (faire tenir →
+mettre, porter → transporter, d'abord → en premier, doit → devra aller, vont → sont, deux
+valeurs → deux éléments, and the restructured "Le premier élément est un tableau des
+éléments...") were left as they were: each is a defensible style variant rather than a
+correctness fix, one (the "capacity" sentence rewrite) drops the parameter name's required
+code-span reference entirely, and one (the "Le premier élément..." rewrite) reintroduces the
+very "élément" repetition the same post was complaining about.
+
+### 2026-08-18: CLI gender reverted back to feminine (_la CLI_, not _le CLI_) — team consensus
+
+**Decided by:** a converged consensus of all three active fr reviewers, forum topic 314
+(https://forum.jiki.io/t/314): mirina (post 106, the original masculine proposal), then
+resu-xunil and williamapc (posts 108-109, pushing back for feminine), then mirina again
+(post 111, conceding). This reverses the 2026-08-17 entry below, whose masculine change is
+kept in this log rather than deleted, per the file's convention of a permanent decision
+record.
+
+**The sequence.**
+- **Post 106 (mirina):** proposed _le CLI_ (masculine), arguing borrowed tech anglicisms
+  default to masculine in French regardless of the spelled-out French equivalent's own
+  gender (_le wi-fi_, _le web_, _le CSS_), backed by usage examples, a video, and a Reddit
+  discussion. Actioned directly per "no approval needed for native-speaker calls," which
+  produced the 2026-08-17 change below.
+- **Posts 108-109 (resu-xunil, williamapc):** both reported they personally use feminine
+  (_la CLI_ / _une CLI_). resu-xunil backed this with screenshots of real French technical
+  documentation — Symfony, Docker, and AWS docs — all consistently using _la CLI_, direct
+  evidence against mirina's masculine-anglicism pattern for this specific term.
+- **Post 111 (mirina):** replied again, this time not rebutting resu-xunil's documentation
+  evidence. She argues the team has always understood _la CLI_ (feminine) without any
+  confusion, and that keeping feminine serves clarity and consistency better than the
+  strict technical-correctness argument she made in post 106. This reads as her withdrawing
+  the masculine push, not merely deferring to the others.
+
+**Why this is a genuine team consensus, not an orchestrator call.** All three currently
+active fr reviewers — mirina, resu-xunil, williamapc — now independently agree on feminine:
+resu-xunil and williamapc from the start (with documentary evidence), and mirina by her own
+final post. No judgement was exercised here beyond reading that convergence; the reversal
+follows "guide defers to humans" the same way the original masculine change did.
+
+**Change.** `CLI (the concept)` row (Keep in English section): gender reverted from _le CLI_
+back to _la CLI_. The rest of the row (explain it as _interface en ligne de commande_ where
+the source defines it, then use `CLI`) is unchanged.
+
+**Sweep of already-published content.** Checked `../i18n/locales/fr/` for masculine-agreement
+CLI usages (_le CLI_, _un CLI_, _ce CLI_, and other masculine adjective/possessive
+agreement) that may have been produced during the brief window the masculine form was live,
+and reverted any found to feminine. See the sweep report below for the file list and counts.
+
+### 2026-08-17: CLI gender corrected from feminine to masculine (_le CLI_, not _la CLI_)
+
+**Decided by:** mirina, forum topic 314 (https://forum.jiki.io/t/314), post 106 (post_id
+5242), actioned directly on her evidence per "no approval needed for native-speaker calls."
+She tagged resu-xunil and williamapc for their views too, so this could still get contested
+feedback later, but her post itself reads as a clear, well-evidenced recommendation rather
+than an open question, so it was actioned on her word alone.
+
+**Her reasoning.** The glossary's existing _la CLI_ (feminine) followed the grammatical
+gender of the spelled-out French phrase (_une interface_ is feminine). mirina argues that is
+not how French actually genders this kind of borrowed tech anglicism: usage defaults such
+loanwords to masculine regardless of the spelled-out equivalent's own gender, and cited the
+same pattern elsewhere in the glossary's own territory: _le wi-fi_ (though _une onde_ is
+feminine), _le web_ (though _la toile_ is feminine), _le CSS_ (though _une feuille de style_
+is feminine). She backed the CLI case specifically with real usage ("le CLI d'Angular", "Le
+CLI de Vue.js est buggé"), a video example, and a Reddit discussion showing native-speaker
+consensus.
+
+**Change.** `CLI (the concept)` row (Keep in English section): gender changed from _la CLI_
+to _le CLI_. The rest of the row (explain it as _interface en ligne de commande_ where the
+source defines it, then use `CLI`) is unchanged.
+
+**Sweep of already-published content.** Checked `../i18n/locales/fr/` for feminine-agreement
+CLI usages (_la CLI_, _une CLI_, _cette CLI_, and other feminine adjective/possessive
+agreement) and fixed them to masculine. See the sweep report for the file list and counts.
+
+### 2026-08-16: italics rule extended to `true`/`false`/`template`/`template strings`/`params`; `API`/`framework`/`workflow`/`CLI`/`canvas`/`code`/`bug`/`frontend`/`backend`/`debug` confirmed to stay un-italicized
+
+**Decided by:** resu-xunil, forum topic 314 (https://forum.jiki.io/t/314), post 102, answering
+our own open question from post 100 (see the 2026-08-14 entry below): when the `string`/
+`template literal` italics rule was settled, we explicitly asked whether it should extend
+to the other terms we keep in English (`framework`, `workflow`, `canvas`, `API`, `CLI`), or
+only to terms with a natural French equivalent, and said we had not decided it because he
+had not raised it.
+
+resu-xunil answered directly, flagged explicitly as his own opinion but a clear
+recommendation with no hedging:
+
+- **Leave un-italicized**: `API`, `framework`, `workflow`, `CLI`, `canvas`, `code`, `bug`,
+  `frontend`, `backend`, `debug`. His reasoning (implicit in the split he drew): these are
+  the terms with no real French equivalent a developer would reach for instead, so there is
+  nothing for the italics to be disambiguating against.
+- **Should be italicized, same treatment as `string`/`template literal`**: `true`, `false`,
+  `template`, `template strings`, `params`.
+
+**Why `true`/`false` needs a narrower reading than the others.** Unlike `string`, the
+glossary already translates `true`/`false` to _vrai_/_faux_ in ordinary prose, and the
+literal JS keywords already stay in code font (backticks) per the pre-existing row, which is
+a different mechanism from italics (code font marks it as syntax being referenced; italics
+marks an English loanword sitting in a French sentence). resu-xunil's answer is read as
+adding a third case: where prose uses the bare English word `true`/`false` itself, as a
+loanword, rather than translating it or pointing at the literal code value, it should now be
+italicized rather than left bare. The glossary row is written to keep de three cases
+distinct.
+
+**Sweep of already-published content.** Checked every `.md` file under `../i18n/locales/fr/`
+for `true`, `false`, `template`, and `params` (case- and word-boundary sensitive, and
+re-checked without the boundary restriction to catch anything already wrapped in
+underscores). Result: **no files needed editing.**
+
+- Every existing bare `true`/`false` occurrence in published fr content is already inside
+  backticks (a code-value reference), consistent with the pre-existing rule, with one
+  exception: `curriculum/exercises/luhn/instructions.md` has a bare, unmarked "false" ("tu
+  dois renvoyer false.") where the rest of the same file backticks it. This reads as a
+  missing-backtick slip against the file's own established convention, not a case for
+  italics, so it was left untouched and is flagged here rather than fixed as part of this
+  pass, which is scoped to the italics rule, not a general backtick audit.
+- Every existing `template` and `template string(s)` occurrence in published fr content
+  (`curriculum/concepts/string-templates/page.md`, `curriculum/exercises/raindrops/
+  instructions.md`, `curriculum/exercises/tile-rack/instructions.md`,
+  `curriculum/concepts/function-composition/page.md`) is **already italicized**, ahead of
+  this rule being written down formally. The one non-italicized `template` (in
+  `string-templates/page.md`'s HTML `alt=` attribute) is correctly left bare: it is the
+  pre-existing HTML-attribute carve-out (screen readers would read literal underscores).
+- The one `params` occurrence (`curriculum/exercises/spotify/instructions.md`, "params doit
+  toujours être un dictionnaire vide") refers to the literal named parameter of the
+  `fetch(url, params)` signature quoted in the same sentence, so it reads as a missing-
+  backtick slip (should be `` `params` ``) rather than the informal-shorthand loanword sense
+  resu-xunil described. Left untouched for the same reason as the luhn line above, and
+  flagged here rather than fixed.
+
+**Terms affected:** `true`/`false` (row updated, Values & data types), `template`, `template
+strings`, `params` (new rows, Keep in English). `API`, `framework`, `workflow`, `CLI`,
+`canvas`, `code`, `bug`, `frontend`, `backend`, `debug` are unchanged: their existing rows
+already document them as staying un-italicized by omission, and this entry is the record of
+that now being a confirmed answer rather than an open question, so no glossary.md edit was
+needed for them.
+
+**Files affected:** `glossary.md` (the `true / false` row and three new rows in "Keep in
+English"), this file. No files under `../i18n` needed changes.
 
 ### 2026-08-14: the `string` open question, closed (bare English terms now italicized)
 

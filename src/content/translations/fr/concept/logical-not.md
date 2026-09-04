@@ -2,14 +2,15 @@
 lang: "fr"
 type: "concept"
 slug: "logical-not"
-title: "L'opérateur `!` (NON)"
+title: "L'opérateur `!` (pas)"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/logical-not/page.md"
 en_md5: "7cffbd1fa13317b3d6e6a71415413041"
-governance_sha: "e3d3469"
+governance_sha: "339d20ca"
 content_version: "00286aad5132"
-published_at: "2026-08-12"
+published_at: "2026-09-04"
+forum_topic_id: 1456
 ---
 
 Jusqu'ici, quand on a comparé des choses pour voir si elles étaient égales, on a utilisé trois signes égal. Mais parfois, on veut vérifier que des choses ne sont pas égales, et pour ça, on utilise un point d'exclamation suivi de deux signes égal. Et de manière générale, en programmation, un point d'exclamation, ou _bang_ comme disent, je crois, nos amis américains, signifie « non ». Alors imagine que tu travailles dans un magasin et que la direction a décidé d'interdire l'entrée aux tenues disco.

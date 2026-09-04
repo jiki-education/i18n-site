@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-04",
-  "governance_sha": "da2cee34",
-  "approved": 1018,
+  "governance_sha": "5424ef70",
+  "approved": 1020,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -1870,7 +1870,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 165,
+      "approved": 167,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -2371,8 +2371,8 @@
         },
         {
           "key": "exercise/space-invaders-repeat",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2326,
+          "status": "approved"
         },
         {
           "key": "exercise/sprouting-flower",
@@ -2381,8 +2381,8 @@
         },
         {
           "key": "exercise/stock-market",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2327,
+          "status": "approved"
         },
         {
           "key": "exercise/stripey-fabric",

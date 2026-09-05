@@ -3,11 +3,13 @@ lang: "hr"
 name: "Croatian"
 family: null
 stage: "setup"
-governance_sha: "e39e25b"
-content_version: "e2c17ac38713"
-published_at: "2026-08-12"
-term_count: 156
+governance_sha: "bd55b62f"
+content_version: "a945876c8946"
+published_at: "2026-09-05"
+term_count: 157
 category_id: 463
+forum_topic_id: 1436
+video_player_forum_topic_id: 1476
 ---
 
 # Croatian (hr) glossary
@@ -58,6 +60,7 @@ These are terms where the Croatian is used in prose, so the "Use (hr/en)" column
 | statement (executable) | naredba | hr | The imperative sense: a line of code that does something and gets executed. |
 | statement (logical claim) | iskaz | hr | The proposition sense: a claim that is true or false. Pick by meaning, not by the English word. |
 | function | funkcija | hr | The *keyword* `function` in code stays English; the concept in prose is `funkcija`. |
+| function name | naziv funkcije | hr | Never `ime funkcije`. The identifier itself still stays exactly as written in the code; this is only the word for *name*. |
 | to define (a function) | definirati | hr | Never `definisati`. The same `-irati` pattern governs `deklarirati` and `inicijalizirati`. |
 | parameter | parametar | hr | The declaration-site name. |
 | argument | argument | hr | The call-site value. Keep the two distinct even though older Croatian material merges them as `formalni`/`stvarni argument`. |
@@ -204,7 +207,7 @@ These stay in English in Croatian prose, with the Croatian gloss to use for each
 | Code, Bug, Frontend, Backend | (no gloss) | As UI labels and code tokens. The ordinary noun in prose follows the `kôd` row above. |
 | RGB, HSL | (no gloss) | Explain what the letters stand for in Croatian where the source does; the acronyms stay English. |
 | JavaScript, Python, React | (no gloss) | Decline directly, with no hyphen: `Pythona`, `u Reactu`. |
-| Variable and function names | (no gloss) | Never translated. |
+| Variable and function names | (no gloss) | The identifiers themselves are never translated. Where the phrase itself appears in prose, it is `varijable i nazivi funkcija`. |
 | CLI commands (`npm install`, `git commit`) | (no gloss) | Never translated. |
 | Jikiscript / programming keywords (`repeat`, `function`, `if`, `for`, ...) | (no gloss) | Always English, including inside prose. Translate only the surrounding explanation. |
 
@@ -298,3 +301,13 @@ Croatian sits next to Serbian in a model's weights, and a Croatian reader spots 
 Per the no-provisional-section rule, a term is either agreed or absent. Left out for want of any defensible Croatian evidence, to be added once a native speaker rules: **`toggle`** (no Croatian attestation was found in any source, for either the noun or the verb), **`streak`** (the natural `niz` collides with `niz znakova`), **`track`** and **`pathway`** (product coinages with no Croatian precedent, and no way to keep them apart), **`shade`** (collides with `nijansa`, already used for hue), and **`foot-gun`**. Names for `&`, `|` and the backtick are also absent: no authoritative source names them, and Croatian technical writing prints the glyph, so `guide.md` and the Brackets table say to show the glyph rather than coin a name.
 
 Rows flagged in the report as lowest-confidence beyond the two headline items, and worth a speaker's attention on the thread: `osvijetljenost`/`svjetlina` (lightness against brightness), `platno` (canvas), `rezervirano mjesto` (placeholder), `uvlaka` (indentation), `objaviti`/`postaviti u produkciju` (deploy), and `izbacivač` against `zaštitar` for the bouncer, which is a register call rather than a correctness one.
+
+### 2026-09-05: First native-speaker input (naziv funkcije)
+
+**Decided by:** lilitu, the Croatian volunteer reviewer, on the pinned glossary thread ([t/1436](https://forum.jiki.io/t/1436/4)). **Status:** agreed and applied. **Terms affected:** `function name` (new row), and the `Variable and function names` row in the Keep in English table. **Files affected:** `glossary.md`, `glossary-notes.md`.
+
+This is the **first row in the Croatian glossary carrying native-speaker authority**; every other row is still the unconfirmed bootstrap draft described above.
+
+lilitu gave `naziv funkcije` for *function name*, and `varijable i nazivi funkcija` for the phrase *variable and function names*. Croatian has both `ime` and `naziv` for *name*, and Croatian technical writing uses `naziv` for the name of a thing, reserving `ime` for people; a draft that reached for the cognate `ime funkcije` would have read wrong, which is why the row now says so explicitly. Nothing about this changes the underlying rule that the identifiers themselves are never translated: the Keep in English row keeps that instruction and only adds how the English phrase is said when it appears in running Croatian prose.
+
+Left open and asked back on the thread: whether a single variable's name is `naziv varijable` by the same logic. It was not stated, so no row was invented for it.

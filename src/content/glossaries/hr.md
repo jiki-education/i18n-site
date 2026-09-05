@@ -3,10 +3,10 @@ lang: "hr"
 name: "Croatian"
 family: null
 stage: "setup"
-governance_sha: "bd55b62f"
-content_version: "a945876c8946"
+governance_sha: "b56d16a3"
+content_version: "9470681b9534"
 published_at: "2026-09-05"
-term_count: 157
+term_count: 158
 category_id: 463
 forum_topic_id: 1436
 video_player_forum_topic_id: 1476
@@ -83,6 +83,7 @@ These are terms where the Croatian is used in prose, so the "Use (hr/en)" column
 | English | Croatian | Use (hr/en) | Notes |
 |---------|----------|-------------|-------|
 | variable | varijabla | hr | Feminine. Never `promjenjiva` or `promenljiva`. |
+| variable name | naziv varijable | hr | Never `ime varijable`. The identifier itself still stays exactly as written in the code; this is only the word for *name*. |
 | assignment / to assign | pridruživanje / pridružiti | hr | `dodjeljivanje` is an acceptable synonym; do not alternate inside one document. |
 | code block | blok naredbi | hr | Kept distinct from `doseg` (scope). |
 | error | pogreška | hr | Never `greška`, which is lower register and the Serbian form. |
@@ -311,3 +312,15 @@ This is the **first row in the Croatian glossary carrying native-speaker authori
 lilitu gave `naziv funkcije` for *function name*, and `varijable i nazivi funkcija` for the phrase *variable and function names*. Croatian has both `ime` and `naziv` for *name*, and Croatian technical writing uses `naziv` for the name of a thing, reserving `ime` for people; a draft that reached for the cognate `ime funkcije` would have read wrong, which is why the row now says so explicitly. Nothing about this changes the underlying rule that the identifiers themselves are never translated: the Keep in English row keeps that instruction and only adds how the English phrase is said when it appears in running Croatian prose.
 
 Left open and asked back on the thread: whether a single variable's name is `naziv varijable` by the same logic. It was not stated, so no row was invented for it.
+
+### 2026-09-05: The two headline decisions confirmed, plus naziv varijable
+
+**Decided by:** lilitu, the Croatian volunteer reviewer, on the pinned glossary thread ([t/1436](https://forum.jiki.io/t/1436/6)). **Status:** agreed and applied. **Terms affected:** `variable name` (new row), `interpreter` (confirmed, unchanged), and the `ti` register rule in `guide.md` (confirmed, unchanged). **Files affected:** `glossary.md`, `glossary-notes.md`.
+
+**`variable name` = `naziv varijable`.** Asked back on the thread after the `naziv funkcije` row landed, and answered directly: the same `naziv`-not-`ime` logic applies to a single variable's name. The row mirrors `function name`, including the reminder that the identifier in the code is never translated.
+
+**`interpreter` = `tumač` is confirmed.** This was the highest-stakes and lowest-confidence row in the file, recorded above as the one most in need of a speaker's eyes, and lilitu called it "the correct term for interpreter" without qualification. The row itself needed no change: the sourcing behind it (`interpreter`/`interpretator` name the program, `prevoditelj` is a compiler) held up, and the framing advice in its note stays. It now carries native-speaker authority rather than being an agent draft.
+
+**The `ti` register is confirmed.** The other headline worry: `ti` is the minority convention in Croatian software (Microsoft's style guide and Moodle say `vi`), and the concern was that a reviewer trained on that house style would find it too familiar for a learning platform. lilitu's answer was that `ti` is "absolutely the right register for this type of learning platform", which settles it for the Jiki voice and, with it, the gender-agreement rule in `guide.md` that follows from choosing `ti`. `guide.md` already states the rule imperatively and needed no wording change; the confirmation is recorded here rather than there, since the guide holds rules and not their provenance.
+
+With these three, the two decisions flagged at bootstrap as most worth a native speaker's attention are both settled, and Croatian's largest open glossary questions are closed.

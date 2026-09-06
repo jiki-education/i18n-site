@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-06",
-  "governance_sha": "145d0c69",
-  "approved": 1024,
+  "governance_sha": "f67180b5",
+  "approved": 1027,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -953,7 +953,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 169,
+      "approved": 172,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -1429,13 +1429,13 @@
         },
         {
           "key": "exercise/scroll-and-shoot",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2346,
+          "status": "approved"
         },
         {
           "key": "exercise/sign-price",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2347,
+          "status": "approved"
         },
         {
           "key": "exercise/snowman",
@@ -1874,8 +1874,8 @@
         },
         {
           "key": "exercise/sign-words",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2348,
+          "status": "approved"
         },
         {
           "key": "exercise/stars",

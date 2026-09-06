@@ -3,10 +3,10 @@ lang: "ar"
 name: "Arabic"
 family: null
 stage: "refining"
-governance_sha: "7d77efea"
-content_version: "657786644bd5"
-published_at: "2026-08-26"
-term_count: 51
+governance_sha: "698c2f3f"
+content_version: "a3aea8d53f55"
+published_at: "2026-09-06"
+term_count: 53
 category_id: 233
 forum_topic_id: 470
 video_player_forum_topic_id: 741
@@ -53,7 +53,7 @@ These are terms where the Arabic is used in prose, so the "Use (ar/en)" column i
 | function | دالة | ar | The *keyword* `function` in code stays English; the concept in prose is `دالة`. Feminine; plural دوال. |
 | parameter | معامل | ar | The declaration-site name. Distinct from `عامل` (operator); do not confuse the two. Masculine; plural معاملات. |
 | argument | وسيط | ar | The call-site value. Masculine; plural وسائط. |
-| to return (a value) | يُرجع (المصدر: إرجاع) | ar | The programming action of a function giving a value back. Not `يعيد`, which in everyday Arabic also reads as "repeats/redoes". `إخراج`/`يُخرج` stays reserved for output/printing to the screen, so that a value handed back to the program and a result shown on screen never blur together for a beginner. The `return chute` metaphor keeps `مجرى الإخراج`, because that names the physical exit the value slides out of, not the action. Set by mirina (t/470/46). |
+| to return (a value) | يُرجع (المصدر: إرجاع) | ar | The programming action of a function giving a value back. Not `يعيد`, which in everyday Arabic also reads as "repeats/redoes". `إخراج`/`يُخرج` stays reserved for output/printing to the screen, so that a value handed back to the program and a result shown on screen never blur together for a beginner. The `return chute` metaphor keeps `مجرى الإخراج`, because that names the physical exit the value slides out of, not the action. Set by mirina (t/470/46). Conjugate to the implied subject: a `دالة`/`طريقة` is feminine singular, so a function or method returning takes `تُرجع` (future `ستُرجع`, past `أرجعت`), not `يُرجع`. A plural of non-humans (`الدوال`, `المصفوفات`) also takes the feminine singular `تُرجع`, never `يُرجعون`. `يُرجع` is for a masculine singular subject such as `الكود`. |
 | brackets (the two after a function name) | الأقواس الهلالية (الأقواس الهلالَين) | ar | The round pair `()` written after a function name to call it. Arabic has a dual, so use it where the pair is meant: `الأقواس الهلالية`, oblique `الأقواس الهلالَين` ("كتبت `move` ثم الأقواس الهلالَين"). Set by mirina (t/470/32), overriding humam-hamdan's earlier bare `الهلالان`: the generic head-word is `قوس`/`أقواس` for every bracket type, with the shape as a qualifier. See the Brackets table below. |
 
 ### Loops, state & program flow
@@ -81,6 +81,8 @@ These are terms where the Arabic is used in prose, so the "Use (ar/en)" column i
 |---------|--------|-------------|-------|
 | course | دورة | ar | The whole Jiki course the learner is taking ("في هذه الدورة، مفسّرك هو Jiki"). Keep distinct from `درس` (lesson) and `منهج` (curriculum). Feminine; plural دورات. |
 | dashboard | لوحة التحكم | ar | Confirmed by mirina (t/795/7): not necessarily the most elegant term, but correct and widely understandable. |
+| canvas (the drawing surface) | السبورة | ar | The surface the drawing exercises draw on is the **same object** as the board in the "Jiki physical metaphors" table, so it takes the same word: `مسح السبورة` for "cleared the canvas". Do not use `اللوحة` or `لوحة الرسم` for it. Set by mirina (t/1869). Feminine; plural سبورات. |
+| ellipse (the drawing shape) | شكل بيضاوي | ar | "Oval shape", not the strictly mathematical `قطع ناقص`, which is conic-section terminology and needlessly technical for absolute beginners. Set by mirina (t/1869). Masculine (head-word `شكل`); plural أشكال بيضاوية. |
 
 ## Keep in English
 
@@ -136,6 +138,65 @@ Generic, when no specific type is meant: singular `قوس` (masculine), the pair
 ---
 
 ## Decision log
+
+### 2026-09-06: verb agreement for `to return (a value)` made explicit (t/1865, post 3)
+
+**Decided by:** reviewer mirina, forum https://forum.jiki.io/t/1865/3, actioned directly.
+
+The glossary row for `to return (a value)` recorded only `يُرجع`, the masculine singular
+present form. mirina's point is that the word itself was never in doubt (she set it herself in
+t/470/46) but that a single citation form is not enough to translate from: the verb has to
+agree with whatever is doing the returning, and in programming prose that is almost never a
+masculine singular noun.
+
+Two rules follow, and both were already being broken in published Arabic content:
+
+- A `دالة` (function) or `طريقة` (method) is a feminine singular noun, so a function that
+  returns takes `تُرجع` / `ستُرجع` / `أرجعت`. The `arrays` concept page had `mentors.includes(...)`
+  returning as `سيُرجع`, agreeing with an imagined masculine `الكود` rather than with the method
+  actually named in the sentence.
+- Arabic's inanimate-plural rule (جمع غير العاقل) makes a plural of non-humans agree as feminine
+  singular, so `الدوال تُرجع القيم`. Writing `الدوال يُرجعون` reads as "the functions, who are a
+  group of men, return", which mirina flags as a serious grammar error rather than a stylistic
+  slip. She cited pan-Arab technical sources using `دوال تُرجع` and `الدوال التي تُرجع قيمة`.
+
+The word choice itself is unchanged and the reasoning behind it still stands: `أرجع / يُرجع` keeps
+"returning a value" distinct from `إخراج` (printing to the screen) and from `أعاد / يعيد`
+(repeating), which is why `أعاد` was wrong in the Rock, Paper, Scissors category catalog.
+
+The actionable half went to the glossary row's Notes (the conjugation matrix) and to
+`guide.md`'s grammar section (non-human plural agreement, and agreeing with the implied subject
+when a function or method acts), since both apply well beyond this one term.
+
+### 2026-08-30: `canvas` added as `السبورة`, `ellipse` added as `شكل بيضاوي` (t/1869)
+
+**Decided by:** reviewer mirina, forum https://forum.jiki.io/t/1869, actioned directly.
+Both came out of her review of the Weather Symbols exercise, whose page carries the shared
+"draw" category messages.
+
+#### `canvas` -> `السبورة`
+
+The shared draw catalog rendered "cleared the canvas" as `مسح اللوحة`. mirina's point is that
+the glossary already settles Jiki's display/drawing surface as `سبورة` (the `board / whiteboard`
+row in "Jiki physical metaphors", with its explicit "one object, one word" rule and its ban on
+`لوح`), and the drawing surface is that same object. `اللوحة` was the odd one out, not a second
+legitimate term. The row is therefore an enforcement of an existing decision, written down so a
+future pass cannot reintroduce `اللوحة` on the grounds that "canvas" had no row of its own.
+
+#### `ellipse` -> `شكل بيضاوي`
+
+The shared draw catalog rendered "drew an ellipse" as `رسم قطعًا ناقصًا`. `قطع ناقص` is the
+strictly mathematical term (the conic section), which mirina judged needlessly technical for
+beginners of all levels; `شكل بيضاوي` ("oval shape") names the shape and is understandable to
+everyone. The Arabic corpus was already split on this: the `penguin` exercise, which is where
+ellipses are introduced to the learner, uses `شكل بيضاوي` / `الأشكال البيضاوية` throughout, so
+her call also removes an inconsistency rather than creating one.
+
+**Resolved (2026-08-30):** the drift noted above is cleared. `cloud-rain-sun`, `fix-wall`,
+`structured-house`, and a further 7 exercises found by a follow-up sweep
+(`relational-sun`, `snowman-basic`, `relational-snowman`, `penguin`, `jumbled-house`,
+`relational-traffic-lights`, `rainbow`) all now use `السبورة` for canvas and `شكل بيضاوي`
+for ellipse, each with its own reviewer-notes file under `languages/ar/exercise/`.
 
 ### 2026-08-26: `to return (a value)` added as `يُرجع` (t/470, post 46)
 

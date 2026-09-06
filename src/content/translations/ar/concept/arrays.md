@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/ar/curriculum/concepts/arrays/page.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "7d77efea"
-content_version: "554507a605c3"
-published_at: "2026-08-26"
+governance_sha: "698c2f3f"
+content_version: "62eeecec89a9"
+published_at: "2026-09-06"
+forum_topic_id: 1851
 ---
 
 لقد كنت تستخدم الأعداد والسلاسل النصية والقيم المنطقية (‏_Booleans_ بالإنجليزية، وهي الكلمة الرنانة التي تشير إلى صحيح وخطأ)، ونُسمي هذه جميعًا أنواع البيانات (‏_data types_ بالإنجليزية) المختلفة. الآن نُضيف أول نوع بيانات مركب (‏_compound data type_ بالإنجليزية).
@@ -52,6 +53,6 @@ published_at: "2026-08-26"
 
 يمكننا أيضًا استخدام الخاصية `length` على المصفوفات، تمامًا كما تعلمنا عن السلاسل النصية. إذا كان لدينا مصفوفة تحتوي على أربع سلاسل نصية في صندوق `mentors` وكتبنا `mentors.length`، فسيُرجع 4.
 
-ويمكننا أيضًا استخدام `includes` على المصفوفات بنفس الطريقة. يمكننا أن نقول `mentors.includes("DJ")`، وسيُرجع `true`. لكن إذا قلنا `mentors.includes("Frank")`، فسيُرجع `false`.
+ويمكننا أيضًا استخدام `includes` على المصفوفات بنفس الطريقة. يمكننا أن نقول `mentors.includes("DJ")`، وستُرجع `true`. لكن إذا قلنا `mentors.includes("Frank")`، فستُرجع `false`.
 
 كل شيء يعمل بنفس الطريقة كما في السلاسل النصية. الأمر فقط أننا نتعامل مع عناصر المصفوفة، وليس حروف السلسلة النصية.

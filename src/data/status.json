@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-06",
   "governance_sha": "1b69bfd0",
-  "approved": 1029,
+  "approved": 1030,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -953,7 +953,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 174,
+      "approved": 175,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -1309,8 +1309,8 @@
         },
         {
           "key": "exercise/guest-list",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2351,
+          "status": "approved"
         },
         {
           "key": "exercise/hamming",

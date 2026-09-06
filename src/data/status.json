@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-06",
-  "governance_sha": "0d85487b",
-  "approved": 1031,
+  "governance_sha": "be59ad34",
+  "approved": 1032,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -15219,7 +15219,7 @@
       "stage": "setup",
       "live": false,
       "category_slug": "i18n-he",
-      "approved": 1,
+      "approved": 2,
       "disapproved": 0,
       "total": 14,
       "items": [
@@ -15235,8 +15235,8 @@
         },
         {
           "key": "video-player",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2354,
+          "status": "approved"
         },
         {
           "key": "exercise/maze-solve-basic",

@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-06",
-  "governance_sha": "f67180b5",
-  "approved": 1027,
+  "governance_sha": "cfb18084",
+  "approved": 1028,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -953,7 +953,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 172,
+      "approved": 173,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -1889,8 +1889,8 @@
         },
         {
           "key": "exercise/matching-socks",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2349,
+          "status": "approved"
         },
         {
           "key": "exercise/meal-prep",

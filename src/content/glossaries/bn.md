@@ -3,10 +3,10 @@ lang: "bn"
 name: "Bengali"
 family: null
 stage: "reviewing"
-governance_sha: "698c2f3f"
-content_version: "e73d62a1712a"
+governance_sha: "cfb18084"
+content_version: "423464a9c07a"
 published_at: "2026-09-06"
-term_count: 83
+term_count: 86
 category_id: 234
 forum_topic_id: 473
 video_player_forum_topic_id: 743
@@ -30,6 +30,8 @@ decision log (`glossary-notes.md`).
 | game | গেম | bn | Phonetic transliteration, not খেলা. Confirmed by native-speaker review (see notes). |
 | draw (a tied result) | ড্র | bn | Phonetic transliteration, not টাই or সমতা. Confirmed by native-speaker review (see notes). |
 | Rock, Paper, Scissors (the game's name) | রক, পেপার, সিজার | bn | Phonetic transliteration. In a heading or title, phonetic only. On first mention in body prose, add the literal gloss in brackets: রক, পেপার, সিজার (পাথর, কাগজ, কাঁচি). The individual moves as objects stay পাথর / কাগজ / কাঁচি. |
+| left (direction) | বাম | bn | Never বাঁ or any of its inflections (বাঁয়ে, বাঁয়ের, বাঁ দিকে). Inflect as বামে, বামের, বাম দিকে. বাঁ is too formal for Jiki's friendly register; বাম is what is said in everyday speech. Pairs with ডান for "right". Confirmed by native-speaker review (see notes). |
+| Scroll and Shoot (the exercise's name) | স্ক্রল অ্যান্ড শুট | bn | Transliterate the whole title, "and" included (অ্যান্ড). Never translate the conjunction (স্ক্রল আর শুট). Confirmed by native-speaker review (see notes). |
 
 ## Localize (use the Bangla term)
 
@@ -116,6 +118,7 @@ by theme for readability; every table below follows the same columns.
 | Type Conversion (function category label) | টাইপ কনভার্সন (ডেটা টাইপ রূপান্তর) | bn | The transliteration is what a developer says, so it leads; the bracketed Bangla is there so a beginner meeting the category for the first time knows what it means. Confirmed by native-speaker review (see notes). |
 | email | ইমেইল | bn | Never ইমেল (single ই). "Email address" is never rendered with a separate word for "address" either, just ইমেইল alone; adding one reads as unnatural. Confirmed by native-speaker review (see notes). |
 | drawing (noun: a drawing exercise/task) | ড্রয়িং | bn | The gerund-noun transliteration, not the verb আঁকা ("to draw") or a calque like "আঁকার অনুশীলনী". Reads more natural and more professional as a noun/heading. Distinct from the verb "to draw", which stays আঁকা. Confirmed twice by native-speaker review (see notes). |
+| drawer (item of furniture: a chest of drawers) | ড্রয়ার | bn | Phonetic transliteration, not দেরাজ. The English loanword is what everyone says for this everyday household item. Confirmed by native-speaker review (see notes). |
 
 ## Keep in English
 
@@ -153,6 +156,58 @@ technical language.
 ---
 
 ## Decision log
+
+### 2026-09-06: "drawers" is ড্রয়ার, not দেরাজ (t/2349)
+
+**Decided by:** reviewer sohayelmahmud, forum https://forum.jiki.io/t/2349, post 1, actioned
+directly.
+
+Reviewing the Matching Socks exercise, he flagged the single occurrence of দেরাজ (the native
+Bangla word for a chest of drawers) and asked for the phonetic ড্রয়ার instead: "we always use
+the english, so use phonetic". He had no other comments on the exercise ("rest are ok to me"),
+so the item was approved in the same pass.
+
+This is the same everyday-loanword rule already recorded for কমন, গেম, ড্র and ড্রয়িং: a
+household or everyday English word that Bangla speakers already say as a loanword is
+transliterated rather than translated, even though ordinary non-CS vocabulary otherwise
+defaults to the native word. দেরাজ is not wrong, it is simply not what anyone says. It appeared
+only once in the whole Bangla corpus, so no sweep was needed.
+
+### 2026-09-06: "left" is বাম, not বাঁ; Scroll and Shoot title transliterated (t/2346)
+
+**Decided by:** reviewer sohayelmahmud, forum https://forum.jiki.io/t/2346, post 1, actioned
+directly. All of it came out of his review of the Scroll and Shoot exercise.
+
+#### "left" -> বাম
+
+The Bangla translations used বাঁ and its inflections (বাঁয়ে, বাঁয়ের, বাঁ দিকে) throughout. He
+called বাঁ "too formal to Jiki", which he reads as a friendly environment, and said that in
+everyday speech people always say বাম. He explicitly asked for it to be changed in the other
+places too and suggested it be added to the glossary. Scroll and Shoot itself was swapped in
+this pass; the rest of the Bangla corpus still carries roughly 150 occurrences across about 65
+files, which is logged in `state/content-updates-needed.md` as a corpus-wide sweep rather than
+done unilaterally off one thread. Note that not every বাঁ is the direction word (বাঁধা, বাঁচা,
+বাঁক are unrelated), so the sweep is not a blind replace.
+
+#### "Scroll and Shoot" -> স্ক্রল অ্যান্ড শুট
+
+The title had been half-translated (স্ক্রল আর শুট, with the conjunction rendered as আর). He
+said the fully transliterated form is more natural. Same precedent as the Space Invaders family
+titles: an exercise's English name is transliterated whole rather than part-translated.
+
+#### Wording fixes specific to the exercise
+
+Recorded on the item's reviewer-notes file rather than the glossary, since they are sentence
+choices rather than term mappings: ব্যস্ত ("busy" as in a person or a road) is wrong for waves
+getting denser (ঘন), সমস্ত reads better than প্রতিটি in "until every alien is gone", নইলে is
+the everyday word for "or else", and নামানোর is preferred over নামিয়ে ফেলার for "to hunt
+down".
+
+#### Hyphenating a suffix onto a long loanword
+
+ইনপুটসহ was hard to read run together; he asked for ইনপুট-সহ, "when the phonetic is a bit
+longer, use dash, easy to read". That is a typography rule, so it went to the guide's
+Punctuation and script conventions section, not the glossary.
 
 ### 2026-09-06: `factor` split from উৎপাদক; "sixteen" spelled ষোল (t/2344)
 
@@ -585,6 +640,8 @@ and in the row's own Notes column in `glossary.md`, not treated as a decision.
 | streak | Native Bangla word meaning "continuity/consistency". |
 | tech / tech industry | Loanword pairing; established in Bangla tech media. |
 | pitfall | Native word; plain বিপদ alone reads as generic "danger" without the gloss. |
+| left (direction) | বাম, confirmed by native-speaker review 2026-09-06 (sohayelmahmud, forum t/2346, post 1). বাঁ is the more formal/literary form; বাম is what is said in everyday Bangla, which is the register Jiki wants. |
+| Scroll and Shoot (exercise name) | Fully transliterated including the conjunction, confirmed by native-speaker review 2026-09-06 (sohayelmahmud, forum t/2346, post 1). |
 
 #### Values & data types
 

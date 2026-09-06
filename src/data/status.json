@@ -1,7 +1,7 @@
 {
   "published_at": "2026-09-06",
-  "governance_sha": "cfb18084",
-  "approved": 1028,
+  "governance_sha": "4f03a4a8",
+  "approved": 1029,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -953,7 +953,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 173,
+      "approved": 174,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -1894,8 +1894,8 @@
         },
         {
           "key": "exercise/meal-prep",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2350,
+          "status": "approved"
         },
         {
           "key": "exercise/adventures-in-poetry",

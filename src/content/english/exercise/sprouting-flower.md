@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "sprouting-flower"
 title: "Sprouting Flower"
-en_md5: "c90a40fd93e8b73b6b77a3bb9591f201"
+en_md5: "da77623707e6ba08793027eee759070d"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/sprouting-flower"
-captured_at: "2026-08-03"
+captured_at: "2026-09-07"
 ---
 
 Your task is to make a flower that grows over `60` iterations.

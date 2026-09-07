@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "stripey-fabric"
 title: "Stripey Fabric"
-en_md5: "ae0e824f8f222c6d13471da65681333f"
+en_md5: "1bc16e771eb354b25f3af61a51ba211d"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/stripey-fabric"
-captured_at: "2026-08-04"
+captured_at: "2026-09-07"
 ---
 
 You're designing an algorithm to create a roll of stripey fabric, which should look like this:

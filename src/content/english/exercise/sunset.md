@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "sunset"
 title: "Sunset"
-en_md5: "17b7b416859fcc6178105b8cd2f896f7"
+en_md5: "02ecca85b8a16d5c9182db05789e21d8"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/sunset"
-captured_at: "2026-08-04"
+captured_at: "2026-09-07"
 ---
 
 Your task is to animate a sunset scene that lasts 100 iterations. It should look like this (the flickering is exactly what you see with flipbooks too!):

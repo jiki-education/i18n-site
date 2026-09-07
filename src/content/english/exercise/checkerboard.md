@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "checkerboard"
 title: "Checkerboard"
-en_md5: "3c7827efbcc4032acb8c09dd900e28bb"
+en_md5: "c774eb7fdb5e3d5ba1c20ee533549b72"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/checkerboard"
-captured_at: "2026-08-05"
+captured_at: "2026-09-07"
 ---
 
 In this project you'll draw a checkerboard and set up the pieces on it, ready for a game of draughts (also known as checkers).

@@ -3,7 +3,7 @@ lang: "ar"
 name: "Arabic"
 family: null
 stage: "refining"
-governance_sha: "81eb7679"
+governance_sha: "3d7546a0"
 content_version: "2eae2c9af910"
 published_at: "2026-09-08"
 term_count: 54

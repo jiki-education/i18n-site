@@ -3,10 +3,10 @@ lang: "ar"
 name: "Arabic"
 family: null
 stage: "refining"
-governance_sha: "698c2f3f"
-content_version: "a3aea8d53f55"
-published_at: "2026-09-06"
-term_count: 53
+governance_sha: "81eb7679"
+content_version: "2eae2c9af910"
+published_at: "2026-09-08"
+term_count: 54
 category_id: 233
 forum_topic_id: 470
 video_player_forum_topic_id: 741
@@ -51,9 +51,10 @@ These are terms where the Arabic is used in prose, so the "Use (ar/en)" column i
 | statement (executable) | عبارة | ar | The imperative sense: a line of code that does something and gets executed. Kept distinct from `جملة شرطية` (if statement) and from `تعبير` (expression). |
 | statement (logical claim) | قضية | ar | The proposition sense: a claim that is true or false. Pick by meaning, not by the English word; kept distinct from `عبارة` above. |
 | function | دالة | ar | The *keyword* `function` in code stays English; the concept in prose is `دالة`. Feminine; plural دوال. |
+| method | طريقة | ar | A function that belongs to an object and is called on it (`mentors.includes(...)`). Feminine; plural `طُرق` (not the literary `طَرائق`), so a method returning takes `تُرجع`, exactly like `دالة`. Set by mirina (t/470/53), citing ARABTERM and Arabic Wikipedia; do **not** use `تابع`, which an early website-copy draft proposed. Because `طريقة` also means "way/manner" in everyday Arabic, never use it in that everyday sense in Jiki content: write `أسلوب`, `كيفية` or a rephrase for "the first way to do this", so `طريقة` reads as the technical term throughout. |
 | parameter | معامل | ar | The declaration-site name. Distinct from `عامل` (operator); do not confuse the two. Masculine; plural معاملات. |
 | argument | وسيط | ar | The call-site value. Masculine; plural وسائط. |
-| to return (a value) | يُرجع (المصدر: إرجاع) | ar | The programming action of a function giving a value back. Not `يعيد`, which in everyday Arabic also reads as "repeats/redoes". `إخراج`/`يُخرج` stays reserved for output/printing to the screen, so that a value handed back to the program and a result shown on screen never blur together for a beginner. The `return chute` metaphor keeps `مجرى الإخراج`, because that names the physical exit the value slides out of, not the action. Set by mirina (t/470/46). Conjugate to the implied subject: a `دالة`/`طريقة` is feminine singular, so a function or method returning takes `تُرجع` (future `ستُرجع`, past `أرجعت`), not `يُرجع`. A plural of non-humans (`الدوال`, `المصفوفات`) also takes the feminine singular `تُرجع`, never `يُرجعون`. `يُرجع` is for a masculine singular subject such as `الكود`. |
+| to return (a value) | يُرجع (المصدر: إرجاع) | ar | The programming action of a function, method or property giving a value back. Not `يعيد`, which in everyday Arabic also reads as "repeats/redoes". `إخراج`/`يُخرج` stays reserved for output/printing to the screen, so that a value handed back to the program and a result shown on screen never blur together for a beginner. The `return chute` metaphor keeps `مجرى الإخراج`, because that names the physical exit the value slides out of, not the action. Set by mirina (t/470/46). Applies to a property giving a value back (`mentors.length`), not only to a function or method. Conjugate to the implied subject: a `دالة`/`طريقة`/`خاصية` is feminine singular, so a function, method or property returning takes `تُرجع` (future `ستُرجع`, past `أرجعت`), not `يُرجع`. A plural of non-humans (`الدوال`, `المصفوفات`, `الخصائص`) also takes the feminine singular `تُرجع`, never `يُرجعون`. `يُرجع` is for a masculine singular subject such as `الكود`. |
 | brackets (the two after a function name) | الأقواس الهلالية (الأقواس الهلالَين) | ar | The round pair `()` written after a function name to call it. Arabic has a dual, so use it where the pair is meant: `الأقواس الهلالية`, oblique `الأقواس الهلالَين` ("كتبت `move` ثم الأقواس الهلالَين"). Set by mirina (t/470/32), overriding humam-hamdan's earlier bare `الهلالان`: the generic head-word is `قوس`/`أقواس` for every bracket type, with the shape as a qualifier. See the Brackets table below. |
 
 ### Loops, state & program flow
@@ -138,6 +139,59 @@ Generic, when no specific type is meant: singular `قوس` (masculine), the pair
 ---
 
 ## Decision log
+
+### 2026-09-08: `method` added as `طريقة` (t/470/53)
+
+**Decided by:** reviewer mirina, forum https://forum.jiki.io/t/470/53, actioned directly.
+
+`method` had no row of its own. The word `طريقة` was already in use across Arabic curriculum
+prose and was even named inside the `to return (a value)` row's Notes (as a feminine subject
+governing `تُرجع`), but only as an aside, so nothing in the glossary actually settled the term.
+mirina's point is that an unsettled term with a live competitor is worse than no term: the
+2026-08-02 website-copy draft below proposed `تابع` (masculine) at medium confidence, and that
+draft reached the app catalog, where `codingExercise.instructionsPanel.functionsTitle` and
+`functionsIntro` read `الدوال والتوابع`. Learners therefore meet `تُرجع الطريقة` on a concept
+page and `التوابع` in the panel beside it.
+
+`طريقة` wins on evidence rather than on which pass happened first: ARABTERM and Arabic
+Wikipedia both give it for the OOP sense, it is what the Arabic corpus already uses, and its
+feminine gender matches `دالة`, so the agreement rule set in t/1865 covers functions and
+methods with one sentence instead of two. The plural is `طُرق`, the common technical form;
+`طَرائق` is correct but reads literary and academic.
+
+One caveat travels with the term, and mirina raised it herself: `طريقة` is first and foremost
+the everyday word for "way / manner / approach", so a page that says "the first way to do this"
+would collide with its own technical vocabulary. The row therefore bans the everyday sense in
+Jiki content and points at `أسلوب` / `كيفية` / a rephrase instead. The `طرق` / `طريق`
+("road") overlap she also mentions is not a practical risk: technical context disambiguates.
+
+`تابع` is now explicitly ruled out, and the draft row for it below is struck through.
+
+### 2026-09-08: `to return (a value)` extended to properties (t/1865, post 5)
+
+**Decided by:** reviewer mirina, forum https://forum.jiki.io/t/1865/5, actioned directly.
+
+Follow-up to the 2026-09-06 entry below. We had applied her agreement rule to method calls
+(`mentors.includes(...)` -> `ستُرجع` / `فستُرجع`) but left the sentence above it,
+`mentors.length` -> `فسيُرجع`, alone and asked her whether a property behaves differently.
+
+It does not. A `خاصية` (property) is feminine singular exactly like a `دالة` or `طريقة`, so
+`mentors.length` returning four is `فستُرجع`. She gave the full paradigm: singular
+`تُرجع الخاصية length عدد العناصر`, plural `تُرجع الخصائصُ القيمَ` (non-human plural, still
+feminine singular), dual `تُرجع الخاصيتان الأبعاد`.
+
+Her second point is the one with reach: the glossary defined the term as "the programming
+action of a **function** giving a value back", which is narrower than the course material,
+where the Arrays concept says the `length` property returns a value. A definition narrower
+than the content it governs is what let the agent write `فسيُرجع` in the first place, and it
+would keep causing inconsistency for human reviewers checking continuity. So the definition
+now reads "a function, method or property giving a value back", the conjugation note names
+`خاصية` and `الخصائص` alongside `دالة`/`طريقة`, and `guide.md`'s agreement bullet is retitled
+to cover a property acting, with the `mentors.length` case spelled out.
+
+mirina also noted approvingly that the agent could not decide the property case on its own but
+did raise the question rather than guess, which is the behaviour we want on an open grammar
+point.
 
 ### 2026-09-06: verb agreement for `to return (a value)` made explicit (t/1865, post 3)
 
@@ -549,7 +603,7 @@ Agreed independently across chunk workers:
 | milestone | محطة | | medium |
 | scrubber | شريط التنقّل | | low |
 | Spotlight mode | وضع التركيز | | low |
-| method | تابع | | medium |
+| ~~method~~ | ~~تابع~~ | **Rejected by mirina, t/470/53 (2026-09-08); `طريقة` written to `glossary.md` instead.** | ~~medium~~ |
 
 Two disagreements needing a call before a tidy pass (feature names, recur across namespaces):
 

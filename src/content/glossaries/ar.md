@@ -3,9 +3,9 @@ lang: "ar"
 name: "Arabic"
 family: null
 stage: "refining"
-governance_sha: "3d7546a0"
-content_version: "2eae2c9af910"
-published_at: "2026-09-08"
+governance_sha: "618e8c2d"
+content_version: "7b8e438eb978"
+published_at: "2026-09-09"
 term_count: 54
 category_id: 233
 forum_topic_id: 470
@@ -54,7 +54,7 @@ These are terms where the Arabic is used in prose, so the "Use (ar/en)" column i
 | method | طريقة | ar | A function that belongs to an object and is called on it (`mentors.includes(...)`). Feminine; plural `طُرق` (not the literary `طَرائق`), so a method returning takes `تُرجع`, exactly like `دالة`. Set by mirina (t/470/53), citing ARABTERM and Arabic Wikipedia; do **not** use `تابع`, which an early website-copy draft proposed. Because `طريقة` also means "way/manner" in everyday Arabic, never use it in that everyday sense in Jiki content: write `أسلوب`, `كيفية` or a rephrase for "the first way to do this", so `طريقة` reads as the technical term throughout. |
 | parameter | معامل | ar | The declaration-site name. Distinct from `عامل` (operator); do not confuse the two. Masculine; plural معاملات. |
 | argument | وسيط | ar | The call-site value. Masculine; plural وسائط. |
-| to return (a value) | يُرجع (المصدر: إرجاع) | ar | The programming action of a function, method or property giving a value back. Not `يعيد`, which in everyday Arabic also reads as "repeats/redoes". `إخراج`/`يُخرج` stays reserved for output/printing to the screen, so that a value handed back to the program and a result shown on screen never blur together for a beginner. The `return chute` metaphor keeps `مجرى الإخراج`, because that names the physical exit the value slides out of, not the action. Set by mirina (t/470/46). Applies to a property giving a value back (`mentors.length`), not only to a function or method. Conjugate to the implied subject: a `دالة`/`طريقة`/`خاصية` is feminine singular, so a function, method or property returning takes `تُرجع` (future `ستُرجع`, past `أرجعت`), not `يُرجع`. A plural of non-humans (`الدوال`, `المصفوفات`, `الخصائص`) also takes the feminine singular `تُرجع`, never `يُرجعون`. `يُرجع` is for a masculine singular subject such as `الكود`. |
+| to return (a value) | يُرجع (المصدر: إرجاع) | ar | The programming action of a function, method or property giving a value back. Not `يعيد`, which in everyday Arabic also reads as "repeats/redoes". `إخراج`/`يُخرج` stays reserved for output/printing to the screen, so that a value handed back to the program and a result shown on screen never blur together for a beginner. The `return chute` metaphor keeps `مجرى الإخراج`, because that names the physical exit the value slides out of, not the action. Set by mirina (t/470/46). Applies to a property giving a value back (`mentors.length`), not only to a function or method. Conjugate to the implied subject: a `دالة`/`طريقة`/`خاصية` is feminine singular, so a function, method or property returning takes `تُرجع` (future `ستُرجع`, past `أرجعت`), not `يُرجع`. A plural of non-humans (`الدوال`, `الطرق`, `الخصائص`, `المصفوفات`) also takes the feminine singular `تُرجع`, never `يُرجعون`. A dual subject depends on word order: verb-first keeps the singular (`تُرجع الخاصيتان الأبعاد`), subject-first requires the dual verb `تُرجعان` (`الخاصيتان تُرجعان الأبعاد`). `يُرجع` is for a masculine singular subject such as `الكود`. |
 | brackets (the two after a function name) | الأقواس الهلالية (الأقواس الهلالَين) | ar | The round pair `()` written after a function name to call it. Arabic has a dual, so use it where the pair is meant: `الأقواس الهلالية`, oblique `الأقواس الهلالَين` ("كتبت `move` ثم الأقواس الهلالَين"). Set by mirina (t/470/32), overriding humam-hamdan's earlier bare `الهلالان`: the generic head-word is `قوس`/`أقواس` for every bracket type, with the shape as a qualifier. See the Brackets table below. |
 
 ### Loops, state & program flow
@@ -139,6 +139,28 @@ Generic, when no specific type is meant: singular `قوس` (masculine), the pair
 ---
 
 ## Decision log
+
+### 2026-09-09: dual agreement is word-order dependent (t/470/56)
+
+**Decided by:** reviewer mirina, forum https://forum.jiki.io/t/470/56, actioned directly.
+
+A precision on the entry below. When we wrote the agreement paradigm down we recorded the dual
+as `تُرجع الخاصيتان الأبعاد`, phrased as though it were the dual form full stop. mirina's point
+is that it is not a fact about the dual, it is a fact about word order: in Arabic a verb placed
+before its subject stays singular whatever the subject's number, which is the only reason
+`تُرجع` is correct in that example. Put the dual subject first, and dual agreement becomes
+mandatory again: `الخاصيتان تُرجعان الأبعاد`.
+
+That matters here because our own guide's default is subject-first, so a translator or an
+engine following both the glossary and the guide would produce `الخاصيتان تُرجع` and be wrong.
+The guide bullet and the glossary row now give both orders and name `تُرجعان` as the form a
+subject-first dual needs.
+
+The non-human plural rule is unaffected: `الخصائص` takes the feminine singular verb in either
+order, which is why that one could be stated without a word-order caveat.
+
+She also spotted an omission in the same list: `الطرق`, the plural of `طريقة`, was missing from
+the non-human plurals named beside `الدوال` / `الخصائص` / `المصفوفات`. Added in both files.
 
 ### 2026-09-08: `method` added as `طريقة` (t/470/53)
 

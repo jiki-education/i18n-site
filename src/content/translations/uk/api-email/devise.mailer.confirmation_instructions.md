@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/devise_mailer.uk.yml"
 en_md5: "2905eb1dbeebf2743145bef9a1a3b168"
-governance_sha: "5d0edb5"
+governance_sha: "6c2dee5d"
 content_version: "10e0ba1a4145"
-published_at: "2026-08-20"
+published_at: "2026-09-13"
 forum_topic_id: 1495
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"devise.mailer.confirmation_instructions","rows":[{"key":"subject","english":"Confirm Your Email Address","target":"Вказівки щодо підтвердження облікового запису"},{"key":"preview","english":"Confirm your email address for your Jiki account","target":"Ви можете підтвердити свою адресу електронної пошти через посилання нижче:"},{"key":"greeting","english":"Hi there,","target":"Ласкаво просимо!"},{"key":"cta","english":"Confirm My Email","target":"Підтвердити мій обліковий запис"}]}]}]
 ---

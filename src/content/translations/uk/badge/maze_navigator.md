@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/badges/messages.json"
 en_md5: "89356f94554e05fdd61aff3f72935e70"
-governance_sha: "4d02c56"
+governance_sha: "6c2dee5d"
 content_version: "e1e0fd807ea1"
-published_at: "2026-08-13"
+published_at: "2026-09-13"
+forum_topic_id: 1495
 ---
 
 Завершено урок із проходження лабіринту

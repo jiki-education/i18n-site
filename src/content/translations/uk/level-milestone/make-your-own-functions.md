@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/uk.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "6384e0d"
+governance_sha: "6c2dee5d"
 content_version: "168fb797e35d"
-published_at: "2026-08-21"
+published_at: "2026-09-13"
 forum_topic_id: 1495
 ---
 

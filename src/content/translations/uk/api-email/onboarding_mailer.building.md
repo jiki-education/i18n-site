@@ -2,15 +2,15 @@
 lang: "uk"
 type: "api-email"
 slug: "onboarding_mailer.building"
-title: "Найкращий спосіб навчитися: створювати!"
+title: "Найкращий спосіб навчитися - створювати!"
 status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.uk.yml"
 en_md5: "b7798a74c11946fe6775eeda0559840e"
-governance_sha: "5d0edb5"
-content_version: "2114a9b80bdd"
-published_at: "2026-08-20"
-messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.building","rows":[{"key":"subject","english":"The Best Way to Learn is to Make Stuff!","target":"Найкращий спосіб навчитися: створювати!"},{"key":"preview","english":"I really believe that now is the best possible time to get into tech.","target":"Я справді вірю, що зараз найкращий час, щоб увійти в IT-індустрію."},{"key":"greeting","english":"Hi there,","target":"Вітаю,"}]}]}]
+governance_sha: "6c2dee5d"
+content_version: "2dad81680aeb"
+published_at: "2026-09-13"
+messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.building","rows":[{"key":"subject","english":"The Best Way to Learn is to Make Stuff!","target":"Найкращий спосіб навчитися - створювати!"},{"key":"preview","english":"I really believe that now is the best possible time to get into tech.","target":"Я справді вірю, що зараз найкращий час, щоб увійти в IT-індустрію."},{"key":"greeting","english":"Hi there,","target":"Вітаю,"}]}]}]
 ---
 
 Я справді вірю, що **зараз найкращий час, щоб увійти в IT-індустрію**. Ще ніколи не було так легко опанувати основи й швидко почати щось створювати.

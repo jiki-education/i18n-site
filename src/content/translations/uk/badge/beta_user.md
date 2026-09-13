@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/badges/messages.json"
 en_md5: "cbdfa7bd500804e8fb61b2bd65c65fa8"
-governance_sha: "4d02c56"
+governance_sha: "6c2dee5d"
 content_version: "1ae3eb363016"
-published_at: "2026-08-13"
+published_at: "2026-09-13"
+forum_topic_id: 1495
 ---
 
 Приєднання до Jiki під час бета-тестування

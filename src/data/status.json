@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-09-08",
-  "governance_sha": "a17d550d",
-  "approved": 1038,
+  "published_at": "2026-09-24",
+  "governance_sha": "043aeac1",
+  "approved": 1039,
   "disapproved": 1,
   "total": 3307,
   "languages": [
@@ -953,7 +953,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 180,
+      "approved": 181,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -1854,8 +1854,8 @@
         },
         {
           "key": "exercise/lunchbox",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 2872,
+          "status": "approved"
         },
         {
           "key": "exercise/wordle-process-game",

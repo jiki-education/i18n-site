@@ -3,9 +3,9 @@ lang: "ko"
 name: "Korean"
 family: null
 stage: "refining"
-governance_sha: "172cb91"
+governance_sha: "4caf34be"
 content_version: "554393372de1"
-published_at: "2026-08-02"
+published_at: "2026-09-26"
 term_count: 51
 category_id: 236
 forum_topic_id: 479

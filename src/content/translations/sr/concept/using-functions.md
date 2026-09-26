@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/sr/curriculum/concepts/using-functions/page.md"
 en_md5: "fc671310093a081113a8f301b6ff53fe"
-governance_sha: "45861691"
+governance_sha: "4caf34be"
 content_version: "b591c620d41f"
-published_at: "2026-08-24"
+published_at: "2026-09-26"
 forum_topic_id: 778
 ---
 

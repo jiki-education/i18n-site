@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "1c3b500afecc"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
+forum_topic_id: 1743
 ---
 
 Εξαιρετική δουλειά. Το να γράφεις τις δικές σου συναρτήσεις είναι μια πραγματική αλλαγή. Δεν χρησιμοποιείς πια απλά τα εργαλεία στο ράφι, χτίζεις νέα.

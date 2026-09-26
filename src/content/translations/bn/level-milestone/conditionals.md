@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "9c912874e8026dfd16f56d62ede34016"
-governance_sha: "a52d57e7"
+governance_sha: "4caf34be"
 content_version: "3cc869ebb926"
-published_at: "2026-08-24"
+published_at: "2026-09-26"
+forum_topic_id: 1870
 ---
 
 কন্ডিশনালের লেভেলে চমৎকার কাজ করেছেন। আশা করি if আর else এখন বেশ স্বাভাবিক লাগতে শুরু করেছে।

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.es-ES.yml"
 en_md5: "b7798a74c11946fe6775eeda0559840e"
-governance_sha: "16f805d"
+governance_sha: "4caf34be"
 content_version: "d9b6c0d2019b"
-published_at: "2026-08-20"
+published_at: "2026-09-26"
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.building","rows":[{"key":"subject","english":"The Best Way to Learn is to Make Stuff!","target":"¡La mejor manera de aprender es crear cosas!"},{"key":"preview","english":"I really believe that now is the best possible time to get into tech.","target":"De verdad creo que ahora es el mejor momento posible para entrar en el mundo tech."},{"key":"greeting","english":"Hi there,","target":"Hola,"}]}]}]
 ---
 

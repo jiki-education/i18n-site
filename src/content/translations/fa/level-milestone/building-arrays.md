@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/fa.json"
 en_md5: "f0d47c822253e20fbc27a36405270946"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "8d3daf6fe9d4"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 کارتان خوب بود! خواندن از آرایه‌ها مفید است، اما توانایی ساختن آن‌ها تکه‌تکه جایی است که واقعاً ارزش خود را نشان می‌دهند. روی چیزی حلقه بزنید، بخش‌هایی که برایتان مهم است را در یک آرایه‌ی جدید جمع کنید و آن را برگردانید. این الگویی است که بارها و بارها به سراغش خواهید رفت.

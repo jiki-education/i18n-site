@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ja.json"
 en_md5: "7205cc09a500e11d5ec44a6978ae5af7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "6f299413b85b"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 このレベルもよくできましたね。プログラムの実行中に変化する値を追跡できるようになりました。これは、数レベル前から比べて確かな進歩です。

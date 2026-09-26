@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/for-loops/page.md"
 en_md5: "0ad4155ded18c2df27d29e5355bd0532"
-governance_sha: "a4591c6"
+governance_sha: "4caf34be"
 content_version: "d6ecbc37a2b1"
-published_at: "2026-08-18"
+published_at: "2026-09-26"
 forum_topic_id: 1704
 ---
 

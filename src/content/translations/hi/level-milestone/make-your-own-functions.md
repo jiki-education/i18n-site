@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hi.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "25b3a4ab0fa1"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 शानदार काम। अपने खुद के फंक्शन लिखना एक वास्तविक बदलाव है। अब आप केवल अलमारी में रखे टूल्स का उपयोग नहीं कर रहे, आप नए टूल्स बना रहे हैं।

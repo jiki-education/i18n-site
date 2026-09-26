@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/creating-functions/page.md"
 en_md5: "93286a30a373b5604b60b3c109ad00a3"
-governance_sha: "cbcc701"
+governance_sha: "4caf34be"
 content_version: "50005d8ded15"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Досі ми користувалися функціями, які вже були створені для нас: `circle`, `rectangle`, `moveRight`, `shoot`. Усі вони були зроблені заздалегідь і поставлені на полиці Jiki.

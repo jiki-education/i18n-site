@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/sr.json"
 en_md5: "9c912874e8026dfd16f56d62ede34016"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "18e0fc454397"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Lep posao na nivou uslovnih naredbi. Nadamo se da ti `if` i `else` postaju prilično prirodni.

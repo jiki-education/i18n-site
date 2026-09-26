@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "7116d01d259733a6107a06c51f9bda31"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "73704eab70a8"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 잘하셨어요! 조건문과 상태를 결합하면 여러분의 프로그램이 진짜 살아 움직이는 것처럼 느껴지기 시작해요. 고정된 스크립트를 따르는 대신, 일어나는 일에 반응하는 거죠.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/using-functions-with-return-values/page.md"
 en_md5: "830f19fb6aaf184c1f32ade792b60a12"
-governance_sha: "d15c8fe"
+governance_sha: "4caf34be"
 content_version: "bba9311ea84b"
-published_at: "2026-08-19"
+published_at: "2026-09-26"
 forum_topic_id: 1214
 ---
 

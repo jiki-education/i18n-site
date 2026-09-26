@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/fr.json"
 en_md5: "07656bf41b4102374b8f16654db4f461"
-governance_sha: "87061c0"
-content_version: "dc114cd448fb"
-published_at: "2026-08-14"
+governance_sha: "4caf34be"
+content_version: "4aed9cbbd1d1"
+published_at: "2026-09-26"
 forum_topic_id: 1543
 ---
 
@@ -17,4 +17,4 @@ Beau travail sur un niveau pas évident. Tu as maintenant and/or, le modulo et l
 
 Ce sont le genre d'outils qui te permettent d'écrire des conditions qui collent vraiment à la logique du monde réel, plutôt que de devoir tout découper en petites vérifications séparées.
 
-Prochaine étape : on va combiner les conditions avec l'état. C'est à ce moment-là que tes programmes vont commencer à pouvoir réagir à ce qui se passe pendant leur exécution. Amuse-toi bien !
+Ensuite, on va combiner les conditions et l'état, ce qui est le moment où tes programmes commencent à pouvoir réagir à ce qui se passe pendant leur exécution. Amuse-toi bien !

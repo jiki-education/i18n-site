@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/while-loops/page.md"
 en_md5: "aeceed2abb1434307cfd7c9a0df55c81"
-governance_sha: "3d56da9"
+governance_sha: "4caf34be"
 content_version: "5881247a0fe2"
-published_at: "2026-08-17"
+published_at: "2026-09-26"
 forum_topic_id: 989
 ---
 

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/type-conversion/page.md"
 en_md5: "8d85e3d274a6cdfdb74bd0488b685f18"
-governance_sha: "dc944c1"
+governance_sha: "4caf34be"
 content_version: "7bac70171181"
-published_at: "2026-08-23"
+published_at: "2026-09-26"
 forum_topic_id: 1460
 ---
 

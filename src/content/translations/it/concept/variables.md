@@ -4,12 +4,12 @@ type: "concept"
 slug: "variables"
 title: "Creare e usare le variabili"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/variables/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/variables/page.md"
 en_md5: "dd0834017a8d42c22cca25966c1fdd91"
-governance_sha: "c80036b"
+governance_sha: "4caf34be"
 content_version: "9a65067e99a3"
-published_at: "2026-08-06"
+published_at: "2026-09-26"
 forum_topic_id: 947
 ---
 

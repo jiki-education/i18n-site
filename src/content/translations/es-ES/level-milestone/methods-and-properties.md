@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/es-ES.json"
 en_md5: "e58f587dfa34a3832164f862a919f8dd"
-governance_sha: "16f805d"
+governance_sha: "4caf34be"
 content_version: "65676fffc7a8"
-published_at: "2026-08-20"
+published_at: "2026-09-26"
 ---
 
 Buen trabajo. Los métodos y las propiedades son un estilo ligeramente diferente a lo que has visto hasta ahora. En lugar de pasar un valor a una función, invocas una función sobre el propio valor. La idea requiere un poco de adaptación, pero se usa en todas partes, así que empezará a sentirse natural bastante rápido.

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "d5bfe9e5cd73eb4049674723644d81f0"
-governance_sha: "9fd9893"
+governance_sha: "4caf34be"
 content_version: "a042dfc04c70"
-published_at: "2026-08-19"
+published_at: "2026-09-26"
+forum_topic_id: 1741
 ---
 
 Καλή δουλειά σε αυτό το επίπεδο. Το να συνδυάζεις συναρτήσεις για να λύνεις μεγαλύτερα προβλήματα είναι όπως μοιάζει ο επαγγελματικός προγραμματισμός στην καθημερινότητα. Αναλύεις ένα πρόβλημα σε κομμάτια, γράφεις μια μικρή συνάρτηση για κάθε κομμάτι και μετά τα συνθέτεις.

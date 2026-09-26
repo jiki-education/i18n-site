@@ -6,10 +6,11 @@ title: "Η λέξη-κλειδί `break`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/el/curriculum/concepts/break/page.md"
-en_md5: "30148766de67ae467ab1a4852ad35895"
-governance_sha: "3d354c0"
+en_md5: "bd746b6c93016dcb2789bd26e38ab33a"
+governance_sha: "4caf34be"
 content_version: "acf525fc9757"
-published_at: "2026-08-10"
+published_at: "2026-09-26"
+forum_topic_id: 1474
 ---
 
 Η λέξη-κλειδί `break` μπορεί να χρησιμοποιηθεί οπουδήποτε μέσα στο σώμα οποιουδήποτε βρόχου.

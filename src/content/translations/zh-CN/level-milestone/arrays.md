@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/zh-CN.json"
 en_md5: "f30486e583f3c2417da5f8a4a1721ee1"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "1501ec87d5a8"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 干得漂亮！数组（也有人称之为列表）是任何语言中最有用的工具之一。几乎任何时候，当你需要处理多个同种东西时，你都会用到数组。

@@ -6,10 +6,10 @@ title: "L'operatore `!` (negazione)"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/logical-not/page.md"
-en_md5: "7cffbd1fa13317b3d6e6a71415413041"
-governance_sha: "be1bd1a"
+en_md5: "5d752c7a85e6e17d914c73c83429de80"
+governance_sha: "4caf34be"
 content_version: "ad2a1d8b2c93"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
 forum_topic_id: 1439
 ---
 

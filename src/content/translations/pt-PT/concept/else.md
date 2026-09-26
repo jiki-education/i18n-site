@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/pt-PT/curriculum/concepts/else/page.md"
 en_md5: "a3d7b0672bd9c022675831044c5610ed"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "dae6275451b1"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 forum_topic_id: 941
 ---
 

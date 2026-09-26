@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hi.json"
 en_md5: "a66deb1c6dd3b8e1514fe3c378a67fe6"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "59bb04b3abc1"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 और यह Coding Fundamentals का अंतिम लेवल है। उम्मीद है कि डिक्शनरी, ऐरे के साथ-साथ, एक उपयोगी टूल की तरह लग रही होंगी।

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "4d0073d2f9813e52bd3412086f130489"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "848ede2fa33c"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
+forum_topic_id: 1743
 ---
 
 Καλή δουλειά σε αυτό το επίπεδο. Οι βρόχοι είναι ένα θεμελιώδες δομικό στοιχείο του προγραμματισμού, και ελπίζουμε να αρχίζουν να σου φαίνονται αρκετά οικείοι.

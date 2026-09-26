@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "4bb57788e09cc6de5466d34b560540b2"
-governance_sha: "b0d158b"
+governance_sha: "4caf34be"
 content_version: "8492b0ebf8e7"
-published_at: "2026-08-19"
+published_at: "2026-09-26"
+forum_topic_id: 1742
 ---
 
 Ωραία δουλειά σε αυτό. Η συνένωση και τα πρότυπα είναι αρκετά απλές ιδέες, αλλά εμφανίζονται συνεχώς, ειδικά οπουδήποτε παράγεις έξοδο για να διαβάσει κάποιος.

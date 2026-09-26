@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "4d0073d2f9813e52bd3412086f130489"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "8958f038a26f"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 잘하셨어요! 루프는 프로그래밍의 기본 구성 요소이고, 이제 제법 익숙해지기 시작했길 바라요.

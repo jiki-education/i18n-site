@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/pl/curriculum/concepts/arithmetic/page.md"
 en_md5: "7ce54754a3ca29896609a01a51b12377"
-governance_sha: "31d3530e"
+governance_sha: "4caf34be"
 content_version: "67b696f805b8"
-published_at: "2026-08-24"
+published_at: "2026-09-26"
+forum_topic_id: 1881
 ---
 
 Do tej pory, tworząc zmienne, używaliśmy po prostu prostych wartości: liczby takiej jak `50` lub ciągu znaków takiego jak `"yellow"`. Zmienne zyskują jednak na sile, gdy możemy łączyć je ze sobą. Na przykład wtedy, gdy chcemy określić, że lewa krawędź prostokąta powinna znajdować się w konkretnej odległości od krawędzi planszy.

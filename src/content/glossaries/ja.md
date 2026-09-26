@@ -3,10 +3,10 @@ lang: "ja"
 name: "Japanese"
 family: null
 stage: "refining"
-governance_sha: "21e9951"
-content_version: "8fb2071d36fb"
-published_at: "2026-08-03"
-term_count: 66
+governance_sha: "4caf34be"
+content_version: "563f860df012"
+published_at: "2026-09-26"
+term_count: 67
 category_id: 70
 forum_topic_id: 311
 video_player_forum_topic_id: 765
@@ -93,6 +93,7 @@ These are terms where the Japanese is used in prose, so the "Use (ja/en)" column
 | milestone | マイルストーン | ja | 「節目」is a native alternative. |
 | pathway | 学習パス | ja | A structured learning sequence; near-synonym of "track". |
 | solution (learner's submission) | 解答 | ja | The code the learner writes for an exercise. Avoid 「ソリューション」. |
+| bouncer (club/bar doorkeeper) | バウンサー | ja | Never 門番, which is a gatekeeper guarding the gate of a castle. |
 | foot-gun | (descriptive) | ja | Use a descriptive phrase such as「自滅の元になりやすい機能」rather than forcing a fixed term. |
 
 ## Keep in English
@@ -158,6 +159,44 @@ Example: 「関数を呼び出すには、関数名のあとに括弧（`()`）�
 ---
 
 ## Decision log
+
+### 2026-08-06: Translation engine switched to `deepseek`
+
+**Decided by:** alexfalcon528, a native speaker, on the "Alternative translation model"
+comparison thread (https://forum.jiki.io/t/887), actioned by iHiD on the same thread.
+**Status:** settled. **Terms affected:** none (engine choice, not a glossary or guide
+change). **Files affected:** none; `tracking.json` already carried the block, this entry
+records the decision behind it.
+
+Jeremy posted a blind comparison of alternative-model renderings of a Japanese page against
+the published one. alexfalcon528 picked the third version as "by far the most natural"; that
+version was DeepSeek. Jeremy switched Japanese to it and had the existing Japanese content
+retranslated.
+
+Japanese therefore runs on `deepseek` rather than the `fable` default. This was a genuine
+switch, made on a native speaker's verdict, not on our own judgement or on cost.
+
+### 2026-08-03: bouncer is バウンサー, and everyday words take no English gloss
+
+**Decided by:** alexfalcon528, a native speaker, on
+<https://forum.jiki.io/t/1102/2>, reviewing the If Statements concept page.
+**Glossary row added:** bouncer (club/bar doorkeeper) → バウンサー, under "Platform &
+curriculum vocabulary". **Guide section affected:** "Term clarification".
+
+We had rendered the club doorman as 門番. He explained that 門番 is the guard of a gate, as
+in the gate of a castle, and that the anglicism バウンサー is the word Japanese actually uses
+for a bouncer. The English curriculum leans on the bouncer image across several exercises,
+so the row matters beyond this one page.
+
+He also asked for the English glosses on 条件, 比較 and 文字 to be dropped, on the grounds
+that naming the English word adds no context for a Japanese reader when the Japanese term is
+ordinary vocabulary. He left the glosses on 命題（英: _statement_）and 真偽値（英: _Boolean_）
+in place, which is where the line falls: gloss specialist vocabulary, not everyday words.
+
+Two further points on the same page, applied to the file rather than to any rule: 調べる
+implies producing new information rather than comparing two knowns, so a comparison is
+比較する; and he added a translator's note that the drinking age is 21 in some countries,
+because it is 20 in Japan and few readers know the source's 21 is not a mistake.
 
 ### 2026-08-03: no spaces around Latin, numerals or code in Japanese prose
 

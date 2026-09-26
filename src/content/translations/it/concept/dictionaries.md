@@ -4,12 +4,12 @@ type: "concept"
 slug: "dictionaries"
 title: "Dizionari"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/dictionaries/source.md"
-en_md5: "3b1b01f6a914ffe1ce4a54e023e46bdd"
-governance_sha: "c80036b"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/dictionaries/page.md"
+en_md5: "b8a26ad63301df1d00ce08e1e429cf05"
+governance_sha: "4caf34be"
 content_version: "c3286cc14393"
-published_at: "2026-08-06"
+published_at: "2026-09-26"
 forum_topic_id: 990
 ---
 

@@ -6,10 +6,11 @@ title: "Ключове слово `break`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/break/page.md"
-en_md5: "30148766de67ae467ab1a4852ad35895"
-governance_sha: "3d354c0"
+en_md5: "bd746b6c93016dcb2789bd26e38ab33a"
+governance_sha: "4caf34be"
 content_version: "c1a5867002b7"
-published_at: "2026-08-10"
+published_at: "2026-09-26"
+forum_topic_id: 880
 ---
 
 Ключове слово `break` можна використати будь-де в тілі будь-якого циклу.

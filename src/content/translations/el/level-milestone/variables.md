@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "f354e5206e3f25c925621288a2b55fb6"
-governance_sha: "7a7d093"
+governance_sha: "4caf34be"
 content_version: "ce8d00360e99"
-published_at: "2026-08-19"
+published_at: "2026-09-26"
+forum_topic_id: 1744
 ---
 
 Καλή δουλειά που κατέκτησες τις μεταβλητές.

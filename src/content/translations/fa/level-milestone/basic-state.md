@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/fa.json"
 en_md5: "7205cc09a500e11d5ec44a6978ae5af7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "de1212aeed7f"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 کارتان در این مرحله عالی بود. حالا می‌توانید مقادیری را که در حین اجرای برنامه تغییر می‌کنند دنبال کنید، که نسبت به چند مرحله قبل پیشرفت قابل‌توجهی است.

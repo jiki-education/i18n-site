@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/zh-CN.json"
 en_md5: "3eb6e1c44486daf5e71618893b5e8bae"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "bfca20fdd90e"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 做得好！你已经掌握了 `for` 循环、`while` 循环、`break` 和 `continue`。这些是你在课程之外最常用的循环，所以花在上面的时间绝对值得。

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/es-ES.json"
 en_md5: "3eb6e1c44486daf5e71618893b5e8bae"
-governance_sha: "16f805d"
+governance_sha: "4caf34be"
 content_version: "26ac7d887993"
-published_at: "2026-08-20"
+published_at: "2026-09-26"
 ---
 
 Buen trabajo. Ahora dominas los bucles `for`, `while`, `break` y `continue`. Estos son los bucles a los que recurrirás con más frecuencia fuera de este curso, así que bien valen el tiempo que les has dedicado.

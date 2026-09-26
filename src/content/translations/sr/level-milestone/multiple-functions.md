@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/sr.json"
 en_md5: "d5bfe9e5cd73eb4049674723644d81f0"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "37240cfd7664"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Odličan posao na ovom nivou. Kombinovanje funkcija za rešavanje većih problema je ono kako profesionalno programiranje izgleda iz dana u dan. Razbiješ problem na delove, napišeš malu funkciju za svaki deo, a zatim ih spojiš.

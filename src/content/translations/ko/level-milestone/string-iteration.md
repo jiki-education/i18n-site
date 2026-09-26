@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "069ee8736766d746d9fa4e6db419b300"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "000fb1d6b635"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 잘하셨어요! 이제 인덱싱과 문자열 순회가 이해되기 시작했길 바라요.

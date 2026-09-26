@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "chop-shop"
 title: "The Chop Shop"
-en_md5: "eef10493cf2492b9996e60c7771b3a8f"
+en_md5: "afac39f753b3ae6d234ae7b0e2593271"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/chop-shop"
-captured_at: "2026-08-27"
+captured_at: "2026-09-26"
 ---
 
 You run a small hairdressing salon that focusses on speed over quality. People might leave a little rough around the edges, but they're not having to spend too long in the chair.
@@ -42,7 +42,7 @@ It's easiest with this to think of the inner arrays - the pairs of names and dur
 Indexing works the same as it does everywhere else, but you can chain indexes together like this...
 
 ```javascript
-const cuts = [
+let cuts = [
   ["Mohawk", 20],
   ["Slicked-Back Pixie", 15],
   ["Bob", 25],

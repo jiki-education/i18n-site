@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ja.json"
 en_md5: "3eb6e1c44486daf5e71618893b5e8bae"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "8f8e694e6977"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 よくできました。`for`ループ、`while`ループ、`break`、`continue`を使いこなせるようになりましたね。これらは、このコースの外でも最もよく使うループです。かけた時間には十分な価値があります。

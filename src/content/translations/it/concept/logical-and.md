@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/logical-and/page.md"
 en_md5: "cef8d76c4235e85573c3eeede294ab72"
-governance_sha: "b57232d"
+governance_sha: "4caf34be"
 content_version: "ece16341fbda"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
 ---
 
 Se ti chiedessi di aprire la porta solo se qualcuno ha più di 20 anni, probabilmente sapresti cosa fare. Ma se dovessi controllare se qualcuno ha più di 20 anni _e_ indossa l'abito giusto, dovresti verificare due condizioni diverse nello stesso momento. Come potresti farlo?

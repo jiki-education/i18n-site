@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/logical-not/page.md"
 en_md5: "7cffbd1fa13317b3d6e6a71415413041"
-governance_sha: "1ce2b7ba"
+governance_sha: "4caf34be"
 content_version: "941ce76d560b"
-published_at: "2026-09-04"
+published_at: "2026-09-26"
 forum_topic_id: 1456
 ---
 

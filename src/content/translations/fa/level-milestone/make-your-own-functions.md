@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/fa.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "5e30b879416d"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 فوق‌العاده بود. نوشتن توابع خودتان یک تغییر واقعی است. دیگر فقط از ابزارهای روی قفسه استفاده نمی‌کنید، بلکه ابزارهای جدید می‌سازید.

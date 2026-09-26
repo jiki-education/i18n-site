@@ -6,10 +6,10 @@ title: "Як працюють умовні конструкції `if`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/if/page.md"
-en_md5: "8797e078e1ad90b7652373baf6f96f28"
-governance_sha: "3d354c0"
+en_md5: "81c99eea67b02e082ca6c9d7988a3914"
+governance_sha: "4caf34be"
 content_version: "8e4c760f8b4e"
-published_at: "2026-08-10"
+published_at: "2026-09-26"
 forum_topic_id: 880
 ---
 

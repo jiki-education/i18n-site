@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/pt-PT.json"
 en_md5: "4a3da0f43262dd08d7310b2bbb776335"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "29b98ea663bf"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Excelente trabalho neste nível e no teu primeiro desenho a sério.

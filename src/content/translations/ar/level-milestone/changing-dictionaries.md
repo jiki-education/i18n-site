@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ar.json"
 en_md5: "a66deb1c6dd3b8e1514fe3c378a67fe6"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "982a202fc708"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 وهذا هو المستوى الأخير من أساسيات البرمجة. آمل أن القواميس أصبحت تشعرك كأداة مفيدة تضاف إلى المزيج إلى جانب المصفوفات.

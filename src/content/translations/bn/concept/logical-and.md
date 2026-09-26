@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/logical-and/page.md"
 en_md5: "cef8d76c4235e85573c3eeede294ab72"
-governance_sha: "ee4ebd8"
+governance_sha: "4caf34be"
 content_version: "2cbd1cbe8958"
-published_at: "2026-08-23"
+published_at: "2026-09-26"
+forum_topic_id: 1852
 ---
 
 যদি আমি আপনাকে বলি, কারও বয়স ২০-এর বেশি হলে তবেই দরজা খুলবেন, তাহলে কী করতে হবে তা আপনি সম্ভবত জানেন। কিন্তু যদি আপনাকে যাচাই করতে হয় যে কারও বয়স ২০-এর বেশি _এবং_ সে সঠিক পোশাক পরে আছে কি না? অর্থাৎ আপনাকে একসাথে দুটি আলাদা শর্ত যাচাই করতে হবে। সেটা কীভাবে করবেন?

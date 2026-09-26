@@ -2,10 +2,10 @@
 lang: "sv"
 name: "Swedish"
 family: null
-stage: "setup"
-governance_sha: "e56bb6a"
-content_version: "7c150281053b"
-published_at: "2026-08-03"
+stage: "refining"
+governance_sha: "4caf34be"
+content_version: "5167f10851d8"
+published_at: "2026-09-26"
 term_count: 95
 category_id: 365
 forum_topic_id: 828
@@ -174,6 +174,36 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-06: Translation engine confirmed as `fable`
+
+**Decided by:** sneakymallard, a native speaker, on the "Alternative translation model"
+comparison thread (https://forum.jiki.io/t/936). **Status:** settled.
+**Terms affected:** none (engine choice, not a glossary or guide change).
+**Files affected:** `tracking.json` (`translation_engine`).
+
+Jeremy posted an alternative-model rendering of a Swedish page alongside the published one
+and asked which read better. sneakymallard answered "I think the original is slightly
+better". No closing reply was posted on the thread, so this entry is where the decision is
+recorded.
+
+This is a **confirmation of the existing default, not a switch**: Swedish was already
+running on `fable`, and it continues to. What changed is that the choice is now
+native-speaker-backed and therefore recorded as a `translation_engine` block, which per
+`orchestrator.md` means a human has confirmed that model for this language.
+
+### 2026-08-05: Website copy (codingExercise, seo, articles, blog, checkout)
+
+**Decided by:** nobody yet. **Unconfirmed drafts**, proposed by the scoped
+`namespaces=codingExercise,seo,articles,blog,checkout` pass (five `fable` workers, one per
+namespace). Logged here for review and **not** written to `glossary.md`.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| tooltip | verktygstips | | medium |
+| achievement (gamification) | utmärkelse | **Conflicts** with the 2026-08-03 pass's proposal of _prestation_ for the same term (see below) — needs reconciling before either is agreed. | medium |
+| roadmap | färdplan | | medium |
+| LLM-era (marketing phrase) | AI-eran | Flagged: shifts LLM specifically to AI generally, worth sign-off before agreeing. | medium |
 
 ### 2026-08-02: Website copy (app UI catalog)
 

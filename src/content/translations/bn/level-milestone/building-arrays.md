@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "f0d47c822253e20fbc27a36405270946"
-governance_sha: "225c854c"
+governance_sha: "4caf34be"
 content_version: "c868ff682cb1"
-published_at: "2026-08-25"
+published_at: "2026-09-26"
+forum_topic_id: 1886
 ---
 
 চমৎকার কাজ করেছেন! অ্যারে থেকে পড়তে পারা কাজের, কিন্তু টুকরো টুকরো করে সেগুলো গড়ে তুলতে পারার মধ্যেই অ্যারের আসল শক্তি। কোনো কিছুর উপর লুপ চালান, যেটুকু দরকার তা নতুন একটি অ্যারেতে জমা করুন, আর সেটি ফিরিয়ে দিন, এই প্যাটার্নটি আপনি বারবার ব্যবহার করবেন।

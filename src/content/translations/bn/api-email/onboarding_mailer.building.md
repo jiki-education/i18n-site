@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.bn.yml"
 en_md5: "b7798a74c11946fe6775eeda0559840e"
-governance_sha: "9b3923b"
+governance_sha: "4caf34be"
 content_version: "8648ae23d278"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 1791
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.building","rows":[{"key":"subject","english":"The Best Way to Learn is to Make Stuff!","target":"শেখার সেরা উপায় হলো কিছু বানানো!"},{"key":"preview","english":"I really believe that now is the best possible time to get into tech.","target":"আমি সত্যিই বিশ্বাস করি, টেক ইন্ডাস্ট্রিতে ঢোকার জন্য এখনই সবচেয়ে ভালো সময়।"},{"key":"greeting","english":"Hi there,","target":"স্বাগতম!"}]}]}]
 ---
 

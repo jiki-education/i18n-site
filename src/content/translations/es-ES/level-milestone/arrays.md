@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/es-ES.json"
 en_md5: "f30486e583f3c2417da5f8a4a1721ee1"
-governance_sha: "16f805d"
+governance_sha: "4caf34be"
 content_version: "d2c606b5d490"
-published_at: "2026-08-20"
+published_at: "2026-09-26"
 ---
 
 Trabajo brillante. Los arrays (o listas, como algunas personas los llaman) son una de las herramientas más útiles en cualquier lenguaje. Prácticamente cada vez que estés tratando con más de uno de algo, recurrirás a un array.

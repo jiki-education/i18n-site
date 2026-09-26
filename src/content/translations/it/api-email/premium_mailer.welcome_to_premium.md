@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/premium_mailer.it.yml"
 en_md5: "4e791a50ac953c1fa51fb476647419f0"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "43fcab9bf1bc"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
+forum_topic_id: 1630
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"premium_mailer.welcome_to_premium","rows":[{"key":"subject","english":"Welcome to Jiki Premium!","target":"Benvenuto in Jiki Premium!"},{"key":"greeting","english":"Hi there,","target":"Ciao,"}]}]}]
 ---
 

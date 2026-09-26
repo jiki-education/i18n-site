@@ -4,12 +4,13 @@ type: "concept"
 slug: "random"
 title: "Τυχαίοι Αριθμοί"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/random/source.md"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/random/page.md"
 en_md5: "5f41de1ca5327be4a86a69d801f1b6f9"
-governance_sha: "c80036b"
+governance_sha: "4caf34be"
 content_version: "db5b844eecda"
-published_at: "2026-08-06"
+published_at: "2026-09-26"
+forum_topic_id: 1423
 ---
 
 Συχνά στον προγραμματισμό, θέλουμε να χρησιμοποιούμε μια συνάρτηση και να παίρνουμε έναν διαφορετικό τυχαίο αριθμό (_random number_ στα αγγλικά) κάθε φορά.

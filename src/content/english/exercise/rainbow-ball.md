@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "rainbow-ball"
 title: "Rainbow Ball"
-en_md5: "9ce8ac697138ecf8e2f936dcd6c73059"
+en_md5: "f60e017ec2e0ed679be97fe6aeb72cbe"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/rainbow-ball"
-captured_at: "2026-08-05"
+captured_at: "2026-09-26"
 ---
 
 Your job is to create a ball that randomly bounces around the canvas, drawing a rainbow in its wake.

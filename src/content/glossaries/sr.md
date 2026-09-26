@@ -3,9 +3,9 @@ lang: "sr"
 name: "Serbian"
 family: null
 stage: "refining"
-governance_sha: "cd3acbae"
+governance_sha: "4caf34be"
 content_version: "bb1e14b644bf"
-published_at: "2026-08-26"
+published_at: "2026-09-26"
 term_count: 126
 category_id: 166
 forum_topic_id: 402

@@ -4,12 +4,13 @@ type: "concept"
 slug: "scenarios"
 title: "Σενάρια"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/scenarios/source.md"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/scenarios/page.md"
 en_md5: "d5c4ee54eed8083e13f18bb7d256b86d"
-governance_sha: "c80036b"
+governance_sha: "4caf34be"
 content_version: "8b9beb956766"
-published_at: "2026-08-06"
+published_at: "2026-09-26"
+forum_topic_id: 2047
 ---
 
 Κάθε άσκηση συνοδεύεται από διαφορετικά σενάρια, διαφορετικές καταστάσεις που ο κώδικάς σου πρέπει να διαχειριστεί.

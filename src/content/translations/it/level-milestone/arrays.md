@@ -2,18 +2,19 @@
 lang: "it"
 type: "level-milestone"
 slug: "arrays"
-title: "Che bella collezione!"
+title: "Che collezione incredibile!"
 status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/it.json"
 en_md5: "f30486e583f3c2417da5f8a4a1721ee1"
-governance_sha: "2e7fb87"
-content_version: "69f880dfd369"
-published_at: "2026-08-13"
+governance_sha: "4caf34be"
+content_version: "6fe981a863cf"
+published_at: "2026-09-26"
+forum_topic_id: 1633
 ---
 
-Ottimo lavoro. Gli array (o liste, come alcuni li chiamano) sono uno degli strumenti più utili in qualsiasi linguaggio. Praticamente ogni volta che hai a che fare con più di un elemento, ricorrerai a un array.
+Ottimo lavoro. Gli array (o liste, come alcuni li chiamano) sono tra gli strumenti più utili in qualsiasi linguaggio. Ogni volta che devi gestire più di un elemento, finirai per usare un array.
 
-Ora hai una buona padronanza di come leggerli e lavorare con il loro contenuto.
+Ora sai come leggerli e come lavorare con ciò che contengono.
 
-Poi, vedremo come costruire array da zero, pezzo per pezzo. Divertiti!
+Poi imparerai a creare array da zero, passo dopo passo. Divertiti!

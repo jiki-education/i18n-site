@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/pt-PT.json"
 en_md5: "7205cc09a500e11d5ec44a6978ae5af7"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "c12892ebd06f"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Excelente trabalho neste nível. Agora consegues seguir valores que mudam enquanto o teu programa corre, o que é um verdadeiro salto em relação ao que fazias há dois níveis atrás.

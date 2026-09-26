@@ -3,10 +3,10 @@ lang: "fi"
 name: "Finnish"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "b57550965a3e"
-published_at: "2026-07-31"
-term_count: 117
+governance_sha: "4caf34be"
+content_version: "8ff71bc75b59"
+published_at: "2026-09-26"
+term_count: 119
 category_id: 366
 forum_topic_id: 840
 video_player_forum_topic_id: 841
@@ -42,7 +42,7 @@ These are terms where the Finnish is used in prose, so the "Use (fi/en)" column 
 | string | merkkijono | fi | Native compound and completely dominant in Finnish material. The loan _stringi_ is slang; do not use it. |
 | array / list | taulukko | fi | Also covers the source's informal "list" for the same concept. Keep _lista_ for an everyday list of things in prose. Watch the near-collision with _taulu_; the board metaphor is deliberately _tussitaulu_, never bare _taulu_. |
 | element | alkio | fi | An element of a taulukko. Not _elementti_, which is HTML/DOM vocabulary. |
-| position (in a string/array) | paikka | fi | The beginner-facing word taught before and alongside _indeksi_ („paikat alkavat nollasta"). |
+| position (in a string/array) | paikka | fi | The beginner-facing word taught before and alongside _indeksi_ (”paikat alkavat nollasta”). |
 | dictionary | sanakirja | fi | Carries the look-up-a-word picture the source teaches. Not _hakemisto_ (also means "directory") and not the academic _hakurakenne_. |
 | identifier | tunnus | fi | The name of a variable or function. Not _tunniste_. |
 | compound data type | koosteinen tietotyyppi | fi | Distinct from a plain _tietotyyppi_. |
@@ -61,7 +61,7 @@ These are terms where the Finnish is used in prose, so the "Use (fi/en)" column 
 | to define (a function) | määritellä | fi | Noun: _määrittely_. Keep distinct from _esitellä_ (to declare). |
 | argument | argumentti | fi | The call-site value, against _parametri_ at the declaration site. Finnish course material often says _todellinen parametri_ / _muodollinen parametri_ instead; that pairing is heavier than this course wants, so use _parametri_ and _argumentti_. |
 | input (to a function) / output | syöte / tuloste | fi | The standard Finnish pair. Use _tulos_ where the source means the computed result rather than what comes out of the machine. |
-| to return (a value) | palauttaa | fi | The noun is _paluuarvo_. „palauttaa 30:n". The bracketed `<define>` gloss word must be _return_, never _returning_. |
+| to return (a value) | palauttaa | fi | The noun is _paluuarvo_. ”palauttaa 30:n”. The bracketed `<define>` gloss word must be _return_, never _returning_. |
 | to declare / declaration | esitellä / esittely | fi | Careful: _esitellä_ also means "to introduce" in everyday Finnish, so keep the sentence around it unambiguous. |
 | initializer | alkuarvo | fi | The starting value given at declaration. The verb is _alustaa_. |
 | built-in | valmis | fi | _valmis funktio_ reads naturally to a beginner. _sisäänrakennettu_ is the literal rendering and reads heavy. |
@@ -75,7 +75,9 @@ These are terms where the Finnish is used in prose, so the "Use (fi/en)" column 
 | bar / vertical bar (`\|`) | pystyviiva | fi | The `\|\|` keyword stays English. On `<define>`, show the glyph (`\|`) in the bracket, not the English word "bar". |
 | bang (the `!` character) | huutomerkki | fi | Finnish has no equivalent of the English slang "bang". Render the source's aside as a remark about what the sign is called, never as a loan. |
 | NOT operator / logical negation | negaatio | fi | _negaatio_ for the concept, _ei_ when reading the operator aloud. The `!` keyword stays English. |
-| `move` (machine/identifier gloss) | liiku | fi | The one-time explanatory gloss when the `move` machine is introduced by name in prose. The code token `move()` itself stays English. Imperative, matching the guide's fixed _käänny vasemmalle_ (`turnLeft`) and _käänny oikealle_ (`turnRight`). |
+| `turnLeft` (machine/identifier gloss) | käänny vasemmalle | fi | The one-time explanatory gloss when the machine is introduced by name in prose. The code token `turnLeft()` itself stays English. Moved here from `guide.md` on 2026-08-01, unchanged. |
+| `turnRight` (machine/identifier gloss) | käänny oikealle | fi | Same as `turnLeft`: the one-time gloss only; the code token stays English. |
+| `move` (machine/identifier gloss) | liiku | fi | The one-time explanatory gloss when the `move` machine is introduced by name in prose. The code token `move()` itself stays English. Imperative, matching the fixed _käänny vasemmalle_ (`turnLeft`) and _käänny oikealle_ (`turnRight`) above. |
 | (programming) language | ohjelmointikieli | fi | One word, always. Use it including in the "a language a computer understands" framing. |
 
 ### Loops, state & program flow
@@ -124,7 +126,7 @@ These are terms where the Finnish is used in prose, so the "Use (fi/en)" column 
 | streak | putki | fi | The Finnish sports and gaming word for an unbroken run; _päiväputki_ for a daily streak. |
 | badge | osaamismerkki | fi | The established Finnish term for a digital learning badge. |
 | certificate | todistus | fi | The learner-facing completion certificate. _sertifikaatti_ is a TLS certificate; keep them apart. |
-| plan (subscription tier) | paketti | fi | Enables „{tier}-paketti". Not _tilaus_, which is the subscription itself. |
+| plan (subscription tier) | paketti | fi | Enables ”{tier}-paketti”. Not _tilaus_, which is the subscription itself. |
 | subscription | tilaus | fi | Note _tilaus_ also means an order. |
 | "Run Code" (button label) | Suorita koodi | fi | There is no Finnish app UI copy yet (`app/messages/` has only `en` and `hu`), so this row sets the precedent rather than confirming an existing label. Both `hu` and `sv` already translate this label, in sentence case, matching this repo's house style. If Finnish app copy is ever produced, it must match this exactly, or exercise instructions will name a button that does not exist on screen. |
 | Dashboard (the page) | koontinäyttö | fi | Same situation: no fi app copy yet, so this sets the precedent and must match the app label exactly if one is ever written. _koontinäyttö_ is the standard Finnish rendering in major localized UIs. Not _kojelauta_ (a car dashboard) and not _hallintapaneeli_ (reads as admin tooling). _etusivu_ was considered and is worth revisiting once a native speaker weighs in. |
@@ -196,6 +198,95 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout). Logged here for review
+and **not** written to `glossary.md`; they need agreement before landing there.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| scenario (test) | skenaario | Two workers agreed. | medium |
+| quiz | **visa / tietovisa — conflict** | Two chunks landed on different renderings (learning surface vs browsing); needs a ruling before a tidy pass. | medium |
+| scrubber | aikajana | Wants a native eye. | low |
+| breakpoint | keskeytyskohta | | medium |
+| Pass / Fail (badges) | Läpi / Hylätty | | medium |
+| Expected / Actual | Odotettu / Saatu | | medium |
+| fair use limits | kohtuukäytön rajat | | medium |
+| modal (dialog) | ikkuna | | medium |
+| unlock | avata (käyttöön) | | medium |
+| Projects (feature name) | Projektit | Or keep English like other coined feature names. | low |
+| XP | XP (not kokemuspisteet) | | medium |
+| roadmap | tiekartta | | medium |
+| testimonials | kokemuksia | | medium |
+| agentic coding | tekoälyagenttien aikakausi | | low |
+
+**Cross-chunk consistency issue, not a term row:** `challenges.empty.inProgressDescription`
+quotes a "Get started" button rendered as `Aloita`, but that button's own key lives in
+another namespace; the two must be made to agree on a tidy pass.
+
+### 2026-08-01: Quotation-mark contradiction resolved (rule wins over examples)
+
+**Decided by:** agent, applying the guide's own imperative rule over its worked examples.
+**Terms affected:** none; three Notes cells were re-punctuated, no decision changed.
+
+The 2026-08-01 audit entry below recorded this as "left alone deliberately": the guide states
+that Finnish quotation marks are `”…”` and that the German-style low quote is not Finnish,
+while every Finnish example in the guide was written `„…"`. A guide is loaded into the prompt
+for every Finnish item in every pass, so an example that contradicts the rule teaches the
+wrong mark pass after pass. A guide's own imperative rule outranks its own examples, so the
+examples were changed to match the rule, not the other way round.
+
+- `guide.md`: 39 `„…"` pairs became `”…”`. Only the quote glyphs changed; no Finnish word,
+  and no rule, was edited.
+- `glossary.md`: the same fix in the three Notes cells that quoted Finnish (`position`,
+  `to return (a value)`, `plan (subscription tier)`).
+
+This is still an **unconfirmed draft** in the sense that no native Finnish speaker has
+confirmed the quotation rule itself; what has been removed is the internal contradiction. The
+straight ASCII `"…"` used as a plain delimiter elsewhere in the guide (the Worked examples
+list) was left alone: it reads as neutral markup around an example rather than as a
+demonstration of a Finnish typographic mark.
+
+### 2026-08-01: Guide audit (rationale stripped, two rows moved in)
+
+**Decided by:** agent audit of `guide.md`, on iHiD's instruction. No rule was changed, added or
+removed: everything cut below was justification, provenance or attribution around a rule the
+guide already states imperatively, and it is recorded here so it is not lost.
+
+- **`turnLeft` → _käänny vasemmalle_ and `turnRight` → _käänny oikealle_ now have glossary
+  rows.** They were term decisions living in the guide's prose (only `turnLeft` was written
+  out there; `turnRight` was recorded in the `move` row and in the 2026-07-31 entry above).
+  Both are moved verbatim, unchanged. The `move` row's cross-reference was repointed from
+  "the guide's fixed" to the rows themselves; its decision is untouched. The guide keeps
+  `` `turnLeft` `` (käänny vasemmalle) as the worked example of the code-identifier gloss
+  *format*, which the rule statement alone does not show.
+- **Register research cut from "Audience specifics".** The register to aim at is that of
+  Finnish-language university programming teaching: the University of Helsinki Ohjelmoinnin
+  MOOC, Aalto's Ohjelmointi 1, and JYU's course material. The guide now names the register
+  without listing the sources; the source list is in the bootstrap entry below.
+- **Sinuttelu attribution cut.** Kielitoimisto's own guidance for instructional text is
+  explicit that sinuttelu plus the imperative makes a text clearer and easier to follow.
+  That is why the rule reads as it does; the rule itself is unchanged.
+- **"Three registers, used together" no longer says "exactly as the Finnish MOOC material
+  does".** That was provenance for the imperative / `-taan` / 2nd-person mix, not part of it.
+- **The hyphen on `` `print`-komento `` no longer carries its reason.** The reason is that a
+  code identifier counts as a "harvinainen vierassana" in Finnish orthography, so the ending
+  hangs off the head noun after a hyphen. The rule ("the hyphen is required") is unchanged.
+- **`engl.` placement no longer cites usage.** Putting `engl.` in front of the English word
+  inside the brackets is the convention existing Finnish course material uses, so it looks
+  familiar to the reader. The example „_Lause_ (engl. _statement_)" is kept in the guide,
+  because it shows the placement.
+- **The ajatusviiva rule no longer cites SFS 4175**, which is the standard the spaced en
+  dash comes from.
+- **"Owner decision" cut from "Product and strand names".** The split (descriptive strand
+  names translated, coined and branded names kept English) is the owner's, and is the same
+  rule every language guide carries.
+- **Left alone deliberately:** the guide states the Finnish quotation marks are `”…”`, while
+  every example in the guide itself uses `„…"`. That is a real inconsistency and needs a
+  native speaker to settle which the translations should use; the audit did not touch either.
 
 ### 2026-07-31: Two UI-label terms ("Run Code", "Dashboard")
 

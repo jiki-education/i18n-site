@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/scope/page.md"
 en_md5: "4d5fc2d1d304725660102e9aaceea4c3"
-governance_sha: "497e9fa"
+governance_sha: "4caf34be"
 content_version: "4db2c6267ab0"
-published_at: "2026-08-14"
+published_at: "2026-09-26"
+forum_topic_id: 1602
 ---
 
 Imagine du code qui dessine un cercle à un endroit différent à chaque exécution, et qu'on veuille dessiner 10 cercles à des endroits différents. On pourrait combiner ça avec une boucle. Mais si tu fais partie de ceux qui suivent attentivement, tu as peut-être remarqué quelque chose d'étrange ici.

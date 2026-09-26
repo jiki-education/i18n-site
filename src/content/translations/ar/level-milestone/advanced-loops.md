@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ar.json"
 en_md5: "3eb6e1c44486daf5e71618893b5e8bae"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "a865e5ffae23"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 عمل رائع. لقد أتقنت الآن حلقات `for`، وحلقات `while`، و `break`، و `continue`. هذه هي الحلقات التي ستستخدمها غالبًا خارج هذه الدورة، لذا فهي تستحق الوقت الذي استثمرته.

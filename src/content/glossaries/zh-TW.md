@@ -3,10 +3,10 @@ lang: "zh-TW"
 name: "Traditional Chinese"
 family: "zh"
 stage: "refining"
-governance_sha: "5758b7d"
-content_version: "a076816c9a0a"
-published_at: "2026-08-01"
-term_count: 90
+governance_sha: "4caf34be"
+content_version: "a7ed78680160"
+published_at: "2026-09-26"
+term_count: 91
 category_id: 200
 forum_topic_id: 414
 video_player_forum_topic_id: 793
@@ -157,6 +157,7 @@ These are terms where the Chinese is used in prose, so the "Use (zh-TW/en)" colu
 
 | English | Chinese | Use (zh-TW/en) | Notes |
 |---------|---------|----------------|-------|
+| feature (platform capability) | 功能 | zh-TW | Deliberately distinct from 函式 (function); the two do not collide in Taiwan usage. Never use 函式 for a product feature. |
 | course | 課程 | zh-TW | The whole Jiki course the learner is taking (在這門課程裡). 課程 is reserved for this sense; a single lesson inside it is 單元, and the syllabus-level sense is 課程大綱. |
 | lesson | 單元 | zh-TW | One teaching unit inside a 課程; 一堂課 is fine in casual prose. Must not be 課程, which is "course". |
 | exercise | 練習 | zh-TW | |
@@ -184,6 +185,8 @@ These stay in English in prose. See `../zh/guide.md` § Loanword policy for why 
 
 Load-bearing teaching terms. Use exactly the agreed rendering; never substitute dry technical language. See `../zh/glossary.md` for the metaphors shared with `zh-CN` (box, the board, input slot, return chute); the rows below are this locale's own glyphs for the metaphors that diverge by script or by word choice (rationale in `../zh/guide.md`).
 
+**The board is one object, one word: 白板**, and it lives in `../zh/glossary.md` because it is character-identical in both scripts. The same 白板 covers both uses: the board the learner writes instructions on for Jiki to come along and follow, and the board a function keeps its own instructions and notes on. Never coin a second word for the "instruction board" sense, and never use 板子 or a word that already means "array".
+
 | English metaphor | Chinese rendering | Notes |
 |------------------|--------------------|-------|
 | chain (array metaphor) | 鏈子 | A physical chain; explicitly not 鎖鏈, which carries a shackle/prison-chain connotation, the wrong tone for a teaching metaphor. |
@@ -195,6 +198,72 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-01: zh-TW guide pruned; rationale moved here
+
+**Decided by:** agent (guide-pruning pass). No term rendering changed, and nothing cherylli
+settled was touched: the 「」/『』 quotation glyphs, 小傢伙, 翻譯員, the one-word board and the
+Gemini engine decision all stand. Everything cut was rationale, research provenance, or
+content inherited unchanged from `../zh/guide.md`.
+
+Rationale and provenance removed from `guide.md`, kept for the record:
+
+- **Audience.** The Taiwan ed-tech market is shaped by resources such as 六角學院 (Hex
+  School), ALPHA Camp (tw.alphacamp.co) and NTU extension-programme materials: an
+  approachable, demystifying tone. Scratch's zh-TW localization (beyond-coding.org.tw,
+  oxxostudio.tw, junyiacademy.org) confirms concrete, playful metaphor is an established
+  convention in Chinese-language programming education for beginners (e.g. block → 積木,
+  "building blocks"), which fits Jiki's metaphor-driven teaching well. That research is what
+  the freer particle calibration and the metaphor renderings rest on.
+- **Sourcing.** Duolingo's zh-TW app UI is not a trustworthy reference for this locale:
+  native Taiwanese users report it contains Simplified-character contamination and
+  Mainland-register phrasing, even though a consumer learning product would normally be a
+  reasonable register source. The instruction not to use it stays in the guide; the reason is
+  here.
+- **Particles.** Light, encouraging sentence-final particles are a real, live convention in
+  Taiwan tutorial writing, not decoration, which is why this locale leans into them more than
+  `zh-CN` does.
+- **Quotation marks.** 「」/『』 is the standard Taiwan typesetting convention and contrasts
+  with Mainland's curly quotes. It is already in use in published zh-TW content; if a native
+  speaker objects, change it in the guide once, through `/action-forum-post`.
+- **`<define>` shapes.** The two worked shapes (函式（英語：_functions_）and `move`（移動）)
+  are settled by published zh-TW content rather than re-decided per page.
+
+Duplication removed (behaviour unaffected, the same instruction still exists elsewhere):
+
+- The **"feature" vs "function"** style note (功能 vs 函式) is a term mapping. `zh-TW` had no
+  `feature` row, so one was added to `glossary.md` (功能, Platform & curriculum vocabulary)
+  carrying the "never use 函式 for a product feature" instruction, and the guide note was cut.
+- The **board-is-one-object-one-word** instruction (including "never coin a second word for
+  the instruction-board sense, never use 板子 or a word that already means array") moved
+  verbatim into `glossary.md` § Jiki physical metaphors, alongside the metaphor rows it
+  governs, matching how `zh-CN`'s glossary already carries it. This is cherylli-adjacent
+  owner-settled content and was moved, not reworded.
+- The **Jiki physical metaphors (zh-TW specifics)** bullets restated glyphs that are already
+  glossary rows (鏈子 and its 鎖鏈 exclusion, 機器, 架子/置物架). Cut from the guide; the
+  glossary rows are unchanged.
+- The **Mechanics** paragraph (Arabic numerals, CJK/Latin spacing, full-width punctuation and
+  parentheses) said only that those rules are inherited unchanged from `../zh/guide.md`,
+  which inheritance already does.
+- The pitfalls "break long relative-clause chains" and "do not default to 您" are stated in
+  `../zh/guide.md` § Writing norms and this guide's § Register respectively.
+### 2026-08-01: Draw and rock-paper-scissors catalog drafting (unconfirmed)
+
+**Decided by:** agent, in the Stage 2 batch that translated concepts `variables`/`if`/
+`repeat` and exercises `rock-paper-scissors`/`rainbow` (instruction prose via the confirmed
+gemini engine, which proposes no deltas; these rows come from the subagent-translated
+message catalogs). **Status: unconfirmed drafts**, proposals only, not written to any
+glossary.
+
+| English | Proposed target | Rationale | Confidence |
+|---------|-----------------|-----------|------------|
+| canvas (drawing surface) | 畫布 | Recurs across the whole draw family; 畫板/畫面 also defensible, family consistency matters. | medium |
+| hex color / hex code | 十六進位色碼 | Competing live forms in Taiwan usage (十六進位顏色, 色碼, HEX 色碼); every draw exercise hits it. | medium |
+| Drawing Shapes (function category label) | 繪製圖形 | `functions.*.category` labels must render identically across every draw-family exercise, each translated by its own worker; 繪製圖形/畫圖形/圖形 would otherwise drift. "Colors" → 顏色 likely uncontested. | medium |
+
+A fourth proposal, keeping English "vs" (CJK-spaced) for `X vs Y` matchup names, contains no
+script-variant characters and so is a family-file candidate; it is logged in
+`../zh/glossary-notes.md`.
 
 ### 2026-08-01: Confirmed translation engine — Gemini Pro 3.1
 

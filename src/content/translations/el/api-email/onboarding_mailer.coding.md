@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.el.yml"
 en_md5: "df687cdb774a249d59df251a88878ee7"
-governance_sha: "072b961"
+governance_sha: "4caf34be"
 content_version: "55b215de3e4e"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 forum_topic_id: 1486
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.coding","rows":[{"key":"subject","english":"Build Rock-Solid Coding Fundamentals","target":"Χτίσε γερές βάσεις στον προγραμματισμό"},{"key":"preview","english":"Learning to code has a reputation for being technical and hard.","target":"Η εκμάθηση προγραμματισμού έχει τη φήμη ότι είναι τεχνική και δύσκολη."},{"key":"greeting","english":"Hi again,","target":"Γεια σου ξανά,"}]}]}]
 ---

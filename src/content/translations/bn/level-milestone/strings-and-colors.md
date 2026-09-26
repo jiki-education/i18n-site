@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "4a3da0f43262dd08d7310b2bbb776335"
-governance_sha: "51b7d6ec"
+governance_sha: "4caf34be"
 content_version: "e8e9b3ee868d"
-published_at: "2026-08-24"
+published_at: "2026-09-26"
+forum_topic_id: 1860
 ---
 
 এই লেভেলে, এবং আপনার প্রথম সত্যিকারের আঁকাআঁকিতে, দারুণ কাজ করেছেন।

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/string-templates/page.md"
 en_md5: "7fd0e09ac3b32db5f159f8e772872104"
-governance_sha: "522a326"
+governance_sha: "4caf34be"
 content_version: "3099a0144ae5"
-published_at: "2026-08-14"
+published_at: "2026-09-26"
+forum_topic_id: 1601
 ---
 
 On peut utiliser ce qu'on appelle des _template literals_ (littéraux de gabarit) pour insérer des _strings_ dans d'autres _strings_.

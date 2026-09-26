@@ -3,10 +3,10 @@ lang: "fr"
 name: "French"
 family: null
 stage: "reviewing"
-governance_sha: "6627df30"
-content_version: "cb86b8596fa0"
-published_at: "2026-09-04"
-term_count: 106
+governance_sha: "4caf34be"
+content_version: "eff3b3f70a11"
+published_at: "2026-09-26"
+term_count: 107
 category_id: 72
 forum_topic_id: 314
 video_player_forum_topic_id: 755
@@ -129,6 +129,7 @@ so a term that drifts between two exercises drifts inside one screen.
 | puzzle (the thing the learner has to solve) | casse-tête / énigme / défi (context decides) | fr | Confirmed by a native speaker (2026-08-11, topic 314). **Never _puzzle_**, whose ordinary French sense is a jigsaw, which misreads badly where the exercise also has a board or pieces. Pick by context: _casse-tête_ where the point is a brain-teaser to work out (_un petit casse-tête de logique_, _un célèbre casse-tête mathématique_); _énigme_ where the framing is a mystery or an investigation (_utiliser des fonctions pour résoudre des énigmes_); _défi_ where it simply means the task the learner is being set (_relève ce défi en 5 lignes de code_). Where the sense is just "this exercise", _exercice_ is also fine. One document picks one of them and stays with it. _défi_ is also the app's word for a platform Challenge (see the `challenge (platform content type)` row under Platform & curriculum vocabulary), so avoid it where both senses could be read on the same screen. |
 | guess (Wordle: the word a player submits) | proposition / proposer | fr | Confirmed by a native speaker (resu-xunil, 2026-08-30, topic 2113). Gender: _une proposition_. Never _essai_, whose everyday French sense is "a try/attempt" (and, to a French reader, the rugby score); "guess" here is _proposer_ / _soumettre une proposition_, and the verb "to guess" itself is _deviner_. Recurs across the whole `wordle` exercise family, which shares one vocabulary across three exercises, so do not alternate with _essai_ or _tentative_. |
 | skyline (city) | la ligne d'horizon | fr | Provisional (orchestrator call, 2026-08-10), pending @fleurdelys44. Never the anglicism _skyline_. Recurs across the `cityscape` exercises and the Cityscape project, so do not alternate with _profil urbain_ or _panorama urbain_. Where the phrase is "a skyline of buildings" rather than the city's own skyline, _une silhouette de bâtiments_ reads better than repeating _ligne d'horizon_. |
+| gold panning / to pan (for gold) / a pan (the tool) | orpaillage / orpailler / la batée | fr | Settled by an orchestrator call (2026-09-04, topic 1306) after two native speakers took opposite views. _orpaillage_/_orpailler_ are the standard current French terms, not archaic: Larousse and Wiktionary carry them with a domain label only and no _vieilli_ marker, French news uses _orpaillage_ constantly (illegal gold mining in Guyane), Vikidia (the 8-13 encyclopedia) titles its article _Orpaillage_, and French tourist offices sell family _initiation à l'orpaillage_ sessions à la batée to children from age 6. Gender: _un orpaillage_, _une batée_. Gloss _orpailler_ on its first use in a page (_orpailler, c'est-à-dire chercher de l'or au fond d'une rivière_) rather than replacing it. **_batée_ is the tool only**, never a count of attempts: "across all 5 pans" is _sur l'ensemble des 5 passages à la batée_, never _les 5 batées_. Never _tamiser_/_tamis_/_passoire_ for the action or the tool (a batée is a smooth conical dish, not a sieve, and the sieving sense of _tamiser_ is itself marked _vieilli_), and never _ruée vers l'or_ for the activity, which names the historical event (the Gold Rush), not what the robot does. |
 
 ## Keep in English
 
@@ -183,7 +184,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 |-------------------|-------------------|-------|
 | box (value container) | boîte | Gender: _la boîte_. |
 | chain (array metaphor) | chaîne | Link = _maillon_. Works cleanly because _string_ stays English above (its literal sense, _chaîne de caractères_, doesn't collide in prose). |
-| input slot | entonnoir | Replaces _fente_ (unwanted slang/anatomical connotation) and _Champ de saisie_/_Zone de saisie_ (too office-form-specific for the illustrated funnel). Gender: _l'entonnoir_. |
+| input slot | entonnoir | Replaces _fente_ (unwanted slang/anatomical connotation) and _Champ de saisie_/_Zone de saisie_ (too office-form-specific for the illustrated funnel). Gender: _l'entonnoir_. **Only where the machine metaphor is already running** (curriculum prose, subtitles, and the illustrations they describe). Where the English itself is non-metaphorical and talks about a _function_ (notably the interpreter error catalog), use _paramètre_: _entonnoir_ next to _fonction_ mixes two registers in one sentence. |
 | return chute | tapis roulant | Replaces _toboggan_ (read as unintelligible) and _canal de retour_/_rampe de retour_. Gender: _le tapis roulant_. |
 | machine (function metaphor) | machine | A function modelled as a machine, with an input slot and a return chute. Gender: _la machine_. |
 | crank (machine crank) | manivelle | The handle Jiki turns to start a machine: _tourner la manivelle_. Gender: _la manivelle_. |
@@ -208,6 +209,66 @@ Example: _pour appeler une fonction, écris son identifiant, suivi de parenthès
 ---
 
 ## Decision log
+
+### 2026-09-04: `orpaillage` / `orpailler` / `batée` kept, but _batée_ is the tool only
+
+**Decided by:** the translator, on the linguistic evidence, after resu-xunil (post 4059) and
+mirina (post 6112) took opposite views in forum topic 1306
+(https://forum.jiki.io/t/1306).
+**Status:** settled. Do not reopen without new usage evidence.
+**Terms affected:** one new row, `gold panning / to pan (for gold) / a pan (the tool)`
+("Exercise world vocabulary").
+**Files affected:** `glossary.md`, `exercise/gold-panning.md`,
+`../../../i18n/locales/fr/curriculum/exercises/gold-panning/instructions.md` and
+`messages.json`.
+
+resu-xunil asked for _orpailler_ (over the earlier _chercher de l'or à la batée_), and it was
+applied. mirina then argued the whole family is too technical and dated for an 18-35 beginner
+audience, citing the 18th-century first attestation and the Académie's "par extension,
+chercheur d'or", and proposed _la ruée vers l'or_ / _chercher de l'or_ / _tamiser_ / _tamis_.
+
+Both were right about something, so the decision splits along that line rather than picking a
+winner.
+
+Why the words stay:
+
+- No dictionary marks them as dated. Larousse gives _orpaillage_ as "exploitation artisanale
+  d'alluvions aurifères" with no usage label; French Wiktionary carries a mineralogy domain
+  label only, with contemporary citations (an AFP wire from 2022). A first attestation in the
+  18th century dates a word, it does not retire it.
+- The frequency argument does not hold up. _orpaillage_ is a high-frequency word in current
+  French news because of illegal gold mining in Guyane: France Info, Politis, WWF France and
+  the Assemblée nationale all use it as the ordinary word, not as a technicality.
+- It is already the word French uses when addressing children. Vikidia, the French
+  encyclopedia written for 8-13 year olds, titles its article _Orpaillage_, and French tourist
+  offices (Haute-Savoie, Dordogne, Auvergne) sell family _initiation à l'orpaillage_ sessions
+  à la batée from age 6. An audience of 18-35 beginners is not below that bar.
+- The proposed replacements each lose something the exercise needs. _la ruée vers l'or_ names
+  a historical event, not an activity, so it cannot label what `pan()` does. _chercher de l'or_
+  is vaguer than the source ("pan", not "search"). _tamiser_ / _tamis_ / _passoire_ are simply
+  the wrong object: a batée is a smooth conical dish worked by rotation, with no holes in it,
+  and the sieving sense of _tamiser_ is itself the one French Wiktionary marks _vieilli_.
+- Register-wise this matches how the project already handles domain words elsewhere: specific
+  is not the same as inaccessible. A term that is the right name for the thing, glossed once on
+  first use, teaches the learner a word; a vaguer term saves them nothing.
+
+Where mirina was right, and what changed as a result:
+
+- The learner met _orpailler_ with no explanation. It is now glossed on first use in the plain
+  words she proposed: _un robot qui part orpailler, c'est-à-dire chercher de l'or au fond
+  d'une rivière_.
+- _batée_ was doing a job French does not give it. The English counts "pans" as actions
+  ("across all 5 pans"), and the French had copied that as _les 5 batées_. In French _une
+  batée_ is the dish, so counting five of them reads as five bowls, not five goes. Every such
+  use is now _passage(s) à la batée_; _batée_ is kept only where it names the tool, which is
+  also where the Functions panel shows it (_Plonge ta batée dans la rivière_).
+- The `pan()` parenthetical said _tamiser l'eau pour en extraire de l'or_, which describes the
+  wrong technique. It now reads _orpailler : plonger la batée dans la rivière pour en retirer
+  l'or_.
+
+On mirina's separate question (post 6113): the English category label "Mining" groups the
+panning activity in the Functions panel; it does not refer to a mine or to mineral extraction,
+so _Orpaillage_ renders it correctly and stays.
 
 ### 2026-09-04 (later the same day): refined into two senses, `clean` → _propre_, `neat/elegant` → _élégant_
 
@@ -2160,3 +2221,48 @@ covered by a dated entry above (`interpreter`, `board / whiteboard`) is not repe
 | chain | Standard French word for a physical chain. |
 | input slot | Evokes the narrow slot you post a coin or letter into (a piggy bank, a vending machine, a letterbox). |
 | return chute | The playground-slide image: concrete and child-vivid, matching the informal register of the other metaphors. |
+
+### 2026-09-05: `input slot` scoped — _entonnoir_ only inside the machine metaphor
+
+**Source:** resu-xunil, https://forum.jiki.io/t/2335/1. **Terms affected:** `input slot`.
+
+He quoted two JavaScript interpreter error messages: _"Cette fonction a 2 entonnoirs, mais tu
+as fourni 1 entrée pour que Jiki s'en serve avec elle."_ His objection was not the term itself
+but the mixture: the English of that catalog is deliberately non-metaphorical ("This function
+has 2 input slots"), so rendering `function` literally as _fonction_ while rendering `input
+slot` as the funnel metaphor puts two registers in one sentence. Either both are metaphorical
+(_machine_ + _entonnoir_) or neither is; his own preference, and the one taken, was neither,
+because that is what the English does.
+
+The `entonnoir` row itself is untouched: it was mirina's call (2026-08-01, topic 314) and is
+right for the curriculum pages and subtitles, where the machine metaphor is explicitly running
+and the illustrations show a funnel. The row now says where it applies. In the interpreter
+catalog the `phrases.slotCount` family and the two `_range` messages now read _paramètre_,
+which is already the glossary's rendering of `parameter` (declaration-site name), leaving
+_entrée_ free for `input` (what the learner supplies) exactly as the English separates the two.
+
+The awkward tail _"pour que Jiki s'en serve avec elle"_ (and the stdlib variant _"pour que Jiki
+puisse les utiliser"_) was replaced with _"à Jiki"_ in the same edit: resu-xunil rewrote it in
+every one of his six suggested phrasings, and the double pronoun is what he meant by "my ears
+are bleeding".
+
+### 2026-09-05: interpreter argument-count messages say _prend_, not _a_
+
+**Source:** resu-xunil, https://forum.jiki.io/t/2335/5. **Terms affected:** none (grammar rule,
+recorded in the guide).
+
+He asked for _"Cette fonction n'a qu'un seul paramètre"_ and was told the negation cannot live
+in `phrases.slotCount`, because that phrase is shared between the exact message and the "needs
+at least" one, where _au moins un seul paramètre_ is wrong. He came back with the reason the
+plain form actually bothers him, which is a better diagnosis than the negation was a fix: _a_
+and _à_ are homophones, and _une fonction à deux paramètres_ is the standard French way of
+describing a signature, so _Cette fonction a un paramètre_ can be parsed as a noun phrase
+rather than an assertion. His proposal, _Cette fonction prend un paramètre_, fixes that without
+touching the shared phrase at all: the verb sits in the parent message, which is not shared, so
+the exact and range messages can take _prend_ while the "at least" ones keep _a besoin d'au
+moins_. That is what was applied, in the JavaScript interpreter catalog and as a general
+grammar rule in the guide. The count-of-zero slot became _zéro paramètre_ rather than
+_0 paramètre_ in the same edit, since a spelled-out word reads as prose after _prend_.
+
+The upstream split of `slotCount` is therefore no longer needed for this problem; it would only
+be needed if we ever wanted the _ne...que_ emphasis itself.

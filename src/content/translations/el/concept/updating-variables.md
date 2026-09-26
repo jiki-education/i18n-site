@@ -4,12 +4,13 @@ type: "concept"
 slug: "updating-variables"
 title: "Ενημέρωση μεταβλητών"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-variables/source.md"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/updating-variables/page.md"
 en_md5: "f9b2fbb6bfd82a620b093e88951ff841"
-governance_sha: "c80036b"
+governance_sha: "4caf34be"
 content_version: "27f85b8adc1e"
-published_at: "2026-08-06"
+published_at: "2026-09-26"
+forum_topic_id: 1336
 ---
 
 Μέχρι τώρα, όταν δημιουργούσαμε μεταβλητές, βάζαμε τιμές σε κουτιά και μετά τις βγάζαμε αργότερα. Αυτό μας βοήθησε πολύ να κάνουμε τον κώδικά μας πιο ξεκάθαρο και να μειώσουμε τις νοερές αριθμητικές πράξεις που αλλιώς θα έπρεπε να κάνουμε. Αλλά η πραγματική αξία των μεταβλητών προκύπτει από τη δυνατότητα να αλλάζεις το περιεχόμενο ενός κουτιού, δηλαδή της μεταβλητής, κατά τη διάρκεια του προγράμματος. Έτσι, ακόμα κι αν τρέξουμε το ίδιο κομμάτι κώδικα πολλές φορές, αυτό που κάνει μπορεί να αλλάζει ανάλογα με το τι υπάρχει μέσα στα κουτιά.

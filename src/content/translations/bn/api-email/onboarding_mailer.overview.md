@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.bn.yml"
 en_md5: "2f218fb80eecb6118fd61208684334ce"
-governance_sha: "9b3923b"
+governance_sha: "4caf34be"
 content_version: "d7f1f452b0a6"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 1791
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.overview","rows":[{"key":"subject","english":"The Two Halves of Becoming a Developer in 2026","target":"২০২৬ সালে ডেভেলপার হওয়ার দুই ভাগ"},{"key":"preview","english":"For the last few years I've been slowly learning Japanese.","target":"গত কয়েক বছর ধরে আমি ধীরে ধীরে জাপানি ভাষা শিখছি।"},{"key":"greeting","english":"Hi there,","target":"স্বাগতম!"}]}]}]
 ---
 

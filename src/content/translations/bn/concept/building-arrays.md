@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/building-arrays/page.md"
 en_md5: "c3358ca032f965cf058bb72df37ffbd4"
-governance_sha: "0937a53"
+governance_sha: "4caf34be"
 content_version: "9b337d6577a3"
-published_at: "2026-08-23"
+published_at: "2026-09-26"
 forum_topic_id: 1817
 ---
 

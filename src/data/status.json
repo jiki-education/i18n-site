@@ -1,9 +1,9 @@
 {
-  "published_at": "2026-09-24",
-  "governance_sha": "043aeac1",
+  "published_at": "2026-09-26",
+  "governance_sha": "4caf34be",
   "approved": 1039,
   "disapproved": 1,
-  "total": 3307,
+  "total": 3398,
   "languages": [
     {
       "lang": "fr",
@@ -5620,7 +5620,7 @@
       "category_slug": "i18n-es-419",
       "approved": 34,
       "disapproved": 0,
-      "total": 172,
+      "total": 181,
       "items": [
         {
           "key": "glossary",
@@ -6481,6 +6481,51 @@
           "key": "exercise/adventures-in-poetry",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -6492,7 +6537,7 @@
       "category_slug": "i18n-hi",
       "approved": 22,
       "disapproved": 0,
-      "total": 161,
+      "total": 170,
       "items": [
         {
           "key": "glossary",
@@ -7296,6 +7341,51 @@
         },
         {
           "key": "badge/townsfolk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
           "topic_id": null,
           "status": "pending"
         }
@@ -8266,7 +8356,7 @@
       "category_slug": "i18n-fa",
       "approved": 16,
       "disapproved": 0,
-      "total": 162,
+      "total": 171,
       "items": [
         {
           "key": "glossary",
@@ -9077,6 +9167,51 @@
           "key": "badge/townsfolk",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -9088,7 +9223,7 @@
       "category_slug": "i18n-sr",
       "approved": 14,
       "disapproved": 0,
-      "total": 162,
+      "total": 171,
       "items": [
         {
           "key": "glossary",
@@ -9899,6 +10034,51 @@
           "key": "badge/townsfolk",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -10491,7 +10671,7 @@
       "category_slug": "i18n-pt-br",
       "approved": 10,
       "disapproved": 1,
-      "total": 161,
+      "total": 189,
       "items": [
         {
           "key": "glossary",
@@ -11297,6 +11477,146 @@
           "key": "exercise/adventures-in-poetry",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/using-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/strings-and-colors",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/repeat-loop",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/variables",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/basic-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/functions-that-return-things",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/complex-conditionals",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/conditionals-and-state",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/make-your-own-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-manipulation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/string-iteration",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/multiple-functions",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/methods-and-properties",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/advanced-loops",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/building-arrays",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/dictionaries",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "level-milestone/changing-dictionaries",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -11857,7 +12177,7 @@
       "category_slug": "i18n-ja",
       "approved": 4,
       "disapproved": 0,
-      "total": 161,
+      "total": 170,
       "items": [
         {
           "key": "glossary",
@@ -12663,6 +12983,51 @@
           "key": "badge/townsfolk",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -13410,7 +13775,7 @@
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
-      "total": 161,
+      "total": 170,
       "items": [
         {
           "key": "glossary",
@@ -14216,6 +14581,51 @@
           "key": "badge/townsfolk",
           "topic_id": null,
           "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -14227,7 +14637,7 @@
       "category_slug": "i18n-zh-cn",
       "approved": 2,
       "disapproved": 0,
-      "total": 161,
+      "total": 170,
       "items": [
         {
           "key": "glossary",
@@ -15031,6 +15441,51 @@
         },
         {
           "key": "badge/townsfolk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.welcome",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/account_mailer.account_deletion_confirmation",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.overview",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.coding",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.building",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/onboarding_mailer.community",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.welcome_to_premium",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "api-email/premium_mailer.subscription_ended",
           "topic_id": null,
           "status": "pending"
         }

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/creating-functions-with-return-values/page.md"
 en_md5: "51d31f709a7051c29b499a31ad68555e"
-governance_sha: "609cd5a"
+governance_sha: "4caf34be"
 content_version: "ab122619cd3b"
-published_at: "2026-08-07"
+published_at: "2026-09-26"
 ---
 
 Ми вже вміємо створювати функції з вхідними даними й без них. Залишилося вивчити останню річ, після якої ми станемо справжніми експертами зі створення функцій: як дати нашим функціям лоток для повернення даних.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/es-419.json"
 en_md5: "069ee8736766d746d9fa4e6db419b300"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "76d303652635"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Buen trabajo. Esperamos que indexar y recorrer strings con bucles ya empiece a tener sentido.

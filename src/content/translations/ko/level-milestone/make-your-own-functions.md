@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "ba1ca560630a"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 멋진 작업이에요. 자신만의 함수를 작성하는 것은 진정한 전환이에요. 이제 더 이상 선반 위의 도구만 사용하는 것이 아니라, 새로운 도구를 직접 만들고 계신 거예요.

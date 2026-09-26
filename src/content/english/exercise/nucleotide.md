@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "nucleotide"
 title: "Nucleotide"
-en_md5: "1a3fe935f5d7c6338efe81dc27d8e9f1"
+en_md5: "805bbb54dafe2801c17f60686009de8c"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/nucleotide"
-captured_at: "2026-08-06"
+captured_at: "2026-09-26"
 ---
 
 DNA is a long chain of other chemicals and the most important are the four nucleotides, adenine, cytosine, guanine and thymine. A single DNA chain can contain billions of these four nucleotides and the order in which they occur is important! We represent a DNA sequence as a string of characters such as "ATTACG". 'A' for adenine, 'C' for cytosine, 'G' for guanine, and 'T' for thymine.

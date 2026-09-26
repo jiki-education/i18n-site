@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/type-conversion/page.md"
 en_md5: "8d85e3d274a6cdfdb74bd0488b685f18"
-governance_sha: "af41eb2"
+governance_sha: "4caf34be"
 content_version: "56f7a0a91e7d"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 2270
 ---
 
 আমাদের প্রোগ্রামের প্রতিটি মানের একটি টাইপ আছে। `"7"` একটি স্ট্রিং, আর `7` একটি সংখ্যা। দেখতে প্রায় একই রকম মনে হলেও জিকি এই দুটির সাথে একেবারে আলাদাভাবে আচরণ করে। স্ট্রিং `"7"`-এর সাথে সংখ্যা `3` যোগ করে `10` পাওয়ার আশা করতে পারবেন না, কারণ একটি হলো এক টুকরো টেক্সট আর অন্যটি একটি পরিমাণ।

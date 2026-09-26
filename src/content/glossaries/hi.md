@@ -3,9 +3,9 @@ lang: "hi"
 name: "Hindi"
 family: null
 stage: "refining"
-governance_sha: "39ffeb7"
-content_version: "09fb8db966aa"
-published_at: "2026-08-04"
+governance_sha: "4caf34be"
+content_version: "72d848b9e40c"
+published_at: "2026-09-26"
 term_count: 133
 category_id: 237
 forum_topic_id: 482
@@ -98,7 +98,7 @@ clarification"). Split by theme for readability; every table below follows the s
 | iteration | इटरेशन | m | hi | One round of a loop; where the source explains it, "लूप का एक चक्कर". |
 | nested | नेस्टेड | - | hi | e.g. "नेस्टेड लूप". Where the source explains it, "एक के अंदर एक". |
 | break (loop control) | `break` | - | hi | The keyword stays English in code; in prose, "लूप से बाहर निकलना". |
-| variable | वेरिएबल | m | hi | चर is not used in Hindi programming prose. Where the source explains the concept, tie it to the box metaphor: "एक डिब्बा जिसमें वैल्यू रखी जाती है". |
+| variable | वेरिएबल (singular), वेरिएबलो (plural) | m | hi | चर is not used in Hindi programming prose. Where the source explains the concept, tie it to the box metaphor: "एक डिब्बा जिसमें वैल्यू रखी जाती है". Plural is वेरिएबलो, never the English-pluralized वेरिएबल्स. Confirmed by native-speaker review (see notes). |
 | to assign | असाइन करना | - | hi | |
 | assignment (noun) | असाइनमेंट | m | hi | Collides with the school sense of "homework"; prefer rephrasing with the verb ("वैल्यू असाइन करना") wherever the source allows it. |
 | to run / execute (code) | चलाना | - | hi | रन करना is an accepted alternative. निष्पादित करना is the formal textbook verb; use it only where the source is being formal. |
@@ -237,6 +237,15 @@ technical language.
 
 ## Decision log
 
+### 2026-08-19: `variable` plural settled on वेरिएबलो, never वेरिएबल्स
+
+**Decided by:** native-speaker review (suditi, forum t/1734, `exercise/relational-sun`). The
+singular वेरिएबल was already settled; the plural had drifted to the English-style
+वेरिएबल्स (adding the English `-s` sound) in machine-translated content. She confirmed
+वेरिएबलो (the native Hindi plural ending) reads correctly and asked for it applied "within
+the page but across the concept as well" — i.e. this is a corpus-wide consistency fix, not
+a one-off. Row updated in `glossary.md`.
+
 ### 2026-08-04: Hedges, open questions and attributions moved out of `guide.md` and `glossary.md`
 
 **Decided by:** iHiD (guidance-lane audit of the two prompt-loaded Hindi files). **Status:
@@ -277,10 +286,6 @@ available, per `global/rules.md` § 'When unsure.'" Its content, unchanged:
   proposal to drop them, because a `<define>` and the इनपुट स्लॉट metaphor both need a noun.
   His point is carried as a prose rule instead. Needs a native speaker to confirm the bare
   noun is acceptable in the noun-only positions.
-- **saturation (संतृप्ति)**: the only row left unconfirmed in "Drawing & colour". @dazecodes
-  ruled on the two terms either side of it (hue and lightness) and had no view on this one,
-  and @suditi deferred to him on all three, so it is still a translation pass's own call. Ask
-  him about this single term rather than reopening the trio.
 - **string, class, method, backwards compatibility, streak**: gender unconfirmed.
 - **scenario, encapsulation, pure function, backwards compatibility, milestone, streak,
   pitfall**: term choice low confidence.
@@ -318,8 +323,9 @@ Every row keeps its Hindi, its gender and its `Use` value. Only the Notes text c
 **So the current inventory of what is not confirmed**, which is what the removed markers were
 carrying: genders for `string`, `class`, `method`, `backwards compatibility`, `streak` and
 `canapé`; term choice for `scenario`, `encapsulation`, `pure function`, `backwards
-compatibility`, `milestone`, `streak` and `pitfall`; and `saturation`, which is the single
-unconfirmed row in "Drawing & colour" and stays in the glossary as a usable row.
+compatibility`, `milestone`, `streak` and `pitfall`. `saturation` was the single unconfirmed
+row in "Drawing & colour"; @dazecodes confirmed it on 2026-08-05 (t/482 post 15), so that
+section now has no unconfirmed rows.
 
 The glossary's own preamble also carried "A gender marked 'unconfirmed' in Notes is our best
 call, not a verified fact", which no longer describes anything and is removed. The "Drawing &
@@ -492,13 +498,15 @@ moved with it ("मूल रंग ... होना चाहिए").
 @dazecodes: "चमक mainly means the shine of an object. To avoid ambiguity, हल्कापन can be used
 for lightness." Masculine, so the same agreement change applies.
 
-#### 4. saturation is still unruled, and stays marked as such.
+#### 4. saturation: संतृप्ति confirmed.
 
-Neither reviewer had a view. @suditi: "I've no idea about Hindi words for hue, saturation or
-lightness", and she then deferred to @dazecodes, who ruled on the other two and said nothing
-about this one. संतृप्ति therefore stays, still an unconfirmed draft, and it is now the only
-unconfirmed row in the "Drawing & colour" section. Worth going back to him with that single
-term rather than reopening the trio.
+Neither reviewer had a view when hue and lightness were ruled on. @suditi: "I've no idea
+about Hindi words for hue, saturation or lightness", and she deferred to @dazecodes, who
+ruled on the other two and said nothing about this one at the time. We went back to him with
+the single open term (t/482 post 14) and he confirmed it directly: "The word for saturation
+is fine" (t/482 post 15, 2026-08-05). संतृप्ति is therefore no longer a translation pass's
+own guess; it is native-speaker confirmed, and "Drawing & colour" has no unconfirmed rows
+left.
 
 #### 5. horizontal / vertical: name the noun.
 

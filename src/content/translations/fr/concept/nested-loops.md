@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/nested-loops/page.md"
 en_md5: "4ca3e15c1737b6e8cf2f03a56d23a887"
-governance_sha: "fc1d25e"
+governance_sha: "4caf34be"
 content_version: "a1b7431498f8"
-published_at: "2026-08-14"
+published_at: "2026-09-26"
+forum_topic_id: 1557
 ---
 
 Disons qu'on veut une rangée de fleurs. On peut écrire quelque chose comme ceci. On définit une position, on plante une fleur, on augmente la position de 10, on recommence, et on obtient une belle rangée de fleurs bien alignées.

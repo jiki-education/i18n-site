@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/nested-loops/page.md"
 en_md5: "4ca3e15c1737b6e8cf2f03a56d23a887"
-governance_sha: "af41eb2"
+governance_sha: "4caf34be"
 content_version: "447fac83cf15"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 2261
 ---
 
 ধরুন আমরা এক সারি ফুল চাই। আমরা এরকম কিছু লিখতে পারি। আমরা একটি অবস্থান ঠিক করি, একটি ফুল লাগাই, অবস্থানটি ১০ বাড়াই, আবার একই কাজ করি, আর শেষে পেয়ে যাই ফুলের একটি সুন্দর সাজানো সারি।

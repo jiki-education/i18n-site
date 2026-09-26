@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hi.json"
 en_md5: "7205cc09a500e11d5ec44a6978ae5af7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "089f1e50e6f7"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 इस लेवल पर बहुत अच्छा काम। अब आप प्रोग्राम चलने के दौरान बदलने वाली वैल्यू को ट्रैक कर सकते हैं, जो कुछ लेवल पहले की तुलना में एक वास्तविक प्रगति है।

@@ -3,9 +3,9 @@ lang: "el"
 name: "Greek"
 family: null
 stage: "reviewing"
-governance_sha: "7c4e6b9"
+governance_sha: "4caf34be"
 content_version: "42685d71e292"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 term_count: 71
 category_id: 265
 forum_topic_id: 497

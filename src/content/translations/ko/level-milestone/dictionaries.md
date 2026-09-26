@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "e24a2de83b7d0cfa482fcea5121aa0f7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "e6ba2f05ceb7"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 좋아요! 딕셔너리를 사용하면 위치 대신 이름 붙은 키에 값을 저장할 수 있어서, 항목을 빠르고 읽기 쉽게 찾을 수 있어요.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/creating-functions/page.md"
 en_md5: "93286a30a373b5604b60b3c109ad00a3"
-governance_sha: "b411dd5"
+governance_sha: "4caf34be"
 content_version: "d6bf3837fa31"
-published_at: "2026-08-19"
+published_at: "2026-09-26"
 forum_topic_id: 1200
 ---
 

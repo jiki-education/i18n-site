@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hu.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "7a9985bab748"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Nagyszerű munka. A saját függvények írása igazi váltás. Már nem csak használod a polcon lévő eszközöket, hanem újakat építesz.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/hsl/page.md"
 en_md5: "d751e07ccf6b5a58a11d3d2af1026b93"
-governance_sha: "9ded16c5"
+governance_sha: "4caf34be"
 content_version: "d3589c2978ec"
-published_at: "2026-09-01"
+published_at: "2026-09-26"
 forum_topic_id: 2254
 ---
 

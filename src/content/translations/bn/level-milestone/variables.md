@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "f354e5206e3f25c925621288a2b55fb6"
-governance_sha: "5a301b85"
+governance_sha: "4caf34be"
 content_version: "c7ee250e611a"
-published_at: "2026-08-24"
+published_at: "2026-09-26"
+forum_topic_id: 1863
 ---
 
 ভ্যারিয়েবল আয়ত্ত করার জন্য দারুণ কাজ করেছেন।

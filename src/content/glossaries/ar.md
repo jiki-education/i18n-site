@@ -3,9 +3,9 @@ lang: "ar"
 name: "Arabic"
 family: null
 stage: "refining"
-governance_sha: "618e8c2d"
+governance_sha: "4caf34be"
 content_version: "7b8e438eb978"
-published_at: "2026-09-09"
+published_at: "2026-09-26"
 term_count: 54
 category_id: 233
 forum_topic_id: 470

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/creating-functions/page.md"
 en_md5: "93286a30a373b5604b60b3c109ad00a3"
-governance_sha: "42c1ac1"
+governance_sha: "4caf34be"
 content_version: "60be526eccbc"
-published_at: "2026-08-23"
+published_at: "2026-09-26"
+forum_topic_id: 1850
 ---
 
 এখন পর্যন্ত আপনি এমন সব ফাংশন ব্যবহার করে আসছেন যেগুলো আপনার জন্য আগে থেকেই তৈরি করা, যেমন `circle`, `rectangle`, `moveRight`, `shoot`। এগুলো সবই এমন ফাংশন, যা বানিয়ে জিকির তাকে রেখে দেওয়া হয়েছিল।

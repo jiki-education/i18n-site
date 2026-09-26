@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/logical-and/page.md"
 en_md5: "cef8d76c4235e85573c3eeede294ab72"
-governance_sha: "cbba983"
+governance_sha: "4caf34be"
 content_version: "7ab962c5b678"
-published_at: "2026-08-12"
+published_at: "2026-09-26"
 forum_topic_id: 880
 ---
 

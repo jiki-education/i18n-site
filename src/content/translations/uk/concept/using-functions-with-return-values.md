@@ -4,12 +4,12 @@ type: "concept"
 slug: "using-functions-with-return-values"
 title: "Функції, які повертають значення"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/using-functions-with-return-values/source.md"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/using-functions-with-return-values/page.md"
 en_md5: "830f19fb6aaf184c1f32ade792b60a12"
-governance_sha: "b611259"
+governance_sha: "4caf34be"
 content_version: "8162d389d2dd"
-published_at: "2026-08-06"
+published_at: "2026-09-26"
 ---
 
 Досі ми розглядали функції, які щось роблять у навколишньому світі. Наприклад, функція `circle` малює коло. Функція `move` пересуває нашого персонажа. Але деякі функції працюють інакше. Замість того, щоб робити щось назовні, вони щось нам повертають, і це щось ми можемо використати у своєму коді. Коли функція дає щось Jiki для використання в коді, ми кажемо, що вона повертає (англ. _return_) щось. Вона повертає це назад Jiki. Можна уявити, що такі машини мають лоток для видачі. У нас уже є щілини, куди ми кладемо вхідні дані, але машина може мати й один вихідний отвір, лоток, з якого щось виходить назад. Коли Jiki натискає кнопку на машині, машина починає гудіти, і наприкінці з лотка щось вискакує. Це може бути число. Може бути рядок тексту (англ. _string_). Це щось, що Jiki може впіймати і використати.

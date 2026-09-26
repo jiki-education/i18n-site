@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "07656bf41b4102374b8f16654db4f461"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "380ad0626f9d"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 까다로운 레벨을 잘 해내셨어요. 이제 and/or, 모듈로, 그리고 횟수 없는 루프까지 마스터하셨어요.

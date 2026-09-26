@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "6102a39a2418e0d864c33b55b7a669f5"
-governance_sha: "fb6c3631"
+governance_sha: "4caf34be"
 content_version: "23cfa105779f"
-published_at: "2026-08-23"
+published_at: "2026-09-26"
+forum_topic_id: 1859
 ---
 
 জিকির কোডিং ফান্ডামেন্টালস কোর্সের প্রথম লেভেলটি শেষ করার জন্য দারুণ কাজ করেছেন।

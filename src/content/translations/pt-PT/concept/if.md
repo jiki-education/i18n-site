@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/pt-PT/curriculum/concepts/if/page.md"
 en_md5: "81c99eea67b02e082ca6c9d7988a3914"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "23383161f1ed"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Há uma palavra-chave que nos ajuda a dizer ao Jiki para só fazer certas coisas em determinadas situações. Imagina que estás a escrever código para guardar a entrada de um bar, talvez sejas o porteiro, e o Jiki só deve abrir a porta se a pessoa estiver vestida de forma adequada. Ou imagina que estás a escrever código em que és responsável por agitar a bandeira axadrezada no final de uma corrida, mas o Jiki precisa de saber que só o deve fazer na última volta. Nestes casos, vamos usar a palavra-chave `if`.

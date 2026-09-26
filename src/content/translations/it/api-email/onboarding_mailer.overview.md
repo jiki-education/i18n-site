@@ -7,15 +7,16 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.it.yml"
 en_md5: "2f218fb80eecb6118fd61208684334ce"
-governance_sha: "2e7fb87"
-content_version: "21fb9dd5c136"
-published_at: "2026-08-13"
-messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.overview","rows":[{"key":"subject","english":"The Two Halves of Becoming a Developer in 2026","target":"Diventare uno sviluppatore nel 2026: le due metà"},{"key":"preview","english":"For the last few years I've been slowly learning Japanese.","target":"Negli ultimi anni ho imparato lentamente il giapponese."},{"key":"greeting","english":"Hi there,","target":"Ciao,"}]}]}]
+governance_sha: "4caf34be"
+content_version: "e1b8ea182e09"
+published_at: "2026-09-26"
+forum_topic_id: 1587
+messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.overview","rows":[{"key":"subject","english":"The Two Halves of Becoming a Developer in 2026","target":"Diventare uno sviluppatore nel 2026: le due metà"},{"key":"preview","english":"For the last few years I've been slowly learning Japanese.","target":"Negli ultimi anni ho imparato il giapponese lentamente."},{"key":"greeting","english":"Hi there,","target":"Ciao,"}]}]}]
 ---
 
-Negli ultimi anni ho **imparato lentamente il giapponese**. Vado regolarmente in Giappone e cerco di immergermi nella lingua, ma è difficile, perché al giorno d'oggi, con l'aiuto di Google Translate, è piuttosto facile passare del tempo in Giappone senza dire una parola di giapponese. **Quindi il mio cervello può essere pigro**, ma me la cavo benissimo.
+Negli ultimi anni ho imparato il giapponese lentamente. Vado spesso in Giappone e cerco di parlare la lingua, ma non è semplice: con Google Translate puoi fare tutto senza praticare il giapponese. Quindi il mio cervello non si impegna, perché non ne ha bisogno… e io me la cavo lo stesso.
 
-La programmazione ha iniziato da poco a fare lo stesso percorso. Negli ultimi 30 anni, se volevi fare qualcosa con la tecnologia, **dovevi imparare a programmare**. Era l'unico modo per comunicare con un computer. Ma negli ultimi due anni, con l'ascesa della programmazione agentica, le cose sono cambiate. Ora puoi usare la tua lingua madre per dire a un agente IA cosa vuoi che faccia, e **lui scriverà il codice al posto tuo**: traduce le tue istruzioni per il computer.
+La programmazione sta cambiando. Per trent'anni, se volevi creare qualcosa con la tecnologia, dovevi imparare a programmare: era l'unico modo per comunicare con un computer. Ma negli ultimi anni, con l'arrivo degli agenti IA, tutto è cambiato. Ora puoi usare la tua lingua madre per dire a un agente cosa vuoi ottenere, e sarà lui a scrivere il codice per te: traduce le tue istruzioni in un linguaggio che il computer può capire.
 
 Proprio come non devo aspettare di essere fluente in giapponese prima di poter esplorare il Giappone, **non ha più alcun senso passare anni a migliorare nella programmazione** prima di iniziare a costruire cose.
 

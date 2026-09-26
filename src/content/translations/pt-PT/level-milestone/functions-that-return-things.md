@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/pt-PT.json"
 en_md5: "c5535dc792a600941da4f8ca562377c7"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "71d38d42d8a5"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Trabalho brilhante num nível recheado. Funções que devolvem valores, cores HSL e RGB, animação, números aleatórios, âmbito, cenários e ciclos dentro de ciclos. É uma grande quantidade de ideias novas para acrescentares à tua caixa de ferramentas de uma só vez.

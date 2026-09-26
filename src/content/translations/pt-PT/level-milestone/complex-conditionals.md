@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/pt-PT.json"
 en_md5: "07656bf41b4102374b8f16654db4f461"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "d2e9a779ff0b"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Excelente trabalho num nível complicado. Agora já dominas o e/ou, o módulo e os ciclos sem contagem.

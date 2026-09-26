@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/nested-loops/page.md"
 en_md5: "4ca3e15c1737b6e8cf2f03a56d23a887"
-governance_sha: "bfe5506"
+governance_sha: "4caf34be"
 content_version: "fcc72158bb81"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 forum_topic_id: 1445
 ---
 

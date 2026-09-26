@@ -4,12 +4,12 @@ type: "concept"
 slug: "arrays"
 title: "ऐरे"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/arrays/source.md"
+source_repo: "i18n"
+source_path: "locales/hi/curriculum/concepts/arrays/page.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "347eb77"
+governance_sha: "4caf34be"
 content_version: "2b42177c0420"
-published_at: "2026-08-07"
+published_at: "2026-09-26"
 forum_topic_id: 1255
 ---
 

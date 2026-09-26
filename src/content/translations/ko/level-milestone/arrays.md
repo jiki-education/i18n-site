@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "f30486e583f3c2417da5f8a4a1721ee1"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "8612ff666edd"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 멋지네요! 배열(어떤 사람들은 리스트라고 부르기도 해요)은 어떤 언어에서든 가장 유용한 도구 중 하나예요. 여러분이 어떤 것의 하나 이상을 다룰 때는 거의 항상 배열을 사용하게 될 거예요.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hi.json"
 en_md5: "c5535dc792a600941da4f8ca562377c7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "f2ec063b503e"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 एक भरे-पूरे लेवल पर शानदार काम। वैल्यू लौटाने वाले फंक्शन, HSL और RGB रंग, एनिमेशन, रैंडम नंबर, स्कोप, सिनेरियो, और लूप के भीतर लूप। एक ही बार में अपने टूलकिट में जोड़ने के लिए यह बहुत सारे नए विचार हैं।

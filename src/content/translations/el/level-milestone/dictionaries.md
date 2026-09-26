@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "e24a2de83b7d0cfa482fcea5121aa0f7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "38c0b50eb47a"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
+forum_topic_id: 1743
 ---
 
 Εξαιρετικά. Τα λεξικά σου επιτρέπουν να αποθηκεύεις τιμές με ονοματισμένα κλειδιά και όχι μόνο με θέσεις, κάτι που κάνει το ψάξιμο γρήγορο και ευανάγνωστο.

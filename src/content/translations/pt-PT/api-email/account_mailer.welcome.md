@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/account_mailer.pt-PT.yml"
 en_md5: "e518eef5a32c5eca34790887e7cac31f"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "92b7ce366bbd"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"account_mailer.welcome","rows":[{"key":"subject","english":"Welcome to Jiki!","target":"Bem-vindo ao Jiki!"},{"key":"greeting","english":"Hi there,","target":"Olá,"}]}]}]
 ---
 

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/pt-PT.json"
 en_md5: "4d0073d2f9813e52bd3412086f130489"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "ed16d3d37e02"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Excelente trabalho neste nível. Os ciclos são um bloco fundamental da programação e esperamos que já te estejam a parecer bastante confortáveis.

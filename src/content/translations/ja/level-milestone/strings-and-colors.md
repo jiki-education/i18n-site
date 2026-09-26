@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ja.json"
 en_md5: "4a3da0f43262dd08d7310b2bbb776335"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "9870fcbfa0c4"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 このレベルもよくできましたね。初めての本格的なお絵かきですね。

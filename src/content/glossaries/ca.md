@@ -3,9 +3,9 @@ lang: "ca"
 name: "Catalan"
 family: null
 stage: "setup"
-governance_sha: "1ec4365"
+governance_sha: "4caf34be"
 content_version: "0ad6613be35d"
-published_at: "2026-08-04"
+published_at: "2026-09-26"
 term_count: 53
 category_id: 298
 forum_topic_id: 536

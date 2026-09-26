@@ -3,10 +3,10 @@ lang: "uk"
 name: "Ukrainian"
 family: null
 stage: "reviewing"
-governance_sha: "1115f13"
-content_version: "19a78b9902e2"
-published_at: "2026-08-03"
-term_count: 151
+governance_sha: "4caf34be"
+content_version: "364e200062cc"
+published_at: "2026-09-26"
+term_count: 153
 category_id: 100
 forum_topic_id: 308
 video_player_forum_topic_id: 785
@@ -108,6 +108,7 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | pattern (a repeating pattern in data or in a drawing) | закономірність | uk | Unconfirmed draft (agent, 2026-08-03). The regularity the learner spots and turns into a loop. Not _патерн_ (a borrowing) and not _шаблон_, which this glossary already leans on for _шаблонний рядок_ and _лінії шаблону_. |
 | anchor (a variable or value everything else is measured from) | опорна змінна / опорне значення | uk | Unconfirmed draft (agent, 2026-08-03). The one value other values are derived from, in exercises that build every dimension off a single starting figure. Use _опорна змінна_ for the variable, _опорне значення_ for the number in it. Never _якір_ (the ship's anchor, or an HTML anchor). |
 | toggle | перемикати | uk | |
+| to create (a variable / a counter) | створити | uk | Unconfirmed draft (agent, 2026-08-12, iternewo t/880). Not _завести_, which reads as informal/colloquial for setting up a variable. |
 | state / stateful | стан | uk | |
 | scope | область видимості | uk | |
 | class | клас | uk | |
@@ -128,6 +129,7 @@ These are terms where the Ukrainian is used in prose, so the "Use (uk/en)" colum
 | tool / tooling | інструмент / інструментарій | uk | |
 | workhorse (the idiom: "the workhorse of X") | ключовий інструмент | uk | The English idiom, not the animal. Never the literal _робоча конячка_ / _робочий кінь_, which reads as a joke in Ukrainian prose. Takes _у_ before the thing it is central to: "робить цикли `for` ключовим інструментом у JavaScript". |
 | pitfall | пастка | uk | Stands alone; no gloss needed. |
+| weight (a multiplier in a weighted calculation) | ваговий коефіцієнт | uk | The per-position multiplier in a checksum or weighted sum (ISBN, Luhn and similar). Never the bare _вага_, which is physical weight; the Ukrainian term of art is the full two-word form, in every occurrence including inflected ones (_зменшення вагового коефіцієнту_). |
 
 ### Platform & curriculum vocabulary
 
@@ -238,6 +240,259 @@ glyph in a code tag immediately after: _квадратні дужки (`[]`)_.
 ---
 
 ## Decision log
+
+### 2026-09-13: the omitted-copula dash is a Ukrainian exception to the no-em-dash rule
+
+**Decided by:** decard (native-speaker reviewer), applied per the standing rule that a
+native speaker's grammar call outranks a house-style rule written for English. **Source:**
+forum topic 1495, posts 5594, 5658, 5736 and 6833.
+
+decard raised the same point three times across a month: where Ukrainian omits the
+present-tense copula, the dash between subject and predicate is not intonational decoration,
+it marks the predicative relationship, and dropping it leaves the sentence incomplete.
+Substituting a colon is not a softer option but a syntax error, because a colon announces an
+enumeration or a clarification of what precedes it, and a subject-predicate pair is neither.
+
+The 2026-08-02 note in this file held the no-em-dash rule in place on the grounds that a
+clean dashless rephrase existed in both cases then, and said an unavoidable case would be
+the trigger to revisit. Three arrived, all short aphoristic lines where a rephrase would
+destroy the shape that is the point of the sentence:
+
+- Townsfolk badge fun fact: _Найкращий спосіб навчатися: навчати інших._ ->
+  _Найкращий спосіб навчитися - навчати інших._
+- `onboarding_mailer.building` subject: _Найкращий спосіб навчитися: створювати!_ ->
+  _Найкращий спосіб навчитися - створювати!_
+- "Building things up" level-milestone email: _...і повернути його: це прийом..._ ->
+  _...і повернути його - це прийом..._
+
+The precedent was in fact already set and unremarked: the `word-count` exercise has shipped
+_а значеннями - їхні частоти_ since the reviewer rejected a dashless rephrase there, so
+Ukrainian content was already using this dash while the guide still forbade it.
+
+The form is a **spaced ASCII hyphen (` - `), not an em dash (—)**, matching what is already
+live and what decard writes in her own examples. `guide.md`'s "Grammar and structure"
+section now carries the rule and the two sentence shapes that need it; the preference for a
+verb-carrying rephrase where one exists naturally is unchanged, and the global no-em-dash
+rule is untouched for every other language and every other use.
+
+**Status:** confirmed, applied.
+
+### 2026-08-16: capitalized formal "Ви"/"Вас" in transactional mailer copy
+
+**Decided by:** iternewo (native-speaker reviewer). **Source:** forum topic 1495, post_id
+5248 (api-email review batch).
+
+Reviewing `account_mailer.welcome`, iternewo corrected lowercase "вас"/"ви" to capitalized
+"Ви"/"Вас" throughout (e.g. "Ми дуже раді, що Ви приєднались до нас", "провести Вас шляхом",
+"Якщо раптом Ви застрягнете або у Вас виникнуть запитання"). Applied directly to that email.
+
+This was not swept into every other item in the same review batch: the onboarding-series
+narrative emails she also corrected in the same post (`overview`, `coding`, `building`,
+`community`, `premium`) keep lowercase "ви"/"вас" throughout, including inside sentences she
+herself rewrote (e.g. "але якщо ви тільки віддаєте вказівки", "чи варте програмування ваших
+зусиль", "якщо ви приєднаєтеся до групи"). The existing `devise_mailer.uk.yml` (vendored,
+hand-tuned) was already capitalized before this review and she left it as-is.
+
+Reading the pattern: capitalized "Ви"/"Вас" looks like it belongs to the formal,
+transactional register (account/security mailers: welcome, deletion confirmation, password
+reset), while Jeremy's first-person narrative onboarding/premium emails keep the plainer
+lowercase "ви". That reads as a register distinction by email *type*, not a blanket
+"always capitalize" rule, so no guide rule was written from this alone. The fix was applied
+only to `account_mailer.welcome`, the item she actually flagged. If she confirms on the
+thread that capitalized Ви/Вас should extend to the transactional family more broadly (or to
+everything), promote this to a `guide.md` rule then rather than assuming it now.
+
+**Decided by:** iternewo (native-speaker reviewer). **Source:** https://forum.jiki.io/t/880/113.
+**Status:** confirmed.
+
+iternewo corrected "Заведіть змінну"/"Заведіть лічильник" to "Створіть змінну"/"Створіть
+лічильник" in two exercises (Stripey Fabric, Tile Rack) and flagged it explicitly for the
+glossary: _завести_ reads as informal/colloquial for setting up a variable or counter,
+_створити_ is the neutral, correct verb. Added under Core decisions.
+
+### 2026-08-12: _ваговий коефіцієнт_ for "weight", and you-imperatives in exercise hints
+
+**Decided by:** decard (native-speaker reviewer). **Source:** https://forum.jiki.io/t/880/101.
+**Status:** confirmed.
+
+Two general points came out of decard's review of five exercises (hamming, hello,
+isbn-verifier, look-around, lower-pangram):
+
+- "Weight", as in the per-position multiplier of a checksum, is _ваговий коефіцієнт_ in
+  Ukrainian technical usage, not bare _вага_. He asked for it in every occurrence in the
+  ISBN text, so it is a term, not a one-off rephrasing, and it now has a glossary row under
+  Tooling & engineering. The concept recurs in other checksum exercises (Luhn), so the row
+  is worth having.
+- An exercise's hint and scenario-description messages address the learner directly, so
+  they take the plain you-imperative (_Спробуйте_, _Винесіть_, _викликайте_), not the
+  inclusive we-imperative (_Спробуймо_, _Винесімо_, _викликаймо_). The guide already had
+  this as the "discrete task handed off to the learner" exception under Formality; what was
+  new is that the exception covers the exercise message catalog's hints and not only the
+  instructions prose, so the exception's wording was widened to say so.
+
+He also replaced two "Have fun!" sign-offs (_Насолоджуйтесь!_, _Нехай буде весело!_) with
+_Успіхів!_, on the grounds that the task in question demands serious thought. That reads as
+task-dependent rather than a blanket rule, so no rule was written and no other exercise's
+sign-off was swept; he has been asked on the thread whether he wants it applied to every
+"Have fun!" in the curriculum. He answered no: see the 2026-08-11 entry below.
+
+### 2026-08-11: "Have fun!" and other sign-offs have no default translation
+
+**Decided by:** decard (native-speaker reviewer). **Source:** https://forum.jiki.io/t/880/103.
+**Status:** confirmed, standing process rule.
+
+Asked whether _Успіхів!_ should be swept across every "Have fun!" in the curriculum, decard
+said no, and asked that it not be treated as a default translation at all. A task-ending
+sign-off has no fixed rendering: it depends on the tone of the specific exercise, serious
+versus playful, and _Насолоджуйтесь!_ and _Розважайтесь!_ are equally legitimate where the
+exercise is light. Each case is decided separately, and decard will say explicitly, per
+exercise, when a sign-off needs changing, rather than us guessing at it or propagating one
+choice.
+
+So: no sign-off row belongs in the glossary, and no further exercise's "Have fun!" is
+changed to _Успіхів!_ (or to anything else) without his explicit say-so on the thread. This
+does **not** reverse the two exercises already changed on 2026-08-12 (`isbn-verifier`,
+`lower-pangram`): those were his own per-exercise calls and stand as made.
+
+The one absolute in his answer is a negative: _Гарної розваги!_ is not said in Ukrainian and
+sounds unnatural, so it is never a rendering of "Have fun!".
+
+### 2026-08-08: decard sets his own re-review condition for approval (standing, per-reviewer)
+
+**Decided by:** decard (native-speaker reviewer). **Source:** https://forum.jiki.io/t/880.
+**Status:** confirmed, standing process preference.
+
+decard has asked that items he reviews are not marked `"approved"` in
+`languages/uk/tracking.json` on the strength of us having applied his corrections. Applying
+the fixes is not the sign-off; his own explicit confirmation on the forum thread, after he
+has re-read the republished page, is. So the sequence for anything he reviews is: apply,
+publish, deploy, ask him to recheck, and leave `status` absent until he says on the thread
+that it now reads correctly.
+
+This is a standing preference for every uk item decard reviews, not a one-off for a single
+thread. It was applied first to `exercise/bouncer`, `exercise/bouncer-wristbands` and
+`exercise/build-wall`, whose wording fixes from t/880 were applied on 2026-08-08 with their
+`status` deliberately left unset.
+
+### 2026-08-08: Two style rules from decard's exercise review (виглядати, зʼявлятися)
+
+**Decided by:** decard (native-speaker reviewer). **Source:** https://forum.jiki.io/t/880.
+**Status:** confirmed, applies across all uk content.
+
+Two rules were added to the Style notes section of `languages/uk/guide.md`, both flagged by
+decard as general rather than item-specific:
+
+- _виглядати_ is not the Ukrainian idiom for "to look like"; the natural construction is
+  _мати вигляд_.
+- _зʼявитися/зʼявлятися_ carries a sense of something appearing spontaneously, so it reads
+  wrong for a line of code the learner writes into their own solution. _Використати_ /
+  _застосувати_ carry the agency the sentence actually means.
+
+Neither is a term mapping, so no glossary rows were added. Other already-published uk
+exercises are likely to carry the same two misuses; that sweep is logged in
+`state/content-updates-needed.md` rather than done here.
+
+### 2026-08-05: Judgment calls from the video-lessons and badges catalog pass (unconfirmed draft, dated 2026-08-05)
+
+**Decided by:** agent, per the standing rule that translation-pass proposals are recorded
+rather than held back. **Source:** the first uk pass over the two curriculum copy catalogs
+(`curriculum/src/video-lessons` and `curriculum/src/badges`). Not a forum thread; not
+native-speaker-sourced. **Status:** unconfirmed drafts. No glossary rows were added; these
+are catalog-wide phrasing decisions a future pass (or a native reviewer) should know about.
+
+- **Badge descriptions use impersonal forms, never ти/ви.** "Completed your first lesson"
+  style achievement lines are rendered with the impersonal -но form (_Завершено перший
+  урок_, _Надіслано перше повідомлення Jiki_) and "Joined ..." lines with a noun phrase
+  (_Приєднання до Jiki_). This keeps the whole catalog free of second-person address per
+  the guide, without forcing the collective "ми" onto lines that describe one learner's
+  own achievement.
+- **Video-lesson descriptions open with inclusive future-plural _Навчимося_ /
+  _Дізнаємося_** for the recurring English "Learn how to ..." opener, matching the guide's
+  inclusive register.
+- **`Logic Gates` (lesson title) → Логічні оператори.** The literal _логічні вентилі_ /
+  _логічні елементи_ belong to electronics and would read as a hardware lesson; the lesson
+  is about combining conditions with `&&`/`||`, and _логічні оператори_ names that.
+  Flagged for a native speaker in case the gate metaphor is wanted back.
+- **`Coding Fundamentals` → «Основи програмування».** Matched against the existing uk app
+  copy in `app/messages/uk.json`, which already uses this name; not a new coinage.
+- **The `maze_navigator` badge references the maze lesson descriptively** (_урок із
+  проходження лабіринту_) rather than inventing a quoted lesson title, because no
+  canonical uk title for "Solve a Maze" exists yet. If that lesson title gets a fixed uk
+  rendering later, the badge description should be updated to quote it.
+- **Idiom badges keep Ukrainian idioms, not calques:** `Early Bird` → _Рання пташка_ with
+  the funFact proverb rendered as _Хто рано встає, той більше встигає_ (the common
+  secular variant, avoiding the religious _тому Бог дає_ ending); `Night Owl` → _Нічна
+  сова_; "Two heads are better than one" → _Одна голова добре, а дві краще_.
+- **`Advanced Loops` → Просунуті цикли.** Colloquial-modern register, consistent with the
+  guide's web-native tone; _розширені_ read as a feature list and _складніші_ as a
+  difficulty warning.
+
+### 2026-08-05: Two unconfirmed drafts from the third Stage 3 exercise batch
+
+**Decided by:** agent, per the standing rule that translation-pass proposals are recorded
+as unconfirmed drafts rather than held back. **Source:** the fable translation passes over
+`exercise/owners-bouquets` and `exercise/cityscape-skyscraper` (part of the ten-item batch
+covering `penguin`, `sunset`, `sprouting-flower`, `random-salad`, `rainbow-splodges`,
+`stock-market`, `owners-bouquets`, `cityscape-skyscraper`, `cityscape-skyline`,
+`space-invaders-nested-repeat`; the other six items were already translated and up to date,
+so they proposed no new terms). Not a forum thread; not native-speaker-sourced.
+**Status:** unconfirmed drafts. Not written to `languages/uk/glossary.md`. None of them
+outranks a later native-speaker call.
+
+- **`gap` (spacing between planted flowers) → інтервал**, from the `owners-bouquets` pass.
+  Matches the existing `plant-the-flowers` uk translation ("з інтервалом 10"). Flagged
+  because the glossary already binds a *different* sense of "gap" (the distance a shape is
+  inset from an edge) to `відступ` (row added 2026-08-03); the two senses must stay split
+  rather than collapsing onto one Ukrainian word.
+- **`garden` → сад**, from the `owners-bouquets` pass, but only a flag, not a strong
+  proposal: the existing `plant-the-flowers` uk translation rendered "garden" once as
+  _галявина_, while `owners-bouquets` uses _сад_ throughout because it recurs and reads as
+  the ordinary word there. If the flower-planting family should use one term consistently, a
+  native speaker needs to pick between the two and `plant-the-flowers` may need a one-word
+  fix.
+- **`ground floor` (lowest floor of a building) → перший поверх**, from the
+  `cityscape-skyscraper` pass. Recurs across the cityscape family. Ukrainian has no
+  ground/first split the way English does, so "перший" vs "нульовий" is a real choice; the
+  pass used _перший поверх_ in the message catalog and adapted the source's
+  "depending on your country" joke into prose ("залежно від країни його називають першим
+  або нульовим"). Needs settling so every cityscape exercise (including `cityscape-skyline`,
+  translated in the same batch and matched to this choice) stays consistent.
+- **`literal value` (a bare number passed instead of a variable) → paraphrased as "не
+  вписуйте значення напряму"**, from the `cityscape-skyscraper` pass, for the
+  `checks.codeQuality.allArgumentsAreVariables` catalog string, which recurs across
+  code-quality checks in other exercises. _Літерал_ is jargon a beginner does not know, so
+  the pass paraphrased the intent instead of coining a term; _буквальне значення_ is a
+  defensible alternative. Also possibly missing from `global/terms.md` (not opened to
+  check, per pass rules).
+
+### 2026-08-04: "build a snowman" is three verbs, split by register, not one term
+
+**Decided by:** decard (native speaker), on
+[t/880 post 3284](https://forum.jiki.io/t/880/3284). **Status:** settled by a native
+speaker; outranks any agent's later opinion. **Terms affected:** the verb used for
+"build/assemble" a snowman across `exercise/snowman`, `exercise/snowman-basic` and
+`exercise/relational-snowman`. No glossary row has been written, because there is no single
+mapping to write: the choice is contextual, and the outcome is recorded per exercise in
+`languages/uk/exercise/*.md`.
+
+The question was raised because the three exercises did not use one verb, and it was not
+clear whether that was drift or intent. decard's answer is that it is intent, and that all
+three verbs are correct in their own place:
+
+- **_зберіть_** focuses on the **result**, so it fits a simple task. It stays as the task
+  and scenario name on `exercise/snowman`.
+- **_побудуйте_** focuses on the **process**, so it fits a task that turns on meticulous
+  calculation. It stays as the task and scenario name on `exercise/relational-snowman`.
+- **_ліпити_** is what Ukrainian actually says about making a snowman, but it is too casual
+  for a task instruction, so it belongs only to playful introductory prose. This is why the
+  `relational-snowman` intro was changed from _ми знову **будуємо** сніговика_ to _ми знову
+  **ліпимо** сніговика_: the intro is narration, not an instruction.
+
+The general shape of the rule (a natural, everyday verb in the intro; a result-focused or
+process-focused verb in the task name depending on how much work the task involves) is
+decard's reasoning rather than a rule he stated for all exercises, so do not generalise it
+to other build-type exercises without asking. Within the snowman family it is settled, and
+the three verbs must not be swept onto one form.
 
 ### 2026-08-03: Twelve unconfirmed drafts from the second Stage 3 exercise batch
 
@@ -915,6 +1170,7 @@ repeated here.
 | auth | Both _автентифікація_ and _авторизація_ are standard, direct cognates. |
 | backwards compatibility | Standard, well-established term. |
 | pitfall | Ordinary word. |
+| weight (a multiplier in a weighted calculation) | decard's call: Ukrainian technical terminology for a weighting multiplier is the two-word _ваговий коефіцієнт_, and bare _вага_ reads as physical weight. |
 
 #### Platform & curriculum vocabulary
 

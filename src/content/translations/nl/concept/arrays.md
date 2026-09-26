@@ -4,12 +4,13 @@ type: "concept"
 slug: "arrays"
 title: "Arrays"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/arrays/source.md"
-en_md5: "012da550948ba2ebcfaf953cd0906f3f"
-governance_sha: "21ba311"
-content_version: "7271e775d0cd"
-published_at: "2026-08-01"
+source_repo: "i18n"
+source_path: "locales/nl/curriculum/concepts/arrays/page.md"
+en_md5: "d26ccb9e04fbc77129f3199d63a95017"
+governance_sha: "4caf34be"
+content_version: "f40508e7030e"
+published_at: "2026-09-26"
+forum_topic_id: 1037
 ---
 
 Je hebt al met getallen, strings en booleans gewerkt (het chique woord voor waar en onwaar). Die verschillende soorten noemen we datatypes. Nu komt daar ons eerste samengestelde datatype (_compound data type_ in het Engels) bij.
@@ -36,9 +37,9 @@ We schrijven `let mentors =`, precies zoals bij elke andere doos, en daarna een 
 
 Je kunt van alles in een array stoppen: strings, getallen, booleans, zelfs een mix van dingen.
 
-Dit zijn allemaal voorbeelden van prima geldige arrays.
+Dit zijn allemaal voorbeelden van volledig geldige arrays.
 
-Je kunt ook een lege array maken. Dat is gewoon een ketting zonder elementen. Het is nog steeds iets echts. Hij heeft nog steeds zijn beide uiteinden. Het is nog steeds een ketting, alleen zitten er geen items in. Maar je kunt deze lege array gewoon in een doos stoppen, er later weer uithalen en gebruiken.
+Je kunt ook een lege array maken. Dat is gewoon een ketting zonder elementen, dit is nog steeds volledig correct. Hij heeft nog steeds zijn beide uiteinden. Het is nog steeds een ketting, alleen zitten er geen items in. Maar je kunt deze lege array gewoon in een doos stoppen, er later weer uithalen en gebruiken.
 
 Je kunt dus een array maken met de vierkante haakjes, maar hoe gebruik je ze eigenlijk? Hoe kijk je wat erin zit en haal je er dingen uit? Nou, precies zoals we letters uit een string haalden: met de vierkante haakjes, met een getal ertussen.
 

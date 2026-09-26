@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/string-indexing/page.md"
 en_md5: "cd31e0366b3090b358494667003f54c9"
-governance_sha: "af41eb2"
+governance_sha: "4caf34be"
 content_version: "b17e32101dd2"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 1858
 ---
 
 ধরুন, আপনার কাছে আমার নাম Jeremy আছে, আর আপনি সেখান থেকে আমার আদ্যক্ষর J বের করে আনতে চান। কীভাবে করা যায় সেটা?

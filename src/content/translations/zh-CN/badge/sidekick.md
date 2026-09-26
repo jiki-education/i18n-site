@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/zh-CN/curriculum/badges/messages.json"
 en_md5: "92d2b377110a451725d5a329b5fcf9c5"
-governance_sha: "4d02c56"
+governance_sha: "4caf34be"
 content_version: "2cc9ecdacb01"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 向 Jiki 发送了你的第一条消息

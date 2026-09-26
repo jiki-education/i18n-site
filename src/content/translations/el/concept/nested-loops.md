@@ -4,12 +4,13 @@ type: "concept"
 slug: "nested-loops"
 title: "Βρόχοι μέσα σε βρόχους"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/nested-loops/source.md"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/nested-loops/page.md"
 en_md5: "4ca3e15c1737b6e8cf2f03a56d23a887"
-governance_sha: "c80036b"
+governance_sha: "4caf34be"
 content_version: "fd7a168c9271"
-published_at: "2026-08-06"
+published_at: "2026-09-26"
+forum_topic_id: 1339
 ---
 
 Ας πούμε ότι θέλουμε μια σειρά λουλούδια. Μπορούμε να γράψουμε κάτι σαν αυτό. Ορίζουμε μια θέση, φυτεύουμε ένα λουλούδι, αυξάνουμε τη θέση κατά 10, επαναλαμβάνουμε, και καταλήγουμε με μια ωραία τακτοποιημένη σειρά λουλουδιών.

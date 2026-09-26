@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/hi/curriculum/concepts/updating-variables/page.md"
 en_md5: "f9b2fbb6bfd82a620b093e88951ff841"
-governance_sha: "c87f000"
+governance_sha: "4caf34be"
 content_version: "013714190b42"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
 forum_topic_id: 1665
 ---
 

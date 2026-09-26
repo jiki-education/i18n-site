@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/repeat-while/page.md"
 en_md5: "f1f98b46bedb1b5abc72aa1b856ee8ae"
-governance_sha: "e6e7b7d"
+governance_sha: "4caf34be"
 content_version: "f8edaa47a9a0"
-published_at: "2026-08-14"
+published_at: "2026-09-26"
 forum_topic_id: 1561
 ---
 

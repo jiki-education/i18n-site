@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/it.json"
 en_md5: "4a3da0f43262dd08d7310b2bbb776335"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "ba018397f1fe"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
+forum_topic_id: 1656
 ---
 
 Ottimo lavoro su questo livello, e sul tuo primo vero disegno.

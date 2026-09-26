@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hu.json"
 en_md5: "d5bfe9e5cd73eb4049674723644d81f0"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "7cb321e65c83"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Nagyszerű munka ezen a szinten. A függvények kombinálása nagyobb problémák megoldására az, amit a profi programozás valójában napi szinten csinál. Egy problémát részekre bontasz, minden részhez írsz egy kis függvényt, majd összerakod őket.

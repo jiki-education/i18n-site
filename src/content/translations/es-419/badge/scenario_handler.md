@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/es-419/curriculum/badges/messages.json"
 en_md5: "a7a3bf8abe8bed9297947e44667d7dda"
-governance_sha: "4d02c56"
+governance_sha: "4caf34be"
 content_version: "aef1bfb1525d"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Resolviste un ejercicio con escenarios

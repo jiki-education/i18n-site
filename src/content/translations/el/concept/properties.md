@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/el/curriculum/concepts/properties/page.md"
 en_md5: "0634cd72388bef118e9dd22131a3c1cd"
-governance_sha: "1ed6813"
+governance_sha: "4caf34be"
 content_version: "9ab95fccdae1"
-published_at: "2026-08-09"
+published_at: "2026-09-26"
+forum_topic_id: 1341
 ---
 
 Μέχρι τώρα, όταν σκεφτόμασταν τις συμβολοσειρές ή τους αριθμούς, τις θεωρούσαμε αρκετά στατικά πράγματα.

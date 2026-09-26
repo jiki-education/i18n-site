@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/scenarios/page.md"
 en_md5: "d5c4ee54eed8083e13f18bb7d256b86d"
-governance_sha: "cbba983"
+governance_sha: "4caf34be"
 content_version: "89113652042c"
-published_at: "2026-08-12"
+published_at: "2026-09-26"
 forum_topic_id: 880
 ---
 

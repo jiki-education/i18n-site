@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/pt-PT.json"
 en_md5: "4bb57788e09cc6de5466d34b560540b2"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "60358253ca6a"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Bom trabalho neste nível. A concatenação e os modelos de strings são ideias bastante simples, mas aparecem constantemente, especialmente quando estás a produzir saída para uma pessoa ler.

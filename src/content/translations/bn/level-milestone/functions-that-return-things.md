@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "c5535dc792a600941da4f8ca562377c7"
-governance_sha: "5aecc323"
+governance_sha: "4caf34be"
 content_version: "673e2ba19a7f"
-published_at: "2026-08-24"
+published_at: "2026-09-26"
+forum_topic_id: 1867
 ---
 
 এত কিছুতে ঠাসা একটি লেভেলে অসাধারণ কাজ করেছেন। মান রিটার্ন করা ফাংশন, HSL আর RGB রঙ, অ্যানিমেশন, র‍্যান্ডম সংখ্যা, স্কোপ, সিনারিও, আর লুপের ভেতরে লুপ। একবারেই সরঞ্জামের ঝুলিতে যোগ হওয়া নতুন ধারণার সংখ্যাটা কম নয়।

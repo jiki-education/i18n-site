@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/uk.json"
 en_md5: "f0d47c822253e20fbc27a36405270946"
-governance_sha: "6c2dee5d"
+governance_sha: "4caf34be"
 content_version: "342d65ff38f2"
-published_at: "2026-09-13"
+published_at: "2026-09-26"
 ---
 
 Гарна робота! Читати з масивів зручно, але по-справжньому вони розкриваються тоді, коли ми вміємо будувати їх шматочок за шматочком. Пройтися циклом по чомусь, зібрати потрібні частини в новий масив і повернути його - це прийом, до якого ми будемо звертатися знову і знову.

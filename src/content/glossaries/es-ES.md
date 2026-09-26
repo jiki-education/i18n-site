@@ -3,9 +3,9 @@ lang: "es-ES"
 name: "European Spanish"
 family: "es"
 stage: "setup"
-governance_sha: "672aa33"
+governance_sha: "4caf34be"
 content_version: "eb74e4c94220"
-published_at: "2026-08-05"
+published_at: "2026-09-26"
 term_count: 61
 category_id: 75
 forum_topic_id: 310

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/building-arrays/page.md"
 en_md5: "c3358ca032f965cf058bb72df37ffbd4"
-governance_sha: "0014b11"
+governance_sha: "4caf34be"
 content_version: "64cfb17e11e5"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 1352
 ---
 
 Fino ad ora hai lavorato con array il cui valore viene fissato all'inizio e resta invariato. Ma cosa succede se vuoi aggiungere elementi ad un array nel tempo? Per farlo, gli array hanno un metodo chiamato `push` (aggiungi).

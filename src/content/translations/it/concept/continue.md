@@ -6,10 +6,10 @@ title: "La parola chiave `continue`"
 status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/continue/page.md"
-en_md5: "6c3f7483826e27d44d6c404cc9f621dd"
-governance_sha: "991d43f"
+en_md5: "6cd21a2f25c493f61d000f865014709d"
+governance_sha: "4caf34be"
 content_version: "eaa5160beaa1"
-published_at: "2026-08-10"
+published_at: "2026-09-26"
 ---
 
 Ci sono situazioni in cui vogliamo saltare una singola iterazione del ciclo invece di interromperlo completamente. Immaginiamo di voler eseguire del codice solo sui numeri dispari.

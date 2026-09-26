@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/while-loops/page.md"
 en_md5: "aeceed2abb1434307cfd7c9a0df55c81"
-governance_sha: "494ce4b"
+governance_sha: "4caf34be"
 content_version: "e43a8f7004ac"
-published_at: "2026-08-10"
+published_at: "2026-09-26"
+forum_topic_id: 1185
 ---
 
 La prochaine boucle à connaître est la boucle `while` (tant que).

@@ -3,10 +3,10 @@ lang: "hu"
 name: "Hungarian"
 family: null
 stage: "reviewing"
-governance_sha: "f53ad5d"
-content_version: "7fc226b58cd5"
-published_at: "2026-08-05"
-term_count: 88
+governance_sha: "4caf34be"
+content_version: "72d3a838adc8"
+published_at: "2026-09-26"
+term_count: 96
 category_id: 68
 forum_topic_id: 289
 video_player_forum_topic_id: 759
@@ -27,6 +27,7 @@ decision log (`glossary-notes.md`).
 | dopamine hit | dopaminlöket | hu | Informal register. Not _dopaminroham_. |
 | PPP pricing | helyi vásárlóerőhöz igazított árazás | hu | Explain the acronym in Hungarian; never leave "PPP" bare or transliterate it. |
 | Q&A | kérdés-felelet / kérdések és válaszok | hu | Explain in Hungarian; do not leave "Q&A" bare. |
+| agentic coding | **Agentikus programozás** | hu | Use this everywhere, including in headings and tag labels. Never _ágensalapú programozás_, never _agentikus kódolás_, and never bare English _agentic coding_ (in any inflected form). The adjective is invariant before the noun; suffix `programozás` as usual (_agentikus programozásba_, _agentikus programozási ciklus_). |
 
 ## Product and strand names
 
@@ -37,6 +38,7 @@ Everything here translates like ordinary UI copy; nothing stays English (see
 |---------|-----------|-------------|-------|
 | Learn to Code (strand) | Tanulj meg programozni | hu | Descriptive strand name, so it is translated. |
 | Learn to Build (strand) | Tanulj fejleszteni | hu | Descriptive strand name, so it is translated. |
+| Ask Jiki (in-app AI help) | Kérdezd Jikit | hu | Imperative phrase that already carries the accusative `-t`, so it cannot be a bare subject, cannot take a further case suffix, and cannot sit attributively before a noun. Where the English does any of those, recast the sentence or give it a head noun (_a Kérdezd Jikit funkció_; _szál_ for a strand). |
 
 ## Localize (use the Hungarian term)
 
@@ -125,6 +127,12 @@ These are terms where the Hungarian is used in prose, so the "Use (hu/en)" colum
 | English | Hungarian | Use (hu/en) | Notes |
 |---------|-----------|-------------|-------|
 | alien (creature) | űrlény | hu | Not idegen, which means "stranger" (any unknown person), not a being from another planet. Not földön kívüli either; that was a reviewer's first suggestion, superseded once he recalled the corpus already used űrlény. The exercise name _Space Invaders_ and the code identifiers (`isAlienAbove`, `getStartingAliensInRow`) stay English. |
+| pangram | pangramma | hu | In prose and in exercise titles alike (_Egyszerű pangramma_, _Pangramma_, _Módszeres Pangramma_). Never the bare English _pangram_, which survives only inside the term-clarification bracket where the source introduces the word. Compounds take a hyphen: _pangramma-feladat_, _Pangramma-sorozat_. |
+| traffic light (the whole device) | jelzőlámpa | hu | Not _közlekedési lámpa_. Exercise titles: _Jelzőlámpák_, _Relációs jelzőlámpák_. |
+| light (one coloured lamp of a traffic light) | fény | hu | _a piros / sárga / zöld fény_. Deliberately not _lámpa_: _jelzőlámpa_ is the whole device, so this keeps the two apart and avoids same-root repetition in one sentence. |
+| bouncer | kidobó | hu | Including in exercise titles: _Kidobó_, _Kidobó: Öltözködési szabályzat_, _Kidobó: Karszalagok_. Never the bare English _Bouncer_. The longer _kidobóember_ stays acceptable in running concept prose. |
+| skyline / cityscape | városkép | hu | Exercise title _Városkép_. |
+| skyscraper | felhőkarcoló | hu | Exercise title _Felhőkarcoló_. |
 
 ### App & product UI
 
@@ -186,6 +194,109 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-11: exercise-world terms settled before the hu launch (pangram, traffic light, bouncer, cityscape)
+
+**Decided by:** an agent pass, from what the existing Hungarian corpus already favoured.
+**Status: settled, but none of it is a native speaker's call**, so any of these rows can be
+overturned by a reviewer without argument.
+**Terms affected:** `pangram`, `traffic light`, `light (one lamp)`, `bouncer`, `skyline /
+cityscape`, `skyscraper`.
+
+A title-fixing pass had left four terms split across the corpus, each rendered one way in one
+exercise and another way in its sibling. All four are now unified, and the rows exist so that
+a later pass cannot re-split them.
+
+- **`pangram` → _pangramma_.** Two of the three exercises in the series (`lower-pangram`,
+  `methodic-pangram`) already used _pangramma_ throughout, roughly 30 occurrences against the
+  middle exercise's 15 bare _pangram_. _Pangramma_ is also the ordinary Hungarian word, and
+  it inflects cleanly (_pangramma-e_, _pangrammában_), where bare _pangram_ forces the
+  hyphenated foreign-word suffixing the guide reserves for code spans and Latin-script names.
+  The middle exercise's English title `Pangram` became `Pangramma`, which is what its two
+  siblings' titles already implied.
+- **`traffic light` → _jelzőlámpa_, and one lamp of it → _fény_.** The split was even on
+  count (7 _jelzőlámpa_ against 5 _közlekedési lámpa_), so it was decided on naturalness:
+  _jelzőlámpa_ is the everyday Hungarian word and the compact one, and _Relációs közlekedési
+  lámpák_ would have been a clumsy title next to _Relációs jelzőlámpák_. The second row falls
+  out of the first: `relational-traffic-lights` already called the individual coloured lights
+  _fény_, and adopting that in `traffic-lights` too keeps "draw the three lights on the
+  traffic light" from becoming _lámpa_ next to _jelzőlámpa_ in one clause, which the guide's
+  same-root-repetition warning covers.
+- **`bouncer` → _kidobó_.** Not really a decision: the corpus had 20-odd Hungarian forms and
+  exactly one English survivor, the title of `bouncer-wristbands`, whose own body already
+  said _kidobó_.
+- **`skyline / cityscape` → _városkép_ and `skyscraper` → _felhőkarcoló_** are recorded, not
+  decided. A previous pass set them in the two `cityscape-*` titles without writing rows; the
+  rows now exist so the titles and any prose referring to them stay in step.
+
+Also fixed in the same pass, as instances of one bug rather than as term decisions: four
+places where Hungarian prose named another item by a name a Hungarian reader never sees.
+`cityscape-skyline` opened "A Skyscraper feladatban" for an exercise titled _Felhőkarcoló_,
+`two-fer` said „Hello” for one titled _Üdvözlés_, `acronym`'s hint said "Mint a Pangramban",
+and the `jiki-is-10-days-old` blog post named both _közlekedési lámpa_ and _Structured
+House_. Whenever one item names another, it should use that item's Hungarian title.
+
+**Left for a native speaker.** Exercise-title capitalisation is inconsistent corpus-wide
+(_Egyszerű pangramma_ against _Módszeres Pangramma_, and likewise _Összekevert Ház_,
+_Véletlen Saláta_, _Relációs Nap_). Hungarian sentence case argues for the lower-case form,
+but that is a style sweep across many titles, not a term decision, and it was left alone.
+
+#### Also on 2026-08-11: `Ask Jiki` given a row, formalising what the corpus already did
+
+**Decided by:** an agent, at iHiD's request. **Status: settled, but not a native speaker's
+call**, so any Hungarian native speaker can overturn it without argument.
+**Terms affected:** `Ask Jiki`.
+
+This is a formalisation of existing usage, not a fresh translation choice. _Kérdezd Jikit_
+was already the rendering of nine keys in the Hungarian app catalog, including
+`lesson.tabAskJiki` and `codingExercise.chatHeader.title`, so the wording was settled across
+the corpus long before the row existed. What was missing was the row itself, and that gap is
+exactly why an inconsistency could appear: two further keys were still sitting in English
+against the nine already translated, and were corrected on 2026-08-11 along with two prose
+files. iHiD asked for the row so a later pass cannot re-open the same split.
+
+The row's Notes carry the grammar rather than the choice, because the grammar is what caused
+rework on the day: the phrase is an imperative that already ends in the accusative `-t`, so
+it resists every position the English name occupies freely (subject, further-suffixed, and
+attributive before a noun). The fix in each case is to recast or to hang the name off a head
+noun, which is what the same-day corrections did with _funkció_, alongside the file's
+existing _szál_ for a strand.
+
+### 2026-08-10: agentic coding → _Agentikus programozás_
+
+**Decided by:** Jeremy (iHiD), the owner. **Status: settled.**
+**Terms affected:** `agentic coding`.
+
+Two passes ran independently on the same day and each picked its own rendering for surfaces a
+learner sees on the same page: the project card tags said _Agentikus programozás_ while the
+two episode pages behind those cards said _Ágensalapú programozás_. Jeremy settled it on
+_Agentikus programozás_, and the episode prose was changed to match (adjective only; the noun
+and every suffix on it were already identical between the two renderings).
+
+It also lines up with the existing `programming / coding` row: Hungarian takes _programozás_,
+not _kódolás_ and not an English borrowing, the same instinct as `framework` →
+_keretrendszer_.
+
+Still open, and not covered by this decision: several Hungarian pages (the agentic-coding
+guides and blog posts) and the front-end's own `agentic-coding` tag label render the concept
+as _agentikus kódolás_. That is a different word for arguably the same thing, and the
+`programming / coding` row's "never mix both in one document" warning applies to it. It was
+deliberately left alone pending a separate decision.
+
+### 2026-08-06: Translation engine switched to `deepseek`
+
+**Decided by:** vinetu, a native speaker, on the "Alternative translation model" comparison
+thread (https://forum.jiki.io/t/927). **Status:** settled.
+**Terms affected:** none (engine choice, not a glossary or guide change).
+**Files affected:** none; `tracking.json` already carried the block, this entry records the
+decision behind it.
+
+Jeremy posted an alternative-model rendering of a Hungarian page alongside the published one
+and asked which read better. vinetu answered that "the new one seems better", and Hungarian
+was switched to it.
+
+Hungarian therefore runs on `deepseek` rather than the `fable` default. This was a genuine
+switch, made on a native speaker's verdict, not on our own judgement or on cost.
 
 ### 2026-08-05: _elegánstalan_ is not a Hungarian word (no glossary row)
 

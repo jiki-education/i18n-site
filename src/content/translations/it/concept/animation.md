@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/animation/page.md"
 en_md5: "536994294072afea52dab51d3bb7cab8"
-governance_sha: "a5ad984"
+governance_sha: "4caf34be"
 content_version: "7866ddc9dbf3"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
 ---
 
 Finora, usando il ciclo `repeat` per disegnare, ogni nuova figura aggiungeva qualcosa all'immagine. Disegnando un mattone, riempivamo uno spazio vuoto; disegnando 10 cerchi, vedevamo 10 cerchi sullo schermo. È come dipingere: una volta che metti la vernice sul muro, non sparisce quando aggiungi un altro tratto accanto. Rimane lì. Ma cosa succede se vogliamo far sembrare che qualcosa si muova?

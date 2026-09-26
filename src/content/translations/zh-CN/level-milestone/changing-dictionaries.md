@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/zh-CN.json"
 en_md5: "a66deb1c6dd3b8e1514fe3c378a67fe6"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "cea9f143f7b3"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 这就是编程基础课程的最后一关了。希望字典对你来说，是能和数组一起添加到工具箱里的好工具。

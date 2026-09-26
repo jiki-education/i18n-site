@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "c5535dc792a600941da4f8ca562377c7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "72a4774ef502"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
+forum_topic_id: 1743
 ---
 
 Εξαιρετική δουλειά σε ένα γεμάτο επίπεδο. Συναρτήσεις που επιστρέφουν τιμές, χρώματα HSL και RGB, κίνηση, τυχαίοι αριθμοί, εμβέλεια, σενάρια και βρόχοι μέσα σε βρόχους. Αυτές είναι πολλές νέες ιδέες για να προσθέσεις στην εργαλειοθήκη σου με μια κίνηση.

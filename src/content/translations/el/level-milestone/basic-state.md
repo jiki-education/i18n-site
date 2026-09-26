@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "7205cc09a500e11d5ec44a6978ae5af7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "b1a37de18ff0"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
+forum_topic_id: 1689
 ---
 
 Καλή δουλειά σε αυτό. Μπορείς πλέον να παρακολουθείς τιμές που αλλάζουν καθώς το πρόγραμμά σου εκτελείται, που είναι μια πραγματική πρόοδος από εκεί που ήσουν μερικά επίπεδα πριν.

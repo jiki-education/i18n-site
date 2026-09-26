@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/sr.json"
 en_md5: "c5535dc792a600941da4f8ca562377c7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "4ed74d722a2e"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Sjajan posao na prepunom nivou. Funkcije koje vraćaju vrednosti, HSL i RGB boje, animacija, slučajni brojevi, opseg, scenariji i petlje u petljama. To je mnogo novih ideja koje odjednom dodaješ svom alatu.

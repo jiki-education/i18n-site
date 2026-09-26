@@ -3,9 +3,9 @@ lang: "zh-CN"
 name: "Simplified Chinese"
 family: "zh"
 stage: "refining"
-governance_sha: "e0c1dee"
-content_version: "3373b3d3e787"
-published_at: "2026-08-03"
+governance_sha: "4caf34be"
+content_version: "f1a56ef2200a"
+published_at: "2026-09-26"
 term_count: 118
 category_id: 199
 forum_topic_id: 413
@@ -81,7 +81,7 @@ The agreed term list for what is distinct about Mainland Simplified Chinese. Rea
 
 ## Localize (use the Chinese term)
 
-These are terms where the Chinese is used in prose, so the "Use (zh-CN/en)" column is `zh-CN` throughout; on `<define>` add the English per `../zh/guide.md` § "Term clarification", e.g. 函数（英语：function）. Split by theme for readability; every table below follows the same columns.
+These are terms where the Chinese is used in prose, so the "Use (zh-CN/en)" column is `zh-CN` throughout; on `<define>` add the English per `../zh/guide.md` § "Term clarification", e.g. 函数（英文：function）. Split by theme for readability; every table below follows the same columns.
 
 ### Values & data types
 
@@ -225,6 +225,23 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-06: Translation engine switched to `deepseek`
+
+**Decided by:** taylorren, a native speaker, on the "Alternative translation model"
+comparison thread (https://forum.jiki.io/t/888). **Status:** settled.
+**Terms affected:** none (engine choice, not a glossary or guide change).
+**Files affected:** none; `tracking.json` already carried the block, this entry records the
+decision behind it.
+
+Jeremy posted an alternative-model rendering of a Mainland Simplified Chinese page alongside
+the published one and asked which read better. taylorren answered "I'd say I like the 'new'
+translation better", and the language was switched to it.
+
+Mainland Simplified Chinese therefore runs on `deepseek` rather than the `fable` default.
+This was a genuine switch, made on a native speaker's verdict, not on our own judgement or
+on cost. It is recorded here rather than in the shared `zh` family notes because the engine
+is set per locale in `tracking.json`, not per family.
 
 ### 2026-08-02: Website copy (app UI catalog)
 

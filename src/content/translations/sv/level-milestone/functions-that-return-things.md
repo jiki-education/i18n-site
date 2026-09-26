@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/sv.json"
 en_md5: "c5535dc792a600941da4f8ca562377c7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "bd41ce16141d"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Strålande arbete på en fullpackad nivå. Funktioner som returnerar värden, HSL- och RGB-färger, animation, slumptal, scope, scenarier och loopar inuti loopar. Det är en hel del nya idéer att lägga till i din verktygslåda på en gång.

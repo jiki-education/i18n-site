@@ -4,12 +4,12 @@ type: "concept"
 slug: "using-functions"
 title: "Использование функций"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/using-functions/source.md"
-en_md5: "007a425ced42fd3550bfdf9fe6f7b391"
-governance_sha: "33fd2de"
+source_repo: "i18n"
+source_path: "locales/ru/curriculum/concepts/using-functions/page.md"
+en_md5: "fc671310093a081113a8f301b6ff53fe"
+governance_sha: "4caf34be"
 content_version: "4adae362e5cf"
-published_at: "2026-07-31"
+published_at: "2026-09-26"
 forum_topic_id: 776
 ---
 

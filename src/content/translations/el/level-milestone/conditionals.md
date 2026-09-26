@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "9c912874e8026dfd16f56d62ede34016"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "07d0e6bee369"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
+forum_topic_id: 1743
 ---
 
 Ωραία δουλειά στο επίπεδο των συνθηκών. Ελπίζουμε οι `if` και `else` να αρχίζουν να σου φαίνονται αρκετά φυσικές.

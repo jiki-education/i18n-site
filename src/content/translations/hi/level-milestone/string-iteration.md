@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hi.json"
 en_md5: "069ee8736766d746d9fa4e6db419b300"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "3d8fbb522f34"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 बहुत अच्छा काम। उम्मीद है कि इंडेक्सिंग और स्ट्रिंग में लूप लगाना अब समझ आने लगा है।

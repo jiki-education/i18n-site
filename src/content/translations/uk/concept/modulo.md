@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/modulo/page.md"
 en_md5: "4955abecb626b8eff02ee7484e2065dd"
-governance_sha: "cbcc701"
+governance_sha: "4caf34be"
 content_version: "afd1038615a7"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 forum_topic_id: 880
 ---
 

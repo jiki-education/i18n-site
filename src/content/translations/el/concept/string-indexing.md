@@ -4,12 +4,13 @@ type: "concept"
 slug: "string-indexing"
 title: "Θέσεις σε συμβολοσειρά"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-indexing/source.md"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/string-indexing/page.md"
 en_md5: "cd31e0366b3090b358494667003f54c9"
-governance_sha: "c80036b"
+governance_sha: "4caf34be"
 content_version: "54f7b2ba7e51"
-published_at: "2026-08-06"
+published_at: "2026-09-26"
+forum_topic_id: 1343
 ---
 
 Φαντάσου ότι έχεις το όνομά μου, Jeremy, και θέλεις να πάρεις το αρχικό γράμμα J από αυτό. Πώς θα το κάναμε;

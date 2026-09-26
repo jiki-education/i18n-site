@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/pt-PT.json"
 en_md5: "9c912874e8026dfd16f56d62ede34016"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "1f167e3a46b3"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Bom trabalho no nível das condicionais. Esperamos que o if e o else já te estejam a parecer bastante naturais.

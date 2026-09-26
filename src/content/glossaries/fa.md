@@ -3,10 +3,10 @@ lang: "fa"
 name: "Persian"
 family: null
 stage: "refining"
-governance_sha: "db6b9ea"
-content_version: "a23d79419d49"
-published_at: "2026-08-04"
-term_count: 39
+governance_sha: "4caf34be"
+content_version: "83f8d202d3d7"
+published_at: "2026-09-26"
+term_count: 42
 category_id: 331
 forum_topic_id: 683
 video_player_forum_topic_id: 753
@@ -43,6 +43,7 @@ throughout. Split by theme for readability; every table below follows the same c
 | English | Persian | Use (fa/en) | Notes |
 |---------|---------|-------------|-------|
 | loop | حلقه | fa | **Never use this word for an individual link of the "chain" array metaphor** (see the metaphors table below); the two would collide. |
+| repeat loop / for loop (named in prose) | حلقه‌ی Repeat / حلقه‌ی For | fa | Keep the loop-type keyword in English, capitalized, unbackticked, when it qualifies حلقه in running prose. Never حلقه‌ی تکرار. |
 | interpreter | مفسر | fa | **A person doing a job, not a program**: in the course Jiki *is* the interpreter (کار او این است که کد را تفسیر کند). Never use مفسر with a program word attached (برنامه‌ی مفسر) or a machine-suffixed coinage. The verb is تفسیر کردن. |
 | instruction (given to Jiki) | دستورالعمل | fa | Plural دستورالعمل‌ها. **Native speaker's decision; do not revert to دستور.** Keep it distinct from **statement** («دستور», as in دستور شرطی for an if statement and «دستور `repeat`»): a statement is a piece of code syntax and stays دستور, an instruction the learner gives Jiki is دستورالعمل. |
 
@@ -63,6 +64,8 @@ throughout. Split by theme for readability; every table below follows the same c
 | choice (the thing chosen) | گزینه / انتخاب | fa | گزینه is an **option offered from a fixed set** («یکی از سه گزینه‌ی معتبر»). A **person's** choice, the thing they actually picked, is انتخاب: «انتخاب یوکی و آندو», «اگر انتخاب‌ها یکسان باشند». Never «گزینه‌ی یوکی». The verb "to choose" stays انتخاب کردن. |
 | syntax | نحوه‌ی نگارش | fa | **Never نحو.** Native speaker's decision; do not revert. The exact wording may vary with context: «نحوه‌ی نگارش», «روش نوشتن» or «شکل نوشتن» are all acceptable, and a sentence often reads better recast around the verb («نحوه‌ی نوشتنش فرق می‌کند») than with a noun. Pick whichever is most natural in the sentence, but نحو is never one of the options. |
 | Jiki | جیکی | fa | The interpreter character and the course's name. Written in Persian script in all prose, unlike the product/language names in the "Keep in English" table (JavaScript, Python, React), which stay Latin. Ezāfe and possessives attach as to any Persian noun («انبار جیکی»). Consistent with «جیکی کوچولو» (mini-Jiki) below. Branded sub-product names (Ask Jiki, Jiki Premium) translate like ordinary UI copy now, per the guide; "Ask Jiki" renders as «از جیکی بپرسید». |
+| bonus (an exercise's optional extra task) | امتیاز | fa | Standing term across every exercise's bonus task label, e.g. «امتیاز: کوتاه نگه دارید» (Bonus: keep it short). Never امتیازی or جایزه or نمره‌ی اضافه. |
+| milestone (a numbered marker on the learning path) | مرحله | fa | **Never «نقطه‌ی عطف»**, which is too academic for this. «مرحله ۱» for "Milestone 1", «به این مرحله برسید» for "reach this milestone". Keep distinct from دستاورد (achievement) and درس (lesson). |
 
 ## Keep in English
 
@@ -108,6 +111,68 @@ review.
 ---
 
 ## Decision log
+
+### 2026-08-06: "milestone" is مرحله; «نقطه‌ی عطف» is banned
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1036, post 5), the word
+choice picked by an agent. **Terms affected:** new `milestone` row.
+**Protected: the ban on «نقطه‌ی عطف» is a native speaker's decision and is not to be
+reversed by an agent.**
+
+Reviewing the website he wrote: "I don't like «نقطه‌ی عطف», because it is a very academic
+word". He gave no replacement, so the substitute is our own call. «نقطه‌ی عطف» is the
+literary "turning point" and carries far more weight than a numbered marker on a learning
+path deserves.
+
+مرحله (stage/step) was chosen: it is the everyday Persian word Iranian learners already
+meet for numbered stages in games and courses, it reads naturally both as a bare label
+(«مرحله ۱») and inside a sentence («به این مرحله برسید»), and it was free in the Persian
+app catalog. دستاورد was ruled out because it already carries "achievement" in the sidebar
+and settings copy, and پله/گام read as a single small step rather than a marker worth
+reaching. Applied to both occurrences in the app catalog: the exercise-path milestone label
+and the empty-challenges description.
+
+### 2026-08-06: Translation engine confirmed as `deepseek`
+
+**Decided by:** mominchezgi, the authoritative native-speaker reviewer for Persian, on the
+"Alternative translation model" comparison thread (https://forum.jiki.io/t/910).
+**Status:** settled. **Terms affected:** none (engine choice, not a glossary or guide
+change). **Files affected:** none; `tracking.json` already carried the block, this entry
+records the decision behind it.
+
+Jeremy posted an alternative-model rendering of a Persian page alongside the published one
+and asked which read better. mominchezgi picked B, the alternative: "It's better in hard
+sentences...". Persian was confirmed on that engine.
+
+Persian therefore runs on `deepseek` rather than the `fable` default, on a native speaker's
+verdict rather than our own judgement or a cost argument.
+
+### 2026-08-05: "bonus" (a task label) is امتیاز
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1230, post 3554),
+actioned by an agent the same day. **Terms affected:** new `bonus` row.
+**Protected: this is a native speaker's decision and is not to be reversed by an agent.**
+
+Reviewing the Digital Root exercise he was first unsure ("I'm not sure, so be careful
+there") whether "bonus" meant an additional prize and proposed «نمره‌ی اضافه». We flagged
+the scope, since it is a standing label on every exercise's bonus task. He came back
+decisive: "No, translate bonus to امتیاز". Applied as the standing term and swept into the
+two already-published instances that predate the decision: Digital Root's «امتیازی: کوتاه
+نگه دارید» (adjectival form) and Word Count's «جایزه: آپاستروف‌ها و نقل‌قول‌ها», both
+corrected to the امتیاز noun form.
+
+### 2026-08-04: a term's first mention on a page is wrapped in guillemets
+
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1164, post 3173),
+actioned by an agent the same day. **Terms affected:** none; this is a typographic rule, so
+it went to `guide.md` under "Style notes" rather than to the glossary.
+
+He asked for the convention to be recorded: when a page introduces a word the learner has
+not met before, the word goes in «…», giving his own example of the Repeat page's
+introduction of کلیدواژه. Applied on that page to the three terms the source `<define>`s on
+first mention (کلیدواژه، بلوک کد، حلقه); later mentions stay plain, so the marking reads as
+"here is a new term" and not as scare quotes. This sits alongside, and does not disturb, the
+2026-08-01 decision that a parenthetical Persian gloss comes only from a `<define>` tag.
 
 ### 2026-08-04: "choice" splits into گزینه (an option) and انتخاب (what a player picked)
 
@@ -165,20 +230,25 @@ title, «و…» for "and so on", an impersonal unique-keys sentence, a parenthe
 بخواهید)», naming the brackets instead of a "syntax", and a fronted position clause), which
 is item-specific and so lives in `languages/fa/concept/dictionaries.md`.
 
-### 2026-08-04: the Arrays gloss names "boolean" in Latin script
+### 2026-08-04: the Arrays gloss names the concept بولی
 
-**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1095, post 3117),
-actioned by an agent the same day. **Terms affected:** none; the `Boolean` row is unchanged
-and منطقی remains the term in running prose.
+**Decided by:** native speaker mominchezgi (https://forum.jiki.io/t/1095, posts 3117, 3189
+and 3251), actioned by an agent the same day. **Terms affected:** none; the `Boolean` row is
+unchanged and منطقی remains the term in running prose.
 **Protected: this is a native speaker's decision and is not to be reversed by an agent.**
 
 Reviewing the Arrays page he asked that the parenthetical gloss on the opening sentence
-(«(منطقی، واژه‌ی پرطمطراقِ «درست» و «غلط»)») name the term as `boolean`, in Latin script,
-"for the first time (as I said before)". The sentence around it still says «مقادیر منطقی»,
-and every later mention on the page is منطقی, so this is a one-off naming of the English
-word where the page glosses the concept, not a reversal of the 2026-08-03 منطقی decision.
-It is recorded as a reviewer note on `languages/fa/concept/arrays.md` rather than as a rule,
-because it applies to that one gloss.
+(«(منطقی، واژه‌ی پرطمطراقِ «درست» و «غلط»)») name the term differently "for the first time
+(as I said before)". The agent first read that as the English word in Latin script and wrote
+`boolean` there; he corrected it in post 3189 ("Nah! I meant to add Farsi بولی not the
+English word"), and the gloss now reads «(بولی، واژه‌ی پرطمطراقِ «درست» و «غلط»)». In post
+3251 he refined it once more: بولی is named in the sentence itself as well as in the
+parenthesis, so the opening reads «مقادیر منطقی یا بولی استفاده کرده‌اید (بولی، واژه‌ی
+پرطمطراقِ «درست» و «غلط»)». Every later mention on the page is still منطقی, so this remains
+the single permitted naming of بولی in Persian script where the page glosses the concept, not
+a reversal of the 2026-08-03 منطقی decision. It is recorded as a reviewer note
+on `languages/fa/concept/arrays.md` rather than as a rule, because it applies to that one
+gloss.
 
 The rest of that post is sentence-level rewording on the same page (سر و ته for "two ends",
 the appositive parenthesis losing its آن, «هر برگه‌ی کاغذ برای یک اسم», درست می‌کند for

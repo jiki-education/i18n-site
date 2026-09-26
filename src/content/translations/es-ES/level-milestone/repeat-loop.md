@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/es-ES.json"
 en_md5: "4d0073d2f9813e52bd3412086f130489"
-governance_sha: "16f805d"
+governance_sha: "4caf34be"
 content_version: "8d215501e919"
-published_at: "2026-08-20"
+published_at: "2026-09-26"
 ---
 
 Buen trabajo en este nivel. Los bucles son un bloque fundamental de la programación, y esperamos que ya te sientas bastante cómodo con ellos.

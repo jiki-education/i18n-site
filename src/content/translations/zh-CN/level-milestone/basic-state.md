@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/zh-CN.json"
 en_md5: "7205cc09a500e11d5ec44a6978ae5af7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "08df91ffdb3e"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 做得好！这一关你做得不错。现在你能在程序运行时跟踪变化的值了，这与你几关前相比，可是实实在在的进步。

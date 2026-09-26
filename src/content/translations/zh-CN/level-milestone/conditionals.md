@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/zh-CN.json"
 en_md5: "9c912874e8026dfd16f56d62ede34016"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "a5ab156295ba"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 做得不错！你通过了条件关卡。希望 `if` 和 `else` 现在用起来已经相当自然了。

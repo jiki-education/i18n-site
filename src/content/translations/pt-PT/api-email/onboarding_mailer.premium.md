@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.pt-PT.yml"
 en_md5: "c5baf864e491a2f763a346af05470f74"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "c4c708c86457"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.premium","rows":[{"key":"subject","english":"Get More Out of Jiki (and help us out)","target":"Tira Mais Partido da Jiki (e ajuda-nos)"},{"key":"preview","english":"We made Jiki free because we want it to be accessible to everyone regardless","target":"Tornámos a Jiki gratuita porque queremos que seja acessível a todos, independentemente"},{"key":"greeting","english":"Hi there,","target":"Olá,"}]}]}]
 ---
 

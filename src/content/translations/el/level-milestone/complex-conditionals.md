@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "07656bf41b4102374b8f16654db4f461"
-governance_sha: "af9c03a"
+governance_sha: "4caf34be"
 content_version: "fbee5e7e2f87"
-published_at: "2026-08-19"
+published_at: "2026-09-26"
+forum_topic_id: 1738
 ---
 
 Καλή δουλειά σε ένα απαιτητικό επίπεδο. Τώρα έχεις κατακτήσει τα `and`/`or`, το modulo και τους βρόχους χωρίς μέτρημα.

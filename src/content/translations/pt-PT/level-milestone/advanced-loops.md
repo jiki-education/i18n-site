@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/pt-PT.json"
 en_md5: "3eb6e1c44486daf5e71618893b5e8bae"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "105c7fe718c4"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Excelente trabalho. Agora já dominas os ciclos for, os ciclos while, o break e o continue. Estes são os ciclos que mais vais usar fora deste curso, por isso valem bem o tempo que investiste.

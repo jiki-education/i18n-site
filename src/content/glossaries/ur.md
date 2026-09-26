@@ -3,9 +3,9 @@ lang: "ur"
 name: "Urdu"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "93d59d65729a"
-published_at: "2026-07-31"
+governance_sha: "4caf34be"
+content_version: "895577e0cb0c"
+published_at: "2026-09-26"
 term_count: 93
 category_id: 235
 forum_topic_id: 476
@@ -170,6 +170,104 @@ Not written into the tables above; flag these via `/action-forum-post` once real
 ---
 
 ## Decision log
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout), run as a single fable
+worker per `orchestrator.md`'s one-worker-per-scope rule. Logged here for review, not
+written to `glossary.md`.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| challenge (product feature) | چیلنج | Transliteration; مقابلہ would read as "competition". | high |
+| dashboard | ڈیش بورڈ | Settled transliteration, names a top-level nav destination. | high |
+| concept (curriculum item) | تصور | "Concept Library" = تصورات کی لائبریری; alternatives نظریہ / خیال. | medium |
+| Premium (plan/brand) | پریمیم | Transliterated rather than kept Latin; used adjectivally throughout. | medium |
+| Deep Dive | ڈیپ ڈائیو | Feature name transliterated; تفصیلی حل was the descriptive alternative. | medium |
+| hint | اشارہ | Vs the transliterated ہنٹ, also common in Pakistani ed-tech. | medium |
+| to unlock | کھولنا / کھل جانا | Lock/unlock metaphor recurs; ان لاک کرنا was the alternative. | medium |
+| syntax | سنٹیکس | Vs کوڈ کی ساخت; interpreter-catalog passes will hit this heavily. | low |
+| Learn to Build | بنانا سیکھیں | Translated to parallel پروگرامنگ سیکھیں; could stay English as a brand title. | low |
+
+`syntax` and `Learn to Build` are the two rows worth a native speaker's ruling on the Urdu
+glossary thread. Flag, not a row: Urdu first-person verbs are gendered — Jiki's "I'll try
+first" phrasing was kept masculine (سوچ رہا ہے), consistent with treating the interpreter as
+a character; a reviewer should confirm that's the intended default.
+
+Cross-cutting RTL note (not Urdu-specific): `layout.internalHeader.backToJiki` bakes a
+literal directional arrow into the catalog string (`→`/`←`), which belongs in CSS/an icon,
+not catalog text — every RTL locale will hit this.
+
+### 2026-08-01: Guide slimmed to rules only
+
+**Decided by:** agent, on an owner-requested pass over `guide.md`. No rule was changed or
+dropped; everything below is the reasoning that used to sit in the guide and is kept here
+instead, because the guide is loaded into the prompt for every Urdu item in every pass.
+
+**Provenance of the settled conventions.** The guide's conventions (the aap register,
+verb-final SOV, Urdu punctuation, Western digits, ergative "ne" on perfective clauses,
+light verbs) were drafted during the language bootstrap and then exercised end to end on
+the first real Urdu page, the using-functions concept page. They draw on real Urdu tutorial
+forums, general-audience Urdu tech explainers, Mozilla's Urdu localization style guide, and
+Urdu Wikipedia. Duolingo has no Urdu course and no Urdu-language UI, so unlike most Jiki
+languages there was no Duolingo Urdu tone to benchmark against. None of this has yet been
+reviewed by a native speaker: the conventions remain unconfirmed drafts, except those
+covered by the 2026-07-30 owner entry below.
+
+**Script.** "Roman Urdu" (Urdu phonetically spelled in Latin letters) was rejected because
+it is a texting and social-media convention, not something serious educational writing
+uses; real Urdu educational and technical content is written in the Perso-Arabic script.
+
+**Western digits.** Keeping Western Arabic digits (`30`, not the Eastern Arabic-Indic
+form) is confirmed standard practice in Urdu technical and digital content, and Mozilla's
+Urdu localizer guide is explicit on the point. This is a genuine divergence from Persian,
+which keeps the Eastern forms, so do not copy the Persian rule across.
+
+**Backticking bare English tokens in RTL prose.** The reason the guide tells the
+translator to lean on code formatting rather than trusting the renderer: mixing bare Latin
+tokens into an RTL line is a documented, still-unresolved pain point even for mature
+RTL-aware projects (KDE's localization team tracks it as open bugs). Backticked code is
+visually distinct and reads far more cleanly than an unmarked script switch.
+
+**Formality: aap, not tum or tu.** This looks like a departure from other Jiki languages'
+"use the informal register", and is not. In real Urdu digital and educational writing aap
+*is* the modern, warm, everyday register, confirmed across independent sources: an Urdu
+programming-tutorial forum thread, a general-audience Urdu coding explainer, and Mozilla's
+Urdu localization style guide, all of which use it for exactly this kind of warm,
+instructional, second-person address. Tum carries either family/close-friend intimacy or,
+from an unfamiliar voice like Jiki's, reads as presumptuous; tu is intimate-to-rude outside
+very close relationships. Aap is therefore the correct mentor-voice choice, not a formality
+downgrade.
+
+**Brackets.** The reason no counting word is used is that the pairness is already carried
+by the dual form of the word itself, and the accompanying code and images already show two
+brackets.
+
+**Jiki plus postpositions.** The pattern of attaching Urdu postpositions directly after the
+Latin-script name is already in use in real translated content (the using-functions concept
+page). The general instruction to flag awkward constructions for native-speaker review was
+dropped from the guide as a restatement of `global/rules.md` § "When unsure".
+
+**Duplicates and defects removed.** The guide stated the Western-digits rule twice (once in
+the Script section, once as a "Numbers in running prose" style note); it is now stated once,
+with "including mid-sentence in running prose" folded into it. The "Audience specifics" and
+"Worked examples" sections restated `global/voice.md`'s own headings (titles, calls to
+action, acronyms); the restatements were dropped and the concrete Urdu examples kept. The
+"Term clarification" section restated voice.md's rule that a `<define>` tag is the only
+trigger for a gloss; only the Urdu-specific consequence was kept, namely that a settled
+transliteration the reader recognizes is still glossed where the source marks it. The
+worked example explaining "API" was dropped from the guide because the identical Urdu
+explanation is already in the glossary's `API` row. One typo was fixed: an accidental Urdu
+"ya" stood where the English "or" belonged in the ergative bullet ("a missing or misplaced
+ne").
+
+**Checked for contradictions, none found.** The digit rule and every example agree (Western
+digits throughout; the Eastern form appears only as the counter-example). The quotation
+convention is stated once and is not contradicted anywhere. There is no instruction to
+gloss a term on first occurrence, so the defect found in the Persian and Arabic guides is
+absent here. No coverage gap was filled and no new rule was added.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

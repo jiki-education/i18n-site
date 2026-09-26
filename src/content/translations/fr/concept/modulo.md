@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/modulo/page.md"
 en_md5: "4955abecb626b8eff02ee7484e2065dd"
-governance_sha: "d455b95"
+governance_sha: "4caf34be"
 content_version: "e863476d9c87"
-published_at: "2026-08-12"
+published_at: "2026-09-26"
+forum_topic_id: 1464
 ---
 
 Jusqu'ici, on a utilisé l'addition, la soustraction, la multiplication et la division pour faire de l'arithmétique. On va maintenant en découvrir un de plus : l'opérateur de reste (_remainder_ en anglais).

@@ -3,12 +3,13 @@ lang: "th"
 name: "Thai"
 family: null
 stage: "setup"
-governance_sha: "738c7cb"
-content_version: "6681f122e1f1"
-published_at: "2026-08-04"
+governance_sha: "4caf34be"
+content_version: "81a2dccec8e6"
+published_at: "2026-09-26"
 term_count: 99
 category_id: 430
 forum_topic_id: 1049
+video_player_forum_topic_id: 1477
 ---
 
 # Thai (th) glossary
@@ -172,6 +173,36 @@ How to phrase a bracket in running prose is in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-06: Translation engine confirmed as `fable`
+
+**Decided by:** native speaker `faiifaiipuipui`, on the "[Thai Review] Which of these three translations reads best?" comparison thread (https://forum.jiki.io/t/1050, post 2), 2026-08-04. **Status:** settled.
+**Terms affected:** none (engine choice, not a glossary or guide change).
+**Files affected:** `tracking.json` only, which now carries a `translation_engine` block of `{"engine": "fable", "model": "fable"}`. It had no block before, meaning the engine was unconfirmed.
+
+Three renderings of the same Bouncer exercise passage were posted as A, B and C, produced by three different models from identical instructions, guide and glossary. He opened his reply with the verdict:
+
+> Let's start with which one is the best. That would be **B**.
+
+His reasoning was given as answers to the three specific questions the thread asked, and it is about word choice rather than a general impression:
+
+1. **`bouncer`.** "Bouncer in the context of a person checking whether a person is allowed in a venue is almost always call `การ์ด`. The longer term of `การ์ดหน้าประตู` is also fine. The term `คนเฝ้าหน้าประตู` is understandable, but they sound more generalized, and `คนเฝ้าประตู` will sound much more natural." B was the version that used `การ์ดหน้าประตู`; A used `คนเฝ้าหน้าประตู` and C used `พนักงานคุมประตู`.
+2. **`smart` clothes.** "This one have no direct translation in Thai. No one would understand if you use the term `สมาร์ท`, and `สุภาพเรียบร้อย` is also a level more formal than `smart` clothing. `สุภาพ` will probably convey the level of formality best. I'm also thinking of the word `ไปรเวท` ... I believe both `สุภาพ` and `ไปรเวท` would work fine." This is the one point where his preferred wording is C's `สุภาพ` rather than B's `สุภาพเรียบร้อย`, and A's `สมาร์ท` is rejected outright. It did not change his overall verdict.
+3. **Spacing around bold text.** "No space." The bold run attaches directly to the surrounding text.
+
+#### Why the letter B means `fable` here, and not `gemini`
+
+**This thread predates the standard A/B/C convention.** The fixed convention used on later comparison threads is A = `fable`, B = `gemini`, C = `deepseek`. It did not exist when this thread was generated, so **reading B as `gemini` here would be wrong.** Per the verified generating-script mapping for this specific thread, the labels were:
+
+- **A = `deepseek-v4-pro`**
+- **B = `fable`**
+- **C = `gemini-3.1-pro-preview`**
+
+So his choice of B confirms **`fable`**, not `deepseek` and not `gemini`. Anyone re-reading this thread later must use the mapping above rather than the standard convention.
+
+Thai therefore stays on the `fable` default, but that is now a native speaker's confirmed choice rather than an unconfirmed default. Per `orchestrator.md`, `"engine": "fable"` in a `translation_engine` block is a recorded human decision and must never be read as a config error or a missing setting.
+
+**Not yet actioned from the same post:** the two wording points above (his preference for `สุภาพ` over `สุภาพเรียบร้อย` for "smart" clothes, and the no-space rule around bold) are translation guidance, not an engine decision, and are recorded here only as the reasoning behind the verdict.
 
 ### 2026-08-04: English hint in parentheses for terms Thai speakers say in English
 

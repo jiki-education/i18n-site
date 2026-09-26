@@ -3,10 +3,10 @@ lang: "it"
 name: "Italian"
 family: null
 stage: "reviewing"
-governance_sha: "dec20ea"
-content_version: "7a9faa926722"
-published_at: "2026-08-04"
-term_count: 67
+governance_sha: "4caf34be"
+content_version: "a423f084e893"
+published_at: "2026-09-26"
+term_count: 74
 category_id: 133
 forum_topic_id: 319
 video_player_forum_topic_id: 763
@@ -45,7 +45,7 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 |---------|---------|-------------|-------|
 | comparison | confronto | it | Stands alone. Avoid "comparazione". |
 | statement (executable) | istruzione | it | The imperative sense: a line of code that does something and gets executed. |
-| statement (logical claim) | proposizione | it | The proposition sense: a claim that is true or false; also a test assertion. Deliberately distinct from _istruzione_ above; never cross-use. |
+| statement (logical claim) | (semplice) affermazione | it | The everyday "something you could say out loud that is true or false" sense; also a test assertion. Use _semplice affermazione_ where the sentence is introducing the idea, plain _affermazione_ thereafter. Never _proposizione_, which reads as a formal logical proposition. Deliberately distinct from _istruzione_ above; never cross-use. |
 | to call (a function) | chiamare (una funzione) | it | Use _chiamare_ consistently (not "invocare"). |
 | to define (a function) | definire (una funzione) | it | Distinct from _dichiarare_ (declare), which is not used for this concept here. |
 | parameter | parametro | it | Declaration-site name. |
@@ -55,6 +55,7 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 | to return (a value) | restituire | it | "La funzione restituisce 30." Not "ritornare". |
 | return value | valore restituito | it | Noun form; matches the verb _restituire_ above for consistency. |
 | brackets (the two after a function name) | parentesi | it | The `()` pair written after a function name to call it: _parentesi tonde (`()`)_ where the type matters, plain _parentesi_ once the round pair is established in context. See the Brackets table below for the glyph names. |
+| helper function(s) | funzione ausiliaria / funzioni ausiliarie | it | Confirmed by native speaker FraSanga, independently, across three review threads. Superseded/wrong: _funzione/i helper_ (English loanword), _funzione/i di aiuto_, _funzione/i di supporto_. |
 
 ### Loops, state & program flow
 
@@ -70,6 +71,7 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 | modulo / remainder operator | operatore modulo (operator) / resto (value) | it | Use _operatore modulo_ for the `%` operator; _resto_ for the resulting value. |
 | toggle | azionare | it | Verb. "Ian azionò l'interruttore e la luce si accese." Confirmed by two native speakers: a single plain verb, more natural than the earlier draft _alternare_, which invited an on/off two-word pairing. |
 | scope | scope | en | Where the source `<define>`s it, gloss as _ambito (di visibilità)_, then use _scope_. |
+| state (program state) | stato | it | Where the source `<define>`s it, or wherever the concept is being introduced/explained rather than just referenced, gloss it as _stato, cioè le informazioni che descrivono la situazione attuale del programma_ (adjust case/preposition to the sentence). Use this clarifying gloss consistently wherever "state" is explained, not only on the `concept/state` page. What is standing is the **pattern**, an appositive introduced by _cioè_ that says concretely what the state is, not one fixed string: a bare later reference to _lo stato_ is left alone (glossing every mention turns the clarification into noise), and where the sentence names a specific state the appositive names that instead, e.g. _uno stato, cioè la registrazione del fatto che stiamo viaggiando a sinistra o a destra_. The `concept/state` page keeps its own reviewer-approved expansion of `<define>state</define>`, _stato (_state_ in inglese), cioè la condizione in cui si trova qualcosa_; do not overwrite it with the wording above. |
 
 ### Tooling & engineering
 
@@ -85,6 +87,8 @@ These are terms where the Italian is used in prose, so the "Use (it/en)" column 
 |---------|---------|-------------|-------|
 | feature (platform capability) | funzionalità | it | Deliberately distinct from _funzione_ (function) to avoid collision. |
 | course | corso | it | The whole Jiki course the learner is taking: _in questo corso_. Distinct from _lezione_ (lesson) and _percorso_ (curriculum). |
+| level (a stage of the course) | livello | it | The unit the learner completes to unlock the next one, and the unit the milestone emails celebrate. Jiki's progression is deliberately game-like (levelling up), so the videogame connotation of _livello_ is wanted, not a drawback. Never _modulo_ (already the `%` operator, and _modulo_ = a web form in the app UI), never _passaggio_, _sezione_ or _lezione_. "Next level" is always _il prossimo livello_ across the whole milestone-email series. |
+| lesson (inside a level) | lezione | it | The individual teaching unit a level is made of; several lessons make one _livello_. Use it only where the English says "lesson", never as a rendering of "level". |
 | curriculum | percorso | it | Never bare "curriculum": in Italian it means a CV/résumé, a false friend. Use _percorso_ for the learning-curriculum sense. |
 | pathway | percorso | it | A structured learning sequence. Same word as _curriculum_ above; the two senses rarely appear together in one document. |
 | track (curriculum path) | indirizzo | it | Confirmed by a native speaker: the standard Italian word for a course of study (secondary-school _indirizzo_, university track). Stays distinct from _percorso_ (pathway). |
@@ -105,6 +109,8 @@ Everyday words from an exercise's subject matter where the obvious rendering is 
 | radial width / radial height (ellipse) | raggio orizzontale / raggio verticale | it | Confirmed by a native speaker: the wording Italian graphics usage actually employs for an ellipse's two radii. Masculine, so the article and preposition agree with _raggio_: _un raggio orizzontale di 40_, _ed un raggio verticale di 20_. Never _larghezza radiale_ / _altezza radiale_, which are literally correct but not what is said. |
 | jumbled (parts swapped/rearranged) | stravolto / stravolta | it | Confirmed by native speakers. The sense is a thing whose own parts have been shuffled and swapped around, not a thing that is untidy inside. Agree gender with the noun: _casa stravolta_. Never _disordinato_ / _in disordine_ (that is interior mess), and not _scombinato_. |
 | entrance (building) | ingresso | it | Confirmed by a native speaker: the construction/building term. Masculine: _un ingresso_, never the feminine _un'entrata_. Distinct from `input (to a function)` below, which is a different English word and stays _input_. |
+| builder(s) (construction) | muratore / muratori | it | Confirmed by a native speaker: the construction-site term for the workers building a wall/structure. Never _costruttore/i_, which reads as "constructor" (a builder/developer entity), not the tradesperson. |
+| tile rack (Scrabble) | leggìo | it | Confirmed by a native speaker, matching the term already used consistently in the sibling exercise `tile-search`. Masculine, same as the superseded term: _il leggìo_, _un leggìo_, _nel leggìo_. Never _portatessere_, which is superseded on `tile-rack`. |
 
 ## Keep in English
 
@@ -134,6 +140,7 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 | shelves (storage) | scaffali | The shelves where variables and functions are stored. Masculine plural: _gli scaffali_ (plural), _uno scaffale_ (singular). |
 | warehouse (Jiki's warehouse) | magazzino | The place where Jiki hangs out and keeps his machine shelf. Masculine: _il magazzino_. Distinct from _officina_ (workshop). |
 | board / whiteboard | lavagna | **One object, one word.** The board the learner writes instructions on for Jiki to follow, and the board a function keeps its own notes on, are the same thing. Feminine: _la lavagna_. Use _lavagna bianca_ only if the whiteness of the surface specifically matters to the sentence; otherwise plain _lavagna_ is the natural everyday word for a board in a room. No collision with _array_. |
+| layer (of bricks, a wall) | fila | Never _strato_, which doesn't sound natural for masonry in Italian. Italian describes a horizontal row of bricks as _fila_ (or the technical term _corso_). Confirmed by native-speaker review (see notes). |
 
 ## Brackets
 
@@ -149,6 +156,394 @@ Naming convention and worked example are in `guide.md`.
 ---
 
 ## Decision log
+
+### 2026-08-30: `level` settled on `livello`; `lesson` is `lezione` and is a different thing
+
+**Decided by:** Jiki product side, answering a question native speaker kernelaklees asked on
+three level-milestone email review threads (https://forum.jiki.io/t/1657,
+https://forum.jiki.io/t/1654/5 and https://forum.jiki.io/t/1659/3). **Terms affected:**
+`level (a stage of the course)` and `lesson (inside a level)` (two new rows, under "Platform
+& curriculum vocabulary"). This closes the open 2026-08-16 entry below.
+
+Her question was not "which Italian synonym reads best" but "what is an English *level*
+structurally", because Italian would render a course, a module, a lesson, a section and a
+plain procedural step all differently. The answer is that Jiki's progression is deliberately
+game-like: a learner completes a level and unlocks the next one, and the milestone email is
+the celebration of that. So the videogame connotation she was worried about in `livello` is
+the connotation the product wants, not a mistranslation to design around. `livello` stands.
+
+The three alternatives she floated are all ruled out for concrete reasons, not taste:
+`modulo` is already taken twice over (the `%` operator in the glossary, and _modulo_ = a web
+form in two `app/messages.json` strings); `lezione` is already the app's word for the
+teaching units *inside* a level, so reusing it for the level would collapse a distinction the
+product actually makes (`app/messages.json` has "Completa prima le lezioni precedenti in
+questo livello"); and `passaggio`/`sezione` name a step or a subdivision, which is not what a
+level is. `lesson` gets its own row for exactly that reason, so a future pass renders "over
+the next few lessons" as _le prossime lezioni_ without that reading as an inconsistency with
+`livello`.
+
+Two published milestone emails were normalised to match, both of them places where an earlier
+suggestion of hers had been applied before this question was settled: `complex-conditionals`
+("Nel prossimo passaggio" from t/1641) and `advanced-loops` ("Nella prossima sezione" from
+t/1637) both become "Nel prossimo livello", which is what the other 17 emails in the series
+already say. She had explicitly asked for the series to be aligned once a term was chosen.
+
+### 2026-08-30: the `state` gloss is a pattern, applied where the term is explained
+
+**Decided by:** this repo, resolving the open half of kernelaklees's question on
+https://forum.jiki.io/t/1647/1 ("if you like this explanation, we can add it there too").
+**Terms affected:** `state (program state)` (existing row, Notes extended; the term and her
+gloss wording are unchanged).
+
+She asked whether the clarifying appositive she added to the "Programs that respond"
+milestone email should be reused everywhere "state" appears. Answer: everywhere the term is
+*introduced or explained*, which is what the row already said, and nowhere else. Glossing
+every later mention of _lo stato_ would turn a clarification into noise, and Italian prose
+that re-explains a term it introduced two paragraphs ago reads as padding.
+
+What is standing is the pattern (an appositive with _cioè_ naming concretely what the state
+is), not one fixed string. Her own later review of the `concept/state` page
+(https://forum.jiki.io/t/1453, posts 6 and 8, 2026-08-23, a week after t/1647) is the proof:
+there she wrote _cioè la condizione in cui si trova qualcosa_ for the `<define>` expansion and
+_cioè la registrazione del fatto che stiamo viaggiando a sinistra o a destra_ for the
+direction sentence, both the same shape, both tuned to their sentence. That page keeps her
+wording; the glossary's phrasing is not force-fitted over a native speaker's own later call on
+the same page. The Notes column now says so, so a future pass does not "fix" it.
+
+Applied to the one place it was still missing, the `conditionals-and-state` milestone email
+(`../api`), exactly where she originally proposed it: "Combinare i condizionali con lo stato,
+cioè le informazioni che descrivono la situazione attuale del programma, è il punto in cui...".
+The earlier emails that name "stato" without a gloss (`variables`, `basic-state`) are left as
+they are: she reviewed and approved both.
+
+### 2026-08-19: `layer` (of bricks, a wall) settled on `fila`
+
+**Decided by:** native-speaker review (kernelaklees, forum t/1179, `exercise/build-wall`). The
+existing translation used `strato` for the "top layer" of bricks a wall is built from; she
+said `strato` doesn't sound natural for masonry in Italian, and that a horizontal row of
+bricks is `fila` (or the technical `corso`), even though "layer" is the natural English word
+for stacked materials including bricks. Applied to `build-wall/instructions.md` (one
+occurrence) and `finish-wall/instructions.md` + `finish-wall/messages.json` (the same wall
+family, four occurrences), which used identical `strato superiore` phrasing. Row added to
+`glossary.md`.
+
+### 2026-08-16: `level` / `livello` (level-milestone emails) left open, needs product input (CLOSED 2026-08-30)
+
+**Raised by:** native speaker kernelaklees, on three level-milestone email review threads:
+https://forum.jiki.io/t/1657/1 ("Methods to the madness"), https://forum.jiki.io/t/1654/5
+("Now you're in charge") and https://forum.jiki.io/t/1659/3 ("Strings, attached", a later
+reply pointed at the same open question). **Status: closed on 2026-08-30, see the entry at the top of this file: `livello` stands, and `lezione` is a separate term for the units inside a level.** **Terms affected:**
+none. `livello` is unchanged in `glossary.md`; no row was added or edited.
+
+On t/1657 she said she is "not very fond of the word *level*": `livello` in Italian reads as
+a videogame progression step rather than part of a learning path, so she had been using
+`passaggio` instead, and said she was considering switching to `modulo` or `lezione`,
+personally favouring `modulo`.
+
+On t/1654 (posted the next day, after `livello` was kept over her `passaggio` in "Nel
+prossimo livello" because that phrasing recurs across all 19 milestone emails) she went
+further: her concern is specifically the gamified connotation ("ho superato il livello"),
+and she said she cannot propose the right Italian term without knowing what the English
+"level" is structurally meant to represent, since Italian would render each differently: a
+whole course, a lesson (one teaching unit inside a course), a module (a structured part of a
+course), a section (a smaller part inside a lesson or module), or `passaggio` (a simple
+procedural step). She asked for that to be clarified so all 19 emails can be aligned
+consistently once a term is picked.
+
+This is not treated as a clean native-speaker term call to action, unlike most rows in this
+file. The reasoning is sound and repeated across two threads, but she is explicitly asking a
+question about what the English source means structurally, not just proposing a target-side
+synonym; between her own posts she named three different candidates (`passaggio`, `modulo`,
+`lezione`) without settling on one, and said her own preference depends on an answer only the
+product side can give. Picking one now would be guessing at English intent on her behalf, not
+translating a decided term. Logged in `state/content-updates-needed.md` and flagged as an
+open item for Jeremy: what "level" is structurally meant to be (course / lesson / module /
+section / step), which then lets kernelaklees's Italian question be answered and a glossary
+row written. Until then `livello` stays as the currently published rendering across the
+milestone emails.
+
+### 2026-08-16: `state` gains a standing clarifying gloss
+
+**Decided by:** native speaker kernelaklees, https://forum.jiki.io/t/1647/1 ("Programs that
+respond" level-milestone email review). **Human-decided, agent-applied.** **Terms affected:**
+`state (program state)` (new row, under "Loops, state & program flow").
+
+Reviewing the milestone email, which already used "stato" for "state" the way
+`concept/state/page.md` introduces it, kernelaklees added a clarifying appositive the first
+time the word appears: "stato, cioè alle informazioni che descrivono la situazione attuale
+del programma" ("state, that is, the information describing the program's current
+situation"). She said "stato" on its own can read as a bit abstract in Italian, but in
+programming it names something concrete, the data representing the program's current
+situation, and asked that if this explanation is liked, it be added everywhere else "state"
+appears too.
+
+This is recorded as a glossary row rather than only a one-off wording fix, because it is
+reusable, actionable instruction for any pass introducing or explaining the term, not a
+rationale. The exact phrasing in her post uses the dative "alle" to agree with the sentence
+it sits in ("Usare i condizionali insieme allo stato, cioè alle informazioni..."); the
+glossary row states it as a standalone appositive ("stato, cioè le informazioni...") so a
+translator can adapt the case/preposition to whichever sentence introduces the term, rather
+than copying her sentence's grammar verbatim into an unrelated one.
+
+Applying the gloss to every other place "state" is explained (`concept/state/page.md` and
+any other content that introduces the term) is a per-occurrence sweep, not a mechanical
+find-replace, so it is not done here; logged in `state/content-updates-needed.md` for the
+next pass over each affected item. The level-milestone emails themselves are outside `i18n`
+(see `content-types/level-milestones.md`), so no file in `../api` was touched by this change
+either; picking up the two already-reviewed emails is part of the same follow-up sweep.
+
+### 2026-08-10: `statement (logical claim)` moved from `proposizione` to `(semplice) affermazione`
+
+**Decided by:** native speaker kernelaklees, https://forum.jiki.io/t/948 (post 5).
+**Human-decided, agent-applied.** **Terms affected:** `statement (logical claim)` (existing
+row, under "Functions & control flow"); the Italian `concept/if` page.
+
+Reviewing the `if` concept page, kernelaklees flagged that _proposizione_ reads as a formal
+logical proposition, the technical sense from logic, which is the wrong register for the
+sentence it appears in. The concept page is asking the learner to think of a comparison as
+something they could say out loud ("three is less than five"), an everyday declarative
+sentence rather than a term of art. She gave _affermazioni_ (or _dichiarazioni_) as the right
+sense, and preferred _semplici affermazioni_ in the page sentence itself, where the adjective
+carries the "nothing fancy here" framing the English original has.
+
+The row keeps its deliberate separation from _istruzione_ (`statement (executable)`): the two
+senses still never cross-use, only the logical-claim side changes word. The row is written as
+_(semplice) affermazione_ so the bare noun is available once the idea is established and the
+fuller phrase is used where the concept is being introduced.
+
+### 2026-08-08: avoid stacking "puoi"/"poi" adjacent to each other
+
+**Decided by:** native speaker FraSanga, https://forum.jiki.io/t/1269/3, answering a
+question about `exercise/look-around`'s wording. **Rule affected:** a new `guide.md` style
+note, not a glossary term.
+
+Her post 1 avoided "poi puoi" as reading like a tongue-twister, using "successivamente"
+instead. Asked to confirm whether that was about "then you can" generally or specifically
+the two words landing adjacent to each other, she confirmed it's the latter: "poi potrai"
+(future tense) is unaffected and reads fine, "dopo"/"successivamente" are the substitutes
+when the sense is "then you can" as a sequencing connective. Added as a `guide.md` style
+note rather than a glossary row, since it's a phonetic/word-order rule, not a term mapping.
+
+### 2026-08-07: `helper function(s)` settled on `funzione ausiliaria` / `funzioni ausiliarie`
+
+**Decided by:** native speaker FraSanga, three independent exercise review threads
+(https://forum.jiki.io/t/1296, https://forum.jiki.io/t/1297, https://forum.jiki.io/t/1298).
+**Human-decided, agent-applied.** **Terms affected:** `helper function(s)` (new row, under
+"Functions & control flow"); the Italian instructions and/or message catalog of
+`lower-pangram`, `niche-named-party`, `alphanumeric`, `acronym`, `methodic-pangram` and
+`pangram`.
+
+FraSanga flagged the same problem on three different exercises he was reviewing separately:
+"helper function(s)" was rendered inconsistently across published Italian content, as the
+bare English loanword _funzione/i helper_, as _funzione/i di aiuto_, and as _funzione/i di
+supporto_, depending on which exercise (and sometimes which sentence) it appeared in. All
+three are wrong; he gave the correct term as _funzione ausiliaria_ (singular) / _funzioni
+ausiliarie_ (plural). Three reviewers independently converging on the same correction from
+three unrelated threads is stronger evidence than a single flagged instance, so this is
+treated as settled rather than a proposal.
+
+This is a clean literal term swap: _ausiliaria_/_ausiliarie_ is an adjective agreeing with
+the existing feminine noun _funzione_/_funzioni_, so every occurrence of the wrong renderings
+was a direct drop-in with no article or agreement changes needed elsewhere in the sentence.
+One additional occurrence was swapped by the same logic though it did not literally match one
+of the three flagged phrases: `alphanumeric/messages.json`'s `whereToStart` hint used a bare
+anaphoric "Ogni helper scorre i caratteri..." referring back to the "funzione di supporto"
+mentioned in the same sentence; left as "helper" it would have kept the same wrong loanword
+the fix removes one clause earlier, so it became "Ogni funzione ausiliaria scorre...".
+
+### 2026-08-07: `tile rack` (Scrabble) settled on `leggìo`, never `portatessere`
+
+**Decided by:** native speaker FraSanga, tile-rack review thread
+(https://forum.jiki.io/t/1277/1). **Human-decided, agent-applied.** **Terms affected:**
+`tile rack (Scrabble)` (new row, under "Exercise domain vocabulary"); the `exercise/tile-rack`
+Italian instructions and message catalog.
+
+FraSanga flagged that `tile-rack` called the Scrabble rack _portatessere_, while the sibling
+exercise `tile-search`, covering the exact same concept, already used _leggìo_ consistently
+throughout. This is a genuine term-consistency fix rather than a style preference: two
+exercises about the same object had drifted onto two different words, and `tile-search` was
+already published and correct. He also asked for two specific wording changes in the same
+paragraph: dropping the redundant "di lettere" from "un portatessere con le tessere di
+lettere" (the rack already implies letter tiles), and rewording "non è nel portatessere" to
+"non è sul leggìo" rather than "nel leggìo", to avoid the sentence reading awkwardly so soon
+after the noun's first mention in the same paragraph.
+
+_Leggìo_ is masculine, same as _portatessere_, so the swap is grammatically a drop-in
+everywhere else: _il leggìo_, _un leggìo_, _nel leggìo_. All 17 occurrences across
+`instructions.md` and `messages.json` (title, frontmatter description, body prose, task,
+scenario, and hint strings) were changed. The euphonic-_d_ fixes FraSanga raised on the same
+thread (_e unire_ -> _ed unire_, _a una stringa_ -> _ad una stringa_, _a ogni iterazione_ ->
+_ad ogni iterazione_) are page-specific corrections already covered by the existing euphonic-_d_
+rule in `guide.md`; no rule change was needed, only their application to this page.
+
+### 2026-08-07: euphonic _d_ narrowed to _ed_/_ad_, _od_ dropped
+
+**Decided by:** native speakers kernelaklees and FraSanga, "Italian rules: recurring
+mistakes to fix" thread (https://forum.jiki.io/t/1264, posts 12, 14, 19, 20, 22, 23).
+**Human-decided, agent-applied.** **Affected:** `guide.md` (Grammar section, the euphonic
+_d_ bullet); no glossary rows.
+
+kernelaklees flagged that the guide told the translator to add the euphonic _d_ to _o_ as
+well as to _e_ and _a_, and said _od_ is not current Italian, having checked the official
+dictionaries and the Accademia della Crusca. FraSanga initially disagreed, pointing out
+that _od_ is not non-existent, just rare, and surfacing genuine cases with two consecutive
+_o_ sounds (_od offrire_, _od obbedire_), where speakers usually reach for _oppure_ anyway.
+He cited Treccani, which confirms both readings: _od_ is not incorrect, but in contemporary
+Italian the with-or-without-_d_ choice really only concerns _a_/_ad_ and _e_/_ed_, and _od_
+is considered antiquated and generally advised against by grammars and dictionaries.
+
+Both reviewers then converged on removing it: FraSanga said he had never met a situation
+that needed it and that we can drop it, and later that he did not know why he had been so
+convinced of it. So the rule now covers _ed_ and _ad_ only, with an explicit instruction
+never to write _od_. Neither _ad_ nor _ed_ was ever in dispute and both are unchanged,
+including the earlier finding that _il_ counts as vowel-initial. No sweep of published
+content was needed: the guide had only ever offered _od_ as an option, and no reviewer has
+reported it appearing in an actual translation.
+
+### 2026-08-07: guillemets scope left unchanged (reviewers not yet agreed)
+
+**Decided by:** nobody yet; recorded as an open question from the "Italian rules: recurring
+mistakes to fix" thread (https://forum.jiki.io/t/1264, posts 7, 14, 21, 23).
+**Affected:** nothing. The guide's quotation-mark rules were deliberately not edited.
+
+kernelaklees reported guillemets being applied outside literary contexts and said that in
+technical online text double quotes are the standard. FraSanga restated his original intent:
+guillemets for speech and quoted thought, with everything else (a technical term, or a
+concept there is no better way to express) staying in double quotes. Measured against that,
+the guide already says most of it: guillemets are for quoted material, UI labels take plain
+double quotes, and code and string literals are never touched. The one part that goes
+further than FraSanga's restatement is the bullet putting a word that is being named or
+defined (the _«Algoritmo»_ example) in guillemets, which came out of an earlier round on
+https://forum.jiki.io/t/1191 where kernelaklees asked for a clearer rule.
+
+That is exactly the point the two reviewers are still arguing: kernelaklees asked for an
+example of guillemets outside literature and FraSanga replied that using them only where
+they are needed adds style, and asked where the ambiguity actually is. With one native
+speaker's earlier decision on one side and a live disagreement on the other, changing the
+rule now would mean picking a side, so nothing was changed pending their agreement. Earlier
+rounds on this rule are logged at https://forum.jiki.io/t/762, /t/895, /t/1083, /t/1141,
+/t/1179, /t/1208, /t/1191 and /t/1259.
+
+### 2026-08-06: Translation engine switched to `deepseek`
+
+**Decided by:** FraSanga, a native speaker, on the "Alternative translation model"
+comparison thread (https://forum.jiki.io/t/929). **Status:** settled.
+**Terms affected:** none (engine choice, not a glossary or guide change).
+**Files affected:** none; `tracking.json` already carried the block, this entry records the
+decision behind it.
+
+Jeremy posted an alternative-model rendering of an Italian page alongside the published one
+and asked which read better. FraSanga preferred the second (alternative) version, and
+Italian was switched to it.
+
+Italian therefore runs on `deepseek` rather than the `fable` default. This was a genuine
+switch, made on a native speaker's verdict, not on our own judgement or on cost.
+
+### 2026-08-06: euphonic _d_ rule reconfirmed, no guide change needed
+
+**Decided by:** native speakers kernelaklees and FraSanga, Checkerboard review thread
+(https://forum.jiki.io/t/1259, posts 6 and 7). **Human-decided, agent-applied.**
+**Affected:** nothing in `guide.md` or `glossary.md`; the Checkerboard translation only.
+
+kernelaklees asked for "the rule about using 'ad' before a vowel" to be added and FraSanga
+noted we should already know it. The rule was already written into the guide's Grammar
+section on 2026-08-05 (see the entry below), covering _ed_, _ad_ and _od_ before any
+vowel-initial word, so no guide change was made. What was missing was its application: the
+Checkerboard instructions and message catalog still had _e alta_, _e un colore_, _e ogni
+pezzo_, _e una più grande_, _a una scacchiera_ and _le righe e un ciclo_, all now corrected.
+This is the sweep of existing content the 2026-08-05 entry deferred, done for this exercise
+only.
+
+### 2026-08-06: no second-person possessive on shared work objects, and no second-person clitic on _fare_
+
+**Decided by:** native speaker kernelaklees, Battle Procedures review thread
+(https://forum.jiki.io/t/1257, post 1). **Human-decided, agent-applied.** **Affected:**
+`guide.md` (new Grammar rule); no glossary rows.
+
+kernelaklees flagged _Abbiamo portato qui la tua soluzione_ and asked us to "get rid of
+`tua` everywhere". His reasoning: in Italian, "tua" in this context sounds too personal and
+implies ownership, as if the solution belonged to the user; in collaborative or technical
+environments (forums, shared projects, code reviews) possessive adjectives are better
+avoided because the content is part of a shared workflow, and "tua" can unintentionally
+suggest responsibility or authorship that may not be accurate. The bare _la soluzione_ keeps
+the tone objective and professional.
+
+He extended the same reasoning to _fare_ in the same post and explicitly asked for it as a
+standing rule ("Please @system add even this rule"): personal constructions like _far-ti_
+create unnecessary direct involvement with the reader and introduce the same inappropriate
+personal tone, so _fare_ should stay neutral and never be turned into a form implying an
+action directed at the user. His example was _per farti continuare_ -> _per continuare_.
+
+Written into the guide as one imperative Grammar bullet, next to the existing possessive-chains
+rule (which covers the different case of an English possessive chain between two nouns). The
+rule is scoped to the artefacts of the shared workflow (the solution, the code, the output,
+the result), so it does not reach into the second-person address the guide's Formality
+section requires elsewhere. The one-off fix to the Battle Procedures exercise was applied in
+a separate pass; sweeping the rest of the published Italian content is per-occurrence
+judgement, not a find-replace, so it is logged in `state/content-updates-needed.md` for the
+next retranslate/tidy pass on each item rather than done as a blind sweep.
+
+### 2026-08-05: euphonic _d_ (_ed_/_ad_/_od_) before a vowel-initial word
+
+**Decided by:** native speakers FraSanga and kernelaklees, Relational Snowman review
+thread (https://forum.jiki.io/t/1142). **Human-decided, agent-applied.** **Affected:**
+`guide.md` (new Grammar rule).
+
+FraSanga first flagged individual instances on this page ("e una variabile" -> "ed una
+variabile", etc.) as page-specific corrections, deliberately not written into the guide
+as a general rule pending kernelaklees's opinion (both reviewers were explicit about this
+staging). A follow-up round on the same thread caught that _il_ also counts as
+vowel-initial (starts with _i_), which an earlier fix had missed. kernelaklees then
+confirmed the general rule ("The conjunction 'e' becomes 'ed' when the following word
+begins with a vowel") and FraSanga asked for it to be written up. Written into the guide
+as an imperative rule; scope beyond this exercise (a sweep of existing Italian content
+for the same pattern) is a separate, larger unit of work, not done as part of this
+triage.
+
+### 2026-08-05: construction `builders` are `muratori`, never `costruttori`
+
+**Decided by:** native speaker kernelaklees, Skyline review thread
+(https://forum.jiki.io/t/1180). **Human-decided, agent-applied.** **Affected:**
+`glossary.md` (new "Localize" row); the shared `cityscape` exercise-category message
+catalog and the Skyline exercise's own catalog.
+
+kernelaklees flagged the `alreadyBuilt` error text ("i costruttori sono bloccati...") as
+wrong: on a construction site the workers building a wall are _muratori_ (masons/bricklayers),
+not _costruttori_, which reads as "constructors" in the builder/developer-entity sense
+(the term already carries that sense elsewhere in the platform). A clean literal term swap,
+applied straight away: replaced in the shared `cityscape` category catalog's `alreadyBuilt`
+error string (`i costruttori` -> `i muratori`) and in Skyline's own `stuckError.question`
+hint text, which separately quotes the same English paraphrase. This is a shared-family
+catalog, so the fix reaches every cityscape exercise, not just Skyline; affected exercises
+were re-staged.
+
+### 2026-08-05: no dash may separate clauses in Italian prose
+
+**Decided by:** native speakers kernelaklees and FraSanga, independently, across three
+exercise review threads: Bouncer (https://forum.jiki.io/t/1177), Annalyn's Infiltration
+(https://forum.jiki.io/t/1176) and Stripey Fabric (https://forum.jiki.io/t/1186).
+**Human-decided, agent-applied.** **Affected:** `guide.md` "Style notes"; no glossary rows.
+
+kernelaklees flagged it twice, on _La persona ha 25 anni — avrebbe dovuto essere fatta
+entrare, ma non lo è stata._ and on _Il cane è birichino — la via furtiva è aperta._, both
+times as a blanket instruction never to use a hyphen in any sentence. FraSanga arrived at
+the same place from the other direction and proposed the rule in full: never use a hyphen
+in place of a colon or a comma; when the English has one, use a comma if the sentence
+continues and a colon if something is being explained. Their example was _...all'interno di
+un ciclo - non scrivere tutte le venti strisce a mano!_, which they wanted on a colon.
+
+The existing "Em dashes" style bullet already suggested a comma or two sentences, but it
+read as advice about one glyph rather than a prohibition, and translations kept reproducing
+the English dash. It is replaced with an imperative rule covering `-`, – and — alike, with
+the comma/colon choice spelled out. Compound words, numeric ranges, list markers and code
+are explicitly out of scope.
+
+Applied across the published Italian curriculum: the three flagged strings plus every other
+clause-separating dash found in `it.md` files and Italian message catalogs (bouncer's nine
+check/scenario/hint strings, annalyns-infiltration, stripey-fabric, dnd-roll,
+space-invaders-nested-repeat, stock-market, maze-automated-solve). The bouncer "age →
+verdict" pattern went to a colon rather than a comma: the second clause states the
+consequence of the first, and a bare comma before a following _ma_ reads as a splice.
 
 ### 2026-08-04: a building entrance is `ingresso`, never `entrata`
 

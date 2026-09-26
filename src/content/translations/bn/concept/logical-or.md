@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/logical-or/page.md"
 en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
-governance_sha: "820b2ce"
+governance_sha: "4caf34be"
 content_version: "18dfb7a4fa7d"
-published_at: "2026-08-23"
+published_at: "2026-09-26"
+forum_topic_id: 1854
 ---
 
 আমরা `or`-ও ব্যবহার করতে পারি, আর দুঃখের বিষয়, এবারও JavaScript-এ or বোঝানোর জন্য সুন্দর কোনো কিওয়ার্ড নেই। বদলে, or বোঝাতে আমাদের পাশাপাশি বসানো এই দুটি খাড়া দাগ (ইংরেজিতে _bars_) ব্যবহার করতে হয়। দেখতে অদ্ভুত মনে হয়, কিন্তু আসলে ব্যাপারটা তেমন কিছু নয়। আপনি ঠিকই অভ্যস্ত হয়ে যাবেন।

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "3eb6e1c44486daf5e71618893b5e8bae"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "c670953a16c2"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
+forum_topic_id: 1686
 ---
 
 Καλή δουλειά. Τώρα έχεις κατακτήσει τους βρόχους `for`, `while`, το `break` και το `continue`. Αυτοί είναι οι βρόχοι που θα χρησιμοποιείς πιο συχνά έξω από αυτό το μάθημα, οπότε αξίζουν πραγματικά τον χρόνο που αφιέρωσες.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/colors/page.md"
 en_md5: "a0eea0481b975e45f75774d83966a4a7"
-governance_sha: "dedf66b"
+governance_sha: "4caf34be"
 content_version: "60f4e3ac6319"
-published_at: "2026-08-23"
+published_at: "2026-09-26"
 forum_topic_id: 1849
 ---
 

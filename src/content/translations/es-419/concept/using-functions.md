@@ -4,12 +4,12 @@ type: "concept"
 slug: "using-functions"
 title: "Usar funciones"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/using-functions/source.md"
+source_repo: "i18n"
+source_path: "locales/es-419/curriculum/concepts/using-functions/page.md"
 en_md5: "fc671310093a081113a8f301b6ff53fe"
-governance_sha: "c80036b"
+governance_sha: "4caf34be"
 content_version: "663b43fbc400"
-published_at: "2026-08-06"
+published_at: "2026-09-26"
 forum_topic_id: 748
 ---
 

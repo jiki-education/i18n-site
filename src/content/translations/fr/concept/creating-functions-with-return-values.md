@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/creating-functions-with-return-values/page.md"
 en_md5: "51d31f709a7051c29b499a31ad68555e"
-governance_sha: "b951b19"
+governance_sha: "4caf34be"
 content_version: "27126dc6bf3a"
-published_at: "2026-08-16"
+published_at: "2026-09-26"
 forum_topic_id: 1553
 ---
 

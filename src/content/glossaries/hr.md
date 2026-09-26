@@ -3,9 +3,9 @@ lang: "hr"
 name: "Croatian"
 family: null
 stage: "setup"
-governance_sha: "b56d16a3"
+governance_sha: "4caf34be"
 content_version: "9470681b9534"
-published_at: "2026-09-05"
+published_at: "2026-09-26"
 term_count: 158
 category_id: 463
 forum_topic_id: 1436

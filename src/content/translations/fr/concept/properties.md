@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/properties/page.md"
 en_md5: "0634cd72388bef118e9dd22131a3c1cd"
-governance_sha: "6d4fc0e"
-content_version: "66bd734e68e7"
-published_at: "2026-08-14"
+governance_sha: "4caf34be"
+content_version: "60a6a924ad5a"
+published_at: "2026-09-26"
 forum_topic_id: 1559
 ---
 
@@ -36,7 +36,7 @@ Quand Jiki crée une _string_, il compte les lettres et, mine de rien, écrit da
 <img
   class="concept-image"
   src="/static/images/concept-assets/properties/jiki-counting-letters.webp"
-  alt="Jiki compte les lettres de la _string_ Jeremy et écrit le nombre dans un coin"
+  alt="Jiki compte les lettres de la string Jeremy et écrit le nombre dans un coin"
   width="359"
   height="400"
 />

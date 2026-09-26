@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "6102a39a2418e0d864c33b55b7a669f5"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "07cfdf13bc4d"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 잘하셨어요! Jiki의 코딩 기초 강의 첫 번째 레벨을 완료하셨어요.

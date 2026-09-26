@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/es-ES.json"
 en_md5: "6102a39a2418e0d864c33b55b7a669f5"
-governance_sha: "16f805d"
+governance_sha: "4caf34be"
 content_version: "8f491500a22f"
-published_at: "2026-08-20"
+published_at: "2026-09-26"
 ---
 
 Buen trabajo al completar el primer nivel del curso Fundamentos de Programación de Jiki.

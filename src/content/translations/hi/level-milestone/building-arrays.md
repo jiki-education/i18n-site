@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hi.json"
 en_md5: "f0d47c822253e20fbc27a36405270946"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "6eecedbfd3c3"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 बहुत अच्छा काम! ऐरे से पढ़ना उपयोगी है, लेकिन उन्हें टुकड़े-टुकड़े करके बनाना वह जगह है जहाँ वे वास्तव में अपनी क्षमता दिखाते हैं। किसी चीज़ पर लूप लगाइए, जिन हिस्सों की आपको परवाह है उन्हें एक नए ऐरे में इकट्ठा कीजिए, और उसे लौटा दीजिए — यह एक ऐसा पैटर्न है जिसे आप बार-बार अपनाएँगे।

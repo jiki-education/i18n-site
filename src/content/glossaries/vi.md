@@ -3,9 +3,9 @@ lang: "vi"
 name: "Vietnamese"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "8750042c7d39"
-published_at: "2026-07-31"
+governance_sha: "4caf34be"
+content_version: "44ec8ab87f7f"
+published_at: "2026-09-26"
 term_count: 99
 category_id: 134
 forum_topic_id: 322
@@ -167,6 +167,103 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout), run as a single fable
+worker per `orchestrator.md`'s one-worker-per-scope rule. Logged here for review, not
+written to `glossary.md`.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| challenge (Jiki Challenges) | thử thách | Must stay distinct from _bài tập_ (exercise). | medium |
+| Deep Dive | Phân tích chuyên sâu | Keeping English is a defensible alternative; needs a native-speaker call. | medium |
+| dashboard | trang tổng quan | Kept-English "Dashboard" also circulates. | medium |
+| scenario (test) | kịch bản | Sets precedent against _tình huống_. | medium |
+| hint | gợi ý | Distinct from tip → _mẹo_, which the UI also uses. | medium |
+| Learn to Build | Học xây dựng | Branded track name; keeping English is the main alternative. | medium |
+| plan (subscription) | gói | Tier names stay English except Basic → _Cơ bản_; worth confirming. | medium |
+| scrubber | thanh tua | No established Vietnamese term. | low |
+| frame (execution) | khung hình | Collides with the video sense; _bước_ (step) is the fallback. | medium |
+| streak | streak (kept) | Already kept in the glossary; UI settled on "bắt đầu / xây streak". | high |
+
+Flags, not glossary rows: two length risks to eyeball in the real UI ("Xem Phân tích chuyên
+sâu", "Giải các kịch bản thưởng"). `layout.footer.freeContent.agenticGuides` keeps "agentic
+coding" in English inside a Vietnamese sentence, as no agreed term exists.
+
+### 2026-08-01: Guide prune, rationale moved here
+
+**Decided by:** agent, in the cross-language guide-prune pass. Every rule in `guide.md` was
+kept; only the reasoning behind those rules moved into this entry, so that the guide (which
+is loaded into the prompt for every Vietnamese item) carries instructions and not
+justification.
+
+#### Audience and register
+
+The guide previously described the Vietnamese audience in detail. That research, not the
+rule, is:
+
+- Readers are in Vietnam, learning largely self-taught or through community platforms
+  (howkteam, viblo, F8, CodeGym), not a formal classroom.
+- Vietnamese tech-education content is peer-to-peer and informal by convention, not
+  textbook-dry. Choosing a peer voice over a school-hierarchy voice is itself a signal that
+  Jiki isn't a stiff classroom.
+
+The surviving rule in the guide is simply to use the register real Vietnamese programming
+communities use with each other.
+
+#### Address terms (why each form was chosen or ruled out)
+
+- **"Bạn"** ("friend") is age-neutral and gender-neutral, the standard address in real
+  Vietnamese online tutorials, and the correct choice for a mass audience whose age and
+  gender the writer cannot know.
+- **Kinship-hierarchy address is ruled out** ("em" paired with "thầy"/"cô", or
+  "anh"/"chị") because it imposes a teacher-student or older-younger relationship that
+  reads school-ish and slightly condescending for a peer-to-peer platform aimed at adults,
+  and because "thầy"/"cô" forces a gender choice a single brand voice should not make.
+- **First person "mình"**: "tôi" reads cold and formal for this context, and "ta" reads
+  self-important.
+- **"Chúng ta"** is neutral and inclusive of the reader; "chúng mình" is warmer and also
+  inclusive.
+
+#### Jiki's third-person pronoun (why the alternatives lost)
+
+Jiki is a character the prose talks *about* constantly ("it's his job to interpret", "he
+can remember things"), so this pronoun recurs on nearly every concept page and had to be
+fixed once. **"Cậu ấy"** is a warm, peer-level third person for a young male character,
+which is what Jiki is. The rejected options:
+
+- **"Nó"** is grammatically available for a non-human, but it flattens Jiki into a thing or
+  a piece of software, exactly the reading the course is built to avoid.
+- **"Bạn ấy"** collides with "bạn", the reader's own address, so every sentence mentioning
+  both Jiki and the reader reads ambiguously.
+- **"Anh ấy"** imports the older-male kinship framing the guide rules out for the reader,
+  and applying it to Jiki would put him above the reader.
+
+#### "bị" / "được"
+
+"Bị" carries a *negative* connotation (something bad happened to X) and "được" a *positive*
+one. The guide keeps only the actionable half of this: never use "bị" for a neutral
+technical event such as a variable changing.
+
+#### Quotation glyphs, unconfirmed draft
+
+**Status: unconfirmed draft.** The guide previously said to "use straight/curly double
+quotes", naming two different glyph sets as if they were one choice, while giving ASCII
+quotes in the example. Nothing in `global/rules.md` or `global/voice.md` decides between
+them, so the guide now specifies **straight ASCII double quotes** (`"like this"`),
+consistent with the reason it already gives for rejecting guillemets: `« »` reads as
+formal/print, and straight quotes are the online-tutorial default the guide is aiming at.
+Guillemets remain ruled out. A native speaker may overturn this.
+
+#### Cut as duplication
+
+- The em-dash bullet under "Style notes" restated the house-style rule in
+  `global/rules.md` and was removed.
+- The instruction not to re-insert "cậu ấy" in every sentence duplicated the grammar rule
+  against over-inserting subject pronouns; that grammar rule now names "cậu ấy" directly.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

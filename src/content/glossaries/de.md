@@ -3,9 +3,9 @@ lang: "de"
 name: "German"
 family: null
 stage: "refining"
-governance_sha: "413a493"
-content_version: "e57981324346"
-published_at: "2026-08-03"
+governance_sha: "4caf34be"
+content_version: "d69ef3b02f6d"
+published_at: "2026-09-26"
 term_count: 57
 category_id: 71
 forum_topic_id: 340
@@ -130,6 +130,23 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-06: Translation engine confirmed as `fable`
+
+**Decided by:** xcodeowl, a native speaker, on the "Alternative translation model"
+comparison thread (https://forum.jiki.io/t/919), confirmed by iHiD on the same thread.
+**Status:** settled. **Terms affected:** none (engine choice, not a glossary or guide
+change). **Files affected:** none; `tracking.json` already carried the block, this entry
+records the decision behind it.
+
+Jeremy posted an alternative-model rendering of a German page alongside the published one
+and asked which read better. xcodeowl preferred the original, and Jeremy confirmed German
+would stay as it was.
+
+This is a **confirmation of the existing default, not a switch**: German was already running
+on `fable`, and it continues to. What the verdict changed is that the choice is now
+native-speaker-backed, which per `orchestrator.md` is what a `translation_engine` block
+means.
 
 ### 2026-08-02: Website copy (app UI catalog)
 

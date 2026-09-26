@@ -3,10 +3,10 @@ lang: "ro"
 name: "Romanian"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "4c2dc01f1512"
-published_at: "2026-07-31"
-term_count: 95
+governance_sha: "4caf34be"
+content_version: "21cc73044526"
+published_at: "2026-09-26"
+term_count: 97
 category_id: 364
 forum_topic_id: 825
 video_player_forum_topic_id: 842
@@ -106,6 +106,8 @@ These are terms where the Romanian is used in prose, so the "Use (ro/en)" column
 | plan (subscription tier) | abonament | ro | Enables „abonamentul {tier}". Not `plan`, which reads as a schedule. |
 | dashboard | panou de control | ro | Deliberately **not** `tablou de bord`, which is the dashboard of a car. |
 | canvas (graphics exercises) | pânză | ro | The drawing-surface sense specifically. |
+| Learn to Code (strand) | Învață să programezi | ro | Descriptive strand names are translated. |
+| Learn to Build (strand) | Învață să construiești | ro | Descriptive strand names are translated. |
 | Run Code (button) | Rulează codul | ro | The on-screen button. Exercise instructions and the website-copy catalog must say exactly the same thing, or the instructions name a button that is not on screen. Not left in English: the "Keep in English" row for `Code` covers the bare UI token, not this sentence-shaped label. |
 
 ## Keep in English
@@ -174,6 +176,58 @@ The decision log behind `glossary.md`. Two rules bind every pass that reads it:
 
 1. **A pass that changes the glossary reads this file first, and appends an entry after.** If an entry below records a **human** deciding a term, it is settled: it changes only by fresh agreement with a human, raised where it was settled. If nothing here mentions the term, it is an **unconfirmed draft**, and a pass may correct it provided it appends an entry saying what it changed and why.
 2. **A translation pass never loads this file.** It loads `glossary.md` and needs the term, not the argument that produced it.
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout), run as a single fable
+worker per `orchestrator.md`'s one-worker-per-scope rule. Logged here for review, not
+written to `glossary.md`.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| challenge | provocare | | high |
+| hint | indiciu | | high |
+| streak | serie | | medium |
+| badge | insignă | Not _ecuson_. | medium |
+| milestone | etapă | | medium |
+| Log (panel) | jurnal | | medium |
+| upgrade to Premium | a trece la Premium | | medium |
+| fun fact | curiozitate | | medium |
+| scrubber | bara de derulare | | low |
+
+"era of Agentic Coding" rendered "era agenților AI" since "programare agentică" isn't
+established Romanian; wants a native check.
+
+Flags, not glossary rows: shared "Locked"/"Completed" labels were rendered feminine to agree
+with _lecție_/_provocare_/_noțiune_ — a latent FE bug if those keys get reused for a
+masculine referent (an exercise); that's a split-key change on Aron's side, not a
+translation fix. Two layout risks: "Panou de control" in the narrow nav slot
+(`codingExercise.rhs.navDashboard`), and "Sesiuni live de întrebări și răspunsuri" in the
+premium feature list.
+
+### 2026-08-01: `guide.md` slimmed, product names moved to the glossary, closing quote fixed
+
+**Decided by:** agent, on the owner's (iHiD) instruction to strip research provenance and rationale from `guide.md`. **Status: no term decision was overturned**; the two changes to `glossary.md` are additive rows, and the one typographic ruling below is an **unconfirmed draft**.
+
+**Terms affected:** `Learn to Code (strand)`, `Learn to Build (strand)`, and the coined-name row (`Ask Jiki, Deep Dive, Jiki Premium, Bootcamp, the game names`).
+
+**Moved out of the guide into `glossary.md`.** The guide's "Product and strand names" section was a term decision living in prose (the owner decision applied in every language): descriptive strand names are translated („Învață să programezi”, „Învață să construiești”), coined and branded names stay English. The renderings were carried across verbatim, as two rows under "Platform & curriculum vocabulary" and one under "Keep in English", and the section was deleted from the guide.
+
+**Closing quotation mark corrected in the guide's own examples.** The guide's rule already said „...” (U+201E opening, U+201D closing) and „never the ASCII `"`”, but every one of its 113 examples closed with an ASCII `"`, so the file contradicted itself and taught the wrong glyph by demonstration. All closings in `guide.md` are now U+201D, and the rule gained an explicit "never a straight closing quote after an opening „". This matches what the two published Romanian files do (`maze-solve-basic` closes correctly), and it is the SR 13392:2004 pairing. It is an unconfirmed draft only in the sense that no native speaker has been asked; the standard is not in doubt. Two places still carry the old ASCII closing and should be swept separately: the note fields in `glossary.md`/this file, and `concepts/using-functions/ro.md` in the front-end repo, where the published sentence „Dacă se întâmplă asta, atunci trebuie să fac asta" ends on a straight quote.
+
+**Cut from the guide as provenance or rationale** (kept here so it is not lost):
+
+- **Audience.** Readers are in Romania and Moldova plus Romanian speakers abroad; the written standard is the same for all of them, which is why the guide needs no regional variant. Romanian school and university informatics already teach the core vocabulary (variabilă, funcție, tablou, șir de caractere), so any reader who has met programming has met these words. Where that academic register clashes with how people write online, the glossary picks the everyday word (see the register discussion in the bootstrap entry below).
+- **Why "tu", not a close call.** The Romanian Mozilla localization team changed its own policy to enforce personal address („s-a decis de ceva timp folosirea exclusivă a adresării personale”), and it is what every modern Romanian learning platform uses. „dumneavoastră” reads cold and distant in teaching prose.
+- **Why the negative-imperative rule earns a place at all:** the imperative form („Nu uită”) is the single most common tell of machine-translated Romanian.
+- **Diacritics.** The cedilla forms ş ţ are Turkish letters that entered Romanian text through old codepages; the Romanian localization community treats them as a hard error („Traducerile folosind caractere cu sedilă dedesubt nu sunt corecte”, SR 13392:2004). Stripping diacritics entirely is an SMS convention, not something serious writing does.
+- **â/î spelling** follows the Academia Română 1993 ruling; the loanword article rules („stringul” vs „site-ul”) follow DOOM, and getting them wrong is very visible to a Romanian reader.
+- **Why `engl.`** is the marker word: it is the notation Romanian dictionaries use for English etymons, so it reads as a normal editorial convention rather than an aside.
+- **Why the reflexive passive** („codul se execută”) is preferred: „este executat” is a direct calque of the English passive.
+
+**Deleted from the guide as duplicates**, with nothing salvaged because the content already lives elsewhere: the "Worked examples" tail restated `global/voice.md` on titles, headlines and calls to action with generic Romanian examples; its acronym examples (API, CLI) restated the two "Keep in English" glossary rows verbatim; and its "natural phrasing" examples restated the Formality section's hortative and informal-imperative rules. The one thing those examples taught that the rules did not, the formal „Instalați Node.js” as an explicit counter-example, was folded into the Formality section. Also dropped: three lane-marker sentences pointing at `global/voice.md`, and the "Owner decision, the same rule as every other language" framing on the product-names section.
 
 ### 2026-07-31: `if statement` is `condiție` (native speaker)
 
@@ -246,7 +300,7 @@ The research rested on pre-2022, human-authored sources: the [Mozilla Romanian l
 - `dashboard` is `panou de control`, **not** the otherwise natural `tablou de bord`, because `tablou` is already the array term.
 - `feature` is `funcționalitate`, kept clear of `funcție` (the CS concept).
 
-**Roughly half of `global/terms.md` earned no row.** Terms with one obvious Romanian rendering and nothing to decide (`valoare`, `număr`, `variabilă`, `funcție`, `condiție`, `eroare`, `element`, `expresie`, `operator`, `parametru`, `argument`, `obiect`, `clasă`, `metodă`, `iterație`, `algoritm`, `dicționar`, `cheie`, `excepție`, `sintaxă`, `concatenare` and others) were left out on purpose, per the test in step 6 of `global/translating.md`. Their absence is not an oversight.
+**Roughly half of `global/terms.md` earned no row.** Terms with one obvious Romanian rendering and nothing to decide (`valoare`, `număr`, `variabilă`, `funcție`, `condiție`, `eroare`, `element`, `expresie`, `operator`, `parametru`, `argument`, `obiect`, `clasă`, `metodă`, `iterație`, `algoritm`, `dicționar`, `cheie`, `excepție`, `sintaxă`, `concatenare` and others) were left out on purpose, per the test in "Proposed glossary delta" in `global/pass-mechanics.md`. Their absence is not an oversight.
 
 ### Term rationale
 

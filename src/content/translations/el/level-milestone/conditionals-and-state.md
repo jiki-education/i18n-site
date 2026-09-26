@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "7116d01d259733a6107a06c51f9bda31"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "e09952a9d7ec"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
+forum_topic_id: 1743
 ---
 
 Καλή δουλειά. Ο συνδυασμός συνθηκών με κατάσταση είναι όπου τα προγράμματά σου αρχίζουν πραγματικά να ζωντανεύουν, ανταποκρινόμενα σε αυτό που συμβαίνει αντί απλά να ακολουθούν ένα σταθερό σενάριο.

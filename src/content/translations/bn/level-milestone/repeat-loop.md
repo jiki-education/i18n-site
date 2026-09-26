@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "4d0073d2f9813e52bd3412086f130489"
-governance_sha: "494832c3"
+governance_sha: "4caf34be"
 content_version: "ed1ac280430b"
-published_at: "2026-08-24"
+published_at: "2026-09-26"
+forum_topic_id: 1862
 ---
 
 এই লেভেলে দারুণ কাজ করেছেন। লুপ প্রোগ্রামিংয়ের একটি মৌলিক গাঁথুনি, এবং আশা করি এটি এখন আপনার কাছে বেশ সহজ লাগতে শুরু করেছে।

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "7116d01d259733a6107a06c51f9bda31"
-governance_sha: "ebd84b35"
+governance_sha: "4caf34be"
 content_version: "51cff89792a3"
-published_at: "2026-08-24"
+published_at: "2026-09-26"
+forum_topic_id: 1872
 ---
 
 দারুণ কাজ করেছেন। কন্ডিশনালের সাথে স্টেট মেশানোর পর থেকেই আপনার প্রোগ্রামগুলো সত্যিকারের জীবন্ত মনে হতে শুরু করে, একটি স্থির স্ক্রিপ্ট মেনে চলার বদলে যা ঘটছে তাতে সাড়া দেয়।

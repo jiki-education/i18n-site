@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/account_mailer.pt-PT.yml"
 en_md5: "92d4e9006353c996ad78d9a0086e9269"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "177c27805cbc"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"account_mailer.account_deletion_confirmation","rows":[{"key":"subject","english":"Confirm Your Account Deletion","target":"Confirma a eliminação da tua conta"},{"key":"preview","english":"Please confirm that you want to permanently delete your Jiki account","target":"Confirma, por favor, que queres eliminar permanentemente a tua conta Jiki"},{"key":"greeting","english":"Hi there,","target":"Olá,"},{"key":"cta","english":"Delete My Account","target":"Elimina a minha conta"}]}]}]
 ---
 

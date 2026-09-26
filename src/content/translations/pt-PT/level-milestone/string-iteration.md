@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/pt-PT.json"
 en_md5: "069ee8736766d746d9fa4e6db419b300"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "22bd8b14dbe9"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Excelente trabalho. Esperamos que indexar e percorrer strings em ciclo esteja a começar a fazer sentido.

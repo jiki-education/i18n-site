@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/methods/page.md"
 en_md5: "37c097a81459cd2ff4ae684559bd4311"
-governance_sha: "cb66836"
+governance_sha: "4caf34be"
 content_version: "093823018513"
-published_at: "2026-08-14"
+published_at: "2026-09-26"
 forum_topic_id: 1555
 ---
 

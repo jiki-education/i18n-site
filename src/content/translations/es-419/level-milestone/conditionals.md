@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/es-419.json"
 en_md5: "9c912874e8026dfd16f56d62ede34016"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "7bb910edfe89"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Buen trabajo en el nivel de condicionales. Esperamos que if y else ya te empiecen a parecer bastante naturales.

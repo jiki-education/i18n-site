@@ -4,12 +4,13 @@ type: "concept"
 slug: "type-conversion"
 title: "Μετατροπή Τύπου"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/type-conversion/source.md"
+source_repo: "i18n"
+source_path: "locales/el/curriculum/concepts/type-conversion/page.md"
 en_md5: "8d85e3d274a6cdfdb74bd0488b685f18"
-governance_sha: "c80036b"
+governance_sha: "4caf34be"
 content_version: "7c5710932b2e"
-published_at: "2026-08-06"
+published_at: "2026-09-26"
+forum_topic_id: 1342
 ---
 
 Κάθε τιμή στα προγράμματά μας έχει έναν τύπο. Το `"7"` είναι μια συμβολοσειρά και το `7` είναι ένας αριθμός. Μπορεί να μοιάζουν σχεδόν ίδια, αλλά ο Jiki τα αντιμετωπίζει πολύ διαφορετικά. Δεν μπορείς να προσθέσεις τη συμβολοσειρά `"7"` στον αριθμό `3` και να περιμένεις να πάρεις `10`, επειδή το ένα είναι ένα κομμάτι κειμένου και το άλλο είναι μια ποσότητα.

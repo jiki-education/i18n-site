@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/logical-and/page.md"
 en_md5: "cef8d76c4235e85573c3eeede294ab72"
-governance_sha: "9702569"
+governance_sha: "4caf34be"
 content_version: "e1485aa0c660"
-published_at: "2026-08-12"
+published_at: "2026-09-26"
+forum_topic_id: 1451
 ---
 
 Si je te demandais d'ouvrir la porte seulement aux personnes de plus de 20 ans, tu saurais sans doute quoi faire. Mais que faire si tu devais vérifier qu'une personne a plus de 20 ans _et_ qu'elle porte la bonne tenue ? Il faudrait alors vérifier deux conditions différentes à la fois. Comment ferais-tu ?

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/pt-PT/curriculum/concepts/animation/page.md"
 en_md5: "536994294072afea52dab51d3bb7cab8"
-governance_sha: "2ea8340"
+governance_sha: "4caf34be"
 content_version: "82ef03407c0a"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 forum_topic_id: 1792
 ---
 

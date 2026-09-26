@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/state/page.md"
 en_md5: "e866d50be6bc7494f10e01341c40347b"
-governance_sha: "cd45949"
+governance_sha: "4caf34be"
 content_version: "b234f874ca14"
-published_at: "2026-08-09"
+published_at: "2026-09-26"
+forum_topic_id: 1596
 ---
 
 Te revoilà ! Jusqu'ici, on a utilisé des variables pour des choses qui ont un sens en elles-mêmes : l'âge de quelqu'un, l'heure, une couleur. On les a mises à jour, mais elles restaient relativement statiques. Pourtant, l'un des usages les plus courants des variables en programmation consiste à suivre notre progression dans une tâche. Imagine que tu construis un mur, ce que tu vas d'ailleurs faire dans un instant. Dans la vraie vie, tu saurais quelle rangée de briques tu es en train de monter, celle du bas, celle du haut ou une au milieu, et tu saurais quelle est la prochaine brique à poser, la troisième, la quatrième, et ainsi de suite. On a besoin de la même chose dans le monde numérique. Ou imagine que tu essaies de créer un robot qui joue tout seul à Space Invaders : il doit savoir où il se trouve sur l'écran, entre la gauche et la droite. En programmation, on appelle cela l'état (_state_ en anglais), un raccourci pour « dans quel état ça se trouve ? ».

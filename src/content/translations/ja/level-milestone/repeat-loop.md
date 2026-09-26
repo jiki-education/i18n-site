@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ja.json"
 en_md5: "4d0073d2f9813e52bd3412086f130489"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "0820348298e5"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 このレベルもよくできましたね。ループはプログラミングの基本的な構成要素です。だいぶ慣れてきたのではないでしょうか。

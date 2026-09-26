@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hi.json"
 en_md5: "7116d01d259733a6107a06c51f9bda31"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "cb541a41ca41"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 बहुत अच्छा काम। कंडीशनल्स को स्थिति के साथ जोड़ना ही वह जगह है जहाँ आपके प्रोग्राम वास्तव में जीवंत महसूस होने लगते हैं, जो हो रहा है उस पर प्रतिक्रिया देते हैं न कि केवल एक निश्चित स्क्रिप्ट का पालन करते हैं।

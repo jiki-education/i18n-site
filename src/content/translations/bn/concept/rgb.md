@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/rgb/page.md"
 en_md5: "8ed038f6d17072b6fb6eaae6bef15c2c"
-governance_sha: "b7cd2475"
+governance_sha: "4caf34be"
 content_version: "d16aef705cdb"
-published_at: "2026-09-02"
+published_at: "2026-09-26"
 forum_topic_id: 2265
 ---
 

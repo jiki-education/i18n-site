@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/sv.json"
 en_md5: "f0d47c822253e20fbc27a36405270946"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "2be57049126e"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Snyggt jobbat! Att läsa från arrayer är praktiskt, men att kunna bygga upp dem bit för bit är där de verkligen kommer till sin rätt. Loopa över något, samla ihop de bitar du bryr dig om i en ny array och lämna tillbaka den – det är ett mönster du kommer att använda om och om igen.

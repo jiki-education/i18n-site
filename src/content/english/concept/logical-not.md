@@ -2,10 +2,10 @@
 type: "concept"
 slug: "logical-not"
 title: "The `!` (Not) Operator"
-en_md5: "7cffbd1fa13317b3d6e6a71415413041"
+en_md5: "5d752c7a85e6e17d914c73c83429de80"
 source_repo: "front-end"
 source_path: "curriculum/src/concepts/logical-not/source.md"
-captured_at: "2026-08-10"
+captured_at: "2026-09-26"
 ---
 
 So far, when we've compared things to see if they're equal, we've used three equal signs. Sometimes, though, we want to check whether things are not equal, and for this, we use an exclamation mark followed by two equal signs. And generally, in programming, an exclamation mark or <define>bang</define>, as I think our American friends call it, means not. So imagine you work in a shop, and management have made a decision that no disco outfits are allowed in.
@@ -56,6 +56,4 @@ movingRight = !movingRight
 
 And that flips it. `!movingRight` means the opposite of whatever it was previously.
 
-So if `movingRight` was true, now it's false. If it was false, now it's true. Jiki gets what's in the box currently,
-
-and that bang tells him to find the opposite. So the opposite of true is false. The opposite of false is true, and then he puts it back in the box. This is exactly the same as that longer if/else statement, but it's just much neater and more succinct to write.
+So if `movingRight` was true, now it's false. If it was false, now it's true. Jiki gets what's in the box currently, and that bang tells him to find the opposite. So the opposite of true is false. The opposite of false is true, and then he puts it back in the box. This is exactly the same as that longer if/else statement, but it's just much neater and more succinct to write.

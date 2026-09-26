@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/ko/curriculum/badges/messages.json"
 en_md5: "7233749b3401a5bce814a861e796da86"
-governance_sha: "4d02c56"
+governance_sha: "4caf34be"
 content_version: "3293e061385c"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 밤늦은 시간에 레슨을 마쳤어요.

@@ -4,12 +4,12 @@ type: "concept"
 slug: "using-functions"
 title: "Att använda funktioner"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/using-functions/source.md"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/using-functions/page.md"
 en_md5: "fc671310093a081113a8f301b6ff53fe"
-governance_sha: "32a4d0d"
+governance_sha: "4caf34be"
 content_version: "eab2d607785c"
-published_at: "2026-08-03"
+published_at: "2026-09-26"
 forum_topic_id: 831
 ---
 

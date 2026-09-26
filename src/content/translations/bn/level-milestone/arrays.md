@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "f30486e583f3c2417da5f8a4a1721ee1"
-governance_sha: "7d7c3051"
+governance_sha: "4caf34be"
 content_version: "7fcb841bcad6"
-published_at: "2026-08-25"
+published_at: "2026-09-26"
+forum_topic_id: 1885
 ---
 
 অসাধারণ কাজ করেছেন। অ্যারে (কেউ কেউ যাকে লিস্টও বলেন) যেকোনো ভাষার সবচেয়ে গুরুত্বপূর্ণ সরঞ্জামগুলোর একটি। একাধিক জিনিস নিয়ে কাজ করার প্রায় প্রতিটি ক্ষেত্রেই আপনি অ্যারের কাছেই যাবেন।

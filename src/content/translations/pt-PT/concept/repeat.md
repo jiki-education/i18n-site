@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/pt-PT/curriculum/concepts/repeat/page.md"
 en_md5: "f37a63911f75934656cbf04a38ff2b60"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "f1cfb0863b42"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Até agora, tudo foi escrito de forma linear: o Jiki segue cada instrução por ordem, de cima para baixo.

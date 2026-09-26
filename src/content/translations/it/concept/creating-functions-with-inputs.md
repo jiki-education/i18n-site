@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/creating-functions-with-inputs/page.md"
 en_md5: "f70d737888fcbda3306196ff069eb2f1"
-governance_sha: "8b317e6"
+governance_sha: "4caf34be"
 content_version: "eb9d71072d00"
-published_at: "2026-08-20"
+published_at: "2026-09-26"
 forum_topic_id: 1215
 ---
 

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/zh-CN.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "f35e754e37e5"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 干得漂亮！自己写函数是个真正的转变。你不再只是使用货架上的工具，你开始打造新工具了。

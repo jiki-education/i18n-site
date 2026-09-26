@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/sr.json"
 en_md5: "e24a2de83b7d0cfa482fcea5121aa0f7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "9f61ec2ac21d"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Sjajno. Rečnici ti omogućavaju da skladištiš vrednosti pod imenovanim ključevima, a ne samo po pozicijama, što čini pretragu brzom i čitljivom.

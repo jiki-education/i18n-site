@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/premium_mailer.bn.yml"
 en_md5: "cb6e981952e42e839ac8bc7e0f94fc17"
-governance_sha: "9b3923b"
+governance_sha: "4caf34be"
 content_version: "cf9ff166e4e6"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 1791
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"premium_mailer.subscription_ended","rows":[{"key":"subject","english":"Your Jiki subscription has ended","target":"আপনার Jiki সাবস্ক্রিপশন শেষ হয়েছে"},{"key":"greeting","english":"Hi there,","target":"স্বাগতম!"}]}]}]
 ---
 

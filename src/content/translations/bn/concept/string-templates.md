@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/string-templates/page.md"
 en_md5: "7fd0e09ac3b32db5f159f8e772872104"
-governance_sha: "7d00934"
+governance_sha: "4caf34be"
 content_version: "60dfd6a3b7dd"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
+forum_topic_id: 1789
 ---
 
 একটি স্ট্রিংয়ের ভেতরে অন্য স্ট্রিং বসানোর জন্য আমরা টেমপ্লেট লিটারেল নামের একটি জিনিস ব্যবহার করতে পারি।

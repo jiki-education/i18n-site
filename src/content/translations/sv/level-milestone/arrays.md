@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/sv.json"
 en_md5: "f30486e583f3c2417da5f8a4a1721ee1"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "9609806ca44b"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Strålande arbete. Arrayer (eller listor, som vissa kallar dem) är ett av de mest användbara verktygen i alla språk. Så gott som varje gång du hanterar mer än ett av något kommer du att använda en array.

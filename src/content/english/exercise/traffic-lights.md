@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "traffic-lights"
 title: "Traffic Lights"
-en_md5: "31f28f27bf35368610eecafc92747640"
+en_md5: "d1626cbb56e643dd05684037c98c9bf0"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/traffic-lights"
-captured_at: "2026-08-03"
+captured_at: "2026-09-26"
 ---
 
 Your task is to complete the traffic light by drawing the three colored lights using the <define>variables</define> provided.

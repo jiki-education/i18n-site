@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.es-ES.yml"
 en_md5: "78871ca631fe5ba6b35ae4fe94581c88"
-governance_sha: "16f805d"
+governance_sha: "4caf34be"
 content_version: "c13daa7cba07"
-published_at: "2026-08-20"
+published_at: "2026-09-26"
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.community","rows":[{"key":"subject","english":"Don't Struggle Alone - Join Jiki's Community","target":"No luches solo: únete a la comunidad de Jiki"},{"key":"preview","english":"You're a lot more likely to succeed learning anything if you're part of a group.","target":"Es mucho más probable que tengas éxito aprendiendo cualquier cosa si formas parte de un grupo."},{"key":"greeting","english":"Hi there,","target":"Hola,"}]}]}]
 ---
 

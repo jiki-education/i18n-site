@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/updating-variables/page.md"
 en_md5: "f9b2fbb6bfd82a620b093e88951ff841"
-governance_sha: "497e9fa"
+governance_sha: "4caf34be"
 content_version: "4ef8782eb612"
-published_at: "2026-08-14"
+published_at: "2026-09-26"
+forum_topic_id: 1598
 ---
 
 Jusqu'ici, quand on a créé des variables, on a mis des valeurs dans des boîtes pour les ressortir plus tard. C'est très utile pour rendre le code plus clair et pour nous épargner une partie du calcul mental qu'on aurait dû faire autrement. Mais la vraie force des variables vient de la possibilité de changer ce qu'il y a dans une boîte, ce qu'il y a dans la variable, tout au long d'un programme. Ainsi, même si on exécute plusieurs fois le même bout de code, ce qu'il fait peut changer selon ce que contiennent les boîtes.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hu.json"
 en_md5: "3eb6e1c44486daf5e71618893b5e8bae"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "21da7f785bf5"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Nagyszerű munka. Most már elsajátítottad a for ciklusokat, a while ciklusokat, a break-et és a continue-t is. Ezek azok a ciklusok, amelyeket leggyakrabban fogsz használni ezen a kurzuson kívül is, szóval megérte az időt, amit rájuk szántál.

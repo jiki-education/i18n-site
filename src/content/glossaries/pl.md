@@ -3,10 +3,10 @@ lang: "pl"
 name: "Polish"
 family: null
 stage: "refining"
-governance_sha: "0f2a416"
-content_version: "c00c1a18139c"
-published_at: "2026-08-03"
-term_count: 105
+governance_sha: "4caf34be"
+content_version: "bd8b1da99f68"
+published_at: "2026-09-26"
+term_count: 108
 category_id: 201
 forum_topic_id: 417
 video_player_forum_topic_id: 771
@@ -127,8 +127,11 @@ These are terms where the Polish is used in prose, so the "Use (pl/en)" column i
 |---------|--------|----------|-------|
 | course | kurs | pl | The whole Jiki course the learner is taking. Keep distinct from _lekcja_ (lesson) and _program nauczania_ (curriculum). |
 | Great work! / Great job! (success or congratulation opener) | Dobra robota! | pl | Never _Świetna robota!_: nobody says it in Polish, it reads as a word-for-word calque of "great job". |
+| Great progress! (praise for how far the learner has got) | Robisz postępy! | pl | Always the verb phrase. Never the noun _postęp_ (_Świetny postęp!_): _postęp_ is progress of humanity or technology, not one person's achievement. _Dobrze Ci idzie!_ and _Tak trzymaj!_ are fine alternatives; pick a different one if the surrounding sentence already uses it. |
+| Amazing effort! / Fantastic effort! (praise for the work the learner put in) | Kawał dobrej roboty! | pl | Never _Niesamowita praca!_: _niesamowity_ + _praca_ reads as praise for a mesmerising work of art, not encouragement for someone's effort. Keep praise in the _robota_ family, informal and spoken. |
 | character (the little figure in the maze exercises) | ludzik | pl | **Masculine**, so every agreeing verb, adjective, participle and pronoun is masculine: _ludzik wszedł_, _ludzik nie dotarł_, _jest zwrócony_, _a on obraca się_. Declines _ludzika_ (gen./acc.), _ludzikowi_ (dat.). Never _postać_, which is feminine and too abstract for the little person the English describes. |
 | turn (the maze character's `turnLeft()`/`turnRight()` instruction) | obracać się (verb) / obrót (noun) | pl | The character rotates on the spot: _ludzik obraca się w lewo_, _obrót w prawo_, _polecenie obrotu w lewo_. The reflexive _się_ is required on the verb. Never _skręcać_ / _skręcić_ / _skręt_, which describe turning while travelling and imply the character moves forward through the turn. |
+| canvas (the drawing surface Jiki draws shapes on) | plansza | pl | Confirmed by mlistewnik (t/1881/1): _płótno_ has a narrow meaning in Polish (painters' fabric, or a painting), which reads wrong for a graphical drawing surface. _Plansza_ fits a physical drawing-board framing, which matches Jiki standing next to the drawing. Declines normally: _planszy_ (gen.), _planszę_ (acc.). |
 
 ## Keep in English
 
@@ -184,6 +187,51 @@ Default to plain **nawias**. When a specific bracket type matters, name it and s
 ---
 
 ## Decision log
+
+### 2026-08-24: canvas translates as `plansza`, not `płótno`
+
+**Decided by:** native speaker **mlistewnik**, reviewing the `arithmetic` concept page,
+forum topic 1881 (post 1: https://forum.jiki.io/t/1881/1). **Term affected:** canvas.
+
+The existing translation used `płótno` throughout for "canvas" (the drawing surface Jiki
+draws shapes on). mlistewnik pointed out that `płótno` has a narrow meaning in Polish — a
+painter's fabric, or a painting — which reads wrong here. They initially considered `obszar
+roboczy` (thinking of a defined space in a graphical interface), but settled on `plansza`
+once they noticed Jiki standing next to the drawing: a physical drawing-board framing fits
+better than either a painting or an abstract workspace.
+
+Applied to the `arithmetic` page as part of the same review. `płótno` also appears in 8
+other already-translated pl files (snowman-basic, rainbow, jumbled-house, fix-wall,
+exercise-categories/draw); those are a separate tidy sweep, not yet done, flagged to Jeremy.
+
+### 2026-08-04: praise messages use `Robisz postępy!` and `Kawał dobrej roboty!`
+
+mlistewnik (forum topic 1025, posts 3110 and 3114) flagged two Polish UI praise strings in
+the first website-copy pass as sounding wrong to a native speaker.
+
+`Świetny postęp!` (from English "Great progress!", key `challenges.empty.allStartedDescription`):
+the noun `postęp` is used in Polish for the progress of humanity or technology, not for
+praising one person's achievement, so the sentence reads oddly. He offered three
+alternatives, best first: `Robisz postępy!` (closest to the English), `Dobrze Ci idzie!`,
+`Tak trzymaj!`. We took his first choice. His third was not available here anyway: the same
+sentence already ends with `Tak trzymaj i doprowadź je do końca.`, so opening with it would
+have repeated the phrase.
+
+`Niesamowita praca!` (from English "Amazing effort!", key
+`codingExercise.testResults.congratsAmazingEffort`): `niesamowity` means extraordinary or
+out-of-this-world, and pairing it with `praca` reads as praise for a mesmerising work of
+art rather than encouragement for the effort someone put in. He could not find the English
+source string (GitHub code search only) and so proposed no replacement. We chose
+`Kawał dobrej roboty!`, which keeps the praise in the same informal spoken `robota` family
+as the already-agreed `Dobra robota!` opener, praises the effort rather than the artefact,
+and stays distinct from the neighbouring variants (`Brawo!`, `Dobra robota!`,
+`Fantastyczna robota!`, `Wspaniałe osiągnięcie!`). Worth confirming with him on the thread,
+since it is our wording, not his.
+
+`congratsAmazingEffort` is one of seven interchangeable congratulation variants the app
+picks between (hashed on exercise title and test index, so a learner sees different ones
+across the course), so each variant has to stand alone as a complete piece of praise and
+must not read as a near-duplicate of its neighbours.
 
 ### 2026-08-03: the maze character turns with `obracać się`, never `skręcać`
 

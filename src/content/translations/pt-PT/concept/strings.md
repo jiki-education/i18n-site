@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/pt-PT/curriculum/concepts/strings/page.md"
 en_md5: "4947f6ac1b3eb8eb85d2dea9b82ffc40"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "95d2aa338dc6"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Quando queres usar um número, basta escrevê-lo, e o Jiki percebe o que queres dizer. Mas e se quiseres usar uma letra, uma palavra ou uma frase? Por exemplo, com a função `rectangle` (retângulo) ou a função `circle` (círculo), e se houvesse um valor de entrada extra onde indicasses a cor? Como é que escreveríamos a cor para a pôr na máquina? Se escrevermos só a palavra `green` (verde) ou `blue` (azul), o Jiki vai pensar que nos estamos a referir a uma máquina das prateleiras, e vai dizer: "Não há nenhuma máquina chamada green. Não sei o que fazer."

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ar.json"
 en_md5: "7205cc09a500e11d5ec44a6978ae5af7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "3676ef8c3426"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 عمل رائع في هذا المستوى. يمكنك الآن تتبع القيم التي تتغير أثناء تشغيل برنامجك، وهذا تقدم حقيقي مقارنة بما كنت عليه قبل مستويين.

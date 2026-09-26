@@ -3,9 +3,9 @@ lang: "bn"
 name: "Bengali"
 family: null
 stage: "reviewing"
-governance_sha: "cfb18084"
-content_version: "423464a9c07a"
-published_at: "2026-09-06"
+governance_sha: "4caf34be"
+content_version: "f397b63050cc"
+published_at: "2026-09-26"
 term_count: 86
 category_id: 234
 forum_topic_id: 473
@@ -156,6 +156,126 @@ technical language.
 ---
 
 ## Decision log
+
+### 2026-09-07: Structured House, canonical circle and triangle descriptions (t/2381)
+
+**Decided by:** reviewer sohayelmahmud, forum https://forum.jiki.io/t/2381, post 1, actioned
+directly. Two items on the Structured House exercise, both applied and the item approved in the
+same pass; he confirmed the rest of the page as fine.
+
+The same point as Stripey Fabric (t/2380), now on a second pair of functions. `circle`'s English
+is identical to Cloud Rain Sun's, so Structured House's কেন্দ্র ধরে paraphrase was aligned to the
+Cloud Rain Sun wording (plain কেন্দ্রে, which is also the standing guide rule for a shape drawn
+around a centre point). For `triangle` he gave a wording of his own, তিনটি শীর্ষবিন্দু ও একটি রং
+দিয়ে একটি ত্রিভুজ আঁকে, and asked for it everywhere the description appears: শীর্ষবিন্দু (vertex)
+reads more naturally than the literal কোণার বিন্দু (corner point). Applied to all four bn exercises
+carrying that description (foxy-face, jumbled-house, penguin, structured-house). Both canonical
+strings are now named in the guide's fixed-string rule.
+
+The wider `circle` variance across the other drawing exercises is unchanged and still part of the
+corpus-wide sweep flagged on t/2380, not done here.
+
+### 2026-09-07: Stripey Fabric, and identical English means identical Bangla (t/2380)
+
+**Decided by:** reviewer sohayelmahmud, forum https://forum.jiki.io/t/2380, post 1, actioned
+directly. One item on the Stripey Fabric exercise, applied and the item approved in the same
+pass; he confirmed the rest of the page as fine.
+
+He pasted the `rectangle` description and category from Cloud Rain Sun again (the same move as
+on Sprouting Flower, t/2379) and asked why the same description is worded differently in
+different exercises: these should be universal. He is right, and the point is general rather
+than about this page, so it is a guide rule: where a built-in function's English description or
+category is identical across exercises, the Bangla is identical too, word for word.
+
+A survey of the bn exercise catalogs found seven files whose `rectangle` English is identical to
+Cloud Rain Sun's but whose Bangla was a paraphrase (checkerboard, relational-traffic-lights,
+build-wall, sunset, finish-wall, penguin, and Stripey Fabric itself); all seven now carry the
+Cloud Rain Sun wording, which was already the plurality. Fix Wall was aligned to the same shape
+minus the colour clause, because its English omits the colour. Two files were deliberately left
+alone: Sprouting Flower, whose English carries an extra sentence about the top-left corner, and
+Rainbow, whose expanded "(বাম, উপর) [অর্থাৎ ওপরের বাম কোণা থেকে]" gloss is sohayelmahmud's own
+recorded request on that item. Asked on the thread whether he wants Rainbow normalised too.
+
+He answered in post 3: normalise it. His original reason for the gloss was that he took Rainbow
+to be the first exercise a student meets `rectangle` in, and on the live site he has since seen
+that it is actually Fix Wall, in milestone 1. So Rainbow now carries the standard wording like
+its siblings, and the gloss moved to Fix Wall, whose English is the only one that omits the
+colour clause and is therefore the one file where an extra clause cannot make two identical
+English strings read differently. The principle stands as he stated it: identical English means
+identical Bangla, and any beginner gloss belongs on the exercise that genuinely introduces the
+function, not on whichever one happened to be reviewed first.
+
+The same inconsistency exists well beyond `rectangle` (`circle`, `move`, `turnLeft`, `push`,
+`includes` and others all have several Bangla wordings over one English string, and a few of
+those differences are terminology choices rather than paraphrase, e.g. ট্রু/ফলস versus true/false
+and চলাচল versus চলাফেরা versus মুভমেন্ট for "Movement"). That is a corpus-wide sweep rather than
+a line fix, so it was flagged rather than done in this pass.
+
+### 2026-09-07: Sprouting Flower, and কেন্দ্রে for a centred shape (t/2379)
+
+**Decided by:** reviewer sohayelmahmud, forum https://forum.jiki.io/t/2379, post 1, actioned
+directly. Two items on the Sprouting Flower exercise, both applied and the item approved in the
+same pass; he confirmed the rest of the page as fine.
+
+The first is a word-order fix on the closing "learning is in the struggle" line, recorded on
+`languages/bn/exercise/sprouting-flower.md`. It is a naturalness fix, not a correction.
+
+The second generalises, so it is a guide rule. He pasted the `rectangle`/`circle`/`ellipse`
+descriptions from Cloud Rain Sun and asked for them everywhere, because Sprouting Flower's
+কেন্দ্র অবস্থানে read unnaturally. A survey of the eighteen bn exercises that describe these
+functions found Sprouting Flower the only file using কেন্দ্র অবস্থানে, so the fix is a single
+outlier plus a rule stopping it recurring: a shape drawn around a centre point takes plain
+কেন্দ্রে, and অবস্থানে stays with the corner-anchored "(left, top) অবস্থানে" of `rectangle`.
+
+Two parts of his pasted table were deliberately not copied across, because the English differs
+between the two exercises rather than the Bangla being wrong. Sprouting Flower's `rectangle`
+English carries a second sentence ("The position represents the top-left corner of the
+rectangle") that Cloud Rain Sun's does not, and its `ellipse` English names radiusX and radiusY
+without the "horizontal radius"/"vertical radius" gloss Cloud Rain Sun's English spells out.
+Adding that gloss here would put information in the Bangla that is not in this exercise's
+English, so only the কেন্দ্রে half of his ellipse wording was taken. Told to him on the thread.
+
+### 2026-09-07: Run-Length Encoding multi-digit hint (t/2378)
+
+**Decided by:** reviewer sohayelmahmud, forum https://forum.jiki.io/t/2378, post 1, actioned
+directly. One line-level item on the Run-Length Encoding exercise, applied and the item
+approved in the same pass; everything else on the page he confirmed as fine.
+
+The item is a sentence choice specific to that exercise, so it is recorded on
+`languages/bn/exercise/run-length-encoding.md` rather than here: the multi-digit decoding hint
+now ends on the purpose clause ("যাতে নতুন অঙ্কটির জন্য জায়গা হয়") the way English ends on "to
+make room for it", and names the running total এখন পর্যন্ত পাওয়া সংখ্যা instead of হাতে থাকা
+সংখ্যা. Both versions said the same arithmetic (দশ গুণ, matching "a factor of ten"), so this is
+a naturalness fix, not a correction. No guide or glossary change follows: সংখ্যা for "number"
+is already the glossary row, and nothing here generalises past this sentence.
+
+### 2026-09-07: Formal Dinner wording, and the lost "9 lines" (t/2377)
+
+**Decided by:** reviewer sohayelmahmud, forum https://forum.jiki.io/t/2377, post 1, actioned
+directly. Ten line-level items on the Formal Dinner exercise, all applied and the item
+approved in the same pass.
+
+Nine of them are sentence choices specific to that exercise, so they were recorded on
+`languages/bn/exercise/formal-dinner.md` rather than here: "side hustle" as the phonetic
+পার্ট-টাইম কাজ instead of পার্শ্ব-কাজ (the same everyday-loanword rule already recorded for
+কমন, গেম, ড্র, ড্রয়িং and ড্রয়ার), dropping a redundant মানুষ after একজন, moving পরিচিত হন to
+the end of the honorific sentence, হুট করে over গটগট করে for "sweeps in" (গটগট is too
+informal for a formal dinner), a restructured third-input bullet, আভিজাত্যপূর্ণ over জমকালো for
+"grand" surnames, নির্বাচিত over ধরা পড়া for "the captured elements", "Brad-কে তাঁর আসনে নিয়ে
+যাওয়া হলো" so the scenario title shows the bouncer doing the job, and dropping the classifier
+একজন before the proper noun Baron.
+
+The tenth is a real translation error rather than a preference. English pins the bonus at
+nine lines, and the checker enforces exactly that, but the Bangla had softened every mention
+to a vague "কম লাইনে" / "কয়েক লাইনে" and dropped the number from the task name too. He simply
+said "current translation is wrong". All four places (task name, task description, the bonus
+scenario description and the tooManyLines check) now carry ৯, which is the right script for a
+counting numeral in running prose under the existing guide rule. No guide or glossary change
+follows: preserving a number the source states is already `global/rules.md`.
+
+He also asked a process question, not about this content: what to do when he spots something
+on an item he has already approved. Answered on the thread: post it wherever is convenient
+(the old thread, a new one, anywhere), approval is not a lock, and we will fix it.
 
 ### 2026-09-06: "drawers" is ড্রয়ার, not দেরাজ (t/2349)
 
@@ -690,6 +810,7 @@ and in the row's own Notes column in `glossary.md`, not treated as a decision.
 | iteration | Loanword, confirmed by native-speaker review 2026-08-15 (sohayelmahmud, forum t/473, post 4948) as the standard over পুনরাবৃত্তি. |
 | class | Loanword. |
 | object | Loanword. |
+| element | Loanword (এলিমেন্ট), confirmed by native-speaker review 2026-09-24 (sohayelmahmud, forum t/2872, post 6964): "'এলিমেন্ট' is a commonly used word in programming, so sometimes let them introduce with these words rather than using all Bengali". Applies to an array's members; জিনিস stays for real-world objects in the story. |
 
 #### Platform & curriculum vocabulary
 

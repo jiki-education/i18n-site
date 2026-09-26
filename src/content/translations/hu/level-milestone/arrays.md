@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hu.json"
 en_md5: "f30486e583f3c2417da5f8a4a1721ee1"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "92fc4da3c326"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Nagyszerű munka. A tömbök (vagy listák, ahogy néhányan nevezik) az egyik leghasznosabb eszköz bármely programozási nyelvben. Szinte minden alkalommal, amikor több dologgal kell egyszerre dolgoznod, egy tömbhöz nyúlsz.

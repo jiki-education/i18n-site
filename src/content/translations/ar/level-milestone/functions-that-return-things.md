@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ar.json"
 en_md5: "c5535dc792a600941da4f8ca562377c7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "0b5f0ec30ed5"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 عمل ممتاز في مستوى مليء بالمحتوى. دوال تُرجع قيمًا، ألوان HSL و RGB، تحريك، أرقام عشوائية، نطاق، سيناريوهات، وحلقات داخل حلقات. هذه كمية كبيرة من الأفكار الجديدة لتضيفها إلى مجموعة أدواتك دفعة واحدة.

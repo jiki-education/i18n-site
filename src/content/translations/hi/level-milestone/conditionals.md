@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hi.json"
 en_md5: "9c912874e8026dfd16f56d62ede34016"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "1787f42e5c85"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 कंडीशनल्स लेवल पर अच्छा काम। उम्मीद है कि `if` और `else` अब आपको काफी स्वाभाविक लगने लगे हैं।

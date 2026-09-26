@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/logical-or/page.md"
 en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
-governance_sha: "16c5440"
+governance_sha: "4caf34be"
 content_version: "b6ed82bec6e2"
-published_at: "2026-08-12"
+published_at: "2026-09-26"
+forum_topic_id: 1454
 ---
 
 On peut aussi utiliser `or` (ou), et là encore, hélas, il n'existe pas de joli mot-clé « or » en JavaScript. À la place, on doit écrire ces deux barres verticales (_bars_ en anglais) côte à côte, comme ceci : « || », pour signifier « ou ». Ça a l'air bizarre, mais pas tant que ça en réalité. Tu vas t'y habituer.

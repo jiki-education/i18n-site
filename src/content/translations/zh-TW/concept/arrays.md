@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/zh-TW/curriculum/concepts/arrays/page.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "01372fdd"
+governance_sha: "4caf34be"
 content_version: "7b287fa4650e"
-published_at: "2026-08-25"
+published_at: "2026-09-26"
+forum_topic_id: 1889
 ---
 
 你已經使用過數字、字串和布林值（也就是 true 和 false 的高級說法），我們把這些不同的東西稱為資料型態（英文：_data types_）。現在，我們要加入第一個複合資料型態（英文：_compound data type_）了。

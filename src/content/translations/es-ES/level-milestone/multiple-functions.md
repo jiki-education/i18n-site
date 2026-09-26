@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/es-ES.json"
 en_md5: "d5bfe9e5cd73eb4049674723644d81f0"
-governance_sha: "16f805d"
+governance_sha: "4caf34be"
 content_version: "21035ee6b149"
-published_at: "2026-08-20"
+published_at: "2026-09-26"
 ---
 
 Buen trabajo en este nivel. Combinar funciones para resolver problemas más grandes es como se ve realmente la programación profesional en el día a día. Descompones un problema en piezas, escribes una pequeña función para cada pieza y luego las unes.

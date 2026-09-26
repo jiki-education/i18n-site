@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/it.json"
 en_md5: "069ee8736766d746d9fa4e6db419b300"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "6d04f7158096"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
+forum_topic_id: 1658
 ---
 
 Ottimo lavoro. Si spera che l'indicizzazione e l'iterazione attraverso le stringhe stia iniziando ad avere senso.

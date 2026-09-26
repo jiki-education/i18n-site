@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/scenarios/page.md"
 en_md5: "d5c4ee54eed8083e13f18bb7d256b86d"
-governance_sha: "84303b0"
+governance_sha: "4caf34be"
 content_version: "2fdf1d4f7880"
-published_at: "2026-08-08"
+published_at: "2026-09-26"
+forum_topic_id: 1457
 ---
 
 Chaque exercice s'accompagne de plusieurs scénarios, autrement dit de différentes situations que ton code doit gérer.

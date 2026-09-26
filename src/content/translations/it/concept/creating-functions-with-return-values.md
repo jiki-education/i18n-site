@@ -4,12 +4,12 @@ type: "concept"
 slug: "creating-functions-with-return-values"
 title: "Aggiungere il return alle funzioni"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/creating-functions-with-return-values/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/creating-functions-with-return-values/page.md"
 en_md5: "51d31f709a7051c29b499a31ad68555e"
-governance_sha: "c80036b"
+governance_sha: "4caf34be"
 content_version: "c1efd38a151c"
-published_at: "2026-08-06"
+published_at: "2026-09-26"
 forum_topic_id: 1199
 ---
 

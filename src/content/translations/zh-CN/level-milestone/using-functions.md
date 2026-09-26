@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/zh-CN.json"
 en_md5: "6102a39a2418e0d864c33b55b7a669f5"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "93ae6ba751d5"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 做得好！你已经完成了 Jiki 编程基础课程的第一个关卡。

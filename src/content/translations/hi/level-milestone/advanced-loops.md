@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hi.json"
 en_md5: "3eb6e1c44486daf5e71618893b5e8bae"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "ebfee4487758"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 बहुत अच्छा काम। अब आपने `for` लूप, `while` लूप, `break`, और `continue` को अपने कौशल में शामिल कर लिया है। ये वे लूप हैं जिनका उपयोग आप इस कोर्स के बाहर सबसे अधिक करेंगे, इसलिए आपने जो समय लगाया है वह पूरी तरह सार्थक है।

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/function-composition/page.md"
 en_md5: "7df3110b30c0f279d7f04d3b4e331a99"
-governance_sha: "b951b19"
+governance_sha: "4caf34be"
 content_version: "dbe28b809928"
-published_at: "2026-08-16"
+published_at: "2026-09-26"
 forum_topic_id: 1554
 ---
 

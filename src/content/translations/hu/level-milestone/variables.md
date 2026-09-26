@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hu.json"
 en_md5: "f354e5206e3f25c925621288a2b55fb6"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "c8f03067246e"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Nagyszerű munka, hogy a változókat is elsajátítottad.

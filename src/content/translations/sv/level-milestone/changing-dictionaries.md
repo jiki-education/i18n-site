@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/sv.json"
 en_md5: "a66deb1c6dd3b8e1514fe3c378a67fe6"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "368c47e91da7"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Och det var den sista nivån i Programmeringsgrunder. Förhoppningsvis känns uppslagstabeller som ett användbart verktyg att lägga till i mixen bredvid arrayer.

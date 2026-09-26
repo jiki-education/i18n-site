@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "adventures-in-poetry"
 title: "Adventures in Poetry"
-en_md5: "ab3ebe6570023a88a51f091bbb445e40"
+en_md5: "bac437cfcac71f4713e9969df89109ab"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/adventures-in-poetry"
-captured_at: "2026-09-02"
+captured_at: "2026-09-26"
 ---
 
 You're making a robotic poetry game called "Adventures in Poetry". As your first step, you need to program the robot so that as it walks, it collects words and then recites the poem at the end.

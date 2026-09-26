@@ -2,10 +2,10 @@
 type: "exercise"
 slug: "rainbow-splodges"
 title: "Rainbow Splodges"
-en_md5: "5887c1e8b0ac137f849cd6ae4d9df603"
+en_md5: "80c7e1de2c726cc0ceaf26dcd980524f"
 source_repo: "front-end"
 source_path: "curriculum/src/exercises/rainbow-splodges"
-captured_at: "2026-08-03"
+captured_at: "2026-09-26"
 ---
 
 Your task in this exercise is to create a canvas full of colorful rainbow splodges!

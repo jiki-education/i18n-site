@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/account_mailer.bn.yml"
 en_md5: "92d4e9006353c996ad78d9a0086e9269"
-governance_sha: "190d0e0"
+governance_sha: "4caf34be"
 content_version: "acdb3e5e1e7d"
-published_at: "2026-08-23"
+published_at: "2026-09-26"
 forum_topic_id: 1791
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"account_mailer.account_deletion_confirmation","rows":[{"key":"subject","english":"Confirm Your Account Deletion","target":"আপনার অ্যাকাউন্টটি ডিলিট নিশ্চিত করুন"},{"key":"preview","english":"Please confirm that you want to permanently delete your Jiki account","target":"আপনি আপনার জিকি অ্যাকাউন্টটি পার্মানেন্টলি ডিলিট করে ফেলতে চান কি না নিশ্চিত করুন"},{"key":"greeting","english":"Hi there,","target":"স্বাগতম!"},{"key":"cta","english":"Delete My Account","target":"আমার অ্যাকাউন্ট মুছে ফেলুন"}]}]}]
 ---

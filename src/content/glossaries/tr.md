@@ -3,9 +3,9 @@ lang: "tr"
 name: "Turkish"
 family: null
 stage: "refining"
-governance_sha: "08a75bf"
+governance_sha: "4caf34be"
 content_version: "caa9be6dbd7c"
-published_at: "2026-08-03"
+published_at: "2026-09-26"
 term_count: 60
 category_id: 136
 forum_topic_id: 328

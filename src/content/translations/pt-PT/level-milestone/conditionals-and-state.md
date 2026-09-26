@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/pt-PT.json"
 en_md5: "7116d01d259733a6107a06c51f9bda31"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "8acc8f28f5f2"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Excelente trabalho. Combinar as condicionais com o estado é onde os teus programas começam realmente a parecer vivos, a responder ao que está a acontecer em vez de seguirem apenas um guião fixo.

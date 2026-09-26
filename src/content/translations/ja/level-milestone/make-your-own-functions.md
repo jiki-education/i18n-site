@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ja.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "5aff6a10b986"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 見事です。自分自身の関数を書くことは、本当の転換点です。もう棚の上の道具を使うだけではなく、新しい道具を作っているのです。

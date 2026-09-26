@@ -3,9 +3,9 @@ lang: "pt-PT"
 name: "European Portuguese"
 family: "pt"
 stage: "reviewing"
-governance_sha: "a347f3f"
-content_version: "0c3a41ac1896"
-published_at: "2026-08-22"
+governance_sha: "4caf34be"
+content_version: "7d60f3f33c03"
+published_at: "2026-09-26"
 term_count: 70
 category_id: 73
 forum_topic_id: 341
@@ -225,7 +225,7 @@ Terms below diverge from `../pt/glossary.md` or exist only for European Portugue
 | board / whiteboard | quadro | **One object, one word.** Always _quadro_. Never _quadro branco_ or _painel_. |
 | warehouse (Jiki's warehouse) | armazém | Where Jiki hangs out and keeps his shelf of machines. |
 | crank (machine crank) | manivela | The handle Jiki turns to power a machine up. Verb phrase: _rodar a manivela_. |
-| return chute | calha de saída | A chute a value slides out of. Low-to-medium confidence; still awaiting European Portuguese native-speaker confirmation. Do not carry over pt-BR's _boca da máquina_, which is a Brazilian colloquialism. |
+| return chute | calha de saída | A chute a value slides out of. Confirmed by rlsmota (t/341/6): pt-BR's _boca da máquina_ is a Brazilian colloquialism that doesn't read as clearly in European Portuguese. |
 
 ## Brackets
 

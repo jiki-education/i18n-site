@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/scope/page.md"
 en_md5: "4d5fc2d1d304725660102e9aaceea4c3"
-governance_sha: "af41eb2"
+governance_sha: "4caf34be"
 content_version: "839c7089074f"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 2267
 ---
 
 কল্পনা করুন এমন একটি কোড, যা প্রতিবার রান করার সময় ভিন্ন ভিন্ন জায়গায় একটি বৃত্ত আঁকে, আর আমরা চাই ভিন্ন ভিন্ন জায়গায় ১০টি বৃত্ত আঁকতে। এটি আমরা একটি লুপের সাথে মিলিয়ে করতে পারি। কিন্তু আপনারা যাঁরা খুব মনোযোগ দিয়ে দেখছেন, তাঁরা হয়তো এখানে একটু অদ্ভুত কিছু লক্ষ করেছেন।

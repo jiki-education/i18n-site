@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/string-indexing/page.md"
 en_md5: "cd31e0366b3090b358494667003f54c9"
-governance_sha: "cbba983"
+governance_sha: "4caf34be"
 content_version: "07503b6048bb"
-published_at: "2026-08-12"
+published_at: "2026-09-26"
 forum_topic_id: 880
 ---
 

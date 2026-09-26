@@ -3,9 +3,9 @@ lang: "nl"
 name: "Dutch"
 family: null
 stage: "refining"
-governance_sha: "9a0a5eb"
+governance_sha: "4caf34be"
 content_version: "e6a51b18aa0c"
-published_at: "2026-08-02"
+published_at: "2026-09-26"
 term_count: 38
 category_id: 69
 forum_topic_id: 339

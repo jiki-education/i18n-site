@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/random/page.md"
 en_md5: "5f41de1ca5327be4a86a69d801f1b6f9"
-governance_sha: "af41eb2"
+governance_sha: "4caf34be"
 content_version: "e7538b57b748"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 2263
 ---
 
 প্রোগ্রামিংয়ে প্রায়ই আমরা চাই, একটি ফাংশন ব্যবহার করলে প্রতিবার ভিন্ন একটি র‍্যান্ডম সংখ্যা ফেরত আসুক।

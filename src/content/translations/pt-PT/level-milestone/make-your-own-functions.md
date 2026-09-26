@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/pt-PT.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "b1df25db7087"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Trabalho brilhante. Escrever as tuas próprias funções é uma verdadeira mudança. Já não estás apenas a usar as ferramentas da prateleira, estás a construir novas.

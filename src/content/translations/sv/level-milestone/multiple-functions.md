@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/sv.json"
 en_md5: "d5bfe9e5cd73eb4049674723644d81f0"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "81397292adc8"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Bra jobbat på den här nivån. Att kombinera funktioner för att lösa större problem är precis så professionell programmering ser ut i vardagen. Du bryter ner ett problem i delar, skriver en liten funktion för varje del och sätter sedan ihop dem.

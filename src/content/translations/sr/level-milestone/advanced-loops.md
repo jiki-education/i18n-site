@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/sr.json"
 en_md5: "3eb6e1c44486daf5e71618893b5e8bae"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "4b48da34fd09"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Odličan posao. Sada su ti `for` petlje, `while` petlje, `break` i `continue` pod pojasom. Ovo su petlje za kojima ćeš najčešće posezati van ovog kursa, tako da su zaista vredne vremena koje si uložio/uložila.

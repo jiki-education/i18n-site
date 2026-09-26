@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hu.json"
 en_md5: "07656bf41b4102374b8f16654db4f461"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "49fdc22a73d2"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Nagyszerű munka ezen a nehéz szinten. Most már elsajátítottad az és/vagy, a modulo és a számláló nélküli ciklus használatát.

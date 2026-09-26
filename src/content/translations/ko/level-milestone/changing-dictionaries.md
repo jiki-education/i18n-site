@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "a66deb1c6dd3b8e1514fe3c378a67fe6"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "e8a72d7d796b"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 그리고 이것이 코딩 기초 강의의 마지막 레벨이에요. 딕셔너리가 배열과 함께 여러분의 도구 상자에 추가할 유용한 도구로 느껴졌으면 좋겠어요.

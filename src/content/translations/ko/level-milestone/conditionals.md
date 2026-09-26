@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "9c912874e8026dfd16f56d62ede34016"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "980f8d7d287e"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 조건문 레벨을 잘 해내셨어요. if와 else가 꽤 자연스럽게 느껴지기 시작했길 바라요.

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/animation/page.md"
 en_md5: "536994294072afea52dab51d3bb7cab8"
-governance_sha: "378344e"
+governance_sha: "4caf34be"
 content_version: "0f3a39815199"
-published_at: "2026-08-09"
+published_at: "2026-09-26"
+forum_topic_id: 1337
 ---
 
 Jusqu'ici, quand on a utilisé une boucle `repeat` (répéter) pour dessiner, chaque nouvel élément dessiné venait s'ajouter à l'image. Si on a dessiné une nouvelle brique dans un mur, elle a comblé un trou. Si on a dessiné 10 cercles, on voit 10 cercles à l'écran. C'est comme une peinture : une fois la peinture posée sur le mur, elle ne disparaît pas quand on peint quelque chose de nouveau à côté. Elle reste là. Mais si on veut donner l'impression que quelque chose bouge ?

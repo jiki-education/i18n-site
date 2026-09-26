@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ar.json"
 en_md5: "6102a39a2418e0d864c33b55b7a669f5"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "5abe8b1f8399"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 عمل رائع على إكمال المستوى الأول من دورة أساسيات البرمجة من Jiki.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/string-concatenation/page.md"
 en_md5: "0e6c7a941a1fb1161445da27a4d7e818"
-governance_sha: "b951b19"
+governance_sha: "4caf34be"
 content_version: "18855f5d53d4"
-published_at: "2026-08-16"
+published_at: "2026-09-26"
 forum_topic_id: 1466
 ---
 

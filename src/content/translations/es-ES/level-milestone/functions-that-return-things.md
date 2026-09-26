@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/es-ES.json"
 en_md5: "c5535dc792a600941da4f8ca562377c7"
-governance_sha: "16f805d"
+governance_sha: "4caf34be"
 content_version: "59bb991c53a3"
-published_at: "2026-08-20"
+published_at: "2026-09-26"
 ---
 
 Trabajo brillante en un nivel muy completo. Funciones que devuelven valores, colores HSL y RGB, animación, números aleatorios, scope, escenarios y bucles dentro de bucles. Esa es una gran cantidad de ideas nuevas para añadir a tu caja de herramientas de una sola vez.

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/pt-PT/curriculum/concepts/arithmetic/page.md"
 en_md5: "7ce54754a3ca29896609a01a51b12377"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "a75df4ccedda"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
+forum_topic_id: 1727
 ---
 
 Até agora, quando criámos variáveis, usámos apenas valores simples: um número como `50` ou uma string como `"yellow"`. As variáveis tornam-se muito mais poderosas quando as usamos em combinação umas com as outras. Por exemplo, podemos dizer que o bordo esquerdo do retângulo deve ficar a uma certa distância do bordo da tela.

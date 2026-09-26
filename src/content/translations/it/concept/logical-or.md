@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/logical-or/page.md"
 en_md5: "e7bc3f103a37719cdf3a77920d09e24e"
-governance_sha: "5984695"
+governance_sha: "4caf34be"
 content_version: "e6b40de289a0"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
 forum_topic_id: 1440
 ---
 

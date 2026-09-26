@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hi.json"
 en_md5: "07656bf41b4102374b8f16654db4f461"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "b07aadd72ab1"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 एक मुश्किल लेवल पर बहुत अच्छा काम। अब आपने and/or, modulo, और बिना गिनती के लूपिंग को अपने कौशल में शामिल कर लिया है।

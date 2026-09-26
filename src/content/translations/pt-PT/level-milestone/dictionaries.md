@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/pt-PT.json"
 en_md5: "e24a2de83b7d0cfa482fcea5121aa0f7"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "57db050ff50b"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Excelente trabalho. Os dicionários permitem-te guardar valores associados a chaves com nome em vez de apenas posições, o que torna a procura rápida e legível.

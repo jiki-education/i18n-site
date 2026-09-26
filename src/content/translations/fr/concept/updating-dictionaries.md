@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/updating-dictionaries/page.md"
 en_md5: "5dfff7e37d863711be783b2fbe0873a4"
-governance_sha: "497e9fa"
+governance_sha: "4caf34be"
 content_version: "6dbd828e9fd6"
-published_at: "2026-08-14"
+published_at: "2026-09-26"
+forum_topic_id: 1600
 ---
 
 Tu sais maintenant créer un dictionnaire et en récupérer des valeurs. Mais que se passe-t-il si les données changent ? À un moment, je vais vieillir. Je ne vais plus avoir `42` ans, j'en aurai `43`.

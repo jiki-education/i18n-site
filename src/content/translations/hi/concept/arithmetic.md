@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/hi/curriculum/concepts/arithmetic/page.md"
 en_md5: "7ce54754a3ca29896609a01a51b12377"
-governance_sha: "618e8c2d"
+governance_sha: "4caf34be"
 content_version: "f7a148fe37b1"
-published_at: "2026-09-08"
+published_at: "2026-09-26"
 forum_topic_id: 2509
 ---
 

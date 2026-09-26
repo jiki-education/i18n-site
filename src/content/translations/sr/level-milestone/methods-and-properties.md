@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/sr.json"
 en_md5: "e58f587dfa34a3832164f862a919f8dd"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "14cdca3545c9"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Lep posao. Metode i svojstva su malo drugačiji stil u odnosu na ono što si do sada video/videla. Umesto da proslediš vrednost funkciji, pozivaš funkciju na samoj vrednosti.

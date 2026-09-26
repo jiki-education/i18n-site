@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/fa.json"
 en_md5: "c5535dc792a600941da4f8ca562377c7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "58e633931e4a"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 کارتان در این مرحله‌ی پربار فوق‌العاده بود. توابعی که مقدار برمی‌گردانند، رنگ‌های HSL و RGB، انیمیشن، اعداد تصادفی، حوزه‌ی دید، سناریوها و حلقه‌های تودرتو. در یک مرحله کلی ایده‌ی جدید به جعبه‌ابزارتان اضافه کردید.

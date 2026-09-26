@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "7205cc09a500e11d5ec44a6978ae5af7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "561683ba86d0"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 이번에도 잘하셨어요! 이제 프로그램이 실행되는 동안 변하는 값들을 추적할 수 있게 되셨는데, 이것은 몇 레벨 전보다 진일보한 실력이에요.

@@ -4,12 +4,12 @@ type: "concept"
 slug: "arrays"
 title: "Масиви"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/arrays/source.md"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/arrays/page.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "ea7c7e7"
+governance_sha: "4caf34be"
 content_version: "5064c5e99ec0"
-published_at: "2026-08-03"
+published_at: "2026-09-26"
 forum_topic_id: 880
 ---
 

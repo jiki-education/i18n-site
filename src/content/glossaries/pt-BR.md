@@ -3,9 +3,9 @@ lang: "pt-BR"
 name: "Brazilian Portuguese"
 family: "pt"
 stage: "refining"
-governance_sha: "e4d40de"
-content_version: "244d50dbd1b7"
-published_at: "2026-08-03"
+governance_sha: "4caf34be"
+content_version: "46289886c3fe"
+published_at: "2026-09-26"
 term_count: 79
 category_id: 74
 forum_topic_id: 288
@@ -15,7 +15,7 @@ video_player_forum_topic_id: 773
 # Portuguese (pt) family glossary
 
 The agreed term list shared by every Portuguese locale: Brazilian Portuguese (`pt-BR`) and
-European Portuguese (`pt-pt`). Every term here has been agreed and is binding for both
+European Portuguese (`pt-PT`). Every term here has been agreed and is binding for both
 locales: use it exactly, with no synonyms and no mixing within a document.
 
 ## How this file changes
@@ -28,7 +28,7 @@ Claude). So everything in this file is, by definition, already agreed.
 A term lives in **exactly one** glossary file: this family file, or one locale's own
 `glossary.md`, **never both**. A term defaults to the locale file; it only moves here once
 its rendering, Use column, and Notes are confirmed identical across `pt-BR` and
-`pt-pt`, not merely assumed to be. When reading a locale's effective glossary, it is this
+`pt-PT`, not merely assumed to be. When reading a locale's effective glossary, it is this
 file's rows plus that locale's own `glossary.md` rows (concatenation, not an override
 lookup, because of the one-place rule). If a term is not here, check the relevant locale
 file; it has not necessarily gone unagreed, it may simply diverge by locale.
@@ -53,8 +53,8 @@ These are terms where the Portuguese is used in prose, so the "Use (pt/en)" colu
 
 | English | Portuguese | Use (pt/en) | Notes |
 |---------|------------|-------------|-------|
-| if statement | condicional | pt | Plural: _condicionais_. Corroborated for pt-pt via Univ. Évora course material. |
-| statement (executable) | instrução | pt | The imperative sense: a line of code that does something and gets executed. Corroborated for pt-pt via Univ. Évora course material. |
+| if statement | condicional | pt | Plural: _condicionais_. Corroborated for pt-PT via Univ. Évora course material. |
+| statement (executable) | instrução | pt | The imperative sense: a line of code that does something and gets executed. Corroborated for pt-PT via Univ. Évora course material. |
 | statement (logical claim) | afirmação | pt | The proposition / true-or-false sense. Pick by meaning, not by the English word. |
 | function | função | pt | The keyword `function` in code stays English; the concept in prose is _função_. |
 | argument | argumento | pt | Call-site value sense. |
@@ -79,8 +79,8 @@ Portuguese in the gloss column below (per the format in `global/voice.md`); with
 
 | Term | Portuguese gloss (on `<define>`) | Notes |
 |------|----------------------------------|-------|
-| string | _cadeia de caracteres_ | Exception: in the string concept itself, explain _cadeia de caracteres_ where the source defines it, then use _string_ throughout. |
-| array | _vetor_ | Exception: in the array concept itself, explain _vetor_ where the source defines it, then use _array_. Confirmed for pt-pt as the dominant academic usage (Univ. Évora keeps `array` in prose). |
+| string | "chain of characters", spelled with the locale's own `character` plural | Exception: in the string concept itself, explain the term where the source defines it, then use _string_ throughout. Never hardcode one locale's spelling here; see each locale glossary's `character` row. |
+| array | _vetor_ | Exception: in the array concept itself, explain _vetor_ where the source defines it, then use _array_. Confirmed for pt-PT as the dominant academic usage (Univ. Évora keeps `array` in prose). |
 | Boolean | _booleano_ | Exception: in the Boolean concept, explain _booleano_ where the source defines it, then use _Boolean_. |
 | component | _componente_ | |
 | API | explain what it is in Portuguese | Not a word a beginner knows; where the source defines it, explain the concept in Portuguese, not just gloss the acronym. |
@@ -115,7 +115,7 @@ renderings.
 # Brazilian Portuguese (pt-BR) glossary
 
 The agreed term list for what is distinct about Brazilian Portuguese. Read
-`../pt/glossary.md` first for the terms shared with European Portuguese (`pt-pt`) and for
+`../pt/glossary.md` first for the terms shared with European Portuguese (`pt-PT`) and for
 how this file relates to it; this file holds only the terms that diverge between the two
 locales, plus terms that exist only for Brazilian Portuguese.
 
@@ -140,10 +140,10 @@ column structure as the family file.
 
 | English | Portuguese | Use (pt-BR/en) | Notes |
 |---------|------------|-----------------|-------|
-| character | caractere | pt-BR | Singular is `caractere` (not `caracter`). Diverges from pt-pt's `caráter`/`carateres`. |
-| float / decimal | número de ponto flutuante | pt-BR | Or _decimal_ when the floating-point nature does not matter. Diverges from pt-pt's "vírgula flutuante". |
+| character | caractere | pt-BR | Singular is `caractere` (not `caracter`). Diverges from pt-PT's `caráter`/`carateres`. |
+| float / decimal | número de ponto flutuante | pt-BR | Or _decimal_ when the floating-point nature does not matter. Diverges from pt-PT's "vírgula flutuante". |
 | dictionary | dicionário | pt-BR | _um dicionário_; pairs with `key`/`value` below. |
-| key (in a dictionary) | chave | pt-BR | _a chave_, plural _as chaves_. **Unconfirmed draft.** Deliberately locale-only: `{}` is also _chaves_ in pt-BR (see § Brackets), so where both senses appear near each other, disambiguate (_a chave do dicionário_ vs _a chave de fechamento_) rather than changing either word. pt-pt has no such collision (`{}` is _chavetas_ there), so this row must not be moved to `../pt/glossary.md`. |
+| key (in a dictionary) | chave | pt-BR | _a chave_, plural _as chaves_. Locale-only: pt-PT renders `{}` differently (_chavetas_), so this row stays here rather than moving to `../pt/glossary.md` until pt-PT is checked. |
 | value (in a dictionary) | valor | pt-BR | _o valor associado à chave_. **Unconfirmed draft.** Pairs with `key` above; keep the same pair of words throughout a page. |
 | data structure | estrutura de dados | pt-BR | **Unconfirmed draft.** Feminine: _uma estrutura de dados_, _essas estruturas de dados_. |
 
@@ -151,7 +151,7 @@ column structure as the family file.
 
 | English | Portuguese | Use (pt-BR/en) | Notes |
 |---------|------------|-----------------|-------|
-| to return (a value) | retornar | pt-BR | "A função retorna um valor." Diverges from pt-pt's "devolver". |
+| to return (a value) | retornar | pt-BR | "A função retorna um valor." Diverges from pt-PT's "devolver". |
 | return value | valor de retorno | pt-BR | Follows the verb `retornar` above. |
 | input (one a function declares) | entrada | pt-BR | Use only where the English word is **input** and it names one of the inputs a function declares or expects ("give it four inputs: `left`, `top`, `radius`, `color`"; "an extra input where you specified the color"). Feminine: _uma entrada extra_, _as quatro entradas_. Never _fenda_, which translates the English **slot** only (see `../pt/glossary.md` § Jiki physical metaphors): pick by the English word in front of you, not by what the sentence is about, and where one paragraph uses both English words, use both renderings. |
 | input (a value passed in at a call) | valor de entrada | pt-BR | Use only where the English word is **input** and it names the value written at one position of a call ("for the fifth input, we write `"blue"`"). Masculine, so agreement follows: _o quinto valor de entrada_. Bare _entrada_ is also natural here once context is set; _valor de entrada_ is the default where the sentence needs to name the value itself. Never _fenda_, on the same distinction as the row above. |
@@ -169,12 +169,12 @@ column structure as the family file.
 | mental model | modelo mental | pt-BR | _é um modelo mental poderoso_. |
 | (programming) language | linguagem (de programação) | pt-BR | `linguagem` alone once context is set; `linguagem de programação` on introduction. Never `língua` (natural languages only). |
 | iteration | iteração | pt-BR | Verb: _iterar_, taking **sobre**: _iterar sobre um array_, _iteramos sobre strings_. Never _iterar por_. "passar por cada elemento" also natural. |
-| to run / execute (code) | rodar / executar | pt-BR | `rodar` in warm/casual register; `executar` in formal or procedural steps. Diverges from pt-pt, where "rodar" is not natural usage. |
-| loop | laço | pt-BR | `for`/`while` keywords stay English. Diverges from pt-pt's "ciclo". |
+| to run / execute (code) | rodar / executar | pt-BR | `rodar` in warm/casual register; `executar` in formal or procedural steps. Diverges from pt-PT, where "rodar" is not natural usage. |
+| loop | laço | pt-BR | `for`/`while` keywords stay English. Diverges from pt-PT's "ciclo". |
 | for loop | laço `for` | pt-BR | Keep `for` in backticks (real keyword) + _laço_. |
 | while loop | laço `while` | pt-BR | As above. |
-| scope | escopo | pt-BR | Diverges from pt-pt's "âmbito". |
-| comment (code comment) | comentário | pt-BR | The `//` line a learner writes as a private note; Jiki ignores it and moves to the next line. **Unconfirmed:** added for the function-inputs concept page, not yet used in a real translated file; likely identical in pt-pt, so a candidate to move to `../pt/glossary.md` once confirmed. |
+| scope | escopo | pt-BR | Diverges from pt-PT's "âmbito". |
+| comment (code comment) | comentário | pt-BR | The `//` line a learner writes as a private note; Jiki ignores it and moves to the next line. **Unconfirmed:** added for the function-inputs concept page, not yet used in a real translated file; likely identical in pt-PT, so a candidate to move to `../pt/glossary.md` once confirmed. |
 
 ### Tooling & engineering
 
@@ -191,8 +191,8 @@ column structure as the family file.
 | course | curso | pt-BR | The whole Jiki course: _neste curso, o seu intérprete é o Jiki_. Keep distinct from `lição` (lesson). |
 | cell (grid square, e.g. maze exercises) | casa | pt-BR | "Move the character forward one cell" → "avance uma casa" (like a square on a board game), not "uma célula", which reads as a biology/spreadsheet term and feels unnatural here. |
 | character / figure (the walker in maze exercises) | bonequinho | pt-BR | The little figure the learner moves around the grid. Confirmed as natural by a native speaker (sorrizo) on https://forum.jiki.io/t/812/5; already in use across the maze exercises. |
-| bouncer (the door-staff character) | segurança | pt-BR | _o segurança da balada_. Masculine despite the `-a` ending. Chosen over _porteiro_ (which reads as a residential doorman rather than club door staff). **Unconfirmed draft.** |
-| to turn (someone) away | barrar | pt-BR | _barrar a pessoa na porta_. **Unconfirmed draft.** _recusar a entrada_ is the natural alternative where the sentence needs an object phrase rather than a single verb; keep one of the two consistently within a page. |
+| bouncer (the door-staff character) | segurança | pt-BR | _o segurança da balada_. Masculine despite the `-a` ending. Not _porteiro_ (reads as a residential doorman rather than club door staff). |
+| to turn (someone) away | barrar | pt-BR | _barrar a pessoa na porta_. Use _barrar_ in the nightclub-door context; _recusar a entrada_ only where the sentence needs an object phrase rather than a single verb. |
 | dress code | código de vestimenta | pt-BR | **Unconfirmed draft.** The rule about what may be worn, as posted at a club door. |
 | smart (of clothing, in a dress code) | roupa elegante | pt-BR | **Unconfirmed draft.** English "smart" here means dressed-up, never _inteligente_. Adjectivally: _elegante_. |
 | Sensing (exercise function category label) | Percepção | pt-BR | **Unconfirmed draft.** The category heading grouping the functions that let the character sense its surroundings, in exercise message catalogs. |
@@ -207,8 +207,8 @@ Portuguese in the gloss column below (per the format in `global/voice.md`); with
 
 | Term | Portuguese gloss (on `<define>`) | Notes |
 |------|----------------------------------|-------|
-| framework | _framework_ | Where the source `<define>`s it, explain it means a reusable structure. Diverges from pt-pt's "estrutura de trabalho" gloss. |
-| CLI (the concept) | interface de linha de comando | Where the source `<define>`s it, explain CLI as _interface de linha de comando_ (singular "comando"). Diverges from pt-pt's plural "comandos". |
+| framework | _framework_ | Where the source `<define>`s it, explain it means a reusable structure. Diverges from pt-PT's "estrutura de trabalho" gloss. |
+| CLI (the concept) | interface de linha de comando | Where the source `<define>`s it, explain CLI as _interface de linha de comando_ (singular "comando"). Diverges from pt-PT's plural "comandos". |
 
 ## Jiki physical metaphors
 
@@ -216,7 +216,7 @@ Terms below diverge from `../pt/glossary.md` or exist only for Brazilian Portugu
 
 | English metaphor | Portuguese rendering | Notes |
 |-----------------|---------------------|-------|
-| chain (array metaphor) | corrente | Physical chain of links; links = _elos_. Context must be physical to avoid collision with `corrente` = electric current / "current/present". (pt-pt's equivalent entry warns of a different collision risk, with "cadeia"; both are valid for their own locale.) |
+| chain (array metaphor) | corrente | Physical chain of links; links = _elos_. Context must be physical to avoid collision with `corrente` = electric current / "current/present". (pt-PT's equivalent entry warns of a different collision risk, with "cadeia"; both are valid for their own locale.) |
 | machine (function metaphor) | máquina | Diminutive _maquininha_ for the affectionate "little machines". |
 | shelves (storage) | prateleira | _a prateleira do Jiki_; plural _prateleiras_ when there is more than one. |
 | warehouse (Jiki's warehouse) | galpão | The big shed where Jiki hangs out and keeps his machine shelf. |
@@ -238,15 +238,15 @@ first actual use and move to the sections above once confirmed.
 
 Default to plain **parênteses**; see `../pt/glossary.md` § Brackets for the shared `()`
 glyph word. When a specific bracket type matters, name it and show the glyph immediately
-after; for `()` itself, add _parênteses redondos_ + glyph only when disambiguating (pt-pt
+after; for `()` itself, add _parênteses redondos_ + glyph only when disambiguating (pt-PT
 uses "parênteses curvos" instead). This locale's `[]`, `{}`, `<>` renderings diverge from
-pt-pt's and are given below.
+pt-PT's and are given below.
 
 | Glyph | Portuguese | Notes |
 |-------|-----------|-------|
-| `[]` | colchetes | Diverges from pt-pt's "parênteses retos". |
-| `{}` | chaves | Diverges from pt-pt's "chavetas". |
-| `<>` | sinais de maior e menor | Diverges from pt-pt's "sinais de menor e maior" (reversed order). |
+| `[]` | colchetes | Diverges from pt-PT's "parênteses retos". |
+| `{}` | chaves | Diverges from pt-PT's "chavetas". |
+| `<>` | sinais de maior e menor | Diverges from pt-PT's "sinais de menor e maior" (reversed order). |
 
 Example: _para chamar uma função, escreva o nome dela seguido de parênteses de abertura e
 fechamento (`()`)._
@@ -254,6 +254,90 @@ fechamento (`()`)._
 ---
 
 ## Decision log
+
+### 2026-08-06: Translation engine confirmed as `fable`
+
+**Decided by:** sorrizo and oxe-b, both native speakers, on the "Alternative translation
+model" comparison thread (https://forum.jiki.io/t/931). **Status:** settled.
+**Terms affected:** none (engine choice, not a glossary or guide change).
+**Files affected:** `tracking.json` (`translation_engine`).
+
+Jeremy posted an alternative-model rendering of a Brazilian Portuguese page alongside the
+published one and asked which read better. Both reviewers preferred the original, and the
+thread was closed with "we will keep the current version rather than switching models on
+this evidence".
+
+This is a **confirmation of the existing default, not a switch**: Brazilian Portuguese was
+already running on `fable`, and it continues to. What changed is that the choice is now
+native-speaker-backed and therefore recorded as a `translation_engine` block, which per
+`orchestrator.md` means a human has confirmed that model for this language.
+
+### 2026-08-05: Seven rows proposed from the website-copy translation pass (unconfirmed drafts)
+
+**Decided by:** nobody. **Status: unconfirmed drafts**, proposed by the workers translating
+website copy (`namespaces=codingExercise,seo,articles,blog,checkout`). **Terms affected:**
+`breakpoint`, `tooltip`, `LLM-era`, `roadmap`, `job-ready`, `hands-on practice`, `post (blog
+post)`.
+
+No Brazilian Portuguese speaker has ruled on any of them.
+
+**`job-ready` → `rumo ao mercado de TI`** reuses the existing `tech / tech industry` →
+"mercado de TI" row confirmed by oxe-b on 2026-07-31, rather than coining a new phrase for
+"job-ready" on its own.
+
+**There is also an earlier, still-unagreed delta of roughly fifteen terms from a first
+website-copy pass** (`dashboard → painel`, `feature → recurso`, `upgrade → fazer upgrade`,
+`AI → IA`, `badge → emblema`, `achievement → conquista`, a `lesson → lição` vs `aula` split,
+`frame → passo`, `breakpoint → ponto de parada`, and others), which was not logged as its own
+dated section in this file at the time and is called out here so it is not lost. It predates
+and is separate from this pass, and it is worth reconciling the two together when a native
+speaker takes this up: this pass proposes keeping `breakpoint` in English, medium confidence,
+while the earlier delta proposed `ponto de parada` for the same term. Neither is confirmed,
+so the conflict is open, not resolved, and both candidates are recorded here rather than one
+overwriting the other.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| breakpoint | kept English | Alternatives exist ("ponto de interrupção", "ponto de parada"); conflicts with the earlier unagreed delta's "ponto de parada" proposal, see note above. | medium |
+| tooltip | dica | | medium |
+| LLM-era | era da IA | | medium |
+| roadmap | kept English | | medium |
+| job-ready | rumo ao mercado de TI | Reuses the confirmed "mercado de TI" row (2026-07-31). | medium |
+| hands-on practice | prática mão na massa | | medium |
+| post (blog) | kept English ("post") | | high |
+
+### 2026-08-04: `chave`, `barrar` and `segurança` confirmed; `branch` still unresolved
+
+**Decided by:** native speaker (sorrizo), forum post https://forum.jiki.io/t/288/3099,
+answering our four open questions at https://forum.jiki.io/t/288/3096. **Status: confirmed**
+for the first three; `branch (of a conditional)` remains an unconfirmed low-confidence draft.
+**Terms affected:** `key (in a dictionary)`, `to turn (someone) away`, `bouncer (the
+door-staff character)`, `branch (of a conditional)`.
+
+`key` → _chave_ stands, and the collision we had assumed does not exist. We had asked whether
+sharing a word with _chaves_ for `{}` would confuse a reader; sorrizo: "It actually doesn't
+collide with chaves {}." The row's disambiguation instruction (_a chave do dicionário_ vs _a
+chave de fechamento_) was therefore solving a problem native speakers do not have, and has
+been dropped along with the draft marker. The row still sits in the locale file rather than
+`../pt/glossary.md`, but only because pt-PT has not been checked, not because of the
+collision reasoning recorded in the 2026-08-02 entry below, which no longer holds.
+
+`to turn (someone) away` → _barrar_ is confirmed for the nightclub-door sense. sorrizo: "Both
+barrar and recusar are good, but I would use barrar in this context of a nightclub." The row
+no longer offers the two as interchangeable-with-consistency; _barrar_ is the default and
+_recusar a entrada_ is reserved for sentences that need an object phrase.
+
+`bouncer` → _segurança_ is confirmed. sorrizo: "segurança is the perfect translation for it."
+This settles the _porteiro_ alternative, which two workers had already independently rejected.
+
+`branch (of a conditional)` → _bloco_ is **not** resolved and keeps its low-confidence
+marking. sorrizo did not propose an alternative; she said she had never heard "branches" used
+this way even in English, and that Portuguese may simply never have developed a natural
+equivalent for the concept. That reframes the problem: this may not be a wording choice we
+have got wrong but a concept with no clean pt-BR equivalent, in which case the fix is likely
+to be describing the fork in the prose rather than finding a noun for it. Future review
+should start from that, and should not read the absence of a suggested replacement as
+approval of _bloco_.
 
 ### 2026-08-03: _iterar_ takes _sobre_, not _por_
 
@@ -297,7 +381,7 @@ exactly the mistake that produced _fenda_.
 **Two `input` rows, not one**, mirroring the split European Portuguese settled independently
 on the same day: _entrada_ where the English names an input a function declares or offers,
 _valor de entrada_ where it names the value written at one position of a call. The two rows
-differ from pt-pt's (which uses _parâmetro de entrada_ for the first), so both stay in this
+differ from pt-PT's (which uses _parâmetro de entrada_ for the first), so both stay in this
 locale file rather than moving up to `../pt/glossary.md`.
 
 Applied to `curriculum/src/concepts/strings/pt-BR.md`: "uma fenda extra" → "uma entrada
@@ -363,8 +447,8 @@ confusable with each other.
 máquina` is a Brazilian colloquialism, and no European Portuguese speaker has been asked
 about it, so promoting it family-wide would be assuming what the family rule
 (`global/workflow.md`, "only move it up to the family file once it is confirmed identical
-across every locale") says must be confirmed. pt-pt keeps `calha de saída` verbatim, warning
-and all, now in `../pt-pt/glossary.md`; its effective glossary is unchanged, and its
+across every locale") says must be confirmed. pt-PT keeps `calha de saída` verbatim, warning
+and all, now in `../pt-PT/glossary.md`; its effective glossary is unchanged, and its
 translated content was not touched.
 
 ### 2026-08-02: Proposed terms from the Stage 2 batch 2 catch-up pass (unconfirmed drafts)
@@ -437,7 +521,7 @@ one: `using-functions-with-inputs` defines `<define>comments</define>` (the `//`
 learner writes as a private note), which had no row in either file. `global/terms.md`
 lists it as a term needing a glossary entry in every language. Added `comentário` to this
 locale's glossary, not yet used in a real translated file. It reads as an ordinary word
-with no reason to diverge from pt-pt, so it is a candidate to move to `../pt/glossary.md`
+with no reason to diverge from pt-PT, so it is a candidate to move to `../pt/glossary.md`
 once confirmed identical there.
 
 No other gap was found: the `board / whiteboard`, `machine`, `crank`, `shelves`,
@@ -479,7 +563,7 @@ by a dated entry above (`interpreter`, `board / whiteboard`) is not repeated her
 | Term | Why |
 |------|-----|
 | instruction (given to Jiki) | Portuguese has one ordinary word (`instrução`) for both an executable statement and an instruction given to Jiki; coining a second would read worse than sharing it. |
-| scope | `escopo` is fully nativized in Brazilian tech writing, unlike pt-pt's `âmbito`. |
+| scope | `escopo` is fully nativized in Brazilian tech writing, unlike pt-PT's `âmbito`. |
 
 #### Keep in English
 
@@ -570,12 +654,12 @@ promotions listed at the end.
 **All of these went into the locale file, not `../pt/glossary.md`.** Per the family rule a
 term defaults to the locale file and only moves up once it is confirmed identical in both
 locales, and several of these (`checksum`, `estrutura de dados`, `biblioteca padrão`) are
-plausibly identical in pt-pt but have not been checked there. Whoever confirms them can move
-them up later; guessing now would have written unagreed rows that bind pt-pt.
+plausibly identical in pt-PT but have not been checked there. Whoever confirms them can move
+them up later; guessing now would have written unagreed rows that bind pt-PT.
 
 `key` → _chave_ is a deliberate exception that must **never** move to the family file. In
 pt-BR `{}` is also _chaves_, so dictionary keys and closing braces share a word, and the row
-carries the disambiguation instruction for that. pt-pt has no collision (`{}` is _chavetas_
+carries the disambiguation instruction for that. pt-PT has no collision (`{}` is _chavetas_
 there), so its reasoning for the same rendering is a different reasoning, and one shared row
 could not state both. The same collision was already flagged independently by the
 JavaScript interpreter-catalog pass.
@@ -614,6 +698,6 @@ reason.
 **Not changed, flagged instead:** the family row `true / false` → _verdadeiro / falso_ says
 only "Lowercase in prose" and does not state that the code literals stay English. The
 pt-BR `condition is true / false` row now says so for this locale. Adding it to the family
-file was deliberately not done here: a family edit binds pt-pt and obliges republishing and
-announcing on every sibling locale, and a pt-pt session was working in the same checkout at
+file was deliberately not done here: a family edit binds pt-PT and obliges republishing and
+announcing on every sibling locale, and a pt-PT session was working in the same checkout at
 the time. It is worth doing as its own family-level change.

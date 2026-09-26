@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.bn.yml"
 en_md5: "df687cdb774a249d59df251a88878ee7"
-governance_sha: "9b3923b"
+governance_sha: "4caf34be"
 content_version: "82d8346deed1"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 1791
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.coding","rows":[{"key":"subject","english":"Build Rock-Solid Coding Fundamentals","target":"কোডিংয়ের মজবুত ভিত গড়ে তুলুন"},{"key":"preview","english":"Learning to code has a reputation for being technical and hard.","target":"কোড শেখা মানেই কঠিন আর টেকনিক্যাল, এমন একটা ধারণা প্রচলিত আছে।"},{"key":"greeting","english":"Hi again,","target":"আবারও স্বাগতম!"}]}]}]
 ---
 

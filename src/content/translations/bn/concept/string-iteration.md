@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/string-iteration/page.md"
 en_md5: "09f399cc3f52b89380d3ed23fc6be513"
-governance_sha: "af41eb2"
+governance_sha: "4caf34be"
 content_version: "c715f9bef530"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 2269
 ---
 
 তৃতীয় বন্ধনী ব্যবহার করে আপনি স্ট্রিংয়ের একটি অক্ষর অ্যাক্সেস করতে পারেন। এবার আমরা দেখব কীভাবে একটি স্ট্রিংয়ের ওপর লুপ চালিয়ে অক্ষরগুলো একটি একটি করে বের করে আনা যায়।

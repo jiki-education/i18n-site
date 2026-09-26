@@ -3,9 +3,9 @@ lang: "sw"
 name: "Swahili"
 family: null
 stage: "setup"
-governance_sha: "8e3de87"
-content_version: "656f97b19689"
-published_at: "2026-07-31"
+governance_sha: "4caf34be"
+content_version: "128ae82d2442"
+published_at: "2026-09-26"
 term_count: 100
 category_id: 266
 forum_topic_id: 500
@@ -171,6 +171,99 @@ Load-bearing teaching terms. Use exactly the agreed rendering; never substitute 
 ---
 
 ## Decision log
+
+### 2026-08-02: Website copy (app UI catalog)
+
+**Decided by:** nobody yet. These rows are **unconfirmed drafts**, proposed by the
+website-copy translation pass (in-scope namespaces: modals, codingExercise, lesson,
+quizCard, videoExercise, dashboard, challenges, concepts, layout), run as a single fable
+worker per `orchestrator.md`'s one-worker-per-scope rule. Logged here for review, not
+written to `glossary.md`.
+
+| English | Proposed target | Notes | Confidence |
+|---------|-----------------|-------|------------|
+| challenge (content type) | changamoto | | high |
+| concept (curriculum item) | dhana | | high |
+| hint | kidokezo (pl. vidokezo) | | high |
+| feature (platform) | huduma | | high |
+| chat / AI chat | gumzo (la AI) | | medium |
+| unlock / locked | kufungua / imefungwa | | medium |
+| upgrade (plan) | kuboresha | | medium |
+| Deep Dive (feature name) | Uchambuzi wa Kina | | medium |
+| scenario (test) | senario | | medium |
+| scrubber | kitelezi | | low |
+| quiz | maswali | | low |
+
+`breakpoint` and prose `bug` kept English: no settled Swahili equivalent, candidates for the
+Keep-in-English table. `/mo` renders as `/mwezi`, three characters longer than English —
+worth a layout check on the checkout modal.
+
+### 2026-08-01: Guide pruned to rules only; rationale moved here
+
+**Decided by:** agent, in a guide-pruning pass. `guide.md` is loaded into the prompt for
+every Swahili item, so it now carries only imperative rules and the worked examples that
+teach something the rule alone does not. Every behavioural instruction was kept; only
+rationale, provenance and duplication were removed.
+
+**Why there is no `sw-TZ`/`sw-KE` split.** Research found real differences in which
+*technical terms* different institutions and communities favour (Tanzania's BAKITA/TATAKI
+lean toward regulated native coinages, Kenyan usage leans more toward retaining English),
+but no evidence of a written-language divergence large enough to need separate
+guide/glossary files. Where a specific technical term is genuinely contested between
+communities, the glossary keeps English and glosses the Swahili rather than picking a side;
+that is a glossary policy, not something a translator acts on per file, so it lives here
+and the guide states only "write Standard Swahili, there is no locale split".
+
+**Where the tutorial register comes from.** The "short, direct, encouraging, plain
+second-person-singular imperative" register in the guide was taken from real Swahili
+tutorial content aimed at this audience (diji.africa's computer lessons, jifunzebure.com),
+as against the more formal or bureaucratic Swahili of government and legal documents.
+
+**Why the bare singular imperative, and not "ninyi".** Swahili has no French-style
+formal/informal pronoun split (no T-V distinction), but it does form imperatives straight
+from the verb stem for singular "you", and that is what the tutorial sources consistently
+use. Research did not confirm a reliable "ninyi as singular honorific" convention in modern
+usage, so the guide forbids switching to the plural form. If a native reviewer later says
+otherwise for a specific context, that is a correction to the guide, not something to guess
+at pre-emptively.
+
+**Capitalization and punctuation.** Research surfaced no Swahili-specific
+instructional-prose convention diverging from ordinary Latin-script sentence capitalization
+and punctuation, so the guide no longer says anything about it (saying "the default
+applies" is not a rule).
+
+**The acronym bullet was removed from the guide.** It said not to drop an acronym bare on
+first use and to explain the concept in Swahili instead. The first-occurrence framing
+contradicts `global/voice.md`, which has no first-use auto-detection: only a `<define>`
+triggers a gloss, ever. The surviving content is already carried, in exactly that form, by
+the `API` and `CLI` rows in `glossary.md` ("explain the concept where the source
+`<define>`s it, do not just gloss the acronym"), and the general principle by
+`global/voice.md`. Nothing behavioural was lost.
+
+**Contradictions fixed in the guide's worked examples. Status: unconfirmed drafts.** Three
+examples used terms the glossary had already settled elsewhere, so the examples were
+corrected to the glossary (the glossary rows are unchanged, and the guide's own imperative
+rules outrank its examples):
+
+- "in the function" was glossed *ndani ya kazi*, using `kazi` for "function", contradicting
+  both the `function` = `kitendakazi` row and the guide's own rule that `kazi` stays free
+  for its everyday "work/job" sense. Now *ndani ya kitendakazi*.
+- "The function returns a value" was *Kazi hii inarudisha thamani*, wrong on both the same
+  point and on the verb: `to return (a value)` is `kurejesha`, not `kurudisha`. Now
+  *Kitendakazi hiki kinarejesha thamani*, which also carries the class 7 agreement
+  (`hiki`, subject prefix `ki-`) the guide's noun-class rule demands.
+- The locative example was written *msimbo-ni* with a hyphen. The `-ni` suffix is written
+  attached, so it is now *msimboni*.
+
+**Two gaps left open, deliberately not filled in this pass.** The guide states that
+noun-class agreement must match each noun's class, but says nothing about which class an
+**English-kept** technical term (`variable`, `string`, `object`, `scope`, `parameter`,
+`argument`, `index`, `component`, ...) takes in Swahili prose, nor what agreement follows
+from it. Swahili loanwords of this shape usually default to class 9/10, which would give an
+invariant singular/plural and `hii`/`hizi` agreement, but nothing in the research or the
+decision log settles it, so no rule was invented. Separately, the guide states no
+quotation-mark convention at all (the examples use ASCII `"` throughout, consistently, so
+there is no glyph mismatch to fix). Both are top candidates for native-speaker review.
 
 ### 2026-07-30: Owner decisions from the 28-language using-functions pass
 

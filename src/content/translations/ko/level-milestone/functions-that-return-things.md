@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "c5535dc792a600941da4f8ca562377c7"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "eb14ce748b23"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 정말 알찬 레벨을 멋지게 해내셨어요. 값을 반환하는 함수, HSL과 RGB 색상, 애니메이션, 난수, 스코프, 시나리오, 그리고 루프 안의 루프까지. 한 번에 도구 상자에 추가할 새 아이디어가 정말 많았죠.

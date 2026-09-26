@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/updating-dictionaries/page.md"
 en_md5: "5dfff7e37d863711be783b2fbe0873a4"
-governance_sha: "af41eb2"
+governance_sha: "4caf34be"
 content_version: "69fc957107b5"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 2271
 ---
 
 আপনি জানেন কীভাবে একটি ডিকশনারি তৈরি করতে হয় আর তার ভেতর থেকে মান বের করে আনতে হয়। কিন্তু ডেটা যদি বদলে যায়, তখন কী হবে? একটা সময়ে গিয়ে আমার বয়স তো বাড়বে। আমি আর `42` থাকব না, `43` হয়ে যাব।

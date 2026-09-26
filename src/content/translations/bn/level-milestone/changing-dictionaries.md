@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/bn.json"
 en_md5: "a66deb1c6dd3b8e1514fe3c378a67fe6"
-governance_sha: "548ef5ba"
+governance_sha: "4caf34be"
 content_version: "52a9ac5e1a6b"
-published_at: "2026-08-25"
+published_at: "2026-09-26"
+forum_topic_id: 1888
 ---
 
 আর এটাই কোডিং ফান্ডামেন্টালসের শেষ লেভেল। আশা করি অ্যারের পাশাপাশি ডিকশনারিকেও এখন কাজের একটি সরঞ্জাম মনে হচ্ছে।

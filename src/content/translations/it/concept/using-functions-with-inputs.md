@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/it/curriculum/concepts/using-functions-with-inputs/page.md"
 en_md5: "0bd82377f2407de5fe030511752d5503"
-governance_sha: "d59b141"
+governance_sha: "4caf34be"
 content_version: "ef9104eb34d1"
-published_at: "2026-08-20"
+published_at: "2026-09-26"
 forum_topic_id: 1196
 ---
 

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hi.json"
 en_md5: "4bb57788e09cc6de5466d34b560540b2"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "91e697af4636"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 इस पर अच्छा काम। कॉन्कैटनेशन और टेम्पलेट बहुत सरल विचार हैं, लेकिन ये लगातार सामने आते हैं, खासकर जहाँ आप किसी व्यक्ति के पढ़ने के लिए आउटपुट तैयार कर रहे हों।

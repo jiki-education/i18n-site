@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/el.json"
 en_md5: "f0d47c822253e20fbc27a36405270946"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "55de7257a968"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
+forum_topic_id: 1723
 ---
 
 Ωραία δουλειά! Το να διαβάζεις από πίνακες είναι χρήσιμο, αλλά το να μπορείς να τους χτίζεις κομμάτι-κομμάτι είναι όπου πραγματικά ξεχωρίζουν. Διατρέχεις κάτι, συλλέγεις τα κομμάτια που σε ενδιαφέρουν σε έναν νέο πίνακα και τον επιστρέφεις — αυτό είναι ένα μοτίβο που θα χρησιμοποιείς ξανά και ξανά.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/hi.json"
 en_md5: "e58f587dfa34a3832164f862a919f8dd"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "d07e03442251"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 अच्छा काम। मेथड और प्रॉपर्टी अब तक आपने जो देखा है उससे थोड़ी अलग शैली हैं। किसी फंक्शन में वैल्यू पास करने के बजाय, आप वैल्यू पर ही फंक्शन कॉल करते हैं। इस विचार की आदत डालने में थोड़ा समय लगता है, लेकिन इसका उपयोग हर जगह होता है, इसलिए यह जल्दी ही स्वाभाविक लगने लगेगा।

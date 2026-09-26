@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/dictionaries/page.md"
 en_md5: "b8a26ad63301df1d00ce08e1e429cf05"
-governance_sha: "b951b19"
+governance_sha: "4caf34be"
 content_version: "a93e3505f571"
-published_at: "2026-08-16"
+published_at: "2026-09-26"
 forum_topic_id: 980
 ---
 

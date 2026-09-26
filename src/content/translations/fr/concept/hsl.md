@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/hsl/page.md"
 en_md5: "d751e07ccf6b5a58a11d3d2af1026b93"
-governance_sha: "84303b0"
+governance_sha: "4caf34be"
 content_version: "c0d7d6111bda"
-published_at: "2026-08-08"
+published_at: "2026-09-26"
+forum_topic_id: 1462
 ---
 
 HSL nous offre une façon complètement différente de penser les couleurs par rapport à RGB. HSL est l'abréviation de teinte (_hue (H)_ en anglais), saturation (_saturation (S)_ en anglais) et luminosité (_lightness (L)_ en anglais). Tu disposes d'une fonction appelée `hsl` qui prend trois nombres, un pour la teinte, un pour la saturation et un pour la luminosité, et qui renvoie une couleur. Alors, voyons ce que ces trois mots veulent dire.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/using-functions-with-inputs/page.md"
 en_md5: "0bd82377f2407de5fe030511752d5503"
-governance_sha: "24010d9"
+governance_sha: "4caf34be"
 content_version: "85af36130274"
-published_at: "2026-08-07"
+published_at: "2026-09-26"
 ---
 
 Одна з найпотужніших властивостей машин, тобто функцій, полягає в тому, що багато з них дозволяють покласти всередину певну інформацію, і саме від неї залежить, що вони зроблять, коли ми їх запустимо.

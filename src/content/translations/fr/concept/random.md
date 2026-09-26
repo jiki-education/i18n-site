@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/random/page.md"
 en_md5: "5f41de1ca5327be4a86a69d801f1b6f9"
-governance_sha: "43bc7dd"
+governance_sha: "4caf34be"
 content_version: "8d3822ebe61f"
-published_at: "2026-08-12"
+published_at: "2026-09-26"
+forum_topic_id: 1461
 ---
 
 En programmation, on veut souvent utiliser une fonction et obtenir en retour un nombre aléatoire (_random number_ en anglais) différent à chaque fois.

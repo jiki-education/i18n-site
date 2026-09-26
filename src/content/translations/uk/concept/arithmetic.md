@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/arithmetic/page.md"
 en_md5: "7ce54754a3ca29896609a01a51b12377"
-governance_sha: "cbcc701"
+governance_sha: "4caf34be"
 content_version: "dcdc44755ed1"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 Досі, створюючи змінні, ми використовували лише прості значення: число на кшталт `50` або рядок тексту (англ. _string_) на кшталт `"yellow"`. Справжня сила змінних розкривається тоді, коли ми поєднуємо їх одна з одною. Наприклад, ми можемо сказати, що лівий край прямокутника має бути на певній відстані від краю полотна.

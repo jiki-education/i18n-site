@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/it.json"
 en_md5: "31abe8218e4f7df79cfece9992e64dbd"
-governance_sha: "cd8ab70"
+governance_sha: "4caf34be"
 content_version: "9cb8d211c6e8"
-published_at: "2026-08-16"
+published_at: "2026-09-26"
+forum_topic_id: 1654
 ---
 
 Ottimo lavoro. Scrivere le tue funzioni segna un vero salto di qualità: non stai più solo usando gli strumenti sullo scaffale, ma inizi a crearne di nuovi.

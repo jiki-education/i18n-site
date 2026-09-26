@@ -4,12 +4,12 @@ type: "concept"
 slug: "string-concatenation"
 title: "Конкатенація рядків"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/string-concatenation/source.md"
+source_repo: "i18n"
+source_path: "locales/uk/curriculum/concepts/string-concatenation/page.md"
 en_md5: "0e6c7a941a1fb1161445da27a4d7e818"
-governance_sha: "14dc2ed"
-content_version: "fd272c3e5aa9"
-published_at: "2026-08-04"
+governance_sha: "4caf34be"
+content_version: "f1dcd9ba702c"
+published_at: "2026-09-26"
 ---
 
 Ми вже знаємо, що таке рядки тексту (англ. _string_). Це аркуші паперу, на яких написано текст.
@@ -42,4 +42,4 @@ published_at: "2026-08-04"
 "hello " + name // "hello Jeremy" або "hello Jiki"
 ```
 
-Так ми отримаємо `"hello Jeremy"`, або `"hello Jiki"`, або привітання для будь-кого іншого, залежно від того, що лежить у коробці `name`.
+Так ми отримаємо `"hello Jeremy"`, або `"hello Jiki"`, або привітання будь-кого іншого, залежно від того, що лежить у коробці `name`.

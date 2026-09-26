@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/string-iteration/page.md"
 en_md5: "09f399cc3f52b89380d3ed23fc6be513"
-governance_sha: "cbba983"
+governance_sha: "4caf34be"
 content_version: "286d863cb452"
-published_at: "2026-08-12"
+published_at: "2026-09-26"
 forum_topic_id: 880
 ---
 

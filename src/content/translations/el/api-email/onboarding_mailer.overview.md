@@ -7,9 +7,10 @@ status: "published"
 source_repo: "api"
 source_path: "config/locales/mailers/onboarding_mailer.el.yml"
 en_md5: "2f218fb80eecb6118fd61208684334ce"
-governance_sha: "51f9d69"
+governance_sha: "4caf34be"
 content_version: "37079477ceb3"
-published_at: "2026-08-19"
+published_at: "2026-09-26"
+forum_topic_id: 1722
 messages: [{"heading":"The rest of this email","note":"The short strings around the body: the subject line, the greeting, the button label, the inbox preview. The subject is also the heading at the top of this page.","namespaces":[{"name":"onboarding_mailer.overview","rows":[{"key":"subject","english":"The Two Halves of Becoming a Developer in 2026","target":"Οι δύο πλευρές του να γίνεις προγραμματιστής το 2026"},{"key":"preview","english":"For the last few years I've been slowly learning Japanese.","target":"Τα τελευταία χρόνια μαθαίνω σιγά σιγά ιαπωνικά."},{"key":"greeting","english":"Hi there,","target":"Γεια σου,"}]}]}]
 ---
 

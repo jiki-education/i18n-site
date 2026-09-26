@@ -4,12 +4,12 @@ type: "concept"
 slug: "updating-variables"
 title: "Aggiornare le variabili"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/updating-variables/source.md"
+source_repo: "i18n"
+source_path: "locales/it/curriculum/concepts/updating-variables/page.md"
 en_md5: "f9b2fbb6bfd82a620b093e88951ff841"
-governance_sha: "c80036b"
+governance_sha: "4caf34be"
 content_version: "1a5e3f807bcd"
-published_at: "2026-08-06"
+published_at: "2026-09-26"
 forum_topic_id: 1207
 ---
 

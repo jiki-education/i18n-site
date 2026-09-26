@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/bn/curriculum/concepts/modulo/page.md"
 en_md5: "4955abecb626b8eff02ee7484e2065dd"
-governance_sha: "af41eb2"
+governance_sha: "4caf34be"
 content_version: "092b43993e1d"
-published_at: "2026-08-21"
+published_at: "2026-09-26"
+forum_topic_id: 1856
 ---
 
 এখন পর্যন্ত গাণিতিক হিসাবের জন্য আমরা যোগ, বিয়োগ, গুণ আর ভাগ ব্যবহার করেছি। এবার আমরা আরও একটি অপারেটরের সাথে পরিচিত হবো, সেটি হলো ভাগশেষ (ইংরেজিতে _remainder_) অপারেটর।

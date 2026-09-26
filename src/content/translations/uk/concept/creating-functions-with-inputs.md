@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/uk/curriculum/concepts/creating-functions-with-inputs/page.md"
 en_md5: "f70d737888fcbda3306196ff069eb2f1"
-governance_sha: "609cd5a"
+governance_sha: "4caf34be"
 content_version: "0efc77aa5742"
-published_at: "2026-08-07"
+published_at: "2026-09-26"
 ---
 
 Функції, які ми досі створювали, щоразу роблять одне й те саме. `turnAround` (розвернутися) завжди двічі повертає ліворуч. `shootIfAlienAbove` (вистрілити, якщо зверху інопланетянин) завжди перевіряє і стріляє.

@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/fr/curriculum/concepts/rgb/page.md"
 en_md5: "8ed038f6d17072b6fb6eaae6bef15c2c"
-governance_sha: "b33faf2"
+governance_sha: "4caf34be"
 content_version: "75c4c0ec1c27"
-published_at: "2026-08-08"
+published_at: "2026-09-26"
+forum_topic_id: 1458
 ---
 
 RGB nous permet de voir les couleurs comme un mélange de rouge, de vert et de bleu. C'est ce que signifie RGB : rouge (_red (R)_ en anglais), vert (_green (G)_ en anglais), bleu (_blue (B)_ en anglais). Si tu te souviens des mélanges de peinture à l'école, l'idée est la même, sauf qu'au lieu de peinture, on mélange de la lumière.

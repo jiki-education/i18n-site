@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/el/curriculum/concepts/string-iteration/page.md"
 en_md5: "09f399cc3f52b89380d3ed23fc6be513"
-governance_sha: "494ce4b"
+governance_sha: "4caf34be"
 content_version: "769bcb995a7d"
-published_at: "2026-08-10"
+published_at: "2026-09-26"
+forum_topic_id: 1475
 ---
 
 Μπορείς να προσπελάσεις ένα μόνο γράμμα μιας συμβολοσειράς χρησιμοποιώντας αγκύλες. Τώρα θα δούμε πώς να διατρέξουμε μια συμβολοσειρά, παίρνοντας κάθε γράμμα ένα-ένα.

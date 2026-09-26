@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/fa.json"
 en_md5: "e58f587dfa34a3832164f862a919f8dd"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "6fc2feb59695"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 کارتان خوب بود. متدها و ویژگی‌ها سبک نسبتاً متفاوتی نسبت به آنچه تا حالا دیده‌اید دارند. به‌جای اینکه یک مقدار را به یک تابع بدهید، تابع را روی خود مقدار فراخوانی می‌کنید. این ایده کمی به عادت کردن نیاز دارد، اما همه جا استفاده می‌شود، پس خیلی زود برایتان طبیعی می‌شود.

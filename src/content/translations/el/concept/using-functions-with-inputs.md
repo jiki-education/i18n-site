@@ -7,9 +7,10 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/el/curriculum/concepts/using-functions-with-inputs/page.md"
 en_md5: "0bd82377f2407de5fe030511752d5503"
-governance_sha: "e7eb38f"
+governance_sha: "4caf34be"
 content_version: "8f0d67b2aab5"
-published_at: "2026-08-09"
+published_at: "2026-09-26"
+forum_topic_id: 1334
 ---
 
 Ένα από τα πιο δυνατά πράγματα στις μηχανές, στις συναρτήσεις, είναι ότι πολλές από αυτές σου επιτρέπουν να βάζεις πληροφορίες μέσα τους, οι οποίες, όταν τις εκτελείς, αλλάζουν αυτό που κάνουν.

@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/fa.json"
 en_md5: "4bb57788e09cc6de5466d34b560540b2"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "ce37c5332918"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 کارتان در این مرحله خوب بود. اتصال و الگوها ایده‌های نسبتاً ساده‌ای هستند، اما دائماً پیش می‌آیند، به‌خصوص هر جا که خروجی‌ای برای خواندن یک انسان تولید می‌کنید.

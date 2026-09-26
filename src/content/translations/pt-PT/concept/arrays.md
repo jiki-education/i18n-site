@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/pt-PT/curriculum/concepts/arrays/page.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "a347f3f"
+governance_sha: "4caf34be"
 content_version: "97c7556c4c3e"
-published_at: "2026-08-22"
+published_at: "2026-09-26"
 ---
 
 Tens usado números, strings e Booleans, o nome pomposo para verdadeiro e falso, e chamamos a estas coisas diferentes tipos de dados (_data types_ em inglês). Agora vamos acrescentar o nosso primeiro tipo de dados composto (_compound data type_ em inglês).

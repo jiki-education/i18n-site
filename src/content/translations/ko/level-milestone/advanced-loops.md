@@ -7,9 +7,9 @@ status: "published"
 source_repo: "api"
 source_path: "db/seeds/level_translations/ko.json"
 en_md5: "3eb6e1c44486daf5e71618893b5e8bae"
-governance_sha: "2e7fb87"
+governance_sha: "4caf34be"
 content_version: "ebd600c9d628"
-published_at: "2026-08-13"
+published_at: "2026-09-26"
 ---
 
 잘하셨어요! 이제 for 루프, while 루프, break, continue를 마스터하셨어요. 이것들은 이 강의 외부에서 가장 자주 사용하게 될 루프들이에요. 그래서 이 레벨에 투자한 시간이 충분히 가치가 있었어요.

@@ -3,9 +3,9 @@ lang: "ar"
 name: "Arabic"
 family: null
 stage: "refining"
-governance_sha: "4caf34be"
-content_version: "7b8e438eb978"
-published_at: "2026-09-26"
+governance_sha: "8c985851"
+content_version: "9f337a854524"
+published_at: "2026-10-12"
 term_count: 54
 category_id: 233
 forum_topic_id: 470
@@ -55,7 +55,7 @@ These are terms where the Arabic is used in prose, so the "Use (ar/en)" column i
 | parameter | معامل | ar | The declaration-site name. Distinct from `عامل` (operator); do not confuse the two. Masculine; plural معاملات. |
 | argument | وسيط | ar | The call-site value. Masculine; plural وسائط. |
 | to return (a value) | يُرجع (المصدر: إرجاع) | ar | The programming action of a function, method or property giving a value back. Not `يعيد`, which in everyday Arabic also reads as "repeats/redoes". `إخراج`/`يُخرج` stays reserved for output/printing to the screen, so that a value handed back to the program and a result shown on screen never blur together for a beginner. The `return chute` metaphor keeps `مجرى الإخراج`, because that names the physical exit the value slides out of, not the action. Set by mirina (t/470/46). Applies to a property giving a value back (`mentors.length`), not only to a function or method. Conjugate to the implied subject: a `دالة`/`طريقة`/`خاصية` is feminine singular, so a function, method or property returning takes `تُرجع` (future `ستُرجع`, past `أرجعت`), not `يُرجع`. A plural of non-humans (`الدوال`, `الطرق`, `الخصائص`, `المصفوفات`) also takes the feminine singular `تُرجع`, never `يُرجعون`. A dual subject depends on word order: verb-first keeps the singular (`تُرجع الخاصيتان الأبعاد`), subject-first requires the dual verb `تُرجعان` (`الخاصيتان تُرجعان الأبعاد`). `يُرجع` is for a masculine singular subject such as `الكود`. |
-| brackets (the two after a function name) | الأقواس الهلالية (الأقواس الهلالَين) | ar | The round pair `()` written after a function name to call it. Arabic has a dual, so use it where the pair is meant: `الأقواس الهلالية`, oblique `الأقواس الهلالَين` ("كتبت `move` ثم الأقواس الهلالَين"). Set by mirina (t/470/32), overriding humam-hamdan's earlier bare `الهلالان`: the generic head-word is `قوس`/`أقواس` for every bracket type, with the shape as a qualifier. See the Brackets table below. |
+| brackets (the two after a function name) | القوسين الهلاليين (الأقواس الهلالية) | ar | The round pair `()` written after a function name to call it. Arabic has a dual, so use it where the pair is meant, not the plural: dual noun + dual **adjective**, agreeing in case — nominative `القوسان الهلاليان`, oblique (object / after a preposition, the usual case here) `القوسين الهلاليين` ("كتبت `move` ثم القوسين الهلاليين"). Use the plural `الأقواس الهلالية` only for the type in general, not a specific pair ("تستخدم الأقواس الهلالية لاستدعاء الدوال"). Set by mirina (t/470/32), overriding humam-hamdan's earlier bare `الهلالان`: the generic head-word is `قوس`/`أقواس` for every bracket type, with the shape as a qualifier. Corrected by mirina (t/470/58-59, 2026-10-09): the dual had wrongly paired the plural noun `الأقواس` with the dual of the noun `هلال` (`الهلالَين`) instead of the dual of the adjective `هلالي`. See the Brackets table below. |
 
 ### Loops, state & program flow
 
@@ -126,19 +126,48 @@ type shares one head-word and is distinguished by a qualifier naming its shape, 
 English pattern (`bracket` + shape) and the usage of Arabic educational and technical sources.
 **Never use a bare `هلال` or a bare `معقوف` on its own**, and never use `قوس` alone to mean `{}`.
 
-Generic, when no specific type is meant: singular `قوس` (masculine), the pair `القوسان`, plural
-`أقواس` / definite `الأقواس`.
+Generic, when no specific type is meant: singular `قوس` (masculine), the pair nominative
+`القوسان` / oblique `القوسين`, plural `أقواس` / definite `الأقواس`.
 
-| Glyph | Arabic | Notes |
-|-------|--------|-------|
-| `()` | الأقواس الهلالية (dual: الأقواس الهلالَين) | Parentheses / round brackets. See the `brackets (the two after a function name)` row above; that is this pair after a function call. |
-| `[]` | الأقواس المربعة | Square brackets. Note this is a **swap** against the old scheme, where `معقوف` meant `[]`. |
-| `{}` | الأقواس المعقوفة | Curly braces. Note this is a **swap** against the old scheme, where `معقوف` meant `[]` and `قوس` alone meant `{}`. Not `مجعد`, and not the descriptive `المنحنية`/`الحاضنات`. |
-| `<>` | الأقواس الزاوية | Angle brackets. |
+**The dual, when a specific pair is meant, puts both the noun and the shape adjective in the
+dual, agreeing in case** (nominative `-ان`, oblique `-ين`; the oblique covers both accusative
+and genitive and is the one needed most often, since the pair is usually an object or follows
+a preposition). Corrected by mirina (t/470/58-59, 2026-10-09): an earlier version of this table
+wrongly dualled the noun `هلال` ("crescent") instead of the adjective `هلالي`.
+
+| Glyph | Arabic (plural, type in general) | Dual (nominative / oblique) | Notes |
+|-------|-----------------------------------|------------------------------|-------|
+| `()` | الأقواس الهلالية | القوسان الهلاليان / القوسين الهلاليين | Parentheses / round brackets. See the `brackets (the two after a function name)` row above; that is this pair after a function call. |
+| `[]` | الأقواس المربعة | القوسان المربعان / القوسين المربعين | Square brackets. Note this is a **swap** against the old scheme, where `معقوف` meant `[]`. |
+| `{}` | الأقواس المعقوفة | القوسان المعقوفان / القوسين المعقوفين | Curly braces. Note this is a **swap** against the old scheme, where `معقوف` meant `[]` and `قوس` alone meant `{}`. Not `مجعد`, and not the descriptive `المنحنية`/`الحاضنات`. |
+| `<>` | الأقواس الزاوية | القوسان الزاويان / القوسين الزاويين | Angle brackets. |
 
 ---
 
 ## Decision log
+
+### 2026-10-09: brackets dual form corrected (t/470/58-59)
+
+**Decided by:** mirina, forum https://forum.jiki.io/t/470/58 and /59, actioned directly as a
+grammar correction to her own 2026-08-22 scheme (not a new disagreement).
+
+The 2026-08-22 entry's dual, `الأقواس الهلالَين`, was grammatically wrong: it combined the
+plural noun `الأقواس` with the dual of the noun `هلال` ("crescent") instead of the dual of
+the shape adjective `هلالي`. A dual pair needs both the noun and the adjective in the dual,
+agreeing in case: nominative `القوسان الهلاليان`, oblique (accusative/genitive, covering both
+"object" and "after a preposition") `القوسين الهلاليين`. The same fix applies to every other
+glyph's dual.
+
+mirina also distinguished, with citations, when to use the dual (a specific pair: "write the
+two round brackets", "between the two round brackets") versus the plural (the type in
+general: "round brackets are used to call functions"). The oblique dual is the form needed
+in practice most of the time, since the pair is usually a direct object or follows a
+preposition (`بين القوسين الهلاليين`); the nominative dual is rarer. She cited matching usage
+across several Arabic programming references (Hsoub Academy, Alusus, Coddy, ojuba.org) for
+both registers.
+
+Also added: the generic (no specific glyph) pair now has both cases, `القوسان`/`القوسين`,
+where the glossary previously gave only the nominative `القوسان`.
 
 ### 2026-09-09: dual agreement is word-order dependent (t/470/56)
 

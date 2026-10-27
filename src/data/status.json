@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-10-07",
-  "governance_sha": "e3664394",
-  "approved": 1039,
+  "published_at": "2026-10-27",
+  "governance_sha": "dcf8b7d5",
+  "approved": 1042,
   "disapproved": 1,
   "total": 3398,
   "languages": [
@@ -953,7 +953,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-bn",
-      "approved": 181,
+      "approved": 184,
       "disapproved": 0,
       "total": 189,
       "items": [
@@ -1879,13 +1879,13 @@
         },
         {
           "key": "exercise/stars",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 3929,
+          "status": "approved"
         },
         {
           "key": "exercise/chop-shop",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 3930,
+          "status": "approved"
         },
         {
           "key": "exercise/matching-socks",
@@ -1899,8 +1899,8 @@
         },
         {
           "key": "exercise/adventures-in-poetry",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 3928,
+          "status": "approved"
         }
       ]
     },

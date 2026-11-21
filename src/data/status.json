@@ -1,7 +1,7 @@
 {
-  "published_at": "2026-10-27",
-  "governance_sha": "dcf8b7d5",
-  "approved": 1042,
+  "published_at": "2026-11-21",
+  "governance_sha": "041db715",
+  "approved": 1044,
   "disapproved": 1,
   "total": 3398,
   "languages": [
@@ -3744,7 +3744,7 @@
       "stage": "reviewing",
       "live": true,
       "category_slug": "i18n-el",
-      "approved": 125,
+      "approved": 127,
       "disapproved": 0,
       "total": 181,
       "items": [
@@ -4120,8 +4120,8 @@
         },
         {
           "key": "concept/hsl",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1404,
+          "status": "approved"
         },
         {
           "key": "concept/logical-and",
@@ -4170,8 +4170,8 @@
         },
         {
           "key": "concept/rgb",
-          "topic_id": null,
-          "status": "pending"
+          "topic_id": 1404,
+          "status": "approved"
         },
         {
           "key": "concept/scenarios",
@@ -6533,7 +6533,7 @@
       "lang": "hi",
       "name": "Hindi",
       "stage": "refining",
-      "live": false,
+      "live": true,
       "category_slug": "i18n-hi",
       "approved": 22,
       "disapproved": 0,
@@ -8352,7 +8352,7 @@
       "lang": "fa",
       "name": "Persian",
       "stage": "refining",
-      "live": false,
+      "live": true,
       "category_slug": "i18n-fa",
       "approved": 16,
       "disapproved": 0,
@@ -9219,7 +9219,7 @@
       "lang": "sr",
       "name": "Serbian",
       "stage": "refining",
-      "live": false,
+      "live": true,
       "category_slug": "i18n-sr",
       "approved": 14,
       "disapproved": 0,
@@ -10465,7 +10465,7 @@
       "lang": "zh-TW",
       "name": "Traditional Chinese",
       "stage": "refining",
-      "live": false,
+      "live": true,
       "category_slug": "i18n-zh-tw",
       "approved": 11,
       "disapproved": 0,
@@ -11624,7 +11624,7 @@
       "lang": "ar",
       "name": "Arabic",
       "stage": "refining",
-      "live": false,
+      "live": true,
       "category_slug": "i18n-ar",
       "approved": 8,
       "disapproved": 0,
@@ -12173,7 +12173,7 @@
       "lang": "ja",
       "name": "Japanese",
       "stage": "refining",
-      "live": false,
+      "live": true,
       "category_slug": "i18n-ja",
       "approved": 4,
       "disapproved": 0,
@@ -13771,7 +13771,7 @@
       "lang": "ko",
       "name": "Korean",
       "stage": "refining",
-      "live": false,
+      "live": true,
       "category_slug": "i18n-ko",
       "approved": 2,
       "disapproved": 0,
@@ -14633,7 +14633,7 @@
       "lang": "zh-CN",
       "name": "Simplified Chinese",
       "stage": "refining",
-      "live": false,
+      "live": true,
       "category_slug": "i18n-zh-cn",
       "approved": 2,
       "disapproved": 0,
@@ -15495,7 +15495,7 @@
       "lang": "de",
       "name": "German",
       "stage": "refining",
-      "live": false,
+      "live": true,
       "category_slug": "i18n-de",
       "approved": 2,
       "disapproved": 0,

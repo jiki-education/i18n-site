@@ -7,9 +7,9 @@ status: "published"
 source_repo: "i18n"
 source_path: "locales/ar/curriculum/concepts/for-loops/page.md"
 en_md5: "0ad4155ded18c2df27d29e5355bd0532"
-governance_sha: "257be423"
-content_version: "22a7483f66cd"
-published_at: "2026-08-25"
+governance_sha: "041db715"
+content_version: "97f022a3669b"
+published_at: "2026-11-21"
 forum_topic_id: 1759
 ---
 
@@ -39,7 +39,7 @@ for (let i = 0; i < 5; i++) {
 
 ثم أخيرًا تأتي الزيادة، وهي `i++`.
 
-`i++` تعني ببساطة نفس معنى `i = i + 1`. إنها مجرد اختصار، طريقة لزيادة `i` بمقدار واحد في كل مرة.
+`i++` تعني ببساطة نفس معنى `i = i + 1`. إنها مجرد اختصار، وسيلة لزيادة `i` بمقدار واحد في كل مرة.
 
 إذن في هذا المثال، سنضبط `i` على الصفر. نتحقق مما إذا كان `i` أصغر من اثنين، وهو بالفعل كذلك، فنُنفّذ الحلقة.
 

@@ -4,12 +4,12 @@ type: "concept"
 slug: "arrays"
 title: "Arrayer"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/arrays/source.md"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/arrays/page.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "18055e8"
+governance_sha: "51d8294a"
 content_version: "4c6c469dd0fe"
-published_at: "2026-08-03"
+published_at: "2026-11-21"
 ---
 
 Du har använt tal och strängar och booleska värden, det fina ordet för sant och falskt, och de här olika sorterna kallar vi datatyper (_data types_ på engelska). Nu ska vi lägga till vår första sammansatta datatyp (_compound data type_ på engelska).

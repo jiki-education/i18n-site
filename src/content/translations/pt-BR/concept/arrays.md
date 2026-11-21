@@ -4,29 +4,30 @@ type: "concept"
 slug: "arrays"
 title: "Arrays"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/arrays/source.md"
+source_repo: "i18n"
+source_path: "locales/pt-BR/curriculum/concepts/arrays/page.md"
 en_md5: "d26ccb9e04fbc77129f3199d63a95017"
-governance_sha: "e10d478"
-content_version: "dd8e80f078a6"
-published_at: "2026-08-03"
+governance_sha: "51d8294a"
+content_version: "e76a143515bb"
+published_at: "2026-11-21"
+forum_topic_id: 1109
 ---
 
-Você já vem usando números, strings e Booleans, a palavra chique para verdadeiro e falso, e chamamos isso de diferentes tipos de dados (_data types_ em inglês). Agora vamos adicionar o nosso primeiro tipo de dado composto (_compound data type_ em inglês).
+Você já vem usando números, strings e Booleans (o nome técnico para verdadeiro e falso), e chamamos isso de diferentes tipos de dados (_data types_ em inglês). Agora vamos adicionar o nosso primeiro tipo de dado composto (_compound data type_ em inglês).
 
 É um tipo de dado que pode conter várias coisas, não só uma coisa, e esse tipo de dado se chama _array_ (vetor, em português).
 
-Quando você ouvir a palavra array, quero que pense em uma corrente física segurando várias coisas juntas.
+Quando você ouvir a palavra array, quero que pense em uma corrente segurando várias coisas juntas.
 
 Essas coisas que ela segura podem ser qualquer coisa: strings, números, Booleans, até outros arrays, até coisas que você ainda não aprendeu, mas não vamos nos preocupar com isso por enquanto.
 
 Tudo nessa corrente está em ordem: a ordem em que as coisas foram presas umas às outras.
 
-Então um array contém várias coisas, mas é uma coisa só, uma unidade: um array com vários elementos dentro dele.
+Então um array contém várias coisas, mas é uma coisa só, uma unidade: um único array com vários elementos dentro dele.
 
 O Jiki pode pegar esse array, essa corrente, e colocar em uma caixa, do mesmo jeito que ele coloca uma string em uma caixa ou um número em uma caixa.
 
-Ele pode colocá-lo na fenda de uma máquina. Pode puxá-lo da boca da máquina. O array é uma coisa só, e o Jiki trabalha com ele exatamente do mesmo jeito que trabalha com strings, números e tudo o mais que você viu até agora.
+Ele pode colocá-lo na fenda de entrada de uma máquina. Pode puxá-lo da boca da máquina. O array é uma coisa só, e o Jiki trabalha com ele exatamente do mesmo jeito que trabalha com strings, números e tudo o mais que você viu até agora.
 
 Agora, no código, um array também se parece um pouco com uma corrente. Ele tem um colchete em cada ponta e, entre eles, vários itens encadeados uns aos outros, separados por vírgulas.
 

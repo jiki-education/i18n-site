@@ -1,9 +1,9 @@
 {
   "published_at": "2026-11-21",
-  "governance_sha": "041db715",
+  "governance_sha": "51d8294a",
   "approved": 1044,
   "disapproved": 1,
-  "total": 3398,
+  "total": 3425,
   "languages": [
     {
       "lang": "fr",
@@ -13,7 +13,7 @@
       "category_slug": "i18n-fr",
       "approved": 186,
       "disapproved": 0,
-      "total": 186,
+      "total": 194,
       "items": [
         {
           "key": "glossary",
@@ -944,6 +944,46 @@
           "key": "exercise/adventures-in-poetry",
           "topic_id": 2247,
           "status": "approved"
+        },
+        {
+          "key": "concept/arrays-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/colors-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/conditionals-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/dictionaries-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/functions-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/loops-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables-group",
+          "topic_id": null,
+          "status": "pending"
         }
       ]
     },
@@ -2829,7 +2869,7 @@
       "category_slug": "i18n-it",
       "approved": 151,
       "disapproved": 0,
-      "total": 181,
+      "total": 189,
       "items": [
         {
           "key": "glossary",
@@ -3733,6 +3773,46 @@
         },
         {
           "key": "exercise/adventures-in-poetry",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/colors-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/conditionals-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/dictionaries-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/functions-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/loops-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables-group",
           "topic_id": null,
           "status": "pending"
         }
@@ -5620,7 +5700,7 @@
       "category_slug": "i18n-es-419",
       "approved": 34,
       "disapproved": 0,
-      "total": 181,
+      "total": 189,
       "items": [
         {
           "key": "glossary",
@@ -6524,6 +6604,46 @@
         },
         {
           "key": "api-email/premium_mailer.subscription_ended",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/arrays-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/colors-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/conditionals-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/dictionaries-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/functions-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/loops-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/strings-group",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "concept/variables-group",
           "topic_id": null,
           "status": "pending"
         }
@@ -13039,7 +13159,7 @@
       "category_slug": "i18n-sv",
       "approved": 4,
       "disapproved": 0,
-      "total": 89,
+      "total": 92,
       "items": [
         {
           "key": "glossary",
@@ -13483,6 +13603,21 @@
         },
         {
           "key": "badge/townsfolk",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/two-fer",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/digital-clock",
+          "topic_id": null,
+          "status": "pending"
+        },
+        {
+          "key": "exercise/weather-symbols",
           "topic_id": null,
           "status": "pending"
         }

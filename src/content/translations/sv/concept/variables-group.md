@@ -4,12 +4,13 @@ type: "concept"
 slug: "variables-group"
 title: "Variabler"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/variables-group/source.md"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/variables-group/page.md"
 en_md5: "f29eee377d6107ec9a83e60a435a25c6"
-governance_sha: "9b7ed43"
-content_version: "68b329da9893"
-published_at: "2026-08-03"
+governance_sha: "c619c068"
+content_version: "faa307bf2529"
+published_at: "2026-11-24"
+messages: [{"heading":"Title and description","note":"This page has no main text. Its title and short description are all there is to check.","namespaces":[{"name":"concept/variables-group","rows":[{"key":"title","english":"Variables","target":"Variabler"},{"key":"description","english":"Boxes on Jiki's shelves that store a value with a label so you can get it back out later in your code.","target":"Lådor på Jikis hyllor som lagrar ett värde med en etikett, så att du kan plocka fram det igen senare i din kod."}]}]}]
 ---
 
 

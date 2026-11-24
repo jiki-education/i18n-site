@@ -4,12 +4,13 @@ type: "concept"
 slug: "conditionals-group"
 title: "Villkor"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/conditionals-group/source.md"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/conditionals-group/page.md"
 en_md5: "dc2e78044e7b8a044b7c30b615417809"
-governance_sha: "c6b2cac"
-content_version: "68b329da9893"
-published_at: "2026-08-03"
+governance_sha: "c619c068"
+content_version: "6e41c11ebafe"
+published_at: "2026-11-24"
+messages: [{"heading":"Title and description","note":"This page has no main text. Its title and short description are all there is to check.","namespaces":[{"name":"concept/conditionals-group","rows":[{"key":"title","english":"Conditionals","target":"Villkor"},{"key":"description","english":"Comparing values with operators like `<`, `>`, and `===` to produce booleans that decide whether a block of code runs.","target":"Jämför värden med operatorer som `<`, `>` och `===` för att få booleska värden som avgör om ett kodblock ska köras."}]}]}]
 ---
 
 

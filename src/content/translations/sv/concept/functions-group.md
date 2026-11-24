@@ -4,12 +4,13 @@ type: "concept"
 slug: "functions-group"
 title: "Funktioner"
 status: "published"
-source_repo: "front-end"
-source_path: "curriculum/src/concepts/functions-group/source.md"
+source_repo: "i18n"
+source_path: "locales/sv/curriculum/concepts/functions-group/page.md"
 en_md5: "d49cccb944858e988802b96dd4853c33"
-governance_sha: "18055e8"
-content_version: "68b329da9893"
-published_at: "2026-08-03"
+governance_sha: "c619c068"
+content_version: "f06d3eb208df"
+published_at: "2026-11-24"
+messages: [{"heading":"Title and description","note":"This page has no main text. Its title and short description are all there is to check.","namespaces":[{"name":"concept/functions-group","rows":[{"key":"title","english":"Functions","target":"Funktioner"},{"key":"description","english":"Reusable little machines you can run by name, the core building block for organising code and avoiding repetition.","target":"Återanvändbara små maskiner som du kör med hjälp av deras namn, den grundläggande byggstenen för att organisera kod och undvika upprepning."}]}]}]
 ---
 
 

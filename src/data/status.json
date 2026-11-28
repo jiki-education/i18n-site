@@ -1,9 +1,9 @@
 {
-  "published_at": "2026-11-21",
-  "governance_sha": "51d8294a",
+  "published_at": "2026-11-28",
+  "governance_sha": "d1e0f316",
   "approved": 1044,
   "disapproved": 1,
-  "total": 3425,
+  "total": 3427,
   "languages": [
     {
       "lang": "fr",
@@ -17534,6 +17534,28 @@
         {
           "key": "video-player",
           "topic_id": 1476,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "lang": "cs",
+      "name": "Czech",
+      "stage": "setup",
+      "live": false,
+      "category_slug": "i18n-cs",
+      "approved": 0,
+      "disapproved": 0,
+      "total": 2,
+      "items": [
+        {
+          "key": "glossary",
+          "topic_id": 4887,
+          "status": "pending"
+        },
+        {
+          "key": "video-player",
+          "topic_id": 4888,
           "status": "pending"
         }
       ]

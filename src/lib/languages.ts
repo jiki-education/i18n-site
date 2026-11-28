@@ -28,6 +28,7 @@ export const LANGUAGES: Record<string, LanguageMeta> = {
   ar: { name: "Arabic", nativeName: "العربية", dir: "rtl", comingSoon: "قريبًا" },
   bn: { name: "Bengali", nativeName: "বাংলা", dir: "ltr", comingSoon: "শীঘ্রই আসছে" },
   ca: { name: "Catalan", nativeName: "Català", dir: "ltr", comingSoon: "Properament" },
+  cs: { name: "Czech", nativeName: "Čeština", dir: "ltr", comingSoon: "Již brzy" },
   de: { name: "German", nativeName: "Deutsch", dir: "ltr", comingSoon: "Demnächst" },
   el: { name: "Greek", nativeName: "Ελληνικά", dir: "ltr", comingSoon: "Προσεχώς" },
   "es-419": {
@@ -309,6 +310,7 @@ const FLAGS: Record<string, string> = {
   ar: "🌍",
   bn: "🇧🇩",
   ca: "🇦🇩",
+  cs: "🇨🇿",
   de: "🇩🇪",
   el: "🇬🇷",
   "es-419": "🌎",
